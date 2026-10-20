@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2026.10.21-beta.38
-- **Europese jaarcijfers via ESEF:** nieuwe bron voor bedrijven zonder SEC-notering (filings.xbrl.org, officiële jaarverslagen). 258 bedrijven gekoppeld via LEI (`esef_lei.json`), verslagen opgeslagen in `esef_data/`. De bestaande strenge verificatie draait ongewijzigd op deze cijfers (nieuw: terugval op ProfitLoss voor bedrijven zonder minderheidsbelang). 7 bedrijven worden nagerekend en bevestigd; 111 krijgen niveau 'Uit jaarverslag' (5-8 jaar, niet nagerekend, geen label, geen K/W). Nieuw: `esef_bron.py`.
+- **Europese jaarcijfers via ESEF:** nieuwe bron voor bedrijven zonder SEC-notering (filings.xbrl.org, officiële jaarverslagen). 258 bedrijven gekoppeld via LEI (`esef_lei.json`), verslagen opgeslagen in één bestand `esef_bundel.json.gz`. De bestaande strenge verificatie draait ongewijzigd op deze cijfers (nieuw: terugval op ProfitLoss voor bedrijven zonder minderheidsbelang). 7 bedrijven worden nagerekend en bevestigd; 111 krijgen niveau 'Uit jaarverslag' (5-8 jaar, niet nagerekend, geen label, geen K/W). Nieuw: `esef_bron.py`.
 ## 2026.10.20-beta.37
 - **Back-upscherm duidelijker:** uitleg waarom een back-up nuttig is, de datum van de laatste back-up vetgedrukt, en twee genummerde stappen (1 maken, 2 terugzetten). De tekstvariant staat onder 'Lukt het bestand niet?'.
 

@@ -85,18 +85,22 @@ def heeft_sec(ticker):
 
 
 ESEF_LEI = HERE / 'esef_lei.json'
-ESEF_MAP = HERE / 'esef_data'
+ESEF_BUNDEL = HERE / 'esef_bundel.json.gz'
+_ESEF_CACHE = {}
 
 
 def esef_ophalen(ticker):
-    """ESEF-feitenbestand (companyfacts-vorm, zie esef_bron.py) van een noteringscode, of None als er geen LEI of bestand is."""
+    """ESEF-feitenbestand (companyfacts-vorm, zie esef_bron.py) van een noteringscode, of None als er geen LEI of gegevens zijn.
+    Alle bedrijven staan in één bestand (GitHub accepteert via de website maximaal 100 bestanden per upload)."""
     import gzip
     try:
         lei = json.loads(ESEF_LEI.read_text(encoding='utf-8')).get(ticker.upper(), {}).get('lei')
         if not lei:
             return None
-        with gzip.open(ESEF_MAP / f'{lei}.json.gz', 'rt', encoding='utf-8') as f:
-            return json.load(f)
+        if ESEF_BUNDEL not in _ESEF_CACHE:
+            with gzip.open(ESEF_BUNDEL, 'rt', encoding='utf-8') as f:
+                _ESEF_CACHE[ESEF_BUNDEL] = json.load(f)
+        return _ESEF_CACHE[ESEF_BUNDEL].get(lei)
     except (OSError, ValueError):
         return None
 
