@@ -15,7 +15,16 @@
     var uit = { ticker: rec.ticker, naam: rec.naam, valuta: rec.valuta, indices: Array.isArray(rec.indices) ? rec.indices : [], bevestigd: rij.bevestigd, reden: rij.bevestigd ? null : (rij.redenen && rij.redenen.length ? rij.redenen.join(' ') : 'Nog niet gecontroleerd.'),
       koers: fr.fresh && typeof k.slot === 'number' ? k.slot : null, afstandPct: fr.fresh ? rij.afstandPct : null,
       omzetgroei: null, epsgroei: null, nettomarge: null, kw: null, jarenBereik: null,
-      trend200: fr.fresh && typeof k.slot === 'number' && typeof k.sma200 === 'number' && k.sma200 > 0 ? (k.slot > k.sma200 ? 'boven' : 'onder') : null };
+      positiePct: null, verhouding: null, trend200: fr.fresh && typeof k.slot === 'number' && typeof k.sma200 === 'number' && k.sma200 > 0 ? (k.slot > k.sma200 ? 'boven' : 'onder') : null };
+    // Plek in het koersbereik (uit de koersreeks); alleen bij verse koers en minstens 8 jaar. Geldt ook voor onbevestigde aandelen: het is een koersfeit.
+    var b = k && k.bereik;
+    if (fr.fresh && b && typeof b.hoog === 'number' && typeof b.laag === 'number' && b.jaren >= 8 && typeof k.slot === 'number' && k.slot > 0) {
+      var hi = Math.max(b.hoog, k.slot), lo = Math.min(b.laag, k.slot);
+      if (hi > lo) {
+        uit.positiePct = rond((k.slot - lo) / (hi - lo) * 100, 0);
+        uit.verhouding = k.slot > lo ? rond((hi - k.slot) / (k.slot - lo), 1) : null;
+      }
+    }
     if (!rij.bevestigd || !g) return uit;
     var jr = jaren(g), f = jr[0], l = jr[jr.length - 1];
     if (!f || !l || l.year <= f.year) return uit;

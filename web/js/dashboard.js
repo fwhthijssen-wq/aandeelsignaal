@@ -65,7 +65,7 @@
     }).filter(Boolean);
   }
 
-  var KOLOMMEN = ['naam', 'afstandPct', 'omzetgroei', 'epsgroei', 'nettomarge'];
+  var KOLOMMEN = ['naam', 'afstandPct', 'omzetgroei', 'epsgroei', 'nettomarge', 'positiePct', 'verhouding'];
 
   /* Tabelregels uit Vergelijk.kant; filter en sortering. Null staat altijd onderaan. */
   function tabel(kanten, opties) {

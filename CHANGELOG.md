@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2026.10.20-beta.36
+- **Dashboard:** onder elk aandeel staat "Plek in bereik 24% · 3,1 : 1" (uit de koersreeks van 10 jaar), en je kunt sorteren op die plek (laagste eerst) of op de verhouding opwaarts/neerwaarts. Geldt ook voor aandelen zonder bevestigde cijfers, want het is een koersfeit; een label verschijnt daar nog steeds niet.
+
 ## 2026.10.20-beta.35
 - **Europa via de indexen:** AEX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026): 272 nieuwe aandelen, samen 320. Nieuw `europa_indexen.py`.
 - Zij krijgen koers, trend, koersbereik van 10 jaar en een indexlabel, maar **geen jaarcijfers en geen label** tenzij er een SEC-jaarverslag is dat de controle doorstaat. Gekoppeld aan SEC: Deutsche Bank, BBVA, Santander, Telefónica, Grifols. Bij de overige staat "Geen SEC-jaarverslag voor dit bedrijf; alleen koersgegevens".

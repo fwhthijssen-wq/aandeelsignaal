@@ -77,3 +77,9 @@ test('tabel: filter op trend t.o.v. 200 dagen; onbekend valt weg bij een gekozen
   assert.equal(D.tabel(T, { trend200: 'rare waarde' }).length, 4);
   assert.equal(D.tabel(T, {}).length, 4);
 });
+
+test('tabel: sorteren op plek in koersbereik (laag eerst) en op verhouding (hoog eerst)', () => {
+  const T = [{ naam: 'A', positiePct: 80, verhouding: 0.3 }, { naam: 'B', positiePct: 10, verhouding: 8.9 }, { naam: 'C', positiePct: null, verhouding: null }, { naam: 'D', positiePct: 24, verhouding: 3.1 }];
+  assert.deepEqual(D.tabel(T, { sorteer: 'positiePct', richting: 'op' }).map(k => k.naam), ['B', 'D', 'A', 'C']);
+  assert.deepEqual(D.tabel(T, { sorteer: 'verhouding', richting: 'af' }).map(k => k.naam), ['B', 'D', 'A', 'C']);
+});

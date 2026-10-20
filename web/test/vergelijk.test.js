@@ -67,3 +67,16 @@ test('kant: trend200 alleen bij verse koers en bekende sma200', () => {
   assert.equal(V.kant(mk({ slot: 110, datum: vandaag, sma50: 95 }), vandaag, Gate).trend200, null);
   assert.equal(V.kant(mk({ slot: 110, datum: '2020-01-01', sma200: 100 }), vandaag, Gate).trend200, null);
 });
+
+test('kant: plek in koersbereik alleen met verse koers en 8+ jaar; ook zonder bevestiging', () => {
+  const mk = (k) => ({ ticker: 'X', naam: 'X', valuta: 'USD', koers: k, gegevens: null });
+  const vandaag = '2026-10-20';
+  const bereik = { hoog: 165.7, laag: 40, jaren: 10 };
+  const a = V.kant(mk({ slot: 70.5, datum: vandaag, bereik }), vandaag, G);
+  assert.equal(a.positiePct, 24); assert.equal(a.verhouding, 3.1); assert.equal(a.bevestigd, false);
+  assert.equal(V.kant(mk({ slot: 70.5, datum: '2020-01-01', bereik }), vandaag, G).positiePct, null);
+  assert.equal(V.kant(mk({ slot: 70.5, datum: vandaag, bereik: { ...bereik, jaren: 7 } }), vandaag, G).positiePct, null);
+  assert.equal(V.kant(mk({ slot: 70.5, datum: vandaag }), vandaag, G).positiePct, null);
+  const onder = V.kant(mk({ slot: 30, datum: vandaag, bereik }), vandaag, G);   // onder het dieptepunt
+  assert.equal(onder.positiePct, 0); assert.equal(onder.verhouding, null);
+});

@@ -219,6 +219,15 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), 2)
         self.assertEqual(self.fouten, [])
 
+    def test_dashboard_plek_in_bereik_zichtbaar_en_sorteerbaar(self):
+        pg = self._pagina_met_indexen('#/', 320)
+        pg.select_option('#d-sort', 'positiePct')
+        t = pg.inner_text('#dash table.dash tbody')
+        self.assertIn('Plek in bereik 24% · 3,1 : 1', t)
+        self.assertEqual(pg.locator('[data-plek]').count(), 2)      # AAPL en MSFT hebben een bereik in de fixture
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
     def test_detail_toont_index_en_koers_tab_bereik_zonder_label_als_onbevestigd(self):
         pg = self._pagina_met_indexen('#/a/ASML.AS')
         self.assertIn('AEX (Amsterdam)', pg.locator('[data-indices]').inner_text())
