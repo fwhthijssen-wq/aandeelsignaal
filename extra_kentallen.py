@@ -13,11 +13,15 @@ STROOM = {
                       'ProfitLossBeforeTax'),
     'depreciation': ('DepreciationDepletionAndAmortization', 'DepreciationAndAmortization',
                      'DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss',
-                     'AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss'),
-    'dividends_paid': ('PaymentsOfDividendsCommonStock', 'PaymentsOfDividends', 'DividendsPaidClassifiedAsFinancingActivities'),
+                     'AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss',
+                     'DepreciationAmortizationAndOther', 'DepreciationAmortizationAndAccretionNet',
+                     'AdjustmentsForDepreciationAndAmortisationExpense', 'DepreciationAndAmortisationExpense'),
+    'dividends_paid': ('PaymentsOfDividendsCommonStock', 'PaymentsOfDividends', 'DividendsPaidClassifiedAsFinancingActivities',
+                       'DividendsPaidToOwnersOfParentClassifiedAsFinancingActivities', 'PaymentsOfOrdinaryDividends', 'DividendsPaid'),
 }
 BALANS = {
-    'long_term_debt': ('LongTermDebtNoncurrent', 'LongTermDebt', 'Borrowings', 'NoncurrentPortionOfNoncurrentBorrowings'),
+    'long_term_debt': ('LongTermDebtNoncurrent', 'LongTermDebt', 'Borrowings', 'NoncurrentPortionOfNoncurrentBorrowings',
+                       'LongTermDebtAndCapitalLeaseObligations', 'LongtermBorrowings', 'NoncurrentPortionOfLongtermBorrowings'),
 }
 
 

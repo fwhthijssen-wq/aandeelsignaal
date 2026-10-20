@@ -12,6 +12,7 @@ Twee onafhankelijke bewijsroutes, beide uitsluitend uit SEC-indieningen, beide f
 
 Beide routes zijn controleverslagen; geen van beide keurt een waardering goed.
 """
+from boekjaar import boekjaar
 from datetime import date
 from math import isfinite
 
@@ -44,6 +45,9 @@ def _number(value):
 
 
 # ---------------------------------------------------------------- invoer voor herberekening
+SHARES_IN_MILLIONS_BELOW = 100_000
+
+
 def sec_eps_recompute_inputs(payload, asof):
     """Nettowinst en gewogen verwaterde aandelen per indiening (zelfde start, einde en accn).
 
@@ -105,11 +109,18 @@ def sec_eps_recompute_inputs(payload, asof):
                 continue
             (currency, net_income, filed), = income[key]
             (_, diluted_shares, _), = shares[key]
+            geschaald = False
+            if 0 < diluted_shares < SHARES_IN_MILLIONS_BELOW:
+                # Sommige indieners (bijv. McDonald's vanaf 2024) rapporteren aandelen in miljoenen
+                # (727 i.p.v. 727.000.000). Echte bedrijven hebben nooit minder dan 100.000 aandelen.
+                # De herberekening moet daarna nog steeds de gerapporteerde EPS reproduceren.
+                diluted_shares *= 1_000_000
+                geschaald = True
             ni_tag = ni_tags[key] if ni_tags else IFRS_NET_INCOME_TAG
             record = {'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
                       'currency': currency, 'net_income': net_income,
                       'diluted_shares': diluted_shares,
-                      'source': f'SEC {namespace}:{ni_tag} / {sh_tag}'}
+                      'source': f'SEC {namespace}:{ni_tag} / {sh_tag}' + (' (aandelen in miljoenen, x1.000.000)' if geschaald else '')}
             previous = records.get(key)
             if previous is not None and (previous['net_income'], previous['diluted_shares']) != (net_income, diluted_shares):
                 records[key] = None            # tegenstrijdig tussen stelsels: nooit kiezen
@@ -569,7 +580,7 @@ def verify_eps(result, safe_history, audit_date):
             detail = (f" (herberekend {check['herberekend']}, gemeld {check['gerapporteerd']})"
                       if 'herberekend' in check else '')
             audit['reden'] = f"{audit.get('reden')}; herberekening: {check['reden']}{detail}"
-    eps_verified_years = sorted(int(end[:4]) for end, audit in eps_reconciliation.items()
+    eps_verified_years = sorted(boekjaar(end) for end, audit in eps_reconciliation.items()
                                 if audit['status'] == 'onderbouwd')
 
     conflict = any(audit['status'] in ('bronconflict', 'afwijking') for audit in eps_reconciliation.values())

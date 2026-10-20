@@ -1,4 +1,6 @@
-# Aandeel Signaal — bèta 2026.10.20-beta.20
+# Aandeel Signaal — bèta 2026.10.20-beta.27
+
+> **Opmerking (beta.27):** de oude Streamlit-versie en de bijbehorende `.cmd`-startbestanden zijn opgeruimd (zie `opruimlijst.txt`). De app is de webapp in `web/`, live op GitHub Pages. Passages hieronder over `START_AANDEEL_SIGNAAL.cmd` of Streamlit zijn historisch.
 
 Dit is een **bèta voor eigen gebruik en feedback**. Geen gevalideerd beleggingsadvies, geen definitieve NAIC-vrijgave, geen productieversie.
 

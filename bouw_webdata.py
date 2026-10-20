@@ -59,6 +59,18 @@ CATALOGUS = (
     ('CAT', 'Caterpillar', 'Verenigde Staten', 'USD', 'NYSE'),
     ('AMGN', 'Amgen', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('NKE', 'Nike', 'Verenigde Staten', 'USD', 'NYSE'),
+    # Uitbreiding (beta.27). Europese bedrijven met een SEC-jaarverslag (20-F, IFRS in euro) en een notering in euro:
+    # koers en cijfers hebben dezelfde valuta. Gewone aandelen, geen ADR's (die hebben een andere aandelenverhouding).
+    ('SAN.PA', 'Sanofi', 'Frankrijk', 'EUR', 'Parijs'),
+    ('RACE.MI', 'Ferrari', 'Italië', 'EUR', 'Milaan'),
+    ('PHIA.AS', 'Philips', 'Nederland', 'EUR', 'Amsterdam'),
+    ('STLAM.MI', 'Stellantis', 'Nederland', 'EUR', 'Milaan'),
+    ('NOKIA.HE', 'Nokia', 'Finland', 'EUR', 'Helsinki'),
+    ('ENI.MI', 'Eni', 'Italië', 'EUR', 'Milaan'),
+    ('DIS', 'Walt Disney', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('HON', 'Honeywell', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('LIN', 'Linde', 'Ierland', 'USD', 'Nasdaq'),
+    ('TMO', 'Thermo Fisher Scientific', 'Verenigde Staten', 'USD', 'NYSE'),
 )
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',

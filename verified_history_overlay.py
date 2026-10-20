@@ -3,6 +3,7 @@
 Nooit bronregisterregels rechtstreeks promoveren: alleen expliciet en onafhankelijk
 geverifieerde waarnemingen met volledige metadata mogen een ontbrekend feit vullen.
 """
+from boekjaar import boekjaar
 from copy import deepcopy
 from datetime import date
 from math import isfinite
@@ -32,7 +33,7 @@ def overlay_verified_facts(history, registry, observations, *, ticker):
         except (TypeError, ValueError):
             reason = 'ongeldig_boekjaar'
         rows = [row for row in result if isinstance(row, dict) and
-                isinstance(row.get('end'), str) and row['end'][:4] == str(year)]
+                isinstance(row.get('end'), str) and str(boekjaar(row['end'])) == str(year)]
         if reason is None and len(rows) != 1:
             reason = 'geen_eenduidig_bestaand_boekjaar'
         if reason is None and (not check['verified'] or not check['eligible_for_manual_approval']):

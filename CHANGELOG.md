@@ -1,5 +1,13 @@
 # Changelog
 
+
+## 2026.10.20-beta.27
+- **Opruimen:** `opruimlijst.txt` (178 oude bestanden: Streamlit-app, `.cmd`-starters, archief, oude modules en hun tests) en een eenmalige workflow "Opruimen oude bestanden" met proefrun. De nachtelijke update en alle overgebleven tests werken aantoonbaar zonder die bestanden (op een kopie getest). Streamlit uit `requirements.txt`.
+- **McDonald's:** aandelen die in miljoenen worden gerapporteerd (727 i.p.v. 727.000.000) worden vermenigvuldigd met 1.000.000, maar alleen onder 100.000 en de herberekende EPS moet de gerapporteerde EPS nog steeds reproduceren.
+- **Johnson & Johnson:** 52/53-wekenjaren. Nieuw `boekjaar.py`: een afsluitdatum op 1-7 januari hoort bij het vorige boekjaar, zodat twee boekjaren niet meer in één kalenderjaar botsen.
+- **Europa:** Sanofi, Ferrari, Philips, Stellantis, Nokia en Eni (euronotering, SEC 20-F in euro) en **VS/Ierland:** Disney, Honeywell, Linde, Thermo Fisher erbij. Ze krijgen alleen een oordeel als alle controles slagen.
+- **NAIC/Dashboard:** tegel "Volglijst met volledig ingevulde checklist"; meer tagnamen voor afschrijving, dividend en lange schuld.
+
 ## 2026.10.20-beta.26
 Run van 14:09 UTC: 27 van 37 bevestigd. De 15 nieuwe aandelen leverden 13 groen op (AstraZeneca, Novartis, Adobe, Salesforce, Oracle, Cisco, PepsiCo, Merck, AbbVie, Home Depot, UnitedHealth, Texas Instruments, Caterpillar), naast de eerdere 14. Niet bevestigd: McDonald's (aantal aandelen springt 0,00 keer tussen 2020 en 2021: waarschijnlijk een verkeerde eenheid in de bron, niet te zien zonder de waarden) en TotalEnergies (in de SEC-gegevens staat geen winst per aandeel).
 - **TotalEnergies vervangen** door Amgen en Nike (TotalEnergies is in de bron niet te controleren; een aandeel dat nooit bevestigd kan worden, is ruis).

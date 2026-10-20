@@ -54,3 +54,12 @@ test('tabel: onbekende sorteersleutel valt terug op naam; invoer blijft ongewijz
   assert.equal(JSON.stringify(K), kopie);
   assert.deepEqual(D.tabel(undefined), []);
 });
+
+test('checklistStand: telt leeg, bezig en klaar; dubbele tickers tellen één keer', () => {
+  const Ck = require('../js/checklist.js');
+  const alle = {}; Ck.PUNTEN.forEach(p => { alle[p.id] = { a: 'ja' }; });
+  const data = { A: alle, B: { [Ck.PUNTEN[0].id]: { a: 'nee' } }, C: {} };
+  const s = D.checklistStand(['A', 'B', 'C', 'A'], t => data[t], Ck.voortgang);
+  assert.deepEqual(s, { volglijst: 3, klaar: 1, bezig: 1, leeg: 1 });
+  assert.deepEqual(D.checklistStand(undefined, () => ({}), Ck.voortgang), { volglijst: 0, klaar: 0, bezig: 0, leeg: 0 });
+});

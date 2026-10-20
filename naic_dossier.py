@@ -2,6 +2,7 @@
 
 Geen nieuwe bronrequests, geen fictieve cijfers, geen automatische beleggingssignalen.
 """
+from boekjaar import boekjaar
 from datetime import date
 from collections import Counter
 from math import isfinite
@@ -73,7 +74,7 @@ def build_dossier(history, ticker, normalized=None, *, source="SEC", sector=None
         parent_profit = _value(h, 'Winst toerekenbaar aan aandeelhouders')
         eps_info = normalized.get(h['end'], {})
         eps = eps_info.get('EPS vergelijkbaar')
-        rows.append({'year': end.year, 'end': end, 'currency': unit, 'sales': sales,
+        rows.append({'year': boekjaar(end), 'end': end, 'currency': unit, 'sales': sales,
                      'profit': profit, 'parent_profit': parent_profit, 'reported_eps': reported_eps,
                      'cash': cash, 'capex': capex, 'equity': equity,
                      'eps': eps if _number(eps) else None,

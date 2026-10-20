@@ -3,6 +3,7 @@
 Een gecontroleerde primaire bron is GEEN onafhankelijke tweede bron en geeft
 geen toestemming om IFRS en US-GAAP als onderling vergelijkbaar te behandelen.
 """
+from boekjaar import boekjaar
 from copy import deepcopy
 from datetime import date
 from urllib.parse import urlparse
@@ -19,7 +20,7 @@ def complete_from_primary_sources(history, registry, *, ticker):
         period = record.get('period_end')
         try:
             year = int(record['year'])
-            if date.fromisoformat(period).year != year:
+            if boekjaar(period) != year:
                 reason = 'jaar_en_periode_verschillen'
         except (KeyError, TypeError, ValueError):
             reason = 'ongeldige_periode'

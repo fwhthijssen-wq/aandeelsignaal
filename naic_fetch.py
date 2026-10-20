@@ -11,6 +11,12 @@ SEC_LISTING_MAP = {
     'SAP.DE': 'SAP',    # SAP SE, SEC Form 20-F
     'SHELL.AS': 'SHEL',  # Shell plc, SEC Form 20-F (rapporteert in USD)
     'UNA.AS': 'UL',      # Unilever PLC, SEC Form 20-F
+    'SAN.PA': 'SNY',     # Sanofi, SEC Form 20-F (EUR)
+    'RACE.MI': 'RACE',   # Ferrari NV, SEC Form 20-F (EUR)
+    'PHIA.AS': 'PHG',    # Koninklijke Philips NV, SEC Form 20-F (EUR)
+    'STLAM.MI': 'STLA',  # Stellantis NV, SEC Form 20-F (EUR)
+    'NOKIA.HE': 'NOK',   # Nokia Oyj, SEC Form 20-F (EUR)
+    'ENI.MI': 'E',       # Eni SpA, SEC Form 20-F (EUR)
 }
 
 

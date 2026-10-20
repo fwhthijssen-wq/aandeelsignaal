@@ -37,6 +37,17 @@
     };
   }
 
+  /* Hoeveel volglijst-aandelen heeft u een kwaliteitscheck gedaan? Alleen tellen; geen oordeel, geen score. */
+  function checklistStand(volTickers, antwoordenVan, voortgang) {
+    var uit = { volglijst: 0, klaar: 0, bezig: 0, leeg: 0 }, gezien = {};
+    (volTickers || []).forEach(function (t) {
+      if (gezien[t]) return; gezien[t] = true; uit.volglijst++;
+      var v = voortgang(antwoordenVan(t));
+      if (v.beantwoord === 0) uit.leeg++; else if (v.beantwoord >= v.totaal) uit.klaar++; else uit.bezig++;
+    });
+    return uit;
+  }
+
   /* Waar staat de koers nu in uw eigen koerszones? Alleen bij een bevestigd aandeel met verse koers; anders null met reden.
      De zones zijn uw eigen aannames, geen koersdoel. */
   function zoneOverzicht(zones, recs, vandaag, gate, naic) {
@@ -71,6 +82,6 @@
     });
   }
 
-  var api = { zoneOverzicht: zoneOverzicht, spreiding: spreiding, aandacht: aandacht, tabel: tabel, KOLOMMEN: KOLOMMEN };
+  var api = { zoneOverzicht: zoneOverzicht, spreiding: spreiding, aandacht: aandacht, checklistStand: checklistStand, tabel: tabel, KOLOMMEN: KOLOMMEN };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Dashboard = api;
 })(typeof self !== 'undefined' ? self : this);

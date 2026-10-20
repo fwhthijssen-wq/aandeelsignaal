@@ -1,4 +1,5 @@
 """Read-only practice validation for ESEF and optionally SEC; never approves valuations."""
+from boekjaar import boekjaar
 import argparse
 import json
 from datetime import date, datetime, timezone
@@ -125,7 +126,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
             continue
         # A source period remains part of the requested window even when
         # its currency or facts later fail validation.
-        eligible_source_years.append(_date.fromisoformat(end).year)
+        eligible_source_years.append(boekjaar(end))
         if not is_currency_code(unit):
             rejected.append('ongeldige valuta')
             continue
@@ -224,23 +225,23 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
     # Do not count both as independent NAIC years.
     closes_by_year = {}
     for row in accepted:
-        closes_by_year.setdefault(row['end'][:4], set()).add(row['end'])
+        closes_by_year.setdefault(str(boekjaar(row['end'])), set()).add(row['end'])
     ambiguous_calendar_years = {year for year, ends in closes_by_year.items()
                                 if len(ends) > 1}
     for year in sorted(ambiguous_calendar_years):
         rejected.append(f'meerdere boekjaareindes in kalenderjaar {year}')
     accepted = [row for row in accepted
-                if row['end'][:4] not in ambiguous_calendar_years]
+                if str(boekjaar(row['end'])) not in ambiguous_calendar_years]
     # Only the latest ten distinct calendar years belong to this audit window.
     # Older history is retained in the source, but must not inflate coverage.
     window_start = latest_source_year - 9 if latest_source_year is not None else None
-    out_of_window = [r for r in accepted if int(r['end'][:4]) < window_start] if window_start is not None else []
-    accepted = [r for r in accepted if int(r['end'][:4]) >= window_start] if window_start is not None else []
+    out_of_window = [r for r in accepted if boekjaar(r['end']) < window_start] if window_start is not None else []
+    accepted = [r for r in accepted if boekjaar(r['end']) >= window_start] if window_start is not None else []
     coverage = dict(Counter(name for row in accepted for name in row['concepts']))
     # An audit must not suggest a comparable ten-year history when reporting
     # currency changes or years are missing. No implicit FX conversion.
     currencies = sorted({row['currency'] for row in accepted})
-    calendar_years = sorted({int(row['end'][:4]) for row in accepted})
+    calendar_years = sorted({boekjaar(row['end']) for row in accepted})
     requested_years = list(range(latest_source_year - 9, latest_source_year + 1)) if latest_source_year is not None else []
     missing_years = [year for year in requested_years if year not in calendar_years]
     issues = []
@@ -312,7 +313,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
                 'Omzet', 'Nettowinst', 'Winst per aandeel (verwaterd)',
                 'Operationele kasstroom', 'Investeringen in vaste activa', 'Eigen vermogen')
                 if concept not in next((row['concepts'] for row in final_year_details
-                                        if int(row['end'][:4]) == year), [])]
+                                        if boekjaar(row['end']) == year), [])]
         } for year in requested_years}
         historic_gap_audit = analyze_historical_gaps(gap_coverage, relevant_records, ticker)
         historic_evidence_error = None
@@ -379,7 +380,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
             'currencies': currencies,
             'years_requested': 10, 'window_latest_source_year': latest_source_year,
             'missing_calendar_years': missing_years,
-            'older_years_excluded': sorted({int(r['end'][:4]) for r in out_of_window}),
+            'older_years_excluded': sorted({boekjaar(r['end']) for r in out_of_window}),
             'quality_issues': issues,
             'concept_coverage': final_coverage, 'year_details': final_year_details,
             'rejections': rejected,
