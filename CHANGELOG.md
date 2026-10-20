@@ -1,5 +1,7 @@
 # Changelog
 
+## 2026.10.20-beta.37
+- **Back-upscherm duidelijker:** uitleg waarom een back-up nuttig is, de datum van de laatste back-up vetgedrukt, en twee genummerde stappen (1 maken, 2 terugzetten). De tekstvariant staat onder 'Lukt het bestand niet?'.
 
 ## 2026.10.20-beta.36
 - **Dashboard:** onder elk aandeel staat "Plek in bereik 24% · 3,1 : 1" (uit de koersreeks van 10 jaar), en je kunt sorteren op die plek (laagste eerst) of op de verhouding opwaarts/neerwaarts. Geldt ook voor aandelen zonder bevestigde cijfers, want het is een koersfeit; een label verschijnt daar nog steeds niet.
