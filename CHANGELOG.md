@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.20-beta.16
+- Versienummer staat nu onderaan Instellingen (een test bewaakt dat het gelijk is aan het bestand VERSION).
+- Diagnose: voor elk aandeel met minder dan 10 onderbouwde jaren schrijft de nachtelijke run in `status.json` (veld `diagnose`) welke winst- en aandelennamen de SEC-gegevens van het bedrijf bevatten (eenheid, soort indiening, jaarbereik). Bedoeld om Shell (alle EPS ontbreekt) gericht te kunnen oplossen. Mislukt de diagnose, dan staat de reden erin; de run mislukt nooit door de diagnose.
+- 466 tests.
+
 ## 2026.10.20-beta.15
 **Nieuw: Mijn portefeuille. Herstel: de app ververst zichzelf nu op elk toestel.**
 - Nieuw scherm Portefeuille: aankopen invoeren (aandeel, aantal, aankoopkoers, valuta, datum), met waarde nu, winst of verlies en percentage per aankoop en per valuta. Alles blijft op het toestel en gaat mee in de back-up (samenvoegen dubbelt niets, oude back-ups blijven werken).

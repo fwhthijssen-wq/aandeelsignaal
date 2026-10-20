@@ -38,6 +38,48 @@ def _getal(x):
     return x if isinstance(x, (int, float)) and not isinstance(x, bool) and x == x and abs(x) != float('inf') else None
 
 
+DIAGNOSE_DELEN = ('PerShare', 'WeightedAverage', 'ProfitLossAttributable', 'NetIncomeLoss', 'ProfitLoss')
+
+
+def eps_tag_overzicht(payload):
+    """Compact overzicht van de winst- en aandelenconcepten in een SEC-companyfacts-bestand.
+
+    Alleen voor diagnose: laat zien welke namen een bedrijf werkelijk gebruikt (eenheid, soorten indiening,
+    jaarbereik), zodat een bedrijf waarvan alle EPS ontbreekt gericht kan worden aangepakt. Verzint niets.
+    """
+    uit = {}
+    facts = payload.get('facts') if isinstance(payload, dict) else None
+    if not isinstance(facts, dict):
+        return uit
+    for taxonomie, tags in sorted(facts.items()):
+        if not isinstance(tags, dict):
+            continue
+        for tag, blok in sorted(tags.items()):
+            if not any(d in tag for d in DIAGNOSE_DELEN) or not isinstance(blok, dict):
+                continue
+            for eenheid, rijen in sorted((blok.get('units') or {}).items()):
+                rijen = [r for r in rijen if isinstance(r, dict)] if isinstance(rijen, list) else []
+                jaren = sorted({r.get('fy') for r in rijen if isinstance(r.get('fy'), int)})
+                uit[f'{taxonomie}:{tag} [{eenheid}]'] = {
+                    'n': len(rijen), 'indieningen': sorted({str(r.get('form')) for r in rijen}),
+                    'fy': [jaren[0], jaren[-1]] if jaren else None,
+                    'met_accn': sum(1 for r in rijen if r.get('accn'))}
+    return uit
+
+
+def sec_diagnose(sec_ticker, email, fetcher=None):
+    """Haalt het companyfacts-bestand op en geeft het overzicht; bij een fout staat de reden erin."""
+    try:
+        from source_engine import CIK_MAP_URL, FACTS_URL, cik_for_ticker, fetch_json
+        fetcher = fetcher or fetch_json
+        cik, _ = cik_for_ticker(sec_ticker, fetcher(CIK_MAP_URL, email))
+        if cik is None:
+            return {'fout': f'{sec_ticker} niet in de SEC-lijst'}
+        return {'sec_ticker': sec_ticker, 'concepten': eps_tag_overzicht(fetcher(FACTS_URL.format(cik=cik), email))}
+    except Exception as exc:  # diagnose mag de run nooit laten mislukken
+        return {'fout': f'{type(exc).__name__}: {exc}'[:200]}
+
+
 def gegevens_uit_sec(sec, gecontroleerd_op):
     """Zet de SEC-samenvatting (summarize_sec) om naar het gegevensblok voor de webapp.
 
@@ -124,7 +166,7 @@ def maak_status(bestand):
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
                     'open_jaren': open_jaren, 'toelichting': g.get('eps_toelichting'),
-                    'waarschuwingen': g.get('waarschuwingen')})
+                    'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose')})
     return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
 
 
@@ -154,12 +196,13 @@ def demo(pad_resultaat):
     return maak_bestand(records, bron='Demo: eerder gecontroleerde praktijkrun; geen koersen')
 
 
-def live(email, fetch_prijzen=None, sec_samenvatting=None):
+def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
+    diagnose = diagnose or sec_diagnose
     vandaag = date.today().isoformat()
     records = []
     for meta in CATALOGUS:
@@ -168,6 +211,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None):
             gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
         except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
             gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+        if (gegevens.get('eps_verified_years') or 0) < 10:
+            gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         try:
             koers = koers_uit_reeks(fetch_prijzen(ticker))
         except Exception:
