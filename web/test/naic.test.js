@@ -82,3 +82,32 @@ test('investeringsratio: capex/afschrijving, beide positief', () => {
   assert.deepEqual(r.map(x => x.waarde), [1.5, null, null, null]);
   assert.deepEqual(N.investeringsratio(undefined), []);
 });
+
+test('historischKW: hoog en laag gedeeld door winst per aandeel; ontbrekend of niet-positief geeft null', () => {
+  const jr = [
+    { year: 2020, comparable_eps: 3.17, koers_hoog: 58.3, koers_laag: 31.9 },
+    { year: 2021, comparable_eps: -1.2, koers_hoog: 60.1, koers_laag: 40.2 },
+    { year: 2022, comparable_eps: 4.1, koers_hoog: null, koers_laag: 30.5 },
+    { year: 2023, comparable_eps: 4.9 }
+  ];
+  const r = N.historischKW(jr);
+  assert.deepEqual(r[0], { year: 2020, hoog: 18.4, laag: 10.1 });
+  assert.deepEqual(r[1], { year: 2021, hoog: null, laag: null });
+  assert.deepEqual(r[2], { year: 2022, hoog: null, laag: 7.4 });
+  assert.deepEqual(r[3], { year: 2023, hoog: null, laag: null });
+  assert.deepEqual(N.historischKW(undefined), []);
+});
+
+test('kwGemiddelden: laatste n jaren met beide waarden, minstens 3', () => {
+  const reeks = [{ year: 2016, hoog: 30, laag: 20 }, { year: 2017, hoog: 20.5, laag: 10.25 }, { year: 2018, hoog: null, laag: 9 },
+    { year: 2019, hoog: 18.2, laag: 11.1 }, { year: 2020, hoog: 22.7, laag: 12.3 }];
+  assert.deepEqual(N.kwGemiddelden(reeks, 5), { hoog: 22.9, laag: 13.4, jaren: 4, van: 2016, tot: 2020 });
+  assert.deepEqual(N.kwGemiddelden(reeks, 3), { hoog: 20.5, laag: 11.2, jaren: 3, van: 2017, tot: 2020 });
+  assert.equal(N.kwGemiddelden(reeks.slice(0, 2), 5), null);
+  assert.equal(N.kwGemiddelden(undefined, 5), null);
+});
+
+test('dividendRendement: dividend / gemiddelde koers van het jaar', () => {
+  const r = N.dividendRendement([{ year: 2022, dividend_ps: 1.13, koers_hoog: 60.3, koers_laag: 40.1 }, { year: 2023, dividend_ps: null, koers_hoog: 50, koers_laag: 40 }]);
+  assert.deepEqual(r, [{ year: 2022, waarde: 2.3 }, { year: 2023, waarde: null }]);
+});

@@ -67,7 +67,7 @@ class WebdataTests(unittest.TestCase):
                     {'end': '2021-09-25', 'start': '2020-09-27', 'val': 15234000000, 'form': '10-K', 'filed': '2025-10-31', 'accn': 'x'}]}}}}}
             raise OSError('geen verbinding')
 
-        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
+        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, historie_ophalen=lambda t: ([], []), sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
                           payload_ophalen=payload_ophalen)
         apple = next(r for r in bestand['aandelen'] if r['ticker'] == 'AAPL')
         self.assertEqual(apple['koers']['datum'], '2026-10-19')
@@ -90,7 +90,7 @@ class WebdataTests(unittest.TestCase):
 
         def kapot(t, e):
             raise RuntimeError('boem')
-        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
+        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
         g = bestand['aandelen'][0]['gegevens']
         self.assertEqual(g['eps_status'], 'independently_verified')
         self.assertTrue(all(j.get('dividends_paid') is None for j in g['jaren']))
@@ -130,7 +130,8 @@ class ValutaEnStatusTests(unittest.TestCase):
         bestand = bw.maak_bestand([bw.maak_record(('AAA', 'Aaa', 'VS', 'USD', 'NYSE'), gegevens={
             'currencies': ['USD'], 'jaren': [{'year': 1, 'dividends_paid': 5.0, 'pretax_income': None}, {'year': 2, 'dividends_paid': 0.0}], 'splits': []})])
         st = bw.maak_status(bestand)['aandelen'][0]['extra_dekking']
-        self.assertEqual(st, {'pretax_income': 0, 'depreciation': 0, 'dividends_paid': 2, 'long_term_debt': 0})
+        self.assertEqual(st, {'pretax_income': 0, 'depreciation': 0, 'dividends_paid': 2, 'long_term_debt': 0,
+                              'koers_hoog': 0, 'koers_laag': 0, 'dividend_ps': 0})
 
     def test_jaarwaarden_alleen_jaarverslagen_van_een_jaar_en_ruis_valt_weg(self):
         def r(end, start, val, form='10-K'):

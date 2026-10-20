@@ -218,6 +218,35 @@ class WebUi(unittest.TestCase):
         pg.wait_for_timeout(200)
         return pg
 
+    def test_kw_historie_gemiddelden_en_overnemen_in_koerszones(self):
+        c = self.b.new_context(viewport={'width': 320, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL'){
+            a.gegevens.jaren.forEach(function(j){if(typeof j.comparable_eps==='number'&&j.comparable_eps>0){
+              j.koers_hoog=j.comparable_eps*21.37;j.koers_laag=j.comparable_eps*11.13;j.dividend_ps=j.comparable_eps*0.2;}});}});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""")
+        pg = c.new_page()
+        fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX + '#/a/AAPL/waarde')
+        pg.wait_for_timeout(200)
+        sec = pg.locator('[data-kw-historie]')
+        self.assertIn('Koers/winst in het verleden', sec.inner_text())
+        self.assertIn('hoog 21,4, laag 11,1', pg.locator('[data-kw-gem]').inner_text())
+        self.assertIn('Dividend per aandeel gedeeld door de gemiddelde koers', sec.inner_text())
+        pg.click('#kw-over')
+        self.assertEqual(pg.input_value('#v-z-kwh'), '21.4')
+        self.assertEqual(pg.input_value('#v-z-kwl'), '11.1')
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(fouten, [])
+
+    def test_kw_historie_zonder_koershistorie_toont_onbekend(self):
+        pg = self._naic_extra_pagina(False)
+        t = pg.locator('[data-kw-historie]').inner_text()
+        self.assertIn('Onbekend', t)
+        self.assertEqual(pg.locator('#kw-over').count(), 0)
+
     def test_naic_extra_kentallen_en_bank_krijgt_ze_niet(self):
         pg = self._naic_extra_pagina(False)
         t = pg.inner_text('main')

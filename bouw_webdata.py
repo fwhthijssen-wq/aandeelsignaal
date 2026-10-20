@@ -159,6 +159,22 @@ def sec_diagnose(sec_ticker, email, fetcher=None):
 
 
 EXTRA_VELDEN = ('pretax_income', 'depreciation', 'dividends_paid', 'long_term_debt')
+KOERS_VELDEN = ('koers_hoog', 'koers_laag', 'dividend_ps')
+
+
+def voeg_koershistorie_toe(gegevens, punten, dividenden, valuta):
+    """Per jaar hoogste/laagste koers en dividend per aandeel. Alleen als koers en jaarcijfers dezelfde, enige valuta hebben
+    (geen omrekening). Anders of bij te weinig koersen blijft alles None."""
+    from koershistorie import jaarkoersen
+    jaren = gegevens.get('jaren') or []
+    valutas = gegevens.get('currencies') or sorted({j.get('currency') for j in jaren if j.get('currency')})
+    ok = len(valutas) == 1 and valutas[0] == valuta
+    res = jaarkoersen(punten, dividenden, [j.get('end') for j in jaren]) if ok else {}
+    for j in jaren:
+        rij = res.get(j.get('end')) or {}
+        for veld in KOERS_VELDEN:
+            j[veld] = _getal(rij.get(veld))
+    return gegevens
 
 
 def voeg_extra_toe(gegevens, payload):
@@ -301,7 +317,7 @@ def maak_status(bestand):
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
                     'open_jaren': open_jaren, 'einddata': [j.get('end') for j in g.get('jaren') or []],
-                    'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN},
+                    'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN + KOERS_VELDEN},
                     'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose'),
                     'extra_diagnose': g.get('extra_diagnose')})
@@ -365,7 +381,7 @@ def extra_namen(payload, max_per_veld=10):
     return uit
 
 
-def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None):
+def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
@@ -373,6 +389,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
     payload_ophalen = payload_ophalen or sec_payload
+    historie_ophalen = historie_ophalen or _yahoo_historie
     vandaag = date.today().isoformat()
     records = []
     for meta in CATALOGUS:
@@ -389,6 +406,12 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
+        if gegevens.get('jaren'):
+            try:
+                punten, dividenden = historie_ophalen(ticker)
+                voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
+            except Exception:
+                pass            # geen koershistorie: K/W-historie en dividendrendement ontbreken, de rest blijft geldig
         if (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         try:
@@ -397,6 +420,15 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             koers = None
         records.append(maak_record(meta, koers=koers, gegevens=gegevens))
     return maak_bestand(records, bron='SEC companyfacts en Yahoo Finance (dagkoersen)')
+
+
+def _yahoo_historie(ticker):
+    """(dagkoersen, dividenden) van de afgelopen ~12 jaar; koersen splitsingscorrect maar niet dividendgecorrigeerd."""
+    import yfinance as yf
+    h = yf.Ticker(ticker).history(period='12y', interval='1d', auto_adjust=False, actions=True)
+    punten = [(idx.date().isoformat(), float(v)) for idx, v in h['Close'].dropna().items()]
+    dividenden = [(idx.date().isoformat(), float(v)) for idx, v in h['Dividends'].items() if v and v > 0] if 'Dividends' in h else []
+    return punten, dividenden
 
 
 def _yahoo_reeks(ticker):

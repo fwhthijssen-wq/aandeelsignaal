@@ -47,6 +47,28 @@
     return jaren(jr).map(function (j) { return { year: j.year, waarde: pos(j.capex) && pos(j.depreciation) ? rond(j.capex / j.depreciation, 2) : null }; });
   }
 
+  /* K/W per jaar uit hoogste en laagste koers van het boekjaar gedeeld door de (splitsingscorrecte) winst per aandeel.
+     Alleen bij positieve winst en bekende koers; anders null. */
+  function historischKW(jr) {
+    return jaren(jr).map(function (j) {
+      var e = j.comparable_eps;
+      return { year: j.year, hoog: pos(e) && pos(j.koers_hoog) ? rond(j.koers_hoog / e, 1) : null, laag: pos(e) && pos(j.koers_laag) ? rond(j.koers_laag / e, 1) : null };
+    });
+  }
+  /* Gemiddelde hoge en lage K/W over de laatste n jaren met beide waarden; minstens 3 jaar nodig, anders null. */
+  function kwGemiddelden(reeks, n) {
+    var v = (reeks || []).filter(function (x) { return ok(x.hoog) && ok(x.laag); }).slice(-(n || 5));
+    if (v.length < 3) return null;
+    var som = function (k) { return v.reduce(function (a, x) { return a + x[k]; }, 0) / v.length; };
+    return { hoog: rond(som('hoog'), 1), laag: rond(som('laag'), 1), jaren: v.length, van: v[0].year, tot: v[v.length - 1].year };
+  }
+  /* Dividend per aandeel / gemiddelde van hoogste en laagste koers van dat jaar, in procenten. */
+  function dividendRendement(jr) {
+    return jaren(jr).map(function (j) {
+      return { year: j.year, waarde: pos(j.dividend_ps) && pos(j.koers_hoog) && pos(j.koers_laag) ? rond(j.dividend_ps / ((j.koers_hoog + j.koers_laag) / 2) * 100, 1) : null };
+    });
+  }
+
   /* Koerszones: toekomstig hoog en laag, en waar de koers nu in dat bereik staat. Gooit bij ongeldige invoer. */
   function koerszones(i) {
     var n = i.jaren;
@@ -70,6 +92,6 @@
     return uit;
   }
 
-  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, koerszones: koerszones };
+  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

@@ -1,6 +1,11 @@
 # Changelog
 
 
+## 2026.10.20-beta.31
+- **NAIC: koers/winst in het verleden.** Per boekjaar de hoogste en laagste slotkoers gedeeld door de winst per aandeel, het gemiddelde over de laatste 5 jaar (minstens 3 jaar nodig), en het dividendrendement. Knop "Neem deze K/W over in mijn koerszones" vult de hoge en lage K/W in je eigen zones.
+- Nieuw `koershistorie.py`; de nachtelijke update haalt 12 jaar dagkoersen en dividenden op (koersen splitsingscorrect, niet dividendgecorrigeerd). Jaar met minder dan 200 handelsdagen of een gat aan begin of eind: onbekend. Koers in een andere valuta dan de jaarcijfers: onbekend, nooit omgerekend. Geen gevonden dividend betekent onbekend, niet nul.
+- Het is een kijk op wat de markt in het verleden betaalde; geen koersdoel en geen invloed op het signaal.
+
 ## 2026.10.20-beta.30
 - **Dashboard:** keuzelijst "Trend 200 dagen" (alle / koers eronder / koers erboven). Alleen aandelen met een verse koers en een bekend 200-daags gemiddelde doen mee; de rest valt bij een gekozen trend weg. Is een hulp om te zoeken, geen signaal.
 
