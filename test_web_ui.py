@@ -150,6 +150,37 @@ class WebUi(unittest.TestCase):
         self.assertIn('Aankopen zonder waarde', txt)   # MSFT: koers verouderd
         self.assertEqual(fouten, [])
 
+    def _naic_extra_pagina(self, bank):
+        c = self.b.new_context(viewport={'width': 320, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(d){var t=new Date().toISOString().slice(0,10);
+          d.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.koers={slot:200,datum:t,sma50:180};
+            a.gegevens.jaren.forEach(function(j,i){if(i>0){j.pretax_income=j.net_income*1.2;j.dividends_paid=j.net_income*0.25;
+              j.long_term_debt=j.equity*0.5;j.depreciation=j.capex*0.8;}});
+            if(%s)a.gegevens.waarschuwingen.push('Bank: kasstroom, investeringen en winstmarge vragen sectorspecifieke interpretatie.');}});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % ('true' if bank else 'false'))
+        pg = c.new_page()
+        self.fouten = []
+        pg.on('pageerror', lambda e: self.fouten.append(str(e)))
+        pg.goto(INDEX + '#/a/AAPL/waarde')
+        pg.wait_for_timeout(200)
+        return pg
+
+    def test_naic_extra_kentallen_en_bank_krijgt_ze_niet(self):
+        pg = self._naic_extra_pagina(False)
+        t = pg.inner_text('main')
+        for kop in ('Winstmarge vóór belasting', 'Uitgekeerd deel van de winst', 'Schuld t.o.v. totaal kapitaal', 'Investeringen t.o.v. afschrijvingen'):
+            self.assertIn(kop, t)
+        self.assertEqual(pg.locator('#naic-extra ~ section svg.grafiek').count(), 4)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pb = self._naic_extra_pagina(True)
+        tb = pb.inner_text('main')
+        self.assertIn('Uitgekeerd deel van de winst', tb)
+        for kop in ('Winstmarge vóór belasting', 'Schuld t.o.v. totaal kapitaal', 'Investeringen t.o.v. afschrijvingen'):
+            self.assertNotIn(kop, tb)
+        self.assertEqual(self.fouten, [])
+
     def test_versie_in_instellingen_komt_overeen_met_versiebestand(self):
         pg = self.pagina()
         pg.goto(INDEX + '#/instellingen')

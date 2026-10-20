@@ -25,9 +25,26 @@
     return { reeks: reeks, gemiddelde: geldig.length ? rond(geldig.reduce(function (s, r) { return s + r.waarde; }, 0) / geldig.length, 1) : null, jarenMetWaarde: geldig.length };
   }
 
-  /* NAIC gebruikt winst voor belasting; dat veld hebben we niet, dus dit is de nettowinstmarge. */
+  /* Nettowinst / omzet (na belasting). De NAIC-maatstaf, winst vóór belasting, staat in margeVoorBelasting. */
   function nettomarges(jr) {
     return jaren(jr).map(function (j) { return { year: j.year, waarde: ok(j.net_income) && pos(j.sales) ? rond(j.net_income / j.sales * 100, 1) : null }; });
+  }
+
+  /* Winst vóór belasting / omzet: de marge die de NAIC bedoelt. Ontbreekt een van beide, dan null. */
+  function margeVoorBelasting(jr) {
+    return jaren(jr).map(function (j) { return { year: j.year, waarde: ok(j.pretax_income) && pos(j.sales) ? rond(j.pretax_income / j.sales * 100, 1) : null }; });
+  }
+  /* Uitgekeerd dividend (totaal) / nettowinst. Alleen bij positieve winst en een bekend, niet-negatief dividend. */
+  function uitkeringsratio(jr) {
+    return jaren(jr).map(function (j) { return { year: j.year, waarde: ok(j.dividends_paid) && j.dividends_paid >= 0 && pos(j.net_income) ? rond(j.dividends_paid / j.net_income * 100, 1) : null }; });
+  }
+  /* Langlopende schuld / (schuld + eigen vermogen). Alleen bij bekende schuld >= 0 en positief eigen vermogen. */
+  function schuldratio(jr) {
+    return jaren(jr).map(function (j) { return { year: j.year, waarde: ok(j.long_term_debt) && j.long_term_debt >= 0 && pos(j.equity) ? rond(j.long_term_debt / (j.long_term_debt + j.equity) * 100, 1) : null }; });
+  }
+  /* Investeringen in vaste activa / afschrijvingen, als verhouding (1,0 = even veel). Beide moeten positief zijn. */
+  function investeringsratio(jr) {
+    return jaren(jr).map(function (j) { return { year: j.year, waarde: pos(j.capex) && pos(j.depreciation) ? rond(j.capex / j.depreciation, 2) : null }; });
   }
 
   /* Koerszones: toekomstig hoog en laag, en waar de koers nu in dat bereik staat. Gooit bij ongeldige invoer. */
@@ -53,6 +70,6 @@
     return uit;
   }
 
-  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, koerszones: koerszones };
+  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

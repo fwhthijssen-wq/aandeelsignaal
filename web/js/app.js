@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.21';
+  var APP_VERSIE = '2026.10.20-beta.22';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -323,7 +323,21 @@
     });
     return '<svg class="grafiek" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="' + h(aria) + '">' + s + '</svg>';
   }
-  function naicHtml(jr) {
+  function naicExtraHtml(jr, bank) {
+    function heeft(r) { return r.some(function (x) { return x.waarde !== null; }); }
+    function blok(titel, reeks, aria, fmt, uitleg) {
+      return '<section><h2>' + h(titel) + '</h2>' + (heeft(reeks) ? staven(reeks, aria, fmt) + '<p class="zacht">' + uitleg + ' Een ontbrekende staaf betekent: het cijfer is in de bron niet eenduidig te vinden.</p>'
+        : '<p class="zacht">Onbekend: dit cijfer is in de jaarverslagen niet eenduidig te vinden, dus er wordt niets getoond.</p>') + '</section>';
+    }
+    var pm = Naic.margeVoorBelasting(jr), ur = Naic.uitkeringsratio(jr), sr = Naic.schuldratio(jr), ir = Naic.investeringsratio(jr);
+    var s = '<div id="naic-extra"><h2 style="margin-top:20px">Meer over het management</h2><p class="zacht">Cijfers die iets zeggen over hoe het bedrijf met geld omgaat. Het zijn aanwijzingen, geen oordeel.</p></div>';
+    if (bank) return s + '<div class="melding"><b>Bank</b><span>Voor banken zeggen winstmarge vóór belasting, schuld en investeringen weinig. Daarom worden ze hier niet getoond.</span></div>' + blok('Uitgekeerd deel van de winst', ur, 'Uitgekeerd dividend als percentage van de nettowinst per jaar', function (v) { return getal(v, 0); }, 'Uitgekeerd dividend gedeeld door de nettowinst, in procenten.');
+    return s + blok('Winstmarge vóór belasting', pm, 'Winstmarge vóór belasting per jaar in procenten', function (v) { return getal(v, 0); }, 'Winst vóór belasting als percentage van de omzet. Dit is de marge die de NAIC bedoelt; de definitie van “winst vóór belasting” kan per bedrijf iets verschillen.') +
+      blok('Uitgekeerd deel van de winst', ur, 'Uitgekeerd dividend als percentage van de nettowinst per jaar', function (v) { return getal(v, 0); }, 'Uitgekeerd dividend gedeeld door de nettowinst, in procenten. Boven 100% betekent meer uitkeren dan er verdiend is.') +
+      blok('Schuld t.o.v. totaal kapitaal', sr, 'Langlopende schuld als percentage van schuld plus eigen vermogen per jaar', function (v) { return getal(v, 0); }, 'Langlopende schuld gedeeld door schuld plus eigen vermogen, in procenten. Lager is veiliger; wat gebruikelijk is verschilt per sector.') +
+      blok('Investeringen t.o.v. afschrijvingen', ir, 'Investeringen in vaste activa gedeeld door afschrijvingen per jaar', function (v) { return getal(v, 1); }, 'Boven 1,0 investeert het bedrijf meer dan er aan bezittingen slijt.');
+  }
+  function naicHtml(jr, bank) {
     var gc = Naic.groeiCijfers(jr), roe = Naic.rendementEigenVermogen(jr), mg = Naic.nettomarges(jr);
     function kp(w, t) { return '<div class="kpi"><b>' + (w == null ? '–' : pct(w)) + '</b><span>' + h(t) + '</span></div>'; }
     return '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC, een Amerikaanse beleggersvereniging, in stappen. Het is een rekenhulp met uw eigen aannames, geen koersdoel en geen advies.</p></div>' +
@@ -332,7 +346,7 @@
       '<section><h2>Stap 2 · Rendement op eigen vermogen</h2>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
       '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar, in procenten.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen (bijvoorbeeld door terugkoop van aandelen) is dit getal niet te berekenen en blijft het leeg.</p></section>' +
       '<section><h2>Stap 3 · Winstmarge</h2>' + staven(mg, 'Nettowinstmarge per jaar in procenten', function (v) { return getal(v, 0); }) +
-      '<p class="zacht">Nettowinst als percentage van de omzet. De NAIC kijkt naar de winst vóór belasting; die hebben we nog niet, dus dit is de marge na belasting.</p></section>';
+      '<p class="zacht">Nettowinst als percentage van de omzet (na belasting).</p></section>' + naicExtraHtml(jr, bank);
   }
   function zonesHtml(start) {
     return '<div class="kaart-plat"><h2>Stap 4 · Koerszones</h2><p class="zacht">Wat zou de koers over een aantal jaar hoog en laag kunnen zijn bij uw aannames, en waar staat de koers nu in dat bereik? Pas de getallen aan.</p><div class="velden">' +
@@ -367,7 +381,7 @@
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return naicHtml(jr) + zonesHtml(start) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
+    return naicHtml(jr, (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); })) + zonesHtml(start) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
       veld('eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('groei', 'Groei per jaar (%)', start.groei, '1') + veld('kw', 'K/W over de horizon', start.kw, '1') + veld('jaren', 'Jaren vooruit', start.jaren, '1') + veld('rend', 'Gewenst rendement (%)', start.rend, '1') + veld('marge', 'Veiligheidsmarge (%)', start.marge, '1') +
       '</div><div id="uitkomst" class="kpis" aria-live="polite"></div></div>' +
       (r.bevestigd ? '' : '<p class="zacht">Er wordt geen vergelijking met de koers gemaakt: de gegevens zijn nog niet volledig bevestigd of de koers ontbreekt.</p>');

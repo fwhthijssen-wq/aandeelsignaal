@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026.10.20-beta.22
+Extra NAIC-kentallen over het management (uit dezelfde SEC-bestanden, geen nieuwe bron):
+- **Winstmarge vóór belasting** (de echte NAIC-maatstaf), **uitgekeerd deel van de winst** (totaal dividend gedeeld door nettowinst; bewust niet per aandeel, want dat verandert bij een aandelensplitsing), **schuld t.o.v. totaal kapitaal** en **investeringen t.o.v. afschrijvingen**, per jaar in de NAIC-tab.
+- Nieuwe module `extra_kentallen.py`: alleen jaarverslagen, alleen de valuta van het boekjaar, alleen een waarde die bij precies dat boekjaareinde hoort; twee verschillende waarden in de nieuwste indiening geven niets. Ontbreekt iets, dan is het onbekend (nooit nul) en staat er een uitleg in plaats van een grafiek.
+- Banken (ING, JPMorgan) krijgen alleen het uitgekeerde deel van de winst; marge, schuld en investeringen zeggen daar weinig.
+- Raakt de EPS-controle en het label-slot niet; een mislukte ophaalactie van deze extra cijfers laat de run nooit mislukken.
+- 6 + 2 Python-tests, 4 JS-tests, 1 browsertest; mutatiecontrole: banken-uitzondering weghalen laat de browsertest falen.
+
 ## 2026.10.20-beta.21
 Dashboard op het startscherm (geen nieuwe databronnen):
 - **Portefeuille in één blik:** waarde en rendement per valuta, aantal aankopen zonder waarde, en een spreiding per land (per valuta apart, nooit omgerekend).

@@ -93,6 +93,33 @@ def sec_diagnose(sec_ticker, email, fetcher=None):
         return {'fout': f'{type(exc).__name__}: {exc}'[:200]}
 
 
+EXTRA_VELDEN = ('pretax_income', 'depreciation', 'dividends_paid', 'long_term_debt')
+
+
+def voeg_extra_toe(gegevens, payload):
+    """Vult per jaar de extra NAIC-velden (winst vóór belasting, dividend, schuld, afschrijving) uit het
+    companyfacts-bestand. Veld ontbreekt = None. Raakt de EPS-controle en het label-slot niet."""
+    from extra_kentallen import extra_jaarcijfers
+    jaren = gegevens.get('jaren') or []
+    extra = extra_jaarcijfers(payload, jaren)
+    for j in jaren:
+        rij = extra.get(j.get('end')) or {}
+        for veld in EXTRA_VELDEN:
+            j[veld] = _getal(rij.get(veld))
+    return gegevens
+
+
+def sec_payload(sec_ticker, email, fetcher=None):
+    """Companyfacts-bestand van de SEC, of None bij elke fout (extra cijfers zijn nooit reden voor een mislukte run)."""
+    try:
+        from source_engine import CIK_MAP_URL, FACTS_URL, cik_for_ticker, fetch_json
+        fetcher = fetcher or fetch_json
+        cik, _ = cik_for_ticker(sec_ticker, fetcher(CIK_MAP_URL, email))
+        return None if cik is None else fetcher(FACTS_URL.format(cik=cik), email)
+    except Exception:
+        return None
+
+
 def gegevens_uit_sec(sec, gecontroleerd_op):
     """Zet de SEC-samenvatting (summarize_sec) om naar het gegevensblok voor de webapp.
 
@@ -212,13 +239,14 @@ def demo(pad_resultaat):
     return maak_bestand(records, bron='Demo: eerder gecontroleerde praktijkrun; geen koersen')
 
 
-def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None):
+def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
+    payload_ophalen = payload_ophalen or sec_payload
     vandaag = date.today().isoformat()
     records = []
     for meta in CATALOGUS:
@@ -227,6 +255,11 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None):
             gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
         except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
             gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+        if gegevens.get('jaren'):
+            try:
+                voeg_extra_toe(gegevens, payload_ophalen(sec_ticker_for_listing(ticker), email))
+            except Exception:
+                pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
         if (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         try:
