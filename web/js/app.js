@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.18';
+  var APP_VERSIE = '2026.10.20-beta.19';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -203,7 +203,7 @@
   }
 
   /* ---- Aandeelpagina ---- */
-  var TABS = [['samenvatting', 'Samenvatting'], ['koers', 'Koers'], ['waarde', 'Waarde'], ['gezondheid', 'Gezondheid'], ['bronnen', 'Bronnen']];
+  var TABS = [['samenvatting', 'Samenvatting'], ['koers', 'Koers'], ['waarde', 'NAIC'], ['gezondheid', 'Gezondheid'], ['bronnen', 'Bronnen']];
   function groei(a, b, jaren) { return a > 0 && b > 0 && jaren > 0 ? (Math.pow(b / a, 1 / jaren) - 1) * 100 : null; }
   function jaarLijst(g) { return (g && g.jaren ? g.jaren : []).slice().sort(function (x, y) { return x.year - y.year; }); }
   function sparkSvg(reeks, sma) {
@@ -264,14 +264,66 @@
     }
     return s + '<p class="zacht">Selectiehulp, geen beleggingsadvies.</p>';
   }
+  function staven(reeks, aria, fmt) {
+    var v = reeks.filter(function (x) { return x.waarde !== null; });
+    if (!v.length) return '<p class="zacht">Geen cijfers beschikbaar.</p>';
+    var W = 320, Ht = 140, max = Math.max.apply(null, v.map(function (x) { return Math.max(x.waarde, 0); })) || 1, bw = W / reeks.length, s = '';
+    reeks.forEach(function (x, i) {
+      var xx = i * bw + bw * .12, w = bw * .76;
+      if (x.waarde === null) { s += '<text text-anchor="middle" x="' + (xx + w / 2).toFixed(1) + '" y="' + (Ht - 40) + '">–</text>'; }
+      else {
+        var hh = Math.max(x.waarde, 0) / max * (Ht - 44);
+        s += '<rect class="stapel-b" rx="3" x="' + xx.toFixed(1) + '" y="' + (Ht - 22 - hh).toFixed(1) + '" width="' + w.toFixed(1) + '" height="' + hh.toFixed(1) + '"/><text class="waarde" text-anchor="middle" x="' + (xx + w / 2).toFixed(1) + '" y="' + (Ht - 26 - hh).toFixed(1) + '">' + fmt(x.waarde) + '</text>';
+      }
+      s += '<text text-anchor="middle" x="' + (xx + w / 2).toFixed(1) + '" y="' + (Ht - 6) + '">' + String(x.year).slice(2) + '</text>';
+    });
+    return '<svg class="grafiek" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="' + h(aria) + '">' + s + '</svg>';
+  }
+  function naicHtml(jr) {
+    var gc = Naic.groeiCijfers(jr), roe = Naic.rendementEigenVermogen(jr), mg = Naic.nettomarges(jr);
+    function kp(w, t) { return '<div class="kpi"><b>' + (w == null ? '–' : pct(w)) + '</b><span>' + h(t) + '</span></div>'; }
+    return '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC, een Amerikaanse beleggersvereniging, in stappen. Het is een rekenhulp met uw eigen aannames, geen koersdoel en geen advies.</p></div>' +
+      '<section><h2>Stap 1 · Groei per jaar</h2><div class="kpis">' + kp(gc.omzet10, 'Omzet (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.omzet5, 'Omzet, laatste 5 jaar') + kp(gc.eps10, 'Winst per aandeel (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.eps5, 'Winst per aandeel, laatste 5 jaar') + '</div>' +
+      '<p class="zacht">Gelijkmatige groei van omzet én winst is volgens de NAIC een teken van een gezond bedrijf. Een streepje betekent dat er te weinig of geen positieve cijfers zijn.</p></section>' +
+      '<section><h2>Stap 2 · Rendement op eigen vermogen</h2>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
+      '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar, in procenten.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen (bijvoorbeeld door terugkoop van aandelen) is dit getal niet te berekenen en blijft het leeg.</p></section>' +
+      '<section><h2>Stap 3 · Winstmarge</h2>' + staven(mg, 'Nettowinstmarge per jaar in procenten', function (v) { return getal(v, 0); }) +
+      '<p class="zacht">Nettowinst als percentage van de omzet. De NAIC kijkt naar de winst vóór belasting; die hebben we nog niet, dus dit is de marge na belasting.</p></section>';
+  }
+  function zonesHtml(start) {
+    return '<div class="kaart-plat"><h2>Stap 4 · Koerszones</h2><p class="zacht">Wat zou de koers over een aantal jaar hoog en laag kunnen zijn bij uw aannames, en waar staat de koers nu in dat bereik? Pas de getallen aan.</p><div class="velden">' +
+      veld('z-eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('z-groei', 'Groei per jaar (%)', start.groei, '1') + veld('z-jaren', 'Jaren vooruit', 5, '1') +
+      veld('z-kwh', 'Hoge K/W', 20, '1') + veld('z-kwl', 'Lage K/W', 10, '1') + veld('z-epsl', 'Winst per aandeel in een slecht jaar', start.eps, '0.01') +
+      '</div><div id="zones" aria-live="polite"></div></div>';
+  }
+  function zonesKoppel(rec, r) {
+    var uit = document.getElementById('zones'); if (!uit) return;
+    function lees(id) { return parseFloat(String(document.getElementById('v-' + id).value).replace(',', '.')); }
+    var ZN = { koop: 'in de onderste derde van het bereik (koopzone)', houd: 'in het middelste derde van het bereik (afwachten)', verkoop: 'in de bovenste derde van het bereik (verkoopzone)', onder: 'onder de lage koers uit uw aannames', boven: 'boven de hoge koers uit uw aannames' };
+    function reken() {
+      try {
+        var koers = r.bevestigd && rec.koers && r.koersActueel ? rec.koers.slot : null;
+        var z = Naic.koerszones({ eps: lees('z-eps'), epsLaag: lees('z-epsl'), groeiPct: lees('z-groei'), jaren: lees('z-jaren'), kwHoog: lees('z-kwh'), kwLaag: lees('z-kwl'), koers: koers });
+        var W = 320, p = function (v) { return Math.max(0, Math.min(1, (v - z.laag) / (z.hoog - z.laag))) * W; };
+        var balk = '<svg class="grafiek" viewBox="0 0 320 54" role="img" aria-label="Koerszones van laag naar hoog"><rect x="0" y="14" width="' + (W / 3) + '" height="16" fill="var(--ok-bg)" stroke="var(--ok-ink)"/><rect x="' + (W / 3) + '" y="14" width="' + (W / 3) + '" height="16" fill="var(--wait-bg)" stroke="var(--wait-ink)"/><rect x="' + (2 * W / 3) + '" y="14" width="' + (W / 3) + '" height="16" fill="var(--bad-bg, var(--line))" stroke="var(--bad-ink)"/>' +
+          (koers != null ? '<path d="M' + p(koers).toFixed(1) + ' 8 v28" stroke="var(--ink)" stroke-width="3"/><text text-anchor="middle" x="' + Math.max(24, Math.min(296, p(koers))).toFixed(1) + '" y="52">nu ' + getal(koers, 2) + '</text>' : '') + '<text x="0" y="10">' + getal(z.laag, 2) + '</text><text text-anchor="end" x="320" y="10">' + getal(z.hoog, 2) + '</text></svg>';
+        var rest = koers == null
+          ? '<div class="melding"><b>Geen vergelijking met de koers</b><span>De gegevens zijn nog niet volledig bevestigd of de koers ontbreekt. De zones hierboven zijn alleen uw eigen rekenvoorbeeld.</span></div>'
+          : '<div class="kpis"><div class="kpi"><b>' + (z.verhouding == null ? '–' : getal(z.verhouding, 1) + ' : 1') + '</b><span>Opwaarts tegen neerwaarts (NAIC-richtlijn: 3 : 1 of hoger)</span></div><div class="kpi"><b>' + pct(z.rendementPerJaar) + '</b><span>Mogelijk rendement per jaar tot de hoge koers, zonder dividend</span></div></div><p>De koers van ' + getal(koers, 2) + ' ' + h(rec.valuta) + ' ligt ' + ZN[z.zone] + '.</p>';
+        uit.innerHTML = '<div class="kpis"><div class="kpi"><b>' + getal(z.hoog, 2) + '</b><span>Hoge koers over ' + lees('z-jaren') + ' jaar</span></div><div class="kpi"><b>' + getal(z.laag, 2) + '</b><span>Lage koers</span></div></div>' + balk + rest;
+      } catch (e) { uit.innerHTML = '<div class="melding"><b>Controleer de getallen</b><span>' + h(e.message) + '</span></div>'; }
+    }
+    ['z-eps', 'z-groei', 'z-jaren', 'z-kwh', 'z-kwl', 'z-epsl'].forEach(function (i) { document.getElementById('v-' + i).addEventListener('input', reken); });
+    reken();
+  }
   function waardeHtml(rec, g, jr, r) {
     var ev = g && g.eps_status === 'independently_verified' && g.eps_verified_years >= Gate.REQUIRED_EPS_YEARS;
-    if (!ev) return '<div class="melding"><b>Nog geen rekenvoorbeeld</b><span>Het rekenvoorbeeld start pas als de winst per aandeel van 10 jaar onderbouwd is.</span></div>';
+    if (!ev) return '<div class="melding"><b>Nog geen NAIC-gids</b><span>De NAIC-gids start pas als de winst per aandeel van 10 jaar onderbouwd is.</span></div>';
     var epsJr = jr.filter(function (j) { return typeof j.comparable_eps === 'number' && j.comparable_eps > 0; });
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
+    return naicHtml(jr) + zonesHtml(start) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
       veld('eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('groei', 'Groei per jaar (%)', start.groei, '1') + veld('kw', 'K/W over de horizon', start.kw, '1') + veld('jaren', 'Jaren vooruit', start.jaren, '1') + veld('rend', 'Gewenst rendement (%)', start.rend, '1') + veld('marge', 'Veiligheidsmarge (%)', start.marge, '1') +
       '</div><div id="uitkomst" class="kpis" aria-live="polite"></div></div>' +
       (r.bevestigd ? '' : '<p class="zacht">Er wordt geen vergelijking met de koers gemaakt: de gegevens zijn nog niet volledig bevestigd of de koers ontbreekt.</p>');
@@ -399,7 +451,7 @@
       html = schermAandeel(t, tab);
       $menu.innerHTML = menuHtml(TABS.map(function (x) { return ['#/a/' + encodeURIComponent(t) + '/' + x[0], x[1], x[0]]; }), '#/a/' + encodeURIComponent(t) + '/' + tab);
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
-      na = function () { aandeelKoppel(t); if (tab === 'waarde' && rec) waardeKoppel(rec, Gate.maakRij(rec, vandaag())); };
+      na = function () { aandeelKoppel(t); if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
     } else if ((m2 = hash.match(/^#\/vergelijk(?:\/([^\/]+)\/([^\/]+))?$/))) {
       html = schermVergelijk(m2[1] ? decodeURIComponent(m2[1]).toUpperCase() : null, m2[2] ? decodeURIComponent(m2[2]).toUpperCase() : null);
       $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';

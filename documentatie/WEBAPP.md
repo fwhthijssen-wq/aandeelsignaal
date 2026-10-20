@@ -31,3 +31,4 @@ Grenzen van gratis: GitHub kan limieten wijzigen of de dienst storen; €0 is ee
 
 - **Vergelijken** (`#/vergelijk`): twee aandelen naast elkaar; jaarcijfers alleen bij volledig bevestigde aandelen.
 - **Rondleiding**: eerste keer drie schermpjes; opnieuw via Hulp.
+- **NAIC-gids** (tabblad NAIC bij elk aandeel): groei, rendement op eigen vermogen, marge en koerszones, met eigen aannames.

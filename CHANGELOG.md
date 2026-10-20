@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.20-beta.19
+- **NAIC-gids** (tabblad Waarde heet nu NAIC) in vier stappen: groei van omzet en winst (alle jaren en laatste vijf), rendement op eigen vermogen, nettowinstmarge en koerszones (hoge en lage koers over een horizon, verdeeld in drie zones, verhouding opwaarts tegen neerwaarts en mogelijk rendement per jaar). Daarna het bestaande rekenvoorbeeld.
+- Alles is een rekenhulp met uw eigen aannames. De positie van de koers in de zones en de verhouding verschijnen alleen bij een volledig bevestigd aandeel met een verse koers; anders alleen de zones zelf. Verliesjaren of vermogen kleiner dan of gelijk aan nul geven een streepje, nooit een verzonnen getal.
+- NAIC kijkt naar winst voor belasting; dat veld ontbreekt nog, dus stap 3 toont de marge na belasting (staat zo in de app). Historische K/W per jaar ontbreekt nog (vraagt jaarlijkse hoog- en laagkoersen).
+- Nieuw bestand `js/naic.js` met tests; de nieuwe regels zijn gecontroleerd door ze weg te halen.
+
 ## 2026.10.20-beta.18
 - **Rondleiding bij eerste gebruik:** drie korte schermpjes (wat de app doet, wat "Bevestigd" betekent, uw gegevens en back-up). Alleen de eerste keer; opnieuw te bekijken via Hulp. Overslaan telt als gezien. Sluit met Escape.
 - **Vergelijken:** twee aandelen naast elkaar (koers, afstand tot gemiddelde, omzetgroei, winstgroei, nettomarge, K/W). Cijfers uit de jaarverslagen verschijnen alleen bij volledig bevestigde aandelen; anders een streepje met de reden. Alleen percentages en verhoudingen (geen bedragen in verschillende valuta's naast elkaar) en nooit een winnaar.
