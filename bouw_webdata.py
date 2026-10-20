@@ -31,7 +31,7 @@ CATALOGUS = (
 )
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
-               'operating_cash_flow', 'capex', 'equity', 'eps_check')
+               'operating_cash_flow', 'capex', 'equity', 'eps_check', 'eps_reden')
 
 
 def _getal(x):

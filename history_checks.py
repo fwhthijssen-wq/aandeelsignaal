@@ -72,7 +72,7 @@ def eps_comparability(history, splits):
     return out
 
 
-def normalized_eps_history(history, splits, *, asof=None):
+def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False):
     """Voorzichtige EPS-presentatie op post-splitbasis, zonder bronwaarden te wijzigen.
 
     Alleen eenduidige expliciete SEC-ratio's worden toegepast op feiten die
@@ -122,7 +122,7 @@ def normalized_eps_history(history, splits, *, asof=None):
             valid_chronology = end_date <= filed_date <= audit_date
         except (TypeError, ValueError):
             valid_chronology = False
-        if not valid_chronology or ambiguous or not events:
+        if not valid_chronology or ambiguous or (not events and not geen_splitsingen):
             result[end] = {'EPS vergelijkbaar': None, 'Status': 'Niet vast te stellen: splitinformatie ontbreekt of is tegenstrijdig', 'Factor': None}
             continue
         factor = 1.0
@@ -132,7 +132,8 @@ def normalized_eps_history(history, splits, *, asof=None):
         result[end] = {
             'EPS vergelijkbaar': round(eps['val'] / factor, 6),
             'Status': ('Voorlopig omgerekend op latere aandelenbasis' if factor != 1
-                       else 'Voorlopig: SEC-bron na splitsing of geen correctie nodig'),
+                       else ('Geen splitsing in de periode; aandelenaantal stabiel' if (geen_splitsingen and not events)
+                             else 'Voorlopig: SEC-bron na splitsing of geen correctie nodig')),
             'Factor': int(factor) if factor.is_integer() else factor,
             'EPS bron ingediend': filed,
         }

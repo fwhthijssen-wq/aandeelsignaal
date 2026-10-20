@@ -128,6 +128,35 @@ def _ratio_interval(before_values, after_values):
             (high_before + CENT_ROUNDING) / (low_after - CENT_ROUNDING))
 
 
+def share_count_continuity(history, inputs):
+    """Is het gewogen aantal aandelen over alle boekjaren stabiel (elk jaar 0,8 tot 1,2 keer het vorige)?
+
+    Een niet-gemelde splitsing of omgekeerde splitsing zou als sprong zichtbaar zijn. Ontbreekt een jaar
+    of een invoer, dan geldt de continuïteit niet als vastgesteld (nooit stilzwijgend goed).
+    """
+    rows = []
+    for row in history:
+        fact = (row.get('facts') or {}).get(EPS_FACT) if isinstance(row, dict) else None
+        end = _day(row.get('end')) if isinstance(row, dict) else None
+        if not isinstance(fact, dict) or end is None or not fact.get('accn'):
+            return False, 'EPS of indiening ontbreekt voor een boekjaar'
+        matches = [r for r in (inputs or []) if isinstance(r, dict) and r.get('end') == row.get('end')
+                   and r.get('accn') == fact.get('accn')]
+        shares = {_number(r.get('diluted_shares')) for r in matches}
+        if len(shares) != 1 or None in shares or next(iter(shares)) <= 0:
+            return False, f"aantal aandelen ontbreekt of is dubbelzinnig voor {row.get('end')}"
+        rows.append((end, next(iter(shares))))
+    rows.sort()
+    if len(rows) < 2:
+        return False, 'te weinig boekjaren'
+    for (e1, s1), (e2, s2) in zip(rows, rows[1:]):
+        if not 340 <= (e2 - e1).days <= 390:
+            return False, f'boekjaar ontbreekt tussen {e1} en {e2}'
+        if not 0.8 <= s2 / s1 <= 1.2:
+            return False, f'aantal aandelen springt tussen {e1} en {e2} ({s2 / s1:.2f} keer): mogelijk niet-gemelde splitsing'
+    return True, 'aantal aandelen stabiel over alle boekjaren'
+
+
 def verify_split_events(split_events, observations, history):
     """Geef de splitgebeurtenissen terug met bevestiging uit EPS-herberekeningen rond de splitsing.
 
@@ -199,7 +228,28 @@ def verify_split_events(split_events, observations, history):
                         'Verificatie bewijs': [entry for _, entry in supporting],
                         'Verificatie venster': {'laatste_indiening_voor': last_before.isoformat(),
                                                 'eerste_indiening_na': first_after.isoformat()}})
-    return out
+    return _markeer_dubbele_aankondigingen(out)
+
+
+def _markeer_dubbele_aankondigingen(events):
+    """Een tegengesproken gebeurtenis met dezelfde verhouding als een bevestigde splitsing die
+    ten hoogste een jaar later ligt, is dezelfde splitsing onder de datum van de aankondiging.
+    Zij blokkeert dan niet; zij telt ook niet mee voor de omrekening."""
+    confirmed = [(_day(e.get('Datum')), _number(e.get('Waarde SEC'))) for e in events
+                 if isinstance(e, dict) and e.get('Datumtype') == 'effectieve_splitdatum']
+    result = []
+    for e in events:
+        if (isinstance(e, dict) and e.get('Datumtype') != 'effectieve_splitdatum'
+                and str(e.get('Verificatie reden') or '').startswith('EPS-herberekening in latere indieningen spreekt')):
+            when, ratio = _day(e.get('Datum')), _number(e.get('Waarde SEC'))
+            match = [c for c, r in confirmed if when and c and ratio is not None and r == ratio
+                     and 0 < (c - when).days <= 366]
+            if match:
+                e = {**e, 'Datumtype': 'dubbel_van_bevestigde_splitsing',
+                     'Verificatie reden': 'dezelfde splitsing onder een eerdere datum (waarschijnlijk de aankondiging); '
+                                          f'bevestigde splitsing op {min(match).isoformat()}'}
+        result.append(e)
+    return result
 
 
 # ---------------------------------------------------------------- samenhangende controle
@@ -219,10 +269,11 @@ def verify_eps(result, safe_history, audit_date):
         if not isinstance(event, dict):
             split_audit.append({'status': 'rejected', 'reason': 'geen gestructureerde gebeurtenis'})
             continue
-        if event.get('Datumtype') == 'niet_van_toepassing':
+        if event.get('Datumtype') in ('niet_van_toepassing', 'dubbel_van_bevestigde_splitsing'):
             split_audit.append({'date': event.get('Datum'), 'source_tag': event.get('Tag'),
                                 'unit': event.get('Eenheid'), 'ratio': event.get('Waarde SEC'),
-                                'status': 'niet_van_toepassing',
+                                'status': ('niet_van_toepassing' if event.get('Datumtype') == 'niet_van_toepassing'
+                                           else 'dubbel'),
                                 'reasons': [event.get('Verificatie reden')]})
             continue
         ratio, unit, when, tag = (event.get('Waarde SEC'), event.get('Eenheid'),
@@ -282,9 +333,13 @@ def verify_eps(result, safe_history, audit_date):
     # the remaining subset: completeness is not established.
     rejected_split_evidence = any(item['status'] == 'rejected' for item in split_audit)
     normalization_splits = validated_splits if not rejected_split_evidence else []
+    no_splits = False
+    no_splits_reason = None
+    if (isinstance(split_source, list) and not split_source and not rejected_split_evidence):
+        no_splits, no_splits_reason = share_count_continuity(safe_history, result.get('eps_recompute_inputs'))
     eps_normalized = (normalized_eps_history(safe_history, normalization_splits,
-                                             asof=audit_date.isoformat())
-                      if normalization_splits else {})
+                                             asof=audit_date.isoformat(), geen_splitsingen=no_splits)
+                      if (normalization_splits or no_splits) else {})
 
     # Route 1: later ingediende EPS na de splitsing (alleen bruikbaar voor recente jaren).
     restated_source = result.get('restated_eps')
@@ -338,7 +393,8 @@ def verify_eps(result, safe_history, audit_date):
             'rejected_split_evidence': rejected_split_evidence,
             'normalization_splits': normalization_splits, 'eps_normalized': eps_normalized,
             'eps_reconciliation': eps_reconciliation, 'eps_verified_years': eps_verified_years,
-            'status': status, 'routes': routes}
+            'status': status, 'routes': routes, 'no_splits': no_splits,
+            'no_splits_reason': no_splits_reason}
 
 
 def gate_evidence(report):
