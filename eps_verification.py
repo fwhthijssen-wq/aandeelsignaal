@@ -159,18 +159,26 @@ def share_count_continuity(history, inputs):
     Een niet-gemelde splitsing of omgekeerde splitsing zou als sprong zichtbaar zijn. Ontbreekt een jaar
     of een invoer, dan geldt de continuïteit niet als vastgesteld (nooit stilzwijgend goed).
     """
-    rows = []
+    rows, geen_eps, geen_aandelen = [], [], []
     for row in history:
         fact = (row.get('facts') or {}).get(EPS_FACT) if isinstance(row, dict) else None
         end = _day(row.get('end')) if isinstance(row, dict) else None
+        label = row.get('end') if isinstance(row, dict) else '?'
         if not isinstance(fact, dict) or end is None or not fact.get('accn'):
-            return False, 'EPS of indiening ontbreekt voor een boekjaar'
+            geen_eps.append(str(label))
+            continue
         matches = [r for r in (inputs or []) if isinstance(r, dict) and r.get('end') == row.get('end')
                    and r.get('accn') == fact.get('accn')]
         shares = {_number(r.get('diluted_shares')) for r in matches}
         if len(shares) != 1 or None in shares or next(iter(shares)) <= 0:
-            return False, f"aantal aandelen ontbreekt of is dubbelzinnig voor {row.get('end')}"
+            geen_aandelen.append(str(label))
+            continue
         rows.append((end, next(iter(shares))))
+    if geen_eps:
+        return False, 'EPS of indiening ontbreekt voor boekjaar ' + ', '.join(geen_eps)
+    if geen_aandelen:
+        return False, ('aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar '
+                       + ', '.join(geen_aandelen))
     rows.sort()
     if len(rows) < 2:
         return False, 'te weinig boekjaren'
@@ -536,7 +544,9 @@ def verify_eps(result, safe_history, audit_date):
     for end, check in recompute.items():
         audit = eps_reconciliation.get(end)
         if audit and audit['status'] == 'niet_bewezen' and check.get('reden'):
-            audit['reden'] = f"{audit.get('reden')}; herberekening: {check['reden']}"
+            detail = (f" (herberekend {check['herberekend']}, gemeld {check['gerapporteerd']})"
+                      if 'herberekend' in check else '')
+            audit['reden'] = f"{audit.get('reden')}; herberekening: {check['reden']}{detail}"
     eps_verified_years = sorted(int(end[:4]) for end, audit in eps_reconciliation.items()
                                 if audit['status'] == 'onderbouwd')
 

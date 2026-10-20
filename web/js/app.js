@@ -27,6 +27,7 @@
   };
   var PADEN = {
     start: 'M4 11l8-7 8 7v9H5z', zoek: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14z M20 20l-4-4',
+    portefeuille: 'M4 8h16v11H4z M9 8V5h6v3 M4 13h16',
     volglijst: 'M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.4l6.1-.8z',
     hulp: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7 M12 17h.01',
     samenvatting: 'M5 4h14v16H5z M9 9h6 M9 13h6', koers: 'M4 17l5-5 4 4 7-8',
@@ -53,7 +54,7 @@
     return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
   }
 
-  var HOOFD = [['#/', 'Start', 'start'], ['#/zoek', 'Zoeken', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/hulp', 'Hulp', 'hulp']];
+  var HOOFD = [['#/', 'Start', 'start'], ['#/zoek', 'Zoeken', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille'], ['#/hulp', 'Hulp', 'hulp']];
 
   function schermStart() {
     var R = rijen(), by = {}; R.forEach(function (r) { by[r.ticker] = r; });
@@ -72,7 +73,7 @@
   }
   function backupBalk() {
     if (!winkel.backupNodig(vandaag())) return '';
-    return '<div class="melding"><b>Maak een back-up van uw volglijst</b><span>Uw gegevens staan alleen op dit toestel. Met een back-up raakt u niets kwijt.</span><a class="knop klein" href="#/instellingen">Back-up maken</a></div>';
+    return '<div class="melding"><b>Maak een back-up van uw gegevens</b><span>Uw gegevens staan alleen op dit toestel. Met een back-up raakt u niets kwijt.</span><a class="knop klein" href="#/instellingen">Back-up maken</a></div>';
   }
   function schermOverzicht() {
     var R = Gate.sorteer(rijen());
@@ -95,6 +96,58 @@
       res.innerHTML = lst.length ? lst.map(function (a) { return rijLink(a, R[a.ticker]); }).join('') : '<div class="regel"><span class="zacht">Niets gevonden. Probeer een andere naam of beurscode.</span></div>';
     }
     q.addEventListener('input', toon); toon();
+  }
+
+  /* ---- Portefeuille ---- */
+  function euro(n, valuta) { return getal(n, 2) + ' ' + h(valuta); }
+  function kleur(n) { return n > 0 ? 'var(--ok-ink)' : n < 0 ? 'var(--bad-ink)' : 'var(--ink)'; }
+  function teken(n, valuta) { return (n > 0 ? '+' : n < 0 ? '−' : '') + getal(Math.abs(n), 2) + ' ' + h(valuta); }
+  function schermPortefeuille() {
+    var res = Portefeuille.waardeer(winkel.portefeuille(), DATA.aandelen, vandaag(), Gate), s = '<section><h1>Mijn portefeuille</h1>';
+    if (!res.regels.length) {
+      s += '<div class="kaart-plat"><p>U heeft nog geen aankopen ingevoerd. Vul hieronder in wat u heeft gekocht; de app rekent uit wat het nu waard is.</p><p class="zacht">Alles blijft op dit toestel. Geen rekening, geen koppeling met uw bank.</p></div>';
+    } else {
+      s += '<div class="kpis">' + res.totalen.map(function (t) {
+        return '<div class="kpi"><b>' + (t.meegeteld ? getal(t.waarde, 2) + ' ' + h(t.valuta) : '–') + '</b><span>Waarde nu (' + h(t.valuta) + ')</span>' +
+          (t.meegeteld ? '<span style="color:' + kleur(t.winst) + ';font-weight:700">' + teken(t.winst, t.valuta) + (t.pct == null ? '' : ' (' + pct(t.pct) + ')') + '</span>' : '') +
+          (t.buiten ? '<span>' + t.buiten + ' van ' + (t.meegeteld + t.buiten) + ' aankopen telt niet mee: zie hieronder</span>' : '') + '</div>';
+      }).join('') + '</div>';
+      if (res.totalen.length > 1) s += '<p class="zacht">Totalen staan per valuta. De app rekent nooit om tussen valuta’s.</p>';
+      s += '<div class="lijst">' + res.regels.map(function (r) {
+        var p = r.positie;
+        return '<div class="regel" style="flex-wrap:wrap"><div class="tekstkolom" style="flex:1 1 200px"><b>' + h(r.naam) + '</b><span class="zacht">' + getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht voor ' + euro(p.koers, p.valuta) + (p.datum ? ' op ' + h(datumNl(p.datum)) : '') + '</span>' +
+          (r.status === 'ok' ? '<span style="color:' + kleur(r.winst) + ';font-weight:700">Nu ' + euro(r.waarde, p.valuta) + ' · ' + teken(r.winst, p.valuta) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>'
+            : '<span class="zacht" style="color:var(--wait-ink)">Geen waarde: ' + h(r.reden) + '</span>') + '</div>' +
+          '<button class="knop rand klein" data-weg="' + h(p.id) + '" aria-label="Verwijder aankoop ' + h(r.naam) + '">Verwijder</button></div>';
+      }).join('') + '</div>';
+    }
+    var opties = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); }).map(function (a) { return '<option value="' + h(a.ticker) + '" data-valuta="' + h(a.valuta) + '">' + h(a.naam + ' (' + a.ticker + ')') + '</option>'; }).join('');
+    s += '<div class="kaart-plat"><h2>Aankoop toevoegen</h2><form id="pf" novalidate><div class="velden">' +
+      '<div><label for="pf-t">Aandeel</label><select id="pf-t">' + opties + '</select></div>' +
+      '<div><label for="pf-n">Aantal stuks</label><input id="pf-n" type="number" inputmode="decimal" step="any" min="0"></div>' +
+      '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
+      '<div><label for="pf-v">Valuta</label><input id="pf-v" type="text" maxlength="3" autocapitalize="characters" autocomplete="off"></div>' +
+      '<div><label for="pf-d">Datum (mag leeg)</label><input id="pf-d" type="date"></div></div>' +
+      '<p id="pf-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Toevoegen</button></div></form></div>' +
+      '<p class="zacht">Alleen een overzicht van wat u zelf invoert, geen beleggingsadvies. Kosten en belasting zijn niet meegerekend. De waarde gebruikt de laatste slotkoers en alleen als die maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud is.</p></section>' + backupBalk();
+    return s;
+  }
+  function portefeuilleKoppel() {
+    var sel = document.getElementById('pf-t'), val = document.getElementById('pf-v'); if (!sel) return;
+    function vul() { var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : ''; }
+    sel.addEventListener('change', vul); vul();
+    document.getElementById('pf').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var u = winkel.voegPositieToe({ ticker: sel.value, aantal: document.getElementById('pf-n').value, koers: document.getElementById('pf-k').value, valuta: val.value, datum: document.getElementById('pf-d').value || null });
+      if (!u.ok) { document.getElementById('pf-fout').textContent = u.reden; return; }
+      toast('Aankoop toegevoegd'); route();
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-weg]'), function (b) {
+      b.addEventListener('click', function () {
+        var id = b.getAttribute('data-weg'), oud = winkel.portefeuille().filter(function (x) { return x.id === id; })[0];
+        if (winkel.verwijderPositie(id)) { toast('Aankoop verwijderd', function () { winkel.herstelPositie(oud); route(); }); route(); }
+      });
+    });
   }
 
   /* ---- Aandeelpagina ---- */
@@ -231,7 +284,7 @@
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
-      '<div class="kaart-plat"><h2>Back-up van uw volglijst</h2><p>Uw volglijst staat alleen op dit toestel, niet bij ons. ' + (lb ? 'Laatste back-up: ' + h(datumNl(lb.slice(0, 10))) + '.' : 'U heeft nog geen back-up gemaakt.') + '</p><div class="knoppen"><button class="knop" id="bk">Back-up maken</button><label class="knop rand" for="her" style="margin:0">Back-up terugzetten</label><input id="her" type="file" accept="application/json,.json" class="sr"></div><details><summary>Back-up als tekst (kopiëren of plakken)</summary><label for="bktekst">Tekst van de back-up</label><textarea id="bktekst" rows="5" style="width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px;font:13px ui-monospace,monospace"></textarea><div class="knoppen"><button class="knop rand klein" id="kopie">Kopieer</button><button class="knop rand klein" id="plak">Terugzetten uit deze tekst</button></div></details><p class="zacht">Bewaar het bestand in uw eigen cloud (bijvoorbeeld OneDrive of Google Drive). Terugzetten voegt toe aan wat er al staat.</p></div>' +
+      '<div class="kaart-plat"><h2>Back-up van uw gegevens</h2><p>Uw volglijst en portefeuille staan alleen op dit toestel, niet bij ons. ' + (lb ? 'Laatste back-up: ' + h(datumNl(lb.slice(0, 10))) + '.' : 'U heeft nog geen back-up gemaakt.') + '</p><div class="knoppen"><button class="knop" id="bk">Back-up maken</button><label class="knop rand" for="her" style="margin:0">Back-up terugzetten</label><input id="her" type="file" accept="application/json,.json" class="sr"></div><details><summary>Back-up als tekst (kopiëren of plakken)</summary><label for="bktekst">Tekst van de back-up</label><textarea id="bktekst" rows="5" style="width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px;font:13px ui-monospace,monospace"></textarea><div class="knoppen"><button class="knop rand klein" id="kopie">Kopieer</button><button class="knop rand klein" id="plak">Terugzetten uit deze tekst</button></div></details><p class="zacht">Bewaar het bestand in uw eigen cloud (bijvoorbeeld OneDrive of Google Drive). Terugzetten voegt toe aan wat er al staat.</p></div>' +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(window.AANDEEL_VERSIE || 'web') + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
   }
@@ -295,11 +348,11 @@
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
       na = function () { aandeelKoppel(t); if (tab === 'waarde' && rec) waardeKoppel(rec, Gate.maakRij(rec, vandaag())); };
     } else {
-      var kaart = { '#/': schermStart, '#/overzicht': schermOverzicht, '#/zoek': schermZoek, '#/volglijst': schermVolglijst, '#/hulp': schermHulp, '#/instellingen': schermInstellingen };
+      var kaart = { '#/': schermStart, '#/overzicht': schermOverzicht, '#/zoek': schermZoek, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/hulp': schermHulp, '#/instellingen': schermInstellingen };
       var fn = kaart[hash] || schermStart; html = fn(); actief = kaart[hash] ? hash : '#/';
       if (hash === '#/overzicht') actief = '#/';
       $menu.innerHTML = menuHtml(HOOFD, actief);
-      if (hash === '#/zoek') na = zoekKoppel; if (hash === '#/instellingen') na = instKoppel;
+      if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/zoek') na = zoekKoppel; if (hash === '#/instellingen') na = instKoppel;
     }
     $inhoud.innerHTML = html; document.title = titel;
     if (na) na();

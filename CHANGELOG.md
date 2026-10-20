@@ -1,0 +1,194 @@
+# Changelog
+
+## 2026.10.20-beta.15
+**Nieuw: Mijn portefeuille. Herstel: de app ververst zichzelf nu op elk toestel.**
+- Nieuw scherm Portefeuille: aankopen invoeren (aandeel, aantal, aankoopkoers, valuta, datum), met waarde nu, winst of verlies en percentage per aankoop en per valuta. Alles blijft op het toestel en gaat mee in de back-up (samenvoegen dubbelt niets, oude back-ups blijven werken).
+- Rekent alleen met een koers van maximaal 7 dagen oud en in dezelfde valuta als de aankoop. Anders staat er "Geen waarde" met de reden en telt de aankoop niet mee. Er wordt nooit omgerekend en totalen van verschillende valuta's worden nooit opgeteld.
+- **Fout hersteld:** de offline-opslag bewaarde de app zelf voor altijd en haalde alleen de gegevens vers op. Verbeteringen aan de app kwamen daardoor niet op telefoons aan. Nu wordt altijd eerst vers geladen; alleen zonder internet komt de bewaarde kopie.
+- Foutmeldingen van de winst-per-aandeel-controle noemen nu de boekjaren waarom het misgaat en tonen bij een herberekening het herberekende en het gemelde getal.
+- 460 Python-tests, 30 JavaScript-tests; elke nieuwe regel is gecontroleerd door hem weg te halen.
+
+## 2026.10.20-beta.14
+**Fout gevonden en hersteld: verkeerde vergelijkbare winst per aandeel bij Nvidia (stond wel als bevestigd).**
+- Dezelfde splitsing werd door de bron onder twee data gemeld (Nvidia: 3 juni en 19 juli 2021, 31 mei en 30 juni 2024) en de omrekening paste beide toe. Nvidia FY2017 kwam daardoor uit op 0,0016 in plaats van 0,064 (factor 1600 in plaats van 40). Dezelfde fout zat in de route "herberekening", die alleen controleert of de gemelde winst per aandeel binnen één indiening klopt en niet of de omrekening klopt.
+- Nu: (1) dezelfde splitsing binnen 100 dagen telt één keer, (2) indieningen in de onzekere periode tussen die data worden niet omgerekend, (3) een omgerekend jaar mag via de herberekening alleen als bevestigd gelden als het aantal aandelen, omgerekend naar de huidige basis, een stabiele reeks vormt tot en met het nieuwste jaar. Een verkeerde of ontbrekende factor veroorzaakt een sprong en blokkeert de oudere jaren.
+- De route "oorspronkelijke indiening" telde dezelfde splitsing meerdere keren mee (Alphabet: factor 8000). Gecorrigeerd.
+- IFRS-bedrijven (SAP, ING, Shell, Unilever): de herberekening kijkt nu ook naar de IFRS-namen voor nettowinst van de aandeelhouders en gewogen aandelen.
+- De app toont bij Bronnen een toelichting waarom de controle een aandeel niet kan bevestigen.
+- 458 tests; elke nieuwe regel is gecontroleerd door hem weg te halen.
+- Niet getest met echte gegevens. Het kan zijn dat aandelen die nu bevestigd zijn tijdelijk onbevestigd worden als hun aandelenaantallen niet netjes door de reeks lopen; dat is bedoeld.
+
+## 2026.10.20-beta.13
+Derde echte run: 5 van 10 (Apple, Microsoft, ASML, Amazon, Nvidia). Alphabet 4 van 10 jaren.
+- Shell (SHEL) en Unilever (UL) zijn gekoppeld aan hun Amerikaanse notering, zodat hun 20-F-jaarcijfers worden gelezen zoals bij ASML, ING en SAP.
+- **Valuta:** de valuta van de notering telt mee. Shell rapporteert in dollars en noteert in euro: dat geeft "Cijfers en koers staan in verschillende valuta" en dus geen "bevestigd" zolang er geen omrekening is. De Gezondheid-pagina noemt de valuta's.
+- Nieuw bestand `status.json` in de uitvoer: klein overzicht per aandeel (status, aantal jaren, open jaren met reden, splitsingen, waarschuwingen).
+- `aandelen.json` is compacter.
+- Bij een afwijkende oorspronkelijke indiening noemt de reden nu de waarden (Alphabet 2020 en 2021).
+- Niet getest met echte gegevens: Shell, Unilever, SAP en ING in de nachtelijke run.
+
+## 2026.10.20-beta.12
+Gevonden in de eerste echte nachtelijke run (Apple en Nvidia bevestigd, de rest niet):
+- **Bedrijven zonder splitsing** (zoals Microsoft) bleven op "splitbewijs ontbreekt". Nu geldt: de bron meldt geen splitsing én het gewogen aantal aandelen blijft over alle jaren tussen 0,8 en 1,2 keer het vorige jaar én elk boekjaar is aanwezig. Een niet-gemelde splitsing zou als sprong zichtbaar zijn en blokkeert dan.
+- **Aankondiging en doorvoering** van één splitsing (Alphabet: 1 februari en 15 juli 2022) werden als twee gebeurtenissen gezien; de aankondiging werd afgewezen en blokkeerde het hele aandeel. Nu telt een tegengesproken gebeurtenis met dezelfde verhouding en ten hoogste een jaar vóór een bevestigde splitsing als dubbele vermelding. Andere verhoudingen of grotere afstand blijven afgewezen.
+- De app toont bij Bronnen per jaar waarom de winst per aandeel niet onderbouwd is (bijvoorbeeld Amazon 2018 en 2019).
+- Resultaat van de tweede echte run: Microsoft en ASML bevestigd (4 van de 10 aandelen bevestigd); Alphabet van afgewezen naar 4 van 10 jaren.
+- **Nieuwe route per jaar:** gebruikt het dossier voor een jaar al de herziene indiening van na de splitsing (Alphabet 2020 en 2021), dan wordt de oorspronkelijke indiening gedeeld door de bevestigde splitverhouding ermee vergeleken. Een afwijkende oorspronkelijke waarde onderbouwt dat jaar niet.
+- **Afronding in de herberekening:** bronbedragen zijn afgerond (Amazon geeft aandelen in hele miljoenen). De herberekende EPS wordt nu als interval vergeleken in plaats van op één getal; exacte bedragen houden de strenge halve-centmarge.
+- De reden bij een niet-bewezen jaar noemt nu ook waarom de herberekening niet lukte.
+- 16 nieuwe tests; elke veiligheidsregel is gecontroleerd door hem weg te halen (test faalt dan).
+- Niet getest: met de echte SEC-gegevens. Of Alphabet 2020/2021 en Amazon 2018/2019 nu slagen, blijkt na de volgende update. Jaren van vóór de splitsing die daarna niet meer zijn ingediend en waarvan de herberekening niet klopt, blijven open; dat is bedoeld.
+
+## 2026.10.20-beta.10
+**Nieuwe basis: webapp in plaats van Streamlit (map `web/`)**
+- Eén link voor pc, Android en iPhone. Geen Streamlit meer nodig: de pagina's zijn gewone bestanden (zie `documentatie/WEBAPP.md`).
+- Zelfde ontwerp als goedgekeurd: dashboard met "Op een rij", volglijst, interessante aandelen, menu onderin, vijf onderdelen per aandeel, licht/donker/automatisch.
+- Volglijst en instellingen staan op het eigen toestel; back-up als bestand (delen of downloaden) of als tekst, terugzetten voegt toe, herinnering bij wijziging of na 14 dagen, verzoek om vast bewaren.
+- Het label-slot is in JavaScript nagebouwd en getest op gelijke uitkomsten als Python. De datum van vandaag op het toestel bepaalt of een koers vers genoeg is.
+- `bouw_webdata.py`: maakt de gegevens (demo uit uw Apple-praktijkrun, of `--live`). `.github/workflows/nachtelijke-update.yml` ververst ze elke nacht en publiceert gratis op GitHub Pages.
+- `START_WEBAPP.cmd`: proefversie op eigen netwerk, ook voor de telefoon.
+- Tests: 17 JavaScript-tests, 7 echte-browsertests (Chromium), 6 voor de gegevensbouwer, 4 pariteitstests.
+- De Streamlit-app blijft in deze map staan maar wordt niet meer doorontwikkeld.
+- Niet getest: echte iPhone/Android, installeren op het beginscherm, offline-modus, live bronnen vanuit GitHub.
+
+## 2026.10.20-beta.9
+- Compacter: de kaarten zijn zelf de knop. Tik op de kaart "Op een rij" om alle aandelen te controleren, op een volglijstkaart of aandeelkaart om het aandeel te openen, op "Alles zien" voor het volledige overzicht. De losse "Open"-knoppen onder elke kaart zijn vervallen; een pijltje (›) toont dat een kaart klikbaar is.
+- De losse "← Terug naar het begin"-knop bovenaan staat alleen nog op de aandeelpagina; op de andere pagina's volstaat het menu onderin.
+- Het overzicht "Interessante aandelen" toont de aandelen als kaarten met reden en trend; de tabel staat in een uitklapper.
+- Toegankelijkheid: de onzichtbare knop op een kaart heeft nog steeds een naam en een zichtbare rand bij toetsenbordbediening.
+- Op Streamlit-versies zonder vaste containers staat de knop gewoon onder de kaart.
+- Niet getest in een echte browser: of de onzichtbare knop precies over de kaart ligt en klikt, moet u controleren op pc en telefoon.
+
+## 2026.10.20-beta.8.1
+- Nieuw startbestand `START_OOK_OP_TELEFOON.cmd`: start de app zo dat uw telefoon op hetzelfde wifi erbij kan, en toont het adres om op de telefoon in te typen. Het gewone `START_AANDEEL_SIGNAAL.cmd` blijft alleen voor deze computer.
+- 3 tests voor de startbestanden (regeleinden, gewone start blijft lokaal, telefoonstart met waarschuwing). Niet getest: Windows zelf, de firewallvraag en het adres dat het script toont.
+
+## 2026.10.20-beta.8
+**Nieuw uiterlijk (volgens het goedgekeurde ontwerp)**
+- Startscherm als dashboard: kaart "Op een rij" (hoeveel aandelen bevestigd), knop "Controleer alle aandelen", uw volglijst als kaarten met status en trend, en de bovenste aandelen uit het overzicht. Alles opent met één knop.
+- Menu onderin het scherm, vast onderaan: Start, Zoeken, Volglijst, Hulp. Op de aandeelpagina staan in plaats daarvan de onderdelen als knoppen onderin: Samenvatting, Koers, Waarde, Gezondheid, Bronnen. Het uitklapmenu "Wat wilt u zien?" is vervallen.
+- Licht en donker: de kleuren van de eigen kaarten en balk volgen het thema van Streamlit of anders het apparaat. Op de Hulp-pagina staat hoe u zelf kiest (menu rechtsboven, Settings, Theme). `.streamlit/config.toml` geeft de accentkleur; er is bewust geen vaste keuze licht of donker.
+- Statussen zijn nooit alleen een kleur: ✓ Bevestigd en … Nog niet bevestigd.
+- `requirements.txt`: streamlit minimaal 1.40 (vaste onderbalk). Op oudere versies werkt alles, maar staat de balk niet vast.
+
+**Testen:** 411 offline tests geslaagd. **Niet getest:** het echte uiterlijk in een browser (Streamlit kon in de testomgeving niet worden geïnstalleerd). Of de onderbalk vast blijft staan, de knoppen op een telefoon naast elkaar blijven en donker er goed uitziet, moet u zelf beoordelen; meld wat afwijkt, dan pas ik de stijl (`stijl.py`) aan.
+
+## 2026.10.20-beta.7.1
+- Vanuit "Interessante aandelen" kunt u per aandeel doorklikken naar de details ("Open ..."). Het gekozen aandeel opent op de Samenvatting en gebruikt de al uitgevoerde controle (geen tweede SEC-opvraag). Bovenaan staat "← Terug naar het overzicht"; de uitkomsten blijven staan.
+- 402 offline tests geslaagd (2 nieuw).
+
+## 2026.10.20-beta.7
+**Toegevoegd (stap 3: overzicht "Interessante aandelen")**
+- De pagina toont per aandeel uit de lijst of de gegevens bevestigd zijn (zelfde controle als het label-slot), of de koers actueel is en hoe de koers zich verhoudt tot het 50-daags gemiddelde, met de eerste reden als iets ontbreekt. Bevestigde aandelen staan bovenaan, daarna alfabetisch.
+- Geen koop- of verkoopsignaal en geen rangschikking op verwachte winst; wat telt als "bevestigd" is alleen het label-slot (10 onderbouwde jaren, verse koers, één valuta, geen afgewezen bronnen).
+- De controle start pas na een druk op "Controleer alle aandelen" (10 SEC-aanvragen); de uitkomst blijft in de sessie.
+- Europese noteringen (ASML, SAP, ING, Shell, Unilever) staan als "niet bevestigd" zolang hun jaarcijfers niet via dezelfde SEC-controle lopen; de reden staat erbij.
+- `overzicht.py`, `test_overzicht.py` (7 tests) en 3 schermtests.
+
+**Testen:** 400 offline tests geslaagd. Niet getest: echte SEC/Yahoo-verbinding, echt Streamlit, Windows, tijdsduur van de controle van 10 aandelen.
+
+## 2026.10.20-beta.6
+**Gewijzigd (stap 1: label koppelen aan echte controle)**
+- De aandeelpagina haalt zelf de SEC-jaarcijfers op en voert dezelfde EPS-controle uit als de praktijkcontrole (`bewijs.py`), één keer per sessie en per aandeel. "Samenvatting" en "Financiële gezondheid" gebruiken dat bewijs voor het label-slot. Voor Apple geldt: alle 10 jaren onderbouwd, één valuta, geen afgewezen bronnen; ontbreekt alleen een verse koers (max. 7 dagen), dan staat dat als reden bij "Wat ontbreekt er?".
+- Mislukt het ophalen (geen internet, niet door de SEC gedekt, zoals de Europese noteringen), dan staat de reden erbij en komt er nooit een label.
+- SEC-contactadres is nu een instelling van de beheerder (`instellingen.py`): omgevingsvariabele `AANDEEL_SEC_EMAIL`, anders `instellingen.json` naast de app (zie `instellingen_VOORBEELD.json`), anders het standaardadres. Gebruikers hoeven geen adres in te vullen.
+- Let op: bij een gehoste app horen alle aanvragen onder het adres van de beheerder; draait iedereen lokaal, zet dan ieders eigen adres in `instellingen.json`.
+
+**Testen:** 390 offline tests geslaagd; nieuwe tests voor instellingen, bewijs en de schermkoppeling; de koppeling is gecontroleerd door de aanroep tijdelijk te verwijderen (3 tests faalden). Niet getest: echte SEC- en Yahoo-verbinding vanuit de app, echt Streamlit, Windows.
+
+## 2026.10.19-beta.5.1
+- Echte Apple-run (beta.5) bevestigd: splitsing 4:1 (2020) geaccepteerd, 2014-splitsing "niet van toepassing", 10 van 10 jaren onderbouwd, status `independently_verified`.
+- Nieuw in het resultaat: `year_table` (omzet, nettowinst, EPS, vergelijkbare EPS, kasstroom, investeringen, eigen vermogen per jaar) zodat het voorbeeld uit echte brondata kan worden gebouwd.
+- Let op (bekend): de herberekening toetst de interne samenhang van één SEC-indiening; het is geen vergelijking met het originele jaarverslag. De waarschuwing hierover blijft staan.
+
+## 2026.10.19-beta.5
+**Aanleiding:** de echte Apple-run toonde dat alle splitsingen werden afgewezen (geen enkel onderdeel kon een splitdatum bewijzen) en dat de oudste jaren nooit "onderbouwd" werden. Daardoor kon voor elk bedrijf met een splitsing nooit een label verschijnen.
+
+**Toegevoegd**
+- `eps_verification.py`: twee onafhankelijke bewijsroutes, beide uitsluitend uit SEC-indieningen en fail-closed.
+  1. *Splitbevestiging*: een splitfeit geldt pas als de EPS van dezelfde periode in indieningen van voor én na de splitsing de splitverhouding laat zien (bijv. 11,89 -> 2,97 = 4:1, afrondingsbewust). Een tegenstrijdige of ontbrekende verhouding laat de splitsing afgewezen. Splitsingen van vóór het eerste jaar in het dossier (Apple 2014) zijn "niet van toepassing".
+  2. *Herberekening*: nettowinst / gewogen verwaterde aandelen uit dezelfde indiening moet de gerapporteerde EPS geven (marge halve cent). Dit onderbouwt ook de oudste jaren.
+- Status `independently_verified` bestaat nu echt (alle genormaliseerde jaren onderbouwd); het label-slot vraagt daarnaast nog minimaal 10 jaar, verse koers, één valuta.
+- De app (NAIC-weergave) gebruikt dezelfde controle en levert het bewijs aan het label-slot (`eps_gate_evidence`).
+- `test_eps_verification.py` met Apple-achtige, **illustratieve** testgegevens (`apple_like_fixture.py`, geen echte brondata).
+
+**Ongewijzigd:** `valuation_approved` blijft altijd False; zonder bewijs geen label.
+**Niet bewezen:** werking op de echte Apple-data op uw pc (daarvoor de nieuwe `AandeelSignaal_Apple_controle.pyz`), live Streamlit, Windows.
+
+## 2026.10.19-beta.4.1
+- Alleen verpakking, geen codewijziging: map `documentatie/` met projectstatus (met openstaande punten, routekaart) en testlogboek-sjabloon zit nu in de ZIP, zodat één ZIP over de bestaande map alles bijwerkt.
+- Testlogboek heet nu `Testlogboek_SJABLOON.md`, zodat een ingevulde kopie niet door een update wordt overschreven.
+
+## 2026.10.19-beta.4
+**Gewijzigd (stap 1: interface opruimen)**
+- Startscherm: drie primaire keuzes en Hulp. "Internationale bronnenproef" is verplaatst naar een uitklapper "Voor gevorderden" als "Onderzoek en bronnen".
+- Aandeelpagina in onderdelen via het keuzemenu "Wat wilt u zien?": Samenvatting (standaard), Koersverloop, Waardering (rekenvoorbeeld), Financiële gezondheid, Bronnen en onderzoek. Alleen het gekozen onderdeel wordt uitgevoerd; fundamentals, NAIC en ESEF draaien dus niet meer bij elke weergave. Een keuzemenu is gekozen omdat het NAIC- en fundamentals-deel zelf uitklappers gebruiken en Streamlit geen uitklapper binnen een uitklapper toestaat.
+- Samenvatting in gewone taal: koers, actualiteit, één zin over het 50-daags gemiddelde, status via het label-slot en de volglijstknop. Zonder bevestigde EPS staat er "Nog geen beoordeling mogelijk" met uitklapper "Wat ontbreekt er?".
+- Hulp-pagina met vijf stappen en uitleg van vaktermen (`uitleg.py`).
+- Het gekozen onderdeel wordt teruggezet naar Samenvatting bij een nieuw aandeel of terug naar het begin.
+- Het bronnendeel blijft onafhankelijk van de koersopvraag (bestaande regressietest blijft slagen).
+
+**Toegevoegd**
+- `samenvatting.py`, `uitleg.py`, `test_samenvatting.py` (14 tests), 7 extra schermtests in `test_app_smoke_volglijst.py`.
+
+**Testen**
+- 371 offline tests geslaagd (353 + 18), Linux. De omgeving gaf nu Python 3.13.16 en pandas 3.0.5 (eerder 3.12.3 en 3.0.2); `TESTRAPPORT.txt` noemt de werkelijke versies.
+- Nieuwe schermtests falen op de beta.3-app (6 van 11) en slagen op beta.4; twee opzettelijke fouten werden ontdekt.
+- Schermtests gebruiken nagebootst Streamlit. **Niet getest:** echt Streamlit in een browser, telefoon, Windows. Of het keuzemenu en de uitklappers op een telefoon prettig werken, moet u zelf beoordelen.
+
+**Bekend / nog open**
+- De samenvatting toont voor elk aandeel "Nog geen beoordeling mogelijk", omdat de SEC-EPS-bewijsketen nog niet aan het koersscherm is gekoppeld (stap 2).
+- Niet gedaan uit het ontwerp: uitleg bij eerste gebruik met Overslaan, lettergrootte/tikvlakken gemeten op echte toestellen, toetsing met twee beginnende gebruikers.
+- "Interessante aandelen" is nog niet beschikbaar (stap 3).
+
+## 2026.10.19-beta.3
+**Toegevoegd**
+- **Mijn volglijst** werkt: aandeel toevoegen vanaf de aandeelpagina ("Zet op mijn volglijst"), lijst bekijken, "Bekijk analyse", verwijderen met bevestiging en "Ongedaan maken", CSV-export, voorbeeldbestand en CSV-import (voegt toe, vervangt nooit, meldt afgekeurde regels).
+- `watchlist.py` (opslag, validatie, CSV), `watchlist_ui.py` (schermen), 41 nieuwe tests (`test_watchlist.py`, `test_watchlist_ui.py`, `test_app_smoke_volglijst.py`).
+- Opslag in `mijn_gegevens/volglijst.json` naast de app, atomisch geschreven met `.bak`. Een onleesbaar of nieuwer bestand wordt nooit overschreven zonder eerst een kopie; de gebruiker krijgt een melding.
+- Startscript controleert of de ZIP is uitgepakt (melding bij ontbrekend `app.py`/`requirements.txt`).
+- De versie in de kop van de app komt nu uit het bestand `VERSION` (stond vast op "Proefversie 4.6.3").
+
+**Gewijzigd**
+- `app.py`: volglijstpagina vervangen door de werkende pagina; veld "beurscode" heeft een vaste sleutel zodat de volglijst een aandeel kan openen; bij "Terug naar het begin" wordt dat veld leeggemaakt.
+
+**Bewust niet**
+- De volglijst bewaart geen scores of signalen. Geen synchronisatie met telefoon of andere apparaten (staat zo in het scherm).
+- CSV-cellen die met `=`, `+`, `-` of `@` beginnen krijgen bij export een apostrof tegen formule-injectie in Excel.
+
+**Testen**
+- 353 offline tests geslaagd (312 + 41), Linux, Python 3.12.3, pandas 3.0.2.
+- De schermtests gebruiken een nagebootst Streamlit en nagebootste Yahoo-gegevens. Echt Streamlit in een echte browser en Windows zijn **niet** getest. Controle dat de nieuwe tests falen op de oude code: ja (volglijstrooktest 4 van 4 gefaald op de oude `app.py`).
+
+## 2026.10.19-beta.2
+**Toegevoegd**
+- `label_gate.py`: beoordelingslabel alleen bij bevestigde invoer (EPS 10 jaar onafhankelijk bevestigd, koers ≤ 7 dagen, één valuta, geen afgewezen bronnen); anders reden zichtbaar. 
+- Verouderde of onbetrouwbare koers geeft geen score meer.
+- `test_label_gate.py` (11 tests) en `test_label_wiring.py` (2 tests).
+- `run_tests.py` / `RUN_TESTS.cmd`: één testcommando met `TESTRAPPORT.txt`.
+- `VERSION`, deze changelog, `installed_versions.txt` wordt bij de eerste succesvolle start aangemaakt.
+
+**Gewijzigd**
+- `fundamentals.py`: label achter het slot. Eerder werd het label getoond op basis van twee Yahoo-jaarcijfers, zonder EPS-controle.
+- Alle `.cmd`-bestanden naar Windows-regeleinden (CRLF). Het startscript had alleen LF, wat bij `goto` in batchbestanden kan vastlopen.
+- Verwijzing naar een specifieke chatdienst in de praktijktest neutraal gemaakt.
+- `LEES_DIT_EERST.md` herschreven; tegenstrijdige statusbestanden samengevoegd.
+
+**Opgeruimd**
+- 58 `LEESMIJ_*`-bestanden, oude statusnotities en twee losse testuitvoerbestanden verplaatst naar `archief/`. Niets verwijderd.
+
+**Testen**
+- 312 offline tests geslaagd (299 bestaand + 13 nieuw), `python run_tests.py`, Linux, Python 3.12.3, pandas 3.0.2.
+- Let op: `requirements.txt` staat pandas < 3 toe, de tests draaiden op pandas 3.0.2. Een run op pandas 2.x is niet gedaan.
+- Eerdere notities noemden 379 (+3 subtests) en 393 (+3) pytest-tests; deze aantallen zijn niet te herleiden en niet met 312 te vergelijken.
+
+**Niet gedaan / niet bewezen**
+- Streamlit-app niet gestart (geen Streamlit of internet in de ontwikkelomgeving); alleen syntaxis en broncodestructuur getoetst.
+- Geen Windows-test, geen live SEC/ESEF/Yahoo, geen NAIC-narekening, geen productie-vrijgave.
+- Pakketversies niet vastgezet; ze worden na de eerste succesvolle installatie vastgelegd.
+- Koppeling van de SEC-EPS-bewijsketen aan het koersscherm ontbreekt nog (via `st.session_state['eps_gate_evidence'][ticker]`).
+
+## Eerdere ontwikkelstanden (samengevat uit `archief/`)
+- NAIC-scherm sluit aan op `bronregister.json` (ASML 2016 kasstroom, niet live bevestigd).
+- `naic_growth.py` rekent alleen binnen een gelijke verslaggevingsgrondslag.
+- `release_gate.py`: conservatieve controle van praktijkresultaten; `production_release_approved` blijft altijd false.
