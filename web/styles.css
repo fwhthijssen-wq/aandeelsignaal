@@ -140,3 +140,19 @@ nav.menu a[aria-current="page"]::after { content: ""; width: 22px; height: 3px; 
 
 input[type="text"], input[type="date"] { box-sizing: border-box; max-width: 100%; }
 .velden > div { min-width: 0; }
+
+.intro-achter { position: fixed; inset: 0; z-index: 50; background: rgba(10, 20, 30, .55); display: grid; place-items: end center; padding: 16px; }
+@media (min-width: 700px) { .intro-achter { place-items: center; } }
+.intro { background: var(--surface); color: var(--ink); border-radius: 20px; padding: 22px 20px; max-width: 460px; width: 100%; box-shadow: 0 12px 40px rgba(0, 0, 0, .35); display: flex; flex-direction: column; gap: 12px; }
+.intro h2 { margin: 0; } .intro p { margin: 0; line-height: 1.5; }
+.intro-stippen { display: flex; gap: 6px; } .intro-stippen i { width: 26px; height: 6px; border-radius: 3px; background: var(--line); } .intro-stippen i.aan { background: var(--acc); }
+
+table.vgl { width: 100%; border-collapse: collapse; } table.vgl th, table.vgl td { padding: 10px 8px; text-align: left; border-top: 1px solid var(--line-soft); vertical-align: top; font-variant-numeric: tabular-nums; }
+table.vgl thead th { border-top: 0; } table.vgl td.leeg { color: var(--mut); }
+table.vgl { table-layout: fixed; font-size: .92rem; }
+table.vgl th:first-child { width: 36%; } table.vgl th:not(:first-child), table.vgl td { width: 32%; overflow-wrap: anywhere; }
+table.vgl thead th:not(:first-child) { font-size: .85rem; }
+table.vgl .chip { white-space: normal; }
+table.vgl { min-width: 0; } table.vgl th, table.vgl td { white-space: normal; }
+table.vgl th:first-child { width: 38%; overflow-wrap: anywhere; } table.vgl th:not(:first-child), table.vgl td { width: 31%; }
+table.vgl .chip { white-space: nowrap; font-size: .68rem; padding: 3px 6px; gap: 2px; } table.vgl .chip svg { width: 11px; height: 11px; }

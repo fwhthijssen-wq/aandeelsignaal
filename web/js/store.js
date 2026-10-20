@@ -7,7 +7,7 @@
   var MAX_POSITIES = 200;
   var TICKER = /^[A-Z0-9][A-Z0-9.\-]{0,14}$/;
 
-  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], instellingen: { thema: 'auto' }, laatsteBackup: null, gewijzigd: null }; }
+  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
 
   function normTicker(t) {
     if (typeof t !== 'string') return null;
@@ -52,6 +52,7 @@
     uit.portefeuille.forEach(function (p, i) { if (!p.id) p.id = 'p' + (i + 1) + '-' + Date.now().toString(36); });
     var th = data.instellingen && data.instellingen.thema;
     uit.instellingen.thema = (th === 'licht' || th === 'donker' || th === 'auto') ? th : 'auto';
+    uit.introGezien = data.introGezien === true;
     uit.laatsteBackup = typeof data.laatsteBackup === 'string' ? data.laatsteBackup : null;
     uit.gewijzigd = typeof data.gewijzigd === 'string' ? data.gewijzigd : null;
     return uit;
@@ -108,6 +109,8 @@
         return voor !== staat.portefeuille.length;
       },
       herstelPositie: function (p) { var x = schoonPositie(p); if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
+      introGezien: function () { return staat.introGezien === true; },
+      zetIntroGezien: function (gezien) { staat.introGezien = gezien !== false; return bewaar(false); },
       zetThema: function (th) { staat.instellingen.thema = (th === 'licht' || th === 'donker') ? th : 'auto'; bewaar(false); },
       /* Back-up als tekst (JSON). Markeert het moment van back-up. */
       maakBackup: function () {

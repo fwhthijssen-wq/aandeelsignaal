@@ -28,6 +28,19 @@ CATALOGUS = (
     ('SAP.DE', 'SAP SE', 'Duitsland', 'EUR', 'Xetra'),
     ('INGA.AS', 'ING Groep', 'Nederland', 'EUR', 'Amsterdam'),
     ('UNA.AS', 'Unilever', 'Nederland', 'EUR', 'Amsterdam'),
+    # Amerikaanse large caps (jaarcijfers via SEC, koers in dollar). Ze krijgen alleen een oordeel als alle controles slagen.
+    ('META', 'Meta Platforms', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('TSLA', 'Tesla', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('COST', 'Costco', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('WMT', 'Walmart', 'Verenigde Staten', 'USD', 'New York'),
+    ('JPM', 'JPMorgan Chase', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('V', 'Visa', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('MA', 'Mastercard', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('JNJ', 'Johnson & Johnson', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('LLY', 'Eli Lilly', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('PG', 'Procter & Gamble', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('KO', 'Coca-Cola', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('XOM', 'Exxon Mobil', 'Verenigde Staten', 'USD', 'NYSE'),
 )
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',

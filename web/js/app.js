@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.17';
+  var APP_VERSIE = '2026.10.20-beta.18';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -9,7 +9,7 @@
   var geheugen = {};
   var vals = opslag || { getItem: function (k) { return k in geheugen ? geheugen[k] : null; }, setItem: function (k, v) { geheugen[k] = String(v); } };
   var winkel = Store.maak(vals);
-  var $inhoud = document.getElementById('inhoud'), $menu = document.getElementById('menu'), $meld = document.getElementById('melding');
+  var $inhoud = document.getElementById('inhoud'), $menu = document.getElementById('menu'), $meld = document.getElementById('melding'), $laag = document.getElementById('laag');
 
   function h(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function vandaag() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
@@ -68,7 +68,7 @@
     s += '<section><div class="rij-kop"><h2>Mijn volglijst</h2><a class="link" href="#/volglijst">Alles zien</a></div>';
     s += vol.length ? '<div class="kaarten">' + vol.map(function (rec) { return kaartLink(rec, by[rec.ticker]); }).join('') + '</div>'
       : '<div class="kaart-plat"><p>Uw volglijst is nog leeg. Open een aandeel en kies “Op mijn volglijst”.</p><div class="knoppen"><a class="knop" href="#/zoek">Aandeel zoeken</a></div></div>';
-    s += '</section><section><div class="rij-kop"><h2>Interessante aandelen</h2><a class="link" href="#/overzicht">Alles zien</a></div><div class="lijst">' +
+    s += '</section><section><div class="rij-kop"><h2>Interessante aandelen</h2><a class="link" href="#/overzicht">Alles zien</a></div><div class="knoppen"><a class="knop rand klein" href="#/vergelijk">Twee aandelen vergelijken</a></div><div class="lijst">' +
       top.map(function (r) { return rijLink(zoek(r.ticker), r); }).join('') + '</div><p class="zacht">Aandelen zonder bevestigde gegevens krijgen geen oordeel.</p></section>';
     return s + backupBalk();
   }
@@ -78,7 +78,7 @@
   }
   function schermOverzicht() {
     var R = Gate.sorteer(rijen());
-    return '<section><h1>Overzicht</h1><div class="lijst">' + R.map(function (r) { return rijLink(zoek(r.ticker), r); }).join('') + '</div><p class="zacht">Selectiehulp, geen beleggingsadvies.</p></section>';
+    return '<section><div class="rij-kop"><h1>Overzicht</h1><a class="link" href="#/vergelijk">Aandelen vergelijken</a></div><div class="lijst">' + R.map(function (r) { return rijLink(zoek(r.ticker), r); }).join('') + '</div><p class="zacht">Selectiehulp, geen beleggingsadvies.</p></section>';
   }
   function schermVolglijst() {
     var R = {}; rijen().forEach(function (r) { R[r.ticker] = r; });
@@ -149,6 +149,57 @@
         if (winkel.verwijderPositie(id)) { toast('Aankoop verwijderd', function () { winkel.herstelPositie(oud); route(); }); route(); }
       });
     });
+  }
+
+  /* ---- Vergelijken ---- */
+  function chipKort(ok) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : '<span class="chip wacht">… Onbevestigd</span>'; }
+  function schermVergelijk(ta, tb) {
+    var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
+    var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
+    function sel(id, gekozen, tekst) {
+      return '<div><label for="' + id + '">' + tekst + '</label><select id="' + id + '">' + lijst.map(function (r) { return '<option value="' + h(r.ticker) + '"' + (r.ticker === gekozen.ticker ? ' selected' : '') + '>' + h(r.naam + ' (' + r.ticker + ')') + '</option>'; }).join('') + '</select></div>';
+    }
+    var v = Vergelijk.vergelijk(ra, rb, vandaag(), Gate), A = v.a, B = v.b;
+    function cel(w, soort, k) {
+      if (w == null) return '<td class="leeg" aria-label="geen waarde">–</td>';
+      return '<td>' + (soort === 'pct' ? pct(w) : soort === 'koers' ? getal(w, 2) + ' ' + h(k.valuta) : soort === 'kw' ? getal(w, 1) : getal(w, 1) + '%') + '</td>';
+    }
+    var rijenDef = [['Koers (laatste slot)', 'koers', 'koers'], ['Afstand tot gemiddelde 50 dagen', 'afstandPct', 'pct'], ['Omzetgroei per jaar', 'omzetgroei', 'pct'], ['Groei winst per aandeel per jaar', 'epsgroei', 'pct'], ['Nettomarge laatste jaar', 'nettomarge', 'plain'], ['Koers-winstverhouding (K/W)', 'kw', 'kw']];
+    var tb2 = '<div class="schuif"><table class="vgl"><thead><tr><th></th><th>' + h(A.naam) + '</th><th>' + h(B.naam) + '</th></tr></thead><tbody>' +
+      '<tr><th scope="row">Gegevens</th><td>' + chipKort(A.bevestigd) + '</td><td>' + chipKort(B.bevestigd) + '</td></tr>' +
+      rijenDef.map(function (d) { return '<tr><th scope="row">' + h(d[0]) + '</th>' + cel(A[d[1]], d[2], A) + cel(B[d[1]], d[2], B) + '</tr>'; }).join('') + '</tbody></table></div>';
+    var uitleg = [A, B].filter(function (x) { return !x.bevestigd; }).map(function (x) { return '<li><b>' + h(x.naam) + ':</b> ' + h(x.reden) + '</li>'; }).join('');
+    return '<section><div class="stelregel"><a class="link" href="#/" id="terug">' + I.terug + 'Terug</a></div><h1>Vergelijken</h1><div class="velden">' + sel('vg-a', ra, 'Eerste aandeel') + sel('vg-b', rb, 'Tweede aandeel') + '</div>' +
+      (ra.ticker === rb.ticker ? '<p class="zacht">Kies twee verschillende aandelen om te vergelijken.</p>' : '') + tb2 +
+      (uitleg ? '<div class="melding"><b>Waarom ontbreken er cijfers?</b><ul class="punten">' + uitleg + '</ul><span>Alleen volledig bevestigde aandelen krijgen cijfers uit de jaarverslagen.</span></div>' : '') +
+      '<p class="zacht">Alleen percentages en verhoudingen, zodat verschillende valuta’s geen probleem zijn. De app wijst geen winnaar aan: selectiehulp, geen beleggingsadvies.</p></section>';
+  }
+  function vergelijkKoppel() {
+    var a = document.getElementById('vg-a'), b = document.getElementById('vg-b'); if (!a) return;
+    function ga() { location.hash = '#/vergelijk/' + encodeURIComponent(a.value) + '/' + encodeURIComponent(b.value); }
+    a.addEventListener('change', ga); b.addEventListener('change', ga);
+  }
+
+  /* ---- Uitleg bij eerste gebruik ---- */
+  var INTRO = [
+    ['Welkom bij Aandeel Signaal', 'Vergelijk en volg grote Europese en Amerikaanse bedrijven. U heeft geen account nodig en het kost niets. De app is een hulpmiddel om te kiezen, geen beleggingsadvies.'],
+    ['Wat betekent “Bevestigd”?', 'Een aandeel krijgt pas een oordeel als alle controles kloppen: de winst per aandeel van 10 jaar is onderbouwd, cijfers en koers staan in dezelfde valuta en de koers is niet ouder dan ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen. Klopt er iets niet, dan zegt de app liever niets dan iets onzekers.'],
+    ['Uw gegevens blijven van u', 'Uw volglijst en portefeuille staan alleen op dit toestel. Maak daarom af en toe een back-up via Instellingen en bewaar die in uw eigen cloud of mail. Handig: zet de app op uw beginscherm via het menu van uw browser.']
+  ];
+  var introOpen = false;
+  function toonIntro(stap) {
+    stap = stap || 0; introOpen = true;
+    var laatste = stap === INTRO.length - 1, vorige = document.activeElement;
+    var stippen = INTRO.map(function (x, i) { return '<i' + (i === stap ? ' class="aan"' : '') + '></i>'; }).join('');
+    $laag.innerHTML = '<div class="intro-achter"><div class="intro" role="dialog" aria-modal="true" aria-labelledby="intro-t"><div class="intro-stippen" aria-label="Stap ' + (stap + 1) + ' van ' + INTRO.length + '">' + stippen + '</div>' +
+      '<h2 id="intro-t">' + h(INTRO[stap][0]) + '</h2><p>' + h(INTRO[stap][1]) + '</p><div class="knoppen">' +
+      '<button class="knop" id="intro-vk">' + (laatste ? 'Begrepen, aan de slag' : 'Volgende') + '</button>' + (laatste ? '' : '<button class="knop rand" id="intro-sl">Overslaan</button>') + '</div></div></div>';
+    function sluit() { introOpen = false; winkel.zetIntroGezien(true); $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
+    function toets(e) { if (e.key === 'Escape') sluit(); }
+    document.addEventListener('keydown', toets);
+    document.getElementById('intro-vk').addEventListener('click', function () { document.removeEventListener('keydown', toets); if (laatste) sluit(); else toonIntro(stap + 1); });
+    var sl = document.getElementById('intro-sl'); if (sl) sl.addEventListener('click', sluit);
+    document.getElementById('intro-vk').focus();
   }
 
   /* ---- Aandeelpagina ---- */
@@ -279,6 +330,7 @@
   function schermHulp() {
     return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Samenvatting, Koers, Waarde, Gezondheid of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven), dan raakt u niets kwijt.</li></ul></div>' +
       '<div class="kaart-plat"><h2>Wanneer krijgt een aandeel een oordeel?</h2><p>Alleen als alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen. Ontbreekt iets, dan zegt de app dat eerlijk en toont zij geen oordeel.</p></div>' +
+      '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
   }
   function schermInstellingen() {
@@ -341,18 +393,22 @@
   }
 
   function route() {
-    var hash = location.hash || '#/', m = hash.match(/^#\/a\/([^\/]+)(?:\/(\w+))?$/), html, actief, titel = 'Aandeel Signaal', na = null;
+    var hash = location.hash || '#/', m = hash.match(/^#\/a\/([^\/]+)(?:\/(\w+))?$/), html, actief, titel = 'Aandeel Signaal', na = null, m2;
     if (m) {
       var t = decodeURIComponent(m[1]).toUpperCase(), tab = TABS.some(function (x) { return x[0] === m[2]; }) ? m[2] : 'samenvatting';
       html = schermAandeel(t, tab);
       $menu.innerHTML = menuHtml(TABS.map(function (x) { return ['#/a/' + encodeURIComponent(t) + '/' + x[0], x[1], x[0]]; }), '#/a/' + encodeURIComponent(t) + '/' + tab);
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
       na = function () { aandeelKoppel(t); if (tab === 'waarde' && rec) waardeKoppel(rec, Gate.maakRij(rec, vandaag())); };
+    } else if ((m2 = hash.match(/^#\/vergelijk(?:\/([^\/]+)\/([^\/]+))?$/))) {
+      html = schermVergelijk(m2[1] ? decodeURIComponent(m2[1]).toUpperCase() : null, m2[2] ? decodeURIComponent(m2[2]).toUpperCase() : null);
+      $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';
     } else {
       var kaart = { '#/': schermStart, '#/overzicht': schermOverzicht, '#/zoek': schermZoek, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/hulp': schermHulp, '#/instellingen': schermInstellingen };
       var fn = kaart[hash] || schermStart; html = fn(); actief = kaart[hash] ? hash : '#/';
       if (hash === '#/overzicht') actief = '#/';
       $menu.innerHTML = menuHtml(HOOFD, actief);
+      if (hash === '#/hulp') na = function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); };
       if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/zoek') na = zoekKoppel; if (hash === '#/instellingen') na = instKoppel;
     }
     $inhoud.innerHTML = html; document.title = titel;
@@ -361,6 +417,7 @@
   var vorigeHash = null;
   window.addEventListener('hashchange', function () { route(); if (vorigeHash !== location.hash) window.scrollTo(0, 0); vorigeHash = location.hash; });
   pasThema(); route(); vorigeHash = location.hash;
+  if (!winkel.introGezien()) toonIntro(0);
   if (window.matchMedia) { try { window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', pasThema); } catch (e) { /* oud */ } }
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) { try { navigator.serviceWorker.register('sw.js').catch(function () {}); } catch (e) { /* geen offline-modus */ } }
 })();

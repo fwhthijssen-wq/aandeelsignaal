@@ -28,3 +28,6 @@ Grenzen van gratis: GitHub kan limieten wijzigen of de dienst storen; €0 is ee
 
 ## Tests
 `python run_tests.py` draait alles, inclusief de JavaScript-tests (vereist Node) en de browsertest (vereist Playwright met Chromium). Ontbreekt dat, dan worden die tests overgeslagen en staat dat in het rapport.
+
+- **Vergelijken** (`#/vergelijk`): twee aandelen naast elkaar; jaarcijfers alleen bij volledig bevestigde aandelen.
+- **Rondleiding**: eerste keer drie schermpjes; opnieuw via Hulp.

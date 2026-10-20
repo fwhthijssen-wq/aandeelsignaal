@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.20-beta.18
+- **Rondleiding bij eerste gebruik:** drie korte schermpjes (wat de app doet, wat "Bevestigd" betekent, uw gegevens en back-up). Alleen de eerste keer; opnieuw te bekijken via Hulp. Overslaan telt als gezien. Sluit met Escape.
+- **Vergelijken:** twee aandelen naast elkaar (koers, afstand tot gemiddelde, omzetgroei, winstgroei, nettomarge, K/W). Cijfers uit de jaarverslagen verschijnen alleen bij volledig bevestigde aandelen; anders een streepje met de reden. Alleen percentages en verhoudingen (geen bedragen in verschillende valuta's naast elkaar) en nooit een winnaar.
+- **Lijst uitgebreid van 10 naar 22 aandelen:** Meta, Tesla, Costco, Walmart, JPMorgan, Visa, Mastercard, Johnson & Johnson, Eli Lilly, Procter & Gamble, Coca-Cola, Exxon Mobil. Ze krijgen pas een oordeel als alle controles slagen; wat er live uitkomt is nog niet bekend.
+- Nieuw bestand `js/vergelijk.js`; tests voor vergelijken en rondleiding (ook op 320 pixels breed).
+- 474 Python-tests en 38 JavaScript-tests; nieuwe regels zijn gecontroleerd door ze weg te halen.
+
 ## 2026.10.20-beta.17
 - **Shell:** uit de diagnose bleek dat Shell zijn winst per aandeel meldt onder de naam `DilutedEarningsLossPerShareFromContinuingOperations`, die de app niet kende. Die naam wordt nu als uitwijk gebruikt, alleen voor een boekjaar waarvoor geen gewone EPS-naam bestaat (de gewone naam gaat altijd voor, ook als de uitwijknaam later is ingediend). Het cijfer geldt pas na dezelfde herberekening als alle andere (nettowinst / aandelen); bij afgestoten bedrijfsonderdelen wijkt het af en blijft het jaar onbevestigd.
 - **Shell staat nu in de lijst als SHEL (New York, dollar)** in plaats van SHELL.AS (Amsterdam, euro). Shell rapporteert in dollar, dus koers en cijfers hebben dezelfde valuta en er wordt niets omgerekend. Een eventuele aankoop of volglijstplek onder SHELL.AS blijft bewaard maar toont "zit niet meer in de lijst".
