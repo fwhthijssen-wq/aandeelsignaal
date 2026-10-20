@@ -9,6 +9,8 @@ SEC_LISTING_MAP = {
     'ASML.AS': 'ASML',  # ASML Holding NV, SEC Form 20-F
     'INGA.AS': 'ING',   # ING Groep NV, SEC Form 20-F
     'SAP.DE': 'SAP',    # SAP SE, SEC Form 20-F
+    'SHELL.AS': 'SHEL',  # Shell plc, SEC Form 20-F (rapporteert in USD)
+    'UNA.AS': 'UL',      # Unilever PLC, SEC Form 20-F
 }
 
 

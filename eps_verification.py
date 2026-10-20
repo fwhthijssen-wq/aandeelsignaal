@@ -300,7 +300,8 @@ def _route_oorspronkelijke_indiening(end, row, observations, confirmed, expected
                 'reden': f'Oorspronkelijke indiening ({", ".join(str(v) for v in sorted(set(originals)))}) gedeeld door '
                          f'de bevestigde splitverhouding {factor:g} geeft de EPS van het dossier'}
     return {'status': 'afwijking', 'factor': factor, 'oorspronkelijk': sorted(set(originals)),
-            'reden': 'Oorspronkelijke indiening gedeeld door de splitverhouding wijkt af van de EPS van het dossier'}
+            'reden': 'Oorspronkelijke indiening (' + ', '.join(str(v) for v in sorted(set(originals))) +
+                     f') gedeeld door de splitverhouding {factor:g} wijkt af van de EPS van het dossier ({expected})'}
 
 
 # ---------------------------------------------------------------- samenhangende controle

@@ -95,6 +95,10 @@ def koers_uit_reeks(reeks):
 
 def maak_record(meta, *, koers=None, gegevens=None):
     ticker, naam, land, valuta, beurs = meta
+    if gegevens and isinstance(gegevens.get('currencies'), list):
+        # Koers en cijfers moeten in dezelfde valuta staan: zonder omrekening is vergelijken niet zinvol.
+        # De notering telt dus mee; bij een verschil (Shell: cijfers in USD, koers in EUR) is de valuta niet eenduidig.
+        gegevens = {**gegevens, 'currencies': sorted(set(gegevens['currencies']) | {valuta})}
     return {'ticker': ticker, 'naam': naam, 'land': land, 'valuta': valuta, 'beurs': beurs,
             'koers': koers, 'gegevens': gegevens}
 
@@ -104,13 +108,32 @@ def maak_bestand(records, gemaakt=None, bron=''):
     return {'schema': SCHEMA, 'gemaakt': gemaakt, 'bron': bron, 'aandelen': records}
 
 
+def maak_status(bestand):
+    """Klein overzicht (zonder koersreeksen) om snel te zien wat er per aandeel is vastgesteld en waarom niet."""
+    uit = []
+    for rec in bestand.get('aandelen', []):
+        g = rec.get('gegevens') or {}
+        open_jaren = [{'jaar': j.get('year'), 'status': j.get('eps_check'), 'reden': str(j.get('eps_reden') or '')[:300]}
+                      for j in g.get('jaren') or [] if j.get('eps_check') != 'onderbouwd']
+        koers = rec.get('koers') or {}
+        uit.append({'ticker': rec.get('ticker'), 'koers_datum': koers.get('datum'), 'fout': g.get('fout'),
+                    'eps_status': g.get('eps_status'), 'jaren_bevestigd': g.get('eps_verified_years'),
+                    'jaren_in_dossier': len(g.get('jaren') or []), 'valuta': g.get('currencies'),
+                    'afgewezen_bronnen': g.get('rejected_sources'),
+                    'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
+                                'redenen': x.get('redenen')} for x in g.get('splits') or []],
+                    'open_jaren': open_jaren, 'waarschuwingen': g.get('waarschuwingen')})
+    return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
+
+
 def schrijf(bestand, map_=UITVOER):
     map_ = Path(map_)
     map_.mkdir(parents=True, exist_ok=True)
-    tekst = json.dumps(bestand, ensure_ascii=False, indent=1)
+    tekst = json.dumps(bestand, ensure_ascii=False, separators=(',', ':'))
     (map_ / 'aandelen.json').write_text(tekst, encoding='utf-8')
     # Ook als script, zodat de pagina ook zonder webserver (en zonder fetch) de gegevens kan laden.
     (map_ / 'aandelen.js').write_text('window.AANDEEL_DATA = ' + tekst + ';\n', encoding='utf-8')
+    (map_ / 'status.json').write_text(json.dumps(maak_status(bestand), ensure_ascii=False, indent=1), encoding='utf-8')
     import uitleg
     uit = {'termen': [{'naam': n, 'tekst': t} for n, t in uitleg.TERMS]}
     (map_ / 'uitleg.js').write_text('window.AANDEEL_UITLEG = ' + json.dumps(uit, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
