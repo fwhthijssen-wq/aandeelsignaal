@@ -63,3 +63,17 @@ test('checklistStand: telt leeg, bezig en klaar; dubbele tickers tellen één ke
   assert.deepEqual(s, { volglijst: 3, klaar: 1, bezig: 1, leeg: 1 });
   assert.deepEqual(D.checklistStand(undefined, () => ({}), Ck.voortgang), { volglijst: 0, klaar: 0, bezig: 0, leeg: 0 });
 });
+
+test('tabel: filter op trend t.o.v. 200 dagen; onbekend valt weg bij een gekozen trend', () => {
+  const T = [
+    { naam: 'A', bevestigd: true, trend200: 'onder' },
+    { naam: 'B', bevestigd: false, trend200: 'boven' },
+    { naam: 'C', bevestigd: true, trend200: null },
+    { naam: 'D', bevestigd: true, trend200: 'onder' }
+  ];
+  assert.deepEqual(D.tabel(T, { trend200: 'onder' }).map(k => k.naam), ['A', 'D']);
+  assert.deepEqual(D.tabel(T, { trend200: 'onder', alleenBevestigd: true }).map(k => k.naam), ['A', 'D']);
+  assert.deepEqual(D.tabel(T, { trend200: 'boven', alleenBevestigd: true }).map(k => k.naam), []);
+  assert.equal(D.tabel(T, { trend200: 'rare waarde' }).length, 4);
+  assert.equal(D.tabel(T, {}).length, 4);
+});

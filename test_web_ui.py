@@ -152,6 +152,30 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg2.locator('[data-timing]').count(), 0)
         self.assertEqual(fouten + fouten2, [])
 
+    def test_dashboard_trendfilter_200_dagen(self):
+        import datetime
+        c = self.b.new_context(viewport={'width': 390, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,
+          get:function(){return v;},set:function(d){var t='%s';d.aandelen.forEach(function(a){
+          if(a.ticker==='AAPL')a.koers={slot:90,datum:t,sma50:95,sma200:100,reeks:[['2026-10-01',90]]};
+          if(a.ticker==='MSFT')a.koers={slot:110,datum:t,sma50:95,sma200:100,reeks:[['2026-10-01',110]]};});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datetime.date.today().isoformat())
+        pg = c.new_page()
+        fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX)
+        pg.wait_for_timeout(200)
+        pg.select_option('#d-trend', 'onder')
+        rijen = pg.inner_text('#dash table.dash tbody')
+        self.assertIn('Apple', rijen)
+        self.assertNotIn('Microsoft', rijen)
+        pg.select_option('#d-trend', 'boven')
+        rijen = pg.inner_text('#dash table.dash tbody')
+        self.assertIn('Microsoft', rijen)
+        self.assertNotIn('Apple', rijen)
+        self.assertEqual(fouten, [])
+
     def test_dashboard_spreiding_per_land_en_valuta_met_verse_koersen(self):
         c = self.b.new_context(viewport={'width': 390, 'height': 800})
         self.addCleanup(c.close)

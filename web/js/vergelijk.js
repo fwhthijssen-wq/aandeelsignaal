@@ -14,7 +14,8 @@
     var fr = k ? gate.priceFreshness(k.datum, vandaag) : { fresh: false };
     var uit = { ticker: rec.ticker, naam: rec.naam, valuta: rec.valuta, bevestigd: rij.bevestigd, reden: rij.bevestigd ? null : (rij.redenen && rij.redenen.length ? rij.redenen.join(' ') : 'Nog niet gecontroleerd.'),
       koers: fr.fresh && typeof k.slot === 'number' ? k.slot : null, afstandPct: fr.fresh ? rij.afstandPct : null,
-      omzetgroei: null, epsgroei: null, nettomarge: null, kw: null, jarenBereik: null };
+      omzetgroei: null, epsgroei: null, nettomarge: null, kw: null, jarenBereik: null,
+      trend200: fr.fresh && typeof k.slot === 'number' && typeof k.sma200 === 'number' && k.sma200 > 0 ? (k.slot > k.sma200 ? 'boven' : 'onder') : null };
     if (!rij.bevestigd || !g) return uit;
     var jr = jaren(g), f = jr[0], l = jr[jr.length - 1];
     if (!f || !l || l.year <= f.year) return uit;

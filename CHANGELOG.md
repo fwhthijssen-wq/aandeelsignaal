@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2026.10.20-beta.30
+- **Dashboard:** keuzelijst "Trend 200 dagen" (alle / koers eronder / koers erboven). Alleen aandelen met een verse koers en een bekend 200-daags gemiddelde doen mee; de rest valt bij een gekozen trend weg. Is een hulp om te zoeken, geen signaal.
+
 ## 2026.10.20-beta.29
 Run van 15:00 UTC: 34 van 48 bevestigd; McDonald's, Sanofi, Ferrari, Nokia en Disney zijn nieuw groen.
 - **Thermo Fisher:** jaarwinst die alleen als "beschikbaar voor gewone aandeelhouders" is getagd wordt als teller gebruikt; de herberekende EPS moet de gerapporteerde nog steeds reproduceren.
