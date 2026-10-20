@@ -76,16 +76,36 @@ def sec_eps_recompute_inputs(payload, asof):
         return found
 
     records = {}
+    money = lambda unit: unit in MONETARY_UNITS
     # US-GAAP en IFRS (ifrs-full) hebben elk eigen namen; per indiening wordt één stelsel gebruikt.
-    for namespace, ni_tag, sh_tag in (('us-gaap', NET_INCOME_TAG, SHARES_TAG),
-                                      ('ifrs-full', IFRS_NET_INCOME_TAG, IFRS_SHARES_TAG)):
-        income = annual(namespace, ni_tag, lambda unit: unit in MONETARY_UNITS)
+    # Teller van de verwaterde winst per aandeel, in vaste volgorde van beschikbaarheid (niet van uitkomst):
+    # 1. winst beschikbaar voor gewone aandeelhouders (verwaterd), dus na dividend op preferente aandelen
+    #    (banken, Procter & Gamble); 2. nettowinst; 3. winst min aandeel van minderheidsbelangen.
+    us = 'us-gaap'
+    preferent = annual(us, 'NetIncomeLossAvailableToCommonStockholdersDiluted', money)
+    netto = annual(us, NET_INCOME_TAG, money)
+    totaal = annual(us, 'ProfitLoss', money)
+    minderheid = annual(us, 'NetIncomeLossAttributableToNoncontrollingInterest', money)
+    us_income, us_tag = {}, {}
+    for key in set(preferent) | set(netto) | set(totaal):
+        if key in preferent:
+            us_income[key], us_tag[key] = preferent[key], 'NetIncomeLossAvailableToCommonStockholdersDiluted'
+        elif key in netto:
+            us_income[key], us_tag[key] = netto[key], NET_INCOME_TAG
+        elif key in totaal and key in minderheid and len(totaal[key]) == 1 and len(minderheid[key]) == 1:
+            (unit_a, value_a, filed_a), = totaal[key]
+            (unit_b, value_b, _), = minderheid[key]
+            if unit_a == unit_b:
+                us_income[key], us_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus NetIncomeLossAttributableToNoncontrollingInterest'
+    for namespace, income, ni_tags, sh_tag in ((us, us_income, us_tag, SHARES_TAG),
+                                               ('ifrs-full', annual('ifrs-full', IFRS_NET_INCOME_TAG, money), None, IFRS_SHARES_TAG)):
         shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')
         for key in sorted(set(income) & set(shares)):
             if len(income[key]) != 1 or len(shares[key]) != 1:
                 continue
             (currency, net_income, filed), = income[key]
             (_, diluted_shares, _), = shares[key]
+            ni_tag = ni_tags[key] if ni_tags else IFRS_NET_INCOME_TAG
             record = {'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
                       'currency': currency, 'net_income': net_income,
                       'diluted_shares': diluted_shares,
@@ -475,7 +495,9 @@ def verify_eps(result, safe_history, audit_date):
     normalization_splits = validated_splits if not rejected_split_evidence else []
     no_splits = False
     no_splits_reason = None
-    if (isinstance(split_source, list) and not split_source and not rejected_split_evidence):
+    # Splitsingen van vóór het eerste boekjaar in het dossier raken geen enkele EPS: dan geldt de controle zonder splitsing.
+    relevante_splits = [a for a in split_audit if a.get('status') != 'niet_van_toepassing']
+    if (isinstance(split_source, list) and not relevante_splits and not rejected_split_evidence):
         no_splits, no_splits_reason = share_count_continuity(safe_history, result.get('eps_recompute_inputs'))
     eps_normalized = (normalized_eps_history(safe_history, normalization_splits,
                                              asof=audit_date.isoformat(), geen_splitsingen=no_splits)

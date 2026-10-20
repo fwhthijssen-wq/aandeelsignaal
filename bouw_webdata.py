@@ -101,7 +101,9 @@ def gegevens_uit_sec(sec, gecontroleerd_op):
     """
     from eps_verification import gate_evidence
     if not isinstance(sec, dict) or sec.get('status') != 'facts_found' or not isinstance(sec.get('dossier'), dict):
-        reden = (sec or {}).get('reason') or (sec or {}).get('message') or 'Geen volledige jaarcijfers beschikbaar.'
+        status = (sec or {}).get('status') if isinstance(sec, dict) else None
+        reden = ((sec or {}).get('reason') or (sec or {}).get('message')
+                 or 'Geen volledige jaarcijfers beschikbaar' + (f' (status van de bron: {status})' if status else ' (de SEC-gegevens bevatten geen volledige jaarreeks voor dit bedrijf)') + '.')
         return {'gecontroleerd_op': gecontroleerd_op, 'fout': str(reden)[:300], 'eps_status': None,
                 'eps_verified_years': None, 'currencies': None, 'rejected_sources': None,
                 'jaren': [], 'splits': [], 'waarschuwingen': []}
@@ -178,7 +180,8 @@ def maak_status(bestand):
                     'afgewezen_bronnen': g.get('rejected_sources'),
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
-                    'open_jaren': open_jaren, 'toelichting': g.get('eps_toelichting'),
+                    'open_jaren': open_jaren, 'einddata': [j.get('end') for j in g.get('jaren') or []],
+                    'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose')})
     return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
 

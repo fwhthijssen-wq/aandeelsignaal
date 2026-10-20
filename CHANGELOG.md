@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.10.20-beta.20
+Eerste echte run met 22 aandelen: 12 bevestigd (ASML, Shell, Apple, Microsoft, Amazon, Nvidia, SAP, ING, Meta, Costco, Walmart, Eli Lilly). Uit de diagnose van de overige tien:
+- **Teller van de winst per aandeel:** voor banken en bedrijven met preferente aandelen (JPMorgan, Procter & Gamble) is de gemelde verwaterde winst per aandeel berekend op de winst na dividend op preferente aandelen. De herberekening gebruikt nu, in vaste volgorde van beschikbaarheid: (1) winst beschikbaar voor gewone aandeelhouders (verwaterd), (2) nettowinst, (3) winst min het aandeel van minderheidsbelangen (Mastercard, dat geen nettowinst meldt). De keuze hangt van welke naam bestaat af en nooit van de uitkomst; past het resultaat dan niet, dan blijft het jaar onbevestigd.
+- **Oude splitsingen:** een splitsing van vóór het eerste boekjaar in het dossier (Coca-Cola 2012) raakt geen enkele winst per aandeel en blokkeert niet meer. Een splitsing binnen de jaren zonder bevestiging blokkeert nog steeds.
+- Foutmelding bij een bedrijf zonder jaarcijfers noemt nu de status van de bron (Exxon: de SEC-gegevens bevatten alleen kwartaalcijfers van 2026). `status.json` bevat per aandeel de einddata van de boekjaren (voor Johnson & Johnson, waar twee boekjaren ontbreken).
+- Bekend en voorlopig open: Visa (winst per aandeel alleen per aandelenklasse), Exxon (geen jaarcijfers in de bron), Alphabet 2016–2019 (aantal aandelen ontbreekt), Tesla (veel dubbele en tegenstrijdige splitmeldingen), Unilever 2023 en 2025 (0,2% afwijking), Johnson & Johnson (twee boekjaren ontbreken in de bron, nog uit te zoeken).
+- Let op: omdat de teller nu in volgorde van beschikbaarheid wordt gekozen, kan een aandeel dat nu bevestigd is in theorie veranderen. Dat is de volgende run te controleren.
+- 488 tests; de nieuwe regels zijn gecontroleerd door ze weg te halen.
+
 ## 2026.10.20-beta.19
 - **NAIC-gids** (tabblad Waarde heet nu NAIC) in vier stappen: groei van omzet en winst (alle jaren en laatste vijf), rendement op eigen vermogen, nettowinstmarge en koerszones (hoge en lage koers over een horizon, verdeeld in drie zones, verhouding opwaarts tegen neerwaarts en mogelijk rendement per jaar). Daarna het bestaande rekenvoorbeeld.
 - Alles is een rekenhulp met uw eigen aannames. De positie van de koers in de zones en de verhouding verschijnen alleen bij een volledig bevestigd aandeel met een verse koers; anders alleen de zones zelf. Verliesjaren of vermogen kleiner dan of gelijk aan nul geven een streepje, nooit een verzonnen getal.
