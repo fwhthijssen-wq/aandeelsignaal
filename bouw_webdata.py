@@ -86,7 +86,8 @@ RUIS = ('ShareBased', 'Sharebased', 'Antidilutive', 'Exercise', 'DiscountRate', 
         'RemainingContractualTerm', 'ParValue', 'ParOrStated', 'Acquiree', 'ProForma', 'DividendsPerShare')
 JAARWAARDE_TAGS = ('EarningsPerShareDiluted', 'DilutedEarningsLossPerShare', 'EarningsPerShareBasicAndDiluted',
                    'WeightedAverageNumberOfDilutedSharesOutstanding', 'WeightedAverageNumberOfShareOutstandingBasicAndDiluted',
-                   'AdjustedWeightedAverageShares', 'NetIncomeLoss', 'ProfitLoss', 'ProfitLossAttributableToOwnersOfParent')
+                   'AdjustedWeightedAverageShares', 'NetIncomeLoss', 'ProfitLoss', 'ProfitLossAttributableToOwnersOfParent',
+                   'NetIncomeLossAvailableToCommonStockholdersBasic', 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity')
 
 
 def jaarwaarden(payload, vanaf='2015-01-01', max_per_tag=40):
@@ -302,7 +303,8 @@ def maak_status(bestand):
                     'open_jaren': open_jaren, 'einddata': [j.get('end') for j in g.get('jaren') or []],
                     'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN},
                     'toelichting': g.get('eps_toelichting'),
-                    'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose')})
+                    'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose'),
+                    'extra_diagnose': g.get('extra_diagnose')})
     return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
 
 
@@ -332,6 +334,37 @@ def demo(pad_resultaat):
     return maak_bestand(records, bron='Demo: eerder gecontroleerde praktijkrun; geen koersen')
 
 
+EXTRA_ZOEK = {'depreciation': ('Depreciation', 'Amortization', 'Amortisation'),
+              'dividends_paid': ('Dividend',),
+              'long_term_debt': ('Borrowings', 'LongTermDebt', 'DebtNoncurrent', 'DebtInstrument')}
+
+
+def extra_namen(payload, max_per_veld=10):
+    """Alleen voor diagnose: welke begrippen een bedrijf gebruikt voor afschrijving, dividend en lange schuld,
+    zodat ontbrekende extra cijfers gericht verholpen kunnen worden. Kort: aantal waarden en jaarbereik."""
+    uit = {v: {} for v in EXTRA_ZOEK}
+    facts = payload.get('facts') if isinstance(payload, dict) else None
+    if not isinstance(facts, dict):
+        return uit
+    for taxonomie, tags in sorted(facts.items()):
+        if not isinstance(tags, dict):
+            continue
+        for tag, blok in sorted(tags.items()):
+            if not isinstance(blok, dict) or any(x in tag for x in RUIS) or 'PerShare' in tag:
+                continue
+            for veld, delen in EXTRA_ZOEK.items():
+                if not any(d in tag for d in delen) or len(uit[veld]) >= max_per_veld:
+                    continue
+                for eenheid, rijen in sorted((blok.get('units') or {}).items()):
+                    if eenheid in ('shares', 'pure') or not isinstance(rijen, list):
+                        continue
+                    jaren = sorted({r.get('fy') for r in rijen if isinstance(r, dict) and r.get('form') in ('10-K', '20-F', '40-F')
+                                    and isinstance(r.get('fy'), int)})
+                    if jaren:
+                        uit[veld][f'{taxonomie}:{tag} [{eenheid}]'] = [jaren[0], jaren[-1], len(jaren)]
+    return uit
+
+
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
@@ -350,7 +383,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
         if gegevens.get('jaren'):
             try:
-                voeg_extra_toe(gegevens, payload_ophalen(sec_ticker_for_listing(ticker), email))
+                extra_payload = payload_ophalen(sec_ticker_for_listing(ticker), email)
+                voeg_extra_toe(gegevens, extra_payload)
+                if any(not sum(1 for j in gegevens['jaren'] if j.get(v) is not None) for v in EXTRA_VELDEN):
+                    gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
         if (gegevens.get('eps_verified_years') or 0) < 10:

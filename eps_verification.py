@@ -25,6 +25,7 @@ NET_INCOME_TAG = 'NetIncomeLoss'
 SHARES_TAG = 'WeightedAverageNumberOfDilutedSharesOutstanding'
 IFRS_NET_INCOME_TAG = 'ProfitLossAttributableToOwnersOfParent'
 IFRS_SHARES_TAG = 'AdjustedWeightedAverageShares'
+IFRS_NET_INCOME_ORDINARY_TAG = 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity'
 EPS_FACT = 'Winst per aandeel (verwaterd)'
 
 
@@ -90,19 +91,32 @@ def sec_eps_recompute_inputs(payload, asof):
     netto = annual(us, NET_INCOME_TAG, money)
     totaal = annual(us, 'ProfitLoss', money)
     minderheid = annual(us, 'NetIncomeLossAttributableToNoncontrollingInterest', money)
+    gewoon = annual(us, 'NetIncomeLossAvailableToCommonStockholdersBasic', money)
     us_income, us_tag = {}, {}
-    for key in set(preferent) | set(netto) | set(totaal):
+    for key in set(preferent) | set(netto) | set(totaal) | set(gewoon):
         if key in preferent:
             us_income[key], us_tag[key] = preferent[key], 'NetIncomeLossAvailableToCommonStockholdersDiluted'
         elif key in netto:
             us_income[key], us_tag[key] = netto[key], NET_INCOME_TAG
+        elif key in gewoon:
+            # Thermo Fisher e.d. taggen de jaarwinst alleen als 'beschikbaar voor gewone aandeelhouders'. De herberekening
+            # moet de gerapporteerde EPS nog steeds reproduceren, anders blijft het jaar onbewezen.
+            us_income[key], us_tag[key] = gewoon[key], 'NetIncomeLossAvailableToCommonStockholdersBasic'
         elif key in totaal and key in minderheid and len(totaal[key]) == 1 and len(minderheid[key]) == 1:
             (unit_a, value_a, filed_a), = totaal[key]
             (unit_b, value_b, _), = minderheid[key]
             if unit_a == unit_b:
                 us_income[key], us_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus NetIncomeLossAttributableToNoncontrollingInterest'
+    ifrs_owners = annual('ifrs-full', IFRS_NET_INCOME_TAG, money)
+    ifrs_ordinary = annual('ifrs-full', IFRS_NET_INCOME_ORDINARY_TAG, money)
+    ifrs_income, ifrs_tag = {}, {}
+    for key in set(ifrs_owners) | set(ifrs_ordinary):
+        if key in ifrs_owners and key in ifrs_ordinary and ifrs_owners[key] != ifrs_ordinary[key]:
+            continue                       # twee tellers die verschillen: nooit kiezen
+        bron, tag = (ifrs_owners, IFRS_NET_INCOME_TAG) if key in ifrs_owners else (ifrs_ordinary, IFRS_NET_INCOME_ORDINARY_TAG)
+        ifrs_income[key], ifrs_tag[key] = bron[key], tag
     for namespace, income, ni_tags, sh_tag in ((us, us_income, us_tag, SHARES_TAG),
-                                               ('ifrs-full', annual('ifrs-full', IFRS_NET_INCOME_TAG, money), None, IFRS_SHARES_TAG)):
+                                               ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG)):
         shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')
         for key in sorted(set(income) & set(shares)):
             if len(income[key]) != 1 or len(shares[key]) != 1:

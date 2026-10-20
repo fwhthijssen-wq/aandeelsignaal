@@ -63,3 +63,20 @@ class Extra(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class ExtraNamenTests(unittest.TestCase):
+    def test_extra_namen_vindt_afschrijving_dividend_en_schuld(self):
+        import bouw_webdata as bw
+        rij = lambda fy, form='10-K': {'fy': fy, 'form': form, 'val': 1.0}
+        payload = {'facts': {'us-gaap': {
+            'DepreciationAmortizationAndOther': {'units': {'USD': [rij(2019), rij(2024), rij(2022, '10-Q')]}},
+            'DividendsCommonStockCash': {'units': {'USD': [rij(2023)]}},
+            'DividendsPerShareDeclared': {'units': {'USD/shares': [rij(2023)]}},
+            'LongTermDebtNoncurrent': {'units': {'USD': [rij(2020)]}},
+            'Revenues': {'units': {'USD': [rij(2020)]}}}}}
+        uit = bw.extra_namen(payload)
+        self.assertEqual(uit['depreciation'], {'us-gaap:DepreciationAmortizationAndOther [USD]': [2019, 2024, 2]})
+        self.assertEqual(list(uit['dividends_paid']), ['us-gaap:DividendsCommonStockCash [USD]'])
+        self.assertEqual(list(uit['long_term_debt']), ['us-gaap:LongTermDebtNoncurrent [USD]'])
+        self.assertEqual(bw.extra_namen(None), {'depreciation': {}, 'dividends_paid': {}, 'long_term_debt': {}})

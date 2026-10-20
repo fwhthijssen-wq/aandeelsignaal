@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 2026.10.20-beta.29
+Run van 15:00 UTC: 34 van 48 bevestigd; McDonald's, Sanofi, Ferrari, Nokia en Disney zijn nieuw groen.
+- **Thermo Fisher:** jaarwinst die alleen als "beschikbaar voor gewone aandeelhouders" is getagd wordt als teller gebruikt; de herberekende EPS moet de gerapporteerde nog steeds reproduceren.
+- **Stellantis, Eni (IFRS):** ook de tag "winst toerekenbaar aan gewone aandeelhouders van het moederbedrijf" wordt gebruikt; verschillen twee tellers, dan wordt het jaar weggelaten.
+- **Diagnose extra cijfers:** voor aandelen met 0 jaren afschrijving, dividend of lange schuld staat in de status welke begrippen het bedrijf wel gebruikt (`extra_diagnose`).
+- Bewust niet aangepast: JNJ 2023 (13,7295 herberekend tegen 13,72 gemeld), Linde (aandelen springen door de fusie), Honeywell (afgewezen splitsingsregel), Philips (verwaterd aantal aandelen pas vanaf 2024), Visa, Exxon, Tesla.
+
 ## 2026.10.20-beta.28
 - **Timing (informatie)** op de Koers-tab: korte en lange trend (50 en 200 dagen), plek in het jaarbereik en RSI(14) in gewone taal. Staat los van het signaal en heeft er geen invloed op. Bij een verouderde koers verschijnt de kaart niet; bij te weinig koersgeschiedenis staat er dat de app liever niets toont dan een schatting.
 - Nachtelijke update haalt nu 2 jaar koersen op en berekent SMA200, 52-wekenhoog/-laag en RSI (Wilder), getoetst tegen een onafhankelijke pandas-berekening.
