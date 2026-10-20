@@ -156,3 +156,15 @@ table.vgl .chip { white-space: normal; }
 table.vgl { min-width: 0; } table.vgl th, table.vgl td { white-space: normal; }
 table.vgl th:first-child { width: 38%; overflow-wrap: anywhere; } table.vgl th:not(:first-child), table.vgl td { width: 31%; }
 table.vgl .chip { white-space: nowrap; font-size: .68rem; padding: 3px 6px; gap: 2px; } table.vgl .chip svg { width: 11px; height: 11px; }
+
+.balk-rij { display: grid; grid-template-columns: minmax(80px, 1fr) 2fr 3.2em; gap: 8px; align-items: center; margin-top: 6px; font-size: .9rem; }
+.balk { background: var(--line); border-radius: 6px; height: 10px; overflow: hidden; display: block; }
+.balk i { display: block; height: 100%; background: var(--acc); }
+.balk-rij b { text-align: right; font-variant-numeric: tabular-nums; }
+table.dash th[scope=row] { white-space: normal; }
+.vink { display: inline-flex; gap: 6px; align-items: center; }
+table.dash thead th { font-size: .66rem; letter-spacing: 0; text-transform: none; padding: 8px 5px; white-space: normal; word-break: normal; overflow-wrap: normal; hyphens: none; }
+table.dash td { padding: 8px 5px; }
+table.dash thead th:first-child { width: 38%; }
+table.dash th:first-child { width: 40%; overflow-wrap: break-word; }
+table.dash th:not(:first-child), table.dash td { width: 15%; overflow-wrap: normal; }

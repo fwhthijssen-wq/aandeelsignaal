@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.20';
+  var APP_VERSIE = '2026.10.20-beta.21';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -65,12 +65,56 @@
     var top = Gate.sorteer(R).slice(0, 6);
     var s = '<div class="hero"><small>Op een rij</small><div class="tel"><span class="groot">' + ok + '</span><span class="tekst">van ' + n + ' aandelen met<br>bevestigde gegevens</span></div><div class="seg" aria-hidden="true">' + seg + '</div>' +
       '<p class="voet">Gegevens gecontroleerd door de nachtelijke update (' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + '). Een aandeel krijgt pas een oordeel als alle controles kloppen.</p></div>';
+    s += dashboardHtml(R);
     s += '<section><div class="rij-kop"><h2>Mijn volglijst</h2><a class="link" href="#/volglijst">Alles zien</a></div>';
     s += vol.length ? '<div class="kaarten">' + vol.map(function (rec) { return kaartLink(rec, by[rec.ticker]); }).join('') + '</div>'
       : '<div class="kaart-plat"><p>Uw volglijst is nog leeg. Open een aandeel en kies “Op mijn volglijst”.</p><div class="knoppen"><a class="knop" href="#/zoek">Aandeel zoeken</a></div></div>';
     s += '</section><section><div class="rij-kop"><h2>Interessante aandelen</h2><a class="link" href="#/overzicht">Alles zien</a></div><div class="knoppen"><a class="knop rand klein" href="#/vergelijk">Twee aandelen vergelijken</a></div><div class="lijst">' +
       top.map(function (r) { return rijLink(zoek(r.ticker), r); }).join('') + '</div><p class="zacht">Aandelen zonder bevestigde gegevens krijgen geen oordeel.</p></section>';
     return s + backupBalk();
+  }
+
+  var tabelKeuze = { alleenBevestigd: false, sorteer: 'naam', richting: 'op' };
+  var TABEL_KOP = { naam: 'Aandeel', afstandPct: 'Afstand tot gemiddelde', omzetgroei: 'Omzetgroei p.j.', epsgroei: 'Winstgroei p.j.', nettomarge: 'Nettomarge' };
+  function dashboardHtml(R) {
+    var pos = winkel.portefeuille(), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate), sp = Dashboard.spreiding(res.regels, DATA.aandelen);
+    var volT = winkel.volglijst().map(function (v) { return v.ticker; }), a = Dashboard.aandacht(R, volT, res.regels);
+    var s = '<section id="dash"><h2>Dashboard</h2><div class="kpis">';
+    if (res.totalen.length) {
+      s += res.totalen.map(function (t) { return '<a class="kpi" href="#/portefeuille" style="text-decoration:none;color:inherit"><b>' + (t.meegeteld ? getal(t.waarde, 0) + ' ' + h(t.valuta) : '–') + '</b><span>Portefeuille (' + h(t.valuta) + ')</span>' +
+        (t.meegeteld && t.pct != null ? '<span style="color:' + kleur(t.winst) + ';font-weight:700">' + pct(t.pct) + '</span>' : '') + '</a>'; }).join('');
+    } else s += '<a class="kpi" href="#/portefeuille" style="text-decoration:none;color:inherit"><b>–</b><span>Portefeuille: nog geen aankopen</span></a>';
+    s += '<div class="kpi"><b>' + (a.volglijst ? a.verouderdVolglijst + ' / ' + a.volglijst : '–') + '</b><span>Volglijst zonder actuele koers</span></div>';
+    if (a.positiesZonderWaarde) s += '<a class="kpi" href="#/portefeuille" style="text-decoration:none;color:inherit"><b>' + a.positiesZonderWaarde + '</b><span>Aankopen zonder waarde: zie portefeuille</span></a>';
+    s += '</div>';
+    if (sp.length) {
+      s += '<h3>Spreiding per land</h3>' + sp.map(function (v) {
+        return '<div class="kaart-plat" data-spreiding="' + h(v.valuta) + '"><b>' + h(v.valuta) + '</b>' + v.delen.map(function (d) {
+          return '<div class="balk-rij"><span>' + h(d.land) + '</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, d.pct) + '%"></i></span><b>' + getal(d.pct, 0) + '%</b></div>';
+        }).join('') + '</div>';
+      }).join('') + (sp.length > 1 ? '<p class="zacht">Per valuta apart; de app rekent niet om.</p>' : '');
+    }
+    var vol = winkel.volglijst().map(function (v) { return zoek(v.ticker); }).filter(Boolean);
+    var bron = vol.length ? vol : DATA.aandelen, vandaagD = vandaag();
+    var kanten = bron.map(function (rec) { return Vergelijk.kant(rec, vandaagD, Gate); });
+    var rijenT = Dashboard.tabel(kanten, tabelKeuze);
+    function c(v, nul) { return v == null ? '<span class="zacht" title="Onbekend of niet bevestigd">–</span>' : nul(v); }
+    s += '<h3>' + (vol.length ? 'Mijn volglijst in cijfers' : 'Alle aandelen in cijfers') + '</h3><div class="knoppen" style="align-items:center">' +
+      '<label class="vink"><input type="checkbox" id="d-bev"' + (tabelKeuze.alleenBevestigd ? ' checked' : '') + '> Alleen bevestigd</label>' +
+      '<label for="d-sort" class="zacht">Sorteer op</label><select id="d-sort">' + Dashboard.KOLOMMEN.map(function (k) { return '<option value="' + k + '"' + (k === tabelKeuze.sorteer ? ' selected' : '') + '>' + h(TABEL_KOP[k]) + '</option>'; }).join('') + '</select>' +
+      '<button class="knop rand klein" id="d-rtg" aria-label="Sorteervolgorde omdraaien">' + (tabelKeuze.richting === 'op' ? '↑ Oplopend' : '↓ Aflopend') + '</button></div>';
+    s += rijenT.length ? '<div class="schuif"><table class="vgl dash"><thead><tr><th>Aandeel</th><th>Koers vs gem.</th><th>Omzet p.j.</th><th>Winst p.j.</th><th>Marge</th></tr></thead><tbody>' + rijenT.map(function (k) {
+      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd) + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
+    }).join('') + '</tbody></table></div><p class="zacht">Groei en marge staan er alleen bij bevestigde aandelen. Een streepje betekent onbekend. Dit is geen rangorde of advies.</p>'
+      : '<div class="kaart-plat"><p>Geen aandelen die aan dit filter voldoen.</p></div>';
+    return s + '</section>';
+  }
+  function dashboardKoppel() {
+    var b = document.getElementById('d-bev'), so = document.getElementById('d-sort'), r = document.getElementById('d-rtg');
+    if (!b) return;
+    b.addEventListener('change', function () { tabelKeuze.alleenBevestigd = b.checked; route(); });
+    so.addEventListener('change', function () { tabelKeuze.sorteer = so.value; route(); });
+    r.addEventListener('click', function () { tabelKeuze.richting = tabelKeuze.richting === 'op' ? 'af' : 'op'; route(); });
   }
   function backupBalk() {
     if (!winkel.backupNodig(vandaag())) return '';
@@ -461,7 +505,7 @@
       if (hash === '#/overzicht') actief = '#/';
       $menu.innerHTML = menuHtml(HOOFD, actief);
       if (hash === '#/hulp') na = function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); };
-      if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/zoek') na = zoekKoppel; if (hash === '#/instellingen') na = instKoppel;
+      if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/zoek') na = zoekKoppel; if (kaart[hash] === schermStart || !kaart[hash]) na = dashboardKoppel; if (hash === '#/instellingen') na = instKoppel;
     }
     $inhoud.innerHTML = html; document.title = titel;
     if (na) na();

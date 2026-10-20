@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.20-beta.21
+Dashboard op het startscherm (geen nieuwe databronnen):
+- **Portefeuille in één blik:** waarde en rendement per valuta, aantal aankopen zonder waarde, en een spreiding per land (per valuta apart, nooit omgerekend).
+- **Aandachtspunten:** hoeveel volglijst-aandelen geen actuele koers hebben.
+- **Tabel "in cijfers":** koers t.o.v. gemiddelde, omzetgroei, winstgroei en nettomarge per aandeel; filter "alleen bevestigd" en sorteren. Groei en marge staan alleen bij bevestigde aandelen; onbekend is een streepje en staat altijd onderaan. Geen rangorde of advies.
+- Nieuwe module `web/js/dashboard.js` met 8 unit-tests en 2 browsertests (smal scherm, spreiding met verse en verouderde koersen). Mutatiecontrole: spreiding tellen zonder status-controle laat een test falen.
+
 ## 2026.10.20-beta.20
 Eerste echte run met 22 aandelen: 12 bevestigd (ASML, Shell, Apple, Microsoft, Amazon, Nvidia, SAP, ING, Meta, Costco, Walmart, Eli Lilly). Uit de diagnose van de overige tien:
 - **Teller van de winst per aandeel:** voor banken en bedrijven met preferente aandelen (JPMorgan, Procter & Gamble) is de gemelde verwaterde winst per aandeel berekend op de winst na dividend op preferente aandelen. De herberekening gebruikt nu, in vaste volgorde van beschikbaarheid: (1) winst beschikbaar voor gewone aandeelhouders (verwaterd), (2) nettowinst, (3) winst min het aandeel van minderheidsbelangen (Mastercard, dat geen nettowinst meldt). De keuze hangt van welke naam bestaat af en nooit van de uitkomst; past het resultaat dan niet, dan blijft het jaar onbevestigd.
