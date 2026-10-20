@@ -4,7 +4,7 @@ This exposes filed observations, not independently verified split-adjusted EPS.
 """
 from datetime import date
 from math import isfinite
-from concept_registry import EPS_TAGS, ANNUAL_FORMS, MONETARY_UNITS
+from concept_registry import EPS_TAGS, EPS_FALLBACK_TAGS, ANNUAL_FORMS, MONETARY_UNITS
 from source_engine import duration_days
 
 
@@ -12,9 +12,10 @@ def sec_eps_filing_observations(payload, asof):
     """Keep provenance of distinct annual EPS filings, without selecting a 'truth'."""
     cutoff = date.fromisoformat(asof)
     seen = set()
+    primair = set()
     observations = []
-    for namespace in ('us-gaap', 'ifrs-full'):
-        for tag in EPS_TAGS:
+    for tag in EPS_TAGS + EPS_FALLBACK_TAGS:         # gewone namen eerst, de uitwijknaam als laatste
+        for namespace in ('us-gaap', 'ifrs-full'):
             units = payload.get('facts', {}).get(namespace, {}).get(tag, {}).get('units', {})
             for unit, rows in units.items():
                 if unit not in {f'{currency}/shares' for currency in MONETARY_UNITS}:
@@ -32,6 +33,11 @@ def sec_eps_filing_observations(payload, asof):
                             continue
                     except (KeyError, ValueError, TypeError):
                         continue
+                    if tag in EPS_FALLBACK_TAGS:
+                        if (row['end'], unit) in primair:
+                            continue        # een gewone EPS-naam gaat altijd voor
+                    else:
+                        primair.add((row['end'], unit))
                     key = (row['end'], row['filed'], row['accn'], namespace, tag, unit, value)
                     if key in seen:
                         continue

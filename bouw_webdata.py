@@ -19,7 +19,7 @@ UITVOER = HERE / 'web' / 'data'
 # (ticker, naam, land, valuta, beurs)
 CATALOGUS = (
     ('ASML.AS', 'ASML Holding', 'Nederland', 'EUR', 'Amsterdam'),
-    ('SHELL.AS', 'Shell plc', 'Nederland', 'EUR', 'Amsterdam'),
+    ('SHEL', 'Shell plc', 'Verenigd Koninkrijk', 'USD', 'New York (NYSE)'),   # Shell rapporteert in USD: notering in dollar, geen omrekening nodig
     ('AAPL', 'Apple Inc.', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('MSFT', 'Microsoft Corp.', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('GOOGL', 'Alphabet (Google)', 'Verenigde Staten', 'USD', 'Nasdaq'),

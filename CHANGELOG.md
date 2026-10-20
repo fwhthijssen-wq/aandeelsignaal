@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.20-beta.17
+- **Shell:** uit de diagnose bleek dat Shell zijn winst per aandeel meldt onder de naam `DilutedEarningsLossPerShareFromContinuingOperations`, die de app niet kende. Die naam wordt nu als uitwijk gebruikt, alleen voor een boekjaar waarvoor geen gewone EPS-naam bestaat (de gewone naam gaat altijd voor, ook als de uitwijknaam later is ingediend). Het cijfer geldt pas na dezelfde herberekening als alle andere (nettowinst / aandelen); bij afgestoten bedrijfsonderdelen wijkt het af en blijft het jaar onbevestigd.
+- **Shell staat nu in de lijst als SHEL (New York, dollar)** in plaats van SHELL.AS (Amsterdam, euro). Shell rapporteert in dollar, dus koers en cijfers hebben dezelfde valuta en er wordt niets omgerekend. Een eventuele aankoop of volglijstplek onder SHELL.AS blijft bewaard maar toont "zit niet meer in de lijst".
+- 470 tests; de nieuwe regels zijn gecontroleerd door ze weg te halen.
+- Niet getest met echte gegevens: of Shell hiermee 10 van 10 haalt hangt af van de herberekening met de echte indieningen.
+
 ## 2026.10.20-beta.16
 - Versienummer staat nu onderaan Instellingen (een test bewaakt dat het gelijk is aan het bestand VERSION).
 - Diagnose: voor elk aandeel met minder dan 10 onderbouwde jaren schrijft de nachtelijke run in `status.json` (veld `diagnose`) welke winst- en aandelennamen de SEC-gegevens van het bedrijf bevatten (eenheid, soort indiening, jaarbereik). Bedoeld om Shell (alle EPS ontbreekt) gericht te kunnen oplossen. Mislukt de diagnose, dan staat de reden erin; de run mislukt nooit door de diagnose.

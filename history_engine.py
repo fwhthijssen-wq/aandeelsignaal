@@ -3,7 +3,7 @@ from collections import defaultdict, Counter
 from source_engine import candidates_for, TAGS, duration_days
 
 CONCEPTS = ('Omzet', 'Nettowinst', 'Operationele kasstroom', 'Investeringen in vaste activa', 'Winst per aandeel (verwaterd)')
-from concept_registry import (EPS_TAGS, EQUITY_TAGS, ANNUAL_FORMS,
+from concept_registry import (EPS_TAGS, EPS_FALLBACK_TAGS, EQUITY_TAGS, ANNUAL_FORMS,
                               CAPEX_REVIEW_TAGS as CAPEX_ALTERNATIVE_TAGS,
                               MONETARY_UNITS)
 
@@ -72,8 +72,8 @@ def annual_history(payload, asof, years=10):
         if old is None or r['filed'] > old['filed']:
             out[key]['Alternatieve investeringen (voorlopig)'] = r
     # SEC rapporteert EPS in USD/shares (of andere valuta/shares), niet in USD.
-    for namespace in ('us-gaap', 'ifrs-full'):
-        for tag in EPS_TAGS:
+    for tag in EPS_TAGS + EPS_FALLBACK_TAGS:         # gewone namen eerst, de uitwijknaam als laatste
+        for namespace in ('us-gaap', 'ifrs-full'):
             for unit, records in payload.get('facts', {}).get(namespace, {}).get(tag, {}).get('units', {}).items():
                 if unit not in tuple(f"{unit}/shares" for unit in MONETARY_UNITS):
                     continue
@@ -85,6 +85,8 @@ def annual_history(payload, asof, years=10):
                     key = (r['end'], unit.split('/')[0])
                     old = out[key].get('Winst per aandeel (verwaterd)')
                     candidate = dict(r, unit=unit, tag=tag, namespace=namespace, eps_source_filed=r['filed'])
+                    if tag in EPS_FALLBACK_TAGS and old is not None and old.get('tag') != tag:
+                        continue        # een gewone EPS-naam gaat altijd voor
                     if old is None or candidate['filed'] > old['filed']:
                         out[key]['Winst per aandeel (verwaterd)'] = candidate
     # Eigen vermogen is een balansmoment, geen jaarstroom. Alleen USD/EUR/GBP

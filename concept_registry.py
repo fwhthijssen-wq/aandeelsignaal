@@ -26,6 +26,10 @@ CONCEPT_TAGS = {
 }
 
 EPS_TAGS = ('EarningsPerShareDiluted', 'DilutedEarningsLossPerShare')
+# Uitwijknaam (o.a. Shell): alleen gebruikt voor een boekjaar waarvoor geen gewone EPS-naam bestaat.
+# De herberekening (nettowinst / aandelen) en de overige controles beslissen daarna of het cijfer geldt;
+# bij afgestoten bedrijfsonderdelen wijkt het af van de herberekening en blijft het jaar onbevestigd.
+EPS_FALLBACK_TAGS = ('DilutedEarningsLossPerShareFromContinuingOperations',)
 EQUITY_TAGS = (
     'StockholdersEquity',
     'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest',

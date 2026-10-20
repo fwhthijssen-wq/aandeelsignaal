@@ -1,4 +1,4 @@
-# Aandeel Signaal — bèta 2026.10.20-beta.16
+# Aandeel Signaal — bèta 2026.10.20-beta.17
 
 Dit is een **bèta voor eigen gebruik en feedback**. Geen gevalideerd beleggingsadvies, geen definitieve NAIC-vrijgave, geen productieversie.
 
