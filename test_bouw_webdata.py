@@ -157,7 +157,7 @@ class ValutaEnStatusTests(unittest.TestCase):
         import re
         ts = [m[0] for m in bw.CATALOGUS]
         self.assertEqual(len(ts), len(set(ts)), 'dubbele beurscode')
-        self.assertGreaterEqual(len(ts), 22)
+        self.assertGreaterEqual(len(ts), 37)
         for ticker, naam, land, valuta, beurs in bw.CATALOGUS:
             self.assertRegex(ticker, r'^[A-Z0-9][A-Z0-9.\-]{0,14}$', ticker)   # zelfde regel als de opslag in de app
             self.assertTrue(naam and land and beurs, ticker)

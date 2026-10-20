@@ -111,7 +111,7 @@ class WebUi(unittest.TestCase):
         txt = pg.inner_text('#dash')
         self.assertIn('Dashboard', txt)
         self.assertNotIn('0 / 22', txt)
-        self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), 22)
+        self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), pg.evaluate('window.AANDEEL_DATA.aandelen.length'))
         # onbevestigd: geen enkel groei- of margecijfer, alleen streepjes
         self.assertNotIn('%', pg.inner_text('#dash table.dash tbody'))
         self.assertEqual(pg.locator('[data-spreiding]').count(), 0)   # nog geen portefeuille

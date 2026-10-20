@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.20-beta.23
+Meer aandelen: 15 erbij (37 totaal): AstraZeneca, Novartis, TotalEnergies (Europese bedrijven die in dollar rapporteren, genoteerd in New York zodat koers en cijfers dezelfde valuta hebben) en Adobe, Salesforce, Oracle, Cisco, PepsiCo, Merck, AbbVie, Home Depot, McDonald's, UnitedHealth, Texas Instruments en Caterpillar. Elk aandeel krijgt pas een oordeel als alle controles slagen; wat niet lukt, staat met reden in `status.json`. Er is bewust geen aandeel toegevoegd dat in een andere valuta rapporteert dan het genoteerd is (bijvoorbeeld Novo Nordisk: Deense kroon).
+
 ## 2026.10.20-beta.22
 Extra NAIC-kentallen over het management (uit dezelfde SEC-bestanden, geen nieuwe bron):
 - **Winstmarge vóór belasting** (de echte NAIC-maatstaf), **uitgekeerd deel van de winst** (totaal dividend gedeeld door nettowinst; bewust niet per aandeel, want dat verandert bij een aandelensplitsing), **schuld t.o.v. totaal kapitaal** en **investeringen t.o.v. afschrijvingen**, per jaar in de NAIC-tab.

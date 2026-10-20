@@ -41,6 +41,23 @@ CATALOGUS = (
     ('PG', 'Procter & Gamble', 'Verenigde Staten', 'USD', 'NYSE'),
     ('KO', 'Coca-Cola', 'Verenigde Staten', 'USD', 'NYSE'),
     ('XOM', 'Exxon Mobil', 'Verenigde Staten', 'USD', 'NYSE'),
+    # Uitbreiding (beta.23). Europese bedrijven die in dollar rapporteren staan genoteerd in New York, zodat koers en cijfers
+    # dezelfde valuta hebben (zoals Shell). Bedrijven die in een andere valuta rapporteren dan de notering blijven hier weg.
+    ('AZN', 'AstraZeneca', 'Verenigd Koninkrijk', 'USD', 'New York (Nasdaq)'),
+    ('NVS', 'Novartis', 'Zwitserland', 'USD', 'New York (NYSE)'),
+    ('TTE', 'TotalEnergies', 'Frankrijk', 'USD', 'New York (NYSE)'),
+    ('ADBE', 'Adobe', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('CRM', 'Salesforce', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('ORCL', 'Oracle', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('CSCO', 'Cisco Systems', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('PEP', 'PepsiCo', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('MRK', 'Merck & Co.', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('ABBV', 'AbbVie', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('HD', 'Home Depot', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('MCD', "McDonald's", 'Verenigde Staten', 'USD', 'NYSE'),
+    ('UNH', 'UnitedHealth Group', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('TXN', 'Texas Instruments', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('CAT', 'Caterpillar', 'Verenigde Staten', 'USD', 'NYSE'),
 )
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
