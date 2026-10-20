@@ -83,6 +83,7 @@ def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False
     from math import isfinite
     audit_date = date.fromisoformat(asof) if asof is not None else date.today()
     events = {}
+    uncertain_until = {}
     invalid_event = False
     for event in splits:
         when, ratio = event.get('Datum'), event.get('Waarde SEC')
@@ -106,6 +107,9 @@ def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False
             invalid_event = True
             continue
         events.setdefault(event_date.isoformat(), set()).add(float(ratio))
+        tot = event.get('Onzeker tot')
+        if isinstance(tot, str) and tot > event_date.isoformat():
+            uncertain_until[event_date.isoformat()] = max(uncertain_until.get(event_date.isoformat(), ''), tot)
     ambiguous = invalid_event or any(len(ratios) != 1 for ratios in events.values())
     result = {}
     for h in history:
@@ -126,9 +130,16 @@ def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False
             result[end] = {'EPS vergelijkbaar': None, 'Status': 'Niet vast te stellen: splitinformatie ontbreekt of is tegenstrijdig', 'Factor': None}
             continue
         factor = 1.0
+        onzeker = False
         for when, ratios in events.items():
             if end < when and filed < when:
                 factor *= next(iter(ratios))
+            elif end < when and when <= filed <= uncertain_until.get(when, ''):
+                onzeker = True            # de splitsing wordt onder meerdere datums gemeld; deze indiening valt ertussen
+        if onzeker:
+            result[end] = {'EPS vergelijkbaar': None, 'Status': 'Niet vast te stellen: indieningsdatum valt in de onzekere splitperiode',
+                           'Factor': None}
+            continue
         result[end] = {
             'EPS vergelijkbaar': round(eps['val'] / factor, 6),
             'Status': ('Voorlopig omgerekend op latere aandelenbasis' if factor != 1

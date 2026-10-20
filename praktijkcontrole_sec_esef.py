@@ -348,6 +348,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
         'split_event_audit': split_audit,
         'eps_verification_status': eps_check['status'],
         'eps_verification_routes': eps_check['routes'],
+        'eps_verification_note': eps_check.get('toelichting'),
         'year_table': [
             {'year': r['year'], 'end': r['end'].isoformat(), 'currency': r['currency'],
              'sales': r['sales'], 'net_income': r['profit'], 'reported_eps': r['reported_eps'],

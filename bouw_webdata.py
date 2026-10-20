@@ -69,7 +69,8 @@ def gegevens_uit_sec(sec, gecontroleerd_op):
     return {'gecontroleerd_op': gecontroleerd_op, 'fout': None,
             'eps_status': bewijs.get('eps_status'), 'eps_verified_years': bewijs.get('eps_verified_years'),
             'currencies': bewijs.get('currencies'), 'rejected_sources': bewijs.get('rejected_sources'),
-            'jaren': jaren, 'splits': splits, 'waarschuwingen': list(dossier.get('warnings') or [])}
+            'jaren': jaren, 'splits': splits, 'waarschuwingen': list(dossier.get('warnings') or []),
+            'eps_toelichting': dossier.get('eps_verification_note')}
 
 
 def koers_uit_reeks(reeks):
@@ -122,7 +123,8 @@ def maak_status(bestand):
                     'afgewezen_bronnen': g.get('rejected_sources'),
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
-                    'open_jaren': open_jaren, 'waarschuwingen': g.get('waarschuwingen')})
+                    'open_jaren': open_jaren, 'toelichting': g.get('eps_toelichting'),
+                    'waarschuwingen': g.get('waarschuwingen')})
     return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
 
 

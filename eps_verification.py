@@ -22,6 +22,8 @@ CENT_ROUNDING = 0.005          # EPS wordt op centen afgerond
 RECOMPUTE_TOLERANCE = 0.0055   # halve cent plus rekenmarge
 NET_INCOME_TAG = 'NetIncomeLoss'
 SHARES_TAG = 'WeightedAverageNumberOfDilutedSharesOutstanding'
+IFRS_NET_INCOME_TAG = 'ProfitLossAttributableToOwnersOfParent'
+IFRS_SHARES_TAG = 'AdjustedWeightedAverageShares'
 EPS_FACT = 'Winst per aandeel (verwaterd)'
 
 
@@ -51,9 +53,10 @@ def sec_eps_recompute_inputs(payload, asof):
     cutoff = _day(asof)
     if cutoff is None:
         return []
-    facts = (payload.get('facts') or {}).get('us-gaap', {})
+    all_facts = payload.get('facts') or {}
 
-    def annual(tag, accepted_unit):
+    def annual(namespace, tag, accepted_unit):
+        facts = all_facts.get(namespace) or {}
         found = {}
         for unit, rows in ((facts.get(tag) or {}).get('units') or {}).items():
             if not accepted_unit(unit):
@@ -72,19 +75,27 @@ def sec_eps_recompute_inputs(payload, asof):
                 found.setdefault((row['start'], row['end'], row['accn']), set()).add((unit, value, row['filed']))
         return found
 
-    income = annual(NET_INCOME_TAG, lambda unit: unit in MONETARY_UNITS)
-    shares = annual(SHARES_TAG, lambda unit: unit == 'shares')
-    records = []
-    for key in sorted(set(income) & set(shares)):
-        if len(income[key]) != 1 or len(shares[key]) != 1:
-            continue
-        (currency, net_income, filed), = income[key]
-        (_, diluted_shares, _), = shares[key]
-        records.append({'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
-                        'currency': currency, 'net_income': net_income,
-                        'diluted_shares': diluted_shares,
-                        'source': f'SEC us-gaap:{NET_INCOME_TAG} / {SHARES_TAG}'})
-    return records
+    records = {}
+    # US-GAAP en IFRS (ifrs-full) hebben elk eigen namen; per indiening wordt één stelsel gebruikt.
+    for namespace, ni_tag, sh_tag in (('us-gaap', NET_INCOME_TAG, SHARES_TAG),
+                                      ('ifrs-full', IFRS_NET_INCOME_TAG, IFRS_SHARES_TAG)):
+        income = annual(namespace, ni_tag, lambda unit: unit in MONETARY_UNITS)
+        shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')
+        for key in sorted(set(income) & set(shares)):
+            if len(income[key]) != 1 or len(shares[key]) != 1:
+                continue
+            (currency, net_income, filed), = income[key]
+            (_, diluted_shares, _), = shares[key]
+            record = {'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
+                      'currency': currency, 'net_income': net_income,
+                      'diluted_shares': diluted_shares,
+                      'source': f'SEC {namespace}:{ni_tag} / {sh_tag}'}
+            previous = records.get(key)
+            if previous is not None and (previous['net_income'], previous['diluted_shares']) != (net_income, diluted_shares):
+                records[key] = None            # tegenstrijdig tussen stelsels: nooit kiezen
+            elif previous is None and key not in records:
+                records[key] = record
+    return [records[k] for k in sorted(records) if records[k] is not None]
 
 
 def _rounding_unit(value):
@@ -171,6 +182,75 @@ def share_count_continuity(history, inputs):
     return True, 'aantal aandelen stabiel over alle boekjaren'
 
 
+def adjusted_share_chain(history, inputs, factors):
+    """Jaren waarvan het aantal aandelen, omgerekend met de splitfactor, een onafgebroken stabiele reeks vormt
+    tot en met het nieuwste jaar. Een verkeerde factor veroorzaakt een sprong en sluit de oudere jaren uit."""
+    rows = []
+    for row in history:
+        fact = (row.get('facts') or {}).get(EPS_FACT) if isinstance(row, dict) else None
+        end = row.get('end') if isinstance(row, dict) else None
+        day = _day(end)
+        if day is None or not isinstance(fact, dict):
+            continue
+        matches = [r for r in (inputs or []) if isinstance(r, dict) and r.get('end') == end
+                   and r.get('accn') == fact.get('accn')]
+        shares = {_number(r.get('diluted_shares')) for r in matches}
+        factor = factors.get(end)
+        if len(shares) != 1 or None in shares or next(iter(shares)) <= 0 or not isinstance(factor, (int, float)):
+            rows.append((day, end, None))
+        else:
+            rows.append((day, end, next(iter(shares)) * factor))
+    rows.sort()
+    if len(rows) < 2:
+        return set(), 'te weinig boekjaren'
+    if rows[-1][2] is None:
+        return set(), 'aantal aandelen ontbreekt voor het nieuwste boekjaar'
+    ok = {rows[-1][1]}
+    reason = None
+    for (d1, e1, s1), (d2, e2, s2) in zip(rows[-2::-1], rows[::-1]):
+        if s1 is None or s2 is None or e2 not in ok:
+            if reason is None and s1 is None:
+                reason = f'aantal aandelen ontbreekt voor {e1}: oudere jaren niet te bevestigen via aandelenaantal'
+            continue
+        if not 340 <= (d2 - d1).days <= 390 or not 0.8 <= s2 / s1 <= 1.2:
+            reason = (f'omgerekend aantal aandelen springt tussen {e1} en {e2}: splitfactor niet bevestigd')
+            continue
+        ok.add(e1)
+    return ok, reason
+
+
+def _bundel_bevestigde_duplicaten(events, window_days=100):
+    """Dezelfde splitsing onder meerdere data (SEC meldt per verslagperiode) telt één keer.
+    De vroegste datum blijft; indieningen binnen de onzekere periode zijn niet te corrigeren."""
+    confirmed = sorted(((_day(e.get('Datum')), _number(e.get('Waarde SEC')), i) for i, e in enumerate(events)
+                        if isinstance(e, dict) and e.get('Datumtype') == 'effectieve_splitdatum'),
+                       key=lambda x: (x[1] or 0, x[0] or date.min))
+    result = list(events)
+    group = []
+    def flush():
+        if len(group) < 2:
+            return
+        first = min(group, key=lambda g: g[0])
+        last = max(g[0] for g in group)
+        if last == first[0]:
+            return
+        for d, r, i in group:
+            if i == first[2]:
+                result[i] = {**result[i], 'Onzeker tot': last.isoformat()}
+            elif d != first[0]:
+                result[i] = {**result[i], 'Datumtype': 'dubbel_van_bevestigde_splitsing',
+                             'Verificatie reden': 'dezelfde splitsing onder een latere datum; '
+                                                  f'vroegste datum {first[0].isoformat()}'}
+    for item in confirmed:
+        if item[0] is None or item[1] is None:
+            continue
+        if group and (item[1] != group[0][1] or (item[0] - group[0][0]).days > window_days):
+            flush(); group.clear()
+        group.append(item)
+    flush()
+    return result
+
+
 def verify_split_events(split_events, observations, history):
     """Geef de splitgebeurtenissen terug met bevestiging uit EPS-herberekeningen rond de splitsing.
 
@@ -242,7 +322,7 @@ def verify_split_events(split_events, observations, history):
                         'Verificatie bewijs': [entry for _, entry in supporting],
                         'Verificatie venster': {'laatste_indiening_voor': last_before.isoformat(),
                                                 'eerste_indiening_na': first_after.isoformat()}})
-    return _markeer_dubbele_aankondigingen(out)
+    return _bundel_bevestigde_duplicaten(_markeer_dubbele_aankondigingen(out))
 
 
 def _markeer_dubbele_aankondigingen(events):
@@ -273,7 +353,7 @@ def _route_oorspronkelijke_indiening(end, row, observations, confirmed, expected
     primary_filed = _day(fact.get('filed'))
     if period is None or primary_filed is None or any(d is None or r is None for d, r in confirmed):
         return None
-    applicable = [(d, r) for d, r in confirmed if d > period]
+    applicable = sorted({(d, r) for d, r in confirmed if d > period})
     if not applicable or any(d > primary_filed for d, _ in applicable):
         return None                    # het dossier gebruikt hier geen indiening van ná de splitsing
     first_split = min(d for d, _ in applicable)
@@ -410,6 +490,9 @@ def verify_eps(result, safe_history, audit_date):
     inputs = result.get('eps_recompute_inputs')
     inputs = inputs if isinstance(inputs, list) else []
     recompute = {}
+    factors = {end: item.get('Factor') for end, item in eps_normalized.items()}
+    chain_ok, chain_reason = (adjusted_share_chain(safe_history, inputs, factors)
+                              if eps_normalized else (set(), None))
     for row in safe_history:
         end = row.get('end') if isinstance(row, dict) else None
         audit = eps_reconciliation.get(end)
@@ -419,6 +502,13 @@ def verify_eps(result, safe_history, audit_date):
         recompute[end] = check
         audit['herberekening'] = check
         if audit['status'] == 'niet_bewezen' and check['status'] == 'consistent':
+            factor = (eps_normalized.get(end) or {}).get('Factor')
+            if factor not in (None, 1, 1.0) and end not in chain_ok:
+                # De herberekening bewijst alleen dat de gemelde EPS klopt binnen één indiening. Voor een jaar dat
+                # is omgerekend moet ook de omrekening zelf kloppen: dat bewijst een stabiele reeks aandelen.
+                audit['reden'] = (f"{audit.get('reden')}; omrekening met factor {factor:g} niet bevestigd door een "
+                                  f"stabiele reeks aandelen" + (f' ({chain_reason})' if chain_reason else ''))
+                continue
             audit['status'] = 'onderbouwd'
             audit['route'] = 'herberekening'
             audit['reden'] = check['reden']
@@ -470,7 +560,7 @@ def verify_eps(result, safe_history, audit_date):
             'rejected_split_evidence': rejected_split_evidence,
             'normalization_splits': normalization_splits, 'eps_normalized': eps_normalized,
             'eps_reconciliation': eps_reconciliation, 'eps_verified_years': eps_verified_years,
-            'status': status, 'routes': routes, 'no_splits': no_splits,
+            'status': status, 'routes': routes, 'no_splits': no_splits, 'toelichting': no_splits_reason or chain_reason,
             'no_splits_reason': no_splits_reason}
 
 
