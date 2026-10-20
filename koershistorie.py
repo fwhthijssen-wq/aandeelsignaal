@@ -50,3 +50,19 @@ def jaarkoersen(punten, dividenden, einddata):
         som = sum(b for d, b in divs if start <= d <= eind)
         blok['dividend_ps'] = round(som, 4) if som > 0 else None   # geen uitkering gevonden = onbekend, niet "nul"
     return uit
+
+
+def koersbereik(punten, min_jaren=8, max_jaren=10):
+    """Hoogste en laagste slotkoers over de laatste max_jaren jaar, alleen als de reeks minstens min_jaren omvat en
+    voldoende handelsdagen heeft. Anders None. Dient voor de plek van de koers in het bereik (beschrijving, geen advies)."""
+    schoon = sorted((d, k) for d, k in ((_dag(a), _getal(b)) for a, b in punten or []) if d is not None and k is not None and k > 0)
+    if not schoon:
+        return None
+    laatste = schoon[-1][0]
+    start = laatste - timedelta(days=int(365.25 * max_jaren))
+    venster = [(d, k) for d, k in schoon if d >= start]
+    jaren = (laatste - venster[0][0]).days / 365.25
+    if jaren < min_jaren or len(venster) < int(200 * min_jaren):
+        return None
+    return {'hoog': round(max(k for _, k in venster), 4), 'laag': round(min(k for _, k in venster), 4),
+            'van': venster[0][0].isoformat(), 'tot': laatste.isoformat(), 'jaren': round(jaren, 1)}

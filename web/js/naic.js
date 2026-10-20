@@ -72,16 +72,29 @@
   /* Plek van de koers in het bereik van de laatste n boekjaren (hoogste en laagste slotkoers), in drie gelijke stukken zoals in de
      Nederlandse NAIC-praktijk, en de verhouding opwaarts/neerwaarts (hoogste - koers) / (koers - laagste).
      Alleen met een verse koers en minstens minJaren jaren met beide waarden; anders null. Het label (positief/neutraal/vermijden) is alleen een beschrijving; de app toont het alleen bij bevestigde gegevens. */
+  function plaats(hoog, laag, koers) {
+    hoog = Math.max(hoog, koers); laag = Math.min(laag, koers);
+    if (!(hoog > laag)) return null;
+    var stuk = (hoog - laag) / 3, derde = koers <= laag + stuk ? 'onder' : koers < laag + 2 * stuk ? 'midden' : 'boven';
+    var verh = koers > laag ? rond((hoog - koers) / (koers - laag), 1) : null;
+    return { hoog: rond(hoog, 2), laag: rond(laag, 2), derde: derde, label: derde === 'boven' ? 'vermijden' : derde === 'onder' && verh !== null && verh >= 3 ? 'positief' : 'neutraal',
+             positiePct: rond((koers - laag) / (hoog - laag) * 100, 0), verhouding: verh };
+  }
   function bereik(jr, koers, n, minJaren) {
     var v = jaren(jr).filter(function (j) { return pos(j.koers_hoog) && pos(j.koers_laag) && j.koers_hoog >= j.koers_laag; }).slice(-(n || 10));
     if (!pos(koers) || v.length < (minJaren || 8)) return null;
-    var hoog = Math.max.apply(null, v.map(function (j) { return j.koers_hoog; })), laag = Math.min.apply(null, v.map(function (j) { return j.koers_laag; }));
-    hoog = Math.max(hoog, koers); laag = Math.min(laag, koers);
-    if (hoog <= laag) return null;
-    var stuk = (hoog - laag) / 3, derde = koers <= laag + stuk ? 'onder' : koers < laag + 2 * stuk ? 'midden' : 'boven';
-    var verh = koers > laag ? rond((hoog - koers) / (koers - laag), 1) : null;
-    return { hoog: rond(hoog, 2), laag: rond(laag, 2), derde: derde, label: derde === 'boven' ? 'vermijden' : derde === 'onder' && verh !== null && verh >= 3 ? 'positief' : 'neutraal', positiePct: rond((koers - laag) / (hoog - laag) * 100, 0),
-             verhouding: verh, van: v[0].year, tot: v[v.length - 1].year, jaren: v.length };
+    var p = plaats(Math.max.apply(null, v.map(function (j) { return j.koers_hoog; })), Math.min.apply(null, v.map(function (j) { return j.koers_laag; })), koers);
+    if (!p) return null;
+    p.van = v[0].year; p.tot = v[v.length - 1].year; p.jaren = v.length;
+    return p;
+  }
+  /* Zelfde, maar uit het kant-en-klare bereik van de koersreeks (koers.bereik: hoog, laag, van, tot, jaren); voor aandelen zonder jaarcijfers. */
+  function bereikUitKoers(b, koers) {
+    if (!b || !pos(b.hoog) || !pos(b.laag) || b.hoog < b.laag || !pos(koers) || !pos(b.jaren) || b.jaren < 8) return null;
+    var p = plaats(b.hoog, b.laag, koers);
+    if (!p) return null;
+    p.van = String(b.van || '').slice(0, 4) * 1 || null; p.tot = String(b.tot || '').slice(0, 4) * 1 || null; p.jaren = Math.round(b.jaren);
+    return p;
   }
 
   /* Koerszones: toekomstig hoog en laag, en waar de koers nu in dat bereik staat. Gooit bij ongeldige invoer. */
@@ -107,6 +120,6 @@
     return uit;
   }
 
-  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, koerszones: koerszones };
+  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

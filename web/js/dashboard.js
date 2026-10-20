@@ -72,7 +72,7 @@
     opties = opties || {};
     var sleutel = KOLOMMEN.indexOf(opties.sorteer) > -1 ? opties.sorteer : 'naam';
     var dir = opties.richting === 'af' ? -1 : 1;
-    var lijst = (kanten || []).filter(function (k) { return (!opties.alleenBevestigd || k.bevestigd) && (opties.trend200 !== 'boven' && opties.trend200 !== 'onder' || k.trend200 === opties.trend200); });
+    var lijst = (kanten || []).filter(function (k) { return (!opties.alleenBevestigd || k.bevestigd) && (opties.trend200 !== 'boven' && opties.trend200 !== 'onder' || k.trend200 === opties.trend200) && (!opties.index || (k.indices || []).indexOf(opties.index) > -1); });
     return lijst.slice().sort(function (a, b) {
       var x = a[sleutel], y = b[sleutel];
       if (sleutel === 'naam') { x = String(x).toLowerCase(); y = String(y).toLowerCase(); return x < y ? -dir : x > y ? dir : 0; }

@@ -137,3 +137,14 @@ test('bereik: label positief/neutraal/vermijden', () => {
   assert.equal(N.bereik(jr, 150).label, 'vermijden');
   assert.equal(N.bereik(jr, 30).label, 'neutraal');         // onder het dieptepunt: verhouding onbekend
 });
+
+test('bereikUitKoers: zelfde indeling uit koersreeks; onvolledig of ongeldig geeft null', () => {
+  const b = { hoog: 165.7, laag: 40, van: '2016-10-17', tot: '2026-10-16', jaren: 10 };
+  const a = N.bereikUitKoers(b, 70.5);
+  assert.equal(a.derde, 'onder'); assert.equal(a.label, 'positief'); assert.equal(a.verhouding, 3.1); assert.equal(a.van, 2016); assert.equal(a.tot, 2026);
+  assert.equal(N.bereikUitKoers(b, 150).label, 'vermijden');
+  assert.equal(N.bereikUitKoers({ ...b, jaren: 7.2 }, 70), null);
+  assert.equal(N.bereikUitKoers(null, 70), null);
+  assert.equal(N.bereikUitKoers({ ...b, hoog: 30 }, 70), null);
+  assert.equal(N.bereikUitKoers(b, null), null);
+});

@@ -19,6 +19,9 @@ SEC_LISTING_MAP = {
     'ENI.MI': 'E',       # Eni SpA, SEC Form 20-F (EUR)
 }
 
+from europa_indexen import SEC_KOPPELING
+SEC_LISTING_MAP.update(SEC_KOPPELING)
+
 
 def sec_ticker_for_listing(ticker):
     return SEC_LISTING_MAP.get((ticker or '').upper(), ticker)

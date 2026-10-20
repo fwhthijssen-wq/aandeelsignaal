@@ -73,6 +73,17 @@ CATALOGUS = (
     ('TMO', 'Thermo Fisher Scientific', 'Verenigde Staten', 'USD', 'NYSE'),
 )
 
+from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
+CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
+INDICES = _europa_indices()
+
+
+def heeft_sec(ticker):
+    """Alleen Amerikaanse noteringen (zonder punt) en expliciet gekoppelde Europese bedrijven hebben een SEC-jaarverslag."""
+    from naic_fetch import SEC_LISTING_MAP
+    return '.' not in ticker or ticker.upper() in SEC_LISTING_MAP
+
+
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
                'operating_cash_flow', 'capex', 'equity', 'eps_check', 'eps_reden')
 
@@ -294,7 +305,7 @@ def maak_record(meta, *, koers=None, gegevens=None):
         # De notering telt dus mee; bij een verschil (Shell: cijfers in USD, koers in EUR) is de valuta niet eenduidig.
         gegevens = {**gegevens, 'currencies': sorted(set(gegevens['currencies']) | {valuta})}
     return {'ticker': ticker, 'naam': naam, 'land': land, 'valuta': valuta, 'beurs': beurs,
-            'koers': koers, 'gegevens': gegevens}
+            'indices': INDICES.get(ticker), 'koers': koers, 'gegevens': gegevens}
 
 
 def maak_bestand(records, gemaakt=None, bron=''):
@@ -382,7 +393,8 @@ def extra_namen(payload, max_per_veld=10):
     return uit
 
 
-def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None):
+def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
+         valuta_ophalen=None, pauze=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
@@ -391,14 +403,19 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     diagnose = diagnose or sec_diagnose
     payload_ophalen = payload_ophalen or sec_payload
     historie_ophalen = historie_ophalen or _yahoo_historie
+    valuta_ophalen = valuta_ophalen if valuta_ophalen is not None else _yahoo_valuta
+    pauze = pauze if pauze is not None else _pauze
     vandaag = date.today().isoformat()
     records = []
     for meta in CATALOGUS:
         ticker = meta[0]
-        try:
-            gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
-        except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
-            gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+        if heeft_sec(ticker):
+            try:
+                gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
+            except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
+                gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+        else:
+            gegevens = gegevens_uit_sec({'status': 'geen_sec', 'reason': 'Geen SEC-jaarverslag voor dit bedrijf; alleen koersgegevens.'}, vandaag)
         if gegevens.get('jaren'):
             try:
                 extra_payload = payload_ophalen(sec_ticker_for_listing(ticker), email)
@@ -407,20 +424,56 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
-        if gegevens.get('jaren'):
+        if heeft_sec(ticker) and (gegevens.get('eps_verified_years') or 0) < 10:
+            gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
+        koers, punten, dividenden = None, [], []
+        if valuta_klopt(meta, valuta_ophalen):
+            try:
+                koers = koers_uit_reeks(fetch_prijzen(ticker))
+            except Exception:
+                koers = None
             try:
                 punten, dividenden = historie_ophalen(ticker)
-                voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
             except Exception:
-                pass            # geen koershistorie: K/W-historie en dividendrendement ontbreken, de rest blijft geldig
-        if (gegevens.get('eps_verified_years') or 0) < 10:
-            gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
-        try:
-            koers = koers_uit_reeks(fetch_prijzen(ticker))
-        except Exception:
-            koers = None
+                punten, dividenden = [], []
+            if gegevens.get('jaren'):
+                try:
+                    voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
+                except Exception:
+                    pass        # geen koershistorie: K/W-historie en dividendrendement ontbreken, de rest blijft geldig
+            if koers is not None:
+                from koershistorie import koersbereik
+                koers['bereik'] = koersbereik(punten)
+        pauze()
         records.append(maak_record(meta, koers=koers, gegevens=gegevens))
     return maak_bestand(records, bron='SEC companyfacts en Yahoo Finance (dagkoersen)')
+
+
+def _pauze():
+    import time
+    time.sleep(0.4)             # vriendelijk voor Yahoo bij ruim 300 aandelen
+
+
+def valuta_klopt(meta, valuta_ophalen):
+    """Controleert dat Yahoo de koers in de verwachte valuta geeft (Londen noteert in pence). Onbekend is alleen
+    toegestaan voor noteringen die niet in pence zijn; een verschil geeft geen koers, nooit een omrekening."""
+    try:
+        v = valuta_ophalen(meta[0])
+    except Exception:
+        v = None
+    if v == 'GBp':
+        v = 'GBX'
+    if v is None:
+        return meta[3] != 'GBX'
+    return str(v).upper() == meta[3]
+
+
+def _yahoo_valuta(ticker):
+    import yfinance as yf
+    try:
+        return yf.Ticker(ticker).fast_info.get('currency')
+    except Exception:
+        return None
 
 
 def _yahoo_historie(ticker):

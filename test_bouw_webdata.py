@@ -67,7 +67,7 @@ class WebdataTests(unittest.TestCase):
                     {'end': '2021-09-25', 'start': '2020-09-27', 'val': 15234000000, 'form': '10-K', 'filed': '2025-10-31', 'accn': 'x'}]}}}}}
             raise OSError('geen verbinding')
 
-        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, historie_ophalen=lambda t: ([], []), sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
+        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
                           payload_ophalen=payload_ophalen)
         apple = next(r for r in bestand['aandelen'] if r['ticker'] == 'AAPL')
         self.assertEqual(apple['koers']['datum'], '2026-10-19')
@@ -78,9 +78,33 @@ class WebdataTests(unittest.TestCase):
         self.assertTrue(all(j['pretax_income'] is None and j['long_term_debt'] is None for j in jr.values()))
         rest = [r for r in bestand['aandelen'] if r['ticker'] != 'AAPL']
         self.assertTrue(all(r['koers'] is None and r['gegevens']['fout'] for r in rest))
-        self.assertTrue(all(r['gegevens'].get('diagnose') for r in rest), 'mislukte aandelen krijgen een diagnose')
+        self.assertTrue(all(r['gegevens'].get('diagnose') for r in rest if bw.heeft_sec(r['ticker'])), 'mislukte aandelen met SEC-route krijgen een diagnose')
+        zonder = [r for r in rest if not bw.heeft_sec(r['ticker'])]
+        self.assertGreater(len(zonder), 200)
+        self.assertTrue(all('alleen koersgegevens' in r['gegevens']['fout'] and not r['gegevens'].get('diagnose') for r in zonder))
         self.assertEqual('diagnose' in apple['gegevens'], (apple['gegevens']['eps_verified_years'] or 0) < 10,
                          'diagnose alleen als er minder dan 10 jaar onderbouwd zijn')
+
+    def test_valuta_controle_pence_en_onbekend(self):
+        gbx = ('BP.L', 'BP', 'Verenigd Koninkrijk', 'GBX', 'Londen')
+        eur = ('MC.PA', 'LVMH', 'Frankrijk', 'EUR', 'Parijs')
+        self.assertTrue(bw.valuta_klopt(gbx, lambda t: 'GBp'))
+        self.assertFalse(bw.valuta_klopt(gbx, lambda t: 'GBP'), 'pond is niet pence: geen koers')
+        self.assertFalse(bw.valuta_klopt(gbx, lambda t: None), 'onbekend bij Londen: geen koers')
+        self.assertTrue(bw.valuta_klopt(eur, lambda t: None))
+        self.assertFalse(bw.valuta_klopt(eur, lambda t: 'USD'))
+        def stuk(t):
+            raise OSError('x')
+        self.assertFalse(bw.valuta_klopt(gbx, stuk))
+        self.assertTrue(bw.valuta_klopt(eur, stuk))
+
+    def test_europese_indexen_labels_en_sec_koppeling(self):
+        rec = bw.maak_record(next(m for m in bw.CATALOGUS if m[0] == 'MC.PA'))
+        self.assertEqual(rec['indices'], ['CAC40'])
+        self.assertEqual(bw.INDICES['AIR.PA'], ['CAC40', 'DAX'])
+        self.assertEqual(bw.INDICES['SAP.DE'], ['DAX'])
+        self.assertTrue(bw.heeft_sec('DBK.DE') and bw.heeft_sec('SAP.DE') and bw.heeft_sec('AAPL'))
+        self.assertFalse(bw.heeft_sec('MC.PA') or bw.heeft_sec('BP.L'))
 
     def test_extra_cijfers_mislukken_nooit_de_run_en_raken_het_slot_niet(self):
         data = fx.payload()
@@ -90,7 +114,7 @@ class WebdataTests(unittest.TestCase):
 
         def kapot(t, e):
             raise RuntimeError('boem')
-        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
+        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
         g = bestand['aandelen'][0]['gegevens']
         self.assertEqual(g['eps_status'], 'independently_verified')
         self.assertTrue(all(j.get('dividends_paid') is None for j in g['jaren']))

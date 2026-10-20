@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 2026.10.20-beta.35
+- **Europa via de indexen:** AEX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026): 272 nieuwe aandelen, samen 320. Nieuw `europa_indexen.py`.
+- Zij krijgen koers, trend, koersbereik van 10 jaar en een indexlabel, maar **geen jaarcijfers en geen label** tenzij er een SEC-jaarverslag is dat de controle doorstaat. Gekoppeld aan SEC: Deutsche Bank, BBVA, Santander, Telefónica, Grifols. Bij de overige staat "Geen SEC-jaarverslag voor dit bedrijf; alleen koersgegevens".
+- **Londen:** koersen staan in pence (code GBX). Controle op de valuta die Yahoo opgeeft; verschilt die van de verwachte, of is hij onbekend bij Londen, dan komt er geen koers. Nooit een omrekening.
+- Zoeken en Dashboard: filter op index; zoeken toont zonder zoekterm de eerste 40; Dashboard zonder volglijst de eerste 60.
+- Koers-tab: kaart "Plek in het koersbereik" voor alle aandelen met 8+ jaar koershistorie; het label positief/neutraal/vermijden alleen bij bevestigde gegevens.
+- De nachtelijke update wacht 0,4 seconde per aandeel (vriendelijk voor Yahoo) en duurt daardoor langer (ongeveer een half uur).
+
 ## 2026.10.20-beta.34
 - **Labels positief / neutraal / vermijden** in plaats van koop/houd/verkoop. Op de NAIC-tab bij "Plek in het koersbereik": positief = onderste derde én minstens 3 : 1 opwaarts/neerwaarts; vermijden = bovenste derde; anders neutraal. Het label verschijnt alleen bij bevestigde gegevens; zonder bevestiging blijft alleen de beschrijving van het derde staan. Ook de teksten bij je eigen koerszones zijn aangepast (positieve zone, neutrale zone, zone om te vermijden).
 

@@ -176,6 +176,63 @@ class WebUi(unittest.TestCase):
         self.assertNotIn('Apple', rijen)
         self.assertEqual(fouten, [])
 
+    def _pagina_met_indexen(self, hash_, breedte=390):
+        import datetime
+        c = self.b.new_context(viewport={'width': breedte, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(d){var t='%s';d.aandelen.forEach(function(a){
+            if(a.ticker==='ASML.AS')a.indices=['AEX'];
+            if(a.ticker==='SAP.DE')a.indices=['DAX'];
+            if(a.ticker==='INGA.AS')a.indices=['AEX'];
+            if(a.ticker==='MSFT')a.gegevens=null;
+            if(a.ticker==='AAPL'||a.ticker==='MSFT'){a.koers={slot:70.5,datum:t,sma50:70,reeks:[['2026-10-01',70],['2026-10-02',70.5]],bereik:{hoog:165.7,laag:40,van:'2016-10-17',tot:'2026-10-16',jaren:10}};}});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % datetime.date.today().isoformat())
+        pg = c.new_page()
+        self.fouten = []
+        pg.on('pageerror', lambda e: self.fouten.append(str(e)))
+        pg.goto(INDEX + hash_)
+        pg.wait_for_timeout(200)
+        return pg
+
+    def test_zoeken_filter_op_index(self):
+        pg = self._pagina_met_indexen('#/zoek')
+        pg.select_option('#zi', 'AEX')
+        t = pg.inner_text('#res')
+        self.assertIn('ASML', t)
+        self.assertNotIn('SAP', t)
+        self.assertNotIn('Apple', t)
+        pg.select_option('#zi', 'DAX')
+        self.assertIn('SAP', pg.inner_text('#res'))
+        pg.select_option('#zi', '')
+        pg.fill('#q', 'apple')
+        self.assertIn('Apple', pg.inner_text('#res'))
+        self.assertEqual(self.fouten, [])
+
+    def test_dashboard_filter_op_index(self):
+        pg = self._pagina_met_indexen('#/')
+        pg.select_option('#d-index', 'AEX')
+        rijen = pg.inner_text('#dash table.dash tbody')
+        self.assertIn('ASML', rijen)
+        self.assertIn('ING', rijen)
+        self.assertNotIn('SAP', rijen)
+        self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), 2)
+        self.assertEqual(self.fouten, [])
+
+    def test_detail_toont_index_en_koers_tab_bereik_zonder_label_als_onbevestigd(self):
+        pg = self._pagina_met_indexen('#/a/ASML.AS')
+        self.assertIn('AEX (Amsterdam)', pg.locator('[data-indices]').inner_text())
+        pg2 = self._pagina_met_indexen('#/a/AAPL/koers')
+        kaart = pg2.locator('[data-bereik]')
+        self.assertIn('onderste derde', kaart.inner_text())
+        self.assertIn('3,1 : 1', kaart.inner_text())
+        self.assertEqual(kaart.locator('[data-label]').count(), 1)           # AAPL: bevestigd
+        pg3 = self._pagina_met_indexen('#/a/MSFT/koers')
+        k3 = pg3.locator('[data-bereik]')
+        self.assertIn('onderste derde', k3.inner_text())
+        self.assertEqual(k3.locator('[data-label]').count(), 0)               # MSFT: onbevestigd, dus geen label
+        self.assertTrue(pg2.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+
     def test_dashboard_spreiding_per_land_en_valuta_met_verse_koersen(self):
         c = self.b.new_context(viewport={'width': 390, 'height': 800})
         self.addCleanup(c.close)

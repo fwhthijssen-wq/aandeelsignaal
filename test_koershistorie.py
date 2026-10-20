@@ -68,3 +68,22 @@ class KoppelingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class KoersbereikTests(unittest.TestCase):
+    def test_bereik_over_laatste_tien_jaar(self):
+        from koershistorie import koersbereik
+        p = dagen('2014-01-02', '2026-10-16', start=31.77)
+        b = koersbereik(p)
+        laatste = date.fromisoformat(p[-1][0])
+        venster = [k for d, k in p if (laatste - date.fromisoformat(d)).days <= 3652]
+        self.assertEqual((b['hoog'], b['laag']), (round(max(venster), 4), round(min(venster), 4)))
+        self.assertGreaterEqual(b['jaren'], 9.9)
+
+    def test_te_korte_reeks_of_te_weinig_dagen_geeft_none(self):
+        from koershistorie import koersbereik
+        self.assertIsNone(koersbereik(dagen('2022-01-03', '2026-10-16')))
+        weinig = [p for i, p in enumerate(dagen('2014-01-02', '2026-10-16')) if i % 5 == 0]
+        self.assertIsNone(koersbereik(weinig))
+        self.assertIsNone(koersbereik([]))
+        self.assertIsNone(koersbereik(None))
