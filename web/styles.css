@@ -168,3 +168,8 @@ table.dash td { padding: 8px 5px; }
 table.dash thead th:first-child { width: 38%; }
 table.dash th:first-child { width: 40%; overflow-wrap: break-word; }
 table.dash th:not(:first-child), table.dash td { width: 15%; overflow-wrap: normal; }
+
+.ck textarea { width: 100%; box-sizing: border-box; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin-top: 4px; }
+.ck .keuze { margin: 8px 0; }
+.ck details { margin: 6px 0; }
+nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }

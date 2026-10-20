@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.20-beta.24
+Kwaliteitscheck per aandeel (nieuw tabblad "Checklist"): de 15 punten van Philip Fisher over concurrentiepositie en management (ook gebruikt door NAIC-beleggers). U antwoordt zelf ja / nee / weet ik niet en schrijft een eigen notitie; bij elk punt staat waar u het antwoord vindt. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten zijn beantwoord.
+- Opslag: alleen op het toestel, per aandeel gescheiden, onderdeel van de back-up. Terugzetten via "samenvoegen" overschrijft nooit een bestaand antwoord; "vervangen" wel. Alleen bekende punten (1–15), alleen ja/nee/onzeker, notitie maximaal 500 tekens en altijd als tekst (nooit als HTML).
+- Tabbladen bij een aandeel hernoemd zodat zes tabbladen op een smal scherm passen: Overzicht, Koers, NAIC, Checklist, Cijfers, Bronnen.
+- Nieuw: `web/js/checklist.js`, 6 unit-tests, 2 browsertests.
+
 ## 2026.10.20-beta.23
 Meer aandelen: 15 erbij (37 totaal): AstraZeneca, Novartis, TotalEnergies (Europese bedrijven die in dollar rapporteren, genoteerd in New York zodat koers en cijfers dezelfde valuta hebben) en Adobe, Salesforce, Oracle, Cisco, PepsiCo, Merck, AbbVie, Home Depot, McDonald's, UnitedHealth, Texas Instruments en Caterpillar. Elk aandeel krijgt pas een oordeel als alle controles slagen; wat niet lukt, staat met reden in `status.json`. Er is bewust geen aandeel toegevoegd dat in een andere valuta rapporteert dan het genoteerd is (bijvoorbeeld Novo Nordisk: Deense kroon).
 

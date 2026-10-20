@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.23';
+  var APP_VERSIE = '2026.10.20-beta.24';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -33,6 +33,7 @@
     hulp: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7 M12 17h.01',
     samenvatting: 'M5 4h14v16H5z M9 9h6 M9 13h6', koers: 'M4 17l5-5 4 4 7-8',
     waarde: 'M12 3v18 M16 7.5c0-1.4-1.8-2.5-4-2.5s-4 1.1-4 2.5 1.8 2.5 4 2.5 4 1.1 4 2.5-1.8 2.5-4 2.5-4-1.1-4-2.5',
+    check: 'M5 5h14v14H5z M8.5 12.5l2.5 2.5 4.5-5',
     gezondheid: 'M3 12h4l3-7 4 14 3-7h4', bronnen: 'M5 5h10a4 4 0 0 1 4 4v10H9a4 4 0 0 1-4-4z M9 9h6'
   };
   function menuHtml(items, actief) {
@@ -247,7 +248,7 @@
   }
 
   /* ---- Aandeelpagina ---- */
-  var TABS = [['samenvatting', 'Samenvatting'], ['koers', 'Koers'], ['waarde', 'NAIC'], ['gezondheid', 'Gezondheid'], ['bronnen', 'Bronnen']];
+  var TABS = [['samenvatting', 'Overzicht'], ['koers', 'Koers'], ['waarde', 'NAIC'], ['check', 'Checklist'], ['gezondheid', 'Cijfers'], ['bronnen', 'Bronnen']];
   function groei(a, b, jaren) { return a > 0 && b > 0 && jaren > 0 ? (Math.pow(b / a, 1 / jaren) - 1) * 100 : null; }
   function jaarLijst(g) { return (g && g.jaren ? g.jaren : []).slice().sort(function (x, y) { return x.year - y.year; }); }
   function sparkSvg(reeks, sma) {
@@ -301,6 +302,8 @@
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
     } else if (tab === 'waarde') {
       s += waardeHtml(rec, g, jr, r);
+    } else if (tab === 'check') {
+      s += checkHtml(rec);
     } else if (tab === 'gezondheid') {
       s += gezondHtml(g, jr);
     } else {
@@ -426,6 +429,35 @@
     if (g.waarschuwingen && g.waarschuwingen.length) s += '<section><h2>Let op</h2><ul class="punten">' + g.waarschuwingen.map(function (w) { return '<li>' + h(w) + '</li>'; }).join('') + '</ul></section>';
     return s;
   }
+  var ANTW_TEKST = { ja: 'Ja', nee: 'Nee', onzeker: 'Weet ik niet' };
+  function voortgangTekst(v) { return v.beantwoord + ' van ' + v.totaal + ' beantwoord' + (v.beantwoord ? ' (' + v.ja + ' ja, ' + v.nee + ' nee, ' + v.onzeker + ' weet ik niet)' : ''); }
+  function checkHtml(rec) {
+    var ant = winkel.checklist(rec.ticker), s = '<div class="kaart-plat"><h2>Kwaliteitscheck</h2><p class="zacht">De 15 punten van Philip Fisher over concurrentiepositie en management, ook gebruikt door NAIC-beleggers. U vult zelf in wat u weet. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten u beantwoord heeft. Wat u hier schrijft blijft op dit toestel en zit in uw back-up.</p><p id="ck-voortgang" aria-live="polite"><b>' + h(voortgangTekst(Checklist.voortgang(ant))) + '</b></p></div>';
+    ['Concurrentiepositie', 'Management', 'Financieel'].forEach(function (gn) { s += '<h3>' + h(gn) + '</h3>'; Checklist.PUNTEN.filter(function (p) { return p.groep === gn; }).forEach(function (p) {
+      var a = ant[p.id] || { a: null, n: '' };
+      s += '<div class="kaart-plat ck" data-punt="' + p.id + '"><p><b>' + p.id + '. ' + h(p.tekst) + '</b></p><div class="keuze" role="group" aria-label="Antwoord op punt ' + p.id + '">' +
+        Checklist.ANTWOORDEN.map(function (k) { return '<button type="button" data-ant="' + k + '" aria-pressed="' + (a.a === k) + '">' + h(ANTW_TEKST[k]) + '</button>'; }).join('') + '</div>' +
+        '<details><summary>Waar vind ik dit?</summary><p class="zacht">' + h(p.waar) + '</p></details>' +
+        '<label for="ck-n' + p.id + '" class="zacht">Eigen notitie</label><textarea id="ck-n' + p.id + '" rows="2" maxlength="' + Store.MAX_NOTITIE + '">' + h(a.n) + '</textarea></div>';
+    }); });
+    return s;
+  }
+  function checkKoppel(rec) {
+    function werk() { var el = document.getElementById('ck-voortgang'); if (el) el.innerHTML = '<b>' + h(voortgangTekst(Checklist.voortgang(winkel.checklist(rec.ticker)))) + '</b>'; }
+    Array.prototype.forEach.call(document.querySelectorAll('.ck'), function (k) {
+      var id = Number(k.getAttribute('data-punt')), ta = k.querySelector('textarea');
+      Array.prototype.forEach.call(k.querySelectorAll('[data-ant]'), function (b) {
+        b.addEventListener('click', function () {
+          var nu = b.getAttribute('aria-pressed') === 'true' ? null : b.getAttribute('data-ant');   // nogmaals klikken haalt het antwoord weg
+          var u = winkel.zetPunt(rec.ticker, id, nu, undefined);
+          if (!u.ok) { toast('Opslaan is niet gelukt. Maak een back-up.'); return; }
+          Array.prototype.forEach.call(k.querySelectorAll('[data-ant]'), function (x) { x.setAttribute('aria-pressed', String(x === b && nu !== null)); });
+          werk();
+        });
+      });
+      ta.addEventListener('change', function () { var u = winkel.zetPunt(rec.ticker, id, undefined, ta.value); if (!u.ok) toast('Opslaan is niet gelukt. Maak een back-up.'); werk(); });
+    });
+  }
   function aandeelKoppel(t) {
     var tg = document.getElementById('terug');
     if (tg) tg.addEventListener('click', function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } });
@@ -438,7 +470,7 @@
   }
 
   function schermHulp() {
-    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Samenvatting, Koers, Waarde, Gezondheid of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven), dan raakt u niets kwijt.</li></ul></div>' +
+    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven), dan raakt u niets kwijt.</li></ul></div>' +
       '<div class="kaart-plat"><h2>Wanneer krijgt een aandeel een oordeel?</h2><p>Alleen als alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen. Ontbreekt iets, dan zegt de app dat eerlijk en toont zij geen oordeel.</p></div>' +
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
@@ -509,7 +541,7 @@
       html = schermAandeel(t, tab);
       $menu.innerHTML = menuHtml(TABS.map(function (x) { return ['#/a/' + encodeURIComponent(t) + '/' + x[0], x[1], x[0]]; }), '#/a/' + encodeURIComponent(t) + '/' + tab);
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
-      na = function () { aandeelKoppel(t); if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
+      na = function () { aandeelKoppel(t); if (tab === 'check' && rec) checkKoppel(rec); if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
     } else if ((m2 = hash.match(/^#\/vergelijk(?:\/([^\/]+)\/([^\/]+))?$/))) {
       html = schermVergelijk(m2[1] ? decodeURIComponent(m2[1]).toUpperCase() : null, m2[2] ? decodeURIComponent(m2[2]).toUpperCase() : null);
       $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';

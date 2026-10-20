@@ -40,7 +40,7 @@ Splitsingen (zoals bij Apple) worden bevestigd met bewijs uit de SEC zelf, en de
 
 ## Wat is nieuw in beta.4: rustiger scherm
 - Het startscherm heeft drie keuzes plus Hulp. Onderzoeksfuncties staan onder "Voor gevorderden".
-- Bij een aandeel kiest u bij "Wat wilt u zien?" een onderdeel: Samenvatting, Koersverloop, Waardering (rekenvoorbeeld), Financiële gezondheid of Bronnen en onderzoek. Standaard ziet u alleen de samenvatting.
+- Bij een aandeel kiest u bij "Wat wilt u zien?" een onderdeel: Overzicht, Koers, NAIC, Checklist, Cijfers (financiële gezondheid) of Bronnen. Standaard ziet u het Overzicht.
 - De Hulp-pagina legt EPS, K/W, SMA50, RSI en F-score uit in gewone taal.
 - **Let op:** de samenvatting zegt nu bij elk aandeel "Nog geen beoordeling mogelijk". Dat is correct: de bevestigde EPS-gegevens zijn nog niet aan dit scherm gekoppeld (volgende stap).
 

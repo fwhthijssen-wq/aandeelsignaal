@@ -7,7 +7,7 @@
   var MAX_POSITIES = 200;
   var TICKER = /^[A-Z0-9][A-Z0-9.\-]{0,14}$/;
 
-  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
+  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], checklist: {}, instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
 
   function normTicker(t) {
     if (typeof t !== 'string') return null;
@@ -32,6 +32,25 @@
     var id = typeof p.id === 'string' && /^[A-Za-z0-9_\-]{1,40}$/.test(p.id) ? p.id : null;
     return { id: id, ticker: t, aantal: aantal, koers: koers, valuta: valuta, datum: datum };
   }
+  var PUNTEN_AANTAL = 15, MAX_CHECKLIST = 200, MAX_NOTITIE = 500, ANTWOORDEN = ['ja', 'nee', 'onzeker'];
+  /* Checklist per aandeel: alleen bekende punten (1 t/m 15), alleen ja/nee/onzeker, notitie als platte tekst met een maximum. */
+  function schoonChecklist(data) {
+    var uit = {}, n = 0;
+    if (!data || typeof data !== 'object' || Array.isArray(data)) return uit;
+    Object.keys(data).forEach(function (k) {
+      var t = normTicker(k), blok = data[k];
+      if (!t || uit[t] || n >= MAX_CHECKLIST || !blok || typeof blok !== 'object') return;
+      var punten = {}, any = false;
+      Object.keys(blok.punten && typeof blok.punten === 'object' ? blok.punten : {}).forEach(function (id) {
+        var nr = /^\d{1,2}$/.test(id) ? Number(id) : 0, p = blok.punten[id];
+        if (nr < 1 || nr > PUNTEN_AANTAL || !p || typeof p !== 'object') return;
+        var a = ANTWOORDEN.indexOf(p.a) > -1 ? p.a : null, nt = typeof p.n === 'string' ? p.n.slice(0, MAX_NOTITIE) : '';
+        if (a || nt.trim()) { punten[nr] = { a: a, n: nt }; any = true; }
+      });
+      if (any) { uit[t] = { punten: punten, bijgewerkt: typeof blok.bijgewerkt === 'string' ? blok.bijgewerkt.slice(0, 10) : null }; n++; }
+    });
+    return uit;
+  }
   function zelfde(a, b) { return a.ticker === b.ticker && a.aantal === b.aantal && a.koers === b.koers && a.valuta === b.valuta && a.datum === b.datum; }
 
   function schoon(data) {
@@ -50,6 +69,7 @@
       if (x && uit.portefeuille.length < MAX_POSITIES && !uit.portefeuille.some(function (y) { return y.id && y.id === x.id; })) uit.portefeuille.push(x);
     });
     uit.portefeuille.forEach(function (p, i) { if (!p.id) p.id = 'p' + (i + 1) + '-' + Date.now().toString(36); });
+    uit.checklist = schoonChecklist(data.checklist);
     var th = data.instellingen && data.instellingen.thema;
     uit.instellingen.thema = (th === 'licht' || th === 'donker' || th === 'auto') ? th : 'auto';
     uit.introGezien = data.introGezien === true;
@@ -109,13 +129,26 @@
         return voor !== staat.portefeuille.length;
       },
       herstelPositie: function (p) { var x = schoonPositie(p); if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
+      checklist: function (t) { t = normTicker(t); var b = t && staat.checklist[t]; return b ? JSON.parse(JSON.stringify(b.punten)) : {}; },
+      zetPunt: function (t, id, antwoord, notitie) {
+        t = normTicker(t); id = Number(id);
+        if (!t || !(id >= 1 && id <= PUNTEN_AANTAL) || Math.floor(id) !== id) return { ok: false, reden: 'ongeldig punt' };
+        var blok = staat.checklist[t];
+        if (!blok) { if (Object.keys(staat.checklist).length >= MAX_CHECKLIST) return { ok: false, reden: 'te veel aandelen met een checklist' }; blok = staat.checklist[t] = { punten: {}, bijgewerkt: null }; }
+        var oud = blok.punten[id] || { a: null, n: '' };
+        var a = antwoord === undefined ? oud.a : (ANTWOORDEN.indexOf(antwoord) > -1 ? antwoord : null);
+        var nt = notitie === undefined ? oud.n : String(notitie == null ? '' : notitie).slice(0, MAX_NOTITIE);
+        if (a || nt.trim()) blok.punten[id] = { a: a, n: nt }; else delete blok.punten[id];
+        if (!Object.keys(blok.punten).length) delete staat.checklist[t]; else blok.bijgewerkt = nu().slice(0, 10);
+        return { ok: bewaar(true) };
+      },
       introGezien: function () { return staat.introGezien === true; },
       zetIntroGezien: function (gezien) { staat.introGezien = gezien !== false; return bewaar(false); },
       zetThema: function (th) { staat.instellingen.thema = (th === 'licht' || th === 'donker') ? th : 'auto'; bewaar(false); },
       /* Back-up als tekst (JSON). Markeert het moment van back-up. */
       maakBackup: function () {
         var b = { app: 'Aandeel Signaal', soort: 'back-up', versie: 1, gemaakt: nu(),
-          volglijst: staat.volglijst, portefeuille: staat.portefeuille, instellingen: staat.instellingen };
+          volglijst: staat.volglijst, portefeuille: staat.portefeuille, checklist: staat.checklist, instellingen: staat.instellingen };
         staat.laatsteBackup = b.gemaakt; bewaar(false);
         return JSON.stringify(b, null, 1);
       },
@@ -125,7 +158,7 @@
         try { data = JSON.parse(tekst); } catch (e) { return { ok: false, reden: 'Dit bestand is geen geldige back-up.' }; }
         if (!data || data.app !== 'Aandeel Signaal' || data.soort !== 'back-up') return { ok: false, reden: 'Dit is geen back-up van Aandeel Signaal.' };
         var s = schoon(data), nieuw = 0;
-        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; nieuw = s.volglijst.length + s.portefeuille.length; }
+        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; staat.checklist = s.checklist; nieuw = s.volglijst.length + s.portefeuille.length; }
         else {
           s.volglijst.forEach(function (it) {
             if (!staat.volglijst.some(function (x) { return x.ticker === it.ticker; }) && staat.volglijst.length < MAX_VOLGLIJST) {
@@ -139,12 +172,17 @@
             staat.portefeuille.push(p); nieuw++;
           }
         });
+        if (modus !== 'vervang') Object.keys(s.checklist).forEach(function (t) {
+          var doel = staat.checklist[t] || (Object.keys(staat.checklist).length < MAX_CHECKLIST ? (staat.checklist[t] = { punten: {}, bijgewerkt: s.checklist[t].bijgewerkt }) : null);
+          if (!doel) return;
+          Object.keys(s.checklist[t].punten).forEach(function (id) { if (!doel.punten[id]) { doel.punten[id] = s.checklist[t].punten[id]; nieuw++; } });   // bestaand antwoord wordt nooit overschreven
+        });
         if (s.instellingen.thema !== 'auto' && modus === 'vervang') staat.instellingen.thema = s.instellingen.thema;
         return { ok: bewaar(true), toegevoegd: nieuw, totaal: staat.volglijst.length, totaalPortefeuille: staat.portefeuille.length };
       },
       /* Herinnering: ruim 14 dagen geen back-up, of wijziging na de laatste back-up. */
       backupNodig: function (vandaag) {
-        if (!staat.volglijst.length && !staat.portefeuille.length) return false;
+        if (!staat.volglijst.length && !staat.portefeuille.length && !Object.keys(staat.checklist).length) return false;
         if (!staat.laatsteBackup) return true;
         if (staat.gewijzigd && staat.gewijzigd > staat.laatsteBackup) return true;
         var d = (Date.parse(vandaag) - Date.parse(staat.laatsteBackup)) / 86400000;
@@ -153,6 +191,6 @@
     };
   }
 
-  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
+  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Store = api;
 })(typeof self !== 'undefined' ? self : this);

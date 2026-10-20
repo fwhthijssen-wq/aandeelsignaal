@@ -181,6 +181,43 @@ class WebUi(unittest.TestCase):
             self.assertNotIn(kop, tb)
         self.assertEqual(self.fouten, [])
 
+    def test_checklist_invullen_bewaren_tellen_zonder_score_en_html_veilig(self):
+        pg = self.pagina(320)
+        pg.goto(INDEX + '#/a/AAPL/check')
+        self.assertIn('0 van 15 beantwoord', pg.inner_text('#ck-voortgang'))
+        self.assertEqual(pg.locator('.ck').count(), 15)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pg.click('[data-punt="5"] [data-ant="ja"]')
+        pg.click('[data-punt="6"] [data-ant="onzeker"]')
+        pg.click('[data-punt="7"] [data-ant="nee"]')
+        pg.fill('#ck-n5', '<b>sterke</b> marge')
+        pg.dispatch_event('#ck-n5', 'change')
+        self.assertIn('3 van 15 beantwoord (1 ja, 1 nee, 1 weet ik niet)', pg.inner_text('#ck-voortgang'))
+        self.assertNotIn('%', pg.inner_text('main'))
+        self.assertEqual(pg.locator('main h3').all_inner_texts(), ['Concurrentiepositie', 'Management', 'Financieel'])
+        pg.click('[data-punt="7"] [data-ant="nee"]')       # nogmaals klikken haalt het antwoord weg
+        self.assertIn('2 van 15 beantwoord', pg.inner_text('#ck-voortgang'))
+        pg.reload(); pg.wait_for_timeout(150)
+        self.assertEqual(pg.get_attribute('[data-punt="5"] [data-ant="ja"]', 'aria-pressed'), 'true')
+        self.assertEqual(pg.get_attribute('[data-punt="7"] [data-ant="nee"]', 'aria-pressed'), 'false')
+        self.assertEqual(pg.input_value('#ck-n5'), '<b>sterke</b> marge')
+        self.assertEqual(pg.locator('.ck b b').count(), 0)  # notitie wordt tekst, geen HTML
+        # per aandeel gescheiden
+        pg.goto(INDEX + '#/a/MSFT/check')
+        self.assertIn('0 van 15 beantwoord', pg.inner_text('#ck-voortgang'))
+        # zit in de back-up
+        pg.goto(INDEX + '#/instellingen')
+        pg.click('#bk'); pg.wait_for_timeout(200)
+        self.assertIn('sterke', pg.input_value('#bktekst'))
+        self.assertEqual(self.fouten, [])
+
+    def test_alle_tabs_bereikbaar_op_smal_scherm(self):
+        pg = self.pagina(320)
+        pg.goto(INDEX + '#/a/AAPL/samenvatting')
+        self.assertEqual(pg.locator('nav.menu a').count(), 6)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertTrue(pg.evaluate("Array.from(document.querySelectorAll('nav.menu a')).every(a => a.getBoundingClientRect().width >= 44)"))
+
     def test_versie_in_instellingen_komt_overeen_met_versiebestand(self):
         pg = self.pagina()
         pg.goto(INDEX + '#/instellingen')
