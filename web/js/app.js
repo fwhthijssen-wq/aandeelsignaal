@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.33';
+  var APP_VERSIE = '2026.10.20-beta.34';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -99,7 +99,7 @@
     }
     var zo = Dashboard.zoneOverzicht(winkel.alleZones(), DATA.aandelen, vandaag(), Gate, Naic);
     if (zo.length) {
-      var ZT = { koop: 'in uw koopzone', houd: 'in uw afwacht-zone', verkoop: 'in uw verkoopzone', onder: 'onder uw lage koers', boven: 'boven uw hoge koers' };
+      var ZT = { koop: 'in uw positieve zone', houd: 'in uw neutrale zone', verkoop: 'in uw zone om te vermijden', onder: 'onder uw lage koers', boven: 'boven uw hoge koers' };
       s += '<h3>Mijn koerszones</h3><div class="lijst" data-zones>' + zo.map(function (z) {
         return '<a href="#/a/' + encodeURIComponent(z.ticker) + '/waarde"><div class="tekstkolom"><b>' + h(z.naam) + '</b><span class="zacht">' + (z.zone ? h(ZT[z.zone] || z.zone) + (z.verhouding ? ' · opwaarts/neerwaarts ' + getal(z.verhouding, 1) + ' : 1' : '') : h(z.reden)) + '</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
       }).join('') + '</div><p class="zacht">Uw eigen aannames, geen koersdoel of advies. Zonder bevestigde gegevens en actuele koers staat er geen zone.</p>';
@@ -366,15 +366,17 @@
     return s + '</section>';
   }
   /* Waar staat de koers nu in het bereik van de afgelopen jaren? Alleen beschrijving, geen koop- of verkoopadvies. */
-  function bereikHtml(jr, koers) {
+  function bereikHtml(jr, koers, bevestigd) {
     var b = Naic.bereik(jr, koers, 10, 8), s = '<section data-bereik><h2>Plek in het koersbereik van de afgelopen jaren</h2>';
     if (!b) return s + '<p class="zacht">Onbekend: hiervoor is een actuele koers en minstens 8 jaar koershistorie in dezelfde valuta nodig.</p></section>';
+    var LABEL = { positief: 'Positief', neutraal: 'Neutraal', vermijden: 'Vermijden' }, LABEL_UITLEG = { positief: 'De koers staat in het onderste derde van het bereik en er is minstens drie keer zoveel opwaarts als neerwaarts.', neutraal: 'Geen van beide uitersten.', vermijden: 'De koers staat in het bovenste derde van het bereik.' };
     var T = { onder: 'het onderste derde', midden: 'het middelste derde', boven: 'het bovenste derde' };
     return s + '<div class="kpis"><div class="kpi"><b>' + getal(b.laag, 2) + '</b><span>Laagste slotkoers (' + b.van + '–' + b.tot + ')</span></div><div class="kpi"><b>' + getal(b.hoog, 2) + '</b><span>Hoogste slotkoers</span></div>' +
       '<div class="kpi"><b>' + getal(b.positiePct, 0) + '%</b><span>Plek in het bereik (0 = laagste, 100 = hoogste)</span></div><div class="kpi"><b>' + (b.verhouding == null ? '–' : getal(b.verhouding, 1) + ' : 1') + '</b><span>Opwaarts tegen neerwaarts</span></div></div>' +
-      '<p>De koers staat in <b>' + T[b.derde] + '</b> van dit bereik.</p><p class="zacht">De NAIC deelt het bereik in drie gelijke stukken en kijkt of er minstens drie keer zoveel opwaarts als neerwaarts is. Dit is een beschrijving van het verleden over ' + b.jaren + ' boekjaren, geen koopadvies en geen voorspelling. Staat de koers op of onder het laagste punt, dan is de verhouding niet te berekenen.</p></section>';
+      (bevestigd ? '<p data-label="' + b.label + '"><span class="chip">' + LABEL[b.label] + '</span> ' + LABEL_UITLEG[b.label] + '</p>' : '') +
+      '<p>De koers staat in <b>' + T[b.derde] + '</b> van dit bereik.</p><p class="zacht">De NAIC deelt het bereik in drie gelijke stukken en kijkt of er minstens drie keer zoveel opwaarts als neerwaarts is. Dit is een beschrijving van het verleden over ' + b.jaren + ' boekjaren, geen koopadvies en geen voorspelling. Het label verschijnt alleen als de gegevens van het bedrijf bevestigd zijn. Staat de koers op of onder het laagste punt, dan is de verhouding niet te berekenen.</p></section>';
   }
-  function naicHtml(jr, bank, koers) {
+  function naicHtml(jr, bank, koers, bevestigd) {
     var gc = Naic.groeiCijfers(jr), roe = Naic.rendementEigenVermogen(jr), mg = Naic.nettomarges(jr);
     function kp(w, t) { return '<div class="kpi"><b>' + (w == null ? '–' : pct(w)) + '</b><span>' + h(t) + '</span></div>'; }
     return '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC, een Amerikaanse beleggersvereniging, in stappen. Het is een rekenhulp met uw eigen aannames, geen koersdoel en geen advies.</p></div>' +
@@ -383,7 +385,7 @@
       '<section><h2>Stap 2 · Rendement op eigen vermogen</h2>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
       '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar, in procenten.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen (bijvoorbeeld door terugkoop van aandelen) is dit getal niet te berekenen en blijft het leeg.</p></section>' +
       '<section><h2>Stap 3 · Winstmarge</h2>' + staven(mg, 'Nettowinstmarge per jaar in procenten', function (v) { return getal(v, 0); }) +
-      '<p class="zacht">Nettowinst als percentage van de omzet (na belasting).</p></section>' + kwHistorieHtml(jr, bank) + bereikHtml(jr, koers) + naicExtraHtml(jr, bank);
+      '<p class="zacht">Nettowinst als percentage van de omzet (na belasting).</p></section>' + kwHistorieHtml(jr, bank) + bereikHtml(jr, koers, bevestigd) + naicExtraHtml(jr, bank);
   }
   function zonesHtml(start, opgeslagen) {
     if (opgeslagen) start = { eps: opgeslagen.eps, groei: opgeslagen.groeiPct, epsl: opgeslagen.epsLaag, jaren: opgeslagen.jaren, kwh: opgeslagen.kwHoog, kwl: opgeslagen.kwLaag };
@@ -396,7 +398,7 @@
   function zonesKoppel(rec, r) {
     var uit = document.getElementById('zones'); if (!uit) return;
     function lees(id) { return parseFloat(String(document.getElementById('v-' + id).value).replace(',', '.')); }
-    var ZN = { koop: 'in de onderste derde van het bereik (koopzone)', houd: 'in het middelste derde van het bereik (afwachten)', verkoop: 'in de bovenste derde van het bereik (verkoopzone)', onder: 'onder de lage koers uit uw aannames', boven: 'boven de hoge koers uit uw aannames' };
+    var ZN = { koop: 'in het onderste derde van het bereik (positieve zone)', houd: 'in het middelste derde van het bereik (neutrale zone)', verkoop: 'in het bovenste derde van het bereik (zone om te vermijden)', onder: 'onder de lage koers uit uw aannames', boven: 'boven de hoge koers uit uw aannames' };
     function reken() {
       try {
         var koers = r.bevestigd && rec.koers && r.koersActueel ? rec.koers.slot : null;
@@ -433,7 +435,7 @@
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return naicHtml(jr, (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null) + zonesHtml(start, winkel.zones(rec.ticker)) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
+    return naicHtml(jr, (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null, r.bevestigd) + zonesHtml(start, winkel.zones(rec.ticker)) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
       veld('eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('groei', 'Groei per jaar (%)', start.groei, '1') + veld('kw', 'K/W over de horizon', start.kw, '1') + veld('jaren', 'Jaren vooruit', start.jaren, '1') + veld('rend', 'Gewenst rendement (%)', start.rend, '1') + veld('marge', 'Veiligheidsmarge (%)', start.marge, '1') +
       '</div><div id="uitkomst" class="kpis" aria-live="polite"></div></div>' +
       (r.bevestigd ? '' : '<p class="zacht">Er wordt geen vergelijking met de koers gemaakt: de gegevens zijn nog niet volledig bevestigd of de koers ontbreekt.</p>');

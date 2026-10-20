@@ -128,3 +128,12 @@ test('bereik: derde en verhouding uit 10-jaarsbereik; te weinig jaren of geen ko
   assert.equal(onder.verhouding, null); assert.equal(onder.derde, 'onder');
   assert.equal(N.bereik([{ year: 2020, koers_hoog: 5, koers_laag: 9 }], 7), null);
 });
+
+test('bereik: label positief/neutraal/vermijden', () => {
+  const jr = []; for (let i = 0; i < 10; i++) jr.push({ year: 2016 + i, koers_hoog: 100 + i * 7.3, koers_laag: 40 + i * 1.9 });
+  assert.equal(N.bereik(jr, 70.5).label, 'positief');      // onderste derde, verhouding 3,1
+  assert.equal(N.bereik(jr, 79).label, 'neutraal');        // nog onderste derde (grens 81,9) maar verhouding (165,7-79)/(79-40)=2,2
+  assert.equal(N.bereik(jr, 100).label, 'neutraal');
+  assert.equal(N.bereik(jr, 150).label, 'vermijden');
+  assert.equal(N.bereik(jr, 30).label, 'neutraal');         // onder het dieptepunt: verhouding onbekend
+});

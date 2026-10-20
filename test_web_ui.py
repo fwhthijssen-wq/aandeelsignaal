@@ -266,6 +266,7 @@ class WebUi(unittest.TestCase):
         t = pg.locator('[data-bereik]').inner_text()
         if n >= 8:
             self.assertIn('onderste derde', t)
+            self.assertEqual(pg.locator('[data-bereik] [data-label]').count(), 0 if 'Nog niet bevestigd' in pg.inner_text('main') else 1)
             self.assertIn('geen koopadvies', t)
         else:
             self.assertIn('Onbekend', t)
@@ -400,7 +401,7 @@ class WebUi(unittest.TestCase):
             a.koers = { slot: 100, datum: d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()), sma50: 40, reeks: [] };
             location.hash = '#/'; location.hash = '#/a/AAPL/waarde'; }""")
         z = pg.inner_text('#zones')
-        self.assertIn('koopzone', z)
+        self.assertIn('positieve zone', z)
         self.assertIn(': 1', z)
         self.assertEqual(self.fouten, [])
 
@@ -454,7 +455,7 @@ class WebUi(unittest.TestCase):
         oud.click('#z-bewaar')
         oud.goto(INDEX + '#/'); oud.wait_for_timeout(150)
         self.assertIn('Geen actuele koers', oud.inner_text('[data-zones]'))
-        self.assertNotIn('koopzone', oud.inner_text('[data-zones]'))
+        self.assertNotIn('positieve zone', oud.inner_text('[data-zones]'))
         self.assertEqual(self.fouten, [])
 
     def test_thema_kiezen_verandert_echt_de_kleuren_ook_tegen_de_voorkeur_van_het_toestel(self):

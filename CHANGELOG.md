@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2026.10.20-beta.34
+- **Labels positief / neutraal / vermijden** in plaats van koop/houd/verkoop. Op de NAIC-tab bij "Plek in het koersbereik": positief = onderste derde én minstens 3 : 1 opwaarts/neerwaarts; vermijden = bovenste derde; anders neutraal. Het label verschijnt alleen bij bevestigde gegevens; zonder bevestiging blijft alleen de beschrijving van het derde staan. Ook de teksten bij je eigen koerszones zijn aangepast (positieve zone, neutrale zone, zone om te vermijden).
+
 ## 2026.10.20-beta.33
 - **NAIC-tab: plek in het koersbereik.** Hoogste en laagste slotkoers van de laatste (max. 10) boekjaren, de plek van de koers in onderste/middelste/bovenste derde, en de verhouding opwaarts tegen neerwaarts (NAIC-richtlijn 3 : 1). Idee uit een NAIC-handleiding van de gebruiker. Alleen met verse koers en minstens 8 jaar koershistorie; anders "Onbekend". Beschrijving van het verleden, geen koop- of verkoopadvies, geen invloed op het signaal.
 
