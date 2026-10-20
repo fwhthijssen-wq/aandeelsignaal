@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2026.10.20-beta.33
+- **NAIC-tab: plek in het koersbereik.** Hoogste en laagste slotkoers van de laatste (max. 10) boekjaren, de plek van de koers in onderste/middelste/bovenste derde, en de verhouding opwaarts tegen neerwaarts (NAIC-richtlijn 3 : 1). Idee uit een NAIC-handleiding van de gebruiker. Alleen met verse koers en minstens 8 jaar koershistorie; anders "Onbekend". Beschrijving van het verleden, geen koop- of verkoopadvies, geen invloed op het signaal.
+
 ## 2026.10.20-beta.32
 Run van 15:56 UTC: 33 van 48 bevestigd. Koershistorie lukte voor 47 van 48 aandelen (alleen Exxon niet).
 - **Terugdraaien:** de winsttag "gewone aandeelhouders" (beta.29) veroorzaakte dat ING en Sanofi niet meer bevestigd waren: die tag wijkt bij ING en Eni af van de standaardtag en heeft bij Sanofi omgekeerde tekens in oude indieningen. Nu wordt hij alleen gebruikt als een bedrijf de standaardtag helemaal niet heeft (Stellantis).

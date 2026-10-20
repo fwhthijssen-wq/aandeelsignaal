@@ -69,6 +69,20 @@
     });
   }
 
+  /* Plek van de koers in het bereik van de laatste n boekjaren (hoogste en laagste slotkoers), in drie gelijke stukken zoals in de
+     Nederlandse NAIC-praktijk, en de verhouding opwaarts/neerwaarts (hoogste - koers) / (koers - laagste).
+     Alleen met een verse koers en minstens minJaren jaren met beide waarden; anders null. Geen koop- of verkoopadvies. */
+  function bereik(jr, koers, n, minJaren) {
+    var v = jaren(jr).filter(function (j) { return pos(j.koers_hoog) && pos(j.koers_laag) && j.koers_hoog >= j.koers_laag; }).slice(-(n || 10));
+    if (!pos(koers) || v.length < (minJaren || 8)) return null;
+    var hoog = Math.max.apply(null, v.map(function (j) { return j.koers_hoog; })), laag = Math.min.apply(null, v.map(function (j) { return j.koers_laag; }));
+    hoog = Math.max(hoog, koers); laag = Math.min(laag, koers);
+    if (hoog <= laag) return null;
+    var stuk = (hoog - laag) / 3, derde = koers <= laag + stuk ? 'onder' : koers < laag + 2 * stuk ? 'midden' : 'boven';
+    return { hoog: rond(hoog, 2), laag: rond(laag, 2), derde: derde, positiePct: rond((koers - laag) / (hoog - laag) * 100, 0),
+             verhouding: koers > laag ? rond((hoog - koers) / (koers - laag), 1) : null, van: v[0].year, tot: v[v.length - 1].year, jaren: v.length };
+  }
+
   /* Koerszones: toekomstig hoog en laag, en waar de koers nu in dat bereik staat. Gooit bij ongeldige invoer. */
   function koerszones(i) {
     var n = i.jaren;
@@ -92,6 +106,6 @@
     return uit;
   }
 
-  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, koerszones: koerszones };
+  var api = { groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

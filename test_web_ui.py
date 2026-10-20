@@ -247,6 +247,32 @@ class WebUi(unittest.TestCase):
         self.assertIn('Onbekend', t)
         self.assertEqual(pg.locator('#kw-over').count(), 0)
 
+    def test_bereik_kaart_met_verse_koers_en_zonder(self):
+        def pagina(datum):
+            c = self.b.new_context(viewport={'width': 320, 'height': 800})
+            self.addCleanup(c.close)
+            c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+              set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL'){
+                a.koers={slot:70.5,datum:'%s',sma50:70,reeks:[['2026-10-01',70],['2026-10-02',70.5]]};
+                a.gegevens.jaren.forEach(function(j,i){j.koers_hoog=100+i*7.3;j.koers_laag=40+i*1.9;});}});v=d;}});
+              try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % datum)
+            pg = c.new_page()
+            pg.goto(INDEX + '#/a/AAPL/waarde')
+            pg.wait_for_timeout(200)
+            return pg
+        import datetime
+        pg = pagina(datetime.date.today().isoformat())
+        n = pg.evaluate("window.AANDEEL_DATA.aandelen.find(function(a){return a.ticker==='AAPL'}).gegevens.jaren.length")
+        t = pg.locator('[data-bereik]').inner_text()
+        if n >= 8:
+            self.assertIn('onderste derde', t)
+            self.assertIn('geen koopadvies', t)
+        else:
+            self.assertIn('Onbekend', t)
+        pg2 = pagina('2020-01-01')
+        self.assertIn('Onbekend', pg2.locator('[data-bereik]').inner_text())
+        self.assertTrue(pg2.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+
     def test_naic_extra_kentallen_en_bank_krijgt_ze_niet(self):
         pg = self._naic_extra_pagina(False)
         t = pg.inner_text('main')

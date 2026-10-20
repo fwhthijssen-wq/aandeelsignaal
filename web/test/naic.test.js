@@ -111,3 +111,20 @@ test('dividendRendement: dividend / gemiddelde koers van het jaar', () => {
   const r = N.dividendRendement([{ year: 2022, dividend_ps: 1.13, koers_hoog: 60.3, koers_laag: 40.1 }, { year: 2023, dividend_ps: null, koers_hoog: 50, koers_laag: 40 }]);
   assert.deepEqual(r, [{ year: 2022, waarde: 2.3 }, { year: 2023, waarde: null }]);
 });
+
+test('bereik: derde en verhouding uit 10-jaarsbereik; te weinig jaren of geen koers geeft null', () => {
+  const jr = []; for (let i = 0; i < 10; i++) jr.push({ year: 2016 + i, koers_hoog: 100 + i * 7.3, koers_laag: 40 + i * 1.9 });
+  // hoogste 165,7 (2025), laagste 40 (2016); bereik 125,7; derde = 41,9
+  const a = N.bereik(jr, 70.5);
+  assert.equal(a.hoog, 165.7); assert.equal(a.laag, 40); assert.equal(a.derde, 'onder'); assert.equal(a.jaren, 10);
+  assert.equal(a.verhouding, 3.1);               // (165,7-70,5)/(70,5-40) = 3,121
+  assert.equal(N.bereik(jr, 100).derde, 'midden');
+  assert.equal(N.bereik(jr, 150).derde, 'boven');
+  assert.equal(N.bereik(jr, 150).positiePct, 88);
+  assert.equal(N.bereik(jr.slice(0, 7), 100), null);          // minder dan 8 jaar
+  assert.equal(N.bereik(jr, null), null);
+  assert.equal(N.bereik(jr, -3), null);
+  const onder = N.bereik(jr, 30);                            // onder het 10-jaarsdieptepunt: verhouding niet te berekenen
+  assert.equal(onder.verhouding, null); assert.equal(onder.derde, 'onder');
+  assert.equal(N.bereik([{ year: 2020, koers_hoog: 5, koers_laag: 9 }], 7), null);
+});
