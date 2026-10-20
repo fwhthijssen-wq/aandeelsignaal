@@ -87,6 +87,14 @@ def sec_eps_recompute_inputs(payload, asof):
     return records
 
 
+def _rounding_unit(value):
+    """Grootste macht van duizend waarop het bedrag exact deelbaar is (1, 1e3, 1e6, 1e9)."""
+    for unit in (1e9, 1e6, 1e3):
+        if value % unit == 0:
+            return unit
+    return 1.0
+
+
 def recompute_eps_check(end, eps_fact, inputs):
     """Controleer één gerapporteerde EPS tegen nettowinst / gewogen aandelen uit dezelfde indiening."""
     if not isinstance(eps_fact, dict) or _number(eps_fact.get('val')) is None:
@@ -110,7 +118,13 @@ def recompute_eps_check(end, eps_fact, inputs):
     reported = float(eps_fact['val'])
     result = {'herberekend': round(recomputed, 4), 'gerapporteerd': reported, 'accn': accn,
               'bron': row.get('source')}
-    if abs(recomputed - reported) <= RECOMPUTE_TOLERANCE:
+    # Bronbedragen zijn afgerond (aandelen vaak op duizenden of miljoenen, winst op miljoenen):
+    # de herberekende EPS ligt dus in een interval. Gerapporteerde EPS moet binnen dat interval
+    # plus de halve-cent-marge vallen.
+    u_ni, u_sh = _rounding_unit(net_income) / 2, _rounding_unit(shares) / 2
+    low = (net_income - u_ni) / (shares + u_sh)
+    high = (net_income + u_ni) / max(shares - u_sh, 1e-9)
+    if low - RECOMPUTE_TOLERANCE <= reported <= high + RECOMPUTE_TOLERANCE:
         return {**result, 'status': 'consistent',
                 'reden': 'Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)'}
     return {**result, 'status': 'afwijking',
@@ -252,6 +266,43 @@ def _markeer_dubbele_aankondigingen(events):
     return result
 
 
+def _route_oorspronkelijke_indiening(end, row, observations, confirmed, expected):
+    """None als deze route niet van toepassing is, anders een uitkomst met status 'consistent' of 'afwijking'."""
+    period = _day(end)
+    fact = (row.get('facts') or {}).get(EPS_FACT) or {}
+    primary_filed = _day(fact.get('filed'))
+    if period is None or primary_filed is None or any(d is None or r is None for d, r in confirmed):
+        return None
+    applicable = [(d, r) for d, r in confirmed if d > period]
+    if not applicable or any(d > primary_filed for d, _ in applicable):
+        return None                    # het dossier gebruikt hier geen indiening van ná de splitsing
+    first_split = min(d for d, _ in applicable)
+    factor = 1.0
+    for _, r in applicable:
+        factor *= r
+    originals = []
+    for obs in observations:
+        if not isinstance(obs, dict) or obs.get('end') != end:
+            continue
+        filed, value = _day(obs.get('filed')), _number(obs.get('val'))
+        if (filed is None or value is None or not obs.get('accn') or not isinstance(obs.get('unit'), str)
+                or not obs['unit'].endswith('/shares') or filed >= first_split):
+            continue
+        originals.append(value)
+    if not originals:
+        return None
+    verschil = max(abs(v / factor - expected) for v in originals)
+    # EPS is op centen afgerond: toegestaan is een halve cent per oorspronkelijke waarde, gedeeld door de factor,
+    # plus een halve cent op de gebruikte waarde.
+    marge = CENT_ROUNDING / factor + CENT_ROUNDING + 1e-9
+    if verschil <= marge:
+        return {'status': 'consistent', 'factor': factor, 'oorspronkelijk': sorted(set(originals)),
+                'reden': f'Oorspronkelijke indiening ({", ".join(str(v) for v in sorted(set(originals)))}) gedeeld door '
+                         f'de bevestigde splitverhouding {factor:g} geeft de EPS van het dossier'}
+    return {'status': 'afwijking', 'factor': factor, 'oorspronkelijk': sorted(set(originals)),
+            'reden': 'Oorspronkelijke indiening gedeeld door de splitverhouding wijkt af van de EPS van het dossier'}
+
+
 # ---------------------------------------------------------------- samenhangende controle
 def verify_eps(result, safe_history, audit_date):
     """Splitbevestiging, voorlopige normalisatie en onafhankelijke onderbouwing per boekjaar."""
@@ -370,6 +421,31 @@ def verify_eps(result, safe_history, audit_date):
             audit['status'] = 'onderbouwd'
             audit['route'] = 'herberekening'
             audit['reden'] = check['reden']
+    # Route 3: het dossier gebruikt voor dit jaar al een indiening van ná de splitsing, dus er is geen
+    # nog latere indiening. Dan vergelijken we de oorspronkelijke (voor-de-splitsing) indieningen,
+    # gedeeld door de bevestigde splitverhouding, met de EPS die het dossier gebruikt.
+    observations = result.get('eps_filing_observations')
+    observations = observations if isinstance(observations, list) else []
+    confirmed = [(_day(e.get('Datum')), _number(e.get('Waarde SEC'))) for e in normalization_splits]
+    for row in safe_history:
+        end = row.get('end') if isinstance(row, dict) else None
+        audit = eps_reconciliation.get(end)
+        if audit is None or audit['status'] != 'niet_bewezen' or audit['verwacht'] is None:
+            continue
+        check = _route_oorspronkelijke_indiening(end, row, observations, confirmed, audit['verwacht'])
+        if check is None:
+            continue
+        audit['oorspronkelijke_indiening'] = check
+        if check['status'] == 'consistent':
+            audit['status'] = 'onderbouwd'
+            audit['route'] = 'oorspronkelijke_indiening_omgerekend'
+            audit['reden'] = check['reden']
+        else:
+            audit['reden'] = f"{audit.get('reden')}; {check['reden']}"
+    for end, check in recompute.items():
+        audit = eps_reconciliation.get(end)
+        if audit and audit['status'] == 'niet_bewezen' and check.get('reden'):
+            audit['reden'] = f"{audit.get('reden')}; herberekening: {check['reden']}"
     eps_verified_years = sorted(int(end[:4]) for end, audit in eps_reconciliation.items()
                                 if audit['status'] == 'onderbouwd')
 
