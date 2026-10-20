@@ -350,7 +350,8 @@ def demo(pad_resultaat):
     return maak_bestand(records, bron='Demo: eerder gecontroleerde praktijkrun; geen koersen')
 
 
-EXTRA_ZOEK = {'depreciation': ('Depreciation', 'Amortization', 'Amortisation'),
+EXTRA_ZOEK = {'pretax_income': ('BeforeIncomeTax', 'BeforeTax'),
+              'depreciation': ('Depreciation', 'Amortization', 'Amortisation'),
               'dividends_paid': ('Dividend',),
               'long_term_debt': ('Borrowings', 'LongTermDebt', 'DebtNoncurrent', 'DebtInstrument')}
 

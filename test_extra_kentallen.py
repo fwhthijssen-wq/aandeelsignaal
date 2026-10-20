@@ -79,4 +79,11 @@ class ExtraNamenTests(unittest.TestCase):
         self.assertEqual(uit['depreciation'], {'us-gaap:DepreciationAmortizationAndOther [USD]': [2019, 2024, 2]})
         self.assertEqual(list(uit['dividends_paid']), ['us-gaap:DividendsCommonStockCash [USD]'])
         self.assertEqual(list(uit['long_term_debt']), ['us-gaap:LongTermDebtNoncurrent [USD]'])
-        self.assertEqual(bw.extra_namen(None), {'depreciation': {}, 'dividends_paid': {}, 'long_term_debt': {}})
+        self.assertEqual(bw.extra_namen(None), {'pretax_income': {}, 'depreciation': {}, 'dividends_paid': {}, 'long_term_debt': {}})
+
+
+class IfrsDividendTag(unittest.TestCase):
+    def test_ifrs_dividend_aan_aandeelhouders_moederbedrijf(self):
+        j = [{'end': '2025-12-31', 'currency': 'EUR'}]
+        p = payload(DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities=('ifrs-full', 'EUR', [feit('2025-12-31', 4321.5, '2025-01-01')]))
+        self.assertEqual(extra_jaarcijfers(p, j)['2025-12-31']['dividends_paid'], 4321.5)

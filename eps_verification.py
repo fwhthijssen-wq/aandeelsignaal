@@ -109,12 +109,12 @@ def sec_eps_recompute_inputs(payload, asof):
                 us_income[key], us_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus NetIncomeLossAttributableToNoncontrollingInterest'
     ifrs_owners = annual('ifrs-full', IFRS_NET_INCOME_TAG, money)
     ifrs_ordinary = annual('ifrs-full', IFRS_NET_INCOME_ORDINARY_TAG, money)
-    ifrs_income, ifrs_tag = {}, {}
-    for key in set(ifrs_owners) | set(ifrs_ordinary):
-        if key in ifrs_owners and key in ifrs_ordinary and ifrs_owners[key] != ifrs_ordinary[key]:
-            continue                       # twee tellers die verschillen: nooit kiezen
-        bron, tag = (ifrs_owners, IFRS_NET_INCOME_TAG) if key in ifrs_owners else (ifrs_ordinary, IFRS_NET_INCOME_ORDINARY_TAG)
-        ifrs_income[key], ifrs_tag[key] = bron[key], tag
+    # De tag 'ordinary equity holders' wijkt bij ING en Eni af van 'owners of parent' en heeft bij Sanofi omgekeerde tekens
+    # in oudere indieningen. Daarom alleen gebruiken als een bedrijf de standaardtag helemaal niet gebruikt (Stellantis).
+    if ifrs_owners:
+        ifrs_income, ifrs_tag = ifrs_owners, {key: IFRS_NET_INCOME_TAG for key in ifrs_owners}
+    else:
+        ifrs_income, ifrs_tag = ifrs_ordinary, {key: IFRS_NET_INCOME_ORDINARY_TAG for key in ifrs_ordinary}
     for namespace, income, ni_tags, sh_tag in ((us, us_income, us_tag, SHARES_TAG),
                                                ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG)):
         shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')

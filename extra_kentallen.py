@@ -17,7 +17,7 @@ STROOM = {
                      'DepreciationAmortizationAndOther', 'DepreciationAmortizationAndAccretionNet',
                      'AdjustmentsForDepreciationAndAmortisationExpense', 'DepreciationAndAmortisationExpense'),
     'dividends_paid': ('PaymentsOfDividendsCommonStock', 'PaymentsOfDividends', 'DividendsPaidClassifiedAsFinancingActivities',
-                       'DividendsPaidToOwnersOfParentClassifiedAsFinancingActivities', 'PaymentsOfOrdinaryDividends', 'DividendsPaid'),
+                       'DividendsPaidToOwnersOfParentClassifiedAsFinancingActivities', 'DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities', 'PaymentsOfOrdinaryDividends', 'DividendsPaid'),
 }
 BALANS = {
     'long_term_debt': ('LongTermDebtNoncurrent', 'LongTermDebt', 'Borrowings', 'NoncurrentPortionOfNoncurrentBorrowings',

@@ -88,7 +88,11 @@ class IfrsWinsttagTests(unittest.TestCase):
         self.assertEqual(r[0]['net_income'], 5744000000)
         self.assertIn('OrdinaryEquityHolders', r[0]['source'])
 
-    def test_beide_tags_gelijk_is_goed_en_verschillend_wordt_weggelaten(self):
+    def test_standaardtag_wint_altijd_als_die_bestaat(self):
         from eps_verification import sec_eps_recompute_inputs
-        self.assertEqual(len(sec_eps_recompute_inputs(self.payload(5744000000, 5744000000), '2026-10-19')), 1)
-        self.assertEqual(sec_eps_recompute_inputs(self.payload(5744000000, 5700000000), '2026-10-19'), [])
+        r = sec_eps_recompute_inputs(self.payload(5744000000, 5700000000), '2026-10-19')
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0]['net_income'], 5744000000)
+        self.assertNotIn('OrdinaryEquityHolders', r[0]['source'])
+        r = sec_eps_recompute_inputs(self.payload(5744000000, -5744000000), '2026-10-19')
+        self.assertEqual(r[0]['net_income'], 5744000000)

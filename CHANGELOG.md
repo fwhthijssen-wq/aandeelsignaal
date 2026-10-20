@@ -1,6 +1,12 @@
 # Changelog
 
 
+## 2026.10.20-beta.32
+Run van 15:56 UTC: 33 van 48 bevestigd. Koershistorie lukte voor 47 van 48 aandelen (alleen Exxon niet).
+- **Terugdraaien:** de winsttag "gewone aandeelhouders" (beta.29) veroorzaakte dat ING en Sanofi niet meer bevestigd waren: die tag wijkt bij ING en Eni af van de standaardtag en heeft bij Sanofi omgekeerde tekens in oude indieningen. Nu wordt hij alleen gebruikt als een bedrijf de standaardtag helemaal niet heeft (Stellantis).
+- Dividend aan aandeelhouders moederbedrijf (IFRS, o.a. Sanofi, Eni) herkend. Diagnose noemt nu ook winst vóór belasting.
+- Bewust niet opgelost: afschrijving bij Microsoft, ABBV, TXN, Oracle (alleen losse onderdelen gerapporteerd; optellen zou een ander getal geven dan de NAIC bedoelt).
+
 ## 2026.10.20-beta.31
 - **NAIC: koers/winst in het verleden.** Per boekjaar de hoogste en laagste slotkoers gedeeld door de winst per aandeel, het gemiddelde over de laatste 5 jaar (minstens 3 jaar nodig), en het dividendrendement. Knop "Neem deze K/W over in mijn koerszones" vult de hoge en lage K/W in je eigen zones.
 - Nieuw `koershistorie.py`; de nachtelijke update haalt 12 jaar dagkoersen en dividenden op (koersen splitsingscorrect, niet dividendgecorrigeerd). Jaar met minder dan 200 handelsdagen of een gat aan begin of eind: onbekend. Koers in een andere valuta dan de jaarcijfers: onbekend, nooit omgerekend. Geen gevonden dividend betekent onbekend, niet nul.
