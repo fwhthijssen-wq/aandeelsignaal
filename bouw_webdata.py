@@ -84,6 +84,44 @@ def heeft_sec(ticker):
     return '.' not in ticker or ticker.upper() in SEC_LISTING_MAP
 
 
+ESEF_LEI = HERE / 'esef_lei.json'
+ESEF_MAP = HERE / 'esef_data'
+
+
+def esef_ophalen(ticker):
+    """ESEF-feitenbestand (companyfacts-vorm, zie esef_bron.py) van een noteringscode, of None als er geen LEI of bestand is."""
+    import gzip
+    try:
+        lei = json.loads(ESEF_LEI.read_text(encoding='utf-8')).get(ticker.upper(), {}).get('lei')
+        if not lei:
+            return None
+        with gzip.open(ESEF_MAP / f'{lei}.json.gz', 'rt', encoding='utf-8') as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
+
+
+def gegevens_uit_esef(cf, gecontroleerd_op):
+    """Zelfde verificatie als bij SEC-bedrijven, op de ESEF-feiten; `bron` laat zien waar de cijfers vandaan komen."""
+    from esef_bron import samenvatting
+    from esef_bron import eps_keten
+    g = gegevens_uit_sec(samenvatting(cf, asof=gecontroleerd_op), gecontroleerd_op)
+    g['bron'] = 'ESEF'
+    if g.get('eps_status') != 'independently_verified' and g.get('jaren'):
+        # Niet nagerekend (vaak ontbreekt het aantal aandelen in machineleesbare vorm). Het label-slot blijft dicht; maar de
+        # cijfers uit het officiële jaarverslag zijn er wel, mits de EPS over de jaren onderling vergelijkbaar is.
+        keten = eps_keten(cf)
+        if keten:
+            for j in g['jaren']:
+                if j.get('end') in keten:
+                    j['comparable_eps'] = keten[j['end']]
+            jaren = [j for j in g['jaren'] if j.get('end') in keten]
+            if len(jaren) >= 5:
+                g['jaren'] = jaren
+                g['niveau'] = 'jaarverslag'
+    return g
+
+
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
                'operating_cash_flow', 'capex', 'equity', 'eps_check', 'eps_reden')
 
@@ -394,7 +432,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
@@ -405,6 +443,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     historie_ophalen = historie_ophalen or _yahoo_historie
     valuta_ophalen = valuta_ophalen if valuta_ophalen is not None else _yahoo_valuta
     pauze = pauze if pauze is not None else _pauze
+    esef_ophalen = esef_ophalen if esef_ophalen is not None else globals()['esef_ophalen']
     vandaag = date.today().isoformat()
     records = []
     for meta in CATALOGUS:
@@ -416,15 +455,30 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
         else:
             gegevens = gegevens_uit_sec({'status': 'geen_sec', 'reason': 'Geen SEC-jaarverslag voor dit bedrijf; alleen koersgegevens.'}, vandaag)
+        esef_cf = None
+        if (gegevens.get('eps_verified_years') or 0) < 10:
+            # Geen of onvolledig SEC-dossier: probeer het officiële ESEF-jaarverslag. Het dossier met de meeste bevestigde
+            # jaren wint; bij gelijkspel blijft SEC staan. Er wordt nooit gemengd.
+            try:
+                esef_cf = esef_ophalen(ticker)
+                if esef_cf:
+                    esef_g = gegevens_uit_esef(esef_cf, vandaag)
+                    if (esef_g.get('eps_verified_years') or 0) > (gegevens.get('eps_verified_years') or 0) or not gegevens.get('jaren'):
+                        gegevens = esef_g
+                    else:
+                        esef_cf = None
+            except Exception as exc:
+                esef_cf = None
+                gegevens.setdefault('esef_fout', f'{type(exc).__name__}: {exc}'[:200])
         if gegevens.get('jaren'):
             try:
-                extra_payload = payload_ophalen(sec_ticker_for_listing(ticker), email)
+                extra_payload = esef_cf if esef_cf else payload_ophalen(sec_ticker_for_listing(ticker), email)
                 voeg_extra_toe(gegevens, extra_payload)
                 if any(not sum(1 for j in gegevens['jaren'] if j.get(v) is not None) for v in EXTRA_VELDEN):
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
-        if heeft_sec(ticker) and (gegevens.get('eps_verified_years') or 0) < 10:
+        if heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         koers, punten, dividenden = None, [], []
         if valuta_klopt(meta, valuta_ophalen):
@@ -446,7 +500,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 koers['bereik'] = koersbereik(punten)
         pauze()
         records.append(maak_record(meta, koers=koers, gegevens=gegevens))
-    return maak_bestand(records, bron='SEC companyfacts en Yahoo Finance (dagkoersen)')
+    return maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (dagkoersen)')
 
 
 def _pauze():

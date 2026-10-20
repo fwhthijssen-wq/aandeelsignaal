@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.37';
+  var APP_VERSIE = '2026.10.21-beta.38';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -43,17 +43,17 @@
   }
 
   function rijen() { var t = vandaag(); return DATA.aandelen.map(function (r) { return Gate.maakRij(r, t); }); }
-  function chip(ok) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'; }
+  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
   function trendTekst(r) {
     if (!r.koersActueel) return r.koersReden ? 'Koers ontbreekt of is verouderd' : '';
     return (r.richting === 'boven' ? 'Boven' : 'Onder') + ' gemiddelde, ' + pct(r.afstandPct);
   }
   function regel2(rec, r) { return h(rec.land + ' · ' + (r.koersActueel ? 'koers actueel' : 'geen actuele koers') + (r.richting ? ' · ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' gemiddelde' : '')); }
   function rijLink(rec, r) {
-    return '<a href="#/a/' + encodeURIComponent(rec.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + regel2(rec, r) + '</span></div>' + chip(r.bevestigd) + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+    return '<a href="#/a/' + encodeURIComponent(rec.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + regel2(rec, r) + '</span></div>' + chip(r.bevestigd, r.niveau) + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
   }
   function kaartLink(rec, r) {
-    return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
+    return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd, r.niveau) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
   }
 
   var HOOFD = [['#/', 'Start', 'start'], ['#/zoek', 'Zoeken', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille'], ['#/hulp', 'Hulp', 'hulp']];
@@ -117,8 +117,8 @@
       '<label for="d-sort" class="zacht">Sorteer op</label><select id="d-sort">' + Dashboard.KOLOMMEN.map(function (k) { return '<option value="' + k + '"' + (k === tabelKeuze.sorteer ? ' selected' : '') + '>' + h(TABEL_KOP[k]) + '</option>'; }).join('') + '</select>' +
       '<button class="knop rand klein" id="d-rtg" aria-label="Sorteervolgorde omdraaien">' + (tabelKeuze.richting === 'op' ? '↑ Oplopend' : '↓ Aflopend') + '</button></div>';
     s += rijenT.length ? '<div class="schuif"><table class="vgl dash"><thead><tr><th>Aandeel</th><th>Koers vs gem.</th><th>Omzet p.j.</th><th>Winst p.j.</th><th>Marge</th></tr></thead><tbody>' + rijenT.map(function (k) {
-      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
-    }).join('') + '</tbody></table></div><p class="zacht">Groei en marge staan er alleen bij bevestigde aandelen. Een streepje betekent onbekend. Dit is geen rangorde of advies.</p>' + (beperktT ? '<p class="zacht" data-beperkt>De eerste 60 van ' + totaalT + ' aandelen. Kies een index of een filter om de rest te zien.</p>' : '')
+      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd, k.niveau) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
+    }).join('') + '</tbody></table></div><p class="zacht">Groei en marge staan er bij bevestigde aandelen en bij aandelen "uit jaarverslag" (cijfers uit het officiële jaarverslag, niet nagerekend). Een streepje betekent onbekend. Dit is geen rangorde of advies.</p>' + (beperktT ? '<p class="zacht" data-beperkt>De eerste 60 van ' + totaalT + ' aandelen. Kies een index of een filter om de rest te zien.</p>' : '')
       : '<div class="kaart-plat"><p>Geen aandelen die aan dit filter voldoen.</p></div>';
     return s + '</section>';
   }
@@ -216,7 +216,7 @@
   }
 
   /* ---- Vergelijken ---- */
-  function chipKort(ok) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : '<span class="chip wacht">… Onbevestigd</span>'; }
+  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
   function schermVergelijk(ta, tb) {
     var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
     var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
@@ -230,7 +230,7 @@
     }
     var rijenDef = [['Koers (laatste slot)', 'koers', 'koers'], ['Afstand tot gemiddelde 50 dagen', 'afstandPct', 'pct'], ['Omzetgroei per jaar', 'omzetgroei', 'pct'], ['Groei winst per aandeel per jaar', 'epsgroei', 'pct'], ['Nettomarge laatste jaar', 'nettomarge', 'plain'], ['Koers-winstverhouding (K/W)', 'kw', 'kw']];
     var tb2 = '<div class="schuif"><table class="vgl"><thead><tr><th></th><th>' + h(A.naam) + '</th><th>' + h(B.naam) + '</th></tr></thead><tbody>' +
-      '<tr><th scope="row">Gegevens</th><td>' + chipKort(A.bevestigd) + '</td><td>' + chipKort(B.bevestigd) + '</td></tr>' +
+      '<tr><th scope="row">Gegevens</th><td>' + chipKort(A.bevestigd, A.niveau) + '</td><td>' + chipKort(B.bevestigd, B.niveau) + '</td></tr>' +
       rijenDef.map(function (d) { return '<tr><th scope="row">' + h(d[0]) + '</th>' + cel(A[d[1]], d[2], A) + cel(B[d[1]], d[2], B) + '</tr>'; }).join('') + '</tbody></table></div>';
     var uitleg = [A, B].filter(function (x) { return !x.bevestigd; }).map(function (x) { return '<li><b>' + h(x.naam) + ':</b> ' + h(x.reden) + '</li>'; }).join('');
     return '<section><div class="stelregel"><a class="link" href="#/" id="terug">' + I.terug + 'Terug</a></div><h1>Vergelijken</h1><div class="velden">' + sel('vg-a', ra, 'Eerste aandeel') + sel('vg-b', rb, 'Tweede aandeel') + '</div>' +
@@ -301,6 +301,9 @@
     r(g && g.rejected_sources === 0, g && g.rejected_sources === 0 ? 'Geen bronnen afgewezen' : 'Er zijn bronnen afgewezen of onbekend');
     return '<ul class="vinkjes">' + lst.join('') + '</ul>';
   }
+  function jaarverslagUitleg(g) {
+    return '<div class="melding" data-jaarverslag><b>Cijfers uit het officiële jaarverslag</b><span>De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen uit de ESEF-jaarverslagen van het bedrijf zelf. De winst per aandeel is niet zelf nagerekend (dat lukt niet altijd, bijvoorbeeld als het aantal aandelen niet machineleesbaar in het verslag staat). Wel geven de opeenvolgende verslagen voor de overlappende jaren dezelfde winst per aandeel, dus de jaren zijn onderling vergelijkbaar. Daarom geen label en geen koersdoel; de NAIC-gids vraagt 10 onderbouwde jaren.</span></div>';
+  }
   function schermAandeel(t, tab) {
     var rec = zoek(t); if (!rec) return '<section><h1>Niet gevonden</h1><p>Dit aandeel zit niet in de lijst.</p><a class="knop" href="#/zoek">Zoeken</a></section>';
     var g = rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null, k = rec.koers;
@@ -313,7 +316,7 @@
     if (tab === 'samenvatting') {
       s += '<div class="kaart-plat">' + (fr.fresh ? '<div class="rij-kop"><b style="font:700 2rem ui-rounded,system-ui">' + getal(k.slot, 2) + ' ' + h(rec.valuta) + '</b><span class="zacht">Slotkoers ' + h(datumNl(k.datum)) + '</span></div>' + sparkSvg(k.reeks, k.sma50) + '<p>' + (r.richting ? 'De koers staat ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' het gemiddelde van de laatste 50 handelsdagen (' + pct(r.afstandPct) + ').' : '') + '</p>' :
         '<b>Geen actuele koers</b><p class="zacht">' + h(fr.reason) + ' Daarom tonen we geen oordeel en geen trend.</p>') + '</div>';
-      s += '<div class="kaart-plat"><div class="rij-kop"><h2>' + (r.bevestigd ? 'Gegevens bevestigd' : (g && g.eps_status === 'independently_verified' && !fr.fresh ? 'Jaarcijfers bevestigd, koers ontbreekt' : 'Gegevens nog niet bevestigd')) + '</h2>' + chip(r.bevestigd) + '</div>' + checks(rec, g, null, fr) +
+      s += '<div class="kaart-plat"><div class="rij-kop"><h2>' + (r.bevestigd ? 'Gegevens bevestigd' : (g && g.eps_status === 'independently_verified' && !fr.fresh ? 'Jaarcijfers bevestigd, koers ontbreekt' : 'Gegevens nog niet bevestigd')) + '</h2>' + chip(r.bevestigd, r.niveau) + '</div>' + (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + checks(rec, g, null, fr) +
         (r.bevestigd ? '' : '<p class="zacht">' + h(r.redenen.join(' ')) + '</p>') + '</div>';
     } else if (tab === 'koers') {
       s += fr.fresh ? '<div class="kaart-plat">' + sparkSvg(k.reeks, k.sma50) + '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers</span><span><i style="background:var(--chart-b)"></i>Gemiddelde 50 dagen</span></div></div>' +
@@ -326,7 +329,7 @@
     } else if (tab === 'check') {
       s += checkHtml(rec);
     } else if (tab === 'gezondheid') {
-      s += gezondHtml(g, jr);
+      s += (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + gezondHtml(g, jr);
     } else {
       s += bronHtml(rec, g);
     }

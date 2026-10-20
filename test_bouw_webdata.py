@@ -67,7 +67,7 @@ class WebdataTests(unittest.TestCase):
                     {'end': '2021-09-25', 'start': '2020-09-27', 'val': 15234000000, 'form': '10-K', 'filed': '2025-10-31', 'accn': 'x'}]}}}}}
             raise OSError('geen verbinding')
 
-        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
+        bestand = bw.live('a@b.nl', fetch_prijzen=prijzen, historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, esef_ophalen=lambda t: None, sec_samenvatting=sec, diagnose=lambda t, e: {'sec_ticker': t},
                           payload_ophalen=payload_ophalen)
         apple = next(r for r in bestand['aandelen'] if r['ticker'] == 'AAPL')
         self.assertEqual(apple['koers']['datum'], '2026-10-19')
@@ -114,7 +114,7 @@ class WebdataTests(unittest.TestCase):
 
         def kapot(t, e):
             raise RuntimeError('boem')
-        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
+        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, esef_ophalen=lambda t: None, sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=kapot)
         g = bestand['aandelen'][0]['gegevens']
         self.assertEqual(g['eps_status'], 'independently_verified')
         self.assertTrue(all(j.get('dividends_paid') is None for j in g['jaren']))

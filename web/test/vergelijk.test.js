@@ -80,3 +80,20 @@ test('kant: plek in koersbereik alleen met verse koers en 8+ jaar; ook zonder be
   const onder = V.kant(mk({ slot: 30, datum: vandaag, bereik }), vandaag, G);   // onder het dieptepunt
   assert.equal(onder.positiePct, 0); assert.equal(onder.verhouding, null);
 });
+
+test('"uit jaarverslag": groei en marge wel, K/W en bevestiging nooit', () => {
+  const g = gegev({ eps_status: 'missing_split_evidence', eps_verified_years: 0, niveau: 'jaarverslag', jaren: jaren(2019, 7, 100e9, 2, 0.1, 0.1) });
+  const k = V.kant(rec({ gegevens: g }), VANDAAG, G);
+  assert.equal(k.bevestigd, false); assert.equal(k.niveau, 'jaarverslag');
+  assert.equal(k.omzetgroei, 10); assert.equal(k.epsgroei, 10); assert.equal(k.nettomarge, 20);
+  assert.equal(k.kw, null);
+  assert.deepEqual(k.jarenBereik, [2019, 2025]);
+});
+
+test('niveau "jaarverslag" telt niet bij een fout, en een bevestigd aandeel heeft geen niveau', () => {
+  const fout = V.kant(rec({ gegevens: gegev({ niveau: 'jaarverslag', fout: 'kapot' }) }), VANDAAG, G);
+  assert.equal(fout.niveau, null); assert.equal(fout.epsgroei, null);
+  assert.equal(V.kant(rec({ gegevens: gegev({ niveau: 'jaarverslag' }) }), VANDAAG, G).niveau, null);
+  const onbekend = V.kant(rec({ gegevens: gegev({ eps_status: 'missing_split_evidence', eps_verified_years: 0, niveau: 'iets anders' }) }), VANDAAG, G);
+  assert.equal(onbekend.niveau, null); assert.equal(onbekend.epsgroei, null);
+});

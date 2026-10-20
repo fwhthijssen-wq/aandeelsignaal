@@ -114,7 +114,25 @@ def sec_eps_recompute_inputs(payload, asof):
     if ifrs_owners:
         ifrs_income, ifrs_tag = ifrs_owners, {key: IFRS_NET_INCOME_TAG for key in ifrs_owners}
     else:
-        ifrs_income, ifrs_tag = ifrs_ordinary, {key: IFRS_NET_INCOME_ORDINARY_TAG for key in ifrs_ordinary}
+        ifrs_income, ifrs_tag = dict(ifrs_ordinary), {key: IFRS_NET_INCOME_ORDINARY_TAG for key in ifrs_ordinary}
+        # ESEF-jaarverslagen van bedrijven zonder minderheidsbelangen (ASML) hebben alleen 'ProfitLoss'. Als terugval: winst
+        # min minderheidsbelang als dat gerapporteerd is, anders de totale winst. De herberekening moet daarna nog steeds de
+        # gerapporteerde EPS op een halve cent reproduceren; een bedrijf met een merkbaar minderheidsbelang valt dan af.
+        ifrs_totaal = annual('ifrs-full', 'ProfitLoss', money)
+        ifrs_nci = annual('ifrs-full', 'ProfitLossAttributableToNoncontrollingInterests', money)
+        for key, waarden in ifrs_totaal.items():
+            if key in ifrs_income or len(waarden) != 1:
+                continue
+            (unit_a, value_a, filed_a), = waarden
+            if key in ifrs_nci:
+                if len(ifrs_nci[key]) != 1:
+                    continue
+                (unit_b, value_b, _), = ifrs_nci[key]
+                if unit_a != unit_b:
+                    continue
+                ifrs_income[key], ifrs_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus ProfitLossAttributableToNoncontrollingInterests'
+            else:
+                ifrs_income[key], ifrs_tag[key] = waarden, 'ProfitLoss (geen minderheidsbelang gerapporteerd)'
     for namespace, income, ni_tags, sh_tag in ((us, us_income, us_tag, SHARES_TAG),
                                                ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG)):
         shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')

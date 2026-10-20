@@ -219,6 +219,26 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), 2)
         self.assertEqual(self.fouten, [])
 
+    def test_uit_jaarverslag_toont_cijfers_met_uitleg_maar_geen_label(self):
+        pg = self.pagina(320)
+        pg.evaluate("""() => { const a = AANDEEL_DATA.aandelen.find(x => x.ticker === 'AAPL');
+            a.gegevens = Object.assign({}, a.gegevens, { eps_status: 'missing_split_evidence', eps_verified_years: 0, niveau: 'jaarverslag' }); }""")
+        pg.evaluate("location.hash='#/a/AAPL/gezondheid'")
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-jaarverslag]').count(), 1)
+        self.assertIn('niet zelf nagerekend', pg.locator('[data-jaarverslag]').inner_text())
+        pg.evaluate("location.hash='#/a/AAPL/samenvatting'")
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('main .chip[data-niveau="jaarverslag"]').count(), 1)
+        self.assertEqual(pg.locator('main .chip.ok').count(), 0)
+        pg.evaluate("location.hash='#/a/AAPL/koers'")
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-label]').count(), 0)
+        pg.evaluate("location.hash='#/'")
+        pg.wait_for_timeout(150)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
     def test_dashboard_plek_in_bereik_zichtbaar_en_sorteerbaar(self):
         pg = self._pagina_met_indexen('#/', 320)
         pg.select_option('#d-sort', 'positiePct')

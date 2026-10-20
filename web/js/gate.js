@@ -86,7 +86,8 @@
     }
     var t = fr.fresh ? trend(k.slot, k.sma50) : { richting: null, afstandPct: null };
     return { ticker: rec.ticker, naam: rec.naam, bevestigd: toegestaan, koersActueel: fr.fresh,
-      koersReden: fr.fresh ? null : fr.reason, richting: t.richting, afstandPct: t.afstandPct, redenen: redenen };
+      koersReden: fr.fresh ? null : fr.reason, richting: t.richting, afstandPct: t.afstandPct, redenen: redenen,
+      niveau: !toegestaan && g && !g.fout && g.niveau === 'jaarverslag' ? 'jaarverslag' : null };
   }
 
   function sorteer(rijen) {
