@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "ASML",
+    "year": 2016,
+    "concept": "Operationele kasstroom",
+    "value": 1665906000,
+    "unit": "EUR",
+    "source": "ASML officieel jaarverslag 2016, kasstroomoverzicht, Net cash provided by operating activities",
+    "source_detail": "Oorspronkelijke tabelwaarde 1.665.906, gerapporteerd in duizenden EUR; in eerdere Aandeel Signaal-proef bevestigd",
+    "evidence_status": "Bedrag, periode, valuta en US-GAAP rechtstreeks geverifieerd in officieel SEC Form 20-F; opname in tienjaarswaardering vereist grondslagcontrole.",
+    "analysis_approved": false,
+    "period_end": "2016-12-31",
+    "accounting_basis": "US-GAAP",
+    "source_id": "SEC:0000937966-17-000007:Form20F:F-7",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/937966/000093796617000007/a20-fasml2016.htm",
+    "source_page": "F-7",
+    "reported_value": 1665906,
+    "reported_scale": 1000,
+    "source_verified": "2026-10-19",
+    "verification_note": "2016 Form 20-F, Consolidated Statements of Cash Flows, audited US GAAP. Original source verified directly; not a second independent filing."
+  }
+]

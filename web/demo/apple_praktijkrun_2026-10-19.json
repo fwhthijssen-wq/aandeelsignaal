@@ -1,0 +1,991 @@
+{
+  "expected_esef_issuer": "ASML Holding N.V.",
+  "checked_utc": "2026-10-19T22:02:03.907854+00:00",
+  "valuation_approved": false,
+  "esef_lei": "724500Y6DUVHQD6OXN27",
+  "sec_ticker": "AAPL",
+  "esef": {
+    "status": "not_requested"
+  },
+  "sec": {
+    "status": "facts_found",
+    "dossier": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "primary_source_completed_years": [],
+      "accounting_bases": [],
+      "warnings": [
+        "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+        "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+        "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+      ],
+      "reported_eps_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "parent_profit_years": [],
+      "comparable_eps_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "eps_independent_audit": {
+        "2016-09-24": {
+          "status": "onderbouwd",
+          "verwacht": 2.0775,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 8.3063,
+            "gerapporteerd": 8.31,
+            "accn": "0000320193-18-000145",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2017-09-30": {
+          "status": "onderbouwd",
+          "verwacht": 2.3025,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 9.2067,
+            "gerapporteerd": 9.21,
+            "accn": "0000320193-19-000119",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2018-09-29": {
+          "status": "onderbouwd",
+          "verwacht": 2.98,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 2.9765,
+            "gerapporteerd": 2.98,
+            "accn": "0000320193-20-000096",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2019-09-28": {
+          "status": "onderbouwd",
+          "verwacht": 2.97,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 2.9714,
+            "gerapporteerd": 2.97,
+            "accn": "0000320193-21-000105",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2020-09-26": {
+          "status": "onderbouwd",
+          "verwacht": 3.28,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 3.2753,
+            "gerapporteerd": 3.28,
+            "accn": "0000320193-22-000108",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2021-09-25": {
+          "status": "onderbouwd",
+          "verwacht": 5.61,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 5.614,
+            "gerapporteerd": 5.61,
+            "accn": "0000320193-23-000106",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2022-09-24": {
+          "status": "onderbouwd",
+          "verwacht": 6.11,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 6.1132,
+            "gerapporteerd": 6.11,
+            "accn": "0000320193-24-000123",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2023-09-30": {
+          "status": "onderbouwd",
+          "verwacht": 6.13,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 6.1341,
+            "gerapporteerd": 6.13,
+            "accn": "0000320193-25-000079",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2024-09-28": {
+          "status": "onderbouwd",
+          "verwacht": 6.08,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 6.0836,
+            "gerapporteerd": 6.08,
+            "accn": "0000320193-25-000079",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        },
+        "2025-09-27": {
+          "status": "onderbouwd",
+          "verwacht": 7.46,
+          "bronnen": 0,
+          "waardering_goedgekeurd": false,
+          "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)",
+          "herberekening": {
+            "herberekend": 7.465,
+            "gerapporteerd": 7.46,
+            "accn": "0000320193-25-000079",
+            "bron": "SEC us-gaap:NetIncomeLoss / WeightedAverageNumberOfDilutedSharesOutstanding",
+            "status": "consistent",
+            "reden": "Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)"
+          },
+          "route": "herberekening"
+        }
+      },
+      "naic_illustrative_preview": {
+        "status": "illustratief_niet_gevalideerd",
+        "approved": false,
+        "eps_bronjaar": 2025,
+        "eps_bronwaarde": 7.46,
+        "eps_type": "gerapporteerd_onbewerkt",
+        "currency": "USD",
+        "growth_rates_user_assumptions": [
+          0,
+          5,
+          10
+        ],
+        "pe_user_assumptions": [
+          10,
+          15,
+          20
+        ],
+        "scenarios": [
+          {
+            "Scenario": "Voorzichtig",
+            "EPS-groei p.j. (%)": 0,
+            "K/W eindjaar": 10,
+            "EPS na horizon": 7.46,
+            "Indicatieve waarde nu": 46.32,
+            "Waarde na veiligheidsmarge": 34.74,
+            "Valuta": "USD"
+          },
+          {
+            "Scenario": "Gemiddeld",
+            "EPS-groei p.j. (%)": 5,
+            "K/W eindjaar": 15,
+            "EPS na horizon": 9.52,
+            "Indicatieve waarde nu": 88.68,
+            "Waarde na veiligheidsmarge": 66.51,
+            "Valuta": "USD"
+          },
+          {
+            "Scenario": "Gunstig",
+            "EPS-groei p.j. (%)": 10,
+            "K/W eindjaar": 20,
+            "EPS na horizon": 12.01,
+            "Indicatieve waarde nu": 149.2,
+            "Waarde na veiligheidsmarge": 111.9,
+            "Valuta": "USD"
+          }
+        ],
+        "warnings": [
+          "Scenario gebruikt onbewerkte gerapporteerde EPS; historische aandelensplitsingen zijn niet gevalideerd.",
+          "Groeipercentages en K/W-verhoudingen zijn illustratieve aannames, geen uit brondata afgeleide verwachtingen.",
+          "Geen gevalideerde intrinsieke waarde, koopadvies of automatisch beleggingssignaal."
+        ]
+      },
+      "eps_independently_verified_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "eps_independently_verified_count": 10,
+      "eps_adjustments": [
+        {
+          "year": 2016,
+          "reported_eps": 8.31,
+          "provisional_comparable_eps": 2.0775,
+          "split_factor": 4,
+          "status": "Voorlopig omgerekend op latere aandelenbasis"
+        },
+        {
+          "year": 2017,
+          "reported_eps": 9.21,
+          "provisional_comparable_eps": 2.3025,
+          "split_factor": 4,
+          "status": "Voorlopig omgerekend op latere aandelenbasis"
+        },
+        {
+          "year": 2018,
+          "reported_eps": 2.98,
+          "provisional_comparable_eps": 2.98,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2019,
+          "reported_eps": 2.97,
+          "provisional_comparable_eps": 2.97,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2020,
+          "reported_eps": 3.28,
+          "provisional_comparable_eps": 3.28,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2021,
+          "reported_eps": 5.61,
+          "provisional_comparable_eps": 5.61,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2022,
+          "reported_eps": 6.11,
+          "provisional_comparable_eps": 6.11,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2023,
+          "reported_eps": 6.13,
+          "provisional_comparable_eps": 6.13,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2024,
+          "reported_eps": 6.08,
+          "provisional_comparable_eps": 6.08,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        },
+        {
+          "year": 2025,
+          "reported_eps": 7.46,
+          "provisional_comparable_eps": 7.46,
+          "split_factor": 1,
+          "status": "Voorlopig: SEC-bron na splitsing of geen correctie nodig"
+        }
+      ],
+      "split_events_found": 6,
+      "split_events_accepted": 4,
+      "split_conflict_dates": [],
+      "split_event_audit": [
+        {
+          "date": "2020-08-28",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 4,
+          "status": "candidate",
+          "reasons": [],
+          "verification": "EPS-herberekening in indieningen voor en na de splitsing",
+          "verification_window": {
+            "laatste_indiening_voor": "2019-10-31",
+            "eerste_indiening_na": "2020-10-30"
+          },
+          "verification_evidence": [
+            {
+              "periode": "2018-09-29",
+              "eps_voor": [
+                11.91
+              ],
+              "eps_na": [
+                2.98
+              ],
+              "verhouding_waargenomen": [
+                3.997,
+                3.997
+              ]
+            },
+            {
+              "periode": "2019-09-28",
+              "eps_voor": [
+                11.89
+              ],
+              "eps_na": [
+                2.97
+              ],
+              "verhouding_waargenomen": [
+                4.003,
+                4.003
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2020-08-28",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 4,
+          "status": "candidate",
+          "reasons": [],
+          "verification": "EPS-herberekening in indieningen voor en na de splitsing",
+          "verification_window": {
+            "laatste_indiening_voor": "2019-10-31",
+            "eerste_indiening_na": "2020-10-30"
+          },
+          "verification_evidence": [
+            {
+              "periode": "2018-09-29",
+              "eps_voor": [
+                11.91
+              ],
+              "eps_na": [
+                2.98
+              ],
+              "verhouding_waargenomen": [
+                3.997,
+                3.997
+              ]
+            },
+            {
+              "periode": "2019-09-28",
+              "eps_voor": [
+                11.89
+              ],
+              "eps_na": [
+                2.97
+              ],
+              "verhouding_waargenomen": [
+                4.003,
+                4.003
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2020-08-28",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 4,
+          "status": "candidate",
+          "reasons": [],
+          "verification": "EPS-herberekening in indieningen voor en na de splitsing",
+          "verification_window": {
+            "laatste_indiening_voor": "2019-10-31",
+            "eerste_indiening_na": "2020-10-30"
+          },
+          "verification_evidence": [
+            {
+              "periode": "2018-09-29",
+              "eps_voor": [
+                11.91
+              ],
+              "eps_na": [
+                2.98
+              ],
+              "verhouding_waargenomen": [
+                3.997,
+                3.997
+              ]
+            },
+            {
+              "periode": "2019-09-28",
+              "eps_voor": [
+                11.89
+              ],
+              "eps_na": [
+                2.97
+              ],
+              "verhouding_waargenomen": [
+                4.003,
+                4.003
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2020-08-28",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 4,
+          "status": "candidate",
+          "reasons": [],
+          "verification": "EPS-herberekening in indieningen voor en na de splitsing",
+          "verification_window": {
+            "laatste_indiening_voor": "2019-10-31",
+            "eerste_indiening_na": "2020-10-30"
+          },
+          "verification_evidence": [
+            {
+              "periode": "2018-09-29",
+              "eps_voor": [
+                11.91
+              ],
+              "eps_na": [
+                2.98
+              ],
+              "verhouding_waargenomen": [
+                3.997,
+                3.997
+              ]
+            },
+            {
+              "periode": "2019-09-28",
+              "eps_voor": [
+                11.89
+              ],
+              "eps_na": [
+                2.97
+              ],
+              "verhouding_waargenomen": [
+                4.003,
+                4.003
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2014-06-06",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 7,
+          "status": "niet_van_toepassing",
+          "reasons": [
+            "splitsing ligt vóór het eerste boekjaar in het dossier"
+          ]
+        },
+        {
+          "date": "2014-06-06",
+          "source_tag": "us-gaap:StockholdersEquityNoteStockSplitConversionRatio1",
+          "unit": "pure",
+          "ratio": 7,
+          "status": "niet_van_toepassing",
+          "reasons": [
+            "splitsing ligt vóór het eerste boekjaar in het dossier"
+          ]
+        }
+      ],
+      "eps_verification_status": "independently_verified",
+      "eps_verification_routes": {
+        "2016-09-24": "herberekening",
+        "2017-09-30": "herberekening",
+        "2018-09-29": "herberekening",
+        "2019-09-28": "herberekening",
+        "2020-09-26": "herberekening",
+        "2021-09-25": "herberekening",
+        "2022-09-24": "herberekening",
+        "2023-09-30": "herberekening",
+        "2024-09-28": "herberekening",
+        "2025-09-27": "herberekening"
+      },
+      "year_table": [
+        {
+          "year": 2016,
+          "end": "2016-09-24",
+          "currency": "USD",
+          "sales": 215639000000,
+          "net_income": 45687000000,
+          "reported_eps": 8.31,
+          "comparable_eps": 2.0775,
+          "operating_cash_flow": 66231000000,
+          "capex": 12734000000,
+          "equity": 128249000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2017,
+          "end": "2017-09-30",
+          "currency": "USD",
+          "sales": 229234000000,
+          "net_income": 48351000000,
+          "reported_eps": 9.21,
+          "comparable_eps": 2.3025,
+          "operating_cash_flow": 64225000000,
+          "capex": 12451000000,
+          "equity": 134047000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2018,
+          "end": "2018-09-29",
+          "currency": "USD",
+          "sales": 265595000000,
+          "net_income": 59531000000,
+          "reported_eps": 2.98,
+          "comparable_eps": 2.98,
+          "operating_cash_flow": 77434000000,
+          "capex": 13313000000,
+          "equity": 107147000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2019,
+          "end": "2019-09-28",
+          "currency": "USD",
+          "sales": 260174000000,
+          "net_income": 55256000000,
+          "reported_eps": 2.97,
+          "comparable_eps": 2.97,
+          "operating_cash_flow": 69391000000,
+          "capex": 10495000000,
+          "equity": 90488000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2020,
+          "end": "2020-09-26",
+          "currency": "USD",
+          "sales": 274515000000,
+          "net_income": 57411000000,
+          "reported_eps": 3.28,
+          "comparable_eps": 3.28,
+          "operating_cash_flow": 80674000000,
+          "capex": 7309000000,
+          "equity": 65339000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2021,
+          "end": "2021-09-25",
+          "currency": "USD",
+          "sales": 365817000000,
+          "net_income": 94680000000,
+          "reported_eps": 5.61,
+          "comparable_eps": 5.61,
+          "operating_cash_flow": 104038000000,
+          "capex": 11085000000,
+          "equity": 63090000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2022,
+          "end": "2022-09-24",
+          "currency": "USD",
+          "sales": 394328000000,
+          "net_income": 99803000000,
+          "reported_eps": 6.11,
+          "comparable_eps": 6.11,
+          "operating_cash_flow": 122151000000,
+          "capex": 10708000000,
+          "equity": 50672000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2023,
+          "end": "2023-09-30",
+          "currency": "USD",
+          "sales": 383285000000,
+          "net_income": 96995000000,
+          "reported_eps": 6.13,
+          "comparable_eps": 6.13,
+          "operating_cash_flow": 110543000000,
+          "capex": 10959000000,
+          "equity": 62146000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2024,
+          "end": "2024-09-28",
+          "currency": "USD",
+          "sales": 391035000000,
+          "net_income": 93736000000,
+          "reported_eps": 6.08,
+          "comparable_eps": 6.08,
+          "operating_cash_flow": 118254000000,
+          "capex": 9447000000,
+          "equity": 56950000000,
+          "eps_check": "onderbouwd"
+        },
+        {
+          "year": 2025,
+          "end": "2025-09-27",
+          "currency": "USD",
+          "sales": 416161000000,
+          "net_income": 112010000000,
+          "reported_eps": 7.46,
+          "comparable_eps": 7.46,
+          "operating_cash_flow": 111482000000,
+          "capex": 12715000000,
+          "equity": 73733000000,
+          "eps_check": "onderbouwd"
+        }
+      ],
+      "ready": false,
+      "completeness": {
+        "years_in_dossier": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "window_latest_year": 2025,
+        "missing_years": [],
+        "duplicate_calendar_years": [],
+        "currencies": [
+          "USD"
+        ],
+        "concept_years": {
+          "omzet": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "nettowinst": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "winst_aandeelhouders": [],
+          "operationele_kasstroom": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "investeringen": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "eigen_vermogen": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "eps_gerapporteerd": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "eps_vergelijkbaar": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "concept_counts": {
+          "omzet": 10,
+          "nettowinst": 10,
+          "winst_aandeelhouders": 0,
+          "operationele_kasstroom": 10,
+          "investeringen": 10,
+          "eigen_vermogen": 10,
+          "eps_gerapporteerd": 10,
+          "eps_vergelijkbaar": 10
+        },
+        "fcf_years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "fcf_coverage_complete": true,
+        "cashflow_blocking_issues": [],
+        "blocking_issues": [],
+        "valuation_approved": false
+      }
+    },
+    "historic_source_evidence": [],
+    "primary_source_completion_audit": [],
+    "verified_supplement_audit": [],
+    "verified_supplements_applied": 0,
+    "historic_source_evidence_audit": [],
+    "historic_gap_audit": [],
+    "coverage_after_primary_completion": {
+      "Nettowinst": 10,
+      "Omzet": 10,
+      "Winst per aandeel (verwaterd)": 10,
+      "Operationele kasstroom": 10,
+      "Investeringen in vaste activa": 10,
+      "Eigen vermogen": 10
+    },
+    "historic_source_evidence_error": null,
+    "company": "Apple Inc.",
+    "cik": 320193,
+    "missing_annual_fact_diagnostics": [],
+    "missing_cashflow_extension_audit": [],
+    "annual_history_count": 10,
+    "accepted_year_rows": 10,
+    "distinct_years": 10,
+    "currencies": [
+      "USD"
+    ],
+    "years_requested": 10,
+    "window_latest_source_year": 2025,
+    "missing_calendar_years": [],
+    "older_years_excluded": [],
+    "quality_issues": [],
+    "concept_coverage": {
+      "Nettowinst": 10,
+      "Omzet": 10,
+      "Winst per aandeel (verwaterd)": 10,
+      "Operationele kasstroom": 10,
+      "Investeringen in vaste activa": 10,
+      "Eigen vermogen": 10
+    },
+    "year_details": [
+      {
+        "end": "2016-09-24",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2017-09-30",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2018-09-29",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2019-09-28",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2020-09-26",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2021-09-25",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2022-09-24",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2023-09-30",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2024-09-28",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      },
+      {
+        "end": "2025-09-27",
+        "currency": "USD",
+        "concepts": [
+          "Eigen vermogen",
+          "Investeringen in vaste activa",
+          "Nettowinst",
+          "Omzet",
+          "Operationele kasstroom",
+          "Winst per aandeel (verwaterd)"
+        ]
+      }
+    ],
+    "rejections": [],
+    "eps_comparability_available": true,
+    "eps_comparability_source_claimed": true,
+    "eps_comparability_discrepancy": false,
+    "valuation_approved": false
+  }
+}
