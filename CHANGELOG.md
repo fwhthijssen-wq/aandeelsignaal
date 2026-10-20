@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 2026.10.20-beta.28
+- **Timing (informatie)** op de Koers-tab: korte en lange trend (50 en 200 dagen), plek in het jaarbereik en RSI(14) in gewone taal. Staat los van het signaal en heeft er geen invloed op. Bij een verouderde koers verschijnt de kaart niet; bij te weinig koersgeschiedenis staat er dat de app liever niets toont dan een schatting.
+- Nachtelijke update haalt nu 2 jaar koersen op en berekent SMA200, 52-wekenhoog/-laag en RSI (Wilder), getoetst tegen een onafhankelijke pandas-berekening.
+
 ## 2026.10.20-beta.27
 - **Opruimen:** `opruimlijst.txt` (178 oude bestanden: Streamlit-app, `.cmd`-starters, archief, oude modules en hun tests) en een eenmalige workflow "Opruimen oude bestanden" met proefrun. De nachtelijke update en alle overgebleven tests werken aantoonbaar zonder die bestanden (op een kopie getest). Streamlit uit `requirements.txt`.
 - **McDonald's:** aandelen die in miljoenen worden gerapporteerd (727 i.p.v. 727.000.000) worden vermenigvuldigd met 1.000.000, maar alleen onder 100.000 en de herberekende EPS moet de gerapporteerde EPS nog steeds reproduceren.

@@ -125,6 +125,33 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
+    def test_timing_kaart_alleen_met_verse_koers_en_zonder_invloed_op_signaal(self):
+        def ctx(datum):
+            c = self.b.new_context(viewport={'width': 390, 'height': 800})
+            self.addCleanup(c.close)
+            c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,
+              get:function(){return v;},set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL')a.koers={slot:123.45,datum:'%s',
+              sma50:118.2,sma200:131.9,hoog52:150.3,laag52:101.7,rsi14:62.34,reeks:[['2026-10-01',120.5],['2026-10-02',121.7],['2026-10-05',123.45]]};});v=d;}});
+              try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datum)
+            pg = c.new_page()
+            fouten = []
+            pg.on('pageerror', lambda e: fouten.append(str(e)))
+            return pg, fouten
+        import datetime
+        pg, fouten = ctx(datetime.date.today().isoformat())
+        pg.goto(INDEX + '#/a/AAPL/koers')
+        pg.wait_for_timeout(200)
+        txt = pg.locator('[data-timing]').inner_text()
+        self.assertIn('Timing (informatie)', txt)
+        self.assertIn('onder', txt)            # onder SMA200
+        self.assertIn('45%', txt)              # plek in jaarbereik
+        self.assertIn('geen invloed op het signaal', txt)
+        pg2, fouten2 = ctx('2020-01-01')
+        pg2.goto(INDEX + '#/a/AAPL/koers')
+        pg2.wait_for_timeout(200)
+        self.assertEqual(pg2.locator('[data-timing]').count(), 0)
+        self.assertEqual(fouten + fouten2, [])
+
     def test_dashboard_spreiding_per_land_en_valuta_met_verse_koersen(self):
         c = self.b.new_context(viewport={'width': 390, 'height': 800})
         self.addCleanup(c.close)

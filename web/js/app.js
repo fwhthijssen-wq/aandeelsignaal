@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.27';
+  var APP_VERSIE = '2026.10.20-beta.28';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -309,6 +309,7 @@
       s += fr.fresh ? '<div class="kaart-plat">' + sparkSvg(k.reeks, k.sma50) + '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers</span><span><i style="background:var(--chart-b)"></i>Gemiddelde 50 dagen</span></div></div>' +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
+      s += timingHtml(rec, fr);
     } else if (tab === 'waarde') {
       s += waardeHtml(rec, g, jr, r);
     } else if (tab === 'check') {
@@ -449,6 +450,19 @@
     return s;
   }
   var ANTW_TEKST = { ja: 'Ja', nee: 'Nee', onzeker: 'Weet ik niet' };
+  /* Timing-informatie: los van het signaal; verandert het oordeel nooit. */
+  function timingHtml(rec, fr) {
+    var t = Timing.timing(rec.koers, fr.fresh);
+    if (!t) return fr.fresh ? '<div class="kaart-plat" data-timing><h2>Timing (informatie)</h2><p class="zacht">Te weinig koersgeschiedenis voor trendcijfers; de app toont dan liever niets dan een schatting.</p></div>' : '';
+    var regels = [];
+    if (t.trend50) regels.push('Korte trend: de koers staat <b>' + t.trend50 + '</b> het gemiddelde van 50 dagen.');
+    if (t.trend200) regels.push('Lange trend: de koers staat <b>' + t.trend200 + '</b> het gemiddelde van 200 dagen (' + pct(t.afstand200Pct) + ').');
+    if (t.rangePct != null) regels.push('Jaarbereik: ' + getal(t.rangePct, 0) + '% tussen laagste en hoogste koers van het afgelopen jaar, ' + t.rangeTekst + '.');
+    if (t.rsi != null) regels.push('RSI (14 dagen) is ' + getal(t.rsi, 0) + ': ' + t.rsiTekst + '.');
+    return '<div class="kaart-plat" data-timing><h2>Timing (informatie)</h2><ul>' + regels.map(function (x) { return '<li>' + x + '</li>'; }).join('') +
+      '</ul><p class="zacht">Dit zegt iets over het koersverloop in het verleden, niet over de waarde van het bedrijf en niet over wat de koers gaat doen. Het heeft geen invloed op het signaal.</p></div>';
+  }
+
   function voortgangTekst(v) { return v.beantwoord + ' van ' + v.totaal + ' beantwoord' + (v.beantwoord ? ' (' + v.ja + ' ja, ' + v.nee + ' nee, ' + v.onzeker + ' weet ik niet)' : ''); }
   function checkHtml(rec) {
     var ant = winkel.checklist(rec.ticker), s = '<div class="kaart-plat"><h2>Kwaliteitscheck</h2><p class="zacht">De 15 punten van Philip Fisher over concurrentiepositie en management, ook gebruikt door NAIC-beleggers. U vult zelf in wat u weet. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten u beantwoord heeft. Wat u hier schrijft blijft op dit toestel en zit in uw back-up.</p><p id="ck-voortgang" aria-live="polite"><b>' + h(voortgangTekst(Checklist.voortgang(ant))) + '</b></p></div>';

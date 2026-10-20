@@ -239,7 +239,35 @@ def koers_uit_reeks(reeks):
     sma = None
     if len(punten) >= 50:
         sma = round(sum(p[1] for p in punten[-50:]) / 50, 4)
-    return {'datum': laatste[0], 'slot': laatste[1], 'sma50': sma, 'reeks': [list(p) for p in punten[-130:]]}
+    blok = {'datum': laatste[0], 'slot': laatste[1], 'sma50': sma, 'reeks': [list(p) for p in punten[-130:]]}
+    blok.update(technisch(punten))
+    return blok
+
+
+def technisch(punten):
+    """Informatieve timing-kentallen uit een gesorteerde reeks (datum, slot). Te weinig data geeft None, nooit een schatting."""
+    uit = {'sma200': None, 'hoog52': None, 'laag52': None, 'rsi14': None}
+    if len(punten) >= 200:
+        uit['sma200'] = round(sum(p[1] for p in punten[-200:]) / 200, 4)
+    laatste = date.fromisoformat(punten[-1][0])
+    jaar = [p[1] for p in punten if 0 <= (laatste - date.fromisoformat(p[0])).days <= 365]
+    eerste = date.fromisoformat(punten[0][0])
+    # Minstens ongeveer een volledig jaar aan handelsdagen nodig voor een eerlijke 52-wekenrange.
+    if len(jaar) >= 200 and (laatste - eerste).days >= 350:
+        uit['hoog52'], uit['laag52'] = max(jaar), min(jaar)
+    if len(punten) >= 100:
+        koersen = [p[1] for p in punten]
+        winst = verlies = 0.0
+        for i in range(1, 15):
+            d = koersen[i] - koersen[i - 1]
+            winst += max(d, 0); verlies += max(-d, 0)
+        winst, verlies = winst / 14, verlies / 14
+        for i in range(15, len(koersen)):                 # Wilder-afvlakking
+            d = koersen[i] - koersen[i - 1]
+            winst = (winst * 13 + max(d, 0)) / 14
+            verlies = (verlies * 13 + max(-d, 0)) / 14
+        uit['rsi14'] = 100.0 if verlies == 0 and winst > 0 else (50.0 if verlies == 0 else round(100 - 100 / (1 + winst / verlies), 1))
+    return uit
 
 
 def maak_record(meta, *, koers=None, gegevens=None):
@@ -337,7 +365,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
 
 def _yahoo_reeks(ticker):
     import yfinance as yf
-    data = yf.download(ticker, period='1y', interval='1d', auto_adjust=True, progress=False, threads=False, timeout=20)
+    data = yf.download(ticker, period='2y', interval='1d', auto_adjust=True, progress=False, threads=False, timeout=20)
     if hasattr(data.columns, 'get_level_values'):
         data.columns = data.columns.get_level_values(0)
     return [(idx.date().isoformat(), float(v)) for idx, v in data['Close'].dropna().items()]
