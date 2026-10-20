@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.20-beta.26
+Run van 14:09 UTC: 27 van 37 bevestigd. De 15 nieuwe aandelen leverden 13 groen op (AstraZeneca, Novartis, Adobe, Salesforce, Oracle, Cisco, PepsiCo, Merck, AbbVie, Home Depot, UnitedHealth, Texas Instruments, Caterpillar), naast de eerdere 14. Niet bevestigd: McDonald's (aantal aandelen springt 0,00 keer tussen 2020 en 2021: waarschijnlijk een verkeerde eenheid in de bron, niet te zien zonder de waarden) en TotalEnergies (in de SEC-gegevens staat geen winst per aandeel).
+- **TotalEnergies vervangen** door Amgen en Nike (TotalEnergies is in de bron niet te controleren; een aandeel dat nooit bevestigd kan worden, is ruis).
+- **Betere diagnose** voor aandelen die niet bevestigd raken (Visa, J&J, McDonald's, Exxon enzovoort): `diagnose` bevat nu ook de jaarwaarden van winst per aandeel, aantal aandelen en nettowinst uit de jaarverslagen, zodat de oorzaak direct te zien is. Ruis (opties, rentevoeten) is uit de lijst gehaald.
+- `status.json` toont per aandeel `extra_dekking`: in hoeveel jaren winst vóór belasting, afschrijving, dividend en schuld zijn gevonden. Zo is te zien of de nieuwe NAIC-kentallen bij echte bedrijven werken.
+
 ## 2026.10.20-beta.25
 - **Fout hersteld: donker uiterlijk werkte niet.** De app zette `data-theme` op "donker"/"licht" terwijl de stijl "dark"/"light" verwacht; alleen "Automatisch" volgde het toestel. Nu werkt de keuze. De oude test controleerde alleen het attribuut en niet de kleur; de nieuwe test kijkt naar de echte achtergrondkleur, ook tegen de voorkeur van het toestel in, en na herladen.
 - **Eigen koerszones bewaren** (NAIC stap 4): knop "Bewaar mijn zones" per aandeel (op het toestel, in de back-up; samenvoegen laat bestaande zones staan). Op Start staat een kaart "Mijn koerszones" met per aandeel waar de koers nu in uw zones staat. Alleen bij een bevestigd aandeel met verse koers; anders staat er de reden en geen zone. Uw aannames, geen koersdoel of advies.

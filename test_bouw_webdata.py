@@ -126,6 +126,31 @@ class ValutaEnStatusTests(unittest.TestCase):
         self.assertEqual([j['jaar'] for j in status['open_jaren']], [2018])
         self.assertEqual(len(status['open_jaren'][0]['reden']), 300)
 
+    def test_status_toont_dekking_van_de_extra_kentallen(self):
+        bestand = bw.maak_bestand([bw.maak_record(('AAA', 'Aaa', 'VS', 'USD', 'NYSE'), gegevens={
+            'currencies': ['USD'], 'jaren': [{'year': 1, 'dividends_paid': 5.0, 'pretax_income': None}, {'year': 2, 'dividends_paid': 0.0}], 'splits': []})])
+        st = bw.maak_status(bestand)['aandelen'][0]['extra_dekking']
+        self.assertEqual(st, {'pretax_income': 0, 'depreciation': 0, 'dividends_paid': 2, 'long_term_debt': 0})
+
+    def test_jaarwaarden_alleen_jaarverslagen_van_een_jaar_en_ruis_valt_weg(self):
+        def r(end, start, val, form='10-K'):
+            return {'end': end, 'start': start, 'val': val, 'form': form, 'filed': '2026-02-01', 'fp': 'FY'}
+        payload = {'facts': {'us-gaap': {
+            'WeightedAverageNumberOfDilutedSharesOutstanding': {'units': {'shares': [
+                r('2020-12-31', '2020-01-01', 7.4e8), r('2021-12-31', '2021-01-01', 7.5e8),
+                r('2021-12-31', '2021-10-01', 1.0, form='10-K'),            # kwartaalperiode
+                r('2021-09-30', '2021-01-01', 5.0, form='10-Q'),             # geen jaarverslag
+                r('2010-12-31', '2010-01-01', 9.0)]}},                       # te oud
+            'ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableWeightedAverageExercisePrice': {'units': {'USD/shares': [r('2020-12-31', '2020-01-01', 3.0)]}},
+            'NetIncomeLoss': {'units': {'USD': [{'end': 'x', 'start': 'y', 'val': 1, 'form': '10-K'}]}}}}}
+        j = bw.jaarwaarden(payload)
+        self.assertEqual(list(j), ['us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding [shares]'])
+        self.assertEqual([x[:2] for x in j['us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding [shares]']], [['2020-12-31', 7.4e8], ['2021-12-31', 7.5e8]])
+        self.assertEqual(bw.jaarwaarden(None), {}); self.assertEqual(bw.jaarwaarden({'facts': 'x'}), {})
+        ov = bw.eps_tag_overzicht({'facts': {'us-gaap': {'ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableWeightedAverageExercisePrice': {'units': {'USD': []}},
+                                                         'EarningsPerShareDiluted': {'units': {'USD/shares': []}}}}})
+        self.assertEqual(list(ov), ['us-gaap:EarningsPerShareDiluted [USD/shares]'])
+
     def test_eps_tag_overzicht_toont_gebruikte_namen_zonder_te_verzinnen(self):
         payload = {'facts': {
             'ifrs-full': {'DilutedEarningsLossPerShare': {'units': {'USD/shares': [

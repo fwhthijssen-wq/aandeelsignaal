@@ -45,7 +45,6 @@ CATALOGUS = (
     # dezelfde valuta hebben (zoals Shell). Bedrijven die in een andere valuta rapporteren dan de notering blijven hier weg.
     ('AZN', 'AstraZeneca', 'Verenigd Koninkrijk', 'USD', 'New York (Nasdaq)'),
     ('NVS', 'Novartis', 'Zwitserland', 'USD', 'New York (NYSE)'),
-    ('TTE', 'TotalEnergies', 'Frankrijk', 'USD', 'New York (NYSE)'),
     ('ADBE', 'Adobe', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('CRM', 'Salesforce', 'Verenigde Staten', 'USD', 'NYSE'),
     ('ORCL', 'Oracle', 'Verenigde Staten', 'USD', 'NYSE'),
@@ -58,6 +57,8 @@ CATALOGUS = (
     ('UNH', 'UnitedHealth Group', 'Verenigde Staten', 'USD', 'NYSE'),
     ('TXN', 'Texas Instruments', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('CAT', 'Caterpillar', 'Verenigde Staten', 'USD', 'NYSE'),
+    ('AMGN', 'Amgen', 'Verenigde Staten', 'USD', 'Nasdaq'),
+    ('NKE', 'Nike', 'Verenigde Staten', 'USD', 'NYSE'),
 )
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
@@ -69,6 +70,37 @@ def _getal(x):
 
 
 DIAGNOSE_DELEN = ('PerShare', 'WeightedAverage', 'ProfitLossAttributable', 'NetIncomeLoss', 'ProfitLoss')
+RUIS = ('ShareBased', 'Sharebased', 'Antidilutive', 'Exercise', 'DiscountRate', 'Yield', 'InterestRate', 'GrantDateFairValue',
+        'RemainingContractualTerm', 'ParValue', 'ParOrStated', 'Acquiree', 'ProForma', 'DividendsPerShare')
+JAARWAARDE_TAGS = ('EarningsPerShareDiluted', 'DilutedEarningsLossPerShare', 'EarningsPerShareBasicAndDiluted',
+                   'WeightedAverageNumberOfDilutedSharesOutstanding', 'WeightedAverageNumberOfShareOutstandingBasicAndDiluted',
+                   'AdjustedWeightedAverageShares', 'NetIncomeLoss', 'ProfitLoss', 'ProfitLossAttributableToOwnersOfParent')
+
+
+def jaarwaarden(payload, vanaf='2015-01-01', max_per_tag=40):
+    """Alleen voor diagnose: de jaarwaarden (jaarverslagen, periode van 330 tot 390 dagen) van de sleutelbegrippen, zodat
+    een bedrijf waarvan jaren ontbreken of waarvan het aantal aandelen verspringt gericht onderzocht kan worden."""
+    uit = {}
+    facts = payload.get('facts') if isinstance(payload, dict) else None
+    if not isinstance(facts, dict):
+        return uit
+    for taxonomie, tags in sorted(facts.items()):
+        for tag in JAARWAARDE_TAGS:
+            blok = (tags or {}).get(tag) if isinstance(tags, dict) else None
+            for eenheid, rijen in sorted(((blok or {}).get('units') or {}).items()):
+                lijst = []
+                for r in rijen if isinstance(rijen, list) else []:
+                    if not isinstance(r, dict) or r.get('form') not in ('10-K', '10-K/A', '20-F', '40-F') or str(r.get('end', '')) < vanaf:
+                        continue
+                    try:
+                        dagen = (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days
+                    except (KeyError, TypeError, ValueError):
+                        continue
+                    if 330 <= dagen <= 390:
+                        lijst.append([r['end'], r.get('val'), r.get('filed'), r.get('fp')])
+                if lijst:
+                    uit[f'{taxonomie}:{tag} [{eenheid}]'] = sorted(lijst)[-max_per_tag:]
+    return uit
 
 
 def eps_tag_overzicht(payload):
@@ -86,6 +118,8 @@ def eps_tag_overzicht(payload):
             continue
         for tag, blok in sorted(tags.items()):
             if not any(d in tag for d in DIAGNOSE_DELEN) or not isinstance(blok, dict):
+                continue
+            if any(x in tag for x in RUIS):
                 continue
             for eenheid, rijen in sorted((blok.get('units') or {}).items()):
                 rijen = [r for r in rijen if isinstance(r, dict)] if isinstance(rijen, list) else []
@@ -105,7 +139,8 @@ def sec_diagnose(sec_ticker, email, fetcher=None):
         cik, _ = cik_for_ticker(sec_ticker, fetcher(CIK_MAP_URL, email))
         if cik is None:
             return {'fout': f'{sec_ticker} niet in de SEC-lijst'}
-        return {'sec_ticker': sec_ticker, 'concepten': eps_tag_overzicht(fetcher(FACTS_URL.format(cik=cik), email))}
+        payload = fetcher(FACTS_URL.format(cik=cik), email)
+        return {'sec_ticker': sec_ticker, 'concepten': eps_tag_overzicht(payload), 'jaarwaarden': jaarwaarden(payload)}
     except Exception as exc:  # diagnose mag de run nooit laten mislukken
         return {'fout': f'{type(exc).__name__}: {exc}'[:200]}
 
@@ -225,6 +260,7 @@ def maak_status(bestand):
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
                     'open_jaren': open_jaren, 'einddata': [j.get('end') for j in g.get('jaren') or []],
+                    'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN},
                     'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose')})
     return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
