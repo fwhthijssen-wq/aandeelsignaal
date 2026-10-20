@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.20-beta.24';
+  var APP_VERSIE = '2026.10.20-beta.25';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -94,6 +94,13 @@
           return '<div class="balk-rij"><span>' + h(d.land) + '</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, d.pct) + '%"></i></span><b>' + getal(d.pct, 0) + '%</b></div>';
         }).join('') + '</div>';
       }).join('') + (sp.length > 1 ? '<p class="zacht">Per valuta apart; de app rekent niet om.</p>' : '');
+    }
+    var zo = Dashboard.zoneOverzicht(winkel.alleZones(), DATA.aandelen, vandaag(), Gate, Naic);
+    if (zo.length) {
+      var ZT = { koop: 'in uw koopzone', houd: 'in uw afwacht-zone', verkoop: 'in uw verkoopzone', onder: 'onder uw lage koers', boven: 'boven uw hoge koers' };
+      s += '<h3>Mijn koerszones</h3><div class="lijst" data-zones>' + zo.map(function (z) {
+        return '<a href="#/a/' + encodeURIComponent(z.ticker) + '/waarde"><div class="tekstkolom"><b>' + h(z.naam) + '</b><span class="zacht">' + (z.zone ? h(ZT[z.zone] || z.zone) + (z.verhouding ? ' · opwaarts/neerwaarts ' + getal(z.verhouding, 1) + ' : 1' : '') : h(z.reden)) + '</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+      }).join('') + '</div><p class="zacht">Uw eigen aannames, geen koersdoel of advies. Zonder bevestigde gegevens en actuele koers staat er geen zone.</p>';
     }
     var vol = winkel.volglijst().map(function (v) { return zoek(v.ticker); }).filter(Boolean);
     var bron = vol.length ? vol : DATA.aandelen, vandaagD = vandaag();
@@ -351,11 +358,13 @@
       '<section><h2>Stap 3 · Winstmarge</h2>' + staven(mg, 'Nettowinstmarge per jaar in procenten', function (v) { return getal(v, 0); }) +
       '<p class="zacht">Nettowinst als percentage van de omzet (na belasting).</p></section>' + naicExtraHtml(jr, bank);
   }
-  function zonesHtml(start) {
+  function zonesHtml(start, opgeslagen) {
+    if (opgeslagen) start = { eps: opgeslagen.eps, groei: opgeslagen.groeiPct, epsl: opgeslagen.epsLaag, jaren: opgeslagen.jaren, kwh: opgeslagen.kwHoog, kwl: opgeslagen.kwLaag };
+    else start = { eps: start.eps, groei: start.groei, epsl: start.eps, jaren: 5, kwh: 20, kwl: 10 };
     return '<div class="kaart-plat"><h2>Stap 4 · Koerszones</h2><p class="zacht">Wat zou de koers over een aantal jaar hoog en laag kunnen zijn bij uw aannames, en waar staat de koers nu in dat bereik? Pas de getallen aan.</p><div class="velden">' +
-      veld('z-eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('z-groei', 'Groei per jaar (%)', start.groei, '1') + veld('z-jaren', 'Jaren vooruit', 5, '1') +
-      veld('z-kwh', 'Hoge K/W', 20, '1') + veld('z-kwl', 'Lage K/W', 10, '1') + veld('z-epsl', 'Winst per aandeel in een slecht jaar', start.eps, '0.01') +
-      '</div><div id="zones" aria-live="polite"></div></div>';
+      veld('z-eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('z-groei', 'Groei per jaar (%)', start.groei, '1') + veld('z-jaren', 'Jaren vooruit', start.jaren, '1') +
+      veld('z-kwh', 'Hoge K/W', start.kwh, '1') + veld('z-kwl', 'Lage K/W', start.kwl, '1') + veld('z-epsl', 'Winst per aandeel in een slecht jaar', start.epsl, '0.01') +
+      '</div><div id="zones" aria-live="polite"></div><div class="knoppen"><button class="knop klein" id="z-bewaar">Bewaar mijn zones</button><button class="knop rand klein" id="z-wis" hidden>Wis bewaarde zones</button></div><p class="zacht" id="z-status" aria-live="polite">Bewaard op dit toestel, zodat Start laat zien waar de koers in uw zones staat. Het is uw eigen aanname, geen koersdoel.</p></div>';
   }
   function zonesKoppel(rec, r) {
     var uit = document.getElementById('zones'); if (!uit) return;
@@ -375,6 +384,14 @@
       } catch (e) { uit.innerHTML = '<div class="melding"><b>Controleer de getallen</b><span>' + h(e.message) + '</span></div>'; }
     }
     ['z-eps', 'z-groei', 'z-jaren', 'z-kwh', 'z-kwl', 'z-epsl'].forEach(function (i) { document.getElementById('v-' + i).addEventListener('input', reken); });
+    var wis = document.getElementById('z-wis'), st = document.getElementById('z-status');
+    wis.hidden = !winkel.zones(rec.ticker);
+    document.getElementById('z-bewaar').addEventListener('click', function () {
+      var u = winkel.zetZones(rec.ticker, { eps: lees('z-eps'), epsLaag: lees('z-epsl'), groeiPct: lees('z-groei'), jaren: lees('z-jaren'), kwHoog: lees('z-kwh'), kwLaag: lees('z-kwl') });
+      if (u.ok) { st.textContent = 'Bewaard. Op Start ziet u nu waar de koers in uw zones staat.'; wis.hidden = false; toast('Koerszones bewaard'); }
+      else toast(u.reden || 'Opslaan is niet gelukt. Maak een back-up.');
+    });
+    wis.addEventListener('click', function () { var oud = winkel.zones(rec.ticker); winkel.wisZones(rec.ticker); wis.hidden = true; st.textContent = 'Bewaarde zones gewist.'; toast('Zones gewist', function () { winkel.zetZones(rec.ticker, oud); route(); }); });
     reken();
   }
   function waardeHtml(rec, g, jr, r) {
@@ -384,7 +401,7 @@
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return naicHtml(jr, (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); })) + zonesHtml(start) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
+    return naicHtml(jr, (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); })) + zonesHtml(start, winkel.zones(rec.ticker)) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
       veld('eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('groei', 'Groei per jaar (%)', start.groei, '1') + veld('kw', 'K/W over de horizon', start.kw, '1') + veld('jaren', 'Jaren vooruit', start.jaren, '1') + veld('rend', 'Gewenst rendement (%)', start.rend, '1') + veld('marge', 'Veiligheidsmarge (%)', start.marge, '1') +
       '</div><div id="uitkomst" class="kpis" aria-live="polite"></div></div>' +
       (r.bevestigd ? '' : '<p class="zacht">Er wordt geen vergelijking met de koers gemaakt: de gegevens zijn nog niet volledig bevestigd of de koers ontbreekt.</p>');
@@ -531,7 +548,7 @@
   }
   function pasThema() {
     var t = winkel.staat().instellingen.thema, el = document.documentElement;
-    if (t === 'licht' || t === 'donker') el.setAttribute('data-theme', t); else el.removeAttribute('data-theme');
+    if (t === 'licht' || t === 'donker') el.setAttribute('data-theme', t === 'donker' ? 'dark' : 'light'); else el.removeAttribute('data-theme');
   }
 
   function route() {

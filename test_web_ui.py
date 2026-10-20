@@ -315,11 +315,55 @@ class WebUi(unittest.TestCase):
         pg.fill('#q', 'asml')
         self.assertIn('ASML', pg.inner_text('#res'))
 
-    def test_donker_thema_kiezen(self):
-        pg = self.pagina()
-        pg.goto(INDEX + '#/instellingen')
-        pg.click('[data-th="donker"]')
-        self.assertEqual(pg.evaluate("document.documentElement.getAttribute('data-theme')"), 'donker')
+    def test_koerszones_bewaren_en_zichtbaar_op_start_alleen_met_verse_koers(self):
+        def maak(koersdatum_offset_dagen):
+            c = self.b.new_context(viewport={'width': 390, 'height': 800})
+            self.addCleanup(c.close)
+            c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+              set:function(d){var dt=new Date(Date.now()-(%d)*86400000).toISOString().slice(0,10);
+              d.aandelen.forEach(function(a){if(a.ticker==='AAPL')a.koers={slot:150,datum:dt,sma50:140};});v=d;}});
+              try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % koersdatum_offset_dagen)
+            pg = c.new_page(); self.fouten = []
+            pg.on('pageerror', lambda e: self.fouten.append(str(e)))
+            return pg
+        pg = maak(0)
+        pg.goto(INDEX + '#/')
+        self.assertEqual(pg.locator('[data-zones]').count(), 0)       # nog niets bewaard: geen kaart
+        pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(150)
+        pg.fill('#v-z-eps', '7'); pg.fill('#v-z-epsl', '5')
+        pg.click('#z-bewaar')
+        self.assertFalse(pg.is_hidden('#z-wis'))
+        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
+        tekst = pg.inner_text('[data-zones]')
+        self.assertIn('Apple', tekst); self.assertRegex(tekst, 'zone|koers')
+        pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.input_value('#v-z-eps'), '7')          # bewaarde waarden komen terug
+        pg.fill('#v-z-kwl', '30'); pg.click('#z-bewaar')           # ongeldig (laag >= hoog) wordt niet bewaard
+        self.assertIn('hoge K/W boven lage K/W', pg.inner_text('#meld') if pg.locator('#meld').count() else pg.inner_text('body'))
+        pg.reload(); pg.wait_for_timeout(150)
+        self.assertEqual(pg.input_value('#v-z-kwl'), '10')
+        # verouderde koers: geen zone, wel de reden
+        oud = maak(30)
+        oud.goto(INDEX + '#/a/AAPL/waarde'); oud.wait_for_timeout(150)
+        oud.click('#z-bewaar')
+        oud.goto(INDEX + '#/'); oud.wait_for_timeout(150)
+        self.assertIn('Geen actuele koers', oud.inner_text('[data-zones]'))
+        self.assertNotIn('koopzone', oud.inner_text('[data-zones]'))
+        self.assertEqual(self.fouten, [])
+
+    def test_thema_kiezen_verandert_echt_de_kleuren_ook_tegen_de_voorkeur_van_het_toestel(self):
+        achtergrond = "getComputedStyle(document.body).backgroundColor"
+        for scheme, kies, verwacht_donker in (('light', 'donker', True), ('dark', 'licht', False), ('light', 'auto', False), ('dark', 'auto', True)):
+            c = self.b.new_context(viewport={'width': 390, 'height': 800}, color_scheme=scheme)
+            self.addCleanup(c.close)
+            pg = c.new_page(); pg.goto(INDEX); pg.click('#intro-sl')
+            pg.goto(INDEX + '#/instellingen')
+            pg.click(f'[data-th="{kies}"]')
+            rgb = [int(x) for x in pg.evaluate(achtergrond).replace('rgb(', '').replace(')', '').split(',')[:3]]
+            self.assertEqual(sum(rgb) < 300, verwacht_donker, f'{scheme}/{kies}: {rgb}')
+            pg.reload(); pg.wait_for_timeout(100)    # keuze blijft na herladen
+            rgb2 = [int(x) for x in pg.evaluate(achtergrond).replace('rgb(', '').replace(')', '').split(',')[:3]]
+            self.assertEqual(rgb, rgb2)
 
     def test_geen_html_injectie_via_zoektekst(self):
         pg = self.pagina()

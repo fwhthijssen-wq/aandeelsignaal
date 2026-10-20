@@ -37,6 +37,23 @@
     };
   }
 
+  /* Waar staat de koers nu in uw eigen koerszones? Alleen bij een bevestigd aandeel met verse koers; anders null met reden.
+     De zones zijn uw eigen aannames, geen koersdoel. */
+  function zoneOverzicht(zones, recs, vandaag, gate, naic) {
+    var per = {}; (recs || []).forEach(function (r) { per[r.ticker] = r; });
+    return Object.keys(zones || {}).sort().map(function (t) {
+      var rec = per[t]; if (!rec) return null;
+      var rij = gate.maakRij(rec, vandaag), z = zones[t], uit = { ticker: t, naam: rec.naam, zone: null, reden: null, koers: null, verhouding: null };
+      if (!rij.koersActueel) { uit.reden = 'Geen actuele koers.'; return uit; }
+      if (!rij.bevestigd) { uit.reden = 'Gegevens nog niet bevestigd.'; return uit; }
+      try {
+        var k = naic.koerszones({ eps: z.eps, epsLaag: z.epsLaag, groeiPct: z.groeiPct, jaren: z.jaren, kwHoog: z.kwHoog, kwLaag: z.kwLaag, koers: rec.koers.slot });
+        uit.zone = k.zone; uit.koers = rec.koers.slot; uit.verhouding = k.verhouding == null ? null : Math.round(k.verhouding * 10) / 10;
+      } catch (e) { uit.reden = 'Uw aannames kloppen niet meer: ' + e.message; }
+      return uit;
+    }).filter(Boolean);
+  }
+
   var KOLOMMEN = ['naam', 'afstandPct', 'omzetgroei', 'epsgroei', 'nettomarge'];
 
   /* Tabelregels uit Vergelijk.kant; filter en sortering. Null staat altijd onderaan. */
@@ -54,6 +71,6 @@
     });
   }
 
-  var api = { spreiding: spreiding, aandacht: aandacht, tabel: tabel, KOLOMMEN: KOLOMMEN };
+  var api = { zoneOverzicht: zoneOverzicht, spreiding: spreiding, aandacht: aandacht, tabel: tabel, KOLOMMEN: KOLOMMEN };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Dashboard = api;
 })(typeof self !== 'undefined' ? self : this);

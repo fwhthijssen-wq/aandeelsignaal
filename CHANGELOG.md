@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.20-beta.25
+- **Fout hersteld: donker uiterlijk werkte niet.** De app zette `data-theme` op "donker"/"licht" terwijl de stijl "dark"/"light" verwacht; alleen "Automatisch" volgde het toestel. Nu werkt de keuze. De oude test controleerde alleen het attribuut en niet de kleur; de nieuwe test kijkt naar de echte achtergrondkleur, ook tegen de voorkeur van het toestel in, en na herladen.
+- **Eigen koerszones bewaren** (NAIC stap 4): knop "Bewaar mijn zones" per aandeel (op het toestel, in de back-up; samenvoegen laat bestaande zones staan). Op Start staat een kaart "Mijn koerszones" met per aandeel waar de koers nu in uw zones staat. Alleen bij een bevestigd aandeel met verse koers; anders staat er de reden en geen zone. Uw aannames, geen koersdoel of advies.
+- 5 + 1 JS-tests, 2 browsertests (zones; thema).
+
 ## 2026.10.20-beta.24
 Kwaliteitscheck per aandeel (nieuw tabblad "Checklist"): de 15 punten van Philip Fisher over concurrentiepositie en management (ook gebruikt door NAIC-beleggers). U antwoordt zelf ja / nee / weet ik niet en schrijft een eigen notitie; bij elk punt staat waar u het antwoord vindt. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten zijn beantwoord.
 - Opslag: alleen op het toestel, per aandeel gescheiden, onderdeel van de back-up. Terugzetten via "samenvoegen" overschrijft nooit een bestaand antwoord; "vervangen" wel. Alleen bekende punten (1–15), alleen ja/nee/onzeker, notitie maximaal 500 tekens en altijd als tekst (nooit als HTML).
