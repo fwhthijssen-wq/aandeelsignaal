@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.21-beta.41
+- **Drie extra rekenmodellen (alleen uit eigen jaarcijfers, nooit geschat):** Piotroski F-score (financiële kracht, 9 punten, minimaal 6 toetsbaar), Altman Z-score (faillissementsrisico; niet voor banken) en Magic Formula (winst/bedrijfswaarde en rendement op kapitaal). Zonder alle benodigde cijfers of zonder verse koers tellen ze niet mee. Het aantal aandelen komt uit de jaarcijfers, of uit winst/EPS maar alleen als dat jaar nagerekend is.
+- **Nieuwe velden in de nachtelijke update** (SEC en ESEF): totaal activa, vlottende activa en schulden, totale schulden, ingehouden winst, kas, brutowinst, bedrijfsresultaat, gewogen aantal aandelen.
+- Standaardminimum voor een oordeel is nu 20% (met de nieuwe onderdelen is 22% het maximum op koersgegevens alleen). Keuzemenu: 10/20/40/60/80.
+
 ## 2026.10.21-beta.40
 - **Verdiepen (stap 3):** het tabblad 'Checklist' heet nu 'Verdiepen'. Bovenaan de dekking-meter die live meegroeit, daarna uw eigen beoordeling (1-5) van management, concurrentiepositie, sectoruitzicht en risico's (met notitie), en invulplekken voor cijfers die ontbreken (groei, marge, ROE, K/W, dividend). Eigen invoer telt met gewicht 0,6 en vervangt nooit een cijfer uit een jaarverslag. De Fisher-checklist staat eronder en werkt de meter ook bij. Opgeslagen op het toestel en in de back-up (samenvoegen overschrijft nooit).
 - **Volgen en portefeuille (stap 4):** bij 'Op mijn volglijst' legt de app het oordeel, de dekking en de koers van dat moment vast; de volglijst toont wat de koers deed sinds die dag en hoe het oordeel toen en nu is. Bij een aankoop kunt u 'Gekocht op basis van het signaal' aanvinken: het oordeel van dat moment wordt vastgelegd, de aankoop is herkenbaar in de portefeuille, en een kaart 'Op signaal gekocht' vergelijkt het rendement met de overige aankopen (per valuta, nooit omgerekend).

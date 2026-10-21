@@ -154,8 +154,10 @@ class ValutaEnStatusTests(unittest.TestCase):
         bestand = bw.maak_bestand([bw.maak_record(('AAA', 'Aaa', 'VS', 'USD', 'NYSE'), gegevens={
             'currencies': ['USD'], 'jaren': [{'year': 1, 'dividends_paid': 5.0, 'pretax_income': None}, {'year': 2, 'dividends_paid': 0.0}], 'splits': []})])
         st = bw.maak_status(bestand)['aandelen'][0]['extra_dekking']
-        self.assertEqual(st, {'pretax_income': 0, 'depreciation': 0, 'dividends_paid': 2, 'long_term_debt': 0,
-                              'koers_hoog': 0, 'koers_laag': 0, 'dividend_ps': 0})
+        self.assertEqual(st['dividends_paid'], 2)
+        self.assertEqual({k: v for k, v in st.items() if k != 'dividends_paid'}, {k: 0 for k in st if k != 'dividends_paid'})
+        for veld in ('total_assets', 'current_assets', 'retained_earnings', 'shares_diluted', 'operating_income', 'cash'):
+            self.assertIn(veld, st)
 
     def test_jaarwaarden_alleen_jaarverslagen_van_een_jaar_en_ruis_valt_weg(self):
         def r(end, start, val, form='10-K'):

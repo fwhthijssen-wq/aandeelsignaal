@@ -21,7 +21,7 @@ class Extra(unittest.TestCase):
                     DepreciationDepletionAndAmortization=('us-gaap', 'USD', [feit('2025-12-31', 20.5, '2025-01-01')]),
                     LongTermDebtNoncurrent=('us-gaap', 'USD', [feit('2025-12-31', 77.5)]))
         r = extra_jaarcijfers(p, J)['2025-12-31']
-        self.assertEqual(r, {'pretax_income': 123.5, 'depreciation': 20.5, 'dividends_paid': 40.5, 'long_term_debt': 77.5})
+        self.assertEqual({k: v for k, v in r.items() if v is not None}, {'pretax_income': 123.5, 'depreciation': 20.5, 'dividends_paid': 40.5, 'long_term_debt': 77.5})
 
     def test_niet_jaar_of_kwartaal_of_andere_valuta_telt_niet(self):
         p = payload(PaymentsOfDividendsCommonStock=('us-gaap', 'USD', [
@@ -31,7 +31,7 @@ class Extra(unittest.TestCase):
             DepreciationDepletionAndAmortization=('us-gaap', 'EUR', [feit('2025-12-31', 5, '2025-01-01')]),   # andere valuta
             LongTermDebtNoncurrent=('us-gaap', 'USD', [feit('2025-12-31', 9, '2025-01-01')]))                  # balans mag geen periode hebben
         r = extra_jaarcijfers(p, J)['2025-12-31']
-        self.assertEqual(r, {'pretax_income': None, 'depreciation': None, 'dividends_paid': None, 'long_term_debt': None})
+        self.assertEqual([k for k, v in r.items() if v is not None], [])
 
     def test_ander_boekjaareinde_telt_niet(self):
         p = payload(PaymentsOfDividendsCommonStock=('us-gaap', 'USD', [feit('2024-12-31', 8, '2024-01-01')]))
@@ -87,3 +87,20 @@ class IfrsDividendTag(unittest.TestCase):
         j = [{'end': '2025-12-31', 'currency': 'EUR'}]
         p = payload(DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities=('ifrs-full', 'EUR', [feit('2025-12-31', 4321.5, '2025-01-01')]))
         self.assertEqual(extra_jaarcijfers(p, j)['2025-12-31']['dividends_paid'], 4321.5)
+
+
+class ScoreVelden(unittest.TestCase):
+    def test_balans_en_resultaatvelden_voor_de_scoremodellen(self):
+        p = payload(Assets=('us-gaap', 'USD', [feit('2025-12-31', 1234.5)]),
+                    AssetsCurrent=('us-gaap', 'USD', [feit('2025-12-31', 400.5)]),
+                    LiabilitiesCurrent=('us-gaap', 'USD', [feit('2025-12-31', 301.5)]),
+                    Liabilities=('us-gaap', 'USD', [feit('2025-12-31', 612.5)]),
+                    RetainedEarningsAccumulatedDeficit=('us-gaap', 'USD', [feit('2025-12-31', -50.5)]),
+                    CashAndCashEquivalentsAtCarryingValue=('us-gaap', 'USD', [feit('2025-12-31', 99.5)]),
+                    GrossProfit=('us-gaap', 'USD', [feit('2025-12-31', 333.5, '2025-01-01')]),
+                    OperatingIncomeLoss=('us-gaap', 'USD', [feit('2025-12-31', 155.5, '2025-01-01')]),
+                    WeightedAverageNumberOfDilutedSharesOutstanding=('us-gaap', 'shares', [feit('2025-12-31', 98765.4, '2025-01-01')]))
+        r = extra_jaarcijfers(p, J)['2025-12-31']
+        self.assertEqual((r['total_assets'], r['current_assets'], r['current_liabilities'], r['total_liabilities']), (1234.5, 400.5, 301.5, 612.5))
+        self.assertEqual((r['retained_earnings'], r['cash'], r['gross_profit'], r['operating_income']), (-50.5, 99.5, 333.5, 155.5))   # achterstand (negatief) is toegestaan
+        self.assertIsNotNone(r['shares_diluted'])

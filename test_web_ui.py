@@ -250,11 +250,13 @@ class WebUi(unittest.TestCase):
         self.assertIn('Wat ontbreekt er nog', kaart.inner_text())
         pg.evaluate("location.hash='#/instellingen'")
         pg.wait_for_timeout(150)
-        pg.select_option('#mind', '10')
+        pg.select_option('#mind', '40')
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_mindekking')"), '40')
+        pg.evaluate("localStorage.setItem('as_mindekking', '5')")     # lager dan het keuzemenu: de test heeft weinig koersgegevens
         pg.wait_for_timeout(100)
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'")
         pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 0)   # met minimum 10% is er een voorlopig oordeel
+        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 0)   # met minimum 5% is er een voorlopig oordeel
         self.assertIn('voorlopig oordeel', pg.locator('[data-signaal]').inner_text())
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)

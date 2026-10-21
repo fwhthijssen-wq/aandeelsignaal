@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.40';
+  var APP_VERSIE = '2026.10.21-beta.41';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -661,7 +661,7 @@
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
-      '<div class="kaart-plat"><h2>Totaalbeeld</h2><p class="zacht">Een aandeel krijgt pas een voorlopig oordeel (positief, neutraal of vermijden) als genoeg van de mogelijke gegevens bekend is. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimale dekking voor een oordeel</label><select id="mind">' + [10, 25, 40, 60, 80].map(function (v) { return '<option value="' + v + '"' + (minDekking() === v ? ' selected' : '') + '>' + v + '%' + (v === 25 ? ' (standaard: koersgegevens volstaan)' : v === 60 ? ' (ook jaarcijfers nodig)' : '') + '</option>'; }).join('') + '</select></div>' +
+      '<div class="kaart-plat"><h2>Totaalbeeld</h2><p class="zacht">Een aandeel krijgt pas een voorlopig oordeel (positief, neutraal of vermijden) als genoeg van de mogelijke gegevens bekend is. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimale dekking voor een oordeel</label><select id="mind">' + [10, 20, 40, 60, 80].map(function (v) { return '<option value="' + v + '"' + (minDekking() === v ? ' selected' : '') + '>' + v + '%' + (v === 20 ? ' (standaard: koersgegevens volstaan)' : v === 60 ? ' (ook jaarcijfers nodig)' : '') + '</option>'; }).join('') + '</select></div>' +
       '<div class="kaart-plat"><h2>Back-up van uw gegevens</h2><p>Uw volglijst, portefeuille en antwoorden staan alleen op dit toestel. Raakt u dit toestel kwijt of wist u de browsergegevens, dan zijn ze weg. Met een back-up kunt u ze terugzetten.</p><p><strong>' + (lb ? 'Laatste back-up: ' + h(datumNl(lb.slice(0, 10))) + '.' : 'U heeft nog geen back-up gemaakt.') + '</strong></p>' +
       '<h3>Stap 1: een back-up maken</h3><p class="zacht">Er komt een bestand op uw toestel (bij Downloads). Zet dat bestand daarna op een veilige plek, bijvoorbeeld OneDrive, Google Drive of in een e-mail aan uzelf.</p><div class="knoppen"><button class="knop" id="bk">Back-up maken</button></div>' +
       '<h3>Stap 2: een back-up terugzetten</h3><p class="zacht">Kies het bestand dat u eerder heeft bewaard. Wat er al staat blijft behouden; alleen wat ontbreekt wordt toegevoegd.</p><div class="knoppen"><label class="knop rand" for="her" style="margin:0">Back-up terugzetten</label><input id="her" type="file" accept="application/json,.json" class="sr"></div>' +

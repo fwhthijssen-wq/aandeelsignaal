@@ -212,6 +212,8 @@ def sec_diagnose(sec_ticker, email, fetcher=None):
 
 
 EXTRA_VELDEN = ('pretax_income', 'depreciation', 'dividends_paid', 'long_term_debt')
+SCORE_VELDEN = ('total_assets', 'current_assets', 'current_liabilities', 'total_liabilities', 'retained_earnings', 'cash',
+                'gross_profit', 'operating_income', 'interest_expense', 'shares_diluted')
 KOERS_VELDEN = ('koers_hoog', 'koers_laag', 'dividend_ps')
 
 
@@ -238,7 +240,7 @@ def voeg_extra_toe(gegevens, payload):
     extra = extra_jaarcijfers(payload, jaren)
     for j in jaren:
         rij = extra.get(j.get('end')) or {}
-        for veld in EXTRA_VELDEN:
+        for veld in EXTRA_VELDEN + SCORE_VELDEN:
             j[veld] = _getal(rij.get(veld))
     return gegevens
 
@@ -370,7 +372,7 @@ def maak_status(bestand):
                     'splits': [{'datum': x.get('datum'), 'ratio': x.get('ratio'), 'status': x.get('status'),
                                 'redenen': x.get('redenen')} for x in g.get('splits') or []],
                     'open_jaren': open_jaren, 'einddata': [j.get('end') for j in g.get('jaren') or []],
-                    'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN + KOERS_VELDEN},
+                    'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN + SCORE_VELDEN + KOERS_VELDEN},
                     'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose'),
                     'extra_diagnose': g.get('extra_diagnose')})

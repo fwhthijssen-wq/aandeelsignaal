@@ -19,7 +19,23 @@ STROOM = {
     'dividends_paid': ('PaymentsOfDividendsCommonStock', 'PaymentsOfDividends', 'DividendsPaidClassifiedAsFinancingActivities',
                        'DividendsPaidToOwnersOfParentClassifiedAsFinancingActivities', 'DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities', 'PaymentsOfOrdinaryDividends', 'DividendsPaid'),
 }
+STROOM.update({
+    # Voor de scoremodellen (Piotroski, Altman Z, Magic Formula). Per jaar, alleen als het bedrijf het zelf meldt.
+    'gross_profit': ('GrossProfit',),
+    'operating_income': ('OperatingIncomeLoss', 'ProfitLossFromOperatingActivities', 'OperatingIncomeLossIncludingEquityMethodInvestments'),
+    'interest_expense': ('InterestExpense', 'InterestExpenseNonoperating', 'InterestExpenseDebt', 'FinanceCosts', 'InterestPaidClassifiedAsOperatingActivities'),
+})
+AANTALLEN = {
+    # Gewogen gemiddeld aantal verwaterde aandelen (eenheid 'shares'), om verwatering en beurswaarde te bepalen.
+    'shares_diluted': ('WeightedAverageNumberOfDilutedSharesOutstanding', 'AdjustedWeightedAverageShares', 'WeightedAverageShares'),
+}
 BALANS = {
+    'total_assets': ('Assets',),
+    'current_assets': ('AssetsCurrent', 'CurrentAssets'),
+    'current_liabilities': ('LiabilitiesCurrent', 'CurrentLiabilities'),
+    'total_liabilities': ('Liabilities',),
+    'retained_earnings': ('RetainedEarningsAccumulatedDeficit', 'RetainedEarnings'),
+    'cash': ('CashAndCashEquivalentsAtCarryingValue', 'CashAndCashEquivalents', 'CashAndCashEquivalentsIncludingRestrictedCash'),
     'long_term_debt': ('LongTermDebtNoncurrent', 'LongTermDebt', 'Borrowings', 'NoncurrentPortionOfNoncurrentBorrowings',
                        'LongTermDebtAndCapitalLeaseObligations', 'LongtermBorrowings', 'NoncurrentPortionOfLongtermBorrowings'),
 }
@@ -32,7 +48,7 @@ def _dagen(r):
         return None
 
 
-def _kies(payload, tags, eind, valuta, stroom):
+def _kies(payload, tags, eind, valuta, stroom, eenheid=None):
     """Eerste tag (in volgorde van voorkeur) met een eenduidige waarde voor dit boekjaareinde."""
     facts = payload.get('facts') if isinstance(payload, dict) else None
     if not isinstance(facts, dict):
@@ -41,7 +57,7 @@ def _kies(payload, tags, eind, valuta, stroom):
         waarden = {}
         for ns in ('us-gaap', 'ifrs-full'):
             blok = (facts.get(ns) or {}).get(tag)
-            rijen = ((blok or {}).get('units') or {}).get(valuta) if isinstance(blok, dict) else None
+            rijen = ((blok or {}).get('units') or {}).get(eenheid or valuta) if isinstance(blok, dict) else None
             for r in rijen or []:
                 if not isinstance(r, dict) or r.get('end') != eind or r.get('form') not in ANNUAL or not r.get('accn'):
                     continue
@@ -71,12 +87,16 @@ def extra_jaarcijfers(payload, jaren):
             continue
         rij = {veld: _kies(payload, tags, eind, valuta, True) for veld, tags in STROOM.items()}
         rij.update({veld: _kies(payload, tags, eind, valuta, False) for veld, tags in BALANS.items()})
+        rij.update({veld: _kies(payload, tags, eind, valuta, True, 'shares') for veld, tags in AANTALLEN.items()})
         # Dividend is een uitgave: positief getal. Een negatieve waarde duidt op een andere betekenis: niet gebruiken.
         if rij['dividends_paid'] is not None and rij['dividends_paid'] < 0:
             rij['dividends_paid'] = None
         if rij['depreciation'] is not None and rij['depreciation'] < 0:
             rij['depreciation'] = None
-        if rij['long_term_debt'] is not None and rij['long_term_debt'] < 0:
-            rij['long_term_debt'] = None
+        for veld in ('long_term_debt', 'total_assets', 'current_assets', 'current_liabilities', 'total_liabilities', 'shares_diluted', 'interest_expense'):
+            if rij[veld] is not None and rij[veld] < 0:       # deze velden zijn nooit negatief; een minteken duidt op een andere betekenis
+                rij[veld] = None
+        if rij['shares_diluted'] is not None and 0 < rij['shares_diluted'] < 100_000:
+            rij['shares_diluted'] *= 1_000_000                 # sommige indieners melden aandelen in miljoenen
         uit[eind] = rij
     return uit

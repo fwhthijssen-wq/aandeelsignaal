@@ -16,7 +16,7 @@
     eigen: { naam: 'eigen invoer', factor: 0.6 }           // uw eigen antwoorden
   };
   var GROEPEN = { technisch: 'Technische analyse', fundamenteel: 'Fundamentele analyse', kwantitatief: 'Kwantitatief (factoren)', kwalitatief: 'Kwalitatief (uw check)' };
-  var MIN_DEKKING = 25;                         // procent; instelbaar door de gebruiker
+  var MIN_DEKKING = 20;                         // procent; instelbaar door de gebruiker
   var DREMPEL = 0.25;                           // score vanaf waar het oordeel positief of vermijden wordt
   var MAX_KOERS_DAGEN = 7;
 
@@ -33,6 +33,49 @@
   function g1(x) { return String(rond(x, 1)).replace('.', ','); }
 
   function jarenVan(g) { return (g && Array.isArray(g.jaren) ? g.jaren : []).filter(function (j) { return j && num(j.year); }).slice().sort(function (a, b) { return a.year - b.year; }); }
+
+  /* Scoremodellen. Elk gebruikt alleen wat het bedrijf zelf meldt; ontbreekt te veel, dan is het resultaat null. */
+  function aandelen(l) {
+    if (l && pos(l.shares_diluted)) return l.shares_diluted;
+    // Afgeleid uit gecontroleerde winst en EPS: alleen als dat jaar onderbouwd is (de herberekening gebruikt dezelfde getallen).
+    return l && l.eps_check === 'onderbouwd' && pos(l.net_income) && pos(l.reported_eps) ? l.net_income / l.reported_eps : null;
+  }
+  function piotroski(jr) {
+    var l = jr[jr.length - 1], v = jr[jr.length - 2];
+    if (!l || !v || l.year - v.year !== 1) return null;
+    var punten = [], roa = function (j) { return pos(j.total_assets) && num(j.net_income) ? j.net_income / j.total_assets : null; };
+    function toets(a, b, ok) { if (a != null && b != null) punten.push(ok(a, b) ? 1 : 0); }
+    toets(roa(l), 0, function (x) { return x > 0; });
+    toets(num(l.operating_cash_flow) ? l.operating_cash_flow : null, 0, function (x) { return x > 0; });
+    toets(roa(l), roa(v), function (x, y) { return x > y; });
+    toets(num(l.operating_cash_flow) && num(l.net_income) ? l.operating_cash_flow : null, num(l.net_income) ? l.net_income : null, function (x, y) { return x > y; });
+    var lev = function (j) { return pos(j.total_assets) && num(j.long_term_debt) ? j.long_term_debt / j.total_assets : null; };
+    toets(lev(l), lev(v), function (x, y) { return x < y || (x === 0 && y === 0); });
+    var cr = function (j) { return pos(j.current_liabilities) && pos(j.current_assets) ? j.current_assets / j.current_liabilities : null; };
+    toets(cr(l), cr(v), function (x, y) { return x > y; });
+    toets(pos(l.shares_diluted) ? l.shares_diluted : null, pos(v.shares_diluted) ? v.shares_diluted : null, function (x, y) { return x <= y * 1.005; });
+    var gm = function (j) { return pos(j.sales) && num(j.gross_profit) ? j.gross_profit / j.sales : null; };
+    toets(gm(l), gm(v), function (x, y) { return x > y; });
+    var om = function (j) { return pos(j.sales) && pos(j.total_assets) ? j.sales / j.total_assets : null; };
+    toets(om(l), om(v), function (x, y) { return x > y; });
+    if (punten.length < 6) return null;                       // te weinig toetsbare punten: geen score
+    return { score: punten.reduce(function (a, b) { return a + b; }, 0), getoetst: punten.length };
+  }
+  function altman(c) {
+    var l = c.laatste, a = l && l.total_assets, n = aandelen(l);
+    if (c.bank || !l || !pos(a) || !num(l.current_assets) || !num(l.current_liabilities) || !num(l.retained_earnings) || !num(l.operating_income) || !pos(l.total_liabilities) || !pos(l.sales)) return null;
+    if (!c.koersOk || !c.eenValuta || !pos(n)) return null;
+    var mve = c.k.slot * n;
+    return 1.2 * (l.current_assets - l.current_liabilities) / a + 1.4 * l.retained_earnings / a + 3.3 * l.operating_income / a + 0.6 * mve / l.total_liabilities + 1.0 * l.sales / a;
+  }
+  function magic(c) {
+    var l = c.laatste, n = aandelen(l);
+    if (c.bank || !l || !num(l.operating_income) || !pos(l.total_assets) || !num(l.current_liabilities) || !num(l.cash) || !num(l.long_term_debt)) return null;
+    if (!c.koersOk || !c.eenValuta || !pos(n)) return null;
+    var ev = c.k.slot * n + l.long_term_debt - l.cash, kapitaal = l.total_assets - l.current_liabilities - l.cash;
+    if (!(ev > 0) || !(kapitaal > 0)) return null;
+    return { ey: l.operating_income / ev * 100, roc: l.operating_income / kapitaal * 100 };
+  }
 
   /* Methoden: elke functie krijgt context c en geeft null (ontbreekt) of { score, tekst }. */
   var METHODEN = [
@@ -85,6 +128,16 @@
         if (l.comparable_eps <= 0) return { score: -1, tekst: 'De winst per aandeel is niet positief.' };
         var x = c.k.slot / l.comparable_eps; return { score: laag(x, [[12, 1], [18, 0.5], [25, 0], [40, -0.5]], -1), tekst: 'K/W ' + g1(x) + ' op de winst van ' + l.year + '.' }; },
       uit: function (x) { return x <= 0 ? { score: -1, tekst: 'K/W niet positief.' } : { score: laag(x, [[12, 1], [18, 0.5], [25, 0], [40, -0.5]], -1), tekst: 'K/W ' + g1(x) + '.' }; } },
+    { id: 'piotroski', groep: 'fundamenteel', naam: 'Financiële kracht (Piotroski F-score)', gewicht: 8, bron: 'jaar',
+      f: function (c) { var r = piotroski(c.jr); if (!r) return null;
+        var q = r.score / r.getoetst; return { score: trap(q, [[0.78, 1], [0.56, 0.5], [0.33, 0]], -1), tekst: 'F-score ' + r.score + ' van ' + r.getoetst + ' toetsbare punten (hoger is sterker).' }; } },
+    { id: 'altman', groep: 'fundamenteel', naam: 'Faillissementsrisico (Altman Z-score)', gewicht: 5, bron: 'jaar',
+      f: function (c) { var z = altman(c); if (z == null) return null;
+        return { score: z >= 2.99 ? 1 : z >= 1.81 ? 0 : -1, tekst: 'Z-score ' + g1(z) + (z >= 2.99 ? ': veilig gebied.' : z >= 1.81 ? ': grijs gebied.' : ': risicogebied.') + ' Bedoeld voor industriële bedrijven.' }; } },
+    { id: 'magic', groep: 'fundamenteel', naam: 'Goedkoop en rendabel (Magic Formula)', gewicht: 6, bron: 'jaar',
+      f: function (c) { var m = magic(c); if (!m) return null;
+        var a = trap(m.ey, [[10, 1], [6, 0.5], [3, 0]], -0.5), b = trap(m.roc, [[20, 1], [12, 0.5], [6, 0]], -0.5);
+        return { score: (a + b) / 2, tekst: 'Winst/bedrijfswaarde ' + pct(m.ey) + ' en rendement op kapitaal ' + pct(m.roc) + '.' }; } },
     { id: 'dividend', groep: 'fundamenteel', naam: 'Dividendrendement', gewicht: 3, bron: 'jaar',
       invoer: { label: 'Dividendrendement (%)', stap: 0.1, waar: 'Dividend per aandeel gedeeld door de koers.' },
       waarde: function (c) { var l = c.laatste; return !c.koersOk || !c.eenValuta || !l || !num(l.dividend_ps) ? null : l.dividend_ps / c.k.slot * 100; },
