@@ -438,7 +438,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
@@ -452,13 +452,24 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     esef_ophalen = esef_ophalen if esef_ophalen is not None else globals()['esef_ophalen']
     vandaag = date.today().isoformat()
     records = []
+    vorige = vorige or {}
     for meta in CATALOGUS:
         ticker = meta[0]
-        if heeft_sec(ticker):
-            try:
-                gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
-            except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
-                gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+        oud = vorige.get(ticker)
+        if _hergebruik(oud, vandaag):
+            # Goedgekeurde jaarcijfers veranderen pas bij een nieuw jaarverslag: niet elke nacht opnieuw ophalen.
+            gegevens = oud
+            esef_cf = None
+        elif heeft_sec(ticker):
+            for poging in (1, 2):           # een tijdelijke SEC-storing of -vertraging krijgt één tweede kans
+                try:
+                    gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
+                except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
+                    gegevens = gegevens_uit_sec({'status': 'error', 'message': f'{type(exc).__name__}: {exc}'}, vandaag)
+                if gegevens.get('jaren') or poging == 2:
+                    break
+                for _ in range(10):
+                    pauze()             # ongeveer vier seconden wachten
         else:
             gegevens = gegevens_uit_sec({'status': 'geen_sec', 'reason': 'Geen SEC-jaarverslag voor dit bedrijf; alleen koersgegevens.'}, vandaag)
         esef_cf = None
@@ -476,7 +487,12 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:
                 esef_cf = None
                 gegevens.setdefault('esef_fout', f'{type(exc).__name__}: {exc}'[:200])
-        if gegevens.get('jaren'):
+        if not gegevens.get('jaren') and oud and oud.get('jaren') and not oud.get('fout'):
+            gegevens = dict(oud)                      # ophalen mislukt: de laatste goede jaarcijfers blijven staan, met hun eigen datum
+            gegevens['uit_vorige_run'] = True
+        if gegevens is oud:
+            pass                                      # hergebruikt: extra cijfers zitten er al in
+        elif gegevens.get('jaren') and not gegevens.get('uit_vorige_run'):
             try:
                 extra_payload = esef_cf if esef_cf else payload_ophalen(sec_ticker_for_listing(ticker), email)
                 voeg_extra_toe(gegevens, extra_payload)
@@ -484,7 +500,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
-        if heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
+        if gegevens is not oud and not gegevens.get('uit_vorige_run') and heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         koers, punten, dividenden = None, [], []
         if valuta_klopt(meta, valuta_ophalen):
@@ -507,6 +523,32 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         pauze()
         records.append(maak_record(meta, koers=koers, gegevens=gegevens))
     return maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (dagkoersen)')
+
+
+HERGEBRUIK_DAGEN = 30
+
+
+def _hergebruik(oud, vandaag):
+    """Volledig bevestigde jaarcijfers (10 jaar, onafhankelijk nagerekend) blijven staan tot ze 30 dagen oud zijn."""
+    try:
+        if not oud or oud.get('fout') or oud.get('uit_vorige_run') or oud.get('eps_status') != 'independently_verified':
+            return False
+        if (oud.get('eps_verified_years') or 0) < 10 or not oud.get('jaren') or oud.get('niveau') == 'jaarverslag':
+            return False
+        return 0 <= (date.fromisoformat(vandaag) - date.fromisoformat(oud['gecontroleerd_op'])).days < HERGEBRUIK_DAGEN
+    except (ValueError, TypeError, KeyError):
+        return False
+
+
+def vorige_gegevens(pad):
+    """Gegevensblokken uit de vorige echte run (alleen als dat bestand uit een live-run komt)."""
+    try:
+        d = json.loads(Path(pad).read_text(encoding='utf-8'))
+        if not str(d.get('bron', '')).startswith('SEC companyfacts'):
+            return {}
+        return {a['ticker']: a['gegevens'] for a in d['aandelen'] if a.get('gegevens')}
+    except Exception:
+        return {}
 
 
 def _pauze():
@@ -564,7 +606,7 @@ def main(argv=None):
     if args.live:
         if not args.email:
             p.error('--live vraagt --email (contactadres voor de SEC)')
-        bestand = live(args.email)
+        bestand = live(args.email, vorige=vorige_gegevens(Path(args.uit) / 'aandelen.json'))
     else:
         bestand = demo(args.demo)
     schrijf(bestand, args.uit)

@@ -1,6 +1,7 @@
 import json
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 
 import apple_like_fixture as fx
@@ -118,6 +119,49 @@ class WebdataTests(unittest.TestCase):
         g = bestand['aandelen'][0]['gegevens']
         self.assertEqual(g['eps_status'], 'independently_verified')
         self.assertTrue(all(j.get('dividends_paid') is None for j in g['jaren']))
+
+    def test_tijdelijke_sec_storing_krijgt_een_tweede_poging(self):
+        data = fx.payload()
+        aantal = {}
+
+        def sec(t, e):
+            aantal[t] = aantal.get(t, 0) + 1
+            if aantal[t] == 1:
+                raise TimeoutError('traag')
+            return summarize_sec('AAPL', e, fetcher=fx.snapshot_fetcher(data), asof='2026-10-19')
+        bestand = bw.live('a@b.nl', fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, esef_ophalen=lambda t: None, sec_samenvatting=sec, diagnose=lambda t, e: {}, payload_ophalen=lambda t, e: None)
+        eerste = bestand['aandelen'][0]['gegevens']
+        self.assertEqual(eerste['eps_status'], 'independently_verified')   # tweede poging slaagde
+        self.assertEqual(next(iter(aantal.values())), 2)
+
+    def test_goedgekeurde_jaren_worden_hergebruikt_en_bij_uitval_bewaard(self):
+        data = fx.payload()
+        sec_ok = lambda t, e: summarize_sec('AAPL', e, fetcher=fx.snapshot_fetcher(data), asof='2026-10-19')
+        kw = dict(fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR', pauze=lambda: None, esef_ophalen=lambda t: None, diagnose=lambda t, e: {}, payload_ophalen=lambda t, e: None)
+        eerste = bw.live('a@b.nl', sec_samenvatting=sec_ok, **kw)
+        vorige = {a['ticker']: a['gegevens'] for a in eerste['aandelen'] if a['gegevens'] and a['gegevens'].get('jaren')}
+        self.assertTrue(vorige)
+        t = 'AAPL'
+        vorige[t]['eps_status'] = 'independently_verified'; vorige[t]['eps_verified_years'] = 10      # volledig goedgekeurd dossier
+        vorige[t]['gecontroleerd_op'] = date.today().isoformat()
+        aantal = {}
+
+        def telt(tk, e):
+            aantal[tk] = aantal.get(tk, 0) + 1
+            raise TimeoutError('SEC onbereikbaar')
+        nu = bw.live('a@b.nl', sec_samenvatting=telt, vorige=vorige, **kw)
+        rec = next(a for a in nu['aandelen'] if a['ticker'] == t)
+        self.assertEqual(rec['gegevens']['eps_status'], 'independently_verified')     # goedgekeurd: niet opnieuw opgehaald
+        self.assertNotIn('AAPL', aantal)
+        # verouderd (31 dagen): wel opnieuw proberen; mislukt het, dan blijven de laatste goede cijfers staan, gemarkeerd
+        vorige[t]['gecontroleerd_op'] = '2020-01-01'
+        nu2 = bw.live('a@b.nl', sec_samenvatting=telt, vorige=vorige, **kw)
+        rec2 = next(a for a in nu2['aandelen'] if a['ticker'] == t)
+        self.assertTrue(rec2['gegevens'].get('uit_vorige_run'))
+        self.assertEqual(rec2['gegevens']['eps_verified_years'], vorige[t]['eps_verified_years'])
+        # een fout in de vorige run wordt nooit hergebruikt
+        self.assertFalse(bw._hergebruik({'fout': 'x', 'jaren': [1], 'eps_status': 'independently_verified', 'eps_verified_years': 10, 'gecontroleerd_op': date.today().isoformat()}, date.today().isoformat()))
+        self.assertFalse(bw._hergebruik({'jaren': [1], 'eps_status': 'independently_verified', 'eps_verified_years': 9, 'gecontroleerd_op': date.today().isoformat()}, date.today().isoformat()))
 
     def test_written_js_matches_json(self):
         with tempfile.TemporaryDirectory() as tmp:

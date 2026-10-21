@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.21-beta.43
+- **Goedgekeurde jaren niet elke nacht opnieuw:** de update bewaart het gegevensbestand van de vorige run (gratis GitHub-cache). Een bedrijf met 10 volledig bevestigde jaren wordt tot 30 dagen na de controle niet opnieuw bij de SEC opgehaald (nieuwe jaarverslagen verschijnen hooguit één keer per jaar). Koersen blijven elke nacht vers. Dat scheelt veel looptijd en kans op storingen.
+- **Terugval bij uitval:** lukt het ophalen van een bedrijf niet (ook niet na de tweede poging), dan blijven de laatste goede jaarcijfers staan, gemarkeerd als 'uit vorige run' en met hun eigen controledatum. Fouten uit een vorige run worden nooit hergebruikt.
+
+## 2026.10.21-beta.42
+- **Tweede kans bij een SEC-storing:** krijgt een Amerikaans bedrijf geen jaarcijfers (time-out, tijdelijke fout, XOM in de run van 21 oktober), dan wacht de update enkele seconden en probeert het één keer opnieuw. Het blijft fail-closed: lukt het nog niet, dan staat er nog steeds geen oordeel.
+
 ## 2026.10.21-beta.41
 - **Drie extra rekenmodellen (alleen uit eigen jaarcijfers, nooit geschat):** Piotroski F-score (financiële kracht, 9 punten, minimaal 6 toetsbaar), Altman Z-score (faillissementsrisico; niet voor banken) en Magic Formula (winst/bedrijfswaarde en rendement op kapitaal). Zonder alle benodigde cijfers of zonder verse koers tellen ze niet mee. Het aantal aandelen komt uit de jaarcijfers, of uit winst/EPS maar alleen als dat jaar nagerekend is.
 - **Nieuwe velden in de nachtelijke update** (SEC en ESEF): totaal activa, vlottende activa en schulden, totale schulden, ingehouden winst, kas, brutowinst, bedrijfsresultaat, gewogen aantal aandelen.
