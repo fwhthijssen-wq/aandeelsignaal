@@ -1,7 +1,18 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.49';
+  var APP_VERSIE = '2026.10.21-beta.50';
+
+  // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
+  function splitTekst(r) {
+    r = Number(r);
+    if (!(r > 0)) return String(r);
+    for (var q = 1; q <= 10; q++) {
+      var p = Math.round(r * q);
+      if (p > 0 && Math.abs(p / q - r) < 1e-6) return p + '-voor-' + q + (r < 1 ? ' (samenvoeging)' : '');
+    }
+    return String(Math.round(r * 1000) / 1000) + '-voor-1';
+  }
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -547,7 +558,7 @@
     if (!g) return '<div class="melding"><b>Nog geen bronnen</b><span>Nog niet gecontroleerd.</span></div>';
     var s = '<div class="kaart-plat"><h2>Waar komen de cijfers vandaan?</h2><p>Jaarcijfers: SEC (Amerikaanse toezichthouder) en, voor Europese bedrijven, jaarverslagen in ESEF-formaat. Waar die er niet zijn (bijvoorbeeld bij veel Duitse bedrijven) gebruikt de app indicatieve cijfers van Yahoo Finance; die zijn niet nagerekend en tellen minder zwaar mee. Koersen: Yahoo Finance. Gecontroleerd op ' + h(datumNl(g.gecontroleerd_op)) + '.</p></div>';
     if (g.splits && g.splits.length) s += '<section><h2>Aandelensplitsingen</h2>' + g.splits.map(function (sp) {
-      return '<details><summary>' + h(datumNl(sp.datum)) + ' · ' + h(sp.ratio) + '-voor-1</summary><p>' + h(SPLIT[sp.status] || sp.status) + '.</p>' + (sp.redenen || []).map(function (x) { return '<p class="zacht">' + h(x) + '</p>'; }).join('') +
+      return '<details><summary>' + h(datumNl(sp.datum)) + ' · ' + h(splitTekst(sp.ratio)) + '</summary><p>' + h(SPLIT[sp.status] || sp.status) + '.</p>' + (sp.redenen || []).map(function (x) { return '<p class="zacht">' + h(x) + '</p>'; }).join('') +
         (sp.bewijs && sp.bewijs.length ? '<ul class="punten">' + sp.bewijs.map(function (b) { return '<li>Boekjaar ' + h(b.periode) + ': winst per aandeel ' + h(b.voor.join('/')) + ' werd later ' + h(b.na.join('/')) + ' (factor ' + h(b.verhouding.join('/')) + ')</li>'; }).join('') + '</ul>' : '') + '</details>';
     }).join('') + '</section>';
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';

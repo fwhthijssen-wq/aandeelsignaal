@@ -176,7 +176,9 @@ def vergelijk(eerdere, nieuw):
                                 tekst=f'aantal aandelen x{schaal:g} voor {", ".join(jaren)}, winst per aandeel gelijk '
                                       f'(een eerder verslag gaf het aantal in duizenden of miljoenen)'))
                 break
-    if ps and not verklaard:
+    # Een splitsing verandert zowel de winst per aandeel als het aantal aandelen. Verschuift alleen de winst per aandeel
+    # (bijvoorbeeld door een nieuwe boekhoudregel), dan is het een herwerking, ook als de verhouding toevallig 'net' is.
+    if ps and sh and not verklaard:
         ratios = []
         for a in ps + sh:
             if CONCEPTEN[a['concept']] == 'ps':
@@ -381,3 +383,46 @@ class Archief:
                     afwijkend.append({'end': end, 'bestaand': eps, 'archief': a})
             uit['eps_controle'] = {'vergeleken': gelijk + len(afwijkend), 'gelijk': gelijk, 'afwijkend': afwijkend}
         return uit
+
+
+# ------------------------------------------------------------------------------------------------ voor de EPS-controle
+
+AFGELEID_TAG = 'afgeleid:Jaarverslagvergelijking'
+
+
+def afgeleide_splitsingen(payload, asof, bestaande=None):
+    """Splitsingen en samenvoegingen die blijken uit de vergelijking van opeenvolgende jaarverslagen, in de vorm van de
+    splitgebeurtenissen van history_checks.split_events. Puur afgeleid uit het companyfacts-bestand (geen schijf).
+
+    Datum = de dag na het laatste jaarverslag van vóór de splitsing: alle cijfers uit dat en eerdere verslagen staan op de
+    oude basis, alle cijfers vanaf het volgende verslag op de nieuwe. Een gebeurtenis die al als SEC-splitsing (zelfde
+    verhouding, in de buurt) bekend is, wordt niet nog eens toegevoegd. De EPS-controle bevestigt elke gebeurtenis daarna
+    nog onafhankelijk met de winst per aandeel van vóór en na."""
+    from datetime import timedelta
+    verslagen = sorted((v for v in verslagen_uit_payload(payload).values() if (v.get('ingediend') or '9999') <= asof),
+                       key=lambda v: (v.get('ingediend') or '', v['accn']))
+    bekend = []
+    for e in bestaande or []:
+        try:
+            bekend.append((_dag(e['Datum']), float(e['Waarde SEC'])))
+        except (KeyError, TypeError, ValueError):
+            continue
+    uit = []
+    for i, v in enumerate(verslagen):
+        if i == 0:
+            continue
+        for g in vergelijk(verslagen[:i], v):
+            if g.get('soort') != 'splitsing':
+                continue
+            factor = float(Fraction(g['factor']))
+            voor = _dag(verslagen[i - 1]['ingediend'])
+            na = _dag(v['ingediend'])
+            if any(abs(r / factor - 1) < 0.01 and voor - timedelta(days=400) <= d <= na + timedelta(days=800)
+                   for d, r in bekend):
+                continue
+            uit.append({'Datum': (voor + timedelta(days=1)).isoformat(), 'Waarde SEC': factor, 'Eenheid': 'pure',
+                        'Tag': AFGELEID_TAG, 'Ingediend': v['ingediend'], 'Datumtype': None,
+                        'Afgeleid': f'winst per aandeel en aantal aandelen in het jaarverslag van {v["ingediend"]} '
+                                    f'({v["accn"]}) verschoven met factor {g["factor"]} t.o.v. eerdere verslagen; '
+                                    f'splitsing tussen {voor.isoformat()} en {na.isoformat()}'})
+    return uit

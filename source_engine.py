@@ -262,6 +262,11 @@ def sec_snapshot(ticker, asof, email, fetcher=fetch_json):
     from history_checks import capex_comparison, split_events, eps_comparability
     aligned['capex_comparison'] = capex_comparison(payload, asof)
     aligned['split_events'] = split_events(payload, asof)
+    try:        # splitsingen die alleen blijken uit de vergelijking van jaarverslagen (niet als splitsing getagd)
+        from jaarverslag_archief import afgeleide_splitsingen
+        aligned['split_events'] = aligned['split_events'] + afgeleide_splitsingen(payload, asof, aligned['split_events'])
+    except Exception:
+        pass
     aligned['eps_comparability'] = eps_comparability(aligned['annual_history'], aligned['split_events'])
     from history_engine import investment_tag_diagnostics
     aligned['investment_diagnostics'] = investment_tag_diagnostics(payload, asof)

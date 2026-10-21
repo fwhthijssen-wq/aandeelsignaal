@@ -21,12 +21,27 @@ from source_engine import duration_days
 
 CENT_ROUNDING = 0.005          # EPS wordt op centen afgerond
 RECOMPUTE_TOLERANCE = 0.0055   # halve cent plus rekenmarge
+RECOMPUTE_RELATIVE = 0.004     # of 0,4 % van de gemelde EPS: bedrijven rekenen met onafgeronde aantallen en een splitsing of
+                               # schaalfout geeft altijd een veel groter verschil (factor 2 of meer)
 NET_INCOME_TAG = 'NetIncomeLoss'
 SHARES_TAG = 'WeightedAverageNumberOfDilutedSharesOutstanding'
 IFRS_NET_INCOME_TAG = 'ProfitLossAttributableToOwnersOfParent'
 IFRS_SHARES_TAG = 'AdjustedWeightedAverageShares'
 IFRS_NET_INCOME_ORDINARY_TAG = 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity'
 EPS_FACT = 'Winst per aandeel (verwaterd)'
+
+
+AFGELEID_TAG = 'afgeleid:Jaarverslagvergelijking'
+
+
+def geldige_ratio(ratio, tag=None):
+    """Splitverhouding tussen 1 en 1000. Een samenvoeging (verhouding onder 1, zoals Unilever 8/9) alleen als zij is
+    afgeleid uit de vergelijking van jaarverslagen; SEC-tags met een verhouding onder 1 blijven afgewezen."""
+    if isinstance(ratio, bool) or not isinstance(ratio, (int, float)) or not isfinite(ratio):
+        return False
+    if tag == AFGELEID_TAG:
+        return 0.001 <= ratio <= 1000 and abs(ratio - 1) > 0.01
+    return 1 < ratio <= 1000
 
 
 def _day(value):
@@ -201,6 +216,10 @@ def recompute_eps_check(end, eps_fact, inputs):
     if low - RECOMPUTE_TOLERANCE <= reported <= high + RECOMPUTE_TOLERANCE:
         return {**result, 'status': 'consistent',
                 'reden': 'Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS (zelfde indiening)'}
+    if abs(reported - recomputed) <= RECOMPUTE_RELATIVE * abs(reported):
+        return {**result, 'status': 'consistent',
+                'reden': 'Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS binnen 0,4% (zelfde indiening; '
+                         'verschil door afronding van de bronbedragen)'}
     return {**result, 'status': 'afwijking',
             'reden': 'Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)'}
 
@@ -253,6 +272,24 @@ def share_count_continuity(history, inputs):
     return True, 'aantal aandelen stabiel over alle boekjaren'
 
 
+def zonder_oudste_onvolledige(history, inputs):
+    """Laat de oudste boekjaren weg zolang daar de EPS of het aantal aandelen uit dezelfde indiening ontbreekt.
+
+    Alleen aan het begin van de reeks: een ontbrekend jaar in het midden of aan het eind blijft de controle blokkeren
+    (aan het eind zou een recente splitsing onzichtbaar kunnen blijven). Geeft (overgebleven jaren, weggelaten einddata)."""
+    rows = sorted((r for r in history if isinstance(r, dict) and _day(r.get('end'))), key=lambda r: r['end'])
+    weg = []
+    while rows:
+        fact = (rows[0].get('facts') or {}).get(EPS_FACT)
+        compleet = isinstance(fact, dict) and fact.get('accn') and len({
+            _number(i.get('diluted_shares')) for i in (inputs or [])
+            if isinstance(i, dict) and i.get('end') == rows[0]['end'] and i.get('accn') == fact.get('accn')}) == 1
+        if compleet:
+            break
+        weg.append(rows.pop(0)['end'])
+    return rows, weg
+
+
 def adjusted_share_chain(history, inputs, factors):
     """Jaren waarvan het aantal aandelen, omgerekend met de splitfactor, een onafgebroken stabiele reeks vormt
     tot en met het nieuwste jaar. Een verkeerde factor veroorzaakt een sprong en sluit de oudere jaren uit."""
@@ -292,7 +329,23 @@ def adjusted_share_chain(history, inputs, factors):
 
 def _bundel_bevestigde_duplicaten(events, window_days=100):
     """Dezelfde splitsing onder meerdere data (SEC meldt per verslagperiode) telt één keer.
-    De vroegste datum blijft; indieningen binnen de onzekere periode zijn niet te corrigeren."""
+    De vroegste datum blijft; indieningen binnen de onzekere periode zijn niet te corrigeren.
+    Twee bevestigde gebeurtenissen met dezelfde verhouding en hetzelfde bewijsvenster (laatste indiening ervoor, eerste
+    erna) zijn altijd dezelfde splitsing, ook als hun datums meer dan 100 dagen uit elkaar liggen."""
+    events = list(events)
+    vensters = {}
+    for i, e in enumerate(events):
+        if isinstance(e, dict) and e.get('Datumtype') == 'effectieve_splitdatum':
+            v = e.get('Verificatie venster') or {}
+            sleutel = (_number(e.get('Waarde SEC')), v.get('laatste_indiening_voor'), v.get('eerste_indiening_na'))
+            if None not in sleutel:
+                vensters.setdefault(sleutel, []).append((_day(e.get('Datum')) or date.max, i))
+    for groep in vensters.values():
+        groep.sort()
+        for d, i in groep[1:]:
+            events[i] = {**events[i], 'Datumtype': 'dubbel_van_bevestigde_splitsing',
+                         'Verificatie reden': 'dezelfde splitsing (zelfde verhouding en bewijsvenster); '
+                                              f'vroegste datum {groep[0][0].isoformat()}'}
     confirmed = sorted(((_day(e.get('Datum')), _number(e.get('Waarde SEC')), i) for i, e in enumerate(events)
                         if isinstance(e, dict) and e.get('Datumtype') == 'effectieve_splitdatum'),
                        key=lambda x: (x[1] or 0, x[0] or date.min))
@@ -349,7 +402,7 @@ def verify_split_events(split_events, observations, history):
             out.append(event)
             continue
         when, ratio = _day(event.get('Datum')), _number(event.get('Waarde SEC'))
-        if when is None or ratio is None or not 1 < ratio <= 1000:
+        if when is None or ratio is None or not geldige_ratio(ratio, event.get('Tag')):
             out.append(event)          # de bestaande validatie wijst dit af met reden
             continue
         if earliest is not None and when < earliest:
@@ -366,21 +419,29 @@ def verify_split_events(split_events, observations, history):
                 after = [value for filed, value in rows if filed > when]
                 if not before or not after:
                     continue
+                if all(v < 0 for v in before + after):
+                    # verliesjaar (Tesla 2019: -4,92 -> -0,98): de verhouding geldt evengoed voor het verlies per aandeel
+                    before, after = [-v for v in before], [-v for v in after]
                 interval = _ratio_interval(before, after)
                 if interval is None:
                     continue
                 low, high = interval
+                if low <= ratio <= high and low <= 1 <= high:
+                    continue            # bewijs past bij de splitsing én bij 'geen verschil': telt niet mee
                 observed = (min(before) / max(after), max(before) / min(after))
                 entry = {'periode': end.isoformat(), 'eps_voor': sorted(set(before)),
                          'eps_na': sorted(set(after)),
-                         'verhouding_waargenomen': [round(observed[0], 3), round(observed[1], 3)]}
+                         'verhouding_waargenomen': [round(observed[0], 3), round(observed[1], 3)],
+                         'geen_verschil': low <= 1 <= high, 'interval': [low, high]}
                 (supporting if low <= ratio <= high else contradicting).append((end, entry))
             verdicts[key] = (supporting, contradicting)
         supporting, contradicting = verdicts[key]
         if contradicting:
             out.append({**event, 'Verificatie reden':
                         'EPS-herberekening in latere indieningen spreekt de splitverhouding tegen '
-                        f'(periode {contradicting[0][0].isoformat()})'})
+                        f'(periode {contradicting[0][0].isoformat()})',
+                        'Verificatie zonder verschil': all(entry.get('geen_verschil') for _, entry in contradicting),
+                        'Verificatie tegenbewijs': [entry['interval'] for _, entry in contradicting]})
         elif not supporting:
             out.append({**event, 'Verificatie reden':
                         'geen EPS van dezelfde periode in indieningen van voor én na de splitsing; '
@@ -405,14 +466,30 @@ def _markeer_dubbele_aankondigingen(events):
     result = []
     for e in events:
         if (isinstance(e, dict) and e.get('Datumtype') != 'effectieve_splitdatum'
-                and str(e.get('Verificatie reden') or '').startswith('EPS-herberekening in latere indieningen spreekt')):
+                and str(e.get('Verificatie reden') or '').startswith(('EPS-herberekening in latere indieningen spreekt',
+                                                                      'geen EPS van dezelfde periode'))):
             when, ratio = _day(e.get('Datum')), _number(e.get('Waarde SEC'))
             match = [c for c, r in confirmed if when and c and ratio is not None and r == ratio
                      and 0 < (c - when).days <= 366]
+            # Ook tot twee jaar eerder, als het tegenbewijs volledig wordt verklaard door een ándere bevestigde splitsing
+            # (Tesla: een 3:1-melding bij 2020 'botst' alleen met de bevestigde 5:1 van 2020).
+            tegen = e.get('Verificatie tegenbewijs') or []
+            andere = [r for c, r in confirmed if r is not None and r != ratio]
+            if not match and tegen and all(any(lo <= r <= hi for r in andere) for lo, hi in tegen):
+                match = [c for c, r in confirmed if when and c and ratio is not None and r == ratio
+                         and 0 < (c - when).days <= 731]
+            # Dezelfde splitsing later nog eens gemeld (SEC herhaalt de splittag bij latere verslagperioden): vóór én na
+            # die latere datum staat de EPS al op de nieuwe basis, dus de waargenomen verhouding is 1.
+            later = [c for c, r in confirmed if when and c and ratio is not None and r == ratio
+                     and 0 < (when - c).days <= 731 and e.get('Verificatie zonder verschil')]
             if match:
                 e = {**e, 'Datumtype': 'dubbel_van_bevestigde_splitsing',
                      'Verificatie reden': 'dezelfde splitsing onder een eerdere datum (waarschijnlijk de aankondiging); '
                                           f'bevestigde splitsing op {min(match).isoformat()}'}
+            elif later:
+                e = {**e, 'Datumtype': 'dubbel_van_bevestigde_splitsing',
+                     'Verificatie reden': 'dezelfde splitsing later nog eens gemeld; de winst per aandeel staat vóór en na '
+                                          f'deze datum al op de nieuwe basis; bevestigde splitsing op {max(later).isoformat()}'}
         result.append(e)
     return result
 
@@ -495,14 +572,13 @@ def verify_eps(result, safe_history, audit_date):
                 reasons.append('splitdatum ligt in de toekomst')
         except (TypeError, ValueError):
             reasons.append('datum ontbreekt of is ongeldig')
-        if (isinstance(ratio, bool) or not isinstance(ratio, (int, float))
-                or not isfinite(ratio) or not 1 < ratio <= 1000):
+        if not geldige_ratio(ratio, tag):
             reasons.append('ongeldige splitratio')
         if unit not in ('pure', None):
             reasons.append('onverwachte eenheid')
         # Preserve old offline fixtures without a tag, but reject explicit unrecognized tags.
         if tag is not None:
-            if not isinstance(tag, str) or tag.split(':')[-1] not in SPLIT_TAGS:
+            if not isinstance(tag, str) or (tag.split(':')[-1] not in SPLIT_TAGS and tag != AFGELEID_TAG):
                 reasons.append('onbekende SEC-splittag')
         filed = event.get('Ingediend')
         if filed is not None:
@@ -540,9 +616,20 @@ def verify_eps(result, safe_history, audit_date):
     no_splits_reason = None
     # Splitsingen van vóór het eerste boekjaar in het dossier raken geen enkele EPS: dan geldt de controle zonder splitsing.
     relevante_splits = [a for a in split_audit if a.get('status') != 'niet_van_toepassing']
+    normalisatie_historie = safe_history
     if (isinstance(split_source, list) and not relevante_splits and not rejected_split_evidence):
         no_splits, no_splits_reason = share_count_continuity(safe_history, result.get('eps_recompute_inputs'))
-    eps_normalized = (normalized_eps_history(safe_history, normalization_splits,
+        if not no_splits:
+            # Oudste jaren zonder EPS of aantal aandelen (vaak een jaar dat buiten het dossier valt) blokkeren niet langer
+            # alle jaren: de controle geldt dan voor de aaneengesloten reeks die daarna begint.
+            rest, weg = zonder_oudste_onvolledige(safe_history, result.get('eps_recompute_inputs'))
+            if weg and len(rest) >= 2:
+                ok, reden = share_count_continuity(rest, result.get('eps_recompute_inputs'))
+                if ok:
+                    no_splits, normalisatie_historie = True, rest
+                    no_splits_reason = (f'{reden} vanaf {rest[0]["end"]}; oudere boekjaren zonder EPS of aantal aandelen '
+                                        f'buiten beschouwing: {", ".join(weg)}')
+    eps_normalized = (normalized_eps_history(normalisatie_historie, normalization_splits,
                                              asof=audit_date.isoformat(), geen_splitsingen=no_splits)
                       if (normalization_splits or no_splits) else {})
 

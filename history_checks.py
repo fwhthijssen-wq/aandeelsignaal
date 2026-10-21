@@ -92,8 +92,8 @@ def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False
         if event.get('Datumtype') not in (None, 'effectieve_splitdatum'):
             invalid_event = True
             continue
-        if (not when or not isinstance(ratio, (int, float)) or isinstance(ratio, bool)
-                or not 1 < ratio <= 1000 or event.get('Eenheid') not in ('pure', None)):
+        from eps_verification import geldige_ratio
+        if (not when or not geldige_ratio(ratio, event.get('Tag')) or event.get('Eenheid') not in ('pure', None)):
             invalid_event = True
             continue
         # Also validate dates here: this helper is called independently of the
