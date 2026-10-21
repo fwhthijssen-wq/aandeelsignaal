@@ -23,8 +23,16 @@ def fetch_json(url, email, opener=urlopen):
         return json.load(resp)
 
 
+# Na een holdingreorganisatie wijst de SEC-tickerlijst naar de nieuwe holding (met alleen kwartaalcijfers), terwijl de
+# jaarverslagen bij de oorspronkelijke registrant blijven staan. XOM: ExxonMobil Holdings Corp (CIK 2115436) heeft sinds
+# 2026 alleen 10-Q's; de 10-K's tot en met boekjaar 2025 staan bij Exxon Mobil Corp (CIK 34088).
+CIK_VOORGANGER = {'XOM': (34088, 'Exxon Mobil Corp')}
+
+
 def cik_for_ticker(ticker, directory):
     base = ticker.upper().split('.')[0]
+    if base in CIK_VOORGANGER:
+        return CIK_VOORGANGER[base]
     for item in directory.values():
         if str(item.get('ticker', '')).upper() == base:
             return int(item['cik_str']), item.get('title', base)
