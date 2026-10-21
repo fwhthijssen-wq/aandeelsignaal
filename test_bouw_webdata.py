@@ -153,7 +153,7 @@ class WebdataTests(unittest.TestCase):
         rec = next(a for a in nu['aandelen'] if a['ticker'] == t)
         self.assertEqual(rec['gegevens']['eps_status'], 'independently_verified')     # goedgekeurd: niet opnieuw opgehaald
         self.assertNotIn('AAPL', aantal)
-        # verouderd (31 dagen): wel opnieuw proberen; mislukt het, dan blijven de laatste goede cijfers staan, gemarkeerd
+        # verouderd (meer dan 90 dagen): wel opnieuw proberen; mislukt het, dan blijven de laatste goede cijfers staan, gemarkeerd
         vorige[t]['gecontroleerd_op'] = '2020-01-01'
         nu2 = bw.live('a@b.nl', sec_samenvatting=telt, vorige=vorige, **kw)
         rec2 = next(a for a in nu2['aandelen'] if a['ticker'] == t)

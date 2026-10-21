@@ -85,6 +85,7 @@ def heeft_sec(ticker):
 
 
 ESEF_LEI = HERE / 'esef_lei.json'
+ARCHIEF_MAP = HERE / 'archief'          # jaarverslagarchief (laag 1); bewaard tussen runs via de GitHub-cache
 ESEF_BUNDEL = HERE / 'esef_bundel.json.gz'
 _ESEF_CACHE = {}
 
@@ -382,8 +383,21 @@ def maak_status(bestand):
                     'extra_dekking': {v: sum(1 for j in g.get('jaren') or [] if j.get(v) is not None) for v in EXTRA_VELDEN + SCORE_VELDEN + KOERS_VELDEN},
                     'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose'),
-                    'extra_diagnose': g.get('extra_diagnose')})
+                    'extra_diagnose': g.get('extra_diagnose'),
+                    'archief': _archief_status(g.get('archief'))})
     return {'gemaakt': bestand.get('gemaakt'), 'yahoo_vergelijk': bestand.get('yahoo_vergelijk'), 'aandelen': uit}
+
+
+def _archief_status(blok):
+    """Kort overzicht van het jaarverslagarchief voor status.json (meldingen alleen als ze nieuw zijn, niet de terugblik)."""
+    if not isinstance(blok, dict):
+        return None
+    if blok.get('fout'):
+        return {'fout': blok['fout']}
+    return {'verslagen': blok.get('verslagen'), 'laatste_verslag': (blok.get('laatste_verslag') or {}).get('ingediend'),
+            'nieuw_deze_run': blok.get('nieuw_deze_run'), 'eps_controle': blok.get('eps_controle'),
+            'nieuwe_meldingen': [m for m in blok.get('meldingen') or [] if not m.get('historisch')],
+            'terugblik': [m.get('tekst') for m in blok.get('meldingen') or [] if m.get('historisch') and m.get('soort') != 'herwerking'][-6:]}
 
 
 def schrijf(bestand, map_=UITVOER):
@@ -445,10 +459,24 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
-        from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
+        # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
+        # meldt splitsingen/herwerkingen bij een nieuw verslag en haalt elk SEC-bestand per run maar één keer op.
+        from praktijkcontrole_sec_esef import summarize_sec
+        from source_engine import sec_snapshot
+        if archief is None:
+            from jaarverslag_archief import Archief
+            archief = Archief(ARCHIEF_MAP)
+        _arch = archief
+
+        def sec_samenvatting(t, e):
+            return summarize_sec(t, e, fetcher=lambda tk, asof, em: sec_snapshot(tk, asof, em, fetcher=_arch.fetch_json))
+        if payload_ophalen is None:
+            payload_ophalen = lambda t, e: sec_payload(t, e, fetcher=_arch.fetch_json)
+        if diagnose is None:
+            diagnose = lambda t, e: sec_diagnose(t, e, fetcher=_arch.fetch_json)
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
@@ -471,7 +499,11 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             gegevens = oud
             esef_cf = None
         elif heeft_sec(ticker):
+            if archief is not None:
+                archief.laatste_cik = None
             for poging in (1, 2):           # een tijdelijke SEC-storing of -vertraging krijgt één tweede kans
+                if poging == 2 and archief is not None:
+                    archief.vergeet()       # echt opnieuw ophalen, niet het bestand uit het geheugen
                 try:
                     gegevens = gegevens_uit_sec(sec_samenvatting(sec_ticker_for_listing(ticker), email), vandaag)
                 except Exception as exc:  # nooit stilzwijgend een gat: de reden gaat mee
@@ -534,6 +566,14 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
         if gegevens is not oud and not gegevens.get('uit_vorige_run') and gegevens.get('bron') != 'Yahoo Finance' and heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
+        if (archief is not None and gegevens is not oud and heeft_sec(ticker) and archief.laatste_cik
+                and gegevens.get('bron') not in ('ESEF', 'Yahoo Finance') and not gegevens.get('uit_vorige_run')):
+            try:
+                blok = archief.samenvatting(archief.laatste_cik, gegevens.get('jaren'))
+                if blok:
+                    gegevens['archief'] = blok
+            except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
+                gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         koers, punten, dividenden = None, [], []
         if valuta_klopt(meta, valuta_ophalen):
             try:
@@ -559,17 +599,28 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
-HERGEBRUIK_DAGEN = 30
+HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
+NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
+ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is
 
 
 def _hergebruik(oud, vandaag):
-    """Volledig bevestigde jaarcijfers (10 jaar, onafhankelijk nagerekend) blijven staan tot ze 30 dagen oud zijn."""
+    """Volledig bevestigde jaarcijfers (10 jaar, onafhankelijk nagerekend) worden niet opnieuw opgehaald zolang er nog geen
+    nieuw jaarverslag kan zijn (opslaan en afblijven). Kan er wel een nieuw verslag zijn, dan wordt elke week gekeken;
+    en hoe dan ook na 90 dagen, voor het geval een verslag gecorrigeerd is."""
     try:
         if not oud or oud.get('fout') or oud.get('uit_vorige_run') or oud.get('eps_status') != 'independently_verified':
             return False
         if (oud.get('eps_verified_years') or 0) < 10 or not oud.get('jaren') or oud.get('niveau') == 'jaarverslag':
             return False
-        return 0 <= (date.fromisoformat(vandaag) - date.fromisoformat(oud['gecontroleerd_op'])).days < HERGEBRUIK_DAGEN
+        nu = date.fromisoformat(vandaag)
+        leeftijd = (nu - date.fromisoformat(oud['gecontroleerd_op'])).days
+        if not 0 <= leeftijd < HERGEBRUIK_DAGEN:
+            return False
+        laatste_einde = max(date.fromisoformat(j['end']) for j in oud['jaren'] if j.get('end'))
+        if (nu - laatste_einde).days >= NIEUW_VERSLAG_NA:
+            return leeftijd < ZOEK_NIEUW_ELKE
+        return True
     except (ValueError, TypeError, KeyError):
         return False
 
