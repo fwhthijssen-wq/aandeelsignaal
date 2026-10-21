@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.52';
+  var APP_VERSIE = '2026.10.21-beta.53';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -260,7 +260,7 @@
       '<div><label for="pf-n">Aantal stuks</label><input id="pf-n" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-v">Valuta</label><input id="pf-v" type="text" maxlength="3" autocapitalize="characters" autocomplete="off"></div>' +
-      '<div><label for="pf-d">Datum (mag leeg)</label><input id="pf-d" type="date"></div></div>' +
+      '<div><label for="pf-d">Datum (mag leeg)</label><input id="pf-d" type="date"></div></div><p id="pf-hint" class="zacht"></p>' +
       '<label class="vink"><input type="checkbox" id="pf-sig"> Gekocht op basis van het signaal van de app</label><p class="zacht">De app legt dan het oordeel en de dekking van nu vast, zodat u later kunt terugkijken of het signaal klopte.</p>' +
       '<p id="pf-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Toevoegen</button></div></form></div>' +
       '<p class="zacht">Alleen een overzicht van wat u zelf invoert, geen beleggingsadvies. Kosten en belasting zijn niet meegerekend. De waarde gebruikt de laatste slotkoers en alleen als die maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud is.</p></section>' + backupBalk();
@@ -268,7 +268,11 @@
   }
   function portefeuilleKoppel() {
     var sel = document.getElementById('pf-t'), val = document.getElementById('pf-v'); if (!sel) return;
-    function vul() { var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : ''; }
+    function vul() {
+      var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : '';
+      var hint = document.getElementById('pf-hint');
+      if (hint) hint.textContent = /\.L$/.test(sel.value) ? 'Londen: de app rekent in ponden (GBP). Geeft uw bank de koers in pence (bijv. 4500), vul dan GBX in als valuta.' : '';
+    }
     sel.addEventListener('change', vul); vul();
     document.getElementById('pf').addEventListener('submit', function (e) {
       e.preventDefault();

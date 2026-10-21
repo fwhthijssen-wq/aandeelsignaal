@@ -576,13 +576,20 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         koers, punten, dividenden = None, [], []
-        if valuta_klopt(meta, valuta_ophalen):
+        pence = meta[3] == 'GBX'
+        if pence:
+            meta = meta[:3] + ('GBP',) + meta[4:]     # Londen noteert in pence; de app rekent alles in ponden
+        if valuta_klopt(meta[:3] + ('GBX',) + meta[4:] if pence else meta, valuta_ophalen):
             try:
-                koers = koers_uit_reeks(fetch_prijzen(ticker))
+                reeks = fetch_prijzen(ticker)
+                koers = koers_uit_reeks(pence_naar_pond(reeks) if pence else reeks)
             except Exception:
                 koers = None
             try:
                 punten, dividenden = historie_ophalen(ticker)
+                if pence:
+                    punten = pence_naar_pond(punten)
+                    dividenden = dividend_naar_pond(dividenden, punten)
             except Exception:
                 punten, dividenden = [], []
             if gegevens.get('jaren'):
@@ -644,6 +651,25 @@ def vorige_gegevens(pad):
 def _pauze():
     import time
     time.sleep(0.4)             # vriendelijk voor Yahoo bij ruim 300 aandelen
+
+
+def pence_naar_pond(reeks):
+    """Koersen uit Londen (pence, GBX) naar ponden: een vaste eenheid (100 pence = 1 pond), geen wisselkoers."""
+    return [(d, v / 100) for d, v in reeks]
+
+
+def dividend_naar_pond(dividenden, punten_pond):
+    """Dividenden van Londense aandelen staan bij Yahoo meestal in pence, soms al in ponden. Per uitkering: is het bedrag
+    meer dan 15% van de koers in ponden op die dag, dan zijn het pence (geen dividend is 15% van de koers per keer);
+    anders al ponden. Zonder koers op of vóór die dag: weglaten (nooit gokken)."""
+    uit = []
+    koersen = sorted(punten_pond)
+    for d, v in dividenden:
+        eerder = [p for dd, p in koersen if dd <= d]
+        if not eerder or not eerder[-1] > 0:
+            continue
+        uit.append((d, v / 100 if v / eerder[-1] > 0.15 else v))
+    return uit
 
 
 def valuta_klopt(meta, valuta_ophalen):

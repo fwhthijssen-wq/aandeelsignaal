@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.21-beta.53
+- **Londen in ponden:** Yahoo geeft Londense koersen in pence (GBX). De update deelt koersen en koershistorie nu door 100 (een vaste eenheid, geen wisselkoers) en de app toont en rekent Londense aandelen in ponden (GBP). Daardoor krijgen Londense bedrijven die in ponden rapporteren voor het eerst een K/W, dividendrendement, koersbereik op jaarbasis en scoremodellen. Bedrijven die in dollars rapporteren (Shell, BP, AstraZeneca, HSBC, Diageo) houden verschillende valuta en blijven zonder K/W: daarvoor zou een wisselkoers nodig zijn.
+- Dividenden van Londense aandelen staan bij Yahoo meestal in pence, soms al in ponden: per uitkering vastgesteld aan de hand van de koers van die dag.
+- Controle blijft: geeft Yahoo voor Londen geen pence op, dan komt er geen koers.
+- **Portefeuille en volglijst:** aankopen en momentopnamen die eerder in pence (GBX) zijn ingevoerd tellen gewoon mee (1 pond = 100 pence). Bij het invoeren van een Londense aankoop staat een hint om GBX te kiezen als uw bank de koers in pence geeft.
+- Nieuw: `test_londen.py` (4 tests) en een JavaScript-test voor de portefeuille.
+
 ## 2026.10.21-beta.52
 - **Winst voor gewone aandeelhouders als tweede teller:** reproduceert de vaste teller (nettowinst) de gemelde EPS niet, dan mag een andere officiële teller uit hetzelfde jaarverslag het bewijs leveren: winst na preferent dividend (US-GAAP) of winst toerekenbaar aan gewone aandeelhouders (IFRS, na AT1-coupons). Alleen als die de gemelde EPS binnen 0,4% oplevert. De vaste volgorde blijft, dus bij ING en Sanofi (beta.32) verandert niets. JPMorgan en Santander nu volledig bevestigd (10 jaar), Eni van 4 naar 7 jaar. Volledig bevestigd van 38 naar 40; niets achteruit.
 - **Totale schulden afgeleid** voor bedrijven die ze niet zelf melden (Amazon, Walmart, Coca-Cola, Eli Lilly, Merck, Amgen, Oracle, Thermo Fisher, Nike, Disney, AbbVie, Honeywell): balanstotaal min eigen vermogen (inclusief minderheidsbelang) min tijdelijk eigen vermogen, alle onderdelen uit hetzelfde jaarverslag en alleen als de balans sluit. 116 jaren extra. Controle bij bedrijven die het wel zelf melden: 421 van 427 jaren binnen 0,5%, de rest binnen 3% (posten tussen schuld en eigen vermogen onder ongebruikelijke namen). Dit voedt o.a. Altman Z en de schuldratio.

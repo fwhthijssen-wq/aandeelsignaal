@@ -161,3 +161,14 @@ test('volg: verandering sinds het volgen, met reden als het niet kan', () => {
   assert.equal(P.volg(it, null, '2026-10-21', G).status, 'geen_koers');
   assert.equal(P.volg(it, rec({ koers: { slot: 60, datum: '2026-10-20' } }), '2026-10-21', G).pct, -25);
 });
+
+test('Londen: koers in ponden, aankoop in pence telt mee (vaste eenheid, geen wisselkoers)', () => {
+  const P = require('../js/portefeuille.js');
+  const gate = { priceFreshness: () => ({ fresh: true }) };
+  const rec = { ticker: 'ULVR.L', naam: 'Unilever', valuta: 'GBP', koers: { slot: 45.0, datum: '2026-10-21' } };
+  const res = P.waardeer([{ ticker: 'ULVR.L', aantal: 10, koers: 4000, valuta: 'GBX' }, { ticker: 'ULVR.L', aantal: 10, koers: 40, valuta: 'GBP' }], [rec], '2026-10-21', gate);
+  assert.equal(res.regels[0].status, 'ok'); assert.equal(res.regels[0].waarde, 45000);
+  assert.equal(res.regels[1].status, 'ok'); assert.equal(res.regels[1].waarde, 450);
+  assert.equal(P.koersIn({ valuta: 'GBP', koers: { slot: 45 } }, 'EUR'), null);
+  assert.equal(P.koersIn({ valuta: 'GBX', koers: { slot: 4500 } }, 'GBP'), null);
+});

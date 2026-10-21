@@ -5,6 +5,16 @@
   'use strict';
   function afrond(x) { return Math.round(x * 100) / 100; }
 
+  /* Koers van het aandeel in de valuta van de aankoop. Gelijke valuta: de koers zelf. Enige uitzondering: Londen. De app
+     rekent Londense koersen in ponden (GBP), maar een aankoop kan in pence (GBX) zijn ingevoerd: 1 pond = 100 pence is een
+     vaste eenheid, geen wisselkoers. Elk ander verschil: null (er wordt niet omgerekend). */
+  function koersIn(rec, valuta) {
+    var v = String(rec.valuta || '').toUpperCase();
+    if (v === valuta) return rec.koers.slot;
+    if (v === 'GBP' && valuta === 'GBX') return rec.koers.slot * 100;
+    return null;
+  }
+
   function waardeer(posities, aandelen, vandaag, gate) {
     var per = {}, regels = [];
     (aandelen || []).forEach(function (a) { per[a.ticker] = a; });
@@ -15,9 +25,9 @@
       } else {
         var fr = gate.priceFreshness(rec.koers.datum, vandaag);
         if (!fr.fresh) { r.status = 'verouderd'; r.reden = fr.reason; }
-        else if (String(rec.valuta || '').toUpperCase() !== p.valuta) { r.status = 'valuta'; r.reden = 'Koers staat in ' + (rec.valuta || 'onbekende valuta') + ', uw aankoop in ' + p.valuta + '. Er wordt niet omgerekend.'; }
+        else if (koersIn(rec, p.valuta) === null) { r.status = 'valuta'; r.reden = 'Koers staat in ' + (rec.valuta || 'onbekende valuta') + ', uw aankoop in ' + p.valuta + '. Er wordt niet omgerekend.'; }
         else {
-          r.waarde = afrond(p.aantal * rec.koers.slot); r.winst = afrond(r.waarde - kosten); r.pct = kosten > 0 ? Math.round((r.waarde - kosten) / kosten * 1000) / 10 : null;
+          r.waarde = afrond(p.aantal * koersIn(rec, p.valuta)); r.winst = afrond(r.waarde - kosten); r.pct = kosten > 0 ? Math.round((r.waarde - kosten) / kosten * 1000) / 10 : null;
         }
       }
       regels.push(r);
@@ -58,11 +68,11 @@
     if (!rec || !rec.koers || typeof rec.koers.slot !== 'number' || !(rec.koers.slot > 0)) { uit.status = 'geen_koers'; uit.reden = 'Geen koers beschikbaar.'; return uit; }
     var fr = gate.priceFreshness(rec.koers.datum, vandaag);
     if (!fr.fresh) { uit.status = 'verouderd'; uit.reden = fr.reason; return uit; }
-    if (String(rec.valuta || '').toUpperCase() !== s.valuta) { uit.status = 'valuta'; uit.reden = 'De koers staat nu in een andere valuta dan toen.'; return uit; }
-    uit.status = 'ok'; uit.pct = Math.round((rec.koers.slot / s.koers - 1) * 1000) / 10;
+    if (koersIn(rec, s.valuta) === null) { uit.status = 'valuta'; uit.reden = 'De koers staat nu in een andere valuta dan toen.'; return uit; }
+    uit.status = 'ok'; uit.pct = Math.round((koersIn(rec, s.valuta) / s.koers - 1) * 1000) / 10;
     return uit;
   }
 
-  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg };
+  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Portefeuille = api;
 })(typeof self !== 'undefined' ? self : this);
