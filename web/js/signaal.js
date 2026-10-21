@@ -43,23 +43,23 @@
   function piotroski(jr) {
     var l = jr[jr.length - 1], v = jr[jr.length - 2];
     if (!l || !v || l.year - v.year !== 1) return null;
-    var punten = [], roa = function (j) { return pos(j.total_assets) && num(j.net_income) ? j.net_income / j.total_assets : null; };
-    function toets(a, b, ok) { if (a != null && b != null) punten.push(ok(a, b) ? 1 : 0); }
-    toets(roa(l), 0, function (x) { return x > 0; });
-    toets(num(l.operating_cash_flow) ? l.operating_cash_flow : null, 0, function (x) { return x > 0; });
-    toets(roa(l), roa(v), function (x, y) { return x > y; });
-    toets(num(l.operating_cash_flow) && num(l.net_income) ? l.operating_cash_flow : null, num(l.net_income) ? l.net_income : null, function (x, y) { return x > y; });
+    var lijst = [], niet = [], roa = function (j) { return pos(j.total_assets) && num(j.net_income) ? j.net_income / j.total_assets : null; };
+    function toets(naam, a, b, ok) { if (a != null && b != null) lijst.push({ naam: naam, ok: ok(a, b) ? 1 : 0 }); else niet.push(naam); }
+    toets('Winst is positief', roa(l), 0, function (x) { return x > 0; });
+    toets('Operationele kasstroom is positief', num(l.operating_cash_flow) ? l.operating_cash_flow : null, 0, function (x) { return x > 0; });
+    toets('Rendement op bezittingen steeg', roa(l), roa(v), function (x, y) { return x > y; });
+    toets('Kasstroom hoger dan winst (kwaliteit van de winst)', num(l.operating_cash_flow) && num(l.net_income) ? l.operating_cash_flow : null, num(l.net_income) ? l.net_income : null, function (x, y) { return x > y; });
     var lev = function (j) { return pos(j.total_assets) && num(j.long_term_debt) ? j.long_term_debt / j.total_assets : null; };
-    toets(lev(l), lev(v), function (x, y) { return x < y || (x === 0 && y === 0); });
+    toets('Langlopende schuld daalde (ten opzichte van bezittingen)', lev(l), lev(v), function (x, y) { return x < y || (x === 0 && y === 0); });
     var cr = function (j) { return pos(j.current_liabilities) && pos(j.current_assets) ? j.current_assets / j.current_liabilities : null; };
-    toets(cr(l), cr(v), function (x, y) { return x > y; });
-    toets(pos(l.shares_diluted) ? l.shares_diluted : null, pos(v.shares_diluted) ? v.shares_diluted : null, function (x, y) { return x <= y * 1.005; });
+    toets('Liquiditeit (vlottende activa / kortlopende schuld) steeg', cr(l), cr(v), function (x, y) { return x > y; });
+    toets('Geen nieuwe aandelen uitgegeven', pos(l.shares_diluted) ? l.shares_diluted : null, pos(v.shares_diluted) ? v.shares_diluted : null, function (x, y) { return x <= y * 1.005; });
     var gm = function (j) { return pos(j.sales) && num(j.gross_profit) ? j.gross_profit / j.sales : null; };
-    toets(gm(l), gm(v), function (x, y) { return x > y; });
+    toets('Brutomarge steeg', gm(l), gm(v), function (x, y) { return x > y; });
     var om = function (j) { return pos(j.sales) && pos(j.total_assets) ? j.sales / j.total_assets : null; };
-    toets(om(l), om(v), function (x, y) { return x > y; });
-    if (punten.length < 6) return null;                       // te weinig toetsbare punten: geen score
-    return { score: punten.reduce(function (a, b) { return a + b; }, 0), getoetst: punten.length };
+    toets('Omzet per euro bezittingen steeg', om(l), om(v), function (x, y) { return x > y; });
+    if (lijst.length < 6) return null;                        // te weinig toetsbare punten: geen score
+    return { score: lijst.reduce(function (a, b) { return a + b.ok; }, 0), getoetst: lijst.length, lijst: lijst, niet: niet, jaar: l.year, vorig: v.year };
   }
   function altman(c) {
     var l = c.laatste, a = l && l.total_assets, n = aandelen(l);
@@ -160,6 +160,59 @@
     { id: 'sector', groep: 'kwalitatief', naam: 'Sectoruitzicht (uw beoordeling)', gewicht: 4, bron: 'eigen', beoordeling: { label: 'Uitzicht van de sector', waar: 'Groeit de markt, verandert de technologie, hoe is de regelgeving?' }, f: function (c) { return beoordelingScore(c, 'sector'); } },
     { id: 'risico', groep: 'kwalitatief', naam: 'Risico’s en ESG (uw beoordeling)', gewicht: 4, bron: 'eigen', beoordeling: { label: 'Risico’s (hoe gunstig: 5 = weinig risico)', waar: 'Rechtszaken, afhankelijkheid van één klant of land, milieu en sociale risico’s.' }, f: function (c) { return beoordelingScore(c, 'risico'); } }
   ];
+
+  /* Uitleg per methode voor het uitklapvenster: wat het meet, hoe het scoort en welke cijfers erachter zitten. */
+  function mld(x) { if (!num(x)) return '–'; var a = Math.abs(x), t = a >= 1e9 ? g1(a / 1e9) + ' mld' : a >= 1e6 ? g1(a / 1e6) + ' mln' : String(Math.round(a)); return (x < 0 ? '−' : '') + t; }
+  var INFO = {
+    trend50: ['Vergelijkt de koers met het gemiddelde van de laatste 50 handelsdagen. Een koers boven dat gemiddelde wijst op een stijgende korte trend.', 'Boven het gemiddelde: licht gunstig. Eronder: licht ongunstig.', 'Een verse koers en het 50-daags gemiddelde.'],
+    trend200: ['Vergelijkt de koers met het gemiddelde van 200 handelsdagen: de trend op lange termijn.', 'Boven het gemiddelde: gunstig. Eronder: ongunstig.', 'Een verse koers en het 200-daags gemiddelde.'],
+    rsi: ['De RSI meet hoe snel de koers de laatste 14 dagen is gestegen of gedaald (0 tot 100). Een zeer lage waarde kan duiden op overdreven verkoop, een zeer hoge op overdreven koop.', 'Onder 30: licht gunstig. Boven 70: licht ongunstig. Ertussen: neutraal.', 'Een verse koers met RSI.'],
+    bereik: ['Waar de koers nu staat tussen de laagste en hoogste koersen van de afgelopen jaren, volgens de NAIC-methode. Onderin het bereik is er meer opwaarts dan neerwaarts potentieel.', 'Onderste derde: gunstig. Bovenste derde: ongunstig. Midden: neutraal.', 'Koershistorie van jaren en een verse koers.'],
+    omzetgroei: ['Hoe snel de omzet gemiddeld per jaar groeide over de beschikbare jaren (samengestelde groei).', 'Vanaf 8% per jaar: gunstig. 3 tot 8%: licht gunstig. 0 tot 3%: neutraal. Krimp: ongunstig.', 'Minstens 4 jaar omzet.'],
+    epsgroei: ['Hoe snel de winst per aandeel gemiddeld per jaar groeide, gecorrigeerd voor aandelensplitsingen. Dit is het hart van de NAIC-methode.', 'Vanaf 10% per jaar: gunstig. 4 tot 10%: licht gunstig. 0 tot 4%: neutraal. Daling: ongunstig.', 'Minstens 4 jaar winst per aandeel.'],
+    epsstabiel: ['In hoeveel jaren de winst per aandeel hoger was dan het jaar ervoor. Regelmatige groei is betrouwbaarder dan één uitschieter.', 'In minstens 80% van de jaren gestegen: gunstig. 60 tot 80%: licht gunstig. 40 tot 60%: neutraal. Minder: ongunstig.', 'Minstens 4 jaar winst per aandeel.'],
+    nettomarge: ['Welk deel van de omzet als nettowinst overblijft. Een hoge marge wijst op prijskracht of lage kosten.', 'Vanaf 15%: gunstig. 8 tot 15%: licht gunstig. 3 tot 8%: neutraal. 0 tot 3%: licht ongunstig. Verlies: ongunstig.', 'Omzet en nettowinst van het laatste jaar.'],
+    roe: ['Hoeveel winst het bedrijf maakt op het geld van de aandeelhouders (eigen vermogen). Niet gebruikt voor banken.', 'Vanaf 15%: gunstig. 10 tot 15%: licht gunstig. 5 tot 10%: neutraal. 0 tot 5%: licht ongunstig. Verlies: ongunstig.', 'Nettowinst en eigen vermogen van het laatste jaar.'],
+    fcf: ['Vrije kasstroom is wat overblijft na investeringen: kasstroom uit bedrijfsactiviteiten min investeringen in vaste activa, als percentage van de omzet. Niet gebruikt voor banken.', 'Vanaf 8% van de omzet: gunstig. 3 tot 8%: licht gunstig. 0 tot 3%: neutraal. Negatief: ongunstig.', 'Kasstroom, investeringen en omzet van het laatste jaar.'],
+    schuld: ['Hoeveel jaren vrije kasstroom nodig zijn om de langlopende schuld af te lossen. Niet gebruikt voor banken.', 'Onder 2 jaar: gunstig. 2 tot 4: licht gunstig. 4 tot 7: neutraal. Daarboven of geen positieve kasstroom: ongunstig. Geen schuld: gunstig.', 'Langlopende schuld, kasstroom en investeringen.'],
+    kw: ['Hoeveel u betaalt voor één euro winst: de koers gedeeld door de winst per aandeel. Lager is goedkoper, maar een laag getal kan ook een reden hebben.', 'Onder 12: gunstig. 12 tot 18: licht gunstig. 18 tot 25: neutraal. 25 tot 40: licht ongunstig. Boven 40 of geen winst: ongunstig.', 'Een verse koers in dezelfde valuta als de winst, en de winst per aandeel van het laatste jaar.'],
+    piotroski: ['De Piotroski F-score toetst negen eenvoudige punten over winstgevendheid, schuld en efficiëntie, door dit jaar met het vorige te vergelijken. Elk punt dat klopt telt voor 1. Een hoge score wijst op een financieel gezond bedrijf.', 'Minstens 78% van de toetsbare punten: gunstig. 56 tot 78%: licht gunstig. 33 tot 56%: neutraal. Daaronder: ongunstig. Kunnen minder dan 6 punten getoetst worden, dan telt de methode niet mee.', 'Twee opeenvolgende jaren met winst, activa, schuld en kasstroom; minstens 6 punten moeten toetsbaar zijn.'],
+    altman: ['De Altman Z-score combineert vijf kentallen tot één getal dat aangeeft hoe groot de kans op financiële problemen is. Bedoeld voor industriële bedrijven; niet gebruikt voor banken.', 'Z vanaf 2,99: veilig gebied (gunstig). 1,81 tot 2,99: grijs gebied (neutraal). Eronder: risicogebied (ongunstig).', 'Activa, schulden, ingehouden winst, bedrijfsresultaat en omzet, plus een verse koers en het aantal aandelen.'],
+    magic: ['De Magic Formula van Joel Greenblatt zoekt bedrijven die tegelijk goedkoop zijn (winst ten opzichte van de bedrijfswaarde) en rendabel (rendement op het gebruikte kapitaal). Niet gebruikt voor banken.', 'Beide delen krijgen een score (winst/bedrijfswaarde: gunstig vanaf 10%; rendement op kapitaal: gunstig vanaf 20%); de score is het gemiddelde.', 'Bedrijfsresultaat, activa, schulden, kas, een verse koers en het aantal aandelen.'],
+    dividend: ['Het jaarlijkse dividend als percentage van de koers.', 'Vanaf 3%: gunstig. 1,5 tot 3%: licht gunstig. Daaronder: licht neutraal. Geen dividend: neutraal.', 'Dividend per aandeel van het laatste jaar en een verse koers.'],
+    momentum: ['Hoeveel de koers de afgelopen ongeveer 6 maanden is gestegen of gedaald. Wat recent steeg, stijgt vaak nog even door (momentumeffect).', 'Boven +10%: gunstig. 0 tot 10%: licht gunstig. 0 tot −10%: licht ongunstig. Lager: ongunstig.', 'Een koersreeks van minstens 100 handelsdagen.'],
+    volatiliteit: ['Hoe sterk de koers schommelt (jaarlijkse standaardafwijking van de dagelijkse rendementen). Rustiger aandelen zijn voor de meeste beleggers prettiger.', 'Onder 20% per jaar: gunstig. 20 tot 30%: licht gunstig. 30 tot 45%: neutraal. Boven 45%: ongunstig.', 'Een koersreeks van minstens 100 handelsdagen.'],
+    fisher: ['Uw antwoorden op de 15 vragen van Philip Fisher over de kwaliteit van een bedrijf (tabblad Verdiepen).', 'Ja telt positief, nee negatief, onzeker telt niet mee. Het gewicht groeit met het aantal beantwoorde vragen.', 'Uw antwoorden in de checklist.'],
+    management: ['Uw eigen oordeel over het management.', 'Score 1 tot 5: 3 is neutraal, 5 uitstekend, 1 slecht.', 'Uw beoordeling onder Verdiepen.'],
+    moat: ['Uw oordeel over de concurrentiepositie: hoe moeilijk is het voor anderen om dit bedrijf na te doen?', 'Score 1 tot 5: 3 is neutraal.', 'Uw beoordeling onder Verdiepen.'],
+    sector: ['Uw oordeel over het uitzicht van de sector.', 'Score 1 tot 5: 3 is neutraal.', 'Uw beoordeling onder Verdiepen.'],
+    risico: ['Uw oordeel over de risico’s (5 is weinig risico).', 'Score 1 tot 5: 3 is neutraal.', 'Uw beoordeling onder Verdiepen.']
+  };
+  function jaarRegel(c, veld) { return c.jr.filter(function (j) { return num(j[veld]); }); }
+  var DETAIL = {
+    trend50: function (c) { return c.koersOk && pos(c.k.sma50) ? ['Koers: ' + g1(c.k.slot), 'Gemiddelde 50 dagen: ' + g1(c.k.sma50)] : null; },
+    trend200: function (c) { return c.koersOk && pos(c.k.sma200) ? ['Koers: ' + g1(c.k.slot), 'Gemiddelde 200 dagen: ' + g1(c.k.sma200)].concat(pos(c.k.sma50) ? ['Gemiddelde 50 dagen: ' + g1(c.k.sma50)] : []) : null; },
+    rsi: function (c) { return c.koersOk && num(c.k.rsi14) ? ['RSI (14 dagen): ' + g1(c.k.rsi14), 'Onder 30 = sterk gedaald, boven 70 = sterk gestegen'] : null; },
+    bereik: function (c) { var b = c.bereik; return b ? ['Plek in het bereik: ' + b.positiePct + '%', b.verhouding != null ? 'Opwaarts tegen neerwaarts: ' + g1(b.verhouding) + ' : 1' : null].filter(Boolean) : null; },
+    omzetgroei: function (c) { var j = c.jr; return j.length ? ['Omzet ' + j[0].year + ': ' + mld(j[0].sales), 'Omzet ' + j[j.length - 1].year + ': ' + mld(j[j.length - 1].sales), 'Groei per jaar: ' + (c.groeiOmzet == null ? '–' : pct(c.groeiOmzet))] : null; },
+    epsgroei: function (c) { var j = c.jr; return j.length ? ['Winst per aandeel ' + j[0].year + ': ' + g1(j[0].comparable_eps), 'Winst per aandeel ' + j[j.length - 1].year + ': ' + g1(j[j.length - 1].comparable_eps), 'Groei per jaar: ' + (c.groeiEps == null ? '–' : pct(c.groeiEps))] : null; },
+    epsstabiel: function (c) { var v = jaarRegel(c, 'comparable_eps'); return v.length ? v.map(function (j, i) { return j.year + ': ' + g1(j.comparable_eps) + (i ? (j.comparable_eps > v[i - 1].comparable_eps ? ' ▲' : ' ▼') : ''); }) : null; },
+    nettomarge: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Omzet: ' + mld(l.sales), 'Nettowinst: ' + mld(l.net_income)] : null; },
+    roe: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Nettowinst: ' + mld(l.net_income), 'Eigen vermogen: ' + mld(l.equity)] : null; },
+    fcf: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Kasstroom uit bedrijf: ' + mld(l.operating_cash_flow), 'Investeringen: ' + mld(Math.abs(l.capex || 0)), 'Omzet: ' + mld(l.sales)] : null; },
+    schuld: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Langlopende schuld: ' + mld(l.long_term_debt), 'Vrije kasstroom: ' + mld((l.operating_cash_flow || 0) - Math.abs(l.capex || 0))] : null; },
+    kw: function (c) { var l = c.laatste; return l && c.koersOk ? ['Koers: ' + g1(c.k.slot) + ' ' + (c.k.valuta || ''), 'Winst per aandeel ' + l.year + ': ' + g1(l.comparable_eps)] : null; },
+    piotroski: function (c) { var r = piotroski(c.jr); if (!r) return null;
+      return ['Vergelijking ' + r.jaar + ' met ' + r.vorig + ':'].concat(r.lijst.map(function (x) { return (x.ok ? '✓ ' : '✗ ') + x.naam; })).concat(r.niet.map(function (n) { return '? ' + n + ' (gegevens ontbreken)'; })); },
+    altman: function (c) { var l = c.laatste, a = l && l.total_assets, n = aandelen(l); if (!l || !pos(a) || !pos(n) || !c.koersOk) return null;
+      return ['Werkkapitaal / activa: ' + g1((l.current_assets - l.current_liabilities) / a), 'Ingehouden winst / activa: ' + g1(l.retained_earnings / a), 'Bedrijfsresultaat / activa: ' + g1(l.operating_income / a), 'Beurswaarde / totale schulden: ' + g1(c.k.slot * n / l.total_liabilities), 'Omzet / activa: ' + g1(l.sales / a)]; },
+    magic: function (c) { var l = c.laatste, m = magic(c); if (!l || !m) return null; var n = aandelen(l);
+      return ['Bedrijfsresultaat: ' + mld(l.operating_income), 'Bedrijfswaarde (beurswaarde + schuld − kas): ' + mld(c.k.slot * n + l.long_term_debt - l.cash), 'Gebruikt kapitaal (activa − kortlopende schuld − kas): ' + mld(l.total_assets - l.current_liabilities - l.cash)]; },
+    dividend: function (c) { var l = c.laatste; return l && c.koersOk && num(l.dividend_ps) ? ['Dividend per aandeel ' + l.year + ': ' + g1(l.dividend_ps), 'Koers: ' + g1(c.k.slot)] : null; },
+    momentum: function (c) { var r = c.reeks; return r.length >= 100 ? ['Koers aan het begin: ' + g1(r[0]), 'Koers nu: ' + g1(r[r.length - 1]), 'Aantal handelsdagen: ' + r.length] : null; },
+    volatiliteit: function (c) { return c.reeks.length >= 100 ? ['Gebaseerd op ' + c.reeks.length + ' handelsdagen'] : null; },
+    fisher: function (c) { var v = c.check; return v ? ['Ja: ' + v.ja, 'Nee: ' + v.nee, 'Onzeker: ' + (v.onzeker || 0), 'Totaal aantal vragen: ' + v.totaal] : null; }
+  };
   /* Uw eigen beoordeling, 1 (slecht) tot 5 (uitstekend); 3 is neutraal. */
   function beoordelingScore(c, id) {
     var x = c.eigen && c.eigen.scores ? c.eigen.scores[id] : null;
@@ -203,13 +256,14 @@
       totaal += m.gewicht;
       var groep = perGroep[m.groep] = perGroep[m.groep] || { naam: GROEPEN[m.groep], totaal: 0, aanwezig: 0, scoreSom: 0, wegSom: 0 };
       groep.totaal += m.gewicht;
-      var item = { id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, score: null, kwaliteit: null, tekst: null, invoer: m.invoer || null, beoordeling: m.beoordeling || null };
+      var inf = INFO[m.id] || [], item = { id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, score: null, kwaliteit: null, tekst: null, invoer: m.invoer || null, beoordeling: m.beoordeling || null, wat: inf[0] || null, schaal: inf[1] || null, nodig: inf[2] || null, detail: null };
       if (r && num(r.score) && q && KWALITEIT[q]) {
         var w = m.gewicht * (r.deel == null ? 1 : r.deel), eff = w * KWALITEIT[q].factor;
         aanwezig += w; wegSom += eff; scoreSom += r.score * eff;
         groep.aanwezig += w; groep.wegSom += eff; groep.scoreSom += r.score * eff;
         perKwaliteit[q] = (perKwaliteit[q] || 0) + w;
         item.aanwezig = true; item.score = r.score; item.kwaliteit = q; item.tekst = r.tekst;
+        try { item.detail = q === 'eigen' && m.bron !== 'eigen' ? null : (DETAIL[m.id] ? DETAIL[m.id](c) : null); } catch (e2) { item.detail = null; }
       }
       methoden.push(item);
     });

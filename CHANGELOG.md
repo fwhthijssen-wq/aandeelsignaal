@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.21-beta.45
+- **Methode aanklikken:** in het Totaalbeeld (en bij 'Wat ontbreekt er nog') opent elke methode een venster met: wat het meet, de cijfers van dit aandeel die erachter zitten, hoe het wordt beoordeeld (drempels), het gewicht en de betrouwbaarheid. Bij Piotroski ziet u alle 9 punten met ✓, ✗ of ? (gegevens ontbreken). Bij een ontbrekende methode staat wat er nodig is.
+
 ## 2026.10.21-beta.44
 - **Hulp per pagina:** een vraagteken in de kop, naast Instellingen, legt uit wat u op precies deze pagina ziet (Start, Zoeken, Volglijst, Portefeuille, Vergelijken, Instellingen en elk tabblad van een aandeel). De algemene uitleg en woordenlijst staan nog achter 'Alle uitleg en begrippen'. Het menu onderaan heeft daardoor vier onderdelen. Nieuw: `web/js/hulp.js`.
 

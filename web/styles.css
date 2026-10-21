@@ -185,3 +185,5 @@ nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }
 
 .hulp-blad { max-height: 85vh; overflow-y: auto; } .hulp-blad .knoppen { position: sticky; bottom: -22px; margin-bottom: -22px; background: var(--surface); padding: 8px 0 22px; }
 .hulp-blad .punten { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.meth-knop { all: unset; cursor: pointer; font-weight: 600; color: var(--acc); text-decoration: underline dotted; text-underline-offset: 3px; } .meth-knop:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; border-radius: 4px; }
+.hulp-blad h3 { margin: 6px 0 0; font-size: 1rem; }

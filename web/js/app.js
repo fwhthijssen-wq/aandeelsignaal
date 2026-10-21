@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.44';
+  var APP_VERSIE = '2026.10.21-beta.45';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -35,16 +35,17 @@
     return b.oordeel ? '<span class="chip" data-oordeel="' + b.oordeel + '">' + OORDEEL[b.oordeel] + ' · ' + b.dekking + '% · ' + h(b.zekerheid) + '</span>' : '<span class="chip wacht" data-oordeel="geen">Te weinig gegevens · ' + b.dekking + '%</span>';
   }
   function tabelOordeel(rec) { var b = signaalVoor(rec); return b.dekking > 0 ? ' ' + oordeelChip(b) : ''; }
+  var laatsteBeoordeling = null;
   function signaalKaart(rec) {
-    var b = signaalVoor(rec), mm = b.methoden.filter(function (m) { return m.aanwezig; });
+    var b = laatsteBeoordeling = signaalVoor(rec), mm = b.methoden.filter(function (m) { return m.aanwezig; });
     var kop = b.oordeel ? '<b style="font:700 1.4rem ui-rounded,system-ui">' + OORDEEL[b.oordeel] + '</b> <span class="zacht">voorlopig oordeel · ' + h(b.zekerheid) + '</span>' : '<b>Nog geen oordeel</b> <span class="zacht">de dekking is lager dan uw minimum van ' + b.minDekking + '%</span>';
     var s = '<div class="kaart-plat" data-signaal><div class="rij-kop"><h2>Totaalbeeld</h2>' + oordeelChip(b) + '</div><p>' + kop + '</p>' + dekkingMeter(b);
     s += '<div class="schuif"><table class="vgl"><thead><tr><th>Methode</th><th>Score</th><th>Bron</th></tr></thead><tbody>' + b.groepen.map(function (gr) {
       var rijen = mm.filter(function (m) { return m.groep === gr.id; });
       return '<tr><th scope="row" colspan="3" style="text-align:left">' + h(gr.naam) + ' <span class="zacht">· ' + gr.dekking + '% ingevuld' + (gr.score != null ? ' · ' + (gr.score >= 0.25 ? 'gunstig' : gr.score <= -0.25 ? 'ongunstig' : 'neutraal') : '') + '</span></th></tr>' +
-        rijen.map(function (m) { return '<tr><td>' + h(m.naam) + '<br><span class="zacht">' + h(m.tekst) + '</span></td><td>' + (m.score > 0 ? '＋' : m.score < 0 ? '−' : '＝') + '</td><td class="zacht">' + h(Signaal.KWALITEIT[m.kwaliteit].naam) + '</td></tr>'; }).join('');
+        rijen.map(function (m) { return '<tr><td><button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + ' <span aria-hidden="true">ⓘ</span></button><br><span class="zacht">' + h(m.tekst) + '</span></td><td>' + (m.score > 0 ? '＋' : m.score < 0 ? '−' : '＝') + '</td><td class="zacht">' + h(Signaal.KWALITEIT[m.kwaliteit].naam) + '</td></tr>'; }).join('');
     }).join('') + '</tbody></table></div>';
-    if (b.ontbreekt.length) s += '<details><summary>Wat ontbreekt er nog (' + b.ontbreekt.length + ')</summary><ul class="punten">' + b.ontbreekt.map(function (n) { return '<li>' + h(n) + '</li>'; }).join('') + '</ul><p class="zacht">Eigen kennis toevoegen kan via het tabblad Check (kwaliteitscheck).</p></details>';
+    if (b.ontbreekt.length) s += '<details><summary>Wat ontbreekt er nog (' + b.ontbreekt.length + ')</summary><ul class="punten">' + b.methoden.filter(function (x) { return !x.aanwezig; }).map(function (m) { return '<li><button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + ' <span aria-hidden="true">ⓘ</span></button></li>'; }).join('') + '</ul><p class="zacht">Eigen kennis toevoegen kan via het tabblad Check (kwaliteitscheck).</p></details>';
     b.verouderd.forEach(function (t) { s += '<p class="zacht" data-verouderd>⚠ ' + h(t) + '</p>'; });
     return s + '<p class="zacht">Voorlopig oordeel op basis van de cijfers die er zijn; geen koersdoel en geen advies. Het wordt zekerder met meer en betere gegevens.</p></div>';
   }
@@ -650,6 +651,29 @@
       route();
     });
   }
+
+  function toonMethode(id) {
+    var m = laatsteBeoordeling && laatsteBeoordeling.methoden.filter(function (x) { return x.id === id; })[0];
+    if (!m) return;
+    var vorige = document.activeElement, K = Signaal.KWALITEIT;
+    var oordeel = !m.aanwezig ? 'Ontbreekt: telt niet mee' : m.score >= 0.25 ? 'Gunstig' : m.score <= -0.25 ? 'Ongunstig' : 'Neutraal';
+    var delen = ['<h2 id="mt-t">' + h(m.naam) + '</h2>', '<p><b>' + h(oordeel) + '</b>' + (m.aanwezig ? ' · score ' + getal(m.score, 2) + ' (van −1 tot +1)' : '') + '</p>'];
+    if (m.tekst) delen.push('<p>' + h(m.tekst) + '</p>');
+    if (m.wat) delen.push('<h3>Wat meet dit?</h3><p>' + h(m.wat) + '</p>');
+    if (m.detail && m.detail.length) delen.push('<h3>Dit zijn de cijfers voor dit aandeel</h3><ul class="punten">' + m.detail.map(function (x) { return '<li>' + h(x) + '</li>'; }).join('') + '</ul>');
+    if (m.schaal) delen.push('<h3>Hoe wordt het beoordeeld?</h3><p>' + h(m.schaal) + '</p>');
+    if (!m.aanwezig && m.nodig) delen.push('<h3>Wat is er nodig?</h3><p>' + h(m.nodig) + '</p>');
+    delen.push('<h3>Gewicht en betrouwbaarheid</h3><p>Gewicht ' + m.gewicht + ' van de ' + Signaal.METHODEN.reduce(function (a, x) { return a + x.gewicht; }, 0) + '.' + (m.aanwezig ? ' Bron: ' + h(K[m.kwaliteit].naam) + ' (telt voor ' + Math.round(K[m.kwaliteit].factor * 100) + '%).' : '') + '</p>');
+    delen.push('<p class="zacht">Eén methode zegt weinig; het oordeel komt uit alle methoden samen.</p>');
+    $laag.innerHTML = '<div class="intro-achter" id="mt-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="mt-t">' + delen.join('') + '<div class="knoppen"><button class="knop" id="mt-sluit">Sluiten</button></div></div></div>';
+    function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
+    function toets(e) { if (e.key === 'Escape') sluit(); }
+    document.addEventListener('keydown', toets);
+    document.getElementById('mt-sluit').addEventListener('click', sluit);
+    document.getElementById('mt-achter').addEventListener('click', function (e) { if (e.target.id === 'mt-achter') sluit(); });
+    document.getElementById('mt-sluit').focus();
+  }
+  document.addEventListener('click', function (e) { var k = e.target.closest ? e.target.closest('[data-methode]') : null; if (k) toonMethode(k.getAttribute('data-methode')); });
 
   function toonPaginaHulp() {
     var x = Hulp.voor(Hulp.sleutelVoorHash(location.hash)), vorige = document.activeElement;

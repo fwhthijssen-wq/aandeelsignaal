@@ -259,6 +259,23 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('.hulp-blad').count(), 0)
         self.assertEqual(self.fouten, [])
 
+    def test_methode_aanklikken_toont_wat_erachter_zit(self):
+        pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
+        knoppen = pg.locator('[data-signaal] .meth-knop')
+        self.assertGreaterEqual(knoppen.count(), 3)
+        pg.click('[data-signaal] .meth-knop >> nth=0')
+        tekst = pg.locator('.hulp-blad').inner_text()
+        for kop in ('Wat meet dit?', 'Hoe wordt het beoordeeld?', 'Gewicht en betrouwbaarheid'):
+            self.assertIn(kop, tekst)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pg.keyboard.press('Escape')
+        self.assertEqual(pg.locator('.hulp-blad').count(), 0)
+        pg.locator('[data-signaal] details summary').click()
+        pg.click('[data-signaal] details .meth-knop >> nth=0')
+        self.assertIn('Wat is er nodig?', pg.locator('.hulp-blad').inner_text())
+        pg.click('#mt-sluit')
+        self.assertEqual(self.fouten, [])
+
     def test_totaalbeeld_detail_dashboard_en_minimum_in_instellingen(self):
         pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
         kaart = pg.locator('[data-signaal]')

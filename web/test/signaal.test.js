@@ -208,3 +208,16 @@ test('aantal aandelen valt terug op winst/EPS alleen als het jaar onderbouwd is'
   assert.equal(meth(S.beoordeel(zonder({ eps_check: null }), O()), 'magic').aanwezig, false);
   assert.equal(meth(S.beoordeel(zonder({ reported_eps: 0 }), O()), 'magic').aanwezig, false);
 });
+
+test('uitklapinfo: uitleg, schaal en onderliggende cijfers per methode; Piotroski toont alle punten', () => {
+  const b = S.beoordeel(metJaren([J(2024), J25()]), O());
+  for (const m of b.methoden) { assert.ok(m.wat && m.schaal && m.nodig, m.id); }
+  const p = meth(b, 'piotroski');
+  assert.ok(p.detail.some((x) => /^✓ Winst is positief/.test(x)));
+  assert.equal(p.detail.filter((x) => /^[✓✗?] /.test(x)).length, 9);
+  const zonderGP = S.beoordeel(metJaren([J(2024, { gross_profit: undefined }), J25({ gross_profit: undefined })]), O());
+  assert.ok(meth(zonderGP, 'piotroski').detail.some((x) => /^\? Brutomarge steeg \(gegevens ontbreken\)/.test(x)));
+  assert.equal(meth(b, 'altman').detail.length, 5);
+  assert.ok(meth(b, 'kw').detail[1].includes('2025'));
+  assert.equal(S.beoordeel(alleen(rec()), O()).methoden.find((m) => m.id === 'piotroski').detail, null);   // ontbrekend: geen cijfers
+});
