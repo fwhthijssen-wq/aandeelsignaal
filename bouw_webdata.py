@@ -383,7 +383,7 @@ def maak_status(bestand):
                     'toelichting': g.get('eps_toelichting'),
                     'waarschuwingen': g.get('waarschuwingen'), 'diagnose': g.get('diagnose'),
                     'extra_diagnose': g.get('extra_diagnose')})
-    return {'gemaakt': bestand.get('gemaakt'), 'aandelen': uit}
+    return {'gemaakt': bestand.get('gemaakt'), 'yahoo_vergelijk': bestand.get('yahoo_vergelijk'), 'aandelen': uit}
 
 
 def schrijf(bestand, map_=UITVOER):
@@ -445,7 +445,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         from praktijkcontrole_sec_esef import summarize_sec as sec_samenvatting
@@ -460,7 +460,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     vandaag = date.today().isoformat()
     records = []
     vorige = vorige or {}
-    for meta in CATALOGUS:
+    from yahoo_jaren import gegevens_uit_yahoo, vergelijk as yahoo_vergelijk, samenvoegen as yahoo_samenvoegen, haal_yahoo
+    yahoo_ophalen = yahoo_ophalen if yahoo_ophalen is not None else haal_yahoo
+    vergelijking, vergeleken_bedrijven = {}, 0
+    for nr, meta in enumerate(CATALOGUS):
         ticker = meta[0]
         oud = vorige.get(ticker)
         if _hergebruik(oud, vandaag):
@@ -497,8 +500,30 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         if not gegevens.get('jaren') and oud and oud.get('jaren') and not oud.get('fout'):
             gegevens = dict(oud)                      # ophalen mislukt: de laatste goede jaarcijfers blijven staan, met hun eigen datum
             gegevens['uit_vorige_run'] = True
-        if gegevens is oud:
-            pass                                      # hergebruikt: extra cijfers zitten er al in
+        yahoo_ruw = None
+        if not gegevens.get('jaren'):
+            # Geen officiële bron: indicatieve jaarcijfers van Yahoo Finance (nooit het label, wel een voorlopig oordeel).
+            try:
+                yahoo_ruw = yahoo_ophalen(ticker)
+                yg = gegevens_uit_yahoo(yahoo_ruw, vandaag)
+                if yg.get('jaren'):
+                    gegevens = yg
+                else:
+                    gegevens.setdefault('yahoo_fout', yg.get('fout'))
+            except Exception as exc:
+                gegevens.setdefault('yahoo_fout', f'{type(exc).__name__}: {exc}'[:200])
+        elif nr % 4 == 0 and gegevens is not oud and not gegevens.get('uit_vorige_run'):
+            # Steekproef: leg Yahoo naast de officiële cijfers, zodat zichtbaar wordt hoe betrouwbaar Yahoo is.
+            try:
+                from yahoo_jaren import jaren_uit_yahoo
+                ruw = yahoo_ophalen(ticker)
+                if ruw:
+                    yahoo_samenvoegen(vergelijking, yahoo_vergelijk(jaren_uit_yahoo(ruw), gegevens['jaren']))
+                    vergeleken_bedrijven += 1
+            except Exception:
+                pass
+        if gegevens is oud or gegevens.get('bron') == 'Yahoo Finance':
+            pass                                      # hergebruikt of van Yahoo: de extra cijfers zitten er al in
         elif gegevens.get('jaren') and not gegevens.get('uit_vorige_run'):
             try:
                 extra_payload = esef_cf if esef_cf else payload_ophalen(sec_ticker_for_listing(ticker), email)
@@ -507,7 +532,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
                 pass            # extra cijfers ontbreken dan; de rest van de run blijft geldig
-        if gegevens is not oud and not gegevens.get('uit_vorige_run') and heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
+        if gegevens is not oud and not gegevens.get('uit_vorige_run') and gegevens.get('bron') != 'Yahoo Finance' and heeft_sec(ticker) and not esef_cf and (gegevens.get('eps_verified_years') or 0) < 10:
             gegevens['diagnose'] = diagnose(sec_ticker_for_listing(ticker), email)
         koers, punten, dividenden = None, [], []
         if valuta_klopt(meta, valuta_ophalen):
@@ -529,7 +554,9 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 koers['bereik'] = koersbereik(punten)
         pauze()
         records.append(maak_record(meta, koers=koers, gegevens=gegevens))
-    return maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (dagkoersen)')
+    bestand = maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (koersen en indicatieve jaarcijfers)')
+    bestand['yahoo_vergelijk'] = {'bedrijven': vergeleken_bedrijven, 'velden': vergelijking}
+    return bestand
 
 
 HERGEBRUIK_DAGEN = 30

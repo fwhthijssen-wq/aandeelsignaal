@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026.10.21-beta.48
+- **Indicatieve jaarcijfers van Yahoo Finance** voor bedrijven zonder officiële bron (vooral de Duitse): nieuw `yahoo_jaren.py`. Minimaal 4 boekjaren; kenmerk 'Indicatief (Yahoo)' in plaats van 'Bevestigd'; geen NAIC-label, geen koersdoel en een lager gewicht (0,5) in het totaalbeeld. Twijfelgevallen vervallen: winst per aandeel voor een aandelensplitsing, sprongen in de EPS die niet bij de winst passen, onbekende verslagvaluta (dan geen K/W). Banken krijgen een waarschuwing.
+- **Steekproef om Yahoo te toetsen:** bij elk vierde bedrijf met officiële cijfers legt de update de Yahoo-cijfers ernaast. Het resultaat (hoeveel jaren binnen 1% en 5% voor omzet, winst, EPS, kasstroom en eigen vermogen) staat in `status.json` onder `yahoo_vergelijk`.
+
 ## 2026.10.21-beta.47
 - **XOM hersteld:** oorzaak gevonden met de nieuwe diagnose. Exxon is sinds 2026 een holding (ExxonMobil Holdings Corp, CIK 2115436) en de SEC-tickerlijst wijst daarheen, maar die heeft alleen kwartaalcijfers. De jaarverslagen staan bij de oorspronkelijke Exxon Mobil Corp (CIK 34088); de update gebruikt nu die registrant voor XOM.
 

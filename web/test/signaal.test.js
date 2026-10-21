@@ -221,3 +221,17 @@ test('uitklapinfo: uitleg, schaal en onderliggende cijfers per methode; Piotrosk
   assert.ok(meth(b, 'kw').detail[1].includes('2025'));
   assert.equal(S.beoordeel(alleen(rec()), O()).methoden.find((m) => m.id === 'piotroski').detail, null);   // ontbrekend: geen cijfers
 });
+
+test('indicatieve cijfers (Yahoo) tellen mee met gewicht 0,5 en zijn nooit "gecontroleerd"', () => {
+  const g = Object.assign({}, rec().gegevens, { eps_status: null, eps_verified_years: 0, niveau: 'indicatief', jaren: jaren(5) });
+  const b = S.beoordeel(rec({ gegevens: g }), O());
+  assert.equal(b.niveau, 'indicatief');
+  assert.equal(b.kwaliteit.gecontroleerd, 0); assert.equal(b.kwaliteit.jaarverslag, 0);
+  assert.ok(b.kwaliteit.indicatief > 0);
+  assert.ok(b.methoden.find((m) => m.id === 'epsgroei').aanwezig);
+  const gate = G.maakRij(rec({ gegevens: g }), VANDAAG);
+  assert.equal(gate.bevestigd, false); assert.equal(gate.niveau, 'indicatief');
+  const echt = S.beoordeel(rec({ gegevens: Object.assign({}, g, { niveau: 'jaarverslag' }) }), O());
+  assert.ok(echt.score !== null && b.score !== null);
+  assert.ok(S.KWALITEIT.indicatief.factor < S.KWALITEIT.jaarverslag.factor);
+});

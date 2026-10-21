@@ -25,7 +25,7 @@
         uit.verhouding = k.slot > lo ? rond((hi - k.slot) / (k.slot - lo), 1) : null;
       }
     }
-    if (!g || (!rij.bevestigd && rij.niveau !== 'jaarverslag')) return uit;
+    if (!g || (!rij.bevestigd && rij.niveau !== 'jaarverslag' && rij.niveau !== 'indicatief')) return uit;
     var jr = jaren(g), f = jr[0], l = jr[jr.length - 1];
     if (!f || !l || l.year <= f.year) return uit;
     var n = l.year - f.year;

@@ -554,6 +554,21 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('.hulp-blad').count(), 0)
         self.assertEqual(self.fouten, [])
 
+    def test_indicatieve_yahoo_cijfers_zijn_herkenbaar_en_geven_geen_label(self):
+        pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
+        pg.evaluate("""() => { const a = window.AANDEEL_DATA.aandelen.find(x => x.ticker === 'MSFT');
+          a.gegevens = { gecontroleerd_op: '2026-10-21', fout: null, niveau: 'indicatief', bron: 'Yahoo Finance', eps_status: null, eps_verified_years: 0, currencies: [a.valuta], rejected_sources: 0, splits: [], waarschuwingen: [],
+            jaren: [2021, 2022, 2023, 2024, 2025].map((y, i) => ({ year: y, end: y + '-12-31', currency: a.valuta, sales: 1000 + 50 * i, net_income: 100 + 10 * i, reported_eps: 2 + 0.2 * i, comparable_eps: 2 + 0.2 * i, operating_cash_flow: 140, capex: 30, equity: 700 })) }; }""")
+        pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(100)
+        pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-niveau="indicatief"]').count(), 1)
+        self.assertEqual(pg.locator('.chip.ok').count(), 0)                                  # nooit "Bevestigd"
+        self.assertIn('indicatief', pg.inner_text('[data-dekking]').lower())
+        pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-indicatief]').count(), 1)
+        self.assertIn('Yahoo Finance', pg.inner_text('[data-indicatief]'))
+        self.assertEqual(self.fouten, [])
+
     def test_alle_tabs_bereikbaar_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/a/AAPL/samenvatting')

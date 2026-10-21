@@ -12,7 +12,8 @@
   var KWALITEIT = {
     gecontroleerd: { naam: 'gecontroleerd', factor: 1 },   // jaarcijfers met onafhankelijk nagerekende winst per aandeel
     koers: { naam: 'koersdata', factor: 0.9 },             // dagkoersen van één bron
-    jaarverslag: { naam: 'uit jaarverslag', factor: 0.7 },   // officieel jaarverslag, winst per aandeel niet nagerekend
+    jaarverslag: { naam: 'uit jaarverslag', factor: 0.7 },
+    indicatief: { naam: 'indicatief (Yahoo)', factor: 0.5 },   // cijfers van Yahoo Finance, niet nagerekend   // officieel jaarverslag, winst per aandeel niet nagerekend
     eigen: { naam: 'eigen invoer', factor: 0.6 }           // uw eigen antwoorden
   };
   var GROEPEN = { technisch: 'Technische analyse', fundamenteel: 'Fundamentele analyse', kwantitatief: 'Kwantitatief (factoren)', kwalitatief: 'Kwalitatief (uw check)' };
@@ -233,7 +234,7 @@
     var vers = k && gate ? gate.priceFreshness(k.datum, opties.vandaag).fresh : false;
     var jr = jarenVan(g);
     var bevestigd = !!(g && g.eps_status === 'independently_verified' && g.eps_verified_years >= (gate ? gate.REQUIRED_EPS_YEARS : 10) && g.rejected_sources === 0);
-    var niveau = bevestigd ? 'gecontroleerd' : (g && g.niveau === 'jaarverslag' ? 'jaarverslag' : (g && g.eps_status === 'independently_verified' && jr.length >= 5 ? 'jaarverslag' : null));
+    var niveau = bevestigd ? 'gecontroleerd' : (g && g.niveau === 'jaarverslag' ? 'jaarverslag' : g && g.niveau === 'indicatief' ? 'indicatief' : (g && g.eps_status === 'independently_verified' && jr.length >= 5 ? 'jaarverslag' : null));
     var jarenBruikbaar = !!(niveau && jr.length >= 4);
     var f = jr[0], l = jr[jr.length - 1], n = f && l ? l.year - f.year : 0;
     var bank = !!(g && (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }));

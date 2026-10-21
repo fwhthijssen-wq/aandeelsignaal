@@ -63,7 +63,7 @@
       'Jaren waarvan de winst per aandeel niet is nagerekend staan apart, met de reden.',
       'Bij aandelen met cijfers uit een jaarverslag is de winst niet onafhankelijk nagerekend; ze tellen daarom minder zwaar mee.'], null],
     bronnen: ['Aandeel: Bronnen', 'Waar de cijfers vandaan komen en wanneer ze zijn gecontroleerd.', [
-      'Jaarcijfers komen van de SEC (Verenigde Staten) of uit officiële Europese jaarverslagen. Koersen komen van Yahoo Finance.',
+      'Jaarcijfers komen van de SEC (Verenigde Staten) of uit officiële Europese jaarverslagen. Ontbreken die, dan gebruikt de app indicatieve cijfers van Yahoo Finance (het label zegt dat). Koersen komen ook van Yahoo Finance.',
       'Per bron staat de datum van de laatste controle.',
       'Een gegeven zonder bron wordt niet gebruikt.'], null]
   };

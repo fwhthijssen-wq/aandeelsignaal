@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.47';
+  var APP_VERSIE = '2026.10.21-beta.48';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -27,7 +27,7 @@
   }
   function oordeelTekst(x) { return x && x.oordeel ? OORDEEL[x.oordeel] + ' (' + x.dekking + '% dekking)' : 'nog geen oordeel' + (x ? ' (' + x.dekking + '% dekking)' : ''); }
   function dekkingMeter(b) {
-    var K = Signaal.KWALITEIT, delen = ['gecontroleerd', 'jaarverslag', 'koers', 'eigen'].filter(function (q) { return b.kwaliteit[q] > 0; });
+    var K = Signaal.KWALITEIT, delen = ['gecontroleerd', 'jaarverslag', 'indicatief', 'koers', 'eigen'].filter(function (q) { return b.kwaliteit[q] > 0; });
     return '<div class="dekking" data-dekking="' + b.dekking + '"><div class="balk-rij"><span>Dekking</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, b.dekking) + '%"></i></span><b>' + b.dekking + '%</b></div>' +
       '<p class="zacht">' + (delen.length ? delen.map(function (q) { return b.kwaliteit[q] + '% ' + h(K[q].naam); }).join(' · ') : 'Nog geen gegevens') + '. Gecontroleerde gegevens wegen zwaarder.</p></div>';
   }
@@ -88,7 +88,7 @@
   }
 
   function rijen() { var t = vandaag(); return DATA.aandelen.map(function (r) { return Gate.maakRij(r, t); }); }
-  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
+  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief (Yahoo)</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
   function trendTekst(r) {
     if (!r.koersActueel) return r.koersReden ? 'Koers ontbreekt of is verouderd' : '';
     return (r.richting === 'boven' ? 'Boven' : 'Onder') + ' gemiddelde, ' + pct(r.afstandPct);
@@ -276,7 +276,7 @@
   }
 
   /* ---- Vergelijken ---- */
-  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
+  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief (Yahoo)</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
   function schermVergelijk(ta, tb) {
     var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
     var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
@@ -361,6 +361,9 @@
     r(g && g.rejected_sources === 0, g && g.rejected_sources === 0 ? 'Geen bronnen afgewezen' : 'Er zijn bronnen afgewezen of onbekend');
     return '<ul class="vinkjes">' + lst.join('') + '</ul>';
   }
+  function indicatiefUitleg(g) {
+    return '<div class="melding" data-indicatief><b>Indicatieve cijfers van Yahoo Finance</b><span>Voor dit bedrijf is geen officieel jaarverslag beschikbaar in een bron die de app kan lezen. De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen van Yahoo Finance en zijn niet nagerekend. Ze tellen daarom minder zwaar mee in het totaalbeeld, er is geen NAIC-label en geen koersdoel. Twijfelachtige cijfers (zoals winst per aandeel rond een aandelensplitsing) zijn weggelaten.</span></div>';
+  }
   function jaarverslagUitleg(g) {
     return '<div class="melding" data-jaarverslag><b>Cijfers uit het officiële jaarverslag</b><span>De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen uit de ESEF-jaarverslagen van het bedrijf zelf. De winst per aandeel is niet zelf nagerekend (dat lukt niet altijd, bijvoorbeeld als het aantal aandelen niet machineleesbaar in het verslag staat). Wel geven de opeenvolgende verslagen voor de overlappende jaren dezelfde winst per aandeel, dus de jaren zijn onderling vergelijkbaar. Daarom geen label en geen koersdoel; de NAIC-gids vraagt 10 onderbouwde jaren.</span></div>';
   }
@@ -390,7 +393,7 @@
     } else if (tab === 'check') {
       s += verdiepHtml(rec) + checkHtml(rec);
     } else if (tab === 'gezondheid') {
-      s += (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + gezondHtml(g, jr);
+      s += (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : r.niveau === 'indicatief' ? indicatiefUitleg(g) : '') + gezondHtml(g, jr);
     } else {
       s += bronHtml(rec, g);
     }
@@ -542,7 +545,7 @@
   var SPLIT = { candidate: 'Splitsing herkend en gecontroleerd met herziene jaarcijfers', niet_van_toepassing: 'Geen invloed: ligt vóór het eerste jaar in het dossier', dubbel: 'Dezelfde splitsing onder een andere datum (de aankondiging); telt niet mee', rejected: 'Niet bevestigd door de herziene jaarcijfers; daarom niet gebruikt', bevestigd: 'Bevestigd' };
   function bronHtml(rec, g) {
     if (!g) return '<div class="melding"><b>Nog geen bronnen</b><span>Nog niet gecontroleerd.</span></div>';
-    var s = '<div class="kaart-plat"><h2>Waar komen de cijfers vandaan?</h2><p>Jaarcijfers: SEC (Amerikaanse toezichthouder) en, voor Europese bedrijven, jaarverslagen in ESEF-formaat. Koersen: Yahoo Finance. Gecontroleerd op ' + h(datumNl(g.gecontroleerd_op)) + '.</p></div>';
+    var s = '<div class="kaart-plat"><h2>Waar komen de cijfers vandaan?</h2><p>Jaarcijfers: SEC (Amerikaanse toezichthouder) en, voor Europese bedrijven, jaarverslagen in ESEF-formaat. Waar die er niet zijn (bijvoorbeeld bij veel Duitse bedrijven) gebruikt de app indicatieve cijfers van Yahoo Finance; die zijn niet nagerekend en tellen minder zwaar mee. Koersen: Yahoo Finance. Gecontroleerd op ' + h(datumNl(g.gecontroleerd_op)) + '.</p></div>';
     if (g.splits && g.splits.length) s += '<section><h2>Aandelensplitsingen</h2>' + g.splits.map(function (sp) {
       return '<details><summary>' + h(datumNl(sp.datum)) + ' · ' + h(sp.ratio) + '-voor-1</summary><p>' + h(SPLIT[sp.status] || sp.status) + '.</p>' + (sp.redenen || []).map(function (x) { return '<p class="zacht">' + h(x) + '</p>'; }).join('') +
         (sp.bewijs && sp.bewijs.length ? '<ul class="punten">' + sp.bewijs.map(function (b) { return '<li>Boekjaar ' + h(b.periode) + ': winst per aandeel ' + h(b.voor.join('/')) + ' werd later ' + h(b.na.join('/')) + ' (factor ' + h(b.verhouding.join('/')) + ')</li>'; }).join('') + '</ul>' : '') + '</details>';
