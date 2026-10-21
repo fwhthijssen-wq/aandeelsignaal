@@ -206,7 +206,14 @@ def sec_diagnose(sec_ticker, email, fetcher=None):
         if cik is None:
             return {'fout': f'{sec_ticker} niet in de SEC-lijst'}
         payload = fetcher(FACTS_URL.format(cik=cik), email)
-        return {'sec_ticker': sec_ticker, 'concepten': eps_tag_overzicht(payload), 'jaarwaarden': jaarwaarden(payload)}
+        uit = {'sec_ticker': sec_ticker, 'concepten': eps_tag_overzicht(payload), 'jaarwaarden': jaarwaarden(payload)}
+        try:        # hoe groot is het bestand dat we kregen? Een afgeknot bestand verklaart een leeg dossier
+            facts = payload.get('facts') or {}
+            uit['bestand'] = {'cik': cik, 'taxonomieen': {k: len(v) for k, v in facts.items() if isinstance(v, dict)}, 'entityName': payload.get('entityName'),
+                              'rijen_totaal': sum(len(u) for v in facts.values() if isinstance(v, dict) for b in v.values() if isinstance(b, dict) for u in (b.get('units') or {}).values() if isinstance(u, list))}
+        except Exception:
+            pass
+        return uit
     except Exception as exc:  # diagnose mag de run nooit laten mislukken
         return {'fout': f'{type(exc).__name__}: {exc}'[:200]}
 

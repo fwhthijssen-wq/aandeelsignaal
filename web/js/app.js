@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.45';
+  var APP_VERSIE = '2026.10.21-beta.46';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -696,15 +696,54 @@
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
   }
+  function dagenGeleden(iso) { var d = Math.floor((Date.parse(vandaag()) - Date.parse(String(iso).slice(0, 10))) / 86400000); return isNaN(d) ? null : d; }
+  function backupKaart() {
+    var inh = winkel.inhoud(), lb = inh.laatsteBackup, nodig = winkel.backupNodig(vandaag()), leeg = !inh.volglijst && !inh.portefeuille && !inh.beoordelingen && !inh.checklists;
+    var dg = lb ? dagenGeleden(lb) : null, wijz = !!(inh.gewijzigd && lb && inh.gewijzigd > lb);
+    var toestand = leeg ? ['ok', 'Er is nog niets om te bewaren.', 'Zodra u een aandeel volgt, een aankoop invoert of een beoordeling geeft, staat het hier.']
+      : !lb ? ['let-op', 'U heeft nog geen back-up.', 'Maak er nu een: dan raakt u niets kwijt als dit toestel stuk gaat of de browser wordt leeggemaakt.']
+      : wijz ? ['let-op', 'Er is iets veranderd na uw laatste back-up.', 'Laatste back-up: ' + datumNl(lb.slice(0, 10)) + (dg != null ? ' (' + (dg === 0 ? 'vandaag' : dg === 1 ? 'gisteren' : dg + ' dagen geleden') + ')' : '') + '. Maak een nieuwe.']
+      : nodig ? ['let-op', 'Uw laatste back-up is al ' + dg + ' dagen oud.', 'Laatste back-up: ' + datumNl(lb.slice(0, 10)) + '. Maak een nieuwe.']
+      : ['ok', 'Uw gegevens zijn veilig bewaard.', 'Laatste back-up: ' + datumNl(lb.slice(0, 10)) + (dg != null ? ' (' + (dg === 0 ? 'vandaag' : dg === 1 ? 'gisteren' : dg + ' dagen geleden') + ')' : '') + ', en daarna is er niets veranderd.'];
+    var inhoud = leeg ? '' : '<p class="zacht">Nu op dit toestel: ' + [inh.volglijst + ' ' + (inh.volglijst === 1 ? 'aandeel' : 'aandelen') + ' op de volglijst', inh.portefeuille + ' ' + (inh.portefeuille === 1 ? 'aankoop' : 'aankopen'), inh.beoordelingen + ' eigen ' + (inh.beoordelingen === 1 ? 'beoordeling' : 'beoordelingen')].join(' · ') + '.</p>';
+    return '<div class="kaart-plat" data-backup><h2>Back-up van uw gegevens</h2><p class="zacht">Uw volglijst, portefeuille en eigen beoordelingen staan alleen op dit toestel, niet op een server. Een back-up is een klein bestand waarmee u alles kunt terugzetten, ook op een ander toestel.</p>' +
+      '<div class="bk-status" data-status="' + toestand[0] + '"><b>' + h(toestand[1]) + '</b><span>' + h(toestand[2]) + '</span></div>' + inhoud +
+      '<h3>1. Back-up bewaren</h3><p class="zacht">Op een telefoon of tablet opent een menu: kies daar waar het bestand heen moet, bijvoorbeeld <b>Bestanden</b>, <b>Google Drive</b>, <b>OneDrive</b> of een e-mail aan uzelf. Op een computer komt het bestand in de map Downloads; zet het daarna zelf in uw cloudmap.</p>' +
+      '<div class="knoppen"><button class="knop" id="bk">Back-up bewaren</button></div><div id="bk-uitslag" aria-live="polite"></div>' +
+      '<h3>2. Back-up terugzetten</h3><p class="zacht">Kies het bestand dat u eerder bewaarde (de naam begint met <i>aandeel-signaal-backup</i>). Op een telefoon opent uw Bestanden-app: kies de map of cloud waar u het bewaarde en bekijk eventueel <b>Bladeren</b> in plaats van <b>Recent</b>. U ziet eerst wat erin zit en beslist dan.</p>' +
+      '<div class="knoppen"><label class="knop rand" for="her" style="margin:0">Bestand kiezen…</label><input id="her" type="file" accept=".json,application/json,text/plain,*/*" class="sr"></div><div id="her-uitslag" aria-live="polite"></div>' +
+      '<details><summary>Lukt het niet met een bestand?</summary><p class="zacht">Dan kan het ook als tekst: kopieer de tekst en bewaar die in een notitie of e-mail. Terugzetten: plak de tekst weer in het vak.</p><label for="bktekst">Tekst van de back-up</label><textarea id="bktekst" rows="5" style="width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px;font:13px ui-monospace,monospace"></textarea><div class="knoppen"><button class="knop rand klein" id="kopie">Tekst kopiëren</button><button class="knop rand klein" id="plak">Terugzetten uit deze tekst</button></div></details></div>';
+  }
+  function terugzetVenster(tekst, bron) {
+    var v = winkel.bekijkBackup(tekst), vorige = document.activeElement, uit = document.getElementById('her-uitslag');
+    if (!v.ok) { if (uit) uit.innerHTML = '<div class="bk-status" data-status="let-op"><b>Dit lukt niet</b><span>' + h(v.reden) + ' Kies het bestand dat begint met <i>aandeel-signaal-backup</i>.</span></div>'; return; }
+    var inh = winkel.inhoud(), nw = v.nieuw, niets = !nw.volglijst && !nw.portefeuille && !nw.beoordelingen;
+    var regel = function (n, enk, mv) { return n + ' ' + (n === 1 ? enk : mv); };
+    $laag.innerHTML = '<div class="intro-achter" id="tz-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="tz-t"><h2 id="tz-t">Back-up terugzetten?</h2>' +
+      '<p>Gelezen uit ' + h(bron) + (v.gemaakt ? ', gemaakt op ' + h(datumNl(v.gemaakt.slice(0, 10))) : '') + '.</p><h3>Wat zit erin</h3><ul class="punten"><li>' + regel(v.volglijst, 'aandeel op de volglijst', 'aandelen op de volglijst') + '</li><li>' + regel(v.portefeuille, 'aankoop', 'aankopen') + '</li><li>' + regel(v.beoordelingen, 'aandeel met eigen beoordeling', 'aandelen met eigen beoordeling') + '</li></ul>' +
+      '<h3>Wat is er nu op dit toestel</h3><ul class="punten"><li>' + regel(inh.volglijst, 'aandeel op de volglijst', 'aandelen op de volglijst') + '</li><li>' + regel(inh.portefeuille, 'aankoop', 'aankopen') + '</li><li>' + regel(inh.beoordelingen, 'aandeel met eigen beoordeling', 'aandelen met eigen beoordeling') + '</li></ul>' +
+      '<p><b>' + (niets ? 'Er is niets nieuws: alles uit dit bestand staat al op dit toestel.' : 'Nieuw uit dit bestand: ' + [nw.volglijst ? regel(nw.volglijst, 'volglijst-aandeel', 'volglijst-aandelen') : '', nw.portefeuille ? regel(nw.portefeuille, 'aankoop', 'aankopen') : '', nw.beoordelingen ? regel(nw.beoordelingen, 'beoordeling', 'beoordelingen') : ''].filter(Boolean).join(', ') + '.') + '</b></p>' +
+      '<div class="knoppen" style="flex-direction:column;align-items:stretch"><button class="knop" id="tz-voeg"' + (niets ? ' disabled' : '') + '>Toevoegen aan wat er al staat (aanbevolen)</button><button class="knop rand" id="tz-vervang">Alles vervangen door deze back-up</button><button class="knop rand" id="tz-stop">Annuleren</button></div>' +
+      '<p class="zacht">Toevoegen wist niets. Vervangen haalt uw huidige volglijst, aankopen en beoordelingen weg en zet die van de back-up terug.</p></div></div>';
+    function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
+    function toets(e) { if (e.key === 'Escape') sluit(); }
+    document.addEventListener('keydown', toets);
+    function klaar(u, wat) { sluit(); route(); var o = document.getElementById('her-uitslag'); if (o) o.innerHTML = u.ok ? '<div class="bk-status" data-status="ok"><b>Teruggezet</b><span>' + h(wat) + ' Nu: ' + u.totaal + ' op de volglijst en ' + u.totaalPortefeuille + ' aankopen.</span></div>' : '<div class="bk-status" data-status="let-op"><b>Niet gelukt</b><span>' + h(u.reden || 'Probeer het opnieuw.') + '</span></div>'; }
+    document.getElementById('tz-stop').addEventListener('click', sluit);
+    document.getElementById('tz-voeg').addEventListener('click', function () { klaar(winkel.zetTerug(tekst, 'samenvoegen'), 'Toegevoegd uit de back-up; wat er al stond is gebleven.'); });
+    var vb = document.getElementById('tz-vervang'), zeker = false;
+    vb.addEventListener('click', function () {
+      if (!zeker) { zeker = true; vb.textContent = 'Zeker weten? Tik nogmaals om te vervangen'; return; }
+      klaar(winkel.zetTerug(tekst, 'vervang'), 'Alles is vervangen door de back-up.');
+    });
+    document.getElementById('tz-stop').focus();
+  }
   function schermInstellingen() {
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
       '<div class="kaart-plat"><h2>Totaalbeeld</h2><p class="zacht">Een aandeel krijgt pas een voorlopig oordeel (positief, neutraal of vermijden) als genoeg van de mogelijke gegevens bekend is. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimale dekking voor een oordeel</label><select id="mind">' + [10, 20, 40, 60, 80].map(function (v) { return '<option value="' + v + '"' + (minDekking() === v ? ' selected' : '') + '>' + v + '%' + (v === 20 ? ' (standaard: koersgegevens volstaan)' : v === 60 ? ' (ook jaarcijfers nodig)' : '') + '</option>'; }).join('') + '</select></div>' +
-      '<div class="kaart-plat"><h2>Back-up van uw gegevens</h2><p>Uw volglijst, portefeuille en antwoorden staan alleen op dit toestel. Raakt u dit toestel kwijt of wist u de browsergegevens, dan zijn ze weg. Met een back-up kunt u ze terugzetten.</p><p><strong>' + (lb ? 'Laatste back-up: ' + h(datumNl(lb.slice(0, 10))) + '.' : 'U heeft nog geen back-up gemaakt.') + '</strong></p>' +
-      '<h3>Stap 1: een back-up maken</h3><p class="zacht">Er komt een bestand op uw toestel (bij Downloads). Zet dat bestand daarna op een veilige plek, bijvoorbeeld OneDrive, Google Drive of in een e-mail aan uzelf.</p><div class="knoppen"><button class="knop" id="bk">Back-up maken</button></div>' +
-      '<h3>Stap 2: een back-up terugzetten</h3><p class="zacht">Kies het bestand dat u eerder heeft bewaard. Wat er al staat blijft behouden; alleen wat ontbreekt wordt toegevoegd.</p><div class="knoppen"><label class="knop rand" for="her" style="margin:0">Back-up terugzetten</label><input id="her" type="file" accept="application/json,.json" class="sr"></div>' +
-      '<details><summary>Lukt het bestand niet? Werk met tekst</summary><p class="zacht">Kopieer de tekst hieronder en bewaar die bijvoorbeeld in een notitie of e-mail. Terugzetten: plak de tekst weer in het vak en druk op de tweede knop.</p><label for="bktekst">Tekst van de back-up</label><textarea id="bktekst" rows="5" style="width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px;font:13px ui-monospace,monospace"></textarea><div class="knoppen"><button class="knop rand klein" id="kopie">Tekst kopiëren</button><button class="knop rand klein" id="plak">Terugzetten uit deze tekst</button></div></details></div>' +
+      backupKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
   }
@@ -712,14 +751,16 @@
     Array.prototype.forEach.call(document.querySelectorAll('[data-th]'), function (b) { b.addEventListener('click', function () { winkel.zetThema(b.getAttribute('data-th')); pasThema(); route(); }); });
     var bk = document.getElementById('bk');
     if (bk) bk.addEventListener('click', function () {
-      var tekst = winkel.maakBackup(), naam = 'aandeel-signaal-backup-' + vandaag() + '.json';
+      var tekst = winkel.maakBackup(true), naam = 'aandeel-signaal-backup-' + vandaag() + '.json', uit = document.getElementById('bk-uitslag');
+      var ta = document.getElementById('bktekst'); if (ta) ta.value = tekst;
+      function klaar(waar) { winkel.markeerBackup(); route(); var t2 = document.getElementById('bktekst'); if (t2) t2.value = tekst; var u = document.getElementById('bk-uitslag'); if (u) u.innerHTML = '<div class="bk-status" data-status="ok"><b>Back-up bewaard</b><span>' + h(waar) + ' Bestandsnaam: ' + h(naam) + '. Zet het bestand ook op een tweede plek, bijvoorbeeld in uw cloud, als u het nog niet deed.</span></div>'; }
       var bestand = null; try { bestand = new File([tekst], naam, { type: 'application/json' }); } catch (e) { /* oudere browser */ }
       if (bestand && navigator.canShare && navigator.canShare({ files: [bestand] })) {
-        navigator.share({ files: [bestand], title: 'Back-up Aandeel Signaal' }).catch(function () { download(tekst, naam); });
-      } else download(tekst, naam);
-      var ta = document.getElementById('bktekst'); if (ta) ta.value = tekst;
-      var dt = ta && ta.closest('details'); if (dt) dt.open = true;
-      toast('Back-up gemaakt');
+        navigator.share({ files: [bestand], title: 'Back-up Aandeel Signaal' }).then(function () { klaar('U koos een plek in het menu.'); }, function (err) {
+          if (err && err.name === 'AbortError') { if (uit) uit.innerHTML = '<div class="bk-status" data-status="let-op"><b>Niet bewaard</b><span>U sloot het menu zonder een plek te kiezen. Er is niets opgeslagen; probeer het opnieuw.</span></div>'; }
+          else { download(tekst, naam); klaar('Het bestand staat in de map Downloads van dit toestel.'); }
+        });
+      } else { download(tekst, naam); klaar('Het bestand staat in de map Downloads van dit toestel.'); }
     });
     var mind = document.getElementById('mind');
     if (mind) mind.addEventListener('change', function () { zetMinDekking(parseInt(mind.value, 10)); toast('Minimale dekking: ' + mind.value + '%'); });
@@ -730,13 +771,14 @@
       (navigator.clipboard ? navigator.clipboard.writeText(tx.value) : Promise.reject()).then(function () { toast('Gekopieerd'); }, function () { toast('Selecteer de tekst en kopieer die zelf'); });
     });
     if (plak) plak.addEventListener('click', function () {
-      var u = winkel.zetTerug(tx.value, 'samenvoegen'); toast(u.ok ? u.toegevoegd + ' aandelen toegevoegd; totaal ' + u.totaal : u.reden); if (u.ok) route();
+      terugzetVenster(tx.value, 'de geplakte tekst');
     });
     var her = document.getElementById('her');
     if (her) her.addEventListener('change', function () {
       var f = her.files && her.files[0]; if (!f) return;
       var rd = new FileReader();
-      rd.onload = function () { var u = winkel.zetTerug(String(rd.result), 'samenvoegen'); toast(u.ok ? u.toegevoegd + ' aandelen toegevoegd; totaal ' + u.totaal : u.reden); route(); };
+      rd.onload = function () { terugzetVenster(String(rd.result), f.name); her.value = ''; };
+      rd.onerror = function () { var u = document.getElementById('her-uitslag'); if (u) u.innerHTML = '<div class="bk-status" data-status="let-op"><b>Lezen mislukt</b><span>Dit bestand kon niet worden gelezen. Kies het opnieuw.</span></div>'; };
       rd.readAsText(f);
     });
     var p = document.getElementById('pers'), pk = document.getElementById('persknop');

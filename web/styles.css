@@ -187,3 +187,4 @@ nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }
 .hulp-blad .punten { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
 .meth-knop { all: unset; cursor: pointer; font-weight: 600; color: var(--acc); text-decoration: underline dotted; text-underline-offset: 3px; } .meth-knop:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; border-radius: 4px; }
 .hulp-blad h3 { margin: 6px 0 0; font-size: 1rem; }
+.bk-status { border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; margin: 10px 0; } .bk-status[data-status=ok] { background: var(--ok-bg); color: var(--ok-ink); } .bk-status[data-status=let-op] { background: var(--wait-bg); color: var(--wait-ink); } .bk-status b { font-size: 1.02rem; } .bk-status span { color: inherit; }

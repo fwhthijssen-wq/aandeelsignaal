@@ -241,11 +241,28 @@
       zetIntroGezien: function (gezien) { staat.introGezien = gezien !== false; return bewaar(false); },
       zetThema: function (th) { staat.instellingen.thema = (th === 'licht' || th === 'donker') ? th : 'auto'; bewaar(false); },
       /* Back-up als tekst (JSON). Markeert het moment van back-up. */
-      maakBackup: function () {
+      maakBackup: function (zonderMarkering) {
         var b = { app: 'Aandeel Signaal', soort: 'back-up', versie: 1, gemaakt: nu(),
           volglijst: staat.volglijst, portefeuille: staat.portefeuille, checklist: staat.checklist, zones: staat.zones, verdieping: staat.verdieping, instellingen: staat.instellingen };
-        staat.laatsteBackup = b.gemaakt; bewaar(false);
+        if (!zonderMarkering) { staat.laatsteBackup = b.gemaakt; bewaar(false); }
         return JSON.stringify(b, null, 1);
+      },
+      /* Zonder te bewaren: wat zit er nu op dit toestel? */
+      inhoud: function () { return { volglijst: staat.volglijst.length, portefeuille: staat.portefeuille.length, beoordelingen: Object.keys(staat.verdieping).length, checklists: Object.keys(staat.checklist).length, laatsteBackup: staat.laatsteBackup, gewijzigd: staat.gewijzigd || null }; },
+      /* Zet het moment van back-up pas nadat het bestand echt bewaard of gedeeld is. */
+      markeerBackup: function (moment) { staat.laatsteBackup = moment || nu(); bewaar(false); },
+      /* Kijkt in een back-upbestand zonder iets te wijzigen: wat staat erin en wat is daarvan nieuw? */
+      bekijkBackup: function (tekst) {
+        var data;
+        try { data = JSON.parse(tekst); } catch (e) { return { ok: false, reden: 'Dit bestand is geen geldige back-up.' }; }
+        if (!data || data.app !== 'Aandeel Signaal' || data.soort !== 'back-up') return { ok: false, reden: 'Dit is geen back-up van Aandeel Signaal.' };
+        var sc = schoon(data);
+        var nieuwV = sc.volglijst.filter(function (it) { return !staat.volglijst.some(function (x) { return x.ticker === it.ticker; }); }).length;
+        var nieuwP = sc.portefeuille.filter(function (p) { return !staat.portefeuille.some(function (y) { return zelfde(y, p); }); }).length;
+        var nieuwB = Object.keys(sc.verdieping).filter(function (t) { return !staat.verdieping[t]; }).length;
+        return { ok: true, gemaakt: typeof data.gemaakt === 'string' ? data.gemaakt : null,
+          volglijst: sc.volglijst.length, portefeuille: sc.portefeuille.length, beoordelingen: Object.keys(sc.verdieping).length, checklists: Object.keys(sc.checklist).length,
+          nieuw: { volglijst: nieuwV, portefeuille: nieuwP, beoordelingen: nieuwB } };
       },
       /* Terugzetten voegt toe en vervangt nooit stilzwijgend: standaard samenvoegen. */
       zetTerug: function (tekst, modus) {

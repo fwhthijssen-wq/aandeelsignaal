@@ -511,6 +511,49 @@ class WebUi(unittest.TestCase):
         self.assertIn('sterke', pg.input_value('#bktekst'))
         self.assertEqual(self.fouten, [])
 
+    def test_backup_duidelijk_bewaren_en_terugzetten_met_voorbeeld(self):
+        import json as _json
+        pg = self._pagina_met_indexen('#/instellingen', 360)
+        self.assertEqual(pg.get_attribute('#her', 'accept').count('*/*'), 1)          # telefoons tonen anders geen .json-bestanden
+        self.assertEqual(pg.get_attribute('[data-backup] .bk-status', 'data-status'), 'ok')       # nog niets te bewaren
+        pg.evaluate("location.hash='#/a/AAPL/samenvatting'"); pg.wait_for_timeout(150)
+        pg.click('#volg'); pg.wait_for_timeout(150)
+        pg.evaluate("location.hash='#/instellingen'"); pg.wait_for_timeout(200)
+        self.assertEqual(pg.get_attribute('[data-backup] .bk-status', 'data-status'), 'let-op')
+        self.assertIn('nog geen back-up', pg.inner_text('[data-backup] .bk-status'))
+        self.assertIn('1 aandeel op de volglijst', pg.inner_text('[data-backup]'))
+        with pg.expect_download() as dl:
+            pg.click('#bk')
+        self.assertTrue(dl.value.suggested_filename.startswith('aandeel-signaal-backup-'))
+        pg.wait_for_timeout(200)
+        self.assertIn('Back-up bewaard', pg.inner_text('#bk-uitslag'))
+        self.assertEqual(pg.get_attribute('[data-backup] .bk-status >> nth=0', 'data-status'), 'ok')
+        self.assertIn('veilig bewaard', pg.inner_text('[data-backup] .bk-status >> nth=0'))
+        # terugzetten: eerst een voorbeeld, dan kiezen
+        back = _json.dumps({'app': 'Aandeel Signaal', 'soort': 'back-up', 'versie': 1, 'gemaakt': '2026-10-10T08:00:00Z',
+                            'volglijst': [{'ticker': 'AAPL', 'sinds': '2026-10-01'}, {'ticker': 'MSFT', 'sinds': '2026-10-02'}], 'portefeuille': [], 'checklist': {}, 'zones': {}, 'verdieping': {}, 'instellingen': {'thema': 'auto'}})
+        pg.set_input_files('#her', files=[{'name': 'aandeel-signaal-backup-2026-10-10.json', 'mimeType': 'application/octet-stream', 'buffer': back.encode()}])
+        pg.wait_for_timeout(200)
+        t = pg.inner_text('.hulp-blad')
+        for stuk in ('Back-up terugzetten?', 'Wat zit erin', 'Wat is er nu op dit toestel', '1 volglijst-aandeel'):
+            self.assertIn(stuk, t)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pg.click('#tz-stop')
+        self.assertEqual(pg.locator('.hulp-blad').count(), 0)
+        pg.set_input_files('#her', files=[{'name': 'aandeel-signaal-backup-2026-10-10.json', 'mimeType': 'application/json', 'buffer': back.encode()}])
+        pg.wait_for_timeout(200)
+        pg.click('#tz-vervang'); self.assertEqual(pg.locator('.hulp-blad').count(), 1)        # eerst bevestigen
+        self.assertIn('Zeker weten', pg.inner_text('#tz-vervang'))
+        pg.click('#tz-voeg'); pg.wait_for_timeout(200)
+        self.assertIn('Teruggezet', pg.inner_text('#her-uitslag'))
+        self.assertIn('2 op de volglijst', pg.inner_text('#her-uitslag'))
+        # een verkeerd bestand geeft een duidelijke melding en wijzigt niets
+        pg.set_input_files('#her', files=[{'name': 'foto.json', 'mimeType': 'application/json', 'buffer': b'{"iets": 1}'}])
+        pg.wait_for_timeout(200)
+        self.assertIn('Dit lukt niet', pg.inner_text('#her-uitslag'))
+        self.assertEqual(pg.locator('.hulp-blad').count(), 0)
+        self.assertEqual(self.fouten, [])
+
     def test_alle_tabs_bereikbaar_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/a/AAPL/samenvatting')

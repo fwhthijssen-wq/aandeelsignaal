@@ -97,3 +97,30 @@ test('thema wordt opgeslagen en onbekende waarde wordt auto', () => {
   st.zetThema('paars');
   assert.equal(st.staat().instellingen.thema, 'auto');
 });
+
+test('rondleiding: standaard niet gezien, blijft bewaard, beschadigde waarde telt niet als gezien', () => {
+  const g = geheugen();
+  const st = S.maak(g, klok('2026-10-20T10:00:00Z'));
+  assert.equal(st.introGezien(), false);
+  st.zetIntroGezien(true);
+  assert.equal(S.maak(g, klok('2026-10-20T10:00:00Z')).introGezien(), true);
+  const k = geheugen(); k.setItem(S.SLEUTEL, JSON.stringify({ introGezien: 'ja' }));
+  assert.equal(S.maak(k, klok('2026-10-20T10:00:00Z')).introGezien(), false);
+});
+
+test('back-up: inhoud, voorbeeld zonder te wijzigen, en markeren pas na bewaren', () => {
+  const a = S.maak(geheugen(), klok('2026-10-20T10:00:00Z')), b = S.maak(geheugen(), klok('2026-10-20T11:00:00Z'));
+  a.voegToe('AAPL'); a.voegToe('MSFT');
+  const tekst = a.maakBackup(true);                           // zonder markering
+  assert.equal(a.inhoud().laatsteBackup, null);
+  assert.equal(a.backupNodig('2026-10-20'), true);
+  a.markeerBackup('2026-10-20T10:00:00Z');
+  assert.equal(a.inhoud().laatsteBackup, '2026-10-20T10:00:00Z');
+  assert.equal(a.inhoud().volglijst, 2);
+  b.voegToe('AAPL');
+  const v = b.bekijkBackup(tekst);
+  assert.equal(v.ok, true); assert.equal(v.volglijst, 2); assert.deepEqual(v.nieuw, { volglijst: 1, portefeuille: 0, beoordelingen: 0 });
+  assert.equal(b.inhoud().volglijst, 1);                      // alleen bekeken, niets gewijzigd
+  assert.equal(b.bekijkBackup('geen json').ok, false);
+  assert.equal(b.bekijkBackup('{"app":"Anders"}').ok, false);
+});

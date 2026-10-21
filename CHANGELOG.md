@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.21-beta.46
+- **Back-up duidelijker:** bovenaan een gekleurde status ('Uw gegevens zijn veilig bewaard' of 'Er is iets veranderd na uw laatste back-up' met het aantal dagen) en wat er nu op het toestel staat. 'Back-up bewaren' opent op een telefoon het deelmenu (Bestanden, Google Drive, OneDrive, mail); het moment van back-up wordt pas vastgelegd nadat u echt een plek koos, en na afloop staat er waar het bestand is. Sluit u het menu zonder te kiezen, dan meldt de app dat er niets is bewaard.
+- **Terugzetten op een telefoon:** de bestandskiezer toont nu alle bestanden (voorheen verborg de telefoon .json-bestanden). Na het kiezen ziet u eerst wat in de back-up zit, wat er nu op het toestel staat en wat nieuw is; daarna kiest u 'Toevoegen' (aanbevolen) of 'Alles vervangen' (met extra bevestiging), of annuleert u. De tekstvariant staat nog onder 'Lukt het niet met een bestand?'.
+- **Diagnose SEC:** bij een bedrijf zonder jaarcijfers (zoals XOM) legt de update nu ook vast hoe groot het ontvangen SEC-bestand was, zodat de oorzaak te vinden is.
+
 ## 2026.10.21-beta.45
 - **Methode aanklikken:** in het Totaalbeeld (en bij 'Wat ontbreekt er nog') opent elke methode een venster met: wat het meet, de cijfers van dit aandeel die erachter zitten, hoe het wordt beoordeeld (drempels), het gewicht en de betrouwbaarheid. Bij Piotroski ziet u alle 9 punten met ✓, ✗ of ? (gegevens ontbreken). Bij een ontbrekende methode staat wat er nodig is.
 
