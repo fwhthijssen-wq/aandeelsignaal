@@ -26,6 +26,12 @@ jobs:
           path: web/data/aandelen.json
           key: gegevens-${{ github.run_id }}
           restore-keys: gegevens-
+      - name: Jaarverslagarchief terughalen (elk jaarverslag wordt één keer bewaard en daarna niet meer aangeraakt)
+        uses: actions/cache/restore@v4
+        with:
+          path: archief
+          key: archief-${{ github.run_id }}
+          restore-keys: archief-
       - name: Gegevens ophalen en controleren (bij een fout blijven de vorige gegevens staan)
         id: bouw
         continue-on-error: true
@@ -36,6 +42,12 @@ jobs:
         with:
           path: web/data/aandelen.json
           key: gegevens-${{ github.run_id }}
+      - name: Jaarverslagarchief bewaren voor de volgende run
+        if: always() && hashFiles('archief/**') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: archief
+          key: archief-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
