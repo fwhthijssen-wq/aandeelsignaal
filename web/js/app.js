@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.44';
+  var APP_VERSIE = '2026.10.21-beta.43';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -100,7 +100,7 @@
     return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd, r.niveau) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
   }
 
-  var HOOFD = [['#/', 'Start', 'start'], ['#/zoek', 'Zoeken', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille']];
+  var HOOFD = [['#/', 'Start', 'start'], ['#/zoek', 'Zoeken', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille'], ['#/hulp', 'Hulp', 'hulp']];
 
   function schermStart() {
     var R = rijen(), by = {}; R.forEach(function (r) { by[r.ticker] = r; });
@@ -651,23 +651,8 @@
     });
   }
 
-  function toonPaginaHulp() {
-    var x = Hulp.voor(Hulp.sleutelVoorHash(location.hash)), vorige = document.activeElement;
-    $laag.innerHTML = '<div class="intro-achter" id="ph-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="ph-t"><h2 id="ph-t">' + h(x.titel) + '</h2><p>' + h(x.intro) + '</p>' +
-      '<ul class="punten">' + x.punten.map(function (p) { return '<li>' + h(p) + '</li>'; }).join('') + '</ul>' + (x.tip ? '<p class="zacht">' + h(x.tip) + '</p>' : '') +
-      '<div class="knoppen"><button class="knop" id="ph-sluit">Sluiten</button><a class="knop rand" id="ph-alles" href="#/hulp">Alle uitleg en begrippen</a></div></div></div>';
-    function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
-    function toets(e) { if (e.key === 'Escape') sluit(); }
-    document.addEventListener('keydown', toets);
-    document.getElementById('ph-sluit').addEventListener('click', sluit);
-    document.getElementById('ph-alles').addEventListener('click', function () { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); });
-    document.getElementById('ph-achter').addEventListener('click', function (e) { if (e.target.id === 'ph-achter') sluit(); });
-    document.getElementById('ph-sluit').focus();
-  }
-  var hk = document.getElementById('hulp-knop'); if (hk) hk.addEventListener('click', toonPaginaHulp);
-
   function schermHulp() {
-    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven). Het vraagteken ernaast legt uit wat u op de pagina ziet, waar u ook bent, dan raakt u niets kwijt.</li></ul></div>' +
+    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven), dan raakt u niets kwijt.</li></ul></div>' +
       '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het Totaalbeeld combineert technische analyse, fundamentele analyse, factoren (momentum en schommelingen) en uw eigen beoordeling. Elk onderdeel dat er niet is telt niet mee en wordt nooit geschat. Het oordeel (positief, neutraal of vermijden) is altijd voorlopig en komt met een dekking: hoeveel procent van de mogelijke gegevens bekend is, en hoeveel daarvan gecontroleerd is. Gecontroleerde gegevens wegen zwaarder. Via het tabblad Verdiepen voegt u zelf informatie toe, zodat het oordeel zekerder wordt.</p><p>Het NAIC-label (positief, neutraal, vermijden op de plek in het koersbereik) krijgt alleen een aandeel waarvan alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen.</p></div>' +
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
