@@ -239,6 +239,26 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
+    def test_hulpknop_geeft_uitleg_bij_de_pagina_waar_u_bent(self):
+        pg = self._pagina_met_indexen('#/')
+        self.assertEqual(pg.locator('#hulp-knop').count(), 1)
+        pg.click('#hulp-knop')
+        self.assertIn('Start', pg.locator('#ph-t').inner_text())
+        pg.keyboard.press('Escape')
+        self.assertEqual(pg.locator('#ph-t').count(), 0)
+        for hash_, woord in (('#/portefeuille', 'portefeuille'), ('#/instellingen', 'back-up'), ('#/a/MSFT/check', 'Verdiepen'), ('#/a/MSFT/waarde', 'NAIC')):
+            pg.evaluate("h => location.hash = h", hash_)
+            pg.wait_for_timeout(150)
+            pg.click('#hulp-knop')
+            self.assertIn(woord.lower(), pg.locator('.hulp-blad').inner_text().lower(), hash_)
+            self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+            pg.click('#ph-sluit')
+        pg.click('#hulp-knop'); pg.click('#ph-alles')
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.evaluate('location.hash'), '#/hulp')
+        self.assertEqual(pg.locator('.hulp-blad').count(), 0)
+        self.assertEqual(self.fouten, [])
+
     def test_totaalbeeld_detail_dashboard_en_minimum_in_instellingen(self):
         pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
         kaart = pg.locator('[data-signaal]')

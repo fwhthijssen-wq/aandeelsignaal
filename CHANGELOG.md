@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.21-beta.44
+- **Hulp per pagina:** een vraagteken in de kop, naast Instellingen, legt uit wat u op precies deze pagina ziet (Start, Zoeken, Volglijst, Portefeuille, Vergelijken, Instellingen en elk tabblad van een aandeel). De algemene uitleg en woordenlijst staan nog achter 'Alle uitleg en begrippen'. Het menu onderaan heeft daardoor vier onderdelen. Nieuw: `web/js/hulp.js`.
+
 ## 2026.10.21-beta.43
 - **Goedgekeurde jaren niet elke nacht opnieuw:** de update bewaart het gegevensbestand van de vorige run (gratis GitHub-cache). Een bedrijf met 10 volledig bevestigde jaren wordt tot 30 dagen na de controle niet opnieuw bij de SEC opgehaald (nieuwe jaarverslagen verschijnen hooguit één keer per jaar). Koersen blijven elke nacht vers. Dat scheelt veel looptijd en kans op storingen.
 - **Terugval bij uitval:** lukt het ophalen van een bedrijf niet (ook niet na de tweede poging), dan blijven de laatste goede jaarcijfers staan, gemarkeerd als 'uit vorige run' en met hun eigen controledatum. Fouten uit een vorige run worden nooit hergebruikt.
