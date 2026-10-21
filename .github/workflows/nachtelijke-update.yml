@@ -1,7 +1,8 @@
+# Vernieuwt elke nacht de gegevens van Aandeel Signaal en publiceert de app op GitHub Pages (gratis).
 name: Nachtelijke update
 on:
   schedule:
-    - cron: '17 3 * * 1-6'
+    - cron: '17 3 * * 1-6'   # 03:17 UTC, maandag t/m zaterdag
   workflow_dispatch: {}
 permissions:
   contents: read
@@ -19,9 +20,22 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
+      - name: Gegevens van de vorige run terughalen (goedgekeurde jaren hoeven niet opnieuw)
+        uses: actions/cache/restore@v4
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
+          restore-keys: gegevens-
       - name: Gegevens ophalen en controleren (bij een fout blijven de vorige gegevens staan)
+        id: bouw
         continue-on-error: true
         run: python bouw_webdata.py --live --email "${{ vars.SEC_CONTACT_EMAIL }}"
+      - name: Gegevens bewaren voor de volgende run
+        if: steps.bouw.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
