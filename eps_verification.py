@@ -148,9 +148,19 @@ def sec_eps_recompute_inputs(payload, asof):
                 ifrs_income[key], ifrs_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus ProfitLossAttributableToNoncontrollingInterests'
             else:
                 ifrs_income[key], ifrs_tag[key] = waarden, 'ProfitLoss (geen minderheidsbelang gerapporteerd)'
-    for namespace, income, ni_tags, sh_tag in ((us, us_income, us_tag, SHARES_TAG),
-                                               ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG)):
+    for namespace, income, ni_tags, sh_tag, basic_tag in (
+            (us, us_income, us_tag, SHARES_TAG, 'WeightedAverageNumberOfSharesOutstandingBasic'),
+            ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG, 'WeightedAverageShares')):
         shares = annual(namespace, sh_tag, lambda unit: unit == 'shares')
+        # Ontbreekt het verwaterde aantal in een indiening, dan het gewone gewogen aantal uit dezelfde indiening (Exxon na
+        # 2013, Philips vóór 2024). De herberekening vergelijkt daarna nog steeds met de gemelde VERWATERDE EPS: dat klopt
+        # alleen als verwatering verwaarloosbaar is (minder dan 0,4%); anders blijft het jaar onbewezen.
+        gewoon_aantal = annual(namespace, basic_tag, lambda unit: unit == 'shares')
+        terugval = set()
+        for key, waarden in gewoon_aantal.items():
+            if key not in shares:
+                shares[key] = waarden
+                terugval.add(key)
         for key in sorted(set(income) & set(shares)):
             if len(income[key]) != 1 or len(shares[key]) != 1:
                 continue
@@ -167,7 +177,8 @@ def sec_eps_recompute_inputs(payload, asof):
             record = {'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
                       'currency': currency, 'net_income': net_income,
                       'diluted_shares': diluted_shares,
-                      'source': f'SEC {namespace}:{ni_tag} / {sh_tag}' + (' (aandelen in miljoenen, x1.000.000)' if geschaald else '')}
+                      'source': f'SEC {namespace}:{ni_tag} / {basic_tag + " (gewoon aantal; verwaterd ontbreekt)" if key in terugval else sh_tag}'
+                                + (' (aandelen in miljoenen, x1.000.000)' if geschaald else '')}
             previous = records.get(key)
             if previous is not None and (previous['net_income'], previous['diluted_shares']) != (net_income, diluted_shares):
                 records[key] = None            # tegenstrijdig tussen stelsels: nooit kiezen
