@@ -94,3 +94,29 @@ class Ophalen(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class GewoneWinstPerAandeel(unittest.TestCase):
+    """ABN AMRO meldt alleen de gewone winst per aandeel (geen verwaterde): die wordt gebruikt, en gemarkeerd."""
+
+    def cf(self, tag):
+        uit = {'facts': {'ifrs-full': {tag: {'units': {'EUR/shares': []}}}}, 'rapporten': []}
+        for jaar, (eps, vorig) in {2023: (2.99, 1.96), 2024: (2.72, 2.99), 2025: (2.45, 2.72)}.items():
+            accn = f'r{jaar}'
+            uit['rapporten'].append({'fxo_id': accn, 'period_end': f'{jaar}-12-31'})
+            for j, v in ((jaar, eps), (jaar - 1, vorig)):
+                uit['facts']['ifrs-full'][tag]['units']['EUR/shares'].append(
+                    {'start': f'{j}-01-01', 'end': f'{j}-12-31', 'val': v, 'accn': accn, 'filed': f'{jaar + 1}-03-01', 'form': '20-F'})
+        return uit
+
+    def test_keten_met_gewone_winst_per_aandeel(self):
+        from esef_bron import eps_keten
+        self.assertEqual(eps_keten(self.cf('BasicEarningsLossPerShare'), min_jaren=3),
+                         {'2022-12-31': 1.96, '2023-12-31': 2.99, '2024-12-31': 2.72, '2025-12-31': 2.45})
+
+    def test_verwaterd_gaat_voor(self):
+        from esef_bron import eps_keten
+        cf = self.cf('BasicEarningsLossPerShare')
+        cf['facts']['ifrs-full']['DilutedEarningsLossPerShare'] = {'units': {'EUR/shares': [
+            dict(r, val=r['val'] - 0.01) for r in cf['facts']['ifrs-full']['BasicEarningsLossPerShare']['units']['EUR/shares']]}}
+        self.assertAlmostEqual(eps_keten(cf, min_jaren=3)['2025-12-31'], 2.44)

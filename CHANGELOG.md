@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.21-beta.54
+- **Gewone winst per aandeel als laatste terugval:** meldt een bedrijf voor een boekjaar geen verwaterde winst per aandeel, maar wel de gewone (ABN AMRO e.a. zonder opties of converteerbare leningen, waar beide gelijk zijn), dan wordt die gebruikt. Ook 'gewoon en verwaterd' in één cijfer telt nu als verwaterd. Het dossier meldt bij 'Let op' voor welke jaren de gewone winst per aandeel is gebruikt (`eps_gewoon` per jaar). De herberekening beslist daarna nog steeds: bij merkbare verwatering blijft een jaar onbewezen.
+- ABN AMRO, Inditex, Leonardo en Naturgy krijgen een winstreeks (niveau 'Uit jaarverslag', met K/W-historie); argenx van 5 naar 7 en Montea van 4 naar 5 bevestigde jaren. Niets achteruit, geen bestaande EPS gewijzigd.
+- Splitsingscontrole: per jaar maar één uitwijkbegrip, nooit twee door elkaar.
+
 ## 2026.10.21-beta.53
 - **Londen in ponden:** Yahoo geeft Londense koersen in pence (GBX). De update deelt koersen en koershistorie nu door 100 (een vaste eenheid, geen wisselkoers) en de app toont en rekent Londense aandelen in ponden (GBP). Daardoor krijgen Londense bedrijven die in ponden rapporteren voor het eerst een K/W, dividendrendement, koersbereik op jaarbasis en scoremodellen. Bedrijven die in dollars rapporteren (Shell, BP, AstraZeneca, HSBC, Diageo) houden verschillende valuta en blijven zonder K/W: daarvoor zou een wisselkoers nodig zijn.
 - Dividenden van Londense aandelen staan bij Yahoo meestal in pence, soms al in ponden: per uitkering vastgesteld aan de hand van de koers van die dag.

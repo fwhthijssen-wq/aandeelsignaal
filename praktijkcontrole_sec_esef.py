@@ -322,6 +322,14 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
         historic_evidence_audit = []
         historic_gap_audit = []
         historic_evidence_error = str(exc)[:300]
+    from concept_registry import EPS_GEWOON_TAGS
+    eps_tag_per_einde = {row['end']: ((row.get('facts') or {}).get('Winst per aandeel (verwaterd)') or {}).get('tag')
+                         for row in safe_history}
+    gewoon = sorted(str(boekjaar(e)) for e, t in eps_tag_per_einde.items() if t in EPS_GEWOON_TAGS)
+    if gewoon:
+        dossier['warnings'] = list(dossier['warnings']) + [
+            'Winst per aandeel: voor ' + ', '.join(gewoon) + ' meldt het bedrijf alleen de gewone winst per aandeel '
+            '(geen verwaterde); die is gebruikt.']
     dossier_summary = {
         'years': [r['year'] for r in dossier['rows']],
         'primary_source_completed_years': sorted({item['year'] for item in primary_source_audit
@@ -352,6 +360,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
         'eps_verification_note': eps_check.get('toelichting'),
         'year_table': [
             {'year': r['year'], 'end': r['end'].isoformat(), 'currency': r['currency'],
+             'eps_gewoon': eps_tag_per_einde.get(r['end'].isoformat()) in EPS_GEWOON_TAGS,
              'sales': r['sales'], 'net_income': r['profit'], 'reported_eps': r['reported_eps'],
              'comparable_eps': r['eps'], 'operating_cash_flow': r['cash'], 'capex': r['capex'],
              'equity': r['equity'],

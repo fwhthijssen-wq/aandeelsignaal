@@ -25,11 +25,17 @@ CONCEPT_TAGS = {
     ),
 }
 
-EPS_TAGS = ('EarningsPerShareDiluted', 'DilutedEarningsLossPerShare')
+EPS_TAGS = ('EarningsPerShareDiluted', 'DilutedEarningsLossPerShare',
+            # 'gewoon en verwaterd' in één cijfer: het bedrijf meldt zelf dat beide gelijk zijn
+            'EarningsPerShareBasicAndDiluted', 'BasicAndDilutedEarningsLossPerShare')
 # Uitwijknaam (o.a. Shell): alleen gebruikt voor een boekjaar waarvoor geen gewone EPS-naam bestaat.
 # De herberekening (nettowinst / aandelen) en de overige controles beslissen daarna of het cijfer geldt;
 # bij afgestoten bedrijfsonderdelen wijkt het af van de herberekening en blijft het jaar onbevestigd.
-EPS_FALLBACK_TAGS = ('DilutedEarningsLossPerShareFromContinuingOperations',)
+EPS_FALLBACK_TAGS = ('DilutedEarningsLossPerShareFromContinuingOperations',
+                     # Laatste terugval: alleen de gewone winst per aandeel gemeld (ABN AMRO e.a. zonder verwaterende
+                     # instrumenten). Gemarkeerd in het dossier; de herberekening beslist daarna nog steeds.
+                     'EarningsPerShareBasic', 'BasicEarningsLossPerShare')
+EPS_GEWOON_TAGS = ('EarningsPerShareBasic', 'BasicEarningsLossPerShare')
 EQUITY_TAGS = (
     'StockholdersEquity',
     'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest',

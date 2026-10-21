@@ -13,6 +13,7 @@ def sec_eps_filing_observations(payload, asof):
     cutoff = date.fromisoformat(asof)
     seen = set()
     primair = set()
+    terugval = {}
     observations = []
     for tag in EPS_TAGS + EPS_FALLBACK_TAGS:         # gewone namen eerst, de uitwijknaam als laatste
         for namespace in ('us-gaap', 'ifrs-full'):
@@ -36,6 +37,8 @@ def sec_eps_filing_observations(payload, asof):
                     if tag in EPS_FALLBACK_TAGS:
                         if (row['end'], unit) in primair:
                             continue        # een gewone EPS-naam gaat altijd voor
+                        if terugval.setdefault((row['end'], unit), tag) != tag:
+                            continue        # per jaar maar één uitwijknaam, nooit twee begrippen door elkaar
                     else:
                         primair.add((row['end'], unit))
                     key = (row['end'], row['filed'], row['accn'], namespace, tag, unit, value)

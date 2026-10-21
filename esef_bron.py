@@ -124,16 +124,25 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005):
     die het deelt met het al gekozen deel precies dezelfde EPS geeft; bij een verschil (herziening, splitsing) stopt de keten
     en blijven oudere jaren buiten beeld. Zo bestaat er geen EPS-groei over een niet-herkende splitsing. {} bij minder dan
     `min_jaren` jaren. Dit is gerapporteerd, niet nagerekend."""
-    rijen = (((cf.get('facts') or {}).get('ifrs-full') or {}).get('DilutedEarningsLossPerShare') or {}).get('units') or {}
+    ifrs = (cf.get('facts') or {}).get('ifrs-full') or {}
     per_rapport = {}
-    for unit, lijst in rijen.items():
-        for r in lijst:
-            try:
-                dagen = (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days + 1
-            except (KeyError, ValueError):
-                continue
-            if 330 <= dagen <= 390:
-                per_rapport.setdefault(r['accn'], {}).setdefault(r['end'], set()).add((unit, r['val']))
+    # per rapport: verwaterd, anders 'gewoon en verwaterd', anders gewoon (zelfde volgorde als het dossier)
+    alle = []
+    for rang, tag in enumerate(('DilutedEarningsLossPerShare', 'BasicAndDilutedEarningsLossPerShare', 'BasicEarningsLossPerShare')):
+        for unit, lijst in ((ifrs.get(tag) or {}).get('units') or {}).items():
+            alle.extend((rang, unit, r) for r in lijst)
+    beste = {}
+    for rang, unit, r in alle:
+        beste[r.get('accn')] = min(beste.get(r.get('accn'), rang), rang)
+    for rang, unit, r in alle:
+        if rang != beste.get(r.get('accn')):
+            continue
+        try:
+            dagen = (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days + 1
+        except (KeyError, ValueError):
+            continue
+        if 330 <= dagen <= 390:
+            per_rapport.setdefault(r['accn'], {}).setdefault(r['end'], set()).add((unit, r['val']))
     eind = {r['fxo_id']: r['period_end'] for r in cf.get('rapporten') or []}
     keten, valuta = {}, None
     for accn in sorted(per_rapport, key=lambda a: eind.get(a, ''), reverse=True):

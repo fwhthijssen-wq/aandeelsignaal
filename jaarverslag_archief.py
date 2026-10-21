@@ -36,6 +36,7 @@ CONCEPTEN = {
     'us-gaap:EarningsPerShareBasicAndDiluted': 'ps',
     'ifrs-full:DilutedEarningsLossPerShare': 'ps',
     'ifrs-full:BasicEarningsLossPerShare': 'ps',
+    'ifrs-full:BasicAndDilutedEarningsLossPerShare': 'ps',
     'us-gaap:CommonStockDividendsPerShareDeclared': 'ps',
     'us-gaap:CommonStockDividendsPerShareCashPaid': 'ps',
     'ifrs-full:DividendsRecognisedAsDistributionsToOwnersPerShare': 'ps',
@@ -60,7 +61,8 @@ CONCEPTEN = {
     'ifrs-full:EquityAttributableToOwnersOfParent': 'amt',
 }
 EPS_VOORKEUR = ('us-gaap:EarningsPerShareDiluted', 'ifrs-full:DilutedEarningsLossPerShare',
-                'us-gaap:EarningsPerShareBasicAndDiluted')
+                'us-gaap:EarningsPerShareBasicAndDiluted', 'ifrs-full:BasicAndDilutedEarningsLossPerShare',
+                'us-gaap:EarningsPerShareBasic', 'ifrs-full:BasicEarningsLossPerShare')
 SPLIT_CONCEPT = 'us-gaap:StockholdersEquityNoteStockSplitConversionRatio1'
 
 TOL_PS_ABS = 0.0051      # winst per aandeel: afronding op 2 decimalen

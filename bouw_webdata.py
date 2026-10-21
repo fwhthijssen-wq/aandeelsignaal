@@ -127,7 +127,7 @@ def gegevens_uit_esef(cf, gecontroleerd_op):
     return g
 
 
-JAAR_VELDEN = ('year', 'end', 'currency', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
+JAAR_VELDEN = ('year', 'end', 'currency', 'eps_gewoon', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
                'operating_cash_flow', 'capex', 'equity', 'eps_check', 'eps_reden')
 
 
