@@ -78,6 +78,52 @@ def _kies(payload, tags, eind, valuta, stroom, eenheid=None):
     return None
 
 
+def _per_indiening(payload, tags, eind, valuta):
+    """{accn: waarde} voor de eerste tag met een balanswaarde op dit boekjaareinde (één waarde per indiening)."""
+    facts = payload.get('facts') if isinstance(payload, dict) else None
+    for tag in tags:
+        uit = {}
+        for ns in ('us-gaap', 'ifrs-full'):
+            blok = ((facts or {}).get(ns) or {}).get(tag)
+            for r in (((blok or {}).get('units') or {}).get(valuta) or []) if isinstance(blok, dict) else []:
+                v = r.get('val') if isinstance(r, dict) else None
+                if (r.get('end') == eind and r.get('form') in ANNUAL and r.get('accn') and not r.get('start')
+                        and isinstance(v, (int, float)) and not isinstance(v, bool) and v == v):
+                    uit.setdefault((r.get('filed') or '', r['accn']), set()).add(v)
+        uit = {k: next(iter(v)) for k, v in uit.items() if len(v) == 1}
+        if uit:
+            return uit
+    return {}
+
+
+def _schulden_afgeleid(payload, eind, valuta, activa=None):
+    """Totale schulden voor bedrijven die 'Liabilities' niet zelf taggen (Amazon, Walmart, Coca-Cola e.a.): balanstotaal min
+    eigen vermogen (inclusief minderheidsbelang) min tijdelijk eigen vermogen, alle onderdelen uit DEZELFDE indiening (de
+    nieuwste die ze allemaal heeft). Alleen als die balans sluit (balanstotaal = activa) en de uitkomst tussen 0 en de activa
+    ligt; anders None (nooit een gok)."""
+    totaal = _per_indiening(payload, ('LiabilitiesAndStockholdersEquity', 'EquityAndLiabilities'), eind, valuta)
+    activa_i = _per_indiening(payload, ('Assets',), eind, valuta)
+    eigen = _per_indiening(payload, ('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', 'Equity'), eind, valuta)
+    moeder = _per_indiening(payload, ('StockholdersEquity',), eind, valuta)
+    minderheid = _per_indiening(payload, ('MinorityInterest',), eind, valuta)
+    tijdelijk = _per_indiening(payload, ('TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests',
+                                         'TemporaryEquityCarryingAmountAttributableToParent',
+                                         'RedeemableNoncontrollingInterestEquityCarryingAmount'), eind, valuta)
+    nci_winst = _kies(payload, ('NetIncomeLossAttributableToNoncontrollingInterest',), eind, valuta, True)
+    for k in sorted(totaal, reverse=True):
+        if k not in activa_i or abs(totaal[k] - activa_i[k]) > 0.001 * abs(activa_i[k]):
+            continue
+        if k in eigen:
+            ev = eigen[k]
+        elif k in moeder and (k in minderheid or not nci_winst):
+            ev = moeder[k] + minderheid.get(k, 0)
+        else:
+            continue
+        schuld = totaal[k] - ev - tijdelijk.get(k, 0)
+        return schuld if 0 < schuld < activa_i[k] else None
+    return None
+
+
 def extra_jaarcijfers(payload, jaren):
     """jaren: lijst dicts met 'end' en 'currency'. Geeft {end: {veld: waarde of None}}."""
     uit = {}
@@ -96,6 +142,8 @@ def extra_jaarcijfers(payload, jaren):
         for veld in ('long_term_debt', 'total_assets', 'current_assets', 'current_liabilities', 'total_liabilities', 'shares_diluted', 'interest_expense'):
             if rij[veld] is not None and rij[veld] < 0:       # deze velden zijn nooit negatief; een minteken duidt op een andere betekenis
                 rij[veld] = None
+        if rij['total_liabilities'] is None:
+            rij['total_liabilities'] = _schulden_afgeleid(payload, eind, valuta, rij.get('total_assets'))
         if rij['shares_diluted'] is not None and 0 < rij['shares_diluted'] < 100_000:
             rij['shares_diluted'] *= 1_000_000                 # sommige indieners melden aandelen in miljoenen
         uit[eind] = rij

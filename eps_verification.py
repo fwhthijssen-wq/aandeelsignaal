@@ -148,6 +148,14 @@ def sec_eps_recompute_inputs(payload, asof):
                 ifrs_income[key], ifrs_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus ProfitLossAttributableToNoncontrollingInterests'
             else:
                 ifrs_income[key], ifrs_tag[key] = waarden, 'ProfitLoss (geen minderheidsbelang gerapporteerd)'
+    # Andere officiële tellers uit dezelfde indiening. Ze worden alleen gebruikt als de vaste teller de gemelde EPS niet
+    # reproduceert (JPMorgan: winst na preferent dividend; Santander: winst na AT1-coupons). Zo verandert er niets voor
+    # bedrijven waar de vaste teller al klopt (ING, Sanofi, zie beta.32).
+    alternatieven = {
+        us: {'NetIncomeLossAvailableToCommonStockholdersBasic': gewoon, NET_INCOME_TAG: netto,
+             'NetIncomeLossAvailableToCommonStockholdersDiluted': preferent},
+        'ifrs-full': {IFRS_NET_INCOME_ORDINARY_TAG: ifrs_ordinary, IFRS_NET_INCOME_TAG: ifrs_owners},
+    }
     for namespace, income, ni_tags, sh_tag, basic_tag in (
             (us, us_income, us_tag, SHARES_TAG, 'WeightedAverageNumberOfSharesOutstandingBasic'),
             ('ifrs-full', ifrs_income, ifrs_tag, IFRS_SHARES_TAG, 'WeightedAverageShares')):
@@ -174,9 +182,16 @@ def sec_eps_recompute_inputs(payload, asof):
                 diluted_shares *= 1_000_000
                 geschaald = True
             ni_tag = ni_tags[key] if ni_tags else IFRS_NET_INCOME_TAG
+            andere = []
+            for tag, bron in alternatieven[namespace].items():
+                w = bron.get(key)
+                if tag != ni_tag and w and len(w) == 1:
+                    (u, v, _), = w
+                    if u == currency and v != net_income:
+                        andere.append({'tag': tag, 'net_income': v})
             record = {'start': key[0], 'end': key[1], 'accn': key[2], 'filed': filed,
                       'currency': currency, 'net_income': net_income,
-                      'diluted_shares': diluted_shares,
+                      'diluted_shares': diluted_shares, 'andere_tellers': andere,
                       'source': f'SEC {namespace}:{ni_tag} / {basic_tag + " (gewoon aantal; verwaterd ontbreekt)" if key in terugval else sh_tag}'
                                 + (' (aandelen in miljoenen, x1.000.000)' if geschaald else '')}
             previous = records.get(key)
@@ -231,6 +246,19 @@ def recompute_eps_check(end, eps_fact, inputs):
         return {**result, 'status': 'consistent',
                 'reden': 'Nettowinst / gewogen verwaterde aandelen geeft de gerapporteerde EPS binnen 0,4% (zelfde indiening; '
                          'verschil door afronding van de bronbedragen)'}
+    for alt in row.get('andere_tellers') or []:
+        ni = _number(alt.get('net_income'))
+        if ni is None:
+            continue
+        r2 = ni / shares
+        u2 = _rounding_unit(ni) / 2
+        lo2, hi2 = (ni - u2) / (shares + u_sh), (ni + u2) / max(shares - u_sh, 1e-9)
+        if (lo2 - RECOMPUTE_TOLERANCE <= reported <= hi2 + RECOMPUTE_TOLERANCE
+                or abs(reported - r2) <= RECOMPUTE_RELATIVE * abs(reported)):
+            return {**result, 'herberekend': round(r2, 4), 'status': 'consistent', 'teller': alt.get('tag'),
+                    'reden': f"Winst voor gewone aandeelhouders ({alt.get('tag')}) / gewogen verwaterde aandelen geeft de "
+                             'gerapporteerde EPS (zelfde indiening; de standaardteller bevat nog preferent dividend of '
+                             'coupons)'}
     return {**result, 'status': 'afwijking',
             'reden': 'Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)'}
 

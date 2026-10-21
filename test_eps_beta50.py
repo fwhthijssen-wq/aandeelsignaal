@@ -154,3 +154,47 @@ class TerugvalGewoonAantal(unittest.TestCase):
         r = ev.sec_eps_recompute_inputs(self.payload(), '2026-01-01')
         check = ev.recompute_eps_check('2023-12-31', {'val': 2.40, 'accn': 'x', 'unit': 'USD/shares'}, r)
         self.assertEqual(check['status'], 'afwijking')
+
+
+class AndereTeller(unittest.TestCase):
+    def test_winst_voor_gewone_aandeelhouders_als_standaardteller_niet_klopt(self):
+        # JPMorgan 2019: nettowinst 36.431 / 3.230 aandelen = 11,28; gemeld 10,72 = 34.642 (na preferent dividend) / 3.230
+        def f(v):
+            return [{'start': '2019-01-01', 'end': '2019-12-31', 'val': v, 'accn': 'x', 'filed': '2020-02-25', 'form': '10-K'}]
+        p = {'facts': {'us-gaap': {'NetIncomeLoss': {'units': {'USD': f(36_431_000_000)}},
+                                   'NetIncomeLossAvailableToCommonStockholdersBasic': {'units': {'USD': f(34_642_000_000)}},
+                                   'WeightedAverageNumberOfDilutedSharesOutstanding': {'units': {'shares': f(3_230_400_000)}}}}}
+        r = ev.sec_eps_recompute_inputs(p, '2026-01-01')
+        check = ev.recompute_eps_check('2019-12-31', {'val': 10.72, 'accn': 'x', 'unit': 'USD/shares'}, r)
+        self.assertEqual(check['status'], 'consistent')
+        self.assertEqual(check['teller'], 'NetIncomeLossAvailableToCommonStockholdersBasic')
+        # een EPS die bij geen enkele teller past blijft een afwijking
+        check = ev.recompute_eps_check('2019-12-31', {'val': 9.50, 'accn': 'x', 'unit': 'USD/shares'}, r)
+        self.assertEqual(check['status'], 'afwijking')
+
+
+class SchuldenAfgeleid(unittest.TestCase):
+    def payload(self, totaal=1000, activa=1000, eigen=300, tijdelijk=None, accn_eigen='x'):
+        def f(v, accn='x'):
+            return [{'end': '2024-12-31', 'val': v, 'accn': accn, 'filed': '2025-02-01', 'form': '10-K'}]
+        g = {'LiabilitiesAndStockholdersEquity': {'units': {'USD': f(totaal)}}, 'Assets': {'units': {'USD': f(activa)}},
+             'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest': {'units': {'USD': f(eigen, accn_eigen)}}}
+        if tijdelijk:
+            g['TemporaryEquityCarryingAmountAttributableToParent'] = {'units': {'USD': f(tijdelijk)}}
+        return {'facts': {'us-gaap': g}}
+
+    def test_afgeleid(self):
+        import extra_kentallen as ek
+        self.assertEqual(ek._schulden_afgeleid(self.payload(), '2024-12-31', 'USD'), 700)
+        self.assertEqual(ek._schulden_afgeleid(self.payload(tijdelijk=50), '2024-12-31', 'USD'), 650)
+
+    def test_balans_sluit_niet_of_andere_indiening(self):
+        import extra_kentallen as ek
+        self.assertIsNone(ek._schulden_afgeleid(self.payload(totaal=1100), '2024-12-31', 'USD'))
+        self.assertIsNone(ek._schulden_afgeleid(self.payload(accn_eigen='y'), '2024-12-31', 'USD'))
+
+    def test_eigen_melding_gaat_voor(self):
+        import extra_kentallen as ek
+        p = self.payload()
+        p['facts']['us-gaap']['Liabilities'] = {'units': {'USD': [{'end': '2024-12-31', 'val': 690, 'accn': 'x', 'filed': '2025-02-01', 'form': '10-K'}]}}
+        self.assertEqual(ek.extra_jaarcijfers(p, [{'end': '2024-12-31', 'currency': 'USD'}])['2024-12-31']['total_liabilities'], 690)
