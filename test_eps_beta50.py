@@ -132,7 +132,7 @@ class TerugvalGewoonAantal(unittest.TestCase):
     def payload(self, verwaterd=None):
         def f(val, accn='x'):
             return [{'start': '2023-01-01', 'end': '2023-12-31', 'val': val, 'accn': accn, 'filed': '2024-02-20', 'form': '10-K'}]
-        g = {'NetIncomeLoss': {'units': {'USD': f(1_000_000_000)}},
+        g = {'NetIncomeLoss': {'units': {'USD': f(1_003_000_000)}},
              'WeightedAverageNumberOfSharesOutstandingBasic': {'units': {'shares': f(400_000_000)}}}
         if verwaterd:
             g['WeightedAverageNumberOfDilutedSharesOutstanding'] = {'units': {'shares': f(verwaterd)}}
@@ -142,7 +142,7 @@ class TerugvalGewoonAantal(unittest.TestCase):
         r = ev.sec_eps_recompute_inputs(self.payload(), '2026-01-01')
         self.assertEqual(r[0]['diluted_shares'], 400_000_000)
         self.assertIn('gewoon aantal', r[0]['source'])
-        check = ev.recompute_eps_check('2023-12-31', {'val': 2.50, 'accn': 'x', 'unit': 'USD/shares'}, r)
+        check = ev.recompute_eps_check('2023-12-31', {'val': 2.51, 'accn': 'x', 'unit': 'USD/shares'}, r)
         self.assertEqual(check['status'], 'consistent')
 
     def test_verwaterd_gaat_voor(self):
@@ -150,7 +150,7 @@ class TerugvalGewoonAantal(unittest.TestCase):
         self.assertEqual(r[0]['diluted_shares'], 410_000_000)
 
     def test_merkbare_verwatering_blijft_onbewezen(self):
-        # verwaterde EPS 2,40 (4% verwatering) past niet bij het gewone aantal: geen bevestiging
+        # verwaterde EPS 2,40 (ruim 4% verwatering) past niet bij het gewone aantal: geen bevestiging
         r = ev.sec_eps_recompute_inputs(self.payload(), '2026-01-01')
         check = ev.recompute_eps_check('2023-12-31', {'val': 2.40, 'accn': 'x', 'unit': 'USD/shares'}, r)
         self.assertEqual(check['status'], 'afwijking')
