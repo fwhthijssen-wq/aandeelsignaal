@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.21-beta.39
+- **Totaalbeeld per aandeel (nieuw hart van de app):** nieuw `web/js/signaal.js`. 16 onderdelen in 4 groepen: technisch (trend 50/200 dagen, RSI, plek in 10-jaarsbereik), fundamenteel (omzet- en winstgroei, regelmaat, nettomarge, ROE, vrije kasstroom, schuld/kasstroom, K/W, dividend), kwantitatief (momentum, volatiliteit) en kwalitatief (uw Fisher-check). Elk onderdeel geeft −1…+1 of niets bij ontbrekende gegevens, nooit een schatting. Oordeel positief/neutraal/vermijden is altijd voorlopig, met **dekking in %**, de verdeling naar kwaliteit (gecontroleerd 1,0 · koersdata 0,9 · uit jaarverslag 0,7 · eigen invoer 0,6) en een zekerheidsniveau. Onder uw minimale dekking (Instellingen, standaard 25%) geen oordeel.
+- **Dashboard:** 'Kansrijk' bovenaan (positieve oordelen, gerangschikt op score gewogen met dekking); oordeel-chip in de tabel. **Aandeelscherm:** kaart 'Totaalbeeld' met per methode de score, de bron en wat er nog ontbreekt. NAIC-label en eerdere controles zijn ongewijzigd.
 ## 2026.10.21-beta.38
 - **Europese jaarcijfers via ESEF:** nieuwe bron voor bedrijven zonder SEC-notering (filings.xbrl.org, officiële jaarverslagen). 258 bedrijven gekoppeld via LEI (`esef_lei.json`), verslagen opgeslagen in één bestand `esef_bundel.json.gz`. De bestaande strenge verificatie draait ongewijzigd op deze cijfers (nieuw: terugval op ProfitLoss voor bedrijven zonder minderheidsbelang). 7 bedrijven worden nagerekend en bevestigd; 111 krijgen niveau 'Uit jaarverslag' (5-8 jaar, niet nagerekend, geen label, geen K/W). Nieuw: `esef_bron.py`.
 ## 2026.10.20-beta.37

@@ -113,7 +113,7 @@ class WebUi(unittest.TestCase):
         self.assertNotIn('0 / 22', txt)
         self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), pg.evaluate('window.AANDEEL_DATA.aandelen.length'))
         # onbevestigd: geen enkel groei- of margecijfer, alleen streepjes
-        self.assertNotIn('%', pg.inner_text('#dash table.dash tbody'))
+        self.assertNotIn('%', ' '.join(pg.locator('#dash table.dash tbody td').all_inner_texts()))   # cellen: geen valse cijfers (de oordeel-chip staat in de kopcel)
         self.assertEqual(pg.locator('[data-spreiding]').count(), 0)   # nog geen portefeuille
         pg.check('#d-bev')
         self.assertEqual(pg.locator('#dash table.dash').count(), 0)
@@ -236,6 +236,29 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('[data-label]').count(), 0)
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
+    def test_totaalbeeld_detail_dashboard_en_minimum_in_instellingen(self):
+        pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
+        kaart = pg.locator('[data-signaal]')
+        self.assertEqual(kaart.count(), 1)
+        dek = int(pg.locator('[data-dekking]').get_attribute('data-dekking'))
+        self.assertTrue(0 < dek < 25, dek)                                  # alleen koers en bereik: onder het standaardminimum
+        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 1)
+        self.assertIn('Plek in koersbereik', kaart.inner_text())
+        self.assertIn('Wat ontbreekt er nog', kaart.inner_text())
+        pg.evaluate("location.hash='#/instellingen'")
+        pg.wait_for_timeout(150)
+        pg.select_option('#mind', '10')
+        pg.wait_for_timeout(100)
+        pg.evaluate("location.hash='#/a/MSFT/samenvatting'")
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 0)   # met minimum 10% is er een voorlopig oordeel
+        self.assertIn('voorlopig oordeel', pg.locator('[data-signaal]').inner_text())
+        pg.evaluate("location.hash='#/'")
+        pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-kansrijk]').count(), 1)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 

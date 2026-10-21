@@ -1,0 +1,165 @@
+/* Totaalbeeld per aandeel uit meerdere analysemethoden: technisch, fundamenteel, kwantitatief (factoren) en kwalitatief (uw eigen
+   kwaliteitscheck). Elke methode geeft een score van -1 (ongunstig) tot +1 (gunstig), of niets als de gegevens ontbreken: er wordt
+   nooit iets geschat of aangevuld.
+
+   Oordeel (positief / neutraal / vermijden) is altijd VOORLOPIG en komt met een dekking: welk deel van het mogelijke gewicht
+   daadwerkelijk is ingevuld, en uit welke kwaliteit die gegevens komen. Gecontroleerde gegevens wegen zwaarder dan ongecontroleerde.
+   Onder de minimale dekking is er geen oordeel. Geen koersdoel, geen advies: een selectiehulp. */
+(function (root) {
+  'use strict';
+
+  /* Kwaliteit van de bron en hoe zwaar een score daardoor meetelt. */
+  var KWALITEIT = {
+    gecontroleerd: { naam: 'gecontroleerd', factor: 1 },   // jaarcijfers met onafhankelijk nagerekende winst per aandeel
+    koers: { naam: 'koersdata', factor: 0.9 },             // dagkoersen van één bron
+    jaarverslag: { naam: 'uit jaarverslag', factor: 0.7 },   // officieel jaarverslag, winst per aandeel niet nagerekend
+    eigen: { naam: 'eigen invoer', factor: 0.6 }           // uw eigen antwoorden
+  };
+  var GROEPEN = { technisch: 'Technische analyse', fundamenteel: 'Fundamentele analyse', kwantitatief: 'Kwantitatief (factoren)', kwalitatief: 'Kwalitatief (uw check)' };
+  var MIN_DEKKING = 25;                         // procent; instelbaar door de gebruiker
+  var DREMPEL = 0.25;                           // score vanaf waar het oordeel positief of vermijden wordt
+  var MAX_KOERS_DAGEN = 7;
+
+  function pos(x) { return typeof x === 'number' && isFinite(x) && x > 0; }
+  function num(x) { return typeof x === 'number' && isFinite(x); }
+  function rond(x, d) { var f = Math.pow(10, d); return Math.round(x * f) / f; }
+  function groei(a, b, n) { return pos(a) && pos(b) && n > 0 ? (Math.pow(b / a, 1 / n) - 1) * 100 : null; }
+  /* Trap: waarden oplopend van drempel naar score. trap(x,[[8,1],[3,.5],[0,0]], -1) = >=8 -> 1, >=3 -> .5, >=0 -> 0, anders -1 */
+  function trap(x, stappen, anders) { for (var i = 0; i < stappen.length; i++) if (x >= stappen[i][0]) return stappen[i][1]; return anders; }
+  /* Omgekeerd: lager is beter. */
+  function laag(x, stappen, anders) { for (var i = 0; i < stappen.length; i++) if (x < stappen[i][0]) return stappen[i][1]; return anders; }
+
+  function pct(x, d) { return (x >= 0 ? '' : '−') + String(Math.abs(rond(x, d == null ? 1 : d))).replace('.', ',') + '%'; }
+  function g1(x) { return String(rond(x, 1)).replace('.', ','); }
+
+  function jarenVan(g) { return (g && Array.isArray(g.jaren) ? g.jaren : []).filter(function (j) { return j && num(j.year); }).slice().sort(function (a, b) { return a.year - b.year; }); }
+
+  /* Methoden: elke functie krijgt context c en geeft null (ontbreekt) of { score, tekst }. */
+  var METHODEN = [
+    { id: 'trend50', groep: 'technisch', naam: 'Koers boven gemiddelde van 50 dagen', gewicht: 4, bron: 'koers',
+      f: function (c) { if (!c.koersOk || !pos(c.k.sma50)) return null; var a = (c.k.slot / c.k.sma50 - 1) * 100;
+        return { score: a >= 0 ? 0.5 : -0.5, tekst: 'Koers ' + pct(a) + ' ten opzichte van het gemiddelde van 50 dagen.' }; } },
+    { id: 'trend200', groep: 'technisch', naam: 'Langetermijntrend (200 dagen)', gewicht: 6, bron: 'koers',
+      f: function (c) { if (!c.koersOk || !pos(c.k.sma200)) return null; var a = (c.k.slot / c.k.sma200 - 1) * 100;
+        var kruis = pos(c.k.sma50) ? (c.k.sma50 > c.k.sma200 ? ' Het gemiddelde van 50 dagen ligt boven dat van 200 dagen.' : ' Het gemiddelde van 50 dagen ligt onder dat van 200 dagen.') : '';
+        return { score: a >= 0 ? 1 : -1, tekst: 'Koers ' + pct(a) + ' ten opzichte van het gemiddelde van 200 dagen.' + kruis }; } },
+    { id: 'rsi', groep: 'technisch', naam: 'Momentum (RSI 14 dagen)', gewicht: 3, bron: 'koers',
+      f: function (c) { if (!c.koersOk || !num(c.k.rsi14)) return null; var r = c.k.rsi14;
+        return { score: r < 30 ? 0.5 : r > 70 ? -0.5 : 0, tekst: 'RSI ' + g1(r) + (r < 30 ? ': sterk teruggevallen (laag).' : r > 70 ? ': sterk opgelopen (hoog).' : ': neutraal gebied.') }; } },
+    { id: 'bereik', groep: 'technisch', naam: 'Plek in koersbereik van 10 jaar (NAIC)', gewicht: 7, bron: 'koers',
+      f: function (c) { var b = c.bereik; if (!b) return null;
+        return { score: b.label === 'positief' ? 1 : b.label === 'vermijden' ? -1 : 0, tekst: 'Koers in de ' + (b.derde === 'onder' ? 'onderste' : b.derde === 'boven' ? 'bovenste' : 'middelste') + ' derde van het bereik (' + b.positiePct + '%)' + (b.verhouding != null ? ', opwaarts tegen neerwaarts ' + g1(b.verhouding) + ' : 1.' : '.') }; } },
+
+    { id: 'omzetgroei', groep: 'fundamenteel', naam: 'Omzetgroei per jaar', gewicht: 6, bron: 'jaar',
+      f: function (c) { var x = c.groeiOmzet; if (x == null) return null; return { score: trap(x, [[8, 1], [3, 0.5], [0, 0]], -1), tekst: pct(x) + ' per jaar (' + c.van + '–' + c.tot + ').' }; } },
+    { id: 'epsgroei', groep: 'fundamenteel', naam: 'Groei winst per aandeel per jaar', gewicht: 8, bron: 'jaar',
+      f: function (c) { var x = c.groeiEps; if (x == null) return null; return { score: trap(x, [[10, 1], [4, 0.5], [0, 0]], -1), tekst: pct(x) + ' per jaar (' + c.van + '–' + c.tot + ').' }; } },
+    { id: 'epsstabiel', groep: 'fundamenteel', naam: 'Regelmaat van de winstgroei', gewicht: 5, bron: 'jaar',
+      f: function (c) { var v = c.jr.filter(function (j) { return num(j.comparable_eps); }); if (v.length < 4) return null; var op = 0;
+        for (var i = 1; i < v.length; i++) if (v[i].comparable_eps > v[i - 1].comparable_eps) op++;
+        var f = op / (v.length - 1); return { score: trap(f, [[0.8, 1], [0.6, 0.5], [0.4, 0]], -1), tekst: 'De winst per aandeel steeg in ' + op + ' van ' + (v.length - 1) + ' jaren.' }; } },
+    { id: 'nettomarge', groep: 'fundamenteel', naam: 'Nettomarge', gewicht: 5, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (!l || !pos(l.sales) || !num(l.net_income)) return null; var m = l.net_income / l.sales * 100;
+        return { score: m < 0 ? -1 : trap(m, [[15, 1], [8, 0.5], [3, 0]], -0.5), tekst: 'Nettowinst ' + pct(m) + ' van de omzet in ' + l.year + '.' }; } },
+    { id: 'roe', groep: 'fundamenteel', naam: 'Rendement op eigen vermogen (ROE)', gewicht: 6, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (c.bank || !l || !pos(l.equity) || !num(l.net_income)) return null; var r = l.net_income / l.equity * 100;
+        return { score: r < 0 ? -1 : trap(r, [[15, 1], [10, 0.5], [5, 0]], -0.5), tekst: 'Nettowinst is ' + pct(r) + ' van het eigen vermogen in ' + l.year + '.' }; } },
+    { id: 'fcf', groep: 'fundamenteel', naam: 'Vrije kasstroom (marge)', gewicht: 5, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (c.bank || !l || !pos(l.sales) || !num(l.operating_cash_flow) || !num(l.capex)) return null;
+        var m = (l.operating_cash_flow - Math.abs(l.capex)) / l.sales * 100; return { score: m < 0 ? -1 : trap(m, [[8, 1], [3, 0.5]], 0), tekst: 'Kasstroom min investeringen is ' + pct(m) + ' van de omzet in ' + l.year + '.' }; } },
+    { id: 'schuld', groep: 'fundamenteel', naam: 'Schuld ten opzichte van vrije kasstroom', gewicht: 4, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (c.bank || !l || !num(l.long_term_debt) || !num(l.operating_cash_flow) || !num(l.capex)) return null;
+        var fcf = l.operating_cash_flow - Math.abs(l.capex);
+        if (l.long_term_debt <= 0) return { score: 1, tekst: 'Geen langlopende schuld gemeld.' };
+        if (fcf <= 0) return { score: -1, tekst: 'Er is schuld en de vrije kasstroom is niet positief.' };
+        var x = l.long_term_debt / fcf; return { score: laag(x, [[2, 1], [4, 0.5], [7, 0]], -1), tekst: 'Langlopende schuld is ' + g1(x) + ' keer de vrije kasstroom van ' + l.year + '.' }; } },
+    { id: 'kw', groep: 'fundamenteel', naam: 'Koers/winst (K/W)', gewicht: 8, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (!c.koersOk || !c.eenValuta || !l || !num(l.comparable_eps)) return null;
+        if (l.comparable_eps <= 0) return { score: -1, tekst: 'De winst per aandeel is niet positief.' };
+        var x = c.k.slot / l.comparable_eps; return { score: laag(x, [[12, 1], [18, 0.5], [25, 0], [40, -0.5]], -1), tekst: 'K/W ' + g1(x) + ' op de winst van ' + l.year + '.' }; } },
+    { id: 'dividend', groep: 'fundamenteel', naam: 'Dividendrendement', gewicht: 3, bron: 'jaar',
+      f: function (c) { var l = c.laatste; if (!c.koersOk || !c.eenValuta || !l || !num(l.dividend_ps)) return null; var r = l.dividend_ps / c.k.slot * 100;
+        return { score: r <= 0 ? 0 : trap(r, [[3, 1], [1.5, 0.5]], 0.2), tekst: 'Dividend ' + pct(r) + ' van de koers (over ' + l.year + ').' }; } },
+
+    { id: 'momentum', groep: 'kwantitatief', naam: 'Koersmomentum (circa 6 maanden)', gewicht: 6, bron: 'koers',
+      f: function (c) { var r = c.reeks; if (!c.koersOk || r.length < 100) return null; var x = (r[r.length - 1] / r[0] - 1) * 100;
+        return { score: trap(x, [[10, 1], [0, 0.5], [-10, -0.5]], -1), tekst: 'Koers ' + pct(x) + ' over de laatste ' + r.length + ' handelsdagen.' }; } },
+    { id: 'volatiliteit', groep: 'kwantitatief', naam: 'Koersschommelingen (volatiliteit)', gewicht: 4, bron: 'koers',
+      f: function (c) { var r = c.reeks; if (!c.koersOk || r.length < 100) return null; var d = [];
+        for (var i = 1; i < r.length; i++) d.push(Math.log(r[i] / r[i - 1]));
+        var m = d.reduce(function (a, b) { return a + b; }, 0) / d.length, v = d.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / (d.length - 1), s = Math.sqrt(v) * Math.sqrt(252) * 100;
+        return { score: laag(s, [[20, 1], [30, 0.5], [45, 0]], -1), tekst: 'Schommelt ' + pct(s, 0) + ' per jaar (hoe lager, hoe rustiger).' }; } },
+
+    { id: 'fisher', groep: 'kwalitatief', naam: 'Uw kwaliteitscheck (15 punten van Fisher)', gewicht: 15, bron: 'eigen',
+      f: function (c) { var v = c.check; if (!v || !(v.ja + v.nee > 0)) return null; var s = (v.ja - v.nee) / (v.ja + v.nee);
+        return { score: s, deel: Math.min(1, (v.ja + v.nee) / v.totaal), tekst: v.ja + ' ja, ' + v.nee + ' nee' + (v.onzeker ? ', ' + v.onzeker + ' onzeker' : '') + ' van de ' + v.totaal + ' punten.' }; } }
+  ];
+
+  function kwaliteitVan(m, c) {
+    if (m.bron === 'koers') return 'koers';
+    if (m.bron === 'eigen') return 'eigen';
+    return c.niveau; // 'gecontroleerd' of 'jaarverslag'
+  }
+
+  /* rec: record uit aandelen.json; opties: { vandaag: 'YYYY-MM-DD', minDekking, check: {totaal, ja, nee, onzeker}, gate: Gate, naic: Naic } */
+  function beoordeel(rec, opties) {
+    opties = opties || {};
+    var gate = opties.gate, naic = opties.naic, g = rec && rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null, k = rec && rec.koers;
+    var vers = k && gate ? gate.priceFreshness(k.datum, opties.vandaag).fresh : false;
+    var jr = jarenVan(g);
+    var bevestigd = !!(g && g.eps_status === 'independently_verified' && g.eps_verified_years >= (gate ? gate.REQUIRED_EPS_YEARS : 10) && g.rejected_sources === 0);
+    var niveau = bevestigd ? 'gecontroleerd' : (g && g.niveau === 'jaarverslag' ? 'jaarverslag' : (g && g.eps_status === 'independently_verified' && jr.length >= 5 ? 'jaarverslag' : null));
+    var jarenBruikbaar = !!(niveau && jr.length >= 4);
+    var f = jr[0], l = jr[jr.length - 1], n = f && l ? l.year - f.year : 0;
+    var bank = !!(g && (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }));
+    var reeks = vers && Array.isArray(k.reeks) ? k.reeks.map(function (x) { return x[1]; }).filter(pos) : [];
+    var bereik = null;
+    if (vers && naic) bereik = naic.bereik(jr, k.slot, 10, 8) || naic.bereikUitKoers(k.bereik, k.slot);
+    var c = { k: k, koersOk: !!(vers && k && pos(k.slot)), reeks: reeks, bereik: bereik, jr: jarenBruikbaar ? jr : [], laatste: jarenBruikbaar ? l : null,
+      niveau: niveau, bank: bank, check: opties.check || null, van: f ? f.year : null, tot: l ? l.year : null,
+      eenValuta: !!(g && g.currencies && g.currencies.length === 1 && rec.valuta && g.currencies[0] === rec.valuta),
+      groeiOmzet: jarenBruikbaar && n > 0 ? groei(f.sales, l.sales, n) : null,
+      groeiEps: jarenBruikbaar && n > 0 ? groei(f.comparable_eps, l.comparable_eps, n) : null };
+    var totaal = 0, aanwezig = 0, wegSom = 0, scoreSom = 0, perKwaliteit = {}, perGroep = {}, methoden = [];
+    METHODEN.forEach(function (m) {
+      var r = null;
+      try { r = m.f(c); } catch (e) { r = null; }
+      var q = kwaliteitVan(m, c);
+      totaal += m.gewicht;
+      var groep = perGroep[m.groep] = perGroep[m.groep] || { naam: GROEPEN[m.groep], totaal: 0, aanwezig: 0, scoreSom: 0, wegSom: 0 };
+      groep.totaal += m.gewicht;
+      var item = { id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, score: null, kwaliteit: null, tekst: null };
+      if (r && num(r.score) && q && KWALITEIT[q]) {
+        var w = m.gewicht * (r.deel == null ? 1 : r.deel), eff = w * KWALITEIT[q].factor;
+        aanwezig += w; wegSom += eff; scoreSom += r.score * eff;
+        groep.aanwezig += w; groep.wegSom += eff; groep.scoreSom += r.score * eff;
+        perKwaliteit[q] = (perKwaliteit[q] || 0) + w;
+        item.aanwezig = true; item.score = r.score; item.kwaliteit = q; item.tekst = r.tekst;
+      }
+      methoden.push(item);
+    });
+    var dekking = totaal ? rond(aanwezig / totaal * 100, 0) : 0;
+    var score = wegSom > 0 ? scoreSom / wegSom : null;
+    var min = typeof opties.minDekking === 'number' ? opties.minDekking : MIN_DEKKING;
+    var oordeel = score == null || dekking < min ? null : score >= DREMPEL ? 'positief' : score <= -DREMPEL ? 'vermijden' : 'neutraal';
+    var zekerheid = dekking >= 85 ? 'stevig' : dekking >= 65 ? 'redelijk' : dekking >= 40 ? 'voorlopig' : 'zeer voorlopig';
+    var kwal = {}; Object.keys(KWALITEIT).forEach(function (q) { kwal[q] = totaal ? rond((perKwaliteit[q] || 0) / totaal * 100, 0) : 0; });
+    var groepen = Object.keys(GROEPEN).map(function (id) { var x = perGroep[id] || { naam: GROEPEN[id], totaal: 0, aanwezig: 0, scoreSom: 0, wegSom: 0 };
+      return { id: id, naam: x.naam, dekking: x.totaal ? rond(x.aanwezig / x.totaal * 100, 0) : 0, score: x.wegSom > 0 ? rond(x.scoreSom / x.wegSom, 2) : null }; });
+    var oud = [];
+    if (k && !vers) oud.push('De koers is te oud (meer dan ' + MAX_KOERS_DAGEN + ' dagen) of ontbreekt: technische en koersgebonden onderdelen tellen niet mee.');
+    if (l && opties.vandaag) { var maanden = (new Date(opties.vandaag) - new Date(l.end || (l.year + '-12-31'))) / 86400000 / 30.4; if (maanden > 18) oud.push('Het laatste jaarverslag (' + l.year + ') is ouder dan 18 maanden.'); }
+    return { ticker: rec ? rec.ticker : null, oordeel: oordeel, score: score == null ? null : rond(score, 2), dekking: dekking, minDekking: min, zekerheid: zekerheid, niveau: niveau,
+      kwaliteit: kwal, groepen: groepen, methoden: methoden, ontbreekt: methoden.filter(function (x) { return !x.aanwezig; }).map(function (x) { return x.naam; }),
+      verouderd: oud, rang: score == null ? null : rond(score * (0.5 + 0.5 * Math.min(1, dekking / 100)), 3), datum: k ? k.datum : null };
+  }
+
+  /* Rangschikking van kandidaten: eerst positieve oordelen, hoogste rang (score gewogen met dekking) bovenaan. */
+  function kandidaten(lijst, max) {
+    return (lijst || []).filter(function (x) { return x && x.oordeel === 'positief'; })
+      .sort(function (a, b) { return b.rang - a.rang || b.dekking - a.dekking || (a.ticker < b.ticker ? -1 : 1); }).slice(0, max || 10);
+  }
+
+  var api = { beoordeel: beoordeel, kandidaten: kandidaten, METHODEN: METHODEN, KWALITEIT: KWALITEIT, GROEPEN: GROEPEN, MIN_DEKKING: MIN_DEKKING, DREMPEL: DREMPEL };
+  if (typeof module === 'object' && module.exports) module.exports = api; else root.Signaal = api;
+})(typeof self !== 'undefined' ? self : this);

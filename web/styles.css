@@ -3,7 +3,7 @@
 :root {
   --bg: #EEF2F5; --surface: #FFFFFF; --ink: #12202C; --mut: #4F6070; --line: #D5DDE4; --line-soft: #E4EAEF;
   --acc: #0B6E78; --acc-ink: #FFFFFF; --hero: #0D3B47; --hero-ink: #FFFFFF; --hero-mut: #B7DADF;
-  --ok-bg: #DDF1E5; --ok-ink: #0F5F3A; --wait-bg: #FBEFD2; --wait-ink: #6E4700; --bad-ink: #8C2F2F;
+  --ok-bg: #DDF1E5; --ok-ink: #0F5F3A; --wait-bg: #FBEFD2; --wait-ink: #6E4700; --bad-ink: #8C2F2F; --bad-bg: #F7DEDE;
   --seg-on: #6CD4A0; --seg-off: #2F5E6B; --chart-a: #0B6E78; --chart-b: #9AA9B6; --shadow: 0 1px 2px rgba(18,32,44,.06), 0 6px 18px rgba(18,32,44,.05);
   --radius: 18px; --nav-h: 64px; color-scheme: light;
 }
@@ -11,14 +11,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0F161C; --surface: #1A242D; --ink: #E6EDF2; --mut: #A3B2BF; --line: #2E3C48; --line-soft: #243039;
     --acc: #5CC1CC; --acc-ink: #072A30; --hero: #123F4C; --hero-ink: #FFFFFF; --hero-mut: #B6DDE2;
-    --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3;
+    --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3; --bad-bg: #4A2020;
     --seg-on: #6CD4A0; --seg-off: #2F5E6B; --chart-a: #5CC1CC; --chart-b: #6F8190; --shadow: none; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0F161C; --surface: #1A242D; --ink: #E6EDF2; --mut: #A3B2BF; --line: #2E3C48; --line-soft: #243039;
   --acc: #5CC1CC; --acc-ink: #072A30; --hero: #123F4C; --hero-ink: #FFFFFF; --hero-mut: #B6DDE2;
-  --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3;
+  --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3; --bad-bg: #4A2020;
   --seg-on: #6CD4A0; --seg-off: #2F5E6B; --chart-a: #5CC1CC; --chart-b: #6F8190; --shadow: none; color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -173,3 +173,10 @@ table.dash th:not(:first-child), table.dash td { width: 15%; overflow-wrap: norm
 .ck .keuze { margin: 8px 0; }
 .ck details { margin: 6px 0; }
 nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }
+
+.chip[data-oordeel="positief"] { background: var(--ok-bg); color: var(--ok-ink); }
+.chip[data-oordeel="vermijden"] { background: var(--bad-bg); color: var(--bad-ink, #8a1c1c); }
+.chip[data-oordeel="neutraal"] { background: var(--line); color: var(--ink); }
+.dekking { margin: 6px 0 10px; }
+[data-signaal] .chip, .lijst .chip[data-oordeel], table.dash .chip[data-oordeel] { white-space: normal; }
+[data-signaal] .rij-kop { flex-wrap: wrap; gap: 6px; }
