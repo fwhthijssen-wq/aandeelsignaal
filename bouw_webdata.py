@@ -246,6 +246,7 @@ def voeg_extra_toe(gegevens, payload):
     from extra_kentallen import extra_jaarcijfers
     jaren = gegevens.get('jaren') or []
     extra = extra_jaarcijfers(payload, jaren)
+    gegevens['extra_versie'] = EXTRA_VERSIE
     for j in jaren:
         rij = extra.get(j.get('end')) or {}
         for veld in EXTRA_VELDEN + SCORE_VELDEN:
@@ -599,6 +600,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
+EXTRA_VERSIE = 2              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
+                               # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52)
 HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
 NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
 ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is
@@ -613,6 +616,8 @@ def _hergebruik(oud, vandaag):
             return False
         if (oud.get('eps_verified_years') or 0) < 10 or not oud.get('jaren') or oud.get('niveau') == 'jaarverslag':
             return False
+        if oud.get('extra_versie') != EXTRA_VERSIE:
+            return False                # kentallen zijn met oudere rekenregels gemaakt: één keer opnieuw
         nu = date.fromisoformat(vandaag)
         leeftijd = (nu - date.fromisoformat(oud['gecontroleerd_op'])).days
         if not 0 <= leeftijd < HERGEBRUIK_DAGEN:

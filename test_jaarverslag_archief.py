@@ -165,7 +165,7 @@ class ArchiefTests(unittest.TestCase):
 class HergebruikTests(unittest.TestCase):
     def _oud(self, gecontroleerd, laatste_end):
         return {'eps_status': 'independently_verified', 'eps_verified_years': 10, 'gecontroleerd_op': gecontroleerd,
-                'jaren': [{'end': '2016-12-31'}, {'end': laatste_end}]}
+                'jaren': [{'end': '2016-12-31'}, {'end': laatste_end}], 'extra_versie': bw.EXTRA_VERSIE}
 
     def test_geen_nieuw_verslag_mogelijk_dan_afblijven(self):
         self.assertTrue(bw._hergebruik(self._oud('2026-04-01', '2025-12-31'), '2026-06-15'))
@@ -225,3 +225,12 @@ class KoppelingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class ExtraVersieTests(unittest.TestCase):
+    def test_oude_rekenregels_worden_eenmalig_vernieuwd(self):
+        oud = {'eps_status': 'independently_verified', 'eps_verified_years': 10, 'gecontroleerd_op': '2026-04-01',
+               'jaren': [{'end': '2025-12-31'}]}
+        self.assertFalse(bw._hergebruik(oud, '2026-06-15'))
+        oud['extra_versie'] = bw.EXTRA_VERSIE
+        self.assertTrue(bw._hergebruik(oud, '2026-06-15'))

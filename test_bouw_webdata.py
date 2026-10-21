@@ -143,7 +143,7 @@ class WebdataTests(unittest.TestCase):
         self.assertTrue(vorige)
         t = 'AAPL'
         vorige[t]['eps_status'] = 'independently_verified'; vorige[t]['eps_verified_years'] = 10      # volledig goedgekeurd dossier
-        vorige[t]['gecontroleerd_op'] = date.today().isoformat()
+        vorige[t]['gecontroleerd_op'] = date.today().isoformat(); vorige[t]['extra_versie'] = bw.EXTRA_VERSIE
         aantal = {}
 
         def telt(tk, e):
