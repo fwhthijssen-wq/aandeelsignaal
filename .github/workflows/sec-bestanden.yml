@@ -1,9 +1,10 @@
-# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): bewaart de SEC-bestanden als download (artefact, 3 dagen).
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): zet de SEC-bestanden op de aparte tak 'ontwikkeldata'.
+# Die tak staat los van de app en de nachtelijke update; hij wordt elke keer overschreven.
 name: SEC-bestanden ophalen (ontwikkeling)
 on:
   workflow_dispatch: {}
 permissions:
-  contents: read
+  contents: write
 jobs:
   ophalen:
     runs-on: ubuntu-latest
@@ -14,8 +15,12 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python hulp/sec_bestanden.py "${{ vars.SEC_CONTACT_EMAIL }}"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sec-bestanden
-          path: sec_bestanden
-          retention-days: 3
+      - name: Op tak ontwikkeldata zetten
+        run: |
+          cd sec_bestanden
+          git init -q -b ontwikkeldata
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "SEC-bestanden $(date -u +%F)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ontwikkeldata
