@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.21-beta.39';
+  var APP_VERSIE = '2026.10.21-beta.40';
   var DATA = window.AANDEEL_DATA || { aandelen: [] };
   var UITLEG = window.AANDEEL_UITLEG || { termen: [] };
   var opslag = null;
@@ -18,8 +18,14 @@
   function zetMinDekking(v) { try { localStorage.setItem('as_mindekking', String(v)); } catch (e) { /* zonder opslag blijft de standaard */ } }
   function signaalVoor(rec) {
     var ck = Checklist.voortgang(winkel.checklist(rec.ticker));
-    return Signaal.beoordeel(rec, { vandaag: vandaag(), gate: Gate, naic: Naic, check: ck, minDekking: minDekking() });
+    return Signaal.beoordeel(rec, { vandaag: vandaag(), gate: Gate, naic: Naic, check: ck, minDekking: minDekking(), verdieping: winkel.verdieping(rec.ticker) });
   }
+  /* Wat de app nu vindt, om later terug te kunnen kijken: oordeel, dekking en (bij een verse koers) de koers. */
+  function momentopname(rec) {
+    var b = signaalVoor(rec), k = rec.koers, vers = k && Gate.priceFreshness(k.datum, vandaag()).fresh && typeof k.slot === 'number' && k.slot > 0;
+    return { oordeel: b.oordeel, dekking: b.dekking, zekerheid: b.zekerheid, score: b.score, datum: vandaag(), koers: vers ? k.slot : null, valuta: vers ? rec.valuta : null };
+  }
+  function oordeelTekst(x) { return x && x.oordeel ? OORDEEL[x.oordeel] + ' (' + x.dekking + '% dekking)' : 'nog geen oordeel' + (x ? ' (' + x.dekking + '% dekking)' : ''); }
   function dekkingMeter(b) {
     var K = Signaal.KWALITEIT, delen = ['gecontroleerd', 'jaarverslag', 'koers', 'eigen'].filter(function (q) { return b.kwaliteit[q] > 0; });
     return '<div class="dekking" data-dekking="' + b.dekking + '"><div class="balk-rij"><span>Dekking</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, b.dekking) + '%"></i></span><b>' + b.dekking + '%</b></div>' +
@@ -177,10 +183,17 @@
     var R = Gate.sorteer(rijen());
     return '<section><div class="rij-kop"><h1>Overzicht</h1><a class="link" href="#/vergelijk">Aandelen vergelijken</a></div><div class="lijst">' + R.map(function (r) { return rijLink(zoek(r.ticker), r); }).join('') + '</div><p class="zacht">Selectiehulp, geen beleggingsadvies.</p></section>';
   }
+  function volgRegel(item, rec) {
+    var f = Portefeuille.volg(item, rec, vandaag(), Gate), s = item && item.sinds, nu = signaalVoor(rec);
+    var tekst = f.status === 'ok' ? 'Sinds ' + h(datumNl(s.datum)) + ' (' + f.dagen + ' dagen): <b style="color:' + kleur(f.pct) + '">' + pct(f.pct) + '</b>' : (f.status === 'geen' ? 'Geen startpunt vastgelegd' : 'Sinds het volgen: onbekend (' + h(f.reden) + ')');
+    var toen = s ? 'Oordeel toen: ' + h(oordeelTekst(s)) + ' · nu: ' + h(oordeelTekst(nu)) : 'Oordeel nu: ' + h(oordeelTekst(nu));
+    return '<div class="volg" data-volg="' + h(rec.ticker) + '" style="padding:0 0 10px 12px"><span class="zacht">' + tekst + '<br>' + toen + '</span></div>';
+  }
   function schermVolglijst() {
     var R = {}; rijen().forEach(function (r) { R[r.ticker] = r; });
     var v = winkel.volglijst().map(function (x) { return zoek(x.ticker); }).filter(Boolean);
-    return '<section><h1>Mijn volglijst</h1>' + (v.length ? '<div class="lijst">' + v.map(function (rec) { return rijLink(rec, R[rec.ticker]); }).join('') + '</div>' :
+    var items = {}; winkel.volglijst().forEach(function (x) { items[x.ticker] = x; });
+    return '<section><h1>Mijn volglijst</h1>' + (v.length ? '<div class="lijst">' + v.map(function (rec) { return rijLink(rec, R[rec.ticker]) + volgRegel(items[rec.ticker], rec); }).join('') + '</div><p class="zacht">Onder elk aandeel staat wat de koers deed sinds u het ging volgen, en wat het oordeel van de app toen was. Zo ziet u of een kandidaat potentie laat zien.</p>' :
       '<div class="kaart-plat"><p>Nog niets op uw volglijst.</p><div class="knoppen"><a class="knop" href="#/zoek">Aandeel zoeken</a></div></div>') + '</section>' + backupBalk();
   }
   function schermZoek() {
@@ -216,9 +229,14 @@
           (t.buiten ? '<span>' + t.buiten + ' van ' + (t.meegeteld + t.buiten) + ' aankopen telt niet mee: zie hieronder</span>' : '') + '</div>';
       }).join('') + '</div>';
       if (res.totalen.length > 1) s += '<p class="zacht">Totalen staan per valuta. De app rekent nooit om tussen valuta’s.</p>';
+      var hk = Portefeuille.herkomst(res.regels).filter(function (x) { return x.signaal.n > 0; });
+      if (hk.length) s += '<div class="kaart-plat" data-herkomst><h2>Op signaal gekocht</h2><p class="zacht">Aankopen die u deed op basis van het oordeel van de app, apart gehouden om te zien of het signaal in de praktijk werkt.</p>' + hk.map(function (x) {
+        return '<p><b>' + h(x.valuta) + ':</b> ' + x.signaal.n + ' aankoop' + (x.signaal.n === 1 ? '' : 'en') + ' op signaal: <b style="color:' + kleur(x.signaal.winst) + '">' + (x.signaal.pct == null ? '–' : pct(x.signaal.pct)) + '</b>' + (x.overig.n ? ' · overige ' + x.overig.n + ': ' + (x.overig.pct == null ? '–' : pct(x.overig.pct)) : '') + '</p>';
+      }).join('') + '<p class="zacht">Een kleine steekproef zegt weinig; het is een hulpmiddel, geen bewijs.</p></div>';
       s += '<div class="lijst">' + res.regels.map(function (r) {
         var p = r.positie;
         return '<div class="regel" style="flex-wrap:wrap"><div class="tekstkolom" style="flex:1 1 200px"><b>' + h(r.naam) + '</b><span class="zacht">' + getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht voor ' + euro(p.koers, p.valuta) + (p.datum ? ' op ' + h(datumNl(p.datum)) : '') + '</span>' +
+          (p.opSignaal && p.signaal ? '<span class="zacht" data-op-signaal>Op signaal gekocht: ' + h(oordeelTekst(p.signaal)) + ' op ' + h(datumNl(p.signaal.datum)) + (zoek(p.ticker) ? ' · nu: ' + h(oordeelTekst(signaalVoor(zoek(p.ticker)))) : '') + '</span>' : '') +
           (r.status === 'ok' ? '<span style="color:' + kleur(r.winst) + ';font-weight:700">Nu ' + euro(r.waarde, p.valuta) + ' · ' + teken(r.winst, p.valuta) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>'
             : '<span class="zacht" style="color:var(--wait-ink)">Geen waarde: ' + h(r.reden) + '</span>') + '</div>' +
           '<button class="knop rand klein" data-weg="' + h(p.id) + '" aria-label="Verwijder aankoop ' + h(r.naam) + '">Verwijder</button></div>';
@@ -231,6 +249,7 @@
       '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-v">Valuta</label><input id="pf-v" type="text" maxlength="3" autocapitalize="characters" autocomplete="off"></div>' +
       '<div><label for="pf-d">Datum (mag leeg)</label><input id="pf-d" type="date"></div></div>' +
+      '<label class="vink"><input type="checkbox" id="pf-sig"> Gekocht op basis van het signaal van de app</label><p class="zacht">De app legt dan het oordeel en de dekking van nu vast, zodat u later kunt terugkijken of het signaal klopte.</p>' +
       '<p id="pf-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Toevoegen</button></div></form></div>' +
       '<p class="zacht">Alleen een overzicht van wat u zelf invoert, geen beleggingsadvies. Kosten en belasting zijn niet meegerekend. De waarde gebruikt de laatste slotkoers en alleen als die maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud is.</p></section>' + backupBalk();
     return s;
@@ -241,7 +260,9 @@
     sel.addEventListener('change', vul); vul();
     document.getElementById('pf').addEventListener('submit', function (e) {
       e.preventDefault();
-      var u = winkel.voegPositieToe({ ticker: sel.value, aantal: document.getElementById('pf-n').value, koers: document.getElementById('pf-k').value, valuta: val.value, datum: document.getElementById('pf-d').value || null });
+      var rec = zoek(sel.value), op = document.getElementById('pf-sig').checked && rec;
+      var u = winkel.voegPositieToe({ ticker: sel.value, aantal: document.getElementById('pf-n').value, koers: document.getElementById('pf-k').value, valuta: val.value, datum: document.getElementById('pf-d').value || null,
+        signaal: op ? momentopname(rec) : undefined, opSignaal: op ? true : undefined });
       if (!u.ok) { document.getElementById('pf-fout').textContent = u.reden; return; }
       toast('Aankoop toegevoegd'); route();
     });
@@ -305,7 +326,7 @@
   }
 
   /* ---- Aandeelpagina ---- */
-  var TABS = [['samenvatting', 'Overzicht'], ['koers', 'Koers'], ['waarde', 'NAIC'], ['check', 'Checklist'], ['gezondheid', 'Cijfers'], ['bronnen', 'Bronnen']];
+  var TABS = [['samenvatting', 'Overzicht'], ['koers', 'Koers'], ['waarde', 'NAIC'], ['check', 'Verdiepen'], ['gezondheid', 'Cijfers'], ['bronnen', 'Bronnen']];
   function groei(a, b, jaren) { return a > 0 && b > 0 && jaren > 0 ? (Math.pow(b / a, 1 / jaren) - 1) * 100 : null; }
   function jaarLijst(g) { return (g && g.jaren ? g.jaren : []).slice().sort(function (x, y) { return x.year - y.year; }); }
   function sparkSvg(reeks, sma) {
@@ -366,7 +387,7 @@
     } else if (tab === 'waarde') {
       s += waardeHtml(rec, g, jr, r);
     } else if (tab === 'check') {
-      s += checkHtml(rec);
+      s += verdiepHtml(rec) + checkHtml(rec);
     } else if (tab === 'gezondheid') {
       s += (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + gezondHtml(g, jr);
     } else {
@@ -547,6 +568,50 @@
   }
 
   function voortgangTekst(v) { return v.beantwoord + ' van ' + v.totaal + ' beantwoord' + (v.beantwoord ? ' (' + v.ja + ' ja, ' + v.nee + ' nee, ' + v.onzeker + ' weet ik niet)' : ''); }
+  function verdiepHtml(rec) {
+    var b = signaalVoor(rec), v = winkel.verdieping(rec.ticker);
+    var s = '<div class="kaart-plat" data-verdiepen><h2>Verdiepen</h2><p class="zacht">Hoe meer u over dit aandeel weet en invult, hoe zekerder het oordeel wordt. Uw eigen invoer telt mee met een lager gewicht dan gecontroleerde cijfers, en vervangt nooit een cijfer uit het jaarverslag. Alles blijft op dit toestel en zit in uw back-up.</p><div id="vd-meter">' + verdiepMeterHtml(b) + '</div></div>';
+    var bo = b.methoden.filter(function (m) { return m.beoordeling; });
+    s += '<div class="kaart-plat"><h2>Uw eigen beoordeling</h2><p class="zacht">Geef een cijfer van 1 (slecht) tot 5 (uitstekend); 3 is neutraal. Klik nogmaals op uw cijfer om het weg te halen.</p>' + bo.map(function (m) {
+      var cur = v.scores[m.id];
+      return '<div class="vd" data-vd-score="' + m.id + '"><b>' + h(m.beoordeling.label) + '</b><p class="zacht">' + h(m.beoordeling.waar) + '</p><div class="knoppen" role="group" aria-label="' + h(m.beoordeling.label) + '">' + [1, 2, 3, 4, 5].map(function (n) {
+        return '<button class="knop rand klein" type="button" data-cijfer="' + n + '" aria-pressed="' + (cur === n) + '">' + n + '</button>';
+      }).join('') + '</div><label for="vd-n-' + m.id + '" class="zacht">Notitie (mag leeg)</label><textarea id="vd-n-' + m.id + '" rows="2" maxlength="500" style="width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px">' + h(v.notities[m.id] || '') + '</textarea></div>';
+    }).join('') + '</div>';
+    var ci = b.methoden.filter(function (m) { return m.invoer && (!m.aanwezig || m.kwaliteit === 'eigen'); });
+    if (ci.length) s += '<div class="kaart-plat"><h2>Cijfers die ontbreken</h2><p class="zacht">Deze cijfers staan niet in de gegevens van de app. Weet u ze uit het jaarverslag of een andere bron, vul ze dan in. Laat leeg als u het niet weet.</p>' + ci.map(function (m) {
+      var cur = v.cijfers[m.id];
+      return '<div class="vd" data-vd-cijfer="' + m.id + '"><label for="vd-c-' + m.id + '"><b>' + h(m.invoer.label) + '</b></label><p class="zacht">' + h(m.invoer.waar) + '</p><input id="vd-c-' + m.id + '" type="text" inputmode="decimal" autocomplete="off" value="' + (typeof cur === 'number' ? h(String(cur).replace('.', ',')) : '') + '"><span class="zacht" data-vd-fout role="alert" style="color:var(--bad-ink)"></span></div>';
+    }).join('') + '</div>';
+    return s;
+  }
+  function verdiepMeterHtml(b) {
+    return '<p>' + oordeelChip(b) + '</p>' + dekkingMeter(b) + (b.ontbreekt.length ? '<p class="zacht">Nog niet ingevuld: ' + b.ontbreekt.slice(0, 6).map(h).join(', ') + (b.ontbreekt.length > 6 ? ' en ' + (b.ontbreekt.length - 6) + ' andere' : '') + '.</p>' : '<p class="zacht">Alle onderdelen zijn ingevuld.</p>');
+  }
+  function verdiepKoppel(rec) {
+    function ververs() { var el = document.getElementById('vd-meter'); if (el) el.innerHTML = verdiepMeterHtml(signaalVoor(rec)); }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-vd-score]'), function (k) {
+      var id = k.getAttribute('data-vd-score'), ta = k.querySelector('textarea');
+      Array.prototype.forEach.call(k.querySelectorAll('[data-cijfer]'), function (bt) {
+        bt.addEventListener('click', function () {
+          var nu = bt.getAttribute('aria-pressed') === 'true' ? null : Number(bt.getAttribute('data-cijfer'));
+          var u = winkel.zetVerdieping(rec.ticker, 'scores', id, nu);
+          if (!u.ok) { toast(u.reden || 'Opslaan is niet gelukt. Maak een back-up.'); return; }
+          Array.prototype.forEach.call(k.querySelectorAll('[data-cijfer]'), function (x) { x.setAttribute('aria-pressed', String(nu !== null && Number(x.getAttribute('data-cijfer')) === nu)); });
+          ververs();
+        });
+      });
+      ta.addEventListener('change', function () { var u = winkel.zetVerdieping(rec.ticker, 'notities', id, ta.value); if (!u.ok) toast(u.reden || 'Opslaan is niet gelukt. Maak een back-up.'); });
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-vd-cijfer]'), function (k) {
+      var id = k.getAttribute('data-vd-cijfer'), inp = k.querySelector('input'), fout = k.querySelector('[data-vd-fout]');
+      inp.addEventListener('change', function () {
+        var u = winkel.zetVerdieping(rec.ticker, 'cijfers', id, inp.value);
+        fout.textContent = u.ok ? '' : (u.reden || 'Opslaan is niet gelukt.');
+        if (u.ok) ververs();
+      });
+    });
+  }
   function checkHtml(rec) {
     var ant = winkel.checklist(rec.ticker), s = '<div class="kaart-plat"><h2>Kwaliteitscheck</h2><p class="zacht">De 15 punten van Philip Fisher over concurrentiepositie en management, ook gebruikt door NAIC-beleggers. U vult zelf in wat u weet. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten u beantwoord heeft. Wat u hier schrijft blijft op dit toestel en zit in uw back-up.</p><p id="ck-voortgang" aria-live="polite"><b>' + h(voortgangTekst(Checklist.voortgang(ant))) + '</b></p></div>';
     ['Concurrentiepositie', 'Management', 'Financieel'].forEach(function (gn) { s += '<h3>' + h(gn) + '</h3>'; Checklist.PUNTEN.filter(function (p) { return p.groep === gn; }).forEach(function (p) {
@@ -559,7 +624,7 @@
     return s;
   }
   function checkKoppel(rec) {
-    function werk() { var el = document.getElementById('ck-voortgang'); if (el) el.innerHTML = '<b>' + h(voortgangTekst(Checklist.voortgang(winkel.checklist(rec.ticker)))) + '</b>'; }
+    function werk() { var el = document.getElementById('ck-voortgang'); if (el) el.innerHTML = '<b>' + h(voortgangTekst(Checklist.voortgang(winkel.checklist(rec.ticker)))) + '</b>'; var vm = document.getElementById('vd-meter'); if (vm) vm.innerHTML = verdiepMeterHtml(signaalVoor(rec)); }
     Array.prototype.forEach.call(document.querySelectorAll('.ck'), function (k) {
       var id = Number(k.getAttribute('data-punt')), ta = k.querySelector('textarea');
       Array.prototype.forEach.call(k.querySelectorAll('[data-ant]'), function (b) {
@@ -579,15 +644,16 @@
     if (tg) tg.addEventListener('click', function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } });
     var b = document.getElementById('volg'); if (!b) return;
     b.addEventListener('click', function () {
-      if (winkel.zit(t)) { winkel.verwijder(t); toast('Van uw volglijst gehaald', function () { winkel.voegToe(t); route(); }); }
-      else { var u = winkel.voegToe(t); toast(u.ok ? 'Op uw volglijst gezet' : (u.reden || 'Opslaan niet gelukt')); }
+      var rec = zoek(t), oud = winkel.volglijst().filter(function (x) { return x.ticker === t; })[0];
+      if (winkel.zit(t)) { winkel.verwijder(t); toast('Van uw volglijst gehaald', function () { winkel.voegToe(t, oud && oud.sinds); route(); }); }
+      else { var u = winkel.voegToe(t, rec ? momentopname(rec) : null); toast(u.ok ? 'Op uw volglijst gezet' : (u.reden || 'Opslaan niet gelukt')); }
       route();
     });
   }
 
   function schermHulp() {
     return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven), dan raakt u niets kwijt.</li></ul></div>' +
-      '<div class="kaart-plat"><h2>Wanneer krijgt een aandeel een oordeel?</h2><p>Alleen als alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen. Ontbreekt iets, dan zegt de app dat eerlijk en toont zij geen oordeel.</p></div>' +
+      '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het Totaalbeeld combineert technische analyse, fundamentele analyse, factoren (momentum en schommelingen) en uw eigen beoordeling. Elk onderdeel dat er niet is telt niet mee en wordt nooit geschat. Het oordeel (positief, neutraal of vermijden) is altijd voorlopig en komt met een dekking: hoeveel procent van de mogelijke gegevens bekend is, en hoeveel daarvan gecontroleerd is. Gecontroleerde gegevens wegen zwaarder. Via het tabblad Verdiepen voegt u zelf informatie toe, zodat het oordeel zekerder wordt.</p><p>Het NAIC-label (positief, neutraal, vermijden op de plek in het koersbereik) krijgt alleen een aandeel waarvan alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen.</p></div>' +
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
   }
@@ -663,7 +729,7 @@
       html = schermAandeel(t, tab);
       $menu.innerHTML = menuHtml(TABS.map(function (x) { return ['#/a/' + encodeURIComponent(t) + '/' + x[0], x[1], x[0]]; }), '#/a/' + encodeURIComponent(t) + '/' + tab);
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
-      na = function () { aandeelKoppel(t); if (tab === 'check' && rec) checkKoppel(rec); if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
+      na = function () { aandeelKoppel(t); if (tab === 'check' && rec) { checkKoppel(rec); verdiepKoppel(rec); } if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
     } else if ((m2 = hash.match(/^#\/vergelijk(?:\/([^\/]+)\/([^\/]+))?$/))) {
       html = schermVergelijk(m2[1] ? decodeURIComponent(m2[1]).toUpperCase() : null, m2[2] ? decodeURIComponent(m2[2]).toUpperCase() : null);
       $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';

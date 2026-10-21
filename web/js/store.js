@@ -7,7 +7,7 @@
   var MAX_POSITIES = 200;
   var TICKER = /^[A-Z0-9][A-Z0-9.\-]{0,14}$/;
 
-  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], checklist: {}, zones: {}, instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
+  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], checklist: {}, zones: {}, verdieping: {}, instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
 
   function normTicker(t) {
     if (typeof t !== 'string') return null;
@@ -22,6 +22,40 @@
     if (!isFinite(n) || n > max || (strikt ? n <= min : n < min)) return null;
     return n;
   }
+  /* Momentopname van het oordeel van de app (bij toevoegen aan de volglijst of bij een aankoop), om later te kunnen zien of het klopte. */
+  var OORDELEN = ['positief', 'neutraal', 'vermijden'], ZEKERHEDEN = ['zeer voorlopig', 'voorlopig', 'redelijk', 'stevig'];
+  function schoonSignaal(x) {
+    if (!x || typeof x !== 'object') return null;
+    var oordeel = OORDELEN.indexOf(x.oordeel) > -1 ? x.oordeel : null;
+    var dekking = getalOk(x.dekking, 0, 100, false), score = typeof x.score === 'number' && isFinite(x.score) && Math.abs(x.score) <= 1 ? x.score : null;
+    var datum = typeof x.datum === 'string' && /^\d{4}-\d{2}-\d{2}/.test(x.datum) ? x.datum.slice(0, 10) : null;
+    if (dekking === null || !datum) return null;
+    var koers = getalOk(x.koers, 0, 1e9, true), valuta = typeof x.valuta === 'string' && /^[A-Za-z]{3}$/.test(x.valuta.trim()) ? x.valuta.trim().toUpperCase() : null;
+    return { oordeel: oordeel, dekking: Math.round(dekking), zekerheid: ZEKERHEDEN.indexOf(x.zekerheid) > -1 ? x.zekerheid : null, score: score === null ? null : Math.round(score * 100) / 100,
+             datum: datum, koers: koers !== null && valuta ? koers : null, valuta: koers !== null && valuta ? valuta : null };
+  }
+  /* Eigen aanvullende informatie per aandeel: beoordelingen 1-5 en eigen cijfers voor wat de jaarverslagen niet geven. */
+  var VERDIEP_SCORES = ['management', 'moat', 'sector', 'risico'];
+  var VERDIEP_CIJFERS = { omzetgroei: [-100, 1000], epsgroei: [-100, 1000], nettomarge: [-1000, 1000], roe: [-1000, 1000], kw: [-1000, 1000], dividend: [0, 100] };
+  function schoonVerdiepingBlok(b) {
+    if (!b || typeof b !== 'object') return null;
+    var uit = { scores: {}, cijfers: {}, notities: {}, bijgewerkt: null }, any = false;
+    VERDIEP_SCORES.forEach(function (k) { var v = b.scores && b.scores[k]; if (Number.isInteger(v) && v >= 1 && v <= 5) { uit.scores[k] = v; any = true; } });
+    Object.keys(VERDIEP_CIJFERS).forEach(function (k) {
+      var v = b.cijfers && b.cijfers[k], r = VERDIEP_CIJFERS[k];
+      if (typeof v === 'number' && isFinite(v) && v >= r[0] && v <= r[1]) { uit.cijfers[k] = v; any = true; }
+    });
+    var ids = VERDIEP_SCORES.concat(Object.keys(VERDIEP_CIJFERS));
+    ids.forEach(function (k) { var t = b.notities && typeof b.notities[k] === 'string' ? b.notities[k].slice(0, 500) : ''; if (t.trim()) { uit.notities[k] = t; any = true; } });
+    uit.bijgewerkt = typeof b.bijgewerkt === 'string' ? b.bijgewerkt.slice(0, 10) : null;
+    return any ? uit : null;
+  }
+  function schoonVerdieping(data) {
+    var uit = {}, n = 0;
+    if (!data || typeof data !== 'object' || Array.isArray(data)) return uit;
+    Object.keys(data).forEach(function (k) { var t = normTicker(k), b = schoonVerdiepingBlok(data[k]); if (t && b && !uit[t] && n < MAX_CHECKLIST) { uit[t] = b; n++; } });
+    return uit;
+  }
   /* Eén aankoop. Ongeldige invoer geeft null; er wordt nooit iets geraden of afgerond naar een andere waarde. */
   function schoonPositie(p) {
     if (!p || typeof p !== 'object') return null;
@@ -30,7 +64,10 @@
     if (!t || aantal === null || koers === null || !valuta) return null;
     var datum = typeof p.datum === 'string' && /^\d{4}-\d{2}-\d{2}/.test(p.datum) ? p.datum.slice(0, 10) : null;
     var id = typeof p.id === 'string' && /^[A-Za-z0-9_\-]{1,40}$/.test(p.id) ? p.id : null;
-    return { id: id, ticker: t, aantal: aantal, koers: koers, valuta: valuta, datum: datum };
+    var signaal = schoonSignaal(p.signaal);
+    var uit = { id: id, ticker: t, aantal: aantal, koers: koers, valuta: valuta, datum: datum };
+    if (signaal) { uit.signaal = signaal; uit.opSignaal = p.opSignaal === true; }
+    return uit;
   }
   var PUNTEN_AANTAL = 15, MAX_CHECKLIST = 200, MAX_NOTITIE = 500, ANTWOORDEN = ['ja', 'nee', 'onzeker'];
   /* Checklist per aandeel: alleen bekende punten (1 t/m 15), alleen ja/nee/onzeker, notitie als platte tekst met een maximum. */
@@ -82,7 +119,9 @@
       var t = normTicker(it && it.ticker);
       if (t && !gezien[t] && uit.volglijst.length < MAX_VOLGLIJST) {
         gezien[t] = true;
-        uit.volglijst.push({ ticker: t, toegevoegd: typeof it.toegevoegd === 'string' ? it.toegevoegd.slice(0, 10) : null });
+        var item = { ticker: t, toegevoegd: typeof it.toegevoegd === 'string' ? it.toegevoegd.slice(0, 10) : null }, sinds = schoonSignaal(it.sinds);
+        if (sinds) item.sinds = sinds;
+        uit.volglijst.push(item);
       }
     });
     (Array.isArray(data.portefeuille) ? data.portefeuille : []).forEach(function (p) {
@@ -92,6 +131,7 @@
     uit.portefeuille.forEach(function (p, i) { if (!p.id) p.id = 'p' + (i + 1) + '-' + Date.now().toString(36); });
     uit.checklist = schoonChecklist(data.checklist);
     uit.zones = schoonZones(data.zones);
+    uit.verdieping = schoonVerdieping(data.verdieping);
     var th = data.instellingen && data.instellingen.thema;
     uit.instellingen.thema = (th === 'licht' || th === 'donker' || th === 'auto') ? th : 'auto';
     uit.introGezien = data.introGezien === true;
@@ -120,12 +160,14 @@
       fout: function () { return fout; },
       volglijst: function () { return staat.volglijst.slice(); },
       zit: function (t) { t = normTicker(t); return staat.volglijst.some(function (x) { return x.ticker === t; }); },
-      voegToe: function (t) {
+      voegToe: function (t, momentopname) {
         t = normTicker(t);
         if (!t) return { ok: false, reden: 'ongeldige beurscode' };
         if (this.zit(t)) return { ok: true, status: 'bestond' };
         if (staat.volglijst.length >= MAX_VOLGLIJST) return { ok: false, reden: 'volglijst vol (maximaal ' + MAX_VOLGLIJST + ')' };
-        staat.volglijst.push({ ticker: t, toegevoegd: nu().slice(0, 10) });
+        var nieuwItem = { ticker: t, toegevoegd: nu().slice(0, 10) }, sinds = schoonSignaal(momentopname);
+        if (sinds) nieuwItem.sinds = sinds;
+        staat.volglijst.push(nieuwItem);
         return { ok: bewaar(true), status: 'toegevoegd' };
       },
       verwijder: function (t) {
@@ -173,13 +215,35 @@
         x.bijgewerkt = nu().slice(0, 10); staat.zones[t] = x; return { ok: bewaar(true) };
       },
       wisZones: function (t) { t = normTicker(t); if (!t || !staat.zones[t]) return false; delete staat.zones[t]; bewaar(true); return true; },
+      verdieping: function (t) { t = normTicker(t); return t && staat.verdieping[t] ? JSON.parse(JSON.stringify(staat.verdieping[t])) : { scores: {}, cijfers: {}, notities: {}, bijgewerkt: null }; },
+      /* soort: 'scores' (geheel getal 1-5), 'cijfers' (getal binnen de grenzen) of 'notities' (tekst). Leeg of null wist de waarde. */
+      zetVerdieping: function (t, soort, id, waarde) {
+        t = normTicker(t);
+        if (!t || ['scores', 'cijfers', 'notities'].indexOf(soort) < 0) return { ok: false, reden: 'ongeldige invoer' };
+        var geldig = soort === 'scores' ? VERDIEP_SCORES.indexOf(id) > -1 : soort === 'cijfers' ? Object.prototype.hasOwnProperty.call(VERDIEP_CIJFERS, id) : (VERDIEP_SCORES.indexOf(id) > -1 || Object.prototype.hasOwnProperty.call(VERDIEP_CIJFERS, id));
+        if (!geldig) return { ok: false, reden: 'onbekend onderdeel' };
+        var blok = staat.verdieping[t] || { scores: {}, cijfers: {}, notities: {}, bijgewerkt: null };
+        var leegWaarde = waarde === null || waarde === undefined || (typeof waarde === 'string' && !waarde.trim());
+        if (leegWaarde) delete blok[soort][id];
+        else if (soort === 'scores') { var n = Number(waarde); if (!Number.isInteger(n) || n < 1 || n > 5) return { ok: false, reden: 'Kies een getal van 1 tot 5.' }; blok.scores[id] = n; }
+        else if (soort === 'cijfers') {
+          var c = typeof waarde === 'number' ? waarde : Number(String(waarde).replace(',', '.')), r = VERDIEP_CIJFERS[id];
+          if (!isFinite(c) || c < r[0] || c > r[1]) return { ok: false, reden: 'Dit getal valt buiten het toegestane bereik (' + r[0] + ' tot ' + r[1] + ').' };
+          blok.cijfers[id] = c;
+        } else blok.notities[id] = String(waarde).slice(0, 500);
+        if (!staat.verdieping[t] && Object.keys(staat.verdieping).length >= MAX_CHECKLIST) return { ok: false, reden: 'te veel aandelen met eigen informatie' };
+        var schoonBlok = schoonVerdiepingBlok(blok);
+        if (!schoonBlok) { delete staat.verdieping[t]; return { ok: bewaar(true) }; }
+        schoonBlok.bijgewerkt = nu().slice(0, 10); staat.verdieping[t] = schoonBlok;
+        return { ok: bewaar(true) };
+      },
       introGezien: function () { return staat.introGezien === true; },
       zetIntroGezien: function (gezien) { staat.introGezien = gezien !== false; return bewaar(false); },
       zetThema: function (th) { staat.instellingen.thema = (th === 'licht' || th === 'donker') ? th : 'auto'; bewaar(false); },
       /* Back-up als tekst (JSON). Markeert het moment van back-up. */
       maakBackup: function () {
         var b = { app: 'Aandeel Signaal', soort: 'back-up', versie: 1, gemaakt: nu(),
-          volglijst: staat.volglijst, portefeuille: staat.portefeuille, checklist: staat.checklist, zones: staat.zones, instellingen: staat.instellingen };
+          volglijst: staat.volglijst, portefeuille: staat.portefeuille, checklist: staat.checklist, zones: staat.zones, verdieping: staat.verdieping, instellingen: staat.instellingen };
         staat.laatsteBackup = b.gemaakt; bewaar(false);
         return JSON.stringify(b, null, 1);
       },
@@ -189,7 +253,7 @@
         try { data = JSON.parse(tekst); } catch (e) { return { ok: false, reden: 'Dit bestand is geen geldige back-up.' }; }
         if (!data || data.app !== 'Aandeel Signaal' || data.soort !== 'back-up') return { ok: false, reden: 'Dit is geen back-up van Aandeel Signaal.' };
         var s = schoon(data), nieuw = 0;
-        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; staat.checklist = s.checklist; staat.zones = s.zones; nieuw = s.volglijst.length + s.portefeuille.length; }
+        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; staat.checklist = s.checklist; staat.zones = s.zones; staat.verdieping = s.verdieping; nieuw = s.volglijst.length + s.portefeuille.length; }
         else {
           s.volglijst.forEach(function (it) {
             if (!staat.volglijst.some(function (x) { return x.ticker === it.ticker; }) && staat.volglijst.length < MAX_VOLGLIJST) {
@@ -209,12 +273,17 @@
           Object.keys(s.checklist[t].punten).forEach(function (id) { if (!doel.punten[id]) { doel.punten[id] = s.checklist[t].punten[id]; nieuw++; } });   // bestaand antwoord wordt nooit overschreven
         });
         if (modus !== 'vervang') Object.keys(s.zones).forEach(function (t) { if (!staat.zones[t] && Object.keys(staat.zones).length < MAX_CHECKLIST) { staat.zones[t] = s.zones[t]; nieuw++; } });   // bestaande zones blijven
+        if (modus !== 'vervang') Object.keys(s.verdieping).forEach(function (t) {
+          var doel = staat.verdieping[t];
+          if (!doel) { if (Object.keys(staat.verdieping).length < MAX_CHECKLIST) { staat.verdieping[t] = s.verdieping[t]; nieuw++; } return; }
+          ['scores', 'cijfers', 'notities'].forEach(function (soort) { Object.keys(s.verdieping[t][soort]).forEach(function (k) { if (!(k in doel[soort])) { doel[soort][k] = s.verdieping[t][soort][k]; nieuw++; } }); });   // eigen invoer wordt nooit overschreven
+        });
         if (s.instellingen.thema !== 'auto' && modus === 'vervang') staat.instellingen.thema = s.instellingen.thema;
         return { ok: bewaar(true), toegevoegd: nieuw, totaal: staat.volglijst.length, totaalPortefeuille: staat.portefeuille.length };
       },
       /* Herinnering: ruim 14 dagen geen back-up, of wijziging na de laatste back-up. */
       backupNodig: function (vandaag) {
-        if (!staat.volglijst.length && !staat.portefeuille.length && !Object.keys(staat.checklist).length && !Object.keys(staat.zones).length) return false;
+        if (!staat.volglijst.length && !staat.portefeuille.length && !Object.keys(staat.checklist).length && !Object.keys(staat.zones).length && !Object.keys(staat.verdieping).length) return false;
         if (!staat.laatsteBackup) return true;
         if (staat.gewijzigd && staat.gewijzigd > staat.laatsteBackup) return true;
         var d = (Date.parse(vandaag) - Date.parse(staat.laatsteBackup)) / 86400000;
@@ -223,6 +292,6 @@
     };
   }
 
-  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
+  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonVerdieping: schoonVerdieping, schoonSignaal: schoonSignaal, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Store = api;
 })(typeof self !== 'undefined' ? self : this);

@@ -262,6 +262,51 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
+    def test_verdiepen_eigen_invoer_verhoogt_de_dekking_en_blijft_bewaard(self):
+        pg = self.pagina(320)
+        pg.goto(INDEX + '#/a/ASML.AS/check')
+        pg.wait_for_timeout(150)
+        d0 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
+        pg.click('[data-vd-score="management"] [data-cijfer="5"]')
+        d1 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
+        self.assertGreater(d1, d0)
+        self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 1)
+        pg.fill('#vd-c-roe', '18,5'); pg.dispatch_event('#vd-c-roe', 'change')
+        d2 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
+        self.assertGreater(d2, d1)
+        self.assertIn('eigen invoer', pg.locator('#vd-meter').inner_text())
+        pg.fill('#vd-c-roe', 'abc'); pg.dispatch_event('#vd-c-roe', 'change')
+        self.assertTrue(pg.locator('[data-vd-cijfer="roe"] [data-vd-fout]').inner_text())
+        pg.wait_for_timeout(300)
+        pg.reload(); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').get_attribute('data-cijfer'), '5')
+        self.assertEqual(pg.input_value('#vd-c-roe'), '18,5')
+        pg.click('[data-vd-score="management"] [data-cijfer="5"]')                      # nogmaals klikken wist
+        self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 0)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
+    def test_volgen_legt_startpunt_vast_en_portefeuille_markeert_op_signaal(self):
+        pg = self._pagina_met_indexen('#/a/AAPL/samenvatting', 390)
+        pg.click('#volg')
+        pg.wait_for_timeout(250)
+        pg.evaluate("location.hash='#/volglijst'"); pg.wait_for_timeout(200)
+        t = pg.locator('[data-volg="AAPL"]').inner_text()
+        self.assertIn('Sinds', t); self.assertIn('Oordeel toen', t)
+        pg.evaluate("location.hash='#/portefeuille'"); pg.wait_for_timeout(200)
+        pg.select_option('#pf-t', 'AAPL')
+        pg.fill('#pf-n', '2'); pg.fill('#pf-k', '60')
+        pg.check('#pf-sig')
+        pg.click('#pf button[type="submit"]'); pg.wait_for_timeout(250)
+        self.assertEqual(pg.locator('[data-op-signaal]').count(), 1)
+        self.assertIn('Op signaal gekocht', pg.locator('[data-op-signaal]').inner_text())
+        self.assertEqual(pg.locator('[data-herkomst]').count(), 1)
+        pg.select_option('#pf-t', 'AAPL'); pg.fill('#pf-n', '1'); pg.fill('#pf-k', '65')
+        pg.click('#pf button[type="submit"]'); pg.wait_for_timeout(250)
+        self.assertEqual(pg.locator('[data-op-signaal]').count(), 1)                    # tweede aankoop zonder vinkje: geen herkomst
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
     def test_dashboard_plek_in_bereik_zichtbaar_en_sorteerbaar(self):
         pg = self._pagina_met_indexen('#/', 320)
         pg.select_option('#d-sort', 'positiePct')
@@ -409,7 +454,7 @@ class WebUi(unittest.TestCase):
         pg.fill('#ck-n5', '<b>sterke</b> marge')
         pg.dispatch_event('#ck-n5', 'change')
         self.assertIn('3 van 15 beantwoord (1 ja, 1 nee, 1 weet ik niet)', pg.inner_text('#ck-voortgang'))
-        self.assertNotIn('%', pg.inner_text('main'))
+        self.assertNotIn('%', pg.inner_text('#ck-voortgang') + ' '.join(pg.locator('.ck').all_inner_texts()))   # de check zelf geeft geen score; de dekking-meter staat apart
         self.assertEqual(pg.locator('main h3').all_inner_texts(), ['Concurrentiepositie', 'Management', 'Financieel'])
         pg.click('[data-punt="7"] [data-ant="nee"]')       # nogmaals klikken haalt het antwoord weg
         self.assertIn('2 van 15 beantwoord', pg.inner_text('#ck-voortgang'))

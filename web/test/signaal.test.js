@@ -72,7 +72,7 @@ test('kwaliteitscheck van de gebruiker telt naar rato van het aantal beantwoorde
   const half = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 6, nee: 1, onzeker: 0 } }));
   const vol = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 13, nee: 2, onzeker: 0 } }));
   assert.ok(half.dekking > zonder.dekking && vol.dekking > half.dekking);
-  assert.equal(vol.kwaliteit.eigen, Math.round(15 / 95 * 100));
+  assert.equal(vol.kwaliteit.eigen, Math.round(15 / S.METHODEN.reduce((a, m) => a + m.gewicht, 0) * 100));
   assert.ok(half.kwaliteit.eigen < 15 && half.kwaliteit.eigen > 0);
   const slecht = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 1, nee: 14, onzeker: 0 } }));
   assert.ok(slecht.score < zonder.score);
@@ -109,4 +109,49 @@ test('rommel in de gegevens geeft nooit een uitzondering', () => {
   for (const r of [{}, { ticker: 'X' }, { ticker: 'X', koers: { slot: 'a', datum: 'x' }, gegevens: { jaren: [null, {}, { year: 'x' }] } }, null]) {
     assert.doesNotThrow(() => S.beoordeel(r, O()));
   }
+});
+
+test('eigen beoordeling (1-5) telt mee als eigen invoer; 3 is neutraal, 5 gunstig, 1 ongunstig', () => {
+  const basis = S.beoordeel(rec(), O());
+  const hoog = S.beoordeel(rec(), O({ verdieping: { scores: { management: 5, moat: 5 } } }));
+  assert.ok(hoog.dekking > basis.dekking);
+  assert.equal(hoog.methoden.find((m) => m.id === 'management').score, 1);
+  assert.equal(hoog.methoden.find((m) => m.id === 'management').kwaliteit, 'eigen');
+  assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: 3 } } })).methoden.find((m) => m.id === 'management').score, 0);
+  assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: 1 } } })).methoden.find((m) => m.id === 'management').score, -1);
+  for (const slecht of [0, 6, 2.5, '4', null]) assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: slecht } } })).methoden.find((m) => m.id === 'management').aanwezig, false, String(slecht));
+});
+
+test('eigen cijfer vult alleen aan wat ontbreekt en overschrijft nooit een bestaand cijfer', () => {
+  const zonder = alleen(rec());
+  const a = S.beoordeel(zonder, O());
+  assert.equal(a.methoden.find((m) => m.id === 'roe').aanwezig, false);
+  const b = S.beoordeel(zonder, O({ verdieping: { cijfers: { roe: 18, omzetgroei: 9, nettomarge: 2, epsgroei: -3 } } }));
+  const roe = b.methoden.find((m) => m.id === 'roe');
+  assert.equal(roe.aanwezig, true); assert.equal(roe.kwaliteit, 'eigen'); assert.equal(roe.score, 1);
+  assert.match(roe.tekst, /^Uw eigen cijfer/);
+  assert.equal(b.methoden.find((m) => m.id === 'nettomarge').score, -0.5);
+  assert.equal(b.methoden.find((m) => m.id === 'epsgroei').score, -1);
+  assert.ok(b.dekking > a.dekking && b.kwaliteit.eigen > 0);
+  // met gecontroleerde cijfers wint het cijfer uit het jaarverslag, niet uw invoer
+  const c = S.beoordeel(rec(), O({ verdieping: { cijfers: { roe: -50 } } }));
+  assert.equal(c.methoden.find((m) => m.id === 'roe').kwaliteit, 'gecontroleerd');
+  assert.ok(c.methoden.find((m) => m.id === 'roe').score > -1);
+  // rommel wordt genegeerd
+  const d = S.beoordeel(zonder, O({ verdieping: { cijfers: { roe: 'abc', kw: NaN, dividend: Infinity } } }));
+  for (const id of ['roe', 'kw', 'dividend']) assert.equal(d.methoden.find((m) => m.id === id).aanwezig, false, id);
+});
+
+test('eigen K/W en dividend tellen ook zonder koers', () => {
+  const r = rec({ koers: null, gegevens: null });
+  const b = S.beoordeel(r, O({ verdieping: { cijfers: { kw: 10, dividend: 4 } } }));
+  assert.equal(b.methoden.find((m) => m.id === 'kw').score, 1);
+  assert.equal(b.methoden.find((m) => m.id === 'dividend').score, 1);
+});
+
+test('meer eigen informatie geeft meer dekking en dus meer zekerheid', () => {
+  const r = alleen(rec());
+  const n = (v) => S.beoordeel(r, O({ verdieping: v })).dekking;
+  const d0 = n(null), d1 = n({ scores: { management: 4 } }), d2 = n({ scores: { management: 4, moat: 4, sector: 3, risico: 4 }, cijfers: { roe: 12, kw: 15 } });
+  assert.ok(d0 < d1 && d1 < d2);
 });

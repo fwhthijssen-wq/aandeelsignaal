@@ -180,3 +180,5 @@ nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }
 .dekking { margin: 6px 0 10px; }
 [data-signaal] .chip, .lijst .chip[data-oordeel], table.dash .chip[data-oordeel] { white-space: normal; }
 [data-signaal] .rij-kop { flex-wrap: wrap; gap: 6px; }
+.vd { margin: 0 0 14px; } .vd textarea, .vd input[type="text"] { width: 100%; box-sizing: border-box; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin-top: 4px; }
+.vd .knoppen { margin: 8px 0; } .vd button[aria-pressed="true"] { background: var(--acc); color: #fff; }
