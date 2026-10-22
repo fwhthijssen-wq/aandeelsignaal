@@ -197,3 +197,11 @@ details.meer > .lijst { margin-top: 6px; }
 details.uitleg { margin: 10px 0; }
 details.uitleg p, details.uitleg li { font-weight: 400; }
 .lijst .tekstkolom .chip { margin-top: 4px; align-self: flex-start; }
+/* Fondsen: compacte filterbalk */
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.filterbalk { display: flex; flex-direction: column; gap: 8px; margin-bottom: 6px; }
+.filterkeuzes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.filterkeuzes select { min-height: 44px; padding: 0 10px; font-size: .95rem; }
+.filterkeuzes #f-sort { grid-column: 1 / -1; }
+@media (min-width: 640px) { .filterkeuzes { grid-template-columns: 1.2fr 1fr 2fr; } .filterkeuzes #f-sort { grid-column: auto; } }
+.vink.klein { font-size: .95rem; min-height: 36px; }

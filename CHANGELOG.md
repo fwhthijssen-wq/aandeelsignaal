@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.22-beta.62
+- **Fondsen: compacte filterbalk.** Zoekveld bovenaan, daaronder index, weergave en sortering naast elkaar zonder losse kopjes, en het vinkje voor bevestigde cijfers. De uitleg over de woorden staat nu onder de lijst. Op een telefoon begint de lijst daardoor ongeveer een half scherm hoger.
+- **Londense jaarverslagen uit het officiële Britse register** (FCA National Storage Mechanism) met de nieuwe hulpworkflow 'Britse jaarverslagen ophalen (ontwikkeling)': 430 jaarverslagen (boekjaren 2015-2021) van 83 Londense fondsen opgehaald, als tekst bewaard met publicatiedatum en officiële link.
+- **Automatische uitlezer verbeterd** (`hulp/pdf_uitlezen.py`): winst per aandeel in pence of cents, Britse tabellen met winst en gewone/verwaterde winst per aandeel op één regel, kolommen gewoon/verwaterd per jaar, labels die over twee regels lopen, toelichtingsnummers voor de getallen, html-tabellen met één cel per regel, en de orde van grootte van het aantal aandelen uit de ESEF-jaren als controle (duizenden of miljoenen). Nog steeds alleen vastgelegd als beide jaren op de cent kloppen en er precies één combinatie past. Test op de met de hand gelezen Nederlandse jaarverslagen: 40 van 40 uitgelezen jaren juist (was 33), geen enkele fout.
+- **Nu volledig bevestigd (10 jaar): Coca-Cola HBC, DCC en Glencore.** Ook vooruit: Computacenter 9 jaar, BT 8, Imperial Brands 6. Volledig bevestigd van 59 naar 62; niets achteruit.
+- Gebroken boekjaren van 52/53 weken (bijv. Marks & Spencer) krijgen de echte periode uit de ESEF-cijfers.
+
 ## 2026.10.22-beta.61
 - **Nieuw menu-onderdeel Fondsen** (vervangt Zoeken): alle aandelen per index gegroepeerd (AEX, AMX, BEL 20, CAC 40, DAX, FTSE 100, IBEX 35, FTSE MIB, Verenigde Staten), per groep het aantal fondsen en het aantal met een positief oordeel. Standaard staan per index de vijf meest kansrijke bovenaan, met “Alle tonen” voor de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.
 - **Sorteren op kansrijkheid**: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke groep de hoogste score, gewogen met de onderbouwing. Ook te sorteren op naam, plek in het koersbereik, afstand tot het gemiddelde, winst- en omzetgroei, marge en opwaarts tegen neerwaarts. Zoeken op naam of beurscode en filteren op index of alleen bevestigde cijfers blijven.
