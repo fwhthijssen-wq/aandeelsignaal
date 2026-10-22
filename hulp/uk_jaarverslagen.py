@@ -7,7 +7,7 @@ tekst (pdf via pdftotext -layout met \\f tussen pagina's; xhtml/html als platte 
 soort, kop, officiële downloadlink) en zoeklog.json (alle gevonden meldingen, om te kunnen nagaan wat er was)."""
 import html, io, json, os, re, subprocess, sys, time, urllib.request, zipfile
 
-ZOEK = 'https://api.data.fca.org.uk/search?index=fca-nsm-searchdata'
+ZOEK = 'https://api.data.fca.org.uk/search?index={index}'
 ARTEFACT = 'https://data.fca.org.uk/artefacts/'
 UA = {'User-Agent': 'Mozilla/5.0 (AandeelSignaal research)', 'Content-Type': 'application/json', 'Accept': 'application/json'}
 JAARVERSLAG = re.compile(r'annual (financial )?report|annual report and accounts|final results|jaarverslag', re.I)
@@ -15,8 +15,8 @@ UITSLUITEN = re.compile(r'half[- ]?year|interim|quarter|q[1-4]\b|notice of|avail
                         r'publication of|posting of|circular|prospectus|transaction in own|director|holding', re.I)
 
 
-def post(body):
-    req = urllib.request.Request(ZOEK, data=json.dumps(body).encode(), headers=UA, method='POST')
+def post(body, index):
+    req = urllib.request.Request(ZOEK.format(index=index), data=json.dumps(body).encode(), headers=UA, method='POST')
     with urllib.request.urlopen(req, timeout=120) as r:
         return json.loads(r.read())
 
@@ -27,13 +27,30 @@ def get(url):
 
 
 def zoek(lei):
-    """Alle meldingen van een LEI (laatste versie), nieuwste eerst. Probeert de bekende vorm van de zoekvraag van de NSM-site."""
-    body = {'from': 0, 'size': 500, 'sortorder': 'desc', 'sort': 'publication_date',
-            'criteriaObj': {'criteria': [{'name': 'latest_flag', 'value': 'Y'}, {'name': 'lei', 'value': ['', lei, 'disclose_org', 'related_org']}],
-                            'dateCriteria': [{'name': 'publication_date', 'value': {'from': None, 'to': None}}]}}
-    d = post(body)
-    hits = (d.get('hits') or {}).get('hits') or []
-    return [h.get('_source') or {} for h in hits], d
+    """Alle meldingen van een LEI (laatste versie), nieuwste eerst, zoals de NSM-site zelf vraagt (index 'nsm-search',
+    criterium 'company_lei' = [naam, LEI, 'disclose_org', 'related_org']). Bladert door alle pagina's."""
+    fouten = []
+    for index in ('nsm-search', 'fca-nsm-searchdata'):
+        for orgs in (['', lei, 'disclose_org', ''], ['', lei, 'disclose_org', 'related_org']):
+            alles, van = [], 0
+            try:
+                while True:
+                    body = {'from': van, 'size': 100, 'sort': 'publication_date', 'sortorder': 'desc',
+                            'criteriaObj': {'criteria': [{'name': 'company_lei', 'value': orgs}, {'name': 'latest_flag', 'value': 'Y'}],
+                                            'dateCriteria': None}}
+                    d = post(body, index)
+                    hits = (d.get('hits') or {}).get('hits') or []
+                    alles += [h.get('_source') or {} for h in hits]
+                    totaal = ((d.get('hits') or {}).get('total') or {}).get('value') or 0
+                    van += 100
+                    if not hits or van >= min(totaal, 2000):
+                        break
+                if alles:
+                    return alles, {'index': index, 'orgs': orgs, 'totaal': totaal}
+                fouten.append(f'{index} {orgs}: 0 resultaten')
+            except Exception as exc:
+                fouten.append(f'{index} {orgs}: {exc}')
+    return [], {'fouten': fouten}
 
 
 def tekst_uit(data, naam):
@@ -74,7 +91,7 @@ def main():
         except Exception as exc:
             print('zoekfout', ticker, exc); json.dump({'fout': str(exc)}, open(os.path.join(map_, 'zoeklog.json'), 'w')); continue
         log = [{k: it.get(k) for k in ('publication_date', 'type', 'type_code', 'headline', 'download_link', 'company', 'lei', 'source')} for it in items]
-        json.dump({'aantal': len(items), 'meldingen': log, 'voorbeeld': items[:2], 'ruw_sleutels': list(ruw.keys())},
+        json.dump({'aantal': len(items), 'zoekvraag': ruw, 'meldingen': log, 'voorbeeld': items[:2]},
                   open(os.path.join(map_, 'zoeklog.json'), 'w'), indent=1, ensure_ascii=False, default=str)
         pad_index = os.path.join(map_, 'index.json')
         index = json.load(open(pad_index)) if os.path.exists(pad_index) else []
