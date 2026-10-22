@@ -1,1 +1,38 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-25T06:02:21+00:00",
+  "soort": "001001",
+  "titel": "AXA: Communiqué de presse - Résultats annuels 2015",
+  "bedrijf": "AXA",
+  "isin": "FR0000120628",
+  "bestand_bron": "ECO/2016/02/FCECO039371_20160225.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2016/02/FCECO039371_20160225.pdf",
+  "tekst": "fr-2015.txt",
+  "grootte_pdf": 687934
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-21T06:02:06+00:00",
+  "soort": "001008",
+  "titel": "AXA: Résultats annuels 2018",
+  "bedrijf": "AXA",
+  "isin": "FR0000120628",
+  "bestand_bron": "ECO/2019/02/FCECO049920_20190221.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2019/02/FCECO049920_20190221.pdf",
+  "tekst": "fr-2018.txt",
+  "grootte_pdf": 517072
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-20T06:05:07+00:00",
+  "soort": "001007",
+  "titel": "AXA - Résultats annuels 2019",
+  "bedrijf": "AXA",
+  "isin": "FR0000120628",
+  "bestand_bron": "ECO/2020/02/FCECO053925_20200220.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2020/02/FCECO053925_20200220.pdf",
+  "tekst": "fr-2019.txt",
+  "grootte_pdf": 439850
+ }
+]

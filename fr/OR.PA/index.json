@@ -1,1 +1,26 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-07T17:30:00+00:00",
+  "soort": "001007",
+  "titel": "L'Oréal: News release: \"2018 Annual Results\"",
+  "bedrijf": "L'OREAL",
+  "isin": "FR0000120321",
+  "bestand_bron": "MKW/2019/02/FCMKW117254_20190207.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/MKW/2019/02/FCMKW117254_20190207.pdf",
+  "tekst": "fr-2018.txt",
+  "grootte_pdf": 856626
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-06T17:00:00+00:00",
+  "soort": "001007",
+  "titel": "L'Oréal: News Release: \"2019 Annual Results\"",
+  "bedrijf": "L'OREAL",
+  "isin": "FR0000120321",
+  "bestand_bron": "MKW/2020/02/FCMKW117380_20200206.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/MKW/2020/02/FCMKW117380_20200206.pdf",
+  "tekst": "fr-2019.txt",
+  "grootte_pdf": 885304
+ }
+]

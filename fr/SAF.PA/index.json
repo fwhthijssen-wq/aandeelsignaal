@@ -1,1 +1,38 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-03-31T19:21:33+00:00",
+  "soort": "003000",
+  "titel": "Safran : document de référence 2015 intégrant le rapport financier annuel",
+  "bedrijf": "SAFRAN",
+  "isin": "FR0000073272",
+  "bestand_bron": "ECO/2016/03/FCECO039678_20160331.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2016/03/FCECO039678_20160331.pdf",
+  "tekst": "fr-2015.txt",
+  "grootte_pdf": 5001716
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-03-31T13:56:06+00:00",
+  "soort": "001006",
+  "titel": "Safran : Document de référence 2016 intégrant le rapport financier annuel",
+  "bedrijf": "SAFRAN",
+  "isin": "FR0000073272",
+  "bestand_bron": "ECO/2017/03/FCECO042845_20170331.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2017/03/FCECO042845_20170331.pdf",
+  "tekst": "fr-2016.txt",
+  "grootte_pdf": 7449674
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-04-03T19:11:07+00:00",
+  "soort": "002009",
+  "titel": "Safran : Document de référence 2017 incluant le rapport financier annuel",
+  "bedrijf": "SAFRAN",
+  "isin": "FR0000073272",
+  "bestand_bron": "ECO/2018/04/FCECO046421_20180403.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2018/04/FCECO046421_20180403.pdf",
+  "tekst": "fr-2017.txt",
+  "grootte_pdf": 4886918
+ }
+]
