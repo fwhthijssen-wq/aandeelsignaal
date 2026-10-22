@@ -1,0 +1,38 @@
+[
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-03-23T07:00:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial report",
+  "bedrijf": "DASSAULT SYSTEMES",
+  "isin": "FR0000130650",
+  "bestand_bron": "BWR/8888/01/FCBWR099515_20170323.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR099515_20170323.pdf",
+  "tekst": "fr-2016.txt",
+  "grootte_pdf": 6321348
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-22T06:30:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial report",
+  "bedrijf": "DASSAULT SYSTEMES",
+  "isin": "FR0000130650",
+  "bestand_bron": "BWR/8888/01/FCBWR108199_20180322.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR108199_20180322.pdf",
+  "tekst": "fr-2017.txt",
+  "grootte_pdf": 4495936
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-27T06:30:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial and audit reports / Annual financial report",
+  "bedrijf": "DASSAULT SYSTEMES",
+  "isin": "FR0000130650",
+  "bestand_bron": "BWR/8888/01/FCBWR116554_20190327.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR116554_20190327.pdf",
+  "tekst": "fr-2018.txt",
+  "grootte_pdf": 2021745
+ }
+]

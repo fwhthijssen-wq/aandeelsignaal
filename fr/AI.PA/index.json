@@ -1,0 +1,38 @@
+[
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-03-08T17:00:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial report",
+  "bedrijf": "L'AIR LIQUIDE",
+  "isin": "FR0000120073",
+  "bestand_bron": "BWR/8888/01/FCBWR099179_20170308.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR099179_20170308.pdf",
+  "tekst": "fr-2016.txt",
+  "grootte_pdf": 4377203
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-08T16:35:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial report",
+  "bedrijf": "L'AIR LIQUIDE",
+  "isin": "FR0000120073",
+  "bestand_bron": "BWR/8888/01/FCBWR107901_20180308.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR107901_20180308.pdf",
+  "tekst": "fr-2017.txt",
+  "grootte_pdf": 4027972
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-03-04T16:45:00+00:00",
+  "soort": "003000",
+  "titel": "Annual financial and audit reports / Annual financial report",
+  "bedrijf": "L'AIR LIQUIDE",
+  "isin": "FR0000120073",
+  "bestand_bron": "BWR/8888/01/FCBWR123953_20200304.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR123953_20200304.pdf",
+  "tekst": "fr-2019.txt",
+  "grootte_pdf": 11668894
+ }
+]
