@@ -197,3 +197,48 @@ def corrigeer_eenheden(cf):
             for unit in [u for u, rijen in blok.get('units', {}).items() if not rijen]:
                 del blok['units'][unit]
     return uit, correcties
+
+
+EPS_BEGRIPPEN = ('DilutedEarningsLossPerShare', 'BasicEarningsLossPerShare', 'BasicAndDilutedEarningsLossPerShare',
+                 'DilutedEarningsLossPerShareFromContinuingOperations', 'BasicEarningsLossPerShareFromContinuingOperations')
+
+
+def corrigeer_eps_schaal(cf):
+    """Herstelt schaalfouten in getagde winst per aandeel (Randstad 2020: 1.610.000 in plaats van 1,61; AkzoNobel 2021:
+    0,0446 in plaats van 4,46). Alleen als de getagde waarde NIET past bij winst / aantal aandelen uit hetzelfde rapport,
+    en precies één macht van tien (10^-6 .. 10^6) dat wel op de cent doet. Zonder winst en aandelen in dat rapport: niets.
+    Geeft (cf, lijst correcties)."""
+    from copy import deepcopy
+    from eps_verification import sec_eps_recompute_inputs
+    try:
+        inputs = sec_eps_recompute_inputs(cf, '9999-12-31')
+    except Exception:
+        return cf, []
+    per = {}
+    for r in inputs:
+        per.setdefault((r['accn'], r['end']), []).append(r)
+    def past(eps, rij):
+        sh = rij['diluted_shares']
+        tellers = [rij['net_income']] + [a['net_income'] for a in rij.get('andere_tellers') or []]
+        return sh > 0 and any(abs(ni / sh - eps) <= 0.0055 + 0.004 * abs(eps) for ni in tellers)
+    te_doen = []
+    ifrs = (cf.get('facts') or {}).get('ifrs-full') or {}
+    for naam in EPS_BEGRIPPEN:
+        for unit, rijen in ((ifrs.get(naam) or {}).get('units') or {}).items():
+            for i, r in enumerate(rijen):
+                kand = per.get((r.get('accn'), r.get('end')))
+                v = r.get('val')
+                if not kand or not isinstance(v, (int, float)) or v == 0 or any(past(v, k) for k in kand):
+                    continue
+                factoren = [f for f in (10.0 ** p for p in range(-6, 7) if p) if any(past(v * f, k) for k in kand)]
+                if len(factoren) == 1:
+                    te_doen.append((naam, unit, i, factoren[0]))
+    if not te_doen:
+        return cf, []
+    uit = deepcopy(cf)
+    correcties = []
+    for naam, unit, i, f in te_doen:
+        r = uit['facts']['ifrs-full'][naam]['units'][unit][i]
+        oud = r['val']; r['val'] = round(oud * f, 6); r['schaal_gecorrigeerd'] = f
+        correcties.append(f'{naam} {r.get("end")}: {oud} -> {r["val"]} (x{f:g}, past bij winst / aandelen in {r.get("accn")})')
+    return uit, correcties

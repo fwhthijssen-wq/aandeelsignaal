@@ -112,6 +112,10 @@ def esef_ophalen(ticker):
             cf, verslag = aanvullen(cf, ticker)
             if verslag:
                 cf = {**cf, 'jaarverslag_bronnen': verslag}
+            from esef_bron import corrigeer_eps_schaal
+            cf, schaal = corrigeer_eps_schaal(cf)
+            if schaal:
+                cf = {**cf, 'eenheid_correcties': list(cf.get('eenheid_correcties') or []) + schaal}
         return cf
     except (OSError, ValueError):
         return None

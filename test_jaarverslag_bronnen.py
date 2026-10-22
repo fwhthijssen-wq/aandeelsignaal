@@ -100,3 +100,45 @@ class TellerPerIndiening(unittest.TestCase):
             'AdjustedWeightedAverageShares': {'units': {'shares': r(4.9386e7, 'oud')}}}}}
         inp = ev.sec_eps_recompute_inputs(p, '2026-10-22')
         self.assertEqual([(i['accn'], i['net_income']) for i in inp], [('oud', 6.86e8)])
+
+
+class SchaalCorrectieEps(unittest.TestCase):
+    def cf(self, eps):
+        def r(v):
+            return [{'start': '2020-01-01', 'end': '2020-12-31', 'val': v, 'accn': 'a', 'filed': '2021-03-01', 'form': '20-F'}]
+        return {'facts': {'ifrs-full': {'ProfitLossAttributableToOwnersOfParent': {'units': {'EUR': r(296e6)}},
+                                        'AdjustedWeightedAverageShares': {'units': {'shares': r(184.2e6)}},
+                                        'DilutedEarningsLossPerShare': {'units': {'EUR/shares': r(eps)}}}}}
+
+    def test_schaalfout_hersteld_met_bewijs_uit_hetzelfde_rapport(self):
+        from esef_bron import corrigeer_eps_schaal
+        cf, c = corrigeer_eps_schaal(self.cf(1610000.0))
+        self.assertEqual(cf['facts']['ifrs-full']['DilutedEarningsLossPerShare']['units']['EUR/shares'][0]['val'], 1.61)
+        self.assertEqual(len(c), 1)
+
+    def test_juiste_waarde_of_onverklaarbaar_blijft(self):
+        from esef_bron import corrigeer_eps_schaal
+        self.assertEqual(corrigeer_eps_schaal(self.cf(1.61))[1], [])
+        self.assertEqual(corrigeer_eps_schaal(self.cf(7.77))[1], [])      # geen macht van tien die past: niets doen
+
+
+class AlleenVerwaterdeTeller(unittest.TestCase):
+    def test_teller_uit_pdf_als_enige_winstcijfer(self):
+        import eps_verification as ev
+        def r(v):
+            return [{'start': '2017-01-01', 'end': '2017-12-31', 'val': v, 'accn': 'AFM:1', 'filed': '2018-02-26', 'form': '20-F'}]
+        p = {'facts': {'ifrs-full': {
+            'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects': {'units': {'EUR': r(432e6)}},
+            'AdjustedWeightedAverageShares': {'units': {'shares': r(4_230_185_047)}}}}}
+        inp = ev.sec_eps_recompute_inputs(p, '2026-10-22')
+        self.assertEqual(len(inp), 1)
+        chk = ev.recompute_eps_check('2017-12-31', {'val': 0.10, 'accn': 'AFM:1', 'unit': 'EUR/shares'}, inp)
+        self.assertEqual(chk['status'], 'consistent')
+
+
+class AexVolledig(unittest.TestCase):
+    def test_vijf_aex_fondsen_tien_jaar_bevestigd(self):
+        import bouw_webdata as bw
+        for t in ('HEIA.AS', 'NN.AS', 'WKL.AS', 'ASM.AS', 'RAND.AS', 'ABN.AS'):
+            g = bw.gegevens_uit_esef(bw.esef_ophalen(t), '2026-10-22')
+            self.assertEqual((t, g['eps_status'], g['eps_verified_years']), (t, 'independently_verified', 10))

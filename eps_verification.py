@@ -150,6 +150,11 @@ def sec_eps_recompute_inputs(payload, asof):
             ifrs_income[key], ifrs_tag[key] = {(unit_a, value_a - value_b, filed_a)}, 'ProfitLoss minus ProfitLossAttributableToNoncontrollingInterests'
         else:
             ifrs_income[key], ifrs_tag[key] = waarden, 'ProfitLoss (geen minderheidsbelang gerapporteerd)'
+    # Laatste terugval: alleen de teller voor de verwaterde winst per aandeel is bekend (cijfers uit een pdf-jaarverslag
+    # waarin het bedrijf alleen die teller noemt, zoals KPN en NN na aftrek van coupons).
+    for key, waarden in annual('ifrs-full', 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects', money).items():
+        if key not in ifrs_income and len(waarden) == 1:
+            ifrs_income[key], ifrs_tag[key] = waarden, 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects'
     # Andere officiële tellers uit dezelfde indiening. Ze worden alleen gebruikt als de vaste teller de gemelde EPS niet
     # reproduceert (JPMorgan: winst na preferent dividend; Santander: winst na AT1-coupons). Zo verandert er niets voor
     # bedrijven waar de vaste teller al klopt (ING, Sanofi, zie beta.32).

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.22-beta.57
+- **AEX, stap 2: jaarverslagen 2016-2019 uit het AFM-register.** De jaarlijkse financiële verslagen die beursfondsen bij de AFM deponeren, opgehaald via de nieuwe hulpworkflow 'AFM-jaarverslagen ophalen (ontwikkeling)' (één officiële bron, met de echte deponeringsdatum). Per jaar winst per aandeel, teller en verwaterd aantal aandelen met de hand gelezen en vastgelegd met AFM-kenmerk, pagina en tekst; elk jaar nagerekend.
+- **Nu volledig bevestigd (10 jaar): Heineken, NN, Wolters Kluwer, ASM, Randstad en ABN AMRO.** KPN 9 jaar (2018: KPN meldt 0,06 terwijl winst / aandelen 0,053 geeft). Volledig bevestigd van 41 naar 47; niets achteruit, geen bestaande EPS gewijzigd.
+- **Schaalfouten in getagde winst per aandeel hersteld met bewijs:** alleen als de getagde waarde niet past bij winst / aandelen uit hetzelfde rapport en precies één macht van tien dat wel op de cent doet (Randstad 2020/2021: 1.610.000 → 1,61; AkzoNobel 2021/2022: 0,0446 → 4,46). Vastgelegd in `eenheid_correcties`. AkzoNobel van 4 naar 6 jaar.
+- Teller voor de verwaterde winst per aandeel telt ook als enige winstcijfer van een jaar (pdf-jaarverslagen die alleen die teller noemen).
+- Bewust niet gedaan: AkzoNobel 2016-2019 (samenvoeging van aandelen in 2019), IMCD 2016-2019 (verwaterde winst per aandeel met aangepaste teller, hoger dan de gewone), ArcelorMittal (cijfers in dollar, koers in euro).
+
 ## 2026.10.22-beta.56
 - **AEX, stap 1: aantal aandelen uit de tekst van de ESEF-rapporten 2020-2025.** Automatisch uitgelezen en per getal gecontroleerd (winst / aandelen = gemelde winst per aandeel op de cent; een getal mag maar bij één jaar passen; hetzelfde jaar in twee rapporten moet gelijk zijn), aangevuld met de hand waar het automatisch niet lukte (KPN, NN, Randstad, AkzoNobel, ABN AMRO). Ook de teller na aftrek van coupons/eeuwigdurende obligaties waar het bedrijf die gebruikt (ABN AMRO, KPN, NN). Alles met bron in `jaarverslag_bronnen.json`.
 - Resultaat (bevestigde jaren): ABN AMRO 0→6, Adyen 0→7, KPN 0→6, NN 0→6, Wolters Kluwer 0→6, Randstad 0→5, AkzoNobel 0→4, ASR 0→3, ASM 2→7, Eni 9→10 (nu volledig bevestigd). Volledig bevestigd van 40 naar 41. Niets achteruit, geen bestaande EPS gewijzigd.
