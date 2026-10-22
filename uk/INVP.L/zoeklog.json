@@ -1,13 +1,173 @@
 {
- "aantal": 0,
+ "aantal": 11,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138007Z3U5GWDN3MY22', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138007Z3U5GWDN3MY22', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007Z3U5GWDN3MY22', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007Z3U5GWDN3MY22', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138007Z3U5GWDN3MY22",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 11
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-11-23T18:47:00.000Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Investec plc Half Year Financial Report",
+   "download_link": "NSM/Portal/NI-000014955.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-06T15:00:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Summary of Special Resolutions passed at Annual General Meeting of Investec plc",
+   "download_link": "NSM/Portal/NI-000009038.docx",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-06T15:00:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Results of the Annual General Meetings of Investec plc and Investec Limited",
+   "download_link": "NSM/Portal/NI-000009037.docx",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-06T14:00:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Prospectus Supplement",
+   "download_link": "NSM/Portal/NI-000007265.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-07-03T13:36:31.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Investec PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000007270.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Investec Group Annual Report Volume 2",
+   "download_link": "NSM/Portal/NI-000006916.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Investec plc and Investec Limited Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000006921.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Investec Group Annual Report Volume 1",
+   "download_link": "NSM/Portal/NI-000006913.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Investec Group Annual Report Volume 3",
+   "download_link": "NSM/Portal/NI-000006918.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Investec plc Annual Report",
+   "download_link": "NSM/Portal/NI-000006919.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-31T10:07",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Investec PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000000316.pdf",
+   "company": "Investec PLC",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-11-23T18:50:32.808Z",
+   "tag_esef": "",
+   "document_date": "2020-09-30",
+   "classifications_code": "2.1",
+   "source": "Direct Upload",
+   "type": "Half-year Financial Report",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "Financial Results",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "classifications": "Home Member State",
+   "download_link": "NSM/Portal/NI-000014955.pdf",
+   "disclosure_id": "NI-000014955-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-23T18:47:00.000Z",
+   "seq_id": "NI-000014955-0",
+   "company": "Investec PLC",
+   "last_updated_date": "2026-08-22T12:08:14.944952858Z",
+   "headline": "Investec plc Half Year Financial Report",
+   "type_code": "IR"
+  },
+  {
+   "submitted_date": "2020-08-06T15:14:28.930Z",
+   "tag_esef": "",
+   "document_date": "2020-08-06",
+   "classifications_code": "3.1",
+   "source": "Direct Upload",
+   "type": "Result of AGM",
+   "lei_remediation_flag": "N",
+   "document_format": "Other",
+   "category_group": "General Meetings",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000009038.docx",
+   "disclosure_id": "NI-000009038-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-08-06T15:00:00.000Z",
+   "seq_id": "NI-000009038-0",
+   "company": "Investec PLC",
+   "last_updated_date": "2026-08-22T12:04:16.872212814Z",
+   "headline": "Summary of Special Resolutions passed at Annual General Meeting of Investec plc",
+   "type_code": "RAG"
+  }
+ ]
 }

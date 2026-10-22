@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-20",
+  "soort": "Final Results",
+  "titel": "2018 Results - News Release",
+  "bedrijf": "Lloyds Banking Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190220070003_13974901.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1515721
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-20",
+  "soort": "Final Results",
+  "titel": "2019 Full Year Results",
+  "bedrijf": "Lloyds Banking Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200220070007_3499779.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1404535
+ }
+]

@@ -1,13 +1,1151 @@
 {
- "aantal": 0,
+ "aantal": 109,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800M993ICXOMBCP87', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800M993ICXOMBCP87', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800M993ICXOMBCP87', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800M993ICXOMBCP87', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800M993ICXOMBCP87",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 109
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T09:20:48Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3818285.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T10:05:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799215.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-06T09:41:45Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3772452.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T11:07:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766576.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 New Business Inflows and Funds under Management",
+   "download_link": "NSM/RNS/3759884.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-26T09:39:28Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Letter from Primestone LLP",
+   "download_link": "NSM/RNS/3759168.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T06:22:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3757032.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T12:51:43Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3755528.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T12:36:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3741327.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:28:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735643.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T10:03:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3720613.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T10:00:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703025.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T14:57:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3692538.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T15:42:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3681866.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T10:20:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3678619.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T16:07:17Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review - Amendment",
+   "download_link": "NSM/RNS/3676250.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T15:57:38Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3676237.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T09:19:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675629.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T16:22:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3670177.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T15:24:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3670092.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Statement for the 6 Months to 30 June 2020",
+   "download_link": "NSM/RNS/3668564.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T16:07:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3668468.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:35:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643343.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T06:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "New business update - May 2020",
+   "download_link": "NSM/RNS/3633293.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T13:58:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3619285.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T13:59:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3612107.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T06:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "New business update - April 2020",
+   "download_link": "NSM/RNS/3606214.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T11:40:10Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3589353.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T11:51:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583206.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T06:00:08Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Q1 New Business Inflows and Dividend Update",
+   "download_link": "NSM/RNS/3580307.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T14:27:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3578393.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T09:55:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3575833.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T09:14:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3573293.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T09:59:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3568781.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T15:07:10Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Annual Report and Notice of AGM",
+   "download_link": "NSM/RNS/3556299.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T12:21:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555711.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T10:03:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3554167.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:33:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402093322_3550929.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:33:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402093322_3550929.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:38:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401093819_3549157.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:38:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401093819_3549157.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T17:25:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200330172558_3546506.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T13:12:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200323131251_3537395.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:59:45Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200320105945_3535424.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T09:28:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302092837_3511935.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200227070004_3507819.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T10:15:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200221101526_3501785.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T09:59:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200211095936_3490557.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T14:40:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200205144038_3485258.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T14:11:38Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200205141138_3485251.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T09:59:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200205095938_3484798.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:03:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200203170312_3482449.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T12:53:46Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200203125346_3482104.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:52:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203105245_3481731.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Q4 New Business Inflows and Funds under Management",
+   "download_link": "NSM/data-migration/LSE20200130070004_14403399.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-22T10:09:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200122100917_14393948.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T16:57:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200110165723_14380282.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:17:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102101753_14368921.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-27T11:21:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191227112159_14363885.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-27T09:35:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191227093558_14363700.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T14:47:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191213144700_14348661.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T10:17:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191209101701_14340540.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T11:20:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191206112008_14339038.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T10:28:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202102850_14330791.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T10:51:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191128105147_14327198.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T16:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191121160002_14318303.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T14:48:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191119144844_14314384.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T09:30:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101093055_14290628.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T16:01:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191031160154_14289555.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:25:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022172530_14276103.html",
+   "company": "M&G PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:25:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022172530_14276103.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:25:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022172510_14276101.html",
+   "company": "Prudential PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:25:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022172510_14276101.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 New Business Inflows and Funds under Management",
+   "download_link": "NSM/data-migration/LSE20191022070003_14274481.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T16:35:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191017163528_14270708.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T14:20:51Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191017142051_14270480.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T12:42:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001124245_14249311.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T10:26:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190917102616_14229602.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T15:00:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190912150030_14224763.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T09:30:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190903093014_14211713.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T14:30:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190816143034_14192595.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T08:46:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190813084611_14186641.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T09:14:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190802091454_14174302.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:32:54Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190801173254_14173482.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:01:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801160146_14173279.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Statement for the 6 Months to 30 June 2019",
+   "download_link": "NSM/data-migration/LSE20190731070004_14169442.html",
+   "company": "St. James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:35:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701143537_14131766.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T16:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Changes to management of St. James's Place funds",
+   "download_link": "NSM/data-migration/LSE20190605160004_14100151.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T14:14:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603141413_14096531.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T11:48:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190515114830_14075075.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T14:29:06Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190514142906_14073631.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T12:29:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502122940_14061150.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T16:25:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501162519_14059945.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 New Business Inflows and Funds under Management",
+   "download_link": "NSM/data-migration/LSE20190430070006_14056278.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/217551381.pdf",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-01T14:20:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401142034_14023914.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T18:04:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190327180459_14018475.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/217551378.pdf",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-07T07:00:26Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190307070026_13993180.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T07:00:26Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190307070026_13993181.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T15:12:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301151223_13987770.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190227070003_13982782.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:48:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190201114823_13955596.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:48:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201114811_13955594.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q4 New Business Inflows and Funds under Management",
+   "download_link": "NSM/data-migration/LSE20190124070003_13944788.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T16:46:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190108164619_13927957.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T16:02:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102160226_13921513.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T12:50:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181231125048_13919694.html",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/217551377.pdf",
+   "company": "St James's Place PLC",
+   "lei": "213800M993ICXOMBCP87",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T09:20:48Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800M993ICXOMBCP87",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3818285.html",
+   "disclosure_id": "3818285",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T09:20:48Z",
+   "seq_id": "3818285",
+   "company": "St. James's Place PLC",
+   "last_updated_date": "2026-08-22T12:09:07.196090002Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  },
+  {
+   "submitted_date": "2020-12-01T10:05:24Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800M993ICXOMBCP87",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3799215.html",
+   "disclosure_id": "3799215",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-01T10:05:24Z",
+   "seq_id": "3799215",
+   "company": "St. James's Place PLC",
+   "last_updated_date": "2026-08-22T12:08:32.323872091Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-05-24",
+  "soort": "Final Results",
+  "titel": "Annual results for the year to 31 March 2016",
+  "bedrijf": "Severn Trent PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160524070010_012826760.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 561643
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report",
+  "bedrijf": "Severn Trent PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/136155246.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 6820976
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Severn Trent Plc Annual Report and Accounts",
+  "bedrijf": "Severn Trent PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/174786622.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 6550877
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "ST Plc - Annual Report and Accounts",
+  "bedrijf": "Severn Trent PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/225659211.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 4962015
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-06-10",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "SEVERN TRENT PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000005617.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 7487630
+ }
+]

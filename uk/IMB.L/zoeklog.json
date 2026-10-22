@@ -1,13 +1,3552 @@
 {
- "aantal": 0,
+ "aantal": 349,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300DFVPOB67JL3A42', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300DFVPOB67JL3A42', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300DFVPOB67JL3A42', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300DFVPOB67JL3A42', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300DFVPOB67JL3A42",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 349
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-22T11:13:30Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents filed on National Storage Mechanism",
+   "download_link": "NSM/RNS/3823712.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-22T10:56:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy form for AGM",
+   "download_link": "NSM/Portal/NI-000016626.pdf",
+   "company": "IMPERIAL BRANDS PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-22T10:53:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/Portal/NI-000016625.pdf",
+   "company": "IMPERIAL BRANDS PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-22T10:47:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and accounts",
+   "download_link": "NSM/Portal/NI-000016624.pdf",
+   "company": "IMPERIAL BRANDS PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-18T15:59:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3820579.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T10:03:38Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3801011.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T12:12:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3787823.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T14:15:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3785031.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T17:21:00Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Ex-dividend date correction",
+   "download_link": "NSM/RNS/3783707.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3782833.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T08:15:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3766423.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T10:25:53Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/RNS/3763600.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T10:00:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3758009.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T06:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3742215.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T14:50:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3737385.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T16:36:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3734084.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T06:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update sale of Worldwide Premium Cigar Businesses",
+   "download_link": "NSM/RNS/3729983.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T08:06:25Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3723024.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T11:11:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3716941.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-07T14:10:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3708959.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T14:28:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3692541.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T06:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3679741.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T09:45:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3653140.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-06T13:33:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3647914.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T13:28:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3646632.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T10:48:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3645053.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T14:28:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643912.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:44:55Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Confirmation of Board Appointments ",
+   "download_link": "NSM/RNS/3643456.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-15T13:05:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3626312.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T08:24:33Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3624473.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T06:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3599515.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T08:50:59Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of rights attached to shares ",
+   "download_link": "NSM/RNS/3577759.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T09:04:12Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/RNS/3575819.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T15:36:15Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3567812.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T06:00:04Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Revised Publication Date for Interim Results ",
+   "download_link": "NSM/RNS/3565362.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402094350_3550949.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402094350_3550949.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T07:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "New Revolving Credit Facility/Trading Update",
+   "download_link": "NSM/data-migration/LSE20200331070005_3547123.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:43:16Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164316_3541560.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:38:02Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163802_3541509.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:37:17Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200318163717_3532155.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:38:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200312163845_3525237.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T09:22:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302092253_3511961.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:10:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "CEO start date",
+   "download_link": "NSM/data-migration/LSE20200227071004_3507957.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T09:09:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200220090939_3500289.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T13:10:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200218131038_3498028.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T16:25:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200212162535_3492502.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T16:04:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200206160405_3486870.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T11:43:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200206114320_3486516.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T09:42:06Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20200206094206_3486267.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T07:00:04Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20200205070004_3484562.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/263057779.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-03T08:36:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203083634_3481518.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200203070007_3480919.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T12:06:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200115120611_14385351.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T16:31:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200102163159_14369632.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T15:18:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102151810_14369512.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T18:21:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191220182123_14359096.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T17:20:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191220172059_14359047.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T10:37:25Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191220103725_14358024.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T17:48:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191219174850_14357021.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T15:49:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191219154926_14356723.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T18:11:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191218181133_14355046.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T17:27:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191217172736_14353062.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T10:04:31Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents filed on National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20191217100431_14351951.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T17:37:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191216173750_14350992.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T11:40:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202114009_14330992.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T17:47:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191125174746_14322398.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T18:12:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191119181213_14314799.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-18T12:52:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191118125210_14312462.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-18T12:48:04Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Further re (Final Results)",
+   "download_link": "NSM/data-migration/LSE20191118124804_14312439.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-15T17:20:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191115172015_14310934.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T17:24:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191114172450_14309030.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T17:31:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191108173124_14301619.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T17:40:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191107174048_14299716.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T17:42:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191106174233_14297758.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T17:24:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191105172428_14295755.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T13:17:58Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Further re (Final Results)",
+   "download_link": "NSM/data-migration/LSE20191105131758_14295249.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T07:01:12Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20191105070112_14294153.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191105070005_14294016.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T17:43:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191104174358_14293905.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T17:25:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191101172500_14291872.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T13:55:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101135501_14291336.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T17:32:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191031173231_14289741.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T17:38:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191030173838_14287550.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T17:51:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191029175127_14285529.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-28T17:35:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191028173514_14283663.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T17:34:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191025173410_14281800.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T18:07:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191024180759_14279968.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T17:30:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191023173009_14278024.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:46:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191022174613_14276130.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T17:17:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191021171700_14274316.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T17:39:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191018173933_14272517.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T17:39:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191017173916_14270793.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T17:06:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191016170613_14268949.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T17:16:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191015171606_14267215.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T17:35:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191014173551_14265509.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T17:43:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191011174337_14263860.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T17:28:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191010172855_14262166.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T17:59:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191009175936_14260510.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T17:19:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191008171909_14258794.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T17:23:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191007172320_14257100.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-04T17:29:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191004172931_14255314.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T17:24:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191003172423_14253572.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T07:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191003070001_14251910.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:42:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191002174230_14251798.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:37:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191001173729_14249950.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T16:20:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001162020_14249760.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T11:04:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001110455_14249049.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T18:17:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Purchase of own shares in closed period",
+   "download_link": "NSM/data-migration/LSE20190930181728_14247810.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T11:51:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930115139_14247010.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/256124092.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy form",
+   "download_link": "NSM/data-migration/256124103.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/256118722.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-27T18:02:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190927180246_14245600.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T17:23:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190927172345_14245578.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T17:57:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190926175700_14243723.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190926070004_14241882.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T10:30:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923103013_14237091.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T17:59:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190918175948_14232396.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T17:39:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190917173929_14230575.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T17:26:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190916172604_14228662.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T18:13:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190912181312_14225025.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T17:55:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190911175555_14223218.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T10:07:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910100755_14220610.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T17:40:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190909174046_14219610.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T10:08:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902100808_14209962.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T17:38:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190828173853_14205345.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T17:25:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190827172546_14203641.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T17:44:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190823174429_14201374.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T13:09:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190822130917_14199373.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T17:35:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190821173526_14198025.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T18:17:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820181717_14196359.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T18:09:19Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190815180919_14191142.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T17:15:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190814171514_14189437.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T17:39:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190813173923_14187664.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T17:10:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190812171033_14185951.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T17:20:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190809172021_14184201.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T17:09:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808170923_14182454.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T17:54:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190802175437_14175322.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:28:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190801172851_14173472.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T10:44:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801104453_14172573.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:51:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190731175106_14171328.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T17:33:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190730173340_14169264.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T17:22:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190725172235_14163847.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T17:40:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190719174016_14156960.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T18:00:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190718180017_14155312.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T17:54:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190716175455_14151868.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-12T17:35:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190712173510_14147515.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T17:42:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190711174221_14145808.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T17:56:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190710175627_14144105.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share buy-back programme",
+   "download_link": "NSM/data-migration/LSE20190710070001_14142517.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Allocation & Shareholder Distributions",
+   "download_link": "NSM/data-migration/LSE20190708070005_14139172.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:25:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701142510_14131741.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:14:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701101431_14131092.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T16:01:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190625160141_14124118.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T11:25:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190617112555_14113371.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T16:52:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611165220_14107055.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T11:33:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190604113357_14097946.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T13:12:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603131203_14096454.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T16:36:05Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re US cigarette volume trends",
+   "download_link": "NSM/data-migration/LSE20190529163605_14091369.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T10:10:33Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190509101033_14068098.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T07:05:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190508070501_14065740.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190508070002_14065583.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:36:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501093609_14059063.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T14:30:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Intention to sell Worldwide Premium Cigar Business",
+   "download_link": "NSM/data-migration/LSE20190430143001_14057716.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T09:40:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402094048_14025250.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T09:12:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401091254_14023154.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190327070002_14016828.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T14:13:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190319141337_14007851.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T11:35:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190319113520_14007621.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T13:49:19Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE",
+   "download_link": "NSM/data-migration/LSE20190312134919_13999391.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T13:49:19Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE",
+   "download_link": "NSM/data-migration/LSE20190312134919_13999391.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T16:09:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305160955_13991164.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T13:32:37Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Conclusion of Audit Tender",
+   "download_link": "NSM/data-migration/LSE20190301133237_13987603.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T09:08:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301090802_13987003.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T16:21:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190222162144_13979328.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T16:59:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190218165943_13973294.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T09:30:54Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190214093054_13969429.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T14:26:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Imperial Brands PLC Chairman",
+   "download_link": "NSM/data-migration/LSE20190211142628_13965242.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:22:43Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE PLC",
+   "download_link": "NSM/data-migration/LSE20190207172243_13962421.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:22:43Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE PLC",
+   "download_link": "NSM/data-migration/LSE20190207172243_13962421.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T08:24:49Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE PLC",
+   "download_link": "NSM/data-migration/LSE20190207082449_13961560.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T08:24:49Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice - IMPERIAL BRANDS FINANCE PLC",
+   "download_link": "NSM/data-migration/LSE20190207082449_13961560.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T17:56:20Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change of Remuneration Committee Chair",
+   "download_link": "NSM/data-migration/LSE20190206175620_13960902.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T17:53:58Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "AGM Resolutions posted on NSM",
+   "download_link": "NSM/data-migration/LSE20190206175358_13960898.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T17:43:10Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190206174310_13960895.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/209859618.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-04T09:16:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190204091650_13956894.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T10:10:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190107101054_13925763.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T11:24:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103112446_13922966.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T10:45:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102104555_13920842.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T15:22:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181214152254_13904919.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T14:13:02Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents Filed on National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20181213141302_13903054.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T10:29:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181204102957_13890671.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T12:34:10Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration - Correction",
+   "download_link": "NSM/data-migration/LSE20181116123410_13870378.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T10:26:55Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181116102655_13870115.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T07:00:03Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re FDA announcement",
+   "download_link": "NSM/data-migration/LSE20181116070003_13869317.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-12T11:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181112110003_13863426.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-07T14:12:40Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181107141240_13858837.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-06T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20181106070003_13855862.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:35:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101093538_13851100.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-02T09:32:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181002093212_13812869.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T08:30:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001083029_13810682.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/204090379.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/204090338.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/204090389.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-25T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180925070002_13802757.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-20T10:18:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180920101830_13798278.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-12T13:21:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180912132144_13788402.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T08:55:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903085533_13776189.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T10:37:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801103717_13739687.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-30T17:03:03Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Proposed sell down of minority stake in Logista",
+   "download_link": "NSM/data-migration/LSE20180730170303_13736618.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-04T09:04:49Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180704090449_13705146.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T12:18:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180703121831_13703853.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T16:35:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702163523_13702386.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-14T15:04:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180614150404_13680297.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-06T15:57:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180606155734_13669790.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T09:25:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601092509_13663353.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T13:33:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180509133345_13634843.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T07:00:01Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180509070001_13633688.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T09:58:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501095823_13625458.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-05T11:48:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180405114851_13593394.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T09:48:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403094859_13589117.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-29T15:37:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180329153732_13587622.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-27T12:42:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180327124223_13583319.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-26T15:19:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180326151907_13581692.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-20T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SALE OF OTHER TOBACCO PRODUCTS IN USA",
+   "download_link": "NSM/data-migration/LSE20180320070002_13572785.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T09:25:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301092530_13550814.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-27T16:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor event",
+   "download_link": "NSM/data-migration/LSE20180227163001_13548007.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-21T15:47:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180221154704_13541421.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-16T13:49:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180216134927_13536609.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-08T09:39:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions posted on NSM",
+   "download_link": "NSM/data-migration/LSE20180208093920_13526255.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-08T09:31:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180208093102_13526237.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T07:00:02Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20180207070002_13523973.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/161195100.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-02T16:32:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180202163214_13520527.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T09:28:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201092855_13517859.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-18T13:01:17Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "US Tax impact",
+   "download_link": "NSM/data-migration/LSE20180118130117_13501512.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-10T15:51:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180110155142_13492066.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-03T10:52:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180103105235_13483641.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T10:13:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102101320_13481994.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-20T10:06:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171220100651_13472414.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-14T14:38:07Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents filed on Natioinal Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20171214143807_13466107.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T17:49:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares (Replacement)",
+   "download_link": "NSM/data-migration/LSE20171206174924_13456560.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T17:32:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171206173221_13456552.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T17:38:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171205173805_13455042.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T11:06:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201110645_13451109.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-29T17:47:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171129174749_13448321.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-28T17:48:31Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Palmer & Harvey",
+   "download_link": "NSM/data-migration/LSE20171128174831_13446822.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-28T17:22:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171128172252_13446800.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-27T17:25:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171127172556_13445315.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-24T17:33:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171124173351_13443798.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-23T17:40:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171123174015_13442516.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-22T17:49:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171122174913_13441012.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-21T17:29:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171121172939_13439542.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-14T08:52:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171114085210_13430672.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T18:24:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171113182404_13429990.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-07T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20171107070003_13422292.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T09:10:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101091055_13416260.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-03T11:53:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171003115331_13384242.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/155565763.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/155566000.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/155565786.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-29T17:51:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170929175102_13381316.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-28T17:25:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170928172529_13379425.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-28T07:00:01Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170928070001_13377931.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-27T17:37:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170927173738_13377827.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-26T17:33:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170926173343_13376302.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-25T17:32:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170925173240_13374756.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-22T17:30:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170922173008_13373193.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-21T17:20:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170921172051_13371645.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-20T17:54:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170920175407_13369986.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-20T14:31:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170920143109_13369640.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-19T17:18:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170919171818_13368329.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-15T17:40:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170915174013_13365185.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T18:37:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170914183709_13363623.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-13T17:46:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170913174649_13362055.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T17:34:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Replacement:Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170912173407_13360529.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T17:18:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170912171812_13360516.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-11T17:40:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170911174057_13358956.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-08T18:00:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170908180038_13357325.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-07T07:07:03Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Completion of Logista sell down",
+   "download_link": "NSM/data-migration/LSE20170907070703_13354587.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-06T17:31:45Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Proposed sell down of minority stake in Logista",
+   "download_link": "NSM/data-migration/LSE20170906173145_13354234.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T10:17:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901101735_13348939.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T11:20:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170801112020_13315058.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T09:11:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801091154_13314658.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T14:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170720144350_13302382.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T12:14:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170704121448_13283476.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:48:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703094831_13281307.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-13T15:03:45Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170613150345_13259064.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-13T09:01:42Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170613090142_13258454.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T09:36:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601093643_13245475.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T15:48:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170531154840_13244459.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-17T08:40:58Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170517084058_13228596.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170503070007_13211753.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T09:48:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502094857_13210652.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T16:12:12Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170403161212_13181814.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T08:40:11Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403084011_13180632.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-30T07:00:06Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170330070006_13176336.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T09:56:29Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301095629_13143455.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-17T15:32:20Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170217153220_13131866.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-14T15:28:44Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170214152844_13127592.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T10:43:13Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170202104313_13115594.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T10:40:24Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Resolutions filed on National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20170202104024_13115592.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T10:35:46Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170202103546_13115586.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-01T08:14",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000002245.pdf",
+   "company": "IMPERIAL BRANDS PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-02-01T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/128629320.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-19T14:44:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161219144432_013072173.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-15T13:32:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161215133236_013068750.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T15:56:48Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents filed on National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20161214155648_013067370.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T10:09:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201100939_013053172.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-10T16:36:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161110163649_013031674.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-09T15:47:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161109154748_013030017.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-08T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20161108070008_013027101.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T09:48:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101094839_013019826.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-06T10:26:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161006102620_012992185.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T16:07:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161003160717_012987972.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T09:46:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003094647_012987141.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/122871379.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/122871369.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/122871371.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-29T07:00:11Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160929070011_012982909.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-14T10:35:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160914103517_012965673.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T10:08:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901100857_012950901.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T16:21:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160816162147_012933306.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-04T12:02:33Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20160804120233_012919539.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-03T12:52:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160803125226_012917807.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T08:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801083002_012913445.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-14T12:08:01Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20160714120801_012892887.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-14T12:02:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20160714120238_012892860.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T14:07:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160708140732_012886242.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T09:37:38Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160707093738_012884010.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T09:24:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701092432_012876589.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160701070009_012875919.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-10T14:10:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160610141021_012850008.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-02T15:25:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160602152517_012839652.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T10:34:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601103453_012836930.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-04T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20160504070006_012802151.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T09:42:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503094258_012800598.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T09:49:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401094918_012759815.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T17:46:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160331174644_012758898.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T10:02:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301100200_012718397.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-23T09:07:11Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Change of Adviser",
+   "download_link": "NSM/data-migration/LSE20160223090711_012708936.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-16T11:47:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160216114737_012700685.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-16T09:21:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160216092129_012700477.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-11T07:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160211070010_012694551.html",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/104818565.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-02-03T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/104818567.pdf",
+   "company": "Imperial Brands PLC",
+   "lei": "549300DFVPOB67JL3A42",
+   "source": "Portal (pre-Sept 2017)"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-22T11:13:30Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Doc re.",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Miscellaneous",
+   "lei": "549300DFVPOB67JL3A42",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3823712.html",
+   "disclosure_id": "3823712",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-22T11:13:30Z",
+   "seq_id": "3823712",
+   "company": "Imperial Brands PLC",
+   "last_updated_date": "2026-08-22T12:09:25.727814820Z",
+   "headline": "Documents filed on National Storage Mechanism",
+   "type_code": "DOC"
+  },
+  {
+   "submitted_date": "2020-12-22T10:58:33.780Z",
+   "tag_esef": "",
+   "document_date": "2020-12-15",
+   "classifications_code": "1.1",
+   "source": "Direct Upload",
+   "type": "Proxy Form",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "General Meetings",
+   "lei": "549300DFVPOB67JL3A42",
+   "classifications": "Annual financial and audit reports",
+   "download_link": "NSM/Portal/NI-000016626.pdf",
+   "disclosure_id": "NI-000016626-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-22T10:56:00.000Z",
+   "seq_id": "NI-000016626-0",
+   "company": "IMPERIAL BRANDS PLC",
+   "last_updated_date": "2026-08-22T12:09:25.727696397Z",
+   "headline": "Proxy form for AGM",
+   "type_code": "PRX"
+  }
+ ]
 }

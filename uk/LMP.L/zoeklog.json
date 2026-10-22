@@ -1,13 +1,1081 @@
 {
- "aantal": 0,
+ "aantal": 102,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800OCERWWPQDURL87', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800OCERWWPQDURL87', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800OCERWWPQDURL87', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800OCERWWPQDURL87', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800OCERWWPQDURL87",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 102
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T11:22:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3818506.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T07:00:04Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "120,000 SQ FT URBAN LOGISTICS PRE-LET AGREED",
+   "download_link": "NSM/RNS/3806699.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T10:30:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Calculation Price ",
+   "download_link": "NSM/RNS/3802678.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3787847.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-19T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3785339.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T06:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "£22M OF DISPOSALS & £11M OF ACQUISITIONS",
+   "download_link": "NSM/RNS/3748627.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Rent collection update",
+   "download_link": "NSM/RNS/3744414.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T10:17:58Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3735406.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T08:14:58Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/3717951.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T06:00:03Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "DISPOSAL OF SIX WAREHOUSES FOR £57.3M ",
+   "download_link": "NSM/RNS/3713095.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-04T11:28:49Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Calculation Price for Q1 Dividend",
+   "download_link": "NSM/RNS/3707381.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T08:45:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3705808.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-20T06:00:07Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3692677.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-22T09:15:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "LondonMetric Property Plc AGM Resolutions relating to special business passed at the 2020 AGM",
+   "download_link": "NSM/Portal/NI-000008072.docx",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-23T17:30:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "LondonMetric Property AGM Proxy Form 2020",
+   "download_link": "NSM/Portal/NI-000006400.pdf",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-23T17:30:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "LondonMetric Property Plc Annual Report and Accounts 2020",
+   "download_link": "NSM/Portal/NI-000006392.pdf",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-28T11:56:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetricProperty Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219797-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-28T11:56:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetricProperty Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219797-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-28T11:56:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetricProperty Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219797-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-28T11:56:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetricProperty Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219797-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-28T11:56:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetricProperty Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219797-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-27T14:46:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219578-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-27T14:46:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219578-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-27T14:46:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219578-en.html",
+   "company": "Londonmetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-27T14:46:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219578-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-27T14:46:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219578-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-26T14:04:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219354-en.html",
+   "company": "Londonmetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-26T14:04:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219354-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-26T14:04:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219354-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-26T14:04:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219354-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-26T14:04:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219354-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-25T14:27:10Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219160-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-25T14:27:10Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219160-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-25T14:27:10Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000219160-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-21T13:38:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198687-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-21T13:38:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198687-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-21T13:38:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198687-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-21T13:38:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198687-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-21T13:38:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198687-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T14:32:38Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198532-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T14:32:38Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198532-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T14:32:38Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198532-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T14:32:38Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198532-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T14:32:38Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198532-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T10:01:42Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc (Amended)",
+   "download_link": "NSM/data-migration/NASDAQ_1000198490-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T10:01:42Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc (Amended)",
+   "download_link": "NSM/data-migration/NASDAQ_1000198490-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T10:01:42Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc (Amended)",
+   "download_link": "NSM/data-migration/NASDAQ_1000198490-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T10:01:42Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc (Amended)",
+   "download_link": "NSM/data-migration/NASDAQ_1000198490-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-20T10:01:42Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc (Amended)",
+   "download_link": "NSM/data-migration/NASDAQ_1000198490-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T13:35:43Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000198354-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T13:35:43Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000198354-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T13:35:43Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000198354-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T12:29:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198340-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T12:29:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198340-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T12:29:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198340-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T12:29:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198340-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-19T12:29:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198340-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:34:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198180-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:34:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198180-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:34:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198180-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:34:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198180-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:34:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198180-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:12:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198173-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:12:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198173-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-18T13:12:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000198173-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-17T14:02:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197999-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-17T14:02:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197999-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-17T14:02:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197999-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-17T14:02:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197999-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-17T14:02:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197999-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-14T10:40:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000197642-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-14T10:40:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000197642-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-14T10:40:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Dimensional Fund Advisors Ltd. : Form 8.3 - LondonMetric Property plc - Ordinary shares",
+   "download_link": "NSM/data-migration/NASDAQ_1000197642-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-13T14:50:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197498-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-13T14:50:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197498-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-13T14:50:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197498-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-13T14:50:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197498-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-13T14:50:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197498-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:34:49Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197304-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:34:49Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197304-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:34:49Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - AXA INVESTMENT MANAGERS: LondonMetric Property plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197304-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:17:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197298-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:17:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197298-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:17:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197298-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:17:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197298-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-12T14:17:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197298-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-11T14:29:57Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197118-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-11T14:29:57Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197118-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-11T14:29:57Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197118-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-11T14:29:57Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197118-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-11T14:29:57Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000197118-en.html",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-10T14:20:18Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000196944-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-07T10:52:55Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000196654-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-06-05T15:08:46Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000196303-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-06-04T14:07:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000196097-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-06-03T14:53:13Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000195903-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-05-30T11:03:50Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000195333-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-05-29T13:57:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LondonMetric Property Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000195195-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-05-28T14:34:41Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000194978-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-05-24T14:05:07Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Londonmetric Property PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000194475-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2019-05-23T13:37:34Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - LONDONMETRIC PROPERTY PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000194255-en.html",
+   "company": "Rathbone Brothers PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "GNW"
+  },
+  {
+   "publication_date": "2016-09-08T07:00:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Scrip Dividend Scheme Booklet - update",
+   "download_link": "NSM/Portal/NI-000070515/NI-000070515.pdf",
+   "company": "LondonMetric Property PLC",
+   "lei": "213800OCERWWPQDURL87",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T11:22:46Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800OCERWWPQDURL87",
+   "classifications": "",
+   "download_link": "NSM/RNS/3818506.html",
+   "disclosure_id": "3818506",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T11:22:46Z",
+   "seq_id": "3818506",
+   "company": "LondonMetric Property PLC",
+   "last_updated_date": "2026-08-22T12:09:07.196581303Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-08T07:00:04Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Contract",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800OCERWWPQDURL87",
+   "classifications": "",
+   "download_link": "NSM/RNS/3806699.html",
+   "disclosure_id": "3806699",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-08T07:00:04Z",
+   "seq_id": "3806699",
+   "company": "LondonMetric Property PLC",
+   "last_updated_date": "2026-08-22T12:08:49.729780700Z",
+   "headline": "120,000 SQ FT URBAN LOGISTICS PRE-LET AGREED",
+   "type_code": "CNT"
+  }
+ ]
 }

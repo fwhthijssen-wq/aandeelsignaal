@@ -1,13 +1,1501 @@
 {
- "aantal": 0,
+ "aantal": 144,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800WFVZQMHOZP2W17', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800WFVZQMHOZP2W17', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800WFVZQMHOZP2W17', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800WFVZQMHOZP2W17', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800WFVZQMHOZP2W17",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 144
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-14T10:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3813681.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/RNS/3783830.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-09T09:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointments",
+   "download_link": "NSM/RNS/3773860.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T08:21:27Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/RNS/3755050.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T16:08:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3745747.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T09:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3744989.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T07:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chief Financial Officer",
+   "download_link": "NSM/RNS/3714405.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T15:19:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3691290.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T06:00:01Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2020 Half Year Results",
+   "download_link": "NSM/RNS/3684730.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T07:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3679244.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T11:24:36Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Section 430(2b) Companies Act - Nimesh Patel",
+   "download_link": "NSM/RNS/3669844.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-23T06:30:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/RNS/3664439.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T14:39:18Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details ",
+   "download_link": "NSM/RNS/3633277.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T13:45:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3633230.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T08:00:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/RNS/3601009.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T15:32:11Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3594544.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Statement - Trading Update",
+   "download_link": "NSM/RNS/3593331.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T10:30:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Rights attached to Equity Shares ",
+   "download_link": "NSM/RNS/3577981.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T07:59:24Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Alternative Arrangements",
+   "download_link": "NSM/RNS/3573217.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T09:33:23Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Section 430(2B) Companies Act 2006 Statement",
+   "download_link": "NSM/RNS/3557449.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:14:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403111454_3552808.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:14:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403111454_3552808.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T08:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Spirax Sarco appoints next Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20200402080005_3550357.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T08:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Spirax Sarco appoints next Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20200402080005_3550357.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T08:30:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20200330083026_3545462.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T09:48:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200313094846_3526115.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T12:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312120007_3524696.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T07:05:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Change",
+   "download_link": "NSM/data-migration/LSE20200311070501_3522214.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "2019 Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20200311070004_3522210.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T17:35:23Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200207173523_3488335.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20191113070004_14305434.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T15:30:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20190910153002_14221270.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Change",
+   "download_link": "NSM/data-migration/LSE20190904100001_14213481.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T14:49:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190821144929_14197809.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:02:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190814090237_14188489.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:27:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190809102714_14183521.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T16:26:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190808162648_14182377.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190807070003_14178998.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:41:19Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Change of Adviser",
+   "download_link": "NSM/data-migration/LSE20190801174119_14173487.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T15:08:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528150858_14089575.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T16:16:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190517161640_14079037.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T16:12:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190516161206_14077368.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T17:14:47Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190515171447_14075592.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T07:00:11Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement - Trading Update",
+   "download_link": "NSM/data-migration/LSE20190515070011_14074049.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T14:45:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Acquisition",
+   "download_link": "NSM/data-migration/LSE20190513144508_14071938.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T09:21:27Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20190430092127_14056992.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T08:28:22Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20190425082822_14051573.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T14:36:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411143634_14038162.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T11:25:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190315112502_14004208.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190307070007_13993120.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T15:04:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointment",
+   "download_link": "NSM/data-migration/LSE20190301150401_13987760.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Exclusive negotiations to acquire Thermocoax",
+   "download_link": "NSM/data-migration/LSE20190218070008_13971953.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T16:20:23Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20190116162023_13937131.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T07:00:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20181203070006_13887954.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-15T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20181115070007_13867559.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T16:23:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181031162341_13850110.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-12T17:34:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181012173408_13827711.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-26T07:30:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20180926073002_13804948.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-23T16:55:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180823165507_13766640.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-09T15:07:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180809150709_13750345.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T10:22:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180731102210_13737665.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-25T09:46:58Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20180725094658_13730702.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-20T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Executive Director Promotion",
+   "download_link": "NSM/data-migration/LSE20180720100001_13725734.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-11T16:26:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180611162604_13675156.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-31T08:12:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180531081208_13661230.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-31T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20180531070004_13660693.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-17T09:26:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180517092613_13644956.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T16:55:41Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180515165541_13642359.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T07:00:03Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement - Trading Update",
+   "download_link": "NSM/data-migration/LSE20180515070003_13640703.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-25T16:27:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180425162720_13618705.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-06T15:32:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180406153237_13595678.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T16:17:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180404161732_13592020.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "2017 Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20180315070004_13567513.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-06T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointment",
+   "download_link": "NSM/data-migration/LSE20180306070006_13555648.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-14T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Succession Changes",
+   "download_link": "NSM/data-migration/LSE20180214070004_13532189.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-06T07:30:00Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20180206073000_13522718.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-20T09:07:35Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20171220090735_13472230.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-27T16:00:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171127160026_13445225.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-21T15:08:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171121150827_13439375.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-21T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20171121070003_13438137.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-14T10:39:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171114103912_13430935.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-16T17:35:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171016173507_13398320.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-29T15:36:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170929153607_13381069.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-09T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170809070003_13323603.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Acquisition",
+   "download_link": "NSM/data-migration/LSE20170704070005_13282565.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-23T09:11:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170623091131_13271157.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-20T15:59:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170620155954_13267168.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T14:20:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170612142008_13257345.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-05T09:08:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170605090800_13249042.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-26T07:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Chromalox for US$415 million",
+   "download_link": "NSM/data-migration/LSE20170526070010_13239292.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-09T16:30:58Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170509163058_13219696.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-09T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170509070008_13218388.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T16:30:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170504163042_13214997.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T07:00:09Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Acquisition",
+   "download_link": "NSM/data-migration/LSE20170503070009_13211802.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-26T08:42:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170426084210_13204849.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-25T09:10:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170425091001_13203225.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-19T15:55:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170419155502_13197712.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-18T15:58:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170418155835_13195983.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T07:30:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170403073002_13180226.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-24T16:44:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170324164408_13171289.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-23T13:45:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170323134514_13169336.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T16:04:32Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170317160432_13163359.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-09T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170309070007_13152070.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20161130070006_013050662.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161122070007_013042168.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-17T16:23:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161117162306_013039029.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-14T08:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Dr Krishnamurthy Rajagopal",
+   "download_link": "NSM/data-migration/LSE20161114083001_013033844.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-08T11:57:19Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Director Details",
+   "download_link": "NSM/data-migration/LSE20161108115719_013027966.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-04T16:27:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161104162748_013025376.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-28T07:00:12Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Board Succession Changes",
+   "download_link": "NSM/data-migration/LSE20161028070012_013015857.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-14T17:03:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161014170317_013001960.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-14T15:20:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161014152016_013001806.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-14T15:17:39Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161014151739_013001801.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-06T11:48:41Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notification of Release Date - Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161006114841_012992375.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-08T12:44:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160908124425_012959315.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-18T08:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointment",
+   "download_link": "NSM/data-migration/LSE20160818083001_012935702.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-12T15:51:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160812155143_012930136.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T07:05:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Spirax Sarco acquires assets of Hiter for £3.9 m",
+   "download_link": "NSM/data-migration/LSE20160809070503_012923793.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T07:00:09Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2016 Half Year Results",
+   "download_link": "NSM/data-migration/LSE20160809070009_012923719.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-05T14:56:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160805145644_012921565.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T11:43:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701114354_012877019.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T09:29:11Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160629092911_012872549.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-21T17:40:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160621174014_012862946.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-10T14:59:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160610145952_012850130.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-02T15:28:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160602152819_012839659.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T09:45:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601094502_012836778.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T17:22:16Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160531172216_012835929.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-10T16:48:30Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160510164830_012810883.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-10T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Statement - Trading Update",
+   "download_link": "NSM/data-migration/LSE20160510070007_012809253.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-06T09:46:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160506094620_012806491.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-06T09:45:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160506094559_012806490.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-06T09:45:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160506094523_012806488.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-24T16:38:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160324163804_012752290.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-22T11:21:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160322112123_012747527.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-21T14:15:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report 2015 & Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20160321141522_012746088.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/108128972.pdf",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-21T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Circular to Shareholders & Notice of Annual General Meeting",
+   "download_link": "NSM/data-migration/108128974.pdf",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-15T10:11:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Home Member State",
+   "download_link": "NSM/data-migration/LSE20160315101106_012737641.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-09T12:34:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160309123406_012730434.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T07:00:16Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results 2015",
+   "download_link": "NSM/data-migration/LSE20160303070016_012721836.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-23T11:05:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160223110546_012709120.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-29T09:10:12Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Interim Review",
+   "download_link": "NSM/data-migration/LSE20160129091012_012678684.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-22T08:21:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160122082137_012669545.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T12:36:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160106123623_012648372.html",
+   "company": "Spirax-Sarco Engineering PLC",
+   "lei": "213800WFVZQMHOZP2W17",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-14T10:00:08Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800WFVZQMHOZP2W17",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3813681.html",
+   "disclosure_id": "3813681",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-14T10:00:08Z",
+   "seq_id": "3813681",
+   "company": "Spirax-Sarco Engineering PLC",
+   "last_updated_date": "2026-08-22T12:09:07.183319532Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-11-18T07:00:08Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Trading Statement",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Financial Results",
+   "lei": "213800WFVZQMHOZP2W17",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3783830.html",
+   "disclosure_id": "3783830",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-18T07:00:08Z",
+   "seq_id": "3783830",
+   "company": "Spirax-Sarco Engineering PLC",
+   "last_updated_date": "2026-08-22T12:07:56.845847696Z",
+   "headline": "Trading Update",
+   "type_code": "TST"
+  }
+ ]
 }

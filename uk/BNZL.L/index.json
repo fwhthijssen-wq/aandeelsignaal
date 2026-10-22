@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-29",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Bunzl PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160229070016_012715763.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 446306
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Bunzl plc - Annual Financial Report",
+  "bedrijf": "Bunzl PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/129503576.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 9756674
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "Bunzl PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/165468350.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 10283717
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "Bunzl PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/214500832.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7031807
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2019 Annual Report",
+  "bedrijf": "Bunzl PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/269057384.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 7360911
+ }
+]

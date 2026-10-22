@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Review 2016",
+  "bedrijf": "Diploma PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/122534157.pdf",
+  "tekst": "uk-2015.txt",
+  "grootte": 1650653
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report & Accounts 2017",
+  "bedrijf": "Diploma PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/155064735.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 3917845
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report & Accounts 2018",
+  "bedrijf": "Diploma PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/203484364.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 2216661
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Review 2019",
+  "bedrijf": "Diploma PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/254472531.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7240811
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-11-18",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Diploma PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20191118070006_14311124.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 557702
+ }
+]

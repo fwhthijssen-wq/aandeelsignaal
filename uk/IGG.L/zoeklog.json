@@ -1,13 +1,2351 @@
 {
- "aantal": 0,
+ "aantal": 229,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138003A5Q1M7ANOUD76', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138003A5Q1M7ANOUD76', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138003A5Q1M7ANOUD76', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138003A5Q1M7ANOUD76', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138003A5Q1M7ANOUD76",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 229
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-15T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/RNS/3814500.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T10:11:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799298.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:27:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766655.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T15:02:18Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3762517.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T15:32:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3758389.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T15:14:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3758377.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T09:17:49Z",
+   "type": "Industry Regulator Statement",
+   "type_code": "IRS",
+   "headline": "Response to ASIC Announcement ",
+   "download_link": "NSM/RNS/3757913.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-16T16:30:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3751232.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T06:12:44Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3749114.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:55:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735377.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T14:44:17Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Appointment",
+   "download_link": "NSM/RNS/3733877.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T14:39:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3730721.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T13:37:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3723535.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T14:34:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Shareholders Resolution",
+   "download_link": "NSM/Portal/NI-000011242.docx",
+   "company": "IG Group Holdings Plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-17T14:24:08Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3719763.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T06:00:03Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "First Quarter Revenue Update",
+   "download_link": "NSM/RNS/3718657.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:37:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702995.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T14:23:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3684626.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T17:15:46Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3683386.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T16:47:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/Portal/NI-000009201.pdf",
+   "company": "IG Group Holdings Plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-10T16:46:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000009202.pdf",
+   "company": "IG Group Holdings Plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-10T16:32:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of the AGM",
+   "download_link": "NSM/Portal/NI-000009198.pdf",
+   "company": "IG Group Holdings Plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-10T13:27:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3683198.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T11:14:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3683093.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T14:30:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3681816.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T09:06:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3673964.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T13:49:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3671461.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T15:54:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3667082.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-23T06:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the financial year ended 31 May 2020 ",
+   "download_link": "NSM/RNS/3664538.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-20T13:51:37Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3661593.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Appointment",
+   "download_link": "NSM/RNS/3648176.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:15:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643212.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-04T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre Close Trading Update",
+   "download_link": "NSM/RNS/3615177.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T09:21:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611620.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "New CFO Appointment ",
+   "download_link": "NSM/RNS/3583702.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T06:32:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582628.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T06:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Listing Rules Filing",
+   "download_link": "NSM/RNS/3576758.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T15:52",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Listing Rule 9.2.6E - Summary of rights attaching to ordinary shares",
+   "download_link": "NSM/Portal/NI-000001972.docx",
+   "company": "IG Group Holdings Plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-24T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update ",
+   "download_link": "NSM/RNS/3572547.html",
+   "company": "IG Group Holdings plc",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:30:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401103033_3549329.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:30:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401103033_3549329.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T13:19:24Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200326131924_3542781.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T08:05:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Changes",
+   "download_link": "NSM/data-migration/LSE20200319080506_3532319.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Revenue Update",
+   "download_link": "NSM/data-migration/LSE20200319070007_3532457.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T09:17:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302091721_3511956.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T17:30:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200228173014_3511113.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:42:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203104237_3481827.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "New Chairman Update",
+   "download_link": "NSM/data-migration/LSE20200203070010_3480746.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T07:05:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200121070501_14391542.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/data-migration/LSE20200121070010_14391448.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:25:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102102538_14368941.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "New Chairman Appointment",
+   "download_link": "NSM/data-migration/LSE20191211070009_14343541.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20191205070006_14335934.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T09:21:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191203092135_14332728.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T07:00:02Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Results of the Audit Tender Process",
+   "download_link": "NSM/data-migration/LSE20191129070002_14328115.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T11:49:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101114913_14291148.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T17:46:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191025174627_14281806.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T15:58:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002155855_14251632.html",
+   "company": "Standard Life Aberdeen PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T15:58:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002155855_14251632.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:07:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930140719_14247341.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:04:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930140404_14247335.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T11:02:56Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190926110256_14242925.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T16:06:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923160626_14237880.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T14:43:46Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190919144346_14233974.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T07:05:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190919070501_14232737.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T07:00:15Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20190919070015_14232612.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/243635095.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-02T10:25:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902102514_14210006.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T12:23:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "ASIC Consultation on CFDs and binary options",
+   "download_link": "NSM/data-migration/LSE20190822122301_14199305.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T10:45:32Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190816104532_14192064.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2019 AGM Notice",
+   "download_link": "NSM/data-migration/239242271.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-08-16T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2019 Proxy Form",
+   "download_link": "NSM/data-migration/239242273.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-08-12T09:57:42Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190812095742_14185128.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T16:37:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190808163745_14182404.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T15:32:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731153227_14171115.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T14:56:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731145610_14171011.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T12:27:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190725122738_14163418.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T11:57:48Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190724115748_14161573.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T11:40:45Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190724114045_14161540.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "IG Group Holdings Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20190723070010_14158834.html",
+   "company": "Ig Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T09:02:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701090218_14130883.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T13:54:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190619135415_14117083.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T15:36:55Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190614153655_14112081.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T11:27:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603112718_14096187.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/data-migration/238620319.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/data-migration/241970053.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "IG GROUP HOLDINGS PLC Strategy and Business Update",
+   "download_link": "NSM/data-migration/LSE20190522070005_14082685.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "IG GROUP HOLDINGS PLC Pre Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20190522070004_14082678.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T15:32:09Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Change to Nomination Committee membership",
+   "download_link": "NSM/data-migration/LSE20190515153209_14075445.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:42:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501094235_14059091.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190415070008_14040343.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T09:11:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401091159_14023152.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T10:12:20Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190327101220_14017653.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T11:53:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325115336_14014465.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T07:00:08Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "Thrid Quarter Revenue Update",
+   "download_link": "NSM/data-migration/LSE20190321070008_14009952.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T15:17:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190307151700_13994533.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T14:05:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301140538_13987659.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T12:54:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190222125439_13979092.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T12:54:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190222125439_13979092.html",
+   "company": "Standard Life Aberdeen PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190213070004_13967236.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T13:55:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190204135512_13957448.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T10:21:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190204102112_13957025.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T14:32:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190123143231_13944521.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/data-migration/LSE20190122070005_13941985.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T13:33:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190104133325_13924552.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-07T09:10:29Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to FCA Consultation CP18/38",
+   "download_link": "NSM/data-migration/LSE20181207091029_13895642.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20181204070007_13889891.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T14:05:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203140516_13889354.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T17:00:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101170038_13852184.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T16:23:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101162311_13852122.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T15:34:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101153439_13852052.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-30T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181030070011_13846755.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-27T07:00:18Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180927070018_13806252.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-26T15:51:54Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180926155154_13805925.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-20T14:14:46Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180920141446_13798795.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-20T13:51:50Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20180920135150_13798752.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-20T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/185062452.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-05T14:06:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180905140634_13780135.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T12:47:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903124715_13776822.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-20T14:12:04Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM & Director Appointments",
+   "download_link": "NSM/data-migration/LSE20180820141204_13761682.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-20T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/181666635.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-08-20T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/181666649.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-08-13T10:20:34Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180813102034_13752963.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-10T15:21:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180810152114_13751959.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-26T16:56:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180726165602_13733236.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-24T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the year ended 31 May 2018",
+   "download_link": "NSM/data-migration/LSE20180724070006_13728357.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T16:39:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702163936_13702397.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-18T09:06:37Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180618090637_13683210.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T12:10:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601121033_13663992.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/180803357.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-23T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180523070011_13651314.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update and Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20180523070006_13651261.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T13:36:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501133657_13625962.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T09:32:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403093219_13589071.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-27T10:41:53Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180327104153_13582972.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-27T08:57:34Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to ESMA and FCA announcements",
+   "download_link": "NSM/data-migration/LSE20180327085734_13582623.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-22T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Revenue Update",
+   "download_link": "NSM/data-migration/LSE20180322070005_13576551.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-07T16:45:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180307164523_13558738.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T10:22:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301102218_13551001.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T11:24:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201112407_13518136.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-26T15:15:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180126151554_13511645.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-23T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "IG Group Holdings Interim Results",
+   "download_link": "NSM/data-migration/LSE20180123070004_13505372.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-10T11:31:32Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to FCA findings of review of CFD market",
+   "download_link": "NSM/data-migration/LSE20180110113132_13491637.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T09:47:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102094701_13481878.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-18T07:00:04Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to FCA and ESMA announcements",
+   "download_link": "NSM/data-migration/LSE20171218070004_13468350.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20171205070004_13453627.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T11:01:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201110154_13451098.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T16:53:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171101165336_13417316.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T09:54:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101095431_13416365.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-03T16:16:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171003161656_13384726.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T09:54:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002095400_13382205.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-27T09:26:28Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170927092628_13377022.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-21T13:04:18Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170921130418_13371208.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-21T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "First Quarter Revenue Update",
+   "download_link": "NSM/data-migration/LSE20170921070004_13370171.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2017 AGM Special Business Resolutions",
+   "download_link": "NSM/data-migration/146949388.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-01T11:25:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901112509_13349092.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-18T15:06:21Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20170818150621_13335386.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-18T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2017 AGM",
+   "download_link": "NSM/data-migration/144170893.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-08-18T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2017 AGM",
+   "download_link": "NSM/data-migration/144170842.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-08-11T13:53:49Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170811135349_13327691.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-09T10:12:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170809101247_13324286.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-03T09:35:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170803093545_13318285.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:47:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801104707_13314937.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-18T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the year ended 31 May 2017",
+   "download_link": "NSM/data-migration/LSE20170718070008_13298142.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-13T16:24:53Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing of Shares",
+   "download_link": "NSM/data-migration/LSE20170713162453_13294683.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:13:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703091335_13281196.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T11:42:29Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to FCA and ESMA announcements",
+   "download_link": "NSM/data-migration/LSE20170629114229_13277849.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-20T10:12:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170620101245_13266517.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T09:59:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601095919_13245524.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20170531070004_13243133.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/141090950.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-09T09:53:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on conclusion of BaFin consultation",
+   "download_link": "NSM/data-migration/LSE20170509095327_13219090.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T14:01:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502140154_13211183.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T12:15:06Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403121506_13181312.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-27T16:07:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170327160734_13172885.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-23T07:00:11Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20170323070011_13168260.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-21T12:24:42Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170321122442_13166109.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-08T14:18:45Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170308141845_13151674.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T16:00:57Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170303160057_13147335.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T12:20:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301122034_13143820.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T12:55:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170222125502_13136004.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T14:30:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161213143000_013065803.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-08T16:39:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Response to BaFin Announcement regarding CFDs",
+   "download_link": "NSM/data-migration/LSE20161208163904_013061279.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-06T13:06:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161206130603_013058093.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-06T10:04:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Response to FCA Consultation Paper",
+   "download_link": "NSM/data-migration/LSE20161206100439_013057800.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T14:30:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201143027_013053630.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T14:27:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161201142713_013053620.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre Close Trading Update",
+   "download_link": "NSM/data-migration/LSE20161130070006_013050658.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T15:37:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101153741_013020443.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T15:28:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161101152851_013020427.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T07:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of purchase of DailyFX",
+   "download_link": "NSM/data-migration/LSE20161031070010_013017581.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-18T16:11:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161018161128_013005238.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T11:36:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003113612_012987386.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T07:00:12Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of DailyFX",
+   "download_link": "NSM/data-migration/LSE20160930070012_012984522.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-27T16:19:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Change to Chairmanship of the Board Risk Committee",
+   "download_link": "NSM/data-migration/LSE20160927161927_012980882.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-27T12:46:36Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160927124636_012980572.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-21T14:33:35Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160921143335_012974227.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-21T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "2016 AGM Special Business Resolutions",
+   "download_link": "NSM/data-migration/118112911.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-20T07:00:12Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "First Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20160920070012_012971556.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T15:23:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901152337_012951596.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-19T15:33:40Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20160819153340_012938083.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-19T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2016 AGM",
+   "download_link": "NSM/data-migration/116507620.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-08-19T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2016 AGM",
+   "download_link": "NSM/data-migration/116507474.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-08-09T13:47:47Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160809134747_012924841.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-03T14:52:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160803145231_012918059.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T12:16:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801121650_012913949.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-20T12:21:30Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Board Changes - Appointment of CFO",
+   "download_link": "NSM/data-migration/LSE20160720122130_012899801.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-19T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the year ended 31 May 2016",
+   "download_link": "NSM/data-migration/LSE20160719070007_012897041.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20160708070006_012885103.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T12:06:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701120647_012877099.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-24T15:03:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Statement on impact of EU Referendum vote",
+   "download_link": "NSM/data-migration/LSE20160624150307_012867755.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T10:56:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601105656_012836984.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T07:00:16Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160531070016_012833999.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2016",
+   "download_link": "NSM/data-migration/115885206.pdf",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-03T11:33:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503113338_012801081.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T14:57:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401145724_012760798.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-29T14:57:59Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Interim Review",
+   "download_link": "NSM/data-migration/LSE20160329145759_012754354.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T16:32:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160323163250_012750175.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-22T07:00:14Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20160322070014_012746686.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-02T14:22:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160302142232_012721076.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-02T14:19:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160302141900_012721071.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-02T14:15:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company - Replacement",
+   "download_link": "NSM/data-migration/LSE20160302141509_012721065.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T13:33:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301133345_012718885.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-23T16:13:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160223161326_012709747.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T16:18:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201161811_012681903.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2016",
+   "download_link": "NSM/data-migration/LSE20160119070006_012663953.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-15T07:00:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Appointment of Interim Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20160115070009_012660228.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T11:57:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160106115740_012648292.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T15:08:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104150814_012645066.html",
+   "company": "IG Group Holdings PLC",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-15T07:00:06Z",
+   "tag_esef": "",
+   "classifications_code": "1.2",
+   "source": "RNS",
+   "type": "Trading Statement",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Financial Results",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "classifications": "Half yearly financial reports and audit reports/limited",
+   "download_link": "NSM/RNS/3814500.html",
+   "disclosure_id": "3814500",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-15T07:00:06Z",
+   "seq_id": "3814500",
+   "company": "IG Group Holdings plc",
+   "last_updated_date": "2026-08-22T12:09:07.185702946Z",
+   "headline": "Trading Update",
+   "type_code": "TST"
+  },
+  {
+   "submitted_date": "2020-12-01T10:11:15Z",
+   "tag_esef": "",
+   "classifications_code": "2.5;3.1",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138003A5Q1M7ANOUD76",
+   "classifications": "Total number of voting rights and capital;Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3799298.html",
+   "disclosure_id": "3799298",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-01T10:11:15Z",
+   "seq_id": "3799298",
+   "company": "IG Group Holdings plc",
+   "last_updated_date": "2026-08-22T12:08:32.323881341Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

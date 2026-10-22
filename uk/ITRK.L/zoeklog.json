@@ -1,13 +1,811 @@
 {
- "aantal": 0,
+ "aantal": 75,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138003GAT25WW1RN369', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138003GAT25WW1RN369', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138003GAT25WW1RN369', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138003GAT25WW1RN369', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138003GAT25WW1RN369",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 75
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-18T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3819252.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3811365.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T13:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798346.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T13:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3790810.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3790798.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T15:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3790050.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T13:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765034.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T12:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3744990.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3737590.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733227.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T12:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701293.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T12:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3697130.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T12:01:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3684196.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T12:00:00Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3683066.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T12:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674511.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:01:03Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Intertek enters strategic partnership with BEXIMCO",
+   "download_link": "NSM/RNS/3673681.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3673104.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T06:00:11Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "First CarbonClear Certification ",
+   "download_link": "NSM/RNS/3670331.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-21T14:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3662541.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T14:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3655717.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T15:30:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3650760.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T12:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642063.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3611457.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T12:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610399.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T14:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3608908.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T14:00:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3601748.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T11:43:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/Portal/NI-000004357.pdf",
+   "company": "Intertek Group Plc",
+   "lei": " 2138003GAT25WW1RN369",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T11:19:58Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3602761.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3601776.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T12:00:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3593239.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T06:00:04Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "2020 Annual General Meeting Update",
+   "download_link": "NSM/RNS/3588143.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T12:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581540.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T16:45:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3561751.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3555851.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401130006_3547287.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401130006_3547287.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323130001_3536026.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T09:00:04Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200320090004_3534148.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316150001_3527961.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316150001_3527957.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200303070006_3513025.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302130001_3510677.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T13:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203130002_3480343.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T13:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102130003_14369270.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T07:00:11Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20191217070011_14351185.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T13:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202130003_14331189.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191126070007_14322554.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T15:00:01Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Intertek launches Cyber Assured",
+   "download_link": "NSM/data-migration/LSE20191125150001_14322193.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T13:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191121130003_14318002.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T13:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101130005_14291282.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001130001_14249329.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T13:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190906130003_14217508.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T13:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902130006_14210376.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T10:08:16Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190819100816_14193831.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T07:10:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190805071003_14175610.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801130001_14172959.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:21Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190801070021_14171584.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701130001_14131594.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T13:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603130003_14096423.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T10:05:58Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190523100558_14085160.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190523070006_14084356.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T13:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190521130001_14082136.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501130001_14059607.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401130001_14023785.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190322130001_14012813.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190322130001_14012815.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T07:00:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190322070002_14011674.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313150002_14001162.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T07:00:19Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Intertek Group plc - Final Results",
+   "download_link": "NSM/data-migration/LSE20190305070019_13989841.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301130001_13987557.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T13:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201130002_13955717.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T11:43:24Z",
+   "type": "GM Statement",
+   "type_code": "GMS",
+   "headline": "Result of GM",
+   "download_link": "NSM/data-migration/LSE20190116114324_13936853.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T13:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102130003_13921216.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T13:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Circular and Notice of GM",
+   "download_link": "NSM/data-migration/LSE20181221130001_13913517.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T13:00:00Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181213130000_13902965.html",
+   "company": "Intertek Group PLC",
+   "lei": "2138003GAT25WW1RN369",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-18T07:00:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "2138003GAT25WW1RN369",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3819252.html",
+   "disclosure_id": "3819252",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T07:00:05Z",
+   "seq_id": "3819252",
+   "company": "Intertek Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.198813434Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  },
+  {
+   "submitted_date": "2020-12-11T07:00:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "2138003GAT25WW1RN369",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3811365.html",
+   "disclosure_id": "3811365",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-11T07:00:05Z",
+   "seq_id": "3811365",
+   "company": "Intertek Group PLC",
+   "last_updated_date": "2026-08-22T12:08:49.742974850Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  }
+ ]
 }

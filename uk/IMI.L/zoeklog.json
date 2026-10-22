@@ -1,13 +1,2641 @@
 {
- "aantal": 0,
+ "aantal": 258,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138002W9Q21PF751R30', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138002W9Q21PF751R30', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138002W9Q21PF751R30', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138002W9Q21PF751R30', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138002W9Q21PF751R30",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 258
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-09T10:16:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3809030.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T09:24:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799224.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T11:26:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3777239.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T09:29:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766540.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Interim Management Statement ",
+   "download_link": "NSM/RNS/3761887.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T11:07:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3748202.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T08:33:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735234.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T16:04:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711650.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T11:32:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711349.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-07T08:07:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3708433.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:04:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702935.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T15:01:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3686000.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T08:28:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675470.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T10:33:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3669829.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results, six months ended 30 June 2020",
+   "download_link": "NSM/RNS/3665813.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-17T08:36:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/RNS/3659780.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-15T13:32:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3657488.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T10:37:34Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3645023.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:30:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643429.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T10:06:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3621779.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:11:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611454.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T12:57:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3601481.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T13:06:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594438.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T13:14:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000003278.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T12:04:59Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3589392.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement & Coronavirus update",
+   "download_link": "NSM/RNS/3588224.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:03:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582798.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T15:48:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3581910.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:27:11Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of rights attached to equity shares  ",
+   "download_link": "NSM/RNS/3576669.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:13",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000002147.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-21T12:07:10Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Change of Venue for the 2020 AGM ",
+   "download_link": "NSM/RNS/3569037.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T11:30:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3569033.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T15:26:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3564712.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T13:20:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3563069.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T15:42:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561670.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2020",
+   "download_link": "NSM/data-migration/272205700.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-02T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2020",
+   "download_link": "NSM/data-migration/272205708.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-02T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2020",
+   "download_link": "NSM/data-migration/272205700.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-02T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2020",
+   "download_link": "NSM/data-migration/272205708.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-01T09:56:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401095639_3549266.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:56:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401095639_3549266.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T16:45:52Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200331164552_3548290.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T07:00:07Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Coronavirus update",
+   "download_link": "NSM/data-migration/LSE20200330070007_3544881.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T15:58:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200326155839_3542936.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:56:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200318165639_3532281.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:37:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200317163742_3530441.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T10:52:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312105220_3524493.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T12:18:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311121807_3523292.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:10:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302151056_3512663.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results, year ended 31 December 2019",
+   "download_link": "NSM/data-migration/LSE20200228070003_3509511.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T15:07:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200212150713_3492429.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:55:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203105535_3481845.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T12:15:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200115121518_14385369.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T15:31:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200113153108_14382261.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T11:54:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200103115408_14370843.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T14:04:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102140435_14369394.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/data-migration/272205704.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-11T14:40:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191211144049_14345009.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T10:20:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202102035_14330759.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T09:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-executive director changes",
+   "download_link": "NSM/data-migration/LSE20191127090003_14325046.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T08:10:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191121081056_14317431.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T10:04:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191114100459_14308128.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "IMS and Strategy Review conclusions",
+   "download_link": "NSM/data-migration/LSE20191107070006_14297912.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:04:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101100452_14290710.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T14:07:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191009140741_14260220.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T10:17:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001101739_14248857.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of PBM acquisition",
+   "download_link": "NSM/data-migration/LSE20190923070008_14236277.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T15:51:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190916155145_14228512.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T13:08:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911130805_14222786.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T10:18:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902101802_14209993.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Proposed acquisition of PBM for $85m",
+   "download_link": "NSM/data-migration/LSE20190820070008_14194750.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T13:42:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190814134211_14189171.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T15:40:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-executive director change",
+   "download_link": "NSM/data-migration/LSE20190812154006_14185788.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:17:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801161710_14173305.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results, six months ended 30 June 2019",
+   "download_link": "NSM/data-migration/LSE20190726070002_14163999.html",
+   "company": "Imi PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T16:29:30Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190715162930_14150008.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T14:03:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710140334_14143811.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T16:07:52Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190704160752_14137413.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:35:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701103509_14131144.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T12:38:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190612123841_14108485.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T15:18:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190610151837_14105325.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T10:24:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603102446_14096021.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T15:18:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190520151851_14080608.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T12:14:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190515121410_14075117.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T14:05:30Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190509140530_14068571.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20190509070005_14067353.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/221171942.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-01T10:44:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501104456_14059231.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T15:17:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190412151745_14039919.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T15:50:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190410155051_14036547.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T09:07:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190405090739_14030566.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:36:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401113600_14023582.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329160001_14022040.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T11:51:26Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190329115126_14021591.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2019",
+   "download_link": "NSM/data-migration/216204990.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-29T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2019",
+   "download_link": "NSM/data-migration/216205093.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-18T15:56:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190318155614_14006307.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T12:12:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313121232_14000937.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T09:25:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190307092501_13993855.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T07:00:26Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "IMI Critical Engineering division - MD appointment",
+   "download_link": "NSM/data-migration/LSE20190307070026_13993185.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T11:15:58Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Application for Block Listing",
+   "download_link": "NSM/data-migration/LSE20190304111558_13989074.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T10:01:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301100147_13987162.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:13Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results, year ended 31 December 2018",
+   "download_link": "NSM/data-migration/LSE20190301070013_13986410.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "CEO succession",
+   "download_link": "NSM/data-migration/LSE20190301070010_13986385.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T09:23:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190226092327_13981865.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T11:01:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190221110119_13977304.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T11:08:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190214110839_13969699.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T12:40:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190213124057_13968269.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T11:26:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190212112605_13966603.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T16:05:21Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190211160521_13965407.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:18:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201111802_13955431.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T12:12:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190109121245_13929167.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T11:17:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102111710_13920933.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/216205092.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-12T11:55:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181212115534_13901212.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T11:26:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203112641_13888978.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T10:26:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181114102622_13866676.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-08T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "IMI plc Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20181108070006_13859288.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:44:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101094400_13851120.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-18T10:35:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181018103553_13833890.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-11T09:34:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181011093457_13824956.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-10T14:38:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181010143813_13823834.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T12:27:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001122729_13811368.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-24T08:59:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180924085921_13801588.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-17T14:57:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180917145712_13793586.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-12T14:23:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180912142354_13788487.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T16:05:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903160500_13777123.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-16T14:09:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180816140939_13758407.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T14:16:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801141630_13740098.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T07:00:13Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results, six months ended 30 June 2018",
+   "download_link": "NSM/data-migration/LSE20180731070013_13736851.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-05T12:16:20Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180705121620_13707277.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T12:45:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702124515_13701898.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-13T15:27:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180613152711_13678630.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-05T14:22:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180605142208_13667818.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T10:29:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601102928_13663588.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-21T15:55:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180521155544_13649243.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-18T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "New non-executive director appointed",
+   "download_link": "NSM/data-migration/LSE20180518070005_13646127.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T16:01:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180511160142_13638645.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T14:36:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180509143642_13634976.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-08T14:09:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180508140918_13633109.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T14:00:46Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180503140046_13629210.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20180503070002_13628071.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/170692849.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-01T09:49:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501094925_13625420.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-24T16:08:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180424160807_13616968.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-16T14:47:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180416144708_13606161.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-11T14:44:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180411144449_13600854.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T12:40:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403124041_13589626.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-23T15:09:39Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180323150939_13579875.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-23T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/166308156.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2018 AGM Notice",
+   "download_link": "NSM/data-migration/166308157.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-14T14:58:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180314145845_13567146.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-12T16:42:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180312164254_13563894.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-05T09:16:00Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180305091600_13554348.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results, year ended 31 December 2017",
+   "download_link": "NSM/data-migration/LSE20180302070004_13552093.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T10:05:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301100511_13550958.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-14T11:47:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180214114747_13533136.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T11:23:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201112355_13518134.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Bimba acquisition",
+   "download_link": "NSM/data-migration/LSE20180201070007_13517194.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-22T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Executive Committee change",
+   "download_link": "NSM/data-migration/LSE20180122070003_13503667.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T12:09:58Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20180111120958_13493364.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T12:04:41Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20180111120441_13493358.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-10T12:14:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180110121436_13491776.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-04T15:09:46Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180104150946_13485810.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T12:03:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102120313_13482340.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2017",
+   "download_link": "NSM/data-migration/166308158.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-20T16:07:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171220160755_13473165.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-14T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20171214070005_13464886.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-13T14:18:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171213141816_13464286.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-13T12:12:41Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-executive director changes",
+   "download_link": "NSM/data-migration/LSE20171213121241_13464140.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-11T09:57:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-executive director changes",
+   "download_link": "NSM/data-migration/LSE20171211095707_13460604.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T10:59:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201105952_13451090.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-22T10:26:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171122102606_13440357.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T14:56:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171115145613_13432930.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-09T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "IMI plc Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20171109070005_13425430.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T09:33:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101093350_13416324.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T08:53:23Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20171101085323_13416224.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-11T15:17:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171011151743_13393678.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T09:56:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002095633_13382211.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-27T16:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Site visit",
+   "download_link": "NSM/data-migration/LSE20170927160002_13377690.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-18T16:06:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170918160628_13366712.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-13T11:46:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170913114659_13361566.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-11T16:14:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Major interests in shares",
+   "download_link": "NSM/data-migration/LSE20170911161425_13358849.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-09T16:15:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170809161542_13324897.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T09:37:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801093739_13314736.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-28T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results, six months ended 30 June 2017",
+   "download_link": "NSM/data-migration/LSE20170728070006_13310701.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-12T14:28:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170712142853_13292916.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T15:08:18Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170704150818_13283754.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T07:59:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703075959_13281070.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-14T11:53:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170614115328_13260305.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T10:53:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601105355_13245733.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-23T14:51:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170523145141_13235763.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T16:58:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170522165842_13234337.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-10T14:22:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170510142249_13221019.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T13:56:22Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170504135622_13214686.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "IMI plc Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20170504070008_13213544.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/132985176.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-02T13:04:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170502130429_13211126.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T12:55:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502125528_13211107.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-24T11:37:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170424113705_13201925.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-12T12:25:59Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170412122559_13192550.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T14:52:29Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170406145229_13186609.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T11:13:43Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170406111343_13186314.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T09:43:23Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403094323_13180787.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-24T10:28:04Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170324102804_13170602.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-24T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/130037086.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-24T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notce",
+   "download_link": "NSM/data-migration/130037081.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-15T14:33:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170315143310_13159971.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-09T14:27:35Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170309142735_13153517.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T10:53:11Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301105311_13143612.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T11:00:54Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170227110054_13140273.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-24T07:00:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Preliminary results, year ended 31 December 2016",
+   "download_link": "NSM/data-migration/LSE20170224070008_13138157.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-15T14:00:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170215140010_13128960.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2016",
+   "download_link": "NSM/data-migration/130037080.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-14T15:54:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161214155456_013067367.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T10:39:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201103926_013053232.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T11:13:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161124111308_013045851.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-10T07:00:09Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "IMI plc Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20161110070009_013030342.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-09T15:20:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161109152052_013029992.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T09:07:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101090713_013019719.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-12T16:03:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161012160302_012998865.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T11:04:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003110441_012987308.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-19T15:12:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160919151231_012971113.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-14T15:12:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160914151250_012966176.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-02T16:20:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160902162030_012953312.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-10T15:03:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160810150321_012926705.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T11:33:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801113351_012913842.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results, six months ended 30 June 2016",
+   "download_link": "NSM/data-migration/LSE20160729070010_012910945.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-13T15:57:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160713155721_012891542.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-04T10:52:07Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160704105207_012878905.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T14:10:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701141021_012877416.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T14:35:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160615143542_012855329.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T10:26:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601102625_012836909.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T15:03:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160526150307_012831420.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-25T16:02:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160525160254_012829791.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-23T16:18:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160523161858_012826493.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T15:36:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160511153623_012812599.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T14:48:46Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160505144846_012805436.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T14:39:21Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160505143921_012805412.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T07:00:12Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20160505070012_012804088.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/110704922.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-03T10:04:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503100457_012800694.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T14:35:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160401143553_012760726.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T10:04:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401100455_012759852.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T16:22:43Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160323162243_012750159.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2016",
+   "download_link": "NSM/data-migration/108301950.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-23T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy form 2016",
+   "download_link": "NSM/data-migration/108301949.pdf",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-09T16:50:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160309165059_012730891.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T10:14:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301101450_012718485.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-26T16:05:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Home Member State",
+   "download_link": "NSM/data-migration/LSE20160226160527_012715280.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-26T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20160226070008_012713633.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T14:02:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160210140215_012693983.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T10:18:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201101857_012680847.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-27T09:52:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160127095212_012675076.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T15:08:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160114150807_012659661.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T13:58:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160113135811_012657717.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T11:19:16Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Interim Review",
+   "download_link": "NSM/data-migration/LSE20160106111916_012648200.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T10:48:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104104829_012644432.html",
+   "company": "IMI PLC",
+   "lei": "2138002W9Q21PF751R30",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-09T10:16:17Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138002W9Q21PF751R30",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3809030.html",
+   "disclosure_id": "3809030",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-09T10:16:17Z",
+   "seq_id": "3809030",
+   "company": "IMI PLC",
+   "last_updated_date": "2026-08-22T12:08:49.736171495Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-01T09:24:24Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138002W9Q21PF751R30",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3799224.html",
+   "disclosure_id": "3799224",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-01T09:24:24Z",
+   "seq_id": "3799224",
+   "company": "IMI PLC",
+   "last_updated_date": "2026-08-22T12:08:32.323633756Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

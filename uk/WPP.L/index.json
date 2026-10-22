@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-03-04",
+  "soort": "Final Results",
+  "titel": "2015 Preliminary Results",
+  "bedrijf": "WPP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160304070009_012723768.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 608889
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2016 Annual Report",
+  "bedrijf": "WPP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/132547873.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 14653761
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "WPP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/169675638.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 19985108
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report and Accounts 2018",
+  "bedrijf": "WPP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/219353700.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 12332216
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-04-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2019",
+  "bedrijf": "WPP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000002665.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 11743950
+ }
+]

@@ -1,13 +1,3431 @@
 {
- "aantal": 0,
+ "aantal": 337,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300PPXHEU2JF0AM85', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300PPXHEU2JF0AM85', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300PPXHEU2JF0AM85', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300PPXHEU2JF0AM85', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300PPXHEU2JF0AM85",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 337
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T10:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3831055.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-21T12:59:39Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Studio Retail Group plc",
+   "download_link": "NSM/RNS/3822328.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-17T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3818742.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3810842.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-07T17:31:34Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of reset reference rate modification",
+   "download_link": "NSM/RNS/3806637.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-07T11:21:05Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "AT1 Consent Notice of Results of Meetings ",
+   "download_link": "NSM/RNS/3805973.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3802660.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T08:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000015379.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-12-02T14:00:07Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3800101.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3798526.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T14:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798029.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Charlie Nunn appointed Group Chief Executive",
+   "download_link": "NSM/RNS/3796737.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T17:10:56Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms dated 25 November 2020",
+   "download_link": "NSM/RNS/3793689.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T13:01:55Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Exchange Offer Final Results",
+   "download_link": "NSM/RNS/3793407.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T08:13:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Exchange Offer Indicative Results",
+   "download_link": "NSM/RNS/3792878.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T11:50:48Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Consent Solicitation Notice of Adjourned Meeting",
+   "download_link": "NSM/RNS/3790235.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T11:40:23Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Consent Solicitation Notice of Results",
+   "download_link": "NSM/RNS/3790217.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T10:26:24Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Securities Exchange Offer",
+   "download_link": "NSM/RNS/3781603.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-13T12:07:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3780338.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3776016.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3767051.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T14:03:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Updated AT1 Consent Solicitation Announcement",
+   "download_link": "NSM/RNS/3765438.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765316.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T16:13:42Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3764022.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T14:56:25.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "LLOYDS BANKING GROUP PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000013743.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Lloyds Banking Group Chairman Succession Update",
+   "download_link": "NSM/RNS/3762732.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:08Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "2020 Q3 Interim Management Statement",
+   "download_link": "NSM/RNS/3762783.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T10:04:56Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Consent Solicitation Notice of Adjourned Meeting",
+   "download_link": "NSM/RNS/3755265.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T10:00:51Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Consent Solicitation Notice of Results",
+   "download_link": "NSM/RNS/3755257.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T13:03:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3745536.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-09T06:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3743043.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T13:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733455.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T09:56:13Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/RNS/3731809.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T09:55:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Consent Solicitation Announcement",
+   "download_link": "NSM/RNS/3731802.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T09:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/RNS/3728736.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T15:51:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3725126.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T13:01:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3712882.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T09:02:24Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Board and Committee Changes",
+   "download_link": "NSM/RNS/3712551.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T13:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701176.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T13:52:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3684600.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677198.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3674394.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674302.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T15:58:05Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3673037.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T12:31:29.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "LLOYDS BANKING GROUP PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000008747.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2020 Half-Year Results - Part 2 of 2",
+   "download_link": "NSM/RNS/3671742.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2020 Half-Year Results - Part 1 of 2",
+   "download_link": "NSM/RNS/3671741.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T15:06:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3653532.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-06T06:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Lloyds Banking Group Leadership Succession",
+   "download_link": "NSM/RNS/3646915.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T14:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3646410.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T13:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3643222.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641815.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T11:48:16Z",
+   "type": "Irish Stock Exchange",
+   "type_code": "ISE",
+   "headline": "Reset Rate Announcement - AT1 Issuance",
+   "download_link": "NSM/RNS/3637443.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T13:44:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3634645.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T15:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3622116.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-04T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3616434.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:42:05Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3610664.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:36:44Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3610637.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T13:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3608970.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T10:46:18Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on LBG option to redeem 6.375% AT1 bonds",
+   "download_link": "NSM/RNS/3604101.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T16:00:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Resolutions Passed",
+   "download_link": "NSM/Portal/NI-000004328.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T15:47:26Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3603088.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T12:29:45Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/RNS/3602876.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T11:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3601106.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T12:51:55Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3600109.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T07:30:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3598805.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-18T09:53:30.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "LLOYDS BANKING GROUP PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000004198.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-18T09:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on 2020 AGM arrangements",
+   "download_link": "NSM/RNS/3598297.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594459.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T08:35:52Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Update on 2020 AGM arrangements",
+   "download_link": "NSM/RNS/3592578.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T15:41:12Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3583558.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T15:36:00Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3583543.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T06:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Juan Colombas to delay retirement",
+   "download_link": "NSM/RNS/3581921.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581251.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "2020 Q1 Interim Management Statement",
+   "download_link": "NSM/RNS/3580334.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T15:36:11Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3580146.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T09:30:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change - Chair of Board Risk Committee",
+   "download_link": "NSM/RNS/3577797.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:05:46Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to listed securities",
+   "download_link": "NSM/RNS/3576647.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T15:30",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of rights attached to ordinary shares",
+   "download_link": "NSM/Portal/NI-000001771.pdf",
+   "company": "LLOYDS BANKING GROUP PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-23T15:41:59Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3572431.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T15:35:25Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3572403.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T13:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561315.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T15:42:03Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3558038.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T15:36:53Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3558019.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:01:21Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200401160121_3550012.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:01:21Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200401160121_3550012.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:03Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Dividend Payments",
+   "download_link": "NSM/data-migration/LSE20200401070003_3548510.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:03Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Dividend Payments",
+   "download_link": "NSM/data-migration/LSE20200401070003_3548510.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T14:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331140003_3545547.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:41:46Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164146_3541530.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:36:14Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163614_3541476.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:40:55Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164055_3539796.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:36:52Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163652_3539736.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323140001_3537692.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:38:56Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320163856_3536122.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:20:52Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200320102052_3535341.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:15:52Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320101552_3535315.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T13:36:38Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200319133638_3533678.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:42:13Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200317164213_3530539.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:38:24Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200317163824_3530486.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200317140002_3529975.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T08:10:56Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200317081056_3529535.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T11:21:10Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200316112110_3528083.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T09:30:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200316093001_3527777.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312140001_3524891.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T11:29:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Subordinated Debt Exchange Offer Results",
+   "download_link": "NSM/data-migration/LSE20200311112906_3523162.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310140001_3521524.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:19:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Subordinated Debt Exchange Offer",
+   "download_link": "NSM/data-migration/LSE20200302151920_3512651.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T14:27:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200228142754_3510779.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T12:47:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200226124704_3507587.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T10:36:50Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report on Form 20-F",
+   "download_link": "NSM/data-migration/LSE20200226103650_3507288.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T07:00:07Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing of Shares",
+   "download_link": "NSM/data-migration/LSE20200225070007_3504713.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T12:59:28Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20200220125928_3500744.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "2019 Full Year Results",
+   "download_link": "NSM/data-migration/LSE20200220070007_3499779.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T07:00:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report and Accounts",
+   "download_link": "NSM/data-migration/LSE20200220070007_3499784.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200212140001_3492145.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200131140002_14406393.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T17:06:27Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms dated 13 January 2020",
+   "download_link": "NSM/data-migration/LSE20200115170627_14385882.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200113140001_14382083.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T14:37:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200102143704_14369437.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T11:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191231110005_14367209.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191230140002_14365945.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T14:00:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20191218140002_14354533.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191218140002_14354534.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T17:52:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of England Stress Test Passed",
+   "download_link": "NSM/data-migration/LSE20191216175214_14351008.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191212140005_14346706.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191129140005_14329285.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T07:00:10Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191125070010_14320649.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191113140004_14306705.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T15:48:31Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms dated 8 November 2019",
+   "download_link": "NSM/data-migration/LSE20191112154831_14305028.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T14:05:47Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplement Prospectus",
+   "download_link": "NSM/data-migration/LSE20191101140547_14291360.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191031140001_14289341.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non Executive Board Changes",
+   "download_link": "NSM/data-migration/LSE20191031070007_14287802.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Juan Colombas to Retire During Q3 2020",
+   "download_link": "NSM/data-migration/LSE20191031070007_14287803.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2019 Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20191031070005_14287760.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T13:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191011130002_14263469.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T15:09:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191008150912_14258632.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930140004_14247322.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930140004_14247323.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T14:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190918140000_14232052.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190913140001_14226470.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911140001_14222866.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T14:48:08Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190910144808_14221172.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T07:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on Payment Protection Insurance",
+   "download_link": "NSM/data-migration/LSE20190909070008_14218044.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T17:38:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190906173857_14217865.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T17:19:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190905171923_14216131.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T17:54:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190904175420_14214306.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T18:02:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190903180233_14212559.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T07:00:16Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Tesco Bank's Mortgage Portfolio",
+   "download_link": "NSM/data-migration/LSE20190903070016_14211119.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:59:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190902175906_14210951.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T18:15:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190830181512_14208931.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T14:15:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830141504_14208524.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T17:35:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190829173551_14207026.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T17:37:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190828173758_14205344.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T17:59:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190827175945_14203660.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T17:53:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190823175355_14201378.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T17:36:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190822173648_14199768.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T17:32:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190821173234_14198021.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T17:15:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820171553_14196314.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T17:40:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190819174039_14194569.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T17:22:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190816172222_14192875.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T17:23:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190815172307_14191109.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T17:40:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190814174029_14189469.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T17:26:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190813172647_14187629.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190813140005_14187233.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T17:27:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190812172748_14185975.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T17:31:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190809173128_14184213.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T17:31:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808173129_14182486.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T17:43:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807174337_14180633.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190807140001_14180321.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T17:32:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190806173207_14178847.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T17:59:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190805175953_14177118.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190802130001_14174899.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:35:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190731173515_14171304.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T15:57:45Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190731155745_14171150.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T15:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731150004_14171034.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:18Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2019 Half-Year Results - News Release part 2 of 2",
+   "download_link": "NSM/data-migration/LSE20190731070018_14169526.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:18Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2019 Half-Year Results - News Release part 1 of 2",
+   "download_link": "NSM/data-migration/LSE20190731070018_14169525.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T17:38:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190730173850_14169271.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T17:19:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190729171910_14167397.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T17:52:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190726175211_14165633.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T17:40:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190725174031_14163858.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T17:14:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190724171412_14162034.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T16:58:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190723165828_14160306.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T17:08:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190722170808_14158634.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T17:00:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190719170054_14156922.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T16:58:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190718165807_14155228.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T17:08:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190717170800_14153560.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T17:02:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190716170221_14151781.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T17:48:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190715174844_14150125.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-12T17:08:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190712170803_14147487.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T17:03:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190711170342_14145768.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190711140001_14145483.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T18:06:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190710180631_14144111.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T17:10:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190709171005_14142368.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T17:38:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190708173800_14140718.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-05T17:15:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190705171537_14138966.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T17:37:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190704173726_14137521.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T17:26:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190703172619_14135767.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T16:55:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190702165519_14133976.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T18:11:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190701181102_14132229.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190701140001_14131707.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T17:06:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628170622_14129951.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T15:24:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628152439_14129721.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190628140002_14129532.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T17:06:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190627170649_14127834.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T17:03:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190626170308_14125955.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T17:37:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190625173732_14124231.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T17:25:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190624172511_14122467.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T16:59:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190621165938_14120638.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T17:24:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190620172414_14118984.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T17:09:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190619170942_14117316.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T17:33:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190618173357_14115665.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T16:56:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190617165615_14113878.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T16:10:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190617161034_14113817.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T17:05:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190614170511_14112203.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T17:18:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190613171855_14110485.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T17:00:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190612170048_14108790.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T13:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190612133005_14108525.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T17:00:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190611170018_14107070.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T18:22:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190610182217_14105537.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T17:11:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190607171125_14103808.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T17:08:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190606170810_14102111.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T10:32:30Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190606103230_14101416.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T17:00:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190605170027_14100244.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T17:13:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604171310_14098518.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T17:03:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604170300_14098510.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:04:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190603170423_14096831.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:20:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190531172041_14094893.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T14:15:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531141502_14094565.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:13:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190530171310_14093049.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T17:03:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190529170312_14091403.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T17:23:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528172325_14089753.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T17:02:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190524170236_14087546.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T13:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190524133005_14087256.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T17:24:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190523172401_14085868.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T11:30:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523113043_14085333.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T09:46:36Z",
+   "type": "Irish Stock Exchange",
+   "type_code": "ISE",
+   "headline": "Redemption Notice",
+   "download_link": "NSM/data-migration/LSE20190523094636_14085106.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T17:17:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190522171729_14084158.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:56:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190521165646_14082451.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T12:45:01Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - WYG plc",
+   "download_link": "NSM/data-migration/LSE20190521124501_14082119.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T12:45:01Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - WYG plc",
+   "download_link": "NSM/data-migration/LSE20190521124501_14082119.html",
+   "company": "WYG PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190521113001_14081957.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T17:25:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190520172527_14080742.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T17:02:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190517170243_14079105.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T17:05:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190516170537_14077442.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T14:36:17Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190516143617_14077212.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T07:00:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190516070006_14075853.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Intention to Pay Quarterly Dividends",
+   "download_link": "NSM/data-migration/LSE20190516070005_14075842.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T17:41:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190515174156_14075620.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T17:29:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514172950_14073907.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190514140001_14073595.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T17:07:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190513170754_14072177.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T17:02:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510170241_14070431.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:03:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509170309_14068815.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:35:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508173552_14067155.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T08:30:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190508083001_14066168.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:48:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507174847_14065478.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T17:22:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503172251_14063260.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T12:14:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Redemption of 6.3673% preference shares",
+   "download_link": "NSM/data-migration/LSE20190503121419_14062778.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T17:11:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502171102_14061551.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T13:57:53Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190502135753_14061279.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 2019 Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20190502070004_14060197.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T17:05:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190501170502_14060023.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T17:13:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190430171327_14058101.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190430150001_14057769.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T17:41:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190429174111_14056123.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T17:17:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190426171731_14054318.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T17:20:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190425172033_14052553.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:48:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190424174811_14050811.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T17:10:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190423171050_14049021.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T16:59:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190418165934_14047073.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T17:19:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190417171958_14045304.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T17:22:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190416172200_14043632.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T18:00:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190415180022_14041900.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T17:53:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190412175302_14040122.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T17:11:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190411171119_14038356.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T13:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411133004_14038057.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T17:26:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190410172618_14036672.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T18:30:55Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus (Replacement)",
+   "download_link": "NSM/data-migration/LSE20190408183055_14033215.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T17:14:26Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190408171426_14033158.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T17:08:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190408170835_14033154.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T17:37:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190405173729_14031463.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T17:22:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190404172254_14029775.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T17:12:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190403171220_14027973.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T17:37:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190402173759_14026221.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:17:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190401171740_14024318.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T17:22:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190329172259_14022196.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T14:15:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329141504_14021866.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T12:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329120003_14021619.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T17:12:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190328171244_14020205.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T17:21:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190327172105_14018424.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T17:05:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190326170544_14016690.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T17:17:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190325171707_14014952.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:38:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190322173840_14013205.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T17:52:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190321175204_14011519.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T17:33:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190320173335_14009776.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T17:15:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190319171545_14008061.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T16:15:59Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM Replacement",
+   "download_link": "NSM/data-migration/LSE20190319161559_14007981.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T14:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190319140007_14007835.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T13:58:10Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190319135810_14007829.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T17:02:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190318170202_14006376.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T17:31:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190315173128_14004769.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T17:08:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190314170804_14003025.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T17:19:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190313171955_14001314.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313140001_14001107.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T17:06:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190312170654_13999620.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T17:03:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190311170326_13997892.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T15:18:07Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Findel Plc",
+   "download_link": "NSM/data-migration/LSE20190311151807_13997766.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T15:18:07Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Findel Plc",
+   "download_link": "NSM/data-migration/LSE20190311151807_13997766.html",
+   "company": "Findel PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T17:05:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190308170509_13996260.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308140001_13996020.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T17:27:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190307172747_13994655.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T17:08:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190306170813_13992939.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T17:12:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190305171209_13991249.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:15:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190304171545_13989628.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T17:34:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190301173428_13988032.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share Buyback Programme Commences",
+   "download_link": "NSM/data-migration/LSE20190301070003_13986295.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T15:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228150005_13985829.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T08:22:11Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2018 Annual Report on Form 20-F",
+   "download_link": "NSM/data-migration/LSE20190226082211_13981750.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T07:00:26Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190226070026_13981262.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190225140004_13980789.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T13:39:27Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190220133927_13976047.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T12:34:29Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2018 Annual Report and Accounts",
+   "download_link": "NSM/data-migration/LSE20190220123429_13975977.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T07:01:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Summary Remuneration Announcement",
+   "download_link": "NSM/data-migration/LSE20190220070102_13974954.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T07:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190220070005_13974907.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "2018 Results - News Release",
+   "download_link": "NSM/data-migration/LSE20190220070003_13974901.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190215100001_13971000.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190212153001_13966917.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T15:40:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190131154001_13954129.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190111140001_13932356.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190104140001_13924585.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T07:00:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190102070006_13920072.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T11:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231110002_13919333.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T15:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181218150004_13908320.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181214140002_13904772.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181212140001_13901371.html",
+   "company": "Lloyds Banking Group PLC",
+   "lei": "549300PPXHEU2JF0AM85",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T10:00:05Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300PPXHEU2JF0AM85",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3831055.html",
+   "disclosure_id": "3831055",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T10:00:05Z",
+   "seq_id": "3831055",
+   "company": "Lloyds Banking Group PLC",
+   "last_updated_date": "2026-08-22T12:09:44.055562005Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-21T12:59:39Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Form 8.3",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Mergers and acquisitions",
+   "lei": "549300PPXHEU2JF0AM85",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3822328.html",
+   "disclosure_id": "3822328",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-21T12:59:39Z",
+   "seq_id": "3822328",
+   "company": "Lloyds Banking Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.206404067Z",
+   "headline": "Form 8.3 - Studio Retail Group plc",
+   "type_code": "RET"
+  }
+ ]
 }

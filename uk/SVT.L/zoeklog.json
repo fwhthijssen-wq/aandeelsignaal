@@ -1,13 +1,3431 @@
 {
- "aantal": 0,
+ "aantal": 337,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800RPBXRETY4A4C59', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800RPBXRETY4A4C59', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800RPBXRETY4A4C59', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800RPBXRETY4A4C59', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800RPBXRETY4A4C59",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 337
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T13:36:48Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3818732.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-15T16:25:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3815926.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T15:33:07Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "ST Plc - Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3801594.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T15:08:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000015461.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-12-01T14:09:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799799.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T09:46:00.000Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results for the six months to 30 Sept 2020",
+   "download_link": "NSM/Portal/NI-000015103.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-26T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results for the six months to 30 Sept 2020",
+   "download_link": "NSM/RNS/3793780.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:43:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Severn Trent Plc - Total Voting Rights",
+   "download_link": "NSM/RNS/3766740.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:35:40Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Severn Trent Plc - Blocklisting Six Monthly Return",
+   "download_link": "NSM/RNS/3766659.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T10:48:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735581.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T15:23:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3714349.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T13:50:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704887.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T13:18:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703395.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T19:38:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/Portal/NI-000010039.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-25T13:36:08Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3697573.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T10:28:38.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000010090.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-03T08:28:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675469.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-20T08:51:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3661176.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-15T11:11:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Severn Trent Plc - Result of AGM",
+   "download_link": "NSM/Portal/NI-000007720.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-15T10:43:51Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Severn Trent Plc Result of AGM",
+   "download_link": "NSM/RNS/3657343.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-15T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Severn Trent Plc Trading Statement",
+   "download_link": "NSM/RNS/3656381.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T15:00:14Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Financial Statements – STUF and STW ",
+   "download_link": "NSM/RNS/3654957.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T12:07:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643731.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T10:11:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643548.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T15:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3637608.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T15:01:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3636123.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-19T15:22:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3631863.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-19T13:59:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3631799.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T11:05:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000005620.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-10T11:01:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/Portal/NI-000005617.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-10T10:46:09Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report, Sustainability Report and AGM",
+   "download_link": "NSM/RNS/3621863.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T16:09:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3620826.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T12:13:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3612012.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T20:14:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000004497.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-22T14:43:39Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3604340.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T13:31:06.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000004633.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-20T15:41:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3601629.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T06:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Results for the year ended 31 March 2020",
+   "download_link": "NSM/RNS/3600380.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T13:17:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Rights attached to equity shares & debt securities",
+   "download_link": "NSM/RNS/3591616.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-10T10:35:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Offering Circular dated 8 October 2004",
+   "download_link": "NSM/Portal/NI-000003367.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T10:31:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Offering Circular dated 25 July 2003",
+   "download_link": "NSM/Portal/NI-000003366.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T10:28:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Offering Circular dated 21 January 2003",
+   "download_link": "NSM/Portal/NI-000003365.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T10:24:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Offering Circular dated 19 December 2001",
+   "download_link": "NSM/Portal/NI-000003364.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T10:20:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Offering Circular dated 18 December 2000",
+   "download_link": "NSM/Portal/NI-000003363.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:57:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 19 July 2001 for the issue of £60m 3.860% RPI-Linked Notes due May 2028 by Severn Trent Water Utilities Finance Plc – Tranche 3",
+   "download_link": "NSM/Portal/NI-000003362.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:55:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 4 July 2001 for the issue of £10m 3.860% RPI-Linked Notes due May 2028 by Severn Trent Water Utilities Finance Plc – Tranche 2",
+   "download_link": "NSM/Portal/NI-000003361.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:51:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 30 May 2001 for the issue of £30m 3.860% RPI-Linked Notes due May 2028 by Severn Trent Water Utilities Finance Plc – Tranche 1",
+   "download_link": "NSM/Portal/NI-000003360.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:47:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 22 June 2007 for the issue of £50m 1.501% RPI-Linked Notes due August 2058 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003359.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:45:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 4 July 2007 for the issue of £50m 1.457% RPI-Linked Notes due August 2058 by Severn Trent Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003358.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:41:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 15 June 2007 for the issue of £100m 1.56625% RPI-Linked Notes due February 2058 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003357.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:38:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 8 August 2007 for the issue of £50m 1.5225% RPI-Linked Notes due August 2058 by Severn Trent Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003356.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:34:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 7 August 2007 for the issue of £50m 1.589% RPI-Linked Notes due February 2067 by Severn Trent Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003355.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:30:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 9 October 2006 for the issue of £100m 1.626% RPI-Linked Notes due August 2051 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003354.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:26:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 16 July 2001 for the issue of £25m 3.992%% RPI-Linked Notes due July 2024 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003353.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-10T09:20:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 24 April 2007 for the issue of JPY 2,000,000,000 2.605% Fixed Notes due April 2029 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003352.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T19:19:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 18 May 2007 for the issue of £100m 1.6675% RPI-Linked Notes due August 2057 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003347.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T19:16:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 19 October 2006 for the issue of £50m 1.500% RPI-Linked Notes due October 2056 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003346.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T19:12:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 27 September 2006 for the issue of £50m 1.602% RPI-Linked Notes due September 2056 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003345.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T19:03:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 20 December 2006 for the issue of SKK600,000,000 4.2% Fixed Notes due December 2025 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003344.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T19:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 20 January 2012 for the issue of £250m 4.875% Fixed Notes due January 2042 by Severn Trent Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003343.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T18:57:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 20 June 2012 for the issue of Sterling-denominated RPI-Linked Notes due July 2022 by Severn Trent Plc",
+   "download_link": "NSM/Portal/NI-000003342.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T18:48:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 14 January 2013 for the issue of £500m 3.625% Fixed Notes due January 2026 by Severn Trent Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003341.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T18:44:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final terms dated 20 June 2012 for the issue of Sterling-denominated RPI-Linked Notes due July 2022 by Severn Trent Plc",
+   "download_link": "NSM/Portal/NI-000003340.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T18:08:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "•\tFinal terms dated 29 January 2007 for the issue of £100m 1.399% RPI-Linked Notes due February 2057 by Severn Trent Water Utilities Finance Plc",
+   "download_link": "NSM/Portal/NI-000003338.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T17:46:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Severn Trent 2000 EMTN Prospectus",
+   "download_link": "NSM/Portal/NI-000003337.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T17:03:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000003334.pdf",
+   "company": "SEVERN TRENT PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:47:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 19 Jun 2012",
+   "download_link": "NSM/Portal/NI-000003328.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:32:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 01 Jul 2011",
+   "download_link": "NSM/Portal/NI-000003325.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:30:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 30 Jul 2010",
+   "download_link": "NSM/Portal/NI-000003322.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:27:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 22 Jul 2009",
+   "download_link": "NSM/Portal/NI-000003320.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:25:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 31 Jul 2008",
+   "download_link": "NSM/Portal/NI-000003316.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:22:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 3 Aug 2007",
+   "download_link": "NSM/Portal/NI-000003315.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T16:18:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "EMTN Prospectus 4 Aug 2006",
+   "download_link": "NSM/Portal/NI-000003314.pdf",
+   "company": "SEVERN TRENT PLC;Severn Trent Utilities Finance PLC",
+   "lei": "213800RPBXRETY4A4C59;213800KY9PT6WBH33232",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-01T14:14:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583436.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "ST Plc - Appointment of Non-Executive Director",
+   "download_link": "NSM/RNS/3582133.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T10:03:24Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3581255.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:20:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401122012_3549582.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:20:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401122012_3549582.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T15:04:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200331150402_3548050.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Severn Trent Plc Trading Update",
+   "download_link": "NSM/data-migration/LSE20200331070006_3546660.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T09:25:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200327092506_3543899.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T17:13:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200325171326_3541572.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T08:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SVT outlines ambitious sustainability commitments",
+   "download_link": "NSM/data-migration/LSE20200304080001_3514468.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T12:15:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302121509_3512411.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T13:19:21Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200228131921_3510692.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "SEVERN TRENT PLC/Severn Trent Utilities Finance PLC - Supplementary Prospec",
+   "download_link": "NSM/data-migration/266214973.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-24T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "SEVERN TRENT PLC/Severn Trent Utilities Finance PLC - Supplementary Prospec",
+   "download_link": "NSM/data-migration/266214973.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-19T13:08:46Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20200219130846_3499323.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-19T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/265337046.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-02-19T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/265859839.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-19T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/265859839.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-12T14:28:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200212142816_3492381.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T16:08:33Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "ST Plc and STW - Credit Rating Downgrade",
+   "download_link": "NSM/data-migration/LSE20200211160833_3491077.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T16:02:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200206160221_3486850.html",
+   "company": "Aviva PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T16:02:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200206160221_3486850.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:39:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203103900_3481807.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Update and AMP7 Dividend Policy",
+   "download_link": "NSM/data-migration/LSE20200128070006_14399908.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T10:00:05Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200116100005_14386872.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T16:33:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200106163303_14372986.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T15:33:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200106153350_14372917.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T13:13:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "OPTIONS AWARDED UNDER THE STPlc SHARESAVE SCHEME",
+   "download_link": "NSM/data-migration/LSE20200102131339_14369283.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:08:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102100841_14368895.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T11:09:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191220110918_14358096.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T11:45:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191219114518_14356295.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T15:15:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191218151555_14354666.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T08:40:00Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "PR19 Final Determination Update - SVT and HD",
+   "download_link": "NSM/data-migration/LSE20191216084000_14349833.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:12:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202121209_14331086.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results - six months to 30 September 2019",
+   "download_link": "NSM/data-migration/LSE20191121070007_14316861.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:01:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191101100106_14290702.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T09:50:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101095031_14290680.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Severn Trent Plc - Appointment of Chair",
+   "download_link": "NSM/data-migration/LSE20191030070004_14285724.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T15:41:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001154139_14249702.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T00:00:00Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results for the six months to 30 September 2019",
+   "download_link": "NSM/data-migration/252263519.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-17T17:16:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190917171639_14230543.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T14:38:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902143817_14210550.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:06:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190809100626_14183389.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T10:48:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801104804_14172583.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T16:24:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190724162425_14161973.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T12:45:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190724124541_14161701.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T16:41:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190722164104_14158593.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T08:45:57Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "PR19 Update for ST Water and Hafren Dyfrdwy",
+   "download_link": "NSM/data-migration/LSE20190718084557_14154398.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T12:40:25Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190717124025_14153218.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update for the period 1 April - 17 July 19",
+   "download_link": "NSM/data-migration/LSE20190717070003_14152021.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Results of AGM",
+   "download_link": "NSM/data-migration/229966139.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-07-02T10:01:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Annual Bonus Scheme - 2016 Deferred Share Release",
+   "download_link": "NSM/data-migration/LSE20190702100146_14133139.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:13:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701101340_14131068.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T15:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190626153006_14125826.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T12:01:56Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "ST Plc - Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190620120156_14118530.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "ST Plc - Publication of Prospectus",
+   "download_link": "NSM/data-migration/226579021.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2019-06-20T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "ST Plc - Publication of Prospectus",
+   "download_link": "NSM/data-migration/226579021.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2019-06-19T13:17:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190619131714_14117045.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T09:30:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/LSE20190617093003_14113174.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T13:23:16Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and AGM",
+   "download_link": "NSM/data-migration/LSE20190613132316_14110093.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "ST Plc - AGM Notice",
+   "download_link": "NSM/data-migration/225659346.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-13T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "ST Plc Proxy Form",
+   "download_link": "NSM/data-migration/225659364.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-03T15:46:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603154628_14096693.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:58:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190530175846_14093083.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T13:30:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190522133007_14083838.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T07:00:18Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Results for the year ended 31 March 2019",
+   "download_link": "NSM/data-migration/LSE20190521070018_14080957.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T15:42:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR1 Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20190517154220_14079007.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T10:08:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "ST Plc - Succession Plan to Appoint New Chairman",
+   "download_link": "NSM/data-migration/LSE20190507100814_14064571.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T16:24:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501162404_14059943.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:59:41Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190430155941_14057909.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T15:17:55Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Severn Trent Water Draft Determination for AMP7",
+   "download_link": "NSM/data-migration/LSE20190411151755_14038211.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:29:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401112930_14023558.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "ST Plc - Annual Report and Accounts",
+   "download_link": "NSM/data-migration/225659211.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-25T17:03:50Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190325170350_14014935.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T17:03:50Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190325170350_14014935.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/217550619.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2019-03-01T13:44:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301134447_13987627.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T11:49:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208114942_13963550.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "ST Plc Trading Update - 1 Oct 2018 to 6 Feb 2019",
+   "download_link": "NSM/data-migration/LSE20190206070002_13959515.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:30:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201113047_13955499.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T08:26:22Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Severn Trent selected as Fast-Track Company",
+   "download_link": "NSM/data-migration/LSE20190131082622_13953260.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T16:25:40Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190117162540_13938671.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T14:48:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director / PDMR Shareholding - Replacement",
+   "download_link": "NSM/data-migration/LSE20190109144810_13929297.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T15:10:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190108151037_13927860.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T16:47:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "OPTIONS AWARDED UNDER THE STPlc SHARESAVE SCHEME",
+   "download_link": "NSM/data-migration/LSE20190103164732_13923349.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T09:53:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102095328_13920716.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T10:08:13Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "ST Plc accepts Ofwat proposal to increase ODI cap",
+   "download_link": "NSM/data-migration/LSE20181213100813_13902598.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T13:38:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203133858_13889314.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-22T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results - six months to 30 September 2018",
+   "download_link": "NSM/data-migration/LSE20181122070006_13876285.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T11:04:21Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "SVT considering Ofwat proposal to increase ODI cap",
+   "download_link": "NSM/data-migration/LSE20181101110421_13851374.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:07:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101090747_13851065.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:02:15Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20181101090215_13851062.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-19T15:04:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Business Plan Data Tables: 2020-25",
+   "download_link": "NSM/data-migration/LSE20180919150414_13797137.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T13:43:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903134357_13776915.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T07:00:09Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Submission of business plan for period 2020-2025",
+   "download_link": "NSM/data-migration/LSE20180903070009_13775650.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-30T10:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Severn Trent Plc - Purchase of Agrivert",
+   "download_link": "NSM/data-migration/LSE20180830100003_13772978.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-03T15:32:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180803153249_13743781.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T09:54:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801095450_13739517.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-25T18:12:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180725181212_13731545.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-23T11:35:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180723113525_13727740.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-19T13:08:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180719130846_13724490.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-18T12:51:57Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180718125157_13722740.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-18T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "ST Plc Trading Update - 1 April to 18 July 2018",
+   "download_link": "NSM/data-migration/LSE20180718070004_13721601.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T18:09:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180703180917_13704410.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T15:09:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180703150951_13704134.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T09:23:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702092331_13701221.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-21T14:03:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180621140346_13689041.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-21T09:20:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR1 Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20180621092017_13688404.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-20T14:48:06Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "ST Plc - Publication of Prospectus",
+   "download_link": "NSM/data-migration/LSE20180620144806_13687416.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-20T14:48:06Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "ST Plc - Publication of Prospectus",
+   "download_link": "NSM/data-migration/LSE20180620144806_13687416.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-20T11:23:38Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/LSE20180620112338_13687056.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-20T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Severn Trent PLC - Publication of a Prospectus",
+   "download_link": "NSM/data-migration/175376700.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2018-06-20T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Severn Trent PLC - Publication of a Prospectus",
+   "download_link": "NSM/data-migration/175376700.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2018-06-15T11:00:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Severn Trent Plc - Annual Report and AGM",
+   "download_link": "NSM/data-migration/LSE20180615110002_13681630.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-15T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "ST Plc - AGM Notice",
+   "download_link": "NSM/data-migration/174786619.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-15T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "ST Plc - Proxy Form",
+   "download_link": "NSM/data-migration/174786660.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-12T16:45:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180612164514_13676922.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T08:26:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601082641_13663184.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-30T17:47:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180530174748_13660515.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Results for the year ended 31 March 2018",
+   "download_link": "NSM/data-migration/LSE20180523070007_13651288.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:36:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501163650_13626346.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T07:00:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale of Land in Nottingham",
+   "download_link": "NSM/data-migration/LSE20180501070006_13624830.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-30T15:56:47Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180430155647_13624357.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-25T14:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180425140001_13618477.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T10:23:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403102340_13589188.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Severn Trent Plc Annual Report and Accounts",
+   "download_link": "NSM/data-migration/174786622.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Severn Trent PLC - Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/174870559.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-09T09:22:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180309092222_13561300.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T10:07:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301100732_13550966.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-13T13:58:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180213135851_13531613.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement for the period 1 Oct to 7 Feb",
+   "download_link": "NSM/data-migration/LSE20180207070003_13524023.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T10:30:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201103020_13517997.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-08T14:45:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180108144508_13488847.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-03T10:46:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180103104629_13483626.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T11:42:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102114249_13482284.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-22T11:40:43Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Section 430(2B) Companies Act 2006 Statement",
+   "download_link": "NSM/data-migration/LSE20171222114043_13476212.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T10:08:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201100809_13450982.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-28T17:42:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171128174253_13446820.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-23T13:41:39Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20171123134139_13442234.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-23T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results - six months to 30 September 2017",
+   "download_link": "NSM/data-migration/LSE20171123070004_13441186.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-23T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/152881332.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2017-11-01T10:50:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101105031_13416536.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T10:42:19Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171101104219_13416526.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T10:30:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002103013_13382311.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-04T09:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Organisational and directorate changes",
+   "download_link": "NSM/data-migration/LSE20170904090001_13350541.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:27:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801102750_13314828.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-31T08:45:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170731084526_13312732.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-24T12:48:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170724124845_13305219.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T17:15:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170720171512_13302612.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T13:04:17Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170719130417_13300678.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170719070003_13299720.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/139673149.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-07-05T17:54:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170705175420_13285357.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T17:58:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170704175825_13283993.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:46:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703094621_13281278.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Severn Trent Plc - sale of North American business",
+   "download_link": "NSM/data-migration/LSE20170703070002_13280642.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T17:05:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629170517_13278470.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-27T17:54:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170627175407_13275178.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T13:33:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170622133354_13270106.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T10:50:36Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20170621105036_13268208.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/136971450.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/136971450.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-16T13:10:16Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/LSE20170616131016_13263646.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-15T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Severn Trent PLC - Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/136590150.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-12T07:00:04Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170612070004_13256307.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T07:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601070002_13244829.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T17:13:22Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20170530171322_13242914.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/135344081.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-23T07:00:13Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Results for the Year Ended to 31 March 2017",
+   "download_link": "NSM/data-migration/LSE20170523070013_13234593.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/136155238.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-22T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/136155247.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-02T09:31:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502093110_13210570.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T09:13:21Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/data-migration/LSE20170502091321_13210503.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T14:30:41Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403143041_13181552.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/136155246.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-28T08:48:20Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170328084820_13173694.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-27T07:00:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "SVT Digital, Innovation & Technology showcase",
+   "download_link": "NSM/data-migration/LSE20170327070010_13171612.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-20T15:00:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170320150025_13164782.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-13T14:05:56Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170313140556_13156502.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T12:42:01Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170306124201_13148527.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T09:01:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301090110_13143320.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T07:30:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Non Voting Ordinary Shares Offer Update",
+   "download_link": "NSM/data-migration/LSE20170301073002_13142912.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T14:06:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Letter to Dee Valley Non-Voting Ord Shareholders",
+   "download_link": "NSM/data-migration/LSE20170222140634_13136059.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-13T12:21:36Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Non-Voting Ord Shares Offer Update and Extension",
+   "download_link": "NSM/data-migration/LSE20170213122136_13125957.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-10T15:24:42Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Offer Update",
+   "download_link": "NSM/data-migration/LSE20170210152442_13124861.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-30T09:28:50Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Offer Update",
+   "download_link": "NSM/data-migration/LSE20161230092850_013081619.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-23T14:18:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161223141802_013078189.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-21T17:27:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161221172750_013075381.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-21T11:00:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161221110021_013074792.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-21T08:47:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161221084730_013074569.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-16T08:28:52Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "CMA approval of Severn Trent offer for Dee Valley",
+   "download_link": "NSM/data-migration/LSE20161216082852_013069758.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T13:23:11Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Severn Trent Plc - New Directorship",
+   "download_link": "NSM/data-migration/LSE20161214132311_013067181.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-12T07:00:07Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Posting of letter to Dee Valley Shareholders",
+   "download_link": "NSM/data-migration/LSE20161212070007_013063018.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-09T11:11:33Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Severn Trent Response to Ancala Announcement",
+   "download_link": "NSM/data-migration/LSE20161209111133_013062354.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-07T16:44:46Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Comment on Ancala declaring bid won't be increased",
+   "download_link": "NSM/data-migration/LSE20161207164446_013059699.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-05T07:40:12Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Publication and Posting of Acquisition Document",
+   "download_link": "NSM/data-migration/LSE20161205074012_013055874.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T09:37:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201093726_013053061.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-25T13:11:33Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to Ancala Offer Document for Dee Valley",
+   "download_link": "NSM/data-migration/LSE20161125131133_013047389.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T15:35:46Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) Dee Valley Group plc",
+   "download_link": "NSM/data-migration/LSE20161124153546_013046238.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T07:00:09Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results - six months to 30th September 16",
+   "download_link": "NSM/data-migration/LSE20161124070009_013045057.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/122308074.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-11-24T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/121653637.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-11-23T17:56:44Z",
+   "type": "Offer by",
+   "type_code": "OFB",
+   "headline": "Revised Severn Trent Acquisition of Dee Valley Gp",
+   "download_link": "NSM/data-migration/LSE20161123175644_013044871.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-23T09:38:18Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Response to Ancala's Takeover Offer for Dee Valley",
+   "download_link": "NSM/data-migration/LSE20161123093818_013044257.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T17:30:47Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Response to revised Ancala bid for Dee Valley Grp",
+   "download_link": "NSM/data-migration/LSE20161122173047_013043487.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T08:18:49Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Recommended Acquisition of Dee Valley Group Plc",
+   "download_link": "NSM/data-migration/LSE20161116081849_013036683.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T07:00:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Recommended Acquisition of Dee Valley Group Plc",
+   "download_link": "NSM/data-migration/LSE20161116070009_013036320.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T11:42:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101114239_013020040.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T10:28:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161101102823_013019884.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T10:03:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003100306_012987181.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-08T08:04:46Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "SVT restatement of results following Water Plus JV",
+   "download_link": "NSM/data-migration/LSE20160908080446_012958664.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T07:00:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901070009_012950114.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T09:02:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801090229_012913481.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-26T15:09:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160726150944_012907016.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-20T15:04:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160720150442_012900097.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-20T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160720070007_012898779.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T10:18:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701101807_012876775.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T13:11:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160629131125_012873014.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-23T14:10:23Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20160623141023_012866011.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-23T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/113949952.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-23T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/113949788.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-23T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/113520446.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-23T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/113520498.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-23T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/113520498.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-22T13:15:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160622131522_012864259.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-21T14:21:16Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Financial Statements - ST Utilities Finance Plc",
+   "download_link": "NSM/data-migration/LSE20160621142116_012862637.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-17T11:15:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160617111557_012858697.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-13T10:00:05Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160613100005_012851113.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T14:00:02Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "COMPLETION OF UU AND SVT JV, WATER PLUS",
+   "download_link": "NSM/data-migration/LSE20160601140002_012837536.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T10:19:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601101914_012836896.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T12:13:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531121308_012835211.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Notification of Board Changes",
+   "download_link": "NSM/data-migration/LSE20160526070010_012830151.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-24T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual results for the year to 31 March 2016",
+   "download_link": "NSM/data-migration/LSE20160524070010_012826760.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:51:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503105108_012800772.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:46:34Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160503104634_012800758.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T07:05:07Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "CMA APPROVES SVT AND UU NON-HOUSEHOLD RETAIL JV",
+   "download_link": "NSM/data-migration/LSE20160503070507_012799929.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T13:03:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401130339_012760497.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T09:16:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160331091614_012757412.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-29T13:14:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160329131442_012754076.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-24T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "New Director Checklist - 22.03.2016",
+   "download_link": "NSM/data-migration/108311372.pdf",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-21T09:15:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Emma FitzGerald to join Board of Severn Trent Plc",
+   "download_link": "NSM/data-migration/LSE20160321091502_012745410.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-16T15:28:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160316152856_012740465.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-10T12:09:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160310120904_012732167.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T11:52:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301115242_012718709.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T07:00:08Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "SVT & UU COMBINE NON-HOUSEHOLD RETAIL BUSINESSES",
+   "download_link": "NSM/data-migration/LSE20160301070008_012717634.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-25T11:57:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160225115725_012712780.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update for the period 1 Oct to 31 Dec 2015",
+   "download_link": "NSM/data-migration/LSE20160203070007_012684064.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T10:53:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201105304_012680935.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-20T11:53:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160120115314_012666419.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T15:47:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160119154724_012665133.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-18T17:08:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160118170825_012663712.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-15T17:03:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160115170320_012661872.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T17:32:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160114173222_012660058.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T16:56:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160113165605_012658145.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-12T17:28:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160112172836_012656407.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T17:09:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160111170935_012654532.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T14:39:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160111143915_012654090.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-08T17:50:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160108175058_012652701.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T17:04:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160107170451_012650741.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T16:54:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160106165420_012648943.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T17:31:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160105173155_012647195.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T14:05:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160105140502_012646686.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T07:09:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160105070952_012645630.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T10:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104100002_012644276.html",
+   "company": "Severn Trent PLC",
+   "lei": "213800RPBXRETY4A4C59",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T13:36:48Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Additional Listing",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Corporate actions",
+   "lei": "213800RPBXRETY4A4C59",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3818732.html",
+   "disclosure_id": "3818732",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T13:36:48Z",
+   "seq_id": "3818732",
+   "company": "Severn Trent PLC",
+   "last_updated_date": "2026-08-22T12:09:07.197238158Z",
+   "headline": "Additional Listing",
+   "type_code": "ALS"
+  },
+  {
+   "submitted_date": "2020-12-15T16:25:45Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800RPBXRETY4A4C59",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3815926.html",
+   "disclosure_id": "3815926",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-15T16:25:45Z",
+   "seq_id": "3815926",
+   "company": "Severn Trent PLC",
+   "last_updated_date": "2026-08-22T12:09:07.189488202Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

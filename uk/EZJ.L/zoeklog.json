@@ -1,13 +1,1701 @@
 {
- "aantal": 0,
+ "aantal": 164,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138001S47XKWIB7TH90', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138001S47XKWIB7TH90', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138001S47XKWIB7TH90', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138001S47XKWIB7TH90', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138001S47XKWIB7TH90",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 164
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-30T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3829588.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-23T13:15:01Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Board resolutions - EU ownership contingency plan",
+   "download_link": "NSM/RNS/3825468.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-23T13:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3825459.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-22T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Aircraft delivery profile through to Sept 2024",
+   "download_link": "NSM/RNS/3822733.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-21T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3820835.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T11:41:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3812297.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T10:57:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3794626.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T09:08:31Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Notice of Annual General Meeting",
+   "download_link": "NSM/RNS/3789886.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T11:06:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3787679.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T13:29:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3784960.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3782830.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3782829.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T13:12:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3777444.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-06T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Aircraft Sale and Leaseback",
+   "download_link": "NSM/RNS/3771816.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Aircraft Sale and Leaseback",
+   "download_link": "NSM/RNS/3759923.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chief Financial Officer confirmation of start date",
+   "download_link": "NSM/RNS/3747196.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-13T13:38:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3746932.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T11:15:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3742728.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update for year ending 30 September 2020",
+   "download_link": "NSM/RNS/3741723.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3740356.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T06:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Chief Financial Officer",
+   "download_link": "NSM/RNS/3719941.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T10:16:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3714009.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-08T06:00:07Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Capacity Update ",
+   "download_link": "NSM/RNS/3709125.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T09:40:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3690957.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-17T08:01:34Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3689461.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T06:00:03Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Aircraft Sale and Leaseback",
+   "download_link": "NSM/RNS/3687451.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T11:36:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3684477.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T11:31:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3683108.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T15:09:24Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3679039.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T15:34:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677616.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Statement ",
+   "download_link": "NSM/RNS/3676346.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:31:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674448.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T09:30:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3666613.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-17T12:44:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3660188.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T10:49:41Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/RNS/3655955.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T11:17:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3654741.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T14:37:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642166.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T11:25:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Relationship Agreement with easyGroup",
+   "download_link": "NSM/RNS/3641859.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T10:33:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3641800.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T11:24:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3640307.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T16:32:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3639154.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T10:07:12Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of GM",
+   "download_link": "NSM/RNS/3638728.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T06:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Aircraft Sale and Leaseback (“SLB”)",
+   "download_link": "NSM/RNS/3637767.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T06:00:07Z",
+   "type": "Result of Equity Issue",
+   "type_code": "ROI",
+   "headline": "Results of Placing",
+   "download_link": "NSM/RNS/3636415.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T15:39:02Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "Proposed Placing of Ordinary Shares ",
+   "download_link": "NSM/RNS/3636159.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T15:39:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3636152.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T10:34:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3634422.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T16:47:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3629265.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-16T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "easyJet agrees delivery dates on deferred aircraft",
+   "download_link": "NSM/RNS/3627122.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T13:52:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3624931.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T10:37:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3623277.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T16:49:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3619513.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3618154.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T13:25:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3614924.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T10:45:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3614705.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T09:37:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3613178.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T11:03:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3610239.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T16:35:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3609147.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T16:21:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3609140.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T06:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on capacity, fleet & cost structure plans ",
+   "download_link": "NSM/RNS/3607725.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T13:53:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3607508.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-26T06:00:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3604635.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T11:12:01Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/RNS/3604175.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Resumption of flights from 15 June ",
+   "download_link": "NSM/RNS/3601792.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T10:51:29Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of cyber security incident",
+   "download_link": "NSM/RNS/3599956.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T13:14:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on General Meeting arrangements",
+   "download_link": "NSM/RNS/3597273.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T14:21:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3595961.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T14:06:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3593094.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T08:13:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3582704.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:38:13Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of rights attached to equity shares ",
+   "download_link": "NSM/RNS/3576688.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T10:52:07Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/RNS/3576164.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T07:22:25Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3570086.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T16:20:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on Requisition of General Meeting",
+   "download_link": "NSM/RNS/3566342.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T11:07:38Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3565946.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T15:41:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3564706.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update for Six Months ending 31 March 2020",
+   "download_link": "NSM/RNS/3563855.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T14:45:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3563151.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T15:24:32Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Requisition of General Meeting",
+   "download_link": "NSM/RNS/3559629.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T15:18:37Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "easyJet Statement – Aircraft Delivery Update",
+   "download_link": "NSM/RNS/3559615.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T13:04:26Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "New Requisition of General Meeting",
+   "download_link": "NSM/RNS/3557874.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T12:19:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Covid Corporate Financing Facility & RCF drawdown",
+   "download_link": "NSM/RNS/3554612.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T17:52:19Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "easyJet Statement - Requisition of General Meeting",
+   "download_link": "NSM/data-migration/LSE20200403175219_3553376.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T17:43:14Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Covid Corporate Financing Facility (CCFF)",
+   "download_link": "NSM/data-migration/LSE20200402174314_3551865.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T17:43:14Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Covid Corporate Financing Facility (CCFF)",
+   "download_link": "NSM/data-migration/LSE20200402174314_3551865.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "easyJet Statement - Requisition of General Meeting",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550332.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "easyJet Statement - Requisition of General Meeting",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550332.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "easyJet Statement - Fleet Grounding",
+   "download_link": "NSM/data-migration/LSE20200330070007_3544888.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T08:01:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323080136_3537010.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T16:34:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200319163418_3533952.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T09:01:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200317090140_3529566.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "easyJet Statement - COVID-19 Update",
+   "download_link": "NSM/data-migration/LSE20200316070006_3527197.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T13:57:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311135741_3523421.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "easyJet Statement – COVID-19 Update",
+   "download_link": "NSM/data-migration/LSE20200228070004_3509536.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T11:21:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200214112122_3495109.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T15:07:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200211150727_3491005.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T11:02:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200207110243_3487801.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T14:00:27Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20200206140027_3486699.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T13:17:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200130131743_14404556.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200121070006_14391411.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T13:27:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200113132701_14382037.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-07T10:49:50Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200107104950_14374196.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T16:18:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191220161805_14358952.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T14:36:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191211143606_14345005.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T14:41:23Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191209144123_14341180.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T12:06:08Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20191204120608_14335316.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20191119070009_14313035.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T13:00:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191112130018_14304721.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T10:04:37Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "easyJet statement on Thomas Cook slot acquisition",
+   "download_link": "NSM/data-migration/LSE20191108100437_14300763.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T12:53:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191106125351_14297175.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T13:44:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191021134457_14274011.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T12:20:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191011122032_14263402.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T15:57:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191010155728_14262069.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "easyJet Trading Update and Pre-Close Statement",
+   "download_link": "NSM/data-migration/LSE20191008070005_14257266.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T10:45:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190918104542_14231689.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T17:12:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911171235_14223169.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T07:32:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190816073202_14191744.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T11:14:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190813111406_14186959.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T09:50:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190807095001_14179767.html",
+   "company": "Easyjet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190718070005_14153749.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T16:10:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Changes to Remuneration Committee",
+   "download_link": "NSM/data-migration/LSE20190717161005_14153497.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T16:11:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190711161114_14145656.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T16:08:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190627160859_14127735.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T15:33:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611153338_14106980.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T16:37:35Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190607163735_14103758.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T17:49:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190606174906_14102177.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T15:09:54Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Pricing of Debt",
+   "download_link": "NSM/data-migration/LSE20190605150954_14100062.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T16:53:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523165339_14085789.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:59:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190521165937_14082454.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:14:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190521161431_14082401.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T09:51:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190521095101_14081699.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190517070003_14077669.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T11:24:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190515112426_14074975.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T15:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190510153002_14070333.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T16:25:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190415162524_14041773.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T15:01:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411150108_14038190.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T14:05:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190405140521_14031194.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "easyJet trading update and H1 pre-close statement",
+   "download_link": "NSM/data-migration/LSE20190401070004_14022365.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T16:20:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325162022_14014862.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Update on EU ownership",
+   "download_link": "NSM/data-migration/LSE20190322070004_14011708.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T14:00:53Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement on Alitalia",
+   "download_link": "NSM/data-migration/LSE20190318140053_14006127.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T15:22:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190312152259_13999515.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T17:07:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308170749_13996265.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T13:18:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190219131843_13974479.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T07:00:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement on Alitalia",
+   "download_link": "NSM/data-migration/LSE20190214070001_13968705.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T14:15:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190213141514_13968400.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T14:32:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190212143238_13966852.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T15:05:04Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190207150504_13962283.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T11:07:19Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20190207110719_13961877.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:20:05Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190205172005_13959354.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T14:26:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190204142635_13957484.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T11:53:18Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Document Submission to NSM",
+   "download_link": "NSM/data-migration/LSE20190128115318_13948936.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190122070005_13941972.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T14:54:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190115145415_13935420.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T15:30:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190111153010_13932445.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T10:30:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190108103001_13927478.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T17:48:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190107174805_13926487.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:18:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190103171853_13923424.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T15:21:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190102152139_13921435.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T15:03:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190102150359_13921386.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T14:40:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190102144031_13921338.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-19T14:58:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181219145801_13910089.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T15:53:22Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181214155322_13904949.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T15:45:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181212154554_13901556.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T14:22:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181211142245_13899651.html",
+   "company": "easyJet PLC",
+   "lei": "2138001S47XKWIB7TH90",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-30T11:00:02Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138001S47XKWIB7TH90",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3829588.html",
+   "disclosure_id": "3829588",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-30T11:00:02Z",
+   "seq_id": "3829588",
+   "company": "easyJet PLC",
+   "last_updated_date": "2026-08-22T12:09:25.747797655Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-23T13:15:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Strategy/Company/ Operations Update",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "2138001S47XKWIB7TH90",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3825468.html",
+   "disclosure_id": "3825468",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-23T13:15:01Z",
+   "seq_id": "3825468",
+   "company": "easyJet PLC",
+   "last_updated_date": "2026-08-22T12:09:25.732646780Z",
+   "headline": "Board resolutions - EU ownership contingency plan",
+   "type_code": "UPD"
+  }
+ ]
 }

@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Issuer Document",
+  "bedrijf": "United Utilities Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/113495198.pdf",
+  "tekst": "uk-2015.txt",
+  "grootte": 6272018
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-05-25",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "United Utilities Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20170525070009_13237805.html",
+  "tekst": "uk-2016.txt",
+  "grootte": 417039
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-05-24",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "United Utilities Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20180524070007_13653131.html",
+  "tekst": "uk-2017.txt",
+  "grootte": 404377
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Issuer Document",
+  "bedrijf": "United Utilities Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/226196778.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 2726727
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-06-12",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report and Financial Statements for the year ended 31 March 2020",
+  "bedrijf": "United Utilities Group Plc",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000005820.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 7732717
+ }
+]

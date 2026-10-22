@@ -1,13 +1,133 @@
 {
- "aantal": 0,
+ "aantal": 7,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800XKDG12NQG8VC53', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800XKDG12NQG8VC53', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800XKDG12NQG8VC53', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800XKDG12NQG8VC53', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800XKDG12NQG8VC53",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 7
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-08-20T06:00:00.000Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year 2020 Report",
+   "download_link": "NSM/Portal/NI-000009816.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-18T15:23:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions Passed at AGM",
+   "download_link": "NSM/Portal/NI-000004088.docx",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-18T15:16:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/Portal/NI-000004087.doc",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-27T11:07",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/Portal/NI-000001993.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-30T15:44:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000004400.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-30T15:40:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/Portal/NI-000004395.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-17T12:35:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/Portal/NI-000005374.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-08-20T13:15:20.075Z",
+   "tag_esef": "",
+   "document_date": "2020-06-30",
+   "classifications_code": "1.2",
+   "source": "Direct Upload",
+   "type": "Half-year Financial Report",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "Financial Results",
+   "lei": "213800XKDG12NQG8VC53",
+   "classifications": "Half yearly financial reports and audit reports/limited",
+   "download_link": "NSM/Portal/NI-000009816.pdf",
+   "disclosure_id": "NI-000009816-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-08-20T06:00:00.000Z",
+   "seq_id": "NI-000009816-0",
+   "company": "Bank of Georgia Group PLC",
+   "last_updated_date": "2026-08-22T12:04:58.327610005Z",
+   "headline": "Half Year 2020 Report",
+   "type_code": "IR"
+  },
+  {
+   "submitted_date": "2020-05-18T15:24:07.269Z",
+   "tag_esef": "",
+   "document_date": "2020-05-18",
+   "classifications_code": "3.1",
+   "source": "Direct Upload",
+   "type": "Result of AGM",
+   "lei_remediation_flag": "N",
+   "document_format": "Other",
+   "category_group": "General Meetings",
+   "lei": "213800XKDG12NQG8VC53",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000004088.docx",
+   "disclosure_id": "NI-000004088-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-05-18T15:23:00.000Z",
+   "seq_id": "NI-000004088-0",
+   "company": "Bank of Georgia Group PLC",
+   "last_updated_date": "2026-08-22T12:01:06.308717819Z",
+   "headline": "Resolutions Passed at AGM",
+   "type_code": "RAG"
+  }
+ ]
 }

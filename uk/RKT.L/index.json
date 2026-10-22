@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-15",
+  "soort": "Final Results",
+  "titel": "Full Year Results 2015",
+  "bedrijf": "Reckitt Benckiser Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160215070008_012698209.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 364906
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2016 Annual Report and Financial Statements",
+  "bedrijf": "Reckitt Benckiser Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/130469805.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 4597568
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2017 Annual Report",
+  "bedrijf": "Reckitt Benckiser Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/166775210.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 9670426
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2018 Annual Report",
+  "bedrijf": "Reckitt Benckiser Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/216662603.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 10984517
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-04-06",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report and Financial Statements 2019",
+  "bedrijf": "Reckitt Benckiser Group Plc",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000000069.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 8267620
+ }
+]

@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-13",
+  "soort": "Final Results",
+  "titel": "Prudential plc - FY18 Results - IFRS",
+  "bedrijf": "Prudential PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190313083006_14000368.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 2163696
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-03-11",
+  "soort": "Final Results",
+  "titel": "Prudential plc - FY19 Results - IFRS",
+  "bedrijf": "Prudential PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200311083005_3522215.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1636352
+ }
+]

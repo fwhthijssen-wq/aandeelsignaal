@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-02",
+  "soort": "Final Results",
+  "titel": "4Q15 Part 1 of 1",
+  "bedrijf": "BP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160202070007_012682213.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 812385
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "BP Annual Report and Form 20-F 2016",
+  "bedrijf": "BP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/130674537.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 10403051
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-29",
+  "soort": "Annual Financial Report",
+  "titel": "BP Annual Report and Form 20-F 2017",
+  "bedrijf": "BP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20180329113752_13586944.html",
+  "tekst": "uk-2017.txt",
+  "grootte": 202660
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "BP Annual Report and Form 20-F 2018",
+  "bedrijf": "BP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/216202197.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 8658331
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "BP Annual Report and Form 20-F 2019",
+  "bedrijf": "BP PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/270096339.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 9956953
+ }
+]

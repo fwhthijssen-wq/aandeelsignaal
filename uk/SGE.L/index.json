@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Sage Group Plc - Annual Report and Accounts 2016",
+  "bedrijf": "Sage Group (The) PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/122825140.pdf",
+  "tekst": "uk-2015.txt",
+  "grootte": 4673405
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-11-30",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Sage Group (The) PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20161130070010_013050731.html",
+  "tekst": "uk-2016.txt",
+  "grootte": 592251
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report & Accounts 30 September 2018",
+  "bedrijf": "Sage Group (The) PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/208242952.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 5491617
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-09-30",
+  "soort": "Annual Financial Report",
+  "titel": "2019 Annual Report & Accounts",
+  "bedrijf": "Sage Group (The) PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/254119915.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 6334889
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-11-20",
+  "soort": "Final Results",
+  "titel": "The Sage Group plc audited results for FY19",
+  "bedrijf": "Sage Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20191120070006_14314965.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 792662
+ }
+]

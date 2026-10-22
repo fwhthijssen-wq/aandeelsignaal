@@ -1,13 +1,1691 @@
 {
- "aantal": 0,
+ "aantal": 163,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138007FRGLUR9KGBT40', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138007FRGLUR9KGBT40', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007FRGLUR9KGBT40', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007FRGLUR9KGBT40', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138007FRGLUR9KGBT40",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 163
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-21T14:00:01Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/RNS/3820838.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/RNS/3819095.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-04T07:04:52Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3803568.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T16:08:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3801644.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T15:20:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3793562.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-19T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "HALF YEAR RESULTS 2020/21",
+   "download_link": "NSM/RNS/3785317.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T12:12:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738598.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T06:05:24Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3725205.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T06:00:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chair retirement",
+   "download_link": "NSM/RNS/3725187.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading update",
+   "download_link": "NSM/RNS/3725184.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-04T16:18:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000010518.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-04T16:10:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000010517.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-04T15:57:13Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3707693.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T15:06:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3674577.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T16:29:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2020",
+   "download_link": "NSM/Portal/NI-000008309.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-24T16:16:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/Portal/NI-000008308.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-24T16:07:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/Portal/NI-000008304.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-24T16:02:57Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3667090.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-17T08:32:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3659777.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T06:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3655155.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T12:29:26Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Electronic Communications with Shareholders",
+   "download_link": "NSM/RNS/3597252.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T11:59:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Electronic Communications with Shareholders",
+   "download_link": "NSM/Portal/NI-000003979.pdf",
+   "company": "HALMA PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-27T11:46:28Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of Rights Attached to Equity Shares",
+   "download_link": "NSM/RNS/3576273.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T06:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19 Update ",
+   "download_link": "NSM/RNS/3567930.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:05:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Executive Board changes",
+   "download_link": "NSM/data-migration/LSE20200402070509_3550204.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:05:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Executive Board changes",
+   "download_link": "NSM/data-migration/LSE20200402070509_3550204.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200319070006_3532398.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T09:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Event",
+   "download_link": "NSM/data-migration/LSE20200305090004_3515804.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T11:31:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200224113155_3504486.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200221070004_3501090.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200205070007_3484060.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200127070007_14398176.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-22T12:58:59Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change of Remuneration Committee Chair",
+   "download_link": "NSM/data-migration/LSE20200122125859_14394242.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T13:27:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191129132722_14329243.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T17:10:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191125171048_14322372.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T11:45:29Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20191119114529_14314098.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20191119070006_14313018.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:02:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002170236_14251753.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Site Visit",
+   "download_link": "NSM/data-migration/LSE20191001070006_14247942.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190925070002_14240038.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T09:44:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190729094452_14166527.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T18:27:58Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190725182758_14163882.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T07:00:23Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Notice of Board Change",
+   "download_link": "NSM/data-migration/LSE20190725070023_14162312.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Business",
+   "download_link": "NSM/data-migration/230913618.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-07-15T11:01:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190715110134_14149315.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T10:38:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Acquisition",
+   "download_link": "NSM/data-migration/LSE20190715103804_14149260.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T14:09:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190704140948_14137237.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T16:47:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190702164710_14133966.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T10:34:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190702103413_14133283.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T10:52:15Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190621105215_14119955.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/226734345.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-14T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/data-migration/226733144.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-11T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190611070005_14105664.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T16:00:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190529160032_14091329.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T12:59:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528125928_14089411.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T10:46:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190523104605_14085233.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T13:49:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190522134905_14083868.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T18:28:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190521182831_14082528.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T17:08:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190517170824_14079109.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T10:37:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190513103710_14071501.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T09:33:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190430093332_14057008.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T10:13:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190417101303_14044599.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/226734291.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-22T09:34:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322093441_14012333.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T12:30:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190321123039_14011101.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190321070008_14009948.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T14:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Event",
+   "download_link": "NSM/data-migration/LSE20190207140001_13962193.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190118070003_13938892.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T11:02:46Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181218110246_13907905.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-20T15:21:38Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Doc re. Half Year Report",
+   "download_link": "NSM/data-migration/LSE20181120152138_13874017.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-20T07:00:12Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20181120070012_13872717.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20181116070003_13869319.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-02T16:39:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181002163921_13813808.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Report 2018/19",
+   "download_link": "NSM/data-migration/199697695.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-27T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180927070005_13806152.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-02T15:29:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180802152953_13742085.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T17:23:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801172356_13740473.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-27T10:39:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180727103953_13734231.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-19T16:45:48Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180719164548_13724770.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Business",
+   "download_link": "NSM/data-migration/178273731.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-07-04T10:25:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180704102507_13705327.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-26T18:06:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180626180626_13694665.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-19T17:23:45Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180619172345_13685975.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-19T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/data-migration/175259346.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-19T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/175259350.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-12T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180612070005_13675379.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2018",
+   "download_link": "NSM/data-migration/175259349.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-27T10:02:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180327100236_13582748.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-22T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180322070005_13576550.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-09T15:49:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180209154933_13528584.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T14:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Event",
+   "download_link": "NSM/data-migration/LSE20180207140001_13525120.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-16T07:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "US Tax Reform Update",
+   "download_link": "NSM/data-migration/LSE20180116070002_13497242.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-21T09:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20171221090002_13474006.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T10:10:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171205101029_13454317.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-21T15:10:56Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Doc re. Half Yearly Report",
+   "download_link": "NSM/data-migration/LSE20171121151056_13439377.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-21T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20171121070004_13438163.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20171101070004_13415710.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-04T17:54:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171004175419_13386397.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Report 2017/18",
+   "download_link": "NSM/data-migration/152226001.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-28T09:57:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170928095738_13378597.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-27T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170927070003_13376393.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-07T09:27:56Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170907092756_13354988.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T17:08:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901170810_13349805.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-16T16:02:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170816160231_13332424.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-07T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170807070005_13320757.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:39:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801103940_13314912.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T15:57:21Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170720155721_13302513.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Business",
+   "download_link": "NSM/data-migration/139411234.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-07-19T14:21:15Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170719142115_13300797.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T15:39:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170704153955_13283817.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T11:29:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703112945_13281625.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T17:22:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170621172202_13268881.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/data-migration/137039231.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/137039248.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-13T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170613070003_13257886.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T15:02:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601150243_13246347.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T11:00:36Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20170530110036_13242172.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T15:39:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502153946_13211416.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T09:00:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notice of Board change",
+   "download_link": "NSM/data-migration/LSE20170406090010_13185982.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T11:12:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403111207_13181159.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-01T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/137039308.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-23T07:00:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Trading Update and Audit Tender",
+   "download_link": "NSM/data-migration/LSE20170323070009_13168231.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T12:41:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301124125_13143839.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-13T16:06:57Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170213160657_13126231.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T11:37:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201113706_013053346.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-28T15:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161128150501_013048854.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T16:18:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161124161821_013046290.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T16:35:46Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Doc re. Half Yearly Report",
+   "download_link": "NSM/data-migration/LSE20161122163546_013043439.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20161122070007_013042162.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T16:43:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101164338_013020524.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-05T17:51:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161005175151_012991358.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T16:31:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003163113_012988010.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-01T00:00:00Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Report 2016/17",
+   "download_link": "NSM/data-migration/121537043.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-29T10:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Event",
+   "download_link": "NSM/data-migration/LSE20160929100002_012983536.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-27T09:37:37Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160927093737_012980061.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-23T16:27:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160923162709_012977631.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T17:25:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901172504_012951848.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-22T15:54:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160822155439_012939614.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-10T15:26:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160810152633_012926758.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801090004_012913471.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-28T15:06:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160728150645_012910437.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-21T18:01:32Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160721180132_012902160.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-21T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "AGM Trading Update",
+   "download_link": "NSM/data-migration/LSE20160721070007_012900599.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Business",
+   "download_link": "NSM/data-migration/115069776.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-07-01T12:58:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701125825_012877247.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-21T14:38:13Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160621143813_012862656.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-21T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/data-migration/113369171.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/113369170.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-14T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160614070008_012852378.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T14:21:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601142127_012837610.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T16:15:53Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160531161553_012835795.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T14:22:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503142212_012801571.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-08T14:22:16Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160408142216_012770285.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-02T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2016",
+   "download_link": "NSM/data-migration/113369174.pdf",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-01T15:37:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401153722_012760935.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T16:58:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301165809_012719511.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-25T17:13:53Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Home Member State",
+   "download_link": "NSM/data-migration/LSE20160225171353_012713427.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-16T16:21:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160216162136_012701141.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-11T07:00:11Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20160211070011_012694565.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-05T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160205070006_012687686.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T12:27:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201122727_012681221.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T14:31:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160119143157_012664994.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T14:30:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104143053_012644968.html",
+   "company": "Halma PLC",
+   "lei": "2138007FRGLUR9KGBT40",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-21T14:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Acquisition",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Mergers and acquisitions",
+   "lei": "2138007FRGLUR9KGBT40",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3820838.html",
+   "disclosure_id": "3820838",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-21T14:00:01Z",
+   "seq_id": "3820838",
+   "company": "Halma PLC",
+   "last_updated_date": "2026-08-22T12:09:25.724269779Z",
+   "headline": "Acquisition",
+   "type_code": "ACQ"
+  },
+  {
+   "submitted_date": "2020-12-18T07:00:04Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Disposal",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Mergers and acquisitions",
+   "lei": "2138007FRGLUR9KGBT40",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3819095.html",
+   "disclosure_id": "3819095",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T07:00:04Z",
+   "seq_id": "3819095",
+   "company": "Halma PLC",
+   "last_updated_date": "2026-08-22T12:09:07.198633630Z",
+   "headline": "Disposal",
+   "type_code": "DIS"
+  }
+ ]
 }

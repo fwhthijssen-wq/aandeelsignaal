@@ -1,13 +1,1022 @@
 {
- "aantal": 0,
+ "aantal": 96,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '254900TWUJUQ44TQJY84', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '254900TWUJUQ44TQJY84', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '254900TWUJUQ44TQJY84', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '254900TWUJUQ44TQJY84', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "254900TWUJUQ44TQJY84",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 96
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-18T16:45:01Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of MTN Supplementary Prospectus",
+   "download_link": "NSM/RNS/3820611.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T16:45:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000016483.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-18T09:58:37.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "M&G plc - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000016584.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-12-11T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3811983.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3777388.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T11:00:00Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "M&G plc - Result of Audit Tender",
+   "download_link": "NSM/RNS/3765061.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-26T11:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's other publicly quoted directorships",
+   "download_link": "NSM/RNS/3759138.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T09:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3757818.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T09:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749211.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3748123.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-06T10:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3739633.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T10:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738367.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T10:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738368.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Senior Independent Director",
+   "download_link": "NSM/RNS/3735173.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3713867.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T16:01:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "MTN Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000010853.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-09-10T15:00:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of MTN Supplementary Prospectus",
+   "download_link": "NSM/RNS/3712851.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T10:41:34.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "M&G plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000010966.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-01T06:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "M&G plc completes acquisition of Ascentric",
+   "download_link": "NSM/RNS/3701773.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "M&G plc Half Year 2020 Results",
+   "download_link": "NSM/RNS/3684775.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T13:30:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3684564.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-16T16:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3659001.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Replacement Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3653454.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3653336.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-19T08:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Changes to the M&G plc Board",
+   "download_link": "NSM/RNS/3631176.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3630374.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3629064.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T08:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3623638.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T08:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3622964.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T15:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3622081.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3615031.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613366.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T14:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3610471.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T15:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "M&G plc Directorate Changes",
+   "download_link": "NSM/RNS/3607540.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T11:31:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business Passed at AGM",
+   "download_link": "NSM/Portal/NI-000004697.docx",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-27T11:30:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3607305.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T06:13:11Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "M&G plc Business Update for the 2020 AGM",
+   "download_link": "NSM/RNS/3606807.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T10:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3595519.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T12:11:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of MTN Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003538.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-12T11:43:46Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of MTN Supplementary Prospectus",
+   "download_link": "NSM/RNS/3592974.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T10:41:15.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "M&G plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003767.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-05T15:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586482.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T10:30:01Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "2019 Solvency and Financial Condition Report",
+   "download_link": "NSM/RNS/3573294.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567116.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T13:30:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3562836.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T13:00",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Voting Instruction Card for Ordinary Shareholders",
+   "download_link": "NSM/Portal/NI-000000966.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-15T13:00",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000000965.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-15T13:00",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/Portal/NI-000000963.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-15T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3562832.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T14:00:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3556355.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200403163005_3553272.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200403163005_3553272.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403140006_3553088.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403140006_3553088.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T09:30:04Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report and Accounts 2019",
+   "download_link": "NSM/data-migration/LSE20200403093004_3551773.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T09:30:04Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report and Accounts 2019",
+   "download_link": "NSM/data-migration/LSE20200403093004_3551773.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T08:30",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "M&G plc Annual Report and Accounts 2019",
+   "download_link": "NSM/Portal/NI-000000259.pdf",
+   "company": "M&G plc",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-executive Director",
+   "download_link": "NSM/data-migration/LSE20200401100003_3549162.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-executive Director",
+   "download_link": "NSM/data-migration/LSE20200401100003_3549162.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T14:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327143004_3544486.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T10:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327100006_3543910.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T10:45:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200323104504_3537189.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T15:30:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200319153006_3533821.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T10:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200319100006_3533135.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200317160001_3530361.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T15:10:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311151004_3523455.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311150002_3523448.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200310070007_3521016.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T12:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200302123001_3512311.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T16:00:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's other publicly quoted directorships",
+   "download_link": "NSM/data-migration/LSE20200227160002_3509284.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-19T11:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200219110006_3499113.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T12:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200212123001_3492235.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T13:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200114130003_14383670.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T13:34:43Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of an MTN Prospectus",
+   "download_link": "NSM/data-migration/LSE20191220133443_14358709.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T13:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191219133001_14356482.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T12:35:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217123506_14352553.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T12:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217123005_14352545.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T16:40:39Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20191212164039_14346931.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T16:35:49Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20191212163549_14346926.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203120002_14333159.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T15:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191129150005_14329393.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T13:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191128130001_14327459.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T09:43:59Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's other publicly quoted directorships",
+   "download_link": "NSM/data-migration/LSE20191121094359_14317566.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T16:35:39Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20191105163539_14295509.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T09:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191104093005_14292785.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T16:30:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Details of Dividend Re-investment Plan",
+   "download_link": "NSM/data-migration/LSE20191031163001_14289588.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191029140002_14285077.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T09:40:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191025094005_14280849.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T17:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191024174001_14279955.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T16:41:13Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20191024164113_14279872.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T16:35:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20191024163538_14279859.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T11:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191024111001_14279339.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T16:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191023160003_14277733.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T16:35:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20191022163545_14276016.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T17:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191021170003_14274296.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T08:00:05Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "M&G plc completes demerger",
+   "download_link": "NSM/data-migration/LSE20191021080005_14273268.html",
+   "company": "M&G PLC",
+   "lei": "254900TWUJUQ44TQJY84",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-18T16:45:01Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Publication of a Prospectus",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Prospectuses",
+   "lei": "254900TWUJUQ44TQJY84",
+   "classifications": "",
+   "download_link": "NSM/RNS/3820611.html",
+   "disclosure_id": "3820611",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T16:45:01Z",
+   "seq_id": "3820611",
+   "company": "M&G PLC",
+   "last_updated_date": "2026-08-22T12:09:07.202727253Z",
+   "headline": "Publication of MTN Supplementary Prospectus",
+   "type_code": "PDI"
+  },
+  {
+   "submitted_date": "2020-12-18T16:57:55.712Z",
+   "tag_esef": "",
+   "document_date": "2020-12-18",
+   "classifications_code": "3.1",
+   "source": "Direct Upload",
+   "type": "Publication of a Prospectus",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "Prospectuses",
+   "lei": "254900TWUJUQ44TQJY84",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000016483.pdf",
+   "disclosure_id": "NI-000016483-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T16:45:00.000Z",
+   "seq_id": "NI-000016483-0",
+   "company": "M&G plc",
+   "last_updated_date": "2026-08-22T12:09:07.202766044Z",
+   "headline": "Publication of Supplementary Prospectus",
+   "type_code": "PDI"
+  }
+ ]
 }

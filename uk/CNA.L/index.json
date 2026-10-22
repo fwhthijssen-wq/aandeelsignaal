@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-21",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Centrica PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190221070018_13976484.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1161793
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-13",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Centrica PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200213070006_3492786.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1023865
+ }
+]

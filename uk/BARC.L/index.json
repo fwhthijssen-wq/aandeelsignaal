@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-21",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Barclays PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190221070009_13976455.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1746284
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-13",
+  "soort": "Final Results",
+  "titel": "Annual Results Announcement",
+  "bedrijf": "Barclays PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200213070004_3492691.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1806760
+ }
+]

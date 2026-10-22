@@ -1,13 +1,1212 @@
 {
- "aantal": 0,
+ "aantal": 115,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138008M6MH9OZ6U2T68', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138008M6MH9OZ6U2T68', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138008M6MH9OZ6U2T68', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138008M6MH9OZ6U2T68', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138008M6MH9OZ6U2T68",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 115
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3818472.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-14T12:01:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000016064.pdf",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-14T12:00:15Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3814005.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-14T11:53:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000016061.pdf",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-14T11:40:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/Portal/NI-000016060.pdf",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-10T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3810939.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T12:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3801237.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798369.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:41:28Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3798293.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:36:04Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3798245.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3794958.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T07:00:02Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full Year Results announcement",
+   "download_link": "NSM/RNS/3790700.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-22T13:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3756870.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:30:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3735740.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:00:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3734188.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T06:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3734186.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Trading Update ",
+   "download_link": "NSM/RNS/3732341.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T09:55:55Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3727529.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T06:00:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701443.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T16:30:05Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Annual Update of Euro Medium Term Note Programme",
+   "download_link": "NSM/RNS/3698871.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T16:30:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Annual Update of Euro Medium Term Note Programme",
+   "download_link": "NSM/Portal/NI-000010065.pdf",
+   "company": "Compass Group PLC;Compass Group Finance Netherlands B.V.",
+   "lei": "2138008M6MH9OZ6U2T68;213800YZZX39WY5G7M06",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-25T11:13:20.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Compass Group PLC;Compass Group Finance Netherlands B.V. - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000010089.pdf",
+   "company": "Compass Group PLC;Compass Group Finance Netherlands B.V.",
+   "lei": "2138008M6MH9OZ6U2T68;213800YZZX39WY5G7M06",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-19T09:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3692072.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T06:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chair Announcement ",
+   "download_link": "NSM/RNS/3690096.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T15:41:02Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3686043.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T15:36:25Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3686035.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T10:00:00Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3684180.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T06:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674458.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3671668.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T15:41:03Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3668481.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T15:36:05Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3668476.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T10:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3650186.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T10:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3643377.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T06:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641400.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T09:00:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3622979.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T17:22:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3619528.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-05T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3617555.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3612058.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T06:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610552.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T17:20:42Z",
+   "type": "Result of Equity Issue",
+   "type_code": "ROI",
+   "headline": "Results of Placing",
+   "download_link": "NSM/RNS/3600358.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T06:01:01Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Retail Offer via PrimaryBid.com",
+   "download_link": "NSM/RNS/3599510.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T06:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Launch announcement",
+   "download_link": "NSM/RNS/3599513.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T06:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Update on Covid-19 and Half Year Results",
+   "download_link": "NSM/RNS/3599060.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T16:22:22Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "Response to press speculation",
+   "download_link": "NSM/RNS/3597483.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T15:41:36Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3597440.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T15:36:24Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3597423.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T06:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581595.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T13:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3576397.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T13:19",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000002053.pdf",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-23T06:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19 Update ",
+   "download_link": "NSM/RNS/3571038.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T09:15:28Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3565682.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T09:30:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3558901.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401100003_3548182.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401100003_3548182.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401070005_3548157.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401070005_3548157.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:42:19Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164219_3543111.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:36:48Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163648_3543066.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T16:38:58Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200319163858_3534018.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:40:53Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200317164053_3530512.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:35:34Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200317163534_3530431.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Coronavirus (COVID-19) Trading Update",
+   "download_link": "NSM/data-migration/LSE20200317070003_3528981.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T16:36:49Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200313163649_3526973.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T18:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303181001_3514446.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302070005_3510114.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:26:48Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200227072648_3508056.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T17:40:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200226174003_3507922.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T14:50:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200226145006_3507695.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T12:00:05Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20200207120005_3487919.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "AGM and Trading Update",
+   "download_link": "NSM/data-migration/LSE20200206070003_3485591.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T07:00:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203070009_3480911.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200106070007_14371619.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T07:00:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102070010_14368072.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T10:30:06Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20191216103006_14350044.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191213100003_14347991.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191213100003_14347993.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202140004_14331354.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T14:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191129144504_14329361.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T14:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191127143004_14325692.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full Year Results",
+   "download_link": "NSM/data-migration/LSE20191126070007_14322558.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101070005_14289980.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T10:00:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191001100002_14248812.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001070007_14247955.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902070005_14209097.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T16:25:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190823162501_14201290.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801070008_14171507.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:22:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731172203_14171284.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190726140005_14165313.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20190725070004_14162189.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T09:15:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190717091503_14152690.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-05T07:00:04Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Annual Update of Euro Medium Term Note Programme",
+   "download_link": "NSM/data-migration/LSE20190705070004_14137674.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-05T07:00:04Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Annual Update of Euro Medium Term Note Programme",
+   "download_link": "NSM/data-migration/LSE20190705070004_14137674.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T11:50:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190702115005_14133522.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T09:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190702090005_14132947.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T07:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701070004_14130177.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190628150001_14129649.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T07:00:09Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Compass Group PLC to acquire Fazer Food Services",
+   "download_link": "NSM/data-migration/LSE20190611070009_14105697.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T16:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603160003_14096705.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603070005_14095068.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T15:45:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190530154502_14092949.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190516130001_14077061.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/data-migration/LSE20190515070008_14074048.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501070003_14058356.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190401100001_14023252.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401070005_14022435.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T16:15:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190326161502_14016621.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301070003_13986281.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190228140002_13985752.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T16:20:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190211162003_13965421.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T11:35:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190208113501_13963522.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "AGM and Trading Update",
+   "download_link": "NSM/data-migration/LSE20190207070003_13961019.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T07:45:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201074502_13954980.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T10:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190115100001_13935030.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102070005_13920022.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T10:31:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20181217103102_13906018.html",
+   "company": "Compass Group PLC",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T14:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3818472.html",
+   "disclosure_id": "3818472",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T14:00:01Z",
+   "seq_id": "3818472",
+   "company": "Compass Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.197340571Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-14T12:05:26.516Z",
+   "tag_esef": "",
+   "document_date": "2020-12-14",
+   "classifications_code": "3.1",
+   "source": "Direct Upload",
+   "type": "Proxy Form",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "General Meetings",
+   "lei": "2138008M6MH9OZ6U2T68",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000016064.pdf",
+   "disclosure_id": "NI-000016064-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-14T12:01:00.000Z",
+   "seq_id": "NI-000016064-0",
+   "company": "Compass Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.184193521Z",
+   "headline": "Proxy Form",
+   "type_code": "PRX"
+  }
+ ]
 }

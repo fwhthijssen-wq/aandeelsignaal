@@ -1,13 +1,5661 @@
 {
- "aantal": 0,
+ "aantal": 560,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '21380099VMZKRMN3EX36', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '21380099VMZKRMN3EX36', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '21380099VMZKRMN3EX36', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '21380099VMZKRMN3EX36', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "21380099VMZKRMN3EX36",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 560
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-30T11:02:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3829829.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T09:25:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3819882.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T11:40:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799529.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T13:52:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3767088.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3759663.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Whitbread Interim Results",
+   "download_link": "NSM/RNS/3759904.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-26T16:25:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3759744.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T11:06:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735616.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T06:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "FY21 H1 Post Close Update ",
+   "download_link": "NSM/RNS/3723766.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T06:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3719989.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T10:17:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703070.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T10:17:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701100.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-21T12:10:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3694990.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-17T14:41:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3689963.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T09:30:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675645.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T08:11:31Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3667929.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T15:56:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3652256.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T16:05:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread PLC AGM - Special Resolution 21",
+   "download_link": "NSM/Portal/NI-000007334.doc",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T16:04:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread PLC AGM - Special Resolution 20",
+   "download_link": "NSM/Portal/NI-000007333.doc",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T16:02:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread PLC AGM - Special Resolution 19 (and Ordinary Resolution 17)",
+   "download_link": "NSM/Portal/NI-000007332.doc",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T15:55:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread PLC AGM - Special Resolution 18 (and Ordinary Resolution 17)",
+   "download_link": "NSM/Portal/NI-000007329.doc",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T15:46:14Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3649400.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 FY21 Trading Update",
+   "download_link": "NSM/RNS/3648134.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T13:12:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3643828.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:33:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643233.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T15:08:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3639069.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T13:23:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3636041.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T15:31:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3634727.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T08:58:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3634225.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T15:16:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3633303.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T14:59:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3630523.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T14:59:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3630519.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-16T10:34:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3627448.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-15T13:28:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3626341.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-15T12:53:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3626293.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T15:13:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3625005.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T15:02:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3624979.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T15:49:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3623616.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T13:59:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3622072.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T10:18:09Z",
+   "type": "Announcement re: Rights Issue",
+   "type_code": "ARI",
+   "headline": "Successful Placing of Rights Issue Rump",
+   "download_link": "NSM/RNS/3621795.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T06:00:07Z",
+   "type": "Announcement re: Rights Issue",
+   "type_code": "ARI",
+   "headline": "Results of Rights Issue",
+   "download_link": "NSM/RNS/3621390.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T07:25:48Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Annual General Meeting",
+   "download_link": "NSM/RNS/3614343.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T17:30:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Whitbread 2020 AGM Proxy Card",
+   "download_link": "NSM/Portal/NI-000005119.pdf",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-02T17:30:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Whitbread 2020 AGM Notice of Meeting",
+   "download_link": "NSM/Portal/NI-000005118.pdf",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-02T13:11:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3613475.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T11:09:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611791.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T08:37:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3608508.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T15:17:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3607568.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T11:19:14Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3602795.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T11:08:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Whitbread Prospectus for Proposed Rights Issue",
+   "download_link": "NSM/Portal/NI-000004350.pdf",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-21T10:13:12.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Whitbread plc - Single prospectus",
+   "download_link": "NSM/Portal/NI-000004514.pdf",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T07:35:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Whitbread 2019/20 Annual Report",
+   "download_link": "NSM/Portal/NI-000004298.pdf",
+   "company": "Whitbread plc",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T06:00:11Z",
+   "type": "Announcement re: Rights Issue",
+   "type_code": "ARI",
+   "headline": "Rights Issue",
+   "download_link": "NSM/RNS/3601863.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T06:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results Announcement ",
+   "download_link": "NSM/RNS/3601855.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T10:43:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583115.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T07:18:29Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3580987.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T06:00:03Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "FY20 full year results announcement timing",
+   "download_link": "NSM/RNS/3572456.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T09:05:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567130.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T06:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Covid Corporate Financing Facility",
+   "download_link": "NSM/RNS/3564883.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T10:43:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555999.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:26:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402092649_3550930.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T09:26:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402092649_3550930.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T15:08:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401150831_3549845.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T15:08:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401150831_3549845.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T16:08:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200331160819_3548160.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T16:38:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327163823_3544638.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T09:08:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327090815_3543890.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T09:09:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200326090902_3542234.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T15:04:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200324150430_3539505.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T14:40:42Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Covid-19 Update",
+   "download_link": "NSM/data-migration/LSE20200324144042_3539471.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:49:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302154946_3512729.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T11:44:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200302114454_3512231.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition in Germany",
+   "download_link": "NSM/data-migration/LSE20200228070003_3509349.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T16:26:41Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200226162641_3507826.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T15:34:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200226153416_3507751.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T14:30:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200225143026_3506227.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T15:54:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200224155409_3504843.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T16:16:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200218161641_3498186.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T16:13:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200218161310_3498183.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T16:14:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200205161406_3485346.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T11:48:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203114810_3481975.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T08:49:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200127084937_14398730.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T08:49:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200127084908_14398729.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T11:56:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200116115642_14387193.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 FY20 Trading Update",
+   "download_link": "NSM/data-migration/LSE20200116070003_14386041.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:20:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102102017_14368932.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T11:46:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217114617_14352407.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T16:11:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191213161103_14348780.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T16:10:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191213161056_14348779.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T17:07:04Z",
+   "type": "GM Statement",
+   "type_code": "GMS",
+   "headline": "GM Statement",
+   "download_link": "NSM/data-migration/LSE20191206170704_14339578.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread GM Resolutions - December 2019",
+   "download_link": "NSM/data-migration/254715276.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-02T12:16:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202121601_14331098.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T09:09:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191127090904_14325070.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T09:06:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20191119090604_14313720.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T12:44:58Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/data-migration/LSE20191114124458_14308492.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Letter to shareholders",
+   "download_link": "NSM/data-migration/251074349.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-11-14T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proxy for General Meeting",
+   "download_link": "NSM/data-migration/251074364.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-11-14T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/data-migration/251074350.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-11-01T14:43:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101144341_14291416.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Whitbread Interim Results",
+   "download_link": "NSM/data-migration/LSE20191022070004_14274520.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T09:05:48Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191003090548_14252606.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T14:26:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191002142600_14251434.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T12:50:51Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition in Germany",
+   "download_link": "NSM/data-migration/LSE20190923125051_14237460.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:04:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902170452_14210854.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T14:40:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802144026_14175043.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T14:40:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802144026_14175043.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T10:01:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802100132_14174370.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T10:01:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802100132_14174370.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:31:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801163140_14173329.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T14:19:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190801141906_14173085.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T14:19:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190801141906_14173085.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T14:52:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190731145207_14171006.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T09:13:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190731091355_14170217.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T09:13:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190731091355_14170217.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T09:13:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190731091348_14170215.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T09:16:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190730091646_14168290.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T09:16:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190730091646_14168290.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T09:16:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190730091622_14168289.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T09:16:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190730091622_14168289.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T08:56:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190729085651_14166409.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T08:56:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190729085651_14166409.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T11:19:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190726111940_14165027.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T10:05:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190726100518_14164837.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T08:52:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190726085248_14164695.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T08:52:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190726085248_14164695.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T16:07:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725160748_14163743.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T16:07:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725160748_14163743.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:17:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190725151717_14163658.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:13:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190725151335_14163646.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T12:56:46Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190725125646_14163463.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T09:35:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725093550_14162980.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T09:35:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725093550_14162980.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T07:00:04Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190724070004_14160487.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T16:18:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723161808_14160264.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T16:18:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723161808_14160264.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T12:10:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723121021_14159911.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T12:08:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723120840_14159910.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T12:08:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723120840_14159910.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T07:00:04Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190723070004_14158794.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T17:30:01Z",
+   "type": "FTSE",
+   "type_code": "FTS",
+   "headline": "Whitbread",
+   "download_link": "NSM/data-migration/LSE20190722173001_14158659.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T13:38:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722133810_14158343.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T13:38:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722133810_14158343.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T09:44:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722094413_14157880.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T09:44:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722094407_14157879.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T07:00:05Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190722070005_14157121.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T11:08:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190719110824_14156435.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T10:38:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190719103803_14156341.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T10:38:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190719103803_14156341.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T08:38:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190718083843_14154397.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T08:38:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190718083843_14154397.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T08:37:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190718083709_14154395.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T11:34:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190717113408_14153086.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T11:34:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190717113401_14153085.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T15:28:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190716152814_14151674.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T13:28:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190716132829_14151484.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T09:02:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190716090223_14150919.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T09:02:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190716090223_14150919.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T14:56:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190715145621_14149840.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T14:56:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190715145615_14149839.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T09:08:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190715090856_14149144.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-12T15:58:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190712155854_14147394.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T16:19:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190702161934_14133926.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T15:15:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190701151514_14131841.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:58:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701145837_14131809.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:58:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701145830_14131808.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T12:23:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701122323_14131521.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T11:19:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190701111958_14131257.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T15:57:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190624155743_14122365.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T15:08:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190621150819_14120490.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T10:12:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190621101213_14119848.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T10:11:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190621101159_14119847.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T11:43:43Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of GM",
+   "download_link": "NSM/data-migration/LSE20190620114343_14118462.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T11:24:54Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190620112454_14118426.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 FY20 Trading Update",
+   "download_link": "NSM/data-migration/LSE20190619070002_14115790.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "GM June 2019 - Resolutions",
+   "download_link": "NSM/data-migration/226564409.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2019 - Special Resolution 19",
+   "download_link": "NSM/data-migration/226564410.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2019 - Special Resolution 21",
+   "download_link": "NSM/data-migration/226564411.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2019 - Special Resolution 20",
+   "download_link": "NSM/data-migration/226564293.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2019 - Special Resolution 18",
+   "download_link": "NSM/data-migration/226564662.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-06-03T16:50:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603165008_14096803.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T09:51:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603095134_14095912.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T13:47:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531134724_14094510.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T13:47:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531134717_14094509.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:44:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114443_14094322.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:44:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114436_14094321.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:44:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114429_14094320.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:44:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114418_14094319.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:44:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114405_14094317.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:43:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531114353_14094315.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T09:00:03Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190531090003_14093865.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Tender Offer Circular and GM Notice",
+   "download_link": "NSM/data-migration/223955510.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-31T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "GM Proxy Form",
+   "download_link": "NSM/data-migration/223955500.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-29T09:30:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190529093033_14090528.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T12:38:49Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report and Annual General Meetng",
+   "download_link": "NSM/data-migration/LSE20190517123849_14078734.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Whitbread PLC 2019 AGM Notice",
+   "download_link": "NSM/data-migration/222045129.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-17T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Whitbread PLC 2019 AGM Proxy Form",
+   "download_link": "NSM/data-migration/222045268.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-16T15:56:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Cancellation of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20190516155606_14077330.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T11:36:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190514113659_14073336.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T17:14:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510171419_14070490.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T09:08:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510090828_14069622.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:10:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509171039_14068821.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:21:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508172151_14067141.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T13:45:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190508134555_14066817.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:09:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507170918_14065443.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T16:58:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503165809_14063186.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T17:45:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502174501_14061579.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T15:18:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190502151834_14061407.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T14:58:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502145811_14061369.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T09:08:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190502090834_14060755.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T09:08:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190502090834_14060755.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502070002_14060111.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T16:16:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190501161608_14059935.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T16:15:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190501161552_14059934.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:56:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501145605_14059775.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:47:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190501094733_14059107.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:47:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190501094733_14059107.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:47:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190501094723_14059105.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T18:17:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190430181756_14058202.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:02:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190430150247_14057781.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T13:47:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190430134751_14057647.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T13:27:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190430132701_14057597.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T07:00:12Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results Announcement",
+   "download_link": "NSM/data-migration/LSE20190430070012_14056333.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T17:57:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190429175737_14056134.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T09:22:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190429092223_14055207.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T09:22:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190429092223_14055207.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T09:21:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190429092146_14055204.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T09:21:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190429092146_14055204.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T18:15:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190426181524_14054366.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T09:43:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190426094358_14053441.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T17:48:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190425174835_14052571.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T10:32:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190425103217_14051795.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T10:32:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190425103217_14051795.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:56:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190424175622_14050818.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T17:59:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190423175916_14049060.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T17:36:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190418173600_14047128.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T16:52:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418165204_14047060.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T09:27:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418092712_14046206.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T09:27:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418092712_14046206.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T17:41:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190417174110_14045329.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T09:31:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190417093101_14044493.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T09:31:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190417093101_14044493.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T17:59:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190416175932_14043661.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T17:30:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190415173020_14041867.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T17:36:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190412173615_14040114.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T10:09:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190412100959_14039352.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T10:09:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190412100959_14039352.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T17:48:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190411174835_14038390.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T18:03:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190410180347_14036692.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T15:55:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190410155537_14036552.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T10:58:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190409105830_14034352.html",
+   "company": "Barclays PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T10:58:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190409105830_14034352.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T17:43:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190408174322_14033190.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T18:10:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190405181005_14031482.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T18:10:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190404181042_14029806.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T18:07:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190403180752_14028018.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T18:17:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190402181725_14026244.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:31:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190401173133_14024342.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:21:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401102125_14023359.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T18:07:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190329180738_14022270.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T17:48:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190328174851_14020232.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T18:20:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190327182055_14018486.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T17:57:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190326175713_14016727.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T17:44:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190325174457_14014985.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T18:24:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190322182443_14013218.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T17:45:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190321174549_14011518.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T17:49:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190320174959_14009791.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190320070003_14008216.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T18:11:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190318181147_14006461.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190318070003_14004922.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T17:37:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transactions in Own Securities",
+   "download_link": "NSM/data-migration/LSE20190314173749_14003062.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T18:00:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190312180056_13999664.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T18:07:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190311180705_13997964.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T17:45:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190308174515_13996293.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T17:31:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190307173144_13994660.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T17:04:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190306170438_13992930.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T17:01:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190305170127_13991237.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:21:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190304172135_13989636.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T17:02:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190301170241_13987994.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T15:38:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301153850_13987841.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:57:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190228175714_13986166.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T10:58:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190228105854_13985384.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Whitbread PLC Annual Report and Accounts 2018/19",
+   "download_link": "NSM/data-migration/222045273.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-27T17:37:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190227173712_13984252.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T17:35:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190226173549_13982617.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T17:12:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190225171240_13981010.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T14:04:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190225140425_13980805.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T14:04:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190225140418_13980804.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T17:08:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190222170822_13979381.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T18:35:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190221183520_13977884.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T17:10:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190220171018_13976259.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T17:30:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190219173006_13974737.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T17:01:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190218170141_13973297.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T17:18:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190215171806_13971734.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T17:22:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190214172246_13970157.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T17:19:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190213171922_13968582.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T13:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20190213133001_13968337.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T17:36:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190212173618_13967053.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T18:04:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190211180427_13965512.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T18:04:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190208180444_13963927.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:56:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190207175628_13962443.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T17:07:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190206170735_13960876.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T09:18:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190206091805_13960131.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:04:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190205170427_13959336.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T17:25:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190204172556_13957737.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T09:31:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190204093144_13956960.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T09:31:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190204093136_13956959.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T18:03:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190201180357_13956149.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T13:39:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201133934_13955769.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T17:28:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190131172846_13954292.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T17:25:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190130172513_13952469.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T08:46:33Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190130084633_13951626.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T17:22:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190129172213_13950897.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T18:00:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190128180048_13949356.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190128070003_13947882.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T13:41:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190125134152_13947508.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T12:23:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190125122335_13947410.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T17:17:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190124171700_13946172.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T17:54:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190123175430_13944686.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T18:05:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190122180535_13943224.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T13:45:12Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190122134512_13942988.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-21T18:23:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190121182313_13941855.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T17:27:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190118172720_13940213.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T17:47:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190117174754_13938767.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T07:30:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Share Repurchase Progamme",
+   "download_link": "NSM/data-migration/LSE20190117073003_13937826.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20190117070003_13937300.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T12:22:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Completion of the sale of Costa to Coca-Cola",
+   "download_link": "NSM/data-migration/LSE20190103122201_13923041.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T09:52:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102095235_13920711.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T18:01:32Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Costa Sale EU Clearance and Share Buyback",
+   "download_link": "NSM/data-migration/LSE20181221180132_13914079.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T14:09:12Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181203140912_13889362.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T11:52:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203115207_13889075.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-30T11:14:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181130111407_13887103.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-29T12:31:54Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale of Costa - China clearance",
+   "download_link": "NSM/data-migration/LSE20181129123154_13885512.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-15T09:10:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181115091059_13868155.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T08:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181114084350_13866374.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T09:32:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181109093241_13861644.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-07T08:51:16Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181107085116_13858153.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-05T14:31:46Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181105143146_13855449.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-02T10:02:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181102100242_13853114.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:25:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101092528_13851087.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-23T13:38:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181023133857_13839349.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-23T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Whitbread Interim Results",
+   "download_link": "NSM/data-migration/LSE20181023070003_13838183.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-10T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "GM - Resolution",
+   "download_link": "NSM/data-migration/186796533.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-10-09T09:59:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181009095951_13821522.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-08T09:21:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181008092125_13819783.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-05T09:02:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181005090255_13818028.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-05T09:01:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181005090141_13818027.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T09:52:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001095241_13810889.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-21T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairmans Letter re October 2018 General Meeting",
+   "download_link": "NSM/data-migration/184786205.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "October 2018 General Meeting",
+   "download_link": "NSM/data-migration/184786209.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-21T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Circular re Sale of Costa and Notice of General Meeting",
+   "download_link": "NSM/data-migration/184786204.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-03T10:39:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903103906_13776507.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-31T07:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Proposed Sale of Costa to The Coca-Cola Company",
+   "download_link": "NSM/data-migration/LSE20180831070005_13773826.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-09T10:40:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180809104052_13749883.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T11:35:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801113523_13739852.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T12:41:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180731124144_13738066.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-10T13:06:11Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180710130611_13712470.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T09:55:25Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180703095525_13703346.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T18:11:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180628181154_13698229.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T16:02:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180628160255_13698076.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T10:55:07Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "AGM and GM Results",
+   "download_link": "NSM/data-migration/LSE20180628105507_13697476.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-27T07:00:03Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20180627070003_13694803.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-27T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2018 - Special Resolution 18",
+   "download_link": "NSM/data-migration/176123486.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-27T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2018 - Special Resolution 20",
+   "download_link": "NSM/data-migration/176123553.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-27T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM 2018 - Special Resolution 19",
+   "download_link": "NSM/data-migration/176124210.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-27T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2018 - Special Resolution 17",
+   "download_link": "NSM/data-migration/176123483.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-05T15:33:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180605153359_13667983.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T17:00:01Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/data-migration/LSE20180601170001_13664550.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T11:11:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601111155_13663718.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ecomms letter re Notice of General Meeting without paper proxy card",
+   "download_link": "NSM/data-migration/173635099.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-01T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/data-migration/173635095.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-01T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "E comms letter re Notice of General Meeting",
+   "download_link": "NSM/data-migration/173635102.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-01T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "General Meeting Proxy Form",
+   "download_link": "NSM/data-migration/173635094.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-25T16:15:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180525161533_13656460.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T16:01:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180523160105_13652830.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-22T13:46:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180522134642_13650770.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-18T14:58:49Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20180518145849_13647481.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-18T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/172172346.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-18T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's letter",
+   "download_link": "NSM/data-migration/172193428.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-18T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/172172511.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-17T12:24:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180517122429_13645474.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-16T10:34:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180516103454_13643403.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-10T11:09:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180510110955_13636454.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-08T13:02:34Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180508130234_13633040.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-04T13:48:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180504134833_13630944.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T17:08:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501170813_13626417.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:54:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501165418_13626383.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:53:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501165305_13626382.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:41:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501164113_13626362.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:40:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501164050_13626359.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:40:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501164004_13626356.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:39:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501163932_13626355.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:39:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501163907_13626351.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:38:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501163821_13626349.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-25T07:00:11Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Group Structure Update",
+   "download_link": "NSM/data-migration/LSE20180425070011_13617271.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-25T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results Announcement",
+   "download_link": "NSM/data-migration/LSE20180425070009_13617267.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-16T08:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180416080001_13605140.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T10:44:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180404104403_13591274.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T13:42:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403134201_13589759.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T12:03:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180403120345_13589566.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-27T12:42:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180327124207_13583318.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-26T11:14:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180326111413_13581131.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T16:12:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302161231_13553493.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T16:07:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302160736_13553488.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T16:04:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302160449_13553486.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T16:01:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302160125_13553482.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T15:56:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302155621_13553478.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T14:22:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301142244_13551492.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual report",
+   "download_link": "NSM/data-migration/172172649.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-01T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman ecomms letter",
+   "download_link": "NSM/data-migration/172862308.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-01T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman ecomms letter (no proxy card included)",
+   "download_link": "NSM/data-migration/172862413.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-28T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition in Germany",
+   "download_link": "NSM/data-migration/LSE20180228070007_13548319.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T08:16:51Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180202081651_13519470.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T11:52:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201115246_13518237.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-18T09:41:16Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing Application",
+   "download_link": "NSM/data-migration/LSE20180118094116_13501030.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-18T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20180118070004_13500405.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-10T12:42:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180110124203_13491810.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-08T08:42:32Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180108084232_13488137.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-04T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of New Chairman",
+   "download_link": "NSM/data-migration/LSE20180104070004_13484664.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T09:43:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102094353_13481865.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-27T07:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171227070004_13476802.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-22T10:53:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171222105310_13476098.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T13:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171206133005_13456218.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T12:25:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171205122539_13454651.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T13:24:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201132432_13451359.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T11:52:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101115256_13416710.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-24T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Whitbread Interim Results",
+   "download_link": "NSM/data-migration/LSE20171024070003_13406275.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-10T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20171010070003_13391090.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T13:01:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002130131_13382702.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-14T12:34:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170814123439_13329160.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:57:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801105704_13314972.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-10T16:07:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170710160741_13289974.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-10T15:54:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170710155416_13289947.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-10T12:40:11Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170710124011_13289607.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-05T13:49:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170705134954_13285055.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T10:50:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703105024_13281523.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:27:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629122739_13277996.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:25:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629122500_13277993.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:22:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629122252_13277992.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:17:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629121738_13277985.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:15:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629121532_13277978.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:13:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629121326_13277968.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T12:12:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170629121207_13277964.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-28T14:55:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170628145518_13276536.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T16:33:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170622163331_13270476.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T15:11:04Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170622151104_13270368.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T10:54:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170622105428_13269751.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170621070003_13267478.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2017 - Special Resolution 22",
+   "download_link": "NSM/data-migration/137069745.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2017 - Special Resolution 21",
+   "download_link": "NSM/data-migration/137069618.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2017 - Special Resolution 20",
+   "download_link": "NSM/data-migration/137069695.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-21T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2017 - Special Resolution 19",
+   "download_link": "NSM/data-migration/137069744.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-01T11:36:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601113624_13245869.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T13:40:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170531134026_13244207.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T13:55:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170530135500_13242604.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T13:54:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170530135436_13242603.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T14:51:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524145104_13237370.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:38:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524133831_13237267.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:36:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524133658_13237266.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:35:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524133509_13237260.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:33:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524133324_13237258.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:32:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524133248_13237256.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:29:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524132917_13237248.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T09:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170524090008_13236712.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-15T12:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170515124503_13225700.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-15T11:23:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report and Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20170515112327_13225552.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-15T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Whitbread PLC Proxy FOrm",
+   "download_link": "NSM/data-migration/133770396.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-15T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's letter re Annual Report and Accounts",
+   "download_link": "NSM/data-migration/133770447.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-15T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's electronic communications letter re Annual Report and Accounts",
+   "download_link": "NSM/data-migration/133772126.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-15T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Whitbread PLC - Notice of AGM",
+   "download_link": "NSM/data-migration/133770407.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-15T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's electronic communications letter, Proxy re Annual Report",
+   "download_link": "NSM/data-migration/133772083.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-05T17:07:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170505170743_13216618.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T17:04:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170504170431_13215043.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T10:25:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502102555_13210713.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-26T16:35:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170426163549_13205763.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-25T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Whitbread Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20170425070009_13202719.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T10:43:59Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403104359_13181050.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T13:53:19Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170306135319_13148656.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T13:52:48Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170306135248_13148655.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T12:48:37Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170306124837_13148553.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-02T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Whitbread PLC Annual Report and Accounts",
+   "download_link": "NSM/data-migration/133769158.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-01T11:53:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301115307_13143747.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T10:51:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170227105103_13140235.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-14T11:17:49Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170214111749_13127179.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-09T13:46:01Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170209134601_13122826.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-23T14:03:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161223140323_013078182.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-23T14:00:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161223140059_013078178.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-23T10:07:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161223100713_013077728.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-22T15:10:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161222151043_013076729.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-20T12:51:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161220125133_013073547.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-16T13:54:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161216135422_013070282.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T16:52:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161214165207_013067437.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-12T16:31:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161212163131_013064306.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T10:14:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201101456_013053185.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T16:26:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161124162618_013046298.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T08:06:59Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20161115080659_013035172.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-14T13:58:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161114135819_013034380.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T13:26:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101132658_013020240.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T15:09:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161031150906_013018673.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-25T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Whitbread Interim Results",
+   "download_link": "NSM/data-migration/LSE20161025070006_013011354.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-13T09:47:44Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "WHITBREAD APPOINTS TWO NEW NON-EXECUTIVE DIRECTORS",
+   "download_link": "NSM/data-migration/LSE20161013094744_012999704.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-10T11:49:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161010114938_012995387.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T11:27:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003112716_012987366.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-28T10:39:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160928103934_012981763.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-26T15:35:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160926153554_012979068.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T10:30:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901103043_012950951.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-08T15:22:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160808152208_012923337.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-08T15:19:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160808151958_012923314.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T12:22:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160801122211_012913964.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T10:09:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801100928_012913660.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-13T14:02:36Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Whitbread International Growth Strategy",
+   "download_link": "NSM/data-migration/LSE20160713140236_012891300.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-11T10:45:38Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160711104538_012887486.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T14:44:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160707144453_012884577.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T14:38:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160707143804_012884565.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T07:00:07Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale and Leaseback",
+   "download_link": "NSM/data-migration/LSE20160707070007_012883324.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T15:53:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160705155343_012881238.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T15:51:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160705155156_012881234.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T15:44:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160705154428_012881226.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T08:32:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701083255_012876431.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-23T10:01:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160623100159_012865431.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-22T13:16:08Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160622131608_012864260.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-22T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Special Resolution 17, passed at the AGM held on 21 June 2016",
+   "download_link": "NSM/data-migration/113442475.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-22T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Special Resolution 18, passed at the AGM held on 21 June 2016",
+   "download_link": "NSM/data-migration/113442474.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-22T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Special Resolution 19, passed at the AGM held on 21 June 2016",
+   "download_link": "NSM/data-migration/113442500.doc",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-21T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160621070007_012861430.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T09:39:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601093906_012836768.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T17:00:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160531170002_012835888.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T14:17:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531141715_012835509.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-27T15:57:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160527155723_012833228.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-27T10:03:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160527100314_012832547.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-16T12:15:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160516121537_012817533.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T11:46:41Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20160511114641_012812014.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/110956537.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/110956893.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-11T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's letter re Annual Report and Accounts",
+   "download_link": "NSM/data-migration/110956898.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-11T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chairman's electronic communications letter re Annual Report and Accounts",
+   "download_link": "NSM/data-migration/110956910.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-03T13:24:48Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160503132448_012801432.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T09:27:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503092701_012800567.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-26T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Whitbread Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20160426070009_012791417.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-12T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160412070007_012772709.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T12:33:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401123316_012760360.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T09:43:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160314094319_012735691.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-09T11:33:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160309113321_012730270.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-08T13:44:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160308134404_012728627.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T16:12:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160303161209_012723333.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T16:10:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160303161027_012723326.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T07:00:14Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160303070014_012721819.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Whitbread PLC - Annual Report and Accounts",
+   "download_link": "NSM/data-migration/110956534.pdf",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-01T10:51:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301105143_012718571.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-22T11:42:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160222114250_012707413.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T08:50:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160210085019_012693347.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T09:08:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160203090832_012684784.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T16:19:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160201161922_012681908.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T09:40:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201094056_012680781.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T13:01:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160119130134_012664831.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T15:43:41Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160114154341_012659782.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T14:49:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160114144916_012659617.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T12:18:14Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Interim Review",
+   "download_link": "NSM/data-migration/LSE20160111121814_012653808.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-08T08:29:32Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20160108082932_012651432.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T16:32:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160107163249_012650670.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T09:57:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104095758_012644273.html",
+   "company": "Whitbread PLC",
+   "lei": "21380099VMZKRMN3EX36",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-30T11:02:38Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "21380099VMZKRMN3EX36",
+   "classifications": "",
+   "download_link": "NSM/RNS/3829829.html",
+   "disclosure_id": "3829829",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-30T11:02:38Z",
+   "seq_id": "3829829",
+   "company": "Whitbread PLC",
+   "last_updated_date": "2026-08-22T12:09:25.747823695Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-18T09:25:07Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "21380099VMZKRMN3EX36",
+   "classifications": "",
+   "download_link": "NSM/RNS/3819882.html",
+   "disclosure_id": "3819882",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T09:25:07Z",
+   "seq_id": "3819882",
+   "company": "Whitbread PLC",
+   "last_updated_date": "2026-08-22T12:09:07.200528403Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

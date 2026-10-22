@@ -1,13 +1,2841 @@
 {
- "aantal": 0,
+ "aantal": 278,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138005O9XJIJN4JPN90', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138005O9XJIJN4JPN90', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138005O9XJIJN4JPN90', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138005O9XJIJN4JPN90', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138005O9XJIJN4JPN90",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 278
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T11:48:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/RNS/3831455.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-31T09:57:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3831135.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-21T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Mortgage Portfolio from Metro Bank",
+   "download_link": "NSM/RNS/3820747.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T15:26:47Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - OPD - Studio Retail Group plc",
+   "download_link": "NSM/RNS/3820551.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T15:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3808010.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T14:02:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3801483.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T14:15:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798035.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-27T10:01:21Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3795981.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T11:02:42.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "NatWest Group plc - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000015224.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-11-26T10:22:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus for Euro Medium Term Note Programme",
+   "download_link": "NSM/Portal/NI-000015189.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-24T18:11:45Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3792218.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T13:40:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3784978.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T17:44:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proposed transfer of Ulster Bank Limited business",
+   "download_link": "NSM/RNS/3779261.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T15:28:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3779103.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T15:13:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000014430.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-12T15:06:56Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3779078.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T12:26:57.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NatWest Group plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000014465.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-11-10T10:44:23Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "NWG Pricing of £1.0bn Additional Tier 1 Notes",
+   "download_link": "NSM/RNS/3775735.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-05T14:21:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3771572.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T16:37:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3767353.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T13:27:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765368.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T07:00:08Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "Q3 Interim Management Statement",
+   "download_link": "NSM/RNS/3764239.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T09:50:08Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3745205.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T13:33:39Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/RNS/3735879.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T12:34:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3733610.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T11:44:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733546.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T17:01:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of prospectus",
+   "download_link": "NSM/Portal/NI-000011651.pdf",
+   "company": "Natwest Markets Plc;NATIONAL WESTMINSTER BANK PLC;NatWest Group plc",
+   "lei": "RR3QWICWWIPCS8A4S074;213800IBT39XQ9C4CP71;2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-23T17:12:00Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "ESTIMATED IMPACT OF TENDER OFFERS ",
+   "download_link": "NSM/RNS/3726656.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T12:21:25Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of Tender Offer",
+   "download_link": "NSM/RNS/3724860.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T07:30:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of America Annual Financials CEO Conference",
+   "download_link": "NSM/RNS/3724381.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T06:00:10Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Pricing of Tender Offers ",
+   "download_link": "NSM/RNS/3723866.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T17:33:33Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "NatWest Group plc commences cash tender offers",
+   "download_link": "NSM/RNS/3715910.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T07:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Barclays Global Financial Services Conference",
+   "download_link": "NSM/RNS/3715136.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T06:00:07Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "H1 2020 Pillar 3 Supplement - Appendix",
+   "download_link": "NSM/RNS/3705072.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704831.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T11:14:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701199.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-27T14:50:40Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3700051.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T13:08:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3685887.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:37:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3674536.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:34:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NatWest Group plc Prospectus Supplement No. 7",
+   "download_link": "NSM/Portal/NI-000008720.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-07-31T14:15:38Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3674505.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:33:22Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "NatWest Markets N.V. Interim Results 2020 ",
+   "download_link": "NSM/RNS/3674443.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T12:33:41.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NatWest Group plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000008799.pdf",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-31T11:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674184.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:15:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3673225.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:14Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2020 - (Part 2 of 2)",
+   "download_link": "NSM/RNS/3673282.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2020 - (Part 1 of 2)",
+   "download_link": "NSM/RNS/3673278.html",
+   "company": "NatWest Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-22T13:00:05Z",
+   "type": "Change of Name",
+   "type_code": "CAN",
+   "headline": "Change of Name",
+   "download_link": "NSM/RNS/3664238.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-16T06:00:05Z",
+   "type": "Change of Name",
+   "type_code": "CAN",
+   "headline": "Intention to Change Name on 22 July 2020",
+   "download_link": "NSM/RNS/3657795.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T11:29:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643701.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T15:26:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642246.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Redemption",
+   "download_link": "NSM/RNS/3639261.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T08:19:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBSG pricing of US$1.5bn Additional Tier 1 Notes",
+   "download_link": "NSM/RNS/3636985.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T06:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Changes to the Alternative Remedies Package",
+   "download_link": "NSM/RNS/3633518.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T16:52:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000005718.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-11T16:31:53Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3623657.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T11:31:49.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "The Royal Bank of Scotland Group plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000005850.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-06-11T07:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "RBS and NatWest Markets announce appointments",
+   "download_link": "NSM/RNS/3622357.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T15:15:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3619378.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T14:38:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/RNS/3619346.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T14:20:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3619335.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T14:09:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3610508.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T13:25:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610462.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T11:52:28Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3610367.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T09:15:27Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3602581.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T06:04:25Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBSG pricing of US$1.6bn of Senior Notes ",
+   "download_link": "NSM/RNS/3600426.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T12:00:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3595783.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000003718.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-13T15:18:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000003745.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:01:22Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3594516.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T10:16:31Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Q1 2020 Pillar 3 Supplement",
+   "download_link": "NSM/RNS/3592749.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T16:24:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003080.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-05T16:18:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003079.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-05T15:57:42Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3586546.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T12:23:54.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "The Royal Bank of Scotland Group plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003244.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-01T16:34:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000002924.docx",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-01T15:20:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3583498.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T11:23:06.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "The Royal Bank of Scotland Group plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000003048.pdf",
+   "company": "The Royal Bank of Scotland Group plc",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-01T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Interim Management Statement ",
+   "download_link": "NSM/RNS/3582143.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T11:20:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581492.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T15:47",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Resolutions passed at the AGM of The Royal Bank of Scotland Group plc",
+   "download_link": "NSM/Portal/NI-000002586.pdf",
+   "company": "ROYAL BANK OF SCOTLAND GROUP PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-29T15:45",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Updated articles of assocation of The Royal Bank of Scotland Group plc",
+   "download_link": "NSM/Portal/NI-000002585.pdf",
+   "company": "ROYAL BANK OF SCOTLAND GROUP PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-29T15:33:41Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3580126.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T14:01:51Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/RNS/3580002.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T14:51:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3578431.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T15:40:42Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3576605.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T15:35:46Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3576579.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T14:58:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3576526.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T11:38:21Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3567533.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T15:21:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Virtual Shareholder Event – 29 April 2020",
+   "download_link": "NSM/RNS/3561616.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T15:41:21Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3556510.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T15:35:35Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3556476.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T13:14:09Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/RNS/3554676.html",
+   "company": "Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:11:23Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Amendment of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200403161123_3553262.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:11:23Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Amendment of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200403161123_3553262.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T15:24:06Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200403152406_3553212.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T15:24:06Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200403152406_3553212.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:11:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402121109_3551317.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:11:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402121109_3551317.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:41:31Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200401164131_3550143.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:41:31Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200401164131_3550143.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:36:15Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200401163615_3550097.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:36:15Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200401163615_3550097.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Response to Covid-19",
+   "download_link": "NSM/data-migration/LSE20200401070006_3548538.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Response to Covid-19",
+   "download_link": "NSM/data-migration/LSE20200401070006_3548538.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T16:42:09Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200331164209_3548272.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T16:37:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200331163738_3548246.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T14:49:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331144948_3548037.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:42:07Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164207_3543108.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:37:04Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163704_3543071.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:41:09Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164109_3541519.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:35:33Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163533_3541464.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:42:44Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164244_3539824.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:38:29Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163829_3539766.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:20:48Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200320102048_3535340.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:16:03Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320101603_3535317.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T17:24:35Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200317172435_3530592.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:42:29Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200317164229_3530545.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T16:38:35Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200317163835_3530490.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T08:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Morgan Stanley European Financials Conference",
+   "download_link": "NSM/data-migration/LSE20200317083001_3528955.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T17:14:39Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "NatWest Markets N.V. 2019 ARA",
+   "download_link": "NSM/data-migration/LSE20200316171439_3528887.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T17:14:39Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "NatWest Markets N.V. 2019 ARA",
+   "download_link": "NSM/data-migration/LSE20200316171439_3528887.html",
+   "company": "Natwest Markets PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T17:14:39Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "NatWest Markets N.V. 2019 ARA",
+   "download_link": "NSM/data-migration/LSE20200316171439_3528887.html",
+   "company": "Natwest Markets N.V",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T16:51:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310165120_3522052.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T14:34:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302143416_3512612.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T16:29:08Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Correction of Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20200228162908_3510944.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T13:58:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/data-migration/LSE20200228135839_3510725.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Filing of Annual Report on Form  20-F with US SEC",
+   "download_link": "NSM/data-migration/LSE20200228070005_3510020.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T09:55:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Block Listing Cancellation",
+   "download_link": "NSM/data-migration/LSE20200227095522_3508797.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T12:40:34Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20200224124034_3504616.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T15:58:39Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "RBSG ENTM Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20200214155839_3495428.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T07:01:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200214070107_3494628.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200214070005_3494627.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T14:12:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/data-migration/LSE20200131141246_14406415.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T15:57:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200130155748_14404728.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T14:08:16Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20200116140816_14387523.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T14:08:16Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20200116140816_14387523.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T13:58:16Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20200102135816_14369378.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T13:58:16Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20200102135816_14369378.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T13:10:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191231131020_14367647.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T11:20:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/data-migration/LSE20191231112050_14367361.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T15:02:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191230150223_14366034.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T15:02:23Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191230150223_14366034.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T07:00:08Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts replacement",
+   "download_link": "NSM/data-migration/LSE20191220070008_14357236.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T17:40:52Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191219174052_14357033.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "NatWest Markets Change in Executive Directors",
+   "download_link": "NSM/data-migration/LSE20191219070010_14355241.html",
+   "company": "Natwest Markets N.V",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "NatWest Markets Change in Executive Directors",
+   "download_link": "NSM/data-migration/LSE20191219070010_14355241.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "NatWest Markets Change in Executive Directors",
+   "download_link": "NSM/data-migration/LSE20191219070010_14355241.html",
+   "company": "Natwest Markets PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T17:47:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "2019 Bank of England stress test results",
+   "download_link": "NSM/data-migration/LSE20191216174708_14351002.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T12:34:36Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191204123436_14335361.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T12:34:36Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191204123436_14335361.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T17:34:35Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191202173435_14331945.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T00:00:00Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Prospectus Supplement",
+   "download_link": "NSM/data-migration/253822986.pdf",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2019-11-29T14:20:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191129142021_14329336.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T13:28:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Announcement of NatWest Markets N.V. Transfer",
+   "download_link": "NSM/data-migration/LSE20191129132803_14329244.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T13:28:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Announcement of NatWest Markets N.V. Transfer",
+   "download_link": "NSM/data-migration/LSE20191129132803_14329244.html",
+   "company": "Natwest Markets PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T12:01:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/data-migration/LSE20191129120142_14329094.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T11:56:33Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20191127115633_14325481.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T18:26:21Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20191121182621_14318614.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T10:45:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Reduction in Pillar 2A capital requirements",
+   "download_link": "NSM/data-migration/LSE20191121104514_14317728.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T11:23:14Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20191114112314_14308348.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T15:00:33Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191113150033_14306780.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T15:00:33Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191113150033_14306780.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T15:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191108150005_14301409.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T16:12:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191101161205_14291769.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T15:30:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191031153015_14289522.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T14:08:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital",
+   "download_link": "NSM/data-migration/LSE20191031140829_14289360.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T09:38:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBSG pricing of US$750mn of Subordinated Notes",
+   "download_link": "NSM/data-migration/LSE20191030093839_14286428.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T17:22:30Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191025172230_14281778.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20191024070005_14278204.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T14:54:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191016145456_14268777.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T14:54:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20191016145456_14268777.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T11:35:56Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/data-migration/LSE20191008113556_14258298.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T13:08:17Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20191003130817_14253126.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:29:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001172948_14249937.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T15:28:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930152810_14247502.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T08:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of America Merrill Lynch Annual Conference",
+   "download_link": "NSM/data-migration/LSE20190924083001_14238816.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T07:00:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of CEO",
+   "download_link": "NSM/data-migration/LSE20190920070014_14234475.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T14:29:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190912142906_14224707.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T14:29:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190912142906_14224707.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T08:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Barclays Global Financial Services Conference",
+   "download_link": "NSM/data-migration/LSE20190909083001_14218566.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T14:10:35Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190905141035_14215766.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T07:00:13Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Charges Related to PPI",
+   "download_link": "NSM/data-migration/LSE20190904070013_14212714.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T12:49:26Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190903124926_14212130.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T12:49:26Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190903124926_14212130.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T15:03:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830150303_14208613.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T17:16:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190829171619_14207010.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T15:13:20Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190829151320_14206855.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T14:53:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190814145312_14189228.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T14:58:44Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190812145844_14185699.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T14:58:44Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group plc",
+   "download_link": "NSM/data-migration/LSE20190812145844_14185699.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T07:15:46Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190805071546_14175962.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T14:43:39Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190802144339_14175055.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T07:31:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "NatWest Markets N.V. Interim Results 2019",
+   "download_link": "NSM/data-migration/LSE20190802073102_14174095.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2019 - Part 2 of 2",
+   "download_link": "NSM/data-migration/LSE20190802070004_14173663.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2019 - Part 1 of 2",
+   "download_link": "NSM/data-migration/LSE20190802070003_14173655.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:41:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731174115_14171312.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T12:43:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731124308_14170804.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:07:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group PLC",
+   "download_link": "NSM/data-migration/LSE20190725150722_14163631.html",
+   "company": "Royal Bank Of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:07:22Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Accesso Technology Group PLC",
+   "download_link": "NSM/data-migration/LSE20190725150722_14163631.html",
+   "company": "Accesso Technology Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T07:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Ross McEwan announced CEO National Australia Bank",
+   "download_link": "NSM/data-migration/LSE20190719070003_14155502.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T07:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Ross McEwan announced CEO National Australia Bank",
+   "download_link": "NSM/data-migration/LSE20190719070003_14155502.html",
+   "company": "National Westminster Bank PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T10:22:43Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190716102243_14151046.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T10:22:43Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190716102243_14151046.html",
+   "company": "National Westminster Bank PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T13:58:04Z",
+   "type": "Form 8 (DD)",
+   "type_code": "DCC",
+   "headline": "Form 8 (DD) - Premier Technical Services Group plc",
+   "download_link": "NSM/data-migration/LSE20190703135804_14135405.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T13:58:04Z",
+   "type": "Form 8 (DD)",
+   "type_code": "DCC",
+   "headline": "Form 8 (DD) - Premier Technical Services Group plc",
+   "download_link": "NSM/data-migration/LSE20190703135804_14135405.html",
+   "company": "Premier Technical Services Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T13:54:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701135434_14131688.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T13:19:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628131918_14129492.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T08:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBS Investor Seminar : Technology & Innovation",
+   "download_link": "NSM/data-migration/LSE20190624080004_14121356.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T14:33:45Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Takeover Panel PremierTechnical Services Group plc",
+   "download_link": "NSM/data-migration/LSE20190620143345_14118719.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T17:09:05Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190618170905_14115630.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Impact of Alawwal bank / Saudi British Bank merger",
+   "download_link": "NSM/data-migration/LSE20190617070005_14112390.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Impact of Alawwal bank / Saudi British Bank merger",
+   "download_link": "NSM/data-migration/LSE20190617070005_14112390.html",
+   "company": "NatWest Markets PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T15:02:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611150202_14106935.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T15:33:29Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Confirmation re stated post-offer intentions",
+   "download_link": "NSM/data-migration/LSE20190603153329_14096685.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:06:17Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190531170617_14094867.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T15:04:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531150450_14094634.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T12:39:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531123927_14094412.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:04:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - WYG PLC",
+   "download_link": "NSM/data-migration/LSE20190520180431_14080774.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:04:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - WYG PLC",
+   "download_link": "NSM/data-migration/LSE20190520180431_14080774.html",
+   "company": "Royal Bank Of Scotland PLC Principal Protected FRN 15/10/2020",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:04:31Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - WYG PLC",
+   "download_link": "NSM/data-migration/LSE20190520180431_14080774.html",
+   "company": "WYG PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T10:37:07Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190520103707_14080130.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T16:11:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBS Group welcomes credit ratings action by S&P",
+   "download_link": "NSM/data-migration/LSE20190516161102_14077367.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T11:40:40Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Acknowledgment of two settlements on FX trading",
+   "download_link": "NSM/data-migration/LSE20190516114040_14076881.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T15:12:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510151253_14070300.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T12:10:37Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBSG pricing of US$1.25bn of Senior Notes",
+   "download_link": "NSM/data-migration/LSE20190503121037_14062771.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T10:25:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502102541_14060869.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:24:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190430152422_14057837.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T11:07:18Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190429110718_14055424.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20190426070007_14052747.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T18:03:21Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190425180321_14052582.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T14:00:03Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20190425140003_14052271.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190425070009_14051048.html",
+   "company": "National Westminster Bank PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190425070009_14051048.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T15:03:42Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190424150342_14050566.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T12:46:33Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190423124633_14048674.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T11:20:26Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Segmental Reporting Restatement Document",
+   "download_link": "NSM/data-migration/LSE20190417112026_14044824.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T16:30:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401163014_14024179.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T16:30:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401163014_14024179.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T17:04:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329170417_14022172.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T14:05:35Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190327140535_14018158.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T15:01:39Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190320150139_14009591.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T10:17:21Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBSG pricing of US$2 billion of Senior Notes",
+   "download_link": "NSM/data-migration/LSE20190320101721_14009094.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T08:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Morgan Stanley European Financials Conference",
+   "download_link": "NSM/data-migration/LSE20190319083004_14007274.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T18:26:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Redemption",
+   "download_link": "NSM/data-migration/LSE20190313182600_14001383.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T15:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190311150004_13997740.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T16:56:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Findel plc",
+   "download_link": "NSM/data-migration/LSE20190307165648_13994627.html",
+   "company": "Findel PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T16:56:48Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Findel plc",
+   "download_link": "NSM/data-migration/LSE20190307165648_13994627.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T14:45:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - MedicX Fund Limited",
+   "download_link": "NSM/data-migration/LSE20190306144503_13992730.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T14:45:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - MedicX Fund Limited",
+   "download_link": "NSM/data-migration/LSE20190306144503_13992730.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T13:10:01Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - MedicX Fund Limited",
+   "download_link": "NSM/data-migration/LSE20190301131001_13987572.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T13:10:01Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - MedicX Fund Limited",
+   "download_link": "NSM/data-migration/LSE20190301131001_13987572.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T12:01:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190301120101_13987464.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:10Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Filing of Annual Report on Form 20-F with US SEC",
+   "download_link": "NSM/data-migration/LSE20190301070010_13986406.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T14:25:05Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190228142505_13985787.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T12:40:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228124005_13985625.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T17:50:02Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190226175002_13982634.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T12:51:18Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on NatWest Markets transfer scheme",
+   "download_link": "NSM/data-migration/LSE20190222125118_13979086.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T12:51:18Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on NatWest Markets transfer scheme",
+   "download_link": "NSM/data-migration/LSE20190222125118_13979086.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190222120002_13979035.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T15:00:20Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190215150020_13971577.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T07:02:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190215070201_13970391.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T07:01:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190215070101_13970390.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190215070003_13970345.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T16:16:36Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/data-migration/LSE20190206161636_13960813.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T14:55:02Z",
+   "type": "GM Statement",
+   "type_code": "GMS",
+   "headline": "GM Statement",
+   "download_link": "NSM/data-migration/LSE20190206145502_13960715.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T11:42:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190131114241_13953767.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T14:55:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190129145501_13950713.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T13:27:02Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 Disclosure",
+   "download_link": "NSM/data-migration/LSE20190125132702_13947486.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T13:27:02Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 Disclosure",
+   "download_link": "NSM/data-migration/LSE20190125132702_13947486.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T16:10:08Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of GM",
+   "download_link": "NSM/data-migration/LSE20190117161008_13938662.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T13:13:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231131301_13919770.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T16:28:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181228162821_13918539.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T16:28:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181228162821_13918539.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T15:55:51Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181218155551_13908443.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T15:55:51Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181218155551_13908443.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T18:15:56Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RBS welcome credit ratings action by Fitch Ratings",
+   "download_link": "NSM/data-migration/LSE20181214181556_13905112.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T15:33:29Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20181214153329_13904932.html",
+   "company": "The Royal Bank of Scotland Group PLC",
+   "lei": "2138005O9XJIJN4JPN90",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T11:48:51Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138005O9XJIJN4JPN90",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3831455.html",
+   "disclosure_id": "3831455",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T11:48:51Z",
+   "seq_id": "3831455",
+   "company": "NatWest Group plc",
+   "last_updated_date": "2026-08-22T12:09:44.056527937Z",
+   "headline": "Total Voting Rights and Capital",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-31T09:57:14Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138005O9XJIJN4JPN90",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3831135.html",
+   "disclosure_id": "3831135",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T09:57:14Z",
+   "seq_id": "3831135",
+   "company": "NatWest Group plc",
+   "last_updated_date": "2026-08-22T12:09:44.055528024Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

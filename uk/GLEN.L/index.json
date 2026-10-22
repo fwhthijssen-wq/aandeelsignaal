@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2016",
+  "bedrijf": "Glencore PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/128610158.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 9655858
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2017 Annual Report of Glencore plc",
+  "bedrijf": "Glencore PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/164664835.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 10248088
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2018",
+  "bedrijf": "Glencore PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/213030967.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 12963961
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2019 Annual Report of Glencore plc",
+  "bedrijf": "Glencore PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/267912225.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 12451125
+ }
+]

@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-29",
+  "soort": "Final Results",
+  "titel": "Hiscox 2015 preliminary results",
+  "bedrijf": "Hiscox Ltd",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160229070104_012715778.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 583098
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "Hiscox Ltd",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/129279350.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 7234543
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2017 Annual Report",
+  "bedrijf": "Hiscox Ltd",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/165127099.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 11631168
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-25",
+  "soort": "Final Results",
+  "titel": "Hiscox Ltd full year results",
+  "bedrijf": "Hiscox Ltd",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190225070102_13979644.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 494304
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-04-10",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "Hiscox Ltd",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000000680.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 6836907
+ }
+]

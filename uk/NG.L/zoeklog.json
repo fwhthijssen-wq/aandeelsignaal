@@ -1,13 +1,2321 @@
 {
- "aantal": 0,
+ "aantal": 226,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '8R95QZMKZLJX5Q2XR704', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '8R95QZMKZLJX5Q2XR704', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '8R95QZMKZLJX5Q2XR704', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '8R95QZMKZLJX5Q2XR704', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "8R95QZMKZLJX5Q2XR704",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 226
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-24T09:45:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3826550.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T17:18:59Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3817472.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T17:18:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000016298.pdf",
+   "company": "National Grid Electricity Transmission plc;National Grid plc",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-16T12:00:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "National Grid plc;National Grid Electricity Transmission plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000016387.pdf",
+   "company": "National Grid plc;National Grid Electricity Transmission plc",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-12-10T09:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/RNS/3809704.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3807801.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T07:10:51Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ofgem's RIIO-2 Final Determination published",
+   "download_link": "NSM/RNS/3806763.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T13:00:00Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend for 2020/21 Interim Dividend",
+   "download_link": "NSM/RNS/3802862.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T09:00:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3800271.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T14:46:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799873.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:40:46Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3798281.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:36:26Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3798252.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T16:29:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3790582.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T07:00:07Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Rate filing submitted for Massachusetts Gas",
+   "download_link": "NSM/RNS/3780809.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T17:29:14Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3779244.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T17:26:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000014435.pdf",
+   "company": "National Grid Electricity Transmission plc;National Grid plc",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-12T17:26:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000014436.docx",
+   "company": "National Grid Electricity Transmission plc;National Grid plc",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-12T15:49:28.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "National Grid plc;National Grid Electricity Transmission plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000014554.pdf",
+   "company": "National Grid plc;National Grid Electricity Transmission plc",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-11-12T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year results for period ended 30 Sept 2020",
+   "download_link": "NSM/RNS/3777848.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3775810.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T11:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3768309.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T15:45:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3767275.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T14:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3742873.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T08:34:41Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "ESG virtual seminar for investors",
+   "download_link": "NSM/RNS/3738277.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3737161.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T10:04:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735392.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T07:00:06Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3719632.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000011213.pdf",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-09-18T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000011266.docx",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-18T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000011265.pdf",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-10T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chair Succession",
+   "download_link": "NSM/RNS/3711591.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T15:59:16Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3711643.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T15:59:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000010770.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-09T15:59:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000010771.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-09T13:26:30.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000010911.pdf",
+   "company": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-09-08T10:01:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3709951.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-07T06:00:08Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Ofgem's Draft Determination: Consultation Response",
+   "download_link": "NSM/RNS/3707844.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T11:15:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704728.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T15:52:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703606.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T09:23:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3697258.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-21T13:32:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3695041.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T15:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital Update",
+   "download_link": "NSM/RNS/3692518.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T12:41:13Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report - Group Companies",
+   "download_link": "NSM/RNS/3692481.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T12:41:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report - Group Companies",
+   "download_link": "NSM/Portal/NI-000009719.pdf",
+   "company": "NGG Finance plc;NATIONAL GRID PLC",
+   "lei": "549300MLDJ2T68G21W86;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-18T14:35:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3691257.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T08:00:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend",
+   "download_link": "NSM/RNS/3690749.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T13:59:21Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report - Group Companies",
+   "download_link": "NSM/RNS/3688626.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T13:59:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report - Group Companies",
+   "download_link": "NSM/Portal/NI-000009487.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC;National Grid Gas Plc",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704;FPCHGTHKVH9ZWXS7S453",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-14T13:59:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report - Group Companies",
+   "download_link": "NSM/Portal/NI-000009488.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC;National Grid Gas Plc",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704;FPCHGTHKVH9ZWXS7S453",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-10T09:36:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3682820.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T09:30:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3682754.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T12:15:40Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3681683.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T12:15:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/Portal/NI-000009112.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-07T10:18:50.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC - Base Prospectus and Listing Particulars",
+   "download_link": "NSM/Portal/NI-000009205.pdf",
+   "company": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-05T14:30:01Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Change of Company Secretary",
+   "download_link": "NSM/RNS/3678925.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T09:03:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677045.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T13:06:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3676033.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T06:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Rate Filing for Upstate New York Electric & Gas",
+   "download_link": "NSM/RNS/3674444.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T15:19:53Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/RNS/3671526.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T14:42:55Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Publication of AGM Results ",
+   "download_link": "NSM/RNS/3668435.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T14:42:00.000Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Publication of AGM Results",
+   "download_link": "NSM/Portal/NI-000008381.docx",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-16T16:03:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3659039.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T12:00:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend for 2019/20 Final Dividend",
+   "download_link": "NSM/RNS/3651933.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T06:05:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ofgem's Draft Determination for RIIO-T2",
+   "download_link": "NSM/RNS/3651513.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T13:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3650667.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T15:34:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3649380.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T14:02:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3645311.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T11:07:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643672.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T16:28:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3642402.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T11:06:05Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report and Accounts ",
+   "download_link": "NSM/RNS/3637393.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T10:39:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "National Grid plc 2019/20 Notice of AGM",
+   "download_link": "NSM/Portal/NI-000006546.pdf",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-25T10:36:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "National Grid plc 2019/20 Annual Report and Accounts",
+   "download_link": "NSM/Portal/NI-000006545.pdf",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-18T15:27:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000006136.pdf",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-18T13:42:34.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000006254.pdf",
+   "company": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-06-18T06:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3629356.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3620614.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613561.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T13:47:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3612137.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T08:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3591043.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3584706.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T13:17:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583370.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T13:55",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "PARTICULARS OF THE RIGHTS ATTACHING TO ORDINARY SHARES IN THE CAPITAL OF NATIONAL GRID PLC",
+   "download_link": "NSM/Portal/NI-000002071.docx",
+   "company": "NATIONAL GRID PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-27T13:54:22Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Disclosure of Rights Attached to Ordinary Shares",
+   "download_link": "NSM/RNS/3576459.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T14:55:55Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Amendment to 2020 Financial Calendar",
+   "download_link": "NSM/RNS/3564690.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T16:13:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3558084.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T06:00:06Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3556664.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T06:00",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000000486.docx",
+   "company": "National Grid Electricity Transmission PLC;NATIONAL GRID PLC",
+   "lei": "5XJXCCYG4SDKFJ5WLB02;8R95QZMKZLJX5Q2XR704",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-07T12:03",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000000276.pdf",
+   "company": "NATIONAL GRID PLC;National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704;5XJXCCYG4SDKFJ5WLB02",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-02T14:30:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402143010_3551522.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T14:30:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402143010_3551522.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:02:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "National Grid appoints President of US Business",
+   "download_link": "NSM/data-migration/LSE20200402070205_3550356.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:02:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "National Grid appoints President of US Business",
+   "download_link": "NSM/data-migration/LSE20200402070205_3550356.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Update ahead of 19/20 Full Year Results",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550347.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Update ahead of 19/20 Full Year Results",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550347.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T11:59:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/null",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T11:59:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401115951_3549532.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:41:37Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164137_3541527.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:35:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163545_3541468.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:41:03Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164103_3539797.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:36:27Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163627_3539729.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:44:59Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200312164459_3525371.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:39:08Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200312163908_3525245.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T16:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310161501_3521950.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303140004_3514134.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T10:43:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302104309_3512105.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T09:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200220093001_3499540.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T11:29:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200210112923_3489341.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T16:09:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200207160943_3488261.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T09:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200205093001_3483971.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:23:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203102334_3481765.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Succession Plan to Appoint New Chairman",
+   "download_link": "NSM/data-migration/LSE20200130110001_14404336.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-20T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200120160002_14391189.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T16:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200117160004_14389385.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital Update",
+   "download_link": "NSM/data-migration/LSE20200115160001_14385842.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T09:00:05Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend",
+   "download_link": "NSM/data-migration/LSE20200114090005_14383126.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-08T10:57:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200108105726_14376051.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T09:33:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200106093351_14372227.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T09:42:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102094233_14368827.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191230140002_14365944.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T10:27:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191213102726_14348079.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210140001_14342860.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T07:00:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RIIO-2 Final Business Plan Submission",
+   "download_link": "NSM/data-migration/LSE20191209070009_14339761.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T13:00:05Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend for 2019/20 Interim Dividend",
+   "download_link": "NSM/data-migration/LSE20191205130005_14337461.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T14:12:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191204141236_14335483.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T16:59:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203165944_14333811.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T15:32:24Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointment",
+   "download_link": "NSM/data-migration/LSE20191203153224_14333717.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:43:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202124346_14331142.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T13:46:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191126134645_14323780.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T15:49:06Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Agreement reached with the State of New York",
+   "download_link": "NSM/data-migration/LSE20191125154906_14322275.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T17:04:50Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191121170450_14318388.html",
+   "company": "National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T17:04:50Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191121170450_14318388.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half year results for period ended 30 Sept 2019",
+   "download_link": "NSM/data-migration/LSE20191114070008_14307378.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T12:52:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191108125204_14301218.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T10:27:46Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's Other Appointments",
+   "download_link": "NSM/data-migration/LSE20191105102746_14294834.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Change",
+   "download_link": "NSM/data-migration/LSE20191105070009_14294072.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T10:22:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191104102237_14292901.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T14:25:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101142523_14291396.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T07:24:46Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ofgem publish updated Hinkley-Seabank consultation",
+   "download_link": "NSM/data-migration/LSE20191015072446_14266117.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191008160002_14258691.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T16:29:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002162931_14251692.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Massachusetts Electric 2019 Rate Case Order",
+   "download_link": "NSM/data-migration/LSE20191002070006_14250139.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T12:51:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001125117_14249322.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T07:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor teach-in on NG's US regulated businesses",
+   "download_link": "NSM/data-migration/LSE20190920070008_14234430.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T15:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Redemption",
+   "download_link": "NSM/data-migration/LSE20190913153001_14226661.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T15:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Redemption",
+   "download_link": "NSM/data-migration/LSE20190913153001_14226661.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911140001_14222865.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190904110001_14213604.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T17:23:48Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190903172348_14212527.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T17:23:48Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190903172348_14212527.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T09:27:40Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "NGG Finance plc Announces Tender Offer Results",
+   "download_link": "NSM/data-migration/LSE20190903092740_14211710.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T09:27:40Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "NGG Finance plc Announces Tender Offer Results",
+   "download_link": "NSM/data-migration/LSE20190903092740_14211710.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T10:51:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902105121_14210084.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T09:40:20Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "NGG Finance PLC Announces Target Acceptance Amount",
+   "download_link": "NSM/data-migration/LSE20190829094020_14206250.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T09:40:20Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "NGG Finance PLC Announces Target Acceptance Amount",
+   "download_link": "NSM/data-migration/LSE20190829094020_14206250.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T10:20:16Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "NGG Finance Plc launches Cash Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190827102016_14202902.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T10:20:16Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "NGG Finance Plc launches Cash Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190827102016_14202902.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T15:59:10Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report - Group Company",
+   "download_link": "NSM/data-migration/LSE20190819155910_14194483.html",
+   "company": "Ngg Finance PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T15:59:10Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report - Group Company",
+   "download_link": "NSM/data-migration/LSE20190819155910_14194483.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T15:37:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190819153719_14194464.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T16:12:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190816161203_14192740.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T15:54:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190815155447_14191014.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T16:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights and Capital Update",
+   "download_link": "NSM/data-migration/LSE20190814160005_14189344.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T09:00:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend",
+   "download_link": "NSM/data-migration/LSE20190813090003_14186653.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T13:50:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190808135005_14182112.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T09:11:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190805091148_14176101.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T13:18:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801131829_14172976.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T16:24:47Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190730162447_14169170.html",
+   "company": "National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T16:24:47Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190730162447_14169170.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T15:40:06Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Publication of AGM Results",
+   "download_link": "NSM/data-migration/LSE20190729154006_14167278.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:17:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report - Group Companies",
+   "download_link": "NSM/data-migration/LSE20190725151703_14163657.html",
+   "company": "National Grid Gas PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:17:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report - Group Companies",
+   "download_link": "NSM/data-migration/LSE20190725151703_14163657.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T15:17:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report - Group Companies",
+   "download_link": "NSM/data-migration/LSE20190725151703_14163657.html",
+   "company": "National Grid Electricity Transmission PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T16:16:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190715161646_14149962.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T09:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710093004_14143262.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T12:32:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190703123229_14135296.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190702170004_14133992.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T07:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "National Grid publishes draft RIIO2 business plans",
+   "download_link": "NSM/data-migration/LSE20190702070008_14132390.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:53:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701145341_14131800.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T11:08:12Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Completion of sale of final 39% interest in Cadent",
+   "download_link": "NSM/data-migration/LSE20190628110812_14129109.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190618160001_14115552.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T16:20:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190612162012_14108736.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T13:00:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend for 2018/19 Final Dividend",
+   "download_link": "NSM/data-migration/LSE20190606130002_14101769.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T16:46:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190604164628_14098491.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T13:11:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190604131104_14098152.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T09:56:37Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report and Accounts",
+   "download_link": "NSM/data-migration/LSE20190604095637_14097689.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T15:26:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603152626_14096662.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T16:19:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528161905_14089657.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T07:07:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ofgem's RIIO-2 sector specific consultation update",
+   "download_link": "NSM/data-migration/LSE20190524070710_14086133.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T15:06:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190522150657_14083973.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full year results 2018/19",
+   "download_link": "NSM/data-migration/LSE20190516070004_14075835.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Appointment and Committee Changes",
+   "download_link": "NSM/data-migration/LSE20190515100001_14074835.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T11:49:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190508114941_14066723.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T08:54:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502085447_14060721.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:35:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501133509_14059644.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T14:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Rate Filing for downstate New York Gas Businesses",
+   "download_link": "NSM/data-migration/LSE20190430140001_14057657.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T07:00:14Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update to Technical Guidance for 2018/19",
+   "download_link": "NSM/data-migration/LSE20190411070014_14036872.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T09:06:58Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Board Change",
+   "download_link": "NSM/data-migration/LSE20190408090658_14032331.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T10:27:32Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's Other Appointment",
+   "download_link": "NSM/data-migration/LSE20190405102732_14030787.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T17:05:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402170507_14026176.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T13:48:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401134825_14023860.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "NG submits response to RIIO T2 consultation",
+   "download_link": "NSM/data-migration/LSE20190315070005_14003226.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T13:05:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308130517_13995958.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T07:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "National Grid expands presence in US renewable's",
+   "download_link": "NSM/data-migration/LSE20190307070010_13993132.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T09:53:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304095342_13988881.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T15:58:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301155859_13987868.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T16:27:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190225162738_13980973.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T09:33:27Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director's Other Appointment",
+   "download_link": "NSM/data-migration/LSE20190214093327_13969431.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T10:33:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208103359_13963351.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T15:55:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190205155545_13959245.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T15:11:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201151135_13955920.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "NG's NEMO Link commences operation",
+   "download_link": "NSM/data-migration/LSE20190131070005_13952691.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T17:38:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190123173854_13944678.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T16:14:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190116161406_13937123.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-14T16:31:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190114163157_13934109.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T15:57:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190111155713_13932466.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T14:09:32Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190110140932_13930834.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T14:09:32Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190110140932_13930834.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T16:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190109160003_13929373.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T14:38:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190108143852_13927828.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T09:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend",
+   "download_link": "NSM/data-migration/LSE20190108090001_13927235.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T07:00:04Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "NG reaches agreement with Massachusetts Gas unions",
+   "download_link": "NSM/data-migration/LSE20190108070004_13926623.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T14:20:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190104142048_13924601.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T15:11:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102151127_13921398.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T09:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Change",
+   "download_link": "NSM/data-migration/LSE20181220090003_13911165.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T07:07:27Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ofgem's sector specific consultation",
+   "download_link": "NSM/data-migration/LSE20181218070727_13907132.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T14:31:50Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of new Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20181212143150_13901424.html",
+   "company": "National Grid PLC",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-24T09:45:44Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3826550.html",
+   "disclosure_id": "3826550",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-24T09:45:44Z",
+   "seq_id": "3826550",
+   "company": "National Grid PLC",
+   "last_updated_date": "2026-08-22T12:09:25.735448364Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-16T17:18:59Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Publication of a Supplementary Prospectus",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Prospectuses",
+   "lei": "8R95QZMKZLJX5Q2XR704",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3817472.html",
+   "disclosure_id": "3817472",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-16T17:18:59Z",
+   "seq_id": "3817472",
+   "company": "National Grid PLC",
+   "last_updated_date": "2026-08-22T12:09:07.193867761Z",
+   "headline": "Publication of Suppl.Prospcts",
+   "type_code": "PSP"
+  }
+ ]
 }

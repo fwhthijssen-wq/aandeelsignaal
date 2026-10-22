@@ -1,13 +1,1831 @@
 {
- "aantal": 0,
+ "aantal": 177,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800QAUUUP6I445N30', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800QAUUUP6I445N30', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800QAUUUP6I445N30', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800QAUUUP6I445N30', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800QAUUUP6I445N30",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 177
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-14T16:47:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3814462.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T09:54:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3812098.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T13:13:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000015825.pdf",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-09T13:03:37Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Prospectus and Board Appointments",
+   "download_link": "NSM/RNS/3809382.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T10:33:42.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "London Stock Exchange Group PLC - Single prospectus",
+   "download_link": "NSM/Portal/NI-000015926.pdf",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-12-01T10:46:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799349.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T10:38:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3793151.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T10:46:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3787621.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T15:53:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3768775.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T11:43:00.000Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of meeting",
+   "download_link": "NSM/Portal/NI-000013840.pdf",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-03T11:25:41Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/RNS/3768393.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T15:15:35Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Update re Circular and General Meeting",
+   "download_link": "NSM/RNS/3765509.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3757286.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T12:02:50Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of GM",
+   "download_link": "NSM/RNS/3748255.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T12:00:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Shareholder Circular",
+   "download_link": "NSM/Portal/NI-000012768.pdf",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-14T12:00:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000012769.pdf",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-09T06:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Proposed Divestment of Borsa Italiana Group ",
+   "download_link": "NSM/RNS/3743522.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T08:51:34Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3735262.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T06:11:10Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "LSEG – Borsa Italiana Group Update) ",
+   "download_link": "NSM/RNS/3720454.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T12:37:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3715631.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T08:40:31Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3712536.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-27T08:11:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3699652.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-21T13:14:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3695032.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T11:38:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3675924.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:14Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3673227.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "LSEG All Share Acquisition of Refinitiv – Update ",
+   "download_link": "NSM/RNS/3673678.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T06:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3636389.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T15:54:15Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement Re EC Review of Refinitiv Transaction",
+   "download_link": "NSM/RNS/3633381.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T15:41:09Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3633356.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T15:35:40Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3633341.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T15:08:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3615018.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T08:23:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613003.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T08:43:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3579358.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T14:49:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3570814.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T12:05:18Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3569070.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T09:36:39Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/RNS/3568752.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "LSEG 2020 Q1 Trading Statement",
+   "download_link": "NSM/RNS/3568012.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T08:15:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3565539.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T13:16:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3557896.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T09:21:12Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "London Stock Exchange Group plc AGM Update",
+   "download_link": "NSM/RNS/3557441.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:18:33Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401131833_3549704.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:18:33Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401131833_3549704.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:13:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401131337_3549697.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:13:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401131337_3549697.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:42:40Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164240_3539823.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:39:20Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163920_3539781.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T12:08:19Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200323120819_3537410.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T12:03:07Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200323120307_3537384.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:47:03Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200320164703_3536277.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:38:51Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320163851_3536121.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T11:09:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200320110916_3535472.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:42:20Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200318164220_3532232.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:38:26Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200318163826_3532179.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:43:17Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200316164317_3528834.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:37:23Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200316163723_3528729.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T15:23:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316152321_3528584.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T13:33:36Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200316133336_3528372.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T12:07:50Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200316120750_3528210.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T12:02:35Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200316120235_3528182.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T12:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Regulatory Approvals Update",
+   "download_link": "NSM/data-migration/LSE20200316120005_3528170.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T16:41:04Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200313164104_3527000.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T16:35:26Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200313163526_3526945.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T14:28:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310142815_3521794.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T14:04:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200305140415_3517131.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T14:01:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200305140128_3517124.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T10:42:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302104210_3512100.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T10:37:59Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200302103759_3512085.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200228070005_3509558.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T09:33:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "LSEG Executive Appointments",
+   "download_link": "NSM/data-migration/LSE20191216093311_14349950.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T09:38:57Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191204093857_14334751.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T13:45:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202134515_14331330.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T14:59:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191128145948_14327786.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T12:09:36Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/data-migration/LSE20191126120936_14323677.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T15:09:30Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of GM",
+   "download_link": "NSM/data-migration/LSE20191106150930_14297374.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:17:10Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191101101710_14290737.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T16:35:51Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20191023163551_14277774.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T16:13:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191023161302_14277744.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191018070005_14271012.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T07:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191018070002_14270985.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T13:37:47Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000286983-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-08T09:48:08Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group Plc - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000286938-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-08T09:32:43Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re HKEX withdrawal",
+   "download_link": "NSM/data-migration/LSE20191008093243_14257924.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T10:34:20Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Hsbc Bank Plc - London Stock Exchange Group Plc - FORM 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000286721-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-04T09:56:35Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group Plc - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000276396-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-03T13:22:04Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000276245-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-03T10:06:34Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000276194-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-02T12:44:54Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000275988-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-02T11:26:25Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group Plc - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000275968-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-01T12:36:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191001123606_14249301.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T12:13:02Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000275746-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-10-01T11:34:16Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group Plc - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000275735-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-30T14:16:22Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8(OPD) Hong Kong Exchanges & Clrg-Replacement",
+   "download_link": "NSM/data-migration/LSE20190930141622_14247349.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:14:36Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) LSEG plc - Replacement",
+   "download_link": "NSM/data-migration/LSE20190930141436_14247346.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T12:14:52Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000275397-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-30T10:36:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - London Stock Exchange Group Plc - Form 8.5 (EPT/RI)",
+   "download_link": "NSM/data-migration/NASDAQ_1000275364-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-27T14:54:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/BWIPREM_20190927005274.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2019-09-27T12:32:31Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) Hong Kong Exchanges and Clearing Ltd",
+   "download_link": "NSM/data-migration/LSE20190927123231_14245110.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T12:31:47Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/LSE20190927123147_14245109.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T12:26:30Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000275008-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-27T11:51:53Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000275001-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-26T15:00:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/BWIPREM_20190926005566.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2019-09-26T11:41:09Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274782-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-26T10:51:48Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Hsbc Bank Plc - FORM 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274771-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T12:12:45Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274564-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T09:44:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274532-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T09:44:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274532-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T09:44:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274532-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T09:44:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274532-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-25T09:44:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274532-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-24T15:14:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/BWIPREM_20190924005746.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2019-09-24T12:28:40Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) Hong Kong Exchanges and Clearing Ltd",
+   "download_link": "NSM/data-migration/LSE20190924122840_14239346.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T12:27:15Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/LSE20190924122715_14239342.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T11:13:28Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274361-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-24T11:13:28Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274361-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-24T11:13:28Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274361-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-24T11:13:28Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274361-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-24T11:13:28Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274361-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T14:36:00Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - London Stock Exchange Group plc",
+   "download_link": "NSM/data-migration/BWIPREM_20190923005536.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2019-09-23T12:03:54Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274152-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T12:03:54Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274152-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T12:03:54Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274152-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T12:03:54Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274152-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T12:03:54Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "HSBC BANK PLC - Form 8.5 (EPT/RI) - London Stock Exchange Group Plc",
+   "download_link": "NSM/data-migration/NASDAQ_1000274152-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T11:49:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274146-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T11:49:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274146-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T11:49:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274146-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T11:49:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274146-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-23T11:49:56Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000274146-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-20T12:13:58Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273792-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-20T12:13:58Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273792-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-20T12:13:58Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273792-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-20T12:13:58Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273792-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-20T12:13:58Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273792-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-19T12:25:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273585-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-19T12:25:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273585-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-19T12:25:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273585-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-19T12:25:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273585-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-19T12:25:03Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000273585-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-16T13:24:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000272963-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-16T13:24:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000272963-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-16T13:24:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000272963-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-16T13:24:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000272963-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-16T13:24:06Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000272963-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-13T16:35:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20190913163538_14226745.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T12:24:04Z",
+   "type": "Statement re Possible Offer",
+   "type_code": "OFD",
+   "headline": "Statement re Possible Offer",
+   "download_link": "NSM/data-migration/LSE20190913122404_14226376.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T13:29:58Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000262431-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-12T13:29:58Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000262431-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-12T13:29:58Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000262431-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-12T13:29:58Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000262431-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-12T13:29:58Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Invesco Ltd.: Form 8.3 - London Stock Exchange Group PLC",
+   "download_link": "NSM/data-migration/NASDAQ_1000262431-en.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "NASDAQNEWS"
+  },
+  {
+   "publication_date": "2019-09-11T10:36:46Z",
+   "type": "Statement re Possible Offer",
+   "type_code": "OFD",
+   "headline": "Statement re Possible Offer",
+   "download_link": "NSM/data-migration/LSE20190911103646_14222479.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T12:11:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902121116_14210314.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T10:32:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190812103212_14185255.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T09:09:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190805090943_14176098.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:03:25Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190801070325_14171701.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T07:00:04Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "Statement re Press Comment",
+   "download_link": "NSM/data-migration/LSE20190729070004_14165757.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T09:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190717090005_14152672.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T16:46:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701164632_14132079.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:33:28Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190501133328_14059643.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T10:34:03Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20190501103403_14059218.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190501070006_14058411.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T10:03:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Capital Markets Division Leadership",
+   "download_link": "NSM/data-migration/LSE20190402100309_14025347.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:32:45Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190401103245_14023387.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:27:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401102743_14023375.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T16:01:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190328160152_14020101.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T16:01:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325160143_14014841.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T10:17:52Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190322101752_14012410.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T13:41:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190320134114_14009517.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T14:35:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313143558_14001146.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T10:52:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190308105209_13995663.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190301070007_13986365.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Acquisition of stake",
+   "download_link": "NSM/data-migration/LSE20190130070004_13951102.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T10:37:37Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Information Services Division Management Changes",
+   "download_link": "NSM/data-migration/LSE20190122103737_13942709.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T10:25:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102102529_13920774.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T12:44:41Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181228124441_13918216.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T14:43:37Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181214144337_13904832.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T09:24:24Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20181214092424_13904186.html",
+   "company": "London Stock Exchange Group PLC",
+   "lei": "213800QAUUUP6I445N30",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-14T16:47:23Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800QAUUUP6I445N30",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3814462.html",
+   "disclosure_id": "3814462",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-14T16:47:23Z",
+   "seq_id": "3814462",
+   "company": "London Stock Exchange Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.185297426Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-11T09:54:43Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800QAUUUP6I445N30",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3812098.html",
+   "disclosure_id": "3812098",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-11T09:54:43Z",
+   "seq_id": "3812098",
+   "company": "London Stock Exchange Group PLC",
+   "last_updated_date": "2026-08-22T12:08:49.744887924Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

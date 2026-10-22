@@ -1,13 +1,1291 @@
 {
- "aantal": 0,
+ "aantal": 123,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800LRO7NS5CYQMN21', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800LRO7NS5CYQMN21', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800LRO7NS5CYQMN21', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800LRO7NS5CYQMN21', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800LRO7NS5CYQMN21",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 123
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T10:27:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3831167.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T09:45:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT agrees sale of two business units in Italy",
+   "download_link": "NSM/RNS/3810496.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T14:32:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3798071.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T11:10:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3797614.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T12:11:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3790264.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T12:05:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765229.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3762768.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T10:23:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733418.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T10:30:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT TO FILE FORM 15F TO DEREGISTER FROM US SEC",
+   "download_link": "NSM/RNS/3727525.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T10:37:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701165.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3681681.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677530.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T09:51:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674076.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Rob Shuter appointed CEO of BT’s Enterprise unit",
+   "download_link": "NSM/RNS/3673193.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T06:00:07Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/RNS/3673191.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-16T12:00:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3658849.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T16:03:47Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Initial assessment of revised policy on Huawei ",
+   "download_link": "NSM/RNS/3656325.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T11:46:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3650592.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T13:21:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642054.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T11:31:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT PROVIDES PRO FORMA KPI DISCLOSURES",
+   "download_link": "NSM/RNS/3640312.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3638401.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3638389.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T14:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3636078.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T10:40:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Confirmation of 2020 long-term incentive awards",
+   "download_link": "NSM/RNS/3633034.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-16T10:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3627469.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T09:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3621474.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T09:06:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form or proxy",
+   "download_link": "NSM/Portal/NI-000005411.pdf",
+   "company": "BT Group plc",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-08T09:04:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/Portal/NI-000005410.pdf",
+   "company": "BT Group plc",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-08T09:00:02Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3618883.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T11:15:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610297.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T13:09:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3602905.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T10:30:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3602631.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T10:07:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report & Accounts 2020",
+   "download_link": "NSM/Portal/NI-000004339.pdf",
+   "company": "BT Group plc",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-14T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3595880.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T06:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3588425.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "BT GROUP PLC BOARD AND COMMITTEE CHANGES",
+   "download_link": "NSM/RNS/3582702.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T11:05:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581456.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T15:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3557983.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:30:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200401103006_3549121.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:30:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200401103006_3549121.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T16:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200331160006_3548143.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T11:40:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331114010_3547559.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T09:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT, COMPUTACENTER TALKS ON SALE OF BT'S FRANCE OPS",
+   "download_link": "NSM/data-migration/LSE20200324090008_3538795.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T12:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200320123004_3535685.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T10:30:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200320103005_3535138.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T17:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BT AGREES SALE OF SELECTED OPERATIONS IN LATAM",
+   "download_link": "NSM/data-migration/LSE20200319170005_3533819.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T08:22:53Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200317082253_3529553.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T08:33:54Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "BT GROUP PLC BOARD CHANGES",
+   "download_link": "NSM/data-migration/LSE20200316083354_3527765.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T07:00:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "COVID-19 update",
+   "download_link": "NSM/data-migration/LSE20200313070001_3525502.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:44:39Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200312164439_3525363.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:39:50Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200312163950_3525261.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T14:30:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200228143000_3510785.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T10:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200221100001_3501741.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T14:43:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200206144307_3486782.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T14:36:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200206143601_3486773.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T11:09:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200131110910_14406139.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T07:00:11Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20200130070011_14403471.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T15:55:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200127155512_14399429.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T16:15:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200117161505_14389401.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T15:52:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200116155242_14387636.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T15:50:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200115155038_14385838.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T10:30:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191231103057_14367114.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T14:35:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191223143557_14360800.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T12:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191220121505_14358371.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T11:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BT AGREES SALE OF DOMESTIC OPERATIONS IN SPAIN",
+   "download_link": "NSM/data-migration/LSE20191216110004_14350292.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T15:19:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191213151945_14348712.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203140001_14333557.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T12:02:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191129120246_14329095.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-15T10:02:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT WINS ALL UEFA RIGHTS EXCLUSIVELY UNTIL 2024",
+   "download_link": "NSM/data-migration/LSE20191115100228_14310141.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T13:13:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191031131356_14289247.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20191031070004_14287745.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T12:26:29Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board change & Director change of responsibilities",
+   "download_link": "NSM/data-migration/LSE20191029122629_14284980.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-28T16:37:37Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191028163737_14283600.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T11:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT LAUNCHES NEW PROGRAMMES TO BOOST UK'S POTENTIAL",
+   "download_link": "NSM/data-migration/LSE20191009110001_14259870.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T11:04:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930110444_14246861.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T15:40:52Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT CONFIRMS TERMINATION OF ADR PROGRAMME",
+   "download_link": "NSM/data-migration/LSE20190923154052_14237848.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T13:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190916133003_14228253.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T11:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190913111001_14226141.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T11:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT CONFIRMS DELISTING FROM NEW YORK STOCK EXCHANGE",
+   "download_link": "NSM/data-migration/LSE20190913110001_14226106.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911150001_14222984.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910150002_14221196.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T13:48:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830134856_14208476.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T11:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT announces intention to deregister from SEC",
+   "download_link": "NSM/data-migration/LSE20190814113004_14188962.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:30:09Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190809103009_14183530.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190807120001_14180169.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T07:00:03Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20190802070003_14173662.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T12:08:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731120808_14170739.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T09:55:01Z",
+   "type": "Change of Registered Office",
+   "type_code": "CRO",
+   "headline": "BT to move its HQ to new premises in London",
+   "download_link": "NSM/data-migration/LSE20190722095501_14157895.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T09:01:37Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BT sells London HQ",
+   "download_link": "NSM/data-migration/LSE20190717090137_14152678.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T14:25:43Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190710142543_14143826.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T14:12:30Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190703141230_14135418.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T13:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT ANNOUNCES IFRS 16 19/20 OUTLOOK & OTHER CHANGES",
+   "download_link": "NSM/data-migration/LSE20190703130003_14135352.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:07:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628160724_14129832.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T10:20:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628102036_14128917.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T10:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "LEENA NAIR TO JOIN BT BOARD",
+   "download_link": "NSM/data-migration/LSE20190628100001_14128868.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T17:58:16Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT intended share repurchase from Orange",
+   "download_link": "NSM/data-migration/LSE20190627175816_14127893.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190621120004_14120198.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190620100003_14118207.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T14:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190617143004_14113691.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190607100001_14103066.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531110004_14094144.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T13:00:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190523130002_14085505.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T11:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190517111502_14078502.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T11:01:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190514110153_14073238.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190509070007_14067383.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T12:34:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190430123408_14057512.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329140005_14021838.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T16:12:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT Group plc guarantee of debt securities",
+   "download_link": "NSM/data-migration/LSE20190327161214_14018327.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T10:28:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190318102843_14005765.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228140002_13985746.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T16:19:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190214161906_13970096.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T10:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "ALLISON KIRKBY TO JOIN BT BOARD",
+   "download_link": "NSM/data-migration/LSE20190212100002_13966366.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T14:30:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190207143043_13962231.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T13:12:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190206131238_13960618.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190201110002_13955392.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190201110002_13955393.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T14:36:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190131143654_13954030.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T07:00:06Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20190131070006_13952707.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T14:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BT PROVIDES PRO FORMA KPI FOR ENTERPRISE UNIT",
+   "download_link": "NSM/data-migration/LSE20190117140003_13938518.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T11:02:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231110207_13919337.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181228100001_13917871.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T10:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on response to 2018 AGM voting outcome",
+   "download_link": "NSM/data-migration/LSE20181218100003_13907698.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181211100003_13899142.html",
+   "company": "BT Group PLC",
+   "lei": "213800LRO7NS5CYQMN21",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T10:27:30Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800LRO7NS5CYQMN21",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3831167.html",
+   "disclosure_id": "3831167",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T10:27:30Z",
+   "seq_id": "3831167",
+   "company": "BT Group PLC",
+   "last_updated_date": "2026-08-22T12:09:44.055872482Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-10T09:45:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Miscellaneous",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Miscellaneous",
+   "lei": "213800LRO7NS5CYQMN21",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3810496.html",
+   "disclosure_id": "3810496",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-10T09:45:01Z",
+   "seq_id": "3810496",
+   "company": "BT Group PLC",
+   "last_updated_date": "2026-08-22T12:08:49.740400592Z",
+   "headline": "BT agrees sale of two business units in Italy",
+   "type_code": "MSCL"
+  }
+ ]
 }

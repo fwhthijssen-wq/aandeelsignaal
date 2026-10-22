@@ -1,13 +1,2261 @@
 {
- "aantal": 0,
+ "aantal": 220,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800JH9QQWHLO99821', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800JH9QQWHLO99821', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800JH9QQWHLO99821', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800JH9QQWHLO99821', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800JH9QQWHLO99821",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 220
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-18T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3820608.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3819172.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T17:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3801435.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T17:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3799671.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T17:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3799599.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T17:00:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799603.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3793717.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T07:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "L&G announces new dividend, cash&capital ambitions",
+   "download_link": "NSM/RNS/3777824.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T12:09:58Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3777403.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T07:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding ",
+   "download_link": "NSM/RNS/3775337.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T07:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding ",
+   "download_link": "NSM/RNS/3775338.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights ",
+   "download_link": "NSM/RNS/3775336.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T17:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3768616.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3737084.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735891.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735791.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735878.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T11:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3733545.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T16:30:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3730874.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T07:20:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3730121.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T16:45:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3729410.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T16:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704879.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703198.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3703415.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3703454.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-17T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3689916.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T16:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3685957.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T16:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3680434.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:09Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2020 Part 3",
+   "download_link": "NSM/RNS/3677760.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2020 Part 2",
+   "download_link": "NSM/RNS/3677754.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2020 Part 1",
+   "download_link": "NSM/RNS/3677736.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677314.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3676117.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3675768.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675763.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3646450.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T16:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3645464.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T16:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3645211.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643766.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T16:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3643338.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643567.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643929.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T16:02:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3636248.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T15:15:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000006292.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-22T15:06:41Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3633302.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T08:30:55Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3629995.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-16T09:06:53Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "L&G plans to capitalise on favourable market condi",
+   "download_link": "NSM/RNS/3627314.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T16:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3622223.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T16:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3620516.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-05T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3617932.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3615149.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613490.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3612150.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3612043.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3612047.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T11:08:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Special Resolutions",
+   "download_link": "NSM/Portal/NI-000004351.doc",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T11:06:58Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3602765.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T10:58:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/Portal/NI-000004348.doc",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-04T16:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3584889.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3583404.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3583408.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583409.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T08:31:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000002778.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-01T07:30:01Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3581804.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000002605.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-24T09:38:25Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3573354.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T07:55:45Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Strategy/Company/Ops Update",
+   "download_link": "NSM/RNS/3573221.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T12:22",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "LEGAL & GENERAL GROUP PLC;LEGAL & GENERAL FINANCE PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000001616.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC;LEGAL & GENERAL FINANCE PLC",
+   "lei": "213800JH9QQWHLO99821;213800AJC8I72ZCD2E71",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-20T16:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3567901.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T09:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000001109.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-20T08:09:03Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3567095.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T16:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561522.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T15:41:42Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3561684.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T15:36:57Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3561656.html",
+   "company": "Legal & General Group Plc",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T18:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403180003_3553371.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:49:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "L&G confirms its current intention to pay dividend",
+   "download_link": "NSM/data-migration/LSE20200403164902_3553325.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:49:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "L&G confirms its current intention to pay dividend",
+   "download_link": "NSM/data-migration/LSE20200403164902_3553325.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T17:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402170006_3551428.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T17:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402170006_3551428.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401170005_3549866.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401170005_3549993.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401170005_3549993.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401170005_3549866.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401170005_3550114.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401170005_3550114.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T16:41:32Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200330164132_3546451.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T16:35:55Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200330163555_3546404.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:41:53Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164153_3541532.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:37:33Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163733_3541500.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:42:52Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164252_3539827.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:38:25Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163825_3539764.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T16:36:21Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200323163621_3537996.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T11:24:02Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20200319112402_3533337.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T11:24:02Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20200319112402_3533337.html",
+   "company": "Legal & General Finance PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T08:56",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "LEGAL & GENERAL GROUP PLC;LEGAL & GENERAL FINANCE PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000000308.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC;LEGAL & GENERAL FINANCE PLC",
+   "lei": "213800JH9QQWHLO99821;213800AJC8I72ZCD2E71",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-12T16:44:05Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200312164405_3525352.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:40:18Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200312164018_3525270.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T09:00:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200312090001_3523755.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310170001_3521414.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T16:40:36Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200310164036_3522027.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T16:35:18Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200310163518_3521994.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200309170005_3520229.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T16:42:16Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200309164216_3520331.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T16:37:42Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200309163742_3520282.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T13:01:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200304130115_3515511.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2019 Part 3",
+   "download_link": "NSM/data-migration/LSE20200304070010_3514503.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2019 Part 2",
+   "download_link": "NSM/data-migration/LSE20200304070008_3514502.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2019 Part 1",
+   "download_link": "NSM/data-migration/LSE20200304070003_3514493.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303170002_3514129.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302170001_3512078.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302170001_3512178.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302170001_3512073.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-04T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200204170004_3483775.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-04T14:10:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Correction",
+   "download_link": "NSM/data-migration/LSE20200204141035_3483766.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200203170001_3481842.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200203170001_3482110.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203170001_3481841.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200103170004_14371234.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T17:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102170004_14369681.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T17:00:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200102170004_14369684.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200102170004_14369683.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200102170004_14369682.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203170001_14333816.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191202170005_14331714.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T17:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202170005_14331713.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191202170005_14331716.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T12:15:37Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20191126121537_14323687.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191119170003_14314753.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T08:36:37Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Business Update",
+   "download_link": "NSM/data-migration/LSE20191119083637_14313619.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T11:40:29Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191108114029_14301014.html",
+   "company": "Legal & General Finance PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T11:40:29Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191108114029_14301014.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191104170004_14293685.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191101170003_14291836.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191101170003_14291835.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T17:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101170003_14291838.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:38:33Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191101103833_14290825.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191003170001_14253531.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002170001_14251745.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001170001_14249846.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001170001_14249848.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001170001_14249847.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930170003_14247674.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930170003_14247673.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190927170001_14245541.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190903170004_14212477.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190902170005_14210841.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190902170005_14210838.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902170005_14210839.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T16:07:49Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190902160749_14210757.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T07:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2019 Part 3",
+   "download_link": "NSM/data-migration/LSE20190807070011_14179082.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2019 Part 2",
+   "download_link": "NSM/data-migration/LSE20190807070007_14179069.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "L&G Half Year Results 2019 Part 1",
+   "download_link": "NSM/data-migration/LSE20190807070004_14179017.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190802170001_14175274.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801170001_14173385.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801170001_14173387.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801170001_14173386.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T16:27:44Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190725162744_14163770.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190719170001_14156918.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190702170004_14133991.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T10:03:49Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190702100349_14133144.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701170001_14132114.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701170001_14132116.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T17:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190701170001_14132119.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701170001_14132121.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T17:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190618170001_14115616.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611170001_14107062.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611170001_14107063.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190610170001_14105469.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Pension Risk Transfer Transaction",
+   "download_link": "NSM/data-migration/LSE20190606070007_14100478.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190605170003_14100243.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603170005_14096819.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603170005_14096821.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603170005_14096820.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20190531070004_14093270.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T16:36:38Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190523163638_14085768.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509170001_14068808.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502170001_14061536.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501170002_14060005.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501170002_14060006.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501170001_14060003.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190429170004_14056081.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190424170001_14050748.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190424170001_14050746.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Pension Risk Transfer Transaction",
+   "download_link": "NSM/data-migration/LSE20190424070005_14049240.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T09:36:06Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190416093606_14042814.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402170002_14026162.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402170002_14026160.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401170001_14024256.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401170001_14024242.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401170001_14024243.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401170001_14024290.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325170004_14014930.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190321170001_14011470.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T13:58:31Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190320135831_14009532.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T13:58:31Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190320135831_14009532.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190319170003_14008035.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190314170002_14003019.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T09:04:11Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190314090411_14002160.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190312170002_13999612.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308170001_13996256.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2018 Part 3",
+   "download_link": "NSM/data-migration/LSE20190306070009_13991538.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2018 Part 2",
+   "download_link": "NSM/data-migration/LSE20190306070007_13991519.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "L&G Full Year Results 2018 Part 1",
+   "download_link": "NSM/data-migration/LSE20190306070005_13991470.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304170001_13989612.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301170001_13987947.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190301170001_13987949.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190301170001_13987948.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190225070008_13979605.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190205170001_13959330.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T14:37:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of Capital Securities",
+   "download_link": "NSM/data-migration/LSE20190204143707_13957495.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201170001_13956097.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190201170001_13956099.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190201170001_13956098.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190103170003_13923366.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103170003_13923364.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103170003_13923371.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103170003_13923365.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T17:20:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102172020_13921610.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T17:16:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181221171623_13914013.html",
+   "company": "Legal & General Group PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T09:29",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000001633.pdf",
+   "company": "LEGAL & GENERAL GROUP PLC",
+   "lei": "213800JH9QQWHLO99821",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-18T17:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800JH9QQWHLO99821",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3820608.html",
+   "disclosure_id": "3820608",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T17:00:01Z",
+   "seq_id": "3820608",
+   "company": "Legal & General Group Plc",
+   "last_updated_date": "2026-08-22T12:09:07.202773074Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-18T07:00:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800JH9QQWHLO99821",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3819172.html",
+   "disclosure_id": "3819172",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T07:00:05Z",
+   "seq_id": "3819172",
+   "company": "Legal & General Group Plc",
+   "last_updated_date": "2026-08-22T12:09:07.198753132Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  }
+ ]
 }

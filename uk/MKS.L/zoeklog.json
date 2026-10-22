@@ -1,13 +1,3921 @@
 {
- "aantal": 0,
+ "aantal": 386,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800EJP14A79ZG1X44', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800EJP14A79ZG1X44', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800EJP14A79ZG1X44', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800EJP14A79ZG1X44', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800EJP14A79ZG1X44",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 386
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T12:43:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3831562.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-30T13:31:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3830041.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-30T10:27:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3829724.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-21T09:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "2020 PSP Award Targets  ",
+   "download_link": "NSM/RNS/3820807.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T09:04:14Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Directorate Change ",
+   "download_link": "NSM/RNS/3819858.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-14T09:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Creation of ESG Board Committee",
+   "download_link": "NSM/RNS/3812955.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T17:44:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3811312.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T09:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3806314.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-04T16:22:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3804942.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T09:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798227.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:42:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3798278.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-09T17:19:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights ",
+   "download_link": "NSM/RNS/3774549.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-04T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3768967.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T15:45:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3762391.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T08:43:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3757138.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T08:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3734114.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T09:42:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3731714.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T15:09:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3717097.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T11:10:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3716813.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T14:49:35Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3714335.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T16:16:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3706371.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T14:17:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3704917.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T08:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701453.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T09:50:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701031.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T06:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "M&S Trading Update and Streamlining Announcement",
+   "download_link": "NSM/RNS/3690147.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3688551.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T08:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674422.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T10:53:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3669853.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-16T16:24:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3659037.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-15T10:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing Application",
+   "download_link": "NSM/RNS/3656384.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-06T13:01:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3647896.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T13:13:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000007205.pdf",
+   "company": "Marks and Spencer Group plc",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-03T13:00:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3646606.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T10:38:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3644986.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3642533.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641413.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T12:45:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3641873.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T12:57:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3636001.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T17:11:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3634864.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T08:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3627931.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T10:56:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3621593.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-05T12:28:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3617818.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T08:30:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3614370.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T08:30:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice of Meeting 2020",
+   "download_link": "NSM/Portal/NI-000005080.pdf",
+   "company": "Marks and Spencer Group plc",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-03T08:30:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM Proxy Form 2020",
+   "download_link": "NSM/Portal/NI-000005161.pdf",
+   "company": "Marks and Spencer Group plc",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-03T08:30:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2020",
+   "download_link": "NSM/Portal/NI-000005159.pdf",
+   "company": "Marks and Spencer Group plc",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-02T11:39:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3613092.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610347.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T09:55:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3608633.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T06:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3600481.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T11:45:32Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "New Clothing & Home Managing Director - Replace",
+   "download_link": "NSM/RNS/3595691.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T11:13:05Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "New Clothing & Home Managing Director",
+   "download_link": "NSM/RNS/3595671.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T15:54:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3594528.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T17:32:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3585161.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T08:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581418.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T06:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3580265.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T14:40:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3578327.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T06:00:07Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "M&S Strengthened liquidity for Covid crisis ",
+   "download_link": "NSM/RNS/3576768.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T16:03:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3564784.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T10:26:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3564350.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T16:51:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555030.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T17:22:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200403172250_3553361.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:25:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401122511_3549592.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:25:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401122511_3549592.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T11:19:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200330111905_3545769.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T10:28:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200325102821_3540760.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on trading and impact of COVID-19",
+   "download_link": "NSM/data-migration/LSE20200320070006_3535022.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T17:53:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311175311_3523742.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T15:40:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200310154008_3521905.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T07:57:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200310075719_3521033.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T17:57:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200305175706_3517399.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T17:47:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200302174725_3512929.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302090001_3510933.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T11:12:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200228111209_3510440.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T08:59:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200227085944_3508679.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T15:25:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200220152559_3500895.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200211070007_3489830.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T13:22:44Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200205132244_3485205.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203090001_3480606.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T16:25:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200131162510_14406579.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T10:31:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200128103101_14400676.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T10:21:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200114102118_14383345.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-09T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200109070006_14377020.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T10:49:58Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Interim Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20200103104958_14370672.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T09:00:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200102090004_14368709.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102090004_14368703.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191230133001_14365901.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T16:37:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191223163733_14360998.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T15:57:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191220155727_14358930.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T15:45:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191211154542_14345127.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T17:02:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191206170228_14339570.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T11:21:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191203112135_14333040.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202090004_14330594.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T16:58:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191129165834_14329567.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T16:39:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191128163959_14327920.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T17:28:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191127172841_14326121.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-22T11:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191122110002_14319652.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20191106070003_14295941.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T10:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191104100003_14292812.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T09:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101090006_14290573.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T11:07:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191029110717_14284716.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T09:38:13Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chief Finance Officer departure date confirmed",
+   "download_link": "NSM/data-migration/LSE20191016093813_14268018.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-04T16:12:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191004161248_14255212.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001090002_14248680.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Morning",
+   "download_link": "NSM/data-migration/LSE20191001070006_14247930.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T13:47:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930134757_14247291.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T16:30:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190927163052_14245502.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T14:18:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190927141855_14245265.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T12:21:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190926122132_14243214.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T07:00:12Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "CFO Succession Planning",
+   "download_link": "NSM/data-migration/LSE20190923070012_14236328.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T09:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902090003_14209729.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T10:25:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190828102549_14204669.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801090002_14172264.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T10:51:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731105132_14170481.html",
+   "company": "Marks And Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T13:59:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190716135950_14151522.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T13:41:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190716134125_14151504.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T15:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change in Director Responsibilities",
+   "download_link": "NSM/data-migration/LSE20190711150001_14145562.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T14:38:47Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190709143847_14142131.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM 2019 Special Resolutions",
+   "download_link": "NSM/data-migration/228855639.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-07-09T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM 2019 Poll Results",
+   "download_link": "NSM/data-migration/228855638.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-07-01T18:27:12Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190701182712_14132235.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701090001_14130873.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T13:24:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190628132438_14129493.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T13:06:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190626130606_14125636.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T10:58:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Results of Rump Placing",
+   "download_link": "NSM/data-migration/LSE20190613105809_14109814.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T07:00:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190613070015_14109053.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T07:00:13Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Results of Rights Issue",
+   "download_link": "NSM/data-migration/LSE20190613070013_14109039.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T07:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190613070004_14108970.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603090002_14095800.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T11:09:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531110904_14094186.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T07:00:05Z",
+   "type": "Announcement re: Rights Issue",
+   "type_code": "ARI",
+   "headline": "Admission of Nil Paid Rights",
+   "download_link": "NSM/data-migration/LSE20190529070005_14089935.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T13:30:17Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190524133017_14087258.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/222999678.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2019-05-23T13:29:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190523132907_14085526.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2019 Notice of Meeting",
+   "download_link": "NSM/data-migration/222868536.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-23T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2019 Sharesave Proxy Form",
+   "download_link": "NSM/data-migration/222868388.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-23T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2019 Proxy Form",
+   "download_link": "NSM/data-migration/222868437.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-22T17:26:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190522172607_14084168.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:06Z",
+   "type": "Announcement re: Rights Issue",
+   "type_code": "ARI",
+   "headline": "Rights Issue announcement",
+   "download_link": "NSM/data-migration/LSE20190522070006_14082726.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190522070005_14082695.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:17:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190520181739_14080785.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501090001_14058989.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T18:12:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190430181204_14058187.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T17:07:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190418170706_14047091.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:09:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401100934_14023287.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/data-migration/222863567.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-28T17:03:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190328170322_14020185.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T16:44:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190301164452_13987931.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T11:39:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190301113919_13987401.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301090001_13986989.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:43:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228174340_13986157.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T07:00:06Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "M&S and Ocado announce new Joint Venture",
+   "download_link": "NSM/data-migration/LSE20190227070006_13982815.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T07:00:06Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "M&S and Ocado announce new Joint Venture",
+   "download_link": "NSM/data-migration/LSE20190227070006_13982815.html",
+   "company": "Ocado Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T11:24:45Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "Media speculation into potential deal with Ocado",
+   "download_link": "NSM/data-migration/LSE20190226112445_13982182.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T16:12:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190225161205_13980962.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201090001_13955158.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T13:07:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190116130719_13936955.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20190110070006_13929629.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T17:29:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190107172946_13926481.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T12:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190102120003_13921058.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102090002_13920565.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T11:49:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181228114901_13918115.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-27T15:55:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181227155501_13917025.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T15:13:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181218151303_13908347.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T11:10:39Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181211111039_13899308.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T10:31:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181211103103_13899244.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203090001_13888636.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-28T13:24:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181128132401_13883882.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-26T14:42:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181126144204_13880638.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T15:14:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181109151404_13862211.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-07T12:27:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181107122701_13858693.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-07T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20181107070004_13857578.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T17:49:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181101174934_13852250.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101090001_13851054.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-30T14:47:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181030144703_13848108.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-26T11:37:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181026113703_13844258.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-24T17:03:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181024170301_13841351.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-24T15:19:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181024151901_13841183.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-03T15:01:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181003150102_13815383.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T10:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181001103001_13810992.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001090001_13810730.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-28T10:52:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180928105221_13808937.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-17T16:36:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180917163641_13793725.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-04T10:12:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180904101211_13778083.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903090001_13776203.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-20T17:37:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180820173707_13761953.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-06T17:16:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180806171635_13745536.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801090004_13739365.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T15:58:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180731155811_13738333.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-30T17:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180730173002_13736658.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-30T11:18:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180730111810_13736040.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-16T15:49:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180716154957_13719593.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:25:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180711162524_13714491.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-10T17:05:03Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180710170503_13712824.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-10T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM 2018 Special Resolutions available at NSM",
+   "download_link": "NSM/data-migration/177254034.doc",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-07-02T10:41:48Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180702104148_13701511.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702090004_13701148.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-29T17:19:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180629171908_13700274.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-19T17:25:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180619172523_13685979.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-12T11:19:25Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180612111925_13676326.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-08T17:23:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180608172355_13673450.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-07T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM 2018 Proxy Form",
+   "download_link": "NSM/data-migration/174063209.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-07T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting 2018",
+   "download_link": "NSM/data-migration/174063167.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-01T09:17:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180601091716_13663344.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T09:01:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601090111_13663265.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-29T11:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180529110004_13658060.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T07:00:11Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180523070011_13651311.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T09:14:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180501091435_13625368.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T15:09:41Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180418150941_13609778.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403090001_13588985.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/174058766.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-29T10:35:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180329103522_13586706.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301090001_13550740.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T15:44:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180228154427_13549801.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T14:25:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180201142505_13518567.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T14:22:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201142237_13518561.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-15T17:36:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180115173617_13497097.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-15T10:49:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180115104926_13496370.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-12T09:16:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180112091624_13494488.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20180111070003_13492370.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-10T09:33:38Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180110093338_13491409.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-09T11:04:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180109110439_13489960.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-04T16:59:22Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180104165922_13485982.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T16:53:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180102165301_13482833.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102090001_13481803.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-28T13:28:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171228132801_13479322.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-22T12:07:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171222120718_13476274.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-20T10:48:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171220104801_13472536.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-19T18:28:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171219182802_13471626.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T17:04:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171207170429_13458213.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T17:39:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "M&S publishes provisional dividend dates",
+   "download_link": "NSM/data-migration/LSE20171205173928_13455043.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201090001_13450744.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-28T15:39:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171128153908_13446696.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-27T14:41:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171127144138_13445095.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-22T16:45:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171122164522_13440953.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20171108070007_13423902.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Director Announcement",
+   "download_link": "NSM/data-migration/LSE20171108070006_13423897.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-03T14:23:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20171103142311_13420315.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T11:21:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171101112116_13416600.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101090001_13416239.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-30T17:35:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171030173516_13413754.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-10T15:10:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171010151035_13392193.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002090002_13382031.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-28T13:47:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170928134749_13379070.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-08T16:27:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170908162705_13357228.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T09:00:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901090053_13348681.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-30T10:40:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170830104022_13345535.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-18T13:34:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170818133444_13335246.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-15T10:38:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170815103824_13330392.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801090002_13314626.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-31T15:21:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170731152102_13313635.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T14:56:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170719145615_13300845.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-13T14:12:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170713141200_13294414.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-13T13:53:44Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Special Resolutions available at NSM",
+   "download_link": "NSM/data-migration/LSE20170713135344_13294378.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-11T14:15:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170711141542_13291275.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-11T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20170711070004_13290260.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-11T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Special resolutions",
+   "download_link": "NSM/data-migration/138601751.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-07-11T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/data-migration/138701963.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-07-04T11:12:09Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170704111209_13283305.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:31:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170703093103_13281213.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T08:44:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703084415_13281149.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-28T16:33:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170628163311_13276689.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-26T13:29:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170626132906_13273224.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T09:57:36Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report - National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20170608095736_13253749.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting 2017",
+   "download_link": "NSM/data-migration/135856538.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-08T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM 2017 Proxy Form",
+   "download_link": "NSM/data-migration/135856531.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-07T14:30:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Private Shareholder Panel Meeting",
+   "download_link": "NSM/data-migration/LSE20170607143039_13252656.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T09:33:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601093359_13245467.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T16:26:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170531162638_13244518.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T07:00:12Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170524070012_13236213.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T16:49:51Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170522164951_13234326.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T11:36:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170522113647_13233806.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-11T16:07:19Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170511160719_13222951.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change - Chairman",
+   "download_link": "NSM/data-migration/LSE20170505070009_13215280.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T07:00:12Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change in Director Responsibilities",
+   "download_link": "NSM/data-migration/LSE20170503070012_13211848.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T08:41:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502084153_13210458.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-28T16:10:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170428161041_13209207.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-04T08:54:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170404085407_13182678.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T08:48:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403084834_13180643.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-01T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2017",
+   "download_link": "NSM/data-migration/135856529.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-28T17:12:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170328171202_13174627.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T09:11:37Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "M&S publishes provisional dividend dates",
+   "download_link": "NSM/data-migration/LSE20170317091137_13162588.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T09:22:29Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301092229_13143378.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T12:19:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170228121903_13142042.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T15:55:58Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170202155558_13116094.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T10:32:39Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20161213103239_013065423.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-08T09:15:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161208091532_013060657.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-07T17:04:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161207170400_013059739.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T16:54:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161201165432_013053857.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T09:31:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201093127_013053050.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-28T16:05:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161128160523_013048956.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T17:18:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161116171813_013037609.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-08T07:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Results",
+   "download_link": "NSM/data-migration/LSE20161108070011_013027161.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T09:10:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101091056_013019731.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T09:29:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003092958_012987118.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-29T17:51:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160929175157_012984302.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-26T17:37:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160926173752_012979262.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-12T15:37:38Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160912153738_012962802.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-05T11:38:43Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proposed changes to UK Head Office structure",
+   "download_link": "NSM/data-migration/LSE20160905113843_012954440.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-02T12:00:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160902120019_012952902.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-24T16:04:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160824160401_012942726.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-22T15:20:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160822152012_012939566.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-10T16:33:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160810163345_012926828.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-02T08:52:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160802085230_012915365.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-14T10:08:17Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special resolutions available at NSM",
+   "download_link": "NSM/data-migration/LSE20160714100817_012892577.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-12T14:43:21Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/data-migration/LSE20160712144321_012889692.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-12T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special resolutions",
+   "download_link": "NSM/data-migration/114613955.doc",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-07-11T10:29:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160711102917_012887459.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T17:15:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160708171507_012886588.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T17:13:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160708171315_012886581.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T17:12:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160708171236_012886579.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T13:31:46Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "1st Quarter Results Replacement",
+   "download_link": "NSM/data-migration/LSE20160707133146_012884453.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20160707070008_012883358.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T09:32:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701093242_012876618.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-24T11:53:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160624115301_012867447.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T16:05:46Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report - National Storage Mechanism",
+   "download_link": "NSM/data-migration/LSE20160615160546_012855494.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Performance Overview and Notice of Meeting",
+   "download_link": "NSM/data-migration/113025422.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-15T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/113025415.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-09T12:39:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160609123957_012848074.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-07T15:31:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160607153119_012844853.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T09:21:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601092123_012836733.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-25T07:00:12Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160525070012_012828417.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-12T11:57:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change - Change in Responsibilities",
+   "download_link": "NSM/data-migration/LSE20160512115701_012813846.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T13:45:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160511134525_012812324.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-10T17:39:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160510173919_012810970.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T08:46:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503084644_012800455.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-12T17:19:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160412171913_012774348.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-07T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q4 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160407070007_012767124.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T17:03:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401170325_012761136.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T08:40:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401084046_012759612.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2016",
+   "download_link": "NSM/data-migration/113025209.pdf",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-21T16:11:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160321161148_012746318.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-11T17:19:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160311171936_012734827.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-11T14:19:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160311141920_012734395.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-10T16:28:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160310162818_012732722.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T09:25:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301092544_012718266.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-25T17:28:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160225172856_012713455.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-24T17:03:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160224170300_012711533.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-24T08:36:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160224083626_012710562.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-23T16:49:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160223164914_012709785.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-22T17:01:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160222170100_012708075.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-19T17:06:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160219170644_012706427.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-19T08:58:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160219085806_012705378.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-18T17:05:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160218170520_012704635.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-17T17:25:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160217172544_012702980.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-16T17:11:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160216171116_012701221.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-15T17:03:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160215170352_012699697.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-12T16:52:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160212165234_012697896.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-11T17:18:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160211171803_012696193.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-11T08:00:13Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Triennial Actuarial Pension Valuation",
+   "download_link": "NSM/data-migration/LSE20160211080013_012694899.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T17:13:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160210171344_012694397.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-09T17:48:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160209174844_012692761.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-08T16:54:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160208165404_012690969.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-05T17:10:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160205171010_012689277.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T17:36:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160204173614_012687550.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T16:17:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160204161759_012687423.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T17:13:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160203171322_012685786.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T15:08:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change - Committee Membership",
+   "download_link": "NSM/data-migration/LSE20160203150802_012685445.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-02T17:12:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160202171213_012683950.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T17:27:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160201172736_012682061.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T14:04:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201140455_012681459.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-29T16:59:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160129165923_012679809.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-28T16:59:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160128165900_012677790.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-27T17:13:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160127171349_012676026.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-26T16:57:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160126165735_012674262.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-25T17:43:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160125174304_012672550.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-22T16:57:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160122165721_012670689.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-21T16:52:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160121165258_012668884.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-20T16:55:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160120165558_012667021.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T16:56:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160119165618_012665244.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-18T17:00:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160118170039_012663696.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-15T17:10:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160115171027_012661892.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T17:05:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160114170539_012660019.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T16:51:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160113165104_012658139.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-12T16:54:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160112165430_012656363.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T17:07:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160111170753_012654527.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T16:54:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160111165449_012654503.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-08T16:57:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160108165711_012652620.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T17:06:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160107170622_012650747.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160107070008_012649234.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T07:00:06Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20160107070006_012649170.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T16:48:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160106164855_012648928.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T16:44:43Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Six Monthly Return",
+   "download_link": "NSM/data-migration/LSE20160106164443_012648923.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T17:05:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160105170526_012647155.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T17:06:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160104170608_012645386.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T15:29:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104152929_012645102.html",
+   "company": "Marks & Spencer Group PLC",
+   "lei": "213800EJP14A79ZG1X44",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T12:43:55Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800EJP14A79ZG1X44",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3831562.html",
+   "disclosure_id": "3831562",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T12:43:55Z",
+   "seq_id": "3831562",
+   "company": "Marks & Spencer Group PLC",
+   "last_updated_date": "2026-08-22T12:09:44.056910986Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  },
+  {
+   "submitted_date": "2020-12-30T13:31:56Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800EJP14A79ZG1X44",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3830041.html",
+   "disclosure_id": "3830041",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-30T13:31:56Z",
+   "seq_id": "3830041",
+   "company": "Marks & Spencer Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.748606833Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  }
+ ]
 }

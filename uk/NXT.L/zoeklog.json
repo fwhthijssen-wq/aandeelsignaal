@@ -1,13 +1,1871 @@
 {
- "aantal": 0,
+ "aantal": 181,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800WQD8ECPZP9PH98', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800WQD8ECPZP9PH98', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800WQD8ECPZP9PH98', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800WQD8ECPZP9PH98', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800WQD8ECPZP9PH98",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 181
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-08T13:20:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3807868.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T13:53:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799772.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T17:39:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3783739.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T09:50:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3781568.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T17:52:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3779268.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T11:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3764005.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T14:59:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3762512.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3761361.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-19T15:00:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3752563.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T08:26:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735225.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T16:20:29Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Replacement:Results for Half Year Ending July 2020",
+   "download_link": "NSM/RNS/3729376.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T16:20:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3723718.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T16:14:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3723708.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T14:02:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3721123.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T06:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Results for the Half Year Ending July 2020 ",
+   "download_link": "NSM/RNS/3719134.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T12:38:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703314.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T13:41:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3676081.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T06:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3670330.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T13:25:21Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3666950.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T12:07:38Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3654777.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T15:37:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3646733.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T14:25:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643910.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:47:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611487.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T11:30:04Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3595555.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T08:01:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582718.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3578728.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T09:55:51Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of Rights Attaching to Equity Shares",
+   "download_link": "NSM/RNS/3575956.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T15:40:49Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3561639.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T06:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "NEXT Reopens Online, Warehousing and Distribution",
+   "download_link": "NSM/RNS/3560001.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T16:10:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3558081.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T18:03:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Covid Corporate Financing Facility (CCFF)",
+   "download_link": "NSM/data-migration/LSE20200403180309_3553378.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:40:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401174002_3550235.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:40:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401174002_3550235.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:06:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401090651_3549139.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:06:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401090651_3549139.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T09:34:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327093415_3543911.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T07:00:04Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "NEXT PLC - UPDATE ON OPERATIONS",
+   "download_link": "NSM/data-migration/LSE20200327070004_3543221.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T17:41:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200324174121_3539902.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T16:42:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323164200_3538030.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T13:12:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200323131201_3537526.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T17:09:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200320170923_3536344.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the Year Ending January 2020",
+   "download_link": "NSM/data-migration/LSE20200319070007_3532580.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T10:16:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302101608_3512051.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-13T17:32:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200213173249_3494103.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T17:13:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200212171301_3492589.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T17:07:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200211170701_3491149.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T17:32:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200210173219_3489771.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T17:32:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200207173219_3488352.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T18:10:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200206181009_3486974.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:13:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203101331_3481739.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-24T10:05:10Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Interim Review and Cancellation",
+   "download_link": "NSM/data-migration/LSE20200124100510_14397228.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T16:21:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200103162157_14371199.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200103070004_14369832.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T13:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191231133002_14367688.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-30T16:01:35Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Sir David Jones CBE",
+   "download_link": "NSM/data-migration/LSE20191230160135_14366108.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T14:00:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202140035_14331360.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191031170001_14289669.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "NEXT PLC - Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191030070002_14285667.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T16:24:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191015162425_14267090.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:21:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001092157_14248735.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T18:18:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923181846_14238033.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T17:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190920170005_14236071.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T07:00:23Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Results for the Half Year Ending July 2019",
+   "download_link": "NSM/data-migration/LSE20190919070023_14232633.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T15:35:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830153522_14208702.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T17:06:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808170637_14182448.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T17:40:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807174007_14180631.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T18:05:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190806180544_14178867.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T17:33:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190805173335_14177104.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:48:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731174812_14171322.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T16:26:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731162647_14171180.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:12Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190731070012_14169486.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T10:43:50Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190725104350_14163134.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T15:20:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190715152043_14149899.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:55:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628165524_14129931.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:54:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628165400_14129927.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T17:40:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190627174034_14127875.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T17:05:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190626170537_14125959.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T17:40:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190625174020_14124235.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T17:18:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190624171840_14122461.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T14:31:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190624143102_14122219.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T17:22:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190621172223_14120669.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T17:10:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190620171015_14118969.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T17:21:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190619172129_14117329.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T17:23:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190618172310_14115652.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T14:35:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190618143544_14115458.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T17:26:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190614172643_14112222.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T18:13:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190613181300_14110529.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T17:03:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190612170352_14108794.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T17:17:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190611171756_14107147.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T17:01:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190610170112_14105471.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T17:22:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190607172236_14103824.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190606070006_14100471.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T17:11:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604171151_14098517.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T16:38:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190604163814_14098479.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:27:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190603172716_14096857.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:32:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531173257_14094919.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:25:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190531172554_14094900.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:30:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190530173018_14093066.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T17:17:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190529171749_14091423.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T17:16:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528171652_14089749.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T17:18:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190524171836_14087574.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T16:39:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190524163955_14087506.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T17:28:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190523172816_14085873.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T18:09:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190522180947_14084202.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T17:31:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190521173123_14082499.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:03:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190520180333_14080773.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T17:50:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190520175009_14080764.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T17:33:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190517173354_14079137.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T17:47:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190516174710_14077483.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T14:31:19Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190516143119_14077209.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T17:24:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190515172456_14075607.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T17:57:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514175708_14073926.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T17:29:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190513172914_14072203.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T18:18:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510181801_14070528.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:37:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509173727_14068851.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:57:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508175747_14067189.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:43:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507174302_14065475.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:21:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507172109_14065458.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T12:15:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190507121513_14064966.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T17:52:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503175239_14063280.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T17:36:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502173636_14061573.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T16:00:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190502160023_14061462.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T17:17:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190501171731_14060038.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190501070006_14058406.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T17:10:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190430171053_14058092.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T17:08:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190430170852_14058087.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T17:29:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190429172920_14056109.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T17:28:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190425172818_14052557.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T17:42:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190423174243_14049052.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T18:16:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190418181636_14047180.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T18:17:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190417181749_14045365.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T17:16:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190416171613_14043629.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T17:19:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190415171953_14041844.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T17:11:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190412171137_14040079.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T09:54:32Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190412095432_14039332.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T17:13:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190411171316_14038362.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T17:37:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190410173754_14036681.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T17:13:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190405171321_14031430.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T17:55:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329175525_14022250.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T16:59:51Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190325165951_14014929.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:48:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190322174856_14013209.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T17:24:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190321172400_14011502.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T16:36:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190321163651_14011434.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T07:00:13Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "NEXT PLC Results for the Year Ending January 2019",
+   "download_link": "NSM/data-migration/LSE20190321070013_14009984.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T16:45:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228164504_13986046.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T12:50:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215125013_13971408.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T17:30:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190213173001_13968598.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T18:02:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190212180229_13967066.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T17:34:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190211173402_13965498.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T18:17:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208181736_13963932.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T17:48:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190208174801_13963918.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:48:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190207174851_13962437.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T11:35:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190207113559_13961934.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T18:07:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190206180701_13960913.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:25:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190205172556_13959358.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T18:05:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190204180546_13957762.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T18:26:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190201182605_13956162.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T17:13:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190131171323_13954269.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T17:11:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190131171133_13954268.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T15:39:19Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Issuer Substitution",
+   "download_link": "NSM/data-migration/LSE20190131153919_13954128.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T11:31:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190131113110_13953740.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T17:36:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190130173612_13952478.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T09:24:22Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190130092422_13951719.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T18:18:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190129181813_13950931.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T18:16:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190128181634_13949368.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T18:16:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190128181621_13949367.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T16:31:09Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190125163109_13947723.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T17:36:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190118173631_13940226.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T17:38:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190117173820_13938761.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T17:23:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190116172302_13937197.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T17:43:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190115174326_13935704.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-14T17:46:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190114174617_13934178.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T17:28:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190111172838_13932598.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T17:44:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190107174407_13926485.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T17:28:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190107172848_13926480.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T17:35:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190104173509_13924854.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:48:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103174855_13923442.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:38:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190103173814_13923433.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T07:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190103070010_13922028.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T11:26:48Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190102112648_13920950.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T12:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231120001_13919534.html",
+   "company": "Next PLC",
+   "lei": "213800WQD8ECPZP9PH98",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-08T13:20:38Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800WQD8ECPZP9PH98",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3807868.html",
+   "disclosure_id": "3807868",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-08T13:20:38Z",
+   "seq_id": "3807868",
+   "company": "Next PLC",
+   "last_updated_date": "2026-08-22T12:08:49.732966102Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  },
+  {
+   "submitted_date": "2020-12-01T13:53:05Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800WQD8ECPZP9PH98",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3799772.html",
+   "disclosure_id": "3799772",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-01T13:53:05Z",
+   "seq_id": "3799772",
+   "company": "Next PLC",
+   "last_updated_date": "2026-08-22T12:08:32.325153820Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-21",
+  "soort": "Final Results",
+  "titel": "NEXT PLC Results for the Year Ending January 2019",
+  "bedrijf": "Next PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190321070013_14009984.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 820032
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-03-19",
+  "soort": "Final Results",
+  "titel": "Results for the Year Ending January 2020",
+  "bedrijf": "Next PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200319070007_3532580.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 939483
+ }
+]

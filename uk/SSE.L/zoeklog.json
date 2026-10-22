@@ -1,13 +1,3271 @@
 {
- "aantal": 0,
+ "aantal": 321,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300KI75VYLLMSK856', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300KI75VYLLMSK856', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300KI75VYLLMSK856', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300KI75VYLLMSK856', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300KI75VYLLMSK856",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 321
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T11:00:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3830260.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-31T11:00:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3830258.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-22T13:39:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale of Gas Exploration and Production Assets",
+   "download_link": "NSM/RNS/3823997.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-15T15:06:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3815878.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T07:22:25Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SSEN Transmission response to Ofgem Determinations",
+   "download_link": "NSM/RNS/3807225.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-04T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale of stake in Dogger Bank Wind Farm ",
+   "download_link": "NSM/RNS/3803630.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T12:44:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3801391.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:41:06Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3798288.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:37:02Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3798264.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "DOGGER BANK WIND FARM",
+   "download_link": "NSM/RNS/3794277.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T11:43:55Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Interim Dividend Timetable ",
+   "download_link": "NSM/RNS/3787768.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T11:20:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3787730.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3783836.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T16:42:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3776236.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T16:19:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3767313.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T11:07:20Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Group Energy and Commercial Director",
+   "download_link": "NSM/RNS/3749643.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-13T06:00:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/RNS/3746292.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-09T12:22:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3744100.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-06T13:48:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR1 Notification of Major Holdings ",
+   "download_link": "NSM/RNS/3740076.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:14:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735710.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T06:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notification of Closed Period",
+   "download_link": "NSM/RNS/3732418.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T09:27:26Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3730250.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T12:18:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3727770.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T16:12:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3726598.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T09:05:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3719379.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T10:49:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3716921.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T10:45:59Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3716918.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T10:13:33Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "SALE OF SSE’S STAKE IN WALNEY OFFSHORE WIND FARM ",
+   "download_link": "NSM/RNS/3703064.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:16:18Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six-Monthly Return",
+   "download_link": "NSM/RNS/3702945.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:14:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702942.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T15:48:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Scrip Alternative",
+   "download_link": "NSM/RNS/3698839.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-13T09:59:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions at AGM 2020",
+   "download_link": "NSM/Portal/NI-000009379.docx",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-12T11:26:26Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3685798.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T14:25:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3681811.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T11:12:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675900.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T15:38:27Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Reference Price ",
+   "download_link": "NSM/RNS/3672999.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T13:44:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3672903.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T12:08:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3672803.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T11:24:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3672757.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T15:40:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1 Notification of Major Shareholding",
+   "download_link": "NSM/RNS/3670138.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T11:30:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Chair",
+   "download_link": "NSM/RNS/3669916.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T14:52:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3668439.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-27T12:44:32Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Early Redemption",
+   "download_link": "NSM/RNS/3668343.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-20T10:34:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1 Notification of Major Holdings",
+   "download_link": "NSM/RNS/3661381.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-16T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3657740.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-15T15:43:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3657634.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T16:11:22Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3653568.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T15:57:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000007522.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-07-10T09:41:39.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "SSE Plc - Single prospectus",
+   "download_link": "NSM/Portal/NI-000007611.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-10T08:38:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3652971.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T14:05:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/Portal/NI-000007455.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-09T14:01:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of meeting",
+   "download_link": "NSM/Portal/NI-000007454.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-09T13:57:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/Portal/NI-000007452.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-09T13:06:21Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of Annual Report and Accounts 2020",
+   "download_link": "NSM/RNS/3652011.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T06:11:07Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "SSE Response to Ofgem: RIIO-T2 Price Control",
+   "download_link": "NSM/RNS/3651521.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T15:57:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3645440.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T17:24:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3644098.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T17:29:12Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "ISSUE OF HYBRID CAPITAL SECURITIES",
+   "download_link": "NSM/RNS/3640741.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T14:32:50Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Final Dividend Timetable",
+   "download_link": "NSM/RNS/3630506.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T06:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results for the year end 31 March 2020",
+   "download_link": "NSM/RNS/3627978.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T06:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Final Investment Decision Viking Onshore Wind Farm",
+   "download_link": "NSM/RNS/3627982.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T15:43:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3620804.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T14:32:16Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Seagreen Offshore Wind Farm",
+   "download_link": "NSM/RNS/3614980.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T07:56:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611433.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T15:57:50Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Date for Publication of Full-Year Results ",
+   "download_link": "NSM/RNS/3600288.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T15:46:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3591786.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T06:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581047.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:19:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Rights Attaching to Ordinary Shares",
+   "download_link": "NSM/RNS/3576664.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T07:00",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000000814.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-16T07:00",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000000813.pdf",
+   "company": "SSE Plc",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-09T15:11:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3559608.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T16:15:00Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "NEW DUAL TRANCHE 5 AND 10 YEAR BOND ISSUE",
+   "download_link": "NSM/RNS/3556545.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T08:00:21Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "EMTN Programme Update",
+   "download_link": "NSM/RNS/3554105.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:41:32Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200403164132_3553316.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:41:32Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200403164132_3553316.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:36:41Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200403163641_3553300.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T16:36:41Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200403163641_3553300.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:58",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "SSE Plc;Scottish Hydro Electric Transmission PLC;Southern Electric Power Distribution plc;Scottish Hydro-Electric Power Distribution plc - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000000282.pdf",
+   "company": "SSE Plc;Scottish Hydro Electric Transmission PLC;Southern Electric Power Distribution plc;Scottish Hydro-Electric Power Distribution plc",
+   "lei": "549300KI75VYLLMSK856;549300ECJZDA7203MK64;549300SR1GYYNBZQGX56;549300OPROMBN0FGNC34",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-02T11:43:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200402114309_3551253.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T11:43:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200402114309_3551253.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T16:40:39Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200327164039_3544686.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T16:35:44Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200327163544_3544642.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T09:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200327090003_3543279.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200327070006_3543235.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:41:25Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164125_3543097.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:35:47Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163547_3543044.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:43:13Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164313_3541559.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:37:56Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163756_3541507.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:42:35Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164235_3539822.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:35:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163545_3539716.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T16:57:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323165740_3538103.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T08:59:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200319085916_3533054.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:47:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316164735_3528855.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:43:24Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200316164324_3528836.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:38:23Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200316163823_3528748.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T15:08:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310150825_3521866.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T09:42:56Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200310094256_3521126.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302070005_3510949.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T16:03:54Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/data-migration/LSE20200228160354_3510904.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T14:12:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200226141220_3507684.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200226070002_3506401.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-17T14:26:38Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Alternative",
+   "download_link": "NSM/data-migration/LSE20200217142638_3496801.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200211070006_3489744.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T15:45:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200210154512_3489646.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200210070005_3488340.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200207070002_3486950.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200206070002_3485516.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200205070005_3483994.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-04T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200204070003_3482534.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T16:33:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203163339_3482380.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200203070009_3480942.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T10:15:45Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Non-Discretionary Share Buyback Programme",
+   "download_link": "NSM/data-migration/LSE20200131101545_14405924.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200131070003_14405171.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T14:53:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200127145315_14399368.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T13:28:19Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20200123132819_14396093.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-22T12:52:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200122125216_14394230.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-20T16:09:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200120160941_14391206.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T07:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sale of SSE Energy Services to Ovo Energy",
+   "download_link": "NSM/data-migration/LSE20200115070005_14384282.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T10:13:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200114101305_14383326.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-08T11:35:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200108113551_14376181.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T16:16:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200106161619_14372965.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T07:00:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102070010_14368077.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191212070007_14345384.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T16:52:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210165236_14343278.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T07:15:43Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Clearance of SSE Energy Services Sale",
+   "download_link": "NSM/data-migration/LSE20191210071543_14342028.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T10:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SSE submits final RIIO-T2 Business Plan to Ofgem",
+   "download_link": "NSM/data-migration/LSE20191209100006_14340461.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T15:11:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191206151121_14339424.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191205070007_14335944.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191204070006_14334055.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191203070004_14332075.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T16:40:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202164029_14331674.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191202070009_14329937.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T11:16:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191127111604_14325370.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T07:15:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191125071505_14321087.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-22T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191122070004_14318733.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-18T07:15:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191118071504_14311571.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T15:04:09Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20191114150409_14308839.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T15:00:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191114150033_14308837.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191114070004_14307314.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20191113070008_14305462.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191113070004_14305430.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191112070001_14303641.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T07:15:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191111071502_14302266.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191108070002_14299835.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T16:23:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191107162320_14299649.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191107070004_14297897.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191106070004_14295960.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191105070006_14294059.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T07:15:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191104071504_14292541.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T15:53:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101155324_14291757.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191101070004_14289935.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191031070004_14287706.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191030070003_14285697.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191029070002_14283792.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-28T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191028070008_14281962.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T15:15:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191017151527_14270585.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191017070005_14269175.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191016070005_14267378.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191015070002_14265662.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191014070003_14264011.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191011070002_14262292.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191010070002_14260633.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191009070006_14258980.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191008070005_14257267.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T09:32:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191007093209_14256197.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T07:15:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191007071505_14255935.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-04T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191004070002_14253713.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191003070002_14251919.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191002070003_14250082.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T15:27:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001152739_14249671.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T07:00:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notification of Closed Period",
+   "download_link": "NSM/data-migration/LSE20190926070011_14241978.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T16:49:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190924164927_14239790.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T12:48:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923124827_14237458.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T16:02:35Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "New 16 year Green Bond",
+   "download_link": "NSM/data-migration/LSE20190920160235_14235949.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T08:24:45Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "CFD Allocation - Dogger Bank Wind Farm Results",
+   "download_link": "NSM/data-migration/LSE20190920082445_14235035.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T08:24:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "CFD Allocation - Seagreen Results",
+   "download_link": "NSM/data-migration/LSE20190920082428_14235034.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T16:29:03Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190918162903_14232283.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T15:57:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190916155733_14228520.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T14:16:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190913141629_14226508.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T07:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Agreement to sell SSE Energy Services to OVO",
+   "download_link": "NSM/data-migration/LSE20190913070008_14225173.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T15:13:40Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190911151340_14223014.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T09:22:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911092244_14222305.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T09:31:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190905093149_14215196.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T09:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902090003_14209728.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T09:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Six Monthly Return",
+   "download_link": "NSM/data-migration/LSE20190902090003_14209737.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T17:21:33Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Alternative",
+   "download_link": "NSM/data-migration/LSE20190827172133_14203639.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T18:04:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820180431_14196353.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T14:29:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190820142910_14196063.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820070005_14194733.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T15:59:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190819155900_14194482.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T17:13:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190816171308_14192861.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190816070003_14191203.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190815070005_14189611.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190814070003_14187832.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190813070005_14186115.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Statement on SSE Energy Services",
+   "download_link": "NSM/data-migration/LSE20190812070004_14184319.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190812070004_14184346.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T14:47:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190809144735_14183987.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190809070003_14182612.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808070004_14180773.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807070002_14178974.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T14:37:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Non-Discretionary Share Buyback Programme",
+   "download_link": "NSM/data-migration/LSE20190806143732_14178577.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T14:25:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801142523_14173105.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190731070004_14169424.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T16:41:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190730164126_14169201.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T16:09:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190730160927_14169153.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190730070013_14167605.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190729070005_14165770.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T08:11:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190726081114_14164599.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190725070005_14162212.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190724070005_14160532.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190723070007_14158810.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T16:09:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722160947_14158560.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T16:08:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190722160810_14158559.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190722070004_14157107.html",
+   "company": "Sse PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190719070002_14155443.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T16:08:06Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190718160806_14155177.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190718070004_14153729.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190718070004_14153721.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T15:55:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190717155507_14153483.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190717070002_14152005.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190716070003_14150262.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190715070004_14148465.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-12T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190712070002_14145938.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190711070005_14144234.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T16:53:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710165329_14144038.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190710070002_14142535.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190709070002_14140853.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190708070005_14139180.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-05T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190705070004_14137635.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T16:13:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190704161343_14137415.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190704070004_14135902.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190703070004_14134184.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190702070003_14132355.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T15:44:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701154430_14131955.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:25:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares - Replacement",
+   "download_link": "NSM/data-migration/LSE20190628162546_14129865.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628070006_14128128.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T10:23:25Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "A Network for Net Zero",
+   "download_link": "NSM/data-migration/LSE20190627102325_14126993.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190627070004_14126152.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190626070004_14124355.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190625070005_14122622.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T07:00:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190624070012_14120893.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190621070003_14119149.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190620070004_14117479.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T12:32:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190619123223_14117007.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190619070002_14115806.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190618070007_14114094.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190617070005_14112368.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T14:00:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190614140003_14111947.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190614070005_14110661.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T13:15:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "GB CAPACITY MARKET AUCTION PROVISIONAL RESULTS",
+   "download_link": "NSM/data-migration/LSE20190613131501_14110088.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T13:15:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "PROPOSED CLOSURE OF FIDDLER'S FERRY COAL STATION",
+   "download_link": "NSM/data-migration/LSE20190613131501_14110089.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190613070004_14108971.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190612070002_14107224.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T16:30:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611163021_14107026.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190611070005_14105656.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190610070004_14103980.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190606070005_14100432.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190605070003_14098679.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T09:04:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604090409_14097593.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T16:49:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603164924_14096800.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190603070008_14095163.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T14:46:52Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Final Dividend Timetable",
+   "download_link": "NSM/data-migration/LSE20190531144652_14094605.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190531070003_14093218.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190530070002_14091565.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190529070003_14089897.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528070004_14087889.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190524070005_14086030.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190523070006_14084369.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T11:27:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Non-Discretionary Share Buyback Programme",
+   "download_link": "NSM/data-migration/LSE20190522112758_14083657.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Executive Chair of SSE Energy Services appointed",
+   "download_link": "NSM/data-migration/LSE20190522070006_14082723.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results for the year to 31 March 2019",
+   "download_link": "NSM/data-migration/LSE20190522070005_14082692.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Board of SSE plc",
+   "download_link": "NSM/data-migration/LSE20190522070005_14082694.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T15:50:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190508155054_14067027.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T16:32:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501163249_14059964.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190426070005_14052721.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T12:42:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares Correction",
+   "download_link": "NSM/data-migration/LSE20190425124223_14052171.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190425070002_14050942.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190424070003_14049203.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190423070005_14047474.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190418070004_14045508.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T07:27:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190417072752_14044240.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190416070004_14042026.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190415070005_14040291.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T14:58:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190412145828_14039892.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190412070005_14038571.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190411070007_14036847.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T16:36:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190410163627_14036590.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190409070005_14033324.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190408070004_14031609.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190405070003_14029947.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T08:23:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190404082329_14028758.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190403070004_14026354.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190402070008_14024527.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:54:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401115403_14023633.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T16:37:42Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Revolving Credit Facility",
+   "download_link": "NSM/data-migration/LSE20190329163742_14022127.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T18:17:23Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Non-Discretionary Share Buyback Programme",
+   "download_link": "NSM/data-migration/LSE20190328181723_14020246.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T07:00:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notification of Closed Period",
+   "download_link": "NSM/data-migration/LSE20190328070014_14018649.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T12:41:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190322124106_14012787.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T09:53:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190320095346_14009025.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T13:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190314130005_14002731.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T16:35:29Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190313163529_14001261.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T12:01:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308120126_13995874.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T14:06:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301140658_13987661.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T09:14:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Alternative",
+   "download_link": "NSM/data-migration/LSE20190219091401_13974096.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T15:48:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208154820_13963803.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190208070002_13962559.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T10:47:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201104724_13955354.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T07:10:22Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "SALE OF STAKE IN STRONELAIRG AND DUNMAGLASS",
+   "download_link": "NSM/data-migration/LSE20190201071022_13954954.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T16:18:36Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend Scheme Reference Price",
+   "download_link": "NSM/data-migration/LSE20190124161836_13946128.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T14:33:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190123143324_13944522.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T16:06:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190118160606_13940139.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-14T13:05:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190114130556_13933853.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T15:57:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190111155749_13932468.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T11:07:21Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Completion of Caithness-Moray Transmission Link",
+   "download_link": "NSM/data-migration/LSE20190111110721_13932125.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T16:55:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Appointment of new External Auditor",
+   "download_link": "NSM/data-migration/LSE20190107165501_13926448.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102070005_13920013.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T11:09:54Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "SSE Telecoms Transaction",
+   "download_link": "NSM/data-migration/LSE20181221110954_13913263.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T09:16:23Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Credit Rating Downgrade",
+   "download_link": "NSM/data-migration/LSE20181220091623_13911175.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SSE ENERGY SERVICES TRANSACTION NOT PROCEEDING",
+   "download_link": "NSM/data-migration/LSE20181217070006_13905304.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T14:58:23Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Completion of 228MW Stronelairg Onshore Wind Farm",
+   "download_link": "NSM/data-migration/LSE20181211145823_13899696.html",
+   "company": "SSE PLC",
+   "lei": "549300KI75VYLLMSK856",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T11:00:09Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300KI75VYLLMSK856",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3830260.html",
+   "disclosure_id": "3830260",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T11:00:09Z",
+   "seq_id": "3830260",
+   "company": "SSE PLC",
+   "last_updated_date": "2026-08-22T12:09:44.056001105Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-31T11:00:09Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300KI75VYLLMSK856",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3830258.html",
+   "disclosure_id": "3830258",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T11:00:09Z",
+   "seq_id": "3830258",
+   "company": "SSE PLC",
+   "last_updated_date": "2026-08-22T12:09:44.055998775Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

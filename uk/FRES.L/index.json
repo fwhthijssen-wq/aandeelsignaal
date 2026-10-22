@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-03-01",
+  "soort": "Final Results",
+  "titel": "Financial Results for the Year Ended 31 Dec 2015",
+  "bedrijf": "Fresnillo PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160301070010_012717691.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 1098406
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report & Accounts, 2016",
+  "bedrijf": "Fresnillo PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/132071669.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 7362324
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report & Accounts 2017",
+  "bedrijf": "Fresnillo PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/169505149.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 7350972
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Fresnillo plc Annual Report 2018",
+  "bedrijf": "Fresnillo PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/218531433.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 5170846
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-04-28",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report 2019",
+  "bedrijf": "Fresnillo Plc",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000002372.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 6821651
+ }
+]

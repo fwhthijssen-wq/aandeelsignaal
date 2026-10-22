@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-01",
+  "soort": "Final Results",
+  "titel": "Annual Financial Report",
+  "bedrijf": "London Stock Exchange Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190301070007_13986365.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1124124
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-28",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "London Stock Exchange Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200228070005_3509558.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1041756
+ }
+]

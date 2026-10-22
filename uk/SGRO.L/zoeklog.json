@@ -1,13 +1,1121 @@
 {
- "aantal": 0,
+ "aantal": 106,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800XC35KGM9NFC641', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800XC35KGM9NFC641', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800XC35KGM9NFC641', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800XC35KGM9NFC641', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800XC35KGM9NFC641",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 106
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-24T09:32:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3826469.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T10:45:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3819873.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T10:30:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "COMPLETION OF ACQUISITION OF SOFIBUS PATRIMOINE",
+   "download_link": "NSM/RNS/3819136.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-15T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "SOFIBUS PATRIMOINE CONTROLLING INTEREST PURCHASE",
+   "download_link": "NSM/RNS/3814523.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T14:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3797623.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T16:00:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3793525.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T07:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Secondary listing of shares on Euronext Paris",
+   "download_link": "NSM/RNS/3790767.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T07:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "SEGRO Receives Approval of Secondary Listing",
+   "download_link": "NSM/RNS/3786731.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T14:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3777386.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T15:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765448.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T13:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3758121.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T06:01:01Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/RNS/3754370.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T06:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "SEGRO ACQUIRES £133 MILLION URBAN WAREHOUSE PARK ",
+   "download_link": "NSM/RNS/3754362.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T13:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733554.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T13:30:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Scrip Application for Listing",
+   "download_link": "NSM/RNS/3724727.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T09:00:01Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "CANCELLATION OF NOTES",
+   "download_link": "NSM/RNS/3719251.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T14:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3703369.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T10:00:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3700137.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-20T12:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Price Setting Announcement  ",
+   "download_link": "NSM/RNS/3693626.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T09:00:04Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "CANCELLATION OF NOTES ",
+   "download_link": "NSM/RNS/3691424.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Results for the six months ended 30 June 2020",
+   "download_link": "NSM/RNS/3677728.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:30:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674311.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:00:06Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "EUR450 MILLION US PRIVATE PLACEMENT DEBT ISSUE",
+   "download_link": "NSM/RNS/3665762.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "REDEMPTION OF REMAINING 7.000% NOTES DUE 2022 ",
+   "download_link": "NSM/RNS/3665758.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "REDEMPTION OF REMAINING 6.750% NOTES DUE 2021 ",
+   "download_link": "NSM/RNS/3665754.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T06:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "UPDATE ON UK JUNE QUARTER RENT COLLECTION",
+   "download_link": "NSM/RNS/3649453.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T13:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642053.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T06:00:09Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "SEGRO EXITS AUSTRIA WITH SALE OF CITY PARK VIENNA",
+   "download_link": "NSM/RNS/3631957.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3624881.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T06:00:07Z",
+   "type": "Result of Equity Issue",
+   "type_code": "ROI",
+   "headline": "Results of Placing",
+   "download_link": "NSM/RNS/3621000.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T15:41:04Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "RETAIL OFFER VIA PRIMARYBID.COM",
+   "download_link": "NSM/RNS/3620769.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T15:36:12Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "PLACING TO FUND CONTINUED EXPANSION",
+   "download_link": "NSM/RNS/3620768.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T15:36:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/RNS/3620762.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T06:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of prime London urban warehouse park",
+   "download_link": "NSM/RNS/3618170.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613330.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T11:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610012.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T10:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594179.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586165.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T13:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583294.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T12:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581387.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T11:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3581380.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T13:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3579469.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T12:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Scrip Application for Listing",
+   "download_link": "NSM/RNS/3579464.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T11:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3579454.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T10:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3577688.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T15:51",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business from AGM",
+   "download_link": "NSM/Portal/NI-000001332.docx",
+   "company": "SEGRO plc",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-21T13:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3569024.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T12:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3569023.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T10:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567200.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T10:30:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3564087.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T11:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3558794.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T13:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3557808.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T13:00:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Blocklisting - Application for Listing ",
+   "download_link": "NSM/RNS/3556005.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T12:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555998.html",
+   "company": "SEGRO PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Statement on COVID-19",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550309.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Statement on COVID-19",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550309.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T15:15:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200327151503_3544558.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T13:00:05Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Price Setting Announcement",
+   "download_link": "NSM/data-migration/LSE20200326130005_3542610.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T13:26:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200309132638_3520027.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T14:00:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200302140002_3512200.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T13:00:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200228130001_3510572.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "SEGRO results for the year ended 31 December 2019",
+   "download_link": "NSM/data-migration/LSE20200214070005_3494155.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T07:00:17Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "SEGRO ANNOUNCES BOARD AND MANAGEMENT CHANGES",
+   "download_link": "NSM/data-migration/LSE20200128070017_14399983.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191213140005_14348586.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T12:30:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Trustee Market Purchase of Shares",
+   "download_link": "NSM/data-migration/LSE20191213123005_14348458.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T07:00:09Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "SEGRO TO SELL £241M OF UK BIG BOX WAREHOUSES",
+   "download_link": "NSM/data-migration/LSE20191210070009_14341554.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20191016070006_14267404.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930140004_14247320.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923113001_14237291.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T11:00:05Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Scrip Dividend Scheme - Application for Listing",
+   "download_link": "NSM/data-migration/LSE20190919110005_14233524.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T09:22:54Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190903092254_14211703.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T14:00:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190902140004_14210477.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T12:30:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Calculation Price",
+   "download_link": "NSM/data-migration/LSE20190822123004_14199329.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T13:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731130002_14170842.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Results for the six months ended 30 June 2019",
+   "download_link": "NSM/data-migration/LSE20190724070004_14160524.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T15:49:09Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of change of date for Half Year Results",
+   "download_link": "NSM/data-migration/LSE20190701154909_14131963.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701153001_14131909.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T14:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628143002_14129581.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T14:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190617143003_14113690.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T15:35:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "SELP JV PRICES EUR 500M 1.5% UNSECURED BOND ISSUE",
+   "download_link": "NSM/data-migration/LSE20190613153505_14110360.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T14:30:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531143003_14094584.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T10:38:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190531103813_14094117.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T13:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523130002_14085506.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T14:30:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing",
+   "download_link": "NSM/data-migration/LSE20190515143001_14075334.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190515133001_14075269.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T11:30:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Application for Listing",
+   "download_link": "NSM/data-migration/LSE20190510113002_14069953.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "CANCELLATION OF Â£250M 5.625% BONDS DUE 2020",
+   "download_link": "NSM/data-migration/LSE20190508070002_14065585.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502143001_14061322.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190430153001_14057849.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T11:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Scrip Dividend Scheme - Application for Listing",
+   "download_link": "NSM/data-migration/LSE20190430113001_14057347.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T15:30:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190418153001_14046945.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "REDEMPTION OF Â£250 MILLION 5.625% BONDS DUE 2020",
+   "download_link": "NSM/data-migration/LSE20190418070003_14045493.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20190417070002_14043804.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329140005_14021837.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T12:30:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend Scheme - Scrip Calculation Price",
+   "download_link": "NSM/data-migration/LSE20190328123001_14019786.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T14:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190313140001_14001105.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304140001_13989323.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T11:30:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190304113001_13989113.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T14:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190301140001_13987645.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228140002_13985747.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190220140001_13976060.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T14:05:27Z",
+   "type": "Result of Equity Issue",
+   "type_code": "ROI",
+   "headline": "Results of Placing",
+   "download_link": "NSM/data-migration/LSE20190215140527_13971476.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T07:01:01Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Results for the year ended 31 December 2018",
+   "download_link": "NSM/data-migration/LSE20190215070101_13970389.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T07:00:03Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "PLACING TO FUND DEVELOPMENT PROGRAMME",
+   "download_link": "NSM/data-migration/LSE20190215070003_13970346.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T07:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "APPOINTMENT OF NON-EXECUTIVE DIRECTOR",
+   "download_link": "NSM/data-migration/LSE20190206070003_13959530.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T14:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190111140001_13932357.html",
+   "company": "Segro PLC",
+   "lei": "213800XC35KGM9NFC641",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-24T09:32:42Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800XC35KGM9NFC641",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3826469.html",
+   "disclosure_id": "3826469",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-24T09:32:42Z",
+   "seq_id": "3826469",
+   "company": "SEGRO PLC",
+   "last_updated_date": "2026-08-22T12:09:25.735326631Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-18T10:45:02Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director Declaration",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800XC35KGM9NFC641",
+   "classifications": "",
+   "download_link": "NSM/RNS/3819873.html",
+   "disclosure_id": "3819873",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T10:45:02Z",
+   "seq_id": "3819873",
+   "company": "SEGRO PLC",
+   "last_updated_date": "2026-08-22T12:09:07.200779669Z",
+   "headline": "Director Declaration",
+   "type_code": "RDN"
+  }
+ ]
 }

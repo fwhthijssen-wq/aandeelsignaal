@@ -1,13 +1,3421 @@
 {
- "aantal": 0,
+ "aantal": 336,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138005RN5XYLTF8G138', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138005RN5XYLTF8G138', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138005RN5XYLTF8G138', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138005RN5XYLTF8G138', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138005RN5XYLTF8G138",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 336
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T10:48:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3831222.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-29T17:43:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3828939.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-23T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of businesses in Asia and Australia",
+   "download_link": "NSM/RNS/3824353.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T16:47:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3817319.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-15T14:10:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3815809.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T17:16:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000015922.pdf",
+   "company": "SAGE GROUP PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-10T17:12:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000015919.pdf",
+   "company": "SAGE GROUP PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-10T17:04:08Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3811273.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of Polish Business",
+   "download_link": "NSM/RNS/3808238.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T18:15:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3808195.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-08T07:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3806685.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-04T18:24:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3805041.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T18:19:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3803573.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T15:30:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Financial Year 2020 Annual Report and Accounts",
+   "download_link": "NSM/Portal/NI-000015513.pdf",
+   "company": "SAGE GROUP PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-12-02T15:19:42Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3801606.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T13:57:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3797977.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T11:34:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3791771.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T16:54:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3788071.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3786802.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T12:32:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765309.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T15:35:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3754258.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T15:16:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733929.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T08:49:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3718034.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T12:25:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711405.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-08T15:08:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3710169.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T16:04:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701518.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-27T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chairman Retirement",
+   "download_link": "NSM/RNS/3698938.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T16:23:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3688774.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-13T11:20:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3687155.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T13:29:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3680412.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677729.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T13:27:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3674447.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-23T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update ",
+   "download_link": "NSM/RNS/3664517.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T15:36:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642284.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3640085.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T13:12:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3637537.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T10:46:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3624740.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T09:01:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3621600.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T13:02:39Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3619252.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:13:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610577.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T16:26:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3603135.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T06:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3593314.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T16:54:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582037.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:58:18Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Publication of Articles of Association ",
+   "download_link": "NSM/RNS/3576709.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T06:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3570984.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T14:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure under S. 430(2B) Companies Act 2006",
+   "download_link": "NSM/RNS/3556276.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T06:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading and COVID-19 Update",
+   "download_link": "NSM/RNS/3553483.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:15:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sage completes disposal of Brazilian Business",
+   "download_link": "NSM/data-migration/LSE20200401071506_3549024.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:15:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sage completes disposal of Brazilian Business",
+   "download_link": "NSM/data-migration/LSE20200401071506_3549024.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T17:27:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331172715_3548378.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200319070005_3532572.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T13:47:34Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Suspension of share buy-back programme",
+   "download_link": "NSM/data-migration/LSE20200318134734_3531907.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T18:09:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200317180957_3530657.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T18:23:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200316182330_3528967.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T17:25:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200313172540_3527074.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T18:18:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200312181801_3525469.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Share buy-back programme",
+   "download_link": "NSM/data-migration/LSE20200312070002_3523766.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T15:11:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Sage completes disposal, announces share buy-back",
+   "download_link": "NSM/data-migration/LSE20200311151103_3523519.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T10:06:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200309100602_3519598.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T17:55:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200306175537_3518817.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T17:50:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200306175033_3518813.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T07:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of Brazilian business",
+   "download_link": "NSM/data-migration/LSE20200302070005_3511213.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T17:08:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200228170852_3511079.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T15:35:17Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200225153517_3506312.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T15:29:21Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20200225152921_3506298.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Special Resolutions",
+   "download_link": "NSM/data-migration/266431932.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-25T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Results",
+   "download_link": "NSM/data-migration/266431930.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-06T15:16:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200206151604_3486813.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T17:12:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200131171229_14406751.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T16:00:24Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200123160024_14396253.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM and Proxy Forms",
+   "download_link": "NSM/data-migration/261380304.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-01-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM and Proxy Forms",
+   "download_link": "NSM/data-migration/261380296.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-01-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM and Proxy Forms",
+   "download_link": "NSM/data-migration/261380297.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-01-22T15:57:53Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200122155753_14394477.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-22T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200122070002_14392951.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200117070006_14387895.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200117070006_14387894.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T15:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200116153004_14387621.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T15:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200116153004_14387621.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T16:19:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200114161934_14383894.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T16:19:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200114161934_14383894.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T12:57:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191231125754_14367619.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-27T07:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191227070006_14362913.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T14:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217140501_14352700.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T11:36:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191216113648_14350366.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T15:44:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210154435_14343189.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T16:31:37Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191206163137_14339524.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T16:56:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191205165616_14337779.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T13:35:47Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20191204133547_14335429.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T14:52:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203145252_14333640.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T16:10:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191129161039_14329489.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T15:01:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191126150120_14324053.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-20T16:43:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191120164331_14316604.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-20T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "The Sage Group plc audited results for FY19",
+   "download_link": "NSM/data-migration/LSE20191120070006_14314965.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-18T07:00:08Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of Sage Pay",
+   "download_link": "NSM/data-migration/LSE20191118070008_14311147.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T16:57:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191105165726_14295559.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T16:57:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191105165726_14295559.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T16:48:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191031164802_14289651.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T17:38:31Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191010173831_14262173.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T18:27:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930182713_14247816.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report & Accounts",
+   "download_link": "NSM/data-migration/254119915.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-23T16:14:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190923161431_14237887.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T11:01:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190916110143_14227878.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T18:27:53Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "The Sage Group plc Statement re. Press Comment",
+   "download_link": "NSM/data-migration/LSE20190909182753_14219639.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T17:03:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190909170315_14219571.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T16:43:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830164310_14208800.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T16:56:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190815165649_14191070.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T17:44:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190813174427_14187675.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T17:24:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190813172437_14187625.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T18:00:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190806180040_14178861.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:15:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801161518_14173304.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T16:45:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731164514_14171221.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20190725070006_14162244.html",
+   "company": "Sage Group PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T14:53:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190718145307_14155097.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:08:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628160816_14129835.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T16:09:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190626160959_14125881.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T17:38:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Grant of Options under Sage Save & Share Plan",
+   "download_link": "NSM/data-migration/LSE20190617173841_14113937.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T16:55:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531165509_14094805.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T09:53:58Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190531095358_14094022.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T16:20:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190530162058_14092981.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T16:20:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190530162058_14092981.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T13:45:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190530134547_14092762.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T13:45:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190530134547_14092762.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T16:24:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190520162450_14080672.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T16:22:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190520162238_14080669.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Appointment",
+   "download_link": "NSM/data-migration/LSE20190517070005_14077700.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190517070002_14077651.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:02:56Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190501130256_14059617.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T15:26:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190430152645_14057842.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T16:35:17Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190402163517_14026100.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T08:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update on financial reporting and disclosure",
+   "download_link": "NSM/data-migration/LSE20190402083004_14025093.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T18:06:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329180641_14022269.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T15:56:16Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Directors Changes",
+   "download_link": "NSM/data-migration/LSE20190325155616_14014831.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T16:14:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322161414_14013045.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T16:14:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322161414_14013045.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T17:11:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190314171100_14003030.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T14:46:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305144633_13991068.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:28:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190228172846_13986132.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T15:51:53Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190227155153_13984138.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/221131239.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-22T07:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of US Payroll Outsourcing Business",
+   "download_link": "NSM/data-migration/LSE20190222070005_13978027.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T12:48:25Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Proposed changes to Directors' remuneration policy",
+   "download_link": "NSM/data-migration/LSE20190214124825_13969870.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:21:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190207172132_13962418.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T17:21:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190207172132_13962418.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:03:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190205170315_13959335.html",
+   "company": "Aviva PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-05T17:03:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190205170315_13959335.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T13:35:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201133533_13955763.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T14:20:43Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190122142043_13943026.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20190117070004_13937336.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T13:01:16Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of US Payroll outsourcing business",
+   "download_link": "NSM/data-migration/LSE20190115130116_13935308.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231090001_13919061.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T16:23:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181217162335_13906732.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T14:59:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Notification of Transaction of PDMR",
+   "download_link": "NSM/data-migration/LSE20181212145940_13901461.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-10T13:00:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181210130021_13897881.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-06T17:23:27Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20181206172327_13894849.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-06T09:33:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181206093357_13894029.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-05T16:04:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181205160437_13893048.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T16:33:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181204163303_13891395.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T07:00:19Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Group Chief Financial Officer",
+   "download_link": "NSM/data-migration/LSE20181204070019_13889948.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-30T17:04:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181130170439_13887736.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-30T16:59:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181130165933_13887719.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-28T15:57:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181128155705_13884098.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-26T13:24:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181126132435_13880523.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-23T16:53:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181123165322_13879130.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-21T13:22:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181121132207_13875805.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-21T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20181121070005_13874323.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-15T17:32:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181115173240_13869136.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T16:55:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181109165519_13862330.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-02T14:40:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181102144050_13853649.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-02T07:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Group Chief Executive Officer",
+   "download_link": "NSM/data-migration/LSE20181102070003_13852417.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T14:48:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101144832_13851930.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-26T14:04:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Notification of director's interest in shares",
+   "download_link": "NSM/data-migration/LSE20181026140418_13844475.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-25T14:12:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181025141206_13842805.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-12T13:44:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181012134415_13827356.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-10T16:17:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181010161746_13824008.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-08T16:11:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181008161136_13820686.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM Proxy Form 2019",
+   "download_link": "NSM/data-migration/208242913.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report & Accounts 30 September 2018",
+   "download_link": "NSM/data-migration/208242952.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice 2019",
+   "download_link": "NSM/data-migration/208242991.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-09-26T14:58:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180926145837_13805796.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-25T14:38:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180925143851_13804075.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-04T16:08:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180904160842_13778600.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-31T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180831070005_13773830.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-22T17:54:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180822175403_13765154.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-02T07:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20180802070010_13740626.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T16:43:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801164344_13740382.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-17T16:35:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180717163521_13721319.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-10T11:23:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180710112313_13712281.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-04T16:37:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180704163727_13706052.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T16:28:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180703162844_13704282.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-29T17:51:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180629175141_13700314.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-27T16:02:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180627160236_13696294.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-25T09:17:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180625091720_13691953.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-12T16:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180612163002_13676890.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-08T17:22:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180608172230_13673449.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-06T13:20:54Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180606132054_13669528.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-04T12:29:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Grant of Options under Sage Save & Share Plan",
+   "download_link": "NSM/data-migration/LSE20180604122913_13665867.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-30T09:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180530090001_13659505.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-25T13:33:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180525133314_13656165.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T16:26:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180509162645_13635194.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T07:00:14Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180502070014_13626610.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-30T16:28:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180430162846_13624411.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-17T14:55:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180417145523_13607996.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-13T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20180413070002_13603072.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T07:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180404070001_13590430.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-22T09:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Lisitng Application",
+   "download_link": "NSM/data-migration/LSE20180322090003_13577082.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-13T16:06:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180313160622_13565567.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T16:56:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180228165615_13549892.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T14:52:31Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180228145231_13549660.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions passed at AGM",
+   "download_link": "NSM/data-migration/164536618.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-23T12:00:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180223120059_13544256.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-31T17:01:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180131170118_13516927.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-30T14:26:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180130142656_13514831.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-29T16:23:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180129162340_13513427.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-26T16:33:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180126163307_13511758.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-25T13:30:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Treasury Stock",
+   "download_link": "NSM/data-migration/LSE20180125133006_13509807.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-25T13:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20180125130002_13509781.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-24T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Update",
+   "download_link": "NSM/data-migration/LSE20180124070005_13507090.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-17T17:09:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180117170916_13500228.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T14:46:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102144610_13482598.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-18T07:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171218070004_13468381.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-11T13:39:08Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20171211133908_13461053.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-11T08:56:20Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20171211085620_13460444.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T17:22:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171207172202_13458251.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T17:18:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171207171839_13458246.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T17:16:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171207171641_13458241.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T16:01:24Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171206160124_13456469.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T07:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171205070003_13453618.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-30T16:39:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171130163909_13449950.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-30T15:08:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171130150838_13449746.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-28T16:26:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171128162658_13446737.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-22T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20171122070004_13439730.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-20T16:39:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171120163944_13437908.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T16:58:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101165827_13417321.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-09T09:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20171009090001_13390037.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T09:59:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002095929_13382221.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/155233254.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-30T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/155233175.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-14T07:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170914070002_13362162.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T14:42:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170912144245_13360259.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-31T16:07:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170831160713_13347884.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-17T11:22:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170817112231_13333502.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-04T16:58:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170804165827_13320518.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-03T16:43:54Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Sage completes the acquisition of Intacct",
+   "download_link": "NSM/data-migration/LSE20170803164354_13318997.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T17:27:48Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Sage completes disposal of North American Payments",
+   "download_link": "NSM/data-migration/LSE20170801172748_13315843.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-31T16:43:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170731164312_13313801.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-27T16:50:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170727165056_13310447.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-27T09:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170727090001_13309520.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-25T17:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20170725170003_13307176.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-25T17:00:01Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Intacct",
+   "download_link": "NSM/data-migration/LSE20170725170001_13307177.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-30T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170630160001_13280260.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-06T13:03:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170606130308_13251016.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-02T15:19:18Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of North American Payments business",
+   "download_link": "NSM/data-migration/LSE20170602151918_13248149.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T15:50:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Grant of Options under Sage Save & Share Plan",
+   "download_link": "NSM/data-migration/LSE20170601155024_13246455.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T14:00:01Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "New leadership appointments",
+   "download_link": "NSM/data-migration/LSE20170601140001_13246192.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T16:21:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170531162123_13244508.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170503070010_13211814.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T09:23:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502092342_13210535.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T16:16:15Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170331161615_13179622.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T07:00:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Appointment of Non-executive Director",
+   "download_link": "NSM/data-migration/LSE20170317070008_13162154.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T15:33:51Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Treasury Stock",
+   "download_link": "NSM/data-migration/LSE20170303153351_13147309.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T14:34:04Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170303143404_13147196.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T07:55:01Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170303075501_13146384.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T16:09:32Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170228160932_13142361.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T11:31:24Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170228113124_13141978.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions passed at AGM",
+   "download_link": "NSM/data-migration/128615326.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-02-21T16:22:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170221162225_13134853.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-09T16:31:30Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Replacement Notification Director Shareholding",
+   "download_link": "NSM/data-migration/LSE20170209163130_13123486.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-07T09:57:58Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170207095758_13119771.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-03T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Appointment of Non-executive Director",
+   "download_link": "NSM/data-migration/LSE20170203070007_13116373.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T15:23:48Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Dealing by Person Closely Associated",
+   "download_link": "NSM/data-migration/LSE20170202152348_13116038.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-01-05T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/124361077.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-01-05T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/124361081.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-23T11:33:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161223113340_013077940.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T15:56:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161214155651_013067371.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T11:27:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20161214112703_013066966.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T16:58:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161213165843_013066013.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-07T07:00:08Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "Statement re Press Comment",
+   "download_link": "NSM/data-migration/LSE20161207070008_013058555.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-06T11:03:55Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161206110355_013057862.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T16:10:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161130161006_013052043.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20161130070011_013050743.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20161130070010_013050731.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T15:54:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161031155436_013018795.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-10T14:28:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161010142808_012995729.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T16:14:32Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Company Secretary Change",
+   "download_link": "NSM/data-migration/LSE20160930161432_012986079.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T16:08:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160930160831_012986065.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Sage Group Plc - Annual Report and Accounts 2016",
+   "download_link": "NSM/data-migration/122825140.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-09-22T15:53:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160922155304_012975952.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-31T16:04:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160831160455_012949838.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-15T16:19:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160815161949_012931656.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T16:17:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160729161722_012912577.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-26T17:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160726170003_012907190.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-15T11:18:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160715111814_012894337.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-13T13:36:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160713133650_012891251.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-04T09:25:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160704092528_012878676.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-30T15:59:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160630155941_012875412.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-24T14:12:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160624141239_012867635.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T15:09:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160615150940_012855390.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T08:40:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160615084047_012854606.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-06T14:04:46Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160606140446_012842880.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T16:12:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160531161201_012835786.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-06T10:51:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160506105154_012806648.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T16:50:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160505165014_012805656.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T07:05:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smaller Related Party Transaction",
+   "download_link": "NSM/data-migration/LSE20160505070502_012804155.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T07:00:13Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20160505070013_012804098.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-29T16:44:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160429164404_012799121.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-25T16:12:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160425161250_012791098.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-22T16:33:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160422163358_012789251.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-12T16:07:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160412160743_012774233.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-11T16:37:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160411163732_012772499.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-07T17:06:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160407170637_012768771.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T16:34:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160331163459_012758652.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T10:09:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160323100942_012749205.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-21T15:51:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160321155104_012746288.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-18T11:52:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160318115248_012743692.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T16:50:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160314165005_012736654.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T14:17:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160314141700_012736360.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-09T17:12:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160309171223_012730930.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-02T16:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160302162001_012721334.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T13:19:51Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160301131951_012718857.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-29T16:37:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160229163755_012717337.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-19T16:18:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160219161816_012706295.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-18T15:16:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160218151605_012704491.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T15:57:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160201155710_012681784.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-29T16:43:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160129164314_012679780.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-29T12:00:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160129120016_012679070.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-27T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160127070007_012674470.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-18T09:47:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160118094706_012662668.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T10:20:44Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20160114102044_012659030.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2016 Notice of Meeting",
+   "download_link": "NSM/data-migration/103520121.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-01-14T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form The Sage Group plc",
+   "download_link": "NSM/data-migration/103520132.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-01-14T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form The Sage Group plc",
+   "download_link": "NSM/data-migration/103520152.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-01-14T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Sage Group plc Letter to Shareholders (FRS)",
+   "download_link": "NSM/data-migration/103520186.pdf",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-01-07T16:57:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160107165743_012650730.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T16:50:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160105165050_012647136.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T10:26:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160104102643_012644325.html",
+   "company": "Sage Group (The) PLC",
+   "lei": "2138005RN5XYLTF8G138",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T10:48:24Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138005RN5XYLTF8G138",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3831222.html",
+   "disclosure_id": "3831222",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T10:48:24Z",
+   "seq_id": "3831222",
+   "company": "Sage Group PLC",
+   "last_updated_date": "2026-08-22T12:09:44.055954114Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-29T17:43:27Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138005RN5XYLTF8G138",
+   "classifications": "",
+   "download_link": "NSM/RNS/3828939.html",
+   "disclosure_id": "3828939",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-29T17:43:27Z",
+   "seq_id": "3828939",
+   "company": "Sage Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.745402750Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

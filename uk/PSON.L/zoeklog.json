@@ -1,13 +1,3221 @@
 {
- "aantal": 0,
+ "aantal": 316,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138004JBXWWJKIURC57', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138004JBXWWJKIURC57', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138004JBXWWJKIURC57', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138004JBXWWJKIURC57', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138004JBXWWJKIURC57",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 316
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T15:41:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3818971.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-14T12:43:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3814156.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-07T16:12:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3806518.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T16:26:05Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3803451.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T12:08:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799630.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T09:07:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3787419.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T09:04:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766440.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T11:52:56Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Update on Resolution 10 - 2020 AGM vote",
+   "download_link": "NSM/RNS/3758178.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-19T10:49:43Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Committee Change",
+   "download_link": "NSM/RNS/3752277.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-16T13:02:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3751048.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T06:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3747204.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-06T15:16:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/RNS/3740171.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T13:35:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738694.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T14:49:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3737387.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T16:42:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3736125.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T14:20:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3729247.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T13:11:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3727797.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T11:18:07Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/RNS/3720981.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T11:00:00.000Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Resolution of Pearson plc",
+   "download_link": "NSM/Portal/NI-000011245.docx",
+   "company": "PEARSON PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-15T15:11:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3717138.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T14:35:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3712961.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T11:28:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703220.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T15:13:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3701448.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T14:00:03Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Circular and Notice of General Meeting",
+   "download_link": "NSM/RNS/3701193.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T14:00:00.000Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Circular and Notice of General Meeting",
+   "download_link": "NSM/Portal/NI-000010163.pdf",
+   "company": "PEARSON PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-24T06:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Pearson Appoints Andy Bird, CBE as Chief Executive",
+   "download_link": "NSM/RNS/3695266.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-20T07:58:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3693324.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-13T15:43:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3687367.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T07:28:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675413.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3665837.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T08:29:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3651756.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T12:26:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3645223.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T13:55:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643870.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:00:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights - Replacement",
+   "download_link": "NSM/RNS/3643336.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:37:18Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643246.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T13:58:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3642116.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T08:00:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3639860.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T13:14:02Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Company Secretary Change",
+   "download_link": "NSM/RNS/3624898.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T09:37:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3624593.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T11:24:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3620577.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T08:30:49Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3618859.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T10:44:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611804.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T16:28:06Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Pearson Issues Inaugural Social Bond",
+   "download_link": "NSM/RNS/3609152.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T10:27:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594205.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:25:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586390.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:19:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3586382.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3586376.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:36:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582856.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T13:11:29Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3573792.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T08:17:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3573251.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3572566.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T14:52:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3572361.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T12:04:23Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3572167.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-21T13:45:26Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3569218.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T10:18:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567281.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T09:58:17Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3554281.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T13:52:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402135236_3551473.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T13:52:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402135236_3551473.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:21:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402122103_3551322.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:21:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402122103_3551322.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T10:46:57Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Form 20-F",
+   "download_link": "NSM/data-migration/LSE20200402104657_3551026.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T10:46:57Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Form 20-F",
+   "download_link": "NSM/data-migration/LSE20200402104657_3551026.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:23:55Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20200401162355_3550060.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:23:55Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20200401162355_3550060.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:37:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401133716_3549720.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:37:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401133716_3549720.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401104505_3549338.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401104505_3549338.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:01:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401100100_3549268.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:01:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401100100_3549268.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:11:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200325161147_3541420.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:11:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200325161147_3541420.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T14:01:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200325140137_3541261.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T10:48:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200324104810_3539011.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T16:04:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200323160433_3536394.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T14:15:09Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200323141509_3537730.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T07:00:11Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200323070011_3536582.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T12:11:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200320121121_3535633.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T12:11:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200320121121_3535633.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T17:22:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200319172236_3534143.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T13:33:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200319133335_3533702.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T17:22:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200318172224_3532322.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T09:51:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200318095117_3531465.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T18:25:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200317182501_3530661.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T13:25:23Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200317132523_3530102.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T18:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200316180011_3528951.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T17:36:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200313173606_3527092.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T10:31:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200313103158_3526262.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T10:31:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200313103158_3526262.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T17:57:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200312175752_3525455.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T17:07:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200311170712_3523692.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T17:34:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200310173401_3522128.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T16:58:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200309165858_3520349.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T17:32:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200306173232_3518782.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T16:50:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200305165034_3517328.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T13:25:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200305132557_3517093.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T18:19:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200304181929_3515850.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T16:49:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200303164928_3514345.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T18:02:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200302180220_3512943.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T11:37:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302113713_3512210.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T17:12:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200228171233_3511082.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T17:18:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200227171800_3509442.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200227070004_3508020.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T17:24:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200225172423_3506432.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T16:59:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200224165902_3504930.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T14:28:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200224142848_3504720.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T17:06:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200221170627_3502394.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200221070004_3501112.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T16:52:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200220165259_3500982.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-19T17:18:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200219171802_3499561.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-19T09:01:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200219090127_3498909.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T17:05:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200218170512_3498232.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T13:46:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200218134621_3498044.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-17T17:54:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200217175455_3497016.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-14T17:02:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200214170213_3495500.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-13T17:54:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200213175403_3494118.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T16:57:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200212165750_3492538.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T17:50:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200211175000_3491187.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T16:55:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200210165513_3489728.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-07T17:15:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200207171513_3488334.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T17:23:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200206172358_3486901.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200206070002_3485593.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-04T17:09:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200204170924_3483992.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:23:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200203172350_3482489.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T09:48:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203094853_3481680.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T16:59:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200131165934_14406629.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T18:13:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200130181347_14405022.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-29T17:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200129170002_14403031.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T17:47:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200128174759_14401578.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T17:00:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200127170028_14399578.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-24T17:21:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200124172110_14398038.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-24T12:25:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200124122517_14397718.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-24T12:25:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200124122517_14397718.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T17:01:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200123170127_14396320.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T12:43:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares - Replacement",
+   "download_link": "NSM/data-migration/LSE20200123124305_14396041.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-22T17:14:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200122171404_14394581.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T17:13:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200121171341_14392789.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-20T18:11:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200120181156_14391323.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T17:22:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200117172249_14389463.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T17:45:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200116174504_14387728.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T07:19:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200116071917_14386591.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200116070011_14386172.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200116070008_14386116.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T12:44:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200114124417_14383652.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:17:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102101723_14368919.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T07:00:11Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20191218070011_14353304.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191218070007_14353290.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T11:43:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217114355_14352405.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T09:19:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191217091909_14351902.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T09:19:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191217091909_14351902.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T16:27:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191210162701_14343233.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T16:27:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191210162701_14343233.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T15:04:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191205150432_14337632.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T15:04:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191205150432_14337632.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:24:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202122404_14331112.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T08:51:56Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191202085156_14330582.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T16:18:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191121161837_14318327.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T16:18:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191121161837_14318327.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T12:39:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191104123917_14293231.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:52:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191101105245_14290882.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T09:22:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101092238_14290613.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T10:10:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191015101016_14266330.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T10:10:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191015101016_14266330.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T13:49:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191010134922_14261860.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T09:52:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191008095229_14257960.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T09:52:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191008095229_14257960.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T10:19:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191007101906_14256328.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T10:19:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191007101906_14256328.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T09:25:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191003092538_14252619.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T09:25:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191003092538_14252619.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T09:39:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002093930_14250815.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T09:39:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002093930_14250815.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T10:59:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001105948_14249014.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:47:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191001094741_14248768.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:47:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191001094741_14248768.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:08:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001090836_14248700.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T09:43:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190927094359_14244668.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T09:43:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190927094359_14244668.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T07:00:14Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190926070014_14242007.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T09:39:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190925093942_14240825.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T09:39:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190925093942_14240825.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T10:11:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190919101153_14233366.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T10:11:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190919101153_14233366.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T10:49:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190918104908_14231692.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T14:17:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190913141738_14226510.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T14:17:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190913141738_14226510.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T11:19:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190912111922_14224368.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T11:19:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190912111922_14224368.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T10:38:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190912103815_14224283.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T11:42:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190910114230_14220910.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T11:42:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190910114230_14220910.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T09:04:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190905090435_14215121.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T09:28:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902092832_14209817.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T14:03:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190815140340_14190849.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:28:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190809102818_14183523.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:28:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190809102818_14183523.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T14:22:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190808142204_14182153.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T09:10:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802091020_14174301.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T09:10:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190802091020_14174301.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:28:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801092849_14172336.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:07:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190801090740_14172298.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:07:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190801090740_14172298.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:05:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801090531_14172294.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T09:40:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190729094042_14166523.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T09:40:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190729094042_14166523.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190726070002_14164017.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T14:19:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725141929_14163559.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T14:19:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725141929_14163559.html",
+   "company": "Goldman Sachs Group Inc. (The)",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T12:29:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701122903_14131532.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:31:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190701103139_14131134.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T14:55:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190620145511_14118760.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T16:09:51Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Committee Appointments",
+   "download_link": "NSM/data-migration/LSE20190613160951_14110414.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T10:20:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190613102035_14109754.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T10:10:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190612101005_14108046.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T10:10:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190612101005_14108046.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T09:26:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190611092625_14106343.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T09:26:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190611092625_14106343.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T15:49:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190605154901_14100131.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T13:11:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603131143_14096451.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T08:58:40Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190603085840_14095794.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T09:50:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190529095059_14090562.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T09:50:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190529095059_14090562.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T13:03:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528130314_14089417.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T13:03:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528130314_14089417.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T09:39:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528093959_14088982.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T09:39:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190528093959_14088982.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T10:42:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190524104204_14086933.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T10:42:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190524104204_14086933.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T09:32:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190520093250_14080002.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T09:32:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190520093250_14080002.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T11:17:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190517111720_14078509.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T11:17:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190517111720_14078509.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T12:01:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190514120107_14073438.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T11:17:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509111738_14068291.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T12:28:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190503122834_14062807.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T12:28:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190503122834_14062807.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:58:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501135834_14059670.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:57:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501135705_14059667.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T09:38:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190430093833_14057014.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T09:38:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190430093833_14057014.html",
+   "company": "Goldman Sachs Group Inc",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T14:53:59Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190426145359_14054089.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T07:00:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190426070014_14052796.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190426070008_14052746.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T09:24:24Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Form 20-F for the year ended 31 December 2018",
+   "download_link": "NSM/data-migration/LSE20190405092424_14030613.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T13:48:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402134812_14025852.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T12:14:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402121424_14025732.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T09:03:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402090334_14025106.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T12:12:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401121228_14023667.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:52:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401105237_14023462.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T10:00:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190326100057_14015991.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T10:00:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190326100057_14015991.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T12:44:25Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190325124425_14014543.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T10:17:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190325101746_14014212.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T10:17:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190325101746_14014212.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T10:24:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322102411_14012419.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T10:24:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322102411_14012419.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T09:43:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190321094318_14010679.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T09:43:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190321094318_14010679.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T14:22:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190313142258_14001140.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T14:22:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190313142258_14001140.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T12:58:25Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Bond Tender Offer of Pearson Funding Five plc",
+   "download_link": "NSM/data-migration/LSE20190313125825_14001010.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T14:54:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190312145418_13999473.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T14:54:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190312145418_13999473.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T09:34:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190311093407_13997141.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T09:34:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190311093407_13997141.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T11:05:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190306110559_13992447.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T11:05:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190306110559_13992447.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T10:34:47Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Bond Tender Offer by Pearson Funding Five plc",
+   "download_link": "NSM/data-migration/LSE20190306103447_13992344.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T09:47:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190301094721_13987130.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T09:47:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190301094721_13987130.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T09:10:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301091057_13987008.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T09:38:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228093841_13985134.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T09:38:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228093841_13985134.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T09:46:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190226094620_13981950.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T09:46:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190226094620_13981950.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T09:24:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190222092421_13978706.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T09:24:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190222092421_13978706.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190222070005_13978029.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T10:21:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190218102106_13972735.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T10:21:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190218102106_13972735.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T07:00:07Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20190218070007_13971937.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T09:44:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215094437_13970990.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T09:44:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215094437_13970990.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T10:06:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190214100652_13969600.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T10:06:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190214100652_13969600.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T10:02:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201100224_13955264.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T10:04:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190129100428_13950216.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T10:04:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190129100428_13950216.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-21T14:05:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190121140503_13941585.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-21T14:05:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190121140503_13941585.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T10:10:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190118101008_13939688.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T10:10:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190118101008_13939688.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T09:35:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190117093534_13938138.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T09:35:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190117093534_13938138.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190116070003_13935892.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T12:04:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190111120423_13932221.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T12:04:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190111120423_13932221.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T09:08:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102090823_13920582.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T09:12:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181231091202_13919076.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T09:12:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181231091202_13919076.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T11:57:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181228115703_13918173.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-28T11:57:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181228115703_13918173.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-27T13:46:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181227134603_13916895.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-27T13:46:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181227134603_13916895.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-24T09:23:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181224092310_13914782.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-24T09:23:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181224092310_13914782.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-24T09:18:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181224091820_13914778.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-24T09:18:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181224091820_13914778.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T11:23:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181220112316_13911559.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T11:23:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181220112316_13911559.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-19T14:47:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Clarification/Correction Statement",
+   "download_link": "NSM/data-migration/LSE20181219144751_13910072.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T09:19:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181218091906_13907613.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T09:11:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181213091107_13902471.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T09:11:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181213091107_13902471.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T09:24:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181211092432_13899116.html",
+   "company": "Schroders PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T09:24:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181211092432_13899116.html",
+   "company": "Pearson PLC",
+   "lei": "2138004JBXWWJKIURC57",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T15:41:21Z",
+   "tag_esef": "",
+   "classifications_code": "2.2",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138004JBXWWJKIURC57",
+   "classifications": "Inside information",
+   "download_link": "NSM/RNS/3818971.html",
+   "disclosure_id": "3818971",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T15:41:21Z",
+   "seq_id": "3818971",
+   "company": "Pearson PLC",
+   "last_updated_date": "2026-08-22T12:09:07.197921884Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-14T12:43:26Z",
+   "tag_esef": "",
+   "classifications_code": "2.2",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "2138004JBXWWJKIURC57",
+   "classifications": "Inside information",
+   "download_link": "NSM/RNS/3814156.html",
+   "disclosure_id": "3814156",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-14T12:43:26Z",
+   "seq_id": "3814156",
+   "company": "Pearson PLC",
+   "last_updated_date": "2026-08-22T12:09:07.184329324Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

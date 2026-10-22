@@ -1,13 +1,4511 @@
 {
- "aantal": 0,
+ "aantal": 445,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '5493003JFSMOJG48V108', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '5493003JFSMOJG48V108', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '5493003JFSMOJG48V108', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '5493003JFSMOJG48V108', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "5493003JFSMOJG48V108",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 445
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-30T09:21:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1: Notification of major holdings",
+   "download_link": "NSM/RNS/3829599.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-17T10:45:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3818392.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T11:30:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799464.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T11:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3793200.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3790574.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T11:10:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766784.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T13:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3755515.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T15:35:48Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3754262.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T06:00:06Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/RNS/3752717.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T14:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3741476.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T15:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738768.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T13:34:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735880.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T10:38:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735562.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:22:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702950.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T12:05:04Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3698693.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T15:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3697612.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T11:08:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675892.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T06:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3668576.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T08:17:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643213.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T16:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3642307.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T09:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3633464.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-05T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3617961.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T10:01:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611686.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:41:15Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3610654.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:36:52Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3610638.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T15:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3610543.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T11:20:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3610259.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T13:29:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3608920.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T16:46:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594636.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T15:26:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Q1 2020 Group Interim Management Statement",
+   "download_link": "NSM/Portal/NI-000003752.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:24:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "2019 Reckitt Benckiser Treasury Services plc Audited Financial Statements",
+   "download_link": "NSM/Portal/NI-000003751.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:21:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "2019 Audited Consolidated Financial Statements",
+   "download_link": "NSM/Portal/NI-000003749.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:19:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "2018 Audited Consolidated Financial Statements",
+   "download_link": "NSM/Portal/NI-000003748.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:18:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Offering Memorandum dated 13 May 2020",
+   "download_link": "NSM/Portal/NI-000003746.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T15:09:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "2018 Reckitt Benckiser Treasury Services plc Audited Financial Statements",
+   "download_link": "NSM/Portal/NI-000003742.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-13T13:07:22Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Offering Memorandum ",
+   "download_link": "NSM/RNS/3594436.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T17:01:42Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/RNS/3593263.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T15:55:04Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3593197.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T15:20:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Business",
+   "download_link": "NSM/Portal/NI-000003618.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-12T15:15:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3593155.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T13:10:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3584855.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T15:41:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3583553.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T10:38:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583106.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 2020 Trading Update ",
+   "download_link": "NSM/RNS/3580350.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T09:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3558907.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T10:42:22Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3554423.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T08:23",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2020",
+   "download_link": "NSM/Portal/NI-000000073.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-06T08:20",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/Portal/NI-000000071.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-06T08:15",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Financial Statements 2019",
+   "download_link": "NSM/Portal/NI-000000069.pdf",
+   "company": "Reckitt Benckiser Group Plc",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-03T10:31:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403103126_3552761.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T10:31:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403103126_3552761.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T11:26:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401112635_3549438.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T11:26:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401112635_3549438.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:57:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200324165731_3539856.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:41:49Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164149_3539810.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:35:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163545_3539715.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T17:08:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312170859_3525408.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T16:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200309164504_3520241.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T16:26:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303162649_3514319.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T13:11:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302131103_3512505.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full Year Results 2019",
+   "download_link": "NSM/data-migration/LSE20200227070009_3508036.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T11:16:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203111657_3481883.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T12:20:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102122005_14369238.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T13:30:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191204133003_14335421.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:00:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202120032_14331063.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T12:00:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101120044_14291195.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T16:30:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191029163020_14285252.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-28T11:21:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191028112130_14283138.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191024143001_14279675.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2019 Trading Update",
+   "download_link": "NSM/data-migration/LSE20191022070004_14274508.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T10:15:56Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191021101556_14273576.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T11:51:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001115124_14249202.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T15:12:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190930151212_14247450.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T12:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190918120001_14231884.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T13:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190903130005_14212139.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T13:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190902130007_14210378.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T12:37:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902123747_14210351.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190830150002_14208604.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T14:07:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190806140731_14178535.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T09:48:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801094810_14172377.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Results 2019",
+   "download_link": "NSM/data-migration/LSE20190730070011_14167599.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T09:30:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190729093005_14166507.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T07:00:03Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Agreement to resolve all federal investigations",
+   "download_link": "NSM/data-migration/LSE20190711070003_14144200.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T11:31:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701113140_14131301.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "RB CEO Announcement",
+   "download_link": "NSM/data-migration/LSE20190612070005_14107277.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T10:49:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603104935_14096100.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T10:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190528104001_14089076.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T16:40:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523164004_14085775.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T11:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190522114505_14083704.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T15:01:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190513150141_14071964.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T15:28:47Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190509152847_14068684.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of 2019 AGM",
+   "download_link": "NSM/data-migration/221197073.doc",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-09T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM 2019 - Special Resolutions",
+   "download_link": "NSM/data-migration/221657540.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-02T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Tradng Update",
+   "download_link": "NSM/data-migration/LSE20190502070003_14060195.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T10:46:12Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190501104612_14059234.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501090001_14058992.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T10:37:56Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "US Justice Department indictment of Indivior Plc",
+   "download_link": "NSM/data-migration/LSE20190410103756_14036012.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T12:45:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190404124501_14029412.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T16:56:18Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190402165618_14026154.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form - 2019 Annual General Meeting",
+   "download_link": "NSM/data-migration/216662041.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-02T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of the 2019 Annual General Meeting",
+   "download_link": "NSM/data-migration/216662486.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-01T09:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401093002_14023174.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T14:58:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190327145815_14018232.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T16:30:15Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190305163015_13991186.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T11:43:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304114333_13989174.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301073004_13986808.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T11:16:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190228111607_13985421.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T15:19:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190220151955_13976146.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full Year Results 2018",
+   "download_link": "NSM/data-migration/LSE20190218070006_13971935.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T08:44:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201084401_13955137.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T07:05:15Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Rakesh Kapoor to retire as CEO by end of 2019",
+   "download_link": "NSM/data-migration/LSE20190116070515_13935958.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190104110001_13924275.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T14:23:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190102142307_13921310.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T13:12:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181231131216_13919766.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2018 Annual Report",
+   "download_link": "NSM/data-migration/216662603.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-27T16:41:12Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20181227164112_13917055.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-27T16:35:59Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20181227163559_13917046.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T09:43:28Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181213094328_13902514.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T10:09:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203100954_13888748.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-19T10:11:11Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181119101111_13871831.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T11:56:52Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181109115652_13861936.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T09:59:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101095951_13851163.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T12:18:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181031121819_13849675.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-30T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2018: Trading Update",
+   "download_link": "NSM/data-migration/LSE20181030070007_13846726.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T17:17:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181001171728_13812006.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T12:34:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001123410_13811378.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-31T16:46:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180831164610_13775334.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-31T16:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180831160002_13775264.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-08T14:32:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180808143224_13748568.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T09:43:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801094335_13739482.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-27T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Results",
+   "download_link": "NSM/data-migration/LSE20180727070005_13733455.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T10:01:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702100111_13701347.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-26T10:15:18Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180626101518_13693792.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-07T16:55:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180607165545_13671674.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T11:28:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601112804_13663757.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-31T16:35:21Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20180531163521_13662365.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-29T15:11:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180529151112_13658528.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-25T17:34:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180525173413_13656574.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T14:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180509140004_13634894.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-08T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180508140002_13633092.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-04T16:27:15Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180504162715_13631218.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T15:17:36Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180503151736_13629420.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business Resolutions passed at 2018 AGM",
+   "download_link": "NSM/data-migration/171234987.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-01T13:00:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change in Director's Details",
+   "download_link": "NSM/data-migration/LSE20180501130006_13625935.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T09:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501093004_13625386.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T14:00:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180418140056_13609653.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403090001_13588984.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-22T07:00:06Z",
+   "type": "Offer Talks Terminated",
+   "type_code": "OTT",
+   "headline": "Offer Talks Terminated",
+   "download_link": "NSM/data-migration/LSE20180322070006_13576575.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-19T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180319110001_13571836.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T10:59:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301105929_13551094.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-19T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180219070004_13537143.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T09:19:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201091934_13517778.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T10:07:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102100724_13481986.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2017 Annual Report",
+   "download_link": "NSM/data-migration/166775210.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of the 2018 Annual General Meeting",
+   "download_link": "NSM/data-migration/166775207.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form - 2018 Annual General Meeting",
+   "download_link": "NSM/data-migration/166775209.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-01T10:07:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171201100747_13450981.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201090001_13450748.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T13:50:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171108135008_13424955.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-07T15:57:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171107155721_13423607.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-02T07:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/data-migration/LSE20171102070002_13417487.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T17:52:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171101175210_13417380.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101090001_13416236.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-18T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2017: Trading Update",
+   "download_link": "NSM/data-migration/LSE20171018070003_13400168.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-06T17:42:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171006174220_13389432.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-03T16:38:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171003163820_13384773.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-03T09:50:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171003095015_13383951.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T15:46:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002154636_13383034.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-19T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170919070008_13367045.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T13:31:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170914133152_13363209.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-04T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170904140001_13351078.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T09:17:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901091703_13348757.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-18T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Completion of Sale of Food Business to McCormick",
+   "download_link": "NSM/data-migration/LSE20170818070002_13334235.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-02T12:25:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170802122511_13316970.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T15:27:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801152759_13315637.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-24T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170724070004_13304261.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "RB Sale of Food Business to McCormick",
+   "download_link": "NSM/data-migration/LSE20170719070004_13299743.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-06T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Cyber attack update and estimated financial effect",
+   "download_link": "NSM/data-migration/LSE20170706070004_13285530.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:29:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703092957_13281211.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-23T11:00:28Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus - Replacement",
+   "download_link": "NSM/data-migration/LSE20170623110028_13271343.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T17:26:24Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20170622172624_13270540.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T16:19:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170622161932_13270462.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T10:08:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170622100831_13269696.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T07:00:02Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/data-migration/LSE20170622070002_13269008.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-22T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/137142684.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-19T11:47:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170619114700_13265121.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-15T13:58:21Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of MJN Acquisition",
+   "download_link": "NSM/data-migration/LSE20170615135821_13262025.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T14:38:26Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Expected Completion Date of MJN Acquisition",
+   "download_link": "NSM/data-migration/LSE20170612143826_13257387.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T16:23:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170601162344_13246520.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T10:12:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601101240_13245611.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T16:58:34Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/data-migration/LSE20170531165834_13244577.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T15:42:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170531154210_13244450.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Resolution Passed at General Meeting",
+   "download_link": "NSM/data-migration/135323710.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-26T16:06:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170526160620_13240740.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T14:44:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170522144443_13234071.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T13:20:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170522132013_13233944.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-16T17:33:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170516173312_13227946.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-16T17:27:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170516172713_13227938.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-12T15:27:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170512152742_13224414.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-08T18:15:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170508181519_13218199.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T16:21:30Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Circular to Shareholders and Notice of GM",
+   "download_link": "NSM/data-migration/LSE20170505162130_13216553.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T12:07:44Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Outcome of Audit Tender",
+   "download_link": "NSM/data-migration/LSE20170505120744_13216176.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Circular to Shareholders and Notice of General Meeting",
+   "download_link": "NSM/data-migration/133072452.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-04T18:16:29Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170504181629_13215106.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business Resolutions passed at 2017 AGM",
+   "download_link": "NSM/data-migration/133072445.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-02T09:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502090003_13210475.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-21T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 2017 : Trading Update",
+   "download_link": "NSM/data-migration/LSE20170421070007_13199620.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T07:00:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Strategic Review of Food Business",
+   "download_link": "NSM/data-migration/LSE20170403070009_13180074.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T16:45:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170331164503_13179682.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T09:00:06Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170331090006_13178639.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2017 Annual General Meeting",
+   "download_link": "NSM/data-migration/130469782.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-31T00:00:00Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "MJ Quarterly Financial Statements 2017",
+   "download_link": "NSM/data-migration/137033696.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-31T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2017 AGM Proxy Form",
+   "download_link": "NSM/data-migration/130469768.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-21T14:00:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170321140003_13166212.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-20T15:30:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170320153002_13164874.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T11:57:00Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170317115700_13162911.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T11:36:56Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301113656_13143736.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T17:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170228170007_13142460.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-10T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "RB to acquire Mead Johnson",
+   "download_link": "NSM/data-migration/LSE20170210070007_13123728.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-10T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Full Year Results 2016",
+   "download_link": "NSM/data-migration/LSE20170210070007_13123750.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-02T07:00:06Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Statement regarding Mead Johnson",
+   "download_link": "NSM/data-migration/LSE20170202070006_13114843.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2016 Annual Report and Financial Statements",
+   "download_link": "NSM/data-migration/130469805.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "MJ Annual Financial Statements 2016",
+   "download_link": "NSM/data-migration/137033695.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-05T07:00:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161205070013_013055549.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-02T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161202160001_013055266.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-02T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161202070007_013054134.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T09:45:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201094533_013053071.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161201070005_013052371.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161130070006_013050681.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-29T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161129070009_013049215.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-28T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161128070006_013047755.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-25T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161125070005_013046514.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161124070007_013045013.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-23T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161123070006_013043638.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161122070007_013042175.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-21T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161121070009_013040643.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-18T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161118070006_013039268.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-17T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161117070009_013037790.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T17:21:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares - replacement",
+   "download_link": "NSM/data-migration/LSE20161116172121_013037616.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161116070006_013036283.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161115070007_013034827.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-14T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161114070008_013033357.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-11T07:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161111070011_013031902.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-10T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161110070008_013030328.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-09T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161109070008_013028673.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-08T07:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161108070009_013027113.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-07T14:36:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161107143648_013026651.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-07T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161107070007_013025618.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-04T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161104070006_013024005.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-03T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161103070007_013022420.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-02T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161102070007_013020729.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T09:21:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101092116_013019762.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161101070006_013019113.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161031070008_013017558.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-28T07:00:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161028070012_013015847.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-27T07:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161027070008_013014462.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161026070004_013012754.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-25T17:15:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161025171524_013012597.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-25T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161025070005_013011339.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-24T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161024070006_013010024.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-21T16:54:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161021165424_013009851.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-20T16:46:25Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Share Repurchase Programme",
+   "download_link": "NSM/data-migration/LSE20161020164625_013008292.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-19T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2016 Trading Update",
+   "download_link": "NSM/data-migration/LSE20161019070006_013005451.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-06T17:35:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161006173542_012992994.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-04T17:26:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161004172643_012989802.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T09:42:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003094237_012987136.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-05T11:57:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160905115735_012954499.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-02T11:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160902113001_012952844.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T10:45:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901104551_012951020.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-25T17:42:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160825174224_012944387.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-24T17:17:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160824171720_012942839.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-23T16:57:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160823165744_012941188.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-22T17:06:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160822170604_012939693.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-19T17:04:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160819170416_012938265.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-18T17:05:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160818170531_012936566.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-17T17:10:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160817171045_012935004.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T16:50:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160816165032_012933348.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-15T17:04:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160815170422_012931696.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-12T17:04:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160812170405_012930237.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-11T17:39:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160811173903_012928568.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-10T17:12:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160810171245_012926879.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T17:10:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160809171041_012925203.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160809070007_012923672.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-05T16:58:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160805165852_012921832.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-04T16:59:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160804165947_012920009.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-03T17:13:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160803171315_012918303.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-02T17:09:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160802170918_012916510.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T17:37:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160801173717_012914624.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T17:35:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160801173500_012914619.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T10:43:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801104315_012913709.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T17:04:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160729170440_012912672.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T16:45:54Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/data-migration/LSE20160729164554_012912623.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T07:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Results",
+   "download_link": "NSM/data-migration/LSE20160729070011_012910947.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-28T17:05:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160728170507_012910670.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-27T16:56:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160727165658_012908893.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-26T16:57:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160726165732_012907183.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-25T16:59:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160725165924_012905454.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-22T17:01:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160722170148_012903760.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-21T16:57:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160721165739_012902040.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-20T17:05:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160720170541_012900297.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-19T17:58:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160719175852_012898651.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-18T17:07:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160718170756_012896760.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-15T16:50:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160715165003_012894949.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-14T17:02:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160714170236_012893355.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-13T16:59:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160713165918_012891626.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-12T17:05:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160712170550_012889932.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-11T16:55:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160711165509_012888236.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-08T17:26:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160708172636_012886605.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T17:04:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160707170426_012884813.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-06T17:51:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160706175134_012883168.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T16:59:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160705165922_012881353.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-04T17:01:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160704170112_012879716.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T16:42:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160701164207_012877808.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T09:45:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701094528_012876701.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-30T17:17:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160630171751_012875619.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T17:26:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160629172651_012873504.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-28T17:03:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share Repurchase Programme",
+   "download_link": "NSM/data-migration/LSE20160628170355_012871535.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T18:28:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160615182832_012855803.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-14T16:58:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160614165849_012853860.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-13T17:54:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160613175428_012852238.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-10T17:03:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160610170324_012850340.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-09T18:14:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160609181421_012848665.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-08T17:06:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160608170623_012846717.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-07T16:59:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160607165942_012844975.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-06T17:01:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160606170118_012843207.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T17:34:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160603173432_012841668.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T17:27:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160603172730_012841656.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T17:23:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160603172347_012841650.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T11:51:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160603115102_012840995.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T11:40:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160603114015_012840959.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-02T17:57:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160602175703_012839900.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T18:10:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160601181014_012838147.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T09:54:30Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601095430_012836786.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T18:16:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160531181656_012836007.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T18:11:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531181100_012836005.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T16:51:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531165103_012835874.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T16:50:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531165051_012835873.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T16:46:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160531164613_012835864.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-27T17:50:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160527175048_012833540.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T17:05:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160526170544_012831773.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-25T17:09:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160525170920_012829883.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-24T16:58:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160524165833_012828120.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-23T17:20:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160523172038_012826555.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-23T16:03:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160523160305_012826478.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-20T17:02:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160520170227_012824870.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-19T17:54:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160519175452_012823157.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-18T17:01:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160518170100_012821309.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-18T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160518070006_012819754.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-17T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160517070006_012818151.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-13T17:01:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160513170114_012816332.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-12T17:01:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160512170132_012814625.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T17:15:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160511171555_012812748.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-10T17:20:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Share Repurchase Programme",
+   "download_link": "NSM/data-migration/LSE20160510172022_012810943.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-09T18:03:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160509180343_012809171.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-06T18:11:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes",
+   "download_link": "NSM/data-migration/LSE20160506181114_012807481.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T14:36:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160505143642_012805408.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business Resolutions passed at 2016 AGM",
+   "download_link": "NSM/data-migration/110754726.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-05T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/110708537.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-04T15:49:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160504154952_012803781.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:04:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503100404_012800692.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-29T17:52:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160429175259_012799296.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-28T18:21:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160428182112_012797062.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-27T18:00:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160427180037_012795057.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-26T18:10:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160426181002_012793148.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-25T17:29:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160425172931_012791232.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-22T17:53:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160422175314_012789382.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-22T10:12:31Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160422101231_012788319.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-21T17:38:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160421173847_012787447.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-21T11:58:29Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160421115829_012786667.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-20T18:09:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160420180947_012785570.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-19T17:43:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160419174345_012783763.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-18T17:45:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160418174551_012781946.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-18T07:00:07Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20160418070007_012780131.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-15T17:34:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160415173406_012779989.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-14T17:10:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160414171030_012778139.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-13T17:15:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160413171558_012776150.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-12T17:41:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160412174100_012774365.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-11T17:05:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160411170547_012772539.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-08T17:13:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160408171323_012770671.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-07T17:39:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Replacement - Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160407173908_012768851.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-07T17:32:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160407173205_012768840.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-06T17:41:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160406174156_012766987.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-05T17:42:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160405174237_012765130.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-04T17:25:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160404172505_012763229.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-04T09:20:42Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160404092042_012761999.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-04T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2016 AGM Form of Proxy",
+   "download_link": "NSM/data-migration/108907268.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-04T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2016 AGM Notice",
+   "download_link": "NSM/data-migration/108907266.pdf",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-01T17:07:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160401170740_012761145.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T09:28:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401092842_012759705.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T17:59:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160331175921_012758911.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-30T17:52:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160330175229_012756598.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-29T17:08:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160329170833_012754688.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-24T17:21:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160324172149_012752380.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T17:26:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160323172617_012750324.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-22T17:20:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160322172046_012748310.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-21T17:28:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160321172858_012746465.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-18T17:23:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160318172350_012744597.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-17T17:47:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160317174743_012742543.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-16T17:50:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160316175028_012740736.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-16T17:21:39Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160316172139_012740669.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-15T17:36:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160315173654_012738782.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T17:30:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160314173040_012736769.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-11T17:29:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160311172917_012734853.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-10T17:57:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160310175757_012732891.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-09T17:13:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160309171317_012730933.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-08T18:06:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160308180655_012729158.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-07T18:10:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160307181027_012727309.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-04T17:40:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Share Repurchase Programme",
+   "download_link": "NSM/data-migration/LSE20160304174020_012725423.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-04T17:18:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160304171851_012725381.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T09:44:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301094449_012718368.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-17T17:05:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160217170516_012702919.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-15T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Full Year Results 2015",
+   "download_link": "NSM/data-migration/LSE20160215070008_012698209.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T17:18:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160210171846_012694403.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-09T17:13:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160209171356_012692738.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-08T16:57:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160208165705_012690975.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-05T17:03:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160205170340_012689269.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T17:01:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160204170126_012687486.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T16:50:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160203165021_012685723.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T10:59:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Replacement: Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160203105900_012684929.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-02T17:15:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160202171535_012683957.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T16:54:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160201165445_012682000.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T11:37:25Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201113725_012681093.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-29T17:27:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160129172739_012679922.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-28T17:24:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160128172444_012677846.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-27T17:01:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160127170154_012675994.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-27T14:14:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160127141436_012675653.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-26T17:22:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160126172253_012674305.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-25T17:00:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160125170020_012672466.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-22T16:58:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160122165845_012670690.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-21T17:06:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160121170621_012668901.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-20T17:22:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160120172237_012667074.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-19T17:02:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160119170238_012665253.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-18T17:37:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160118173753_012663760.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-15T16:48:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160115164855_012661847.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T16:59:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160114165911_012660002.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T17:07:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160113170733_012658165.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T14:32:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160113143245_012657800.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-12T17:00:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160112170013_012656374.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T17:09:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160111170951_012654534.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-08T17:10:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160108171031_012652645.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T17:05:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160107170554_012650744.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T17:43:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160106174320_012649006.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T16:55:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160105165555_012647142.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T17:05:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160104170506_012645381.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T10:37:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104103708_012644366.html",
+   "company": "Reckitt Benckiser Group PLC",
+   "lei": "5493003JFSMOJG48V108",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-30T09:21:12Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "5493003JFSMOJG48V108",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3829599.html",
+   "disclosure_id": "3829599",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-30T09:21:12Z",
+   "seq_id": "3829599",
+   "company": "Reckitt Benckiser Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.747157320Z",
+   "headline": "TR-1: Notification of major holdings",
+   "type_code": "HOL"
+  },
+  {
+   "submitted_date": "2020-12-17T10:45:02Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "5493003JFSMOJG48V108",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3818392.html",
+   "disclosure_id": "3818392",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T10:45:02Z",
+   "seq_id": "3818392",
+   "company": "Reckitt Benckiser Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.196318167Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  }
+ ]
 }

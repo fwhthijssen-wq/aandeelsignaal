@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2016",
+  "bedrijf": "Rolls-Royce Holdings PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/128984111.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 5183457
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-07",
+  "soort": "Final Results",
+  "titel": "2017 Full Year Results",
+  "bedrijf": "Rolls-Royce Holdings PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20180307070006_13557318.html",
+  "tekst": "uk-2017.txt",
+  "grootte": 1173909
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-28",
+  "soort": "Final Results",
+  "titel": "2018 Full Year Results",
+  "bedrijf": "Rolls-Royce Holdings PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190228070027_13984485.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1248470
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-28",
+  "soort": "Final Results",
+  "titel": "2019 Full Year Results",
+  "bedrijf": "Rolls-Royce Holdings PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200228070005_3509584.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1595897
+ }
+]

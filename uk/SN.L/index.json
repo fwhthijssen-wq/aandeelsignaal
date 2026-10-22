@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-02-04",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Smith & Nephew PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20160204070007_012685972.html",
+  "tekst": "uk-2015.txt",
+  "grootte": 541067
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report and Accounts 2017",
+  "bedrijf": "Smith & Nephew PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/128779524.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 5408069
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report",
+  "bedrijf": "Smith & Nephew PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/164365784.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 6593587
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report",
+  "bedrijf": "Smith & Nephew PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/213339347.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 10180260
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "2019 Annual Financial Report",
+  "bedrijf": "Smith & Nephew PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/267489165.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 8799583
+ }
+]

@@ -1,13 +1,2021 @@
 {
- "aantal": 0,
+ "aantal": 196,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '5493001Z3ZE83NGK8Y12', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '5493001Z3ZE83NGK8Y12', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '5493001Z3ZE83NGK8Y12', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '5493001Z3ZE83NGK8Y12', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "5493001Z3ZE83NGK8Y12",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 196
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-11T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3811994.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T11:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3809210.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T13:00:00Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Chair succession effective 1 January 2021",
+   "download_link": "NSM/RNS/3803178.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T10:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799082.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:41:53Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3798299.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:37:21Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3798269.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T09:00:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Six monthly blocklisting ",
+   "download_link": "NSM/RNS/3790764.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T09:00:06Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Blocklisting ",
+   "download_link": "NSM/RNS/3777760.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T10:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3777054.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T10:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3775719.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T09:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3774770.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766554.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T09:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3764131.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-13T09:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3746451.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-09T12:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3744069.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T11:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3737045.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735240.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735261.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T09:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3730220.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3726062.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T06:02:48Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3725774.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T15:35:33Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3725089.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T09:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend conversion rates achieved",
+   "download_link": "NSM/RNS/3719277.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3713828.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711373.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702800.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T13:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3691198.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-17T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3689875.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-13T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3687131.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T13:52:23Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/RNS/3685930.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T12:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3684479.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:33:31Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Prudential plc - 2020 First Interim Dividend",
+   "download_link": "NSM/RNS/3684173.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:30:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc – HY20 Results – Risk Factors",
+   "download_link": "NSM/RNS/3683443.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:30:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc – HY20 Results – EEV",
+   "download_link": "NSM/RNS/3683465.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:30:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc – HY20 Results – IFRS",
+   "download_link": "NSM/RNS/3683475.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:30:01Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc – HY20 Results – Business Review",
+   "download_link": "NSM/RNS/3683466.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675450.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-17T13:37:59Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Completion of Equity Investment in Jackson",
+   "download_link": "NSM/RNS/3660222.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3654348.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-09T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3651887.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641924.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3636065.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T08:36:37Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "US Business: Reinsurance transaction & investment",
+   "download_link": "NSM/RNS/3629999.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T09:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3623063.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T11:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3621885.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T11:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3620455.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611480.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3606899.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T09:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing ",
+   "download_link": "NSM/RNS/3602450.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-18T09:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3598272.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T11:57:34Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3595791.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T08:30:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Business update for 2020 Annual General Meeting",
+   "download_link": "NSM/RNS/3594698.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-12T11:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3592759.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T09:04:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Disclosure of Director's details – Amy Yip",
+   "download_link": "NSM/RNS/3584384.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582772.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T09:00:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Payments of Dividends ",
+   "download_link": "NSM/RNS/3579360.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T08:30:06Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Update on arrangements for Annual General Meeting",
+   "download_link": "NSM/RNS/3579345.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T14:53:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to securities",
+   "download_link": "NSM/RNS/3576519.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T06:00:04Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3563367.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T09:37:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3562579.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T11:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3560961.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3559525.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T11:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Executive Director Remuneration",
+   "download_link": "NSM/RNS/3558927.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:00:05Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Pricing of US$1,000,000,000 Notes Offering",
+   "download_link": "NSM/RNS/3558239.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3556356.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T15:35:39Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3554869.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T13:54:39Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Prelim prospectus supplement re US Shelf Facility",
+   "download_link": "NSM/RNS/3554714.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T11:07:32Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/data-migration/LSE20200402110732_3551084.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T11:07:32Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/data-migration/LSE20200402110732_3551084.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401100003_3549140.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401100003_3549140.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T10:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200330100005_3545528.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:42:36Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200325164236_3541547.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:38:11Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200325163811_3541512.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:40:55Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164055_3539795.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:36:06Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163606_3539722.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T08:30:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on Covid-19 and current market conditions",
+   "download_link": "NSM/data-migration/LSE20200324083004_3538768.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T11:19:56Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report and Accounts 2019 and Form 20-F",
+   "download_link": "NSM/data-migration/LSE20200320111956_3535539.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T09:00:38Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200320090038_3535111.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T16:41:08Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200319164108_3534037.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T16:36:23Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200319163623_3533966.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Prudential Thailand bancassurance partnership",
+   "download_link": "NSM/data-migration/LSE20200319070007_3532564.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:41:38Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200316164138_3528797.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:36:01Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200316163601_3528703.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311100002_3521989.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY19 Results - Risk Factors",
+   "download_link": "NSM/data-migration/LSE20200311083009_3522212.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY19 Results - EEV",
+   "download_link": "NSM/data-migration/LSE20200311083007_3522217.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY19 Results - IFRS",
+   "download_link": "NSM/data-migration/LSE20200311083005_3522215.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Preparations commenced for Jackson's minority IPO",
+   "download_link": "NSM/data-migration/LSE20200311083003_3522248.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Prudential plc - 2019 second interim dividend",
+   "download_link": "NSM/data-migration/LSE20200311083003_3522259.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T08:30:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential Plc - FY19 Results - Business Review",
+   "download_link": "NSM/data-migration/LSE20200311083003_3522216.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310100002_3520397.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T11:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302110001_3511979.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T16:40:38Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200227164038_3509390.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T16:35:55Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200227163555_3509367.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Prudential receives Third Point LLC letter",
+   "download_link": "NSM/data-migration/LSE20200225070007_3505543.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-13T08:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Eastspring celebrates Thanachart acquisition",
+   "download_link": "NSM/data-migration/LSE20200213083004_3493248.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T14:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200212140001_3492314.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T10:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200211100006_3490474.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T10:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203100001_3481537.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T08:30:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-executive Director and Chair",
+   "download_link": "NSM/data-migration/LSE20200130083002_14403987.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200113100001_14381456.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-09T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200109140005_14378418.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T07:00:05Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Prudential Vietnam bancassurance partnership",
+   "download_link": "NSM/data-migration/LSE20200106070005_14371564.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102100004_14368869.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-27T09:30:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of acquisition of Thanachart Fund",
+   "download_link": "NSM/data-migration/LSE20191227093002_14363694.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T12:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191219123002_14356390.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T09:31:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191212093138_14346075.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191211120001_14344593.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210130001_14342783.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T09:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Prudential appoints new Non-Executive Director",
+   "download_link": "NSM/data-migration/LSE20191210093001_14342248.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T10:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202100006_14330675.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-22T10:03:26Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Disclosure of director's details",
+   "download_link": "NSM/data-migration/LSE20191122100326_14319510.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T09:01:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191121090153_14317506.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191114150002_14308835.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T11:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing six monthly return",
+   "download_link": "NSM/data-migration/LSE20191114110001_14308238.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T12:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191112120005_14304628.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191111130001_14303186.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T09:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block listing application",
+   "download_link": "NSM/data-migration/LSE20191106090003_14296543.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T12:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101123002_14291259.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T08:11:26Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Completion of the demerger of M&G plc",
+   "download_link": "NSM/data-migration/LSE20191021081126_14273281.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T09:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Substitution of M&G plc as issuer of securities",
+   "download_link": "NSM/data-migration/LSE20191018093001_14271676.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T10:54:15Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Results of General Meeting",
+   "download_link": "NSM/data-migration/LSE20191015105415_14266450.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191011120001_14263371.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191009150002_14260297.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191009110001_14259872.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191007133001_14256725.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-04T12:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191004123004_14254840.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T10:04:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Major Shareholding Notification",
+   "download_link": "NSM/data-migration/LSE20191003100415_14252655.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002160001_14251636.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T11:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001110003_14249015.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T13:35:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Eastspring agrees to acquire Thanachart Fund",
+   "download_link": "NSM/data-migration/LSE20190930133503_14247267.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T13:55:14Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Prudential plc analyst presentation",
+   "download_link": "NSM/data-migration/LSE20190926135514_14243328.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T14:46:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Presentation by Group Chief Executive",
+   "download_link": "NSM/data-migration/LSE20190925144602_14241469.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T14:15:01Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Publication of Circular and Prospectus",
+   "download_link": "NSM/data-migration/LSE20190925141501_14241427.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T09:30:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proposed demerger of M&G plc from Prudential plc",
+   "download_link": "NSM/data-migration/LSE20190925093005_14240813.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911120001_14222698.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T14:02:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910140222_14221103.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T12:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902120004_14210294.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T12:09:36Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "High Court judgment on proposed annuity transfer",
+   "download_link": "NSM/data-migration/LSE20190816120936_14192335.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:31:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "New corporate name for M&GPrudential at demerger",
+   "download_link": "NSM/data-migration/LSE20190814093103_14188551.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:30:22Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc - HY19 Results - Risk Factors",
+   "download_link": "NSM/data-migration/LSE20190814093022_14188549.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:30:15Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc - HY19 Results - EEV",
+   "download_link": "NSM/data-migration/LSE20190814093015_14188550.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:30:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc - HY19 Results - IFRS",
+   "download_link": "NSM/data-migration/LSE20190814093008_14188548.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T09:30:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Prudential plc - HY19 Results - Business Review",
+   "download_link": "NSM/data-migration/LSE20190814093004_14188546.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T12:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190813120003_14187061.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190809100005_14183364.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T09:30:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Eastspring to acquire fund manager in Thailand",
+   "download_link": "NSM/data-migration/LSE20190809093004_14183329.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T12:55:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801125509_14172952.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T10:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190711103001_14145049.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T11:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Role Changes",
+   "download_link": "NSM/data-migration/LSE20190710110002_14143494.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T10:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190709103001_14141709.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T16:53:31Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190708165331_14140666.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T09:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "M&GPrudential investor and analyst conference",
+   "download_link": "NSM/data-migration/LSE20190703093004_14134858.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701130001_14131593.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T11:19:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190627111930_14127187.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T17:57:47Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190612175747_14108844.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T14:32:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190611143202_14106895.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T11:05:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Results of invitations in respect of certain notes",
+   "download_link": "NSM/data-migration/LSE20190610110510_14104834.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603140005_14096506.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T15:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190529150001_14091256.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190528140001_14089471.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190521160001_14082385.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T13:36:11Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190516133611_14077097.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T09:25:27Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Solvency and Financial Condition Report",
+   "download_link": "NSM/data-migration/LSE20190516092527_14076509.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T08:55:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Invitations in respect of certain tier 2 notes",
+   "download_link": "NSM/data-migration/LSE20190516085511_14076416.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T12:03:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Prudential appoints new Non-Executive Director",
+   "download_link": "NSM/data-migration/LSE20190510120306_14070031.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509110001_14068214.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T11:34:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "M&GPrudential appoints new Non-Executive Director",
+   "download_link": "NSM/data-migration/LSE20190507113401_14064830.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T12:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501123001_14059561.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T14:55:34Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice - Redemption of Â£400m 11.375% Tier 2 Notes",
+   "download_link": "NSM/data-migration/LSE20190423145534_14048789.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T12:30:03Z",
+   "type": "Change of Registered Office",
+   "type_code": "CRO",
+   "headline": "Change of Registered Office",
+   "download_link": "NSM/data-migration/LSE20190412123003_14039716.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T12:34:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190410123401_14036289.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190409110001_14034361.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402140004_14025878.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T10:33:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401103301_14023388.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T12:40:02Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190329124002_14021696.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T11:30:57Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "M&GPrudential appoints Non-Executive Directors",
+   "download_link": "NSM/data-migration/LSE20190328113057_14019612.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T13:30:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2018 and Form 20-F",
+   "download_link": "NSM/data-migration/LSE20190322133001_14012843.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T12:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190320120004_14009388.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T16:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190314160004_14002949.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T08:30:15Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY18 Results - Risk Factors",
+   "download_link": "NSM/data-migration/LSE20190313083015_14000370.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T08:30:12Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY18 Results - EEV",
+   "download_link": "NSM/data-migration/LSE20190313083012_14000369.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T08:30:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY18 Results - IFRS",
+   "download_link": "NSM/data-migration/LSE20190313083006_14000368.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T08:30:02Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Prudential plc - FY18 Results - Business Review",
+   "download_link": "NSM/data-migration/LSE20190313083002_14000367.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T10:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190311100004_13997263.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T10:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301103002_13987215.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T12:01:24Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190228120124_13985544.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T12:22:50Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Disclosure of director's details",
+   "download_link": "NSM/data-migration/LSE20190213122250_13968261.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T11:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201110002_13955391.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Renewal of strategic bancassurance alliance",
+   "download_link": "NSM/data-migration/LSE20190110070007_13929645.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T10:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190109100004_13928886.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T11:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102110004_13920856.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181214140002_13904770.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T11:42:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181212114206_13901196.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T12:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181211120003_13899459.html",
+   "company": "Prudential PLC",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-11T10:00:02Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3811994.html",
+   "disclosure_id": "3811994",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-11T10:00:02Z",
+   "seq_id": "3811994",
+   "company": "Prudential PLC",
+   "last_updated_date": "2026-08-22T12:08:49.744907194Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-09T11:30:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "5493001Z3ZE83NGK8Y12",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3809210.html",
+   "disclosure_id": "3809210",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-09T11:30:05Z",
+   "seq_id": "3809210",
+   "company": "Prudential PLC",
+   "last_updated_date": "2026-08-22T12:08:49.736786289Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

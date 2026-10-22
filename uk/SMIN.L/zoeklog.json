@@ -1,13 +1,2351 @@
 {
- "aantal": 0,
+ "aantal": 229,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800MJL6IPZS3ASA11', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800MJL6IPZS3ASA11', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800MJL6IPZS3ASA11', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800MJL6IPZS3ASA11', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800MJL6IPZS3ASA11",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 229
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-23T13:24:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company - Replacement",
+   "download_link": "NSM/RNS/3825521.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T17:17:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3817463.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T10:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799206.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-19T09:03:25Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3785951.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T16:37:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Resolutions passed at the 2020 AGM",
+   "download_link": "NSM/Portal/NI-000014598.pdf",
+   "company": "Smiths Group Plc",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-16T16:30:04Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3782166.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Smiths Group Q1 Trading Statement",
+   "download_link": "NSM/RNS/3780828.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-04T16:41:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3770262.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T15:36:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3767262.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:01:07Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3766571.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766568.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T16:09:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3762570.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-16T16:46:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3751242.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T16:41:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749953.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T07:05:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2020",
+   "download_link": "NSM/Portal/NI-000012816.pdf",
+   "company": "Smiths Group Plc",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-15T07:03:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/Portal/NI-000012814.pdf",
+   "company": "Smiths Group Plc",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-15T07:00:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3749130.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T06:58:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report FY2020",
+   "download_link": "NSM/Portal/NI-000012810.pdf",
+   "company": "Smiths Group Plc",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-01T10:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735164.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T06:15:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3726570.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T06:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Smiths Group plc FY2020 Annual Results ",
+   "download_link": "NSM/RNS/3727190.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T10:00:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703041.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T13:06:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3680372.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T12:06:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3675958.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T16:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3673850.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641329.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading update & strategic restructuring",
+   "download_link": "NSM/RNS/3640768.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T08:33:24Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3632722.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T08:30:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3601093.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T10:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3582859.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3582854.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T16:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581038.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3581670.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T13:56:58Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Doc re. Listing Rule 9.2.6E",
+   "download_link": "NSM/RNS/3576462.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T15:15:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3564702.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T06:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/RNS/3553485.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200331070006_3546656.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T15:47:13Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "FCA moratorium on publication of results",
+   "download_link": "NSM/data-migration/LSE20200327154713_3544585.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T15:57:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200203155753_3482328.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200131170001_14406630.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-08T16:38:53Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200108163853_14376785.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T14:30:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102143007_14369421.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202090004_14330592.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T12:57:35Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20191113125735_14306619.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Smiths Group FY2020 Q1 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191113070004_14305398.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Resolutions passed at the 2019 AGM",
+   "download_link": "NSM/data-migration/250940013.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-11-11T10:57:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191111105704_14302705.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T16:45:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191104164504_14293663.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191101103004_14290783.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101103004_14290780.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T08:00:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20191011080002_14262781.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2019",
+   "download_link": "NSM/data-migration/246061369.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-10-11T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2019",
+   "download_link": "NSM/data-migration/246061385.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-10-09T14:52:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191009145202_14260283.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T16:08:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191007160812_14256982.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T17:56:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190930175655_14247785.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Smiths Group plc Annual Results FY2019",
+   "download_link": "NSM/data-migration/LSE20190920070008_14234446.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T09:30:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902093016_14209822.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T15:27:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190805152702_14176944.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T10:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801103003_14172515.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:15:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731171506_14171269.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Smiths Group plc Annual Report FY2019",
+   "download_link": "NSM/data-migration/246061343.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-07-30T09:01:22Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190730090122_14168255.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T14:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190726140005_14165312.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T13:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190725130002_14163469.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths Group extends pension de-risking",
+   "download_link": "NSM/data-migration/LSE20190703070004_14134169.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:47:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701104715_14131187.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Appointment of Smiths Medical CEO",
+   "download_link": "NSM/data-migration/LSE20190607070003_14102292.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603090002_14095803.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510133001_14070170.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T16:20:57Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190502162057_14061479.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:49:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501094917_14059110.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T09:30:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190501093001_14059049.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T09:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401090002_14023122.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T07:01:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths plans for separation of Smiths Medical",
+   "download_link": "NSM/data-migration/LSE20190322070102_14011782.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190322070003_14011685.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:15:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228171503_13986115.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T11:15:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190227111500_13983762.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T10:24:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190201102403_13955296.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T08:41:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201084153_13955135.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T10:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102103004_13920793.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-30T17:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181130170002_13887721.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-28T17:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181128170001_13884182.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T13:36:36Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20181114133636_13867028.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths Group intention to separate Smiths Medical",
+   "download_link": "NSM/data-migration/LSE20181114070002_13865833.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T07:00:01Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20181114070001_13865798.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Resolutions passed at the 2018 AGM",
+   "download_link": "NSM/data-migration/199076957.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-11-01T16:15:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20181101161501_13852116.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101120001_13851593.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101120001_13851595.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T17:15:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181031171502_13850203.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-26T07:00:03Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Smiths - Appointment of Joint Corporate Broker",
+   "download_link": "NSM/data-migration/LSE20181026070003_13843316.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-19T08:27:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181019082732_13835335.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form 2018",
+   "download_link": "NSM/data-migration/186916969.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-10-12T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2018",
+   "download_link": "NSM/data-migration/186916990.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-10-10T10:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181010101505_13823277.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-04T15:30:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181004153003_13817185.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-04T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20181004070005_13815753.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T09:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001093001_13810807.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-27T14:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180927141501_13807467.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-26T13:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180926133002_13805663.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-21T07:05:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Smiths Group sells Medical water bottling business",
+   "download_link": "NSM/data-migration/LSE20180921070501_13799326.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-21T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180921070003_13799271.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-13T12:45:51Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Smiths Medical",
+   "download_link": "NSM/data-migration/LSE20180913124551_13790013.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T15:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903150002_13777017.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-30T16:34:00Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Early Redemption",
+   "download_link": "NSM/data-migration/BWIPREM_20180830005580.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2018-08-03T14:51:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of Notes",
+   "download_link": "NSM/data-migration/LSE20180803145122_13743694.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-03T12:57:00Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Early Redemption",
+   "download_link": "NSM/data-migration/BWIPREM_20180803005237.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "BWI"
+  },
+  {
+   "publication_date": "2018-08-01T11:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180801114505_13739886.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T17:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180731171501_13738482.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/186916996.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-07-26T10:24:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180726102408_13732524.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-18T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Smiths Group pre-close trading update",
+   "download_link": "NSM/data-migration/LSE20180718070004_13721654.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T09:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702090004_13701145.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T11:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180601110001_13663684.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-29T07:00:13Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Smiths Medical",
+   "download_link": "NSM/data-migration/LSE20180529070013_13657061.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-22T16:07:17Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180522160717_13650979.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T09:30:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180501093004_13625391.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-27T13:31:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180427133121_13622120.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T14:51:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180404145122_13591849.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T14:48:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180404144855_13591838.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-23T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180323070004_13578401.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T17:05:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180228170502_13549905.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-26T17:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180226173001_13546432.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T10:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180201103002_13517996.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-31T17:02:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180131170231_13516929.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-22T07:00:03Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Divestment of John Crane's Bearings business",
+   "download_link": "NSM/data-migration/LSE20180122070003_13503681.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-12T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths statement on impact of US tax legislation",
+   "download_link": "NSM/data-migration/LSE20180112070002_13493954.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-09T13:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180109130001_13490204.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-03T09:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180103093001_13483541.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T15:00:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180102150002_13482629.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T10:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102101501_13482001.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths Group Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20171206070002_13455161.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-30T17:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171130171501_13450003.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-14T15:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20171114150001_13431375.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-14T13:34",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Articles of Association - Listing Rule 9.2.6E",
+   "download_link": "NSM/Portal/NI-000002066.pdf",
+   "company": "Smiths Group Plc",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-11-14T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20171114070003_13430108.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-14T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/151478769.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-11-01T13:45:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171101134501_13416958.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T13:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101134501_13416956.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T10:45:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171101104502_13416530.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-30T11:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171030110001_13413139.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-27T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171027150001_13412030.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-20T14:17:30Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Euro Medium Term Note Programme",
+   "download_link": "NSM/data-migration/LSE20171020141730_13404252.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-20T07:00:02Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Smiths Group extends pension de-risking",
+   "download_link": "NSM/data-migration/LSE20171020070002_13403832.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-20T00:00:00Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Base Prospectus - EUR 2,500m EMTN Programme",
+   "download_link": "NSM/data-migration/150252110.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2017-10-17T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20171017070005_13398476.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-10T14:30:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20171010143002_13392126.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-10T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2017 Notice of Annual General Meeting",
+   "download_link": "NSM/data-migration/148515157.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-10-10T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2017 Proxy Form - Annual General Meeting",
+   "download_link": "NSM/data-migration/148515473.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-10-06T09:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171006093001_13388610.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-22T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170922070003_13371820.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-31T17:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170831171501_13347985.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-30T11:45:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Announcement of Results & Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20170830114501_13345788.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-29T11:35:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170829113518_13344268.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170801103001_13314834.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2017",
+   "download_link": "NSM/data-migration/148515159.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-07-20T07:00:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Notification of Proposed Transactions by PDMR",
+   "download_link": "NSM/data-migration/LSE20170720070009_13301293.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-10T13:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disposal Update",
+   "download_link": "NSM/data-migration/LSE20170710133001_13289683.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T10:06:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170703100616_13281360.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-30T17:23:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170630172338_13280410.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-09T16:11:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170609161140_13255981.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T10:19:24Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170608101924_13253835.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T14:00:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20170601140001_13246189.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T17:46:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170531174647_13244694.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-19T10:57:27Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170519105727_13231868.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T07:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170503070007_13211748.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T09:21:59Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170502092159_13210524.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T09:14:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502091436_13210507.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T07:00:16Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Smiths Group divests Microwave Telecoms business",
+   "download_link": "NSM/data-migration/LSE20170502070016_13209803.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-07T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Smiths completes acquisition of Morpho Detection",
+   "download_link": "NSM/data-migration/LSE20170407070007_13187024.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-05T12:01:42Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170405120142_13184735.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T17:01:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170331170125_13179725.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-24T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170324070007_13169937.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T17:02:39Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170228170239_13142466.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T00:00:00Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/128367577.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-02-24T07:01:04Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170224070104_13138212.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-21T17:01:36Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20170221170136_13134886.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-21T00:00:00Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Smiths Group publishes Final Terms of Notes",
+   "download_link": "NSM/data-migration/128015866.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-02-16T15:10:21Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "SMITHS LAUNCHES 10 YEAR EUR650m BOND OFFERING",
+   "download_link": "NSM/data-migration/LSE20170216151021_13130538.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-09T09:30:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20161209093002_013062200.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T10:33:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201103356_013053226.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T14:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20161124140001_013046107.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T16:05:53Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20161115160553_013035987.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161115070006_013034782.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions passed at 2016 AGM",
+   "download_link": "NSM/data-migration/121099084.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-11-09T18:18:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161109181841_013030184.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-07T07:00:08Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Smiths Group divests Wallace for £140 million",
+   "download_link": "NSM/data-migration/LSE20161107070008_013025653.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T10:36:26Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161101103626_013019895.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T10:35:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101103550_013019894.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-28T07:00:12Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths de-risks pension liabilities - £250m buy-in",
+   "download_link": "NSM/data-migration/LSE20161028070012_013015855.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-19T17:37:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161019173704_013006804.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-18T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths establishes Euro Medium Term Note Programme",
+   "download_link": "NSM/data-migration/LSE20161018070007_013003881.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-17T00:00:00Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/119552833.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-10-13T15:21:22Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20161013152122_013000234.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-13T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2016 AGM",
+   "download_link": "NSM/data-migration/119332089.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-10-13T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notices of online availability of Annual Report and Notice of AGM",
+   "download_link": "NSM/data-migration/119332091.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-10-13T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2016 AGM proxy form",
+   "download_link": "NSM/data-migration/119332090.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-10-11T11:38:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161011113828_012996842.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T10:11:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161003101145_012987203.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T17:06:14Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160930170614_012986185.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-28T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160928070008_012981158.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-23T07:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths Group to divest Artificial Lift business",
+   "download_link": "NSM/data-migration/LSE20160923070007_012976205.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T07:00:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901070011_012950154.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T12:24:28Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results, dividend recommendation & AGM",
+   "download_link": "NSM/data-migration/LSE20160830122428_012947541.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T07:00:11Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Smiths Group trading update",
+   "download_link": "NSM/data-migration/LSE20160809070011_012923742.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T14:26:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801142657_012914213.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2016",
+   "download_link": "NSM/data-migration/119332094.pdf",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-07-07T18:06:47Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160707180647_012884924.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-30T16:55:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160630165507_012875549.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-30T16:54:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160630165450_012875548.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-10T16:30:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160610163043_012850251.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T11:18:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601111804_012837046.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-11T12:06:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160511120648_012812103.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:04:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160503100401_012800691.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:03:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503100343_012800690.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-27T14:50:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Smiths announces new Non-executive Director",
+   "download_link": "NSM/data-migration/LSE20160427145007_012794682.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-21T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smiths Group acquisition of Morpho Detection",
+   "download_link": "NSM/data-migration/LSE20160421070008_012785697.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T18:02:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160331180201_012758925.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-16T13:22:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160316132231_012740208.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-16T07:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Yearly Report",
+   "download_link": "NSM/data-migration/LSE20160316070011_012738961.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T08:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301080002_012718069.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smiths concludes pension funding exercise",
+   "download_link": "NSM/data-migration/LSE20160301070006_012717603.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-25T18:24:59Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement re Home State Disclosure",
+   "download_link": "NSM/data-migration/LSE20160225182459_012713533.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T12:25:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160204122526_012686960.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T07:00:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201070011_012680099.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-26T17:35:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160126173520_012674315.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T07:06:12Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "John Crane management change",
+   "download_link": "NSM/data-migration/LSE20160114070612_012658518.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T10:00:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104100037_012644280.html",
+   "company": "Smiths Group PLC",
+   "lei": "213800MJL6IPZS3ASA11",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-23T13:24:40Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800MJL6IPZS3ASA11",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3825521.html",
+   "disclosure_id": "3825521",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-23T13:24:40Z",
+   "seq_id": "3825521",
+   "company": "Smiths Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.732675451Z",
+   "headline": "Holding(s) in Company - Replacement",
+   "type_code": "HOL"
+  },
+  {
+   "submitted_date": "2020-12-16T17:17:09Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800MJL6IPZS3ASA11",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3817463.html",
+   "disclosure_id": "3817463",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-16T17:17:09Z",
+   "seq_id": "3817463",
+   "company": "Smiths Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.193856191Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  }
+ ]
 }

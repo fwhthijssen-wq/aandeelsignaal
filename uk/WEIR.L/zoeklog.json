@@ -1,13 +1,3621 @@
 {
- "aantal": 0,
+ "aantal": 356,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300KDR56WHY9I3D10', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300KDR56WHY9I3D10', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300KDR56WHY9I3D10', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300KDR56WHY9I3D10', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300KDR56WHY9I3D10",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 356
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-22T07:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Weir Oil & Gas sale expected to complete Q1 2021",
+   "download_link": "NSM/RNS/3822764.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T17:29:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3820701.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-18T17:21:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3820690.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-14T14:56:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3814325.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T07:00:04Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Weir wins £95m aftermarket order",
+   "download_link": "NSM/RNS/3798472.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:51:50Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798310.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:45:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3798301.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-27T14:15:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3796345.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-26T09:02:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3794410.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T18:34:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "The Weir Group PLC - General Meeting Resolution",
+   "download_link": "NSM/Portal/NI-000014954.docx",
+   "company": "WEIR GROUP PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-23T16:33:21Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/RNS/3790588.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-19T10:05:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3785995.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T13:48:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3781951.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-04T11:18:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3769892.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T15:31:48Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Circular and Notice of General Meeting ",
+   "download_link": "NSM/RNS/3768761.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T15:07:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "The Weir Group PLC - Form of Proxy",
+   "download_link": "NSM/Portal/NI-000013877.pdf",
+   "company": "WEIR GROUP PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-03T14:59:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "The Weir Group PLC - Class 1 Circular",
+   "download_link": "NSM/Portal/NI-000013875.pdf",
+   "company": "WEIR GROUP PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-03T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Update ",
+   "download_link": "NSM/RNS/3767501.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3765793.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T16:34:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3765557.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T14:15:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765455.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T15:13:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3748446.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T06:00:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Proposed sale of Weir Oil & Gas",
+   "download_link": "NSM/RNS/3737681.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T15:59:34Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3736067.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T15:00:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733896.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T09:57:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711189.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T06:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701718.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-13T15:12:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3687328.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:07:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3674494.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T09:17:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3673972.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T06:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3670214.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T14:40:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3643928.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T15:15:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3642221.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T09:47:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3641630.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T06:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Refinancing and Trading Update",
+   "download_link": "NSM/RNS/3637856.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-24T15:31:28Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Notification of Board Changes ",
+   "download_link": "NSM/RNS/3636163.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T15:03:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3629157.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T09:22:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3613122.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T13:01:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3610437.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T11:30:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3591477.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T14:40:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3588023.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T15:25:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586500.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T14:33:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586454.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T11:08:30Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586203.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T16:08:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585085.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T16:05:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585079.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T16:02:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585075.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T16:01:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585073.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:57:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585069.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:54:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585065.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:53:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585063.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:49:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585060.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:49:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585058.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T14:11:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3581743.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T15:30:48Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3578484.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T13:30",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "The Weir Group PLC - Special Resolutions AGM 2020",
+   "download_link": "NSM/Portal/NI-000002411.pdf",
+   "company": "WEIR GROUP PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-28T06:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement ",
+   "download_link": "NSM/RNS/3576790.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T16:01:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Articles of Association",
+   "download_link": "NSM/RNS/3576644.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T11:40:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3576269.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T06:00:03Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19 and The Weir Group PLC AGM",
+   "download_link": "NSM/RNS/3569494.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T14:42:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567754.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T12:05:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3567555.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T14:56:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561589.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T14:50:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561581.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T16:14:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3559748.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T16:07:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3559737.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:58:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402155803_3551710.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:58:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402155803_3551710.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:53:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402155335_3551702.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:53:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402155335_3551702.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:48:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402154843_3551690.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:48:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402154843_3551690.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402154350_3551686.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:43:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402154350_3551686.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:39:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153908_3551682.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:39:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153908_3551682.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:36:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153649_3551679.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:36:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153649_3551679.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:32:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153235_3551675.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:32:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402153235_3551675.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:23:37Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401162337_3550056.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:23:37Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401162337_3550056.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T15:41:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331154137_3548133.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T11:22:18Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200331112218_3547437.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T07:00:03Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Trading Update and impact of Covid-19",
+   "download_link": "NSM/data-migration/LSE20200326070003_3541723.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T07:05:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Weir Chairman",
+   "download_link": "NSM/data-migration/LSE20200317070501_3529034.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T09:44:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200312094403_3524399.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T15:16:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200306151642_3518622.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T15:57:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200305155733_3517273.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T15:40:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200304154059_3515678.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T16:20:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200303162046_3514315.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:42:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200302154239_3512715.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T15:30:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200228153043_3510855.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T17:18:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200227171833_3509443.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200226070003_3506544.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T15:57:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200221155750_3502284.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T10:05:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200221100504_3501760.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T14:57:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200220145711_3500857.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T13:51:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200218135154_3498051.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-13T14:11:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200213141154_3493903.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T14:11:39Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Weir Chairman",
+   "download_link": "NSM/data-migration/LSE20200212141139_3492353.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-31T14:13:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200131141309_14406417.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T14:49:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200127144922_14399362.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T15:21:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200121152100_14392596.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-08T15:57:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200108155732_14376746.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-07T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "PDMR Change",
+   "download_link": "NSM/data-migration/LSE20200107070004_14373303.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T13:47:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200106134710_14372771.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "The Weir Group PLC Notice of AGM 2020",
+   "download_link": "NSM/data-migration/271861967.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "The Weir Group PLC Annual Report 2019",
+   "download_link": "NSM/data-migration/271861969.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "The Weir Group PLC Form of Proxy AGM 2020",
+   "download_link": "NSM/data-migration/271861970.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-19T16:22:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191219162210_14356837.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "PDMR Change",
+   "download_link": "NSM/data-migration/LSE20191212070006_14345342.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Markets Event",
+   "download_link": "NSM/data-migration/LSE20191206070004_14337967.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T15:06:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191129150656_14329406.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T09:56:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191119095656_14313817.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T11:59:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191114115956_14308412.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20191105070006_14294050.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T12:24:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191031122403_14289185.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T10:56:21Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191014105621_14264818.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T09:52:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002095243_14250841.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T16:31:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001163108_14249783.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T15:41:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191001154142_14249703.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T14:49:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190923144946_14237714.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T16:45:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190919164543_14234178.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T14:17:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190919141701_14233939.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T15:39:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190918153929_14232232.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T15:48:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190917154853_14230404.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T15:47:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190917154736_14230400.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T07:10:14Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Notification of Change in Director's Details",
+   "download_link": "NSM/data-migration/LSE20190906071014_14216739.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T07:00:06Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Weir wins record £100m order - Australia",
+   "download_link": "NSM/data-migration/LSE20190906070006_14216328.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T13:34:00Z",
+   "type": "Treasury Stock",
+   "type_code": "TRS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20190905133400_14215718.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T14:23:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190902142333_14210529.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T14:50:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190830145001_14208583.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T09:21:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190830092102_14207861.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T16:13:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190812161329_14185822.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T14:55:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190807145510_14180432.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T16:42:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190731164200_14171218.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T13:03:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190731130307_14170852.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:15Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190730070015_14167616.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T09:56:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190715095628_14149215.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Weir completes sale of Flow Control",
+   "download_link": "NSM/data-migration/LSE20190701070004_14130218.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T16:27:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board and Committee Changes",
+   "download_link": "NSM/data-migration/LSE20190628162708_14129868.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T14:34:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190628143444_14129602.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T17:19:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190614171909_14112216.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T15:59:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190604155943_14098430.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T16:00:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603160037_14096708.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T09:46:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531094613_14094012.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T11:57:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190524115704_14087125.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T10:34:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190508103421_14066514.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:47:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501144712_14059760.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:47:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501144703_14059759.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:43:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501144345_14059754.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:42:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501144259_14059750.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:38:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501143808_14059740.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:37:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501143705_14059739.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:36:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501143627_14059737.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:32:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190501143254_14059731.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T07:00:12Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20190430070012_14056329.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Voting Results 2019",
+   "download_link": "NSM/data-migration/220170633.doc",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-30T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Record of Special Resolutions",
+   "download_link": "NSM/data-migration/220163510.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-23T16:01:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190423160128_14048897.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T12:34:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411123436_14038001.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T12:09:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411120951_14037936.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T15:03:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402150336_14025968.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:01:59Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190401110159_14023484.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T10:47:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329104740_14021416.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T12:00:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190328120027_14019703.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T15:17:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190326151740_14016553.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T15:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190319150003_14007907.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T10:49:39Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190318104939_14005810.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/214907481.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-15T15:38:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20190315153846_14004614.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T12:08:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190315120840_14004351.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T16:31:44Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Notification of Change in Director's Details",
+   "download_link": "NSM/data-migration/LSE20190307163144_13994608.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T14:47:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228144754_13985810.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T12:53:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190228125339_13985636.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190227070005_13982805.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T07:00:07Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Weir agrees sale of Flow Control division",
+   "download_link": "NSM/data-migration/LSE20190225070007_13979593.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T15:23:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190207152346_13962313.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T13:47:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20190128134701_13949077.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-25T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190125070004_13946386.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T16:33:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190109163310_13929409.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T16:26:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190107162644_13926424.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T14:02:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190107140234_13926227.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice 2019",
+   "download_link": "NSM/data-migration/214907485.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/214907555.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-12T15:34:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181212153456_13901548.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-05T15:37:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181205153719_13893006.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-30T12:54:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181130125408_13887314.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-22T16:44:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181122164449_13877697.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-21T14:50:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181121145058_13875891.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T13:08:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181109130838_13862029.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-08T13:39:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181108133901_13860496.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-06T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20181106070005_13855882.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T12:32:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181101123222_13851720.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T12:51:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181031125145_13849735.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T10:04:20Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20181031100420_13849286.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-12T16:27:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181012162757_13827609.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-28T12:17:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180928121737_13809159.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-06T16:10:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20180906161010_13781988.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-31T14:39:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180831143935_13775148.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-22T16:41:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180822164154_13765078.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-21T15:32:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180821153224_13763442.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-20T15:55:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180820155517_13761855.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-17T09:35:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180817093555_13759430.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-14T14:43:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180814144325_13755223.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-07T13:47:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180807134758_13746865.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T14:40:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180801144031_13740141.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T10:00:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180731100024_13737616.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T07:00:18Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180731070018_13736870.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-13T15:46:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180713154632_13717873.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-12T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Completion of Acquisition and Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180712070004_13714718.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:48:31Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180711164831_13714525.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-29T10:55:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180629105521_13699350.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-26T15:53:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20180626155302_13694506.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-22T11:25:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180622112559_13690183.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-13T16:18:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180613161802_13678695.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-07T15:54:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180607155449_13671605.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-05T16:26:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180605162658_13668060.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-04T14:46:50Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180604144650_13666061.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-31T10:20:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180531102027_13661463.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-25T16:07:53Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Result of Elections of Scrip Dividend Scheme",
+   "download_link": "NSM/data-migration/LSE20180525160753_13656453.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-17T15:05:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180517150516_13645728.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T16:05:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180515160557_13642292.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T15:27:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180511152726_13638599.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-10T11:14:47Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/data-migration/LSE20180510111447_13636466.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-04T15:33:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180504153347_13631158.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-04T12:36:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180504123651_13630842.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T16:18:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180503161847_13629508.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T15:58:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180503155814_13629487.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T13:37:58Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "SCRIP Reference Share Price",
+   "download_link": "NSM/data-migration/LSE20180503133758_13629180.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T16:18:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180501161818_13626306.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-30T11:10:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180430111019_13623716.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-26T16:35:03Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180426163503_13620645.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-26T13:30",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "The Weir Group PLC - Articles of Association",
+   "download_link": "NSM/Portal/NI-000002143.pdf",
+   "company": "WEIR GROUP PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-26T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/169625374.doc",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-26T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Record of Special Resolutions",
+   "download_link": "NSM/data-migration/169625377.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-24T16:04:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180424160433_13616965.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-24T09:34:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180424093405_13616056.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-23T14:49:50Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180423144950_13614952.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-19T15:08:42Z",
+   "type": "Result of Equity Issue",
+   "type_code": "ROI",
+   "headline": "Result of Placing",
+   "download_link": "NSM/data-migration/LSE20180419150842_13611533.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-19T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20180419070008_13610249.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-19T07:00:06Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "Proposed placing of new ordinary shares",
+   "download_link": "NSM/data-migration/LSE20180419070006_13610251.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-19T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20180419070004_13610206.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T16:29:16Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180403162916_13590170.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-29T14:58:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180329145852_13587479.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-19T11:02:30Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180319110230_13571839.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-08T12:37:56Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180308123756_13560111.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-08T07:00:07Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Company Secretary Change",
+   "download_link": "NSM/data-migration/LSE20180308070007_13559064.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-06T16:07:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180306160707_13557006.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-06T11:59:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20180306115901_13556570.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T14:08:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180301140816_13551478.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T12:14:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share Purchase",
+   "download_link": "NSM/data-migration/LSE20180301121437_13551302.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T09:42:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180228094208_13548917.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-28T07:00:02Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180228070002_13548254.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-06T14:27:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180206142718_13523538.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-05T10:48:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180205104833_13521512.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-31T10:46:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180131104606_13516225.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-30T15:39:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180130153952_13515064.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-22T15:43:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180122154340_13505062.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-12T12:18:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180112121838_13494978.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Preliminary US tax reform assessment",
+   "download_link": "NSM/data-migration/LSE20180111070002_13492337.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM 2018 Notice of Meeting",
+   "download_link": "NSM/data-migration/165867478.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM 2018 Form of Proxy",
+   "download_link": "NSM/data-migration/165867500.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report 2017",
+   "download_link": "NSM/data-migration/165845888.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-04T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Notification of Board Changes",
+   "download_link": "NSM/data-migration/LSE20171204070005_13452107.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-30T16:27:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171130162756_13449918.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-29T16:43:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171129164322_13448244.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T15:51:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171115155115_13433026.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T15:17:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171115151704_13432974.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-09T15:11:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171109151105_13426651.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T16:43:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171108164354_13425201.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-07T10:46:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171107104604_13423054.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-03T15:01:28Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20171103150128_13420369.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-02T14:25:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171102142528_13418707.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-31T13:43:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171031134300_13415087.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-31T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20171031070002_13413935.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-30T09:36:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171030093640_13412981.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-24T16:51:59Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "RESULT OF ELECTIONS OF SCRIP DIVIDEND SCHEME",
+   "download_link": "NSM/data-migration/LSE20171024165159_13407601.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-18T13:22:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171018132245_13401005.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T14:35:24Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171002143524_13382836.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-29T14:22:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170929142222_13380907.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-28T15:48:00Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "SCRIP Dividend Reference Price",
+   "download_link": "NSM/data-migration/LSE20170928154800_13379282.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-28T09:51:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170928095128_13378578.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-20T16:00:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170920160038_13369843.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T15:36:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170912153639_13360357.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-08T16:30:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170908163012_13357235.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-07T16:03:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170907160310_13355740.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-23T15:39:24Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170823153924_13339817.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-21T13:41:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170821134155_13336712.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-15T16:17:19Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20170815161719_13330955.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-31T16:44:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170731164417_13313804.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-27T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170727070002_13308879.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-21T13:48:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170721134803_13303775.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-19T10:25:58Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170719102558_13300246.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-17T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170717070004_13296528.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-14T07:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170714070003_13295005.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-10T17:31:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170710173132_13290071.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T17:22:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170704172202_13283964.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T10:25:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170704102515_13283183.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-30T16:23:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170630162315_13280296.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-30T12:39:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170630123905_13279827.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-20T16:23:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170620162300_13267194.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-13T17:03:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170613170355_13259228.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T12:07:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170612120756_13257147.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170612070004_13256308.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T17:20:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170608172024_13254537.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T16:26:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170608162645_13254444.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-07T10:06:13Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170607100613_13252231.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-05T12:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170605120001_13249366.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T16:20:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170531162042_13244506.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-31T15:20:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170531152023_13244413.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-26T12:28:13Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Result of Elections of Scrip Dividend Scheme",
+   "download_link": "NSM/data-migration/LSE20170526122813_13240305.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T13:04:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524130422_13237226.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T12:27:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170524122716_13237146.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "PDMR change",
+   "download_link": "NSM/data-migration/LSE20170522120002_13233847.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-18T10:42:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170518104256_13230334.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-10T14:52:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170510145210_13221062.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T13:01:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20170505130151_13216240.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T11:58:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Scrip Dividend Reference Price",
+   "download_link": "NSM/data-migration/LSE20170505115828_13216163.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T15:28:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170504152841_13214916.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T17:47:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170503174700_13213361.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T17:38:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170503173842_13213354.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T14:47:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170503144709_13213087.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-28T11:38:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170428113811_13208654.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-27T16:46:32Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170427164632_13207470.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-27T07:00:14Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Interim Management Statement",
+   "download_link": "NSM/data-migration/LSE20170427070014_13206080.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-27T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/data-migration/132520672.doc",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-26T16:31:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170426163111_13205747.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-18T09:58:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170418095828_13195393.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T16:08:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170403160834_13181808.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T15:40:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170403154014_13181762.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T13:22:38Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170403132238_13181443.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T15:36:23Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170331153623_13179559.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-30T12:35:27Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170330123527_13177369.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-29T14:02:23Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170329140223_13175931.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-22T11:13:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170322111314_13167501.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T11:39:38Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transfer of Treasury Shares",
+   "download_link": "NSM/data-migration/LSE20170317113938_13162876.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-13T16:50:43Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170313165043_13156744.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-13T16:00:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170313160002_13156677.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-13T08:28:44Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170313082844_13155893.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-13T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/129161187.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-13T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2017",
+   "download_link": "NSM/data-migration/129160692.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-08T14:00:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "PDMR change",
+   "download_link": "NSM/data-migration/LSE20170308140003_13151634.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T15:46:17Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170303154617_13147322.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-28T16:19:15Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170228161915_13142381.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-24T16:41:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170224164125_13139306.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T14:37:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170222143709_13136095.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T07:05:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Appointment of Chief Technology Officer",
+   "download_link": "NSM/data-migration/LSE20170222070502_13135161.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T07:00:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170222070008_13135076.html",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/129160719.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-28T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM resolutions",
+   "download_link": "NSM/data-migration/110384175.doc",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-05T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Scrip Dividend Scheme Circular",
+   "download_link": "NSM/data-migration/108974024.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-05T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/108974020.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-05T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Scrip Dividend Scheme Circular - Mandate Form",
+   "download_link": "NSM/data-migration/108974032.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-05T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2016",
+   "download_link": "NSM/data-migration/108974015.pdf",
+   "company": "Weir Group PLC",
+   "lei": "549300KDR56WHY9I3D10",
+   "source": "Portal (pre-Sept 2017)"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-22T07:00:02Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Strategy/Company/ Operations Update",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "549300KDR56WHY9I3D10",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3822764.html",
+   "disclosure_id": "3822764",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-22T07:00:02Z",
+   "seq_id": "3822764",
+   "company": "Weir Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.725320393Z",
+   "headline": "Weir Oil & Gas sale expected to complete Q1 2021",
+   "type_code": "UPD"
+  },
+  {
+   "submitted_date": "2020-12-18T17:29:29Z",
+   "tag_esef": "",
+   "classifications_code": "2.3",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300KDR56WHY9I3D10",
+   "classifications": "Major shareholding notifications",
+   "download_link": "NSM/RNS/3820701.html",
+   "disclosure_id": "3820701",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-18T17:29:29Z",
+   "seq_id": "3820701",
+   "company": "Weir Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.202897177Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  }
+ ]
 }

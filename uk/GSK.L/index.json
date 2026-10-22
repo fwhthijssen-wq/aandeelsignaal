@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-06",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "GlaxoSmithKline PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190206120123_13960517.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 1371611
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-05",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Glaxosmithkline PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200205120002_3484900.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 1456682
+ }
+]

@@ -1,13 +1,143 @@
 {
- "aantal": 0,
+ "aantal": 8,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800TB53ELEUKM7Q61', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800TB53ELEUKM7Q61', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800TB53ELEUKM7Q61', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800TB53ELEUKM7Q61', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800TB53ELEUKM7Q61",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 8
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-08-27T11:01:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000010068.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-26T10:12:20.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Vodafone Group PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000010132.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-26T09:59:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000010019.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-07-28T15:25:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Results of AGM - Special Business",
+   "download_link": "NSM/Portal/NI-000008455.doc",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-27T15:24:00.000Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Notice of Board Change and Withdrawal of AGM Resolution",
+   "download_link": "NSM/Portal/NI-000008383.docx",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-19T11:23:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000006213.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-19T11:17:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000006211.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-01T11:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2020",
+   "download_link": "NSM/Portal/NI-000005017.pdf",
+   "company": "Vodafone Group PLC",
+   "lei": "213800TB53ELEUKM7Q61",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-08-27T11:03:24.276Z",
+   "tag_esef": "",
+   "document_date": "2020-08-26",
+   "classifications_code": "3.1",
+   "source": "Direct Upload",
+   "type": "Publication of a Prospectus",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "Prospectuses",
+   "lei": "213800TB53ELEUKM7Q61",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000010068.pdf",
+   "disclosure_id": "NI-000010068-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-08-27T11:01:00.000Z",
+   "seq_id": "NI-000010068-0",
+   "company": "Vodafone Group PLC",
+   "last_updated_date": "2026-08-22T12:05:16.076213316Z",
+   "headline": "Prospectus",
+   "type_code": "PDI"
+  },
+  {
+   "submitted_date": "2020-08-28T09:10:19.826Z",
+   "tag_esef": "",
+   "document_date": "2020-08-26",
+   "classifications_code": "3.1",
+   "source": "FCA",
+   "type": "Base Prospectus",
+   "lei_remediation_flag": "N",
+   "document_format": "PDF",
+   "category_group": "Prospectuses",
+   "lei": "213800TB53ELEUKM7Q61",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/Portal/NI-000010132.pdf",
+   "disclosure_id": "NI-000010132-0",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-08-26T10:12:20.000Z",
+   "seq_id": "NI-000010132-0",
+   "company": "Vodafone Group PLC",
+   "last_updated_date": "2026-08-22T12:05:16.079181594Z",
+   "headline": "Vodafone Group PLC - Base prospectus (debt)",
+   "type_code": "FCA01"
+  }
+ ]
 }

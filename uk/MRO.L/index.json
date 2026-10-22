@@ -1,1 +1,32 @@
-[]
+[
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2017",
+  "bedrijf": "Melrose Industries PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/167945741.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 9162278
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2018",
+  "bedrijf": "Melrose Industries PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/217018066.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7118895
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-04-03",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2019",
+  "bedrijf": "Melrose Industries PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/272359471.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 6383220
+ }
+]

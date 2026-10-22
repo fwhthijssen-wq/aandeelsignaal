@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2016-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report",
+  "bedrijf": "Weir Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/129160719.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 6480926
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2017-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Financial Report 2017",
+  "bedrijf": "Weir Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/165845888.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 9065674
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2018",
+  "bedrijf": "Weir Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/214907555.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7935248
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2019-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "The Weir Group PLC Annual Report 2019",
+  "bedrijf": "Weir Group PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/271861969.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 10793449
+ }
+]

@@ -1,13 +1,3171 @@
 {
- "aantal": 0,
+ "aantal": 311,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', 'CT4UIJ3TUKGYYHMENQ17', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', 'CT4UIJ3TUKGYYHMENQ17', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'CT4UIJ3TUKGYYHMENQ17', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'CT4UIJ3TUKGYYHMENQ17', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "CT4UIJ3TUKGYYHMENQ17",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 311
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-16T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3817284.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Balfour Beatty Trading Update",
+   "download_link": "NSM/RNS/3808235.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T16:38:08Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3803465.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T15:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3792923.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T13:15:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3784433.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T13:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3784436.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T12:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3755042.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-16T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3750856.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-06T12:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3739555.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T12:00:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3727445.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3726432.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3718275.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T08:59:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3705812.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T06:00:07Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty JV awarded HK$12.88bn contract",
+   "download_link": "NSM/RNS/3693800.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T09:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3692053.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T06:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "BALFOUR BEATTY PLC 2020 HALF YEAR RESULTS",
+   "download_link": "NSM/RNS/3684761.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-20T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3660463.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T11:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3655714.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T14:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3649195.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T15:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3643931.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T07:47:31Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Cancellation of Listing of Preference Shares",
+   "download_link": "NSM/RNS/3643172.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:04Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty JV awarded HK$5.67bn contract",
+   "download_link": "NSM/RNS/3640718.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T15:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3637614.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T15:00:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "2020 AGM Special Business Resolutions",
+   "download_link": "NSM/Portal/NI-000006586.pdf",
+   "company": "BALFOUR BEATTY PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-17T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3628961.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T08:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3627759.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T08:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3623541.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T12:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3623341.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T15:30:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3622153.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-08T16:11:50Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3619476.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:31:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Preference Share Notice of Intended Cancellation",
+   "download_link": "NSM/RNS/3611473.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:30:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/RNS/3611463.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T08:30:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000004987.pdf",
+   "company": "BALFOUR BEATTY PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-01T08:30:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/Portal/NI-000004997.pdf",
+   "company": "BALFOUR BEATTY PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-01T06:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Balfour Beatty trading update and AGM",
+   "download_link": "NSM/RNS/3610874.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T10:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3602609.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-18T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3598830.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T17:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company (replacement)",
+   "download_link": "NSM/RNS/3591883.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T14:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3591050.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T15:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3588071.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T12:58:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/Portal/NI-000002987.pdf",
+   "company": "BALFOUR BEATTY PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-01T15:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3583364.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T15:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3581709.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T15:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3564681.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T15:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3559601.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T15:16:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3557982.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-08T08:00",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report and Accounts",
+   "download_link": "NSM/Portal/NI-000000443.pdf",
+   "company": "BALFOUR BEATTY PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-03T09:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200403090004_3551876.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T09:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200403090004_3551876.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T10:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200331103003_3547331.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T10:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200331103003_3547354.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19 update and postponement of AGM",
+   "download_link": "NSM/data-migration/LSE20200327070006_3543274.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316170001_3528775.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "BALFOUR BEATTY PLC FULL YEAR RESULTS 2019",
+   "download_link": "NSM/data-migration/LSE20200311070004_3522206.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T11:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200305110005_3516659.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-17T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200217110002_3496300.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T14:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200123140003_14396137.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T14:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200116140007_14387513.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T08:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200113083001_14381217.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-24T08:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191224083001_14361792.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T11:10:49Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "ABERDEEN WESTERN PERIPHERAL ROUTE CLAIM",
+   "download_link": "NSM/data-migration/LSE20191223111049_14360191.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-20T09:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191220090004_14357765.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T10:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191216100005_14349977.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Balfour Beatty Trading Update",
+   "download_link": "NSM/data-migration/LSE20191212070007_14345359.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T17:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191209173004_14341386.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T17:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191209173004_14341384.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T17:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191209173004_14341385.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T17:41:31Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191202174131_14331952.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-20T13:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191120130004_14316129.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T09:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191119090003_14313701.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T09:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191106090003_14296544.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191016160001_14268874.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T16:20:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190919162004_14234135.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T13:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190913130002_14226410.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190820160001_14196226.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "BALFOUR BEATTY PLC 2019 HALF YEAR RESULTS",
+   "download_link": "NSM/data-migration/LSE20190814070005_14187862.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190725160001_14163731.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T16:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190723160003_14160238.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T15:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190711150001_14145563.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T15:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710150004_14143884.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T15:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710150004_14143886.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T15:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710150004_14143888.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T09:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190710090005_14143204.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Company Update",
+   "download_link": "NSM/data-migration/LSE20190702070004_14132360.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T11:27:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190701112742_14131282.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190626160001_14125871.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T09:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190613090001_14109664.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T16:30:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190607163001_14103744.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T16:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190603163004_14096739.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T16:00:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190603160003_14096703.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T10:53:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190603105349_14096104.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T07:13:07Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty JV secures $1.7bn US road contract",
+   "download_link": "NSM/data-migration/LSE20190531071307_14093695.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T16:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190529163001_14091358.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T15:31:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Membership Change",
+   "download_link": "NSM/data-migration/LSE20190522153111_14084003.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T10:00:27Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Meeting",
+   "download_link": "NSM/data-migration/LSE20190520100027_14080050.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T16:30:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190516163001_14077385.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T07:00:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Balfour Beatty AGM Trading Update",
+   "download_link": "NSM/data-migration/LSE20190516070005_14075841.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/221967519.doc",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-18T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190418150002_14046873.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190415090001_14040915.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T16:15:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190404161552_14029683.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T09:35:54Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Annual Report 2018 and Notice of Meeting 2019",
+   "download_link": "NSM/data-migration/LSE20190404093554_14028882.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/216888233.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-04T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/216886277.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-04T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/216888232.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-02T16:07:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402160749_14026065.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T16:04:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329160454_14022053.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T09:17:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322091750_14012320.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T12:40:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190321124046_14011126.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T07:00:10Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY PREFERRED BIDDER ON £1.5BN CONTRACT",
+   "download_link": "NSM/data-migration/LSE20190314070010_14001517.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T07:00:02Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "BALFOUR BEATTY PLC RESULTS FOR FULL YEAR 2018",
+   "download_link": "NSM/data-migration/LSE20190313070002_13999797.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T15:57:15Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Membership Change",
+   "download_link": "NSM/data-migration/LSE20190311155715_13997827.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T14:39:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190219143935_13974547.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T16:56:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190211165652_13965456.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T09:35:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190124093520_13945473.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T15:07:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190117150726_13938611.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/216886305.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-19T10:39:54Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Board Committee Membership Change",
+   "download_link": "NSM/data-migration/LSE20181219103954_13909613.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T16:18:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181218161816_13908465.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T12:12:19Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20181218121219_13908076.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "BALFOUR BEATTY TRADING UPDATE",
+   "download_link": "NSM/data-migration/LSE20181214070002_13903584.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T16:10:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181204161034_13891366.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T07:00:12Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "BALFOUR BEATTY COMPLETES REPAYMENT OF £253M BOND",
+   "download_link": "NSM/data-migration/LSE20181204070012_13889912.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-20T15:26:25Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181120152625_13874025.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T07:45:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181116074558_13869783.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-12T13:57:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181112135734_13863720.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-07T07:00:05Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY SECURES £425M HIGHWAYS ENGLAND WORK",
+   "download_link": "NSM/data-migration/LSE20181107070005_13857580.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-06T15:13:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181106151322_13857182.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-05T09:12:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181105091226_13854803.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-25T16:46:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181025164606_13843052.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-25T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Standard form for notification of major holdings",
+   "download_link": "NSM/data-migration/189874668.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-10-17T18:27:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181017182703_13833011.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-17T07:00:04Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY APPOINTED TO £2BN SCAPE FRAMEWORKS",
+   "download_link": "NSM/data-migration/LSE20181017070004_13831360.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-19T07:00:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BALFOUR BEATTY 50% INTEREST SALE IN FIFE HOSPITAL",
+   "download_link": "NSM/data-migration/LSE20180919070001_13795740.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-18T13:25:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180918132524_13795131.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-15T18:31:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180815183157_13757121.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-15T07:00:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Balfour Beatty PLC Half-Year 2018 Results",
+   "download_link": "NSM/data-migration/LSE20180815070002_13755630.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-16T18:24:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180716182438_13719743.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:32:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180711163236_13714501.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:30:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180711163056_13714500.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:30:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180711163021_13714499.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T16:52:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180702165211_13702422.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T16:49:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180702164936_13702416.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T16:20:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180628162050_13698093.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T16:14:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180628161457_13698086.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T18:17:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180601181702_13664623.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-25T07:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180525070001_13654945.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-24T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/172934753.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-24T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/172934754.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-24T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/172934756.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-24T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/172934757.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-24T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/172934759.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-22T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "TRADING UPDATE AHEAD OF AGM",
+   "download_link": "NSM/data-migration/LSE20180522070004_13649570.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-18T15:42:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180518154244_13647578.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T18:25:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180515182524_13642477.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-16T17:57:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180416175748_13606460.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T12:59:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180403125903_13589657.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T11:36:46Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Doc re. Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180403113646_13589438.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/167251356.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/167251350.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/167251354.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2018 Annual General Meeting and Class Meeting of Preference Share",
+   "download_link": "NSM/data-migration/167251351.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/167251353.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-03T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of availability of documents",
+   "download_link": "NSM/data-migration/167251355.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-27T12:46:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180327124647_13583323.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T18:29:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180315182901_13569162.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T11:32:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180315113243_13568543.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-14T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "BALFOUR BEATTY 2017 FULL-YEAR RESULTS ANNOUNCEMENT",
+   "download_link": "NSM/data-migration/LSE20180314070004_13565859.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-23T14:44:40Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "COMPLETION OF THIRD PARTIAL SALE OF M25 ASSET",
+   "download_link": "NSM/data-migration/LSE20180223144440_13544512.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-19T12:01:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "THIRD PARTIAL SALE OF M25 INFRASTRUCTURE ASSET",
+   "download_link": "NSM/data-migration/LSE20180219120104_13538074.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-16T07:00:03Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY JV AWARDED $1.95 BN CONTRACT",
+   "download_link": "NSM/data-migration/LSE20180216070003_13535501.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-15T13:31:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180215133123_13534898.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-14T15:10:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notification of Repurchase of Convertible Bonds",
+   "download_link": "NSM/data-migration/LSE20180214151010_13533416.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-12T18:23:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180212182352_13530428.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-09T16:25:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180209162543_13528617.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T13:54:23Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180202135423_13520194.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T07:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "NOTIFICATION OF MAJOR HOLDINGS",
+   "download_link": "NSM/data-migration/LSE20180202070004_13519113.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-18T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "ESTIMATED IMPACT OF NEW US TAX LEGISLATION",
+   "download_link": "NSM/data-migration/LSE20180118070004_13500397.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-17T12:42:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180117124240_13499840.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-15T10:16:26Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "BALFOUR BEATTY'S JOINT VENTURES WITH CARILLION PLC",
+   "download_link": "NSM/data-migration/LSE20180115101626_13496289.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Balfour Beatty plc Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/167251357.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-29T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "ADDITIONAL PARTIAL SALE OF M25 ASSET",
+   "download_link": "NSM/data-migration/LSE20171229070002_13479771.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-21T11:14:30Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "UPDATE ON PARTIAL SALE OF M25 INFRASTRUCTURE ASSET",
+   "download_link": "NSM/data-migration/LSE20171221111430_13474322.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-21T07:00:05Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "PARTIAL SALE OF M25 INFRASTRUCTURE ASSET",
+   "download_link": "NSM/data-migration/LSE20171221070005_13473505.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-15T13:02:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171215130253_13467668.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-12T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Balfour Beatty Trading Update",
+   "download_link": "NSM/data-migration/LSE20171212070004_13461573.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-05T11:34:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171205113450_13454547.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T18:29:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171201182901_13451896.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-29T18:25:25Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20171129182525_13448351.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-29T11:15:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171129111528_13447809.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-16T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171116110002_13434188.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T18:20:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171108182001_13425278.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-30T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BALFOUR BEATTY COMPLETES SALE OF HEERY INT",
+   "download_link": "NSM/data-migration/LSE20171030070002_13412386.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-17T14:04:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171017140438_13399578.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-05T07:00:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BALFOUR BEATTY REACHES AGREEMENT TO SELL HEERY INT",
+   "download_link": "NSM/data-migration/LSE20171005070004_13386559.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-04T07:00:04Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty Awarded $260M US scheme in Miami",
+   "download_link": "NSM/data-migration/LSE20171004070004_13384999.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T12:31:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171002123159_13382655.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-15T13:02:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170915130241_13364715.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-13T07:00:03Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "BALFOUR BEATTY ANNOUNCES SALE OF BLACKPOOL AIRPORT",
+   "download_link": "NSM/data-migration/LSE20170913070003_13360674.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-07T10:34:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170907103419_13355107.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-05T17:07:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170905170751_13352701.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T18:23:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170901182335_13349862.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-21T18:01:54Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Interim dividend: Payment details",
+   "download_link": "NSM/data-migration/LSE20170821180154_13337075.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-16T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Balfour Beatty PLC Half-Year Results 2017",
+   "download_link": "NSM/data-migration/LSE20170816070004_13331271.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-15T17:26:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170815172644_13331069.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-17T17:50:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170717175057_13297938.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-17T07:03:30Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY JV TO BE AWARDED TWO HS2 CONTRACTS",
+   "download_link": "NSM/data-migration/LSE20170717070330_13296591.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-14T18:12:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170714181215_13296348.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-11T18:19:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170711181916_13291605.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-23T18:27:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170623182757_13271985.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-16T18:29:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170616182953_13264150.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-07T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170607110001_13252310.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-05T11:00:00Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-Executive Director",
+   "download_link": "NSM/data-migration/LSE20170605110000_13249204.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T18:28:37Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170601182837_13246677.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-30T12:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170530120003_13242475.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-23T12:03:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170523120350_13235465.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T10:48:46Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Class Meeting",
+   "download_link": "NSM/data-migration/LSE20170522104846_13233623.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/134360548.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/134360545.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/134360547.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/134360451.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/134360546.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-18T17:10:24Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170518171024_13230962.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-18T07:00:09Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20170518070009_13229618.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-16T18:29:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170516182932_13227969.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-16T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Appointment",
+   "download_link": "NSM/data-migration/LSE20170516110001_13227297.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T13:00:02Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY AWARDED SOUTHERN GATEWAY CONTRACT",
+   "download_link": "NSM/data-migration/LSE20170504130002_13214605.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-20T17:59:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170420175938_13199460.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-11T11:44:52Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Doc re. Annual Financial Report & Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20170411114452_13190949.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/131047463.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/131047470.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/131047477.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Forms of Proxy",
+   "download_link": "NSM/data-migration/131047471.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2017 Annual General Meeting and Class Meeting of Preference Share",
+   "download_link": "NSM/data-migration/131047464.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-11T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of availability of document",
+   "download_link": "NSM/data-migration/131047476.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-06T13:25:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170406132514_13186501.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T16:37:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170403163709_13181862.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-27T17:11:43Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170327171143_13172967.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-17T10:47:46Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170317104746_13162741.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-16T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Balfour Beatty 2016 Full Year Results",
+   "download_link": "NSM/data-migration/LSE20170316070007_13160448.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-15T18:02:48Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170315180248_13160286.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-21T07:00:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "BALFOUR BEATTY AGREES TO SELL MIDDLE EAST JVS",
+   "download_link": "NSM/data-migration/LSE20170221070009_13133789.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-16T13:22:01Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170216132201_13130402.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-16T10:37:32Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170216103732_13130097.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-13T10:53:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170213105325_13125820.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Balfour Beatty plc Annual Report and Accounts 2016",
+   "download_link": "NSM/data-migration/131047473.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-16T07:00:07Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Balfour Beatty street light PFI sale",
+   "download_link": "NSM/data-migration/LSE20161216070007_013069157.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T18:25:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161213182517_013066072.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Balfour Beatty Trading Update",
+   "download_link": "NSM/data-migration/LSE20161213070008_013064570.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T18:28:27Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161201182827_013053966.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T17:57:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161115175722_013036108.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T13:30:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161115133021_013035826.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-17T16:05:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161017160536_013003458.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-22T15:22:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160922152232_012975923.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-16T18:28:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160916182820_012969745.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-26T16:49:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160826164922_012945826.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-17T07:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Balfour Beatty 2016 half-year results",
+   "download_link": "NSM/data-migration/LSE20160817070008_012933600.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T13:24:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160816132427_012932949.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T07:00:05Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty Awarded $697m Caltrain Contract",
+   "download_link": "NSM/data-migration/LSE20160816070005_012931925.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-18T13:42:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160718134228_012896290.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-14T15:16:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160714151633_012893171.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-06T13:53:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160706135328_012882804.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T17:50:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160705175003_012881448.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T07:00:07Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BALFOUR BEATTY AWARDED £170M HEATHROW CONTRACT",
+   "download_link": "NSM/data-migration/LSE20160705070007_012879952.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-04T08:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160704080001_012878429.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T15:28:47Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Balfour Beatty disposal from investments portfolio",
+   "download_link": "NSM/data-migration/LSE20160701152847_012877625.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T18:26:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160629182634_012873600.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-28T07:00:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160628070010_012869927.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-27T15:59:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160627155948_012869610.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-20T18:23:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160620182324_012861292.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-20T18:07:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160620180736_012861280.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-16T11:38:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160616113823_012856836.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-15T17:06:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160615170608_012855626.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-06T18:15:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160606181504_012843324.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T07:00:07Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty awarded contract for M20 lorry area",
+   "download_link": "NSM/data-migration/LSE20160526070007_012830107.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-20T12:06:48Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of Class Meeting",
+   "download_link": "NSM/data-migration/LSE20160520120648_012824222.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-19T17:32:54Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160519173254_012823140.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-19T07:00:13Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20160519070013_012821677.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/111627031.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/111627135.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/111627164.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/111627051.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Copies of the resolutions dealing with special business at the Annual Gener",
+   "download_link": "NSM/data-migration/111627138.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-17T17:36:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160517173651_012819695.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-25T18:27:40Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Letter regarding the change of Auditor",
+   "download_link": "NSM/data-migration/LSE20160425182740_012791287.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-25T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Letter sent to shareholders regarding the change of Auditor pursuant to Sec",
+   "download_link": "NSM/data-migration/110220349.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/109360376.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Balfour Beatty plc shareholder documents on website",
+   "download_link": "NSM/data-migration/109360366.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/109360369.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/109360370.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/109360394.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/109360367.pdf",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-11T18:31:30Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Doc re. Annual Financial Report & Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20160411183130_012772620.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-04T15:38:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160404153816_012763042.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T08:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401083002_012759583.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-24T07:00:08Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty extends £170m Track Partnership",
+   "download_link": "NSM/data-migration/LSE20160324070008_012750515.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-15T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Balfour Beatty 2015 full-year results",
+   "download_link": "NSM/data-migration/LSE20160315070008_012737002.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T18:28:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160314182802_012736826.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-11T18:27:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160311182738_012734933.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T08:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301083002_012718170.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-12T18:20:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160212182034_012698044.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T18:29:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160210182931_012694446.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T18:29:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160203182956_012685832.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T07:00:23Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "Balfour Beatty awarded Warwickshire Contract",
+   "download_link": "NSM/data-migration/LSE20160203070023_012684139.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T08:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201083002_012680685.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-28T18:29:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160128182902_012677916.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-22T18:26:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160122182602_012670766.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-21T18:29:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160121182901_012669015.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-15T18:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160115183004_012661996.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-07T18:28:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160107182802_012650828.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T08:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104080002_012643872.html",
+   "company": "Balfour Beatty PLC",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-16T16:00:02Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "classifications": "",
+   "download_link": "NSM/RNS/3817284.html",
+   "disclosure_id": "3817284",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-16T16:00:02Z",
+   "seq_id": "3817284",
+   "company": "Balfour Beatty PLC",
+   "last_updated_date": "2026-08-22T12:09:07.193501513Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-09T07:00:04Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Trading Statement",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Financial Results",
+   "lei": "CT4UIJ3TUKGYYHMENQ17",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3808235.html",
+   "disclosure_id": "3808235",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-09T07:00:04Z",
+   "seq_id": "3808235",
+   "company": "Balfour Beatty PLC",
+   "last_updated_date": "2026-08-22T12:08:49.734140739Z",
+   "headline": "Balfour Beatty Trading Update",
+   "type_code": "TST"
+  }
+ ]
 }

@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "boekjaar": 2015,
+  "registerdatum": "2016-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report",
+  "bedrijf": "Experian PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/112683112.pdf",
+  "tekst": "uk-2015.txt",
+  "grootte": 4492761
+ },
+ {
+  "boekjaar": 2016,
+  "registerdatum": "2017-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2017",
+  "bedrijf": "Experian PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/136609572.pdf",
+  "tekst": "uk-2016.txt",
+  "grootte": 7564863
+ },
+ {
+  "boekjaar": 2017,
+  "registerdatum": "2018-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2018",
+  "bedrijf": "Experian PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/174866649.pdf",
+  "tekst": "uk-2017.txt",
+  "grootte": 4488111
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-03-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2019",
+  "bedrijf": "Experian PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/225733471.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7641474
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-06-12",
+  "soort": "Annual Financial Report",
+  "titel": "Experian plc 2020 Annual Report",
+  "bedrijf": "Experian plc",
+  "download": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000005817.pdf",
+  "tekst": "uk-2019.txt",
+  "grootte": 5957729
+ }
+]

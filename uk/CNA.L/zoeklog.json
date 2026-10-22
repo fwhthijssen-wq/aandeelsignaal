@@ -1,13 +1,1391 @@
 {
- "aantal": 0,
+ "aantal": 133,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', 'E26EDV109X6EEPBKVH76', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', 'E26EDV109X6EEPBKVH76', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'E26EDV109X6EEPBKVH76', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'E26EDV109X6EEPBKVH76', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "E26EDV109X6EEPBKVH76",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 133
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-21T08:30:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Blocklisting Application",
+   "download_link": "NSM/RNS/3818327.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T15:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3801518.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T12:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799525.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T14:16:53Z",
+   "type": "Regulatory Approval",
+   "type_code": "REA",
+   "headline": "Sale of Direct Energy receives FERC approval ",
+   "download_link": "NSM/RNS/3798036.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T15:45:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3779091.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T11:00:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3778626.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-04T11:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3769832.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T17:33:34Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3767430.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T13:45:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3767040.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T11:15:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3758060.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T13:19:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Sale of Direct Energy receives further approvals",
+   "download_link": "NSM/RNS/3742828.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T14:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3741469.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T14:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735920.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-04T06:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Purchase of customer base of Robin Hood Energy",
+   "download_link": "NSM/RNS/3706168.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T14:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704889.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703311.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T10:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3697306.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-20T14:30:01Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/RNS/3693807.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T13:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3691175.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3688596.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T08:22:00Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Scott Wheway Centrica Chairman",
+   "download_link": "NSM/RNS/3681292.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3677551.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T15:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3676127.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T15:03:02Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Circular and Notice of General Meeting",
+   "download_link": "NSM/RNS/3674570.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:20:02Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3666324.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-24T06:20:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Proposed sale of Direct Energy",
+   "download_link": "NSM/RNS/3666325.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-02T15:40:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3645373.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T15:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643951.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T10:30:01Z",
+   "type": "Report on Payments to Governments",
+   "type_code": "PGR",
+   "headline": "Report on Payments to Govts",
+   "download_link": "NSM/RNS/3641734.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T16:33:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3634835.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T07:15:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3622353.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T07:15:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Simpler Customer-Focused Business Model",
+   "download_link": "NSM/RNS/3622334.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-04T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3616057.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-02T14:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3613529.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T11:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611739.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T13:20:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Blocklisting Application",
+   "download_link": "NSM/RNS/3607478.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T12:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3604204.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T12:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes ",
+   "download_link": "NSM/RNS/3604207.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3586351.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T15:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3584992.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T10:45:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3583072.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582795.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T15:15:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Rights Attached to Equity Shares",
+   "download_link": "NSM/RNS/3576543.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T13:45:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020 ",
+   "download_link": "NSM/RNS/3572274.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T16:50:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3567920.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T06:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3560015.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402151505_3551539.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402151505_3551539.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550362.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550362.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:45:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401124506_3549578.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:45:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401124506_3549578.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200317070008_3529513.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T07:00:05Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200317070005_3529054.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T17:53:13Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Annual Review with Moody's Investor Service",
+   "download_link": "NSM/data-migration/LSE20200313175313_3527108.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303160002_3514284.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T12:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302121501_3512216.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T14:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200218144505_3498059.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T14:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200218144505_3498059.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-13T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200213070006_3492786.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T14:00:01Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Centrica Chairman",
+   "download_link": "NSM/data-migration/LSE20200212140001_3492336.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200205160001_3485357.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200205160001_3485357.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-04T15:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200204151504_3483812.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T12:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200203123001_3481935.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T12:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200203123001_3481935.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T12:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203121501_3481930.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T11:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200128113001_14400862.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T11:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200128113001_14400862.html",
+   "company": "Standard Life Aberdeen PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T12:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200106123002_14372673.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T12:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200106123002_14372674.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T09:30:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal",
+   "download_link": "NSM/data-migration/LSE20191223093002_14359925.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T16:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191211163002_14345164.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T16:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191211163002_14345163.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T16:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191211163002_14345164.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T09:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191205090005_14336643.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T16:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191204163002_14335710.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T16:30:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202163003_14331650.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T16:19:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191126161912_14324172.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191121070007_14316845.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-15T10:30:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Blocklisting Application",
+   "download_link": "NSM/data-migration/LSE20191115103002_14310250.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T14:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191104144505_14293415.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101103004_14290779.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:30:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191101103004_14290785.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022170006_14276053.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022170006_14276053.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002170001_14251744.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002100002_14250850.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002100002_14250850.html",
+   "company": "Schroders PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T10:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001103002_14248890.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T16:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190903163004_14212428.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T14:30:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902143005_14210539.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T10:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Membership",
+   "download_link": "NSM/data-migration/LSE20190821100006_14197285.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190820100002_14195516.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T14:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190802141501_14175006.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801140002_14173024.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:01:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190730070104_14167682.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:15Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190730070015_14167615.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T16:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190702163003_14133946.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T16:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701161501_14132010.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T18:00:02Z",
+   "type": "Report on Payments to Governments",
+   "type_code": "PGR",
+   "headline": "Report on Payments to Govts",
+   "download_link": "NSM/data-migration/LSE20190628180002_14130032.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190628153001_14129743.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T09:15:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190626091501_14125060.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T15:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190604151501_14098367.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T14:45:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603144505_14096574.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T16:30:05Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190530163005_14092991.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190529143001_14091191.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T14:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Reference Share Price",
+   "download_link": "NSM/data-migration/LSE20190516140001_14077161.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T12:45:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190515124501_14075215.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T15:30:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190513153001_14072016.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190513070007_14070682.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T10:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190508103002_14066481.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T16:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190502164501_14061514.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501143001_14059726.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T10:30:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190408103003_14032480.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T18:18:40Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Review with Credit Rating Agencies",
+   "download_link": "NSM/data-migration/LSE20190402181840_14026246.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T14:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402144504_14025937.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190402140004_14025876.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T16:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401160001_14024128.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T08:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401080001_14022986.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T11:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329114503_14021575.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305160001_13991156.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T14:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301144501_13987727.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T15:50:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190225155003_13980948.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Renewal of Revolving Credit Facilities",
+   "download_link": "NSM/data-migration/LSE20190222070005_13978017.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T07:01:01Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Centrica to sell Clockwork, Inc",
+   "download_link": "NSM/data-migration/LSE20190221070101_13976539.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T07:00:18Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190221070018_13976484.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190204130001_13957368.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T15:45:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201154502_13956014.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T11:01:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190115110105_13935142.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T14:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103144504_13923204.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T09:45:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102094502_13920693.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T14:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181217140003_13906492.html",
+   "company": "Centrica PLC",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-21T08:30:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Additional Listing",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Corporate actions",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3818327.html",
+   "disclosure_id": "3818327",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-21T08:30:01Z",
+   "seq_id": "3818327",
+   "company": "Centrica PLC",
+   "last_updated_date": "2026-08-22T12:09:07.204880542Z",
+   "headline": "Blocklisting Application",
+   "type_code": "ALS"
+  },
+  {
+   "submitted_date": "2020-12-02T15:00:07Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "E26EDV109X6EEPBKVH76",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3801518.html",
+   "disclosure_id": "3801518",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-02T15:00:07Z",
+   "seq_id": "3801518",
+   "company": "Centrica PLC",
+   "last_updated_date": "2026-08-22T12:08:32.330133543Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

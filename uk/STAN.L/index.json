@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-26",
+  "soort": "Final Results",
+  "titel": "Additional Financial Information",
+  "bedrijf": "Standard Chartered PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190226070020_13981239.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 3268059
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-27",
+  "soort": "Final Results",
+  "titel": "Additional Financial Information",
+  "bedrijf": "Standard Chartered PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200227070104_3508506.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 3508452
+ }
+]

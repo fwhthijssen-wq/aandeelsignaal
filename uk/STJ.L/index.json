@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2018-12-31",
+  "soort": "Annual Financial Report",
+  "titel": "Annual Report 2018",
+  "bedrijf": "St James's Place PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/217551377.pdf",
+  "tekst": "uk-2018.txt",
+  "grootte": 7191646
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-27",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "St. James's Place PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200227070004_3507819.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 964820
+ }
+]

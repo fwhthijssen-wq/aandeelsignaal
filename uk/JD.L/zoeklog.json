@@ -1,13 +1,1671 @@
 {
- "aantal": 0,
+ "aantal": 161,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800HROV6Y9MUU8375', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800HROV6Y9MUU8375', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800HROV6Y9MUU8375', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800HROV6Y9MUU8375', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800HROV6Y9MUU8375",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 161
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-17T12:00:03Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Notice of Trading Update",
+   "download_link": "NSM/RNS/3818618.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-15T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Shoe Palace in United States",
+   "download_link": "NSM/RNS/3814577.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T09:00:03Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Response to Press Speculation",
+   "download_link": "NSM/RNS/3799171.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-13T16:16:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Update on CAT review of Footasylum Acquisition ",
+   "download_link": "NSM/RNS/3780611.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T13:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3767083.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-08T06:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/RNS/3709091.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T11:36:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3675923.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T11:35:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3675920.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:54:16Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3674557.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:51:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions of JD Sports Fashion Plc",
+   "download_link": "NSM/Portal/NI-000008724.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T12:30:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Annual Report and Accounts and Notice of AGM",
+   "download_link": "NSM/RNS/3648158.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T12:09:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/Portal/NI-000007321.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T12:07:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000007320.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T12:02:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts for the period ended 1 February 2020",
+   "download_link": "NSM/Portal/NI-000007319.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-07T06:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/3648143.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-23T16:24:30Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Restructuring of Go Outdoors",
+   "download_link": "NSM/RNS/3634829.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T06:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Speculation re Go Outdoors",
+   "download_link": "NSM/RNS/3632098.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-05T13:53:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3617886.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T14:46:58Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Letter to shareholders ",
+   "download_link": "NSM/RNS/3607435.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T12:17:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Important information regarding communication with shareholders",
+   "download_link": "NSM/Portal/NI-000004718.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-06T06:03:20Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on CMA review of Footasylum acquisition ",
+   "download_link": "NSM/RNS/3586713.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T16:35:23Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Disclosure of Rights attached to Ordinary Shares",
+   "download_link": "NSM/RNS/3578608.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T16:16",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Rights Attached to Ordinary Shares Annoucement",
+   "download_link": "NSM/Portal/NI-000002414.pdf",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-24T14:49:26Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Results and COVID-19 Update",
+   "download_link": "NSM/RNS/3573884.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T14:45:53Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement Regarding Rule 19.6(c)",
+   "download_link": "NSM/RNS/3564677.html",
+   "company": "JD Sports Fashion Plc",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:49:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200401174902_3550240.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:49:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200401174902_3550240.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T07:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19 Update",
+   "download_link": "NSM/data-migration/LSE20200324070002_3538245.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T07:05:08Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on CMA review of Footasylum acquisition",
+   "download_link": "NSM/data-migration/LSE20200211070508_3490328.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200110070005_14378830.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-08T12:46:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200108124647_14376308.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T12:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Corporate Governance Review - Update",
+   "download_link": "NSM/data-migration/LSE20200102120006_14369206.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T17:10:47Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Trading Update",
+   "download_link": "NSM/data-migration/LSE20191219171047_14356998.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T17:37:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191216173701_14350990.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T17:36:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191216173644_14350989.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T11:03:44Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191128110344_14327219.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:03:46Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "CMA Update",
+   "download_link": "NSM/data-migration/LSE20191001070346_14248139.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T07:00:44Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "CMA Update",
+   "download_link": "NSM/data-migration/LSE20190919070044_14232677.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T07:02:18Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190910070218_14219903.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T14:29:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190725142916_14163577.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T17:32:41Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190703173241_14135775.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T07:00:04Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20190703070004_14134177.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "JD SPORTS FASHION PLC - Resolutions",
+   "download_link": "NSM/data-migration/228174963.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-29T18:05:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report and Accounts and Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190529180501_14091455.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T16:40:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-Executive Director",
+   "download_link": "NSM/data-migration/LSE20190513164002_14072112.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T15:54:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1: Notification of major holdings",
+   "download_link": "NSM/data-migration/LSE20190513155449_14072051.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T10:44:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1: Notification of major holdings",
+   "download_link": "NSM/data-migration/LSE20190507104456_14064645.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T12:30:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1: Notification of major holdings",
+   "download_link": "NSM/data-migration/LSE20190429123052_14055622.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T18:00:06Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Compulsory Acquisition of Footasylum Shares",
+   "download_link": "NSM/data-migration/LSE20190423180006_14049064.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T18:00:06Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Compulsory Acquisition of Footasylum Shares",
+   "download_link": "NSM/data-migration/LSE20190423180006_14049064.html",
+   "company": "Footasylum PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190416070008_14042061.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T15:19:08Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Offer update",
+   "download_link": "NSM/data-migration/LSE20190412151908_14039922.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T08:30:04Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Offer for Footasylum declared wholly unconditional",
+   "download_link": "NSM/data-migration/LSE20190412083004_14039175.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T08:30:04Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Offer for Footasylum declared wholly unconditional",
+   "download_link": "NSM/data-migration/LSE20190412083004_14039175.html",
+   "company": "Footasylum PLC Ordinary Shares",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-08T12:00:04Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190408120004_14032770.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T12:00:02Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190404120002_14029341.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T12:00:01Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum PLC",
+   "download_link": "NSM/data-migration/LSE20190403120001_14027463.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-02T12:00:04Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum PLC",
+   "download_link": "NSM/data-migration/LSE20190402120004_14025690.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T12:00:03Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190329120003_14021618.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T15:25:01Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) - Footasylum plc",
+   "download_link": "NSM/data-migration/LSE20190328152501_14020061.html",
+   "company": "Footasylum PLC Ordinary Shares",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T15:25:01Z",
+   "type": "Form 8 (Opening Position Disclosure)",
+   "type_code": "FEE",
+   "headline": "Form 8 (OPD) - Footasylum plc",
+   "download_link": "NSM/data-migration/LSE20190328152501_14020061.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T14:46:09Z",
+   "type": "Form 8.3",
+   "type_code": "RET",
+   "headline": "Form 8.3 - Footasylum PLC",
+   "download_link": "NSM/data-migration/LSE20190328144609_14019944.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T12:00:02Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190326120002_14016245.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T12:00:03Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190325120003_14014470.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:30:21Z",
+   "type": "Offer Document Posted",
+   "type_code": "ODP",
+   "headline": "Publication and Posting of Offer Document",
+   "download_link": "NSM/data-migration/LSE20190322173021_14013198.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:30:21Z",
+   "type": "Offer Document Posted",
+   "type_code": "ODP",
+   "headline": "Publication and Posting of Offer Document",
+   "download_link": "NSM/data-migration/LSE20190322173021_14013198.html",
+   "company": "Footasylum PLC Ordinary Shares",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T12:00:02Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum Plc",
+   "download_link": "NSM/data-migration/LSE20190322120002_14012708.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T12:00:04Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum PLC",
+   "download_link": "NSM/data-migration/LSE20190320120004_14009389.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T12:00:03Z",
+   "type": "Form 8.5 (EPT/RI)",
+   "type_code": "FER",
+   "headline": "Form 8.5 (EPT/RI) - Footasylum PLC",
+   "download_link": "NSM/data-migration/LSE20190319120003_14007671.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T07:00:06Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Rule 2.7 Announcement - Recommended Cash Offer",
+   "download_link": "NSM/data-migration/LSE20190318070006_14005002.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T07:00:06Z",
+   "type": "Offer Update",
+   "type_code": "OUP",
+   "headline": "Rule 2.7 Announcement - Recommended Cash Offer",
+   "download_link": "NSM/data-migration/LSE20190318070006_14005002.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T16:12:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "TR-1: Notification of major holdings",
+   "download_link": "NSM/data-migration/LSE20190219161237_13974636.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T08:20:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Statement from JD Sports Fashion Plc",
+   "download_link": "NSM/data-migration/LSE20190218082002_13972430.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T08:20:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Statement from JD Sports Fashion Plc",
+   "download_link": "NSM/data-migration/LSE20190218082002_13972430.html",
+   "company": "Footasylum PLC Ordinary Shares",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-02T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "JD SPORTS FASHION PLC- Annual Report",
+   "download_link": "NSM/data-migration/223725625.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-02T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "JD SPORTS FASHION PLC- AGM Notice",
+   "download_link": "NSM/data-migration/223725628.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-02T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "JD SPORTS FASHION PLC- AGM Proxy Form",
+   "download_link": "NSM/data-migration/223805777.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-01T11:59:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190201115949_13955617.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-14T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190114070004_13932708.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T14:28:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181217142805_13906529.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T13:05:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Christmas Trading Statement Date",
+   "download_link": "NSM/data-migration/LSE20181217130520_13906412.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T17:20:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181031172047_13850217.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-16T16:09:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181016160902_13831119.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-09T14:24:38Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181009142438_13822064.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-11T07:00:22Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180911070022_13785579.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-23T15:39:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180823153942_13766575.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-17T07:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180817070003_13758912.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-04T09:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Investor Day",
+   "download_link": "NSM/data-migration/LSE20180704090002_13705138.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T14:50:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180628145042_13697932.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T07:00:06Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Statement",
+   "download_link": "NSM/data-migration/LSE20180628070006_13696549.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-28T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "JD Sports Fashion - AGM Special Resolution",
+   "download_link": "NSM/data-migration/176179900.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-18T13:45:53Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of acquisition of The Finish Line, Inc.",
+   "download_link": "NSM/data-migration/LSE20180618134553_13683830.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-15T00:00:00Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "JD SPORTS FASHION PLC – General Meeting Resolution",
+   "download_link": "NSM/data-migration/174787197.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-30T12:55:40Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Circular and Notice of General Meeting",
+   "download_link": "NSM/data-migration/LSE20180530125540_13660078.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-30T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "JD Sports Fashion - Notice of General Meeting",
+   "download_link": "NSM/data-migration/173360989.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-30T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "JD Sports Fashion - Proxy Form for General Meeting",
+   "download_link": "NSM/data-migration/173360957.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-25T15:15:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Annual Report and Accounts and Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20180525151500_13656369.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-25T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "JD SPORTS FASHION - PROXY FORM",
+   "download_link": "NSM/data-migration/173005370.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-25T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "JD SPORTS FASHION - AGM NOTICE",
+   "download_link": "NSM/data-migration/173005402.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-17T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180417070005_13606649.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-26T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Proposed Acquisition of The Finish Line, Inc.",
+   "download_link": "NSM/data-migration/LSE20180326070005_13580277.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-03T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "JD SPORTS FASHION - ANNUAL REPORT",
+   "download_link": "NSM/data-migration/173196066.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-03T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "JD SPORTS FASHION - ANNUAL REPORT",
+   "download_link": "NSM/data-migration/173005535.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-01T07:00:11Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Formal completion of JD's Sport Zone acquisition",
+   "download_link": "NSM/data-migration/LSE20180201070011_13517234.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-16T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20180116070002_13497249.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-05T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "JD SPORTS PLC - General Meeting",
+   "download_link": "NSM/data-migration/148029503.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-15T07:00:03Z",
+   "type": "Joint Venture",
+   "type_code": "JVE",
+   "headline": "Investment in Joint Venture in South Korea",
+   "download_link": "NSM/data-migration/LSE20170915070003_13363734.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T17:55:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Circular and Notice of GM",
+   "download_link": "NSM/data-migration/LSE20170914175501_13363604.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T07:00:06Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Conditional combination with Sport Zone",
+   "download_link": "NSM/data-migration/LSE20170914070006_13362253.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form for General Meeting on 5 October 2017",
+   "download_link": "NSM/data-migration/146312206.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-14T00:00:00Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of General Meeting on 5 October 2017",
+   "download_link": "NSM/data-migration/146312213.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-12T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170912070007_13359111.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-07T16:32:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170907163209_13355784.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-23T07:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170823070005_13338689.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-06T08:41:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170706084128_13285979.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-30T14:29:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170630142925_13280044.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T17:57:26Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170629175726_13278528.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T07:00:04Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170629070004_13276957.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-29T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Resolution",
+   "download_link": "NSM/data-migration/137642992.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-06-12T12:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Information for shareholders re. incentive plan",
+   "download_link": "NSM/data-migration/LSE20170612123001_13257196.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "JD SPORTS FASHION PLC -SHAREHOLDER LETTER",
+   "download_link": "NSM/data-migration/136154659.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-26T17:14:29Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20170526171429_13240851.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-18T07:12:34Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "CMA approves JD Group's acquisition of Go Outdoors",
+   "download_link": "NSM/data-migration/LSE20170518071234_13229985.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-10T07:00:10Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Appointment of Joint Broker",
+   "download_link": "NSM/data-migration/LSE20170510070010_13220003.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-11T07:00:15Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170411070015_13190316.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-09T07:15:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Combination with Sport Zone in Spain & Portugal",
+   "download_link": "NSM/data-migration/LSE20170309071503_13152442.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-20T15:16:13Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170220151613_13133466.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-01-28T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2017 Notice of Annual General Meeting",
+   "download_link": "NSM/data-migration/135021813.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-01-28T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2017 Proxy Form",
+   "download_link": "NSM/data-migration/135021809.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-01-28T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/135021811.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-15T07:00:10Z",
+   "type": "Statement re Press Comment",
+   "type_code": "SPC",
+   "headline": "Response to Media Reports",
+   "download_link": "NSM/data-migration/LSE20161215070010_013067627.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-28T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Go Outdoors Topco Limited",
+   "download_link": "NSM/data-migration/LSE20161128070008_013047780.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T15:15:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of General Meeting",
+   "download_link": "NSM/data-migration/LSE20161124151502_013046211.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Ordinary Resolution",
+   "download_link": "NSM/data-migration/121655466.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-11-01T12:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proposed Share Sub-division",
+   "download_link": "NSM/data-migration/LSE20161101120003_013020091.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "JD SPORTS FASHION PLC - PROXY FORM",
+   "download_link": "NSM/data-migration/120347263.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-11-01T00:00:00Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "JD SPORTS FASHION PLC - GENERAL MEETING NOTICE",
+   "download_link": "NSM/data-migration/120347277.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-10-17T09:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161017091501_013002723.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-13T07:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20160913070006_012963282.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-15T09:20:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160815092027_012930984.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-28T07:00:09Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160728070009_012909152.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-25T15:18:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160725151827_012905260.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-07T17:43:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160707174355_012884885.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-24T16:46:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160624164618_012867964.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-17T16:18:38Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160617161838_012859368.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-17T07:00:09Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160617070009_012857889.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-17T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolution of JD Sports Fashion PLC",
+   "download_link": "NSM/data-migration/113214822.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-06-07T17:15:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160607171556_012845013.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-13T17:09:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20160513170901_012816351.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-13T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "JD Sports Fashion Plc - Proxy Form",
+   "download_link": "NSM/data-migration/111265261.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-13T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "JD Sports Fashion Plc - AGM Notice",
+   "download_link": "NSM/data-migration/111265286.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-05-03T16:49:31Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160503164931_012801937.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-21T17:31:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160421173118_012787436.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-14T07:00:08Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160414070008_012776408.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-29T08:30:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of acquisition",
+   "download_link": "NSM/data-migration/LSE20160329083002_012753366.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T11:26:22Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160323112622_012749407.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T09:10:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160314091047_012735604.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-12T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Appointment",
+   "download_link": "NSM/data-migration/LSE20160212070006_012696399.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-30T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "JD Sports Fashion Plc - Annual Report",
+   "download_link": "NSM/data-migration/111265313.pdf",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-01-29T14:45:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160129144501_012679445.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Christmas Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160114070006_012658388.html",
+   "company": "JD Sports Fashion PLC",
+   "lei": "213800HROV6Y9MUU8375",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-17T12:00:03Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Strategy/Company/ Operations Update",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800HROV6Y9MUU8375",
+   "classifications": "",
+   "download_link": "NSM/RNS/3818618.html",
+   "disclosure_id": "3818618",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T12:00:03Z",
+   "seq_id": "3818618",
+   "company": "JD Sports Fashion Plc",
+   "last_updated_date": "2026-08-22T12:09:07.196872430Z",
+   "headline": "Notice of Trading Update",
+   "type_code": "UPD"
+  },
+  {
+   "submitted_date": "2020-12-15T07:00:07Z",
+   "tag_esef": "",
+   "classifications_code": "2.2;2.3;3.1",
+   "source": "RNS",
+   "type": "Acquisition",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Mergers and acquisitions",
+   "lei": "213800HROV6Y9MUU8375",
+   "classifications": "Inside information;Major shareholding notifications;Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3814577.html",
+   "disclosure_id": "3814577",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-15T07:00:07Z",
+   "seq_id": "3814577",
+   "company": "JD Sports Fashion Plc",
+   "last_updated_date": "2026-08-22T12:09:07.185819088Z",
+   "headline": "Acquisition of Shoe Palace in United States",
+   "type_code": "ACQ"
+  }
+ ]
 }

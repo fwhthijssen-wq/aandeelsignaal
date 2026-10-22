@@ -1,13 +1,1691 @@
 {
- "aantal": 0,
+ "aantal": 163,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '2138007ZFQYRUSLU3J98', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '2138007ZFQYRUSLU3J98', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007ZFQYRUSLU3J98', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '2138007ZFQYRUSLU3J98', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "2138007ZFQYRUSLU3J98",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 163
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-11T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Financing and reporting update",
+   "download_link": "NSM/RNS/3811356.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-07T14:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Non-Executive Director",
+   "download_link": "NSM/RNS/3806086.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799761.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T11:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3777046.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766694.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T10:13:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Update on 2020 AGM vote",
+   "download_link": "NSM/Portal/NI-000013534.docx",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-28T10:00:07Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Update on 2020 Annual General Meeting vote",
+   "download_link": "NSM/RNS/3761254.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "2020 Third Quarter Trading Update",
+   "download_link": "NSM/RNS/3757127.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T09:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3755121.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000012350.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-08T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000012348.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-07T08:17:42Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of Tender Offer",
+   "download_link": "NSM/RNS/3740966.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-06T16:37:40Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3740272.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T16:15:23Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Publication of Supplement to Base Prospectus",
+   "download_link": "NSM/RNS/3738848.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T13:29:55.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "InterContinental Hotels Group PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000012308.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-01T16:05:25Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Maximum Acceptance Amount",
+   "download_link": "NSM/RNS/3736078.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T14:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735917.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T13:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735224.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T08:35:56Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender Offer",
+   "download_link": "NSM/RNS/3731615.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T15:00:01Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3718414.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T10:19:19.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Intercontinental Hotels Group plc. - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000011150.pdf",
+   "company": "Intercontinental Hotels Group plc.",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-09-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702890.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T06:02:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Update",
+   "download_link": "NSM/RNS/3683405.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T06:01:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Update",
+   "download_link": "NSM/RNS/3683404.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T06:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3683463.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675787.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643378.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Pre-close update",
+   "download_link": "NSM/RNS/3640814.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T13:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611662.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3611652.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-28T13:03:10Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3608893.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-26T13:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3605680.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-26T10:00:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3605548.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3595463.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T13:58:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3589395.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T13:58:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "IHG's Result of AGM 2020",
+   "download_link": "NSM/Portal/NI-000003279.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T11:00:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "IHG's Article of Association 2020",
+   "download_link": "NSM/Portal/NI-000003582.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "First Quarter Trading Update ",
+   "download_link": "NSM/RNS/3588290.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582782.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T13:00:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure Of Rights Attached To Equity Shares",
+   "download_link": "NSM/RNS/3576188.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T06:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Financing and current trading update ",
+   "download_link": "NSM/RNS/3575609.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T10:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555739.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T09:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3555732.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402150004_3551050.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T15:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200402150004_3551050.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402140006_3551021.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402140006_3551021.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:02:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401140203_3549365.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:02:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401140203_3549365.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:01:03Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200401140103_3549511.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:01:03Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200401140103_3549511.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Update",
+   "download_link": "NSM/data-migration/LSE20200401140004_3549486.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T14:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Update",
+   "download_link": "NSM/data-migration/LSE20200401140004_3549486.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T11:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327110006_3543900.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:36:27Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163627_3539728.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T14:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200324140003_3539201.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T11:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200324113004_3539091.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Business Update",
+   "download_link": "NSM/data-migration/LSE20200320070006_3534347.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T14:19:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200319141907_3533420.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T14:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200317143001_3530138.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T15:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312150501_3525032.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312150001_3524355.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T10:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200306100006_3518186.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302150002_3512307.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302140002_3512209.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T11:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200228110006_3510402.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T08:00:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200228080001_3510047.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T11:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200225110002_3505782.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T15:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200224150002_3504403.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200221150001_3501948.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-18T07:01:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200218070102_3497050.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203140001_3481897.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T12:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200123120006_14395976.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T10:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200117100007_14388654.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T14:14:37Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200113141437_14382103.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102140004_14369383.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191223120001_14360340.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T10:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191212100005_14346188.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191210100001_14342340.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T09:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191206090005_14338579.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202140004_14331352.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-22T10:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191122100005_14319502.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-15T12:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191115120002_14310521.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T12:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191111123002_14303142.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T16:25:22Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191106162522_14297672.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101140005_14291344.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T11:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191031110003_14288724.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "IHG in Greater China. Educational Event. 31.10.19",
+   "download_link": "NSM/data-migration/LSE20191031070003_14287680.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-29T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191029100002_14284516.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T11:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191025110004_14281154.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191024120001_14279466.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T10:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191022100003_14275186.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Third Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20191018070002_14270992.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001140001_14249403.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T12:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190930120004_14247031.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T14:00:01Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Further re Interim Dividend",
+   "download_link": "NSM/data-migration/LSE20190918140001_14232049.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190909100002_14218744.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T14:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902140004_14210481.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190812100002_14185131.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T11:05:35Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Change of Auditor",
+   "download_link": "NSM/data-migration/LSE20190809110535_14183616.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190806070007_14177266.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801140001_14173025.html",
+   "company": "Intercontinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701140001_14131705.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190628100001_14128869.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T09:28:45Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "IFRS 16: Leases adoption",
+   "download_link": "NSM/data-migration/LSE20190612092845_14107974.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190610100001_14104663.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190604140001_14098197.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T14:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603140005_14096504.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T14:10:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523141003_14085577.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T14:05:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523140503_14085572.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T14:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523140003_14085567.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190516100002_14076562.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190514140001_14073596.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T10:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190508100001_14066387.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190507120001_14064906.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T13:53:12Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190503135312_14062923.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/data-migration/LSE20190503070002_14061748.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501140002_14059673.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T12:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190429120005_14055588.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T11:00:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Final Dividend - Pence Sterling Amount Payable",
+   "download_link": "NSM/data-migration/LSE20190426110002_14053613.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T11:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190404110001_14029148.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T14:00:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190403140000_14027642.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401140001_14023871.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313132001_14001033.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313131501_14001026.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313131001_14001022.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313130501_14001019.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313130001_14001014.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T15:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305151501_13991108.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T15:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305151001_13991094.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T15:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305150501_13991086.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305150002_13991084.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301140001_13987643.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T13:10:56Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190228131056_13985661.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T14:05:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190226140500_13982414.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190226140001_13982409.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T10:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190225100004_13980300.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-22T15:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190222153004_13979293.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190221100002_13977162.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-20T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190220120001_13975920.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-19T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190219070006_13973517.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190218100002_13972703.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Meeting",
+   "download_link": "NSM/data-migration/212935855.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-18T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/212935806.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-18T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Chair's Letter",
+   "download_link": "NSM/data-migration/212935853.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-15T12:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215120002_13971320.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190214120001_13969782.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "IHG Acquires Six Senses Hotels Resorts Spas",
+   "download_link": "NSM/data-migration/LSE20190213070003_13967208.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T12:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "New Executive Committee Appointments",
+   "download_link": "NSM/data-migration/LSE20190206120002_13960503.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T14:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201140001_13955793.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190124100002_13945566.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T11:05:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190118110501_13939821.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T11:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190118110001_13939802.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T14:00:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Special Dividend - Pounds Sterling Amounts Payable",
+   "download_link": "NSM/data-migration/LSE20190117140003_13938521.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T11:32:19Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of GM",
+   "download_link": "NSM/data-migration/LSE20190111113219_13932170.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T14:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102140007_13921288.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Form 20-F 2018",
+   "download_link": "NSM/data-migration/212939237.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-21T11:00:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181221110000_13913235.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-19T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181219070002_13908782.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T07:00:04Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Repurchase in connection with Share Consolidation",
+   "download_link": "NSM/data-migration/LSE20181218070004_13907012.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T11:00:03Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Publication of Circular",
+   "download_link": "NSM/data-migration/LSE20181214110003_13904428.html",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-13T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Base Prospectus",
+   "download_link": "NSM/data-migration/180831723.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2018-05-04T13:08",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "IHG's Article of Association",
+   "download_link": "NSM/Portal/NI-000002089.pdf",
+   "company": "InterContinental Hotels Group PLC",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-11T07:00:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Miscellaneous",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Miscellaneous",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3811356.html",
+   "disclosure_id": "3811356",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-11T07:00:05Z",
+   "seq_id": "3811356",
+   "company": "InterContinental Hotels Group PLC",
+   "last_updated_date": "2026-08-22T12:08:49.742960620Z",
+   "headline": "Financing and reporting update",
+   "type_code": "MSCL"
+  },
+  {
+   "submitted_date": "2020-12-07T14:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "2138007ZFQYRUSLU3J98",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3806086.html",
+   "disclosure_id": "3806086",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-07T14:00:01Z",
+   "seq_id": "3806086",
+   "company": "InterContinental Hotels Group PLC",
+   "last_updated_date": "2026-08-22T12:08:49.728596813Z",
+   "headline": "Appointment of Non-Executive Director",
+   "type_code": "BOA"
+  }
+ ]
 }

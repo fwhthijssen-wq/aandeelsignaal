@@ -1,13 +1,2251 @@
 {
- "aantal": 0,
+ "aantal": 219,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800LS272L4FIDOH92', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800LS272L4FIDOH92', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800LS272L4FIDOH92', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800LS272L4FIDOH92', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800LS272L4FIDOH92",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 219
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-21T11:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3821992.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3798145.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T14:30:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3767148.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T10:40:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3765071.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Update",
+   "download_link": "NSM/RNS/3761347.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T15:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3754239.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-19T14:30:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3752507.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T13:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3745518.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T10:50:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3741286.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T17:35:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3738910.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T13:05:01Z",
+   "type": "Issue of Equity",
+   "type_code": "IOE",
+   "headline": "Scrip Dividend - Total Issued Shares ",
+   "download_link": "NSM/RNS/3732070.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T12:00:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - Calculation Price",
+   "download_link": "NSM/RNS/3712816.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T14:54:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701436.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T14:42:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701431.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T08:40:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3684166.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T06:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results ",
+   "download_link": "NSM/RNS/3679230.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T10:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director appointment",
+   "download_link": "NSM/RNS/3654313.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Committee Changes",
+   "download_link": "NSM/RNS/3640776.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T09:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3621548.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T09:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611607.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-29T09:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Change",
+   "download_link": "NSM/RNS/3609880.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T09:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3599771.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-19T09:35:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3599698.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-18T15:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3598840.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T09:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3595465.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T15:10:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director appointment",
+   "download_link": "NSM/RNS/3591717.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T15:40:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results - Resolutions",
+   "download_link": "NSM/Portal/NI-000003303.pdf",
+   "company": "ConvaTec Group Plc",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T15:15:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3589601.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T13:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3586360.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T06:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "ConvaTec Group Plc Q1 2020 Trading Update",
+   "download_link": "NSM/RNS/3580273.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T13:20:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - Total Issued Shares",
+   "download_link": "NSM/RNS/3578291.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T06:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3569472.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T11:30:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - Calculation Price ",
+   "download_link": "NSM/RNS/3559201.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:00:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403110004_3552798.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:00:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403110004_3552798.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:45:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Annual General Meeting Update",
+   "download_link": "NSM/data-migration/LSE20200402124505_3551356.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T12:45:05Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Annual General Meeting Update",
+   "download_link": "NSM/data-migration/LSE20200402124505_3551356.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T14:20:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200324142005_3539439.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T15:40:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report & Accounts and Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20200316154001_3528625.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2020",
+   "download_link": "NSM/data-migration/269682844.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-13T11:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200313110501_3526328.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200313110002_3526305.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T15:50:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311155001_3522956.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200311154501_3522886.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results",
+   "download_link": "NSM/data-migration/LSE20200228070005_3509579.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T11:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director appointment",
+   "download_link": "NSM/data-migration/LSE20200227110002_3508651.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T12:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200110124503_14379996.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report for year ending 31 December 2019",
+   "download_link": "NSM/data-migration/269682765.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-11-07T14:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Update Statement following AGM Voting Outcome",
+   "download_link": "NSM/data-migration/LSE20191107140001_14299425.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T11:30:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101113005_14291056.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Update",
+   "download_link": "NSM/data-migration/LSE20191030070002_14285644.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T16:50:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191021165005_14274286.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T15:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191021154505_14274231.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191014153001_14265388.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-04T07:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191004073001_14254161.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T16:44:37Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - Total Issued Shares",
+   "download_link": "NSM/data-migration/LSE20190927164437_14245523.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T07:00:18Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190918070018_14230787.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T16:00:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - Calculation Price",
+   "download_link": "NSM/data-migration/LSE20190912160004_14224875.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "John McAdam appointed Chairman of ConvaTec",
+   "download_link": "NSM/data-migration/LSE20190819070006_14193055.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T16:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190808163004_14182383.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "ConvaTec Group Plc First Half Results 2019",
+   "download_link": "NSM/data-migration/LSE20190801070010_14171563.html",
+   "company": "Convatec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T07:00:13Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "BOARD CHANGE",
+   "download_link": "NSM/data-migration/LSE20190625070013_14122692.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T14:20:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190620142004_14118697.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T15:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190531153002_14094684.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T12:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190517123001_14078726.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T16:30:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190509163001_14068777.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Resolutions passed at AGM",
+   "download_link": "NSM/data-migration/221197047.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-05-03T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "ConvaTec Q1 Trading Update",
+   "download_link": "NSM/data-migration/LSE20190503070003_14061757.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T14:30:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - total issued shares",
+   "download_link": "NSM/data-migration/LSE20190429143003_14055855.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T14:47:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418144749_14046859.html",
+   "company": "Standard Life Aberdeen PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T14:47:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418144749_14046859.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T14:15:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - calculation price",
+   "download_link": "NSM/data-migration/LSE20190411141504_14038117.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T10:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190411100004_14037592.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T08:45:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20190403084501_14027002.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2018",
+   "download_link": "NSM/data-migration/216810691.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-03T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy Annual General Meeting 2018",
+   "download_link": "NSM/data-migration/216810686.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-29T11:52:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329115217_14021593.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T11:21:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190329112152_14021505.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T14:55:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190326145501_14016513.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190306130004_13992637.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-27T12:40:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2018 Annual Report & Accounts",
+   "download_link": "NSM/data-migration/LSE20190227124001_13983917.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T07:04:29Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Fourth Quarter and Annual Results 2018",
+   "download_link": "NSM/data-migration/LSE20190214070429_13968855.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T14:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190108140001_13927789.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T10:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190102103004_13920792.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2019",
+   "download_link": "NSM/data-migration/212801325.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-18T14:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181218141502_13908240.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T07:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101070002_13850386.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-26T16:40:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181026164003_13844708.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-26T10:22:57Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "ConvaTec Receives FDA 510(k) Clearance for Avelle",
+   "download_link": "NSM/data-migration/LSE20181026102257_13844038.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-25T18:42:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181025184221_13843147.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-19T11:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181019113002_13835758.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-16T17:15:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181016171503_13831219.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-16T13:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181016131504_13830827.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-16T10:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181016101504_13830447.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-15T14:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181015143001_13829137.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-15T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Retirement of Chief Executive Officer",
+   "download_link": "NSM/data-migration/LSE20181015070005_13827926.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-15T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/data-migration/LSE20181015070004_13827889.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-13T16:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - calculation price",
+   "download_link": "NSM/data-migration/LSE20180913160001_13790277.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-13T10:10:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180913101000_13789571.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-13T10:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180913100002_13789537.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-07T09:23:36Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180807092336_13746318.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-06T14:36:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180806143626_13745296.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-03T11:25:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180803112528_13743325.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-02T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "ConvaTec Group Plc First Half Results 2018",
+   "download_link": "NSM/data-migration/LSE20180802070010_13740635.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-27T12:35:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180727123503_13734502.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-24T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "US FDA 510(k) Clearance for AQUACELT Ag Advantage",
+   "download_link": "NSM/data-migration/LSE20180724070004_13728352.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-23T15:27:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180723152708_13728041.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-23T15:27:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180723152708_13728041.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-23T09:39:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180723093915_13727348.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-06T09:53:16Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180706095316_13708549.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-03T07:00:10Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board Changes",
+   "download_link": "NSM/data-migration/LSE20180703070010_13702709.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-06T17:20:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180606172046_13669905.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-06T17:18:16Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180606171816_13669897.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601070005_13662659.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-21T13:03:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180521130302_13648943.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-21T13:02:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180521130219_13648940.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T15:27:14Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "AGM Corrected Poll Result",
+   "download_link": "NSM/data-migration/LSE20180511152714_13638598.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T07:00:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Special Resolutions at NSM",
+   "download_link": "NSM/data-migration/LSE20180511070002_13637155.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2018 AGM Resolutions",
+   "download_link": "NSM/data-migration/171359055.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-05-10T15:57:25Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Result of Meeting",
+   "download_link": "NSM/data-migration/LSE20180510155725_13636937.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-08T15:12:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180508151251_13633268.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-08T10:55:00Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180508105500_13632720.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-04T16:33:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180504163321_13631233.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T10:39:11Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180503103911_13628836.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Result of placing in ConvaTec Group Plc",
+   "download_link": "NSM/data-migration/LSE20180503070004_13628105.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T07:00:13Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Update",
+   "download_link": "NSM/data-migration/LSE20180502070013_13626594.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-26T07:00:09Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend- total issued shares",
+   "download_link": "NSM/data-migration/LSE20180426070009_13619067.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-12T10:30:09Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - calculation price",
+   "download_link": "NSM/data-migration/LSE20180412103009_13602098.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T11:00:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/LSE20180315110001_13568368.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy Annual General Meeting 2018",
+   "download_link": "NSM/data-migration/165332299.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-15T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2018",
+   "download_link": "NSM/data-migration/165332307.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-08T15:35:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180308153526_13560418.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Changes within U.S. Home Distribution Group",
+   "download_link": "NSM/data-migration/LSE20180302070003_13552069.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-26T11:24:09Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2017 Annual Report & Accounts",
+   "download_link": "NSM/data-migration/LSE20180226112409_13545752.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-15T07:00:05Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180215070005_13533801.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T11:17:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180207111701_13524849.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/163545729.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/163467966.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-21T10:33:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171221103328_13474212.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-13T12:40:26Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171213124026_13464164.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-12T10:01:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171212100105_13462201.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T13:54:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171206135426_13456267.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-04T15:15:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171204151551_13453222.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-04T14:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Organisation Appointments",
+   "download_link": "NSM/data-migration/LSE20171204140001_13453036.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-27T15:19:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171127151951_13445169.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T12:08:32Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20171115120832_13432665.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T15:12:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171101151250_13417112.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T12:00:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20171101120001_13416728.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101070003_13415664.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-27T11:13:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171027111305_13411709.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-20T16:01:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171020160103_13404420.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-19T10:15:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171019101527_13402298.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-19T07:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171019070002_13401568.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-17T15:35:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171017153528_13399745.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-17T15:24:43Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171017152443_13399721.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-16T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "FY2017 guidance and third quarter update",
+   "download_link": "NSM/data-migration/LSE20171016070004_13396990.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-05T07:00:05Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - total issued shares",
+   "download_link": "NSM/data-migration/LSE20171005070005_13386587.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-19T07:00:08Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "GentleCath Glide and me+ Launches in Europe",
+   "download_link": "NSM/data-migration/LSE20170919070008_13367054.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T11:16:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170914111618_13363032.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T10:09:47Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend - calculation price",
+   "download_link": "NSM/data-migration/LSE20170914100947_13362860.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-11T07:00:06Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Scrip Dividend",
+   "download_link": "NSM/data-migration/LSE20170911070006_13357532.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-11T00:00:00Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "SCRIP DIVIDEND SCHEME RULES",
+   "download_link": "NSM/data-migration/145901378.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-09-04T11:05:41Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170904110541_13350739.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-14T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "ConvaTec appoints two Non-Executive Directors",
+   "download_link": "NSM/data-migration/LSE20170814070005_13328267.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-03T07:02:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170803070201_13317755.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-03T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "ConvaTec Group Plc First Half 2017 Results",
+   "download_link": "NSM/data-migration/LSE20170803070004_13317657.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:31:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170801103121_13314836.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "ConvaTec Acquisition of Woodbury Holdings",
+   "download_link": "NSM/data-migration/LSE20170720070005_13301243.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-21T07:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170621070003_13267491.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-16T09:20:56Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change in External Directorships",
+   "download_link": "NSM/data-migration/LSE20170616092056_13263163.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-13T17:05:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170613170519_13259232.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-12T16:35:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170612163557_13257611.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-09T11:45:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170609114548_13255586.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-09T11:41:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170609114152_13255566.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-09T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Announcement on Board of Directors",
+   "download_link": "NSM/data-migration/LSE20170609070003_13254685.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-12T07:00:07Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Special Resolutions available at NSM",
+   "download_link": "NSM/data-migration/LSE20170512070007_13223204.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-12T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions available at NSM",
+   "download_link": "NSM/data-migration/133514578.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-12T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions available at NSM",
+   "download_link": "NSM/data-migration/133514581.doc",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-05-11T14:22:47Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Results of AGM",
+   "download_link": "NSM/data-migration/LSE20170511142247_13222764.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-04T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Update ended 31 March 2017",
+   "download_link": "NSM/data-migration/LSE20170504070008_13213550.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T07:00:20Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Launch of Flexi-Seal",
+   "download_link": "NSM/data-migration/LSE20170502070020_13209880.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-05T07:00:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec Announces U.S. Launch of Foam Lite",
+   "download_link": "NSM/data-migration/LSE20170405070009_13183890.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-04T07:00:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notice of Annual General Meeting",
+   "download_link": "NSM/data-migration/LSE20170404070008_13182134.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-04T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "AGM Proxy Form",
+   "download_link": "NSM/data-migration/132151406.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-04T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/data-migration/132151405.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-03T15:00:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Executive Committee",
+   "download_link": "NSM/data-migration/LSE20170403150002_13181646.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T17:22:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20170331172225_13179762.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T14:07:45Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20170331140745_13179280.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-31T13:49:38Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20170331134938_13179219.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-30T07:00:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec expands partnership with Medtronic",
+   "download_link": "NSM/data-migration/LSE20170330070014_13176464.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-29T09:44:52Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170329094452_13175409.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-28T17:54:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170328175409_13174654.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-23T07:00:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec Launches Sensi-Care®",
+   "download_link": "NSM/data-migration/LSE20170323070014_13168297.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-21T07:00:05Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "2016 Annual Report & Accounts",
+   "download_link": "NSM/data-migration/LSE20170321070005_13165188.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-08T12:00:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170308120002_13151520.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-08T12:00:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170308120002_13151518.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-02T07:00:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec full year 2016 results",
+   "download_link": "NSM/data-migration/LSE20170302070010_13144641.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T07:00:12Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec Launches me+T recovery",
+   "download_link": "NSM/data-migration/LSE20170227070012_13139590.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-22T07:00:12Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "ConvaTec announces US GentleCath Glide launch",
+   "download_link": "NSM/data-migration/LSE20170222070012_13135131.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-07T07:00:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20170207070008_13119246.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "ANNUAL REPORT",
+   "download_link": "NSM/data-migration/130141274.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-14T13:59:58Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Announcement of margin loan",
+   "download_link": "NSM/data-migration/LSE20161214135958_013067224.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-08T13:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Analyst Presentation",
+   "download_link": "NSM/data-migration/LSE20161208130003_013061032.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161201070009_013052443.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161201070009_013052450.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161201070009_013052453.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161201070009_013052477.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T07:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201070006_013052388.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T07:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161115070005_013034767.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T07:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161115070005_013034763.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-14T07:00:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Exercise of Over-allotment Option",
+   "download_link": "NSM/data-migration/LSE20161114070011_013033393.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-08T16:03:11Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20161108160311_013028393.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-03T15:25:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20161103152521_013023645.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T14:45:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of major interest in shares",
+   "download_link": "NSM/data-migration/LSE20161031144507_013018634.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T08:09:16Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "Admission to Trading on the London Stock Exchange",
+   "download_link": "NSM/data-migration/LSE20161031080916_013017945.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T13:57:50Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20161026135750_013013931.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T07:00:05Z",
+   "type": "Stabilisation Notice",
+   "type_code": "STA",
+   "headline": "Stabilisation Notice",
+   "download_link": "NSM/data-migration/LSE20161026070005_013012778.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Offer Price Announcement",
+   "download_link": "NSM/data-migration/LSE20161026070005_013012799.html",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Issuer Document",
+   "download_link": "NSM/data-migration/120184268.pdf",
+   "company": "ConvaTec Group PLC",
+   "lei": "213800LS272L4FIDOH92",
+   "source": "Portal (pre-Sept 2017)"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-21T11:00:03Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director Declaration",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800LS272L4FIDOH92",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3821992.html",
+   "disclosure_id": "3821992",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-21T11:00:03Z",
+   "seq_id": "3821992",
+   "company": "ConvaTec Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.205650560Z",
+   "headline": "Director Declaration",
+   "type_code": "RDN"
+  },
+  {
+   "submitted_date": "2020-11-30T15:45:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800LS272L4FIDOH92",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3798145.html",
+   "disclosure_id": "3798145",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-30T15:45:01Z",
+   "seq_id": "3798145",
+   "company": "ConvaTec Group PLC",
+   "last_updated_date": "2026-08-22T12:08:32.320810951Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

@@ -1,13 +1,4141 @@
 {
- "aantal": 0,
+ "aantal": 408,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800Q1Q9DV4L78UM09', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800Q1Q9DV4L78UM09', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800Q1Q9DV4L78UM09', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800Q1Q9DV4L78UM09', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800Q1Q9DV4L78UM09",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 408
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-22T07:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3821985.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3814388.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3816051.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-09T08:00:07Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3806162.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-03T09:27:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3802659.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-02T08:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3797769.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T11:57:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799576.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T12:30:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3787822.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-09T07:00:11Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/RNS/3773052.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T17:18:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3768880.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:45:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766640.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:25:05Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3766643.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:07Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/RNS/3762730.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T17:13:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3761263.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T08:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3753650.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T16:43:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749958.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T16:41:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749956.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T16:37:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749950.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3747021.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-07T11:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3741338.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T16:25:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738865.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3735700.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T11:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735666.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T16:25:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711677.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T15:25:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3706293.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T06:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/RNS/3705120.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T08:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702862.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-27T15:12:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3700069.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T16:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3697698.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T16:15:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3696447.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T16:15:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3696444.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T09:00:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3694902.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T06:00:12Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3695183.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T06:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/RNS/3695175.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T14:12:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3679009.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T09:19:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675639.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-21T08:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Admission Particulars",
+   "download_link": "NSM/RNS/3661796.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-03T12:04:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3646555.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T10:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643474.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T14:16:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3642140.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-30T10:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3641755.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-29T16:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3640648.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-26T14:40:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3639042.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-15T06:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3625195.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-03T11:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3614767.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T09:35:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611650.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-04T16:29:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3585118.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T12:55:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3583325.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T11:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583193.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T08:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3579807.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T11:00:04Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3576022.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T10:15",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/Portal/NI-000001964.pdf",
+   "company": "BUNZL PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-23T15:24:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3572391.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-22T06:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3569230.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T14:51:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3567763.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T13:07:52Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3563050.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T12:23",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolution",
+   "download_link": "NSM/Portal/NI-000000815.doc",
+   "company": "BUNZL PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-14T15:55:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561695.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-07T08:25:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3555722.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T14:00:02Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "2020 AGM update",
+   "download_link": "NSM/RNS/3554686.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T14:00",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "2020 AGM update",
+   "download_link": "NSM/Portal/NI-000000155.pdf",
+   "company": "BUNZL PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-03T11:15:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403111507_3552813.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T11:15:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200403111507_3552813.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550354.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200402070004_3550354.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:20:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401102006_3549274.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:20:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401102006_3549274.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T16:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200330163006_3546383.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T14:00:01Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2020 AGM update",
+   "download_link": "NSM/data-migration/LSE20200323140001_3537701.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Annual General Meeting",
+   "download_link": "NSM/data-migration/270784451.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-20T08:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200320080004_3531564.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T16:20:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200319162006_3533923.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T15:37:03Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200312153703_3525116.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/269056986.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-12T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/269057013.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-10T17:08:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310170816_3522093.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200309070005_3518698.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T17:05:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200304170502_3515777.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T12:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303123001_3514035.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T16:51:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200302165101_3512845.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T16:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302164501_3512829.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200224070009_3502402.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200224070005_3502392.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T17:10:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200221171001_3502368.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-05T07:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200205070005_3484044.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T17:29:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203172902_3482485.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T18:05:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200114180506_14384148.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-09T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200109070006_14377018.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T15:20:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102152003_14369520.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report",
+   "download_link": "NSM/data-migration/269057384.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-23T07:17:04Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191223071704_14359709.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191217070006_14351138.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T08:00:05Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20191212080005_14345929.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T08:00:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20191206080002_14338509.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T15:45:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191204154502_14335670.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202120005_14331055.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191104170004_14293686.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:30:04Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191101103004_14290784.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T16:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191023160003_14277734.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191022070003_14274468.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191011153001_14263678.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T17:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191008173003_14258798.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:23:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191002172301_14251778.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T15:47:46Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191002154746_14251607.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T09:11:36Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191002091136_14250724.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T11:15:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001111502_14249078.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T17:41:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911174101_14223206.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T17:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190911174001_14223205.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T16:50:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190905165002_14216081.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T08:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190905080004_14215038.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T10:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902103004_14210016.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T10:00:02Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190827100002_14202866.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T07:00:12Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190827070012_14201863.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T16:35:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190802163550_14175246.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T10:10:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801101002_14172438.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T10:45:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190724104505_14161431.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T16:58:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190719165801_14156916.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T16:57:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190709165701_14142349.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T10:40:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190704104039_14136849.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T09:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701093002_14130949.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190626070004_14124344.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T17:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190614173005_14112230.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T17:15:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190612171504_14108811.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T13:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190605130002_14099871.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T08:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603080004_14095663.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T07:00:12Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190528070012_14088114.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190521163001_14082412.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190521080001_14081418.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T08:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190514080003_14072884.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T15:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190510153002_14070334.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T07:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190510070006_14069051.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T16:20:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190503162005_14063138.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T15:00:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190501150002_14059792.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T10:20:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501102002_14059161.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T15:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190418151501_14046903.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T16:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190417160001_14045207.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190417070002_14043758.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolution",
+   "download_link": "NSM/data-migration/218694668.doc",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-04-11T17:25:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411172502_14038370.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T15:03:42Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190404150342_14029582.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190403170001_14027954.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T16:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190401161501_14024158.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T15:37:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190401153750_14024089.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T14:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401143001_14023930.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T11:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190329113003_14021550.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T14:37:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190325143724_14014711.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T16:40:02Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190314164002_14002995.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T12:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190314123005_14002677.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/214500850.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-14T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form",
+   "download_link": "NSM/data-migration/214500829.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-03-11T17:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190311173004_13997924.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T17:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190307170002_13994634.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305163001_13991185.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304174501_13989654.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304174501_13989653.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190301150001_13987751.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T11:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301110001_13987304.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T10:00:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190225100004_13980299.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190225070010_13979626.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-25T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190225070004_13979516.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-04T18:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190204180002_13957760.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201090001_13955152.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T16:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190109163003_13929407.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190103171505_13923414.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T07:00:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190103070010_13922033.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/214500832.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-13T07:00:01Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20181213070001_13901787.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-06T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181206100002_13894043.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-06T07:00:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20181206070009_13893381.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T16:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181204161501_13891372.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T12:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181204121501_13891003.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T07:00:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203070007_13887970.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-28T16:50:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181128165001_13884165.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-26T08:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20181126080004_13879873.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T17:52:50Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181109175250_13862378.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-02T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181102150001_13853695.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T12:29:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20181101122901_13851693.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T11:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101110001_13851346.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-24T15:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181024153002_13841239.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-23T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20181023070002_13838156.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-16T07:00:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181016070012_13829677.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-10T17:36:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181010173630_13824118.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-05T15:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181005151501_13818831.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-02T17:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181002171501_13813858.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T10:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001103001_13810994.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-27T11:27:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180927112737_13807192.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-04T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180904170003_13778680.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-04T09:50:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180904095003_13778044.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-29T17:12:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180829171211_13771995.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-29T17:11:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180829171116_13771992.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-29T17:09:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180829170949_13771989.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-28T16:35:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20180828163503_13770316.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-28T07:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180828070010_13768822.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-28T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20180828070007_13768729.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T16:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801163004_13740354.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-13T10:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180713103004_13717227.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T12:30:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702123002_13701832.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-27T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180627070002_13694775.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T10:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601104501_13663644.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-24T12:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180524123002_13654312.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T15:30:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180523153007_13652791.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T13:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180523130005_13652525.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T10:51:13Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180523105113_13652240.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-10T08:12:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180510081245_13635998.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T11:15:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180502111532_13627378.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T10:40:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180502104001_13627270.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T10:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180502103001_13627252.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-02T10:08:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180502100839_13627189.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-30T10:04:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180430100456_13623512.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-23T13:31:08Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180423133108_13614848.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-19T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180419154501_13611607.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T15:49:37Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180418154937_13609855.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180418070002_13608379.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolution",
+   "download_link": "NSM/data-migration/168778011.doc",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-10T12:10:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180410121002_13598889.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-09T16:20:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180409162002_13597479.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-09T10:23:40Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180409102340_13596742.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-05T16:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180405162001_13593922.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-05T16:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180405161502_13593913.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T16:11:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403161117_13590141.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-22T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180322160001_13578075.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-21T10:44:35Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180321104435_13575571.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T16:27:26Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180315162726_13568988.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-15T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/165468345.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-15T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy form",
+   "download_link": "NSM/data-migration/165468338.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-03-12T16:48:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180312164836_13563899.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-05T11:54:58Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180305115458_13554765.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T16:16:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302161638_13553538.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T15:30:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302153026_13553452.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-02T15:23:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180302152329_13553429.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T11:06:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301110641_13551117.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-26T10:22:31Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20180226102231_13545589.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-26T07:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180226070003_13544933.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-23T08:00:03Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180223080003_13543687.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-22T15:30:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180222153002_13543045.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-13T09:06:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20180213090637_13530991.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T16:00:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180202160020_13520488.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180202080001_13519453.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T16:12:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201161201_13518795.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-22T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20180122080001_13504129.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T07:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20180111070002_13492323.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-11T07:00:02Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Impact of US Tax Legislation",
+   "download_link": "NSM/data-migration/LSE20180111070002_13492334.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-09T16:47:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180109164736_13490573.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-03T13:38:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180103133859_13484009.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T16:08:33Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102160833_13482761.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/165468350.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report",
+   "download_link": "NSM/data-migration/165523500.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-21T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20171221080001_13473900.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-18T16:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171218160007_13469750.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-14T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20171214070002_13464832.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-13T09:11:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171213091145_13463735.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T11:36:31Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/data-migration/LSE20171207113631_13457581.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-07T00:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/data-migration/154838025.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2017-12-01T16:12:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201161223_13451684.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T07:00:06Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/data-migration/LSE20171201070006_13450290.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-30T08:00:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20171130080001_13448942.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-23T07:00:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20171123070003_13441128.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-17T13:18:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171117131839_13435947.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T11:49:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171115114927_13432640.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T15:01:43Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Dividend Reinvestment Plan Terms and Conditions",
+   "download_link": "NSM/data-migration/LSE20171113150143_13429729.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Dividend Reinvestment Plan Terms & Conditions",
+   "download_link": "NSM/data-migration/151346983.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-11-01T15:05:51Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20171101150551_13417097.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T14:57:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101145713_13417071.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-24T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20171024070002_13406220.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-12T10:45:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171012104548_13394737.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-09T17:30:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171009173030_13390953.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-09T17:25:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171009172551_13390949.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-09T17:21:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171009172108_13390941.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-06T16:00:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171006160046_13389335.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-06T12:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171006122001_13389027.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-05T15:55:18Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20171005155518_13387837.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-29T16:15:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170929161501_13381151.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-27T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Capital Markets Event",
+   "download_link": "NSM/data-migration/LSE20170927070002_13376367.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-22T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170922150002_13373006.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-14T09:10:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170914091008_13362796.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-06T09:07:48Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170906090748_13353317.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T16:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170901164001_13349739.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T11:10:19Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901111019_13349056.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-29T12:15:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20170829121501_13344375.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-15T10:13:00Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170815101300_13330277.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-09T14:56:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170809145651_13324765.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-07T12:09:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170807120919_13321593.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-02T14:56:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170802145639_13317237.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T10:34:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801103435_13314879.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-20T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170720070007_13301262.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-14T13:12:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170714131221_13295928.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-05T15:30:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170705153028_13285222.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T14:01:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703140108_13281953.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:50:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170703095029_13281313.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T09:00:46Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170703090046_13281178.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-28T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170628070002_13275286.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-06T13:13:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170606131322_13251025.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-02T15:51:52Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170602155152_13248214.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T10:26:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601102624_13245621.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-24T07:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170524070010_13236174.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T16:47:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170503164718_13213284.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-03T16:42:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170503164223_13213277.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T16:21:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170502162106_13211531.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T16:19:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170502161942_13211525.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T15:35:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502153547_13211404.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-27T17:38:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170427173847_13207548.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-26T09:54:06Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170426095406_13205017.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-19T14:20:48Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170419142048_13197560.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-19T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170419070007_13196265.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-19T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/131808353.doc",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-13T13:56:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170413135602_13194253.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-13T10:21:16Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170413102116_13193929.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-11T17:12:49Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170411171249_13191422.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-07T17:12:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170407171210_13188352.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T16:16:18Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170406161618_13186745.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-04T16:34:30Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170404163430_13183580.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-04T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170404070007_13182111.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-03T09:43:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403094307_13180785.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-28T12:37:56Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170328123756_13174138.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-28T09:42:29Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170328094229_13173835.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-16T16:28:53Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170316162853_13161807.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-16T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/129503568.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-03-14T11:01:41Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20170314110141_13157810.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T17:54:08Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170306175408_13149031.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T15:49:44Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20170306154944_13148866.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-03T15:38:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170303153803_13147312.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-02T16:45:02Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170302164502_13145856.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-02T14:10:05Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170302141005_13145629.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T16:27:20Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301162720_13144310.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T07:00:16Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170301070016_13142734.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T13:30:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20170227133003_13140621.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T07:00:24Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170227070024_13139591.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T07:00:18Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20170227070018_13139596.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-27T07:00:07Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170227070007_13139529.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-03T17:37:50Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170203173750_13117623.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Bunzl plc - Annual Financial Report",
+   "download_link": "NSM/data-migration/129503576.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-28T14:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161228140002_013079616.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-19T14:55:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161219145527_013072193.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-15T07:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161215070010_013067640.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-12T16:22:09Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161212162209_013064281.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-09T16:15:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20161209161515_013062778.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201090001_013052968.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-23T17:16:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161123171644_013044836.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T07:00:07Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20161122070007_013042157.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T16:58:48Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20161101165848_013020546.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T16:49:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101164957_013020531.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161026070004_013012745.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-11T17:15:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161011171527_012997361.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-11T16:38:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161011163833_012997304.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-07T16:44:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161007164404_012994316.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T11:37:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003113753_012987389.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-26T15:45:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160926154534_012979077.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-21T16:12:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160921161241_012974394.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-14T17:07:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160914170756_012966350.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-13T10:38:25Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160913103825_012963925.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-05T15:13:45Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160905151345_012954907.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-02T15:13:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160902151328_012953206.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T11:11:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901111145_012951125.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T16:55:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160830165540_012948044.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T09:30:07Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20160830093007_012947113.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T07:00:17Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20160830070017_012946596.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T07:00:12Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160830070012_012946476.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T09:31:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801093156_012913535.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-29T10:08:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160729100802_012911645.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-15T16:32:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160715163236_012894926.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-05T13:20:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160705132046_012880982.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-04T10:37:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160704103747_012878867.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T13:13:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701131344_012877304.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T12:16:29Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160701121629_012877130.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-30T15:48:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160630154807_012875394.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T16:36:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160629163644_012873404.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T10:12:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160629101228_012872619.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-29T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160629070006_012871779.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-27T09:42:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160627094251_012868832.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T14:00:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601140057_012837541.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-23T16:54:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160523165409_012826525.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T07:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160505070008_012804039.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T16:35:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503163502_012801894.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T10:50:36Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160503105036_012800770.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-20T14:40:18Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160420144018_012785244.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-20T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20160420070006_012783861.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-20T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Resolution",
+   "download_link": "NSM/data-migration/109922660.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-06T12:05:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160406120522_012766374.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-06T11:32:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160406113242_012766284.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T13:48:27Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401134827_012760598.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T16:39:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160331163959_012758664.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-31T12:05:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160331120502_012757954.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-29T14:49:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160329144951_012754318.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T16:50:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160323165009_012750218.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-23T12:11:14Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20160323121114_012749571.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-17T15:05:27Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160317150527_012742330.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-17T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/107873136.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-17T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "AGM Notice",
+   "download_link": "NSM/data-migration/107873162.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-17T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "DRIP Terms and Conditions",
+   "download_link": "NSM/data-migration/107873137.pdf",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-15T16:32:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160315163220_012738586.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-14T16:49:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160314164915_012736651.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-11T16:59:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160311165928_012734767.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-04T14:55:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160304145529_012725076.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-03T13:37:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160303133719_012722907.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-02T16:51:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160302165151_012721374.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T16:58:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160301165837_012719513.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T16:57:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160301165738_012719507.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-01T12:39:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301123937_012718801.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-29T13:09:21Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20160229130921_012716854.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-29T07:00:16Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160229070016_012715763.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-29T07:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160229070010_012715644.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-03T14:35:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160203143527_012685373.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T12:10:45Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201121045_012681174.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-18T11:46:57Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160118114657_012662898.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-14T07:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160114070008_012658474.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-13T09:56:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160113095639_012657154.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-06T16:03:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160106160349_012648831.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T13:51:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104135103_012644851.html",
+   "company": "Bunzl PLC",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-22T07:00:03Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Directorate change",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "classifications": "",
+   "download_link": "NSM/RNS/3821985.html",
+   "disclosure_id": "3821985",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-22T07:00:03Z",
+   "seq_id": "3821985",
+   "company": "Bunzl PLC",
+   "last_updated_date": "2026-08-22T12:09:25.725440386Z",
+   "headline": "Directorate Change",
+   "type_code": "BOA"
+  },
+  {
+   "submitted_date": "2020-12-16T08:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Additional Listing",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Corporate actions",
+   "lei": "213800Q1Q9DV4L78UM09",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3814388.html",
+   "disclosure_id": "3814388",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-16T08:00:01Z",
+   "seq_id": "3814388",
+   "company": "Bunzl PLC",
+   "last_updated_date": "2026-08-22T12:09:07.191257562Z",
+   "headline": "Additional Listing",
+   "type_code": "ALS"
+  }
+ ]
 }

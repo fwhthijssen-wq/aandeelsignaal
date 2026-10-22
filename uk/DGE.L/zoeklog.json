@@ -1,13 +1,4001 @@
 {
- "aantal": 0,
+ "aantal": 394,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800ZVIELEA55JMJ32', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800ZVIELEA55JMJ32', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800ZVIELEA55JMJ32', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800ZVIELEA55JMJ32', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800ZVIELEA55JMJ32",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 394
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-10T17:20:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3811292.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T11:23:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3810671.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T16:45:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3800157.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T11:03:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799369.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T13:50:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3776056.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T11:26:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3775829.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T10:37:58Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3766702.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T09:36:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3749389.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T13:21:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3745551.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T11:16:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3745424.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-12T09:58:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3745221.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-05T08:47:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3738278.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-02T08:48:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/3736793.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T13:22:41Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735871.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T12:06:27Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change to Board of Directors",
+   "download_link": "NSM/RNS/3735691.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T15:00:23Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Aviation and Davos Brands acquisition - completion",
+   "download_link": "NSM/RNS/3733492.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T16:52:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000011840.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-28T16:49:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Special Business passed at AGM",
+   "download_link": "NSM/Portal/NI-000011839.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-28T16:44:22Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3730892.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T16:19:57Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3730851.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-28T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Diageo issues trading commentary ahead of AGM 2020",
+   "download_link": "NSM/RNS/3729519.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T07:21:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms - EUR Issuance of Debt",
+   "download_link": "NSM/Portal/NI-000011854.pdf",
+   "company": "Diageo Finance Plc;DIAGEO PLC;Diageo Capital B.V.",
+   "lei": "BPF79TJMIH3DK8XCKI50;213800ZVIELEA55JMJ32;213800YHFC48VOL6JY40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-25T07:19:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms - GBP Issuance of Debt",
+   "download_link": "NSM/Portal/NI-000011853.pdf",
+   "company": "Diageo Finance Plc;DIAGEO PLC;Diageo Capital B.V.",
+   "lei": "BPF79TJMIH3DK8XCKI50;213800ZVIELEA55JMJ32;213800YHFC48VOL6JY40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-09-24T11:58:31Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Diageo launches and prices Euro and Sterling bonds",
+   "download_link": "NSM/RNS/3727751.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T15:57:36Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "2020 Directors’ Remuneration Report",
+   "download_link": "NSM/RNS/3723684.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-17T10:36:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3719542.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T12:41:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3715632.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T15:00:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3712986.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T14:56:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3712980.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T07:47:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3710952.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-08T09:47:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3709942.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-07T09:18:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3708571.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-04T08:54:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3707108.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T09:52:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3704605.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T10:41:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703161.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T15:06:26Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus 2020",
+   "download_link": "NSM/RNS/3698752.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T13:51:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000010035.pdf",
+   "company": "Diageo Finance Plc;DIAGEO PLC;Diageo Capital B.V.",
+   "lei": "BPF79TJMIH3DK8XCKI50;213800ZVIELEA55JMJ32;213800YHFC48VOL6JY40",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-26T09:24:39.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "Diageo Capital B.V.;Diageo Finance Plc;DIAGEO PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000010133.pdf",
+   "company": "Diageo Capital B.V.;Diageo Finance Plc;DIAGEO PLC",
+   "lei": "213800YHFC48VOL6JY40;BPF79TJMIH3DK8XCKI50;213800ZVIELEA55JMJ32",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-21T10:51:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "AGM Notice and resolution to purchase own shares",
+   "download_link": "NSM/RNS/3694881.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-21T10:40:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Proxy Form for Annual General Meeting 2020",
+   "download_link": "NSM/Portal/NI-000009856.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-21T10:26:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2020",
+   "download_link": "NSM/Portal/NI-000009854.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-17T12:00:01Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Diageo to acquire Aviation Gin and Davos Brands",
+   "download_link": "NSM/RNS/3689564.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T12:32:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3683136.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T11:01:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3683064.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T15:23:13Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of 2020 Annual Report and 20-F",
+   "download_link": "NSM/RNS/3681855.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T14:23:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Diageo plc Annual Report 2020",
+   "download_link": "NSM/Portal/NI-000009118.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-04T07:26:14Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change to Board of Directors",
+   "download_link": "NSM/RNS/3676905.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-04T06:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results, year ended 30 June 2020",
+   "download_link": "NSM/RNS/3676312.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T13:04:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3676028.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-14T08:35:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3655720.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T13:26:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3653459.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-10T12:55:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3653424.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:56:41Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3643488.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T09:49:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643464.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-25T14:29:45Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Change to Board of Directors ",
+   "download_link": "NSM/RNS/3637596.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-22T06:00:09Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Revised date for Fiscal 2020 preliminary results",
+   "download_link": "NSM/RNS/3632115.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T12:22:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3621986.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-10T11:59:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3621952.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T13:13:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Prospectus",
+   "download_link": "NSM/Portal/NI-000005564.pdf",
+   "company": "DIAGEO PLC;Diageo Capital plc",
+   "lei": "213800ZVIELEA55JMJ32;213800L23DJLALFC4O95",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-06-09T12:39:55Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Listing Prospectus",
+   "download_link": "NSM/RNS/3620628.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T09:51:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611669.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T11:10:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3591434.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-11T10:32:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3591311.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T09:44:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3582938.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T06:00:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Diageo launches and prices $2.5 billion USD bonds",
+   "download_link": "NSM/RNS/3576833.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T12:12:42Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of rights attached to equity shares",
+   "download_link": "NSM/RNS/3576299.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T08:43:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3575794.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-24T06:00:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Changes to Board of Directors",
+   "download_link": "NSM/RNS/3572474.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T12:34:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3563015.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T12:55:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561386.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T12:26:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561324.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T11:16:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3561252.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading update – Impact of COVID-19 outbreak",
+   "download_link": "NSM/RNS/3558172.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:40:42Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200401164042_3550127.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:40:42Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200401164042_3550127.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:35:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200401163538_3550085.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:35:38Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200401163538_3550085.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:58:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401135834_3549760.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T13:58:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401135834_3549760.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:53:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401095302_3549258.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:53:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401095302_3549258.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T07:00:05Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200327070005_3543232.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:41:50Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164150_3543103.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:36:43Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163643_3543064.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T17:49:24Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Launch of bonds",
+   "download_link": "NSM/data-migration/LSE20200324174924_3539910.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T12:30:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Board and Executive announcement",
+   "download_link": "NSM/data-migration/LSE20200324123004_3539049.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T12:08:23Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200323120823_3537411.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T12:03:21Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200323120321_3537388.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:42:36Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320164236_3536194.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:43:35Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200312164335_3525340.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T16:36:51Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200312163651_3525201.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T11:44:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310114441_3521418.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T11:19:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310111917_3521352.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T13:27:31Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplement to Base Prospectus",
+   "download_link": "NSM/data-migration/LSE20200309132731_3520022.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T09:37:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200304093742_3515157.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T11:29:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302112943_3512201.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-26T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update – Impact of COVID-19 outbreak",
+   "download_link": "NSM/data-migration/LSE20200226070003_3506540.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T07:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200211070006_3489816.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-10T14:03:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200210140326_3489550.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T14:08:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200206140858_3486715.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T11:11:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203111129_3481868.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Non-Executive Director Appointment",
+   "download_link": "NSM/data-migration/LSE20200130110001_14404337.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-30T07:00:09Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim results, six months ended 31 December 2019",
+   "download_link": "NSM/data-migration/LSE20200130070009_14403462.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-29T17:16:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200129171657_14403196.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-28T17:14:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200128171429_14401549.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-27T17:05:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200127170508_14399583.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T12:45:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200110124500_14379995.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T11:39:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200110113927_14379846.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-06T17:15:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200106171546_14373157.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-03T17:11:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200103171152_14371321.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T13:26:50Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200102132650_14369306.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T12:26:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102122639_14369257.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T11:40:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191231114048_14367405.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T13:30:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217133024_14352635.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T16:55:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191216165545_14350934.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T17:01:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191213170138_14349046.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T16:56:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191212165624_14346951.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T17:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191211170011_14345189.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T16:51:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191210165150_14343277.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T13:26:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210132651_14342822.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T11:21:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191210112123_14342559.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-09T16:52:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191209165212_14341345.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-06T17:01:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191206170133_14339569.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T16:44:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191205164405_14337770.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T16:55:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191204165559_14335746.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T17:01:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191203170132_14333817.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T07:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Methodology change for organic non-GAAP measures",
+   "download_link": "NSM/data-migration/LSE20191203070006_14332093.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T16:57:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191202165730_14331709.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T13:11:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191202131100_14331207.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T11:38:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202113805_14330984.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-29T16:59:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191129165904_14329568.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-28T17:05:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191128170505_14327950.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T17:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191125170003_14322358.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-22T16:55:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191122165510_14320395.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-21T16:48:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191121164833_14318374.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-20T16:57:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191120165725_14316616.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T16:55:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191119165518_14314748.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-18T16:54:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191118165434_14312799.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-15T16:52:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191115165249_14310900.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-13T16:54:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191113165446_14306930.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T16:59:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191112165923_14305103.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T16:56:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191111165643_14303484.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T11:11:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191111111140_14302767.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T16:52:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191108165205_14301559.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T16:56:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191107165655_14299675.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T14:14:20Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20191106141420_14297279.html",
+   "company": "Diageo Capital PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T14:14:20Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20191106141420_14297279.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T11:16:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101111640_14291015.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T09:37:33Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Update",
+   "download_link": "NSM/data-migration/LSE20191101093733_14290646.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-28T17:03:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191028170320_14283632.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-25T17:19:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191025171917_14281769.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-24T16:58:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191024165823_14279886.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T17:00:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191023170051_14277804.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-22T17:12:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191022171215_14276082.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T16:58:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191021165830_14274293.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T17:02:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191018170223_14272457.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T16:48:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191017164826_14270733.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-16T16:58:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191016165857_14268936.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T17:04:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191015170417_14267169.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T16:56:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191014165639_14265461.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-11T16:54:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191011165442_14263779.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T17:00:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191010170017_14262126.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T15:03:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191010150348_14261982.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-10T12:05:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191010120549_14261750.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T17:07:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191009170709_14260470.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-09T09:20:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191009092031_14259606.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T17:09:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191008170943_14258767.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T17:05:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191007170553_14257072.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-07T15:21:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191007152109_14256930.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T16:55:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191003165541_14253523.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T17:05:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191002170547_14251756.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-02T09:56:18Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191002095618_14250846.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T16:56:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191001165646_14249838.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T09:41:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001094155_14248761.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:00:13Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/data-migration/LSE20191001070013_14248029.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T07:00:13Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Issue of Debt",
+   "download_link": "NSM/data-migration/LSE20191001070013_14248029.html",
+   "company": "Diageo Capital PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T17:12:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190930171254_14247703.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-27T17:04:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190927170422_14245547.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-26T16:56:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190926165651_14243639.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T17:09:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190925170958_14241752.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T17:19:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190924171928_14239866.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T16:54:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190923165422_14237952.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T17:10:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190920171048_14236094.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T10:12:27Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190920101227_14235172.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T17:00:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190919170012_14234204.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T11:13",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Diageo plc Articles of Association",
+   "download_link": "NSM/Portal/NI-000001974.pdf",
+   "company": "DIAGEO PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-09-19T07:00:15Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190919070015_14232611.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T16:57:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190918165701_14232310.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T17:12:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190917171205_14230537.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T17:03:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190916170308_14228622.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T17:10:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190913171007_14226788.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T16:59:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190912165939_14224928.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T17:02:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190911170216_14223146.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T17:38:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190910173852_14221424.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T16:14:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910161430_14221324.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T14:34:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910143413_14221154.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T11:44:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910114412_14220914.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T08:52:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910085241_14220452.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T17:04:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190909170412_14219572.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T17:10:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190906171024_14217829.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T16:57:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190905165758_14216091.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T09:30:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190905093036_14215195.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T17:01:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190904170108_14214252.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T13:15:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190904131527_14213909.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T16:59:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190903165954_14212476.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T16:09:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190903160938_14212414.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T11:43:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190903114345_14212021.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:36:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190902173651_14210927.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T11:06:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902110653_14210174.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T18:04:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190830180417_14208930.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T17:16:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190829171637_14207011.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T17:05:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190828170527_14205309.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T13:10:38Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190828131038_14205011.html",
+   "company": "Diageo Finance PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T13:10:38Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190828131038_14205011.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T17:24:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190827172414_14203640.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T17:38:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190823173859_14201372.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T17:21:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190822172126_14199742.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T17:08:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190821170849_14197989.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T16:59:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820165947_14196297.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T17:29:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190819172914_14194559.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T17:17:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190816171751_14192865.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T17:02:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190815170257_14191081.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T17:11:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190814171107_14189430.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T16:59:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190813165948_14187527.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T17:30:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190812173026_14185981.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T13:48:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190812134831_14185600.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T11:30:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190812113034_14185364.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T17:13:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190809171324_14184192.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T12:54:41Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of Annual General Meeting 2019",
+   "download_link": "NSM/data-migration/LSE20190809125441_14183851.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T17:04:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808170440_14182444.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T17:17:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807171721_14180615.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T17:17:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190806171712_14178834.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T17:56:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190805175625_14177117.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T14:40:23Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Publication of 2019 Annual Report and 20-F",
+   "download_link": "NSM/data-migration/LSE20190805144023_14176832.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T17:32:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190802173212_14175305.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:50:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190801175037_14173496.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T10:57:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801105754_14172618.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Diageo plc return of capital programme",
+   "download_link": "NSM/data-migration/LSE20190801070024_14171591.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T09:45:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190729094543_14166529.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T07:00:18Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary results, year ended 30 June 2019",
+   "download_link": "NSM/data-migration/LSE20190725070018_14162284.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T14:00:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710140017_14143810.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T13:37:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190710133740_14143781.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T17:39:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190702173922_14134035.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T17:26:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190701172630_14132199.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T14:45:53Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701144553_14131788.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:04:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190701100423_14131008.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T17:37:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628173727_14130008.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T18:16:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190627181614_14127903.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T14:36:38Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190620143638_14118723.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T12:59:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190618125958_14115342.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T14:45:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190610144502_14105240.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T14:24:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190610142435_14105206.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T18:23:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190606182310_14102187.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T17:37:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190605173755_14100293.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T17:00:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604170045_14098506.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:18:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190603171830_14096851.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T10:11:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603101108_14095949.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:51:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190531175142_14094936.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:10:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190530171051_14093045.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T17:15:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190529171515_14091420.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T16:51:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528165110_14089692.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T09:55:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190528095510_14088998.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528070004_14087883.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T17:04:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190523170455_14085850.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T18:04:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190522180429_14084199.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T12:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update Ahead of Capital Markets Day",
+   "download_link": "NSM/data-migration/LSE20190522120004_14083743.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T18:26:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190521182627_14082527.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T18:07:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190520180757_14080778.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T17:46:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190517174651_14079146.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T17:26:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190516172616_14077465.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T16:55:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190515165547_14075523.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T17:18:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514171812_14073894.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T09:24:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514092407_14073043.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T17:08:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510170836_14070444.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T16:04:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510160458_14070358.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T14:08:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510140826_14070204.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T18:29:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509182917_14068897.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:24:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509172409_14068840.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:28:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508172831_14067146.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:28:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507172817_14065465.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T17:46:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503174637_14063277.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T17:50:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502175030_14061582.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T15:46:19Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190502154619_14061447.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T18:07:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190501180706_14060067.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T12:20:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501122057_14059547.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T17:08:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190430170852_14058086.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T17:44:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190429174443_14056124.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T17:44:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190426174425_14054349.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T17:06:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190425170628_14052531.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:43:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190424174320_14050809.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-23T18:10:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190423181031_14049067.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T17:12:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190418171218_14047095.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T17:35:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190417173543_14045322.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-16T18:02:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190416180216_14043665.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T18:06:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190415180615_14041906.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T13:49:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190415134945_14041566.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T08:50:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190415085005_14040910.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T17:41:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190412174106_14040118.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T17:57:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190411175748_14038395.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T15:37:47Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190411153747_14038239.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T13:01:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411130131_14038036.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T17:26:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190410172646_14036673.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T13:26:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190410132658_14036371.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T10:41:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190410104134_14036026.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T09:02:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190409090214_14034103.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-09T07:00:08Z",
+   "type": "Issue of Debt",
+   "type_code": "IOD",
+   "headline": "Launch and pricing of Euro and Sterling bonds",
+   "download_link": "NSM/data-migration/LSE20190409070008_14033350.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-05T17:50:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190405175031_14031472.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T17:29:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190404172906_14029779.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T16:30:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplement to Base Prospectus",
+   "download_link": "NSM/data-migration/LSE20190404163001_14029705.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T12:37:32Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Close of partial tender - Shuijingfang",
+   "download_link": "NSM/data-migration/LSE20190404123732_14029402.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T17:32:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190403173257_14027992.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190403070003_14026322.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T18:19:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190401181939_14024382.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:40:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401114051_14023600.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T16:46:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190329164614_14022144.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-28T18:16:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190328181620_14020244.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T17:13:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190327171309_14018408.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-26T17:09:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190326170912_14016694.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T17:28:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190325172803_14014973.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:09:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190322170937_14013136.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-21T17:41:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190321174134_14011514.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T17:03:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190320170316_14009747.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T17:27:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190319172706_14008072.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-19T09:38:44Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190319093844_14007368.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-18T17:04:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190318170440_14006378.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T17:40:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190315174054_14004776.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-14T17:13:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190314171346_14003034.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T17:36:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190313173620_14001334.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T17:18:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190312171801_13999629.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T11:30:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190312113037_13999164.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T17:08:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190311170801_13997899.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T11:05:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190311110518_13997414.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-11T10:30:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190311103016_13997341.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T17:11:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190308171132_13996268.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T10:16:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308101618_13995565.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T17:05:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190307170519_13994640.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T17:46:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190306174640_13992969.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T18:01:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190305180155_13991302.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T16:11:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305161159_13991165.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-05T12:20:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190305122058_13990912.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T17:33:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190304173318_13989649.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T16:52:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190301165205_13987937.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T10:42:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301104256_13987246.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:23:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190228172302_13986126.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T11:16:22Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Launch of Partial Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190228111622_13985422.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T12:37:01Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender Offer",
+   "download_link": "NSM/data-migration/LSE20190226123701_13982325.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T16:25:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190211162541_13965427.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T15:17:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190211151746_13965361.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T14:26:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190211142656_13965243.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T17:17:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208171710_13963893.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T14:35:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190207143534_13962236.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T07:18:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share repurchase programme",
+   "download_link": "NSM/data-migration/LSE20190207071816_13961497.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T15:07:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201150717_13955913.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T16:46:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190131164626_13954232.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T11:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Change to Diageo Board Committee",
+   "download_link": "NSM/data-migration/LSE20190131110001_13953672.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-31T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190131070003_13952698.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-30T17:09:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190130170954_13952453.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-29T17:13:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190129171326_13950885.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T17:36:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190128173654_13949337.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T17:33:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190128173346_13949334.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-24T17:06:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190124170600_13946167.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T16:52:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190123165225_13944621.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T16:52:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190122165216_13943151.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-21T16:47:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190121164740_13941768.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-21T13:23:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190121132321_13941548.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-18T17:31:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190118173115_13940218.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-17T17:26:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190117172648_13938741.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T18:29:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190116182949_13937242.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T17:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190115170007_13935571.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-14T16:58:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190114165844_13934141.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T17:06:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190111170610_13932574.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T17:02:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190110170212_13931040.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T13:53:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190110135303_13930815.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-10T13:48:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190110134828_13930809.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-09T16:56:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190109165600_13929448.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T17:21:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190108172103_13927996.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T16:57:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190107165743_13926451.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T17:24:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190104172425_13924847.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-03T17:51:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190103175140_13923445.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T15:04:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190102150423_13921387.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T13:20:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102132035_13921233.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T17:32:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181221173212_13914030.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T07:00:02Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Diageo Completes Sale of Portfolio of Brands",
+   "download_link": "NSM/data-migration/LSE20181221070002_13912317.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T17:53:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181220175336_13912206.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-19T17:29:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181219172941_13910368.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-19T09:43:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181219094348_13909474.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-18T17:44:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181218174423_13908635.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T17:07:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181217170712_13906801.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T16:30:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181217163019_13906738.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T17:36:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181214173657_13905087.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-13T17:50:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181213175035_13903397.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-12T17:27:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181212172737_13901671.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T17:28:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181211172821_13899945.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T16:56:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181211165614_13899911.html",
+   "company": "Diageo PLC",
+   "lei": "213800ZVIELEA55JMJ32",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-10T17:20:10Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800ZVIELEA55JMJ32",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3811292.html",
+   "disclosure_id": "3811292",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-10T17:20:10Z",
+   "seq_id": "3811292",
+   "company": "Diageo PLC",
+   "last_updated_date": "2026-08-22T12:08:49.742551811Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-10T11:23:23Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800ZVIELEA55JMJ32",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3810671.html",
+   "disclosure_id": "3810671",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-10T11:23:23Z",
+   "seq_id": "3810671",
+   "company": "Diageo PLC",
+   "last_updated_date": "2026-08-22T12:08:49.740828692Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

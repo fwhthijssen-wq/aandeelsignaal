@@ -1,13 +1,771 @@
 {
- "aantal": 0,
+ "aantal": 71,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', 'MLU0ZO3ML4LN2LL2TL39', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', 'MLU0ZO3ML4LN2LL2TL39', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'MLU0ZO3ML4LN2LL2TL39', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'MLU0ZO3ML4LN2LL2TL39', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "MLU0ZO3ML4LN2LL2TL39",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 71
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-31T12:00:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3831468.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-30T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3830164.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-17T15:45:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Issuance of Convertible Securities",
+   "download_link": "NSM/RNS/3818905.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-16T17:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3817368.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T16:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3812742.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of redemption",
+   "download_link": "NSM/RNS/3811371.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-11T07:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Issuance of contingent convertible securities",
+   "download_link": "NSM/RNS/3811405.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-10T07:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Proposed offering - launch announcement",
+   "download_link": "NSM/RNS/3810294.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3798168.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-30T16:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3798162.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T16:30:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3793604.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T12:00:06Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Announces Results of its Tender Offers ",
+   "download_link": "NSM/RNS/3793217.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-25T08:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "HSBC Holdings delisting from Euronext Paris",
+   "download_link": "NSM/RNS/3792880.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T17:30:08Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Announces Pricing Terms of its Tender Offers",
+   "download_link": "NSM/RNS/3792171.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-23T09:30:02Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3789897.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T12:00:06Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Announces Total Available Amount for Tender Offers",
+   "download_link": "NSM/RNS/3784738.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-17T07:00:06Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "HSBC tender offers for nine series of notes",
+   "download_link": "NSM/RNS/3782820.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-13T08:30:01Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Announces Results of Tender Offers  ",
+   "download_link": "NSM/RNS/3779856.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T16:00:03Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of drawdown prospectus",
+   "download_link": "NSM/RNS/3777627.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-11T13:38:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "HSBC Holdings plc EUR senior unsecured Fixed to Floating Notes Prospectus Supplement",
+   "download_link": "NSM/Portal/NI-000014320.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-11T11:09:48.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "HSBC HOLDINGS PLC - Single prospectus",
+   "download_link": "NSM/Portal/NI-000014466.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-11-10T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3776205.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-09T08:30:07Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Tender offers - indicative max acceptance amount ",
+   "download_link": "NSM/RNS/3773793.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-06T09:05:04Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender offers - launch announcement",
+   "download_link": "NSM/RNS/3772359.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-05T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3771648.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T12:45:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "FRN redemption notice",
+   "download_link": "NSM/RNS/3768550.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-02T16:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3767329.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T16:30:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3765517.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T15:45:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "To Seek Voluntary Delisting From Euronext Paris",
+   "download_link": "NSM/RNS/3765523.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T16:45:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3764054.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-28T17:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3762619.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T17:55:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of base prospectus supplement",
+   "download_link": "NSM/RNS/3761147.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T17:02:00.000Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "Prospectus supplement following 3Q earnings release",
+   "download_link": "NSM/Portal/NI-000013488.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-27T12:39:52.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "HSBC HOLDINGS PLC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000013555.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:10Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "3Q20 Earnings Release - Audio Webcast + Conf Call ",
+   "download_link": "NSM/RNS/3760406.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:05Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "HSBC Holdings plc 3Q20 Earnings Release",
+   "download_link": "NSM/RNS/3760405.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T08:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement - Board Meeting",
+   "download_link": "NSM/RNS/3746993.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T15:30:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3733918.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3732126.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T15:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3729286.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T08:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement- Grant of Options",
+   "download_link": "NSM/RNS/3728049.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-23T11:00:02Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Tender Offer Results",
+   "download_link": "NSM/RNS/3726193.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-22T16:20:06Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender offers - price determination",
+   "download_link": "NSM/RNS/3725148.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T15:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3718492.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T11:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Total available amount for tender offers",
+   "download_link": "NSM/RNS/3718190.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T06:09:21Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender offers ",
+   "download_link": "NSM/RNS/3716435.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3711618.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-07T15:50:05Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing",
+   "download_link": "NSM/RNS/3708836.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T16:00:04Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Base Prospectus Supplement ",
+   "download_link": "NSM/RNS/3704988.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T13:32:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Prospectus supplement following Interim Report",
+   "download_link": "NSM/Portal/NI-000010368.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-28T15:40:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701363.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T15:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3701275.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T15:31:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report 2 of 2",
+   "download_link": "NSM/RNS/3697792.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-26T15:30:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report 1 of 2",
+   "download_link": "NSM/RNS/3697789.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T15:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3697651.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T11:53:26Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Announces Results of its Tender Offers - Amendment",
+   "download_link": "NSM/RNS/3692417.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T11:00:04Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Announces Results of its Tender Offers",
+   "download_link": "NSM/RNS/3692313.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-18T16:59:03Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Announces Pricing Terms of its Tender Offers ",
+   "download_link": "NSM/RNS/3691391.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-12T11:00:06Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "ANNOUNCES TOTAL AVAILABLE AMOUNT FOR TENDER OFFERS",
+   "download_link": "NSM/RNS/3685663.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-11T06:00:05Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "ANNOUNCES TENDER OFFERS FOR NINE SERIES OF NOTES",
+   "download_link": "NSM/RNS/3683936.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-10T09:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Pillar 3 Disclosures at 30 June 2020",
+   "download_link": "NSM/RNS/3682644.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T15:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Notice of Redemption ",
+   "download_link": "NSM/RNS/3681835.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T15:30:02Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Documents available at NSM",
+   "download_link": "NSM/RNS/3676191.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T09:20:00.000Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "HSBC Holdings plc Interim Report 2020",
+   "download_link": "NSM/Portal/NI-000008751.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-03T06:00:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "HSBC Holdings 2Q 2020 - Audio webcast & conf call",
+   "download_link": "NSM/RNS/3674826.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T06:00:06Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "HSBC Holdings 2020 Interim Results",
+   "download_link": "NSM/RNS/3674825.html",
+   "company": "HSBC Holdings PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-26T14:10:00.000Z",
+   "type": "Listing Supplement",
+   "type_code": "FCA06",
+   "headline": "HSBC Holdings plc supplement to its Debt Issuance Programme",
+   "download_link": "NSM/Portal/NI-000004606.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-27T09:02",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Rights attached to Equity Shares",
+   "download_link": "NSM/Portal/NI-000001907.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-24T14:00",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Special Business Resolutions",
+   "download_link": "NSM/Portal/NI-000001696.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-30T10:59",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "HSBC HOLDINGS PLC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000000314.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-30T10:27",
+   "type": "Registration Document",
+   "type_code": "FCA14",
+   "headline": "HSBC HOLDINGS PLC - Registration document",
+   "download_link": "NSM/Portal/NI-000000315.pdf",
+   "company": "HSBC HOLDINGS PLC",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-31T12:00:08Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3831468.html",
+   "disclosure_id": "3831468",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-31T12:00:08Z",
+   "seq_id": "3831468",
+   "company": "HSBC Holdings PLC",
+   "last_updated_date": "2026-08-22T12:09:44.056634400Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  },
+  {
+   "submitted_date": "2020-12-30T16:30:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "MLU0ZO3ML4LN2LL2TL39",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3830164.html",
+   "disclosure_id": "3830164",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-30T16:30:01Z",
+   "seq_id": "3830164",
+   "company": "HSBC Holdings PLC",
+   "last_updated_date": "2026-08-22T12:09:25.749054533Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

@@ -1,13 +1,751 @@
 {
- "aantal": 0,
+ "aantal": 69,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300XSXUZ1I19DB105', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300XSXUZ1I19DB105', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300XSXUZ1I19DB105', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300XSXUZ1I19DB105', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300XSXUZ1I19DB105",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 69
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-10T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3809775.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "PDMR/PCA Shareholding",
+   "download_link": "NSM/RNS/3776183.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2020 Trading Update",
+   "download_link": "NSM/RNS/3764226.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T09:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3760671.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T16:45:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Approval of Arrangement Agreement",
+   "download_link": "NSM/RNS/3758492.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T11:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3718345.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T12:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3716984.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T15:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3715758.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3713971.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T06:00:10Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Arrangement Agreement to Acquire IT Solutions Firm",
+   "download_link": "NSM/RNS/3710346.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-09T06:00:10Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3710348.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-02T06:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3703721.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T12:15:16Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3680325.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-22T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "H1 2020 Trading Statement",
+   "download_link": "NSM/RNS/3663201.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3596163.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-14T13:42:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Special Resolutions of Computacenter plc",
+   "download_link": "NSM/Portal/NI-000003854.pdf",
+   "company": "Computacenter Plc",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-14T13:00:13Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3595864.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-30T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3581880.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T14:31:28Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of Rights Attaching to Equity Shares",
+   "download_link": "NSM/RNS/3576501.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T14:09",
+   "type": "Prospectus Summary",
+   "type_code": "FCA02",
+   "headline": "NSM Share Summary Rights",
+   "download_link": "NSM/Portal/NI-000002077.docx",
+   "company": "Computacenter Plc",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-27T10:21:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3576061.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-23T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 2020 Trading Update",
+   "download_link": "NSM/RNS/3570993.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:00:06Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2019 Annual Report & Notice of 2020 AGM",
+   "download_link": "NSM/RNS/3558187.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:00",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2020 Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000000521.pdf",
+   "company": "Computacenter Plc",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-09T06:00",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Form of Proxy for 2020 Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000000522.pdf",
+   "company": "Computacenter Plc",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-09T06:00",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Report and Accounts",
+   "download_link": "NSM/Portal/NI-000000510.pdf",
+   "company": "Computacenter Plc",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-06T16:45:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Director Remuneration",
+   "download_link": "NSM/RNS/3555007.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T07:00:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403070006_3550283.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-03T07:00:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200403070006_3550283.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200325170004_3541462.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200325164501_3541423.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T14:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200324140003_3539340.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T09:00:08Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20200324090008_3538796.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T07:00:02Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results 2019",
+   "download_link": "NSM/data-migration/LSE20200312070002_3523783.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T09:31:11Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200206093111_3486260.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-23T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200123070005_14394736.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T10:15:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191217101540_14351983.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-13T10:16:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20191213101654_14348043.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-10T07:00:09Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191210070009_14341549.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-04T11:01:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191204110103_14334927.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T09:17:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191203091747_14332727.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T07:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20191101070006_14290005.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 2019 Trading Update",
+   "download_link": "NSM/data-migration/LSE20191030070002_14285666.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T15:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191023154504_14277716.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T16:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20190829163002_14206960.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T10:26:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190828102631_14204670.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T07:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190823070005_14199912.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T16:30:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190820163001_14196265.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T17:06:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20190814170656_14189422.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T10:33:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190806103301_14177998.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:39:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Interest in Shares",
+   "download_link": "NSM/data-migration/LSE20190801163954_14173349.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:15Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "H1 2019 Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190731070015_14169499.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T18:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190529180001_14091452.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T18:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190516180001_14077495.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T11:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190516110001_14076735.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T10:00:02Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190516100002_14076563.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509173001_14068846.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-26T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 2019 Trading Update",
+   "download_link": "NSM/data-migration/LSE20190426070005_14052716.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T09:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190417094501_14044534.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T07:00:06Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2018 Annual Report & Notice of 2019 AGM",
+   "download_link": "NSM/data-migration/LSE20190412070006_14038610.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T09:45:01Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190404094501_14028895.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T16:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325163002_14014876.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T12:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325120003_14014473.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T18:25:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190322182501_14013219.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T07:00:19Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results 2018",
+   "download_link": "NSM/data-migration/LSE20190312070019_13998144.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Chairman",
+   "download_link": "NSM/data-migration/LSE20190308070005_13994838.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-06T12:00:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190206120002_13960502.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-23T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Pre-Close Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190123070003_13943349.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-14T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Transfer and Cancellation of Deferred Shares",
+   "download_link": "NSM/data-migration/LSE20181214130001_13904701.html",
+   "company": "Computacenter PLC",
+   "lei": "549300XSXUZ1I19DB105",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-10T07:00:07Z",
+   "tag_esef": "",
+   "classifications_code": "2.2;3.1",
+   "source": "RNS",
+   "type": "Trading Statement",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Financial Results",
+   "lei": "549300XSXUZ1I19DB105",
+   "classifications": "Inside information;Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3809775.html",
+   "disclosure_id": "3809775",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-10T07:00:07Z",
+   "seq_id": "3809775",
+   "company": "Computacenter PLC",
+   "last_updated_date": "2026-08-22T12:08:49.738423137Z",
+   "headline": "Trading Statement",
+   "type_code": "TST"
+  },
+  {
+   "submitted_date": "2020-11-10T16:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300XSXUZ1I19DB105",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3776183.html",
+   "disclosure_id": "3776183",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-10T16:00:01Z",
+   "seq_id": "3776183",
+   "company": "Computacenter PLC",
+   "last_updated_date": "2026-08-22T12:07:39.960638977Z",
+   "headline": "PDMR/PCA Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

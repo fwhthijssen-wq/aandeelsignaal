@@ -1,13 +1,941 @@
 {
- "aantal": 0,
+ "aantal": 88,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800RP9QJQYGWHNT41', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800RP9QJQYGWHNT41', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800RP9QJQYGWHNT41', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800RP9QJQYGWHNT41', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800RP9QJQYGWHNT41",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 88
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-23T15:27:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3825664.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-17T07:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3817633.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-17T07:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3817631.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-07T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Half Year Trading Update and Dividend",
+   "download_link": "NSM/RNS/3805124.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T16:25:43Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3800110.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-06T14:08:20Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3772936.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-04T16:11:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3770218.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T15:09:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3768737.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T14:38:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3765470.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3759924.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-27T07:00:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3759939.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-23T06:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3757141.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-21T06:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3754421.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-19T06:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes",
+   "download_link": "NSM/RNS/3751347.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T09:53:23Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735376.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T06:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3730961.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-25T09:17:57Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3728807.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-24T07:48:20Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3727336.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-21T13:58:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3723562.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T11:22:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3720987.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-18T07:38:46Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3720583.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-16T15:20:40Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Voting Results",
+   "download_link": "NSM/RNS/3718527.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-14T11:56:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3715589.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update and Dividend",
+   "download_link": "NSM/RNS/3711775.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T15:28:50Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3703552.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T06:00:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3702633.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-14T07:18:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3688056.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-05T06:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3678230.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T08:03:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675429.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T06:00:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3668599.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-28T06:00:03Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3668596.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-22T06:00:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3663184.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T06:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3641302.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-12T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3623714.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T14:25:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3620724.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T06:00:08Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611344.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T15:52:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3604406.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-28T06:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3576791.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:01:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401100134_3549270.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T10:01:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401100134_3549270.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T12:56:49Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327125649_3544408.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20200324070003_3538308.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T17:15:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200303171508_3514404.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T07:00:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200302070006_3510337.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-11T10:59:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200211105944_3490710.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-14T07:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20200114070004_14382539.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-09T14:21:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200109142139_14378463.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-23T15:59:22Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20191223155922_14360942.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T09:54:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191211095403_14344255.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-11T09:54:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191211095403_14344255.html",
+   "company": "Schroders PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T11:45:29Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202114529_14331001.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-19T15:52:21Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20191119155221_14314635.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-11T10:18:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191111101830_14302597.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T07:00:02Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191108070002_14299840.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101070003_14289894.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T09:23:47Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Block Listing application",
+   "download_link": "NSM/data-migration/LSE20190919092347_14233296.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T12:40:14Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "AGM voting results and dividend dates",
+   "download_link": "NSM/data-migration/LSE20190918124014_14231953.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T07:00:14Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Trading update and dividend",
+   "download_link": "NSM/data-migration/LSE20190918070014_14230765.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T16:19:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190916161953_14228558.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T08:40:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190909084008_14218577.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T08:40:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190909084008_14218577.html",
+   "company": "Schroders PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T07:00:07Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190902070007_14209138.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T11:07:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190821110747_14197456.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T09:08:39Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190812090839_14185032.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T14:12:29Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190809141229_14183941.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T13:44:36Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190809134436_14183910.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T16:39:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190801163942_14173346.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190801070004_14171450.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:23Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190730070023_14167638.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T07:00:23Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190730070023_14167641.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T15:28:24Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190729152824_14167264.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T14:09:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190726140906_14165324.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T12:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190726120002_14165137.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T16:19:33Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190724161933_14161970.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T07:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701070004_14130175.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T13:46:53Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190610134653_14105175.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190607070003_14102289.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:35:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190603173512_14096869.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T07:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501070002_14058326.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading statement and dividend",
+   "download_link": "NSM/data-migration/LSE20190412070005_14038574.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-03T08:34:21Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190403083421_14026988.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T09:43:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304094305_13988847.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:09Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190301070009_13986369.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301070003_13986274.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T07:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201070002_13954476.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-28T15:32:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190128153243_13949208.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-15T07:00:03Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190115070003_13934333.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T07:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102070005_13920018.html",
+   "company": "Games Workshop Group PLC",
+   "lei": "213800RP9QJQYGWHNT41",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-23T15:27:21Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800RP9QJQYGWHNT41",
+   "classifications": "",
+   "download_link": "NSM/RNS/3825664.html",
+   "disclosure_id": "3825664",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-23T15:27:21Z",
+   "seq_id": "3825664",
+   "company": "Games Workshop Group PLC",
+   "last_updated_date": "2026-08-22T12:09:25.733149421Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  },
+  {
+   "submitted_date": "2020-12-17T07:00:02Z",
+   "tag_esef": "",
+   "classifications_code": "0.0",
+   "source": "RNS",
+   "type": "Holding(s) in Company",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800RP9QJQYGWHNT41",
+   "classifications": "",
+   "download_link": "NSM/RNS/3817633.html",
+   "disclosure_id": "3817633",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-17T07:00:02Z",
+   "seq_id": "3817633",
+   "company": "Games Workshop Group PLC",
+   "last_updated_date": "2026-08-22T12:09:07.194162748Z",
+   "headline": "Holding(s) in Company",
+   "type_code": "HOL"
+  }
+ ]
 }

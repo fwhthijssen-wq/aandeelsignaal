@@ -1,13 +1,5231 @@
 {
- "aantal": 0,
+ "aantal": 517,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '213800ZTMDN8S67S1H61', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '213800ZTMDN8S67S1H61', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800ZTMDN8S67S1H61', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '213800ZTMDN8S67S1H61', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "213800ZTMDN8S67S1H61",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 517
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-22T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3823381.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-01T12:40:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3799658.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-24T15:30:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3792045.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-16T15:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3782126.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T07:00:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding ",
+   "download_link": "NSM/RNS/3775347.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-10T07:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights ",
+   "download_link": "NSM/RNS/3775332.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-03T10:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3768211.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T15:05:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3763974.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3762762.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-20T09:00:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Katarzyna Mazur-Hofsaess joins Smith+Nephew as NED",
+   "download_link": "NSM/RNS/3753679.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-15T10:52:57Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3749585.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-09T08:08:22Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/3743680.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T06:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smith+Nephew Prices USD Bond Issue",
+   "download_link": "NSM/RNS/3741727.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T10:08:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3735398.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T06:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3734213.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T12:04:24Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Extremities Acquisition",
+   "download_link": "NSM/RNS/3732019.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T15:56:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3717189.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T09:26:34Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3712565.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3703347.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-27T10:00:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3699750.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-25T11:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3697445.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T11:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3696113.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-19T13:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3692435.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T13:30:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3676052.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-03T10:59:22Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3675873.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-31T14:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3674496.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-29T06:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/3670308.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-13T09:45:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3654520.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-08T07:06:56Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/3650148.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T10:09:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3643541.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-01T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3642485.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T11:08:23Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/3630356.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T11:03:02Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3630345.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T10:53:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3611826.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T10:43:44Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3611799.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-27T09:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3606979.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-22T13:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3604242.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T12:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3597250.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T16:48:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3594637.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-07T16:38:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3589726.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T06:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/RNS/3586693.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-01T11:01:10Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3583145.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T11:46:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "NSM upload of Articles of Association",
+   "download_link": "NSM/RNS/3576272.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T11:10",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Aricles of Association",
+   "download_link": "NSM/Portal/NI-000001992.pdf",
+   "company": "SMITH & NEPHEW PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-23T07:18:17Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/RNS/3571627.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-15T09:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/3561721.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T13:47",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Results of Annual General Meeting",
+   "download_link": "NSM/Portal/NI-000000576.pdf",
+   "company": "SMITH & NEPHEW PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-09T13:36:07Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3559496.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T11:02:21Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3559211.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:01:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Bob White to join Smith+Nephew’s Board as NED",
+   "download_link": "NSM/RNS/3558237.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T06:00:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Smith+Nephew appoints Anne-Francoise Nesmes as CFO",
+   "download_link": "NSM/RNS/3558204.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-06T08:00:01Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Additional Annual General Meeting update",
+   "download_link": "NSM/RNS/3554044.html",
+   "company": "Smith & Nephew Plc",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:36:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401123648_3549639.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T12:36:48Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200401123648_3549639.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401093004_3549145.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:30:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200401093004_3549145.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T07:01:05Z",
+   "type": "AGM Statement",
+   "type_code": "AGM",
+   "headline": "Annual General Meeting update",
+   "download_link": "NSM/data-migration/LSE20200330070105_3544870.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T07:00:07Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement on COVID-19 impact",
+   "download_link": "NSM/data-migration/LSE20200330070007_3544867.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:41:45Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164145_3543102.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:36:27Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163627_3543058.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T15:23:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200326152348_3542912.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:43:17Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200324164317_3539834.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-24T16:39:07Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200324163907_3539777.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:47:15Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200320164715_3536281.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:38:34Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320163834_3536114.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:38:22Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200318163822_3532177.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T17:32:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310173252_3522129.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T17:06:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200309170649_3520362.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T12:55:56Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200305125556_3517072.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T07:01:02Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200305070102_3515907.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200305070007_3515904.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T17:00:23Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200302170023_3512859.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T15:46:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200302154611_3512723.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T13:46:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200302134635_3512545.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-25T18:20:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200225182038_3506476.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T17:52:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200224175237_3504996.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-24T11:12:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200224111228_3504470.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T16:11:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200221161107_3502295.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T10:48:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200221104839_3501891.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Fourth Quarter and Full Year 2019 Results",
+   "download_link": "NSM/data-migration/LSE20200220070007_3499664.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-20T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2020 Annual General Meeting Notice",
+   "download_link": "NSM/data-migration/267489171.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-20T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2020 Annual General Meeting Proxy Form",
+   "download_link": "NSM/data-migration/267490364.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-02-07T15:10:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200207151033_3488207.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T08:24:17Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200206082417_3486107.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T14:25:29Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200203142529_3482228.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T11:24:17Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200203112417_3481907.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-24T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smith+Nephew acquires Tusker Medical, Inc.",
+   "download_link": "NSM/data-migration/LSE20200124070006_14396486.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-21T15:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20200121150001_14392579.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-16T15:56:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200116155655_14387639.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-02T10:34:54Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200102103454_14368964.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2019 Annual Financial Report",
+   "download_link": "NSM/data-migration/267489165.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-12-02T16:34:31Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20191202163431_14331656.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-02T12:13:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191202121344_14331091.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-20T09:17:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191120091759_14315656.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T09:17:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191114091701_14308036.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T16:21:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191112162137_14305059.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T12:54:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191108125405_14301219.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T09:07:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191108090741_14300521.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-07T17:33:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191107173339_14299713.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T17:56:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191106175633_14297764.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T15:05:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191106150531_14297361.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T18:13:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191105181358_14295799.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T13:07:33Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191104130733_14293262.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T11:50:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20191104115050_14293098.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T13:24:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191101132409_14291313.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T10:53:26Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191101105326_14290885.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T16:43:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191031164353_14289640.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T11:21:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191031112152_14288838.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20191031070004_14287746.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-21T07:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20191021070007_14272769.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-18T09:17:31Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20191018091731_14271668.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-15T13:14:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Holdings in Company",
+   "download_link": "NSM/data-migration/LSE20191015131447_14266759.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-14T08:56:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Holdings in Company",
+   "download_link": "NSM/data-migration/LSE20191014085619_14264615.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-03T11:15:51Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Notification of Major Holdings in Company",
+   "download_link": "NSM/data-migration/LSE20191003111551_14252861.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T10:06:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191001100616_14248827.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T09:30:03Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20190930093003_14246580.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T12:12:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190917121249_14229955.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T10:08:37Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190902100837_14209963.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T16:18:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190823161818_14201280.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T15:52:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190816155235_14192718.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T15:51:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807155128_14180521.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T17:53:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190805175331_14177115.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T10:50:47Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190805105047_14176360.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T09:20:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190802092022_14174306.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T11:45:28Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190801114528_14172769.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T11:18:15Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190801111815_14172659.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:16Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20190731070016_14169518.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T08:37:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190723083726_14159394.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T16:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20190715160001_14149936.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T11:14:17Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smith & Nephew acquires Atracsys Sàrl",
+   "download_link": "NSM/data-migration/LSE20190701111417_14131244.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T10:44:32Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190701104432_14131179.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T10:28:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190628102840_14128929.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T14:12:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190613141206_14110139.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T07:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smith & Nephew to acquire Atracsys SÃ rl",
+   "download_link": "NSM/data-migration/LSE20190611070002_14105617.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T14:31:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190603143113_14096559.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T07:00:05Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Completion of Brainlab OJR business acquisition",
+   "download_link": "NSM/data-migration/LSE20190603070005_14095078.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T10:03:09Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190530100309_14092348.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T14:41:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190523144117_14085620.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T11:03:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190520110337_14080199.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T10:47:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190516104723_14076712.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T15:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190515150011_14075384.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T17:42:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514174251_14073914.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T18:04:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190513180449_14072248.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T13:52:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190513135201_14071869.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T18:03:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510180340_14070522.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T15:35:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510153531_14070338.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T10:21:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190510102144_14069780.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:51:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509175106_14068871.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T15:14:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190509151427_14068657.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:29:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508172902_14067147.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:51:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507175129_14065479.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T13:07:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190507130731_14065073.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T10:00:03Z",
+   "type": "Change of Registered Office",
+   "type_code": "CRO",
+   "headline": "Change of Registered Office",
+   "download_link": "NSM/data-migration/LSE20190507100003_14064560.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T11:37:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503113706_14062669.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T10:11:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190503101121_14062462.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20190502070003_14060198.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T10:59:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190501105936_14059281.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-24T17:28:17Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20190424172817_14050784.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T17:21:33Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190417172133_14045308.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-17T14:05:01Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20190417140501_14045051.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-15T09:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20190415090001_14040919.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T16:54:46Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190411165446_14038319.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T11:27:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190401112759_14023554.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T09:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Leaf Healthcare, Inc.",
+   "download_link": "NSM/data-migration/LSE20190401090002_14023126.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T09:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Re-presented Historical Quarterly Revenue Analysis",
+   "download_link": "NSM/data-migration/LSE20190325090004_14014004.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Multi-asset digital surgery and robotic ecosystem",
+   "download_link": "NSM/data-migration/LSE20190313070004_13999810.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T13:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smith & Nephew to acquire Osiris Therapeutics, Inc",
+   "download_link": "NSM/data-migration/LSE20190312130002_13999329.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T13:31:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308133125_13995990.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T13:29:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308132931_13995986.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-08T13:27:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190308132719_13995984.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T16:08:36Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190304160836_13989564.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T15:42:21Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190304154221_13989537.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T11:43:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190301114355_13987428.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2019 Annual General Meeting Proxy Form",
+   "download_link": "NSM/data-migration/213339348.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-21T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2019 Annual General Meeting Notice",
+   "download_link": "NSM/data-migration/213339339.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2019-02-19T15:08:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190219150805_13974582.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T17:32:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190215173255_13971748.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T17:37:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190214173736_13970177.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T08:14:38Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190214081438_13969254.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-13T17:17:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190213171703_13968576.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-12T17:20:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190212172045_13967039.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-11T17:41:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190211174106_13965502.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T13:59:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190208135951_13963681.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T09:20:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190208092044_13963156.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T09:17:26Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190208091726_13963151.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-07T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190207070004_13961052.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T14:04:51Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190201140451_13955803.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T12:06:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190201120634_13955639.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-22T14:38:09Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Smith & Nephew acquires Ceterix Orthopaedics",
+   "download_link": "NSM/data-migration/LSE20190122143809_13943040.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-16T17:19:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190116171926_13937194.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-11T09:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20190111090001_13931823.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T07:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smith & Nephew to present today at JP Morgan",
+   "download_link": "NSM/data-migration/LSE20190107070004_13924997.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-04T17:32:34Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smith & Nephew at JP Morgan Healthcare Conference",
+   "download_link": "NSM/data-migration/LSE20190104173234_13924853.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-02T11:19:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190102111959_13920934.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/213339347.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-31T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "AGM Results",
+   "download_link": "NSM/data-migration/217930124.doc",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-12-18T16:30:03Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20181218163003_13908482.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-07T10:26:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181207102646_13895872.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T16:20:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181204162007_13891377.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-04T16:18:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181204161846_13891376.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-03T12:00:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181203120055_13889154.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-26T15:07:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181126150741_13880700.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-22T11:57:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181122115719_13877313.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-21T17:31:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181121173111_13876118.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-20T17:18:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181120171848_13874139.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-19T17:49:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181119174908_13872536.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T14:19:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181116141902_13870497.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T10:21:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181116102157_13870103.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-16T08:59:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20181116085918_13869928.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-14T16:46:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181114164643_13867325.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-12T15:46:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181112154642_13863935.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-09T16:26:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181109162633_13862295.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-06T08:55:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181106085546_13856452.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-05T08:24:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181105082404_13854685.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T16:26:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101162647_13852126.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T15:20:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101152035_13852023.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T15:00:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181101150047_13851970.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T10:53:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181101105335_13851318.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-11-01T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20181101070004_13850443.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-31T16:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181031160000_13850062.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-18T15:54:07Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20181018155407_13834483.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-17T07:00:05Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20181017070005_13831435.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-05T16:36:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20181005163604_13818974.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T13:29:56Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20181001132956_13811455.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-10-01T07:00:06Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20181001070006_13810165.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-19T08:48:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180919084843_13796390.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-09-03T13:23:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180903132357_13776887.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-23T16:42:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180823164210_13766622.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-16T14:03:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180816140312_13758399.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-16T14:01:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180816140139_13758398.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-02T15:25:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180802152536_13742076.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-02T09:42:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180802094239_13741395.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T15:07:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180801150704_13740211.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T12:30:13Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180801123013_13739966.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-01T11:47:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180801114711_13739890.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-31T17:33:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180731173300_13738518.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-30T09:16:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180730091615_13735747.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-26T07:00:18Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20180726070018_13731765.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-11T16:26:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180711162632_13714493.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-04T07:00:05Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20180704070005_13704592.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-07-02T12:24:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180702122447_13701814.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-06-01T12:24:31Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180601122431_13664004.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-30T14:26:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180530142615_13660194.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-23T17:47:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180523174701_13652951.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-22T17:38:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180522173831_13651148.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-16T18:02:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180516180248_13644204.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T15:01:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180515150119_13642163.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-15T09:39:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180515093900_13641423.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-11T10:06:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180511100653_13637889.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-10T14:47:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180510144726_13636808.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-10T09:18:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180510091839_13636072.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T17:25:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180509172545_13635277.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T13:50:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180509135016_13634881.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T08:09:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180509080915_13634190.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-03T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20180503070003_13628103.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-01T11:39:57Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180501113957_13625804.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-25T08:47:44Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20180425084744_13617818.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-18T09:00:02Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20180418090002_13608972.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-12T16:12:28Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20180412161228_13602761.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-12T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Business passed at Smith & Nephew plc's 2018 Annual General Mee",
+   "download_link": "NSM/data-migration/168183876.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-04-09T16:40:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180409164038_13597506.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-04T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180404070004_13590536.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-04-03T13:15:44Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180403131544_13589710.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-12T12:18:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180312121831_13563440.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-08T13:20:31Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180308132031_13560153.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-08T13:15:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180308131522_13560149.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-06T14:59:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180306145910_13556881.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-05T16:30:48Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20180305163048_13555346.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T12:29:42Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20180301122942_13551319.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-03-01T10:54:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180301105442_13551081.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-27T15:55:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180227155527_13547961.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-22T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2018 Annual General Meeting",
+   "download_link": "NSM/data-migration/164365779.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-22T00:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Form of Proxy",
+   "download_link": "NSM/data-migration/164365781.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-22T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2018 Annual General Meeting",
+   "download_link": "NSM/data-migration/164585723.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-22T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of 2018 Annual General Meeting",
+   "download_link": "NSM/data-migration/164585517.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-02-15T17:43:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180215174301_13535309.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-14T18:10:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180214181008_13533619.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-13T16:11:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180213161118_13531847.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-12T09:15:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20180212091545_13529444.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-09T12:20:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180209122058_13528262.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-08T16:49:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180208164907_13527069.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-08T07:00:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20180208070004_13525622.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-07T09:33:29Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Smith & Nephew announces European launch of PICO 7",
+   "download_link": "NSM/data-migration/LSE20180207093329_13524626.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-02T10:31:12Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20180202103112_13519733.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-02-01T13:40:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180201134003_13518482.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-31T09:06:06Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Appointment of Roland Diggelmann as Non-Exec. Dir.",
+   "download_link": "NSM/data-migration/LSE20180131090606_13516020.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-23T12:00:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Smith & Nephew update on tax",
+   "download_link": "NSM/data-migration/LSE20180123120002_13506323.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-09T16:34:49Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20180109163449_13490560.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-09T14:37:34Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20180109143734_13490337.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-04T16:03:13Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20180104160313_13485894.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-01-02T14:33:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20180102143342_13482574.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/164365784.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2017-12-06T14:19:05Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Smith & Nephew pilot digital wound care solution",
+   "download_link": "NSM/data-migration/LSE20171206141905_13456293.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-06T07:00:02Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Rotation Medical Inc",
+   "download_link": "NSM/data-migration/LSE20171206070002_13455157.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-12-01T15:09:52Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171201150952_13451585.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-22T10:25:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171122102541_13440356.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T15:29:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171115152911_13433005.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-15T08:00:02Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "New RCT demonstrates effectiveness of ALLEVYN LIFE",
+   "download_link": "NSM/data-migration/LSE20171115080002_13432099.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T17:00:56Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171113170056_13429889.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T13:00:01Z",
+   "type": "Non Regulatory Announcement",
+   "type_code": "NRA",
+   "headline": "Launch of robotics-assisted knee replacement",
+   "download_link": "NSM/data-migration/LSE20171113130001_13429521.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-13T09:55:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171113095505_13429101.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T18:03:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171108180348_13425275.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-08T10:31:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171108103157_13424567.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-07T17:47:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171107174714_13423716.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-06T14:10:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20171106141059_13421742.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-03T10:17:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171103101718_13419824.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-03T07:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20171103070003_13419171.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-02T12:13:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171102121327_13418512.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T13:55:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171101135507_13416974.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-11-01T13:43:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171101134318_13416952.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-23T14:00:01Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of tissue regeneration technology",
+   "download_link": "NSM/data-migration/LSE20171023140001_13405769.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-20T10:21:41Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results - Clarification",
+   "download_link": "NSM/data-migration/LSE20171020102141_13403825.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-19T10:10:04Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20171019101004_13402287.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-13T09:00:01Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20171013090001_13395961.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-10T16:21:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20171010162103_13392276.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-09T07:00:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Retirement of Chief Executive Officer by end 2018",
+   "download_link": "NSM/data-migration/LSE20171009070004_13389592.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T10:24:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20171002102409_13382292.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-10-02T09:00:55Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20171002090055_13382049.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-18T09:42:25Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170918094225_13365995.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T16:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170912164501_13360466.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T14:18:13Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170912141813_13360214.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-12T11:30:27Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170912113027_13359959.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-09-01T12:42:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170901124246_13349285.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-16T16:54:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170816165405_13332477.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-15T16:38:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170815163858_13330990.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-14T16:29:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170814162914_13329518.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-02T17:22:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170802172245_13317487.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T14:02:46Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20170801140246_13315413.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T13:54:33Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block Listing Cancellation",
+   "download_link": "NSM/data-migration/LSE20170801135433_13315393.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T13:26:40Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170801132640_13315360.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-08-01T09:54:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170801095445_13314758.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-27T07:00:07Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20170727070007_13308938.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-13T11:42:52Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20170713114252_13294171.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-12T16:44:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170712164443_13293140.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-04T08:04:56Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170704080456_13282982.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-07-03T10:56:38Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170703105638_13281528.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-08T16:11:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170608161157_13254431.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-06-01T13:59:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170601135936_13246185.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-23T16:22:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170523162255_13235893.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-22T17:39:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170522173939_13234393.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-19T17:18:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170519171820_13232550.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-18T17:25:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170518172554_13230997.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-18T14:29:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170518142941_13230715.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-15T13:54:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170515135457_13225775.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-12T14:18:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170512141851_13224268.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-11T10:55:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170511105503_13222306.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-05T07:00:08Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Statement",
+   "download_link": "NSM/data-migration/LSE20170505070008_13215253.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-05-02T12:04:36Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170502120436_13210986.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-26T14:05:41Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20170426140541_13205417.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-11T13:04:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20170411130434_13191055.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-10T16:12:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170410161225_13189795.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T16:50:51Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20170406165051_13186795.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-04-06T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions",
+   "download_link": "NSM/data-migration/130753672.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2017-04-03T15:07:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170403150710_13181667.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-24T15:03:27Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170324150327_13171148.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-23T13:42:34Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20170323134234_13169332.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-10T16:20:55Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170310162055_13155153.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-08T09:17:14Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170308091714_13151152.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T13:49:25Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report - Replacement",
+   "download_link": "NSM/data-migration/LSE20170306134925_13148654.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-06T13:04:27Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20170306130427_13148567.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-03-01T13:16:10Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170301131610_13143892.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-21T17:44:13Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170221174413_13134929.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-20T17:46:12Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transaction in Own Shares - Amendment",
+   "download_link": "NSM/data-migration/LSE20170220174612_13133641.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-20T17:28:19Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20170220172819_13133627.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-16T17:44:15Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170216174415_13130674.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-15T17:23:15Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170215172315_13129229.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-14T17:46:58Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170214174658_13127749.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-13T16:08:48Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20170213160848_13126233.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-13T09:23:39Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20170213092339_13125724.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-09T07:05:03Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20170209070503_13121970.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2017-02-09T07:00:09Z",
+   "type": "",
+   "type_code": "B!K",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20170209070009_13121907.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-31T00:00:00Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report and Accounts 2017",
+   "download_link": "NSM/data-migration/128779524.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-12-21T17:01:29Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20161221170129_013075344.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-21T13:48:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161221134835_013075068.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-16T17:13:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161216171352_013070825.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-15T17:38:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161215173845_013069041.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-14T17:30:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161214173051_013067483.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-13T17:02:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161213170214_013066019.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-12T17:39:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161212173928_013064429.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-09T17:33:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161209173323_013062879.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-08T17:28:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161208172824_013061373.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-07T17:42:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161207174255_013059778.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-06T17:46:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161206174654_013058397.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-05T17:48:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161205174844_013057013.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-02T17:31:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161202173128_013055376.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T17:48:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161201174804_013053948.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-12-01T15:41:47Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161201154147_013053743.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T18:05:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161130180508_013052218.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-30T07:00:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20161130070011_013050746.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-29T17:37:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161129173758_013050510.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-28T17:44:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161128174456_013049069.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-25T17:19:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161125171930_013047593.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-24T17:32:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161124173203_013046389.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-23T17:29:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161123172940_013044850.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-22T17:14:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161122171407_013043474.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-21T17:21:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161121172133_013042011.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-18T17:23:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161118172346_013040485.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-17T17:42:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161117174230_013039114.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-16T17:34:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161116173403_013037633.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-15T17:58:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161115175822_013036109.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-14T17:37:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161114173722_013034657.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-11T16:25:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161111162510_013033012.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-09T17:28:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161109172839_013030137.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-07T18:05:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares - Replacement",
+   "download_link": "NSM/data-migration/LSE20161107180550_013026960.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-07T17:33:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161107173321_013026942.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-04T17:48:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20161104174806_013025480.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-04T13:29:45Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20161104132945_013025023.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-03T11:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Trading Statement",
+   "download_link": "NSM/data-migration/LSE20161103110005_013023164.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-11-01T14:00:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161101140034_013020281.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-31T15:46:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161031154605_013018780.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-26T15:30:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161026153039_013014141.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-13T14:15:31Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20161013141531_013000128.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-10T15:32:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20161010153206_012995833.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T15:32:13Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20161003153213_012987860.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-10-03T14:35:50Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20161003143550_012987723.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-30T17:56:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160930175633_012986298.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-29T17:52:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160929175206_012984303.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-28T17:43:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160928174343_012982686.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-27T17:46:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160927174629_012980972.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-26T17:46:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160926174653_012979267.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-23T17:49:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160923174934_012977748.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-22T17:35:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160922173500_012976108.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-21T17:38:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160921173808_012974569.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-20T18:01:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160920180106_012972970.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-19T17:58:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160919175846_012971378.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-16T17:46:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160916174601_012969703.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-15T17:45:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160915174551_012968013.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-13T17:52:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160913175211_012964813.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-12T17:36:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160912173631_012963039.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-09T17:28:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160909172859_012961364.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-08T17:33:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160908173306_012959798.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-07T17:34:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160907173444_012958096.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-06T17:25:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160906172547_012956626.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-05T17:46:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160905174604_012955079.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-02T17:48:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160902174822_012953449.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T17:52:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160901175227_012951886.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-09-01T16:47:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160901164703_012951783.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-31T17:35:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160831173550_012950005.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-30T17:36:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160830173613_012948091.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-26T17:31:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160826173116_012945917.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-25T17:52:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160825175231_012944397.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-24T17:41:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160824174124_012942882.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-23T17:31:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160823173120_012941226.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-22T18:05:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160822180515_012939787.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-19T17:26:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160819172622_012938295.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-19T16:07:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160819160701_012938185.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-18T17:43:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160818174340_012936630.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T17:48:36Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160816174836_012933434.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-16T17:42:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160816174205_012933430.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-12T17:30:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160812173013_012930289.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-11T17:34:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160811173418_012928561.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-11T17:31:14Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20160811173114_012928555.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-10T17:32:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160810173239_012926898.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-09T18:26:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160809182634_012925273.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-08T18:17:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160808181728_012923578.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-08T07:00:06Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Completion of Sale and Commencement of buy-back",
+   "download_link": "NSM/data-migration/LSE20160808070006_012922050.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-03T18:07:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160803180752_012918406.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-02T18:30:23Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20160802183023_012916583.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-02T18:27:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160802182719_012916579.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T17:25:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160801172545_012914604.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-08-01T17:24:28Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160801172428_012914591.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-28T07:00:12Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/data-migration/LSE20160728070012_012909183.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-13T15:12:21Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160713151221_012891449.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-11T13:56:22Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20160711135622_012887943.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-06T17:44:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160706174448_012883161.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-07-01T14:55:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160701145500_012877504.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-13T17:39:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160613173915_012852223.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-03T17:34:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160603173459_012841672.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-02T17:26:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160602172606_012839876.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T17:47:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160601174757_012838113.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-06-01T14:22:46Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160601142246_012837612.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-31T17:28:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160531172800_012835933.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-26T17:20:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160526172010_012831800.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-25T17:35:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160525173533_012829928.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-24T17:22:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160524172247_012828174.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-19T17:23:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160519172337_012823120.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-18T16:56:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160518165603_012821300.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-18T13:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Divestment and share buy-back",
+   "download_link": "NSM/data-migration/LSE20160518130002_012820895.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-12T11:38:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160512113802_012813797.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-05T07:00:12Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Smith & Nephew 2016 First Quarter Trading Report",
+   "download_link": "NSM/data-migration/LSE20160505070012_012804076.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-05-03T13:33:34Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160503133334_012801460.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-27T17:09:58Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Declaration",
+   "download_link": "NSM/data-migration/LSE20160427170958_012794990.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-26T17:35:16Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160426173516_012793057.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-21T15:59:31Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160421155931_012787210.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-14T17:14:37Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20160414171437_012778151.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-14T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions",
+   "download_link": "NSM/data-migration/109531785.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-14T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions",
+   "download_link": "NSM/data-migration/109531788.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-14T00:00:00Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Special Resolutions",
+   "download_link": "NSM/data-migration/109531790.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-04-06T16:37:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160406163753_012766863.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-04-01T11:52:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160401115211_012760251.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-10T17:31:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160310173118_012732871.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-08T16:14:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160308161408_012728984.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-04T12:46:19Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20160304124619_012724842.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-03-04T00:00:00Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "2016 Form of Proxy",
+   "download_link": "NSM/data-migration/107014044.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-04T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2016 Notice of Meeting",
+   "download_link": "NSM/data-migration/107014037.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-04T00:00:00Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "2016 Notice of Meeting",
+   "download_link": "NSM/data-migration/107014041.pdf",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "Portal (pre-Sept 2017)"
+  },
+  {
+   "publication_date": "2016-03-01T11:03:49Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160301110349_012718609.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-22T16:10:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160222161051_012707975.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-19T17:05:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160219170512_012706424.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-18T17:25:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160218172544_012704657.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-16T17:42:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160216174240_012701297.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-15T17:27:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160215172708_012699736.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-12T16:12:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160212161253_012697825.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-11T17:29:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160211172932_012696203.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-10T18:12:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160210181252_012694437.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-09T17:40:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20160209174010_012692756.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-05T17:46:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160205174646_012689355.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T17:39:12Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160204173912_012687552.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-04T07:00:07Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20160204070007_012685972.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T14:02:17Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Blocklisting Interim Review",
+   "download_link": "NSM/data-migration/LSE20160201140217_012681446.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T12:52:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160201125209_012681287.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-02-01T07:00:12Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Statement regarding Olivier Bohuon",
+   "download_link": "NSM/data-migration/LSE20160201070012_012680128.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-21T09:00:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20160121090006_012667863.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-11T07:00:07Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/data-migration/LSE20160111070007_012652901.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-08T15:36:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20160108153645_012652453.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-05T07:00:06Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition",
+   "download_link": "NSM/data-migration/LSE20160105070006_012645533.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2016-01-04T15:40:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20160104154011_012645135.html",
+   "company": "Smith & Nephew PLC",
+   "lei": "213800ZTMDN8S67S1H61",
+   "source": "RNS"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-22T09:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800ZTMDN8S67S1H61",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3823381.html",
+   "disclosure_id": "3823381",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-22T09:00:01Z",
+   "seq_id": "3823381",
+   "company": "Smith & Nephew Plc",
+   "last_updated_date": "2026-08-22T12:09:25.726972881Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-12-01T12:40:04Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "213800ZTMDN8S67S1H61",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3799658.html",
+   "disclosure_id": "3799658",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-01T12:40:04Z",
+   "seq_id": "3799658",
+   "company": "Smith & Nephew Plc",
+   "last_updated_date": "2026-08-22T12:08:32.324870084Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

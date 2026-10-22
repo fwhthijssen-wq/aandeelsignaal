@@ -1,13 +1,3471 @@
 {
- "aantal": 0,
+ "aantal": 341,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', 'U4LOSYZ7YG4W3S5F2G91', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', 'U4LOSYZ7YG4W3S5F2G91', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'U4LOSYZ7YG4W3S5F2G91', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', 'U4LOSYZ7YG4W3S5F2G91', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "U4LOSYZ7YG4W3S5F2G91",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 341
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-12-04T17:15:05Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3804957.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-12-04T16:30:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3804920.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-27T14:35:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes",
+   "download_link": "NSM/RNS/3796364.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T18:00:04Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3785246.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-18T17:08:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000014726.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-11-18T08:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000014614.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-11-12T16:10:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3779113.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-05T14:28:11Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3771569.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T17:02:44Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3765617.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-30T16:35:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of a Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000013698.pdf",
+   "company": "Standard Chartered Bank;STANDARD CHARTERED PLC",
+   "lei": "RILFO74KP1CM8P6PCT96;U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-30T11:29:30.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "STANDARD CHARTERED PLC;Standard Chartered Bank - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000013797.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-29T13:15:16Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "3rd Quarter 2020 Pillar 3 Disclosures",
+   "download_link": "NSM/RNS/3763913.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-29T12:45:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "3rd Quarter 2020 Pillar 3 Disclosures",
+   "download_link": "NSM/Portal/NI-000013601.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-29T07:00:08Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/RNS/3762818.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-19T12:07:59Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3752376.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T17:15:01Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3748602.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-14T17:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000012804.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-14T16:55:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000012801.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-10-14T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000012616.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-14T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000012617.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-10-08T15:25:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3742906.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T13:54:29Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of EUR1.25bn Subordinated Notes ",
+   "download_link": "NSM/RNS/3735886.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-30T14:31:51Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes",
+   "download_link": "NSM/RNS/3733859.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-29T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3732196.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-15T12:21:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3717014.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-11T15:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3714319.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-10T07:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Organisation Structure Update ",
+   "download_link": "NSM/RNS/3712283.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-04T16:15:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3707595.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-09-03T17:01:32Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company - Calculation Error",
+   "download_link": "NSM/RNS/3706392.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-24T13:15:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3696303.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T15:20:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3680481.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T14:38:19Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3680459.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T13:45:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000009034.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-08-06T11:31:51.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "STANDARD CHARTERED PLC;Standard Chartered Bank - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000009125.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-08-06T08:45:03Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "HY 2020 Pillar 3 Disclosures  ",
+   "download_link": "NSM/RNS/3679910.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-06T08:04:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "HY 2020 Pillar 3 Disclosures",
+   "download_link": "NSM/Portal/NI-000008979.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:11Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Half Year Report 2020 ",
+   "download_link": "NSM/RNS/3672179.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:11Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "SCPLC Half Year Results 2020",
+   "download_link": "NSM/RNS/3671810.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T04:37:00.000Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half Year Report 2020",
+   "download_link": "NSM/Portal/NI-000008556.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-07-22T14:30:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Delisting of Indian Depository Receipts",
+   "download_link": "NSM/RNS/3664195.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-20T09:10:01Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Overseas Regulatory Announcement ",
+   "download_link": "NSM/RNS/3661181.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-07T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3649443.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-18T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Issuance of US$1bn Additional Tier 1 Securities",
+   "download_link": "NSM/RNS/3629887.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T17:15:07Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/RNS/3629269.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-17T16:31:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Prospectus",
+   "download_link": "NSM/Portal/NI-000006060.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-06-17T13:47:43.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "STANDARD CHARTERED PLC;Standard Chartered Bank - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000006224.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-16T12:10:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3627691.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-11T12:40:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3623382.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T14:38:35Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3620717.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-09T13:28:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/Portal/NI-000005565.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-06-09T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000005447.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-06-04T16:14:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3616548.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-06-01T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000004907.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-26T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000004484.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-22T14:50:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005395.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-21T13:30:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/RNS/3602912.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-20T10:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Completion of sale of interest in PT Bank Permata",
+   "download_link": "NSM/RNS/3601223.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-18T11:55:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3598625.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-15T16:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3597455.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000003518.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-12T07:00:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000003441.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-05-07T14:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3589542.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T14:55:42Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3588028.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T13:22:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005388.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-06T11:02:25Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3587786.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-06T10:30:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000003164.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-06T10:30:00.000Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Articles of Association",
+   "download_link": "NSM/Portal/NI-000003166.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-05T16:45:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3586596.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-05T14:32:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005390.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-29T17:27:06Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/RNS/3580250.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T16:48",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000002589.pdf",
+   "company": "Standard Chartered Bank;STANDARD CHARTERED PLC",
+   "lei": "RILFO74KP1CM8P6PCT96;U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-29T15:37:56.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "STANDARD CHARTERED PLC;Standard Chartered Bank - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000002768.pdf",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-29T15:00:08Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Disclosure of Rights Attached to Securities",
+   "download_link": "NSM/RNS/3580067.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T13:05:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Important Information Regarding the 2020 AGM",
+   "download_link": "NSM/RNS/3579938.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T09:40:06Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Q1 2020 Pillar 3 Disclosures",
+   "download_link": "NSM/RNS/3579420.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-29T08:45",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Q1 2020 Pillar 3 Disclosures",
+   "download_link": "NSM/Portal/NI-000002454.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-04-29T06:00:04Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "First Quarter 2020 Results",
+   "download_link": "NSM/RNS/3578704.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T17:10:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Disclosure of Rights Attached to Securities",
+   "download_link": "NSM/RNS/3576713.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-20T12:39:13Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Update on disposal of interest in PT Bank Permata ",
+   "download_link": "NSM/RNS/3567585.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T11:02:59Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/3565943.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T16:30:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3564797.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T07:00",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Issuer Document",
+   "download_link": "NSM/Portal/NI-000000442.docx",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2020-04-06T17:20:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3555054.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:20:08Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2020",
+   "download_link": "NSM/data-migration/LSE20200401162008_3550045.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T16:20:08Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2020",
+   "download_link": "NSM/data-migration/LSE20200401162008_3550045.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19: dividend, buy-back & new commitments",
+   "download_link": "NSM/data-migration/LSE20200401070006_3548501.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T07:00:06Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "COVID-19: dividend, buy-back & new commitments",
+   "download_link": "NSM/data-migration/LSE20200401070006_3548501.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T17:55:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200331175504_3548421.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T17:08:57Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200331170857_3548249.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T10:55:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20200331105506_3547386.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T10:10:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20200331101006_3547282.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T18:20:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200330182007_3546571.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T17:50:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200327175043_3544779.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T18:20:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200326182005_3543193.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T15:53:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005396.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-26T11:36:38Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20200326113638_3542562.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T18:10:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200325181026_3541615.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T16:26:44Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20200325162644_3541417.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T10:04",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "STANDARD CHARTERED PLC;Standard Chartered Bank - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000000288.doc",
+   "company": "STANDARD CHARTERED PLC;Standard Chartered Bank",
+   "lei": "U4LOSYZ7YG4W3S5F2G91;RILFO74KP1CM8P6PCT96",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-03-24T18:21:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200324182111_3539943.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T18:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200323181502_3538186.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-23T18:10:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200323181001_3538182.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T17:46:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200320174659_3536385.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:47:32Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200320164732_3536287.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-20T16:39:13Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200320163913_3536128.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T18:15:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200319181544_3534200.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T14:10:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200319141003_3533719.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T18:10:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200318181003_3532376.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:43:32Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200318164332_3532255.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-18T16:39:01Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200318163901_3532190.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T18:15:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200317181502_3530649.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T17:36:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200316173617_3528925.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T16:38:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200316163853_3528726.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-16T11:17:47Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200316111747_3528077.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T17:33:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200313173303_3527089.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T17:20:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company - Calculation Error",
+   "download_link": "NSM/data-migration/LSE20200313172001_3527059.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-13T16:35:45Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200313163545_3526952.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T17:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200312174001_3525425.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T17:39:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200312173959_3525441.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-12T15:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200312150001_3524912.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T17:55:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200311175506_3523746.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T16:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200311161501_3523579.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-11T16:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200311161501_3523584.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T18:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200310181001_3522155.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-10T17:55:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200310175537_3522145.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T17:23:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200309172349_3520389.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-09T14:20:16Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20200309142016_3520064.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T17:31:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200306173140_3518792.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T16:40:53Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200306164053_3518720.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T16:35:30Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200306163530_3518702.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T10:10:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200306101005_3518211.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T17:48:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200305174816_3517396.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-05T16:40:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200305164005_3517284.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-04T17:52:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200304175213_3515828.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-03T18:07:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200303180729_3514449.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-02T18:30:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20200302183052_3512963.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-28T10:50:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share Buy-Back",
+   "download_link": "NSM/data-migration/LSE20200228105039_3510401.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T16:03:06Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20200227160306_3509302.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T11:55:03Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Full Year 2019 Pillar 3 Disclosures",
+   "download_link": "NSM/data-migration/LSE20200227115503_3509052.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:02:06Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2019",
+   "download_link": "NSM/data-migration/LSE20200227070206_3508513.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:01:04Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Additional Financial Information",
+   "download_link": "NSM/data-migration/LSE20200227070104_3508506.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:00:10Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "SCPLC Final Results 2019",
+   "download_link": "NSM/data-migration/LSE20200227070010_3508192.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-12T08:55:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20200212085502_3491822.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T16:25:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200206162501_3486836.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-06T10:54:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Accounting policy changes & UK bank levy guidance",
+   "download_link": "NSM/data-migration/LSE20200206105401_3486386.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-03T13:40:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of AT1 Securities",
+   "download_link": "NSM/data-migration/LSE20200203134001_3482000.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-17T14:54:10Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200117145410_14389300.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-15T12:06:19Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20200115120619_14385352.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-13T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Independent Consultant Term Ended/REPLACEMENT",
+   "download_link": "NSM/data-migration/LSE20200113070003_14380591.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-10T10:40:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Independent Consultant Term Ended",
+   "download_link": "NSM/data-migration/LSE20200110104004_14379633.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-01-07T14:57:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200107145701_14374648.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T16:40:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191218164001_14354786.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-18T12:05:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191218120501_14354372.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-16T18:26:57Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Statement on the BoE 2019 Stress Test Results",
+   "download_link": "NSM/data-migration/LSE20191216182657_14351038.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-12T10:10:04Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "Disposal of interest in PT Bank Permata Tbk",
+   "download_link": "NSM/data-migration/LSE20191212101004_14346198.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-05T17:15:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191205171503_14337803.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-03T14:40:52Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20191203144052_14333620.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-27T09:01:39Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Africa & Middle East Investor Seminar",
+   "download_link": "NSM/data-migration/LSE20191127090139_14325054.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-12T17:09:44Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20191112170944_14305164.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T07:17:38Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Statement on 2019 AGM Remuneration Policy Vote",
+   "download_link": "NSM/data-migration/LSE20191108071738_14300348.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T16:40:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191106164005_14297690.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-04T16:25:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191104162502_14293621.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T15:15:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20191030151501_14287342.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:45:59Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20191030074559_14286221.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:05Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Q3 2019 Pillar 3 Disclosures",
+   "download_link": "NSM/data-migration/LSE20191030070005_14285746.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-30T07:00:03Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "Third Quarter 2019 Results",
+   "download_link": "NSM/data-migration/LSE20191030070003_14285709.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-23T16:10:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191023161005_14277739.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-08T15:45:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20191008154505_14258679.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-01T17:47:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191001174702_14249955.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-25T18:13:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190925181303_14241798.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T17:20:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190924172038_14239871.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-24T16:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190924160002_14239710.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T17:14:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190923171433_14237983.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-20T17:24:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190920172412_14236102.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-19T17:25:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190919172533_14234275.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-18T17:55:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190918175501_14232389.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T18:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190917180009_14230595.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-17T17:48:03Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190917174803_14230586.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T17:50:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190916175004_14228692.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-16T17:49:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190916174907_14228691.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T17:39:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190913173913_14226819.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190913150001_14226575.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-12T17:45:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190912174501_14224983.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-11T18:02:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190911180246_14223229.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T18:08:04Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190910180804_14221441.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T17:26:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190910172649_14221413.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-10T17:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190910170001_14221367.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-09T17:17:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190909171708_14219589.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-06T17:50:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190906175003_14217871.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T17:50:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190905175003_14216170.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-05T17:32:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190905173235_14216152.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-04T17:34:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190904173453_14214293.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-03T17:29:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190903172952_14212535.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-02T17:53:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190902175329_14210948.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-30T17:56:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190830175618_14208916.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-29T17:39:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190829173926_14207032.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-28T17:34:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190828173448_14205341.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-27T17:33:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190827173337_14203647.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-23T17:23:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190823172356_14201354.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-22T17:34:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190822173414_14199765.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-21T17:27:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190821172759_14198018.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-20T17:46:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190820174632_14196345.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T17:31:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190819173101_14194563.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-16T17:29:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190816172941_14192884.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-15T17:28:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190815172852_14191116.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-14T17:46:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190814174611_14189472.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-13T17:23:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190813172351_14187624.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-12T17:27:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190812172730_14185974.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T17:29:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190809172902_14184210.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-09T10:30:09Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190809103009_14183529.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-08T17:29:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190808172927_14182484.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-07T17:39:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190807173900_14180629.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T18:07:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190806180727_14178869.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-06T16:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190806163001_14178752.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T17:17:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190805171757_14177082.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-02T17:36:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190802173639_14175313.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T17:34:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190801173439_14173484.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T15:43:48Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190801154348_14173261.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T12:30:02Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Half Year 2019 Pillar 3 Disclosures",
+   "download_link": "NSM/data-migration/LSE20190801123002_14172924.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:33Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Half Year Report 2019",
+   "download_link": "NSM/data-migration/LSE20190801070033_14171648.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-01T07:00:28Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Additional Financial Information",
+   "download_link": "NSM/data-migration/LSE20190801070028_14171601.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T17:29:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190731172955_14171295.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-30T18:21:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190730182131_14169295.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-29T17:36:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190729173629_14167414.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-26T17:31:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190726173120_14165621.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-25T17:36:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190725173656_14163855.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-24T17:37:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190724173720_14162061.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T17:22:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190723172242_14160346.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-22T17:33:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190722173307_14158660.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-19T18:06:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190719180658_14156979.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-18T17:21:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190718172133_14155271.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T17:54:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190717175414_14153601.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-17T10:38:37Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20190717103837_14152885.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-16T17:23:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190716172306_14151846.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-15T17:23:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190715172311_14150100.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-12T17:23:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190712172343_14147502.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T17:48:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190711174851_14145811.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-11T17:26:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190711172628_14145794.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-10T17:23:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190710172350_14144081.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-09T17:25:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190709172548_14142395.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T17:23:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190708172345_14140707.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-08T16:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190708163001_14140637.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-05T17:27:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190705172728_14138976.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-04T17:37:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190704173739_14137522.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T17:45:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190703174548_14135787.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-03T15:15:51Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Publication of Offering Circular",
+   "download_link": "NSM/data-migration/LSE20190703151551_14135493.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T17:51:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190702175104_14134047.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-02T12:59:58Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190702125958_14133623.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-01T18:13:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190701181312_14132230.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-28T17:34:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190628173447_14130003.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T17:36:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190627173643_14127872.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-27T16:10:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190627161002_14127738.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-26T17:35:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190626173508_14125998.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T17:25:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190625172525_14124222.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-25T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190625170004_14124186.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-24T17:35:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190624173531_14122476.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T17:21:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190621172137_14120668.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-21T11:30:03Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190621113003_14120101.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-20T17:40:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190620174045_14119000.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T18:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190619180005_14117361.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-19T15:38:07Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of a Prospectus",
+   "download_link": "NSM/data-migration/LSE20190619153807_14117222.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-18T18:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190618180001_14115690.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T17:45:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190617174514_14113947.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-17T16:31:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190617163105_14113840.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-14T17:29:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190614172903_14112226.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-13T17:35:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190613173547_14110509.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T17:34:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190612173455_14108835.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-12T13:09:04Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20190612130904_14108507.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T17:27:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190611172725_14107157.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-10T17:34:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190610173413_14105516.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-07T17:47:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190607174703_14103850.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T17:27:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190606172716_14102145.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-06T16:30:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190606163003_14102052.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-05T17:53:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190605175306_14100314.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T18:25:01Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190604182501_14098584.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T17:57:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190604175734_14098571.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-04T09:40:02Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190604094002_14097654.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-03T17:38:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190603173810_14096872.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:54:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190531175436_14094938.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:35:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190530173505_14093070.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-29T17:30:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190529173017_14091431.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-28T17:27:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190528172709_14089758.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-24T17:11:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190524171135_14087558.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-23T17:29:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190523172957_14085876.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T17:42:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190522174246_14084177.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-22T12:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Financial Markets Investor Seminar",
+   "download_link": "NSM/data-migration/LSE20190522120004_14083746.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T17:19:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190521171931_14082485.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-21T16:35:01Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/data-migration/LSE20190521163501_14082418.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-20T17:25:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190520172538_14080743.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T17:11:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190517171133_14079110.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-16T17:40:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190516174048_14077479.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-15T17:35:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190515173501_14075614.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-14T17:25:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190514172501_14073903.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-13T17:50:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190513175001_14072216.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-10T17:31:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190510173122_14070506.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-09T17:55:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190509175501_14068875.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T17:50:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190508175049_14067187.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T16:59:03Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190508165903_14067109.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T13:59:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190508135901_14066831.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T18:25:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190507182502_14065493.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-07T17:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190507170001_14065392.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-03T18:08:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190503180804_14063288.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-02T18:15:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/data-migration/LSE20190502181500_14061600.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T13:29:54Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190501132954_14059640.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-01T11:56:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Share Buy-Back",
+   "download_link": "NSM/data-migration/LSE20190501115635_14059475.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T11:50:02Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Q1 2019 Pillar 3 Disclosures",
+   "download_link": "NSM/data-migration/LSE20190430115002_14057393.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-30T10:00:02Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Group Company Secretary Change",
+   "download_link": "NSM/data-migration/LSE20190430100002_14057056.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-25T12:30:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20190425123004_14052156.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T15:50:05Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190411155005_14038250.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-04T17:45:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190404174501_14029786.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T16:25:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190325162505_14014868.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T11:30:03Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM 2019",
+   "download_link": "NSM/data-migration/LSE20190325113003_14014400.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T17:02:37Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190322170237_14013132.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-22T09:41:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20190322094103_14012338.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-20T14:53:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190320145304_14009577.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-15T15:18:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190315151852_14004594.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-13T13:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190313134501_14001079.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-07T16:45:57Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190307164557_13994619.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T16:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190306160004_13992847.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-04T15:20:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190304152001_13989503.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T16:37:10Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplementary Prospectus",
+   "download_link": "NSM/data-migration/LSE20190301163710_13987924.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:42:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228174204_13986153.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:40:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190228174005_13986152.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T16:30:05Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Full Year 2018 Pillar 3 Disclosures",
+   "download_link": "NSM/data-migration/LSE20190226163005_13982555.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T07:00:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Refreshed strategic priorities",
+   "download_link": "NSM/data-migration/LSE20190226070020_13981237.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T07:00:20Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Additional Financial Information",
+   "download_link": "NSM/data-migration/LSE20190226070020_13981239.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T07:00:20Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Report 2018",
+   "download_link": "NSM/data-migration/LSE20190226070020_13981253.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-26T07:00:20Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "SCPLC Final Results 2018",
+   "download_link": "NSM/data-migration/LSE20190226070020_13981236.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-21T07:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Provision for past fin crime ctrl & FX trd issues",
+   "download_link": "NSM/data-migration/LSE20190221070001_13976383.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-18T17:33:00Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes",
+   "download_link": "NSM/data-migration/LSE20190218173300_13973367.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-14T08:48:08Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20190214084808_13969378.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-08T12:27:42Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190208122742_13963599.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-08T12:30:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Overseas Regulatory Announcement",
+   "download_link": "NSM/data-migration/LSE20190108123001_13927720.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T17:00:02Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Suppl.Prospcts",
+   "download_link": "NSM/data-migration/LSE20190107170002_13926453.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-01-07T15:15:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190107151501_13926335.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-21T17:40:43Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Extension of U.S. Deferred Prosecution Agreements",
+   "download_link": "NSM/data-migration/LSE20181221174043_13914044.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-20T16:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181220160002_13912042.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-17T10:00:02Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Spin out of Private Equity Business",
+   "download_link": "NSM/data-migration/LSE20181217100002_13905947.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-12-11T17:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20181211170002_13899916.html",
+   "company": "Standard Chartered PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-08-07T14:36:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005392.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2018-06-08T14:40:00.000Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Final Terms",
+   "download_link": "NSM/Portal/NI-000005393.pdf",
+   "company": "STANDARD CHARTERED PLC",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-12-04T17:15:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Block listing Interim Review",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Miscellaneous",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3804957.html",
+   "disclosure_id": "3804957",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-04T17:15:05Z",
+   "seq_id": "3804957",
+   "company": "Standard Chartered PLC",
+   "last_updated_date": "2026-08-22T12:08:49.724974121Z",
+   "headline": "Block listing Interim Review",
+   "type_code": "BLR"
+  },
+  {
+   "submitted_date": "2020-12-04T16:30:07Z",
+   "tag_esef": "",
+   "classifications_code": "2.5",
+   "source": "RNS",
+   "type": "Total Voting Rights",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "U4LOSYZ7YG4W3S5F2G91",
+   "classifications": "Total number of voting rights and capital",
+   "download_link": "NSM/RNS/3804920.html",
+   "disclosure_id": "3804920",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-12-04T16:30:07Z",
+   "seq_id": "3804920",
+   "company": "Standard Chartered PLC",
+   "last_updated_date": "2026-08-22T12:08:49.724843288Z",
+   "headline": "Total Voting Rights",
+   "type_code": "TVR"
+  }
+ ]
 }

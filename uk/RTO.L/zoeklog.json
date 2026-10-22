@@ -1,13 +1,1001 @@
 {
- "aantal": 0,
+ "aantal": 94,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300VN4WV7Z6T14K68', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "nsm-search ['', '549300VN4WV7Z6T14K68', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300VN4WV7Z6T14K68', 'disclose_org', '']: HTTP Error 403: Forbidden",
-   "fca-nsm-searchdata ['', '549300VN4WV7Z6T14K68', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300VN4WV7Z6T14K68",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 94
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2020-11-24T17:25:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3792170.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-20T07:00:04Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of Tender Offer for Notes due 2021",
+   "download_link": "NSM/RNS/3787316.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-11-12T09:02:01Z",
+   "type": "Tender Offer",
+   "type_code": "TEN",
+   "headline": "Tender Offer for Notes due 2021",
+   "download_link": "NSM/RNS/3778459.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-22T06:00:07Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Update",
+   "download_link": "NSM/RNS/3755788.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-08T06:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Successful EUR600m 8-year bond transaction priced",
+   "download_link": "NSM/RNS/3741763.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-10-01T08:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3733876.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-28T14:40:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3701417.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-08-07T16:24:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3681934.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-30T06:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/RNS/3671669.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-07-06T06:00:08Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3646864.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-21T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3602625.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T16:15:05Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/3594593.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-05-13T15:54:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "2020 AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000003754.pdf",
+   "company": "Rentokil Initial Plc",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2020-05-07T15:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3589569.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-27T14:50:03Z",
+   "type": "Doc re.",
+   "type_code": "DOC",
+   "headline": "Disclosure of Rights Attached to Equity Shares ",
+   "download_link": "NSM/RNS/3576513.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-17T10:59:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3565937.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-16T06:00:03Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Update",
+   "download_link": "NSM/RNS/3563331.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-14T16:26:17Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3561729.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-09T15:35:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3559642.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T13:36:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402133652_3551448.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-02T13:36:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20200402133652_3551448.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:33:45Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Confirmation of Non-Executive Director Appointment",
+   "download_link": "NSM/data-migration/LSE20200401173345_3550232.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T17:33:45Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Confirmation of Non-Executive Director Appointment",
+   "download_link": "NSM/data-migration/LSE20200401173345_3550232.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:24:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401092406_3547944.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-04-01T09:24:06Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20200401092406_3547944.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-31T14:18:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20200331141803_3547931.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T12:37:23Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of 4.5% debenture stock",
+   "download_link": "NSM/data-migration/LSE20200330123723_3546028.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-30T12:24:17Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Redemption of 5% debenture stock",
+   "download_link": "NSM/data-migration/LSE20200330122417_3546031.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-27T11:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200327110005_3544036.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:41:37Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/data-migration/LSE20200326164137_3543099.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T16:36:00Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/data-migration/LSE20200326163600_3543050.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-26T11:29:33Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20200326112933_3542558.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-25T07:00:06Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Trading Update",
+   "download_link": "NSM/data-migration/LSE20200325070006_3540013.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-19T11:30:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20200319113005_3533332.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-17T13:15:01Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20200317131501_3530001.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-03-06T12:00:07Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200306120007_3518387.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:05:03Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/data-migration/LSE20200227070503_3507993.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-27T07:00:06Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20200227070006_3507990.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T16:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200221160002_3502272.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2020-02-21T16:00:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20200221160002_3502272.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-24T13:10:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191224131001_14362652.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-24T13:10:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191224131001_14362652.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-19T14:40:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191219144001_14356597.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T17:10:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191217171004_14353044.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-12-17T17:10:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191217171004_14353044.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-26T18:03:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191126180341_14324272.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T15:25:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191125152501_14322243.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-25T15:25:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191125152501_14322243.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191114160001_14308939.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-14T16:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191114160001_14308939.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T17:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191108173004_14301617.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T17:30:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191108173004_14301617.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-08T09:40:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191108094005_14300560.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T17:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191106170006_14297707.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-06T17:00:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191106170006_14297707.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T17:10:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191105171001_14295627.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-05T17:10:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20191105171001_14295627.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-11-01T07:00:04Z",
+   "type": "Acquisition",
+   "type_code": "ACQ",
+   "headline": "Acquisition of Florida Pest Control, USA",
+   "download_link": "NSM/data-migration/LSE20191101070004_14289930.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-31T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20191031163001_14289591.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-10-17T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "3rd Quarter Trading Update",
+   "download_link": "NSM/data-migration/LSE20191017070004_14269155.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-30T10:20:02Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190930102002_14246744.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-23T10:30:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190923103001_14237087.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-09-13T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190913160001_14226712.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-19T15:15:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190819151502_14194412.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-08-05T13:58:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190805135822_14176751.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-31T07:00:16Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results",
+   "download_link": "NSM/data-migration/LSE20190731070016_14169516.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-07-23T07:00:16Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Appointment of Joint Corporate Broker",
+   "download_link": "NSM/data-migration/LSE20190723070016_14158859.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190611120001_14106640.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-06-11T12:00:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190611120001_14106640.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190531170004_14094831.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-31T17:00:04Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190531170004_14094831.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-30T17:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190530170003_14093034.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-17T16:04:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190517160430_14079024.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-05-08T14:30:28Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/data-migration/LSE20190508143028_14066878.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-29T11:40:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190429114005_14055515.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-18T07:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q1 Trading Update",
+   "download_link": "NSM/data-migration/LSE20190418070004_14045513.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-12T18:25:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/data-migration/LSE20190412182502_14040132.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-11T16:37:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190411163732_14038288.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-10T13:57:06Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/data-migration/LSE20190410135706_14036407.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-04-01T07:00:07Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/data-migration/LSE20190401070007_14022499.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-29T07:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/data-migration/LSE20190329070002_14020353.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-27T11:18:18Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/data-migration/LSE20190327111818_14017833.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-25T09:58:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190325095803_14014132.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-12T12:17:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190312121733_13999246.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T14:00:02Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/data-migration/LSE20190306140002_13992676.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-06T13:05:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190306130505_13992642.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-03-01T07:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Innovative good causes initiative",
+   "download_link": "NSM/data-migration/LSE20190301070003_13986291.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T17:15:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/data-migration/LSE20190228171503_13986116.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T07:05:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Changes and Appointment of Chairman",
+   "download_link": "NSM/data-migration/LSE20190228070501_13984542.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-28T07:00:13Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/data-migration/LSE20190228070013_13984437.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T17:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215171501_13971728.html",
+   "company": "Aviva PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-15T17:15:01Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/data-migration/LSE20190215171501_13971728.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2019-02-01T07:00:03Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Change to Director's details",
+   "download_link": "NSM/data-migration/LSE20190201070003_13954561.html",
+   "company": "Rentokil Initial PLC",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2018-05-09T16:30",
+   "type": "Listing Particulars",
+   "type_code": "FCA05",
+   "headline": "Rentokil Initial plc Articles of Association",
+   "download_link": "NSM/Portal/NI-000002067.pdf",
+   "company": "Rentokil Initial Plc",
+   "lei": "549300VN4WV7Z6T14K68",
+   "source": "Direct Upload"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2020-11-24T17:25:05Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300VN4WV7Z6T14K68",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3792170.html",
+   "disclosure_id": "3792170",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-24T17:25:05Z",
+   "seq_id": "3792170",
+   "company": "Rentokil Initial PLC",
+   "last_updated_date": "2026-08-22T12:08:14.949237645Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2020-11-20T07:00:04Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Result of Tender Offer",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Mergers and acquisitions",
+   "lei": "549300VN4WV7Z6T14K68",
+   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
+   "download_link": "NSM/RNS/3787316.html",
+   "disclosure_id": "3787316",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2020-11-20T07:00:04Z",
+   "seq_id": "3787316",
+   "company": "Rentokil Initial PLC",
+   "last_updated_date": "2026-08-22T12:08:14.936269770Z",
+   "headline": "Result of Tender Offer for Notes due 2021",
+   "type_code": "RTE"
+  }
+ ]
 }

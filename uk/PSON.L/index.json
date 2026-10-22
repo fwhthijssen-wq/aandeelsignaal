@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-22",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Pearson PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20190222070005_13978029.html",
+  "tekst": "uk-2018.txt",
+  "grootte": 645002
+ },
+ {
+  "boekjaar": 2019,
+  "registerdatum": "2020-02-21",
+  "soort": "Final Results",
+  "titel": "Final Results",
+  "bedrijf": "Pearson PLC",
+  "download": "https://data.fca.org.uk/artefacts/NSM/data-migration/LSE20200221070004_3501112.html",
+  "tekst": "uk-2019.txt",
+  "grootte": 606000
+ }
+]
