@@ -12,6 +12,9 @@ BESTAND = 'https://echanges.dila.gouv.fr/OPENDATA/AMF/'
 UA = {'User-Agent': 'Mozilla/5.0 (AandeelSignaal research)'}
 JAARVERSLAG = ('003000', '002002')                              # jaarlijkse financiële en auditverslagen
 REGISTRATIE = tuple(f'30000{i}' for i in range(1, 8))           # document de référence / d'enregistrement universel
+SOORTEN = ','.join(f'"{s}"' for s in ('003000', '002002') + tuple(f'30000{i}' for i in range(1, 8)))
+UITSLUITEN = re.compile(r'mise à disposition|mise a disposition|availability|disponibilit|semestriel|half[- ]year|interim|'
+                        r'trimest|quarter|assemblée|general meeting|honoraires|gouvernement|governance|descriptif|programme de rachat')
 VELDEN = ('informationdeposee_inf_dat_emt,informationdeposee_inf_tit_inf,informationdeposee_inf_stp_pri,'
           'fichierdecontenu_inf_fic_nom,identificationsociete_iso_nom_soc,identificationsociete_iso_cd_isi')
 
@@ -49,9 +52,9 @@ def engels(titel):
 
 
 def score(r):
-    """Lager is beter: jaarrekening vóór jaarverslag vóór registratiedocument, Engels vóór Frans."""
+    """Lager is beter: jaarrekening vóór jaarverslag vóór registratiedocument vóór overige, Engels vóór Frans."""
     soort = r['informationdeposee_inf_stp_pri']
-    basis = 0 if soort == '003000' else 1 if soort == '002002' else 2
+    basis = 0 if soort == '003000' else 1 if soort == '002002' else 2 if soort.startswith('3000') else 3
     return basis * 2 + (0 if engels(r['informationdeposee_inf_tit_inf'] or '') else 1)
 
 
@@ -67,45 +70,58 @@ def main():
         codes = [sleutel] if re.fullmatch(r'[A-Z]{2}[A-Z0-9]{9}\d', sleutel) else isins(sleutel)
         if not codes:
             print(ticker, 'geen ISIN gevonden'); continue
-        soorten = ','.join(f'"{s}"' for s in JAARVERSLAG + REGISTRATIE)
         rijen = []
         for isin in codes[:2]:
-            rijen += zoek(f'identificationsociete_iso_cd_isi="{isin}" and informationdeposee_inf_stp_pri in ({soorten}) and '
-                          f'informationdeposee_inf_dat_emt>="{j0 + 1}-01-01" and informationdeposee_inf_dat_emt<"{j1 + 2}-01-01"')
-        rijen = [r for r in rijen if r.get('fichierdecontenu_inf_fic_nom', '').lower().endswith('.pdf')
-                 and not re.search(r'mise à disposition|mise a disposition|availability|disponibilit', (r['informationdeposee_inf_tit_inf'] or '').lower())]
+            for j in range(j0 + 1, j1 + 2):     # per registerjaar (maximaal 100 resultaten per vraag)
+                rijen += zoek(f'identificationsociete_iso_cd_isi="{isin}" and informationdeposee_inf_dat_emt>="{j}-01-01" and '
+                              f'informationdeposee_inf_dat_emt<"{j + 1}-01-01" and (informationdeposee_inf_stp_pri in ({SOORTEN}) or '
+                              f'search(informationdeposee_inf_tit_inf, "annuel") or search(informationdeposee_inf_tit_inf, "annual") or '
+                              f'search(informationdeposee_inf_tit_inf, "consolid") or search(informationdeposee_inf_tit_inf, "enregistrement") or '
+                              f'search(informationdeposee_inf_tit_inf, "référence") or search(informationdeposee_inf_tit_inf, "registration"))')
+        rijen = [r for r in rijen if (r.get('fichierdecontenu_inf_fic_nom') or '').lower().endswith('.pdf')
+                 and not UITSLUITEN.search((r['informationdeposee_inf_tit_inf'] or '').lower())]
         map_ = os.path.join(uit, ticker)
         os.makedirs(map_, exist_ok=True)
         pad_index = os.path.join(map_, 'index.json')
         index = json.load(open(pad_index)) if os.path.exists(pad_index) else []
-        al = {x['bestand_bron'] for x in index}
+        gedaan = {x['boekjaar'] for x in index}
         per_jaar = {}
         for r in rijen:
             datum = r['informationdeposee_inf_dat_emt'][:10]
             boekjaar = int(datum[:4]) - 1 if datum[5:7] <= '09' else int(datum[:4])
             if j0 <= boekjaar <= j1:
                 per_jaar.setdefault(boekjaar, []).append(r)
+        log = {'isin': codes[:2], 'kandidaten': {j: [(r['informationdeposee_inf_dat_emt'][:10], r['informationdeposee_inf_stp_pri'],
+                                                    (r['informationdeposee_inf_tit_inf'] or '')[:90], r['fichierdecontenu_inf_fic_nom'])
+                                                   for r in v] for j, v in sorted(per_jaar.items())}}
+        json.dump(log, open(os.path.join(map_, 'zoeklog.json'), 'w'), indent=1, ensure_ascii=False)
         print(ticker, codes[:2], {j: len(v) for j, v in sorted(per_jaar.items())})
         for boekjaar, kandidaten in sorted(per_jaar.items()):
-            r = sorted(kandidaten, key=score)[0]
-            naam = r['fichierdecontenu_inf_fic_nom']
-            if naam in al:
+            if boekjaar in gedaan:
                 continue
-            try:
-                data = get(BESTAND + naam, binair=True)
-            except Exception as exc:
-                print('fout', ticker, boekjaar, naam, exc); continue
-            pdf = os.path.join(map_, f'fr-{boekjaar}.pdf')
-            open(pdf, 'wb').write(data)
-            txt = pdf[:-4] + '.txt'
-            subprocess.run(['pdftotext', '-layout', pdf, txt], check=False)
-            os.remove(pdf)
-            index.append({'boekjaar': boekjaar, 'registerdatum': r['informationdeposee_inf_dat_emt'], 'soort': r['informationdeposee_inf_stp_pri'],
-                          'titel': r['informationdeposee_inf_tit_inf'], 'bedrijf': r['identificationsociete_iso_nom_soc'],
-                          'isin': r['identificationsociete_iso_cd_isi'], 'bestand_bron': naam, 'download': BESTAND + naam,
-                          'tekst': os.path.basename(txt), 'grootte_pdf': len(data)})
-            print('ok', ticker, boekjaar, r['informationdeposee_inf_stp_pri'], len(data), r['informationdeposee_inf_tit_inf'][:70])
-            time.sleep(1)
+            for r in sorted(kandidaten, key=score)[:4]:
+                naam = r['fichierdecontenu_inf_fic_nom']
+                try:
+                    data = get(BESTAND + naam, binair=True)
+                except Exception as exc:
+                    print('fout', ticker, boekjaar, naam, exc); continue
+                pdf = os.path.join(map_, f'fr-{boekjaar}.pdf')
+                open(pdf, 'wb').write(data)
+                txt = pdf[:-4] + '.txt'
+                subprocess.run(['pdftotext', '-layout', pdf, txt], check=False)
+                os.remove(pdf)
+                tekst = open(txt, errors='ignore').read().lower() if os.path.exists(txt) else ''
+                if not (re.search(r'dilut', tekst) and re.search(r'per share|par action', tekst)):
+                    print('geen winst per aandeel', ticker, boekjaar, (r['informationdeposee_inf_tit_inf'] or '')[:60])
+                    if os.path.exists(txt): os.remove(txt)
+                    continue
+                index.append({'boekjaar': boekjaar, 'registerdatum': r['informationdeposee_inf_dat_emt'], 'soort': r['informationdeposee_inf_stp_pri'],
+                              'titel': r['informationdeposee_inf_tit_inf'], 'bedrijf': r['identificationsociete_iso_nom_soc'],
+                              'isin': r['identificationsociete_iso_cd_isi'], 'bestand_bron': naam, 'download': BESTAND + naam,
+                              'tekst': os.path.basename(txt), 'grootte_pdf': len(data)})
+                print('ok', ticker, boekjaar, r['informationdeposee_inf_stp_pri'], len(data), (r['informationdeposee_inf_tit_inf'] or '')[:70])
+                time.sleep(1)
+                break
         json.dump(index, open(pad_index, 'w'), indent=1, ensure_ascii=False)
 
 
