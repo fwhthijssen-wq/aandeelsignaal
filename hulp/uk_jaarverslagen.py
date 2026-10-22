@@ -5,7 +5,7 @@ Gebruik:  python hulp/uk_jaarverslagen.py uitmap [TICKER=LEI ...] --jaren 2015-2
 Zonder TICKER=LEI: alle Londense noteringen (.L) uit esef_lei.json. Per bedrijf en boekjaar één jaarverslag, opgeslagen als
 tekst (pdf via pdftotext -layout met \\f tussen pagina's; xhtml/html als platte tekst) met index.json (publicatiedatum,
 soort, kop, officiële downloadlink) en zoeklog.json (alle gevonden meldingen, om te kunnen nagaan wat er was)."""
-import html, io, json, os, re, subprocess, sys, time, urllib.request, zipfile
+import html, io, json, os, re, subprocess, sys, time, urllib.error, urllib.request, zipfile
 
 ZOEK = 'https://api.data.fca.org.uk/search?index={index}'
 ARTEFACT = 'https://data.fca.org.uk/artefacts/'
@@ -16,9 +16,17 @@ UITSLUITEN = re.compile(r'half[- ]?year|interim|quarter|q[1-4]\b|notice of|avail
 
 
 def post(body, index):
-    req = urllib.request.Request(ZOEK.format(index=index), data=json.dumps(body).encode(), headers=UA, method='POST')
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.loads(r.read())
+    """Met pauze en geduld bij 403/429 (de NSM beperkt het aantal vragen per minuut)."""
+    for poging in range(6):
+        time.sleep(2)
+        req = urllib.request.Request(ZOEK.format(index=index), data=json.dumps(body).encode(), headers=UA, method='POST')
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (403, 429) or poging == 5:
+                raise
+            time.sleep(60 * (poging + 1))
 
 
 def get(url):
@@ -26,18 +34,18 @@ def get(url):
         return r.read()
 
 
-def zoek(lei):
+def zoek(lei, j0=2015, j1=2019):
     """Alle meldingen van een LEI (laatste versie), nieuwste eerst, zoals de NSM-site zelf vraagt (index 'nsm-search',
     criterium 'company_lei' = [naam, LEI, 'disclose_org', 'related_org']). Bladert door alle pagina's."""
     fouten = []
-    for index in ('nsm-search', 'fca-nsm-searchdata'):
-        for orgs in (['', lei, 'disclose_org', ''], ['', lei, 'disclose_org', 'related_org']):
+    for index in ('nsm-search',):
+        for orgs in (['', lei, 'disclose_org', ''],):
             alles, van = [], 0
             try:
                 while True:
                     body = {'from': van, 'size': 100, 'sort': 'publication_date', 'sortorder': 'desc',
                             'criteriaObj': {'criteria': [{'name': 'company_lei', 'value': orgs}, {'name': 'latest_flag', 'value': 'Y'}],
-                                            'dateCriteria': None}}
+                                            'dateCriteria': [{'name': 'publication_date', 'value': {'from': f'{j0 + 1}-01-01T00:00:00Z', 'to': f'{j1 + 1}-12-31T23:59:59Z'}}]}}
                     d = post(body, index)
                     hits = (d.get('hits') or {}).get('hits') or []
                     alles += [h.get('_source') or {} for h in hits]
@@ -87,7 +95,7 @@ def main():
         map_ = os.path.join(uit, ticker)
         os.makedirs(map_, exist_ok=True)
         try:
-            items, ruw = zoek(lei)
+            items, ruw = zoek(lei, j0, j1)
         except Exception as exc:
             print('zoekfout', ticker, exc); json.dump({'fout': str(exc)}, open(os.path.join(map_, 'zoeklog.json'), 'w')); continue
         log = [{k: it.get(k) for k in ('publication_date', 'type', 'type_code', 'headline', 'download_link', 'company', 'lei', 'source')} for it in items]
