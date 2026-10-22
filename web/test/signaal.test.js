@@ -32,7 +32,7 @@ test('alleen koersdata: lagere dekking, wel een voorlopig oordeel, nooit "gecont
   const b = S.beoordeel(alleen(rec()), O());
   assert.ok(b.dekking > 0 && b.dekking < 40, 'dekking ' + b.dekking);
   assert.equal(b.kwaliteit.gecontroleerd, 0); assert.equal(b.kwaliteit.jaarverslag, 0);
-  assert.equal(b.zekerheid, 'zeer voorlopig');
+  assert.equal(b.zekerheid, 'zwak');
   assert.ok(b.ontbreekt.includes('Koers/winst (K/W)'));
 });
 

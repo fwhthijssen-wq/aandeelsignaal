@@ -23,7 +23,7 @@
     return n;
   }
   /* Momentopname van het oordeel van de app (bij toevoegen aan de volglijst of bij een aankoop), om later te kunnen zien of het klopte. */
-  var OORDELEN = ['positief', 'neutraal', 'vermijden'], ZEKERHEDEN = ['zeer voorlopig', 'voorlopig', 'redelijk', 'stevig'];
+  var OORDELEN = ['positief', 'neutraal', 'vermijden'], ZEKERHEDEN = ['zwak', 'beperkt', 'redelijk', 'goed', 'zeer voorlopig', 'voorlopig', 'stevig'];   // laatste drie: oude namen in bewaarde volglijsten
   function schoonSignaal(x) {
     if (!x || typeof x !== 'object') return null;
     var oordeel = OORDELEN.indexOf(x.oordeel) > -1 ? x.oordeel : null;

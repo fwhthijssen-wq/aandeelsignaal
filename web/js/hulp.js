@@ -5,15 +5,17 @@
     start: ['Start', 'Hier ziet u in één oogopslag hoe het ervoor staat en welke aandelen nu kansrijk zijn.', [
       'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
       'Bij Kansrijk staan aandelen met een positief voorlopig oordeel, met bovenaan de beste. De percentages geven aan hoeveel van de mogelijke gegevens bekend is; hoe hoger, hoe betrouwbaarder.',
-      'In het dashboard kunt u de lijst doorzoeken en sorteren. Tik op een aandeel voor alle details.',
-      'Een oordeel is altijd voorlopig. Pas na eigen onderzoek (tabblad Verdiepen) wordt het zekerder.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
+      'Elk oordeel heeft twee delen: het oordeel zelf (positief, neutraal of vermijden: wat de cijfers samen zeggen) en de onderbouwing (goed, redelijk, beperkt of zwak: hoeveel van de mogelijke gegevens bekend is).',
+      'Alle fondsen, per index en op kansrijkheid gesorteerd, staan onder Fondsen in het menu.',
+      'Eigen onderzoek (tabblad Verdiepen) maakt de onderbouwing sterker.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
     overzicht: ['Overzicht', 'De complete lijst van aandelen.', [
       'Tik op een aandeel voor details of kies Aandelen vergelijken om er twee naast elkaar te zetten.',
       'De chip bij elk aandeel toont hoe zeker de gegevens zijn: Bevestigd, Uit jaarverslag of Niet bevestigd.'], null],
-    zoek: ['Zoeken', 'Zoek een aandeel op naam of beurscode.', [
-      'Typ een deel van de naam of de code, bijvoorbeeld ASML of Shell.',
-      'Het resultaat toont meteen hoe goed de gegevens zijn gecontroleerd.',
-      'Met de ster zet u een aandeel op uw volglijst om de ontwikkeling te volgen.'], null],
+    zoek: ['Fondsen', 'Alle aandelen, per index gegroepeerd.', [
+      'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
+      'Kansrijkheid: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens. Binnen elke groep staat de hoogste score bovenaan, gewogen met de onderbouwing.',
+      'U kunt ook sorteren op plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
+      'Een aandeel dat in twee indices zit, staat in beide groepen.'], 'Kansrijk betekent: de beschikbare cijfers zijn gunstig. Het is geen koopadvies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
       'Bij het volgen legt de app het oordeel, de dekking en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed en hoe het oordeel toen en nu is.',
@@ -77,6 +79,7 @@
     if (m) return T[m[1]] ? m[1] : 'samenvatting';
     if (/^#\/vergelijk/.test(hash)) return 'vergelijk';
     var s = hash.replace(/^#\//, '');
+    if (s === 'fondsen' || s === 'overzicht') s = 'zoek';
     return s === '' ? 'start' : (T[s] ? s : 'start');
   }
   var api = { voor: voor, sleutelVoorHash: sleutelVoorHash, SLEUTELS: Object.keys(T) };

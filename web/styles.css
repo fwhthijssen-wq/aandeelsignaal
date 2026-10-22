@@ -188,3 +188,12 @@ nav.menu a { font-size: .68rem; letter-spacing: -.01em; padding: 0 1px; }
 .meth-knop { all: unset; cursor: pointer; font-weight: 600; color: var(--acc); text-decoration: underline dotted; text-underline-offset: 3px; } .meth-knop:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; border-radius: 4px; }
 .hulp-blad h3 { margin: 6px 0 0; font-size: 1rem; }
 .bk-status { border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; margin: 10px 0; } .bk-status[data-status=ok] { background: var(--ok-bg); color: var(--ok-ink); } .bk-status[data-status=let-op] { background: var(--wait-bg); color: var(--wait-ink); } .bk-status b { font-size: 1.02rem; } .bk-status span { color: inherit; }
+/* Fondsen: groepen per index */
+.groep { margin: 18px 0; }
+.groep .rij-kop h2 { margin: 0; }
+details.meer { margin-top: 8px; padding: 0; background: transparent; border: 0; }
+details.meer summary { min-height: 44px; padding: 0 4px; color: var(--accent, #0B6E78); }
+details.meer > .lijst { margin-top: 6px; }
+details.uitleg { margin: 10px 0; }
+details.uitleg p, details.uitleg li { font-weight: 400; }
+.lijst .tekstkolom .chip { margin-top: 4px; align-self: flex-start; }

@@ -82,6 +82,59 @@
     });
   }
 
-  var api = { zoneOverzicht: zoneOverzicht, spreiding: spreiding, aandacht: aandacht, checklistStand: checklistStand, tabel: tabel, KOLOMMEN: KOLOMMEN };
+  /* ---- Fondsen: alle aandelen, per index gegroepeerd en sorteerbaar ---- */
+  var INDEX_VOLGORDE = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
+  // Elke sortering heeft één vaste, logische richting (geen knop nodig).
+  var FONDS_SORTERING = { kansrijk: 0, naam: 1, positiePct: 1, afstandPct: 1, epsgroei: -1, omzetgroei: -1, nettomarge: -1, verhouding: -1 };
+  function kansKlasse(o) { return o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
+  function getalOfNull(x) { return typeof x === 'number' && isFinite(x) ? x : null; }
+
+  /* items: [{ticker, naam, indices, bevestigd, oordeel, rang, dekking, positiePct, ...}]. Filter op zoektekst, index en
+     bevestigd; sorteer. Kansrijkheid: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke
+     groep de hoogste rang (score gewogen met de dekking) bovenaan. Onbekende waarden staan altijd onderaan. */
+  function fondsen(items, opties) {
+    opties = opties || {};
+    var q = String(opties.zoek || '').trim().toLowerCase(), ix = opties.index || '';
+    var sleutel = Object.prototype.hasOwnProperty.call(FONDS_SORTERING, opties.sorteer) ? opties.sorteer : 'kansrijk';
+    var lijst = (items || []).filter(function (a) {
+      return (!q || String(a.naam).toLowerCase().indexOf(q) > -1 || String(a.ticker).toLowerCase().indexOf(q) > -1) &&
+        (!ix || indexGroepen(a).indexOf(ix) > -1) && (!opties.alleenBevestigd || a.bevestigd);
+    });
+    function opNaam(a, b) { var x = String(a.naam).toLowerCase(), y = String(b.naam).toLowerCase(); return x < y ? -1 : x > y ? 1 : 0; }
+    return lijst.slice().sort(function (a, b) {
+      if (sleutel === 'naam') return opNaam(a, b);
+      if (sleutel === 'kansrijk') {
+        var k = kansKlasse(a.oordeel) - kansKlasse(b.oordeel); if (k) return k;
+        var ra = getalOfNull(a.rang), rb = getalOfNull(b.rang);
+        if (ra !== rb) { if (ra === null) return 1; if (rb === null) return -1; return rb - ra; }
+        return (getalOfNull(b.dekking) || 0) - (getalOfNull(a.dekking) || 0) || opNaam(a, b);
+      }
+      var x = getalOfNull(a[sleutel]), y = getalOfNull(b[sleutel]);
+      if (x === null || y === null) return x === y ? opNaam(a, b) : x === null ? 1 : -1;
+      return x === y ? opNaam(a, b) : (x - y) * FONDS_SORTERING[sleutel];
+    });
+  }
+
+  /* De groepen waar een aandeel onder valt: zijn indices, of 'VS' (Amerikaanse notering zonder punt) of 'OVERIG'. */
+  function indexGroepen(a) {
+    var ix = Array.isArray(a.indices) ? a.indices.filter(Boolean) : [];
+    return ix.length ? ix : [String(a.ticker).indexOf('.') < 0 ? 'VS' : 'OVERIG'];
+  }
+
+  /* Gesorteerde lijst opdelen per index (een aandeel in twee indices staat in beide), in vaste volgorde. */
+  function perIndex(lijst) {
+    var per = {};
+    (lijst || []).forEach(function (a) { indexGroepen(a).forEach(function (g) { (per[g] = per[g] || []).push(a); }); });
+    var namen = Object.keys(per).sort(function (x, y) {
+      var i = INDEX_VOLGORDE.indexOf(x), j = INDEX_VOLGORDE.indexOf(y);
+      return (i < 0 ? 99 : i) - (j < 0 ? 99 : j) || (x < y ? -1 : 1);
+    });
+    return namen.map(function (g) {
+      return { index: g, items: per[g], positief: per[g].filter(function (a) { return a.oordeel === 'positief'; }).length };
+    });
+  }
+
+  var api = { zoneOverzicht: zoneOverzicht, spreiding: spreiding, aandacht: aandacht, checklistStand: checklistStand, tabel: tabel, KOLOMMEN: KOLOMMEN,
+    fondsen: fondsen, perIndex: perIndex, indexGroepen: indexGroepen, FONDS_SORTERING: FONDS_SORTERING };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Dashboard = api;
 })(typeof self !== 'undefined' ? self : this);

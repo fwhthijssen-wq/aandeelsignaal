@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.22-beta.61
+- **Nieuw menu-onderdeel Fondsen** (vervangt Zoeken): alle aandelen per index gegroepeerd (AEX, AMX, BEL 20, CAC 40, DAX, FTSE 100, IBEX 35, FTSE MIB, Verenigde Staten), per groep het aantal fondsen en het aantal met een positief oordeel. Standaard staan per index de vijf meest kansrijke bovenaan, met “Alle tonen” voor de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.
+- **Sorteren op kansrijkheid**: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke groep de hoogste score, gewogen met de onderbouwing. Ook te sorteren op naam, plek in het koersbereik, afstand tot het gemiddelde, winst- en omzetgroei, marge en opwaarts tegen neerwaarts. Zoeken op naam of beurscode en filteren op index of alleen bevestigde cijfers blijven.
+- **Start opgeruimd**: de lange lijst met alle aandelen en het blok “Interessante aandelen” zijn weg. Het dashboard toont de 8 kansrijkste, met een knop naar Fondsen. De cijfertabel staat er alleen nog voor uw eigen volglijst.
+- **Duidelijkere woorden bij het oordeel.** Een oordeel heeft twee delen: het oordeel zelf (positief, neutraal, vermijden: wat de cijfers samen zeggen) en de onderbouwing (goed, redelijk, beperkt of zwak onderbouwd: hoeveel van de mogelijke gegevens bekend is). Dit vervangt “stevig / redelijk / voorlopig / zeer voorlopig”, dat naast “voorlopig oordeel” verwarrend was. Uitleg onder “Wat betekenen positief, neutraal, vermijden en onderbouwd?” bij Kansrijk en Fondsen.
+
 ## 2026.10.22-beta.60
 - **Aantal aandelen uit de tekst van de ESEF-rapporten 2020-2025, nu ook buiten Nederland** (Londen, Parijs, Madrid, Milaan, Brussel, Frankfurt): 231 fondsen automatisch uitgelezen met dezelfde controle (winst / aandelen = gemelde winst per aandeel op de cent; hetzelfde jaar in twee rapporten gelijk). De uitlezer kent nu ook Franse, Spaanse, Italiaanse en Duitse labels en Europese getalnotatie (1 234 567 en 25,13).
 - Resultaat (bevestigde jaren, opgeteld): Londen 3 → 176, Parijs 43 → 80, Madrid 20 → 71, Milaan 25 → 41, Brussel 27 → 40, Frankfurt 13 → 17. Voorbeelden: Coca-Cola HBC, Qiagen, Endesa, Bureau Veritas en argenx 7 jaar; Saint-Gobain, Thales, Naturgy, Glencore, BT en Informa 6. Niets achteruit.

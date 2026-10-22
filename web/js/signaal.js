@@ -272,7 +272,7 @@
     var score = wegSom > 0 ? scoreSom / wegSom : null;
     var min = typeof opties.minDekking === 'number' ? opties.minDekking : MIN_DEKKING;
     var oordeel = score == null || dekking < min ? null : score >= DREMPEL ? 'positief' : score <= -DREMPEL ? 'vermijden' : 'neutraal';
-    var zekerheid = dekking >= 85 ? 'stevig' : dekking >= 65 ? 'redelijk' : dekking >= 40 ? 'voorlopig' : 'zeer voorlopig';
+    var zekerheid = dekking >= 85 ? 'goed' : dekking >= 65 ? 'redelijk' : dekking >= 40 ? 'beperkt' : 'zwak';   // onderbouwing: hoeveel gegevens er zijn
     var kwal = {}; Object.keys(KWALITEIT).forEach(function (q) { kwal[q] = totaal ? rond((perKwaliteit[q] || 0) / totaal * 100, 0) : 0; });
     var groepen = Object.keys(GROEPEN).map(function (id) { var x = perGroep[id] || { naam: GROEPEN[id], totaal: 0, aanwezig: 0, scoreSom: 0, wegSom: 0 };
       return { id: id, naam: x.naam, dekking: x.totaal ? rond(x.aanwezig / x.totaal * 100, 0) : 0, score: x.wegSom > 0 ? rond(x.scoreSom / x.wegSom, 2) : null }; });

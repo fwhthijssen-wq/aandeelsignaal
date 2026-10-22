@@ -106,8 +106,16 @@ class WebUi(unittest.TestCase):
         pg.goto(INDEX + '#/')
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'), 'menu met 5 items past op 320px')
 
+    def _alles_op_volglijst(self, pg):
+        """De lange cijfertabel op Start toont alleen de volglijst; zet daarom alle aandelen erop."""
+        pg.evaluate("""(function(){var d=JSON.parse(localStorage.getItem('aandeelsignaal.v1')||'{}');
+          d.volglijst=window.AANDEEL_DATA.aandelen.map(function(a){return {ticker:a.ticker};});d.introGezien=true;
+          localStorage.setItem('aandeelsignaal.v1',JSON.stringify(d));})()""")
+        pg.reload(); pg.wait_for_timeout(200)
+
     def test_dashboard_op_start_tabel_filter_en_spreiding(self):
         pg = self.pagina(320)
+        self._alles_op_volglijst(pg)
         txt = pg.inner_text('#dash')
         self.assertIn('Dashboard', txt)
         self.assertNotIn('0 / 22', txt)
@@ -132,7 +140,7 @@ class WebUi(unittest.TestCase):
             c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,
               get:function(){return v;},set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL')a.koers={slot:123.45,datum:'%s',
               sma50:118.2,sma200:131.9,hoog52:150.3,laag52:101.7,rsi14:62.34,reeks:[['2026-10-01',120.5],['2026-10-02',121.7],['2026-10-05',123.45]]};});v=d;}});
-              try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datum)
+              try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datum)
             pg = c.new_page()
             fouten = []
             pg.on('pageerror', lambda e: fouten.append(str(e)))
@@ -160,12 +168,13 @@ class WebUi(unittest.TestCase):
           get:function(){return v;},set:function(d){var t='%s';d.aandelen.forEach(function(a){
           if(a.ticker==='AAPL')a.koers={slot:90,datum:t,sma50:95,sma200:100,reeks:[['2026-10-01',90]]};
           if(a.ticker==='MSFT')a.koers={slot:110,datum:t,sma50:95,sma200:100,reeks:[['2026-10-01',110]]};});v=d;}});
-          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datetime.date.today().isoformat())
+          try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % datetime.date.today().isoformat())
         pg = c.new_page()
         fouten = []
         pg.on('pageerror', lambda e: fouten.append(str(e)))
         pg.goto(INDEX)
         pg.wait_for_timeout(200)
+        self._alles_op_volglijst(pg)
         pg.select_option('#d-trend', 'onder')
         rijen = pg.inner_text('#dash table.dash tbody')
         self.assertIn('Apple', rijen)
@@ -187,7 +196,7 @@ class WebUi(unittest.TestCase):
             if(a.ticker==='INGA.AS')a.indices=['AEX'];
             if(a.ticker==='MSFT')a.gegevens=null;
             if(a.ticker==='AAPL'||a.ticker==='MSFT'){a.koers={slot:70.5,datum:t,sma50:70,reeks:[['2026-10-01',70],['2026-10-02',70.5]],bereik:{hoog:165.7,laag:40,van:'2016-10-17',tot:'2026-10-16',jaren:10}};}});v=d;}});
-          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % datetime.date.today().isoformat())
+          try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % datetime.date.today().isoformat())
         pg = c.new_page()
         self.fouten = []
         pg.on('pageerror', lambda e: self.fouten.append(str(e)))
@@ -209,14 +218,23 @@ class WebUi(unittest.TestCase):
         self.assertIn('Apple', pg.inner_text('#res'))
         self.assertEqual(self.fouten, [])
 
-    def test_dashboard_filter_op_index(self):
-        pg = self._pagina_met_indexen('#/')
-        pg.select_option('#d-index', 'AEX')
-        rijen = pg.inner_text('#dash table.dash tbody')
-        self.assertIn('ASML', rijen)
-        self.assertIn('ING', rijen)
-        self.assertNotIn('SAP', rijen)
-        self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), 2)
+    def test_fondsen_per_index_en_op_kansrijkheid(self):
+        pg = self._pagina_met_indexen('#/fondsen')
+        groepen = pg.eval_on_selector_all('[data-groep]', 'els => els.map(e => e.getAttribute("data-groep"))')
+        self.assertEqual(groepen[:2], ['AEX', 'DAX'])
+        self.assertIn('VS', groepen)
+        self.assertIn('ASML', pg.inner_text('[data-groep="AEX"]'))
+        pg.select_option('#f-weergave', 'lijst')
+        self.assertEqual(pg.locator('[data-groep]').count(), 0)
+        self.assertGreater(pg.locator('#res [data-fonds]').count(), 5)
+        pg.select_option('#f-sort', 'naam')
+        namen = pg.eval_on_selector_all('#res [data-fonds] b', 'els => els.map(e => e.textContent.toLowerCase())')
+        self.assertEqual(namen, sorted(namen))
+        self.assertEqual(pg.locator('[data-uitleg-oordeel]').count(), 1)
+        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('#dash table.dash').count(), 0)      # zonder volglijst geen lange tabel op Start
+        self.assertEqual(pg.locator('[data-naar-fondsen]').count(), 1)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
     def test_uit_jaarverslag_toont_cijfers_met_uitleg_maar_geen_label(self):
@@ -294,7 +312,7 @@ class WebUi(unittest.TestCase):
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'")
         pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 0)   # met minimum 5% is er een voorlopig oordeel
-        self.assertIn('voorlopig oordeel', pg.locator('[data-signaal]').inner_text())
+        self.assertIn('onderbouwd', pg.locator('[data-signaal]').inner_text())
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-kansrijk]').count(), 1)
@@ -348,6 +366,7 @@ class WebUi(unittest.TestCase):
 
     def test_dashboard_plek_in_bereik_zichtbaar_en_sorteerbaar(self):
         pg = self._pagina_met_indexen('#/', 320)
+        self._alles_op_volglijst(pg)
         pg.select_option('#d-sort', 'positiePct')
         t = pg.inner_text('#dash table.dash tbody')
         self.assertIn('Plek in bereik 24% · 3,1 : 1', t)
