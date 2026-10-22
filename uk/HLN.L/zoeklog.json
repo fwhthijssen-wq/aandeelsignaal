@@ -1,10 +1,491 @@
 {
- "aantal": 0,
+ "aantal": 43,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '549300PSB3WWEODCUP19', 'disclose_org', '']: 0 resultaten"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "549300PSB3WWEODCUP19",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 43
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2022-12-22T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4621992.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-13T12:58:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4611023.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-11T12:58:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4577135.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-10T07:00:10Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 Trading Statement",
+   "download_link": "NSM/RNS/4574414.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-31T12:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Expiration and Results of Exchange Offers",
+   "download_link": "NSM/RNS/4561113.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-13T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4543296.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-10T15:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4539207.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-10T15:45:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4539192.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-29T15:19:52Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Exchange Offers for Certain Series of Notes",
+   "download_link": "NSM/RNS/4527243.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-26T11:45:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4521903.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-20T06:00:13Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "2022 Half Year Results",
+   "download_link": "NSM/RNS/4514680.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-13T15:07:02Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Change to HY 2022 results date ",
+   "download_link": "NSM/RNS/4508560.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T11:00:06Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4494776.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-19T09:00:05Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/4481410.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-12T06:00:04Z",
+   "type": "Statement re Share Price Movement",
+   "type_code": "SPM",
+   "headline": "Statement re Zantac",
+   "download_link": "NSM/RNS/4473167.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-09T13:30:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company - Replacement",
+   "download_link": "NSM/RNS/4469792.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-04T11:00:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4464710.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T14:00:05Z",
+   "type": "Capital Reorganisation",
+   "type_code": "CAR",
+   "headline": "Reduction of Capital Becomes Effective",
+   "download_link": "NSM/RNS/4463430.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T11:33:15Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4463389.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-02T13:39:58Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4461942.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-01T12:39:24Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4460161.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-29T14:17:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4458480.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-28T17:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4456945.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-28T17:15:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4456936.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-27T06:00:14Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "H1 Trading Update - Six Months Ended 30 June 2022",
+   "download_link": "NSM/RNS/4453706.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-26T17:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4453605.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-26T16:40:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4453574.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-26T16:35:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4453560.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-22T10:15:05Z",
+   "type": "Change of Adviser",
+   "type_code": "APP",
+   "headline": "Appointment of Joint Corporate Brokers",
+   "download_link": "NSM/RNS/4449988.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-21T16:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4448915.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-21T15:41:00Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/4448881.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-21T15:36:12Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/4448876.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-20T16:45:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4447328.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-20T16:45:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4447341.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-20T16:45:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4447346.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-19T10:30:06Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4445113.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T17:01:15Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4444128.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T17:00:05Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4444124.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T15:41:01Z",
+   "type": "Second price Monitoring Extension",
+   "type_code": "APM",
+   "headline": "Second Price Monitoring Extn",
+   "download_link": "NSM/RNS/4444013.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T15:35:30Z",
+   "type": "Price Monitoring Extension",
+   "type_code": "PME",
+   "headline": "Price Monitoring Extension",
+   "download_link": "NSM/RNS/4443996.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T11:55:16Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4443775.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T06:00:05Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "Completion of Demerger and Admission of Shares",
+   "download_link": "NSM/RNS/4442564.html",
+   "company": "Haleon PLC",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-01T10:00:37.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Haleon plc - Single prospectus",
+   "download_link": "NSM/Portal/NI-000052615/NI-000052615.pdf",
+   "company": "Haleon plc",
+   "lei": "549300PSB3WWEODCUP19",
+   "source": "FCA"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2022-12-22T16:00:01Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300PSB3WWEODCUP19",
+   "classifications": "Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4621992.html",
+   "disclosure_id": "4621992",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2022-12-22T16:00:01Z",
+   "seq_id": "4621992",
+   "company": "Haleon PLC",
+   "last_updated_date": "2026-08-22T12:43:12.036156373Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2022-12-13T12:58:21Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "549300PSB3WWEODCUP19",
+   "classifications": "Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4611023.html",
+   "disclosure_id": "4611023",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2022-12-13T12:58:21Z",
+   "seq_id": "4611023",
+   "company": "Haleon PLC",
+   "last_updated_date": "2026-08-22T12:42:49.346414700Z",
+   "headline": "Director/PDMR Shareholding",
+   "type_code": "DSH"
+  }
+ ]
 }

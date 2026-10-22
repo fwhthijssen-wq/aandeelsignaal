@@ -1,10 +1,171 @@
 {
- "aantal": 0,
+ "aantal": 11,
  "zoekvraag": {
-  "fouten": [
-   "nsm-search ['', '21380057TNFLXPXBIP34', 'disclose_org', '']: 0 resultaten"
-  ]
+  "index": "nsm-search",
+  "orgs": [
+   "",
+   "21380057TNFLXPXBIP34",
+   "disclose_org",
+   ""
+  ],
+  "totaal": 11
  },
- "meldingen": [],
- "voorbeeld": []
+ "meldingen": [
+  {
+   "publication_date": "2022-12-30T12:00:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Exercise of share options by director",
+   "download_link": "NSM/RNS/4629066.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-23T07:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director / PDMR Shareholdings",
+   "download_link": "NSM/RNS/4622084.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T07:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Q3 2022 Financial Results",
+   "download_link": "NSM/RNS/4595325.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-18T12:30:03Z",
+   "type": "Response to",
+   "type_code": "RSP",
+   "headline": "Proposed Revisions to the Energy Profits Levy",
+   "download_link": "NSM/RNS/4584757.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-14T08:05:53Z",
+   "type": "Initial admission to the Official List",
+   "type_code": "LIS",
+   "headline": "Admission to Trading on the London Stock Exchange ",
+   "download_link": "NSM/RNS/4577564.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-09T14:00:00Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Announcement of Publication of Prospectus",
+   "download_link": "NSM/RNS/4574031.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-09T12:23:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "IPO Prospectus",
+   "download_link": "NSM/Portal/NI-000063141/NI-000063141.pdf",
+   "company": "Ithaca Energy Limited",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2022-11-09T11:49:55.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Ithaca Energy plc - Single prospectus",
+   "download_link": "NSM/Portal/NI-000063287/NI-000063287.pdf",
+   "company": "Ithaca Energy plc",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-11-09T07:00:08Z",
+   "type": "Statement re",
+   "type_code": "STR",
+   "headline": "Announcement of Offer Price",
+   "download_link": "NSM/RNS/4573374.html",
+   "company": "Ithaca Energy PLC",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-18T13:54:00.000Z",
+   "type": "Registration Document",
+   "type_code": "FCA14",
+   "headline": "Registration Document",
+   "download_link": "NSM/Portal/NI-000061837/NI-000061837.pdf",
+   "company": "Ithaca Energy Limited",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-10-18T11:01:35.000Z",
+   "type": "Registration Document",
+   "type_code": "FCA14",
+   "headline": "Ithaca Energy Limited - Registration document",
+   "download_link": "NSM/Portal/NI-000061967/NI-000061967.pdf",
+   "company": "Ithaca Energy Limited",
+   "lei": "21380057TNFLXPXBIP34",
+   "source": "FCA"
+  }
+ ],
+ "voorbeeld": [
+  {
+   "submitted_date": "2022-12-30T12:00:40Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "21380057TNFLXPXBIP34",
+   "classifications": "Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4629066.html",
+   "disclosure_id": "4629066",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2022-12-30T12:00:40Z",
+   "seq_id": "4629066",
+   "company": "Ithaca Energy PLC",
+   "last_updated_date": "2026-08-22T12:43:31.786040396Z",
+   "headline": "Exercise of share options by director",
+   "type_code": "DSH"
+  },
+  {
+   "submitted_date": "2022-12-23T07:00:04Z",
+   "tag_esef": "",
+   "classifications_code": "3.1",
+   "source": "RNS",
+   "type": "Director/PDMR Shareholding",
+   "lei_remediation_flag": "N",
+   "document_format": "Plain text",
+   "category_group": "Holdings",
+   "lei": "21380057TNFLXPXBIP34",
+   "classifications": "Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4622084.html",
+   "disclosure_id": "4622084",
+   "latest_flag": "Y",
+   "hist_seq": "1",
+   "publication_date": "2022-12-23T07:00:04Z",
+   "seq_id": "4622084",
+   "company": "Ithaca Energy PLC",
+   "last_updated_date": "2026-08-22T12:43:12.036645104Z",
+   "headline": "Director / PDMR Shareholdings",
+   "type_code": "DSH"
+  }
+ ]
 }

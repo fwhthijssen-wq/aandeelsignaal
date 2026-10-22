@@ -1,5 +1,5 @@
 {
- "aantal": 153,
+ "aantal": 363,
  "zoekvraag": {
   "index": "nsm-search",
   "orgs": [
@@ -8,1586 +8,3684 @@
    "disclose_org",
    ""
   ],
-  "totaal": 153
+  "totaal": 363
  },
  "meldingen": [
   {
-   "publication_date": "2020-12-21T16:20:00.000Z",
+   "publication_date": "2022-12-29T18:01:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4627864.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-29T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4626611.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-28T11:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4624900.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-28T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4624877.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-23T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4622236.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-22T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4620743.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-20T17:48:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4619175.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-20T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4617679.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-19T07:00:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4616061.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-15T18:17:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4614468.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-15T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4612940.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-14T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4611402.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-13T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4609827.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-09T18:33:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4608194.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-09T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4606713.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-08T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4605127.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-07T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4603565.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-05T18:00:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4601993.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-05T17:21:53Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4601945.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-02T17:56:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4600398.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-02T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4598813.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-01T10:17:09Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4597851.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T18:25:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4596974.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T15:51:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4596685.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-29T18:32:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4595272.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-29T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Continuation of Share Buyback Programme ",
+   "download_link": "NSM/RNS/4593661.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-15T12:55:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4580208.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-11T17:43:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4577440.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-10T17:58:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4575899.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-10T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4575579.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-09T17:57:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4574295.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-08T17:53:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4572745.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-07T17:50:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4571225.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-04T17:51:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4569731.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-03T18:01:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4568184.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-02T17:34:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4566642.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-01T17:49:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4565174.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-01T10:44:12Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4564432.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-31T17:28:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4563366.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-31T11:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4562758.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-31T10:21:15Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/4562690.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-28T17:15:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4560938.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-27T16:27:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4559375.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-26T16:37:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4557754.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-25T16:30:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4556203.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-24T16:37:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4554695.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-21T17:00:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4553140.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-20T16:37:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4551603.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-19T16:41:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4550021.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-19T14:30:02Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4549855.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-19T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4549624.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-18T16:32:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4548521.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-18T14:34:33Z",
    "type": "Publication of a Prospectus",
    "type_code": "PDI",
    "headline": "Publication of Base Prospectus",
-   "download_link": "NSM/Portal/NI-000016576.pdf",
-   "company": "Tesco Corporate Treasury Services PLC;TESCO PLC",
-   "lei": "21380018AJDKNF3A6712;2138002P5RNKC5W2JZ46",
+   "download_link": "NSM/RNS/4548383.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-18T14:34:00.000Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Tesco PLC - Publication of Base Prospectus",
+   "download_link": "NSM/Portal/NI-000061838/NI-000061838.pdf",
+   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC",
+   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712",
    "source": "Direct Upload"
   },
   {
-   "publication_date": "2020-12-21T10:10:20.000Z",
+   "publication_date": "2022-10-18T09:34:03.000Z",
    "type": "Base Prospectus",
    "type_code": "FCA01",
-   "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC - Base prospectus (debt)",
-   "download_link": "NSM/Portal/NI-000016713.pdf",
-   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC",
-   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712",
+   "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000061970/NI-000061970.pdf",
+   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC",
+   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712;213800ESTST91B3U3P50",
    "source": "FCA"
   },
   {
-   "publication_date": "2020-06-26T12:30:00.000Z",
+   "publication_date": "2022-10-17T16:35:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4546984.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-13T16:51:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4543933.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-12T16:30:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4542388.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-11T16:33:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4540796.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-11T06:00:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Continuation of Share Buyback Programme",
+   "download_link": "NSM/RNS/4539382.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-10T10:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4538633.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-05T16:26:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4534718.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-05T06:00:05Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2022/23",
+   "download_link": "NSM/RNS/4533221.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-03T10:15:00Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4530872.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-03T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4530535.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-03T10:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/4530537.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-30T13:51:08Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4529345.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-21T06:00:07Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/4511967.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-05T16:29:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4498658.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-05T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4498373.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-02T16:52:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4497107.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T16:54:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4495525.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T12:00:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4495109.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-31T16:51:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4493673.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-30T16:45:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4491905.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-26T16:57:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4489765.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-26T11:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4489354.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-25T16:30:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4488190.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-24T17:11:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4486705.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-23T16:26:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4485113.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-22T16:20:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4483619.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-15T16:28:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4476155.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-12T16:33:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4474577.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-09T16:49:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4470012.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-08T14:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4468249.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-05T16:38:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4466892.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T16:21:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4463702.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-01T14:09:55Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4460299.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-28T16:25:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4456899.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-27T16:44:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4455200.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-26T16:50:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4453601.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-25T16:22:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4452047.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-22T16:59:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4450494.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-22T06:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4449008.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-20T16:51:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4447384.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-19T16:09:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4445638.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T16:42:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4444110.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-15T16:09:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4442415.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-15T09:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4441605.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-14T16:17:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4440915.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-13T16:47:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4439357.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-12T16:35:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4437710.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-12T06:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4436181.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-11T11:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4435322.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-08T16:17:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4434437.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-07T16:30:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4432902.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-06T17:01:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4431267.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-05T16:29:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4429566.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T16:49:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4428062.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T15:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4427862.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T06:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Commencement of Share Buyback Programme",
+   "download_link": "NSM/RNS/4426354.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-01T13:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/RNS/4425984.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-01T09:00:05Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4425244.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-29T14:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4422154.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-27T17:03:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4418984.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-23T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4415205.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-21T13:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4411511.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-17T15:49:25Z",
    "type": "Result of AGM",
    "type_code": "RAG",
-   "headline": "Tesco PLC Result of AGM",
-   "download_link": "NSM/Portal/NI-000006680.pdf",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/4408990.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-17T15:00:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Tesco PLC AGM Resolutions 2022",
+   "download_link": "NSM/Portal/NI-000053684/NI-000053684.docx",
    "company": "TESCO PLC",
    "lei": "2138002P5RNKC5W2JZ46",
    "source": "Direct Upload"
   },
   {
-   "publication_date": "2020-05-14T14:35:00.000Z",
-   "type": "Result of Meeting",
-   "type_code": "ROM",
-   "headline": "Tesco PLC ordinary resolution passed at General Meeting",
-   "download_link": "NSM/Portal/NI-000003870.pdf",
-   "company": "TESCO PLC",
+   "publication_date": "2022-06-17T06:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Tesco PLC Q1 22/23 Trading Statement ",
+   "download_link": "NSM/RNS/4407495.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-05-13T06:30:00.000Z",
-   "type": "Proxy Form",
-   "type_code": "PRX",
-   "headline": "Tesco PLC Proxy Form 2020",
-   "download_link": "NSM/Portal/NI-000003669.pdf",
-   "company": "TESCO PLC",
+   "publication_date": "2022-06-13T17:30:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4402501.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-05-13T06:27:00.000Z",
-   "type": "Notice of AGM",
-   "type_code": "NOA",
-   "headline": "Tesco PLC Notice of Annual General Meeting 2020",
-   "download_link": "NSM/Portal/NI-000003668.pdf",
-   "company": "TESCO PLC",
+   "publication_date": "2022-06-13T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4402219.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-05-13T06:14:00.000Z",
-   "type": "Annual Financial Report",
-   "type_code": "ACS",
-   "headline": "Tesco PLC Annual Report 2020",
-   "download_link": "NSM/Portal/NI-000003666.pdf",
-   "company": "TESCO PLC",
+   "publication_date": "2022-06-10T17:23:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4400792.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-04-23T14:56",
-   "type": "Final Terms",
-   "type_code": "PFT",
-   "headline": "Final Terms",
-   "download_link": "NSM/Portal/NI-000001583.pdf",
-   "company": "Tesco Corporate Treasury Services PLC;TESCO PLC",
-   "lei": "21380018AJDKNF3A6712;2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
-  },
-  {
-   "publication_date": "2020-04-22T12:00",
-   "type": "Proxy Form",
-   "type_code": "PRX",
-   "headline": "Proxy Form",
-   "download_link": "NSM/Portal/NI-000001399.pdf",
-   "company": "TESCO PLC",
+   "publication_date": "2022-06-09T17:28:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4399267.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-04-22T12:00",
+   "publication_date": "2022-06-08T17:19:38Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4397628.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-07T17:45:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4396000.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-06T17:19:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4394361.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-06T06:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4391858.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-01T09:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4390828.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-31T17:28:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4390046.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-30T17:25:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4388408.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-30T06:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4386891.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-26T17:24:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4385299.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-25T17:17:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4383695.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-25T14:30:00.000Z",
    "type": "Publication of a Prospectus",
    "type_code": "PDI",
-   "headline": "Publication of Circular and Notice of GM",
-   "download_link": "NSM/Portal/NI-000001403.pdf",
-   "company": "TESCO PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "Direct Upload"
-  },
-  {
-   "publication_date": "2020-04-20T09:15",
-   "type": "Publication of a Supplementary Prospectus",
-   "type_code": "PSP",
-   "headline": "Prospectus Supplement",
-   "download_link": "NSM/Portal/NI-000001127.pdf",
+   "headline": "Supplement to the Offering Circular",
+   "download_link": "NSM/Portal/NI-000051795/NI-000051795.pdf",
    "company": "Tesco Corporate Treasury Services PLC;TESCO PLC",
    "lei": "21380018AJDKNF3A6712;2138002P5RNKC5W2JZ46",
    "source": "Direct Upload"
   },
   {
-   "publication_date": "2020-04-20T08:15",
+   "publication_date": "2022-05-25T14:28:42Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplement to the Offering Circular",
+   "download_link": "NSM/RNS/4383469.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-25T10:16:21.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC - Supplementary Prospectus",
+   "download_link": "NSM/Portal/NI-000052017/NI-000052017.pdf",
+   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC",
+   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712;213800ESTST91B3U3P50",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2022-05-24T17:18:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4382082.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-23T17:16:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4380429.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-20T17:26:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4378722.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-20T06:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4377139.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-18T17:19:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4375498.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-18T11:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4374950.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-17T17:16:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4373804.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-16T17:13:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4372161.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-16T13:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4371762.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-16T10:30:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4371548.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-13T17:15:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4370518.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-13T06:00:01Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/4368728.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-13T06:00:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Tesco PLC - Proxy Form 2022",
+   "download_link": "NSM/Portal/NI-000050827/NI-000050827.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-05-13T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Tesco PLC - Annual Report and Financial Statements 2021/22-T01",
+   "download_link": "NSM/Portal/NI-000050821/NI-000050821_2138002P5RNKC5W2JZ46-2022-02-26.zip",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-05-13T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Tesco PLC - Annual Report and Financial Statements 2021/22",
+   "download_link": "NSM/Portal/NI-000050823/NI-000050823.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-05-13T06:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Tesco PLC - Notice of Annual General Meeting 2022",
+   "download_link": "NSM/Portal/NI-000050826/NI-000050826.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-05-12T17:00:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4368896.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-11T17:01:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4367099.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-10T17:05:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4365441.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-09T16:57:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4363821.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-09T16:04:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4363735.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-06T17:15:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4362188.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-06T13:30:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4361928.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-06T06:42:40Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/4361222.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-05T17:12:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4360631.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-04T17:03:16Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4358966.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-03T17:00:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4357202.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-03T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4356798.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-29T17:22:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4354890.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-29T13:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4353999.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-28T17:10:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4353103.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-28T06:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4351402.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-26T17:15:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4349706.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-26T14:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4349349.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-26T06:00:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Commencement of Share Buyback Programme",
+   "download_link": "NSM/RNS/4348017.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-20T14:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4343228.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-14T14:30:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4339582.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-13T06:00:11Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results 2021/22",
+   "download_link": "NSM/RNS/4337214.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-01T13:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4325375.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-01T10:00:05Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/4324622.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-21T14:00:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4309926.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-07T18:27:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4294646.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-04T17:42:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4292965.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-03T17:36:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4291359.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-02T17:41:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4289781.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-01T15:30:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4287792.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-28T17:45:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4286322.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-25T17:49:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4284623.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-24T17:47:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4283101.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-23T17:54:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4281584.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-22T17:42:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4280135.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-21T17:57:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4278738.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-21T15:30:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4278568.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-18T17:59:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4277271.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-14T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4270355.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-11T08:24:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Tesco confirms De-Listing from Euronext Dublin",
+   "download_link": "NSM/RNS/4269567.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-10T17:49:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4268895.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-09T17:45:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4267487.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-08T17:45:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4266104.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-07T17:36:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4264764.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-04T18:24:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4263364.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-03T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4260623.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-02T08:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4258693.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-01T15:30:07Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4258961.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-26T18:06:57Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4252963.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-25T17:39:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4251507.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-25T09:55:47Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Changes to Board Composition",
+   "download_link": "NSM/RNS/4250864.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-24T17:32:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4249750.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-24T14:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4249453.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-21T17:46:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4248250.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-21T07:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4246940.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-20T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4245505.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-19T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4244095.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-18T16:00:07Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4243920.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-18T07:00:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4242698.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-17T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4240807.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-14T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4239489.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-13T16:01:20Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "De-Listing of Ordinary Shares from Euronext Dublin",
+   "download_link": "NSM/RNS/4239320.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-13T07:00:05Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "Q3 and Christmas Trading Statement 2021/22",
+   "download_link": "NSM/RNS/4238119.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-13T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4238084.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-12T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4236644.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-11T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4235308.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-10T07:00:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4233739.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-06T17:45:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4232335.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-05T17:50:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4230997.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-04T15:30:04Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4229293.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-29T17:57:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4225187.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-29T14:00:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4224960.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-29T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4223413.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-24T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4222262.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-23T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4220885.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-22T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4219517.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-21T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4218023.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-17T17:47:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4216356.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-17T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4215473.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-16T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4213462.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-15T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4211954.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-14T07:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4210441.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-13T07:00:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4208833.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-09T17:39:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4207266.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-07T18:01:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4204246.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-06T18:15:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4202754.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-03T17:51:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4201196.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-02T18:00:24Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4199761.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-02T14:45:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4199540.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-01T17:46:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4198202.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-01T14:35:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4197897.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-01T14:28:51Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4197889.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-30T18:10:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4196430.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-30T16:46:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4196295.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-30T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4194825.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-29T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4193273.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-26T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4191932.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-24T17:51:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4190470.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-23T18:19:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4188666.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-23T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4187208.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-19T17:57:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4184681.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-18T17:23:15Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4183203.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-17T17:41:17Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4181735.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-16T17:24:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4180253.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-15T18:05:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4178801.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-15T14:00:04Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4178485.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-15T10:54:49Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4178263.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-11T18:22:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4175879.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-11T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4174488.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-10T07:00:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4172950.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-08T18:35:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4171500.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-08T07:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4168977.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-05T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4167600.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-03T18:08:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4166096.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-03T07:00:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4164620.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-02T17:36:12Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4164586.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-02T07:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4163221.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-01T17:00:03Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4163025.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-01T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4162152.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-29T16:39:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4161320.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-29T14:19:56Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/4161122.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-28T17:17:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4159776.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-28T11:03:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4159359.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-26T17:07:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4156793.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-25T16:40:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4155252.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-22T16:58:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4153499.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-21T16:59:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4152097.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-21T06:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4150704.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-19T16:38:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4149169.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-19T06:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4147817.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-18T06:00:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Commencement of Share Buyback Programme",
+   "download_link": "NSM/RNS/4146188.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-12T14:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4141302.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-11T14:06:14Z",
+   "type": "Publication of a Prospectus",
+   "type_code": "PDI",
+   "headline": "Publication of Base Prospectus",
+   "download_link": "NSM/RNS/4140323.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-11T09:44:57.000Z",
+   "type": "Base Prospectus",
+   "type_code": "FCA01",
+   "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC - Base prospectus (debt)",
+   "download_link": "NSM/Portal/NI-000034842/NI-000034842.pdf",
+   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC;Tesco Corporate Treasury Services Europe DAC",
+   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712;213800ESTST91B3U3P50",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2021-10-06T06:00:08Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Interim Results 2021/22",
+   "download_link": "NSM/RNS/4134590.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-05T10:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4133766.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-01T10:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/4129424.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-29T13:34:54Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4127542.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-20T08:07:11Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/4115161.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-06T14:41:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4101131.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-06T10:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4100728.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-16T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4079898.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-09T14:30:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4072877.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-30T10:00:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4063089.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-29T15:35:28Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4062052.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-29T09:40:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4061435.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-19T10:16:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4049097.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-12T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4041841.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-09T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4040568.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-06T15:51:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4035927.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-05T09:00:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/4033902.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-01T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4028718.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-28T14:57:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Tesco PLC Articles of Association",
+   "download_link": "NSM/Portal/NI-000028723/NI-000028723.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-06-28T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4023460.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-25T11:06:00.000Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Tesco PLC AGM Resolutions 2021",
+   "download_link": "NSM/Portal/NI-000028607/NI-000028607.docx",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-06-25T10:00:01Z",
+   "type": "Result of AGM",
+   "type_code": "RAG",
+   "headline": "Result of AGM",
+   "download_link": "NSM/RNS/4021901.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-22T15:01:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4017830.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-21T10:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4015683.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-18T06:00:04Z",
+   "type": "Trading Statement",
+   "type_code": "TST",
+   "headline": "1st Quarter Results ",
+   "download_link": "NSM/RNS/4013461.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-14T11:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4008327.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-07T06:30:05Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Tesco and Carrefour agree not to extend alliance ",
+   "download_link": "NSM/RNS/3999808.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-26T11:05:27Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/3989447.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-25T15:17:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3988156.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-19T10:00:07Z",
+   "type": "Director Declaration",
+   "type_code": "RDN",
+   "headline": "Director Declaration",
+   "download_link": "NSM/RNS/3979775.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-18T06:16:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3978038.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-18T06:00:05Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/3977471.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-18T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Tesco PLC Annual Report and Financial Statements 2021",
+   "download_link": "NSM/Portal/NI-000025899/NI-000025899.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-05-18T06:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Tesco PLC Notice of Annual General Meeting 2021",
+   "download_link": "NSM/Portal/NI-000025901/NI-000025901.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-05-18T06:00:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Tesco PLC Proxy Form",
+   "download_link": "NSM/Portal/NI-000025900/NI-000025900.pdf",
+   "company": "TESCO PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-05-17T11:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3976792.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-14T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3975023.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-11T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3970462.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-05-06T10:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3966046.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-30T16:38:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3961382.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-23T09:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3951952.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-22T16:40:00.000Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Supplement to the Offering Circular",
+   "download_link": "NSM/Portal/NI-000024041/NI-000024041.pdf",
+   "company": "Tesco Corporate Treasury Services PLC;TESCO PLC",
+   "lei": "21380018AJDKNF3A6712;2138002P5RNKC5W2JZ46",
+   "source": "FCA"
+  },
+  {
+   "publication_date": "2021-04-22T16:39:04Z",
+   "type": "Publication of a Supplementary Prospectus",
+   "type_code": "PSP",
+   "headline": "Publication of Supplement to the Offering Circular",
+   "download_link": "NSM/RNS/3952018.html",
+   "company": "Tesco PLC",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-22T15:38:38.000Z",
    "type": "Publication of a Supplementary Prospectus",
    "type_code": "PSP",
    "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC - Supplementary Prospectus",
-   "download_link": "NSM/Portal/NI-000001344.pdf",
+   "download_link": "NSM/Portal/NI-000024175/NI-000024175.pdf",
    "company": "TESCO PLC;Tesco Corporate Treasury Services PLC",
    "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712",
-   "source": "FCA"
-  },
-  {
-   "publication_date": "2018-03-05T12:09:22Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2173554_43.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-03-05T09:41:29Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2173493_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-03-02T14:24:36Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco PLC",
-   "download_link": "NSM/data-migration/HUGIN2173296_63.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-03-02T10:52:14Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2173189_45.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-03-01T14:00:12Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2172881_63.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-03-01T10:29:57Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2172725_28.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-28T13:15:02Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2172322_46.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-28T09:25:21Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2172215_10.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-27T12:46:41Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171898_41.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-26T23:28:05Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171855_28.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-26T12:55:15Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171573_35.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-25T23:45:24Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171535_18.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-23T12:31:50Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171303_38.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-23T09:39:34Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2171240_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-22T08:37:15Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2170954_28.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-21T12:50:14Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2170607_16.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-21T10:16:54Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2170516_9.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-20T12:31:47Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2170272_33.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-20T10:23:55Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2170216_11.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-19T12:29:36Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169950_38.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-19T10:01:42Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169890_6.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-16T14:18:51Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169677_51.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-15T23:26:34Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169583_17.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-15T13:45:49Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169301_17.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-15T10:07:07Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2169189_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-14T13:06:16Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168857_42.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-14T09:24:09Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168715_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-13T14:20:52Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168483_45.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-13T09:30:28Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168349_22.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-12T17:14:26Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168221_53.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-11T23:44:29Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2168049_16.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-09T14:32:47Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2167778_43.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-09T10:01:23Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2167637_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-08T09:08:46Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2167276_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-07T14:39:44Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2166936_61.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-07T09:32:01Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2166793_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-06T13:10:19Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2166511_19.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-06T09:29:49Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2166399_27.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-05T08:31:51Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2165946_28.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-02T12:51:40Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2165745_36.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-02-01T10:33:31Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2165365_30.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-31T10:11:43Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2165019_31.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-30T09:23:58Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2164622_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-29T09:15:15Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2164315_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-26T10:00:40Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2163998_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-25T09:53:03Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2163713_8.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-24T10:04:25Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2163410_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-23T10:19:00Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2163090_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-22T07:58:02Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2162740_28.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-19T09:38:48Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2162476_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-18T10:00:26Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2162235_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-17T08:12:31Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2161906_4.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-16T10:04:08Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2161682_26.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-15T08:47:04Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2161358_26.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-12T08:54:34Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2161056_25.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-11T09:33:33Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2160835_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-09T08:58:51Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2160184_26.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-07T23:20:13Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2159907_11.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-05T09:57:11Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2159609_4.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-04T08:36:59Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2159380_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-03T10:01:59Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2159092_25.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2018-01-02T08:15:16Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2158842_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-29T09:05:26Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2158687_25.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-28T08:57:59Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2158562_25.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-27T10:02:14Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2158446_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-22T07:42:50Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2158135_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-21T08:59:40Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2157796_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-20T09:36:58Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2157399_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-19T08:35:41Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2157049_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-18T08:16:42Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2156717_21.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-15T08:39:23Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2156413_27.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-14T09:09:43Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2156138_27.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-13T08:37:11Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2155756_22.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-12T08:19:49Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2155463_6.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-11T09:42:40Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2155115_4.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-08T08:31:01Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2154851_21.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-07T08:22:14Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2154563_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-06T10:06:03Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2154322_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-05T08:16:15Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2153981_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-04T09:53:39Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2153703_8.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-04T09:50:26Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2153701_41.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-01T08:42:38Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2153354_6.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-12-01T08:35:35Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2153347_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-30T08:43:09Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2152968_30.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-29T09:34:35Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2152749_45.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-28T08:34:55Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2152401_44.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-28T08:27:21Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2152387_42.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-27T09:09:32Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2152040_41.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-24T09:06:33Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc (AMENDMENT to purchase on 22.11.2017)",
-   "download_link": "NSM/data-migration/HUGIN2151794_26.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-24T08:32:59Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2151788_7.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-23T08:28:36Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2151523_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-22T09:00:00Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2151304_4.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-22T08:57:17Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2151302_22.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-21T08:28:01Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2151041_23.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-21T08:23:42Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco pl",
-   "download_link": "NSM/data-migration/HUGIN2151040_2.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-20T12:29:04Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150845_28.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-20T08:22:01Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150738_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-20T07:50:05Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150728_4.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-17T12:44:15Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150520_12.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-17T08:27:57Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150457_3.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-16T12:57:02Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150303_28.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-16T08:33:46Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150240_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-16T08:31:01Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150239_22.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-15T12:39:37Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2150004_10.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-15T08:56:55Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149956_24.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-15T08:52:36Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149950_22.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-14T14:20:46Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149724_10.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-14T08:54:02Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149597_5.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-14T08:49:12Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149593_26.html",
-   "company": "Investec PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-13T13:00:38Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149294_28.html",
-   "company": "Man Group PLC",
-   "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-13T08:35:31Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149171_26.html",
-   "company": "Investec PLC",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-04-19T13:32:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3947594.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-13T08:27:56Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149161_24.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-19T11:00:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3947225.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-13T08:20:54Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - AMENDMENT - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2149157_5.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-16T13:05:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3946106.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-10T12:06:10Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148941_33.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-14T06:01:09Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/3941842.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-10T08:46:15Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148855_27.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-14T06:00:20Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results 2020/21 Part 2",
+   "download_link": "NSM/RNS/3942050.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-10T08:41:24Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148851_3.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-14T06:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Preliminary Results 2020/21 Part 1",
+   "download_link": "NSM/RNS/3942049.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-09T12:32:09Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148620_8.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-09T12:00:01Z",
+   "type": "Block listing Interim Review",
+   "type_code": "BLR",
+   "headline": "Block listing Interim Review",
+   "download_link": "NSM/RNS/3938482.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-09T10:09:39Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148555_4.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-22T17:04:11Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Designation of EU Home Member State",
+   "download_link": "NSM/RNS/3919246.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-09T09:24:10Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148522_27.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-22T11:30:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3918607.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-08T14:06:50Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148180_34.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-16T12:32:57Z",
+   "type": "Disposal",
+   "type_code": "DIS",
+   "headline": "TESCO COMPLETES SALE OF TESCO POLSKA",
+   "download_link": "NSM/RNS/3912784.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-08T08:10:21Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2148044_25.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-12T13:02:36Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "Tesco Polska ",
+   "download_link": "NSM/RNS/3909770.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-07T12:01:36Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147758_8.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-04T15:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3900645.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-07T09:18:30Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147691_5.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-03T16:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3899088.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-07T09:11:32Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147681_24.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-03-01T14:00:02Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3895716.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-06T12:14:00Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147380_11.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-25T12:00:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3892106.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-06T09:01:41Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc (Amendment)",
-   "download_link": "NSM/data-migration/HUGIN2147281_43.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-22T13:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3887429.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-06T08:56:16Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147277_4.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-15T08:01:12Z",
+   "type": "Further re",
+   "type_code": "FUR",
+   "headline": "Share Consolidation & total voting rights",
+   "download_link": "NSM/RNS/3879165.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-06T08:50:52Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147275_42.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-11T12:15:06Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Result of General Meeting ",
+   "download_link": "NSM/RNS/3876676.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-03T12:15:32Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147061_9.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-11T12:15:00.000Z",
+   "type": "Result of Meeting",
+   "type_code": "ROM",
+   "headline": "Results of General Meeting",
+   "download_link": "NSM/Portal/NI-000019187/NI-000019187.pdf",
+   "company": "TESCO PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-03T08:57:48Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco Plc",
-   "download_link": "NSM/data-migration/HUGIN2147010_2.html",
-   "company": "Investec PLC",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-02-09T16:00:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3873504.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-03T08:54:34Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2147007_25.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-02-01T13:00:01Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/3864140.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-02T14:00:37Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146852_64.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-28T17:09:49Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Non-US Tender final results",
+   "download_link": "NSM/RNS/3861079.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-02T09:10:14Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146738_24.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-28T11:34:17Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Non-US tender indicative results",
+   "download_link": "NSM/RNS/3860663.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-02T09:03:43Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146735_6.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-27T10:11:11Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "Result of US Tender Offer",
+   "download_link": "NSM/RNS/3858908.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-01T13:00:30Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146473_43.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-26T16:51:17Z",
+   "type": "Result of Tender Offer",
+   "type_code": "RTE",
+   "headline": "US Pricing Announcement",
+   "download_link": "NSM/RNS/3858015.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-11-01T09:06:27Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146384_10.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-26T07:00:04Z",
+   "type": "Additional Listing",
+   "type_code": "ALS",
+   "headline": "Additional Listing",
+   "download_link": "NSM/RNS/3856686.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-10-31T08:17:05Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2145939_6.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-25T16:47:13Z",
+   "type": "Final Terms",
+   "type_code": "PFT",
+   "headline": "Publication of Final Terms",
+   "download_link": "NSM/RNS/3856525.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-10-30T23:08:17Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2146000_32.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-25T12:00:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3856057.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-10-30T14:15:38Z",
-   "type": "Form 8.3",
-   "type_code": "RET",
-   "headline": "Man Group PLC : Form 8.3 - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2145714_37.html",
-   "company": "Man Group PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-25T07:25:00.000Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Tesco PLC - Interim Accounts 2020/21",
+   "download_link": "NSM/Portal/NI-000018145/NI-000018145.pdf",
+   "company": "TESCO PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-10-30T09:06:18Z",
-   "type": "Form 8.5 (EPT/RI)",
-   "type_code": "FER",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2145585_26.html",
-   "company": "Investec PLC",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-01-25T07:12:26Z",
+   "type": "Notice of GM",
+   "type_code": "NOG",
+   "headline": "Notice of General Meeting",
+   "download_link": "NSM/RNS/3855625.html",
+   "company": "Tesco PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
-  },
-  {
-   "publication_date": "2017-10-30T09:02:31Z",
-   "type": "Form 8.5 (EPT/NON-RI)",
-   "type_code": "FEO",
-   "headline": "Investec Bank plc : Form 8.5 (EPT/NON-RI) - Tesco plc",
-   "download_link": "NSM/data-migration/HUGIN2145579_25.html",
-   "company": "Investec PLC",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-01-25T07:00:00.000Z",
+   "type": "Circ re.",
+   "type_code": "CIR",
+   "headline": "Tesco PLC - Shareholder Circular (Special Dividend and Share Consolidation)",
+   "download_link": "NSM/Portal/NI-000018142/NI-000018142.pdf",
+   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC",
+   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-01-25T07:00:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Tesco PLC - Proxy Form",
+   "download_link": "NSM/Portal/NI-000018146/NI-000018146.pdf",
+   "company": "TESCO PLC",
    "lei": "2138002P5RNKC5W2JZ46",
-   "source": "GNW"
+   "source": "Direct Upload"
   }
  ],
  "voorbeeld": [
   {
-   "submitted_date": "2020-12-21T16:28:28.995Z",
+   "submitted_date": "2022-12-29T18:01:49Z",
    "tag_esef": "",
-   "document_date": "2020-12-21",
-   "classifications_code": "3.1",
-   "source": "Direct Upload",
-   "type": "Publication of a Prospectus",
+   "classifications_code": "2.4",
+   "source": "RNS",
+   "type": "Transaction in Own Shares",
    "lei_remediation_flag": "N",
-   "document_format": "PDF",
-   "category_group": "Prospectuses",
-   "lei": "21380018AJDKNF3A6712;2138002P5RNKC5W2JZ46",
-   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
-   "download_link": "NSM/Portal/NI-000016576.pdf",
-   "disclosure_id": "NI-000016576-0",
+   "document_format": "Plain text",
+   "category_group": "Corporate actions",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "classifications": "Acquisition or disposal of the issuer's own shares",
+   "download_link": "NSM/RNS/4627864.html",
+   "disclosure_id": "4627864",
    "latest_flag": "Y",
    "hist_seq": "1",
-   "publication_date": "2020-12-21T16:20:00.000Z",
-   "seq_id": "NI-000016576-0",
-   "company": "Tesco Corporate Treasury Services PLC;TESCO PLC",
-   "last_updated_date": "2026-08-22T12:09:25.724870773Z",
-   "headline": "Publication of Base Prospectus",
-   "type_code": "PDI"
+   "publication_date": "2022-12-29T18:01:49Z",
+   "seq_id": "4627864",
+   "company": "Tesco PLC",
+   "last_updated_date": "2026-08-22T12:43:31.782263410Z",
+   "headline": "Transaction in Own Shares",
+   "type_code": "POS"
   },
   {
-   "submitted_date": "2020-12-23T09:31:32.511Z",
+   "submitted_date": "2022-12-29T07:00:05Z",
    "tag_esef": "",
-   "document_date": "2020-12-21",
-   "classifications_code": "3.1",
-   "source": "FCA",
-   "type": "Base Prospectus",
+   "classifications_code": "2.4",
+   "source": "RNS",
+   "type": "Transaction in Own Shares",
    "lei_remediation_flag": "N",
-   "document_format": "PDF",
-   "category_group": "Prospectuses",
-   "lei": "2138002P5RNKC5W2JZ46;21380018AJDKNF3A6712",
-   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
-   "download_link": "NSM/Portal/NI-000016713.pdf",
-   "disclosure_id": "NI-000016713-0",
+   "document_format": "Plain text",
+   "category_group": "Corporate actions",
+   "lei": "2138002P5RNKC5W2JZ46",
+   "classifications": "Acquisition or disposal of the issuer's own shares",
+   "download_link": "NSM/RNS/4626611.html",
+   "disclosure_id": "4626611",
    "latest_flag": "Y",
    "hist_seq": "1",
-   "publication_date": "2020-12-21T10:10:20.000Z",
-   "seq_id": "NI-000016713-0",
-   "company": "TESCO PLC;Tesco Corporate Treasury Services PLC",
-   "last_updated_date": "2026-08-22T12:09:25.731365411Z",
-   "headline": "TESCO PLC;Tesco Corporate Treasury Services PLC - Base prospectus (debt)",
-   "type_code": "FCA01"
+   "publication_date": "2022-12-29T07:00:05Z",
+   "seq_id": "4626611",
+   "company": "Tesco PLC",
+   "last_updated_date": "2026-08-22T12:43:31.778045554Z",
+   "headline": "Transaction in Own Shares",
+   "type_code": "POS"
   }
  ]
 }

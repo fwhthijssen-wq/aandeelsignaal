@@ -1,5 +1,5 @@
 {
- "aantal": 7,
+ "aantal": 276,
  "zoekvraag": {
   "index": "nsm-search",
   "orgs": [
@@ -8,75 +8,2765 @@
    "disclose_org",
    ""
   ],
-  "totaal": 7
+  "totaal": 276
  },
  "meldingen": [
   {
-   "publication_date": "2020-08-20T06:00:00.000Z",
+   "publication_date": "2022-12-30T12:30:02Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOGG PLC announces settlement of legacy claim",
+   "download_link": "NSM/RNS/4629092.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-28T13:00:04Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "BOGG announces amendment to taxation model",
+   "download_link": "NSM/RNS/4626314.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-19T11:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOGG announces promotions within management team ",
+   "download_link": "NSM/RNS/4616985.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-16T15:29:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Cancellation of Treasury Shares",
+   "download_link": "NSM/RNS/4615861.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-16T14:17:11Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/4615802.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-12T16:53:55Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4609698.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-09T17:03:41Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4608113.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-09T15:15:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4608022.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-08T17:17:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4606620.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-07T17:27:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4605044.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-06T17:17:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4603461.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-06T14:54:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Replacement",
+   "download_link": "NSM/RNS/4603299.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-06T12:13:14Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4603141.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-05T16:59:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4601908.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-05T14:45:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4601674.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-02T17:21:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4600362.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-02T14:25:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4600185.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-01T17:11:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4598697.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-12-01T11:46:20Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4598149.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T17:06:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4596823.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T15:48:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4596684.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-30T15:27:22Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Cancellation of Treasury Shares",
+   "download_link": "NSM/RNS/4596591.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-29T17:11:03Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4595176.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-28T17:41:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4593713.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-28T17:03:26Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4593659.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-25T17:00:11Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4592172.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-25T15:58:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4592119.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-25T09:17:44Z",
+   "type": "Company Secretary Change",
+   "type_code": "COS",
+   "headline": "Company Secretary Change",
+   "download_link": "NSM/RNS/4591751.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-24T17:28:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4590901.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-23T17:45:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4589449.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-22T18:10:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4588049.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-21T17:14:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4586493.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-18T17:22:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4585026.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-17T17:31:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4583583.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-16T17:07:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4582099.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-15T17:09:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4580460.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-14T17:20:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4578934.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-11T17:27:00Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4577422.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-10T17:02:32Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4575820.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-10T07:00:04Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/RNS/4574303.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-03T17:42:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4568161.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-02T17:29:19Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4566631.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-01T17:26:39Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4565137.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-01T16:55:35Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4565086.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-11-01T16:48:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Cancellation of Treasury Shares ",
+   "download_link": "NSM/RNS/4565075.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-31T17:20:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4563348.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-28T16:20:50Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4560896.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-27T16:25:30Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4559374.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-26T16:10:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4557721.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-26T06:00:06Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4556061.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-25T15:57:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4556161.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-24T16:22:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4554669.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-21T16:11:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4553081.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-20T16:50:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4551614.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-19T17:06:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4550046.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-18T15:55:22Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4548467.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-17T16:30:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4546976.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-14T16:00:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4545352.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-13T16:12:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4543883.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-12T15:51:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4542323.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-11T16:45:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4540802.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-10T16:05:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4539256.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-07T15:59:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4537705.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-07T08:00:01Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "BOGG announces dividend currency conversion rate ",
+   "download_link": "NSM/RNS/4536894.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-06T16:37:12Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4536185.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-05T16:37:21Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4534735.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-04T16:15:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4533078.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-03T16:32:59Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4531580.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-10-03T15:29:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4531452.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-30T16:07:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4529584.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-30T15:21:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Cancellation of Treasury Shares ",
+   "download_link": "NSM/RNS/4529482.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-29T16:55:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4527754.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-28T16:31:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4525946.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-27T16:52:56Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4524357.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-26T16:59:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4522357.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-23T16:18:52Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4520501.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-23T14:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOG Named World's Best Consumer Digital Bank 2022",
+   "download_link": "NSM/RNS/4520363.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-22T16:53:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4519031.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-21T17:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4517472.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-21T06:00:02Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4515889.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-16T16:27:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4513603.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-15T16:37:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4512027.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-15T09:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOG & EBRD Sign US$ 20 M Eq. in GEL Loan Agreement",
+   "download_link": "NSM/RNS/4511221.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-15T06:00:09Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4510445.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-13T16:31:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4508711.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-12T16:29:10Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4507029.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-09T16:04:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4505322.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-09T15:00:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4505240.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-08T15:57:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4503681.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-07T16:16:34Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4502057.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-06T16:12:44Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4500305.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-05T16:51:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4498700.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-02T17:14:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4497136.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-02T15:56:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4497019.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-02T13:00:00Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOGG announces changes to management team ",
+   "download_link": "NSM/RNS/4496793.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T16:58:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4495528.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T14:56:59Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4495362.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-09-01T14:44:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Cancellation of Treasury Shares ",
+   "download_link": "NSM/RNS/4495350.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-31T17:18:01Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4493728.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-30T17:06:53Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4491925.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-26T16:21:47Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4489720.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-25T16:38:31Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4488214.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-24T16:29:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4486666.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-23T16:20:43Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4485108.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-22T17:16:29Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4483679.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-19T16:05:18Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4482051.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-18T16:54:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4480658.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-18T16:23:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4480619.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-18T11:56:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares - Correction",
+   "download_link": "NSM/RNS/4480376.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-17T16:20:20Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4479151.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-16T16:43:33Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4477648.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-16T06:00:10Z",
    "type": "Half-year Financial Report",
    "type_code": "IR",
-   "headline": "Half Year 2020 Report",
-   "download_link": "NSM/Portal/NI-000009816.pdf",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/4476269.html",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-05-18T15:23:00.000Z",
+   "publication_date": "2022-08-15T16:27:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4476150.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-12T16:08:23Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4474539.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-11T16:40:36Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4473092.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-10T16:47:25Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4471570.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-10T16:20:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Correction",
+   "download_link": "NSM/RNS/4471534.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-09T15:31:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4469899.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-09T06:00:06Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4468392.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-08T17:11:00Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4468527.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-08T16:53:45Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4468514.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-08T16:47:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Cancellation of Treasury Shares ",
+   "download_link": "NSM/RNS/4468504.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-05T16:29:28Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4466888.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-04T16:23:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4465330.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T17:33:21Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights - replacement announcement",
+   "download_link": "NSM/RNS/4463783.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T16:56:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4463744.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-03T16:45:34Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4463735.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-02T16:47:42Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4462136.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-01T16:50:39Z",
+   "type": "Total Voting Rights",
+   "type_code": "TVR",
+   "headline": "Total Voting Rights",
+   "download_link": "NSM/RNS/4460545.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-01T16:40:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4460529.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-08-01T16:16:18Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4460493.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-29T16:06:46Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4458623.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-28T16:14:27Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4456879.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-27T16:15:51Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4455156.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-26T16:20:08Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4453557.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-25T16:57:40Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4452089.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-25T11:24:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4451729.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-22T16:21:14Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4450451.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-21T16:28:05Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4448940.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-20T16:45:58Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4447378.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-19T16:33:13Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4445678.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T16:01:48Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4444034.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-18T15:46:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4444020.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-15T16:29:54Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4442444.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-14T16:32:07Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4440942.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-13T16:21:37Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4439329.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-12T17:12:35Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4437743.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-12T06:00:04Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "Transaction in Own Shares",
+   "download_link": "NSM/RNS/4436182.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-11T15:02:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4436002.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-05T14:00:05Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of Georgia announces Eurobonds repurchase",
+   "download_link": "NSM/RNS/4429320.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T11:12:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4427561.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T10:00:04Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of Georgia announces Eurobonds repurchase",
+   "download_link": "NSM/RNS/4427256.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-07-04T06:00:07Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "BOGG announces dividend currency conversion rate",
+   "download_link": "NSM/RNS/4426999.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-30T13:03:55Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4424024.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-30T10:30:06Z",
+   "type": "Transaction in Own Shares",
+   "type_code": "POS",
+   "headline": "BOGG announces commencement of share buybacks",
+   "download_link": "NSM/RNS/4423660.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-29T15:50:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4422335.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-29T09:19:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4421545.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-27T12:35:35Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4418591.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-20T15:09:00.000Z",
    "type": "Result of AGM",
    "type_code": "RAG",
-   "headline": "Resolutions Passed at AGM",
-   "download_link": "NSM/Portal/NI-000004088.docx",
+   "headline": "AGM Resolutions",
+   "download_link": "NSM/Portal/NI-000053777/NI-000053777.docx",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
    "source": "Direct Upload"
   },
   {
-   "publication_date": "2020-05-18T15:16:00.000Z",
+   "publication_date": "2022-06-20T13:12:14Z",
    "type": "Result of AGM",
    "type_code": "RAG",
    "headline": "Result of AGM",
-   "download_link": "NSM/Portal/NI-000004087.doc",
+   "download_link": "NSM/RNS/4410464.html",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-04-27T11:07",
+   "publication_date": "2022-06-20T08:16:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4409856.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-14T12:41:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4403746.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-09T14:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "BOGG announces appointments to management team",
+   "download_link": "NSM/RNS/4398974.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-06T16:02:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4394256.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-06-01T16:00:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4391724.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-31T09:00:06Z",
    "type": "Miscellaneous",
    "type_code": "MSCL",
-   "headline": "Disclosure of rights attached to equity shares",
-   "download_link": "NSM/Portal/NI-000001993.pdf",
+   "headline": "BOG signs a US$ 50 million AT1 facility agreement",
+   "download_link": "NSM/RNS/4389168.html",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-03-30T15:44:00.000Z",
-   "type": "Proxy Form",
-   "type_code": "PRX",
-   "headline": "Proxy Form",
-   "download_link": "NSM/Portal/NI-000004400.pdf",
+   "publication_date": "2022-05-30T15:27:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4388230.html",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
-   "source": "Direct Upload"
+   "source": "RNS"
   },
   {
-   "publication_date": "2020-03-30T15:40:00.000Z",
+   "publication_date": "2022-05-26T15:10:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4385131.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-24T09:56:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4381430.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-23T14:20:33Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4380107.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-19T15:13:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4376928.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-18T11:16:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4375031.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-17T11:33:23Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4373411.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-17T09:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOGG announces changes to management team",
+   "download_link": "NSM/RNS/4372900.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-13T15:31:25Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4370377.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-12T06:00:08Z",
    "type": "Notice of AGM",
    "type_code": "NOA",
    "headline": "Notice of AGM",
-   "download_link": "NSM/Portal/NI-000004395.pdf",
+   "download_link": "NSM/RNS/4367095.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-12T06:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Bank of Georgia Group PLC - Notice of AGM",
+   "download_link": "NSM/Portal/NI-000050724/NI-000050724.pdf",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
    "source": "Direct Upload"
   },
   {
-   "publication_date": "2020-03-17T12:35:00.000Z",
+   "publication_date": "2022-05-12T06:00:00.000Z",
+   "type": "Proxy Form",
+   "type_code": "PRX",
+   "headline": "Bank of Georgia Group PLC - Form of Proxy",
+   "download_link": "NSM/Portal/NI-000050726/NI-000050726.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-05-11T06:00:03Z",
+   "type": "1st Quarter Results",
+   "type_code": "QRF",
+   "headline": "1st Quarter Results",
+   "download_link": "NSM/RNS/4365515.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-05-04T06:00:05Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4357214.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-28T10:00:00.000Z",
    "type": "Annual Financial Report",
    "type_code": "ACS",
-   "headline": "2019 Annual Report",
-   "download_link": "NSM/Portal/NI-000005374.pdf",
+   "headline": "Annual Report 2021",
+   "download_link": "NSM/Portal/NI-000049335/NI-000049335.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-04-28T06:00:07Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Annual Financial Report",
+   "download_link": "NSM/RNS/4351385.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-04-28T06:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "Bank of Georgia Group PLC - Annual Report-T01",
+   "download_link": "NSM/Portal/NI-000049730/NI-000049730_213800XKDG12NQG8VC53-2021-12-31.zip",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2022-04-08T14:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of Georgia announces Eurobonds repurchase",
+   "download_link": "NSM/RNS/4333713.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-25T18:04:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4316729.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-23T17:47:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4313533.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-21T13:40:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4310073.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-16T17:38:51Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4305789.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-10T16:29:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4299382.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-10T15:00:01Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/4299300.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-10T10:41:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4298838.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-08T17:35:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4296269.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-02T13:43:08Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4289444.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-03-02T13:40:41Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4289441.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-25T16:43:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4284533.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-22T07:00:09Z",
+   "type": "Final Results",
+   "type_code": "FR",
+   "headline": "Final Results",
+   "download_link": "NSM/RNS/4279298.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-02-15T07:00:06Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4271701.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-28T16:24:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4255696.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-26T16:31:37Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4252852.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-24T17:24:45Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4249745.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-17T18:20:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4242656.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-17T16:24:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4242529.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-10T18:12:34Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4235224.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2022-01-04T10:27:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4228859.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-30T11:02:19Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4225967.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-21T15:11:48Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4219225.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-20T15:45:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4217812.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-16T16:35:43Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4214774.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-16T09:59:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4214305.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-14T16:53:05Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - correction",
+   "download_link": "NSM/RNS/4211783.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-14T16:15:55Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4211717.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-14T12:22:32Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4211524.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-14T09:22:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4211114.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-13T15:23:11Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4210117.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-10T15:32:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4208635.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-09T12:00:03Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOG signs $200mln long-term loan with ADB and JICA",
+   "download_link": "NSM/RNS/4206451.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-06T16:34:50Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4202615.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-06T12:27:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4202294.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-03T07:00:05Z",
+   "type": "Directorate change",
+   "type_code": "BOA",
+   "headline": "Directorate Change",
+   "download_link": "NSM/RNS/4199547.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-12-02T17:26:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4199730.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-30T07:00:02Z",
+   "type": "Contract",
+   "type_code": "CNT",
+   "headline": "BOG and DFC sign US$100mln long-term loan facility",
+   "download_link": "NSM/RNS/4194620.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-29T14:37:02Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4194541.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-29T14:34:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4194539.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-22T17:00:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4187098.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-22T13:22:30Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4186920.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-22T11:43:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4186754.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-11T07:00:02Z",
+   "type": "3rd Quarter Results",
+   "type_code": "QRT",
+   "headline": "3rd Quarter Results",
+   "download_link": "NSM/RNS/4174382.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-11-04T07:00:05Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4166034.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-22T06:00:03Z",
+   "type": "Dividend Declaration",
+   "type_code": "DIV",
+   "headline": "Dividend Currency Conversion Rate",
+   "download_link": "NSM/RNS/4152060.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-15T14:54:03Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4146182.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-15T12:28:19Z",
+   "type": "Holding(s) in Company",
+   "type_code": "HOL",
+   "headline": "Holding(s) in Company",
+   "download_link": "NSM/RNS/4146023.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-11T08:42:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4139813.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-10-04T12:54:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4132728.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-27T15:02:52Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4124487.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-21T09:15:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4116940.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-20T14:27:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4115865.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-20T14:23:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4115859.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-14T06:00:06Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "BOG named Best Consumer Digital Bank in Georgia",
+   "download_link": "NSM/RNS/4108553.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-13T06:00:07Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Dividend and capital distribution policy update",
+   "download_link": "NSM/RNS/4107178.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-08T14:19:06Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding - Correction",
+   "download_link": "NSM/RNS/4103939.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-08T09:09:42Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4103491.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-07T12:43:59Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4102434.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-03T06:00:07Z",
+   "type": "Agreement",
+   "type_code": "AGR",
+   "headline": "BOG signs c.GEL 90 mln loan agreement with EBRD",
+   "download_link": "NSM/RNS/4098959.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-09-02T09:17:54Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4097685.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-23T15:32:03Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4087454.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-17T06:00:04Z",
+   "type": "Half-year Financial Report",
+   "type_code": "IR",
+   "headline": "Half-year Report",
+   "download_link": "NSM/RNS/4080490.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-16T15:41:27Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4080364.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-16T15:40:29Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4080363.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-11T06:00:12Z",
+   "type": "Notice of Results",
+   "type_code": "NOR",
+   "headline": "Notice of Results",
+   "download_link": "NSM/RNS/4074370.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-09T14:31:39Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4072898.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-09T14:30:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4072896.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-02T15:13:20Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4065375.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-08-02T15:11:24Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4065373.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-26T15:25:44Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4057371.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-26T15:23:26Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4057370.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-19T11:03:57Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4049256.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-19T11:02:01Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4049252.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-13T08:54:47Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4042922.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-12T16:33:21Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4042184.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-08T14:05:30Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on minimum capital requirements-Correction ",
+   "download_link": "NSM/RNS/4038975.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-08T10:30:01Z",
+   "type": "Strategy/Company/ Operations Update",
+   "type_code": "UPD",
+   "headline": "Update on minimum capital requirements ",
+   "download_link": "NSM/RNS/4038641.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-05T16:10:38Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4034641.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-05T15:57:22Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4034616.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-07-02T08:00:01Z",
+   "type": "Miscellaneous",
+   "type_code": "MSCL",
+   "headline": "Bank of Georgia announces Eurobonds Repurchase",
+   "download_link": "NSM/RNS/4029649.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-28T15:01:16Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4024074.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-28T15:00:17Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4024071.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-21T15:32:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4016374.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-21T14:59:46Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4016352.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-14T14:38:13Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4008769.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-14T14:36:28Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4008767.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-07T10:52:40Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/4000825.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-04T15:56:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3999713.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-02T14:55:09Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding Amendment",
+   "download_link": "NSM/RNS/3996645.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-06-02T14:08:10Z",
+   "type": "Director/PDMR Shareholding",
+   "type_code": "DSH",
+   "headline": "Director/PDMR Shareholding",
+   "download_link": "NSM/RNS/3996575.html",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "RNS"
+  },
+  {
+   "publication_date": "2021-04-16T06:00:00.000Z",
+   "type": "Notice of AGM",
+   "type_code": "NOA",
+   "headline": "Notice of AGM",
+   "download_link": "NSM/Portal/NI-000023579/NI-000023579.pdf",
+   "company": "Bank of Georgia Group PLC",
+   "lei": "213800XKDG12NQG8VC53",
+   "source": "Direct Upload"
+  },
+  {
+   "publication_date": "2021-03-31T05:00:00.000Z",
+   "type": "Annual Financial Report",
+   "type_code": "ACS",
+   "headline": "2020 Annual Report",
+   "download_link": "NSM/Portal/NI-000023032/NI-000023032.pdf",
    "company": "Bank of Georgia Group PLC",
    "lei": "213800XKDG12NQG8VC53",
    "source": "Direct Upload"
@@ -84,50 +2774,48 @@
  ],
  "voorbeeld": [
   {
-   "submitted_date": "2020-08-20T13:15:20.075Z",
+   "submitted_date": "2022-12-30T12:30:02Z",
    "tag_esef": "",
-   "document_date": "2020-06-30",
-   "classifications_code": "1.2",
-   "source": "Direct Upload",
-   "type": "Half-year Financial Report",
+   "classifications_code": "2.2;3.1",
+   "source": "RNS",
+   "type": "Miscellaneous",
    "lei_remediation_flag": "N",
-   "document_format": "PDF",
-   "category_group": "Financial Results",
+   "document_format": "Plain text",
+   "category_group": "Miscellaneous",
    "lei": "213800XKDG12NQG8VC53",
-   "classifications": "Half yearly financial reports and audit reports/limited",
-   "download_link": "NSM/Portal/NI-000009816.pdf",
-   "disclosure_id": "NI-000009816-0",
+   "classifications": "Inside information;Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4629092.html",
+   "disclosure_id": "4629092",
    "latest_flag": "Y",
    "hist_seq": "1",
-   "publication_date": "2020-08-20T06:00:00.000Z",
-   "seq_id": "NI-000009816-0",
+   "publication_date": "2022-12-30T12:30:02Z",
+   "seq_id": "4629092",
    "company": "Bank of Georgia Group PLC",
-   "last_updated_date": "2026-08-22T12:04:58.327610005Z",
-   "headline": "Half Year 2020 Report",
-   "type_code": "IR"
+   "last_updated_date": "2026-08-22T12:43:31.786188409Z",
+   "headline": "BOGG PLC announces settlement of legacy claim",
+   "type_code": "MSCL"
   },
   {
-   "submitted_date": "2020-05-18T15:24:07.269Z",
+   "submitted_date": "2022-12-28T13:00:04Z",
    "tag_esef": "",
-   "document_date": "2020-05-18",
    "classifications_code": "3.1",
-   "source": "Direct Upload",
-   "type": "Result of AGM",
+   "source": "RNS",
+   "type": "Strategy/Company/ Operations Update",
    "lei_remediation_flag": "N",
-   "document_format": "Other",
-   "category_group": "General Meetings",
+   "document_format": "Plain text",
+   "category_group": "Operational updates",
    "lei": "213800XKDG12NQG8VC53",
-   "classifications": "Additional regulated information required to be disclosed under the laws of a Member State",
-   "download_link": "NSM/Portal/NI-000004088.docx",
-   "disclosure_id": "NI-000004088-0",
+   "classifications": "Additional regulated information required to be disclosed under the laws of the United Kingdom",
+   "download_link": "NSM/RNS/4626314.html",
+   "disclosure_id": "4626314",
    "latest_flag": "Y",
    "hist_seq": "1",
-   "publication_date": "2020-05-18T15:23:00.000Z",
-   "seq_id": "NI-000004088-0",
+   "publication_date": "2022-12-28T13:00:04Z",
+   "seq_id": "4626314",
    "company": "Bank of Georgia Group PLC",
-   "last_updated_date": "2026-08-22T12:01:06.308717819Z",
-   "headline": "Resolutions Passed at AGM",
-   "type_code": "RAG"
+   "last_updated_date": "2026-08-22T12:43:31.777489761Z",
+   "headline": "BOGG announces amendment to taxation model",
+   "type_code": "UPD"
   }
  ]
 }
