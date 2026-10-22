@@ -15,18 +15,26 @@ j0, j1 = map(int, (sys.argv[sys.argv.index('--jaren') + 1] if '--jaren' in sys.a
 RIJ = re.compile(r'<tr class="jq_registers_register-paged-list_results_tr">\s*<td>\s*<a href="([^"]+)"[^>]*>\s*([^<]+?)\s*</a>\s*</td>\s*<td>\s*([^<]+?)\s*</td>\s*<td>\s*(\d{4})\s*</td>\s*<td>\s*([^<]+?)\s*</td>', re.S)
 for a in args:
     ticker, naam = [x.strip() for x in a.split('=', 1)]
+    namen = [n.strip() for n in naam.split('|') if n.strip()]     # oude en nieuwe statutaire naam: 'Naam A|Naam B'
     os.makedirs(os.path.join(uit, ticker), exist_ok=True)
-    rijen, p = [], 1
-    while p <= 20:
-        page = get(ZOEK.format(kw=urllib.parse.quote(naam), p=p))[0].decode('utf-8', 'ignore')
-        nieuw = [(html.unescape(h), d, html.unescape(b), int(j), html.unescape(s)) for h, d, b, j, s in RIJ.findall(page)]
-        if not nieuw: break
-        rijen += nieuw; p += 1
-    index = []
+    rijen = []
+    for zoek in namen:
+        p = 1
+        while p <= 20:
+            page = get(ZOEK.format(kw=urllib.parse.quote(zoek), p=p))[0].decode('utf-8', 'ignore')
+            nieuw = [(html.unescape(h), d, html.unescape(b), int(j), html.unescape(s)) for h, d, b, j, s in RIJ.findall(page)]
+            if not nieuw: break
+            rijen += nieuw; p += 1
+    print(ticker, 'namen in register:', sorted({r[2] for r in rijen})[:15])
+    pad_index = os.path.join(uit, ticker, 'index.json')
+    index = json.load(open(pad_index)) if os.path.exists(pad_index) else []
+    al = {x['detail'] for x in index}
     for href, datum, bedrijf, jaar, soort in rijen:
-        if bedrijf.lower() != naam.lower() or not (j0 <= jaar <= j1) or not soort.lower().startswith('jaarlijkse'):
+        if bedrijf.lower() not in [n.lower() for n in namen] or not (j0 <= jaar <= j1) or not soort.lower().startswith('jaarlijkse'):
             continue
         detail = BASE + href if href.startswith('/') else href
+        if detail in al: continue
+        al.add(detail)
         rid = re.search(r'id=([^&]+)', href).group(1)
         dpage = get(detail)[0].decode('utf-8', 'ignore')
         for n, l in enumerate(re.findall(r'href="([^"]*downloadregisterfile[^"]*)"', dpage)):
@@ -39,5 +47,5 @@ for a in args:
                           'grootte': len(data), 'detail': detail, 'download': l, 'bestandsnaam': cd})
             print('ok', ticker, jaar, datum, pad, len(data), cd)
         time.sleep(1)
-    json.dump(index, open(os.path.join(uit, ticker, 'index.json'), 'w'), indent=1, ensure_ascii=False)
+    json.dump(index, open(pad_index, 'w'), indent=1, ensure_ascii=False)
     print(ticker, len(rijen), 'meldingen gevonden,', len(index), 'bestanden')
