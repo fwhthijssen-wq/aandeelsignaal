@@ -28,6 +28,14 @@ class Bronnen(unittest.TestCase):
         cf, v = jb.aanvullen(getagd, 'TEST.AS', register(waarde=1300_000_000))
         self.assertEqual(len(v['afgewezen']), 1)
 
+    def test_afgerond_getagd_feit_is_geen_conflict(self):
+        getagd = {'facts': {'ifrs-full': {'AdjustedWeightedAverageShares': {'units': {'shares': [
+            {'start': '2017-01-02', 'end': '2017-12-31', 'val': 127_626_000, 'accn': 'X:jaarverslag-2017', 'form': '20-F', 'filed': '2018-02-27'}]}}}}}
+        cf, v = jb.aanvullen(getagd, 'TEST.AS', register(waarde=127_626_399))
+        self.assertEqual((v['afgewezen'], v['toegevoegd']), ([], 0))
+        cf, v = jb.aanvullen(getagd, 'TEST.AS', register(waarde=127_627_399))
+        self.assertEqual(len(v['afgewezen']), 1)
+
     def test_onbekend_bedrijf_ongewijzigd(self):
         cf = {'facts': {}}
         self.assertIs(jb.aanvullen(cf, 'ANDER.AS', register())[0], cf)

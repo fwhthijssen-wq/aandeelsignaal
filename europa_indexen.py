@@ -1,4 +1,4 @@
-"""Europese aandelen uit AEX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026).
+"""Europese aandelen uit AEX, AMX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026).
 
 De samenstelling van indices verandert; dit is een bewuste momentopname. Deze bedrijven krijgen koersen, trend en koersbereik.
 Jaarcijfers en een label komen er alleen bij als er een SEC-jaarverslag is dat de controle doorstaat (zie SEC_KOPPELING).
@@ -15,8 +15,18 @@ LIJST = [
     ('AKZA.AS', 'AkzoNobel', 'AEX'), ('MT.AS', 'ArcelorMittal', 'AEX,CAC40', 'Luxemburg'), ('ASM.AS', 'ASM International', 'AEX'),
     ('ASRNL.AS', 'ASR Nederland', 'AEX'), ('BESI.AS', 'BE Semiconductor', 'AEX'), ('DSFIR.AS', 'DSM-Firmenich', 'AEX', 'Zwitserland'),
     ('EXO.AS', 'Exor', 'AEX'), ('HEIA.AS', 'Heineken', 'AEX'), ('IMCD.AS', 'IMCD', 'AEX'), ('KPN.AS', 'KPN', 'AEX'),
-    ('NN.AS', 'NN Group', 'AEX'), ('PRX.AS', 'Prosus', 'AEX'), ('RAND.AS', 'Randstad', 'AEX'), ('REN.AS', 'RELX', 'AEX,FTSE', 'Verenigd Koninkrijk'),
+    ('NN.AS', 'NN Group', 'AEX'), ('PRX.AS', 'Prosus', 'AEX'), ('RAND.AS', 'Randstad', 'AMX'), ('REN.AS', 'RELX', 'AEX,FTSE', 'Verenigd Koninkrijk'),
     ('UMG.AS', 'Universal Music Group', 'AEX'), ('WKL.AS', 'Wolters Kluwer', 'AEX'),
+    ('CVC.AS', 'CVC Capital Partners', 'AEX', 'Jersey'), ('INPST.AS', 'InPost', 'AEX', 'Luxemburg'), ('SBMO.AS', 'SBM Offshore', 'AEX'),
+    ('AALB.AS', 'Aalberts', 'AEX'),
+    # AMX (Euronext, na de herziening van juni 2026; ongewijzigd in september 2026)
+    ('AF.PA', 'Air France-KLM', 'AMX'), ('ALLFG.AS', 'Allfunds', 'AMX', 'Verenigd Koninkrijk'), ('AMG.AS', 'AMG Critical Materials', 'AMX'),
+    ('ARCAD.AS', 'Arcadis', 'AMX'), ('BAMNB.AS', 'BAM Groep', 'AMX'), ('BFIT.AS', 'Basic-Fit', 'AMX'), ('CRBN.AS', 'Corbion', 'AMX'),
+    ('CTPNV.AS', 'CTP', 'AMX'), ('ECMPA.AS', 'Eurocommercial Properties', 'AMX'), ('FAGR.BR', 'Fagron', 'AMX'),
+    ('FLOW.AS', 'Flow Traders', 'AMX', 'Bermuda'), ('FUR.AS', 'Fugro', 'AMX'), ('GLPG.AS', 'Galapagos', 'AMX', 'België'),
+    ('HAL.AS', 'HAL Trust', 'AMX', 'Bermuda'), ('HAVAS.AS', 'Havas', 'AMX'), ('HEIJM.AS', 'Heijmans', 'AMX'), ('PHARM.AS', 'Pharming', 'AMX'),
+    ('LIGHT.AS', 'Signify', 'AMX'), ('TWEKA.AS', 'TKH Group', 'AMX'), ('VLK.AS', 'Van Lanschot Kempen', 'AMX'), ('VPK.AS', 'Vopak', 'AMX'),
+    ('THEON.AS', 'Theon International', 'AMX', 'Cyprus'), ('CSG.AS', 'CSG', 'AMX'),
     # CAC 40
     ('AC.PA', 'Accor', 'CAC40'), ('AI.PA', 'Air Liquide', 'CAC40'), ('AIR.PA', 'Airbus', 'CAC40,DAX', 'Nederland'), ('BNP.PA', 'BNP Paribas', 'CAC40'),
     ('CS.PA', 'AXA', 'CAC40'), ('EN.PA', 'Bouygues', 'CAC40'), ('BVI.PA', 'Bureau Veritas', 'CAC40'), ('CAP.PA', 'Capgemini', 'CAC40'),
@@ -59,10 +69,10 @@ LIJST = [
     ('SCYR.MC', 'Sacyr', 'IBEX'), ('SLR.MC', 'Solaria', 'IBEX'), ('TEF.MC', 'Telefónica', 'IBEX'), ('UNI.MC', 'Unicaja', 'IBEX'),
     # BEL 20
     ('ABI.BR', 'AB InBev', 'BEL20'), ('ACKB.BR', 'Ackermans & van Haaren', 'BEL20'), ('AED.BR', 'Aedifica', 'BEL20'), ('AGS.BR', 'Ageas', 'BEL20'),
-    ('ARGX.BR', 'argenx', 'BEL20'), ('APAM.AS', 'Aperam', 'BEL20', 'Luxemburg'), ('AZE.BR', 'Azelis', 'BEL20'), ('DIE.BR', "D'Ieteren", 'BEL20'),
+    ('ARGX.BR', 'argenx', 'BEL20'), ('APAM.AS', 'Aperam', 'BEL20,AMX', 'Luxemburg'), ('AZE.BR', 'Azelis', 'BEL20'), ('DIE.BR', "D'Ieteren", 'BEL20'),
     ('ELI.BR', 'Elia Group', 'BEL20'), ('GBLB.BR', 'GBL', 'BEL20'), ('KBC.BR', 'KBC', 'BEL20'), ('LOTB.BR', 'Lotus Bakeries', 'BEL20'),
     ('MELE.BR', 'Melexis', 'BEL20'), ('MONT.BR', 'Montea', 'BEL20'), ('SOF.BR', 'Sofina', 'BEL20'), ('SOLB.BR', 'Solvay', 'BEL20'),
-    ('SYENS.BR', 'Syensqo', 'BEL20'), ('UCB.BR', 'UCB', 'BEL20'), ('UMI.BR', 'Umicore', 'BEL20'), ('WDP.BR', 'WDP', 'BEL20'),
+    ('SYENS.BR', 'Syensqo', 'BEL20'), ('UCB.BR', 'UCB', 'BEL20'), ('UMI.BR', 'Umicore', 'BEL20'), ('WDP.BR', 'WDP', 'BEL20,AEX'),
     # FTSE 100 (zonder beleggingsfondsen en zonder bedrijven die hierboven al met hun hoofdnotering staan)
     ('III.L', '3i Group', 'FTSE'), ('ABDN.L', 'Aberdeen Group', 'FTSE'), ('ADM.L', 'Admiral Group', 'FTSE'), ('AAF.L', 'Airtel Africa', 'FTSE'),
     ('AAL.L', 'Anglo American', 'FTSE'), ('ANTO.L', 'Antofagasta', 'FTSE'), ('ABF.L', 'Associated British Foods', 'FTSE'), ('AUTO.L', 'Auto Trader', 'FTSE'),

@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.22-beta.57';
+  var APP_VERSIE = '2026.10.22-beta.58';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -213,7 +213,7 @@
       '<div><label for="zi">Index</label><select id="zi"><option value="">Alle aandelen</option>' + indexLijst().map(function (i) { return '<option value="' + h(i) + '">' + h(INDEX_NAAM[i] || i) + '</option>'; }).join('') + '</select></div>' +
       '<div class="lijst" id="res"></div><p class="zacht">U zoekt in de aandelen die de nachtelijke update bijhoudt (nu ' + DATA.aandelen.length + '). Aandelen zonder bevestigde jaarcijfers krijgen geen oordeel; bij de meeste Europese indexaandelen zijn alleen koersen beschikbaar.</p></section>';
   }
-  var INDEX_NAAM = { AEX: 'AEX (Amsterdam)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)' };
+  var INDEX_NAAM = { AEX: 'AEX (Amsterdam)', AMX: 'AMX (Amsterdam midcap)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)' };
   function indexLijst() { var o = {}; DATA.aandelen.forEach(function (a) { (a.indices || []).forEach(function (i) { o[i] = true; }); }); return Object.keys(o).sort(); }
   function zoekKoppel() {
     var q = document.getElementById('q'), res = document.getElementById('res'), zi = document.getElementById('zi'); if (!q) return;

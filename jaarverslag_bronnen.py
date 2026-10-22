@@ -21,6 +21,16 @@ def laad(pad=REGISTER):
         return {}
 
 
+
+def _zelfde(getagd, vastgelegd):
+    """Gelijk, of het getagde feit is hetzelfde getal afgerond (127.626.000 getagd, 127.626.399 in de tekst)."""
+    if abs(getagd - vastgelegd) <= 1e-9 * max(1, abs(vastgelegd)):
+        return True
+    for eenheid in (1_000_000, 1_000, 100, 10):
+        if getagd and getagd % eenheid == 0:
+            return abs(getagd - vastgelegd) <= eenheid / 2
+    return False
+
 def aanvullen(cf, ticker, register=None):
     """Kopie van `cf` met de vastgelegde feiten erbij, plus een verslag {'documenten', 'toegevoegd', 'afgewezen'}."""
     register = laad() if register is None else register
@@ -44,7 +54,7 @@ def aanvullen(cf, ticker, register=None):
             rijen = facts.setdefault(ns, {}).setdefault(naam, {'units': {}})['units'].setdefault(f['eenheid'], [])
             bestaand = [r for r in rijen if r.get('accn') == accn and r.get('end') == f['eind'] and r.get('start') == f.get('start')]
             if bestaand:
-                if any(abs(r.get('val', 0) - f['waarde']) > 1e-9 * max(1, abs(f['waarde'])) for r in bestaand):
+                if any(not _zelfde(r.get('val', 0), f['waarde']) for r in bestaand):
                     conflict = f'{f["concept"]} {f["eind"]}: vastgelegd {f["waarde"]} wijkt af van getagd {bestaand[0].get("val")}'
                     break
                 continue                                    # officieel getagd feit gaat voor

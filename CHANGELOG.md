@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026.10.22-beta.58
+- **AMX toegevoegd (Amsterdamse midcaps, 25 fondsen)** volgens de Euronext-herzieningen tot en met juni 2026 (september 2026: geen wijzigingen). Nieuw in de app o.a. Arcadis, BAM, Basic-Fit, Corbion, CTP, Flow Traders, Fugro, HAL, Heijmans, Pharming, Signify, TKH, Van Lanschot Kempen, Vopak, Allfunds, AMG, Air France-KLM, Fagron, Galapagos, Havas, Theon en CSG. Filter 'AMX (Amsterdam midcap)' in de keuzelijst.
+- **AEX bijgewerkt naar de huidige samenstelling:** CVC, InPost, WDP, SBM Offshore en Aalberts erbij; Randstad staat sinds maart 2026 in de AMX.
+- **Aantal aandelen uit de tekst van de ESEF-rapporten 2020-2025** voor de nieuwe fondsen (zelfde controle als bij de AEX, nu ook voor Nederlandstalige verslagen en tabellen waarin de winst in miljoenen staat; afgeronde aantallen zoals '27 miljoen' tellen automatisch niet mee). Met de hand aangevuld: Arcadis, BAM, Heijmans, TKH, Van Lanschot Kempen, Vopak, Aalberts, Basic-Fit.
+- Resultaat (bevestigde jaren): Vopak 7, Van Lanschot Kempen 7, Signify 7, AMG 6, Arcadis 6, Basic-Fit 6, Corbion 6, Flow Traders 6, Heijmans 6, Pharming 6, SBM Offshore 6, TKH 6, BAM 5, Aalberts 5, WDP 5, CTP 4. Tien jaar vraagt de jaarverslagen 2016-2019 uit het AFM-register (volgende stap).
+- Een getagd ESEF-feit dat hetzelfde getal is maar afgerond (127.626.000 tegenover 127.626.399 in de tekst) maakt een document niet meer ongeldig.
+- Nog geen jaarcijfers: Theon en CSG (geen ESEF-rapporten in de openbare database), InPost (rapporteert in zloty), Fugro en HAL (aangepaste aantallen door claimemissie/stockdividend).
+
 ## 2026.10.22-beta.57
 - **AEX, stap 2: jaarverslagen 2016-2019 uit het AFM-register.** De jaarlijkse financiële verslagen die beursfondsen bij de AFM deponeren, opgehaald via de nieuwe hulpworkflow 'AFM-jaarverslagen ophalen (ontwikkeling)' (één officiële bron, met de echte deponeringsdatum). Per jaar winst per aandeel, teller en verwaterd aantal aandelen met de hand gelezen en vastgelegd met AFM-kenmerk, pagina en tekst; elk jaar nagerekend.
 - **Nu volledig bevestigd (10 jaar): Heineken, NN, Wolters Kluwer, ASM, Randstad en ABN AMRO.** KPN 9 jaar (2018: KPN meldt 0,06 terwijl winst / aandelen 0,053 geeft). Volledig bevestigd van 41 naar 47; niets achteruit, geen bestaande EPS gewijzigd.
