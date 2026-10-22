@@ -1,32 +1,32 @@
 {
- "gemaakt": "2026-10-22T08:14:26+00:00",
+ "gemaakt": "2026-10-22T10:42:16+00:00",
  "yahoo_vergelijk": {
-  "bedrijven": 64,
+  "bedrijven": 66,
   "velden": {
    "sales": {
-    "vergeleken": 191,
-    "binnen_1pct": 172,
-    "binnen_5pct": 186
+    "vergeleken": 209,
+    "binnen_1pct": 187,
+    "binnen_5pct": 199
    },
    "net_income": {
-    "vergeleken": 236,
-    "binnen_1pct": 109,
-    "binnen_5pct": 150
+    "vergeleken": 238,
+    "binnen_1pct": 139,
+    "binnen_5pct": 183
    },
    "reported_eps": {
-    "vergeleken": 218,
-    "binnen_1pct": 181,
-    "binnen_5pct": 192
+    "vergeleken": 221,
+    "binnen_1pct": 191,
+    "binnen_5pct": 201
    },
    "operating_cash_flow": {
-    "vergeleken": 213,
-    "binnen_1pct": 200,
-    "binnen_5pct": 203
+    "vergeleken": 232,
+    "binnen_1pct": 229,
+    "binnen_5pct": 231
    },
    "equity": {
-    "vergeleken": 182,
-    "binnen_1pct": 181,
-    "binnen_5pct": 181
+    "vergeleken": 190,
+    "binnen_1pct": 186,
+    "binnen_5pct": 190
    }
   }
  },
@@ -2280,7 +2280,7 @@
       "met_accn": 32
      },
      "us-gaap:EarningsPerShareBasic [USD/shares]": {
-      "n": 128,
+      "n": 132,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2289,7 +2289,7 @@
        2013,
        2026
       ],
-      "met_accn": 128
+      "met_accn": 132
      },
      "us-gaap:EarningsPerShareBasicAndDiluted [USD/shares]": {
       "n": 39,
@@ -2304,7 +2304,7 @@
       "met_accn": 39
      },
      "us-gaap:EarningsPerShareDiluted [USD/shares]": {
-      "n": 128,
+      "n": 132,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2313,10 +2313,10 @@
        2013,
        2026
       ],
-      "met_accn": 128
+      "met_accn": 132
      },
      "us-gaap:NetIncomeLoss [USD]": {
-      "n": 290,
+      "n": 294,
       "indieningen": [
        "10-K",
        "10-K/A",
@@ -2327,10 +2327,10 @@
        2011,
        2026
       ],
-      "met_accn": 290
+      "met_accn": 294
      },
      "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest [USD]": {
-      "n": 118,
+      "n": 122,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2339,10 +2339,10 @@
        2016,
        2026
       ],
-      "met_accn": 118
+      "met_accn": 122
      },
      "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic [USD]": {
-      "n": 100,
+      "n": 104,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2351,10 +2351,10 @@
        2013,
        2026
       ],
-      "met_accn": 100
+      "met_accn": 104
      },
      "us-gaap:NetIncomeLossAvailableToCommonStockholdersDiluted [USD]": {
-      "n": 63,
+      "n": 67,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2363,7 +2363,7 @@
        2013,
        2026
       ],
-      "met_accn": 63
+      "met_accn": 67
      },
      "us-gaap:NetIncomeLossIncludingPortionAttributableToNonredeemableNoncontrollingInterest [USD]": {
       "n": 16,
@@ -2378,7 +2378,7 @@
       "met_accn": 16
      },
      "us-gaap:ProfitLoss [USD]": {
-      "n": 126,
+      "n": 130,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2387,10 +2387,10 @@
        2016,
        2026
       ],
-      "met_accn": 126
+      "met_accn": 130
      },
      "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding [shares]": {
-      "n": 125,
+      "n": 129,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2399,7 +2399,7 @@
        2013,
        2026
       ],
-      "met_accn": 125
+      "met_accn": 129
      },
      "us-gaap:WeightedAverageNumberOfShareOutstandingBasicAndDiluted [shares]": {
       "n": 35,
@@ -2414,7 +2414,7 @@
       "met_accn": 35
      },
      "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic [shares]": {
-      "n": 125,
+      "n": 129,
       "indieningen": [
        "10-K",
        "10-Q"
@@ -2423,7 +2423,7 @@
        2013,
        2026
       ],
-      "met_accn": 125
+      "met_accn": 129
      }
     },
     "jaarwaarden": {
@@ -3302,8 +3302,8 @@
       "ffd": 4,
       "ecd": 7
      },
-     "entityName": "TESLA, INC.",
-     "rijen_totaal": 24166
+     "entityName": "Tesla, Inc.",
+     "rijen_totaal": 24544
     }
    },
    "extra_diagnose": {
@@ -14757,6 +14757,2557 @@
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
     "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "CVC.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 2,
+   "jaren_in_dossier": 3,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 3,
+    "depreciation": 3,
+    "dividends_paid": 2,
+    "long_term_debt": 3,
+    "total_assets": 3,
+    "current_assets": 3,
+    "current_liabilities": 3,
+    "total_liabilities": 3,
+    "retained_earnings": 3,
+    "cash": 3,
+    "gross_profit": 0,
+    "operating_income": 3,
+    "interest_expense": 3,
+    "shares_diluted": 3,
+    "koers_hoog": 1,
+    "koers_laag": 1,
+    "dividend_ps": 1
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2024-12-31; oudere boekjaren buiten beschouwing (2023-12-31): aantal aandelen springt tussen 2023-12-31 en 2024-12-31 (1.30 keer): mogelijk niet-gemelde splitsing",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "INPST.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": null,
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 4,
+   "valuta": [
+    "EUR",
+    "PLN"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    }
+   ],
+   "einddata": [
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 4,
+    "depreciation": 4,
+    "dividends_paid": 0,
+    "long_term_debt": 4,
+    "total_assets": 4,
+    "current_assets": 4,
+    "current_liabilities": 4,
+    "total_liabilities": 4,
+    "retained_earnings": 4,
+    "cash": 4,
+    "gross_profit": 4,
+    "operating_income": 4,
+    "interest_expense": 4,
+    "shares_diluted": 4,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": null,
+   "waarschuwingen": [
+    "Jaarcijfers van Yahoo Finance: niet onafhankelijk nagerekend, daarom indicatief."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "SBMO.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR",
+    "USD"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 6,
+    "gross_profit": 6,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges [USD]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation [USD]": [
+      2022,
+      2025,
+      4
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [USD]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProfitLossBeforeTax [USD]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense [USD]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [USD]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [USD]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwners [USD]": [
+      2023,
+      2025,
+      3
+     ],
+     "ifrs-full:DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities [USD]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [USD]": [
+      2020,
+      2025,
+      6
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "AALB.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2015-12-31",
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 5,
+    "depreciation": 0,
+    "dividends_paid": 5,
+    "long_term_debt": 5,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 0,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 5,
+    "interest_expense": 0,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForAmortisationExpense [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:AmortisationExpense [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:DepreciationPropertyPlantAndEquipment [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:DepreciationRightofuseAssets [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CurrentPortionOfLongtermBorrowings [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:LongtermBorrowings [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2021,
+      2024,
+      4
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:ShorttermBorrowings [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "AF.PA",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 5,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 2,
+    "depreciation": 0,
+    "dividends_paid": 4,
+    "long_term_debt": 5,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 0,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 5,
+    "interest_expense": 5,
+    "shares_diluted": 0,
+    "koers_hoog": 5,
+    "koers_laag": 5,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2021-12-31, 2022-12-31, 2023-12-31, 2024-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2021,
+      2
+     ],
+     "ifrs-full:ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "depreciation": {},
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2021,
+      2024,
+      3
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2021,
+      2024,
+      4
+     ],
+     "ifrs-full:DividendsReceivedClassifiedAsInvestingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CurrentPortionOfLongtermBorrowings [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:LongtermBorrowings [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities [EUR]": [
+      2023,
+      2024,
+      2
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "ALLFG.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 5,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 5,
+    "depreciation": 5,
+    "dividends_paid": 5,
+    "long_term_debt": 0,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 5,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 0,
+    "interest_expense": 3,
+    "shares_diluted": 3,
+    "koers_hoog": 4,
+    "koers_laag": 4,
+    "dividend_ps": 1
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2021-12-31, 2022-12-31, 2024-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwners [EUR]": [
+      2023,
+      2023,
+      1
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "AMG.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR",
+    "USD"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 6,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 7,
+    "gross_profit": 6,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "ARCAD.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 7,
+    "total_assets": 7,
+    "current_assets": 7,
+    "current_liabilities": 7,
+    "total_liabilities": 7,
+    "retained_earnings": 0,
+    "cash": 7,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 9
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "BAMNB.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2015-12-31",
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 5,
+    "depreciation": 5,
+    "dividends_paid": 5,
+    "long_term_debt": 5,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 3,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 5,
+    "interest_expense": 5,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 6
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "BFIT.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 9,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 0,
+    "long_term_debt": 6,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 7,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2017-12-31; oudere boekjaren buiten beschouwing (2016-12-31): aantal aandelen springt tussen 2016-12-31 en 2017-12-31 (1.25 keer): mogelijk niet-gemelde splitsing",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForAmortisationExpense [EUR]": [
+      2021,
+      2025,
+      5
+     ],
+     "ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsReceivedFromAssociatesClassifiedAsInvestingActivities [EUR]": [
+      2022,
+      2025,
+      4
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings [EUR]": [
+      2021,
+      2025,
+      5
+     ],
+     "ifrs-full:LongtermBorrowings [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ShorttermBorrowings [EUR]": [
+      2020,
+      2021,
+      2
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "CRBN.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2015-12-31",
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 0,
+    "cash": 7,
+    "gross_profit": 6,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2019,
+      2024,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense [EUR]": [
+      2019,
+      2024,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:DividendsReceivedClassifiedAsInvestingActivities [EUR]": [
+      2019,
+      2023,
+      5
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:NoncurrentPortionOfOtherNoncurrentBorrowings [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2019,
+      2023,
+      5
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2019,
+      2024,
+      6
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "CTPNV.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 4,
+   "jaren_in_dossier": 5,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 5,
+    "depreciation": 5,
+    "dividends_paid": 4,
+    "long_term_debt": 0,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 5,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 5,
+    "interest_expense": 5,
+    "shares_diluted": 4,
+    "koers_hoog": 3,
+    "koers_laag": 3,
+    "dividend_ps": 3
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2021-12-31; oudere boekjaren buiten beschouwing (2020-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss [EUR]": [
+      2023,
+      2024,
+      2
+     ],
+     "ifrs-full:DepreciationAndAmortisationExpense [EUR]": [
+      2020,
+      2023,
+      4
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2021,
+      2024,
+      4
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2021,
+      2024,
+      4
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "ECMPA.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 2,
+   "jaren_in_dossier": 6,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 0,
+    "dividends_paid": 6,
+    "long_term_debt": 6,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 6,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 5,
+    "koers_hoog": 4,
+    "koers_laag": 4,
+    "dividend_ps": 4
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2024-12-31; oudere boekjaren buiten beschouwing (2020-12-31, 2021-12-31, 2022-12-31, 2023-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2021-12-31, 2022-12-31, 2023-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForAmortisationExpense [EUR]": [
+      2022,
+      2024,
+      3
+     ],
+     "ifrs-full:AdjustmentsForDepreciationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:AmortisationExpense [EUR]": [
+      2022,
+      2024,
+      3
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2020,
+      1
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:LongtermBorrowings [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ShorttermBorrowings [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "FAGR.BR",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 5,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 5,
+    "depreciation": 5,
+    "dividends_paid": 5,
+    "long_term_debt": 5,
+    "total_assets": 5,
+    "current_assets": 5,
+    "current_liabilities": 5,
+    "total_liabilities": 5,
+    "retained_earnings": 0,
+    "cash": 5,
+    "gross_profit": 0,
+    "operating_income": 5,
+    "interest_expense": 5,
+    "shares_diluted": 3,
+    "koers_hoog": 5,
+    "koers_laag": 5,
+    "dividend_ps": 5
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2022-12-31, 2023-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "FLOW.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 0,
+    "dividends_paid": 6,
+    "long_term_debt": 3,
+    "total_assets": 6,
+    "current_assets": 0,
+    "current_liabilities": 0,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 7,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 4,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 9
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForAmortisationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:AdjustmentsForDepreciationExpense [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:AmortisationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DepreciationExpense [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:Borrowings [EUR]": [
+      2023,
+      2025,
+      3
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2023,
+      2025,
+      3
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2024,
+      2025,
+      2
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "FUR.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 6,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 5,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 0,
+    "cash": 6,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 2,
+    "koers_hoog": 6,
+    "koers_laag": 6,
+    "dividend_ps": 2
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2022-12-31, 2023-12-31, 2024-12-31, 2025-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering.",
+    "Operationele kasstroom laatste boekjaar ontbreekt in deze SEC-reeks."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "GLPG.AS",
+   "koers_datum": null,
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 2,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 2,
+    "depreciation": 0,
+    "dividends_paid": 0,
+    "long_term_debt": 0,
+    "total_assets": 2,
+    "current_assets": 2,
+    "current_liabilities": 2,
+    "total_liabilities": 2,
+    "retained_earnings": 2,
+    "cash": 2,
+    "gross_profit": 0,
+    "operating_income": 2,
+    "interest_expense": 2,
+    "shares_diluted": 0,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2024-12-31, 2025-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2024,
+      2025,
+      2
+     ]
+    },
+    "depreciation": {},
+    "dividends_paid": {},
+    "long_term_debt": {}
+   },
+   "archief": null
+  },
+  {
+   "ticker": "HAL.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "partially_independently_verified",
+   "jaren_bevestigd": 2,
+   "jaren_in_dossier": 6,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2020,
+     "status": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller) (herberekend 7.394, gemeld 7.24)"
+    },
+    {
+     "jaar": 2021,
+     "status": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller) (herberekend 49.6327, gemeld 48.68)"
+    },
+    {
+     "jaar": 2022,
+     "status": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller) (herberekend 7.3731, gemeld 7.22)"
+    },
+    {
+     "jaar": 2023,
+     "status": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller) (herberekend 11.1734, gemeld 11.07)"
+    }
+   ],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 0,
+    "dividends_paid": 6,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 0,
+    "cash": 6,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 6,
+    "koers_hoog": 6,
+    "koers_laag": 6,
+    "dividend_ps": 6
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:OtherComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax [EUR]": [
+      2024,
+      2025,
+      2
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations [EUR]": [
+      2021,
+      2025,
+      5
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:OtherIndividuallyImmaterialComponentsOfOtherComprehensiveIncomeBeforeTax [EUR]": [
+      2023,
+      2024,
+      2
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {},
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsReceivedClassifiedAsOperatingActivities [EUR]": [
+      2020,
+      2024,
+      5
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2022,
+      3
+     ],
+     "ifrs-full:ProceedsFromNoncurrentBorrowings [EUR]": [
+      2022,
+      2025,
+      4
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2022,
+      3
+     ],
+     "ifrs-full:RepaymentsOfNoncurrentBorrowings [EUR]": [
+      2022,
+      2025,
+      4
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "HAVAS.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "missing_split_evidence",
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 3,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": ""
+    }
+   ],
+   "einddata": [
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 3,
+    "depreciation": 3,
+    "dividends_paid": 3,
+    "long_term_debt": 3,
+    "total_assets": 3,
+    "current_assets": 3,
+    "current_liabilities": 3,
+    "total_liabilities": 3,
+    "retained_earnings": 0,
+    "cash": 3,
+    "gross_profit": 0,
+    "operating_income": 3,
+    "interest_expense": 0,
+    "shares_diluted": 1,
+    "koers_hoog": 1,
+    "koers_laag": 1,
+    "dividend_ps": 1
+   },
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2023-12-31, 2024-12-31",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "HEIJM.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 0,
+    "dividends_paid": 6,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 0,
+    "cash": 7,
+    "gross_profit": 6,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 5
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax [EUR]": [
+      2020,
+      2021,
+      2
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForAmortisationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "PHARM.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 6,
+   "jaren_in_dossier": 6,
+   "valuta": [
+    "EUR",
+    "USD"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 0,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 6,
+    "gross_profit": 6,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 6,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [USD]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss [USD]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsRecognisedAsDistributionsToNoncontrollingInterests [USD]": [
+      2025,
+      2025,
+      1
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities [USD]": [
+      2020,
+      2022,
+      3
+     ],
+     "ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities [USD]": [
+      2020,
+      2021,
+      2
+     ],
+     "ifrs-full:ShorttermBorrowings [USD]": [
+      2019,
+      2021,
+      3
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "LIGHT.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 7,
+    "depreciation": 3,
+    "dividends_paid": 7,
+    "long_term_debt": 7,
+    "total_assets": 7,
+    "current_assets": 7,
+    "current_liabilities": 7,
+    "total_liabilities": 7,
+    "retained_earnings": 0,
+    "cash": 7,
+    "gross_profit": 7,
+    "operating_income": 7,
+    "interest_expense": 7,
+    "shares_diluted": 10,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 8
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "TWEKA.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
+    "long_term_debt": 0,
+    "total_assets": 6,
+    "current_assets": 0,
+    "current_liabilities": 0,
+    "total_liabilities": 6,
+    "retained_earnings": 0,
+    "cash": 6,
+    "gross_profit": 0,
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:AmortisationExpense [EUR]": [
+      2020,
+      2025,
+      6
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:DividendsReceivedFromAssociatesClassifiedAsInvestingActivities [EUR]": [
+      2021,
+      2025,
+      4
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings [EUR]": [
+      2020,
+      2025,
+      6
+     ],
+     "ifrs-full:ProceedsFromNoncurrentBorrowings [EUR]": [
+      2022,
+      2025,
+      4
+     ],
+     "ifrs-full:RepaymentsOfNoncurrentBorrowings [EUR]": [
+      2023,
+      2025,
+      3
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "VLK.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 7,
+    "depreciation": 7,
+    "dividends_paid": 7,
+    "long_term_debt": 0,
+    "total_assets": 7,
+    "current_assets": 0,
+    "current_liabilities": 0,
+    "total_liabilities": 7,
+    "retained_earnings": 5,
+    "cash": 3,
+    "gross_profit": 0,
+    "operating_income": 0,
+    "interest_expense": 7,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 9
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie.",
+    "Operationele kasstroom laatste boekjaar ontbreekt in deze SEC-reeks."
+   ],
+   "diagnose": null,
+   "extra_diagnose": {
+    "pretax_income": {
+     "ifrs-full:AmountsRemovedFromEquityAndAdjustedAgainstFairValueOfFinancialAssetsOnReclassificationOutOfFairValueThroughOtherComprehensiveIncomeMeasurementCategoryBeforeTax [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax [EUR]": [
+      2020,
+      2024,
+      5
+     ],
+     "ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges [EUR]": [
+      2019,
+      2020,
+      2
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:ProfitLossBeforeTax [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax [EUR]": [
+      2024,
+      2025,
+      2
+     ]
+    },
+    "depreciation": {
+     "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:DepreciationAndAmortisationExpense [EUR]": [
+      2019,
+      2025,
+      7
+     ]
+    },
+    "dividends_paid": {
+     "ifrs-full:DividendsPaid [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:DividendsPaidClassifiedAsFinancingActivities [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:DividendsPaidOrdinaryShares [EUR]": [
+      2019,
+      2020,
+      2
+     ],
+     "ifrs-full:DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwners [EUR]": [
+      2024,
+      2025,
+      2
+     ],
+     "ifrs-full:DividendsReceivedClassifiedAsInvestingActivities [EUR]": [
+      2019,
+      2025,
+      7
+     ],
+     "ifrs-full:DividendsReceivedClassifiedAsOperatingActivities [EUR]": [
+      2019,
+      2024,
+      6
+     ],
+     "ifrs-full:DividendsReceivedFromInvestmentsAccountedForUsingEquityMethodClassifiedAsInvestingActivities [EUR]": [
+      2023,
+      2025,
+      3
+     ]
+    },
+    "long_term_debt": {
+     "ifrs-full:AdjustmentsForIncreaseDecreaseInDebtInstrumentsIssued [EUR]": [
+      2024,
+      2025,
+      2
+     ]
+    }
+   },
+   "archief": null
+  },
+  {
+   "ticker": "VPK.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [],
+   "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 7,
+    "depreciation": 7,
+    "dividends_paid": 7,
+    "long_term_debt": 2,
+    "total_assets": 7,
+    "current_assets": 7,
+    "current_liabilities": 7,
+    "total_liabilities": 7,
+    "retained_earnings": 7,
+    "cash": 7,
+    "gross_profit": 0,
+    "operating_income": 7,
+    "interest_expense": 7,
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
+   },
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "waarschuwingen": [
+    "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
+    "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "THEON.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": null,
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 4,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2021,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    }
+   ],
+   "einddata": [
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 4,
+    "depreciation": 4,
+    "dividends_paid": 2,
+    "long_term_debt": 4,
+    "total_assets": 4,
+    "current_assets": 4,
+    "current_liabilities": 4,
+    "total_liabilities": 4,
+    "retained_earnings": 2,
+    "cash": 4,
+    "gross_profit": 4,
+    "operating_income": 4,
+    "interest_expense": 4,
+    "shares_diluted": 3,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": null,
+   "waarschuwingen": [
+    "Jaarcijfers van Yahoo Finance: niet onafhankelijk nagerekend, daarom indicatief."
+   ],
+   "diagnose": null,
+   "extra_diagnose": null,
+   "archief": null
+  },
+  {
+   "ticker": "CSG.AS",
+   "koers_datum": "2026-10-22",
+   "fout": null,
+   "eps_status": null,
+   "jaren_bevestigd": 0,
+   "jaren_in_dossier": 4,
+   "valuta": [
+    "EUR"
+   ],
+   "afgewezen_bronnen": 0,
+   "splits": [],
+   "open_jaren": [
+    {
+     "jaar": 2022,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2023,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2024,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    },
+    {
+     "jaar": 2025,
+     "status": null,
+     "reden": "Yahoo Finance: niet nagerekend"
+    }
+   ],
+   "einddata": [
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+   ],
+   "extra_dekking": {
+    "pretax_income": 4,
+    "depreciation": 4,
+    "dividends_paid": 4,
+    "long_term_debt": 4,
+    "total_assets": 4,
+    "current_assets": 4,
+    "current_liabilities": 4,
+    "total_liabilities": 4,
+    "retained_earnings": 4,
+    "cash": 4,
+    "gross_profit": 4,
+    "operating_income": 4,
+    "interest_expense": 4,
+    "shares_diluted": 4,
+    "koers_hoog": 0,
+    "koers_laag": 0,
+    "dividend_ps": 0
+   },
+   "toelichting": null,
+   "waarschuwingen": [
+    "Jaarcijfers van Yahoo Finance: niet onafhankelijk nagerekend, daarom indicatief."
    ],
    "diagnose": null,
    "extra_diagnose": null,
@@ -33499,26 +36050,15 @@
    "ticker": "APAM.AS",
    "koers_datum": "2026-10-22",
    "fout": null,
-   "eps_status": "missing_split_evidence",
-   "jaren_bevestigd": 0,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 2,
    "jaren_in_dossier": 2,
    "valuta": [
     "EUR"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
-   "open_jaren": [
-    {
-     "jaar": 2020,
-     "status": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2021,
-     "status": null,
-     "reden": ""
-    }
-   ],
+   "open_jaren": [],
    "einddata": [
     "2020-12-31",
     "2021-12-31"
@@ -33537,16 +36077,16 @@
     "gross_profit": 2,
     "operating_income": 2,
     "interest_expense": 2,
-    "shares_diluted": 0,
+    "shares_diluted": 2,
     "koers_hoog": 2,
     "koers_laag": 2,
     "dividend_ps": 2
    },
-   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2021-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
-    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
    ],
    "diagnose": null,
    "extra_diagnose": {
@@ -35097,9 +37637,9 @@
    "ticker": "WDP.BR",
    "koers_datum": "2026-10-22",
    "fout": null,
-   "eps_status": "missing_split_evidence",
-   "jaren_bevestigd": 0,
-   "jaren_in_dossier": 5,
+   "eps_status": "independently_verified",
+   "jaren_bevestigd": 5,
+   "jaren_in_dossier": 6,
    "valuta": [
     "EUR"
    ],
@@ -35107,32 +37647,13 @@
    "splits": [],
    "open_jaren": [
     {
-     "jaar": 2020,
-     "status": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2021,
-     "status": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2022,
-     "status": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2023,
-     "status": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2024,
+     "jaar": 2019,
      "status": null,
      "reden": ""
     }
    ],
    "einddata": [
+    "2019-12-31",
     "2020-12-31",
     "2021-12-31",
     "2022-12-31",
@@ -35140,29 +37661,29 @@
     "2024-12-31"
    ],
    "extra_dekking": {
-    "pretax_income": 5,
-    "depreciation": 5,
-    "dividends_paid": 5,
+    "pretax_income": 6,
+    "depreciation": 6,
+    "dividends_paid": 6,
     "long_term_debt": 0,
-    "total_assets": 5,
-    "current_assets": 5,
-    "current_liabilities": 5,
-    "total_liabilities": 5,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
     "retained_earnings": 0,
-    "cash": 5,
+    "cash": 6,
     "gross_profit": 0,
-    "operating_income": 5,
-    "interest_expense": 5,
-    "shares_diluted": 0,
-    "koers_hoog": 5,
-    "koers_laag": 5,
-    "dividend_ps": 5
+    "operating_income": 6,
+    "interest_expense": 6,
+    "shares_diluted": 5,
+    "koers_hoog": 6,
+    "koers_laag": 6,
+    "dividend_ps": 6
    },
-   "toelichting": "EPS of indiening ontbreekt voor boekjaar 2019-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2020-12-31; oudere boekjaren buiten beschouwing (2019-12-31): EPS of indiening ontbreekt voor boekjaar 2019-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
-    "EPS niet splitsingsvergelijkbaar vastgesteld: geen automatische EPS-groei of waardering."
+    "EPS is voorlopig genormaliseerd; geen automatisch koersdoel zonder inhoudelijke verificatie."
    ],
    "diagnose": null,
    "extra_diagnose": {
