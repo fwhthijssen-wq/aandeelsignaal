@@ -1,10 +1,12 @@
-"""Zet automatisch uitgelezen cijfers uit officiële jaarverslagen (Frankrijk: info-financiere.gouv.fr; VK: FCA NSM) in jaarverslag_bronnen.json.
-   Gebruik: python hulp/pdf_naar_register.py resultaten.json fr|uk"""
+"""Zet automatisch of met de hand uitgelezen cijfers uit officiële jaarverslagen (Frankrijk: info-financiere.gouv.fr; VK: FCA NSM)
+in jaarverslag_bronnen.json. Gebruik: python hulp/pdf_naar_register.py resultaten.json fr|uk"""
 import json, re, sys
-sys.path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), '..'))
-REG = __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), '..', 'jaarverslag_bronnen.json')
-LEI = json.load(open(REG.replace('jaarverslag_bronnen.json', 'esef_lei.json')))
-res = json.load(open(sys.argv[1] if len(sys.argv) > 1 else 'fr_res.json'))
+import os
+HIER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+sys.path.insert(0, HIER)
+REG = os.path.join(HIER, 'jaarverslag_bronnen.json')
+LEI = json.load(open(os.path.join(HIER, 'esef_lei.json')))
+res = json.load(open(sys.argv[1]))
 BRON = sys.argv[2] if len(sys.argv) > 2 else 'fr'
 PREFIX, REGISTER = {'fr': ('AMF-FR:', 'info-financiere.gouv.fr'), 'uk': ('NSM:', 'FCA National Storage Mechanism')}[BRON]
 reg = json.load(open(REG))
@@ -58,9 +60,26 @@ for t, docs in res.items():
                        {'concept': 'ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects',
                         'start': s, 'eind': e, 'waarde': float(teller), 'eenheid': valuta, 'bewijs': bron},
                        {'concept': 'ifrs-full:AdjustedWeightedAverageShares', 'start': s, 'eind': e, 'waarde': float(aandelen), 'eenheid': 'shares', 'bewijs': bron}]
+        # Hoort dit jaarverslag bij een ESEF-indiening (zelfde boekjaareinde)? Dan onder hetzelfde kenmerk, zodat de controle
+        # winst per aandeel en aantal aandelen in één indiening vindt. Wat die indiening al heeft (getagd of uit de tekst) blijft.
+        einde = max(f['eind'] for f in feiten) if feiten else None
+        cf = bw.esef_ophalen(t) or {}
+        esef = sorted([x for x in cf.get('rapporten', []) if x.get('period_end') == einde], key=lambda x: x.get('date_added') or '')
+        if esef:
+            kenmerk = esef[-1]['fxo_id']
+            al = {(f['concept'], f['eind']) for d in b['documenten'] if d.get('kenmerk') == kenmerk and d.get('url') != r['download'] for f in d['feiten']}
+            for ns in ('ifrs-full',):
+                for naam, rows in (cf.get('facts', {}).get(ns, {}) or {}).items():
+                    for u_rows in rows.get('units', {}).values():
+                        for x in u_rows:
+                            if x.get('accn') == kenmerk:
+                                al.add((ns + ':' + naam, x['end']))
+            feiten = [f for f in feiten if (f['concept'], f['eind']) not in al and not (f['concept'].endswith('DilutedEarningsLossPerShare') and ('ifrs-full:DilutedEarningsLossPerShare', f['eind']) in al)]
+            if not feiten:
+                continue
         doc = {'document': f'{r["titel"][:80]} (boekjaar {r["boekjaar"]})', 'soort': 'pdf', 'url': r['download'],
                'ingediend': r['registerdatum'][:10], 'ingediend_bron': 'datum in het officiële register (' + REGISTER + ')',
                'kenmerk': kenmerk, 'feiten': feiten}
-        b['documenten'] = sorted([x for x in b['documenten'] if x.get('kenmerk') != kenmerk] + [doc], key=lambda x: x.get('ingediend', ''))
+        b['documenten'] = sorted([x for x in b['documenten'] if x.get('kenmerk') != kenmerk or x.get('url') != doc['url']] + [doc], key=lambda x: x.get('ingediend', ''))
     print(t, len(docs))
 json.dump(reg, open(REG, 'w'), ensure_ascii=False, indent=1)

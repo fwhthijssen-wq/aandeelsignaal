@@ -159,6 +159,7 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
         if not kop or jaar not in kop:
             continue
         nieuwste_links = kop[0] == jaar
+        ander = kop[1] if nieuwste_links else kop[0]       # het andere jaar uit de kop (niet blind jaar - 1)
         for pa, ia, (a0, a1), verw in aand_r:
             if abs(ia - ie) > 300:
                 continue
@@ -172,14 +173,14 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
                         for (x0, x1) in ([(e0, e1)] if nieuwste_links else [(e1, e0)]):   # kolomvolgorde uit de jaartallenkop
                             vol = (a0, a1) if (x0, x1) == (e0, e1) else (a1, a0)
                             win = (w0, w1) if (x0, x1) == (e0, e1) else (w1, w0)
-                            if abs(win[0] * sw) < 1e5 or win[0] == win[1]:      # gelijke winst in twee jaren: verkeerde regel
+                            if abs(win[0] * sw) < 1e5 or abs(win[1] * sw) < 1e5 or win[0] == win[1] or x0 == 0 or x1 == 0:      # gelijke winst in twee jaren: verkeerde regel
                                 continue
                             tol = sw / 10 if any(not float(w).is_integer() for w in win) else sw
                             for te in ((1, 100) if pence else (1,)):      # winst per aandeel in pence/cents: teller × 100
                                 t0, t1 = 0.55 * 10 ** -decimalen(x0), 0.55 * 10 ** -decimalen(x1)
                                 if past(win[0] * sw * te, vol[0] * sa, x0, tol * te, t0) and past(win[1] * sw * te, vol[1] * sa, x1, tol * te, t1):
                                     sleutel = (round(x0 / te, 6), round(x1 / te, 6), round(vol[0] * sa), round(vol[1] * sa))
-                                    oplossingen.setdefault(sleutel, (win[0] * sw, win[1] * sw, pe, pa, pw, ie, ia, iw, verw))
+                                    oplossingen.setdefault(sleutel + (ander,), (win[0] * sw, win[1] * sw, pe, pa, pw, ie, ia, iw, verw))
     # dezelfde aantallen en eps maar andere winstregel (bv. winst en winst voortgezette activiteiten gelijk) telt als één
     import os
     if os.environ.get('DEBUG'):
@@ -194,7 +195,7 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
             oplossingen = verwaterd
     if len(oplossingen) != 1:
         return None, f'{len(oplossingen)} passende combinaties ({len(eps_r)} eps-, {len(aand_r)} aandelen-, {len(winst_r)} winstregels)'
-    (x0, x1, v0, v1), (w0, w1, pe, pa, pw, ie, ia, iw, _) = next(iter(oplossingen.items()))
+    (x0, x1, v0, v1, ander), (w0, w1, pe, pa, pw, ie, ia, iw, _) = next(iter(oplossingen.items()))
     bewijs = lambda i: ' '.join(regels[i][1].split())[:160]
     return [(jaar, x0, w0, v0, pa, bewijs(ia), bewijs(ie), bewijs(iw)),
-            (jaar - 1, x1, w1, v1, pa, bewijs(ia), bewijs(ie), bewijs(iw))], None
+            (ander, x1, w1, v1, pa, bewijs(ia), bewijs(ie), bewijs(iw))], None

@@ -10008,24 +10008,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 5.48,
        "eenheid": "EUR/shares",
        "bewijs": "Jaarverslag 2018 (Rapports financiers et d'audit annuels / Rapport financier annuel), officieel register info-financiere.gouv.fr, pdf p.148: \"Nombre d’actions en circulation après dilution 265 543 003 265 419 549\" / \"RÉSULTAT NET PART DU GROUPE PAR ACTION APRÈS DILUTION (en euros) 5,94 5,48\" / \" Part du Groupe 1 577 1 455\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 1455000000.0,
        "eenheid": "EUR",
        "bewijs": "Jaarverslag 2018 (Rapports financiers et d'audit annuels / Rapport financier annuel), officieel register info-financiere.gouv.fr, pdf p.148: \"Nombre d’actions en circulation après dilution 265 543 003 265 419 549\" / \"RÉSULTAT NET PART DU GROUPE PAR ACTION APRÈS DILUTION (en euros) 5,94 5,48\" / \" Part du Groupe 1 577 1 455\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 265419549.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (Rapports financiers et d'audit annuels / Rapport financier annuel), officieel register info-financiere.gouv.fr, pdf p.148: \"Nombre d’actions en circulation après dilution 265 543 003 265 419 549\" / \"RÉSULTAT NET PART DU GROUPE PAR ACTION APRÈS DILUTION (en euros) 5,94 5,48\" / \" Part du Groupe 1 577 1 455\""
@@ -18348,7 +18348,7 @@
        "eind": "2020-12-31",
        "waarde": 0.405,
        "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
@@ -18356,7 +18356,7 @@
        "eind": "2020-12-31",
        "waarde": 1299000000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
@@ -18364,7 +18364,7 @@
        "eind": "2020-12-31",
        "waarde": 3210000000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
@@ -18372,7 +18372,7 @@
        "eind": "2019-12-31",
        "waarde": 0.461,
        "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
@@ -18380,7 +18380,7 @@
        "eind": "2019-12-31",
        "waarde": 1476000000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
@@ -18388,7 +18388,7 @@
        "eind": "2019-12-31",
        "waarde": 3201000000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,299 40.7 40.5 1,476 46.4 46.1\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Doc re. Annual Report), officieel register FCA National Storage Mechanism, pdf p.207: \"met de hand gelezen: \"Weighted average number of shares used in calculating diluted\"\" / \"\" / \"\""
       }
      ]
     },
@@ -18398,16 +18398,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000046504/NI-000046504_8SVCSVKSGDWMW2QHOH83-2021-12-31.zip",
      "ingediend": "2022-03-30",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000046504_8SVCSVKSGDWMW2QHOH83-2021-12-31",
+     "kenmerk": "8SVCSVKSGDWMW2QHOH83-2021-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 0.547,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2021-01-01",
@@ -18422,14 +18414,6 @@
        "eind": "2021-12-31",
        "waarde": 3211000000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 0.405,
-       "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2021 (2021 Annual Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of shares used in calculating diluted\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\" / \"Profit for the year attributable to equity shareholders 1,758 55.2 54.7 1,299 40.7 40.5\""
       },
       {
@@ -18878,24 +18862,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 0.723,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.151: \"Weighted average number of shares for diluted earnings per share (million) 1,024.2 1,020.0\" / \"Diluted earnings per share 72.3 65.9\" / \"Profit for the year attributable to the owners of the Company 740.0 671.7\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 740000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.151: \"Weighted average number of shares for diluted earnings per share (million) 1,024.2 1,020.0\" / \"Diluted earnings per share 72.3 65.9\" / \"Profit for the year attributable to the owners of the Company 740.0 671.7\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-07-01",
-       "eind": "2017-06-30",
+       "start": "2018-07-01",
+       "eind": "2019-06-30",
        "waarde": 1024200000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.151: \"Weighted average number of shares for diluted earnings per share (million) 1,024.2 1,020.0\" / \"Diluted earnings per share 72.3 65.9\" / \"Profit for the year attributable to the owners of the Company 740.0 671.7\""
@@ -18936,24 +18920,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2017-07-01",
-       "eind": "2018-06-30",
+       "start": "2019-07-01",
+       "eind": "2020-06-30",
        "waarde": 0.389,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.185: \"Weighted average number of shares for diluted earnings per share (million) 1,028.2 1,024.2\" / \"Diluted earnings per share 38.9 72.3\" / \"Profit for the year attributable to the owners of the Company 399.7 740.0\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2017-07-01",
-       "eind": "2018-06-30",
+       "start": "2019-07-01",
+       "eind": "2020-06-30",
        "waarde": 399700000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.185: \"Weighted average number of shares for diluted earnings per share (million) 1,028.2 1,024.2\" / \"Diluted earnings per share 38.9 72.3\" / \"Profit for the year attributable to the owners of the Company 399.7 740.0\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2017-07-01",
-       "eind": "2018-06-30",
+       "start": "2019-07-01",
+       "eind": "2020-06-30",
        "waarde": 1028200000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.185: \"Weighted average number of shares for diluted earnings per share (million) 1,028.2 1,024.2\" / \"Diluted earnings per share 38.9 72.3\" / \"Profit for the year attributable to the owners of the Company 399.7 740.0\""
@@ -18994,24 +18978,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-07-01",
-       "eind": "2019-06-30",
+       "start": "2020-07-01",
+       "eind": "2021-06-30",
        "waarde": 0.64,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2020 (2021 Barratt Developments PLC - Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of shares for diluted earnings per share (million) 1,030.8 1,028.2\" / \"Diluted earnings per share 64.0 38.9\" / \"Profit for the year attributable to the owners of the Company 659.8 399.7\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-07-01",
-       "eind": "2019-06-30",
+       "start": "2020-07-01",
+       "eind": "2021-06-30",
        "waarde": 659800000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2020 (2021 Barratt Developments PLC - Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of shares for diluted earnings per share (million) 1,030.8 1,028.2\" / \"Diluted earnings per share 64.0 38.9\" / \"Profit for the year attributable to the owners of the Company 659.8 399.7\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-07-01",
-       "eind": "2019-06-30",
+       "start": "2020-07-01",
+       "eind": "2021-06-30",
        "waarde": 1030800000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (2021 Barratt Developments PLC - Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of shares for diluted earnings per share (million) 1,030.8 1,028.2\" / \"Diluted earnings per share 64.0 38.9\" / \"Profit for the year attributable to the owners of the Company 659.8 399.7\""
@@ -19188,24 +19172,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
        "waarde": -1.0,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2018 (Final Results), officieel register FCA National Storage Mechanism, pdf p.47: \"Share issues 404,377 429,206\" / \"Net debt attributable to non-controlling interests (105) (104) (1) (110) (109) (1)\" / \"Unit issues attributable to non-controlling interests – 2\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
        "waarde": -301000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2018 (Final Results), officieel register FCA National Storage Mechanism, pdf p.47: \"Share issues 404,377 429,206\" / \"Net debt attributable to non-controlling interests (105) (104) (1) (110) (109) (1)\" / \"Unit issues attributable to non-controlling interests – 2\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
        "waarde": 429206000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (Final Results), officieel register FCA National Storage Mechanism, pdf p.47: \"Share issues 404,377 429,206\" / \"Net debt attributable to non-controlling interests (105) (104) (1) (110) (109) (1)\" / \"Unit issues attributable to non-controlling interests – 2\""
@@ -19324,24 +19308,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 0.146,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2020 (BT Group plc Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.143: \"Diluted weighted average number of shares (millions) 10,072 9,965\" / \"Diluted earnings per share 14.6 p 17.4 p\" / \"Profit for the year 1,472 1,734\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 1472000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2020 (BT Group plc Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.143: \"Diluted weighted average number of shares (millions) 10,072 9,965\" / \"Diluted earnings per share 14.6 p 17.4 p\" / \"Profit for the year 1,472 1,734\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 10072000000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (BT Group plc Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.143: \"Diluted weighted average number of shares (millions) 10,072 9,965\" / \"Diluted earnings per share 14.6 p 17.4 p\" / \"Profit for the year 1,472 1,734\""
@@ -20388,16 +20372,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021565/NI-000021565.pdf",
      "ingediend": "2021-03-18",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000021565",
+     "kenmerk": "549300EFP3TNG7JGVE49-2020-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 1.14,
-       "eenheid": "EUR/shares",
-       "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-01-01",
@@ -20407,35 +20383,11 @@
        "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
       },
       {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 365300000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2019-01-01",
-       "eind": "2019-12-31",
-       "waarde": 1.33,
-       "eenheid": "EUR/shares",
-       "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2019-01-01",
        "eind": "2019-12-31",
        "waarde": 487500000.0,
        "eenheid": "EUR",
-       "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2019-01-01",
-       "eind": "2019-12-31",
-       "waarde": 365900000.0,
-       "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (2020 Annual financial and audit report), officieel register FCA National Storage Mechanism, pdf p.164: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share (million) 365.3 365.9\" / \"Diluted earnings per share (€) 1.14 1.33\" / \"Attributable to:\""
       }
      ]
@@ -21026,16 +20978,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000047995/NI-000047995.pdf",
      "ingediend": "2022-04-13",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000047995",
+     "kenmerk": "549300XSXUZ1I19DB105-2021-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 1.609,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2021-01-01",
@@ -21045,35 +20989,11 @@
        "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
       },
       {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 115200000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 1.338,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-01-01",
        "eind": "2020-12-31",
        "waarde": 153800000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 114900000.0,
-       "eenheid": "shares",
        "bewijs": "Jaarverslag 2021 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.78: \"Diluted weighted average number of shares 115.2 114.9\" / \"Diluted earnings per share (pence) 160.9 133.8\" / \"Profit for the year attributable to equity holders of the Parent (£m) 185.3 153.8\""
       }
      ]
@@ -21568,109 +21488,51 @@
      "feiten": [
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
-       "waarde": 0.0,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
-       "waarde": 250420.0,
-       "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
-       "waarde": 89106000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
-       "waarde": 0.0,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
-       "waarde": 241011.0,
-       "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
-       "waarde": 88735000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of ordinary shares in issue (thousands) 89,106 88,735\" / \"Group share of: £'000 £'000 £'000 £'000 £'000 £'000\" / \"Profit attributable to:\""
-      }
-     ]
-    },
-    {
-     "document": "2019 Annual Report and Accounts (boekjaar 2018)",
-     "soort": "pdf",
-     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/225555299.pdf",
-     "ingediend": "2019-03-31",
-     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:225555299",
-     "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
        "start": "2017-04-01",
        "eind": "2018-03-31",
-       "waarde": 0.0,
+       "waarde": 2.9279,
        "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2017-04-01",
        "eind": "2018-03-31",
-       "waarde": 269387.0,
+       "waarde": 261824000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
        "start": "2017-04-01",
        "eind": "2018-03-31",
-       "waarde": 93874000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
-       "waarde": 0.0,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
-       "waarde": 259336.0,
-       "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-04-01",
-       "eind": "2017-03-31",
        "waarde": 89425000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2018 (2019 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average number of ordinary shares in issue (thousands) 93,874 89,425\" / \"Group share of: £’000 £’000 £’000 £’000 £’000 £’000\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-04-01",
+       "eind": "2017-03-31",
+       "waarde": 2.42,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-04-01",
+       "eind": "2017-03-31",
+       "waarde": 216197000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-04-01",
+       "eind": "2017-03-31",
+       "waarde": 89338000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"met de hand gelezen: \"Diluted earnings per ordinary share\"; totaal (voortgezette en beëindigde activiteiten); teller = winst toekomend aan aandeelhouders van de moedermaatschappij\" / \"\" / \"\""
       }
      ]
     },
@@ -21708,24 +21570,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2017-04-01",
-       "eind": "2018-03-31",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
        "waarde": 2.4921,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2019 (Annual Report and Accounts for the year ended 31 March 2020), officieel register FCA National Storage Mechanism, pdf p.170: \"Weighted average number of ordinary shares in issue (thousands) 98,514 93,874\" / \"Diluted earnings per ordinary share 249.21p 279.73p\" / \"Profit attributable to owners of the Parent Company 245,509 262,593\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2017-04-01",
-       "eind": "2018-03-31",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
        "waarde": 245509000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2019 (Annual Report and Accounts for the year ended 31 March 2020), officieel register FCA National Storage Mechanism, pdf p.170: \"Weighted average number of ordinary shares in issue (thousands) 98,514 93,874\" / \"Diluted earnings per ordinary share 249.21p 279.73p\" / \"Profit attributable to owners of the Parent Company 245,509 262,593\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2017-04-01",
-       "eind": "2018-03-31",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
        "waarde": 98514000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Annual Report and Accounts for the year ended 31 March 2020), officieel register FCA National Storage Mechanism, pdf p.170: \"Weighted average number of ordinary shares in issue (thousands) 98,514 93,874\" / \"Diluted earnings per ordinary share 249.21p 279.73p\" / \"Profit attributable to owners of the Parent Company 245,509 262,593\""
@@ -21766,24 +21628,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 2.9662,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.169: \"Weighted average number of ordinary shares in issue (thousands) 98,650 98,514\" / \"Diluted earnings per ordinary share 296.62p 249.21p\" / \"Profit attributable to owners of the Parent Company 292,619 245,509\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 292619000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.169: \"Weighted average number of ordinary shares in issue (thousands) 98,650 98,514\" / \"Diluted earnings per ordinary share 296.62p 249.21p\" / \"Profit attributable to owners of the Parent Company 292,619 245,509\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 98650000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.169: \"Weighted average number of ordinary shares in issue (thousands) 98,650 98,514\" / \"Diluted earnings per ordinary share 296.62p 249.21p\" / \"Profit attributable to owners of the Parent Company 292,619 245,509\""
@@ -23322,16 +23184,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021365/NI-000021365.pdf",
      "ingediend": "2021-03-12",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000021365",
+     "kenmerk": "5493007JXOLJ0QCY2D70-2020-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": -0.906,
-       "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-01-01",
@@ -23341,35 +23195,11 @@
        "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
       },
       {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 324060000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2019-01-01",
-       "eind": "2019-12-31",
-       "waarde": 0.169,
-       "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2019-01-01",
        "eind": "2019-12-31",
        "waarde": 48900000.0,
        "eenheid": "USD",
-       "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2019-01-01",
-       "eind": "2019-12-31",
-       "waarde": 288376000.0,
-       "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (Hiscox Ltd 2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.184: \"Weighted average number of ordinary shares for diluted (loss)/earnings per share (thousands) 324,060 288,376\" / \"Diluted (loss)/earnings per share (cents per share) (90.6)¢ 16.9¢\" / \"(Loss)/profit for the year (all attributable to owners of the Company) (293.7) 48.9\""
       }
      ]
@@ -23542,64 +23372,6 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
-    {
-     "document": "Annual Report and Accounts 2021 - Form 20-F (boekjaar 2021)",
-     "soort": "pdf",
-     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000043336/NI-000043336.pdf",
-     "ingediend": "2022-02-23",
-     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000043336",
-     "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 0.62,
-       "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 12607000.0,
-       "eenheid": "USD",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 20189000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 0.19,
-       "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 3898000.0,
-       "eenheid": "USD",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 20272000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report and Accounts 2021 - Form 20-F), officieel register FCA National Storage Mechanism, pdf p.13: \"Period end basic number of $0.50 ordinary shares outstanding and dilutive potential 20,189 20,272 20,280\" / \"Diluted earnings per share ($) 0.62 0.19 0.30\" / \"Profit attributable to the ordinary shareholders of the parent company ($m) 12,607 3,898 5,969\""
-      }
-     ]
-    },
     {
      "document": "MLU0ZO3ML4LN2LL2TL39-2021-12-31-ESEF-GB-0.xhtml",
      "soort": "esef-tekst",
@@ -23822,24 +23594,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
+       "start": "2017-04-01",
+       "eind": "2018-03-31",
        "waarde": 0.888,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.146: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 282,674,841 292,269,151\" / \"Diluted earnings per share 88.8p 74.5p\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
+       "start": "2017-04-01",
+       "eind": "2018-03-31",
        "waarde": 251000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.146: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 282,674,841 292,269,151\" / \"Diluted earnings per share 88.8p 74.5p\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2015-04-01",
-       "eind": "2016-03-31",
+       "start": "2017-04-01",
+       "eind": "2018-03-31",
        "waarde": 282674841.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.146: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 282,674,841 292,269,151\" / \"Diluted earnings per share 88.8p 74.5p\" / \"Attributable to:\""
@@ -23880,24 +23652,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 1.575,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.155: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,197,645 290,636,957\" / \"Diluted earnings per share (pence) 157.5p 37.5p\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 457100000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.155: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,197,645 290,636,957\" / \"Diluted earnings per share (pence) 157.5p 37.5p\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 290197645.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (Annual Report and Accounts for the year ended 31 March 2021), officieel register FCA National Storage Mechanism, pdf p.155: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,197,645 290,636,957\" / \"Diluted earnings per share (pence) 157.5p 37.5p\" / \"Attributable to:\""
@@ -23910,16 +23682,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000053190/NI-000053190.pdf",
      "ingediend": "2022-06-13",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000053190",
+     "kenmerk": "549300OGASR5WRKJ8R68-2022-03-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-04-01",
-       "eind": "2021-03-31",
-       "waarde": 1.575,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,954,286 290,197,645\" / \"Diluted earnings per share (pence) 181.1p 157.5p\" / \"Attributable to:\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-04-01",
@@ -23937,25 +23701,17 @@
        "bewijs": "Jaarverslag 2021 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,954,286 290,197,645\" / \"Diluted earnings per share (pence) 181.1p 157.5p\" / \"Attributable to:\""
       },
       {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
-       "waarde": 1.811,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,954,286 290,197,645\" / \"Diluted earnings per share (pence) 181.1p 157.5p\" / \"Attributable to:\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
+       "start": "2021-04-01",
+       "eind": "2022-03-31",
        "waarde": 526799999.99999994,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2021 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,954,286 290,197,645\" / \"Diluted earnings per share (pence) 181.1p 157.5p\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
+       "start": "2021-04-01",
+       "eind": "2022-03-31",
        "waarde": 290954286.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2021 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"Weighted average number of ordinary shares for the purposes of diluted earnings per share 290,954,286 290,197,645\" / \"Diluted earnings per share (pence) 181.1p 157.5p\" / \"Attributable to:\""
@@ -24150,24 +23906,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2013-10-01",
-       "eind": "2014-09-30",
+       "start": "2015-10-01",
+       "eind": "2016-09-30",
        "waarde": 0.66,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2015 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.97: \"Shares for diluted earnings per share 956.7 955.9\" / \"Diluted earnings per share 66.0 176.9\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2013-10-01",
-       "eind": "2014-09-30",
+       "start": "2015-10-01",
+       "eind": "2016-09-30",
        "waarde": 631000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2015 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.97: \"Shares for diluted earnings per share 956.7 955.9\" / \"Diluted earnings per share 66.0 176.9\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2013-10-01",
-       "eind": "2014-09-30",
+       "start": "2015-10-01",
+       "eind": "2016-09-30",
        "waarde": 956700000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2015 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.97: \"Shares for diluted earnings per share 956.7 955.9\" / \"Diluted earnings per share 66.0 176.9\" / \"Attributable to:\""
@@ -24208,24 +23964,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2014-10-01",
-       "eind": "2015-09-30",
+       "start": "2016-10-01",
+       "eind": "2017-09-30",
        "waarde": 1.472,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2016 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.100: \"Shares for diluted earnings per share 956.9 956.7\" / \"Diluted earnings per share 147.2 66.0\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2014-10-01",
-       "eind": "2015-09-30",
+       "start": "2016-10-01",
+       "eind": "2017-09-30",
        "waarde": 1409000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2016 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.100: \"Shares for diluted earnings per share 956.9 956.7\" / \"Diluted earnings per share 147.2 66.0\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2014-10-01",
-       "eind": "2015-09-30",
+       "start": "2016-10-01",
+       "eind": "2017-09-30",
        "waarde": 956900000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2016 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.100: \"Shares for diluted earnings per share 956.9 956.7\" / \"Diluted earnings per share 147.2 66.0\" / \"Attributable to:\""
@@ -24266,24 +24022,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2015-10-01",
-       "eind": "2016-09-30",
+       "start": "2017-10-01",
+       "eind": "2018-09-30",
        "waarde": 1.432,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.104: \"Shares for diluted earnings per share 955.4 956.9\" / \"Diluted earnings per share 143.2 147.2\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2015-10-01",
-       "eind": "2016-09-30",
+       "start": "2017-10-01",
+       "eind": "2018-09-30",
        "waarde": 1368000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.104: \"Shares for diluted earnings per share 955.4 956.9\" / \"Diluted earnings per share 143.2 147.2\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2015-10-01",
-       "eind": "2016-09-30",
+       "start": "2017-10-01",
+       "eind": "2018-09-30",
        "waarde": 955400000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2017 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.104: \"Shares for diluted earnings per share 955.4 956.9\" / \"Diluted earnings per share 143.2 147.2\" / \"Attributable to:\""
@@ -24324,24 +24080,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-10-01",
-       "eind": "2017-09-30",
+       "start": "2018-10-01",
+       "eind": "2019-09-30",
        "waarde": 1.058,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2018 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.120: \"Shares for diluted earnings per share 954.9 955.4\" / \"Diluted earnings per share 105.8 143.2\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-10-01",
-       "eind": "2017-09-30",
+       "start": "2018-10-01",
+       "eind": "2019-09-30",
        "waarde": 1010000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2018 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.120: \"Shares for diluted earnings per share 954.9 955.4\" / \"Diluted earnings per share 105.8 143.2\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-10-01",
-       "eind": "2017-09-30",
+       "start": "2018-10-01",
+       "eind": "2019-09-30",
        "waarde": 954900000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (Annual Report), officieel register FCA National Storage Mechanism, pdf p.120: \"Shares for diluted earnings per share 954.9 955.4\" / \"Diluted earnings per share 105.8 143.2\" / \"Attributable to:\""
@@ -25718,16 +25474,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000045629/NI-000045629_254900TWUJUQ44TQJY84-2021-12-31.zip",
      "ingediend": "2022-03-22",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000045629_254900TWUJUQ44TQJY84-2021-12-31",
+     "kenmerk": "254900TWUJUQ44TQJY84-2021-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 0.032,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2021-01-01",
@@ -25737,35 +25485,11 @@
        "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
       },
       {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 2575000000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 0.44,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-01-01",
        "eind": "2020-12-31",
        "waarde": 1138000000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 2587000000.0,
-       "eenheid": "shares",
        "bewijs": "Jaarverslag 2021 (Annual Financial Report-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of diluted ordinary shares outstanding 2,575 2,587\" / \"Diluted earnings per share 3.2 44.0\" / \"Proﬁt attributable to equity holders of M&G plc 83 1,138\""
       }
      ]
@@ -25902,24 +25626,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2013-03-30",
-       "eind": "2014-03-29",
+       "start": "2015-03-30",
+       "eind": "2016-03-29",
        "waarde": 0.248,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2015 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.103: \"Weighted average number of diluted ordinary shares 1,642.2 1,646.9\" / \"Diluted earnings per share 24.8 29.5\" / \"Profit attributable to equity shareholders of the Company 406.9 486.5\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2013-03-30",
-       "eind": "2014-03-29",
+       "start": "2015-03-30",
+       "eind": "2016-03-29",
        "waarde": 406900000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2015 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.103: \"Weighted average number of diluted ordinary shares 1,642.2 1,646.9\" / \"Diluted earnings per share 24.8 29.5\" / \"Profit attributable to equity shareholders of the Company 406.9 486.5\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2013-03-30",
-       "eind": "2014-03-29",
+       "start": "2015-03-30",
+       "eind": "2016-03-29",
        "waarde": 1642200000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2015 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.103: \"Weighted average number of diluted ordinary shares 1,642.2 1,646.9\" / \"Diluted earnings per share 24.8 29.5\" / \"Profit attributable to equity shareholders of the Company 406.9 486.5\""
@@ -25960,24 +25684,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2014-03-30",
-       "eind": "2015-03-29",
+       "start": "2016-03-30",
+       "eind": "2017-03-29",
        "waarde": 0.072,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2016 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.109: \"Weighted average number of diluted ordinary shares 1,631.1 1,642.2\" / \"Diluted earnings per share 7.2 24.8 GOVERNANCE\" / \"Proﬁt attributable to equity shareholders of the Company 117.1 406.9\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2014-03-30",
-       "eind": "2015-03-29",
+       "start": "2016-03-30",
+       "eind": "2017-03-29",
        "waarde": 117100000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2016 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.109: \"Weighted average number of diluted ordinary shares 1,631.1 1,642.2\" / \"Diluted earnings per share 7.2 24.8 GOVERNANCE\" / \"Proﬁt attributable to equity shareholders of the Company 117.1 406.9\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2014-03-30",
-       "eind": "2015-03-29",
+       "start": "2016-03-30",
+       "eind": "2017-03-29",
        "waarde": 1631100000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2016 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.109: \"Weighted average number of diluted ordinary shares 1,631.1 1,642.2\" / \"Diluted earnings per share 7.2 24.8 GOVERNANCE\" / \"Proﬁt attributable to equity shareholders of the Company 117.1 406.9\""
@@ -26018,24 +25742,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2015-03-30",
-       "eind": "2016-03-29",
+       "start": "2017-03-30",
+       "eind": "2018-03-29",
        "waarde": 0.016,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of diluted ordinary shares 1,629.4 1,631.1\" / \"Diluted earnings per share 1.6 7.2\" / \"Profit attributable to equity shareholders of the Company 25.7 117.1\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2015-03-30",
-       "eind": "2016-03-29",
+       "start": "2017-03-30",
+       "eind": "2018-03-29",
        "waarde": 25700000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of diluted ordinary shares 1,629.4 1,631.1\" / \"Diluted earnings per share 1.6 7.2\" / \"Profit attributable to equity shareholders of the Company 25.7 117.1\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2015-03-30",
-       "eind": "2016-03-29",
+       "start": "2017-03-30",
+       "eind": "2018-03-29",
        "waarde": 1629400000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of diluted ordinary shares 1,629.4 1,631.1\" / \"Diluted earnings per share 1.6 7.2\" / \"Profit attributable to equity shareholders of the Company 25.7 117.1\""
@@ -26076,24 +25800,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-03-30",
-       "eind": "2017-03-29",
+       "start": "2018-03-30",
+       "eind": "2019-03-29",
        "waarde": 0.021,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.111: \"Weighted average number of diluted ordinary shares 1,627.9 1,629.4\" / \"Diluted earnings per share 2.1 1.6\" / \"Profit attributable to equity shareholders of the Company 33.5 25.7\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-03-30",
-       "eind": "2017-03-29",
+       "start": "2018-03-30",
+       "eind": "2019-03-29",
        "waarde": 33500000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.111: \"Weighted average number of diluted ordinary shares 1,627.9 1,629.4\" / \"Diluted earnings per share 2.1 1.6\" / \"Profit attributable to equity shareholders of the Company 33.5 25.7\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-03-30",
-       "eind": "2017-03-29",
+       "start": "2018-03-30",
+       "eind": "2019-03-29",
        "waarde": 1627900000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.111: \"Weighted average number of diluted ordinary shares 1,627.9 1,629.4\" / \"Diluted earnings per share 2.1 1.6\" / \"Profit attributable to equity shareholders of the Company 33.5 25.7\""
@@ -26134,24 +25858,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2017-03-30",
-       "eind": "2018-03-29",
+       "start": "2019-03-31",
+       "eind": "2020-03-28",
        "waarde": 0.024,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2019 (Annual Report 2020), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of diluted ordinary shares 1,905.6 1,701.9\" / \"Diluted earnings per share 1.2 2.4\" / \"Profit attributable to equity shareholders of the Company 23.7 41.7\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2017-03-30",
-       "eind": "2018-03-29",
+       "start": "2019-03-31",
+       "eind": "2020-03-28",
        "waarde": 41700000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2019 (Annual Report 2020), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of diluted ordinary shares 1,905.6 1,701.9\" / \"Diluted earnings per share 1.2 2.4\" / \"Profit attributable to equity shareholders of the Company 23.7 41.7\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2017-03-30",
-       "eind": "2018-03-29",
+       "start": "2019-03-31",
+       "eind": "2020-03-28",
        "waarde": 1701900000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Annual Report 2020), officieel register FCA National Storage Mechanism, pdf p.137: \"Weighted average number of diluted ordinary shares 1,905.6 1,701.9\" / \"Diluted earnings per share 1.2 2.4\" / \"Profit attributable to equity shareholders of the Company 23.7 41.7\""
@@ -26164,15 +25888,23 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000026954/NI-000026954.pdf",
      "ingediend": "2021-06-02",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000026954",
+     "kenmerk": "213800EJP14A79ZG1X44-2021-04-03-ESEF-GB-0",
      "feiten": [
       {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2019-03-31",
-       "eind": "2020-03-28",
-       "waarde": 0.012,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-03-29",
+       "eind": "2021-04-03",
+       "waarde": -198000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-03-29",
+       "eind": "2021-04-03",
+       "waarde": 1953500000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
@@ -26180,7 +25912,7 @@
        "eind": "2020-03-28",
        "waarde": 23700000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
@@ -26188,31 +25920,79 @@
        "eind": "2020-03-28",
        "waarde": 1905600000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-03-30",
-       "eind": "2019-03-29",
-       "waarde": -0.101,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
-      },
+       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
+     "document": "Annual Report 2022-T01 (boekjaar 2021)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000052613/NI-000052613_213800EJP14A79ZG1X44-2022-04-02.zip",
+     "ingediend": "2022-06-07",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "213800EJP14A79ZG1X44-2022-04-02-ESEF-GB-0",
+     "feiten": [
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-03-30",
-       "eind": "2019-03-29",
-       "waarde": -198000000.0,
+       "start": "2021-04-04",
+       "eind": "2022-04-02",
+       "waarde": 306600000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2021 (Annual Report 2022-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-03-30",
-       "eind": "2019-03-29",
-       "waarde": 1968500000.0,
+       "start": "2021-04-04",
+       "eind": "2022-04-02",
+       "waarde": 2031100000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2020 (Annual Report 2021), officieel register FCA National Storage Mechanism, pdf p.150: \"Weighted average number of diluted ordinary shares 1,968.5 1,905.6\" / \"Diluted (loss)/earnings per share (10.1) 1.2\" / \"Attributable to:\""
+       "bewijs": "Jaarverslag 2021 (Annual Report 2022-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of diluted ordinary shares\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-03-29",
+       "eind": "2021-04-03",
+       "waarde": -198000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2021 (Annual Report 2022-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of ordinary shares in issue\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-03-29",
+       "eind": "2021-04-03",
+       "waarde": 1953500000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2021 (Annual Report 2022-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of ordinary shares in issue\"; boekjaar 2021 verlies: verwaterd = gewoon aantal (1.953,5 mln), zoals het verslag zelf rekent\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
+     "document": "213800EJP14A79ZG1X44-2023-04-01-ESEF-GB-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/213800EJP14A79ZG1X44/2023-04-01/ESEF/GB/0/213800EJP14A79ZG1X44-2023-04-01/reports/213800EJP14A79ZG1X44-2023-04-01-T01.xhtml",
+     "ingediend": "2023-06-13",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "213800EJP14A79ZG1X44-2023-04-01-ESEF-GB-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-04-04",
+       "eind": "2022-04-02",
+       "waarde": 2031100000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 2031100000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: toelichting 8: \"Weighted average number of diluted ordinary shares 2,033.9 2,031.1\" (miljoenen); winst toekomend aan aandeelhouders 306,6 mln"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-04-04",
+       "eind": "2022-04-02",
+       "waarde": 306600000.0,
+       "eenheid": "GBP",
+       "oorspronkelijk": 306600000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: toelichting 8: \"Weighted average number of diluted ordinary shares 2,033.9 2,031.1\" (miljoenen); winst toekomend aan aandeelhouders 306,6 mln"
       }
      ]
     },
@@ -27801,6 +27581,64 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "Annual Report 2018 (boekjaar 2017)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/186916996.pdf",
+     "ingediend": "2018-07-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:186916996",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 0.691,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 277000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 400999220.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-08-01",
+       "eind": "2017-07-31",
+       "waarde": 1.403,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-08-01",
+       "eind": "2017-07-31",
+       "waarde": 562000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-08-01",
+       "eind": "2017-07-31",
+       "waarde": 400518049.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.143: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
      "document": "Smiths Group plc Annual Report FY2019 (boekjaar 2018)",
      "soort": "pdf",
      "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/246061343.pdf",
@@ -27834,27 +27672,119 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2016-08-01",
-       "eind": "2017-07-31",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
        "waarde": 0.568,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2016-08-01",
-       "eind": "2017-07-31",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
        "waarde": 225000000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2016-08-01",
-       "eind": "2017-07-31",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
        "waarde": 395936520.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
+      }
+     ]
+    },
+    {
+     "document": "Smiths Group plc FY2020 Annual Results  (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/RNS/3727190.html",
+     "ingediend": "2020-09-24",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:3727190",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
+       "waarde": 0.565,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2019 (Smiths Group plc FY2020 Annual Results ), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
+       "waarde": 225000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2019 (Smiths Group plc FY2020 Annual Results ), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-08-01",
+       "eind": "2019-07-31",
+       "waarde": 398375376.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Smiths Group plc FY2020 Annual Results ), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
+     "document": "FY2021 Annual Report (boekjaar 2021)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000035234/NI-000035234.pdf",
+     "ingediend": "2021-10-19",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:NI-000035234",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-08-01",
+       "eind": "2021-07-31",
+       "waarde": 0.713,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-08-01",
+       "eind": "2021-07-31",
+       "waarde": 284000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-08-01",
+       "eind": "2021-07-31",
+       "waarde": 398576502.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-08-01",
+       "eind": "2020-07-31",
+       "waarde": 0.664,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-08-01",
+       "eind": "2020-07-31",
+       "waarde": 265000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-08-01",
+       "eind": "2020-07-31",
+       "waarde": 398814030.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2021 (FY2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.167: \"met de hand gelezen: \"Diluted earnings per share are calculated\"; boekjaar eindigt 31 juli; teller = totale winst toekomend aan aandeelhouders\" / \"\" / \"\""
       }
      ]
     },
@@ -28587,52 +28517,20 @@
      ]
     },
     {
-     "document": "Annual Report & Accounts - this version supersedes the previous version publishe (boekjaar 2021)",
+     "document": "2020 Annual Report (boekjaar 2020)",
      "soort": "pdf",
-     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000048494/NI-000048494_213800M993ICXOMBCP87-2021-12-31.zip",
-     "ingediend": "2022-04-08",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000023113/NI-000023113.pdf",
+     "ingediend": "2021-04-08",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000048494_213800M993ICXOMBCP87-2021-12-31",
+     "kenmerk": "213800M993ICXOMBCP87-2020-12-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 0.525,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
-      },
-      {
-       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 286700000.0,
-       "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2021-01-01",
-       "eind": "2021-12-31",
-       "waarde": 546200000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 0.486,
-       "eenheid": "GBP/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-01-01",
        "eind": "2020-12-31",
        "waarde": 262000000.0,
        "eenheid": "GBP",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
+       "bewijs": "Jaarverslag 2020 (2020 Annual Report), officieel register FCA National Storage Mechanism, pdf p.203: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
@@ -28640,7 +28538,49 @@
        "eind": "2020-12-31",
        "waarde": 539300000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3\" / \"Diluted earnings per share 52.5 48.6\" / \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS) 286.7 262.0\""
+       "bewijs": "Jaarverslag 2020 (2020 Annual Report), officieel register FCA National Storage Mechanism, pdf p.203: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 146600000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2020 (2020 Annual Report), officieel register FCA National Storage Mechanism, pdf p.203: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 534000000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (2020 Annual Report), officieel register FCA National Storage Mechanism, pdf p.203: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
+     "document": "Annual Report & Accounts - this version supersedes the previous version publishe (boekjaar 2021)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000048494/NI-000048494_213800M993ICXOMBCP87-2021-12-31.zip",
+     "ingediend": "2022-04-08",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "213800M993ICXOMBCP87-2021-12-31-ESEF-GB-1",
+     "feiten": [
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 286700000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 262000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2021 (Annual Report & Accounts - this version supersedes the previous version publishe), officieel register FCA National Storage Mechanism, pdf p.1: \"met de hand gelezen: \"Weighted average number of ordinary shares (for diluted EPS)\"\" / \"\" / \"\""
       }
      ]
     },
@@ -28701,6 +28641,36 @@
        "oorspronkelijk": 546.2,
        "schaal": 1000000,
        "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"er of ordinary shares in issue (for basic EPS) 537.7 533.5 Adjustments for outstanding share options 8.5 5.8 Weighted average number of ordinary shares (for diluted EPS) 546.2 539.3 Pence Pence Earnings per share (EPS) Basic earnings per share 53.3 49.1 Diluted earnings per share 52.5 48.6 Dividends\""
+      }
+     ]
+    },
+    {
+     "document": "213800M993ICXOMBCP87-2022-12-31-ESEF-GB-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/213800M993ICXOMBCP87/2022-12-31/ESEF/GB/0/213800M993ICXOMBCP87-2022-12-31/reports/213800M993ICXOMBCP87-2022-12-31-T01.xhtml",
+     "ingediend": "2023-03-07",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "213800M993ICXOMBCP87-2022-12-31-ESEF-GB-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 546200000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 546200000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: toelichting winst per aandeel: \"Weighted average number of ordinary shares (for diluted EPS) 547.8 546.2\" (miljoenen) en \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 286700000.0,
+       "eenheid": "GBP",
+       "oorspronkelijk": 286700000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: toelichting winst per aandeel: \"Weighted average number of ordinary shares (for diluted EPS) 547.8 546.2\" (miljoenen) en \"Profit after tax attributable to equity shareholders (for both basic and diluted EPS)\""
       }
      ]
     },
@@ -29190,24 +29160,24 @@
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 0.0038,
        "eenheid": "EUR/shares",
        "bewijs": "Jaarverslag 2020 (2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of shares for diluted earnings per share 29,683 29,422 27,607\" / \"Diluted earnings/(loss) per share 0.38c (3.13)c (29.05)c\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 112000.0,
        "eenheid": "EUR",
        "bewijs": "Jaarverslag 2020 (2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of shares for diluted earnings per share 29,683 29,422 27,607\" / \"Diluted earnings/(loss) per share 0.38c (3.13)c (29.05)c\" / \"Attributable to:\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-04-01",
-       "eind": "2019-03-31",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
        "waarde": 29683000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2020 (2021 Annual Report), officieel register FCA National Storage Mechanism, pdf p.154: \"Weighted average number of shares for diluted earnings per share 29,683 29,422 27,607\" / \"Diluted earnings/(loss) per share 0.38c (3.13)c (29.05)c\" / \"Attributable to:\""
@@ -29220,16 +29190,8 @@
      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000051998/NI-000051998.pdf",
      "ingediend": "2022-05-27",
      "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
-     "kenmerk": "NSM:NI-000051998",
+     "kenmerk": "213800TB53ELEUKM7Q61-2022-03-31-ESEF-GB-0",
      "feiten": [
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2020-04-01",
-       "eind": "2021-03-31",
-       "waarde": 0.0038,
-       "eenheid": "EUR/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
-      },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2020-04-01",
@@ -29239,35 +29201,11 @@
        "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
       },
       {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-04-01",
-       "eind": "2021-03-31",
-       "waarde": 29683000.0,
-       "eenheid": "shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
-       "waarde": 0.0717,
-       "eenheid": "EUR/shares",
-       "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
-      },
-      {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
+       "start": "2021-04-01",
+       "eind": "2022-03-31",
        "waarde": 2088000.0,
        "eenheid": "EUR",
-       "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2019-04-01",
-       "eind": "2020-03-31",
-       "waarde": 29109000.0,
-       "eenheid": "shares",
        "bewijs": "Jaarverslag 2021 (Annual Report for the year ended 31 March 2022), officieel register FCA National Storage Mechanism, pdf p.162: \"Weighted average number of shares for diluted earnings per share 29,109 29,683 29,422\" / \"Diluted earnings/(loss) per share 7.17c 0.38c (3.13)c\" / \"Attributable to:\""
       }
      ]
@@ -31038,23 +30976,23 @@
        "eind": "2018-12-31",
        "waarde": 0.4667,
        "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2018-01-01",
        "eind": "2018-12-31",
-       "waarde": 9383000.0,
+       "waarde": 9382000000.0,
        "eenheid": "USD",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
        "start": "2018-01-01",
        "eind": "2018-12-31",
-       "waarde": 20102493.0,
+       "waarde": 20102493000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
@@ -31062,23 +31000,105 @@
        "eind": "2017-12-31",
        "waarde": 0.171,
        "eenheid": "USD/shares",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
        "start": "2017-01-01",
        "eind": "2017-12-31",
-       "waarde": 3389000.0,
+       "waarde": 3388000000.0,
        "eenheid": "USD",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
        "start": "2017-01-01",
        "eind": "2017-12-31",
-       "waarde": 19816442.0,
+       "waarde": 19816442000.0,
        "eenheid": "shares",
-       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"Weighted average number of ordinary shares outstanding used to calculate diluted\" / \"Diluted earnings per share 46.67 17.10 0.60\" / \"Attributable to\""
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.006,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 114000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 18855319000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (BP Annual Report and Form 20-F 2018), officieel register FCA National Storage Mechanism, pdf p.165: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      }
+     ]
+    },
+    {
+     "document": "bp Annual Report and Form 20-F 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000021765/NI-000021765.pdf",
+     "ingediend": "2021-03-22",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:NI-000021765",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -1.0042,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -20306000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 20221514000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.1973,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 4025000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 20399670000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (bp Annual Report and Form 20-F 2020), officieel register FCA National Storage Mechanism, pdf p.189: \"met de hand gelezen: \"outstanding used to calculate diluted\"; winst per aandeel in dollarcent; teller = winst voor gewone aandeelhouders (na preferent dividend)\" / \"\" / \"\""
       }
      ]
     },
@@ -31092,16 +31112,6 @@
      "feiten": [
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2020-01-01",
-       "eind": "2020-12-31",
-       "waarde": 20221514000.0,
-       "eenheid": "shares",
-       "oorspronkelijk": 20221514.0,
-       "schaal": 1000,
-       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"es issuable under employee share-based payment plans 131,526 — 114,811 Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670 Shares thousand 2021 2020 2019 Basic weighted average number of ordinary shares – ADS equivalent\""
-      },
-      {
-       "concept": "ifrs-full:AdjustedWeightedAverageShares",
        "start": "2021-01-01",
        "eind": "2021-12-31",
        "waarde": 20260388000.0,
@@ -31109,6 +31119,46 @@
        "oorspronkelijk": 20260388.0,
        "schaal": 1000,
        "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"es issuable under employee share-based payment plans 131,526 — 114,811 Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670 Shares thousand 2021 2020 2019 Basic weighted average number of ordinary shares – ADS equivalent\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 20221514000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 20221514000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: noot 11 earnings per share: \"Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670\" (duizenden) en \"Profit (loss) for the year attributable to bp ordinary shareholders\" ($ mln)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -20306000000.0,
+       "eenheid": "USD",
+       "oorspronkelijk": -20306000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: noot 11 earnings per share: \"Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670\" (duizenden) en \"Profit (loss) for the year attributable to bp ordinary shareholders\" ($ mln)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 20399670000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 20399670000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: noot 11 earnings per share: \"Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670\" (duizenden) en \"Profit (loss) for the year attributable to bp ordinary shareholders\" ($ mln)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 4025000000.0,
+       "eenheid": "USD",
+       "oorspronkelijk": 4025000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, met de hand gelezen: noot 11 earnings per share: \"Weighted average number of ordinary shares outstanding used to calculate diluted earnings per share 20,260,388 20,221,514 20,399,670\" (duizenden) en \"Profit (loss) for the year attributable to bp ordinary shareholders\" ($ mln)"
       }
      ]
     },
@@ -32358,48 +32408,48 @@
      "feiten": [
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2018-05-29",
-       "eind": "2019-05-28",
+       "start": "2018-06-03",
+       "eind": "2019-06-02",
        "waarde": 2.178,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2018-05-29",
-       "eind": "2019-05-28",
+       "start": "2018-06-03",
+       "eind": "2019-06-02",
        "waarde": 71300000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2018-05-29",
-       "eind": "2019-05-28",
+       "start": "2018-06-03",
+       "eind": "2019-06-02",
        "waarde": 32736000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""
       },
       {
        "concept": "ifrs-full:DilutedEarningsLossPerShare",
-       "start": "2017-05-29",
-       "eind": "2018-05-28",
+       "start": "2019-06-03",
+       "eind": "2020-06-02",
        "waarde": 2.008,
        "eenheid": "GBP/shares",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""
       },
       {
        "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
-       "start": "2017-05-29",
-       "eind": "2018-05-28",
+       "start": "2019-06-03",
+       "eind": "2020-06-02",
        "waarde": 65800000.0,
        "eenheid": "GBP",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""
       },
       {
        "concept": "ifrs-full:AdjustedWeightedAverageShares",
-       "start": "2017-05-29",
-       "eind": "2018-05-28",
+       "start": "2019-06-03",
+       "eind": "2020-06-02",
        "waarde": 32785000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Annual Financial Report), officieel register FCA National Storage Mechanism, pdf p.1: \"Weighted average number of ordinary shares for diluted earnings per share (thousands) 32,736 32,785\" / \"Diluted earnings per share (pence per share) 217.8 200.8\" / \"Profit attributable to owners of the parent 71.3 65.8\""

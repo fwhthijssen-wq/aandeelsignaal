@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.22-beta.63
+- **Fout hersteld in de automatische uitlezer (zat in beta.62).** Bij boekjaren die niet op 31 december eindigen (bijvoorbeeld DCC, maart) en bij Britse documenten met een afwijkende publicatiedatum werd het tweede jaar uit een jaarverslag soms een jaar te vroeg vastgelegd. DCC stond daardoor ten onrechte op 10 bevestigde jaren met verkeerde oudere cijfers. Het tweede jaar komt nu uit de jaartallenkop van de tabel zelf. Een winst per aandeel of winst van precies 0 telt niet meer. Controle achteraf: alle 184 automatisch uitgelezen jaren die ook getagd in een ESEF-rapport staan, komen daarmee overeen.
+- **Londense fondsen met de hand afgemaakt** (BAE Systems, DCC, Marks & Spencer, Smiths, St. James's Place, BP), met letterlijke tekst en pagina uit de officiële jaarverslagen. Een Brits jaarverslag dat bij een ESEF-rapport hoort, staat nu onder hetzelfde kenmerk, zodat winst per aandeel en aantal aandelen in één indiening te vinden zijn.
+- **Nu volledig bevestigd (10 jaar): BAE Systems, DCC (nu met de juiste cijfers), Imperial Brands, Marks & Spencer en Smiths**, naast Coca-Cola HBC en Glencore. Computacenter en St. James's Place 9 jaar (voor 2016 staat geen jaarverslag op naam in het Britse register), BT 7. Volledig bevestigd: 66. Bevestigde jaren in Londen opgeteld: 194 → 221.
+- Niet gelukt: BP (de jaarverslagen taggen ook de winst per ADS met hetzelfde begrip, waardoor het jaar 2020 dubbelzinnig blijft).
+
 ## 2026.10.22-beta.62
 - **Fondsen: compacte filterbalk.** Zoekveld bovenaan, daaronder index, weergave en sortering naast elkaar zonder losse kopjes, en het vinkje voor bevestigde cijfers. De uitleg over de woorden staat nu onder de lijst. Op een telefoon begint de lijst daardoor ongeveer een half scherm hoger.
 - **Londense jaarverslagen uit het officiële Britse register** (FCA National Storage Mechanism) met de nieuwe hulpworkflow 'Britse jaarverslagen ophalen (ontwikkeling)': 430 jaarverslagen (boekjaren 2015-2021) van 83 Londense fondsen opgehaald, als tekst bewaard met publicatiedatum en officiële link.
