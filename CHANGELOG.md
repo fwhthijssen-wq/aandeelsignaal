@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.22-beta.59
+- **AMX, stap 2: jaarverslagen 2015-2019 uit het AFM-register.** Per jaar winst per aandeel, teller en verwaterd aantal aandelen met de hand gelezen en vastgelegd met AFM-kenmerk, pagina en tekst; elk jaar nagerekend (winst / aandelen = gemelde winst per aandeel).
+- **Nu volledig bevestigd (10 jaar): Aalberts, AMG, Arcadis, BAM, Corbion, Flow Traders, Heijmans, SBM Offshore, Signify, TKH, Van Lanschot Kempen en Vopak.** Basic-Fit 9 jaar (beursgang 2016: aantal aandelen +25%, dus 2016 buiten de reeks). Volledig bevestigd van 47 naar 59; niets achteruit, geen bestaande EPS gewijzigd.
+- Let op: AMG en SBM Offshore rapporteren in dollar, de koers is in euro. De winst per aandeel is bevestigd, maar koers-winstverhouding en dergelijke worden (zoals bij andere fondsen met twee valuta) niet berekend.
+- Bewust niet: Pharming (rapporteert sinds 2020 in dollar, daarvoor in euro: geen vergelijkbare reeks), Fugro en HAL (aangepaste aantallen door claimemissie en stockdividend), Theon, CSG, CVC, Havas, Allfunds, CTP en InPost (te korte historie of andere valuta).
+- AFM-hulpscript zoekt nu ook op oude bedrijfsnamen (Philips Lighting, Aalberts Industries, Van Lanschot) en vult de index aan in plaats van te overschrijven.
+
 ## 2026.10.22-beta.58
 - **AMX toegevoegd (Amsterdamse midcaps, 25 fondsen)** volgens de Euronext-herzieningen tot en met juni 2026 (september 2026: geen wijzigingen). Nieuw in de app o.a. Arcadis, BAM, Basic-Fit, Corbion, CTP, Flow Traders, Fugro, HAL, Heijmans, Pharming, Signify, TKH, Van Lanschot Kempen, Vopak, Allfunds, AMG, Air France-KLM, Fagron, Galapagos, Havas, Theon en CSG. Filter 'AMX (Amsterdam midcap)' in de keuzelijst.
 - **AEX bijgewerkt naar de huidige samenstelling:** CVC, InPost, WDP, SBM Offshore en Aalberts erbij; Randstad staat sinds maart 2026 in de AMX.

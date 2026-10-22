@@ -3807,6 +3807,124 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "AFM 32616 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32616",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3Q//PJEovFdexX8PSFRGfY/nIioRKL7A7ZX4GR3UnyWvlBfYR3AtELpm4TQv1yltWUqtKObQH1E3jz1A1TsaiiLGmmsjGps0NEp6voLsqkQiET5FYQrbaWOep6yQq/4HnAwKevrjGlk1iqMNWnZXxs8oFit4RPHqea3h76M8+FWk=",
+     "ingediend": "2018-03-29",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:32616",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1.8,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 56965000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 31714000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.32,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 40558000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 30811000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32616, jaarverslag 2017, pdf p.89, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 55664 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=55664",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3+FdwqDx9NNJ1LsBW2g+eqibMWG/VYgn8wdt1/5DecbxaFSuGWdKQ6/Dv62r1in+ZSdmRRybK7syeMxR54vDBa3pveHZ/yOZCKpEH7en0PgU6SH4rswsJsNfKsn/nZVdDWiEXdAmdaXAC5FuJskhKnuepETtgAHWj5+ntk8tuNR4=",
+     "ingediend": "2020-03-30",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:55664",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -1.64,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -48283000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 29416000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 2.97,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 94616000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 31848000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 55664, jaarverslag 2019, pdf p.91, toelichting winst per aandeel (\"shares adjusted for effect of dilution\")"
+      }
+     ]
+    },
+    {
      "document": "5493006MN6OH67U2YI74-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/5493006MN6OH67U2YI74/2021-12-31/ESEF/NL/0/amg-2021-12-31-en/reports/amg-2021-12-31-en.xhtml",
@@ -3965,6 +4083,124 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "AFM 31776 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31776",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3CA+G6cpNh/46ba+N5hKSEgTxvQrcMPWqdTT5b79l0g2qdYKegKrMp6LHwu/3zwtaXa38S2PIz5dE7dKd/BII9GoNLHcwjQCD1Au6PDCz91OziJmY4W1p9sEGFYxfnWo/AaTgnlWGKvGQKLU1Vv+ZgIQVQhykjdrAb3yZsvMtujE=",
+     "ingediend": "2018-02-27",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31776",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.81,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 70804000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 87836515.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.76,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 64154000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 84684549.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31776, jaarverslag 2017, pdf p.183, toelichting winst per aandeel (\"TOTAL AVERAGE NUMBER OF DILUTED SHARES\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 53721 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=53721",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3X+NgDHl9ml/PglpdHNBgWo8aS5N/NERQ/oMZ2igHg4Jh0MGSRnLKoLCtjU5OlOGuGrZ9+P4CrnvVPYGbHyFyhDslm/gCMXeMmGfr5ZZghGofOI3mAkRxD25B/tkdyEIb6BCWwSvKVcAez5CHcVvpIaveG8yOy2eo8fj4Mo/a+dI=",
+     "ingediend": "2020-02-21",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:53721",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.14,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 12302000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 89077844.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -0.31,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -26701000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 87123734.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 53721, jaarverslag 2019, pdf p.204, toelichting winst per aandeel (\"Total average number of diluted shares\")"
+      }
+     ]
+    },
+    {
      "document": "7245000UZH70GO047N03-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/7245000UZH70GO047N03/2021-12-31/ESEF/NL/0/7245000UZH70GO047N03-2021-12-31-en/reports/7245000UZH70GO047N03-2021-12-31-en.xhtml",
@@ -4122,6 +4358,159 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 24099 (jaarverslag 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24099",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3VDCcD10WR5lToFcK0qeUKMJNte0/hCt1//MqPndJLSka/IklMqG+mRUtF5NukukKtOc5s5PWU3iovNzEwdHIkESI1Tw1melA6d0UtD9+zPpJVBrAKI1aGj/hRt76KBCx7H15V9IipTfZZ2xJW8yoLrCiWkHLWCnVAxfoM/VXIsU=",
+     "ingediend": "2017-02-28",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:24099",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.17,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 49530000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 283643000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.04,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 10180000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 270957000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 24099, jaarverslag 2016, pdf p.192, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares in issue\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      }
+     ]
+    },
+    {
+     "document": "AFM 31951 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31951",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3IBl+dBKy20dIfttQ/gMGeCqC9MkLeq6KfhdbkoHQh3mBdZkWtf4hlHB8UsrutXkLazYkimQs7/Q+yv8iu0GkiZdzL0mGFjBHwPWRdGcGTn/rGDobP0CAITrHZNifL1xWsNZctQB8ss5+yXHKuIU4tcXaQqdGg+mVg72peOL+T2I=",
+     "ingediend": "2018-03-01",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31951",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.05,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31951, jaarverslag 2017, pdf p.216, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 12520000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31951, jaarverslag 2017, pdf p.216, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 272215000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31951, jaarverslag 2017, pdf p.216, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      }
+     ]
+    },
+    {
+     "document": "AFM 57755 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=57755",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3xhVzFfoR7w1e5+1MJjEf8/fZxr2GghV3hu9SQoRYTVBTbak0SAY2BLYYTOKInxNyuVWt44n8AryswD3uuwO0hqjaqSqTV4GhFfV623fANdi2hIZwy82rB2AHXnGLpSo+/ygr93PeOax/nowoXOOReR3RTawb66O+/HM3xHHGAFU=",
+     "ingediend": "2020-04-22",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:57755",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.04,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 11846000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 273496000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.09,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 23773000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 273491000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 57755, jaarverslag 2019, pdf p.168, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue (x 1,000)\"); verwaterde winst per aandeel gelijk aan de gewone (potentiële aandelen antiverwaterend), dus gewoon aantal en winst"
+      }
+     ]
+    },
     {
      "document": "724500V38C5KTDY5BS93-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -4290,6 +4679,124 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 32331 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32331",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3dRwRvAQW4yTJF8D+6F6qePaUgf8iVbVFJKtAA5Vz/oxbDUGkcx+DTVFWGNu66mgXYYIEpuMAOYucnqU9RG/eHfBZR0RFgB2bdlpBo4XCyDNTcgN0bTiI8q7QIcLErLuLH0a92ucHs2i2idhrimOVrjYABPUnv8oiakzqFkoj6F0=",
+     "ingediend": "2018-03-14",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:32331",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.2,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 11127000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 54663473.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -0.74,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -32373000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 43748634.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32331, jaarverslag 2017, pdf p.106, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      }
+     ]
+    },
+    {
+     "document": "AFM 54917 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54917",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3qIT7hJX/bp56/Jl5HNCXC7VhGWfSj9ce5PF+/nAXHHIJqmUAaDGfOPizU9CBTOM5QsAqmulIpQtjJmkVV3Jq6eREF2MfnOUIbDJAZ5hRrfYu7WmUqNaq3e32b8y502dnVMt0HrIgbwJKkopvXGLz8VSCba3BIBkhqluns6383f4=",
+     "ingediend": "2020-03-12",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:54917",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.2,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 11048000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 54666295.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.17,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 9370000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 54666404.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54917, jaarverslag 2019, pdf p.128, toelichting winst per aandeel (\"Weighted average number of ordinary shares for diluted earnings per share\"); geen verwaterende aandelen: verwaterd aantal = gewoon aantal"
+      }
+     ]
+    },
     {
      "document": "724500HUXGTQC07CAZ61-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -4528,6 +5035,124 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 24456 (jaarverslag 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24456",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA37dXW6R6Ha8hsQLkV5fDPghLgeyG/EpPxJMwvA4cjIpseTzNQ0ud7z9nO5d30XsutTDdve0jbzIpfyvWtGtNQznKW76ht5xcQtVlWOZLvUKFqA2L7OjowxJB8X0SnMw63k+bME1/e7BEQikkTrS3VC5hWJB4vBQabQcfTy0X8bBk=",
+     "ingediend": "2017-03-16",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:24456",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.72,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 101500000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 59000000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1.28,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 78000000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 60800000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 24456, jaarverslag 2016, pdf p.94, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 42044 (jaarverslag 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=42044",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3lk4vxmm7z2uauw515wZi42s4+KIUdmkF6imVtxtXUZXwA4/p0/Q/A48MigJkTAKoSfJTkK1njwBmAUs11r6grVuenN7T3PkyuM6MgrEI8ETZ+EiUzz66do8loZHOwhk8VlC0GaIh67/wo5CgkGTx7+R6pXUYzQ9eZ1P8mxVvBeA=",
+     "ingediend": "2019-03-21",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:42044",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.92,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 54300000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 59300000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1.44,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 84600000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 58700000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 42044, jaarverslag 2018, pdf p.104, toelichting winst per aandeel (\"Weighted average number of outstanding ordinary shares after dilution\")"
+      }
+     ]
+    },
     {
      "document": "724500BKS1TSAVLTWG46-2020-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -5011,6 +5636,124 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "AFM 31950 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31950",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3IBl+dBKy20dIfttQ/gMGeBph1nxWv+PBVOM6PoKl+W87lTpuch6NHYs0Ak43BD3ozDcf7E98jxDs7xJ/a1UdjzA6blNcnD9rf7XTZErSR1P5O0omtFF+QG1pQqi5WKkkzgf7XDhs/Aa0qULGikhBnDnDp9oQ+Pjb3VduR4tEgE0=",
+     "ingediend": "2018-03-02",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31950",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.85,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 39595000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 46534500.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.98,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 91936000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 46534500.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31950, jaarverslag 2017, pdf p.88, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      }
+     ]
+    },
+    {
+     "document": "AFM 54044 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54044",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA35/98WQmndOaLRdm9bL/E3B+d5wFAko2Z7mSdi/rO61YOntnMLWyEeixZHR+MGuogKG7Hi+PPgCpIivjq1E0ilmptiorcHJKYC3TiPofLzuM1P/m9FlH00fvDs5KqBxgKdW+2RCFaJuViXvt//gHjAHHBa35+UoUyjjofEL7sRj8=",
+     "ingediend": "2020-02-28",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:54044",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1.15,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 53137000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 46367533.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 3.46,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 160933000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 46448052.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54044, jaarverslag 2019, pdf p.97, toelichting winst per aandeel (\"Issued ordinary shares\"); gewone en volledig verwaterde winst per aandeel gelijk (geen verwaterende aandelen)"
+      }
+     ]
+    },
+    {
      "document": "549300Z7LIC6NFIJL947-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/549300Z7LIC6NFIJL947/2021-12-31/ESEF/NL/0/549300Z7LIC6NFIJL947-2021-12-31-en/reports/549300Z7LIC6NFIJL947-2021-12-31-en.xhtml",
@@ -5234,6 +5977,124 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 32949 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32949",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3jLuANUsKl2uoECVh7X1u8NPndp60qCrnJSp1f0dltD6HBUN3pHcaiCWz3I2w0p10wLq4YIXZG2OJ4cXTJZv3RrOOXKwWMRPpMTsw08YAyWjBW2tApvh8kwl6FE1Rj0gZ5mLafbuqQu0yh1h5zlrR1ESdkXOO9K+UZYORuOfJeUc=",
+     "ingediend": "2018-04-12",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:32949",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.91,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 19542000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 21408000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -5.16,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -110494000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 21407000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32949, jaarverslag 2017, pdf p.179, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 57425 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=57425",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3k9xQtvwo8EupHY2uXjuc91oku8i2uGc963Nv9cXr0hnZti27Lwxc3lOtlmcPAhW/ylUafkFqPrHWU0j1gi4FoX96Fmc9ccpUBNzcjNyL8R55l7PeM2T9OgMYpHO6ez8hLlxH6goGalNrLMythGA5UJda53wUKsUQthMaqvmlODQ=",
+     "ingediend": "2020-04-15",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:57425",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1.4,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 30056000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 21409000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.96,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 20489000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 21409000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 57425, jaarverslag 2019, pdf p.174, toelichting winst per aandeel (\"Verwaterd resultaat per gewoon aandeel\")"
+      }
+     ]
+    },
     {
      "document": "724500OUE3PCA809DZ79-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -5541,6 +6402,124 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "AFM 32533 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32533",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3Fpw2O3BYAUgIRY6FGUQSQDmc5LnOAJstEqycQF1+FTMXHyRX3T9fYXJc1F3yzM2qbWh1BLI2KbYuhIp45LL8psAGyLaMyTsZxuxxz0LJmH8ktww02GOZGlIOqSJ4PotnzK6yTPz+HyNz+M+5yvQplC85//mIp0+dOhtFbwt1Fxc=",
+     "ingediend": "2018-03-22",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:32533",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 2.06,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 87324000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 42397000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 2.03,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 85707000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 42214000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32533, jaarverslag 2017, pdf p.161, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 55617 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=55617",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3+FdwqDx9NNJ1LsBW2g+eqhTsniR/IDe+t/Q0ojxbGLQLWQDVa+jD4Ih53YuFsczkxLHaR2lUWcgKC8+IMuvvrpi+s3KfCu91+FNltSqhWe+lQxskgvPqzE/AfExvrISbOU3n0dJKXfpiPMw1wsOqbUVdSmvmuzCGQWagkRU9Fsw=",
+     "ingediend": "2020-03-26",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:55617",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2.71,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 114048000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 42120000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 2.57,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 108551000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 42302000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 55617, jaarverslag 2019, pdf p.169, toelichting winst per aandeel (\"aandelen (verwaterd, x 1.000)\")"
+      }
+     ]
+    },
+    {
      "document": "7245008G22FOV7TYYJ34-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/7245008G22FOV7TYYJ34/2021-12-31/ESEF/NL/0/7245008G22FOV7TYYJ34-2021-12-31-en/reports/7245008G22FOV7TYYJ34-2021-12-31-en.xhtml",
@@ -5728,6 +6707,100 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 31890 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31890",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3sC1r4azpxOUVpr9YGq6ozueL8rTWjC4SeU7pEetL/0P/LvudxMxay7gPAJSZNAJ3mMdHQ/XeNfYI7zgqYMBeLinDNxP9NprOQuhaKc3awYsUobaqMkT3toyEXCr42GeD/uHuKuM6Gg9zRlhBW6PxsfDmId0lpfqBJCyC2R6fMTQ=",
+     "ingediend": "2018-03-01",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31890",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 2.16,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 89508000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 41369418.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.59,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 65735000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 41413638.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31890, jaarverslag 2017, pdf p.196, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 54002 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54002",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA35/98WQmndOaLRdm9bL/E3G/pXyzsglstthWRuP+qQjgFUBS8q+qqqrhzTVV5Fr95ZDk0G8Z/ESYY0pN0/eqT7l6mAiBhUFjqZw5G9vhRg52/rAze6bqzmnqNTdKqEJDQiaXsa9/meVbTlNHFf5T73Y7Hs3ATnlx+vYZsCWUAavE=",
+     "ingediend": "2020-02-27",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:54002",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 1.81,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54002, jaarverslag 2019, pdf p.183, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 74631000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54002, jaarverslag 2019, pdf p.183, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 41299009.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54002, jaarverslag 2019, pdf p.183, toelichting winst per aandeel (\"Weighted average number of ordinary shares in issue, fully diluted\")"
+      }
+     ]
+    },
     {
      "document": "724500ZM85SCL0RS8L71-2020-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -5926,6 +6999,100 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 31348 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31348",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3x2Yb53+p8Z8T0uOmvIposNhf2is/twUW+WLom8t1oOyt4cHXxkoK9musk7Yr7cfnuxRBiE/PxDhrjHiZtfi7ncp4ZnHcGIoqiIwZSZKkcMZNm5FA9ET/v8LW1rAPwRTTb90Iw+lcjmLxwX2MkNXDz+XSswvIDAU+RzOgQPa2pk4=",
+     "ingediend": "2018-02-16",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31348",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1.84,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 235400000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 127686590.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 4.18,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 534000000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 127715702.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31348, jaarverslag 2017, pdf p.133, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 53435 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=53435",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3zYORNcW2lnixGCDBeRSEANuIqVJz+xzjdWPdiTAW0a60Hkkbo/pTJ21amUxMSyPfUkmS5JI7JiUjD65+tfeoC8Cg+92jlPIiaz4dm7u5e7q24ij2dsm4wglKwI8BpKytJqQNTx+WCUzCbId6mzur6sq8d7LFll+eqof6YF1f760=",
+     "ingediend": "2020-02-13",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:53435",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 1.99,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 53435, jaarverslag 2019, pdf p.120, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 254500000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 53435, jaarverslag 2019, pdf p.120, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 127782646.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 53435, jaarverslag 2019, pdf p.120, toelichting winst per aandeel (\"Weighted average number of ordinary shares including dilutive effect\")"
+      }
+     ]
+    },
     {
      "document": "724500UL634GFV1KYF10-2020-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -6223,6 +7390,124 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "AFM 31117 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31117",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3AAStFZ02r2R4txU1q9NInbmcE5aZbHTC86OfgMPV60zKzL5c4d6cZflCMDDb+F+o1cJDYsKQx2KL0NX5mEV4P5aQoO4lSKMj51aLgc8VgLEO1pfAR2IiE4Cnk1ifKb/27Lt+HTHdNydsaYcHrzpxsWEVOMJrXEjQ1X4t6QwrCI8=",
+     "ingediend": "2018-02-08",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31117",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -0.76,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -155122000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 202849287.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.87,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 182307000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 210570163.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31117, jaarverslag 2017, pdf p.156, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 53422 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=53422",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3zYORNcW2lnixGCDBeRSEALY5eWB/DTkYy1oxjlVOEJ3Xn2utI7yFiaQl3aJspwbP3k3YvTvZblmYGwENq6zBVFwshvTX1GYHSOKA2pB3y7jRYVyspmDlj6tzmC/PPnqMrYFwicbjlrnKh81YEQg2Tua1rP6oOqu5oaL5Z7ikcPo=",
+     "ingediend": "2020-02-13",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:53422",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1.84,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 365896000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 198580308.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 1.04,
+       "eenheid": "USD/shares",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 212045000.0,
+       "eenheid": "USD",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 204305423.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 53422, jaarverslag 2019, pdf p.164, toelichting winst per aandeel (\"Weighted average number of shares (diluted)\")"
+      }
+     ]
+    },
+    {
      "document": "549300RDGCRYZ5QE6513-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/549300RDGCRYZ5QE6513/2021-12-31/ESEF/NL/0/SBMO-2021-12-31/reports/SBMO-2021-12-31.html",
@@ -6380,6 +7665,159 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "AFM 24226 (jaarverslag 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24226",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3GaQq4PyKa5jyChvWkyVPAeANBw8xW9AOWB6L4eOSsxOB6G4liG0j0Vog9xUud+z3sxY9K2XuJO7pej2R+uLHHsaWOJsO6HDpIS0Yew1MttFu9ewRHh7W/LVd1GC74WxrhmIamAU+FGeZNYQWZzrIrYaliTdH4GRZ7qCq+3oItPM=",
+     "ingediend": "2017-03-08",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:24226",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1.5,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 24226, jaarverslag 2016, pdf p.85, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 165700000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 24226, jaarverslag 2016, pdf p.85, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 110772542.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 24226, jaarverslag 2016, pdf p.85, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 32165 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32165",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA33+9Svh3RYusNameKos9anQub0ew+/WDp1eaeal+aZ7HtbnvRsHeGmLMgzAXbf5s5zYvVHRJ3PFyIrWgH9ChCDy9m4F3CO/h3gZucmbVJ3qUC24CrfrV7IMAUaHFUrSfo6ZSTCrQne9DP44Ya9BVYQsd6ajfGKUi76aG9Nb0pFwA=",
+     "ingediend": "2018-03-08",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:32165",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1.85,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 204500000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 110859602.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.65,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 182600000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 110712602.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 32165, jaarverslag 2017, pdf p.92, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 54738 (jaarverslag 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54738",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3VutOuWg3WcRWOKtskrV75Mkqjf7Pv2w8M0BYjWVUwAlayLsSi+2QcLpH20EPBezZfZ9id82KkMJIJ4pm3W5l9TIX62kwjg6YIkTm3katfObQbY395rJmVXagXJI670eWwd1YrImdMsIiwJ19Ypwmo0DkexG7NBUY314L3Dr2m30=",
+     "ingediend": "2020-03-11",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:54738",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2.03,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 225700000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 110984102.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 2.15,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 238200000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 110727102.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 54738, jaarverslag 2019, pdf p.126, toelichting winst per aandeel (\"including effect of performance share plan\")"
+      }
+     ]
+    },
     {
      "document": "549300EMP9DT6Q35HZ31-2021-12-31-ESEF-NL-0.xhtml",
      "soort": "esef-tekst",
@@ -6713,6 +8151,108 @@
        "oorspronkelijk": 222736116.0,
        "schaal": 1,
        "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"wogen gemiddeld aantal aandelen. 2 Berekening op basis van het aantal dividendgerechtigde aandelen. 3 Het uitkeringspercentage is berekend in absolute cijfers op basis van het geconsolideerd resultaat. De effectieve uitkering van het dividend gebeurt op basis van het statutaire resultaat van WDP NV.\""
+      }
+     ]
+    }
+   ]
+  },
+  "LIGHT.AS": {
+   "naam": "Signify N.V.",
+   "lei": "549300072P3J1X8NZO35",
+   "vastgelegd": "2026-10-22",
+   "methode": "met de hand gelezen uit AFM-deponeringen",
+   "documenten": [
+    {
+     "document": "AFM 31779 (jaarverslag 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31779",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA3CA+G6cpNh/46ba+N5hKSEtcbqH7hTr84foj3x6xb0Tou0tY2wYQF1DXNpJ4DqOEMTlFhhjOOn36KMKWR9kdNg4FZtf1oiIjE6OdvQoq8la+RxhEq7jGAJ0Dt46Z/fZxBB4t9l95LsebVL9lnYc2WUvywyV/4KZwGzs4F3Rsj0Rc=",
+     "ingediend": "2018-02-27",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:31779",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.26,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 31779, jaarverslag 2017, pdf p.68, toelichting winst per aandeel (\"Earnings per common share attributable to shareholders\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 189000000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 31779, jaarverslag 2017, pdf p.68, toelichting winst per aandeel (\"Earnings per common share attributable to shareholders\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 150000000.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 31779, jaarverslag 2017, pdf p.68, toelichting winst per aandeel (\"Earnings per common share attributable to shareholders\")"
+      }
+     ]
+    },
+    {
+     "document": "AFM 41343 (jaarverslag 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=41343",
+     "download": "https://www.afm.nl/downloadregisterfile.aspx?type=financiele-verslaggeving&enc=W3+45r/EgSt+MtL1GWvLPE2Leqbp4xQg3ljkJhP4gElolUDJqF3I7FQeIjKtO175g4Ya2KHQjZ8euvIcHZsTslLKR9RpKISKvkIi/O+L4SizbfMZt2UTZXwo0vQAqXA38mzw4u57xNMw/crI/FJJTEpXZYNwVxMPttDti1vGDg/6WIvOU2F79KbMZpoR0ux6Y+jFoCIe68wkg5ncStOp0BO4u9lZkboPn+BnEWnlYT75W9F57tQ5oRtcclTSBNHOc2zNHPIpHYcbY+1vsZEqXpyYb+A/7+1SdB2EsNgojis=",
+     "ingediend": "2019-02-26",
+     "ingediend_bron": "deponeringsdatum AFM-register financiële verslaggeving",
+     "kenmerk": "AFM:41343",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 1.95,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 263000000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 134671599.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 2.04,
+       "eenheid": "EUR/shares",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 294000000.0,
+       "eenheid": "EUR",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 144202354.0,
+       "eenheid": "shares",
+       "bewijs": "AFM-deponering 41343, jaarverslag 2018, pdf p.97, toelichting winst per aandeel (\"Diluted weighted average number of ordinary shares\")"
       }
      ]
     }
