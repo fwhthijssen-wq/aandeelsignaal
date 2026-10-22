@@ -1,0 +1,1 @@
+import{W as r}from"./chunk-T4UOP3QB.js";var c=(()=>{class t{craStorage;equityStorage;nonEquityStorage;firdsStorage;constructor(){}static \u0275fac=function(e){return new(e||t)};static \u0275prov=r({token:t,factory:t.\u0275fac})}return t})();export{c as a};

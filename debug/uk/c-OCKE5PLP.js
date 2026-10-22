@@ -1,0 +1,1 @@
+import{W as o,d as t}from"./chunk-T4UOP3QB.js";var c=(()=>{class r{previousUrl=new t(null);previousUrl$=this.previousUrl.asObservable();constructor(){}setPreviousUrl(e){this.previousUrl.next(e)}static \u0275fac=function(i){return new(i||r)};static \u0275prov=o({token:r,factory:r.\u0275fac})}return r})();export{c as a};

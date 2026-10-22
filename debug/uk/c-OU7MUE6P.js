@@ -1,0 +1,1 @@
+var s=class{constructor(i){this.from=null,this.size=null,this.sort=null,this.keyword=null,this.sortorder=null,this.criteriaObj=null}from;size;sort;keyword;sortorder;criteriaObj},t=class{criteria;dateCriteria},l=class{name;value},o=class{name;value},e=class{from;to};export{s as a,t as b,l as c,o as d,e};
