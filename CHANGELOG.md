@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.22-beta.60
+- **Aantal aandelen uit de tekst van de ESEF-rapporten 2020-2025, nu ook buiten Nederland** (Londen, Parijs, Madrid, Milaan, Brussel, Frankfurt): 231 fondsen automatisch uitgelezen met dezelfde controle (winst / aandelen = gemelde winst per aandeel op de cent; hetzelfde jaar in twee rapporten gelijk). De uitlezer kent nu ook Franse, Spaanse, Italiaanse en Duitse labels en Europese getalnotatie (1 234 567 en 25,13).
+- Resultaat (bevestigde jaren, opgeteld): Londen 3 → 176, Parijs 43 → 80, Madrid 20 → 71, Milaan 25 → 41, Brussel 27 → 40, Frankfurt 13 → 17. Voorbeelden: Coca-Cola HBC, Qiagen, Endesa, Bureau Veritas en argenx 7 jaar; Saint-Gobain, Thales, Naturgy, Glencore, BT en Informa 6. Niets achteruit.
+- **Nieuw: Franse jaarverslagen uit het officiële Franse register** (info-financiere.gouv.fr, open data van de AMF/DILA), met hulpworkflow 'Franse jaarverslagen ophalen (ontwikkeling)'. Alleen documenten waarin de winst per aandeel staat; per jaar automatisch uitgelezen en alleen vastgelegd als winst / verwaterd aantal aandelen de gemelde winst per aandeel geeft en er precies één passende combinatie is. Getest op de met de hand gelezen Nederlandse jaarverslagen: 33 van 33 uitgelezen jaren juist, de rest niet uitgelezen. Vastgelegd voor o.a. LVMH, Air Liquide, Capgemini, Dassault Systèmes, L'Oréal, Orange, Pernod Ricard (gebroken boekjaar juni), Publicis en Société Générale.
+- Nog geen extra fondsen met tien jaar: voor de meeste Franse fondsen staan de volledige jaarverslagen van vóór 2020 niet in dat register (alleen persberichten), en Duitse ESEF-rapporten staan nauwelijks in de openbare database.
+
 ## 2026.10.22-beta.59
 - **AMX, stap 2: jaarverslagen 2015-2019 uit het AFM-register.** Per jaar winst per aandeel, teller en verwaterd aantal aandelen met de hand gelezen en vastgelegd met AFM-kenmerk, pagina en tekst; elk jaar nagerekend (winst / aandelen = gemelde winst per aandeel).
 - **Nu volledig bevestigd (10 jaar): Aalberts, AMG, Arcadis, BAM, Corbion, Flow Traders, Heijmans, SBM Offshore, Signify, TKH, Van Lanschot Kempen en Vopak.** Basic-Fit 9 jaar (beursgang 2016: aantal aandelen +25%, dus 2016 buiten de reeks). Volledig bevestigd van 47 naar 59; niets achteruit, geen bestaande EPS gewijzigd.
