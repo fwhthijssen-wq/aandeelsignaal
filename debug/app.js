@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.22-beta.61';
+  var APP_VERSIE = '2026.10.22-beta.62';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -222,13 +222,13 @@
     var k = fondsKeuze;
     function opt(waarde, tekst, gekozen) { return '<option value="' + h(waarde) + '"' + (waarde === gekozen ? ' selected' : '') + '>' + h(tekst) + '</option>'; }
     var groepen = indexLijst().concat(DATA.aandelen.some(function (a) { return Dashboard.indexGroepen(a)[0] === 'VS'; }) ? ['VS'] : []);
-    return '<section><h1>Fondsen</h1><div><label for="q">Naam of beurscode</label><input id="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld Apple of ASML" value="' + h(k.zoek) + '"></div>' +
-      '<div class="knoppen" style="align-items:flex-end">' +
-      '<div><label for="zi">Index</label><select id="zi">' + opt('', 'Alle indices', k.index) + groepen.map(function (i) { return opt(i, INDEX_NAAM[i] || i, k.index); }).join('') + '</select></div>' +
-      '<div><label for="f-weergave">Weergave</label><select id="f-weergave">' + opt('index', 'Per index', k.weergave) + opt('lijst', 'Eén lijst', k.weergave) + '</select></div>' +
-      '<div><label for="f-sort">Sorteer op</label><select id="f-sort">' + Object.keys(FONDS_SORT_NAAM).map(function (x) { return opt(x, FONDS_SORT_NAAM[x], k.sorteer); }).join('') + '</select></div>' +
-      '<label class="vink"><input type="checkbox" id="f-bev"' + (k.alleenBevestigd ? ' checked' : '') + '> Alleen bevestigde cijfers</label></div>' +
-      uitlegOordeel() + '<div id="res"></div><p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Kansrijkheid: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke groep de hoogste score, gewogen met de onderbouwing. Selectiehulp, geen beleggingsadvies.</p></section>';
+    return '<section><h1>Fondsen</h1><div class="filterbalk">' +
+      '<label for="q" class="vh">Naam of beurscode</label><input id="q" type="search" autocomplete="off" placeholder="Zoek op naam of beurscode" value="' + h(k.zoek) + '">' +
+      '<div class="filterkeuzes"><label for="zi" class="vh">Index</label><select id="zi">' + opt('', 'Alle indices', k.index) + groepen.map(function (i) { return opt(i, INDEX_NAAM[i] || i, k.index); }).join('') + '</select>' +
+      '<label for="f-weergave" class="vh">Weergave</label><select id="f-weergave">' + opt('index', 'Per index', k.weergave) + opt('lijst', 'Eén lijst', k.weergave) + '</select>' +
+      '<label for="f-sort" class="vh">Sorteer op</label><select id="f-sort">' + Object.keys(FONDS_SORT_NAAM).map(function (x) { return opt(x, 'Sorteer: ' + FONDS_SORT_NAAM[x], k.sorteer); }).join('') + '</select></div>' +
+      '<label class="vink klein"><input type="checkbox" id="f-bev"' + (k.alleenBevestigd ? ' checked' : '') + '> Alleen bevestigde cijfers</label></div>' +
+      '<div id="res"></div>' + uitlegOordeel() + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Kansrijkheid: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke groep de hoogste score, gewogen met de onderbouwing. Selectiehulp, geen beleggingsadvies.</p></section>';
   }
   function fondsRegel(a) {
     var plek = a.positiePct != null ? 'plek in bereik ' + getal(a.positiePct, 0) + '%' : '';

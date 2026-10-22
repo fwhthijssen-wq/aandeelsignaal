@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-10-22T14:30:05+00:00",
+ "gemaakt": "2026-10-22T17:38:06+00:00",
  "yahoo_vergelijk": {
   "bedrijven": 64,
   "velden": {
@@ -18483,13 +18483,23 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 9,
    "valuta": [
     "EUR"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2019,
      "status": null,
@@ -18527,6 +18537,8 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -18549,10 +18561,10 @@
     "gross_profit": 0,
     "operating_income": 7,
     "interest_expense": 7,
-    "shares_diluted": 1,
-    "koers_hoog": 7,
-    "koers_laag": 7,
-    "dividend_ps": 6
+    "shares_diluted": 3,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 8
    },
    "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2020-12-31, 2021-12-31, 2023-12-31, 2024-12-31, 2025-12-31",
    "waarschuwingen": [
@@ -21211,13 +21223,28 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 10,
    "valuta": [
     "EUR"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2019,
      "status": null,
@@ -21255,6 +21282,9 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -21277,10 +21307,10 @@
     "gross_profit": 7,
     "operating_income": 7,
     "interest_expense": 0,
-    "shares_diluted": 3,
-    "koers_hoog": 7,
-    "koers_laag": 7,
-    "dividend_ps": 7
+    "shares_diluted": 7,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
    },
    "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2020-12-31, 2021-12-31, 2023-12-31, 2024-12-31, 2025-12-31",
    "waarschuwingen": [
@@ -38522,7 +38552,7 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 5,
-   "jaren_in_dossier": 6,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP"
    ],
@@ -38530,12 +38560,36 @@
    "splits": [],
    "open_jaren": [
     {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
+    {
      "jaar": 2020,
      "status": null,
      "reden": ""
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
     "2020-12-31",
     "2021-12-31",
     "2022-12-31",
@@ -38557,12 +38611,12 @@
     "gross_profit": 0,
     "operating_income": 6,
     "interest_expense": 6,
-    "shares_diluted": 5,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2021-12-31; oudere boekjaren buiten beschouwing (2020-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2021-12-31; oudere boekjaren buiten beschouwing (2016-12-31, 2017-12-31, 2018-12-31, 2019-12-31, 2020-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -38883,13 +38937,33 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 5,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2021,
      "status": null,
@@ -38917,6 +38991,10 @@
     }
    ],
    "einddata": [
+    "2017-06-30",
+    "2018-06-30",
+    "2019-06-30",
+    "2020-06-30",
     "2021-06-30",
     "2022-06-30",
     "2023-06-30",
@@ -38927,20 +39005,20 @@
     "pretax_income": 5,
     "depreciation": 0,
     "dividends_paid": 5,
-    "long_term_debt": 5,
-    "total_assets": 5,
-    "current_assets": 5,
-    "current_liabilities": 5,
-    "total_liabilities": 5,
-    "retained_earnings": 5,
-    "cash": 5,
+    "long_term_debt": 6,
+    "total_assets": 6,
+    "current_assets": 6,
+    "current_liabilities": 6,
+    "total_liabilities": 6,
+    "retained_earnings": 6,
+    "cash": 6,
     "gross_profit": 5,
     "operating_income": 5,
     "interest_expense": 5,
-    "shares_diluted": 3,
-    "koers_hoog": 5,
-    "koers_laag": 5,
-    "dividend_ps": 5
+    "shares_diluted": 7,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 9
    },
    "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2023-06-30, 2024-06-30",
    "waarschuwingen": [
@@ -39057,7 +39135,7 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 5,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP",
     "USD"
@@ -39065,6 +39143,16 @@
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2019,
      "status": null,
@@ -39077,6 +39165,8 @@
     }
    ],
    "einddata": [
+    "2017-12-31",
+    "2018-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -39095,16 +39185,16 @@
     "current_liabilities": 6,
     "total_liabilities": 6,
     "retained_earnings": 0,
-    "cash": 7,
+    "cash": 8,
     "gross_profit": 0,
     "operating_income": 7,
     "interest_expense": 7,
-    "shares_diluted": 6,
+    "shares_diluted": 8,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2021-12-31; oudere boekjaren buiten beschouwing (2019-12-31, 2020-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2020-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2021-12-31; oudere boekjaren buiten beschouwing (2017-12-31, 2018-12-31, 2019-12-31, 2020-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2020-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -39213,13 +39303,23 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 2,
-   "jaren_in_dossier": 6,
+   "jaren_in_dossier": 8,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2021,
      "status": null,
@@ -39242,6 +39342,8 @@
     }
    ],
    "einddata": [
+    "2017-03-31",
+    "2018-03-31",
     "2021-03-31",
     "2022-03-31",
     "2023-03-31",
@@ -39263,12 +39365,12 @@
     "gross_profit": 6,
     "operating_income": 0,
     "interest_expense": 6,
-    "shares_diluted": 3,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 5,
+    "koers_hoog": 8,
+    "koers_laag": 8,
+    "dividend_ps": 8
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2025-03-31; oudere boekjaren buiten beschouwing (2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2025-03-31; oudere boekjaren buiten beschouwing (2017-03-31, 2018-03-31, 2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -39351,8 +39453,8 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 6,
-   "jaren_in_dossier": 6,
+   "jaren_bevestigd": 8,
+   "jaren_in_dossier": 8,
    "valuta": [
     "GBP"
    ],
@@ -39360,6 +39462,8 @@
    "splits": [],
    "open_jaren": [],
    "einddata": [
+    "2019-03-31",
+    "2020-03-31",
     "2021-03-31",
     "2022-03-31",
     "2023-03-31",
@@ -39381,10 +39485,10 @@
     "gross_profit": 0,
     "operating_income": 6,
     "interest_expense": 6,
-    "shares_diluted": 6,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 5
+    "shares_diluted": 8,
+    "koers_hoog": 8,
+    "koers_laag": 8,
+    "dividend_ps": 7
    },
    "toelichting": "aantal aandelen stabiel over alle boekjaren",
    "waarschuwingen": [
@@ -39402,13 +39506,33 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 3,
-   "jaren_in_dossier": 6,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2020,
      "status": null,
@@ -39426,6 +39550,10 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
     "2020-12-31",
     "2021-12-31",
     "2022-12-31",
@@ -39447,12 +39575,12 @@
     "gross_profit": 0,
     "operating_income": 6,
     "interest_expense": 6,
-    "shares_diluted": 6,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-12-31; oudere boekjaren buiten beschouwing (2020-12-31, 2021-12-31, 2022-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-12-31; oudere boekjaren buiten beschouwing (2016-12-31, 2017-12-31, 2018-12-31, 2019-12-31, 2020-12-31, 2021-12-31, 2022-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -39742,8 +39870,8 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 7,
-   "jaren_in_dossier": 7,
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
    "valuta": [
     "EUR",
     "GBP"
@@ -39752,6 +39880,9 @@
    "splits": [],
    "open_jaren": [],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -39774,7 +39905,7 @@
     "gross_profit": 7,
     "operating_income": 7,
     "interest_expense": 7,
-    "shares_diluted": 7,
+    "shares_diluted": 10,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
@@ -39993,8 +40124,8 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 6,
-   "jaren_in_dossier": 6,
+   "jaren_bevestigd": 9,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP"
    ],
@@ -40002,6 +40133,9 @@
    "splits": [],
    "open_jaren": [],
    "einddata": [
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
     "2020-12-31",
     "2021-12-31",
     "2022-12-31",
@@ -40019,14 +40153,14 @@
     "current_liabilities": 6,
     "total_liabilities": 6,
     "retained_earnings": 6,
-    "cash": 6,
+    "cash": 7,
     "gross_profit": 6,
     "operating_income": 6,
     "interest_expense": 6,
-    "shares_diluted": 6,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 9,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 9
    },
    "toelichting": "aantal aandelen stabiel over alle boekjaren",
    "waarschuwingen": [
@@ -40356,8 +40490,8 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 6,
-   "jaren_in_dossier": 6,
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP"
    ],
@@ -40365,6 +40499,10 @@
    "splits": [],
    "open_jaren": [],
    "einddata": [
+    "2017-03-31",
+    "2018-03-31",
+    "2019-03-31",
+    "2020-03-31",
     "2021-03-31",
     "2022-03-31",
     "2023-03-31",
@@ -40386,10 +40524,10 @@
     "gross_profit": 6,
     "operating_income": 6,
     "interest_expense": 6,
-    "shares_diluted": 6,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 10,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
    },
    "toelichting": "aantal aandelen stabiel over alle boekjaren",
    "waarschuwingen": [
@@ -41193,13 +41331,23 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 4,
+   "jaren_in_dossier": 6,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2022,
      "status": null,
@@ -41222,6 +41370,8 @@
     }
    ],
    "einddata": [
+    "2018-05-28",
+    "2019-05-28",
     "2022-05-29",
     "2023-05-28",
     "2024-06-02",
@@ -41241,10 +41391,10 @@
     "gross_profit": 4,
     "operating_income": 4,
     "interest_expense": 4,
-    "shares_diluted": 0,
-    "koers_hoog": 4,
-    "koers_laag": 4,
-    "dividend_ps": 4
+    "shares_diluted": 2,
+    "koers_hoog": 6,
+    "koers_laag": 6,
+    "dividend_ps": 6
    },
    "toelichting": "EPS of indiening ontbreekt voor boekjaar 2025-06-01",
    "waarschuwingen": [
@@ -41289,8 +41439,8 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 6,
-   "jaren_in_dossier": 6,
+   "jaren_bevestigd": 10,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP",
     "USD"
@@ -41299,6 +41449,10 @@
    "splits": [],
    "open_jaren": [],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
     "2020-12-31",
     "2021-12-31",
     "2022-12-31",
@@ -41316,11 +41470,11 @@
     "current_liabilities": 6,
     "total_liabilities": 6,
     "retained_earnings": 0,
-    "cash": 6,
+    "cash": 7,
     "gross_profit": 0,
     "operating_income": 0,
     "interest_expense": 6,
-    "shares_diluted": 6,
+    "shares_diluted": 10,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
@@ -41844,7 +41998,7 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 3,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP",
     "USD"
@@ -41852,6 +42006,16 @@
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2019,
      "status": null,
@@ -41874,6 +42038,8 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -41896,12 +42062,12 @@
     "gross_profit": 0,
     "operating_income": 4,
     "interest_expense": 7,
-    "shares_diluted": 6,
+    "shares_diluted": 8,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-12-31; oudere boekjaren buiten beschouwing (2019-12-31, 2020-12-31, 2021-12-31, 2022-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-12-31; oudere boekjaren buiten beschouwing (2016-12-31, 2017-12-31, 2019-12-31, 2020-12-31, 2021-12-31, 2022-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -42263,13 +42429,28 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 4,
-   "jaren_in_dossier": 6,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2021,
      "status": null,
@@ -42282,6 +42463,9 @@
     }
    ],
    "einddata": [
+    "2017-03-31",
+    "2019-03-31",
+    "2020-03-31",
     "2021-03-31",
     "2022-03-31",
     "2023-03-31",
@@ -42299,16 +42483,16 @@
     "current_liabilities": 6,
     "total_liabilities": 6,
     "retained_earnings": 6,
-    "cash": 6,
+    "cash": 7,
     "gross_profit": 0,
     "operating_income": 0,
     "interest_expense": 6,
-    "shares_diluted": 4,
-    "koers_hoog": 6,
-    "koers_laag": 6,
-    "dividend_ps": 6
+    "shares_diluted": 8,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 9
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-03-31; oudere boekjaren buiten beschouwing (2021-03-31, 2022-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2021-03-31, 2022-03-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-03-31; oudere boekjaren buiten beschouwing (2017-03-31, 2019-03-31, 2020-03-31, 2021-03-31, 2022-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2021-03-31, 2022-03-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -42629,15 +42813,36 @@
    "koers_datum": "2026-10-22",
    "fout": null,
    "eps_status": "independently_verified",
-   "jaren_bevestigd": 4,
-   "jaren_in_dossier": 4,
+   "jaren_bevestigd": 6,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
-   "open_jaren": [],
+   "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    }
+   ],
    "einddata": [
+    "2016-09-30",
+    "2017-09-30",
+    "2018-09-30",
+    "2020-09-30",
+    "2021-09-30",
     "2022-09-30",
     "2023-09-30",
     "2024-09-30",
@@ -42653,16 +42858,16 @@
     "current_liabilities": 4,
     "total_liabilities": 4,
     "retained_earnings": 4,
-    "cash": 4,
+    "cash": 5,
     "gross_profit": 4,
     "operating_income": 4,
     "interest_expense": 4,
-    "shares_diluted": 4,
-    "koers_hoog": 4,
-    "koers_laag": 4,
-    "dividend_ps": 4
+    "shares_diluted": 9,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 9
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2020-09-30; oudere boekjaren buiten beschouwing (2016-09-30, 2017-09-30, 2018-09-30): boekjaar ontbreekt tussen 2018-09-30 en 2020-09-30",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -44200,13 +44405,28 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 4,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2020,
      "status": null,
@@ -44224,6 +44444,9 @@
     }
    ],
    "einddata": [
+    "2017-03-29",
+    "2018-03-29",
+    "2019-03-29",
     "2020-03-28",
     "2021-04-03",
     "2022-04-02",
@@ -44246,12 +44469,12 @@
     "gross_profit": 0,
     "operating_income": 7,
     "interest_expense": 7,
-    "shares_diluted": 4,
-    "koers_hoog": 7,
-    "koers_laag": 7,
-    "dividend_ps": 4
+    "shares_diluted": 8,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 7
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-04-01; oudere boekjaren buiten beschouwing (2020-03-28, 2021-04-03, 2022-04-02): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-03-28, 2021-04-03, 2022-04-02",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2023-04-01; oudere boekjaren buiten beschouwing (2017-03-29, 2018-03-29, 2019-03-29, 2020-03-28, 2021-04-03, 2022-04-02): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-03-28, 2021-04-03, 2022-04-02",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -44325,13 +44548,28 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 5,
+   "jaren_in_dossier": 8,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2021,
      "status": null,
@@ -44359,6 +44597,9 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
     "2021-12-31",
     "2022-12-31",
     "2023-12-31",
@@ -44379,10 +44620,10 @@
     "gross_profit": 5,
     "operating_income": 5,
     "interest_expense": 5,
-    "shares_diluted": 2,
-    "koers_hoog": 5,
-    "koers_laag": 5,
-    "dividend_ps": 5
+    "shares_diluted": 5,
+    "koers_hoog": 8,
+    "koers_laag": 8,
+    "dividend_ps": 8
    },
    "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2021-12-31, 2022-12-31, 2024-12-31",
    "waarschuwingen": [
@@ -45366,11 +45607,11 @@
     "GBP",
     "USD"
    ],
-   "afgewezen_bronnen": 2,
+   "afgewezen_bronnen": 3,
    "splits": [],
    "open_jaren": [
     {
-     "jaar": 2020,
+     "jaar": 2019,
      "status": null,
      "reden": ""
     },
@@ -45391,31 +45632,31 @@
     }
    ],
    "einddata": [
-    "2020-12-31",
+    "2019-12-31",
     "2021-12-31",
     "2022-12-31",
     "2025-12-31"
    ],
    "extra_dekking": {
-    "pretax_income": 4,
+    "pretax_income": 3,
     "depreciation": 0,
-    "dividends_paid": 4,
-    "long_term_debt": 4,
+    "dividends_paid": 3,
+    "long_term_debt": 3,
     "total_assets": 0,
-    "current_assets": 4,
-    "current_liabilities": 4,
+    "current_assets": 3,
+    "current_liabilities": 3,
     "total_liabilities": 0,
-    "retained_earnings": 4,
-    "cash": 4,
+    "retained_earnings": 3,
+    "cash": 3,
     "gross_profit": 0,
-    "operating_income": 4,
-    "interest_expense": 4,
-    "shares_diluted": 2,
+    "operating_income": 3,
+    "interest_expense": 3,
+    "shares_diluted": 3,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
    },
-   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-12-31, 2022-12-31",
+   "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Verschillende valuta gevonden; groeicijfers alleen binnen dezelfde valuta vergelijken.",
@@ -46423,14 +46664,27 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 5,
-   "jaren_in_dossier": 5,
+   "jaren_in_dossier": 7,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
-   "open_jaren": [],
+   "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    }
+   ],
    "einddata": [
+    "2017-07-31",
+    "2018-07-31",
     "2022-07-31",
     "2023-07-31",
     "2024-07-31",
@@ -46451,12 +46705,12 @@
     "gross_profit": 0,
     "operating_income": 5,
     "interest_expense": 3,
-    "shares_diluted": 5,
-    "koers_hoog": 5,
-    "koers_laag": 5,
-    "dividend_ps": 5
+    "shares_diluted": 7,
+    "koers_hoog": 7,
+    "koers_laag": 7,
+    "dividend_ps": 7
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2022-07-31; oudere boekjaren buiten beschouwing (2017-07-31, 2018-07-31): boekjaar ontbreekt tussen 2018-07-31 en 2022-07-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -46677,13 +46931,38 @@
    "fout": null,
    "eps_status": "missing_split_evidence",
    "jaren_bevestigd": 0,
-   "jaren_in_dossier": 5,
+   "jaren_in_dossier": 10,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2016,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2021,
      "status": null,
@@ -46711,6 +46990,11 @@
     }
    ],
    "einddata": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
     "2021-12-31",
     "2022-12-31",
     "2023-12-31",
@@ -46731,10 +47015,10 @@
     "gross_profit": 0,
     "operating_income": 5,
     "interest_expense": 5,
-    "shares_diluted": 3,
-    "koers_hoog": 5,
-    "koers_laag": 5,
-    "dividend_ps": 5
+    "shares_diluted": 8,
+    "koers_hoog": 10,
+    "koers_laag": 10,
+    "dividend_ps": 10
    },
    "toelichting": "aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2022-12-31, 2023-12-31, 2024-12-31, 2025-12-31",
    "waarschuwingen": [
@@ -47018,13 +47302,23 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 4,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 9,
    "valuta": [
     "GBP"
    ],
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2017,
+     "status": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2019,
      "status": null,
@@ -47042,6 +47336,8 @@
     }
    ],
    "einddata": [
+    "2017-12-31",
+    "2018-12-31",
     "2019-12-31",
     "2020-12-31",
     "2021-12-31",
@@ -47064,12 +47360,12 @@
     "gross_profit": 0,
     "operating_income": 0,
     "interest_expense": 7,
-    "shares_diluted": 6,
-    "koers_hoog": 7,
-    "koers_laag": 7,
-    "dividend_ps": 7
+    "shares_diluted": 8,
+    "koers_hoog": 9,
+    "koers_laag": 9,
+    "dividend_ps": 9
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2022-12-31; oudere boekjaren buiten beschouwing (2019-12-31, 2020-12-31, 2021-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2021-12-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2022-12-31; oudere boekjaren buiten beschouwing (2017-12-31, 2018-12-31, 2019-12-31, 2020-12-31, 2021-12-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2019-12-31, 2021-12-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
@@ -47425,7 +47721,7 @@
    "fout": null,
    "eps_status": "independently_verified",
    "jaren_bevestigd": 2,
-   "jaren_in_dossier": 7,
+   "jaren_in_dossier": 8,
    "valuta": [
     "EUR",
     "GBP"
@@ -47433,6 +47729,11 @@
    "afgewezen_bronnen": 0,
    "splits": [],
    "open_jaren": [
+    {
+     "jaar": 2019,
+     "status": null,
+     "reden": ""
+    },
     {
      "jaar": 2020,
      "status": null,
@@ -47460,6 +47761,7 @@
     }
    ],
    "einddata": [
+    "2019-03-31",
     "2020-03-31",
     "2021-03-31",
     "2022-03-31",
@@ -47482,12 +47784,12 @@
     "gross_profit": 7,
     "operating_income": 7,
     "interest_expense": 7,
-    "shares_diluted": 6,
+    "shares_diluted": 8,
     "koers_hoog": 0,
     "koers_laag": 0,
     "dividend_ps": 0
    },
-   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2025-03-31; oudere boekjaren buiten beschouwing (2020-03-31, 2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-03-31, 2022-03-31, 2023-03-31, 2024-03-31",
+   "toelichting": "aantal aandelen stabiel over alle boekjaren vanaf 2025-03-31; oudere boekjaren buiten beschouwing (2019-03-31, 2020-03-31, 2021-03-31, 2022-03-31, 2023-03-31, 2024-03-31): aantal aandelen (of nettowinst) ontbreekt of is dubbelzinnig in dezelfde indiening voor boekjaar 2020-03-31, 2022-03-31, 2023-03-31, 2024-03-31",
    "waarschuwingen": [
     "SEC-jaarfeiten zijn nog niet onafhankelijk gecontroleerd tegen de originele jaarverslagen.",
     "Winst toerekenbaar aan aandeelhouders ontbreekt; geconsolideerde winst is geen vervanging.",
