@@ -1,0 +1,37 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): downloadt officiële jaarverslagen (pdf) naar de aparte tak
+# 'jaarverslagen'. Invoer: regels 'MAP/BESTANDSNAAM URL', gescheiden door ';'. Raakt de app en de nachtelijke update niet.
+name: Jaarverslagen ophalen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      lijst:
+        description: "MAP/BESTAND URL; MAP/BESTAND URL; ..."
+        required: true
+permissions:
+  contents: write
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bestaande tak ophalen (of nieuw beginnen)
+        run: |
+          git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv \
+            || (mkdir jv && cd jv && git init -q -b jaarverslagen)
+      - name: Downloaden
+        env:
+          LIJST: ${{ inputs.lijst }}
+        run: |
+          cd jv
+          echo "$LIJST" | tr ';' '\n' | while read -r doel url; do
+            [ -z "$doel" ] && continue
+            case "$doel" in *..*|/*) echo "ongeldig pad $doel"; continue;; esac
+            case "$url" in https://*) ;; *) echo "alleen https: $url"; continue;; esac
+            mkdir -p "$(dirname "$doel")"
+            curl -sSL --fail --max-time 120 -A "Mozilla/5.0 (AandeelSignaal research)" -o "$doel" "$url" && echo "ok $doel $(stat -c %s "$doel")" || echo "fout $doel $url"
+          done
+      - name: Op tak jaarverslagen zetten
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Jaarverslagen $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
