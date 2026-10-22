@@ -154,7 +154,10 @@ def sec_eps_recompute_inputs(payload, asof):
     alternatieven = {
         us: {'NetIncomeLossAvailableToCommonStockholdersBasic': gewoon, NET_INCOME_TAG: netto,
              'NetIncomeLossAvailableToCommonStockholdersDiluted': preferent},
-        'ifrs-full': {IFRS_NET_INCOME_ORDINARY_TAG: ifrs_ordinary, IFRS_NET_INCOME_TAG: ifrs_owners},
+        'ifrs-full': {IFRS_NET_INCOME_ORDINARY_TAG: ifrs_ordinary, IFRS_NET_INCOME_TAG: ifrs_owners,
+                      # winst voor de VERWATERDE winst per aandeel (Ahold Delhaize: inclusief terugboeking preferent dividend)
+                      'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects':
+                          annual('ifrs-full', 'ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects', money)},
     }
     for namespace, income, ni_tags, sh_tag, basic_tag in (
             (us, us_income, us_tag, SHARES_TAG, 'WeightedAverageNumberOfSharesOutstandingBasic'),
@@ -659,15 +662,17 @@ def verify_eps(result, safe_history, audit_date):
     if (isinstance(split_source, list) and not relevante_splits and not rejected_split_evidence):
         no_splits, no_splits_reason = share_count_continuity(safe_history, result.get('eps_recompute_inputs'))
         if not no_splits:
-            # Oudste jaren zonder EPS of aantal aandelen (vaak een jaar dat buiten het dossier valt) blokkeren niet langer
-            # alle jaren: de controle geldt dan voor de aaneengesloten reeks die daarna begint.
-            rest, weg = zonder_oudste_onvolledige(safe_history, result.get('eps_recompute_inputs'))
-            if weg and len(rest) >= 2:
-                ok, reden = share_count_continuity(rest, result.get('eps_recompute_inputs'))
+            # De controle geldt dan voor de langste stabiele reeks die tot en met het nieuwste boekjaar loopt. Oudere jaren
+            # zonder EPS of aantal aandelen, of van vóór een sprong in het aantal aandelen (fusie, zoals Ahold met Delhaize
+            # in 2016), vallen erbuiten. Een probleem in het nieuwste jaar blokkeert nog steeds: dan is er geen reeks.
+            rijen = sorted((r for r in safe_history if isinstance(r, dict) and _day(r.get('end'))), key=lambda r: r['end'])
+            for k in range(1, max(0, len(rijen) - 1)):
+                ok, reden = share_count_continuity(rijen[k:], result.get('eps_recompute_inputs'))
                 if ok:
-                    no_splits, normalisatie_historie = True, rest
-                    no_splits_reason = (f'{reden} vanaf {rest[0]["end"]}; oudere boekjaren zonder EPS of aantal aandelen '
-                                        f'buiten beschouwing: {", ".join(weg)}')
+                    no_splits, normalisatie_historie = True, rijen[k:]
+                    no_splits_reason = (f'{reden} vanaf {rijen[k]["end"]}; oudere boekjaren buiten beschouwing '
+                                        f'({", ".join(r["end"] for r in rijen[:k])}): {no_splits_reason}')
+                    break
     eps_normalized = (normalized_eps_history(normalisatie_historie, normalization_splits,
                                              asof=audit_date.isoformat(), geen_splitsingen=no_splits)
                       if (normalization_splits or no_splits) else {})

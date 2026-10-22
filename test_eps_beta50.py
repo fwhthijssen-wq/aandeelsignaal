@@ -198,3 +198,21 @@ class SchuldenAfgeleid(unittest.TestCase):
         p = self.payload()
         p['facts']['us-gaap']['Liabilities'] = {'units': {'USD': [{'end': '2024-12-31', 'val': 690, 'accn': 'x', 'filed': '2025-02-01', 'form': '10-K'}]}}
         self.assertEqual(ek.extra_jaarcijfers(p, [{'end': '2024-12-31', 'currency': 'USD'}])['2024-12-31']['total_liabilities'], 690)
+
+
+class StabieleReeksNaSprong(unittest.TestCase):
+    def rij(self, end, aandelen):
+        return {'end': end, 'facts': {ev.EPS_FACT: {'val': 1.0, 'accn': f'a{end}', 'filed': end[:4] + '-12-31'}}}
+
+    def test_sprong_aan_het_begin_valt_buiten_de_reeks_maar_aan_het_eind_niet(self):
+        jaren = ['2016-12-31', '2017-12-31', '2018-12-31', '2019-12-31']
+        for aandelen, verwacht in (([100, 130, 131, 132], '2017-12-31'), ([100, 101, 102, 140], None)):
+            hist = [self.rij(e, a) for e, a in zip(jaren, aandelen)]
+            inputs = [{'end': e, 'accn': f'a{e}', 'diluted_shares': a * 1e6, 'net_income': a * 1e6, 'currency': 'USD'}
+                      for e, a in zip(jaren, aandelen)]
+            res = ev.verify_eps({'split_events': [], 'eps_recompute_inputs': inputs}, hist, date(2026, 1, 1))
+            if verwacht:
+                self.assertTrue(res['no_splits'])
+                self.assertEqual(sorted(res['eps_normalized']), jaren[1:])
+            else:
+                self.assertFalse(res['no_splits'])

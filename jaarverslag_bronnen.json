@@ -1,0 +1,342 @@
+{
+ "toelichting": "Cijfers uit officiële jaarverslagen die niet machineleesbaar beschikbaar zijn (pdf vóór ESEF; in ESEF alleen als tekst). Eén keer uitgelezen en vastgelegd met bron, pagina en oorspronkelijke tekst; nooit opnieuw opgehaald. Ze vullen alleen aan: een officieel getagd ESEF-feit wordt nooit overschreven. De bestaande controle (herberekening, aandelenreeks, splitsingen) beslist daarna of een jaar bevestigd is.",
+ "bedrijven": {
+  "AD.AS": {
+   "naam": "Koninklijke Ahold Delhaize N.V.",
+   "lei": "724500C9GNBV20UYRX36",
+   "vastgelegd": "2026-10-22",
+   "documenten": [
+    {
+     "document": "annual-report-2017.pdf",
+     "soort": "pdf",
+     "url": "https://media.aholddelhaize.com/media/wsafdah4/annual-report-2017.pdf",
+     "ingediend": "2018-02-27",
+     "ingediend_bron": "datum controleverklaring (Amsterdam, February 27, 2018)",
+     "kenmerk": "AD.AS:jaarverslag-2017",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-02",
+       "eind": "2017-12-31",
+       "waarde": 1.43,
+       "eenheid": "EUR/shares",
+       "oorspronkelijk": 1.43,
+       "schaal": 1,
+       "bewijs": "pdf p.123, winst-en-verliesrekening: \"Diluted 1.43 0.81\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-04",
+       "eind": "2017-01-01",
+       "waarde": 0.81,
+       "eenheid": "EUR/shares",
+       "oorspronkelijk": 0.81,
+       "schaal": 1,
+       "bewijs": "pdf p.123, winst-en-verliesrekening: \"Diluted 1.43 0.81\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2017-01-02",
+       "eind": "2017-12-31",
+       "waarde": 1817000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1817,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29: \"Net income attributable to common shareholders for the purposes of basic earnings per share 1,817 830\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2016-01-04",
+       "eind": "2017-01-01",
+       "waarde": 830000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 830,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29 (zie 2017)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-02",
+       "eind": "2017-12-31",
+       "waarde": 1836000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1836,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29: \"...for the purposes of diluted earnings per share 1,836 830\" (incl. terugboeking preferent dividend 19)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-04",
+       "eind": "2017-01-01",
+       "waarde": 830000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 830,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29 (2016: preferente aandelen anti-verwaterend)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-02",
+       "eind": "2017-12-31",
+       "waarde": 1281000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1281,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29: \"Weighted average number of common shares for the purposes of diluted earnings per share 1,281 1,031\" (miljoenen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-04",
+       "eind": "2017-01-01",
+       "waarde": 1031000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1031,
+       "schaal": 1000000,
+       "bewijs": "pdf p.194, noot 29 (zie 2017)"
+      }
+     ]
+    },
+    {
+     "document": "annual-report-2019.pdf",
+     "soort": "pdf",
+     "url": "https://media.aholddelhaize.com/media/tumbdiev/annual-report-2019.pdf",
+     "ingediend": "2020-02-25",
+     "ingediend_bron": "datum controleverklaring (Amsterdam, February 25, 2020)",
+     "kenmerk": "AD.AS:jaarverslag-2019",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-12-31",
+       "eind": "2019-12-29",
+       "waarde": 1.59,
+       "eenheid": "EUR/shares",
+       "oorspronkelijk": 1.59,
+       "schaal": 1,
+       "bewijs": "pdf p.121, winst-en-verliesrekening: \"Diluted 1.59 1.49\" (2018 herwerkt voor IFRS 16)"
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-30",
+       "waarde": 1.49,
+       "eenheid": "EUR/shares",
+       "oorspronkelijk": 1.49,
+       "schaal": 1,
+       "bewijs": "pdf p.121 (zie 2019)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-12-31",
+       "eind": "2019-12-29",
+       "waarde": 1766000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1766,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30: \"...for the purposes of basic earnings per share 1,766 1,780\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+       "start": "2018-01-01",
+       "eind": "2018-12-30",
+       "waarde": 1780000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1780,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30 (zie 2019)"
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-12-31",
+       "eind": "2019-12-29",
+       "waarde": 1766000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1766,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30: \"...for the purposes of diluted earnings per share 1,766 1,797\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-30",
+       "waarde": 1797000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1797,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30 (incl. terugboeking preferent dividend 17)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-12-31",
+       "eind": "2019-12-29",
+       "waarde": 1112000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1112,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30: \"Weighted average number of common shares for the purposes of diluted earnings per share 1,112 1,203\" (miljoenen)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-30",
+       "waarde": 1203000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1203,
+       "schaal": 1000000,
+       "bewijs": "pdf p.168, noot 30 (zie 2019)"
+      }
+     ]
+    },
+    {
+     "document": "aholddelhaize-2022-01-02-en.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500C9GNBV20UYRX36/2022-01-02/ESEF/NL/0/aholddelhaize-2022-01-02-en/reports/aholddelhaize-2022-01-02-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org (gelijk aan het ESEF-rapport)",
+     "kenmerk": "724500C9GNBV20UYRX36-2022-01-02-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-04",
+       "eind": "2022-01-02",
+       "waarde": 1034000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1034,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-12-30",
+       "eind": "2021-01-03",
+       "waarde": 1072000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1072,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      }
+     ]
+    },
+    {
+     "document": "aholddelhaize-2023-01-01-en.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500C9GNBV20UYRX36/2023-01-01/ESEF/NL/0/aholddelhaize-2023-01-01-en/reports/aholddelhaize-2023-01-01-en.xhtml",
+     "ingediend": "2023-03-02",
+     "ingediend_bron": "date_added filings.xbrl.org (gelijk aan het ESEF-rapport)",
+     "kenmerk": "724500C9GNBV20UYRX36-2023-01-01-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-03",
+       "eind": "2023-01-01",
+       "waarde": 1001000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1001,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-04",
+       "eind": "2022-01-02",
+       "waarde": 1034000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1034,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      }
+     ]
+    },
+    {
+     "document": "aholddelhaize-2023-12-31-en.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500C9GNBV20UYRX36/2023-12-31/ESEF/NL/0/aholddelhaize-2023-12-31-en/reports/aholddelhaize-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-05",
+     "ingediend_bron": "date_added filings.xbrl.org (gelijk aan het ESEF-rapport)",
+     "kenmerk": "724500C9GNBV20UYRX36-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-02",
+       "eind": "2023-12-31",
+       "waarde": 966000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 966,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-03",
+       "eind": "2023-01-01",
+       "waarde": 1001000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 1001,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      }
+     ]
+    },
+    {
+     "document": "aholddelhaize-2024-12-29-en.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500C9GNBV20UYRX36/2024-12-29/ESEF/NL/0/aholddelhaize-2024-12-29-en/reports/aholddelhaize-2024-12-29-en.xhtml",
+     "ingediend": "2025-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org (gelijk aan het ESEF-rapport)",
+     "kenmerk": "724500C9GNBV20UYRX36-2024-12-29-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-29",
+       "waarde": 933000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 933,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-02",
+       "eind": "2023-12-31",
+       "waarde": 966000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 966,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      }
+     ]
+    },
+    {
+     "document": "aholddelhaize-2025-12-28-en.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500C9GNBV20UYRX36/2025-12-28/ESEF/NL/0/aholddelhaize-2025-12-28-en/reports/aholddelhaize-2025-12-28-en.xhtml",
+     "ingediend": "2026-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org (gelijk aan het ESEF-rapport)",
+     "kenmerk": "724500C9GNBV20UYRX36-2025-12-28-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-12-30",
+       "eind": "2025-12-28",
+       "waarde": 905000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 905,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-29",
+       "waarde": 933000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 933,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, noot Earnings per share: \"Weighted average number of common shares for the purposes of diluted earnings per share\" (miljoenen; als tekst, niet getagd)"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

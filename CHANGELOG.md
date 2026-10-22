@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026.10.22-beta.55
+- **Proef: cijfers uit officiële jaarverslagen die niet machineleesbaar zijn** (nieuw `jaarverslag_bronnen.py` en register `jaarverslag_bronnen.json`). Voor Ahold Delhaize zijn uit de pdf-jaarverslagen 2017 en 2019 de verwaterde winst per aandeel, de winst en het gewogen aantal verwaterde aandelen over 2016-2019 vastgelegd, en uit de tekst van de ESEF-rapporten 2021-2025 het aantal verwaterde aandelen (staat daar niet getagd). Per getal: document, pagina en oorspronkelijke tekst. Eén keer uitgelezen, nooit opnieuw opgehaald; een officieel getagd ESEF-feit wordt nooit overschreven en een afwijkend getal maakt het hele document ongeldig. De bestaande controle beslist daarna.
+- Resultaat Ahold Delhaize: van 0 naar 9 bevestigde jaren (2017-2025), elk jaar nagerekend (winst / aandelen = gemelde winst per aandeel). 2016 valt buiten de reeks door de fusie met Delhaize (aantal aandelen +24%). Tien jaren zijn voor Ahold Delhaize dus pas haalbaar vanaf boekjaar 2026.
+- **Verwaterde teller (IFRS):** de winst voor de verwaterde winst per aandeel (inclusief terugboeking van preferent dividend) telt als tweede teller.
+- **Aandelenreeks na een fusie:** springt het aantal aandelen in een ouder jaar (fusie), dan geldt de controle voor de langste stabiele reeks tot en met het nieuwste jaar, in plaats van alles te blokkeren. Een sprong in het nieuwste jaar blokkeert nog steeds. Linde 7 jaar (na Praxair), Stellantis 5 (na FCA/PSA), Eni 9, ook Capgemini, Renault en Diageo krijgen bevestigde jaren. Niets achteruit, geen bestaande EPS gewijzigd.
+- Hulpmiddel voor ontwikkeling: workflow 'Jaarverslagen ophalen (ontwikkeling)' zet officiële pdf-jaarverslagen op de aparte tak `jaarverslagen`.
+- Nieuw: `test_jaarverslag_bronnen.py` (6 tests) en een test voor de aandelenreeks.
+
 ## 2026.10.21-beta.54
 - **Gewone winst per aandeel als laatste terugval:** meldt een bedrijf voor een boekjaar geen verwaterde winst per aandeel, maar wel de gewone (ABN AMRO e.a. zonder opties of converteerbare leningen, waar beide gelijk zijn), dan wordt die gebruikt. Ook 'gewoon en verwaterd' in één cijfer telt nu als verwaterd. Het dossier meldt bij 'Let op' voor welke jaren de gewone winst per aandeel is gebruikt (`eps_gewoon` per jaar). De herberekening beslist daarna nog steeds: bij merkbare verwatering blijft een jaar onbewezen.
 - ABN AMRO, Inditex, Leonardo en Naturgy krijgen een winstreeks (niveau 'Uit jaarverslag', met K/W-historie); argenx van 5 naar 7 en Montea van 4 naar 5 bevestigde jaren. Niets achteruit, geen bestaande EPS gewijzigd.

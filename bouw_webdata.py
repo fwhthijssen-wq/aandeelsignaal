@@ -101,7 +101,14 @@ def esef_ophalen(ticker):
         if ESEF_BUNDEL not in _ESEF_CACHE:
             with gzip.open(ESEF_BUNDEL, 'rt', encoding='utf-8') as f:
                 _ESEF_CACHE[ESEF_BUNDEL] = json.load(f)
-        return _ESEF_CACHE[ESEF_BUNDEL].get(lei)
+        cf = _ESEF_CACHE[ESEF_BUNDEL].get(lei)
+        if cf:
+            # cijfers uit pdf-jaarverslagen en uit de tekst van ESEF-rapporten (jaarverslag_bronnen.json), alleen aanvullend
+            from jaarverslag_bronnen import aanvullen
+            cf, verslag = aanvullen(cf, ticker)
+            if verslag:
+                cf = {**cf, 'jaarverslag_bronnen': verslag}
+        return cf
     except (OSError, ValueError):
         return None
 
