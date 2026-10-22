@@ -1,0 +1,13 @@
+{
+ "aantal": 0,
+ "zoekvraag": {
+  "fouten": [
+   "nsm-search ['', '254900TWUJUQ44TQJY84', 'disclose_org', '']: HTTP Error 403: Forbidden",
+   "nsm-search ['', '254900TWUJUQ44TQJY84', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden",
+   "fca-nsm-searchdata ['', '254900TWUJUQ44TQJY84', 'disclose_org', '']: HTTP Error 403: Forbidden",
+   "fca-nsm-searchdata ['', '254900TWUJUQ44TQJY84', 'disclose_org', 'related_org']: HTTP Error 403: Forbidden"
+  ]
+ },
+ "meldingen": [],
+ "voorbeeld": []
+}
