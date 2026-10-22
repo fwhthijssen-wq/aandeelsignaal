@@ -158,3 +158,42 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005):
             keten.setdefault(e, v)
     uit = {e: v[1] for e, v in sorted(keten.items())}
     return uit if len(uit) >= min_jaren else {}
+
+
+def corrigeer_eenheden(cf):
+    """Herstelt een duidelijke tagfout: per-aandeelbedragen in een valuta die nergens anders in hetzelfde rapport voorkomt,
+    terwijl alle bedragen van dat rapport één valuta hebben (Wolters Kluwer 2025: winst per aandeel als 'AED/shares' bij
+    verder alleen euro's). Alleen dan wordt de eenheid de valuta van het rapport. Geeft (cf, lijst correcties)."""
+    from copy import deepcopy
+    feiten = cf.get('facts') or {}
+    valuta_per_rapport = {}
+    for ns in feiten.values():
+        for blok in ns.values():
+            for unit, rijen in (blok.get('units') or {}).items():
+                if len(unit) == 3 and unit.isalpha():
+                    for r in rijen:
+                        valuta_per_rapport.setdefault(r.get('accn'), set()).add(unit)
+    te_herstellen = []
+    for nsnaam, ns in feiten.items():
+        for naam, blok in ns.items():
+            for unit, rijen in (blok.get('units') or {}).items():
+                if not unit.endswith('/shares'):
+                    continue
+                cur = unit.split('/')[0]
+                for i, r in enumerate(rijen):
+                    v = valuta_per_rapport.get(r.get('accn')) or set()
+                    if len(v) == 1 and cur not in v:
+                        te_herstellen.append((nsnaam, naam, unit, i, next(iter(v)) + '/shares'))
+    if not te_herstellen:
+        return cf, []
+    uit = deepcopy(cf)
+    correcties = []
+    for nsnaam, naam, unit, i, nieuw in sorted(te_herstellen, key=lambda x: -x[3]):
+        rij = uit['facts'][nsnaam][naam]['units'][unit].pop(i)
+        uit['facts'][nsnaam][naam]['units'].setdefault(nieuw, []).append(rij)
+        correcties.append(f'{naam} {rij.get("end")}: {unit} -> {nieuw} ({rij.get("accn")})')
+    for nsnaam, ns in uit['facts'].items():
+        for blok in ns.values():
+            for unit in [u for u, rijen in blok.get('units', {}).items() if not rijen]:
+                del blok['units'][unit]
+    return uit, correcties

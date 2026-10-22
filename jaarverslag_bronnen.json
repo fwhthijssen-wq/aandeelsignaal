@@ -337,6 +337,2522 @@
      ]
     }
    ]
+  },
+  "ABN.AS": {
+   "naam": "ABN AMRO",
+   "lei": "BFXS5XCH7N0Y05NIXW11",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "BFXS5XCH7N0Y05NIXW11-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/BFXS5XCH7N0Y05NIXW11/2021-12-31/ESEF/NL/0/BFXS5XCH7N0Y05NIXW11-2021-12-31-en/reports/BFXS5XCH7N0Y05NIXW11-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "BFXS5XCH7N0Y05NIXW11-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 940000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 940.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"f basic earnings per share at 31 December. 2021 2020 (inmillions) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Basic earnings 1,140 940 1.21 -158 940 -0.17 1 E\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1140000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1140.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 940000000,
+       "eenheid": "shares",
+       "oorspronkelijk": 940000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Basic earnings 1,140 940 1.21 / -158 940 -0.17\" (geen verwaterende aandelen; teller excl. AT1) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -158000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": -158000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "BFXS5XCH7N0Y05NIXW11-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/BFXS5XCH7N0Y05NIXW11/2022-12-31/ESEF/NL/0/BFXS5XCH7N0Y05NIXW11-2022-12-31-en/reports/BFXS5XCH7N0Y05NIXW11-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-14",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "BFXS5XCH7N0Y05NIXW11-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 908000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 908.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"arnings per share at 31 December. 2022 2021 (in millions) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Basic earnings 1,776 908 1.96 1,140 940 1.21 1\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 1776000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1776.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 940000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 940.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"re at 31 December. 2022 2021 (in millions) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Profit/(loss) for the period 1 Number of shares Earnings per share (in EUR) Basic earnings 1,776 908 1.96 1,140 940 1.21 1 Earnings consis\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1140000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1140.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "BFXS5XCH7N0Y05NIXW11-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/BFXS5XCH7N0Y05NIXW11/2023-12-31/ESEF/NL/0/BFXS5XCH7N0Y05NIXW11-2023-12-31-en/reports/BFXS5XCH7N0Y05NIXW11-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "BFXS5XCH7N0Y05NIXW11-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 872000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 872.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"per share at 31 December. 2023 2022 (in millions) Profit/(loss) for the period 1 Average number of shares Earnings per share (in EUR) Profit/(loss) for the period 1 Average number of shares Earnings per share (in EUR) Basic earnings 2,605 872 2.99 1,776 908 1.96 1 E\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 2605000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 2605.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 908000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 908.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"1 December. 2023 2022 (in millions) Profit/(loss) for the period 1 Average number of shares Earnings per share (in EUR) Profit/(loss) for the period 1 Average number of shares Earnings per share (in EUR) Basic earnings 2,605 872 2.99 1,776 908 1.96 1 Earnings consist\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 1776000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1776.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "BFXS5XCH7N0Y05NIXW11-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/BFXS5XCH7N0Y05NIXW11/2024-12-31/ESEF/NL/0/abn-2024-12-31-en/reports/abn-2024-12-31-en.xhtml",
+     "ingediend": "2025-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "BFXS5XCH7N0Y05NIXW11-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 841000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 841.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"n millions) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Basic earnings | 2,283 | 841 | 2.72 | 2,605 | 872\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 2283000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 2283.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 872000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 872.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"s) for the period¹ | Average number of shares | Earnings per share (in EUR) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Basic earnings | 2,283 | 841 | 2.72 | 2,605 | 872 | 2.99 | 1. Earnings co\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 2605000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 2605.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "BFXS5XCH7N0Y05NIXW11-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/BFXS5XCH7N0Y05NIXW11/2025-12-31/ESEF/NL/0/abn-2025-12-31-1-en/reports/abn-2025-12-31-1-en.xhtml",
+     "ingediend": "2026-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "BFXS5XCH7N0Y05NIXW11-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 830000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 830.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"n millions) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Basic earnings | 2,035 | 830 | 2.45 | 2,283 | 841\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 2035000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 2035.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 841000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 841.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"s) for the period¹ | Average number of shares | Earnings per share (in EUR) | Profit/(loss) for the period¹ | Average number of shares | Earnings per share (in EUR) | Basic earnings | 2,035 | 830 | 2.45 | 2,283 | 841 | 2.72 | 1. Earnings co\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 2283000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 2283.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    }
+   ]
+  },
+  "ADYEN.AS": {
+   "naam": "Adyen",
+   "lei": "724500973ODKK3IFQ447",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500973ODKK3IFQ447-2020-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2020-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2020-12-31/reports/724500973ODKK3IFQ447-2020-12-31.html",
+     "ingediend": "2021-05-20",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2020-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 30527630.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 30527630.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" share options - share-based payments (note 4.3) 420,676 794,693 Weighted average number of ordinary shares for diluted net profit for the period 30,667,599 30,527,630 1) Net profit per share – basic 8.63 7.88 2) Net profit per share - diluted 8.51 7.67 24. Tax reporting 24.1. Total tax contribution\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 30667599.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 30667599.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" share options - share-based payments (note 4.3) 420,676 794,693 Weighted average number of ordinary shares for diluted net profit for the period 30,667,599 30,527,630 1) Net profit per share – basic 8.63 7.88 2) Net profit per share - diluted 8.51 7.67 24. Tax reporting 24.1. Total tax contribution\""
+      }
+     ]
+    },
+    {
+     "document": "724500973ODKK3IFQ447-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2021-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2021-12-31-en/reports/724500973ODKK3IFQ447-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 30667599.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 30667599.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"7 | 261,019 | Weighted average number of ordinary shares for the period | 30,499,194 | 30,246,923 | Dilutive effect of share options | 176,621 | 420,676 | Weighted average number of ordinary shares for diluted net profit for the period | 30,675,815 | 30,667,599 | Net profit per share – basic | 15.40\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 30675815.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 30675815.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"7 | 261,019 | Weighted average number of ordinary shares for the period | 30,499,194 | 30,246,923 | Dilutive effect of share options | 176,621 | 420,676 | Weighted average number of ordinary shares for diluted net profit for the period | 30,675,815 | 30,667,599 | Net profit per share – basic | 15.40\""
+      }
+     ]
+    },
+    {
+     "document": "724500973ODKK3IFQ447-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2022-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2022-12-31-en/reports/724500973ODKK3IFQ447-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-14",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 30675815.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 30675815.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"39 | 469,717 | Weighted average number of ordinary shares for the period | 30,975,325 | 30,499,194 | Dilutive effect of share options | 70,704 | 176,621 | Weighted average number of ordinary shares for diluted net profit for the period | 31,046,029 | 30,675,815 | Net profit per share – basic | 18.21\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 31046029.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31046029.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"39 | 469,717 | Weighted average number of ordinary shares for the period | 30,975,325 | 30,499,194 | Dilutive effect of share options | 70,704 | 176,621 | Weighted average number of ordinary shares for diluted net profit for the period | 31,046,029 | 30,675,815 | Net profit per share – basic | 18.21\""
+      }
+     ]
+    },
+    {
+     "document": "724500973ODKK3IFQ447-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2023-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2023-12-31-en/reports/724500973ODKK3IFQ447-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-05",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 31046029.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31046029.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \",322 | 564,139 | Weighted average number of ordinary shares for the period | 31,012,122 | 30,975,325 | Dilutive effect of share plans | 144,868 | 70,704 | Weighted average number of ordinary shares for diluted net profit for the period | 31,156,990 | 31,046,029 | Net profit per share – basic | 22.52\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 31156990.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31156990.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \",322 | 564,139 | Weighted average number of ordinary shares for the period | 31,012,122 | 30,975,325 | Dilutive effect of share plans | 144,868 | 70,704 | Weighted average number of ordinary shares for diluted net profit for the period | 31,156,990 | 31,046,029 | Net profit per share – basic | 22.52\""
+      }
+     ]
+    },
+    {
+     "document": "724500973ODKK3IFQ447-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2024-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2024-12-31-en/reports/724500973ODKK3IFQ447-2024-12-31-en.xhtml",
+     "ingediend": "2025-03-11",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 31156990.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31156990.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"163 | 698,322 | Weighted average number of ordinary shares for the period | 31,160,219 | 31,012,122 | Dilutive effect of share plans | 103,764 | 144,868 | Weighted average number of ordinary shares for diluted net profit for the period | 31,263,983 | 31,156,990 | Net profit per share – basic | 29.69\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 31263983.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31263983.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"163 | 698,322 | Weighted average number of ordinary shares for the period | 31,160,219 | 31,012,122 | Dilutive effect of share plans | 103,764 | 144,868 | Weighted average number of ordinary shares for diluted net profit for the period | 31,263,983 | 31,156,990 | Net profit per share – basic | 29.69\""
+      }
+     ]
+    },
+    {
+     "document": "724500973ODKK3IFQ447-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500973ODKK3IFQ447/2025-12-31/ESEF/NL/0/724500973ODKK3IFQ447-2025-12-31-1-en/reports/724500973ODKK3IFQ447-2025-12-31-1-en.xhtml",
+     "ingediend": "2026-03-10",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500973ODKK3IFQ447-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 31263983.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31263983.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \",526 | 925,163 | Weighted average number of ordinary shares for the period | 31,511,461 | 31,160,219 | Dilutive effect of share plans | 99,345 | 103,764 | Weighted average number of ordinary shares for diluted net profit for the period | 31,610,806 | 31,263,983 | Net profit per share – basic | 33.72\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 31610806.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 31610806.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \",526 | 925,163 | Weighted average number of ordinary shares for the period | 31,511,461 | 31,160,219 | Dilutive effect of share plans | 99,345 | 103,764 | Weighted average number of ordinary shares for diluted net profit for the period | 31,610,806 | 31,263,983 | Net profit per share – basic | 33.72\""
+      }
+     ]
+    }
+   ]
+  },
+  "AGN.AS": {
+   "naam": "Aegon",
+   "lei": "O4QK7KMMK83ITNTHUG69",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "O4QK7KMMK83ITNTHUG69-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2021-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2021-12-31-en/reports/O4QK7KMMK83ITNTHUG69-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-22",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "O4QK7KMMK83ITNTHUG69-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 2358000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 2358.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"19,316 22,826 Investment income 6,967 7,149 7,531 7,035 7,338 T otal revenues 1) 25,209 25,657 28,197 28,914 32,973 Result before tax 1,979 (84) 1,828 777 2,389 Net result 1,701 55 1,525 741 2,358 Earnings per common share Basic 0.78 - 0.70 0.31 1.0\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1828000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1828.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2043000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 2043.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"eholders B 11 - 10 Weighted average number of common shares outstanding (inmillion) 2,043 2,044 2,042 Weighted average number of common shares B outstanding (inmillion) 559 561 572 Basic earnings per common share (EUR per share) 0.78 - 0.70 Basic earnings per\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1437000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1437.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "O4QK7KMMK83ITNTHUG69-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2022-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2022-12-31-en/reports/O4QK7KMMK83ITNTHUG69-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-21",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "O4QK7KMMK83ITNTHUG69-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 228911220000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 228911.22,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"nnection with the Long Term Incentive Plans for senior management. On December 11, 2020 Aegon N.V. repurchased 2,955,600 common shares B from Vereniging Aegon for the amount of EUR 228,911.22 based on 1/40 th of the Value Weighted Average Price of the common shares of the five trading days preceding\""
+      }
+     ]
+    }
+   ]
+  },
+  "AKZA.AS": {
+   "naam": "AkzoNobel",
+   "lei": "724500XYIJUGXAA5QD70",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500XYIJUGXAA5QD70-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500XYIJUGXAA5QD70/2021-12-31/ESEF/NL/0/724500XYIJUGXAA5QD70-2021-12-31-en/reports/724500XYIJUGXAA5QD70-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500XYIJUGXAA5QD70-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 192101804.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 192101804.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Shares for basic earnings per share for the year 191,424,400 184,959,866 Effect of dilutive shares For performance-related and restricted shares 674,365 714,114 For share-matching plan 3,039 – Shares for diluted earnings per share 192,101,804 185,673,980 Income tax recognized in equity In € millions\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 185673980.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 185673980.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Shares for basic earnings per share for the year 191,424,400 184,959,866 Effect of dilutive shares For performance-related and restricted shares 674,365 714,114 For share-matching plan 3,039 – Shares for diluted earnings per share 192,101,804 185,673,980 Income tax recognized in equity In € millions\""
+      }
+     ]
+    },
+    {
+     "document": "724500XYIJUGXAA5QD70-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500XYIJUGXAA5QD70/2023-12-31/ESEF/NL/0/akzoy-2023-12-31-en/reports/akzoy-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-05",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500XYIJUGXAA5QD70-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 175313498.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 175313498.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 170,573,555 | Effect of dilutive shares | | | For performance-related and restricted shares | 575,108 | 761,918 | For share-matching plan | 3,251 | 3,283 | Shares for diluted earnings per share | 175,313,498 | 171,338,756 | | | | Earnings per share\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 171338756.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 171338756.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 170,573,555 | Effect of dilutive shares | | | For performance-related and restricted shares | 575,108 | 761,918 | For share-matching plan | 3,251 | 3,283 | Shares for diluted earnings per share | 175,313,498 | 171,338,756 | | | | Earnings per share\""
+      }
+     ]
+    },
+    {
+     "document": "724500XYIJUGXAA5QD70-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500XYIJUGXAA5QD70/2024-12-31/ESEF/NL/0/akzoy-2024-12-31-0-en/reports/akzoy-2024-12-31-0-en.xhtml",
+     "ingediend": "2025-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500XYIJUGXAA5QD70-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 171612875,
+       "eenheid": "shares",
+       "oorspronkelijk": 171612875,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot 9 earnings per share: \"Shares for diluted earnings per share | 171,338,756 | 171,612,875\" (kolommen 2023 | 2024) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 171338756,
+       "eenheid": "shares",
+       "oorspronkelijk": 171338756,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot 9 earnings per share: \"Shares for diluted earnings per share | 171,338,756 | 171,612,875\" (kolommen 2023 | 2024) (met de hand gelezen)\""
+      }
+     ]
+    },
+    {
+     "document": "724500XYIJUGXAA5QD70-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500XYIJUGXAA5QD70/2025-12-31/ESEF/NL/0/akzonobel-2025-12-31-1-en/reports/akzonobel-2025-12-31-1-en.xhtml",
+     "ingediend": "2026-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500XYIJUGXAA5QD70-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 171612875.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 171612875.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 170,984,845 | Effect of dilutive shares | | | For performance-related and restricted shares | 871,692 | 1,007,225 | For share-matching plan | 12,313 | 22,868 | Shares for diluted earnings per share | 171,612,875 | 172,014,938 | | | | Earnings per share\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 172014938.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 172014938.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 170,984,845 | Effect of dilutive shares | | | For performance-related and restricted shares | 871,692 | 1,007,225 | For share-matching plan | 12,313 | 22,868 | Shares for diluted earnings per share | 171,612,875 | 172,014,938 | | | | Earnings per share\""
+      }
+     ]
+    }
+   ]
+  },
+  "MT.AS": {
+   "naam": "ArcelorMittal",
+   "lei": "2EULGUTUI56JI9SAL165",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "2EULGUTUI56JI9SAL165-2021-12-31-ESEF-LU-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/2EULGUTUI56JI9SAL165/2021-12-31/ESEF/LU/0/mt-2021-12-31-en/reports/mt-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-29",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "2EULGUTUI56JI9SAL165-2021-12-31-ESEF-LU-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1013000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1013.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" share units and performance share units (in millions) 3 — — Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share 1,108 1,140 1,013 For the purpose of calculating earnings per common share, diluted weighted average common shares outstanding excludes\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1140000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1140.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" share units and performance share units (in millions) 3 — — Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share 1,108 1,140 1,013 For the purpose of calculating earnings per common share, diluted weighted average common shares outstanding excludes\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1108000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1108.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" share units and performance share units (in millions) 3 — — Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share 1,108 1,140 1,013 For the purpose of calculating earnings per common share, diluted weighted average common shares outstanding excludes\""
+      }
+     ]
+    },
+    {
+     "document": "2EULGUTUI56JI9SAL165-2022-12-31-ESEF-LU-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/2EULGUTUI56JI9SAL165/2022-12-31/ESEF/LU/0/mt-2022-12-31-en/reports/mt-2022-12-31-en.xhtml",
+     "ingediend": "2023-05-09",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "2EULGUTUI56JI9SAL165-2022-12-31-ESEF-LU-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1140000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1140.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"per share | 911 | | 1,105 | | 1,140 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | — | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 914 | | 1,108 | | 1,140 | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1108000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1108.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"per share | 911 | | 1,105 | | 1,140 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | — | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 914 | | 1,108 | | 1,140 | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 914000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 914.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"per share | 911 | | 1,105 | | 1,140 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | — | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 914 | | 1,108 | | 1,140 | |\""
+      }
+     ]
+    },
+    {
+     "document": "2EULGUTUI56JI9SAL165-2023-12-31-ESEF-LU-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/2EULGUTUI56JI9SAL165/2023-12-31/ESEF/LU/0/mt-2023-12-31-en/reports/mt-2023-12-31-en.xhtml",
+     "ingediend": "2024-04-23",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "2EULGUTUI56JI9SAL165-2023-12-31-ESEF-LU-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1108000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1108.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | 842 | | 911 | | 1,105 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 845 | | 914 | | 1,108 | 11.4 Dividends\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 914000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 914.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | 842 | | 911 | | 1,105 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 845 | | 914 | | 1,108 | 11.4 Dividends\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 845000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 845.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | 842 | | 911 | | 1,105 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 845 | | 914 | | 1,108 | 11.4 Dividends\""
+      }
+     ]
+    },
+    {
+     "document": "2EULGUTUI56JI9SAL165-2024-12-31-ESEF-LU-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/2EULGUTUI56JI9SAL165/2024-12-31/ESEF/LU/0/mt-2024-12-31-en/reports/mt-2024-12-31-en.xhtml",
+     "ingediend": "2025-05-08",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "2EULGUTUI56JI9SAL165-2024-12-31-ESEF-LU-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 914000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 914.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare | 788 | | 842 | | 911 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 791 | | 845 | | 914 | 11.4 Dividends\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 845000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 845.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare | 788 | | 842 | | 911 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 791 | | 845 | | 914 | 11.4 Dividends\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 791000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 791.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare | 788 | | 842 | | 911 | Incremental shares from assumed conversion of restricted share units and performance share units (in millions) | 3 | | 3 | | 3 | Weighted average common shares outstanding (in millions) for the purposes of diluted earnings per share | 791 | | 845 | | 914 | 11.4 Dividends\""
+      }
+     ]
+    }
+   ]
+  },
+  "ASM.AS": {
+   "naam": "ASM International",
+   "lei": "7245001I22ND6ZFHX623",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "7245001I22ND6ZFHX623-2020-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245001I22ND6ZFHX623/2020-12-31/ESEF/NL/0/asm-2020-12-31/reports/asm-2020-12-31.xhtml",
+     "ingediend": "2021-05-20",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245001I22ND6ZFHX623-2020-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 49999000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49999.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| | 49,797 | Outstanding shares year-end (thousand) | | 49,319 | | 48,866 | | 48,715 | Average outstanding shares basic (thousand) | | 52,432 | | 49,418 | | 48,907 | Average outstanding shares diluted (thousand) | | 53,110 | | 49,999 | | 49,359 | Closing share price Euronext Amsterdam\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 49359000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49359.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| | 49,797 | Outstanding shares year-end (thousand) | | 49,319 | | 48,866 | | 48,715 | Average outstanding shares basic (thousand) | | 52,432 | | 49,418 | | 48,907 | Average outstanding shares diluted (thousand) | | 53,110 | | 49,999 | | 49,359 | Closing share price Euronext Amsterdam\""
+      }
+     ]
+    },
+    {
+     "document": "7245001I22ND6ZFHX623-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245001I22ND6ZFHX623/2021-12-31/ESEF/NL/0/asm-2021-12-31-en/reports/asm-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245001I22ND6ZFHX623-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 49359000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49359.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Basic weighted average number of shares outstanding during the year | | 48,907 | | 48,645 | Effect of dilutive potential common shares from stock options and restricted shares | | 452 | | 264 | Dilutive weighted average number of shares outstanding | | 49,359 | | 48,909 |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 48909000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 48909.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Basic weighted average number of shares outstanding during the year | | 48,907 | | 48,645 | Effect of dilutive potential common shares from stock options and restricted shares | | 452 | | 264 | Dilutive weighted average number of shares outstanding | | 49,359 | | 48,909 |\""
+      }
+     ]
+    },
+    {
+     "document": "7245001I22ND6ZFHX623-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245001I22ND6ZFHX623/2022-12-31/ESEF/NL/0/asm-2022-12-31-en/reports/asm-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-07",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245001I22ND6ZFHX623-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 48909000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 48909.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Basic weighted average number of shares outstanding during the year | | 48,645 | | 48,820 | Effect of dilutive potential common shares from stock options and restricted shares | | 264 | | 278 | Dilutive weighted average number of shares outstanding | | 48,909 | | 49,097 |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 49097000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49097.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"Basic weighted average number of shares outstanding during the year | | 48,645 | | 48,820 | Effect of dilutive potential common shares from stock options and restricted shares | | 264 | | 278 | Dilutive weighted average number of shares outstanding | | 48,909 | | 49,097 |\""
+      }
+     ]
+    },
+    {
+     "document": "7245001I22ND6ZFHX623-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245001I22ND6ZFHX623/2023-12-31/ESEF/NL/0/asm-2023-12-31-en/reports/asm-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-05",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245001I22ND6ZFHX623-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 49096000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49096.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ousand) | | 48,569 | | 49,326 | | 49,202 | Average outstanding shares basic (thousand) | | 48,645 | | 48,820 | | 49,286 | Average outstanding shares diluted (thousand) | | 48,909 | | 49,096 | | 49,555 | 1 Excluding amortization other intangible assets from purchase price allocation and impairment of\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 49555000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49555.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ousand) | | 48,569 | | 49,326 | | 49,202 | Average outstanding shares basic (thousand) | | 48,645 | | 48,820 | | 49,286 | Average outstanding shares diluted (thousand) | | 48,909 | | 49,096 | | 49,555 | 1 Excluding amortization other intangible assets from purchase price allocation and impairment of\""
+      }
+     ]
+    },
+    {
+     "document": "7245001I22ND6ZFHX623-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245001I22ND6ZFHX623/2024-12-31/ESEF/NL/0/asm-2024-12-31-en/reports/asm-2024-12-31-en.xhtml",
+     "ingediend": "2025-03-11",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245001I22ND6ZFHX623-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 49555000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49555.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"4 | Basic weighted average number of shares outstanding during the year | 49,286 | 49,165 | Effect of dilutive potential common shares from stock options and restricted shares | 269 | 221 | Dilutive weighted average number of shares outstanding | 49,555 | 49,386 | Basic net earnings per share: | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 49386000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 49386.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"4 | Basic weighted average number of shares outstanding during the year | 49,286 | 49,165 | Effect of dilutive potential common shares from stock options and restricted shares | 269 | 221 | Dilutive weighted average number of shares outstanding | 49,555 | 49,386 | Basic net earnings per share: | | |\""
+      }
+     ]
+    }
+   ]
+  },
+  "ASRNL.AS": {
+   "naam": "ASR Nederland",
+   "lei": "7245000G0HS48PZWUD53",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "7245000G0HS48PZWUD53-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245000G0HS48PZWUD53/2021-12-31/ESEF/NL/0/ASRN-2021-12-31/reports/ASRN-2021-12-31.html",
+     "ingediend": "2022-03-24",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245000G0HS48PZWUD53-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 160563162.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 160563162.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" shares resulting from conversion of bonds Restricted Tier 1 | 21,645,022 | 21,645,022 | Weighted average number of shares used to calculate the diluted earnings per ordinary share | 157,905,493 | 160,563,162 | Diluted earnings per ordinary share from continuing operations (in euros) | 5.77 | 3.91 |\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 626000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 626000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 157905493.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 157905493.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" shares resulting from conversion of bonds Restricted Tier 1 | 21,645,022 | 21,645,022 | Weighted average number of shares used to calculate the diluted earnings per ordinary share | 157,905,493 | 160,563,162 | Diluted earnings per ordinary share from continuing operations (in euros) | 5.77 | 3.91 |\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 911000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 911000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "7245000G0HS48PZWUD53-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245000G0HS48PZWUD53/2023-12-31/ESEF/NL/0/ASRN-2023-12-31/reports/ASRN-2023-12-31.html",
+     "ingediend": "2024-10-24",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245000G0HS48PZWUD53-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 200483751.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 200483751.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"inary share | 200,483,751 | 158,649,601 | Diluted earnings per ordinary share (in euros) | 5.26 | -10.97 | Net result in the table is after tax and non-controlling interests. For additional information related to net result, see chapter 7.2.2. 7.5.12 Subordinated liabilities See accounting policy T.\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 1055000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1055000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "7245000G0HS48PZWUD53-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245000G0HS48PZWUD53/2024-12-31/ESEF/NL/0/7245000G0HS48PZWUD53-2024-12-31-en/reports/7245000G0HS48PZWUD53-2024-12-31-en.html",
+     "ingediend": "2025-04-15",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245000G0HS48PZWUD53-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 200483751.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 200483751.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ngs per ordinary share from continuing operations (in euros) | 4.39 | 4.85 | Diluted earnings per ordinary share from discontinued operations (in euros) | -0.52 | 0.41 | Diluted earnings per ordinary share (in euros) | 3.87 | 5.26 | Net result in the table is after tax and non-controlling interests.\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 1055000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1055000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 232443759.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 232443759.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ngs per ordinary share from continuing operations (in euros) | 4.39 | 4.85 | Diluted earnings per ordinary share from discontinued operations (in euros) | -0.52 | 0.41 | Diluted earnings per ordinary share (in euros) | 3.87 | 5.26 | Net result in the table is after tax and non-controlling interests.\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 899000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 899000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "7245000G0HS48PZWUD53-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245000G0HS48PZWUD53/2025-12-31/ESEF/NL/0/7245000G0HS48PZWUD53-2025-12-31-1-en/reports/7245000G0HS48PZWUD53-2025-12-31-1-en.html",
+     "ingediend": "2026-04-07",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245000G0HS48PZWUD53-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 232443759.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 232443759.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"rnings per ordinary share from continuing operations (in euros) | 2.16 | 4.44 | Diluted earnings per ordinary share from discontinued operations (in euros) | - | -0.52 | Diluted earnings per ordinary share (in euros) | 2.16 | 3.92 | Net result in the table is after tax and non-controlling interests.\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 912000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 912000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 228088544.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 228088544.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"rnings per ordinary share from continuing operations (in euros) | 2.16 | 4.44 | Diluted earnings per ordinary share from discontinued operations (in euros) | - | -0.52 | Diluted earnings per ordinary share (in euros) | 2.16 | 3.92 | Net result in the table is after tax and non-controlling interests.\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 493000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 493000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    }
+   ]
+  },
+  "DSFIR.AS": {
+   "naam": "DSM-Firmenich",
+   "lei": "506700G44V67MPM4BI12",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "506700G44V67MPM4BI12-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/506700G44V67MPM4BI12/2024-12-31/ESEF/NL/0/506700G44V67MPM4BI12-2024-12-31-0-en/reports/506700G44V67MPM4BI12-2024-12-31-0-en.xhtml",
+     "ingediend": "2025-03-11",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "506700G44V67MPM4BI12-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 264600000.00000003,
+       "eenheid": "shares",
+       "oorspronkelijk": 264.6,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" 0.94 0.94 (2.82) 9.14 Diluted EPS 0.94 0.94 (2.82) 9.13 Adj. EPS 2.16 2.16 0.72 0.69 Diluted Adj. EPS 2.16 2.16 0.72 0.69 Core adj. EPS 3.10 3.10 1.54 1.51 Sustainability Statements < Consolidated Financial Statements > Parent Company Financial Statements 218 3. Change in the scope of consolidation\""
+      }
+     ]
+    }
+   ]
+  },
+  "EXO.AS": {
+   "naam": "Exor",
+   "lei": "5493002ENHZ6NYET7405",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "5493002ENHZ6NYET7405-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/5493002ENHZ6NYET7405/2024-12-31/ESEF/NL/0/exor-2024-12-31-en/reports/exor-2024-12-31-en.xhtml",
+     "ingediend": "2025-04-15",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "5493002ENHZ6NYET7405-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 218957000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 218957.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" Weighted average common shares outstanding | € thousands | 214.883 | 224.047 | Number of shares deployable for share-based compensation plans granted by Exor | € thousands | 4.453 | 3.607 | Weighted average common shares outstanding for diluted earnings per share | € thousands | 218.957 | 227.654 |\""
+      }
+     ]
+    }
+   ]
+  },
+  "HEIA.AS": {
+   "naam": "Heineken",
+   "lei": "724500K5PTPSST86UQ23",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500K5PTPSST86UQ23-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500K5PTPSST86UQ23/2021-12-31/ESEF/NL/0/heia-2021-12-31-en/reports/heia-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500K5PTPSST86UQ23-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 575969395.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 575969395.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" to be delivered under the employee incentive programme (196,007 shares). For the purposes of this calculation, the weighted average diluted number of shares outstanding as at 31 December 2021 is 575,969,395 (2020: 575 821 605) Heineken N.V. Annual Report 2021 6 OtherInformation SustainabilityReview\""
+      }
+     ]
+    },
+    {
+     "document": "724500K5PTPSST86UQ23-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500K5PTPSST86UQ23/2022-12-31/ESEF/NL/0/heia-2022-12-31-en/reports/heia-2022-12-31-en.xhtml",
+     "ingediend": "2023-02-28",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500K5PTPSST86UQ23-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 575969395.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 575969395.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| (4.1)% | Shareholders' equity | 33.97 | 30.15 | 12.7% | Share price | 87.88 | 98.86 | (11.1)% | Weighted average number of shares – diluted | 576,026,120 | 575,969,395 | 0.0% | Net profit (beia) – diluted\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 576026120.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 576026120.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| (4.1)% | Shareholders' equity | 33.97 | 30.15 | 12.7% | Share price | 87.88 | 98.86 | (11.1)% | Weighted average number of shares – diluted | 576,026,120 | 575,969,395 | 0.0% | Net profit (beia) – diluted\""
+      }
+     ]
+    },
+    {
+     "document": "724500K5PTPSST86UQ23-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500K5PTPSST86UQ23/2023-12-31/ESEF/NL/0/heia-2023-12-31-en/reports/heia-2023-12-31-en.xhtml",
+     "ingediend": "2024-02-27",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500K5PTPSST86UQ23-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 576026120.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 576026120.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| (25.5%) | Shareholders' equity | 35.60 | 33.97 | 4.8% | Share price | 91.94 | 87.88 | 4.6% | Weighted average number of shares – diluted | 563,979,620 | 576,026,120 | (2.1%) | Net profit (beia) – diluted\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 563979620.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 563979620.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| (25.5%) | Shareholders' equity | 35.60 | 33.97 | 4.8% | Share price | 91.94 | 87.88 | 4.6% | Weighted average number of shares – diluted | 563,979,620 | 576,026,120 | (2.1%) | Net profit (beia) – diluted\""
+      }
+     ]
+    },
+    {
+     "document": "724500K5PTPSST86UQ23-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500K5PTPSST86UQ23/2024-12-31/ESEF/NL/0/heia-2024-12-31-en/reports/heia-2024-12-31-en.xhtml",
+     "ingediend": "2025-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500K5PTPSST86UQ23-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 563979620.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 563979620.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 75.0% | Shareholders’ equity | 34.95 | 35.60 | (1.8%) | Share price | 68.70 | 91.94 | (25.3%) | Weighted average number of shares – diluted | 560,639,030 | 563,979,620 | (0.6%) | Net profit (beia) – diluted\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 560639030.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 560639030.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 75.0% | Shareholders’ equity | 34.95 | 35.60 | (1.8%) | Share price | 68.70 | 91.94 | (25.3%) | Weighted average number of shares – diluted | 560,639,030 | 563,979,620 | (0.6%) | Net profit (beia) – diluted\""
+      }
+     ]
+    },
+    {
+     "document": "724500K5PTPSST86UQ23-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500K5PTPSST86UQ23/2025-12-31/ESEF/NL/0/heia-2025-12-31-en/reports/heia-2025-12-31-en.xhtml",
+     "ingediend": "2026-02-17",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500K5PTPSST86UQ23-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 560639030.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 560639030.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| Shareholders’ equity | 32.29 | 34.95 | (7.6%) | Share price | 69.74 | 68.70 | 1.5% | Weighted average number of shares – diluted | 557,024,742 | 560,639,030 | (0.6%) | Net profit (beia) – diluted\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 557024742.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 557024742.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| Shareholders’ equity | 32.29 | 34.95 | (7.6%) | Share price | 69.74 | 68.70 | 1.5% | Weighted average number of shares – diluted | 557,024,742 | 560,639,030 | (0.6%) | Net profit (beia) – diluted\""
+      }
+     ]
+    }
+   ]
+  },
+  "IMCD.AS": {
+   "naam": "IMCD",
+   "lei": "724500NSJPNFJPDAUP02",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500NSJPNFJPDAUP02-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500NSJPNFJPDAUP02/2021-12-31/ESEF/NL/0/IMCD-2021-12-31/reports/IMCD-2021-12-31.html",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500NSJPNFJPDAUP02-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 57061000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 57061.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| Weighted average number of ordinary shares (basic) as at 31 December | 27 | | 56,940 | 53,750 | Effect of share based payments | | | 121 | 138 | Weighted average number of ordinary shares (diluted) at 31 December | | (C) | 57,061 |\""
+      }
+     ]
+    },
+    {
+     "document": "724500NSJPNFJPDAUP02-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500NSJPNFJPDAUP02/2024-12-31/ESEF/NL/0/IMCD-2024-12-31-en/reports/IMCD-2024-12-31-en.html",
+     "ingediend": "2025-03-06",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500NSJPNFJPDAUP02-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 57268000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 57268.0,
+       "schaal": 1000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| | 2024 | 2023 | Weighted average number of ordinary shares (basic) as at 31 December | 27 | | 57,214 | 56,918 | Effect of share based payments | | | 54 | 78 | Weighted average number of ordinary shares (diluted) at 31 December | | (C) | 57,268 | 56,996 | | | | | |\""
+      }
+     ]
+    }
+   ]
+  },
+  "KPN.AS": {
+   "naam": "KPN",
+   "lei": "549300YO0JZHAL7FVP81",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "549300YO0JZHAL7FVP81-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/549300YO0JZHAL7FVP81/2021-12-31/ESEF/NL/0/KONI-2021-12-31/reports/KONI-2021-12-31.html",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "549300YO0JZHAL7FVP81-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 4183325441,
+       "eenheid": "shares",
+       "oorspronkelijk": 4183325441,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1278000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1278000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 4201925886,
+       "eenheid": "shares",
+       "oorspronkelijk": 4201925886,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 551000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 551000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "549300YO0JZHAL7FVP81-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/549300YO0JZHAL7FVP81/2022-12-31/ESEF/NL/0/KONI-2022-12-31/reports/KONI-2022-12-31.html",
+     "ingediend": "2023-02-28",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "549300YO0JZHAL7FVP81-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 4086444227,
+       "eenheid": "shares",
+       "oorspronkelijk": 4086444227,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 743000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 743000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 4183325441,
+       "eenheid": "shares",
+       "oorspronkelijk": 4183325441,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 1278000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1278000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "549300YO0JZHAL7FVP81-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/549300YO0JZHAL7FVP81/2023-12-31/ESEF/NL/0/KONI-2023-12-31/reports/KONI-2023-12-31.html",
+     "ingediend": "2024-03-05",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "549300YO0JZHAL7FVP81-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 3976082596,
+       "eenheid": "shares",
+       "oorspronkelijk": 3976082596,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 804000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 804000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 4086444227,
+       "eenheid": "shares",
+       "oorspronkelijk": 4086444227,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 743000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 743000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "549300YO0JZHAL7FVP81-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/549300YO0JZHAL7FVP81/2024-12-31/ESEF/NL/0/KONI-2024-12-31-en/reports/KONI-2024-12-31-en.html",
+     "ingediend": "2025-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "549300YO0JZHAL7FVP81-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 3900456571,
+       "eenheid": "shares",
+       "oorspronkelijk": 3900456571,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 798000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 798000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 3976082596,
+       "eenheid": "shares",
+       "oorspronkelijk": 3976082596,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot winst per aandeel: \"Adjusted profit (loss) attributable to ordinary shareholders of the company\" (na aftrek perpetual capital securities) en \"Weighted average number of subscribed ordinary shares including dilution effects\" (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 804000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 804000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "549300YO0JZHAL7FVP81-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/549300YO0JZHAL7FVP81/2025-12-31/ESEF/NL/0/549300YO0JZHAL7FVP81-2025-12-31-1-en/reports/549300YO0JZHAL7FVP81-2025-12-31-1-en.html",
+     "ingediend": "2026-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "549300YO0JZHAL7FVP81-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 3900456571.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 3900456571.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"tributable to KPN shareholders because this capital is classified as equity. As a result, the related payments are treated as dividends and are not part of the profit attributable to KPN shareholders. Earnings per ordinary share after taxes attributable to equity holders of the company for the year:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 800000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 800000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 3851167366.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 3851167366.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"tributable to KPN shareholders because this capital is classified as equity. As a result, the related payments are treated as dividends and are not part of the profit attributable to KPN shareholders. Earnings per ordinary share after taxes attributable to equity holders of the company for the year:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 800000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 800000000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    }
+   ]
+  },
+  "NN.AS": {
+   "naam": "NN Group",
+   "lei": "724500OHYNDT9OY6Q215",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500OHYNDT9OY6Q215-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500OHYNDT9OY6Q215/2021-12-31/ESEF/NL/0/nngroupnv-2021-12-31-en/reports/nngroupnv-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500OHYNDT9OY6Q215-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 309300000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 309300000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 3219000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 3219000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 314600000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 314600000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1845000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1845000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "724500OHYNDT9OY6Q215-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500OHYNDT9OY6Q215/2022-12-31/ESEF/NL/0/724500OHYNDT9OY6Q215/reports/nn-gr-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-14",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500OHYNDT9OY6Q215-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 295700000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 295700000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 1504000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1504000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 309300000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 309300000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 3219000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 3219000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "724500OHYNDT9OY6Q215-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500OHYNDT9OY6Q215/2023-12-31/ESEF/NL/0/724500OHYNDT9OY6Q215/reports/nngr-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-26",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500OHYNDT9OY6Q215-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 277500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 277500000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 1121000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1121000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 295700000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 295700000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 1576000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1576000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "724500OHYNDT9OY6Q215-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500OHYNDT9OY6Q215/2024-12-31/ESEF/NL/0/724500OHYNDT9OY6Q215/reports/nngr-2024-12-31-0-en.xhtml",
+     "ingediend": "2025-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500OHYNDT9OY6Q215-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 271900000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 271900000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 1517000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1517000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 277500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 277500000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot Earnings per ordinary share: \"Diluted earnings (per ordinary share) from continuing and discontinued operations\" (winst na coupon op undated subordinated notes; gewogen aantal in miljoenen, gewoon + verwaterend effect share plans) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 1121000000,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1121000000,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "724500OHYNDT9OY6Q215-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500OHYNDT9OY6Q215/2025-12-31/ESEF/NL/0/724500OHYNDT9OY6Q215-2025-12-31-1-en/reports/724500OHYNDT9OY6Q215-2025-12-31-1-en.html",
+     "ingediend": "2026-03-10",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500OHYNDT9OY6Q215-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 265000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 265.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| | 2025 | 2024 | 2025 | 2024 | 2025 | 2024 | Net result | 1,188 | 1,583 | | | | | Coupon on undated subordinated notes | -82 | -66 | | | | | Basic earnings per ordinary share | 1,106 | 1,517 | 265.0 | 271.7 | 4.17 | 5.58 | Dilut\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 1106000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1106.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 271700000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 271.7,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"25 | 2024 | 2025 | 2024 | 2025 | 2024 | Net result | 1,188 | 1,583 | | | | | Coupon on undated subordinated notes | -82 | -66 | | | | | Basic earnings per ordinary share | 1,106 | 1,517 | 265.0 | 271.7 | 4.17 | 5.58 | Dilutive instr\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 1517000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1517.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    }
+   ]
+  },
+  "RAND.AS": {
+   "naam": "Randstad",
+   "lei": "7245009EAAUUQJ0U4T57",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "7245009EAAUUQJ0U4T57-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245009EAAUUQJ0U4T57/2021-12-31/ESEF/NL/0/RAND-2021-12-31/reports/RAND-2021-12-31.html",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245009EAAUUQJ0U4T57-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 184.2,
+       "eenheid": "shares",
+       "oorspronkelijk": 184.2,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"rdinary shares (in millions) | | | Weighted average number of ordinary shares outstanding | 183.8 | 183.2 | Dilutive effect of share-based compensation arrangements | 1.4 | 1.0 | Weighted average number of diluted ordinary shares outstanding | 185.2 | 184.2 | Earnings per ordinary share (in €) | | |\""
+      }
+     ]
+    },
+    {
+     "document": "7245009EAAUUQJ0U4T57-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245009EAAUUQJ0U4T57/2022-12-31/ESEF/NL/0/RAND-2022-12-31/reports/RAND-2022-12-31.html",
+     "ingediend": "2023-02-15",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245009EAAUUQJ0U4T57-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 183500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 183500000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot 12 earnings per ordinary share: \"Weighted average number of diluted ordinary shares outstanding | 183.5 | 185.2\" (miljoenen) (met de hand gelezen)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 185200000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 185200000.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"noot 12 earnings per ordinary share: \"Weighted average number of diluted ordinary shares outstanding | 183.5 | 185.2\" (miljoenen) (met de hand gelezen)\""
+      }
+     ]
+    },
+    {
+     "document": "7245009EAAUUQJ0U4T57-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245009EAAUUQJ0U4T57/2023-12-31/ESEF/NL/0/RAND-2023-12-31/reports/RAND-2023-12-31.html",
+     "ingediend": "2024-02-20",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245009EAAUUQJ0U4T57-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 183500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 183.5,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare are calculated by dividing net income attributable to the holders of ordinary shares by the weighted average number of ordinary shares outstanding during the year. The issued number of ordinary shares is adjusted for ordinary shares purchased by Randstad N.V., which are held as treasury shares.\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 179500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 179.5,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare are calculated by dividing net income attributable to the holders of ordinary shares by the weighted average number of ordinary shares outstanding during the year. The issued number of ordinary shares is adjusted for ordinary shares purchased by Randstad N.V., which are held as treasury shares.\""
+      }
+     ]
+    },
+    {
+     "document": "7245009EAAUUQJ0U4T57-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245009EAAUUQJ0U4T57/2024-12-31/ESEF/NL/0/RAND-2024-12-31-en/reports/RAND-2024-12-31-en.html",
+     "ingediend": "2025-02-25",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245009EAAUUQJ0U4T57-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 179500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 179.5,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare are calculated by dividing net income attributable to the holders of ordinary shares by the weighted average number of ordinary shares outstanding during the year. The issued number of ordinary shares is adjusted for ordinary shares purchased by Randstad N.V., which are held as treasury shares.\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 177100000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 177.1,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"hare are calculated by dividing net income attributable to the holders of ordinary shares by the weighted average number of ordinary shares outstanding during the year. The issued number of ordinary shares is adjusted for ordinary shares purchased by Randstad N.V., which are held as treasury shares.\""
+      }
+     ]
+    },
+    {
+     "document": "7245009EAAUUQJ0U4T57-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7245009EAAUUQJ0U4T57/2025-12-31/ESEF/NL/0/rand-2025-12-31-1-en/reports/rand-2025-12-31-1-en.xhtml",
+     "ingediend": "2026-02-17",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "7245009EAAUUQJ0U4T57-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 177100000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 177.1,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"illions) | | | | | Weighted average number of ordinary shares outstanding | | 175.2 | | 176.1 | Dilutive effect of share-based compensation arrangements | | 0.3 | | 1.0 | Weighted average number of diluted ordinary shares outstanding | | 175.5 | | 177.1 | Earnings per ordinary share (in €) | | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 175500000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 175.5,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"illions) | | | | | Weighted average number of ordinary shares outstanding | | 175.2 | | 176.1 | Dilutive effect of share-based compensation arrangements | | 0.3 | | 1.0 | Weighted average number of diluted ordinary shares outstanding | | 175.5 | | 177.1 | Earnings per ordinary share (in €) | | | | |\""
+      }
+     ]
+    }
+   ]
+  },
+  "UMG.AS": {
+   "naam": "Universal Music Group",
+   "lei": "724500GJBUL3D9TW9Y18",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500GJBUL3D9TW9Y18-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500GJBUL3D9TW9Y18/2021-12-31/ESEF/NL/0/universalmusicgroup-2021-12-31-en/reports/universalmusicgroup-2021-12-31-en.xhtml",
+     "ingediend": "2022-05-17",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500GJBUL3D9TW9Y18-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1813000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1813.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ng (after deduction of treasury shares) during the year 1,813 1,813 Potential dilutive effects related to share-based compensation 1 – Diluted weighted average number of shares 1,814 1,813 Earnings per share (in euros) Basic earnings per share 0.49 0.75 Diluted earnings pe\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1366000000.0,
+       "eenheid": "EUR",
+       "oorspronkelijk": 1366.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel: teller voor de winst per aandeel (na aftrek van coupons/preferent dividend), zelfde tabel als het aantal aandelen"
+      }
+     ]
+    },
+    {
+     "document": "724500GJBUL3D9TW9Y18-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500GJBUL3D9TW9Y18/2023-12-31/ESEF/NL/0/724500GJBUL3D9TW9Y18-2023-12-31-en/reports/724500GJBUL3D9TW9Y18-2023-12-31-en.xhtml",
+     "ingediend": "2024-10-24",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500GJBUL3D9TW9Y18-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 1842000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 1842.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"| 1,259 | 782 | Weighted average number of shares outstanding (after deduction of treasury shares) during the year | 1,819 | 1,813 | Potential dilutive effects related to share-based compensation | 23 | 3 | Diluted weighted average number of shares | 1,842 | 1,816 | Earnings per share (in euros)\""
+      }
+     ]
+    }
+   ]
+  },
+  "PHIA.AS": {
+   "naam": "Philips",
+   "lei": "H1FJE8H61JGM1JSGM897",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "H1FJE8H61JGM1JSGM897-2020-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/H1FJE8H61JGM1JSGM897/2020-12-31/ESEF/NL/0/H1FJE8H61JGM1JSGM897-2020-12-31/reports/H1FJE8H61JGM1JSGM897-2020-12-31.html",
+     "ingediend": "2021-05-20",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "H1FJE8H61JGM1JSGM897-2020-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 953931126.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 953931126.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | Income from continuing operations attributable to shareholders | 1.38 | 1.29 | 1.32 | Income from Discontinued operations attributable to shareholders | (0.23) | (0.02) | (0.01) | Net income attributable to shareholders | 1.16 | 1.27 | 1.31 | Diluted earnings per common share in EUR2)4) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 930770765.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 930770765.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | Income from continuing operations attributable to shareholders | 1.38 | 1.29 | 1.32 | Income from Discontinued operations attributable to shareholders | (0.23) | (0.02) | (0.01) | Net income attributable to shareholders | 1.16 | 1.27 | 1.31 | Diluted earnings per common share in EUR2)4) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 916625001.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 916625001.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | Income from continuing operations attributable to shareholders | 1.38 | 1.29 | 1.32 | Income from Discontinued operations attributable to shareholders | (0.23) | (0.02) | (0.01) | Net income attributable to shareholders | 1.16 | 1.27 | 1.31 | Diluted earnings per common share in EUR2)4) | | | |\""
+      }
+     ]
+    },
+    {
+     "document": "H1FJE8H61JGM1JSGM897-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/H1FJE8H61JGM1JSGM897/2021-12-31/ESEF/NL/0/H1FJE8H61JGM1JSGM897-2021-12-31/reports/H1FJE8H61JGM1JSGM897-2021-12-31.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "H1FJE8H61JGM1JSGM897-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 930770765.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 930770765.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" EUR | | | | Income from continuing operations attributable to shareholders | 1.07 | 1.09 | 0.67 | Income from Discontinued operations attributable to shareholders | 0.20 | 0.22 | 3.00 | Net income attributable to shareholders | 1.27 | 1.31 | 3.67 | Diluted earnings per common share in EUR2) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 916625001.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 916625001.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" EUR | | | | Income from continuing operations attributable to shareholders | 1.07 | 1.09 | 0.67 | Income from Discontinued operations attributable to shareholders | 0.20 | 0.22 | 3.00 | Net income attributable to shareholders | 1.27 | 1.31 | 3.67 | Diluted earnings per common share in EUR2) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 909654754.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 909654754.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" EUR | | | | Income from continuing operations attributable to shareholders | 1.07 | 1.09 | 0.67 | Income from Discontinued operations attributable to shareholders | 0.20 | 0.22 | 3.00 | Net income attributable to shareholders | 1.27 | 1.31 | 3.67 | Diluted earnings per common share in EUR2) | | | |\""
+      }
+     ]
+    },
+    {
+     "document": "H1FJE8H61JGM1JSGM897-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/H1FJE8H61JGM1JSGM897/2022-12-31/ESEF/NL/0/H1FJE8H61JGM1JSGM897-2022-12-31/reports/H1FJE8H61JGM1JSGM897-2022-12-31.xhtml",
+     "ingediend": "2023-02-28",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "H1FJE8H61JGM1JSGM897-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 916625001.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 916625001.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | | | Income from continuing operations attributable to shareholders | 1.09 | 0.67 | (1.84) | Income from discontinued operations attributable to shareholders | 0.22 | 3.00 | 0.02 | Net income attributable to shareholders | 1.31 | 3.67 | (1.82) | Diluted earnings per common share in EUR2) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 909654754.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 909654754.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | | | Income from continuing operations attributable to shareholders | 1.09 | 0.67 | (1.84) | Income from discontinued operations attributable to shareholders | 0.22 | 3.00 | 0.02 | Net income attributable to shareholders | 1.31 | 3.67 | (1.82) | Diluted earnings per common share in EUR2) | | | |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 881615862.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 881615862.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | | | | Income from continuing operations attributable to shareholders | 1.09 | 0.67 | (1.84) | Income from discontinued operations attributable to shareholders | 0.22 | 3.00 | 0.02 | Net income attributable to shareholders | 1.31 | 3.67 | (1.82) | Diluted earnings per common share in EUR2) | | | |\""
+      }
+     ]
+    },
+    {
+     "document": "H1FJE8H61JGM1JSGM897-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/H1FJE8H61JGM1JSGM897/2024-12-31/ESEF/NL/0/phg-2024-12-31-en/reports/phg-2024-12-31-en.xhtml",
+     "ingediend": "2025-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "H1FJE8H61JGM1JSGM897-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 933370814.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 933370814.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" | Dilutive potential common shares² | 20,771,753 | 20,709,680 | 10,925,002 | Diluted weighted average number of shares outstanding (after deduction of treasury shares) during the period | 951,811,382 | 948,300,672 | 933,370,814 | Basic earnings per common share attributable to shareholders (in EUR)\""
+      }
+     ]
+    },
+    {
+     "document": "H1FJE8H61JGM1JSGM897-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/H1FJE8H61JGM1JSGM897/2025-12-31/ESEF/NL/0/phia-2025-12-31-1-en/reports/phia-2025-12-31-1-en.xhtml",
+     "ingediend": "2026-03-04",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "H1FJE8H61JGM1JSGM897-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 948300672.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 948300672.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ard contracts to repurchase shares | 523,617 | 1,835,048 | 15,511,844 | Dilutive potential common shares ² | 14,264,153 | 10,925,002 | 20,709,680 | Diluted weighted average number of shares outstanding (after deduction of treasury shares) during the period | 962,503,162 | 933,370,814 | 948,300,672 |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 933370814.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 933370814.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ard contracts to repurchase shares | 523,617 | 1,835,048 | 15,511,844 | Dilutive potential common shares ² | 14,264,153 | 10,925,002 | 20,709,680 | Diluted weighted average number of shares outstanding (after deduction of treasury shares) during the period | 962,503,162 | 933,370,814 | 948,300,672 |\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 962503162.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 962503162.0,
+       "schaal": 1,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"ard contracts to repurchase shares | 523,617 | 1,835,048 | 15,511,844 | Dilutive potential common shares ² | 14,264,153 | 10,925,002 | 20,709,680 | Diluted weighted average number of shares outstanding (after deduction of treasury shares) during the period | 962,503,162 | 933,370,814 | 948,300,672 |\""
+      }
+     ]
+    }
+   ]
+  },
+  "WKL.AS": {
+   "naam": "Wolters Kluwer",
+   "lei": "724500TEM53I0U077B74",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
+   "documenten": [
+    {
+     "document": "724500TEM53I0U077B74-2021-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2021-12-31/ESEF/NL/0/wolt-2021-12-31-en/reports/wolt-2021-12-31-en.xhtml",
+     "ingediend": "2022-03-16",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2021-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 266600000.00000003,
+       "eenheid": "shares",
+       "oorspronkelijk": 266.6,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"roﬁt, a lower tax rate, and a 2% reduction in the diluted weighted average number of shares outstanding to 261.8 million (2020: 266.6 million). Return on Invested Capital (ROIC) In 2021, the ROIC was 13.7% (2020: 12.3%), mainly due to a higher adjusted operating proﬁt and a lower benchmark tax rate.\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 261800000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 261.8,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"roﬁt, a lower tax rate, and a 2% reduction in the diluted weighted average number of shares outstanding to 261.8 million (2020: 266.6 million). Return on Invested Capital (ROIC) In 2021, the ROIC was 13.7% (2020: 12.3%), mainly due to a higher adjusted operating proﬁt and a lower benchmark tax rate.\""
+      }
+     ]
+    },
+    {
+     "document": "724500TEM53I0U077B74-2022-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2022-12-31/ESEF/NL/0/wolt-2022-12-31-en/reports/wolt-2022-12-31-en.xhtml",
+     "ingediend": "2023-03-14",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2022-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 261800000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 261.8,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" profit and a 2% reduction in the diluted weighted-average number of shares outstanding to 255.8 million (2021: 261.8 million). Return on invested capital (ROIC) In 2022, the ROIC was 15.5% (2021: 13.7%), mainly due to a higher adjusted operating profit, partly offset by a higher benchmark tax rate.\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 255800000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 255.8,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" profit and a 2% reduction in the diluted weighted-average number of shares outstanding to 255.8 million (2021: 261.8 million). Return on invested capital (ROIC) In 2022, the ROIC was 15.5% (2021: 13.7%), mainly due to a higher adjusted operating profit, partly offset by a higher benchmark tax rate.\""
+      }
+     ]
+    },
+    {
+     "document": "724500TEM53I0U077B74-2023-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2023-12-31/ESEF/NL/0/wolt-2023-12-31-en/reports/wolt-2023-12-31-en.xhtml",
+     "ingediend": "2024-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2023-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2022-01-01",
+       "eind": "2022-12-31",
+       "waarde": 255800000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 255.8,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"t and a 4% reduction in the diluted weighted-average number of shares outstanding to 246.0 million (2022: 255.8 million). Return on invested capital (ROIC) In 2023, ROIC was 16.8% (2022: 15.5%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark tax rate. Cash flow\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 246000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 246.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"t and a 4% reduction in the diluted weighted-average number of shares outstanding to 246.0 million (2022: 255.8 million). Return on invested capital (ROIC) In 2023, ROIC was 16.8% (2022: 15.5%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark tax rate. Cash flow\""
+      }
+     ]
+    },
+    {
+     "document": "724500TEM53I0U077B74-2024-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2024-12-31/ESEF/NL/0/wolt-2024-12-31-0-en/reports/wolt-2024-12-31-0-en.xhtml",
+     "ingediend": "2025-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2024-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 246000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 246.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"duction in the diluted weighted-average number of shares outstanding to 238.4 million (2023: 246.0 million). Return on invested capital (ROIC) In 2024, ROIC was 18.1% (2023: 16.8%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark taxrate. Group financial review\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 238400000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 238.4,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"duction in the diluted weighted-average number of shares outstanding to 238.4 million (2023: 246.0 million). Return on invested capital (ROIC) In 2024, ROIC was 18.1% (2023: 16.8%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark taxrate. Group financial review\""
+      }
+     ]
+    },
+    {
+     "document": "724500TEM53I0U077B74-2024-12-31-ESEF-NL-1.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2024-12-31/ESEF/NL/1/wolt-2024-12-31-0-en/reports/wolt-2024-12-31-0-en.xhtml",
+     "ingediend": "2025-04-15",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2024-12-31-ESEF-NL-1",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2023-01-01",
+       "eind": "2023-12-31",
+       "waarde": 246000000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 246.0,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"duction in the diluted weighted-average number of shares outstanding to 238.4 million (2023: 246.0 million). Return on invested capital (ROIC) In 2024, ROIC was 18.1% (2023: 16.8%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark taxrate. Group financial review\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 238400000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 238.4,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \"duction in the diluted weighted-average number of shares outstanding to 238.4 million (2023: 246.0 million). Return on invested capital (ROIC) In 2024, ROIC was 18.1% (2023: 16.8%), mainly due to a higher adjusted operatingprofit, partly offset by a higher benchmark taxrate. Group financial review\""
+      }
+     ]
+    },
+    {
+     "document": "724500TEM53I0U077B74-2025-12-31-ESEF-NL-0.xhtml",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/724500TEM53I0U077B74/2025-12-31/ESEF/NL/0/wolt-2025-12-31-0-en/reports/wolt-2025-12-31-0-en.xhtml",
+     "ingediend": "2026-03-18",
+     "ingediend_bron": "date_added filings.xbrl.org",
+     "kenmerk": "724500TEM53I0U077B74-2025-12-31-ESEF-NL-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2024-01-01",
+       "eind": "2024-12-31",
+       "waarde": 238400000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 238.4,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" average number of shares outstanding to 231.8 million (FY2024: 238.4 million). Return on invested capital (ROIC) In 2025, ROIC was 18.0% (2024: 18.1%), reflecting the higher average invested capital and a higher benchmark taxrate, partly offset by higher adjusted operatingprofit. Highlights 2025\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2025-01-01",
+       "eind": "2025-12-31",
+       "waarde": 231800000.0,
+       "eenheid": "shares",
+       "oorspronkelijk": 231.8,
+       "schaal": 1000000,
+       "bewijs": "ESEF-rapport, toelichting winst per aandeel (tekst, niet getagd): \" average number of shares outstanding to 231.8 million (FY2024: 238.4 million). Return on invested capital (ROIC) In 2025, ROIC was 18.0% (2024: 18.1%), reflecting the higher average invested capital and a higher benchmark taxrate, partly offset by higher adjusted operatingprofit. Highlights 2025\""
+      }
+     ]
+    }
+   ]
   }
  }
 }

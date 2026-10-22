@@ -103,6 +103,10 @@ def esef_ophalen(ticker):
                 _ESEF_CACHE[ESEF_BUNDEL] = json.load(f)
         cf = _ESEF_CACHE[ESEF_BUNDEL].get(lei)
         if cf:
+            from esef_bron import corrigeer_eenheden
+            cf, correcties = corrigeer_eenheden(cf)
+            if correcties:
+                cf = {**cf, 'eenheid_correcties': correcties}
             # cijfers uit pdf-jaarverslagen en uit de tekst van ESEF-rapporten (jaarverslag_bronnen.json), alleen aanvullend
             from jaarverslag_bronnen import aanvullen
             cf, verslag = aanvullen(cf, ticker)

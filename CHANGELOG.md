@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026.10.22-beta.56
+- **AEX, stap 1: aantal aandelen uit de tekst van de ESEF-rapporten 2020-2025.** Automatisch uitgelezen en per getal gecontroleerd (winst / aandelen = gemelde winst per aandeel op de cent; een getal mag maar bij één jaar passen; hetzelfde jaar in twee rapporten moet gelijk zijn), aangevuld met de hand waar het automatisch niet lukte (KPN, NN, Randstad, AkzoNobel, ABN AMRO). Ook de teller na aftrek van coupons/eeuwigdurende obligaties waar het bedrijf die gebruikt (ABN AMRO, KPN, NN). Alles met bron in `jaarverslag_bronnen.json`.
+- Resultaat (bevestigde jaren): ABN AMRO 0→6, Adyen 0→7, KPN 0→6, NN 0→6, Wolters Kluwer 0→6, Randstad 0→5, AkzoNobel 0→4, ASR 0→3, ASM 2→7, Eni 9→10 (nu volledig bevestigd). Volledig bevestigd van 40 naar 41. Niets achteruit, geen bestaande EPS gewijzigd.
+- **Fout hersteld: teller per jaarverslag.** De controle koos het type winst (winst voor aandeelhouders of totale winst) voor het hele bedrijf; bij ASM (winst voor aandeelhouders pas vanaf 2025 getagd) vielen daardoor alle oudere jaren weg. Nu per jaarverslag.
+- **Tagfout in valuta hersteld:** Wolters Kluwer tagde de winst per aandeel 2025 als dirham (AED) terwijl het hele rapport in euro is. Alleen als een rapport voor alle bedragen één valuta heeft en alleen de per-aandeelbedragen in een andere, verder ongebruikte valuta staan, wordt dat gecorrigeerd en vastgelegd (`eenheid_correcties`).
+- Gevonden en bewust niet gerepareerd: schaalfouten in ESEF-rapporten (winst per aandeel ×1.000.000 bij ASR 2022 en Randstad 2021, ×100 bij AkzoNobel 2021); die jaren worden niet bevestigd.
+- Nog niet gelukt (complexe aandelenstructuur of beperkte historie): Aegon, BE Semiconductor, DSM-Firmenich, Exor, Prosus, RELX, Universal Music Group.
+
 ## 2026.10.22-beta.55
 - **Proef: cijfers uit officiële jaarverslagen die niet machineleesbaar zijn** (nieuw `jaarverslag_bronnen.py` en register `jaarverslag_bronnen.json`). Voor Ahold Delhaize zijn uit de pdf-jaarverslagen 2017 en 2019 de verwaterde winst per aandeel, de winst en het gewogen aantal verwaterde aandelen over 2016-2019 vastgelegd, en uit de tekst van de ESEF-rapporten 2021-2025 het aantal verwaterde aandelen (staat daar niet getagd). Per getal: document, pagina en oorspronkelijke tekst. Eén keer uitgelezen, nooit opnieuw opgehaald; een officieel getagd ESEF-feit wordt nooit overschreven en een afwijkend getal maakt het hele document ongeldig. De bestaande controle beslist daarna.
 - Resultaat Ahold Delhaize: van 0 naar 9 bevestigde jaren (2017-2025), elk jaar nagerekend (winst / aandelen = gemelde winst per aandeel). 2016 valt buiten de reeks door de fusie met Delhaize (aantal aandelen +24%). Tien jaren zijn voor Ahold Delhaize dus pas haalbaar vanaf boekjaar 2026.

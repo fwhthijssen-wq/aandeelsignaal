@@ -59,3 +59,44 @@ class Ahold(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class EenheidCorrectie(unittest.TestCase):
+    def cf(self, eps_unit):
+        def r(v, accn='a'):
+            return {'start': '2025-01-01', 'end': '2025-12-31', 'val': v, 'accn': accn, 'filed': '2026-03-01', 'form': '20-F'}
+        return {'facts': {'ifrs-full': {'ProfitLoss': {'units': {'EUR': [r(1e9)]}},
+                                        'DilutedEarningsLossPerShare': {'units': {eps_unit: [r(5.64)]}}}}}
+
+    def test_tagfout_in_valuta_wordt_hersteld(self):
+        from esef_bron import corrigeer_eenheden
+        cf, c = corrigeer_eenheden(self.cf('AED/shares'))
+        self.assertIn('EUR/shares', cf['facts']['ifrs-full']['DilutedEarningsLossPerShare']['units'])
+        self.assertNotIn('AED/shares', cf['facts']['ifrs-full']['DilutedEarningsLossPerShare']['units'])
+        self.assertEqual(len(c), 1)
+
+    def test_juiste_valuta_blijft(self):
+        from esef_bron import corrigeer_eenheden
+        cf0 = self.cf('EUR/shares')
+        cf, c = corrigeer_eenheden(cf0)
+        self.assertEqual(c, [])
+        self.assertIs(cf, cf0)
+
+    def test_rapport_met_twee_valuta_niet_aanpassen(self):
+        from esef_bron import corrigeer_eenheden
+        cf0 = self.cf('USD/shares')
+        cf0['facts']['ifrs-full']['Revenue'] = {'units': {'USD': [{'start': '2025-01-01', 'end': '2025-12-31', 'val': 1, 'accn': 'a', 'filed': '2026-03-01', 'form': '20-F'}]}}
+        self.assertEqual(corrigeer_eenheden(cf0)[1], [])
+
+
+class TellerPerIndiening(unittest.TestCase):
+    def test_terugval_op_totale_winst_per_indiening(self):
+        import eps_verification as ev
+        def r(v, accn):
+            return [{'start': '2024-01-01', 'end': '2024-12-31', 'val': v, 'accn': accn, 'filed': '2025-03-01', 'form': '20-F'}]
+        p = {'facts': {'ifrs-full': {
+            'ProfitLossAttributableToOwnersOfParent': {'units': {'EUR': [{'start': '2025-01-01', 'end': '2025-12-31', 'val': 7e8, 'accn': 'nieuw', 'filed': '2026-03-01', 'form': '20-F'}]}},
+            'ProfitLoss': {'units': {'EUR': r(6.86e8, 'oud')}},
+            'AdjustedWeightedAverageShares': {'units': {'shares': r(4.9386e7, 'oud')}}}}}
+        inp = ev.sec_eps_recompute_inputs(p, '2026-10-22')
+        self.assertEqual([(i['accn'], i['net_income']) for i in inp], [('oud', 6.86e8)])
