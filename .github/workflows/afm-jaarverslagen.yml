@@ -1,0 +1,38 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): officieel bij de AFM gedeponeerde jaarverslagen naar de tak
+# 'jaarverslagen'. Invoer: 'TICKER=Naam in het register' gescheiden door ';' en de jaren. Raakt de app niet.
+name: AFM-jaarverslagen ophalen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      bedrijven:
+        description: "TICKER=Naam; TICKER=Naam"
+        required: true
+      jaren:
+        description: "bijv. 2016-2019"
+        required: true
+        default: "2016-2019"
+permissions:
+  contents: write
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Zoeken en downloaden
+        env:
+          BEDRIJVEN: ${{ inputs.bedrijven }}
+        run: |
+          IFS=';' read -ra B <<< "$BEDRIJVEN"
+          ARGS=(); for b in "${B[@]}"; do b="$(echo "$b" | sed 's/^ *//;s/ *$//')"; [ -n "$b" ] && ARGS+=("$b"); done
+          python hulp/afm_jaarverslagen.py jv/afm "${ARGS[@]}" --jaren "${{ inputs.jaren }}"
+      - name: Op tak jaarverslagen zetten
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "AFM-jaarverslagen $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
