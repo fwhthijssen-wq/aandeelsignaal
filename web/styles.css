@@ -205,3 +205,28 @@ details.uitleg p, details.uitleg li { font-weight: 400; }
 .filterkeuzes #f-sort { grid-column: 1 / -1; }
 @media (min-width: 640px) { .filterkeuzes { grid-template-columns: 1.2fr 1fr 2fr; } .filterkeuzes #f-sort { grid-column: auto; } }
 .vink.klein { font-size: .95rem; min-height: 36px; }
+/* Vijf vragen: stippen. ✓ gunstig (vol), = neutraal (grijs), ✗ ongunstig (oranje rand), lege gestippelde ring = te weinig gegevens. Teken én vorm, niet alleen kleur. */
+:root { --stip-g: #0B6E78; --stip-g-ink: #FFFFFF; --stip-n: #E3E8EA; --stip-n-ink: #33414A; --stip-o: #FCE3CF; --stip-o-rand: #B4460F; --stip-o-ink: #8A330A; --stip-l: #8A979E; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92; } }
+:root[data-theme="dark"] { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92; }
+.stip { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 28px; height: 28px; border-radius: 50%; box-sizing: border-box; font-weight: 700; font-size: 14px; line-height: 1; vertical-align: middle; }
+.stip.g { background: var(--stip-g); color: var(--stip-g-ink); }
+.stip.n { background: var(--stip-n); color: var(--stip-n-ink); font-size: 15px; }
+.stip.o { background: var(--stip-o); color: var(--stip-o-ink); border: 1.5px solid var(--stip-o-rand); font-size: 13px; }
+.stip.l { border: 1.5px dashed var(--stip-l); }
+.stippen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; max-width: 320px; margin: 6px 0; }
+.stip-kol { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.stip-naam { font-size: .72rem; font-weight: 600; color: var(--mut, inherit); }
+.stippen.klein { max-width: 230px; gap: 2px; margin: 4px 0 0; }
+.stippen.klein .stip { width: 22px; height: 22px; font-size: 12px; }
+.stippen.klein .stip-naam { font-size: .66rem; }
+p .stip, li > .stip { width: 22px; height: 22px; font-size: 12px; }
+.regels { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 2px; }
+.chip-knop { font: inherit; font-size: .88rem; font-weight: 600; padding: 7px 12px; min-height: 36px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chip-knop[aria-pressed="true"] { background: var(--acc); color: var(--acc-ink); border-color: var(--acc); }
+.kaart-plat.vraag .rij-kop h3 { margin: 0; font-size: 1.05rem; }
+ul.methoden { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 10px; }
+ul.methoden li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start; }
+ul.methoden .bron { font-size: .82rem; }
+dl.feiten { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 8px 0; font-size: .92rem; }
+dl.feiten dt { color: var(--mut, inherit); font-weight: 600; } dl.feiten dd { margin: 0; overflow-wrap: anywhere; min-width: 0; }

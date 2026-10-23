@@ -20,6 +20,43 @@
   var MIN_DEKKING = 20;                         // procent; instelbaar door de gebruiker
   var DREMPEL = 0.25;                           // score vanaf waar het oordeel positief of vermijden wordt
   var MAX_KOERS_DAGEN = 7;
+  var MIN_VRAAG = 40;                           // procent onderbouwing per vraag voor een oordeel; instelbaar
+  var BANK_NVT = { roe: 1, fcf: 1, schuld: 1, altman: 1, magic: 1 };
+
+  /* De vijf vragen: elke vraag krijgt een eigen oordeel uit haar eigen methoden. Er is geen totaalcijfer. */
+  var VRAGEN = [
+    { id: 'bedrijf', kort: 'Bedrijf', vraag: 'Is het een goed bedrijf?', methoden: ['roe', 'nettomarge', 'fcf', 'schuld', 'piotroski', 'altman'] },
+    { id: 'groei', kort: 'Groei', vraag: 'Groeit het?', methoden: ['omzetgroei', 'epsgroei', 'epsstabiel'] },
+    { id: 'prijs', kort: 'Prijs', vraag: 'Is de prijs aantrekkelijk?', methoden: ['kw', 'magic', 'dividend', 'bereik'] },
+    { id: 'koers', kort: 'Koers', vraag: 'Hoe staat de koers ervoor?', methoden: ['trend50', 'trend200', 'rsi', 'momentum', 'volatiliteit'] },
+    { id: 'eigen', kort: 'Eigen', vraag: 'Wat vindt u zelf?', methoden: ['fisher', 'management', 'moat', 'sector', 'risico'] }
+  ];
+  function o(b, id) { var v = (b.vragen || []).filter(function (x) { return x.id === id; })[0]; return v ? v.oordeel : null; }
+  /* Regels voor kansrijkheid: welke vragen moeten hoe uitvallen. Geen gemiddelde, maar een duidelijke eis. */
+  var REGELS = {
+    naic: { naam: 'NAIC', uitleg: 'Goed bedrijf én groeit én de prijs is gunstig.', vragen: ['bedrijf', 'groei', 'prijs'],
+      test: function (b) { return o(b, 'bedrijf') === 'gunstig' && o(b, 'groei') === 'gunstig' && o(b, 'prijs') === 'gunstig'; } },
+    kwaliteit: { naam: 'Kwaliteit, redelijke prijs', uitleg: 'Goed bedrijf, groei niet ongunstig, prijs gunstig of neutraal.', vragen: ['bedrijf', 'groei', 'prijs'],
+      test: function (b) { var g = o(b, 'groei'), p = o(b, 'prijs'); return o(b, 'bedrijf') === 'gunstig' && (g === 'gunstig' || g === 'neutraal') && (p === 'gunstig' || p === 'neutraal'); } },
+    trend: { naam: 'Trendvolger', uitleg: 'De koers is gunstig en het bedrijf is niet ongunstig.', vragen: ['koers', 'bedrijf'],
+      test: function (b) { var q = o(b, 'bedrijf'); return o(b, 'koers') === 'gunstig' && (q === 'gunstig' || q === 'neutraal'); } },
+    alles: { naam: 'Alle vragen', uitleg: 'Geen eis: hoe meer vragen gunstig en hoe minder ongunstig, hoe hoger.', vragen: ['bedrijf', 'groei', 'prijs', 'koers', 'eigen'],
+      test: function (b) { return (b.vragen || []).some(function (v) { return v.oordeel === 'gunstig'; }); } }
+  };
+  /* Rang binnen een regel: gunstige vragen min ongunstige, daarna de scores van de vragen in de regel, gewogen met hun onderbouwing. */
+  function kansRang(b, regel) {
+    var r = REGELS[regel] || REGELS.naic, vs = (b.vragen || []).filter(function (v) { return r.vragen.indexOf(v.id) > -1; });
+    var telling = vs.reduce(function (a, v) { return a + (v.oordeel === 'gunstig' ? 1 : v.oordeel === 'ongunstig' ? -1 : 0); }, 0);
+    var som = vs.reduce(function (a, v) { return a + (v.score == null ? 0 : v.score * (0.5 + 0.5 * v.dekking / 100)); }, 0);
+    return telling + som / Math.max(1, vs.length) / 10;
+  }
+  function voldoet(b, regel) { return !!(REGELS[regel] || REGELS.naic).test(b); }
+  function kandidatenRegel(lijst, regel, max) {
+    return (lijst || []).filter(function (b) { return b && voldoet(b, regel); })
+      .sort(function (a, b) { return kansRang(b, regel) - kansRang(a, regel) || (a.ticker < b.ticker ? -1 : 1); }).slice(0, max || 10);
+  }
+  /* Profiel als vijf letters (g = gunstig, n = neutraal, o = ongunstig, l = te weinig gegevens), om vast te leggen. */
+  function profiel(b) { return (b.vragen || []).map(function (v) { return v.oordeel === 'gunstig' ? 'g' : v.oordeel === 'neutraal' ? 'n' : v.oordeel === 'ongunstig' ? 'o' : 'l'; }).join(''); }
 
   function pos(x) { return typeof x === 'number' && isFinite(x) && x > 0; }
   function num(x) { return typeof x === 'number' && isFinite(x); }
@@ -254,6 +291,10 @@
         // Ontbreekt dit onderdeel in de gegevens, dan telt uw eigen cijfer (lager gewicht); nooit naast een bestaand cijfer.
         if (!r && m.uit && c.eigen && c.eigen.cijfers && num(c.eigen.cijfers[m.id])) { r = m.uit(c.eigen.cijfers[m.id], null); if (r) { r.tekst = 'Uw eigen cijfer: ' + r.tekst; q = 'eigen'; } }
       } catch (e) { r = null; }
+      if (c.bank && BANK_NVT[m.id]) {      // zegt niets voor een bank: telt niet mee, ook niet in de noemer
+        methoden.push({ id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, nvt: true, score: null, kwaliteit: null, tekst: 'Niet van toepassing op banken.', invoer: null, beoordeling: null, wat: (INFO[m.id] || [])[0] || null, schaal: (INFO[m.id] || [])[1] || null, nodig: (INFO[m.id] || [])[2] || null, detail: null });
+        return;
+      }
       totaal += m.gewicht;
       var groep = perGroep[m.groep] = perGroep[m.groep] || { naam: GROEPEN[m.groep], totaal: 0, aanwezig: 0, scoreSom: 0, wegSom: 0 };
       groep.totaal += m.gewicht;
@@ -263,7 +304,7 @@
         aanwezig += w; wegSom += eff; scoreSom += r.score * eff;
         groep.aanwezig += w; groep.wegSom += eff; groep.scoreSom += r.score * eff;
         perKwaliteit[q] = (perKwaliteit[q] || 0) + w;
-        item.aanwezig = true; item.score = r.score; item.kwaliteit = q; item.tekst = r.tekst;
+        item.aanwezig = true; item.score = r.score; item.kwaliteit = q; item.tekst = r.tekst; item.deel = r.deel == null ? null : r.deel;
         try { item.detail = q === 'eigen' && m.bron !== 'eigen' ? null : (DETAIL[m.id] ? DETAIL[m.id](c) : null); } catch (e2) { item.detail = null; }
       }
       methoden.push(item);
@@ -279,9 +320,25 @@
     var oud = [];
     if (k && !vers) oud.push('De koers is te oud (meer dan ' + MAX_KOERS_DAGEN + ' dagen) of ontbreekt: technische en koersgebonden onderdelen tellen niet mee.');
     if (l && opties.vandaag) { var maanden = (new Date(opties.vandaag) - new Date(l.end || (l.year + '-12-31'))) / 86400000 / 30.4; if (maanden > 18) oud.push('Het laatste jaarverslag (' + l.year + ') is ouder dan 18 maanden.'); }
-    return { ticker: rec ? rec.ticker : null, oordeel: oordeel, score: score == null ? null : rond(score, 2), dekking: dekking, minDekking: min, zekerheid: zekerheid, niveau: niveau,
-      kwaliteit: kwal, groepen: groepen, methoden: methoden, ontbreekt: methoden.filter(function (x) { return !x.aanwezig; }).map(function (x) { return x.naam; }),
-      verouderd: oud, rang: score == null ? null : rond(score * (0.5 + 0.5 * Math.min(1, dekking / 100)), 3), datum: k ? k.datum : null };
+    var vragen = VRAGEN.map(function (v) {
+      var tot = 0, aan = 0, ws = 0, ss = 0, kw = {};
+      var ms = methoden.filter(function (m) { return v.methoden.indexOf(m.id) > -1; });
+      ms.forEach(function (m) {
+        if (m.nvt) return;
+        tot += m.gewicht;
+        if (m.aanwezig) {
+          var w = m.gewicht * (m.deel == null ? 1 : m.deel), eff = w * KWALITEIT[m.kwaliteit].factor;
+          aan += w; ws += eff; ss += m.score * eff; kw[m.kwaliteit] = (kw[m.kwaliteit] || 0) + w;
+        }
+      });
+      var dek = tot ? rond(aan / tot * 100, 0) : 0, sc = ws > 0 ? ss / ws : null, minV = typeof opties.minVraag === 'number' ? opties.minVraag : MIN_VRAAG;
+      var o = sc == null || dek < minV ? null : sc >= DREMPEL ? 'gunstig' : sc <= -DREMPEL ? 'ongunstig' : 'neutraal';
+      var kwPct = {}; Object.keys(kw).forEach(function (q) { kwPct[q] = tot ? rond(kw[q] / tot * 100, 0) : 0; });
+      return { id: v.id, kort: v.kort, vraag: v.vraag, oordeel: o, dekking: dek, score: sc == null ? null : rond(sc, 2), kwaliteit: kwPct, methoden: ms };
+    });
+    return { ticker: rec ? rec.ticker : null, oordeel: oordeel, vragen: vragen, score: score == null ? null : rond(score, 2), dekking: dekking, minDekking: min, zekerheid: zekerheid, niveau: niveau,
+      kwaliteit: kwal, groepen: groepen, methoden: methoden, ontbreekt: methoden.filter(function (x) { return !x.aanwezig && !x.nvt; }).map(function (x) { return x.naam; }),
+      jaar: l ? l.year : null, verouderd: oud, rang: score == null ? null : rond(score * (0.5 + 0.5 * Math.min(1, dekking / 100)), 3), datum: k ? k.datum : null };
   }
 
   /* Rangschikking van kandidaten: eerst positieve oordelen, hoogste rang (score gewogen met dekking) bovenaan. */
@@ -290,6 +347,6 @@
       .sort(function (a, b) { return b.rang - a.rang || b.dekking - a.dekking || (a.ticker < b.ticker ? -1 : 1); }).slice(0, max || 10);
   }
 
-  var api = { beoordeel: beoordeel, kandidaten: kandidaten, METHODEN: METHODEN, KWALITEIT: KWALITEIT, GROEPEN: GROEPEN, MIN_DEKKING: MIN_DEKKING, DREMPEL: DREMPEL };
+  var api = { beoordeel: beoordeel, kandidaten: kandidaten, VRAGEN: VRAGEN, REGELS: REGELS, kansRang: kansRang, voldoet: voldoet, kandidatenRegel: kandidatenRegel, profiel: profiel, MIN_VRAAG: MIN_VRAAG, METHODEN: METHODEN, KWALITEIT: KWALITEIT, GROEPEN: GROEPEN, MIN_DEKKING: MIN_DEKKING, DREMPEL: DREMPEL };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Signaal = api;
 })(typeof self !== 'undefined' ? self : this);

@@ -86,7 +86,10 @@
   var INDEX_VOLGORDE = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
   // Elke sortering heeft één vaste, logische richting (geen knop nodig).
   var FONDS_SORTERING = { kansrijk: 0, naam: 1, positiePct: 1, afstandPct: 1, epsgroei: -1, omzetgroei: -1, nettomarge: -1, verhouding: -1 };
-  function kansKlasse(o) { return o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
+  // Met vijf vragen: eerst wie aan de gekozen regel voldoet (voldoet = true), dan de rest; binnen elke groep de hoogste rang.
+  // Zonder 'voldoet' (oudere aanroep): eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens.
+  function kansKlasse(a) { if (typeof a.voldoet === 'boolean') return a.voldoet ? 0 : 1; var o = a.oordeel; return o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
+  function telt(a) { return typeof a.voldoet === 'boolean' ? a.voldoet : a.oordeel === 'positief'; }
   function getalOfNull(x) { return typeof x === 'number' && isFinite(x) ? x : null; }
 
   /* items: [{ticker, naam, indices, bevestigd, oordeel, rang, dekking, positiePct, ...}]. Filter op zoektekst, index en
@@ -104,7 +107,7 @@
     return lijst.slice().sort(function (a, b) {
       if (sleutel === 'naam') return opNaam(a, b);
       if (sleutel === 'kansrijk') {
-        var k = kansKlasse(a.oordeel) - kansKlasse(b.oordeel); if (k) return k;
+        var k = kansKlasse(a) - kansKlasse(b); if (k) return k;
         var ra = getalOfNull(a.rang), rb = getalOfNull(b.rang);
         if (ra !== rb) { if (ra === null) return 1; if (rb === null) return -1; return rb - ra; }
         return (getalOfNull(b.dekking) || 0) - (getalOfNull(a.dekking) || 0) || opNaam(a, b);
@@ -130,7 +133,7 @@
       return (i < 0 ? 99 : i) - (j < 0 ? 99 : j) || (x < y ? -1 : 1);
     });
     return namen.map(function (g) {
-      return { index: g, items: per[g], positief: per[g].filter(function (a) { return a.oordeel === 'positief'; }).length };
+      return { index: g, items: per[g], positief: per[g].filter(telt).length };
     });
   }
 

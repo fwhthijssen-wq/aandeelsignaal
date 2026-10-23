@@ -76,6 +76,29 @@ CATALOGUS = (
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
 INDICES = _europa_indices()
+# Korte bedrijfsbeschrijving en vaste gegevens (Wikipedia CC BY-SA, Wikidata CC0), gemaakt met hulp/bedrijfsinfo.py.
+_BEDRIJF_PAD = Path(__file__).with_name('bedrijfsinfo.json')
+try:
+    BEDRIJFSINFO = json.loads(_BEDRIJF_PAD.read_text(encoding='utf-8'))
+except (OSError, ValueError):
+    BEDRIJFSINFO = {}
+_BEDRIJF_VELDEN = ('sector', 'hoofdkantoor', 'opgericht', 'website', 'beschrijving', 'taal', 'wikipedia', 'wikidata')
+
+
+def bedrijf_voor(ticker):
+    x = BEDRIJFSINFO.get(ticker)
+    if not isinstance(x, dict):
+        return None
+    uit = {k: x.get(k) for k in _BEDRIJF_VELDEN if x.get(k) not in (None, '', [])}
+    if isinstance(uit.get('beschrijving'), str) and len(uit['beschrijving']) > 450:
+        # Kort houden: hele zinnen tot ongeveer 450 tekens; het volledige artikel staat achter de bronlink.
+        t, zinnen = '', uit['beschrijving'].replace('. ', '.\n').split('\n')
+        for z in zinnen:
+            if t and len(t) + len(z) > 450:
+                break
+            t = (t + ' ' + z).strip()
+        uit['beschrijving'] = t if len(t) <= 520 else t[:450].rsplit(' ', 1)[0] + ' …'
+    return uit or None
 
 
 def heeft_sec(ticker):
@@ -373,7 +396,7 @@ def maak_record(meta, *, koers=None, gegevens=None):
         # De notering telt dus mee; bij een verschil (Shell: cijfers in USD, koers in EUR) is de valuta niet eenduidig.
         gegevens = {**gegevens, 'currencies': sorted(set(gegevens['currencies']) | {valuta})}
     return {'ticker': ticker, 'naam': naam, 'land': land, 'valuta': valuta, 'beurs': beurs,
-            'indices': INDICES.get(ticker), 'koers': koers, 'gegevens': gegevens}
+            'indices': INDICES.get(ticker), 'bedrijf': bedrijf_voor(ticker), 'koers': koers, 'gegevens': gegevens}
 
 
 def maak_bestand(records, gemaakt=None, bron=''):

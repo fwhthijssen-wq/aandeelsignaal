@@ -9,6 +9,18 @@
    "land": "Nederland",
    "valuta": "EUR",
    "beurs": "Amsterdam",
+   "bedrijf": {
+    "sector": [
+     "semiconductorindustrie"
+    ],
+    "hoofdkantoor": "Veldhoven",
+    "opgericht": 1984,
+    "website": "https://www.asml.com/",
+    "beschrijving": "ASML Holding N.V. is een Nederlands hightechbedrijf dat machines ontwikkelt en produceert voor de fabricage van halfgeleiders. Het bedrijf, met het hoofdkantoor in Veldhoven, is wereldwijd de belangrijkste leverancier van lithografiesystemen. Dit zijn machines waarmee patronen van transistoren op siliciumwafers worden geprojecteerd om geïntegreerde schakelingen, chips te maken.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/ASML",
+    "wikidata": "Q297879"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -18,6 +30,7 @@
    "land": "Nederland",
    "valuta": "EUR",
    "beurs": "Amsterdam",
+   "bedrijf": null,
    "koers": null,
    "gegevens": null
   },
@@ -27,6 +40,20 @@
    "land": "Verenigde Staten",
    "valuta": "USD",
    "beurs": "Nasdaq",
+   "bedrijf": {
+    "sector": [
+     "information technology industry",
+     "consumentenelektronica-industrie",
+     "mobieletelefonie-industrie"
+    ],
+    "hoofdkantoor": "Cupertino",
+    "opgericht": 1976,
+    "website": "https://www.apple.com/",
+    "beschrijving": "Apple Inc. is een Amerikaans technologiebedrijf dat op 1 april 1976 is opgericht door Steve Jobs, Steve Wozniak en Ronald Wayne. Het bedrijf is gevestigd in Cupertino, Californië.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/Apple_Inc.",
+    "wikidata": "Q312"
+   },
    "koers": null,
    "gegevens": {
     "gecontroleerd_op": "2026-10-19",
@@ -227,6 +254,20 @@
    "land": "Verenigde Staten",
    "valuta": "USD",
    "beurs": "Nasdaq",
+   "bedrijf": {
+    "sector": [
+     "consumentenelektronica-industrie",
+     "technologieindustrie",
+     "International Standard Industrial Classification of All Economic Activities"
+    ],
+    "hoofdkantoor": "Redmond",
+    "opgericht": 1975,
+    "website": "https://www.microsoft.com/",
+    "beschrijving": "Microsoft Corporation is een Amerikaans bedrijf dat een breed scala aan computergerelateerde producten en diensten ontwikkelt, verspreidt, licentieert en ondersteunt. Het bedrijf werd opgericht door Bill Gates en Paul Allen op 4 april 1975. Microsoft is 's werelds grootste softwarebedrijf en staat aan de top van bedrijven met de hoogste beurswaarde ter wereld.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/Microsoft",
+    "wikidata": "Q2283"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -236,6 +277,18 @@
    "land": "Verenigde Staten",
    "valuta": "USD",
    "beurs": "Nasdaq",
+   "bedrijf": {
+    "sector": [
+     "informatietechnologie"
+    ],
+    "hoofdkantoor": "Mountain View",
+    "opgericht": 2015,
+    "website": "https://abc.xyz/",
+    "beschrijving": "Alphabet Inc. is sinds 2015 het moederbedrijf van Google LLC en enkele andere technologiebedrijven. Het hoofdkantoor is gevestigd in Mountain View, Californië.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/Alphabet_Inc.",
+    "wikidata": "Q20800404"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -245,6 +298,20 @@
    "land": "Verenigde Staten",
    "valuta": "USD",
    "beurs": "Nasdaq",
+   "bedrijf": {
+    "sector": [
+     "webhosting",
+     "e-commerce",
+     "webservice"
+    ],
+    "hoofdkantoor": "Seattle",
+    "opgericht": 1994,
+    "website": "https://www.amazon.com/",
+    "beschrijving": "Amazon.com, Inc. is een Amerikaans e-commercebedrijf gevestigd in Seattle (Washington). Het werd in 1994 opgericht door Jeff Bezos en MacKenzie Scott en was een van de eerste grote bedrijven die goederen over het internet verkochten.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/Amazon.com",
+    "wikidata": "Q3884"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -254,6 +321,18 @@
    "land": "Verenigde Staten",
    "valuta": "USD",
    "beurs": "Nasdaq",
+   "bedrijf": {
+    "sector": [
+     "semiconductorindustrie"
+    ],
+    "hoofdkantoor": "Santa Clara",
+    "opgericht": 1993,
+    "website": "https://www.nvidia.com/",
+    "beschrijving": "NVIDIA is een producent van computerhardware, voornamelijk op het gebied van kunstmatige intelligentie, videokaarten en chipsets voor moederborden voor AMD- en Intel-processors en voor mobiele apparaten. Ook leverde het bedrijf de grafische chips van Microsofts Xbox en is het toeleverancier aan veel grote computerfabrikanten. Behalve voor gaming worden de chips van NVIDIA gebruikt voor artificiële intelligentie.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/NVIDIA",
+    "wikidata": "Q182477"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -263,6 +342,19 @@
    "land": "Duitsland",
    "valuta": "EUR",
    "beurs": "Xetra",
+   "bedrijf": {
+    "sector": [
+     "softwareindustrie",
+     "softwareontwikkeling"
+    ],
+    "hoofdkantoor": "Walldorf",
+    "opgericht": 1972,
+    "website": "https://www.sap.com/",
+    "beschrijving": "SAP is een wereldwijd opererend bedrijf dat zich specialiseert in bedrijfssoftwareoplossingen voor kleine, middelgrote en internationale ondernemingen.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/SAP_SE",
+    "wikidata": "Q552581"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -272,6 +364,20 @@
    "land": "Nederland",
    "valuta": "EUR",
    "beurs": "Amsterdam",
+   "bedrijf": {
+    "sector": [
+     "financiële sector",
+     "financiële dienstverlening",
+     "bankwezen"
+    ],
+    "hoofdkantoor": "Amsterdam",
+    "opgericht": 1991,
+    "website": "https://ing.com",
+    "beschrijving": "De ING Groep N.V. is een Nederlandse multinationale bank- en financiële dienstverlener met hoofdkantoor in Amsterdam. De belangrijkste activiteiten zijn retailbankieren, directbankieren, commercieelbankieren, investeringsbankieren, groothandelbankieren, private banking en vermogensbeheer. Met een totaal vermogen van € 1.316 miljard behoort het steevast tot de grootste banken ter wereld.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/ING_Groep",
+    "wikidata": "Q645708"
+   },
    "koers": null,
    "gegevens": null
   },
@@ -281,6 +387,20 @@
    "land": "Nederland",
    "valuta": "EUR",
    "beurs": "Amsterdam",
+   "bedrijf": {
+    "sector": [
+     "vervaardiging van zeep, wasmiddelen, poets- en reinigingsmiddelen, parfums en toiletartikelen",
+     "vervaardiging van bakkerijproducten en deegwaren",
+     "vervaardiging van maalderijproducten, zetmeel en zetmeelproducten"
+    ],
+    "hoofdkantoor": "Londen",
+    "opgericht": 1929,
+    "website": "https://unilever.com",
+    "beschrijving": "Unilever PLC is een Britse multinationale onderneming die voorheen ook een duale bedrijfsstructuur met Nederland had. Het bedrijf is gespecialiseerd in voedingsmiddelen, persoonlijke verzorging en schoonmaakartikelen. In 2025 telde het 96.000 medewerkers wereldwijd. Het hoofdkantoor is gevestigd in Londen.",
+    "taal": "nl",
+    "wikipedia": "https://nl.wikipedia.org/wiki/Unilever",
+    "wikidata": "Q157062"
+   },
    "koers": null,
    "gegevens": null
   }

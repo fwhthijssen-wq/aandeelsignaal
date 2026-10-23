@@ -31,8 +31,13 @@
     var datum = typeof x.datum === 'string' && /^\d{4}-\d{2}-\d{2}/.test(x.datum) ? x.datum.slice(0, 10) : null;
     if (dekking === null || !datum) return null;
     var koers = getalOk(x.koers, 0, 1e9, true), valuta = typeof x.valuta === 'string' && /^[A-Za-z]{3}$/.test(x.valuta.trim()) ? x.valuta.trim().toUpperCase() : null;
-    return { oordeel: oordeel, dekking: Math.round(dekking), zekerheid: ZEKERHEDEN.indexOf(x.zekerheid) > -1 ? x.zekerheid : null, score: score === null ? null : Math.round(score * 100) / 100,
+    var uit = { oordeel: oordeel, dekking: Math.round(dekking), zekerheid: ZEKERHEDEN.indexOf(x.zekerheid) > -1 ? x.zekerheid : null, score: score === null ? null : Math.round(score * 100) / 100,
              datum: datum, koers: koers !== null && valuta ? koers : null, valuta: koers !== null && valuta ? valuta : null };
+    // Vijf vragen (vanaf beta.64): de antwoorden als vijf letters en de gekozen regel. Oudere momentopnames hebben ze niet.
+    if (typeof x.profiel === 'string' && /^[gnol]{5}$/.test(x.profiel)) uit.profiel = x.profiel;
+    if (typeof x.regel === 'string' && /^[a-z]{2,20}$/.test(x.regel)) uit.regel = x.regel;
+    if (typeof x.voldoet === 'boolean') uit.voldoet = x.voldoet;
+    return uit;
   }
   /* Eigen aanvullende informatie per aandeel: beoordelingen 1-5 en eigen cijfers voor wat de jaarverslagen niet geven. */
   var VERDIEP_SCORES = ['management', 'moat', 'sector', 'risico'];

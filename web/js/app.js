@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.22-beta.63';
+  var APP_VERSIE = '2026.10.23-beta.64';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -29,57 +29,127 @@
   var ONDERBOUW = { goed: 'goed onderbouwd', redelijk: 'redelijk onderbouwd', beperkt: 'beperkt onderbouwd', zwak: 'zwak onderbouwd',
     stevig: 'goed onderbouwd', voorlopig: 'beperkt onderbouwd', 'zeer voorlopig': 'zwak onderbouwd' };
   function onderbouwing(b) { return ONDERBOUW[b.zekerheid] || ''; }
+  /* Vijf vragen, elk met een eigen oordeel. Stip: ✓ gunstig, = neutraal, ✗ ongunstig, lege ring = te weinig gegevens. */
+  var STIP = { gunstig: { t: '✓', c: 'g' }, neutraal: { t: '=', c: 'n' }, ongunstig: { t: '✗', c: 'o' } };
+  function oordeelWoord(o) { return o || 'te weinig gegevens'; }
+  function stip(o, label) { var s = STIP[o]; return '<span class="stip ' + (s ? s.c : 'l') + '" role="img" aria-label="' + h(label + ': ' + oordeelWoord(o)) + '">' + (s ? s.t : '') + '</span>'; }
+  function stippen(b, klein) {
+    return '<span class="stippen' + (klein ? ' klein' : '') + '" data-profiel="' + Signaal.profiel(b) + '">' + b.vragen.map(function (v) {
+      return '<span class="stip-kol">' + stip(v.oordeel, v.kort) + '<span class="stip-naam" aria-hidden="true">' + h(v.kort) + '</span></span>';
+    }).join('') + '</span>';
+  }
+  function regel() { try { var r = localStorage.getItem('as_regel'); return Signaal.REGELS[r] ? r : 'naic'; } catch (e) { return 'naic'; } }
+  function zetRegel(r) { try { localStorage.setItem('as_regel', r); } catch (e) { /* standaard blijft */ } }
+  function minVraag() { try { var v = parseInt(localStorage.getItem('as_minvraag'), 10); return v >= 10 && v <= 90 ? v : Signaal.MIN_VRAAG; } catch (e) { return Signaal.MIN_VRAAG; } }
+  function zetMinVraag(v) { try { localStorage.setItem('as_minvraag', String(v)); } catch (e) { /* standaard blijft */ } }
+  function regelKeuze(id) {
+    var R = Signaal.REGELS;
+    return '<div class="regels" role="group" aria-label="Wat zoekt u?" data-regels' + (id ? ' id="' + id + '"' : '') + '>' + Object.keys(R).map(function (k) {
+      return '<button type="button" class="chip-knop" data-regel="' + k + '" aria-pressed="' + (k === regel()) + '">' + h(R[k].naam) + '</button>';
+    }).join('') + '</div><p class="zacht" data-regel-uitleg>' + h(R[regel()].uitleg) + '</p>';
+  }
+  function regelsKoppel(naWissel) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-regel]'), function (bt) {
+      bt.addEventListener('click', function () { zetRegel(bt.getAttribute('data-regel')); fondsItemsCache = null; naWissel(); });
+    });
+  }
   function uitlegOordeel() {
-    return '<details class="uitleg" data-uitleg-oordeel><summary>Wat betekenen positief, neutraal, vermijden en onderbouwd?</summary>' +
-      '<p>Elk aandeel krijgt <b>twee</b> dingen:</p><ul class="punten">' +
-      '<li><b>Het oordeel</b>: wat de beschikbare cijfers samen zeggen. <b>Positief</b>: de meeste signalen zijn gunstig. <b>Neutraal</b>: gemengd. <b>Vermijden</b>: de meeste signalen zijn ongunstig.</li>' +
-      '<li><b>De onderbouwing</b>: hoeveel van de mogelijke gegevens bekend is, dus hoe stevig dat oordeel staat. <b>Goed</b> (85% of meer), <b>redelijk</b> (65–84%), <b>beperkt</b> (40–64%) of <b>zwak</b> (minder dan 40%).</li></ul>' +
-      '<p>Voorbeeld: “Positief · zwak onderbouwd (30%)” betekent: de cijfers die er zijn, zien er goed uit, maar er is nog weinig bekend. Kijk dan eerst zelf verder. “Positief · goed onderbouwd (90%)” rust op veel meer gegevens.</p></details>';
+    return '<details class="uitleg" data-uitleg-oordeel><summary>Hoe komt het oordeel tot stand?</summary>' +
+      '<p>De app stelt bij elk aandeel <b>vijf vragen</b> en beantwoordt ze los van elkaar met de cijfers die er zijn:</p><ul class="punten">' +
+      Signaal.VRAGEN.map(function (v) { return '<li><b>' + h(v.kort) + '</b>: ' + h(v.vraag) + '</li>'; }).join('') + '</ul>' +
+      '<p>Per vraag: ' + stip('gunstig', 'Voorbeeld') + ' gunstig, ' + stip('neutraal', 'Voorbeeld') + ' neutraal, ' + stip('ongunstig', 'Voorbeeld') + ' ongunstig, ' + stip(null, 'Voorbeeld') + ' te weinig gegevens (minder dan ' + minVraag() + '% van de cijfers voor die vraag is bekend).</p>' +
+      '<p>Er is geen totaalcijfer: een sterk bedrijf met een hoge prijs blijft zo zichtbaar. <b>Kansrijk</b> betekent: voldoet aan de regel die u kiest, bijvoorbeeld NAIC (goed bedrijf, groeit, prijs gunstig). Open een aandeel om per vraag te zien op welke cijfers het antwoord rust en waar die vandaan komen.</p></details>';
   }
   function minDekking() { try { var v = parseInt(localStorage.getItem('as_mindekking'), 10); return v >= 0 && v <= 90 ? v : Signaal.MIN_DEKKING; } catch (e) { return Signaal.MIN_DEKKING; } }
-  function zetMinDekking(v) { try { localStorage.setItem('as_mindekking', String(v)); } catch (e) { /* zonder opslag blijft de standaard */ } }
   function signaalVoor(rec) {
     var ck = Checklist.voortgang(winkel.checklist(rec.ticker));
-    return Signaal.beoordeel(rec, { vandaag: vandaag(), gate: Gate, naic: Naic, check: ck, minDekking: minDekking(), verdieping: winkel.verdieping(rec.ticker) });
+    return Signaal.beoordeel(rec, { vandaag: vandaag(), gate: Gate, naic: Naic, check: ck, minDekking: minDekking(), minVraag: minVraag(), verdieping: winkel.verdieping(rec.ticker) });
   }
-  /* Wat de app nu vindt, om later terug te kunnen kijken: oordeel, dekking en (bij een verse koers) de koers. */
+  /* Wat de app nu vindt, om later terug te kunnen kijken: de vijf antwoorden, de regel, dekking en (bij een verse koers) de koers. */
   function momentopname(rec) {
     var b = signaalVoor(rec), k = rec.koers, vers = k && Gate.priceFreshness(k.datum, vandaag()).fresh && typeof k.slot === 'number' && k.slot > 0;
-    return { oordeel: b.oordeel, dekking: b.dekking, zekerheid: b.zekerheid, score: b.score, datum: vandaag(), koers: vers ? k.slot : null, valuta: vers ? rec.valuta : null };
+    return { oordeel: b.oordeel, dekking: b.dekking, zekerheid: b.zekerheid, score: b.score, profiel: Signaal.profiel(b), regel: regel(), voldoet: Signaal.voldoet(b, regel()),
+      datum: vandaag(), koers: vers ? k.slot : null, valuta: vers ? rec.valuta : null };
   }
-  function oordeelTekst(x) { return x && x.oordeel ? OORDEEL[x.oordeel] + ' (' + x.dekking + '% dekking)' : 'nog geen oordeel' + (x ? ' (' + x.dekking + '% dekking)' : ''); }
-  function dekkingMeter(b) {
+  /* Een bewaard of huidig oordeel als korte tekst. Met profiel: de vijf antwoorden; oudere momentopnames: het oude totaaloordeel. */
+  function oordeelTekst(x) {
+    if (!x) return 'nog geen oordeel';
+    var p = x.profiel || (x.vragen ? Signaal.profiel(x) : null);
+    if (p && p.length === 5) {
+      var g = [], o = [];
+      p.split('').forEach(function (c, i) { if (c === 'g') g.push(Signaal.VRAGEN[i].kort.toLowerCase()); if (c === 'o') o.push(Signaal.VRAGEN[i].kort.toLowerCase()); });
+      return (g.length ? 'gunstig: ' + g.join(', ') : 'niets gunstig') + (o.length ? '; ongunstig: ' + o.join(', ') : '');
+    }
+    return x.oordeel ? OORDEEL[x.oordeel] + ' (' + x.dekking + '% dekking)' : 'nog geen oordeel (' + x.dekking + '% dekking)';
+  }
+  function bronTekst(m, b) {
+    if (m.nvt) return '';
+    var q = m.kwaliteit, K = Signaal.KWALITEIT;
+    if (q === 'koers') return 'koersdata' + (b.datum ? ' van ' + datumNl(b.datum) : '');
+    if (q === 'eigen') return 'uw eigen invoer';
+    return K[q].naam + (b.jaar ? ', boekjaar ' + b.jaar : '');
+  }
+  function onderbouwBalk(v) {
+    return '<div class="balk-rij"><span>Onderbouwing</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, v.dekking) + '%"></i></span><b>' + v.dekking + '%</b></div>';
+  }
+  function totaalOnderbouwing(b) {
     var K = Signaal.KWALITEIT, delen = ['gecontroleerd', 'jaarverslag', 'indicatief', 'koers', 'eigen'].filter(function (q) { return b.kwaliteit[q] > 0; });
-    return '<div class="dekking" data-dekking="' + b.dekking + '"><div class="balk-rij"><span>Dekking</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, b.dekking) + '%"></i></span><b>' + b.dekking + '%</b></div>' +
-      '<p class="zacht">' + (delen.length ? delen.map(function (q) { return b.kwaliteit[q] + '% ' + h(K[q].naam); }).join(' · ') : 'Nog geen gegevens') + '. Gecontroleerde gegevens wegen zwaarder.</p></div>';
+    return '<p class="zacht" data-dekking="' + b.dekking + '">Totale onderbouwing: ' + b.dekking + '% van alle mogelijke gegevens' + (delen.length ? ' (' + delen.map(function (q) { return b.kwaliteit[q] + '% ' + h(K[q].naam); }).join(' · ') + ')' : '') + '. Gecontroleerde cijfers wegen het zwaarst.</p>';
   }
-  function oordeelChip(b) {
-    return b.oordeel ? '<span class="chip" data-oordeel="' + b.oordeel + '">' + OORDEEL[b.oordeel] + ' · ' + h(onderbouwing(b)) + ' (' + b.dekking + '%)</span>' : '<span class="chip wacht" data-oordeel="geen">Te weinig gegevens (' + b.dekking + '%)</span>';
-  }
-  function tabelOordeel(rec) { var b = signaalVoor(rec); return b.dekking > 0 ? ' ' + oordeelChip(b) : ''; }
+  function scoreTeken(s) { return s >= 0.25 ? stip('gunstig', 'Methode') : s <= -0.25 ? stip('ongunstig', 'Methode') : stip('neutraal', 'Methode'); }
   var laatsteBeoordeling = null;
+  function vraagKaart(v, b) {
+    var aan = v.methoden.filter(function (m) { return m.aanwezig; }), mis = v.methoden.filter(function (m) { return !m.aanwezig && !m.nvt; }), nvt = v.methoden.filter(function (m) { return m.nvt; });
+    var K = Signaal.KWALITEIT, kw = Object.keys(v.kwaliteit).filter(function (q) { return v.kwaliteit[q] > 0; });
+    var s = '<div class="kaart-plat vraag" data-vraag="' + v.id + '"><div class="rij-kop"><h3>' + h(v.vraag) + '</h3>' + stip(v.oordeel, v.kort) + '</div>' +
+      '<p><b>' + h(oordeelWoord(v.oordeel).replace(/^./, function (c) { return c.toUpperCase(); })) + '</b>' + (v.oordeel ? '' : '. <span class="zacht">Van de cijfers voor deze vraag is ' + v.dekking + '% bekend; uw minimum is ' + minVraag() + '%.</span>') + '</p>' +
+      onderbouwBalk(v) + (kw.length ? '<p class="zacht">Waar het op rust: ' + kw.map(function (q) { return v.kwaliteit[q] + '% ' + h(K[q].naam); }).join(' · ') + '.</p>' : '');
+    if (aan.length) s += '<ul class="methoden">' + aan.map(function (m) {
+      return '<li>' + scoreTeken(m.score) + '<div><button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + ' <span aria-hidden="true">ⓘ</span></button><br><span>' + h(m.tekst) + '</span><br><span class="zacht bron" data-bron="' + h(m.kwaliteit) + '">Bron: ' + h(bronTekst(m, b)) + '</span></div></li>';
+    }).join('') + '</ul>';
+    if (mis.length) s += '<p class="zacht">Nog onbekend: ' + mis.map(function (m) { return '<button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + '</button>'; }).join(', ') + '.</p>';
+    if (nvt.length) s += '<p class="zacht" data-nvt>Niet van toepassing op banken (telt niet mee): ' + nvt.map(function (m) { return h(m.naam); }).join(', ') + '.</p>';
+    if (v.id === 'eigen') s += '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(b.ticker) + '/check">Zelf beoordelen bij Verdiepen</a></div>';
+    return s + '</div>';
+  }
   function signaalKaart(rec) {
-    var b = laatsteBeoordeling = signaalVoor(rec), mm = b.methoden.filter(function (m) { return m.aanwezig; });
-    var kop = b.oordeel ? '<b style="font:700 1.4rem ui-rounded,system-ui">' + OORDEEL[b.oordeel] + '</b> <span class="zacht">' + h(onderbouwing(b)) + ': ' + b.dekking + '% van de mogelijke gegevens is bekend</span>' : '<b>Nog geen oordeel</b> <span class="zacht">de dekking is lager dan uw minimum van ' + b.minDekking + '%</span>';
-    var s = '<div class="kaart-plat" data-signaal><div class="rij-kop"><h2>Totaalbeeld</h2>' + oordeelChip(b) + '</div><p>' + kop + '</p>' + dekkingMeter(b);
-    s += '<div class="schuif"><table class="vgl"><thead><tr><th>Methode</th><th>Score</th><th>Bron</th></tr></thead><tbody>' + b.groepen.map(function (gr) {
-      var rijen = mm.filter(function (m) { return m.groep === gr.id; });
-      return '<tr><th scope="row" colspan="3" style="text-align:left">' + h(gr.naam) + ' <span class="zacht">· ' + gr.dekking + '% ingevuld' + (gr.score != null ? ' · ' + (gr.score >= 0.25 ? 'gunstig' : gr.score <= -0.25 ? 'ongunstig' : 'neutraal') : '') + '</span></th></tr>' +
-        rijen.map(function (m) { return '<tr><td><button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + ' <span aria-hidden="true">ⓘ</span></button><br><span class="zacht">' + h(m.tekst) + '</span></td><td>' + (m.score > 0 ? '＋' : m.score < 0 ? '−' : '＝') + '</td><td class="zacht">' + h(Signaal.KWALITEIT[m.kwaliteit].naam) + '</td></tr>'; }).join('');
-    }).join('') + '</tbody></table></div>';
-    if (b.ontbreekt.length) s += '<details><summary>Wat ontbreekt er nog (' + b.ontbreekt.length + ')</summary><ul class="punten">' + b.methoden.filter(function (x) { return !x.aanwezig; }).map(function (m) { return '<li><button type="button" class="meth-knop" data-methode="' + m.id + '" aria-haspopup="dialog">' + h(m.naam) + ' <span aria-hidden="true">ⓘ</span></button></li>'; }).join('') + '</ul><p class="zacht">Eigen kennis toevoegen kan via het tabblad Check (kwaliteitscheck).</p></details>';
+    var b = laatsteBeoordeling = signaalVoor(rec), r = Signaal.REGELS[regel()], ok = Signaal.voldoet(b, regel());
+    var s = '<div data-signaal><div class="kaart-plat"><div class="rij-kop"><h2>In één oogopslag</h2></div>' + stippen(b) +
+      '<p data-regel-oordeel>' + (ok ? '<b>Kansrijk volgens ' + h(r.naam) + '</b>' : 'Voldoet niet aan uw regel ' + h(r.naam)) + ' <span class="zacht">(' + h(r.uitleg) + ')</span></p>' +
+      '<p class="zacht">Hieronder per vraag het antwoord en de cijfers waarop het rust, met de bron van elk cijfer.</p>' + totaalOnderbouwing(b) + '</div>';
+    s += b.vragen.map(function (v) { return vraagKaart(v, b); }).join('');
     b.verouderd.forEach(function (t) { s += '<p class="zacht" data-verouderd>⚠ ' + h(t) + '</p>'; });
-    return s + '<p class="zacht">Voorlopig oordeel op basis van de cijfers die er zijn; geen koersdoel en geen advies. Het wordt zekerder met meer en betere gegevens.</p></div>';
+    return s + '</div>' + uitlegOordeel() + '<p class="zacht">Antwoorden op basis van de cijfers die er zijn; geen koersdoel en geen advies.</p>';
   }
   function kansrijkHtml() {
-    var lijst = DATA.aandelen.map(function (rec) { return signaalVoor(rec); }), top = Signaal.kandidaten(lijst, 8);
-    var meer = lijst.filter(function (x) { return x.oordeel === 'positief'; }).length;
+    var lijst = DATA.aandelen.map(function (rec) { return signaalVoor(rec); }), rg = regel(), top = Signaal.kandidatenRegel(lijst, rg, 8);
+    var meer = lijst.filter(function (x) { return Signaal.voldoet(x, rg); }).length;
     var naarFondsen = '<div class="knoppen"><a class="knop rand klein" href="#/fondsen" data-naar-fondsen>Alle fondsen per index, op kansrijkheid</a></div>';
-    if (!top.length) return '<h3>Kansrijk</h3><div class="kaart-plat" data-kansrijk><p>Nog geen aandeel met een positief oordeel boven uw minimum van ' + minDekking() + '% dekking.</p></div>' + naarFondsen + uitlegOordeel();
-    return '<h3>Kansrijk</h3><div class="lijst" data-kansrijk>' + top.map(function (b) {
+    var kop = '<h3>Kansrijk</h3>' + regelKeuze();
+    if (!top.length) return kop + '<div class="kaart-plat" data-kansrijk><p>Nu voldoet geen aandeel aan de regel ' + h(Signaal.REGELS[rg].naam) + '. Kies een andere regel of kijk bij Fondsen.</p></div>' + naarFondsen + uitlegOordeel();
+    return kop + '<div class="lijst" data-kansrijk>' + top.map(function (b) {
       var rec = zoek(b.ticker);
-      return '<a href="#/a/' + encodeURIComponent(b.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + h(rec.ticker) + ' · score ' + getal(b.score, 2) + ' · ' + Signaal.KWALITEIT.gecontroleerd.naam + ' ' + b.kwaliteit.gecontroleerd + '%</span><span>' + oordeelChip(b) + '</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
-    }).join('') + '</div><p class="zacht">' + (meer > top.length ? 'De ' + top.length + ' beste van ' + meer + ' aandelen met een positief oordeel. ' : '') + 'Gerangschikt op score, gewogen met de onderbouwing. Open een kandidaat om te zien waarop het oordeel rust en wat er nog ontbreekt.</p>' + naarFondsen + uitlegOordeel();
+      return '<a href="#/a/' + encodeURIComponent(b.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + h([rec.ticker, sectorVan(rec)].filter(Boolean).join(' · ')) + '</span>' + stippen(b, true) + '</div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+    }).join('') + '</div><p class="zacht">' + (meer > top.length ? 'De ' + top.length + ' sterkste van ' + meer + ' aandelen die aan de regel voldoen. ' : '') + 'Volgorde: meeste gunstige antwoorden, daarna de sterkste en best onderbouwde.</p>' + naarFondsen + uitlegOordeel();
+  }
+  /* Korte sector voor lijsten: de kortste omschrijving uit Wikidata, met hoofdletter. */
+  function sectorVan(rec) {
+    var x = rec && rec.bedrijf, l = x && Array.isArray(x.sector) ? x.sector.filter(function (s) { return typeof s === 'string' && s; }) : [];
+    if (!l.length) return '';
+    var straf = function (x) { return x.length + (/^(vervaardiging|groothandel|overige|holding)/i.test(x) ? 100 : 0); };
+    var s = l.slice().sort(function (a, b) { return straf(a) - straf(b); })[0];
+    if (s.length > 40) s = s.slice(0, 38).replace(/[\s,]+\S*$/, '') + '…';
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+  /* Over het bedrijf: korte beschrijving uit Wikipedia (CC BY-SA) en vaste gegevens uit Wikidata (CC0), met bronvermelding. */
+  function bedrijfBlok(rec) {
+    var x = rec.bedrijf;
+    if (!x || !(x.beschrijving || x.sector)) return '';
+    var feiten = [['Sector', (x.sector || []).join(', ')], ['Hoofdkantoor', x.hoofdkantoor], ['Opgericht', x.opgericht], ['Beurs', (rec.indices || []).map(function (i) { return INDEX_NAAM[i] || i; }).join(', ')]].filter(function (f) { return f[1]; });
+    var web = x.website && /^https?:\/\//.test(x.website) ? '<a href="' + h(x.website) + '" target="_blank" rel="noopener">' + h(x.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) + '</a>' : '';
+    return '<div class="kaart-plat" data-bedrijf><h2>Over het bedrijf</h2>' + (x.beschrijving ? '<p' + (x.taal && x.taal !== 'nl' ? ' lang="' + h(x.taal) + '"' : '') + '>' + h(x.beschrijving) + '</p>' : '') +
+      (feiten.length ? '<dl class="feiten">' + feiten.map(function (f) { return '<dt>' + h(f[0]) + '</dt><dd>' + h(f[1]) + '</dd>'; }).join('') + '</dl>' : '') + (web ? '<p>' + web + '</p>' : '') +
+      '<p class="zacht">Bron: ' + (x.wikipedia ? '<a href="' + h(x.wikipedia) + '" target="_blank" rel="noopener">Wikipedia</a> (CC BY-SA)' : 'Wikipedia') + (x.taal === 'en' ? ', Engelstalig artikel' : '') + ' en Wikidata. Algemene informatie, niet gecontroleerd door de app.</p></div>';
   }
   function getal(n, dec) { return typeof n === 'number' && isFinite(n) ? n.toLocaleString('nl-NL', { minimumFractionDigits: dec || 0, maximumFractionDigits: dec == null ? 0 : dec }) : '–'; }
   function mld(n) { return typeof n === 'number' ? getal(n / 1e9, 1) + ' mld' : '–'; }
@@ -184,13 +254,14 @@
       '<label for="d-sort" class="zacht">Sorteer op</label><select id="d-sort">' + Dashboard.KOLOMMEN.map(function (k) { return '<option value="' + k + '"' + (k === tabelKeuze.sorteer ? ' selected' : '') + '>' + h(TABEL_KOP[k]) + '</option>'; }).join('') + '</select>' +
       '<button class="knop rand klein" id="d-rtg" aria-label="Sorteervolgorde omdraaien">' + (tabelKeuze.richting === 'op' ? '↑ Oplopend' : '↓ Aflopend') + '</button></div>';
     s += rijenT.length ? '<div class="schuif"><table class="vgl dash"><thead><tr><th>Aandeel</th><th>Koers vs gem.</th><th>Omzet p.j.</th><th>Winst p.j.</th><th>Marge</th></tr></thead><tbody>' + rijenT.map(function (k) {
-      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd, k.niveau) + tabelOordeel(zoek(k.ticker)) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
+      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd, k.niveau) + ' ' + stippen(signaalVoor(zoek(k.ticker)), true) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
     }).join('') + '</tbody></table></div><p class="zacht">Groei en marge staan er bij bevestigde aandelen en bij aandelen "uit jaarverslag" (cijfers uit het officiële jaarverslag, niet nagerekend). Een streepje betekent onbekend. Dit is geen rangorde of advies.</p>' + (beperktT ? '<p class="zacht" data-beperkt>De eerste 60 van ' + totaalT + ' aandelen. Kies een index of een filter om de rest te zien.</p>' : '')
       : '<div class="kaart-plat"><p>Geen aandelen die aan dit filter voldoen.</p></div>';
     return s + '</section>';
   }
   function dashboardKoppel() {
     var b = document.getElementById('d-bev'), so = document.getElementById('d-sort'), r = document.getElementById('d-rtg');
+    regelsKoppel(route);
     if (!b) return;
     b.addEventListener('change', function () { tabelKeuze.alleenBevestigd = b.checked; route(); });
     so.addEventListener('change', function () { tabelKeuze.sorteer = so.value; route(); });
@@ -222,30 +293,31 @@
     var k = fondsKeuze;
     function opt(waarde, tekst, gekozen) { return '<option value="' + h(waarde) + '"' + (waarde === gekozen ? ' selected' : '') + '>' + h(tekst) + '</option>'; }
     var groepen = indexLijst().concat(DATA.aandelen.some(function (a) { return Dashboard.indexGroepen(a)[0] === 'VS'; }) ? ['VS'] : []);
-    return '<section><h1>Fondsen</h1><div class="filterbalk">' +
+    return '<section><h1>Fondsen</h1>' + regelKeuze() + '<div class="filterbalk">' +
       '<label for="q" class="vh">Naam of beurscode</label><input id="q" type="search" autocomplete="off" placeholder="Zoek op naam of beurscode" value="' + h(k.zoek) + '">' +
       '<div class="filterkeuzes"><label for="zi" class="vh">Index</label><select id="zi">' + opt('', 'Alle indices', k.index) + groepen.map(function (i) { return opt(i, INDEX_NAAM[i] || i, k.index); }).join('') + '</select>' +
       '<label for="f-weergave" class="vh">Weergave</label><select id="f-weergave">' + opt('index', 'Per index', k.weergave) + opt('lijst', 'Eén lijst', k.weergave) + '</select>' +
       '<label for="f-sort" class="vh">Sorteer op</label><select id="f-sort">' + Object.keys(FONDS_SORT_NAAM).map(function (x) { return opt(x, 'Sorteer: ' + FONDS_SORT_NAAM[x], k.sorteer); }).join('') + '</select></div>' +
       '<label class="vink klein"><input type="checkbox" id="f-bev"' + (k.alleenBevestigd ? ' checked' : '') + '> Alleen bevestigde cijfers</label></div>' +
-      '<div id="res"></div>' + uitlegOordeel() + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Kansrijkheid: eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens; binnen elke groep de hoogste score, gewogen met de onderbouwing. Selectiehulp, geen beleggingsadvies.</p></section>';
+      '<div id="res"></div>' + uitlegOordeel() + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Kansrijkheid: eerst de aandelen die aan uw regel voldoen, daarna de rest; binnen elke groep de meeste gunstige antwoorden en de best onderbouwde bovenaan. Selectiehulp, geen beleggingsadvies.</p></section>';
   }
   function fondsRegel(a) {
     var plek = a.positiePct != null ? 'plek in bereik ' + getal(a.positiePct, 0) + '%' : '';
-    var sub = [a.ticker, a.bevestigd ? '✓ bevestigde cijfers' : '', plek].filter(Boolean).join(' · ');
-    return '<a href="#/a/' + encodeURIComponent(a.ticker) + '" data-fonds="' + h(a.ticker) + '"><div class="tekstkolom"><b>' + h(a.naam) + '</b><span class="zacht">' + h(sub) + '</span>' +
-      (a.b.dekking > 0 ? '<span>' + oordeelChip(a.b) + '</span>' : '') + '</div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+    var sub = [a.ticker, a.sector, a.bevestigd ? '✓ bevestigde cijfers' : '', plek].filter(Boolean).join(' · ');
+    return '<a href="#/a/' + encodeURIComponent(a.ticker) + '" data-fonds="' + h(a.ticker) + '"' + (a.voldoet ? ' data-voldoet' : '') + '><div class="tekstkolom"><b>' + h(a.naam) + '</b><span class="zacht">' + h(sub) + '</span>' +
+      stippen(a.b, true) + '</div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
   }
   var fondsItemsCache = null;
   function fondsItems() {
     var t = vandaag();
-    if (fondsItemsCache && fondsItemsCache.dag === t && fondsItemsCache.min === minDekking()) return fondsItemsCache.items;
+    var sl = regel() + '|' + minVraag();
+    if (fondsItemsCache && fondsItemsCache.dag === t && fondsItemsCache.sl === sl) return fondsItemsCache.items;
     var items = DATA.aandelen.map(function (rec) {
       var b = signaalVoor(rec), k = Vergelijk.kant(rec, t, Gate);
-      return { ticker: rec.ticker, naam: rec.naam, indices: rec.indices || [], bevestigd: k.bevestigd, oordeel: b.oordeel, rang: b.rang, dekking: b.dekking,
+      return { ticker: rec.ticker, naam: rec.naam, indices: rec.indices || [], bevestigd: k.bevestigd, oordeel: b.oordeel, voldoet: Signaal.voldoet(b, regel()), rang: Signaal.kansRang(b, regel()), dekking: b.dekking, sector: sectorVan(rec),
         positiePct: k.positiePct, afstandPct: k.afstandPct, epsgroei: k.epsgroei, omzetgroei: k.omzetgroei, nettomarge: k.nettomarge, verhouding: k.verhouding, b: b };
     });
-    fondsItemsCache = { dag: t, min: minDekking(), items: items };
+    fondsItemsCache = { dag: t, sl: sl, items: items };
     return items;
   }
   function fondsenKoppel() {
@@ -263,7 +335,7 @@
       }
       res.innerHTML = Dashboard.perIndex(lijst).filter(function (g) { return !k.index || g.index === k.index; }).map(function (g) {
         var kort = alles ? g.items : g.items.slice(0, ZICHTBAAR), rest = alles ? [] : g.items.slice(ZICHTBAAR);
-        return '<section class="groep" data-groep="' + h(g.index) + '"><div class="rij-kop"><h2>' + h(INDEX_NAAM[g.index] || g.index) + '</h2><span class="zacht">' + g.items.length + ' fondsen · ' + g.positief + ' positief</span></div>' +
+        return '<section class="groep" data-groep="' + h(g.index) + '"><div class="rij-kop"><h2>' + h(INDEX_NAAM[g.index] || g.index) + '</h2><span class="zacht">' + g.items.length + ' fondsen · ' + g.positief + ' kansrijk</span></div>' +
           '<div class="lijst">' + kort.map(fondsRegel).join('') + '</div>' +
           (rest.length ? '<details class="meer"><summary>Alle ' + g.items.length + ' tonen</summary><div class="lijst">' + rest.map(fondsRegel).join('') + '</div></details>' : '') + '</section>';
       }).join('');
@@ -273,6 +345,7 @@
     document.getElementById('f-weergave').addEventListener('change', function (e) { fondsKeuze.weergave = e.target.value; toon(); });
     document.getElementById('f-sort').addEventListener('change', function (e) { fondsKeuze.sorteer = e.target.value; toon(); });
     document.getElementById('f-bev').addEventListener('change', function (e) { fondsKeuze.alleenBevestigd = e.target.checked; toon(); });
+    regelsKoppel(route);
     toon();
   }
   var INDEX_NAAM = { VS: 'Verenigde Staten', OVERIG: 'Overige', AEX: 'AEX (Amsterdam)', AMX: 'AMX (Amsterdam midcap)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)' };
@@ -440,10 +513,10 @@
     var r = Gate.maakRij(rec, vandaag());
     var ob = winkel.zit(rec.ticker);
     var kop = '<div class="stelregel"><a class="link" href="#/" id="terug">' + I.terug + 'Terug</a><button class="volg" id="volg" aria-pressed="' + ob + '">' + I.ster + (ob ? 'Op mijn volglijst' : 'Zet op mijn volglijst') + '</button></div>' +
-      '<div><span class="zacht" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem">' + h(rec.ticker + ' · ' + rec.beurs) + '</span><h1>' + h(rec.naam) + '</h1>' + (rec.indices && rec.indices.length ? '<div data-indices>' + rec.indices.map(function (i) { return '<span class="chip">' + h(INDEX_NAAM[i] || i) + '</span>'; }).join(' ') + '</div>' : '') + '</div>';
+      '<div><span class="zacht" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem">' + h([rec.ticker, rec.beurs, sectorVan(rec)].filter(Boolean).join(' · ')) + '</span><h1>' + h(rec.naam) + '</h1>' + (rec.indices && rec.indices.length ? '<div data-indices>' + rec.indices.map(function (i) { return '<span class="chip">' + h(INDEX_NAAM[i] || i) + '</span>'; }).join(' ') + '</div>' : '') + '</div>';
     var s = kop, jr = jaarLijst(g);
     if (tab === 'samenvatting') {
-      s += signaalKaart(rec);
+      s += bedrijfBlok(rec) + signaalKaart(rec);
       s += '<div class="kaart-plat">' + (fr.fresh ? '<div class="rij-kop"><b style="font:700 2rem ui-rounded,system-ui">' + getal(k.slot, 2) + ' ' + h(rec.valuta) + '</b><span class="zacht">Slotkoers ' + h(datumNl(k.datum)) + '</span></div>' + sparkSvg(k.reeks, k.sma50) + '<p>' + (r.richting ? 'De koers staat ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' het gemiddelde van de laatste 50 handelsdagen (' + pct(r.afstandPct) + ').' : '') + '</p>' :
         '<b>Geen actuele koers</b><p class="zacht">' + h(fr.reason) + ' Daarom tonen we geen oordeel en geen trend.</p>') + '</div>';
       s += '<div class="kaart-plat"><div class="rij-kop"><h2>' + (r.bevestigd ? 'Gegevens bevestigd' : (g && g.eps_status === 'independently_verified' && !fr.fresh ? 'Jaarcijfers bevestigd, koers ontbreekt' : 'Gegevens nog niet bevestigd')) + '</h2>' + chip(r.bevestigd, r.niveau) + '</div>' + (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + checks(rec, g, null, fr) +
@@ -656,7 +729,7 @@
     return s;
   }
   function verdiepMeterHtml(b) {
-    return '<p>' + oordeelChip(b) + '</p>' + dekkingMeter(b) + (b.ontbreekt.length ? '<p class="zacht">Nog niet ingevuld: ' + b.ontbreekt.slice(0, 6).map(h).join(', ') + (b.ontbreekt.length > 6 ? ' en ' + (b.ontbreekt.length - 6) + ' andere' : '') + '.</p>' : '<p class="zacht">Alle onderdelen zijn ingevuld.</p>');
+    return stippen(b) + '<div class="balk-rij"><span>Onderbouwing</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, b.dekking) + '%"></i></span><b>' + b.dekking + '%</b></div>' + totaalOnderbouwing(b) + (b.ontbreekt.length ? '<p class="zacht">Nog niet ingevuld: ' + b.ontbreekt.slice(0, 6).map(h).join(', ') + (b.ontbreekt.length > 6 ? ' en ' + (b.ontbreekt.length - 6) + ' andere' : '') + '.</p>' : '<p class="zacht">Alle onderdelen zijn ingevuld.</p>');
   }
   function verdiepKoppel(rec) {
     function ververs() { var el = document.getElementById('vd-meter'); if (el) el.innerHTML = verdiepMeterHtml(signaalVoor(rec)); }
@@ -811,7 +884,7 @@
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
-      '<div class="kaart-plat"><h2>Totaalbeeld</h2><p class="zacht">Een aandeel krijgt pas een voorlopig oordeel (positief, neutraal of vermijden) als genoeg van de mogelijke gegevens bekend is. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimale dekking voor een oordeel</label><select id="mind">' + [10, 20, 40, 60, 80].map(function (v) { return '<option value="' + v + '"' + (minDekking() === v ? ' selected' : '') + '>' + v + '%' + (v === 20 ? ' (standaard: koersgegevens volstaan)' : v === 60 ? ' (ook jaarcijfers nodig)' : '') + '</option>'; }).join('') + '</select></div>' +
+      '<div class="kaart-plat"><h2>Vijf vragen</h2><p class="zacht">Elke vraag (bedrijf, groei, prijs, koers, eigen oordeel) krijgt pas een antwoord als genoeg van de cijfers voor die vraag bekend is. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimale onderbouwing per vraag</label><select id="mind">' + [25, 40, 60, 80].map(function (v) { return '<option value="' + v + '"' + (minVraag() === v ? ' selected' : '') + '>' + v + '%' + (v === Signaal.MIN_VRAAG ? ' (standaard)' : v === 25 ? ' (meer antwoorden, minder stevig)' : v === 80 ? ' (alleen stevig onderbouwd)' : '') + '</option>'; }).join('') + '</select></div>' +
       backupKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
@@ -832,7 +905,7 @@
       } else { download(tekst, naam); klaar('Het bestand staat in de map Downloads van dit toestel.'); }
     });
     var mind = document.getElementById('mind');
-    if (mind) mind.addEventListener('change', function () { zetMinDekking(parseInt(mind.value, 10)); toast('Minimale dekking: ' + mind.value + '%'); });
+    if (mind) mind.addEventListener('change', function () { zetMinVraag(parseInt(mind.value, 10)); fondsItemsCache = null; toast('Minimale onderbouwing per vraag: ' + mind.value + '%'); });
     var kopie = document.getElementById('kopie'), plak = document.getElementById('plak'), tx = document.getElementById('bktekst');
     if (kopie) kopie.addEventListener('click', function () {
       if (!tx.value) tx.value = winkel.maakBackup();

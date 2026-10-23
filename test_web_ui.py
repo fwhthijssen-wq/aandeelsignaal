@@ -288,34 +288,50 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.keyboard.press('Escape')
         self.assertEqual(pg.locator('.hulp-blad').count(), 0)
-        pg.locator('[data-signaal] details summary').click()
-        pg.click('[data-signaal] details .meth-knop >> nth=0')
+        pg.click('[data-signaal] [data-vraag] p .meth-knop >> nth=0')          # 'Nog onbekend' per vraag
         self.assertIn('Wat is er nodig?', pg.locator('.hulp-blad').inner_text())
         pg.click('#mt-sluit')
         self.assertEqual(self.fouten, [])
 
-    def test_totaalbeeld_detail_dashboard_en_minimum_in_instellingen(self):
+    def test_vijf_vragen_detail_dashboard_en_minimum_in_instellingen(self):
         pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
         kaart = pg.locator('[data-signaal]')
         self.assertEqual(kaart.count(), 1)
         dek = int(pg.locator('[data-dekking]').get_attribute('data-dekking'))
-        self.assertTrue(0 < dek < 25, dek)                                  # alleen koers en bereik: onder het standaardminimum
-        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 1)
+        self.assertTrue(0 < dek < 25, dek)                                  # alleen koers en bereik
+        self.assertEqual(pg.locator('[data-signaal] [data-vraag]').count(), 5)   # vijf vragen, elk een kaart
+        self.assertEqual(len(pg.locator('[data-signaal] .stippen').get_attribute('data-profiel')), 5)
+        self.assertEqual(pg.locator('[data-vraag="bedrijf"] .stip.l').count(), 1)  # geen jaarcijfers: te weinig gegevens
         self.assertIn('Plek in koersbereik', kaart.inner_text())
-        self.assertIn('Wat ontbreekt er nog', kaart.inner_text())
+        self.assertIn('Bron: koersdata', pg.locator('[data-vraag="prijs"]').inner_text())   # waar het antwoord vandaan komt
+        self.assertIn('Nog onbekend', kaart.inner_text())
+        self.assertEqual(pg.locator('[data-vraag="eigen"] a[href$="/check"]').count(), 1)
         pg.evaluate("location.hash='#/instellingen'")
         pg.wait_for_timeout(150)
-        pg.select_option('#mind', '40')
-        self.assertEqual(pg.evaluate("localStorage.getItem('as_mindekking')"), '40')
-        pg.evaluate("localStorage.setItem('as_mindekking', '5')")     # lager dan het keuzemenu: de test heeft weinig koersgegevens
-        pg.wait_for_timeout(100)
-        pg.evaluate("location.hash='#/a/MSFT/samenvatting'")
-        pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-signaal] [data-oordeel="geen"]').count(), 0)   # met minimum 5% is er een voorlopig oordeel
-        self.assertIn('onderbouwd', pg.locator('[data-signaal]').inner_text())
+        pg.select_option('#mind', '60')
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_minvraag')"), '60')
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-regels]').count(), 1)
+        self.assertEqual(pg.locator('[data-regel][aria-pressed="true"]').get_attribute('data-regel'), 'naic')
+        pg.click('[data-regel="trend"]'); pg.wait_for_timeout(100)
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_regel')"), 'trend')
+        self.assertEqual(pg.locator('[data-regel][aria-pressed="true"]').get_attribute('data-regel'), 'trend')
         self.assertEqual(pg.locator('[data-kansrijk]').count(), 1)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(self.fouten, [])
+
+    def test_over_het_bedrijf_met_sector_en_bron(self):
+        pg = self.pagina(360)
+        pg.goto(INDEX + '#/a/ASML.AS/samenvatting')
+        pg.wait_for_timeout(200)
+        blok = pg.locator('[data-bedrijf]')
+        self.assertEqual(blok.count(), 1)
+        tekst = blok.inner_text()
+        self.assertIn('Sector', tekst); self.assertIn('Wikipedia', tekst)
+        self.assertEqual(pg.locator('[data-bedrijf] a[href*="wikipedia.org"]').count(), 1)
+        pg.evaluate("location.hash='#/fondsen'"); pg.wait_for_timeout(200)
+        self.assertGreater(pg.locator('[data-fonds] .stippen').count(), 0)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
