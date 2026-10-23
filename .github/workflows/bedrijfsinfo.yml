@@ -1,0 +1,26 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): bedrijfsbeschrijving en vaste gegevens uit Wikidata/Wikipedia
+# naar de tak 'jaarverslagen' (debug/bedrijfsinfo.json). Raakt de app niet; het resultaat wordt na controle in de app gezet.
+name: Bedrijfsinformatie ophalen (ontwikkeling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Ophalen
+        run: mkdir -p jv/debug && python hulp/bedrijfsinfo.py hulp/bedrijfsinfo_lijst.json jv/debug/bedrijfsinfo.json
+      - name: Op tak jaarverslagen zetten
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Bedrijfsinformatie $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen

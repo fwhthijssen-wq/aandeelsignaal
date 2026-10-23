@@ -1,0 +1,2431 @@
+[
+{
+"ticker": "ASML.AS",
+"naam": "ASML Holding",
+"land": "Nederland",
+"lei": null,
+"cik": 937966
+},
+{
+"ticker": "SHEL",
+"naam": "Shell plc",
+"land": "Verenigd Koninkrijk",
+"lei": null,
+"cik": 1306965
+},
+{
+"ticker": "AAPL",
+"naam": "Apple Inc.",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 320193
+},
+{
+"ticker": "MSFT",
+"naam": "Microsoft Corp.",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 789019
+},
+{
+"ticker": "GOOGL",
+"naam": "Alphabet (Google)",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1652044
+},
+{
+"ticker": "AMZN",
+"naam": "Amazon.com",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1018724
+},
+{
+"ticker": "NVDA",
+"naam": "NVIDIA",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1045810
+},
+{
+"ticker": "SAP.DE",
+"naam": "SAP SE",
+"land": "Duitsland",
+"lei": null,
+"cik": 1000184
+},
+{
+"ticker": "INGA.AS",
+"naam": "ING Groep",
+"land": "Nederland",
+"lei": null,
+"cik": 1039765
+},
+{
+"ticker": "UNA.AS",
+"naam": "Unilever",
+"land": "Nederland",
+"lei": null,
+"cik": 217410
+},
+{
+"ticker": "META",
+"naam": "Meta Platforms",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1326801
+},
+{
+"ticker": "TSLA",
+"naam": "Tesla",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1318605
+},
+{
+"ticker": "COST",
+"naam": "Costco",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 909832
+},
+{
+"ticker": "WMT",
+"naam": "Walmart",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 104169
+},
+{
+"ticker": "JPM",
+"naam": "JPMorgan Chase",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 19617
+},
+{
+"ticker": "V",
+"naam": "Visa",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1403161
+},
+{
+"ticker": "MA",
+"naam": "Mastercard",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1141391
+},
+{
+"ticker": "JNJ",
+"naam": "Johnson & Johnson",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 200406
+},
+{
+"ticker": "LLY",
+"naam": "Eli Lilly",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 59478
+},
+{
+"ticker": "PG",
+"naam": "Procter & Gamble",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 80424
+},
+{
+"ticker": "KO",
+"naam": "Coca-Cola",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 21344
+},
+{
+"ticker": "XOM",
+"naam": "Exxon Mobil",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 2115436
+},
+{
+"ticker": "AZN",
+"naam": "AstraZeneca",
+"land": "Verenigd Koninkrijk",
+"lei": null,
+"cik": 901832
+},
+{
+"ticker": "NVS",
+"naam": "Novartis",
+"land": "Zwitserland",
+"lei": null,
+"cik": 1114448
+},
+{
+"ticker": "ADBE",
+"naam": "Adobe",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 796343
+},
+{
+"ticker": "CRM",
+"naam": "Salesforce",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1108524
+},
+{
+"ticker": "ORCL",
+"naam": "Oracle",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1341439
+},
+{
+"ticker": "CSCO",
+"naam": "Cisco Systems",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 858877
+},
+{
+"ticker": "PEP",
+"naam": "PepsiCo",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 77476
+},
+{
+"ticker": "MRK",
+"naam": "Merck & Co.",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 310158
+},
+{
+"ticker": "ABBV",
+"naam": "AbbVie",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1551152
+},
+{
+"ticker": "HD",
+"naam": "Home Depot",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 354950
+},
+{
+"ticker": "MCD",
+"naam": "McDonald's",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 63908
+},
+{
+"ticker": "UNH",
+"naam": "UnitedHealth Group",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 731766
+},
+{
+"ticker": "TXN",
+"naam": "Texas Instruments",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 97476
+},
+{
+"ticker": "CAT",
+"naam": "Caterpillar",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 18230
+},
+{
+"ticker": "AMGN",
+"naam": "Amgen",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 318154
+},
+{
+"ticker": "NKE",
+"naam": "Nike",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 320187
+},
+{
+"ticker": "SAN.PA",
+"naam": "Sanofi",
+"land": "Frankrijk",
+"lei": null,
+"cik": 1121404
+},
+{
+"ticker": "RACE.MI",
+"naam": "Ferrari",
+"land": "Italië",
+"lei": null,
+"cik": 1648416
+},
+{
+"ticker": "PHIA.AS",
+"naam": "Philips",
+"land": "Nederland",
+"lei": "H1FJE8H61JGM1JSGM897",
+"cik": 313216
+},
+{
+"ticker": "STLAM.MI",
+"naam": "Stellantis",
+"land": "Nederland",
+"lei": "549300LKT9PW7ZIBDF31",
+"cik": 1605484
+},
+{
+"ticker": "NOKIA.HE",
+"naam": "Nokia",
+"land": "Finland",
+"lei": null,
+"cik": 924613
+},
+{
+"ticker": "ENI.MI",
+"naam": "Eni",
+"land": "Italië",
+"lei": "BUCRF72VH5RBN7X3VL35",
+"cik": 1002242
+},
+{
+"ticker": "DIS",
+"naam": "Walt Disney",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 1744489
+},
+{
+"ticker": "HON",
+"naam": "Honeywell",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 773840
+},
+{
+"ticker": "LIN",
+"naam": "Linde",
+"land": "Ierland",
+"lei": null,
+"cik": 1707925
+},
+{
+"ticker": "TMO",
+"naam": "Thermo Fisher Scientific",
+"land": "Verenigde Staten",
+"lei": null,
+"cik": 97745
+},
+{
+"ticker": "ABN.AS",
+"naam": "ABN AMRO",
+"land": "Nederland",
+"lei": "BFXS5XCH7N0Y05NIXW11",
+"cik": null
+},
+{
+"ticker": "ADYEN.AS",
+"naam": "Adyen",
+"land": "Nederland",
+"lei": "724500973ODKK3IFQ447",
+"cik": null
+},
+{
+"ticker": "AGN.AS",
+"naam": "Aegon",
+"land": "Nederland",
+"lei": "O4QK7KMMK83ITNTHUG69",
+"cik": null
+},
+{
+"ticker": "AD.AS",
+"naam": "Ahold Delhaize",
+"land": "Nederland",
+"lei": "724500C9GNBV20UYRX36",
+"cik": null
+},
+{
+"ticker": "AKZA.AS",
+"naam": "AkzoNobel",
+"land": "Nederland",
+"lei": "724500XYIJUGXAA5QD70",
+"cik": null
+},
+{
+"ticker": "MT.AS",
+"naam": "ArcelorMittal",
+"land": "Luxemburg",
+"lei": "2EULGUTUI56JI9SAL165",
+"cik": null
+},
+{
+"ticker": "ASM.AS",
+"naam": "ASM International",
+"land": "Nederland",
+"lei": "7245001I22ND6ZFHX623",
+"cik": null
+},
+{
+"ticker": "ASRNL.AS",
+"naam": "ASR Nederland",
+"land": "Nederland",
+"lei": "7245000G0HS48PZWUD53",
+"cik": null
+},
+{
+"ticker": "BESI.AS",
+"naam": "BE Semiconductor",
+"land": "Nederland",
+"lei": "7245007A1YFLI2GNYX06",
+"cik": null
+},
+{
+"ticker": "DSFIR.AS",
+"naam": "DSM-Firmenich",
+"land": "Zwitserland",
+"lei": "506700G44V67MPM4BI12",
+"cik": null
+},
+{
+"ticker": "EXO.AS",
+"naam": "Exor",
+"land": "Nederland",
+"lei": "5493002ENHZ6NYET7405",
+"cik": null
+},
+{
+"ticker": "HEIA.AS",
+"naam": "Heineken",
+"land": "Nederland",
+"lei": "724500K5PTPSST86UQ23",
+"cik": null
+},
+{
+"ticker": "IMCD.AS",
+"naam": "IMCD",
+"land": "Nederland",
+"lei": "724500NSJPNFJPDAUP02",
+"cik": null
+},
+{
+"ticker": "KPN.AS",
+"naam": "KPN",
+"land": "Nederland",
+"lei": "549300YO0JZHAL7FVP81",
+"cik": null
+},
+{
+"ticker": "NN.AS",
+"naam": "NN Group",
+"land": "Nederland",
+"lei": "724500OHYNDT9OY6Q215",
+"cik": null
+},
+{
+"ticker": "PRX.AS",
+"naam": "Prosus",
+"land": "Nederland",
+"lei": "635400Z5LQ5F9OLVT688",
+"cik": null
+},
+{
+"ticker": "RAND.AS",
+"naam": "Randstad",
+"land": "Nederland",
+"lei": "7245009EAAUUQJ0U4T57",
+"cik": null
+},
+{
+"ticker": "REN.AS",
+"naam": "RELX",
+"land": "Verenigd Koninkrijk",
+"lei": "549300WSX3VBUFFJOO66",
+"cik": null
+},
+{
+"ticker": "UMG.AS",
+"naam": "Universal Music Group",
+"land": "Nederland",
+"lei": "724500GJBUL3D9TW9Y18",
+"cik": null
+},
+{
+"ticker": "WKL.AS",
+"naam": "Wolters Kluwer",
+"land": "Nederland",
+"lei": "724500TEM53I0U077B74",
+"cik": null
+},
+{
+"ticker": "CVC.AS",
+"naam": "CVC Capital Partners",
+"land": "Jersey",
+"lei": "213800E8UQS1KA32YD39",
+"cik": null
+},
+{
+"ticker": "INPST.AS",
+"naam": "InPost",
+"land": "Luxemburg",
+"lei": "2221003M23QLERR89585",
+"cik": null
+},
+{
+"ticker": "SBMO.AS",
+"naam": "SBM Offshore",
+"land": "Nederland",
+"lei": "549300RDGCRYZ5QE6513",
+"cik": null
+},
+{
+"ticker": "AALB.AS",
+"naam": "Aalberts",
+"land": "Nederland",
+"lei": "549300EMP9DT6Q35HZ31",
+"cik": null
+},
+{
+"ticker": "AF.PA",
+"naam": "Air France-KLM",
+"land": "Frankrijk",
+"lei": "969500AQW31GYO8JZD66",
+"cik": null
+},
+{
+"ticker": "ALLFG.AS",
+"naam": "Allfunds",
+"land": "Verenigd Koninkrijk",
+"lei": "9598005U8TZQ8Q64SC71",
+"cik": null
+},
+{
+"ticker": "AMG.AS",
+"naam": "AMG Critical Materials",
+"land": "Nederland",
+"lei": "5493006MN6OH67U2YI74",
+"cik": null
+},
+{
+"ticker": "ARCAD.AS",
+"naam": "Arcadis",
+"land": "Nederland",
+"lei": "7245000UZH70GO047N03",
+"cik": null
+},
+{
+"ticker": "BAMNB.AS",
+"naam": "BAM Groep",
+"land": "Nederland",
+"lei": "724500V38C5KTDY5BS93",
+"cik": null
+},
+{
+"ticker": "BFIT.AS",
+"naam": "Basic-Fit",
+"land": "Nederland",
+"lei": "724500HUXGTQC07CAZ61",
+"cik": null
+},
+{
+"ticker": "CRBN.AS",
+"naam": "Corbion",
+"land": "Nederland",
+"lei": "724500BKS1TSAVLTWG46",
+"cik": null
+},
+{
+"ticker": "CTPNV.AS",
+"naam": "CTP",
+"land": "Nederland",
+"lei": "3157000YTVO4TN65UM14",
+"cik": null
+},
+{
+"ticker": "ECMPA.AS",
+"naam": "Eurocommercial Properties",
+"land": "Nederland",
+"lei": "724500SFK53FPNM68L95",
+"cik": null
+},
+{
+"ticker": "FAGR.BR",
+"naam": "Fagron",
+"land": "België",
+"lei": "549300TRKRUFK2RRG779",
+"cik": null
+},
+{
+"ticker": "FLOW.AS",
+"naam": "Flow Traders",
+"land": "Bermuda",
+"lei": "549300GSUZI1V3BEXQ36",
+"cik": null
+},
+{
+"ticker": "FUR.AS",
+"naam": "Fugro",
+"land": "Nederland",
+"lei": "7245000R8GNBSDTSZ396",
+"cik": null
+},
+{
+"ticker": "GLPG.AS",
+"naam": "Galapagos",
+"land": "België",
+"lei": "549300QKJ78IY0IOV655",
+"cik": null
+},
+{
+"ticker": "HAL.AS",
+"naam": "HAL Trust",
+"land": "Bermuda",
+"lei": "5493000O3IE3DNOY3R07",
+"cik": null
+},
+{
+"ticker": "HAVAS.AS",
+"naam": "Havas",
+"land": "Nederland",
+"lei": "894500L53AVOFQK7T710",
+"cik": null
+},
+{
+"ticker": "HEIJM.AS",
+"naam": "Heijmans",
+"land": "Nederland",
+"lei": "724500OUE3PCA809DZ79",
+"cik": null
+},
+{
+"ticker": "PHARM.AS",
+"naam": "Pharming",
+"land": "Nederland",
+"lei": "724500DCJ9MPG74JEH91",
+"cik": null
+},
+{
+"ticker": "LIGHT.AS",
+"naam": "Signify",
+"land": "Nederland",
+"lei": "549300072P3J1X8NZO35",
+"cik": null
+},
+{
+"ticker": "TWEKA.AS",
+"naam": "TKH Group",
+"land": "Nederland",
+"lei": "7245008G22FOV7TYYJ34",
+"cik": null
+},
+{
+"ticker": "VLK.AS",
+"naam": "Van Lanschot Kempen",
+"land": "Nederland",
+"lei": "724500ZM85SCL0RS8L71",
+"cik": null
+},
+{
+"ticker": "VPK.AS",
+"naam": "Vopak",
+"land": "Nederland",
+"lei": "724500UL634GFV1KYF10",
+"cik": null
+},
+{
+"ticker": "THEON.AS",
+"naam": "Theon International",
+"land": "Cyprus",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "CSG.AS",
+"naam": "CSG",
+"land": "Nederland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "AC.PA",
+"naam": "Accor",
+"land": "Frankrijk",
+"lei": "969500QZC2Q0TK11NV07",
+"cik": null
+},
+{
+"ticker": "AI.PA",
+"naam": "Air Liquide",
+"land": "Frankrijk",
+"lei": "969500MMPQVHK671GT54",
+"cik": null
+},
+{
+"ticker": "AIR.PA",
+"naam": "Airbus",
+"land": "Nederland",
+"lei": "MINO79WLOO247M1IL051",
+"cik": null
+},
+{
+"ticker": "BNP.PA",
+"naam": "BNP Paribas",
+"land": "Frankrijk",
+"lei": "R0MUWSFPU8MPRO8K5P83",
+"cik": null
+},
+{
+"ticker": "CS.PA",
+"naam": "AXA",
+"land": "Frankrijk",
+"lei": "F5WCUMTUM4RKZ1MAIE39",
+"cik": null
+},
+{
+"ticker": "EN.PA",
+"naam": "Bouygues",
+"land": "Frankrijk",
+"lei": "969500MOCLNQFNZN0D63",
+"cik": null
+},
+{
+"ticker": "BVI.PA",
+"naam": "Bureau Veritas",
+"land": "Frankrijk",
+"lei": "969500TPU5T3HA5D1F11",
+"cik": null
+},
+{
+"ticker": "CAP.PA",
+"naam": "Capgemini",
+"land": "Frankrijk",
+"lei": "96950077L0TN7BAROX36",
+"cik": null
+},
+{
+"ticker": "CA.PA",
+"naam": "Carrefour",
+"land": "Frankrijk",
+"lei": "549300B8P6MUJ1YWTS08",
+"cik": null
+},
+{
+"ticker": "ACA.PA",
+"naam": "Crédit Agricole",
+"land": "Frankrijk",
+"lei": "969500TJ5KRTCJQWXH05",
+"cik": null
+},
+{
+"ticker": "BN.PA",
+"naam": "Danone",
+"land": "Frankrijk",
+"lei": "969500KMUQ2B6CBAF162",
+"cik": null
+},
+{
+"ticker": "DSY.PA",
+"naam": "Dassault Systèmes",
+"land": "Frankrijk",
+"lei": "96950065LBWY0APQIM86",
+"cik": null
+},
+{
+"ticker": "FGR.PA",
+"naam": "Eiffage",
+"land": "Frankrijk",
+"lei": "969500OQXKE5WDM9M994",
+"cik": null
+},
+{
+"ticker": "ENGI.PA",
+"naam": "Engie",
+"land": "Frankrijk",
+"lei": "LAXUQCHT4FH58LRZDY46",
+"cik": null
+},
+{
+"ticker": "EL.PA",
+"naam": "EssilorLuxottica",
+"land": "Frankrijk",
+"lei": "549300M3VH1A3ER1TB49",
+"cik": null
+},
+{
+"ticker": "ERF.PA",
+"naam": "Eurofins Scientific",
+"land": "Frankrijk",
+"lei": "529900JEHFM47DYY3S57",
+"cik": null
+},
+{
+"ticker": "ENX.PA",
+"naam": "Euronext",
+"land": "Nederland",
+"lei": "724500QJ4QSZ3H9QU415",
+"cik": null
+},
+{
+"ticker": "RMS.PA",
+"naam": "Hermès",
+"land": "Frankrijk",
+"lei": "969500Y4IJGHJE2MTJ13",
+"cik": null
+},
+{
+"ticker": "KER.PA",
+"naam": "Kering",
+"land": "Frankrijk",
+"lei": "549300VGEJKB7SVUZR78",
+"cik": null
+},
+{
+"ticker": "OR.PA",
+"naam": "L'Oréal",
+"land": "Frankrijk",
+"lei": "529900JI1GG6F7RKVI53",
+"cik": null
+},
+{
+"ticker": "LR.PA",
+"naam": "Legrand",
+"land": "Frankrijk",
+"lei": "969500XXRPGD7HCAFA90",
+"cik": null
+},
+{
+"ticker": "MC.PA",
+"naam": "LVMH",
+"land": "Frankrijk",
+"lei": "IOG4E947OATN0KJYSD45",
+"cik": null
+},
+{
+"ticker": "ML.PA",
+"naam": "Michelin",
+"land": "Frankrijk",
+"lei": "549300SOSI58J6VIW052",
+"cik": null
+},
+{
+"ticker": "ORA.PA",
+"naam": "Orange",
+"land": "Frankrijk",
+"lei": "969500MCOONR8990S771",
+"cik": null
+},
+{
+"ticker": "RI.PA",
+"naam": "Pernod Ricard",
+"land": "Frankrijk",
+"lei": "52990097YFPX9J0H5D87",
+"cik": null
+},
+{
+"ticker": "PUB.PA",
+"naam": "Publicis",
+"land": "Frankrijk",
+"lei": "2138004KW8BV57III342",
+"cik": null
+},
+{
+"ticker": "RNO.PA",
+"naam": "Renault",
+"land": "Frankrijk",
+"lei": "969500F7JLTX36OUI695",
+"cik": null
+},
+{
+"ticker": "SAF.PA",
+"naam": "Safran",
+"land": "Frankrijk",
+"lei": "969500UIC89GT3UL7L24",
+"cik": null
+},
+{
+"ticker": "SGO.PA",
+"naam": "Saint-Gobain",
+"land": "Frankrijk",
+"lei": "NFONVGN05Z0FMN5PEC35",
+"cik": null
+},
+{
+"ticker": "SU.PA",
+"naam": "Schneider Electric",
+"land": "Frankrijk",
+"lei": "969500A1YF1XUYYXS284",
+"cik": null
+},
+{
+"ticker": "GLE.PA",
+"naam": "Société Générale",
+"land": "Frankrijk",
+"lei": "O2RNE8IBXP4R0TD8PU41",
+"cik": null
+},
+{
+"ticker": "STMPA.PA",
+"naam": "STMicroelectronics",
+"land": "Zwitserland",
+"lei": "213800Z8NOHIKRI42W10",
+"cik": null
+},
+{
+"ticker": "HO.PA",
+"naam": "Thales",
+"land": "Frankrijk",
+"lei": "529900FNDVTQJOVVPZ19",
+"cik": null
+},
+{
+"ticker": "TTE.PA",
+"naam": "TotalEnergies",
+"land": "Frankrijk",
+"lei": "529900S21EQ1BO4ESM68",
+"cik": null
+},
+{
+"ticker": "URW.PA",
+"naam": "Unibail-Rodamco-Westfield",
+"land": "Frankrijk",
+"lei": "969500SHQITWXSIS7N89",
+"cik": null
+},
+{
+"ticker": "VIE.PA",
+"naam": "Veolia",
+"land": "Frankrijk",
+"lei": "969500LENY69X51OOT31",
+"cik": null
+},
+{
+"ticker": "DG.PA",
+"naam": "Vinci",
+"land": "Frankrijk",
+"lei": "213800WFQ334R8UXUG83",
+"cik": null
+},
+{
+"ticker": "ADS.DE",
+"naam": "Adidas",
+"land": "Duitsland",
+"lei": "549300JSX0Z4CW0V5023",
+"cik": null
+},
+{
+"ticker": "ALV.DE",
+"naam": "Allianz",
+"land": "Duitsland",
+"lei": "529900K9B0N5BT694847",
+"cik": null
+},
+{
+"ticker": "BAS.DE",
+"naam": "BASF",
+"land": "Duitsland",
+"lei": "529900PM64WH8AF1E917",
+"cik": null
+},
+{
+"ticker": "BAYN.DE",
+"naam": "Bayer",
+"land": "Duitsland",
+"lei": "549300J4U55H3WP1XT59",
+"cik": null
+},
+{
+"ticker": "BEI.DE",
+"naam": "Beiersdorf",
+"land": "Duitsland",
+"lei": "L47NHHI0Z9X22DV46U41",
+"cik": null
+},
+{
+"ticker": "BMW.DE",
+"naam": "BMW",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "BNR.DE",
+"naam": "Brenntag",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "CBK.DE",
+"naam": "Commerzbank",
+"land": "Duitsland",
+"lei": "851WYGNLUQLFZBSYGB56",
+"cik": null
+},
+{
+"ticker": "CON.DE",
+"naam": "Continental",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "DTG.DE",
+"naam": "Daimler Truck",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "DBK.DE",
+"naam": "Deutsche Bank",
+"land": "Duitsland",
+"lei": "7LTWFZYICNSX8D621K86",
+"cik": 1159508
+},
+{
+"ticker": "DB1.DE",
+"naam": "Deutsche Börse",
+"land": "Duitsland",
+"lei": "529900G3SW56SHYNPR95",
+"cik": null
+},
+{
+"ticker": "DHL.DE",
+"naam": "Deutsche Post (DHL)",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "DTE.DE",
+"naam": "Deutsche Telekom",
+"land": "Duitsland",
+"lei": "549300V9QSIG4WX4GJ96",
+"cik": null
+},
+{
+"ticker": "EOAN.DE",
+"naam": "E.ON",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "FRE.DE",
+"naam": "Fresenius",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "FME.DE",
+"naam": "Fresenius Medical Care",
+"land": "Duitsland",
+"lei": "549300CP8NY40UP89Q40",
+"cik": null
+},
+{
+"ticker": "G1A.DE",
+"naam": "GEA Group",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "HNR1.DE",
+"naam": "Hannover Rück",
+"land": "Duitsland",
+"lei": "529900KIN5BE45V5KB18",
+"cik": null
+},
+{
+"ticker": "HEI.DE",
+"naam": "Heidelberg Materials",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "HEN3.DE",
+"naam": "Henkel",
+"land": "Duitsland",
+"lei": "549300VZCL1HTH4O4Y49",
+"cik": null
+},
+{
+"ticker": "IFX.DE",
+"naam": "Infineon",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "MBG.DE",
+"naam": "Mercedes-Benz",
+"land": "Duitsland",
+"lei": "529900R27DL06UVNT076",
+"cik": null
+},
+{
+"ticker": "MRK.DE",
+"naam": "Merck KGaA",
+"land": "Duitsland",
+"lei": "529900OAREIS0MOPTW25",
+"cik": null
+},
+{
+"ticker": "MTX.DE",
+"naam": "MTU Aero Engines",
+"land": "Duitsland",
+"lei": "529900807L67JY81RD65",
+"cik": null
+},
+{
+"ticker": "MUV2.DE",
+"naam": "Munich Re",
+"land": "Duitsland",
+"lei": "529900MUF4C20K50JS49",
+"cik": null
+},
+{
+"ticker": "PAH3.DE",
+"naam": "Porsche SE",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "QIA.DE",
+"naam": "Qiagen",
+"land": "Duitsland",
+"lei": "54930036WK3GMCN17Z57",
+"cik": null
+},
+{
+"ticker": "RHM.DE",
+"naam": "Rheinmetall",
+"land": "Duitsland",
+"lei": "5299001OU9CSE29O6S05",
+"cik": null
+},
+{
+"ticker": "RWE.DE",
+"naam": "RWE",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "G24.DE",
+"naam": "Scout24",
+"land": "Duitsland",
+"lei": "5493007EIKM2ENQS7U66",
+"cik": null
+},
+{
+"ticker": "SIE.DE",
+"naam": "Siemens",
+"land": "Duitsland",
+"lei": "W38RGI023J3WT1HWRP32",
+"cik": null
+},
+{
+"ticker": "ENR.DE",
+"naam": "Siemens Energy",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "SHL.DE",
+"naam": "Siemens Healthineers",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "SY1.DE",
+"naam": "Symrise",
+"land": "Duitsland",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "VOW3.DE",
+"naam": "Volkswagen",
+"land": "Duitsland",
+"lei": "529900NNUPAGGOMPXZ31",
+"cik": null
+},
+{
+"ticker": "VNA.DE",
+"naam": "Vonovia",
+"land": "Duitsland",
+"lei": "5299005A2ZEP6AP7KM81",
+"cik": null
+},
+{
+"ticker": "ZAL.DE",
+"naam": "Zalando",
+"land": "Duitsland",
+"lei": "529900YRFFGH5AXU4S86",
+"cik": null
+},
+{
+"ticker": "A2A.MI",
+"naam": "A2A",
+"land": "Italië",
+"lei": "815600B7FD80E48C1896",
+"cik": null
+},
+{
+"ticker": "AMP.MI",
+"naam": "Amplifon",
+"land": "Italië",
+"lei": "ZYXJDNVM2JI3VBM8G556",
+"cik": null
+},
+{
+"ticker": "AVIO.MI",
+"naam": "Avio",
+"land": "Italië",
+"lei": "8156008F25C4B0E7C860",
+"cik": null
+},
+{
+"ticker": "AZM.MI",
+"naam": "Azimut",
+"land": "Italië",
+"lei": "81560025690EF8540635",
+"cik": null
+},
+{
+"ticker": "BMED.MI",
+"naam": "Banca Mediolanum",
+"land": "Italië",
+"lei": "7LVZJ6XRIE7VNZ4UBX81",
+"cik": null
+},
+{
+"ticker": "BMPS.MI",
+"naam": "Monte dei Paschi di Siena",
+"land": "Italië",
+"lei": "J4CP7MHCXR8DAQMKIL78",
+"cik": null
+},
+{
+"ticker": "BAMI.MI",
+"naam": "Banco BPM",
+"land": "Italië",
+"lei": "815600E4E6DCD2D25E30",
+"cik": null
+},
+{
+"ticker": "BPE.MI",
+"naam": "BPER Banca",
+"land": "Italië",
+"lei": "N747OI7JINV7RUUH6190",
+"cik": null
+},
+{
+"ticker": "BC.MI",
+"naam": "Brunello Cucinelli",
+"land": "Italië",
+"lei": "5493003CX2RZ0FOBH256",
+"cik": null
+},
+{
+"ticker": "BZU.MI",
+"naam": "Buzzi",
+"land": "Italië",
+"lei": "5299003DX5YLKSVJ6K59",
+"cik": null
+},
+{
+"ticker": "CPR.MI",
+"naam": "Campari",
+"land": "Italië",
+"lei": "213800ED5AN2J56N6Z02",
+"cik": null
+},
+{
+"ticker": "DIA.MI",
+"naam": "DiaSorin",
+"land": "Italië",
+"lei": "8156002878BDF0EE4348",
+"cik": null
+},
+{
+"ticker": "ENEL.MI",
+"naam": "Enel",
+"land": "Italië",
+"lei": "WOCMU6HCI0OJWNPRZS33",
+"cik": null
+},
+{
+"ticker": "FCT.MI",
+"naam": "Fincantieri",
+"land": "Italië",
+"lei": "8156005BDF49128B6239",
+"cik": null
+},
+{
+"ticker": "FBK.MI",
+"naam": "FinecoBank",
+"land": "Italië",
+"lei": "549300L7YCATGO57ZE10",
+"cik": null
+},
+{
+"ticker": "G.MI",
+"naam": "Generali",
+"land": "Italië",
+"lei": "549300X5UKJVE386ZB61",
+"cik": null
+},
+{
+"ticker": "HER.MI",
+"naam": "Hera",
+"land": "Italië",
+"lei": "8156009414FD99443B48",
+"cik": null
+},
+{
+"ticker": "ISP.MI",
+"naam": "Intesa Sanpaolo",
+"land": "Italië",
+"lei": "2W8N8UU78PMDQKZENC08",
+"cik": null
+},
+{
+"ticker": "INW.MI",
+"naam": "INWIT",
+"land": "Italië",
+"lei": "81560066183FE361C071",
+"cik": null
+},
+{
+"ticker": "IG.MI",
+"naam": "Italgas",
+"land": "Italië",
+"lei": "815600F25FF44EF1FA76",
+"cik": null
+},
+{
+"ticker": "IVG.MI",
+"naam": "Iveco",
+"land": "Italië",
+"lei": "549300ZWF2ZJDD9EOR96",
+"cik": null
+},
+{
+"ticker": "LDO.MI",
+"naam": "Leonardo",
+"land": "Italië",
+"lei": "529900X4EEX1U9LN3U39",
+"cik": null
+},
+{
+"ticker": "LTMC.MI",
+"naam": "Lottomatica",
+"land": "Italië",
+"lei": "549300R72LKEGT4EX026",
+"cik": null
+},
+{
+"ticker": "MB.MI",
+"naam": "Mediobanca",
+"land": "Italië",
+"lei": "PSNL19R2RXX5U3QWHI44",
+"cik": null
+},
+{
+"ticker": "MONC.MI",
+"naam": "Moncler",
+"land": "Italië",
+"lei": "815600EBD7FB00525B20",
+"cik": null
+},
+{
+"ticker": "NEXI.MI",
+"naam": "Nexi",
+"land": "Italië",
+"lei": "5493000P70CQRQG8SN85",
+"cik": null
+},
+{
+"ticker": "PST.MI",
+"naam": "Poste Italiane",
+"land": "Italië",
+"lei": "815600354DEDBD0BA991",
+"cik": null
+},
+{
+"ticker": "PRY.MI",
+"naam": "Prysmian",
+"land": "Italië",
+"lei": "529900X0H1IO3RS1A464",
+"cik": null
+},
+{
+"ticker": "REC.MI",
+"naam": "Recordati",
+"land": "Italië",
+"lei": "815600FBF92FD3531704",
+"cik": null
+},
+{
+"ticker": "SPM.MI",
+"naam": "Saipem",
+"land": "Italië",
+"lei": "549300PHV8MBDHWB8X12",
+"cik": null
+},
+{
+"ticker": "SRG.MI",
+"naam": "Snam",
+"land": "Italië",
+"lei": "8156002278562044AF79",
+"cik": null
+},
+{
+"ticker": "TIT.MI",
+"naam": "Telecom Italia",
+"land": "Italië",
+"lei": "549300W384M3RI3VXU42",
+"cik": null
+},
+{
+"ticker": "TEN.MI",
+"naam": "Tenaris",
+"land": "Luxemburg",
+"lei": "549300Y7C05BKC4HZB40",
+"cik": null
+},
+{
+"ticker": "TRN.MI",
+"naam": "Terna",
+"land": "Italië",
+"lei": "8156009E94ED54DE7C31",
+"cik": null
+},
+{
+"ticker": "UCG.MI",
+"naam": "UniCredit",
+"land": "Italië",
+"lei": "549300TRUWO2CD2G5692",
+"cik": null
+},
+{
+"ticker": "UNI.MI",
+"naam": "Unipol",
+"land": "Italië",
+"lei": "8156005CE5E7340CCA86",
+"cik": null
+},
+{
+"ticker": "ACS.MC",
+"naam": "ACS",
+"land": "Spanje",
+"lei": "95980020140005558665",
+"cik": null
+},
+{
+"ticker": "ACX.MC",
+"naam": "Acerinox",
+"land": "Spanje",
+"lei": "95980020140005582721",
+"cik": null
+},
+{
+"ticker": "AMS.MC",
+"naam": "Amadeus IT",
+"land": "Spanje",
+"lei": "9598004A3FTY3TEHHN09",
+"cik": null
+},
+{
+"ticker": "ANA.MC",
+"naam": "Acciona",
+"land": "Spanje",
+"lei": "54930002KP75TLLLNO21",
+"cik": null
+},
+{
+"ticker": "ANE.MC",
+"naam": "Acciona Energía",
+"land": "Spanje",
+"lei": "254900UPX0OEHTKB9Y44",
+"cik": null
+},
+{
+"ticker": "BBVA.MC",
+"naam": "BBVA",
+"land": "Spanje",
+"lei": "K8MS7FD7N5Z2WQ51AZ71",
+"cik": 842180
+},
+{
+"ticker": "BKT.MC",
+"naam": "Bankinter",
+"land": "Spanje",
+"lei": "VWMYAEQSTOPNV0SUGU82",
+"cik": null
+},
+{
+"ticker": "CABK.MC",
+"naam": "CaixaBank",
+"land": "Spanje",
+"lei": "7CUNS533WID6K7DGFI87",
+"cik": null
+},
+{
+"ticker": "CLNX.MC",
+"naam": "Cellnex",
+"land": "Spanje",
+"lei": "5493008T4YG3AQUI7P67",
+"cik": null
+},
+{
+"ticker": "COL.MC",
+"naam": "Inmobiliaria Colonial",
+"land": "Spanje",
+"lei": "95980020140005007414",
+"cik": null
+},
+{
+"ticker": "AENA.MC",
+"naam": "Aena",
+"land": "Spanje",
+"lei": "959800R7QMXKF0NFMT29",
+"cik": null
+},
+{
+"ticker": "ELE.MC",
+"naam": "Endesa",
+"land": "Spanje",
+"lei": "549300LHK07F2CHV4X31",
+"cik": null
+},
+{
+"ticker": "ENG.MC",
+"naam": "Enagás",
+"land": "Spanje",
+"lei": "213800OU3FQKGM4M2U23",
+"cik": null
+},
+{
+"ticker": "FDR.MC",
+"naam": "Fluidra",
+"land": "Spanje",
+"lei": "95980020140005026620",
+"cik": null
+},
+{
+"ticker": "FER.MC",
+"naam": "Ferrovial",
+"land": "Spanje",
+"lei": "72450022R2ZFL41Y6I04",
+"cik": null
+},
+{
+"ticker": "GRF.MC",
+"naam": "Grifols",
+"land": "Spanje",
+"lei": null,
+"cik": 1438569
+},
+{
+"ticker": "IBE.MC",
+"naam": "Iberdrola",
+"land": "Spanje",
+"lei": "5QK37QC7NWOJ8D7WVQ45",
+"cik": null
+},
+{
+"ticker": "IDR.MC",
+"naam": "Indra",
+"land": "Spanje",
+"lei": "95980020140005308793",
+"cik": null
+},
+{
+"ticker": "ITX.MC",
+"naam": "Inditex",
+"land": "Spanje",
+"lei": "549300TTCXZOGZM2EY83",
+"cik": null
+},
+{
+"ticker": "LOG.MC",
+"naam": "Logista",
+"land": "Spanje",
+"lei": "9598000ANNAL42UJ7X28",
+"cik": null
+},
+{
+"ticker": "MAP.MC",
+"naam": "Mapfre",
+"land": "Spanje",
+"lei": "95980020140005693107",
+"cik": null
+},
+{
+"ticker": "MRL.MC",
+"naam": "Merlin Properties",
+"land": "Spanje",
+"lei": "959800L8KD863DP30X04",
+"cik": null
+},
+{
+"ticker": "NTGY.MC",
+"naam": "Naturgy",
+"land": "Spanje",
+"lei": "TL2N6M87CW970S5SV098",
+"cik": null
+},
+{
+"ticker": "PUIG.MC",
+"naam": "Puig",
+"land": "Spanje",
+"lei": "549300OVHNSX30L1AQ94",
+"cik": null
+},
+{
+"ticker": "RED.MC",
+"naam": "Redeia",
+"land": "Spanje",
+"lei": "5493009HMD0C90GUV498",
+"cik": null
+},
+{
+"ticker": "REP.MC",
+"naam": "Repsol",
+"land": "Spanje",
+"lei": "BSYCX13Y0NOTV14V9N85",
+"cik": null
+},
+{
+"ticker": "ROVI.MC",
+"naam": "Laboratorios Rovi",
+"land": "Spanje",
+"lei": "95980020140005936480",
+"cik": null
+},
+{
+"ticker": "SAB.MC",
+"naam": "Banco Sabadell",
+"land": "Spanje",
+"lei": "SI5RG2M0WQQLZCXKRM20",
+"cik": null
+},
+{
+"ticker": "SAN.MC",
+"naam": "Banco Santander",
+"land": "Spanje",
+"lei": "5493006QMFDDMYWIAM13",
+"cik": 891478
+},
+{
+"ticker": "SCYR.MC",
+"naam": "Sacyr",
+"land": "Spanje",
+"lei": "959800XKAB9VNAVN9425",
+"cik": null
+},
+{
+"ticker": "SLR.MC",
+"naam": "Solaria",
+"land": "Spanje",
+"lei": "959800PM2YJU406K2789",
+"cik": null
+},
+{
+"ticker": "TEF.MC",
+"naam": "Telefónica",
+"land": "Spanje",
+"lei": "549300EEJH4FEPDBBR25",
+"cik": null
+},
+{
+"ticker": "UNI.MC",
+"naam": "Unicaja",
+"land": "Spanje",
+"lei": "5493007SJLLCTM6J6M37",
+"cik": null
+},
+{
+"ticker": "ABI.BR",
+"naam": "AB InBev",
+"land": "België",
+"lei": "5493008H3828EMEXB082",
+"cik": null
+},
+{
+"ticker": "ACKB.BR",
+"naam": "Ackermans & van Haaren",
+"land": "België",
+"lei": "5493005E2GHATS0Z6J59",
+"cik": null
+},
+{
+"ticker": "AED.BR",
+"naam": "Aedifica",
+"land": "België",
+"lei": "529900DTKNXL0AXQFN28",
+"cik": null
+},
+{
+"ticker": "AGS.BR",
+"naam": "Ageas",
+"land": "België",
+"lei": "5493005DJBML6LY3RV36",
+"cik": null
+},
+{
+"ticker": "ARGX.BR",
+"naam": "argenx",
+"land": "België",
+"lei": "7245009C5FZE6G9ODQ71",
+"cik": null
+},
+{
+"ticker": "APAM.AS",
+"naam": "Aperam",
+"land": "Luxemburg",
+"lei": "5493001136GE6L4R7M63",
+"cik": null
+},
+{
+"ticker": "AZE.BR",
+"naam": "Azelis",
+"land": "België",
+"lei": "699400M9RRMTV264FM70",
+"cik": null
+},
+{
+"ticker": "DIE.BR",
+"naam": "D'Ieteren",
+"land": "België",
+"lei": "549300DV5KJ23OKVTW34",
+"cik": null
+},
+{
+"ticker": "ELI.BR",
+"naam": "Elia Group",
+"land": "België",
+"lei": "549300S1MP1NFDIKT460",
+"cik": null
+},
+{
+"ticker": "GBLB.BR",
+"naam": "GBL",
+"land": "België",
+"lei": "549300KV0ZEHT2KVU152",
+"cik": null
+},
+{
+"ticker": "KBC.BR",
+"naam": "KBC",
+"land": "België",
+"lei": "213800X3Q9LSAKRUWY91",
+"cik": null
+},
+{
+"ticker": "LOTB.BR",
+"naam": "Lotus Bakeries",
+"land": "België",
+"lei": "5493004C0K34IFI67I03",
+"cik": null
+},
+{
+"ticker": "MELE.BR",
+"naam": "Melexis",
+"land": "België",
+"lei": "549300QRPSGOJRPUFO80",
+"cik": null
+},
+{
+"ticker": "MONT.BR",
+"naam": "Montea",
+"land": "België",
+"lei": "5493006K5LQDD0GK1T60",
+"cik": null
+},
+{
+"ticker": "SOF.BR",
+"naam": "Sofina",
+"land": "België",
+"lei": "5493000GMVR38VUO5D39",
+"cik": null
+},
+{
+"ticker": "SOLB.BR",
+"naam": "Solvay",
+"land": "België",
+"lei": "549300MMVL80RTBP3O28",
+"cik": null
+},
+{
+"ticker": "SYENS.BR",
+"naam": "Syensqo",
+"land": "België",
+"lei": "549300060XNJ90PLNS10",
+"cik": null
+},
+{
+"ticker": "UCB.BR",
+"naam": "UCB",
+"land": "België",
+"lei": "21380029O1RSZIAVOR95",
+"cik": null
+},
+{
+"ticker": "UMI.BR",
+"naam": "Umicore",
+"land": "België",
+"lei": "529900F3AIQECS8ZSV61",
+"cik": null
+},
+{
+"ticker": "WDP.BR",
+"naam": "WDP",
+"land": "België",
+"lei": "549300HWDYC5JXC85138",
+"cik": null
+},
+{
+"ticker": "III.L",
+"naam": "3i Group",
+"land": "Verenigd Koninkrijk",
+"lei": "35GDVHRBMFE7NWATNM84",
+"cik": null
+},
+{
+"ticker": "ABDN.L",
+"naam": "Aberdeen Group",
+"land": "Verenigd Koninkrijk",
+"lei": "0TMBS544NMO7GLCE7H90",
+"cik": null
+},
+{
+"ticker": "ADM.L",
+"naam": "Admiral Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800FGVM7Z9EJB2685",
+"cik": null
+},
+{
+"ticker": "AAF.L",
+"naam": "Airtel Africa",
+"land": "Verenigd Koninkrijk",
+"lei": "254900ZNZDQL6OWQH623",
+"cik": null
+},
+{
+"ticker": "AAL.L",
+"naam": "Anglo American",
+"land": "Verenigd Koninkrijk",
+"lei": "549300S9XF92D1X8ME43",
+"cik": null
+},
+{
+"ticker": "ANTO.L",
+"naam": "Antofagasta",
+"land": "Verenigd Koninkrijk",
+"lei": "213800MY6QVH4FVLD628",
+"cik": null
+},
+{
+"ticker": "ABF.L",
+"naam": "Associated British Foods",
+"land": "Verenigd Koninkrijk",
+"lei": "GBQKSY6W7G0OHCQ8OQ72",
+"cik": null
+},
+{
+"ticker": "AUTO.L",
+"naam": "Auto Trader",
+"land": "Verenigd Koninkrijk",
+"lei": null,
+"cik": null
+},
+{
+"ticker": "AV.L",
+"naam": "Aviva",
+"land": "Verenigd Koninkrijk",
+"lei": "YF0Y5B0IB8SM0ZFG9G81",
+"cik": null
+},
+{
+"ticker": "BAB.L",
+"naam": "Babcock International",
+"land": "Verenigd Koninkrijk",
+"lei": "213800TSKOLX4EU6L377",
+"cik": null
+},
+{
+"ticker": "BA.L",
+"naam": "BAE Systems",
+"land": "Verenigd Koninkrijk",
+"lei": "8SVCSVKSGDWMW2QHOH83",
+"cik": null
+},
+{
+"ticker": "BBY.L",
+"naam": "Balfour Beatty",
+"land": "Verenigd Koninkrijk",
+"lei": "CT4UIJ3TUKGYYHMENQ17",
+"cik": null
+},
+{
+"ticker": "BARC.L",
+"naam": "Barclays",
+"land": "Verenigd Koninkrijk",
+"lei": "213800LBQA1Y9L22JB70",
+"cik": null
+},
+{
+"ticker": "BTRW.L",
+"naam": "Barratt Redrow",
+"land": "Verenigd Koninkrijk",
+"lei": "2138006R85VEOF5YNK29",
+"cik": null
+},
+{
+"ticker": "BP.L",
+"naam": "BP",
+"land": "Verenigd Koninkrijk",
+"lei": "213800LH1BZH3DI6G760",
+"cik": null
+},
+{
+"ticker": "BATS.L",
+"naam": "British American Tobacco",
+"land": "Verenigd Koninkrijk",
+"lei": "213800FKA5MF17RJKT63",
+"cik": null
+},
+{
+"ticker": "BLND.L",
+"naam": "British Land",
+"land": "Verenigd Koninkrijk",
+"lei": "RV5B68J2GV3QGMRPW209",
+"cik": null
+},
+{
+"ticker": "BT-A.L",
+"naam": "BT Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800LRO7NS5CYQMN21",
+"cik": null
+},
+{
+"ticker": "BNZL.L",
+"naam": "Bunzl",
+"land": "Verenigd Koninkrijk",
+"lei": "213800Q1Q9DV4L78UM09",
+"cik": null
+},
+{
+"ticker": "BRBY.L",
+"naam": "Burberry",
+"land": "Verenigd Koninkrijk",
+"lei": "213800PE1KEFCNFR1R50",
+"cik": null
+},
+{
+"ticker": "CNA.L",
+"naam": "Centrica",
+"land": "Verenigd Koninkrijk",
+"lei": "E26EDV109X6EEPBKVH76",
+"cik": null
+},
+{
+"ticker": "CCH.L",
+"naam": "Coca-Cola HBC",
+"land": "Zwitserland",
+"lei": "549300EFP3TNG7JGVE49",
+"cik": null
+},
+{
+"ticker": "CPG.L",
+"naam": "Compass Group",
+"land": "Verenigd Koninkrijk",
+"lei": "2138008M6MH9OZ6U2T68",
+"cik": null
+},
+{
+"ticker": "CCC.L",
+"naam": "Computacenter",
+"land": "Verenigd Koninkrijk",
+"lei": "549300XSXUZ1I19DB105",
+"cik": null
+},
+{
+"ticker": "CTEC.L",
+"naam": "Convatec",
+"land": "Verenigd Koninkrijk",
+"lei": "213800LS272L4FIDOH92",
+"cik": null
+},
+{
+"ticker": "CRDA.L",
+"naam": "Croda",
+"land": "Verenigd Koninkrijk",
+"lei": "2138004WCNBFJEEOXV26",
+"cik": null
+},
+{
+"ticker": "DCC.L",
+"naam": "DCC",
+"land": "Verenigd Koninkrijk",
+"lei": "213800UPS1QEE4TD3T45",
+"cik": null
+},
+{
+"ticker": "DGE.L",
+"naam": "Diageo",
+"land": "Verenigd Koninkrijk",
+"lei": "213800ZVIELEA55JMJ32",
+"cik": null
+},
+{
+"ticker": "DPLM.L",
+"naam": "Diploma",
+"land": "Verenigd Koninkrijk",
+"lei": "2138008OGI7VYG8FGR19",
+"cik": null
+},
+{
+"ticker": "EZJ.L",
+"naam": "easyJet",
+"land": "Verenigd Koninkrijk",
+"lei": "2138001S47XKWIB7TH90",
+"cik": null
+},
+{
+"ticker": "EDV.L",
+"naam": "Endeavour Mining",
+"land": "Verenigd Koninkrijk",
+"lei": "529900NI5MXQ91GHXR07",
+"cik": null
+},
+{
+"ticker": "EXPN.L",
+"naam": "Experian",
+"land": "Verenigd Koninkrijk",
+"lei": "635400RXXHHYT1JTSZ26",
+"cik": null
+},
+{
+"ticker": "FRES.L",
+"naam": "Fresnillo",
+"land": "Verenigd Koninkrijk",
+"lei": "549300JXWH1UV5J0XV81",
+"cik": null
+},
+{
+"ticker": "GAW.L",
+"naam": "Games Workshop",
+"land": "Verenigd Koninkrijk",
+"lei": "213800RP9QJQYGWHNT41",
+"cik": null
+},
+{
+"ticker": "GLEN.L",
+"naam": "Glencore",
+"land": "Verenigd Koninkrijk",
+"lei": "2138002658CPO9NBH955",
+"cik": null
+},
+{
+"ticker": "GSK.L",
+"naam": "GSK",
+"land": "Verenigd Koninkrijk",
+"lei": "5493000HZTVUYLO1D793",
+"cik": null
+},
+{
+"ticker": "HLN.L",
+"naam": "Haleon",
+"land": "Verenigd Koninkrijk",
+"lei": "549300PSB3WWEODCUP19",
+"cik": null
+},
+{
+"ticker": "HLMA.L",
+"naam": "Halma",
+"land": "Verenigd Koninkrijk",
+"lei": "2138007FRGLUR9KGBT40",
+"cik": null
+},
+{
+"ticker": "HSX.L",
+"naam": "Hiscox",
+"land": "Verenigd Koninkrijk",
+"lei": "5493007JXOLJ0QCY2D70",
+"cik": null
+},
+{
+"ticker": "HWDN.L",
+"naam": "Howdens Joinery",
+"land": "Verenigd Koninkrijk",
+"lei": "213800KC1LJOJTY3JP45",
+"cik": null
+},
+{
+"ticker": "HSBA.L",
+"naam": "HSBC",
+"land": "Verenigd Koninkrijk",
+"lei": "MLU0ZO3ML4LN2LL2TL39",
+"cik": null
+},
+{
+"ticker": "ICG.L",
+"naam": "ICG",
+"land": "Verenigd Koninkrijk",
+"lei": "549300OGASR5WRKJ8R68",
+"cik": null
+},
+{
+"ticker": "IGG.L",
+"naam": "IG Group",
+"land": "Verenigd Koninkrijk",
+"lei": "2138003A5Q1M7ANOUD76",
+"cik": null
+},
+{
+"ticker": "IHG.L",
+"naam": "InterContinental Hotels",
+"land": "Verenigd Koninkrijk",
+"lei": "2138007ZFQYRUSLU3J98",
+"cik": null
+},
+{
+"ticker": "IMI.L",
+"naam": "IMI",
+"land": "Verenigd Koninkrijk",
+"lei": "2138002W9Q21PF751R30",
+"cik": null
+},
+{
+"ticker": "IMB.L",
+"naam": "Imperial Brands",
+"land": "Verenigd Koninkrijk",
+"lei": "549300DFVPOB67JL3A42",
+"cik": null
+},
+{
+"ticker": "INF.L",
+"naam": "Informa",
+"land": "Verenigd Koninkrijk",
+"lei": "5493006VM2LKUPSEDU20",
+"cik": null
+},
+{
+"ticker": "ITRK.L",
+"naam": "Intertek",
+"land": "Verenigd Koninkrijk",
+"lei": "2138003GAT25WW1RN369",
+"cik": null
+},
+{
+"ticker": "INVP.L",
+"naam": "Investec",
+"land": "Verenigd Koninkrijk",
+"lei": "2138007Z3U5GWDN3MY22",
+"cik": null
+},
+{
+"ticker": "ITH.L",
+"naam": "Ithaca Energy",
+"land": "Verenigd Koninkrijk",
+"lei": "21380057TNFLXPXBIP34",
+"cik": null
+},
+{
+"ticker": "JD.L",
+"naam": "JD Sports",
+"land": "Verenigd Koninkrijk",
+"lei": "213800HROV6Y9MUU8375",
+"cik": null
+},
+{
+"ticker": "BGEO.L",
+"naam": "Lion Finance Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800XKDG12NQG8VC53",
+"cik": null
+},
+{
+"ticker": "KGF.L",
+"naam": "Kingfisher",
+"land": "Verenigd Koninkrijk",
+"lei": "213800KBMEV7I92FY281",
+"cik": null
+},
+{
+"ticker": "LAND.L",
+"naam": "Landsec",
+"land": "Verenigd Koninkrijk",
+"lei": "213800V8IAVKS37D6B88",
+"cik": null
+},
+{
+"ticker": "LGEN.L",
+"naam": "Legal & General",
+"land": "Verenigd Koninkrijk",
+"lei": "213800JH9QQWHLO99821",
+"cik": null
+},
+{
+"ticker": "LLOY.L",
+"naam": "Lloyds Banking Group",
+"land": "Verenigd Koninkrijk",
+"lei": "549300PPXHEU2JF0AM85",
+"cik": null
+},
+{
+"ticker": "LMP.L",
+"naam": "LondonMetric Property",
+"land": "Verenigd Koninkrijk",
+"lei": "213800OCERWWPQDURL87",
+"cik": null
+},
+{
+"ticker": "LSEG.L",
+"naam": "London Stock Exchange Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800QAUUUP6I445N30",
+"cik": null
+},
+{
+"ticker": "MNG.L",
+"naam": "M&G",
+"land": "Verenigd Koninkrijk",
+"lei": "254900TWUJUQ44TQJY84",
+"cik": null
+},
+{
+"ticker": "MKS.L",
+"naam": "Marks & Spencer",
+"land": "Verenigd Koninkrijk",
+"lei": "213800EJP14A79ZG1X44",
+"cik": null
+},
+{
+"ticker": "MRO.L",
+"naam": "Melrose Industries",
+"land": "Verenigd Koninkrijk",
+"lei": "213800RGNXXZY2M7TR85",
+"cik": null
+},
+{
+"ticker": "MTLN.L",
+"naam": "Metlen Energy & Metals",
+"land": "Griekenland",
+"lei": "213800ZSR3HVKMMPVG86",
+"cik": null
+},
+{
+"ticker": "NG.L",
+"naam": "National Grid",
+"land": "Verenigd Koninkrijk",
+"lei": "8R95QZMKZLJX5Q2XR704",
+"cik": null
+},
+{
+"ticker": "NWG.L",
+"naam": "NatWest Group",
+"land": "Verenigd Koninkrijk",
+"lei": "2138005O9XJIJN4JPN90",
+"cik": null
+},
+{
+"ticker": "NXT.L",
+"naam": "Next",
+"land": "Verenigd Koninkrijk",
+"lei": "213800WQD8ECPZP9PH98",
+"cik": null
+},
+{
+"ticker": "PSON.L",
+"naam": "Pearson",
+"land": "Verenigd Koninkrijk",
+"lei": "2138004JBXWWJKIURC57",
+"cik": null
+},
+{
+"ticker": "PRU.L",
+"naam": "Prudential",
+"land": "Verenigd Koninkrijk",
+"lei": "5493001Z3ZE83NGK8Y12",
+"cik": null
+},
+{
+"ticker": "RKT.L",
+"naam": "Reckitt",
+"land": "Verenigd Koninkrijk",
+"lei": "5493003JFSMOJG48V108",
+"cik": null
+},
+{
+"ticker": "RTO.L",
+"naam": "Rentokil Initial",
+"land": "Verenigd Koninkrijk",
+"lei": "549300VN4WV7Z6T14K68",
+"cik": null
+},
+{
+"ticker": "RIO.L",
+"naam": "Rio Tinto",
+"land": "Verenigd Koninkrijk",
+"lei": "213800YOEO5OQ72G2R82",
+"cik": null
+},
+{
+"ticker": "RR.L",
+"naam": "Rolls-Royce",
+"land": "Verenigd Koninkrijk",
+"lei": "213800EC7997ZBLZJH69",
+"cik": null
+},
+{
+"ticker": "SGE.L",
+"naam": "Sage Group",
+"land": "Verenigd Koninkrijk",
+"lei": "2138005RN5XYLTF8G138",
+"cik": null
+},
+{
+"ticker": "SBRY.L",
+"naam": "Sainsbury's",
+"land": "Verenigd Koninkrijk",
+"lei": "213800VGZAAJIKJ9Y484",
+"cik": null
+},
+{
+"ticker": "SGRO.L",
+"naam": "Segro",
+"land": "Verenigd Koninkrijk",
+"lei": "213800XC35KGM9NFC641",
+"cik": null
+},
+{
+"ticker": "SVT.L",
+"naam": "Severn Trent",
+"land": "Verenigd Koninkrijk",
+"lei": "213800RPBXRETY4A4C59",
+"cik": null
+},
+{
+"ticker": "SMIN.L",
+"naam": "Smiths Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800MJL6IPZS3ASA11",
+"cik": null
+},
+{
+"ticker": "SN.L",
+"naam": "Smith & Nephew",
+"land": "Verenigd Koninkrijk",
+"lei": "213800ZTMDN8S67S1H61",
+"cik": null
+},
+{
+"ticker": "SPX.L",
+"naam": "Spirax Group",
+"land": "Verenigd Koninkrijk",
+"lei": "213800WFVZQMHOZP2W17",
+"cik": null
+},
+{
+"ticker": "SSE.L",
+"naam": "SSE",
+"land": "Verenigd Koninkrijk",
+"lei": "549300KI75VYLLMSK856",
+"cik": null
+},
+{
+"ticker": "STAN.L",
+"naam": "Standard Chartered",
+"land": "Verenigd Koninkrijk",
+"lei": "U4LOSYZ7YG4W3S5F2G91",
+"cik": null
+},
+{
+"ticker": "STJ.L",
+"naam": "St. James's Place",
+"land": "Verenigd Koninkrijk",
+"lei": "213800M993ICXOMBCP87",
+"cik": null
+},
+{
+"ticker": "TSCO.L",
+"naam": "Tesco",
+"land": "Verenigd Koninkrijk",
+"lei": "2138002P5RNKC5W2JZ46",
+"cik": null
+},
+{
+"ticker": "BBOX.L",
+"naam": "Tritax Big Box REIT",
+"land": "Verenigd Koninkrijk",
+"lei": "213800L6X88MIYPVR714",
+"cik": null
+},
+{
+"ticker": "UU.L",
+"naam": "United Utilities",
+"land": "Verenigd Koninkrijk",
+"lei": "2138002IEYQAOC88ZJ59",
+"cik": null
+},
+{
+"ticker": "VOD.L",
+"naam": "Vodafone",
+"land": "Verenigd Koninkrijk",
+"lei": "213800TB53ELEUKM7Q61",
+"cik": null
+},
+{
+"ticker": "WEIR.L",
+"naam": "Weir Group",
+"land": "Verenigd Koninkrijk",
+"lei": "549300KDR56WHY9I3D10",
+"cik": null
+},
+{
+"ticker": "WTB.L",
+"naam": "Whitbread",
+"land": "Verenigd Koninkrijk",
+"lei": "21380099VMZKRMN3EX36",
+"cik": null
+},
+{
+"ticker": "WPP.L",
+"naam": "WPP",
+"land": "Verenigd Koninkrijk",
+"lei": "549300LSGBXPYHXGDT93",
+"cik": null
+}
+]
