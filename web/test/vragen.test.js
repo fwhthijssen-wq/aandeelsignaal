@@ -87,3 +87,11 @@ test('Fondsen op kansrijkheid: Kopen, Neutraal, Vermijden, dan geen oordeel', fu
   assert.deepStrictEqual(D.fondsen(items, { sorteer: 'kansrijk' }).map(x => x.ticker), ['C', 'B', 'A', 'E', 'D']);
   assert.strictEqual(D.perIndex(D.fondsen(items, {}))[0].positief, 2);
 });
+
+test('bank of verzekeraar herkend aan de cijfers: geen omzet en verplichtingen ≥ 80% van de bezittingen', function () {
+  const r = rec(); r.gegevens.jaren.forEach(j => { delete j.sales; j.total_assets = 1000; j.total_liabilities = 930; });
+  const b = S.beoordeel(r, { vandaag: DAG, gate: G });
+  assert.strictEqual(b.bank, true); assert.strictEqual(b.metingen[0].methode, 'roe'); assert.ok(b.metingen[1].nvt);
+  const gewoon = rec(); gewoon.gegevens.jaren.forEach(j => { j.total_assets = 1000; j.total_liabilities = 930; });   // wel omzet: geen bank
+  assert.strictEqual(S.beoordeel(gewoon, { vandaag: DAG, gate: G }).bank, false);
+});

@@ -211,7 +211,7 @@
     roe: ['Hoeveel winst het bedrijf maakt op het geld van de aandeelhouders (eigen vermogen). Bij banken is dit de kernmeting voor het bedrijf, in plaats van de vrije kasstroom.', 'Vanaf 15%: gunstig. 10 tot 15%: licht gunstig. 5 tot 10%: neutraal. 0 tot 5%: licht ongunstig. Verlies: ongunstig.', 'Nettowinst en eigen vermogen van het laatste jaar.'],
     fcf: ['Vrije kasstroom is wat overblijft na investeringen: kasstroom uit bedrijfsactiviteiten min investeringen in vaste activa, als percentage van de omzet. Niet gebruikt voor banken.', 'Vanaf 8% van de omzet: gunstig. 3 tot 8%: licht gunstig. 0 tot 3%: neutraal. Negatief: ongunstig.', 'Kasstroom, investeringen en omzet van het laatste jaar.'],
     schuld: ['Hoeveel jaren vrije kasstroom nodig zijn om de langlopende schuld af te lossen. Niet gebruikt voor banken.', 'Onder 2 jaar: gunstig. 2 tot 4: licht gunstig. 4 tot 7: neutraal. Daarboven of geen positieve kasstroom: ongunstig. Geen schuld: gunstig.', 'Langlopende schuld, kasstroom en investeringen.'],
-    schuldgraad: ['Welk deel van alle bezittingen met vreemd geld (schulden en andere verplichtingen) is betaald. Hoe lager, hoe steviger het bedrijf een tegenvaller opvangt. Niet gebruikt voor banken: die werken van nature grotendeels met geleend geld.', 'Onder 40%: gunstig. 40 tot 60%: licht gunstig. 60 tot 75%: neutraal. 75 tot 90%: licht ongunstig. Daarboven: ongunstig.', 'Totale verplichtingen en totale bezittingen van het laatste jaar.'],
+    schuldgraad: ['Welk deel van alle bezittingen met vreemd geld (schulden en andere verplichtingen) is betaald. Hoe lager, hoe steviger het bedrijf een tegenvaller opvangt. Niet gebruikt voor banken en verzekeraars: die werken van nature grotendeels met geld van anderen.', 'Onder 40%: gunstig. 40 tot 60%: licht gunstig. 60 tot 75%: neutraal. 75 tot 90%: licht ongunstig. Daarboven: ongunstig.', 'Totale verplichtingen en totale bezittingen van het laatste jaar.'],
     kw: ['Hoeveel u betaalt voor één euro winst: de koers gedeeld door de winst per aandeel. Lager is goedkoper, maar een laag getal kan ook een reden hebben.', 'Onder 12: gunstig. 12 tot 18: licht gunstig. 18 tot 25: neutraal. 25 tot 40: licht ongunstig. Boven 40 of geen winst: ongunstig.', 'Een verse koers in dezelfde valuta als de winst, en de winst per aandeel van het laatste jaar.'],
     piotroski: ['De Piotroski F-score toetst negen eenvoudige punten over winstgevendheid, schuld en efficiëntie, door dit jaar met het vorige te vergelijken. Elk punt dat klopt telt voor 1. Een hoge score wijst op een financieel gezond bedrijf.', 'Minstens 78% van de toetsbare punten: gunstig. 56 tot 78%: licht gunstig. 33 tot 56%: neutraal. Daaronder: ongunstig. Kunnen minder dan 6 punten getoetst worden, dan telt de methode niet mee.', 'Twee opeenvolgende jaren met winst, activa, schuld en kasstroom; minstens 6 punten moeten toetsbaar zijn.'],
     altman: ['De Altman Z-score combineert vijf kentallen tot één getal dat aangeeft hoe groot de kans op financiële problemen is. Bedoeld voor industriële bedrijven; niet gebruikt voor banken.', 'Z vanaf 2,99: veilig gebied (gunstig). 1,81 tot 2,99: grijs gebied (neutraal). Eronder: risicogebied (ongunstig).', 'Activa, schulden, ingehouden winst, bedrijfsresultaat en omzet, plus een verse koers en het aantal aandelen.'],
@@ -234,11 +234,11 @@
     omzetgroei: function (c) { var j = c.jr; return j.length ? ['Omzet ' + j[0].year + ': ' + mld(j[0].sales), 'Omzet ' + j[j.length - 1].year + ': ' + mld(j[j.length - 1].sales), 'Groei per jaar: ' + (c.groeiOmzet == null ? '–' : pct(c.groeiOmzet))] : null; },
     epsgroei: function (c) { var j = c.jr; return j.length ? ['Winst per aandeel ' + j[0].year + ': ' + g1(j[0].comparable_eps), 'Winst per aandeel ' + j[j.length - 1].year + ': ' + g1(j[j.length - 1].comparable_eps), 'Groei per jaar: ' + (c.groeiEps == null ? '–' : pct(c.groeiEps))] : null; },
     epsstabiel: function (c) { var v = jaarRegel(c, 'comparable_eps'); return v.length ? v.map(function (j, i) { return j.year + ': ' + g1(j.comparable_eps) + (i ? (j.comparable_eps > v[i - 1].comparable_eps ? ' ▲' : ' ▼') : ''); }) : null; },
-    nettomarge: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Omzet: ' + mld(l.sales), 'Nettowinst: ' + mld(l.net_income)] : null; },
-    roe: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Nettowinst: ' + mld(l.net_income), 'Eigen vermogen: ' + mld(l.equity)] : null; },
-    fcf: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Kasstroom uit bedrijf: ' + mld(l.operating_cash_flow), 'Investeringen: ' + mld(Math.abs(l.capex || 0)), 'Omzet: ' + mld(l.sales)] : null; },
-    schuld: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Langlopende schuld: ' + mld(l.long_term_debt), 'Vrije kasstroom: ' + mld((l.operating_cash_flow || 0) - Math.abs(l.capex || 0))] : null; },
-    schuldgraad: function (c) { var l = c.laatste; return l ? ['Jaar: ' + l.year, 'Totale verplichtingen: ' + mld(l.total_liabilities), 'Totale bezittingen: ' + mld(l.total_assets)] : null; },
+    nettomarge: function (c) { var l = c.lb; return l ? ['Jaar: ' + l.year, 'Omzet: ' + mld(l.sales), 'Nettowinst: ' + mld(l.net_income)] : null; },
+    roe: function (c) { var l = c.lb; return l ? ['Jaar: ' + l.year, 'Nettowinst: ' + mld(l.net_income), 'Eigen vermogen: ' + mld(l.equity)] : null; },
+    fcf: function (c) { var l = c.lb; return l ? ['Jaar: ' + l.year, 'Kasstroom uit bedrijf: ' + mld(l.operating_cash_flow), 'Investeringen: ' + mld(Math.abs(l.capex || 0)), 'Omzet: ' + mld(l.sales)].concat(typeof l.capex_bron === 'string' ? ['Investeringen uit: ' + l.capex_bron.slice(0, 300)] : []) : null; },
+    schuld: function (c) { var l = c.lb; return l ? ['Jaar: ' + l.year, 'Langlopende schuld: ' + mld(l.long_term_debt), 'Vrije kasstroom: ' + mld((l.operating_cash_flow || 0) - Math.abs(l.capex || 0))] : null; },
+    schuldgraad: function (c) { var l = c.lb; return l ? ['Jaar: ' + l.year, 'Totale verplichtingen: ' + mld(l.total_liabilities), 'Totale bezittingen: ' + mld(l.total_assets)] : null; },
     kw: function (c) { var l = c.laatste; return l && c.koersOk ? ['Koers: ' + g1(c.k.slot) + ' ' + (c.k.valuta || ''), 'Winst per aandeel ' + l.year + ': ' + g1(l.comparable_eps)] : null; },
     piotroski: function (c) { var r = piotroski(c.jr); if (!r) return null;
       return ['Vergelijking ' + r.jaar + ' met ' + r.vorig + ':'].concat(r.lijst.map(function (x) { return (x.ok ? '✓ ' : '✗ ') + x.naam; })).concat(r.niet.map(function (n) { return '? ' + n + ' (gegevens ontbreken)'; })); },
@@ -289,7 +289,11 @@
     var niveau = bevestigd ? 'gecontroleerd' : (g && g.niveau === 'jaarverslag' ? 'jaarverslag' : g && g.niveau === 'indicatief' ? 'indicatief' : (g && g.eps_status === 'independently_verified' && jr.length >= 5 ? 'jaarverslag' : null));
     var jarenBruikbaar = !!(niveau && jr.length >= 4);
     var f = jr[0], l = jr[jr.length - 1], n = f && l ? l.year - f.year : 0;
-    var bank = !!(g && (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }));
+    // Bank of verzekeraar: gemeld in de gegevens, of herkenbaar aan de cijfers: geen omzet (alleen rente- of premie-inkomsten)
+    // en verplichtingen van minstens 80% van de bezittingen. Kasstroom, investeringen en schuldgraad zeggen dan weinig.
+    var lg = l && g && !g.fout ? l : null;
+    var bank = !!(g && (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); })) ||
+      !!(lg && !num(lg.sales) && pos(lg.total_assets) && num(lg.total_liabilities) && lg.total_liabilities / lg.total_assets >= 0.8);
     var reeks = vers && Array.isArray(k.reeks) ? k.reeks.map(function (x) { return x[1]; }).filter(pos) : [];
     var bereik = null;
     if (vers && naic) bereik = naic.bereik(jr, k.slot, 10, 8) || naic.bereikUitKoers(k.bereik, k.slot);
@@ -309,7 +313,7 @@
         if (!r && m.uit && c.eigen && c.eigen.cijfers && num(c.eigen.cijfers[m.id])) { r = m.uit(c.eigen.cijfers[m.id], null); if (r) { r.tekst = 'Uw eigen cijfer: ' + r.tekst; q = 'eigen'; } }
       } catch (e) { r = null; }
       if (c.bank && BANK_NVT[m.id]) {      // zegt niets voor een bank: telt niet mee, ook niet in de noemer
-        methoden.push({ id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, nvt: true, score: null, kwaliteit: null, tekst: 'Niet van toepassing op banken.', invoer: null, beoordeling: null, wat: (INFO[m.id] || [])[0] || null, schaal: (INFO[m.id] || [])[1] || null, nodig: (INFO[m.id] || [])[2] || null, detail: null });
+        methoden.push({ id: m.id, groep: m.groep, naam: m.naam, gewicht: m.gewicht, aanwezig: false, nvt: true, score: null, kwaliteit: null, tekst: 'Niet van toepassing op banken en verzekeraars.', invoer: null, beoordeling: null, wat: (INFO[m.id] || [])[0] || null, schaal: (INFO[m.id] || [])[1] || null, nodig: (INFO[m.id] || [])[2] || null, detail: null });
         return;
       }
       totaal += m.gewicht;
@@ -330,7 +334,7 @@
     // Kernmetingen: elk even zwaar; alleen gegevens, geen meningen. Uw eigen cijfer (een feit dat u invult) telt wel, uw beoordeling niet.
     var metingen = KERN.map(function (kd) {
       var mid = c.bank && ('bankMethode' in kd) ? kd.bankMethode : kd.methode;
-      if (!mid) return { id: kd.id, kort: kd.kort, vraag: kd.vraag, methode: kd.methode, naam: (perId[kd.methode] || {}).naam, nvt: true, aanwezig: false, oordeel: null, score: null, reden: 'Niet van toepassing op banken.' };
+      if (!mid) return { id: kd.id, kort: kd.kort, vraag: kd.vraag, methode: kd.methode, naam: (perId[kd.methode] || {}).naam, nvt: true, aanwezig: false, oordeel: null, score: null, reden: 'Niet van toepassing op banken en verzekeraars.' };
       var m = perId[mid], ok = !!(m && m.aanwezig);
       return { id: kd.id, kort: c.bank && kd.bankKort ? kd.bankKort : kd.kort, vraag: kd.vraag, methode: mid, naam: m ? m.naam : mid, nvt: false, aanwezig: !!ok,
         score: ok ? m.score : null, oordeel: ok ? scoreOordeel(m.score) : null, tekst: ok ? m.tekst : null, kwaliteit: ok ? m.kwaliteit : null, detail: ok ? m.detail : null,

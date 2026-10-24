@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.24-beta.65';
+  var APP_VERSIE = '2026.10.24-beta.66';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -44,8 +44,8 @@
   function uitlegOordeel() {
     return '<details class="uitleg" data-uitleg-oordeel><summary>Hoe komt het oordeel tot stand?</summary>' +
       '<p>De app kijkt naar <b>zes metingen</b> die elk iets anders zeggen, zodat niets dubbel telt:</p><ul class="punten">' +
-      '<li><b>Kasstroom</b>: vrije kasstroom als deel van de omzet (bij banken: <b>rendement</b> op eigen vermogen).</li>' +
-      '<li><b>Schuld</b>: schuldgraad, verplichtingen gedeeld door bezittingen (niet bij banken).</li>' +
+      '<li><b>Kasstroom</b>: vrije kasstroom als deel van de omzet (bij banken en verzekeraars: <b>rendement</b> op eigen vermogen).</li>' +
+      '<li><b>Schuld</b>: schuldgraad, verplichtingen gedeeld door bezittingen (niet bij banken en verzekeraars).</li>' +
       '<li><b>Groei</b>: groei van de winst per aandeel per jaar.</li><li><b>K/W</b>: koers gedeeld door winst per aandeel.</li>' +
       '<li><b>Trend</b>: koers boven of onder het gemiddelde van 200 dagen.</li><li><b>Rust</b>: hoe sterk de koers schommelt.</li></ul>' +
       '<p>Elke meting is ' + stip('gunstig', 'Voorbeeld') + ' gunstig, ' + stip('neutraal', 'Voorbeeld') + ' neutraal of ' + stip('ongunstig', 'Voorbeeld') + ' ongunstig; ' + stip(null, 'Voorbeeld') + ' betekent dat het gegeven ontbreekt. Alle metingen tellen even zwaar. ' +
@@ -78,13 +78,13 @@
   function methKnop(id, naam) { return '<button type="button" class="meth-knop" data-methode="' + id + '" aria-haspopup="dialog">' + h(naam) + ' <span aria-hidden="true">ⓘ</span></button>'; }
   /* Eén kernmeting: wat ze zegt en waar het cijfer vandaan komt, of waarom ze ontbreekt. */
   function metingRegel(m, b) {
-    if (m.nvt) return '<li data-meting="' + m.id + '" data-nvt>' + stip(null, m.kort, true) + '<div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Niet van toepassing op banken; telt niet mee.</span></div></li>';
+    if (m.nvt) return '<li data-meting="' + m.id + '" data-nvt>' + stip(null, m.kort, true) + '<div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Niet van toepassing op banken en verzekeraars; telt niet mee.</span></div></li>';
     if (!m.aanwezig) return '<li data-meting="' + m.id + '" data-ontbreekt>' + stip(null, m.kort) + '<div><b>' + h(m.kort) + '</b> · ' + methKnop(m.methode, m.naam) + '<br><span class="ontbreekt-tekst">Ontbreekt: ' + h(m.reden) + '</span></div></li>';
     return '<li data-meting="' + m.id + '">' + stip(m.oordeel, m.kort) + '<div><b>' + h(m.kort) + '</b> · ' + methKnop(m.methode, m.naam) + '<br><span>' + h(m.tekst) + '</span><br><span class="zacht bron" data-bron="' + h(m.kwaliteit) + '">Bron: ' + h(bronTekst(m, b)) + '</span></div></li>';
   }
   function infoRegel(m, b) {
     return '<li>' + (m.aanwezig ? stip(m.score >= 0.25 ? 'gunstig' : m.score <= -0.25 ? 'ongunstig' : 'neutraal', m.naam) : stip(null, m.naam, m.nvt)) + '<div>' + methKnop(m.id, m.naam) + '<br><span' + (m.aanwezig ? '' : ' class="zacht"') + '>' +
-      h(m.aanwezig ? m.tekst : m.nvt ? 'Niet van toepassing op banken.' : 'Gegevens ontbreken.') + '</span>' + (m.aanwezig ? '<br><span class="zacht bron">Bron: ' + h(bronTekst(m, b)) + '</span>' : '') + '</div></li>';
+      h(m.aanwezig ? m.tekst : m.nvt ? 'Niet van toepassing op banken en verzekeraars.' : 'Gegevens ontbreken.') + '</span>' + (m.aanwezig ? '<br><span class="zacht bron">Bron: ' + h(bronTekst(m, b)) + '</span>' : '') + '</div></li>';
   }
   /* Analisten (Yahoo Finance): ter informatie, telt niet mee. */
   var ADVIES = { strong_buy: 'sterk kopen', buy: 'kopen', hold: 'houden', underperform: 'onder het gemiddelde', sell: 'verkopen', strong_sell: 'sterk verkopen', none: 'geen' };
@@ -135,7 +135,7 @@
       '<p>Van de ' + items.length + ' fondsen hebben er ' + (items.length - oo.geen) + ' een oordeel: ' + oo.kopen + '× Kopen, ' + oo.neutraal + '× Neutraal, ' + oo.vermijden + '× Vermijden. Bij ' + oo.geen + ' zijn er te weinig metingen.</p>' +
       '<ul class="dataset">' + K.map(function (k, i) {
         var p = per[i], top = Object.keys(p.red).sort(function (x, y) { return p.red[y] - p.red[x]; })[0], pc = p.kan ? Math.round(p.aan / p.kan * 100) : 0;
-        return '<li data-dataset-meting="' + k.id + '"><div class="ds-kop"><b>' + h(k.kort) + (k.bankKort ? ' <span class="zacht">(banken: ' + h(k.bankKort.toLowerCase()) + ')</span>' : '') + '</b><span><b>' + p.aan + '</b> van ' + p.kan + '</span></div>' +
+        return '<li data-dataset-meting="' + k.id + '"><div class="ds-kop"><b>' + h(k.kort) + (k.bankKort ? ' <span class="zacht">(banken en verzekeraars: ' + h(k.bankKort.toLowerCase()) + ')</span>' : '') + '</b><span><b>' + p.aan + '</b> van ' + p.kan + '</span></div>' +
           '<span class="balk" aria-hidden="true"><i style="width:' + pc + '%"></i></span>' + (top ? '<span class="zacht">Ontbreekt vooral omdat: ' + h(top.charAt(0).toLowerCase() + top.slice(1)) + ' (' + p.red[top] + '×)</span>' : '') + '</li>';
       }).join('') + '</ul></details>';
   }
@@ -841,7 +841,7 @@
 
   function schermHulp() {
     return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven). Het vraagteken ernaast legt uit wat u op de pagina ziet, waar u ook bent, dan raakt u niets kwijt.</li></ul></div>' +
-      '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) komt uit zes metingen die elk iets anders zeggen: vrije kasstroom (bij banken rendement op eigen vermogen), schuldgraad, winstgroei, koers/winst, de trend van 200 dagen en de rust van de koers. Ze tellen even zwaar. Wat ontbreekt telt niet mee en wordt nooit geschat; bij het aandeel staat per meting waarom het ontbreekt. Andere kentallen, uw eigen beoordeling en het advies van analisten staan erbij ter informatie, maar tellen niet mee.</p><p>Het NAIC-label op de plek in het koersbereik (Kopen, Neutraal, Vermijden) krijgt alleen een aandeel waarvan alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen.</p></div>' +
+      '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) komt uit zes metingen die elk iets anders zeggen: vrije kasstroom (bij banken en verzekeraars rendement op eigen vermogen), schuldgraad, winstgroei, koers/winst, de trend van 200 dagen en de rust van de koers. Ze tellen even zwaar. Wat ontbreekt telt niet mee en wordt nooit geschat; bij het aandeel staat per meting waarom het ontbreekt. Andere kentallen, uw eigen beoordeling en het advies van analisten staan erbij ter informatie, maar tellen niet mee.</p><p>Het NAIC-label op de plek in het koersbereik (Kopen, Neutraal, Vermijden) krijgt alleen een aandeel waarvan alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen.</p></div>' +
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
   }

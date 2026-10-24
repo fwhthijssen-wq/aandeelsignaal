@@ -110,6 +110,7 @@ def heeft_sec(ticker):
 ESEF_LEI = HERE / 'esef_lei.json'
 ARCHIEF_MAP = HERE / 'archief'          # jaarverslagarchief (laag 1); bewaard tussen runs via de GitHub-cache
 ESEF_BUNDEL = HERE / 'esef_bundel.json.gz'
+ESEF_INVESTERINGEN = HERE / 'esef_investeringen.json'   # eigen begrippen van bedrijven voor investeringen (hulp/esef_investeringen.py)
 _ESEF_CACHE = {}
 
 
@@ -162,11 +163,70 @@ def gegevens_uit_esef(cf, gecontroleerd_op):
             if len(jaren) >= 5:
                 g['jaren'] = jaren
                 g['niveau'] = 'jaarverslag'
+    vul_investeringen_aan(g, cf)
     return g
 
 
+CAPEX_IFRS_BREED = 'PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets'
+# Terugval als het standaardbegrip voor materiële vaste activa ontbreekt (in volgorde van voorkeur). Deze begrippen zijn iets
+# breder (ook immateriële activa of vastgoed); de app toont welk begrip gebruikt is.
+CAPEX_TERUGVAL = (
+    ('ifrs-full', CAPEX_IFRS_BREED, 'materiële en immateriële vaste activa en vastgoed samen'),
+    ('us-gaap', 'PaymentsToAcquireProductiveAssets', 'betalingen voor productieve activa: materiële en immateriële vaste activa'),
+    ('us-gaap', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'overige materiële vaste activa'),
+)
+
+
+def _investeringen_register():
+    try:
+        return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
+def vul_investeringen_aan(g, cf, register=None):
+    """Vult ontbrekende investeringen (capex) aan, alleen waar het standaardbegrip voor materiële vaste activa ontbreekt:
+    1. het eigen begrip van het bedrijf (per bedrijf nagekeken, esef_investeringen.json), met de indiening erbij;
+    2. anders een iets breder standaardbegrip uit hetzelfde bestand (CAPEX_TERUGVAL; ESEF of SEC).
+    Alleen bij hetzelfde boekjaareinde en dezelfde valuta; een bestaand cijfer wordt nooit vervangen."""
+    jaren = g.get('jaren') or []
+    if not jaren or all(j.get('capex') is not None for j in jaren):
+        return
+    feiten = (cf or {}).get('facts') or {}
+    terugval = []                                   # [(omschrijving, {(einde, valuta): feit})] in volgorde van voorkeur
+    for ns, tag, wat in CAPEX_TERUGVAL:
+        per = {}
+        for unit, rijen in (((feiten.get(ns) or {}).get(tag) or {}).get('units') or {}).items():
+            for r in rijen:
+                try:
+                    duur = (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days
+                except (KeyError, TypeError, ValueError):
+                    continue
+                if not 330 <= duur <= 390 or r.get('form') not in ('10-K', '10-K/A', '20-F', '40-F') or r.get('fp') not in (None, 'FY'):
+                    continue
+                oud = per.get((r['end'], unit))
+                if oud is None or str(r.get('filed') or '') > str(oud.get('filed') or ''):
+                    per[(r['end'], unit)] = r                         # nieuwste indiening wint
+        terugval.append((ns + ':' + tag + ' (' + wat + ')', per))
+    reg = (register if register is not None else _investeringen_register()).get((cf or {}).get('lei') or '', {}).get('jaren') or {}
+    for j in jaren:
+        if j.get('capex') is not None or not j.get('end'):
+            continue
+        e = reg.get(j['end'])
+        if e and e.get('unit') == j.get('currency') and _getal(e.get('val')) is not None:
+            j['capex'] = abs(e['val'])
+            j['capex_bron'] = 'ESEF, eigen begrip van het bedrijf: ' + ' + '.join(e.get('begrippen') or []) + ' (indiening ' + str(e.get('fxo_id')) + ')'
+            continue
+        for wat, per in terugval:
+            r = per.get((j['end'], j.get('currency')))
+            if r and _getal(r.get('val')) is not None:
+                j['capex'] = abs(r['val'])
+                j['capex_bron'] = wat + ', indiening ' + str(r.get('accn'))
+                break
+
+
 JAAR_VELDEN = ('year', 'end', 'currency', 'eps_gewoon', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
-               'operating_cash_flow', 'capex', 'equity', 'eps_check', 'eps_reden')
+               'operating_cash_flow', 'capex', 'capex_bron', 'equity', 'eps_check', 'eps_reden')
 
 
 def _getal(x):
@@ -602,6 +662,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             try:
                 extra_payload = esef_cf if esef_cf else payload_ophalen(sec_ticker_for_listing(ticker), email)
                 voeg_extra_toe(gegevens, extra_payload)
+                if not esef_cf:
+                    vul_investeringen_aan(gegevens, extra_payload, register={})
                 if any(not sum(1 for j in gegevens['jaren'] if j.get(v) is not None) for v in EXTRA_VELDEN):
                     gegevens['extra_diagnose'] = extra_namen(extra_payload)
             except Exception:
@@ -656,8 +718,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
-EXTRA_VERSIE = 2              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
-                               # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52)
+EXTRA_VERSIE = 3              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
+                               # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52; 3 = investeringen uit eigen begrippen, beta.66)
 HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
 NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
 ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is
