@@ -288,36 +288,43 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.keyboard.press('Escape')
         self.assertEqual(pg.locator('.hulp-blad').count(), 0)
-        pg.click('[data-signaal] [data-vraag] p .meth-knop >> nth=0')          # 'Nog onbekend' per vraag
+        pg.click('[data-signaal] [data-ontbreekt] .meth-knop >> nth=0')         # ontbrekende meting: uitleg wat er nodig is
         self.assertIn('Wat is er nodig?', pg.locator('.hulp-blad').inner_text())
         pg.click('#mt-sluit')
         self.assertEqual(self.fouten, [])
 
-    def test_vijf_vragen_detail_dashboard_en_minimum_in_instellingen(self):
+    def test_zes_metingen_oordeel_ontbrekend_met_reden_en_minimum_in_instellingen(self):
         pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
+        pg.evaluate("""() => { const a = AANDEEL_DATA.aandelen.find(x => x.ticker === 'MSFT'); a.koers.sma200 = a.koers.slot * 0.9;
+          a.koers.reeks = Array.from({ length: 130 }, (_, i) => ['2026-05-01', a.koers.slot * (1 + 0.01 * Math.sin(i))]); }""")
+        pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
         kaart = pg.locator('[data-signaal]')
         self.assertEqual(kaart.count(), 1)
-        dek = int(pg.locator('[data-dekking]').get_attribute('data-dekking'))
-        self.assertTrue(0 < dek < 25, dek)                                  # alleen koers en bereik
-        self.assertEqual(pg.locator('[data-signaal] [data-vraag]').count(), 5)   # vijf vragen, elk een kaart
-        self.assertEqual(len(pg.locator('[data-signaal] .stippen').get_attribute('data-profiel')), 5)
-        self.assertEqual(pg.locator('[data-vraag="bedrijf"] .stip.l').count(), 1)  # geen jaarcijfers: te weinig gegevens
-        self.assertIn('Plek in koersbereik', kaart.inner_text())
-        self.assertIn('Bron: koersdata', pg.locator('[data-vraag="prijs"]').inner_text())   # waar het antwoord vandaan komt
-        self.assertIn('Nog onbekend', kaart.inner_text())
-        self.assertEqual(pg.locator('[data-vraag="eigen"] a[href$="/check"]').count(), 1)
+        self.assertEqual(pg.locator('[data-metingen] [data-meting]').count(), 6)          # zes kernmetingen
+        self.assertEqual(len(pg.locator('[data-signaal] .stippen').get_attribute('data-profiel')), 6)
+        self.assertIn('van 6 metingen', pg.locator('[data-signaal] [data-dekking]').inner_text())
+        ontbreekt = pg.locator('[data-meting][data-ontbreekt]')
+        self.assertGreater(ontbreekt.count(), 0)
+        self.assertIn('Ontbreekt:', ontbreekt.first.inner_text())                          # met reden
+        self.assertEqual(pg.locator('.groot-oordeel[data-oordeel="geen"]').count(), 1)     # alleen koersdata: te weinig metingen
+        self.assertIn('Bron: koersdata', pg.locator('[data-metingen]').inner_text())
+        self.assertIn('Ter informatie', kaart.inner_text())
+        self.assertEqual(pg.locator('[data-info="eigen"] a[href$="/check"]').count(), 1)
+        self.assertEqual(pg.locator('[data-analisten]').count(), 1)
         pg.evaluate("location.hash='#/instellingen'")
         pg.wait_for_timeout(150)
-        pg.select_option('#mind', '60')
-        self.assertEqual(pg.evaluate("localStorage.getItem('as_minvraag')"), '60')
+        pg.select_option('#mind', '3')
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_minmeting')"), '3')
+        pg.evaluate("localStorage.setItem('as_minmeting', '2')")                     # lager dan het menu: de test heeft alleen koersdata
+        pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('.groot-oordeel[data-oordeel="geen"]').count(), 0)
+        self.assertIn(pg.locator('.groot-oordeel').inner_text(), ('Kopen', 'Neutraal', 'Vermijden'))
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-regels]').count(), 1)
-        self.assertEqual(pg.locator('[data-regel][aria-pressed="true"]').get_attribute('data-regel'), 'naic')
-        pg.click('[data-regel="trend"]'); pg.wait_for_timeout(100)
-        self.assertEqual(pg.evaluate("localStorage.getItem('as_regel')"), 'trend')
-        self.assertEqual(pg.locator('[data-regel][aria-pressed="true"]').get_attribute('data-regel'), 'trend')
         self.assertEqual(pg.locator('[data-kansrijk]').count(), 1)
+        pg.evaluate("location.hash='#/fondsen'"); pg.wait_for_timeout(150)
+        pg.click('[data-dataset] summary')
+        self.assertEqual(pg.locator('[data-dataset-meting]').count(), 6)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
@@ -335,25 +342,24 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
-    def test_verdiepen_eigen_invoer_verhoogt_de_dekking_en_blijft_bewaard(self):
+    def test_verdiepen_beoordeling_telt_niet_eigen_cijfer_vult_meting_aan_en_blijft_bewaard(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/a/ASML.AS/check')
         pg.wait_for_timeout(150)
         d0 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
         pg.click('[data-vd-score="management"] [data-cijfer="5"]')
         d1 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
-        self.assertGreater(d1, d0)
+        self.assertEqual(d1, d0)                                                        # uw oordeel telt niet mee
         self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 1)
-        pg.fill('#vd-c-roe', '18,5'); pg.dispatch_event('#vd-c-roe', 'change')
+        pg.fill('#vd-c-kw', '14,5'); pg.dispatch_event('#vd-c-kw', 'change')            # ontbrekend feit: vult de meting K/W aan
         d2 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
         self.assertGreater(d2, d1)
-        self.assertIn('eigen invoer', pg.locator('#vd-meter').inner_text())
-        pg.fill('#vd-c-roe', 'abc'); pg.dispatch_event('#vd-c-roe', 'change')
-        self.assertTrue(pg.locator('[data-vd-cijfer="roe"] [data-vd-fout]').inner_text())
+        pg.fill('#vd-c-kw', 'abc'); pg.dispatch_event('#vd-c-kw', 'change')
+        self.assertTrue(pg.locator('[data-vd-cijfer="kw"] [data-vd-fout]').inner_text())
         pg.wait_for_timeout(300)
         pg.reload(); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').get_attribute('data-cijfer'), '5')
-        self.assertEqual(pg.input_value('#vd-c-roe'), '18,5')
+        self.assertEqual(pg.input_value('#vd-c-kw'), '14,5')
         pg.click('[data-vd-score="management"] [data-cijfer="5"]')                      # nogmaals klikken wist
         self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 0)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
@@ -598,7 +604,7 @@ class WebUi(unittest.TestCase):
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-niveau="indicatief"]').count(), 1)
         self.assertEqual(pg.locator('.chip.ok').count(), 0)                                  # nooit "Bevestigd"
-        self.assertIn('indicatief', pg.inner_text('[data-dekking]').lower())
+        self.assertIn('indicatief', pg.inner_text('[data-metingen]').lower())               # bron bij elke meting
         pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-indicatief]').count(), 1)
         self.assertIn('Yahoo Finance', pg.inner_text('[data-indicatief]'))

@@ -18,24 +18,20 @@ function rec(o = {}) {
 }
 const alleen = (r) => Object.assign({}, r, { gegevens: null });
 
-test('volledig bevestigd aandeel: hoge dekking, vrijwel alles gecontroleerd of koersdata', () => {
+test('volledig bevestigd aandeel: alle zes kernmetingen, gecontroleerd of koersdata', () => {
   const b = S.beoordeel(rec(), O());
-  assert.ok(b.dekking >= 70, 'dekking ' + b.dekking);
+  assert.equal(b.aantal, 6); assert.equal(b.mogelijk, 6); assert.equal(b.dekking, 100);
   assert.equal(b.niveau, 'gecontroleerd');
-  assert.ok(b.kwaliteit.gecontroleerd > 40);
-  assert.equal(b.kwaliteit.eigen, 0);
-  assert.ok(['positief', 'neutraal', 'vermijden'].includes(b.oordeel));
+  assert.ok(b.metingen.every((m) => ['gecontroleerd', 'koers'].includes(m.kwaliteit)));
+  assert.ok(['kopen', 'neutraal', 'vermijden'].includes(b.oordeel));
   assert.ok(b.methoden.every((m) => m.aanwezig === (m.score !== null)));
 });
-
-test('alleen koersdata: lagere dekking, wel een voorlopig oordeel, nooit "gecontroleerd"', () => {
+test('alleen koersdata: twee van de zes metingen, dus geen oordeel; de rest met reden', () => {
   const b = S.beoordeel(alleen(rec()), O());
-  assert.ok(b.dekking > 0 && b.dekking < 40, 'dekking ' + b.dekking);
-  assert.equal(b.kwaliteit.gecontroleerd, 0); assert.equal(b.kwaliteit.jaarverslag, 0);
-  assert.equal(b.zekerheid, 'zwak');
+  assert.equal(b.aantal, 2); assert.equal(b.oordeel, null);
   assert.ok(b.ontbreekt.includes('Koers/winst (K/W)'));
+  assert.ok(b.metingen.filter((m) => !m.aanwezig).every((m) => m.reden && /jaarcijfers/.test(m.reden)));
 });
-
 test('geen of verouderde koers: geen koersgebonden onderdelen en een waarschuwing', () => {
   const oud = S.beoordeel(rec({ koers: Object.assign({}, rec().koers, { datum: '2026-09-01' }) }), O());
   for (const id of ['trend50', 'trend200', 'rsi', 'momentum', 'volatiliteit', 'kw', 'dividend', 'bereik']) assert.equal(oud.methoden.find((m) => m.id === id).aanwezig, false, id);
@@ -44,42 +40,34 @@ test('geen of verouderde koers: geen koersgebonden onderdelen en een waarschuwin
   assert.equal(geen.methoden.find((m) => m.id === 'trend200').aanwezig, false);
 });
 
-test('onder de minimale dekking geen oordeel; daarboven wel', () => {
+test('onder het minimum aantal metingen geen oordeel; daarboven wel', () => {
   const r = alleen(rec());
-  const b = S.beoordeel(r, O({ minDekking: 90 }));
+  const b = S.beoordeel(r, O({ minMetingen: 4 }));
   assert.equal(b.oordeel, null); assert.ok(b.score !== null);
-  assert.notEqual(S.beoordeel(r, O({ minDekking: 10 })).oordeel, null);
+  assert.notEqual(S.beoordeel(r, O({ minMetingen: 2 })).oordeel, null);
 });
-
-test('jaarverslag telt minder zwaar dan gecontroleerd bij dezelfde cijfers', () => {
+test('jaarverslag en gecontroleerd tellen even zwaar; de bron staat erbij', () => {
   const g = rec().gegevens;
   const a = S.beoordeel(rec(), O());
   const b = S.beoordeel(rec({ gegevens: Object.assign({}, g, { eps_status: 'missing_split_evidence', eps_verified_years: 0, niveau: 'jaarverslag' }) }), O());
   assert.equal(b.niveau, 'jaarverslag');
-  assert.equal(b.dekking, a.dekking);                       // zelfde cijfers aanwezig
-  assert.ok(b.kwaliteit.jaarverslag > 0 && b.kwaliteit.gecontroleerd === 0);
-  assert.notEqual(a.score, b.score);                         // lager gewicht voor jaarverslag verschuift de gewogen score
+  assert.equal(b.score, a.score);                           // zelfde cijfers, zelfde uitkomst
+  assert.equal(b.metingen.find((m) => m.id === 'groei').kwaliteit, 'jaarverslag');
+  assert.equal(a.metingen.find((m) => m.id === 'groei').kwaliteit, 'gecontroleerd');
 });
-
-test('onbevestigd zonder niveau: geen jaarcijfers in het oordeel', () => {
+test('onbevestigd zonder niveau: geen winst per aandeel in het oordeel, wel balans en kasstroom', () => {
   const g = Object.assign({}, rec().gegevens, { eps_status: 'partially_independently_verified', eps_verified_years: 6 });
   const b = S.beoordeel(rec({ gegevens: g }), O());
   assert.equal(b.niveau, null);
-  for (const id of ['omzetgroei', 'epsgroei', 'roe', 'kw']) assert.equal(b.methoden.find((m) => m.id === id).aanwezig, false, id);
+  for (const id of ['omzetgroei', 'epsgroei', 'kw']) assert.equal(b.methoden.find((m) => m.id === id).aanwezig, false, id);
+  for (const id of ['roe', 'fcf', 'schuldgraad']) assert.equal(b.methoden.find((m) => m.id === id).kwaliteit, 'jaarverslag', id);
 });
-
-test('kwaliteitscheck van de gebruiker telt naar rato van het aantal beantwoorde punten', () => {
+test('kwaliteitscheck van de gebruiker staat erbij maar telt niet mee', () => {
   const zonder = S.beoordeel(rec(), O());
-  const half = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 6, nee: 1, onzeker: 0 } }));
-  const vol = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 13, nee: 2, onzeker: 0 } }));
-  assert.ok(half.dekking > zonder.dekking && vol.dekking > half.dekking);
-  assert.equal(vol.kwaliteit.eigen, Math.round(15 / S.METHODEN.reduce((a, m) => a + m.gewicht, 0) * 100));
-  assert.ok(half.kwaliteit.eigen < 15 && half.kwaliteit.eigen > 0);
   const slecht = S.beoordeel(rec(), O({ check: { totaal: 15, ja: 1, nee: 14, onzeker: 0 } }));
-  assert.ok(slecht.score < zonder.score);
-  assert.equal(S.beoordeel(rec(), O({ check: { totaal: 15, ja: 0, nee: 0, onzeker: 15 } })).kwaliteit.eigen, 0);   // alleen onzeker telt niet
+  assert.equal(slecht.score, zonder.score); assert.equal(slecht.aantal, zonder.aantal);
+  assert.equal(slecht.methoden.find((m) => m.id === 'fisher').aanwezig, true);
 });
-
 test('slechte cijfers geven een lagere score dan goede, en verlies geeft nooit een positief K/W-oordeel', () => {
   const goed = S.beoordeel(rec(), O());
   const slecht = S.beoordeel(rec({ gegevens: Object.assign({}, rec().gegevens, { jaren: jaren(10, { net_income: -1e9, comparable_eps: -0.5, operating_cash_flow: 1e9 }) }) }), O());
@@ -87,23 +75,17 @@ test('slechte cijfers geven een lagere score dan goede, en verlies geeft nooit e
   assert.equal(slecht.methoden.find((m) => m.id === 'kw').score, -1);
 });
 
-test('banken: geen ROE, vrije kasstroom of schuld', () => {
+test('banken: rendement op eigen vermogen telt, vrije kasstroom en schuld niet', () => {
   const g = Object.assign({}, rec().gegevens, { waarschuwingen: ['Bank: kasstroom niet vergelijkbaar'] });
   const b = S.beoordeel(rec({ gegevens: g }), O());
-  for (const id of ['roe', 'fcf', 'schuld']) assert.equal(b.methoden.find((m) => m.id === id).aanwezig, false, id);
+  for (const id of ['fcf', 'schuld', 'schuldgraad']) assert.equal(b.methoden.find((m) => m.id === id).aanwezig, false, id);
+  assert.equal(b.methoden.find((m) => m.id === 'roe').aanwezig, true);
+  assert.equal(b.metingen[0].methode, 'roe');
 });
-
-test('kandidaten: alleen positief, gesorteerd op rang, maximaal n', () => {
-  const l = [{ ticker: 'B', oordeel: 'positief', rang: 0.4, dekking: 50 }, { ticker: 'A', oordeel: 'positief', rang: 0.6, dekking: 40 }, { ticker: 'C', oordeel: 'neutraal', rang: 0.9, dekking: 90 }, { ticker: 'D', oordeel: null, rang: null, dekking: 10 }, { ticker: 'E', oordeel: 'positief', rang: 0.4, dekking: 60 }];
+test('kandidaten: alleen Kopen, gesorteerd op score, maximaal n', () => {
+  const l = [{ ticker: 'B', oordeel: 'kopen', score: 0.6, aantal: 5 }, { ticker: 'A', oordeel: 'kopen', score: 0.8, aantal: 4 }, { ticker: 'C', oordeel: 'neutraal', score: 0.9, aantal: 6 }, { ticker: 'D', oordeel: null, score: null, aantal: 1 }, { ticker: 'E', oordeel: 'kopen', score: 0.6, aantal: 6 }];
   assert.deepEqual(S.kandidaten(l, 10).map((x) => x.ticker), ['A', 'E', 'B']);
   assert.equal(S.kandidaten(l, 2).length, 2);
-});
-
-test('rang beloont dekking: zelfde score, meer dekking is hoger', () => {
-  const a = S.beoordeel(rec(), O()), b = S.beoordeel(alleen(rec()), O());
-  const x = { score: 0.5, dekking: a.dekking }, y = { score: 0.5, dekking: b.dekking };
-  assert.ok(0.5 * (0.5 + 0.5 * x.dekking / 100) > 0.5 * (0.5 + 0.5 * y.dekking / 100));
-  assert.ok(typeof a.rang === 'number' && typeof b.rang === 'number');
 });
 
 test('rommel in de gegevens geeft nooit een uitzondering', () => {
@@ -112,17 +94,16 @@ test('rommel in de gegevens geeft nooit een uitzondering', () => {
   }
 });
 
-test('eigen beoordeling (1-5) telt mee als eigen invoer; 3 is neutraal, 5 gunstig, 1 ongunstig', () => {
+test('eigen beoordeling (1-5) staat erbij als eigen invoer maar telt niet mee; 3 is neutraal, 5 gunstig, 1 ongunstig', () => {
   const basis = S.beoordeel(rec(), O());
   const hoog = S.beoordeel(rec(), O({ verdieping: { scores: { management: 5, moat: 5 } } }));
-  assert.ok(hoog.dekking > basis.dekking);
+  assert.equal(hoog.score, basis.score);
   assert.equal(hoog.methoden.find((m) => m.id === 'management').score, 1);
   assert.equal(hoog.methoden.find((m) => m.id === 'management').kwaliteit, 'eigen');
   assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: 3 } } })).methoden.find((m) => m.id === 'management').score, 0);
   assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: 1 } } })).methoden.find((m) => m.id === 'management').score, -1);
   for (const slecht of [0, 6, 2.5, '4', null]) assert.equal(S.beoordeel(rec(), O({ verdieping: { scores: { management: slecht } } })).methoden.find((m) => m.id === 'management').aanwezig, false, String(slecht));
 });
-
 test('eigen cijfer vult alleen aan wat ontbreekt en overschrijft nooit een bestaand cijfer', () => {
   const zonder = alleen(rec());
   const a = S.beoordeel(zonder, O());
@@ -133,7 +114,8 @@ test('eigen cijfer vult alleen aan wat ontbreekt en overschrijft nooit een besta
   assert.match(roe.tekst, /^Uw eigen cijfer/);
   assert.equal(b.methoden.find((m) => m.id === 'nettomarge').score, -0.5);
   assert.equal(b.methoden.find((m) => m.id === 'epsgroei').score, -1);
-  assert.ok(b.dekking > a.dekking && b.kwaliteit.eigen > 0);
+  assert.ok(b.aantal > a.aantal);                            // uw eigen cijfer (een feit) vult een kernmeting aan
+  assert.equal(b.metingen.find((m) => m.id === 'groei').kwaliteit, 'eigen');
   // met gecontroleerde cijfers wint het cijfer uit het jaarverslag, niet uw invoer
   const c = S.beoordeel(rec(), O({ verdieping: { cijfers: { roe: -50 } } }));
   assert.equal(c.methoden.find((m) => m.id === 'roe').kwaliteit, 'gecontroleerd');
@@ -150,11 +132,11 @@ test('eigen K/W en dividend tellen ook zonder koers', () => {
   assert.equal(b.methoden.find((m) => m.id === 'dividend').score, 1);
 });
 
-test('meer eigen informatie geeft meer dekking en dus meer zekerheid', () => {
+test('eigen cijfers vullen kernmetingen aan, eigen beoordelingen niet', () => {
   const r = alleen(rec());
-  const n = (v) => S.beoordeel(r, O({ verdieping: v })).dekking;
-  const d0 = n(null), d1 = n({ scores: { management: 4 } }), d2 = n({ scores: { management: 4, moat: 4, sector: 3, risico: 4 }, cijfers: { roe: 12, kw: 15 } });
-  assert.ok(d0 < d1 && d1 < d2);
+  const n = (v) => S.beoordeel(r, O({ verdieping: v })).aantal;
+  assert.equal(n({ scores: { management: 4, moat: 4 } }), n(null));
+  assert.ok(n({ cijfers: { kw: 15, epsgroei: 8 } }) === n(null) + 2);
 });
 
 const J = (jaar, o) => Object.assign({ year: jaar, end: jaar + '-12-31', sales: 900, net_income: 80, comparable_eps: 0.8, operating_cash_flow: 100, capex: -10, equity: 500, long_term_debt: 200, total_assets: 1000, current_assets: 400, current_liabilities: 300,
@@ -222,16 +204,12 @@ test('uitklapinfo: uitleg, schaal en onderliggende cijfers per methode; Piotrosk
   assert.equal(S.beoordeel(alleen(rec()), O()).methoden.find((m) => m.id === 'piotroski').detail, null);   // ontbrekend: geen cijfers
 });
 
-test('indicatieve cijfers (Yahoo) tellen mee met gewicht 0,5 en zijn nooit "gecontroleerd"', () => {
+test('indicatieve cijfers (Yahoo) tellen mee en zijn herkenbaar, nooit "gecontroleerd"', () => {
   const g = Object.assign({}, rec().gegevens, { eps_status: null, eps_verified_years: 0, niveau: 'indicatief', jaren: jaren(5) });
   const b = S.beoordeel(rec({ gegevens: g }), O());
   assert.equal(b.niveau, 'indicatief');
-  assert.equal(b.kwaliteit.gecontroleerd, 0); assert.equal(b.kwaliteit.jaarverslag, 0);
-  assert.ok(b.kwaliteit.indicatief > 0);
+  assert.ok(b.metingen.filter((m) => m.aanwezig && m.kwaliteit !== 'koers').every((m) => m.kwaliteit === 'indicatief'));
   assert.ok(b.methoden.find((m) => m.id === 'epsgroei').aanwezig);
   const gate = G.maakRij(rec({ gegevens: g }), VANDAAG);
   assert.equal(gate.bevestigd, false); assert.equal(gate.niveau, 'indicatief');
-  const echt = S.beoordeel(rec({ gegevens: Object.assign({}, g, { niveau: 'jaarverslag' }) }), O());
-  assert.ok(echt.score !== null && b.score !== null);
-  assert.ok(S.KWALITEIT.indicatief.factor < S.KWALITEIT.jaarverslag.factor);
 });

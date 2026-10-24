@@ -4,20 +4,20 @@
   var T = {
     start: ['Start', 'Hier ziet u in één oogopslag hoe het ervoor staat en welke aandelen nu kansrijk zijn.', [
       'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
-      'Bij Kansrijk staan aandelen die voldoen aan de regel die u kiest (NAIC, Kwaliteit, Trendvolger of Alle vragen), met bovenaan de sterkste.',
-      'Elk aandeel krijgt vijf stippen, één per vraag: Bedrijf, Groei, Prijs, Koers en Eigen (uw oordeel). ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent te weinig gegevens.',
+      'Bij Kansrijk staan aandelen met het oordeel Kopen, met bovenaan het hoogste gemiddelde van de zes metingen.',
+      'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze het oordeel Kopen, Neutraal of Vermijden.',
       'Alle fondsen, per index en op kansrijkheid gesorteerd, staan onder Fondsen in het menu.',
-      'Eigen onderzoek (tabblad Verdiepen) maakt de onderbouwing sterker.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
+      'Uw eigen onderzoek (tabblad Verdiepen) staat bij het aandeel, maar telt niet mee in het oordeel.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
     overzicht: ['Overzicht', 'De complete lijst van aandelen.', [
       'Tik op een aandeel voor details of kies Aandelen vergelijken om er twee naast elkaar te zetten.',
       'De chip bij elk aandeel toont hoe zeker de gegevens zijn: Bevestigd, Uit jaarverslag of Niet bevestigd.'], null],
     zoek: ['Fondsen', 'Alle aandelen, per index gegroepeerd.', [
       'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
-      'Kansrijkheid: eerst de aandelen die aan uw regel voldoen, daarna de rest. Binnen elke groep staan de meeste gunstige antwoorden en de best onderbouwde bovenaan. Kies de regel met de knoppen bovenaan.',
+      'Kansrijkheid: eerst Kopen, dan Neutraal, dan Vermijden, dan geen oordeel. Binnen elke groep staat het hoogste gemiddelde bovenaan.',
       'U kunt ook sorteren op plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
-      'Een aandeel dat in twee indices zit, staat in beide groepen.'], 'Kansrijk betekent: de beschikbare cijfers zijn gunstig. Het is geen koopadvies.'],
+      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.'], 'Kopen betekent: de zes metingen zijn samen duidelijk gunstig. Het is een selectiehulp, geen persoonlijk advies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
-      'Bij het volgen legt de app de vijf antwoorden, uw regel en de koers van dat moment vast.',
+      'Bij het volgen legt de app het oordeel, de zes metingen en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed en hoe het oordeel toen en nu is.',
       'Zo kunt u beoordelen of een kandidaat zijn belofte waarmaakt voordat u iets koopt.',
       'Uw volglijst staat alleen op dit toestel. Maak een back-up in Instellingen.'], null],
@@ -32,7 +32,7 @@
       'De app wijst geen winnaar aan; het is een hulpmiddel om te kiezen.'], null],
     instellingen: ['Instellingen en back-up', 'Hier regelt u uiterlijk, het minimum voor een oordeel en uw back-up.', [
       'Back-up: uw volglijst, portefeuille en eigen beoordelingen staan alleen op dit toestel. Maak een back-up en bewaar het bestand; met Terugzetten haalt u alles weer terug.',
-      'Minimale onderbouwing per vraag: een vraag krijgt pas een antwoord als minstens dit deel van de cijfers voor die vraag bekend is. Hoger is strenger.',
+      'Minimum aantal metingen: een aandeel krijgt pas een oordeel als minstens zoveel van de zes metingen beschikbaar zijn (standaard 4). Hoger is strenger.',
       'Uiterlijk: licht, donker of automatisch.',
       'Onderaan ziet u het versienummer van de app.'], null],
     hulp: ['Hulp en woordenlijst', 'Algemene uitleg en alle begrippen.', [
@@ -40,9 +40,9 @@
       'Bij elke pagina staat bovenaan het vraagteken: dat geeft uitleg over precies dat scherm.',
       'Via de rondleiding ziet u de basis nog eens.'], null],
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
-      'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata. Daarna in één oogopslag de vijf antwoorden, en per vraag een kaart met de cijfers waarop het antwoord rust.',
-      'Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Gecontroleerd weegt het zwaarst. Tik op een methode voor uitleg.',
-      '"Wat ontbreekt er nog" laat zien welke gegevens het oordeel zekerder zouden maken.',
+      'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata. Daarna het oordeel met de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt.',
+      'Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Tik op een meting voor uitleg.',
+      'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'Met de ster volgt u het aandeel.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
     koers: ['Aandeel: Koers', 'De koersontwikkeling en wat die betekent.', [
@@ -52,12 +52,12 @@
       'Is de koers ouder dan enkele dagen, dan gebruikt de app hem niet voor het oordeel.'], null],
     waarde: ['Aandeel: NAIC', 'De Stock Selection Guide van de NAIC in stappen.', [
       'Stap 1 tot 4 tonen groei, rendement op eigen vermogen, winstmarge en koerszones op basis van bevestigde jaarcijfers.',
-      'Het NAIC-label (positief, neutraal of vermijden) staat er alleen als alle controles slagen: tien jaar winst per aandeel onderbouwd, één valuta en een verse koers.',
+      'Het NAIC-label (Kopen, Neutraal of Vermijden) staat er alleen als alle controles slagen: tien jaar winst per aandeel onderbouwd, één valuta en een verse koers.',
       'Ontbreekt iets, dan staat er wat. De app vult nooit zelf in.'], 'Dit is een rekenhulp met uw eigen invoer, geen advies.'],
-    check: ['Aandeel: Verdiepen', 'Hier voegt u zelf kennis toe, zodat het oordeel zekerder wordt.', [
+    check: ['Aandeel: Verdiepen', 'Hier legt u uw eigen kennis vast. Uw beoordeling telt niet mee in het oordeel; een ontbrekend cijfer dat u invult wel.', [
       'Geef een score van 1 tot 5 voor management, concurrentiepositie, sector en risico’s en schrijf eventueel een notitie.',
-      'Ontbreekt een cijfer (bijvoorbeeld groei of marge), dan kunt u het zelf invullen. Uw eigen cijfer telt lichter dan een gecontroleerd cijfer en vervangt dat nooit.',
-      'De meter bovenaan groeit live mee met wat u invult.',
+      'Ontbreekt een cijfer (bijvoorbeeld groei of K/W), dan kunt u het zelf invullen. Het vult dan die meting aan en vervangt nooit een cijfer uit het jaarverslag.',
+      'Bovenaan ziet u live hoeveel van de zes metingen er zijn.',
       'Onderaan staat de checklist met vragen over het bedrijf.',
       'Alles wordt opgeslagen op dit toestel en zit in de back-up.'], null],
     gezondheid: ['Aandeel: Cijfers', 'De jaarcijfers en de controle erop.', [

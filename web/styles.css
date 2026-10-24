@@ -214,7 +214,7 @@ details.uitleg p, details.uitleg li { font-weight: 400; }
 .stip.n { background: var(--stip-n); color: var(--stip-n-ink); font-size: 15px; }
 .stip.o { background: var(--stip-o); color: var(--stip-o-ink); border: 1.5px solid var(--stip-o-rand); font-size: 13px; }
 .stip.l { border: 1.5px dashed var(--stip-l); }
-.stippen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; max-width: 320px; margin: 6px 0; }
+.stippen { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px; max-width: 340px; margin: 6px 0; }
 .stip-kol { display: flex; flex-direction: column; align-items: center; gap: 3px; }
 .stip-naam { font-size: .72rem; font-weight: 600; color: var(--mut, inherit); }
 .stippen.klein { max-width: 230px; gap: 2px; margin: 4px 0 0; }
@@ -230,3 +230,27 @@ ul.methoden li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; alig
 ul.methoden .bron { font-size: .82rem; }
 dl.feiten { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 8px 0; font-size: .92rem; }
 dl.feiten dt { color: var(--mut, inherit); font-weight: 600; } dl.feiten dd { margin: 0; overflow-wrap: anywhere; min-width: 0; }
+/* Oordeel Kopen / Neutraal / Vermijden (beta.65). Tekst én kleur; Kopen = teal, Vermijden = oranje rand, zoals de stippen. */
+.stip.x { border: 1.5px solid var(--line); color: var(--mut); font-size: 13px; }
+.chip.oordeel[data-oordeel="kopen"], .groot-oordeel[data-oordeel="kopen"] { background: var(--stip-g); color: var(--stip-g-ink); }
+.chip.oordeel[data-oordeel="neutraal"], .groot-oordeel[data-oordeel="neutraal"] { background: var(--stip-n); color: var(--stip-n-ink); }
+.chip.oordeel[data-oordeel="vermijden"], .groot-oordeel[data-oordeel="vermijden"] { background: var(--stip-o); color: var(--stip-o-ink); box-shadow: inset 0 0 0 1.5px var(--stip-o-rand); }
+.groot-oordeel { display: inline-block; align-self: flex-start; font: 700 1.5rem ui-rounded, system-ui; padding: 6px 16px; border-radius: 999px; margin: 4px 0 8px; }
+.groot-oordeel[data-oordeel="geen"] { background: var(--wait-bg); color: var(--wait-ink); font-size: 1.15rem; }
+.oordeel-rij { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.oordeel-rij .stippen.klein { margin: 0; }
+.ontbreekt-tekst { color: var(--wait-ink); }
+ul.methoden li[data-ontbreekt] { background: var(--wait-bg); border-radius: 10px; padding: 6px 8px; margin: 0 -8px; }
+h3.tussenkop { margin: 18px 0 6px; }
+details.kaart-plat.info summary { cursor: pointer; }
+details.kaart-plat.info[open] summary { margin-bottom: 6px; }
+table.dataset td .balk { display: block; margin-top: 4px; max-width: 120px; }
+table.dataset td, table.dataset th { vertical-align: top; }
+details.kaart-plat.info > summary { display: block; list-style-position: inside; }
+details.kaart-plat.info > summary b { margin-right: 6px; }
+.stippen.klein { max-width: 250px; }
+ul.dataset { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-direction: column; gap: 12px; }
+ul.dataset li { display: flex; flex-direction: column; gap: 4px; }
+.ds-kop span { white-space: nowrap; } .ds-kop { display: flex; justify-content: space-between; gap: 8px; }
+.stippen.klein { max-width: 290px; }
+.stippen.klein .stip-naam { font-size: .6rem; }

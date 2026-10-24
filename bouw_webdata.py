@@ -498,7 +498,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -516,6 +516,9 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             payload_ophalen = lambda t, e: sec_payload(t, e, fetcher=_arch.fetch_json)
         if diagnose is None:
             diagnose = lambda t, e: sec_diagnose(t, e, fetcher=_arch.fetch_json)
+    if analisten_ophalen is None:
+        # Alleen in een echte run (koersen van Yahoo) ook het analistenadvies; met nepkoersen (tests) niet.
+        analisten_ophalen = _yahoo_analisten if fetch_prijzen is None else (lambda t: None)
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
@@ -638,8 +641,16 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             if koers is not None:
                 from koershistorie import koersbereik
                 koers['bereik'] = koersbereik(punten)
+        analisten = None
+        try:
+            analisten = analisten_uit_info(analisten_ophalen(ticker), vandaag, pence)
+        except Exception:
+            analisten = None       # ter informatie; ontbreekt het, dan staat er dat het niet bekend is
         pauze()
-        records.append(maak_record(meta, koers=koers, gegevens=gegevens))
+        rec = maak_record(meta, koers=koers, gegevens=gegevens)
+        if analisten:
+            rec['analisten'] = analisten
+        records.append(rec)
     bestand = maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (koersen en indicatieve jaarcijfers)')
     bestand['yahoo_vergelijk'] = {'bedrijven': vergeleken_bedrijven, 'velden': vergelijking}
     return bestand
@@ -722,6 +733,35 @@ def valuta_klopt(meta, valuta_ophalen):
     if v is None:
         return meta[3] != 'GBX'
     return str(v).upper() == meta[3]
+
+
+ADVIEZEN = ('strong_buy', 'buy', 'hold', 'underperform', 'sell', 'strong_sell')
+
+
+def analisten_uit_info(info, vandaag, pence=False):
+    """Analistenadvies uit Yahoo's bedrijfsinfo: alleen ter informatie in de app, telt nooit mee in het oordeel.
+    Geeft None als er geen advies of geen analisten zijn. Koersdoel van Londen (pence) in ponden, zoals de koers."""
+    if not isinstance(info, dict):
+        return None
+    n, gem, adv = info.get('numberOfAnalystOpinions'), info.get('recommendationMean'), info.get('recommendationKey')
+    if not isinstance(n, (int, float)) or n < 1 or adv not in ADVIEZEN:
+        return None
+    doel = info.get('targetMeanPrice')
+    doel = float(doel) if isinstance(doel, (int, float)) and doel > 0 else None
+    valuta = info.get('currency')
+    if doel is not None and (pence or valuta in ('GBp', 'GBX')):
+        doel, valuta = doel / 100, 'GBP'
+    return {'advies': adv, 'gemiddeld': round(float(gem), 2) if isinstance(gem, (int, float)) and 1 <= gem <= 5 else None,
+            'aantal': int(n), 'koersdoel': round(doel, 2) if doel else None, 'valuta': valuta if isinstance(valuta, str) else None,
+            'datum': vandaag, 'bron': 'Yahoo Finance'}
+
+
+def _yahoo_analisten(ticker):
+    import yfinance as yf
+    try:
+        return yf.Ticker(ticker).get_info()
+    except Exception:
+        return None
 
 
 def _yahoo_valuta(ticker):

@@ -86,10 +86,9 @@
   var INDEX_VOLGORDE = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
   // Elke sortering heeft één vaste, logische richting (geen knop nodig).
   var FONDS_SORTERING = { kansrijk: 0, naam: 1, positiePct: 1, afstandPct: 1, epsgroei: -1, omzetgroei: -1, nettomarge: -1, verhouding: -1 };
-  // Met vijf vragen: eerst wie aan de gekozen regel voldoet (voldoet = true), dan de rest; binnen elke groep de hoogste rang.
-  // Zonder 'voldoet' (oudere aanroep): eerst positief, dan neutraal, dan vermijden, dan te weinig gegevens.
-  function kansKlasse(a) { if (typeof a.voldoet === 'boolean') return a.voldoet ? 0 : 1; var o = a.oordeel; return o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
-  function telt(a) { return typeof a.voldoet === 'boolean' ? a.voldoet : a.oordeel === 'positief'; }
+  // Kansrijkheid: eerst Kopen, dan Neutraal, dan Vermijden, dan geen oordeel; binnen elke groep de hoogste rang (gemiddelde score).
+  function kansKlasse(a) { var o = a.oordeel; return o === 'kopen' || o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
+  function telt(a) { return a.oordeel === 'kopen' || a.oordeel === 'positief'; }
   function getalOfNull(x) { return typeof x === 'number' && isFinite(x) ? x : null; }
 
   /* items: [{ticker, naam, indices, bevestigd, oordeel, rang, dekking, positiePct, ...}]. Filter op zoektekst, index en
