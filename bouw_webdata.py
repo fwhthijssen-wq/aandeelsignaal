@@ -148,7 +148,7 @@ def esef_ophalen(ticker):
 def gegevens_uit_esef(cf, gecontroleerd_op):
     """Zelfde verificatie als bij SEC-bedrijven, op de ESEF-feiten; `bron` laat zien waar de cijfers vandaan komen."""
     from esef_bron import samenvatting
-    from esef_bron import eps_keten
+    from esef_bron import eps_keten, JAARVERSLAG_MIN_JAREN
     g = gegevens_uit_sec(samenvatting(cf, asof=gecontroleerd_op), gecontroleerd_op)
     g['bron'] = 'ESEF'
     if g.get('eps_status') != 'independently_verified' and g.get('jaren'):
@@ -160,7 +160,7 @@ def gegevens_uit_esef(cf, gecontroleerd_op):
                 if j.get('end') in keten:
                     j['comparable_eps'] = keten[j['end']]
             jaren = [j for j in g['jaren'] if j.get('end') in keten]
-            if len(jaren) >= 5:
+            if len(jaren) >= JAARVERSLAG_MIN_JAREN:
                 g['jaren'] = jaren
                 g['niveau'] = 'jaarverslag'
     vul_investeringen_aan(g, cf)
@@ -718,8 +718,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
-EXTRA_VERSIE = 3              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
-                               # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52; 3 = investeringen uit eigen begrippen, beta.66)
+EXTRA_VERSIE = 4              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
+                               # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52; 3 = investeringen uit eigen begrippen, beta.66; 4 = winst per aandeel over ESEF-rapporten, beta.67)
 HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
 NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
 ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is

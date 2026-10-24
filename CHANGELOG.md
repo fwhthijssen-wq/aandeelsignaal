@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026.10.24-beta.67
+- **Meer winst per aandeel uit de Europese jaarverslagen.** Bij veel fondsen bleef de winst per aandeel buiten beeld, omdat de jaarverslagen onderling niet aansloten. De koppeling over de jaren is verbeterd, met het gemiddelde aantal aandelen uit de rapporten als ijkpunt (winst ÷ winst per aandeel moet daarbij passen):
+  - **Tagfouten hersteld**: een macht van tien of een verkeerd minteken in de getagde waarde (3i in pence als ponden; Poste Italiane 1.483.000 i.p.v. 1,483; Solvay en Fagron een factor 100; ook Logista, Greggs en Generali, maar daar zijn nog te weinig jaren voor een reeks). Het minteken volgt dat van de winst.
+  - **Bonusaandelen en splitsingen**: alleen omgerekend als winst en aantal aandelen dat bevestigen (Veolia, Nexi). Een verschil zonder die bevestiging (bijv. een herrekening naar alleen voortgezette activiteiten) stopt de reeks, zoals voorheen.
+  - **Kleine herzieningen** (tot 6%): het nieuwste cijfer telt.
+  - Winst per aandeel uit alleen voortgezette activiteiten als laatste terugval (zoals al bij SEC-bedrijven).
+  - Minimum voor een reeks uit het jaarverslag: 4 jaar (was 5), gelijk aan wat de meting Groei nodig heeft.
+- Gevolg op de cijfers van 22 oktober: 34 fondsen extra met winst per aandeel uit het jaarverslag, waaronder BNP Paribas, AXA, Engie, Safran, Veolia, Poste Italiane, UniCredit, Redeia, D'Ieteren, Solvay, 3i, Antofagasta, IHG, Prudential en Sainsbury's. Groei bekend bij 184 fondsen (was 153), K/W bij 253 (was 223), een oordeel bij 308 (was 296).
+- Deze cijfers zijn gerapporteerd, niet onafhankelijk nagerekend; ze krijgen nooit het label Bevestigd.
+- Alle jaarcijfers worden bij de eerstvolgende nachtelijke update opnieuw opgehaald.
+
 ## 2026.10.24-beta.66
 - **Ontbrekende investeringen aangevuld.** Veel Europese bedrijven geven hun investeringen in hun ESEF-jaarverslag op onder een eigen begrip in plaats van het standaardbegrip, soms in het Frans of Spaans (Air Liquide: “AcquisitionDimmobilisationsCorporellesEtIncorporelles…”, Wolters Kluwer: “CapitalExpenditure”). Die zijn voor 54 bedrijven per bedrijf nagekeken en vastgelegd (`esef_investeringen.json`, met de indiening per jaar). Waar een bedrijf de investeringen in delen opgeeft, worden die opgeteld (KPN: software + overige materiële + overige immateriële activa; Vopak: groei + onderhoud + immaterieel). Daarnaast een iets breder standaardbegrip als terugval (IFRS: materiële en immateriële vaste activa samen; SEC: PaymentsToAcquireProductiveAssets, o.a. Amazon, Nvidia, Visa, PepsiCo, Home Depot). Bij elk aangevuld cijfer staat welk begrip is gebruikt.
 - Gevolg op de cijfers van 22 oktober: vrije kasstroom bekend bij 275 fondsen (was 188); na de nachtelijke update komen er ongeveer tien Amerikaanse bij. Fondsen met een oordeel: 296 (was 272).

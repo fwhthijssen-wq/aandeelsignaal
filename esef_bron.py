@@ -114,48 +114,152 @@ def samenvatting(cf, asof=None):
                          fetcher=lambda t, a, e: sec_snapshot(t, a, e, fetcher=fetch))
 
 
-JAARVERSLAG_MIN_JAREN = 5
+JAARVERSLAG_MIN_JAREN = 4      # groei over minstens drie jaar; zelfde minimum als de meting Groei in de app
 
 
-def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005):
-    """Verwaterde EPS per boekjaar uit de officiële ESEF-jaarverslagen, alleen waar de jaren onderling vergelijkbaar zijn.
+EPS_KETEN_BEGRIPPEN = ('DilutedEarningsLossPerShare', 'BasicAndDilutedEarningsLossPerShare', 'BasicEarningsLossPerShare',
+                       # laatste terugval: alleen uit voortgezette activiteiten gemeld (o.a. Iberdrola); zelfde als bij SEC
+                       'DilutedEarningsLossPerShareFromContinuingOperations', 'BasicEarningsLossPerShareFromContinuingOperations')
+WINST_BEGRIPPEN = ('ProfitLossAttributableToOwnersOfParent', 'ProfitLoss')
+SCHAAL = (100.0, 1000.0, 1e6, 0.01, 0.001, 1e-6)
+HERZIENING = 0.06          # kleine verschillen (herziening, afronding): het nieuwste cijfer telt
+GELIJKE_FACTOR = 0.005     # alle gedeelde jaren met dezelfde factor: bonusaandelen of splitsing
 
-    Elk rapport bevat drie jaren. Beginnend bij het nieuwste rapport wordt een ouder rapport pas toegevoegd als het de jaren
-    die het deelt met het al gekozen deel precies dezelfde EPS geeft; bij een verschil (herziening, splitsing) stopt de keten
-    en blijven oudere jaren buiten beeld. Zo bestaat er geen EPS-groei over een niet-herkende splitsing. {} bij minder dan
-    `min_jaren` jaren. Dit is gerapporteerd, niet nagerekend."""
+
+def _jaar(r):
+    try:
+        return 330 <= (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days + 1 <= 390
+    except (KeyError, ValueError, TypeError):
+        return False
+
+
+AANDELEN_BEGRIPPEN = ('AdjustedWeightedAverageShares', 'WeightedAverageShares')
+
+
+def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=None):
+    """Winst per aandeel per boekjaar uit de officiële ESEF-jaarverslagen, alleen waar de jaren onderling vergelijkbaar zijn.
+
+    IJkpunt: het gemiddelde aantal aandelen dat in de rapporten staat. Een winst per aandeel is aannemelijk als het teken
+    gelijk is aan dat van de winst en winst ÷ winst per aandeel binnen een factor 2 van dat aantal ligt.
+    1. Tagfouten: een onaannemelijke waarde die met precies één factor (macht van tien of minteken) aannemelijk wordt,
+       wordt hersteld (bijv. pence als ponden getagd, 1.483.000 in plaats van 1,483).
+    2. Keten: beginnend bij het nieuwste rapport wordt een ouder rapport toegevoegd als de gedeelde jaren kloppen. Bij een
+       verschil: alle gedeelde jaren dezelfde factor, de winst gelijk én beide winsten per aandeel passen bij het aantal
+       aandelen in hun eigen rapport → bonusaandelen of splitsing: oudere jaren omgerekend. Kleine verschillen (tot 6%):
+       herziening, het nieuwste cijfer telt. Anders stopt de keten (geen groei over een niet-herkende splitsing).
+    {} bij minder dan `min_jaren` jaren. Gerapporteerd, niet nagerekend. `verslag` (lijst) krijgt de aanpassingen."""
     ifrs = (cf.get('facts') or {}).get('ifrs-full') or {}
-    per_rapport = {}
-    # per rapport: verwaterd, anders 'gewoon en verwaterd', anders gewoon (zelfde volgorde als het dossier)
+    log = verslag if verslag is not None else []
+    def jaarfeiten(tags):
+        uit = {}
+        for tag in tags:
+            for unit, lijst in ((ifrs.get(tag) or {}).get('units') or {}).items():
+                for r in lijst:
+                    if _jaar(r) and isinstance(r.get('val'), (int, float)):
+                        uit.setdefault((r.get('accn'), r['end']), []).append(r['val'])
+        return uit
+    winst_rap = jaarfeiten(WINST_BEGRIPPEN)
+    aand_rap = jaarfeiten(AANDELEN_BEGRIPPEN)
+    winst_jaar, aand_jaar = {}, {}
+    for (accn, e), v in winst_rap.items():
+        winst_jaar.setdefault(e, v[0])
+    for (accn, e), v in aand_rap.items():
+        aand_jaar.setdefault(e, []).extend(x for x in v if x > 0)
+    alle_aand = sorted(x for v in aand_jaar.values() for x in v)
+    mediaan = alle_aand[len(alle_aand) // 2] if alle_aand else None
+
+    def aannemelijk(e, eps):
+        """True / False, of None als het niet te beoordelen is (geen winst of geen aantal aandelen)."""
+        if eps and abs(eps) > 5000:
+            return False
+        w = winst_jaar.get(e)
+        if not w or not eps:
+            return None
+        if (w > 0) != (eps > 0):
+            return False
+        n = w / eps
+        ankers = aand_jaar.get(e) or ([mediaan] if mediaan else [])
+        if not ankers:
+            return None
+        return any(0.5 <= n / a <= 2 for a in ankers)
+
     alle = []
-    for rang, tag in enumerate(('DilutedEarningsLossPerShare', 'BasicAndDilutedEarningsLossPerShare', 'BasicEarningsLossPerShare')):
+    for rang, tag in enumerate(EPS_KETEN_BEGRIPPEN):
         for unit, lijst in ((ifrs.get(tag) or {}).get('units') or {}).items():
             alle.extend((rang, unit, r) for r in lijst)
     beste = {}
     for rang, unit, r in alle:
         beste[r.get('accn')] = min(beste.get(r.get('accn'), rang), rang)
+    per_rapport, rang_van = {}, {}
     for rang, unit, r in alle:
-        if rang != beste.get(r.get('accn')):
-            continue
-        try:
-            dagen = (date.fromisoformat(r['end']) - date.fromisoformat(r['start'])).days + 1
-        except (KeyError, ValueError):
-            continue
-        if 330 <= dagen <= 390:
-            per_rapport.setdefault(r['accn'], {}).setdefault(r['end'], set()).add((unit, r['val']))
+        if rang == beste.get(r.get('accn')) and _jaar(r) and isinstance(r.get('val'), (int, float)):
+            v = r['val']
+            if aannemelijk(r['end'], v) is False:
+                past = [f for f in SCHAAL + (-1.0,) if aannemelijk(r['end'], v * f)]
+                if len(past) == 1:
+                    log.append(f"{r['accn']} {r['end']}: tagfout hersteld ({v} x{past[0]:g})")
+                    v = round(v * past[0], 6)
+            per_rapport.setdefault(r['accn'], {}).setdefault(r['end'], set()).add((unit, v))
+            rang_van[r['accn']] = rang
+    aand_per_rapport = {}
+    for (accn, e), v in aand_rap.items():
+        aand_per_rapport.setdefault(accn, []).extend(x for x in v if x > 0)
+    def past_bij_aandelen(accn, e, eps):
+        """Winst / eps binnen 10% van een aantal aandelen uit hetzelfde rapport (elk jaar) of uit elk rapport voor dit jaar."""
+        w = (winst_rap.get((accn, e)) or [winst_jaar.get(e)])[0]
+        a = (aand_rap.get((accn, e)) or []) + aand_per_rapport.get(accn, []) + aand_jaar.get(e, [])
+        return bool(w and eps and a and any(abs(w / eps / x - 1) <= 0.1 for x in a if x > 0))
     eind = {r['fxo_id']: r['period_end'] for r in cf.get('rapporten') or []}
-    keten, valuta = {}, None
+    keten, bron = {}, {}
     for accn in sorted(per_rapport, key=lambda a: eind.get(a, ''), reverse=True):
         jaren = per_rapport[accn]
         if any(len(v) != 1 for v in jaren.values()):
+            log.append(f'{accn}: meerdere waarden voor één jaar; keten stopt')
             break
-        huidig = {e: next(iter(v)) for e, v in jaren.items()}
+        huidig = {e: list(next(iter(v))) for e, v in jaren.items()}
         if keten:
-            gedeeld = [e for e in huidig if e in keten]
-            if not gedeeld or any(huidig[e][0] != keten[e][0] or abs(huidig[e][1] - keten[e][1]) > tolerantie for e in gedeeld):
+            if any(huidig[e][0] != keten[e][0] for e in huidig if e in keten):
+                log.append(f'{accn}: andere valuta; keten stopt')
                 break
+            gedeeld = [e for e in huidig if e in keten]
+            if not gedeeld:
+                break
+            fouten = [e for e in gedeeld if abs(huidig[e][1] - keten[e][1]) > tolerantie]
+            if fouten:
+                # een macht van tien die niet te beoordelen was: de kant boven 5000 per aandeel is de tagfout
+                for f in SCHAAL:
+                    if all(abs(huidig[e][1] * f - keten[e][1]) <= tolerantie + 0.002 * abs(keten[e][1]) for e in gedeeld):
+                        if all(abs(huidig[e][1]) > 5000 for e in gedeeld):
+                            for e in huidig:
+                                huidig[e][1] = round(huidig[e][1] * f, 6)
+                            log.append(f'{accn}: tagfout hersteld (x{f:g}, meer dan 5000 per aandeel)')
+                            fouten = []
+                        elif all(abs(keten[e][1]) > 5000 for e in keten):
+                            for e in keten:
+                                keten[e] = (keten[e][0], round(keten[e][1] / f, 6))
+                            log.append(f'nieuwere jaren hersteld (x{1 / f:g}, meer dan 5000 per aandeel)')
+                            fouten = []
+                        break
+            if fouten:
+                ratios = [keten[e][1] / huidig[e][1] for e in gedeeld if huidig[e][1]]
+                gelijk = (len(ratios) == len(gedeeld) and ratios[0] > 0 and max(ratios) - min(ratios) <= GELIJKE_FACTOR * ratios[0])
+                bevestigd = gelijk and abs(ratios[0] - 1) > HERZIENING and all(
+                    (not (winst_rap.get((accn, e)) and winst_rap.get((bron[e], e)))      # winst gelijk, waar beide gemeld
+                     or abs(winst_rap[(accn, e)][0] / winst_rap[(bron[e], e)][0] - 1) <= 0.01)
+                    and past_bij_aandelen(accn, e, huidig[e][1]) and past_bij_aandelen(bron[e], e, keten[e][1]) for e in gedeeld)
+                if bevestigd:
+                    r = ratios[0]
+                    for e in huidig:
+                        huidig[e][1] = round(huidig[e][1] * r, 6)
+                    log.append(f'{accn}: oudere jaren omgerekend met factor {r:.4f} (bonusaandelen of splitsing, bevestigd door winst en aandelen)')
+                elif all(keten[e][1] * huidig[e][1] > 0 and abs(keten[e][1] / huidig[e][1] - 1) <= HERZIENING for e in gedeeld):
+                    log.append(f'{accn}: kleine herziening; nieuwste cijfer telt')
+                else:
+                    log.append(f'{accn}: verschil {[(e, huidig[e][1], keten[e][1]) for e in fouten]}; keten stopt')
+                    break
         for e, v in huidig.items():
-            keten.setdefault(e, v)
+            if e not in keten:
+                keten[e] = tuple(v); bron[e] = accn
     uit = {e: v[1] for e, v in sorted(keten.items())}
     return uit if len(uit) >= min_jaren else {}
 
