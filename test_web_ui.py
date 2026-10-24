@@ -306,7 +306,7 @@ class WebUi(unittest.TestCase):
         ontbreekt = pg.locator('[data-meting][data-ontbreekt]')
         self.assertGreater(ontbreekt.count(), 0)
         self.assertIn('Ontbreekt:', ontbreekt.first.inner_text())                          # met reden
-        self.assertEqual(pg.locator('.groot-oordeel[data-oordeel="geen"]').count(), 1)     # alleen koersdata: te weinig metingen
+        self.assertEqual(pg.locator('.groot-oordeel[data-app][data-oordeel="geen"]').count(), 1)     # alleen koersdata: te weinig metingen
         self.assertIn('Bron: koersdata', pg.locator('[data-metingen]').inner_text())
         self.assertIn('Ter informatie', kaart.inner_text())
         self.assertEqual(pg.locator('[data-info="eigen"] a[href$="/check"]').count(), 1)
@@ -317,12 +317,17 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.evaluate("localStorage.getItem('as_minmeting')"), '3')
         pg.evaluate("localStorage.setItem('as_minmeting', '2')")                     # lager dan het menu: de test heeft alleen koersdata
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('.groot-oordeel[data-oordeel="geen"]').count(), 0)
-        self.assertIn(pg.locator('.groot-oordeel').inner_text(), ('Kopen', 'Neutraal', 'Vermijden'))
+        self.assertEqual(pg.locator('.groot-oordeel[data-app][data-oordeel="geen"]').count(), 0)
+        self.assertIn(pg.locator('.groot-oordeel[data-app]').inner_text(), ('Kopen', 'Neutraal', 'Vermijden'))
+        self.assertEqual(pg.locator('[data-naic-kaart]').count(), 1)                      # NAIC ernaast
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-kansrijk]').count(), 1)
+        self.assertEqual(pg.locator('[data-kansrijk]').count() + pg.locator('[data-kans-keuze]').count(), 2)
+        pg.click('[data-kans="naic"]'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_kansrijk')"), 'naic')
+        self.assertEqual(pg.locator('[data-kans][aria-pressed="true"]').get_attribute('data-kans'), 'naic')
         pg.evaluate("location.hash='#/fondsen'"); pg.wait_for_timeout(150)
+        self.assertGreater(pg.locator('[data-fonds] [data-naic]').count(), 0)
         pg.click('[data-dataset] summary')
         self.assertEqual(pg.locator('[data-dataset-meting]').count(), 6)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))

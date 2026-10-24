@@ -4,7 +4,7 @@
   var T = {
     start: ['Start', 'Hier ziet u in één oogopslag hoe het ervoor staat en welke aandelen nu kansrijk zijn.', [
       'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
-      'Bij Kansrijk staan aandelen met het oordeel Kopen, met bovenaan het hoogste gemiddelde van de zes metingen.',
+      'Bij Kansrijk kiest u wiens oordeel telt: de app (zes metingen), NAIC (Stock Selection Guide) of Beide. Naast elk aandeel staan beide oordelen.',
       'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze het oordeel Kopen, Neutraal of Vermijden.',
       'Alle fondsen, per index en op kansrijkheid gesorteerd, staan onder Fondsen in het menu.',
       'Uw eigen onderzoek (tabblad Verdiepen) staat bij het aandeel, maar telt niet mee in het oordeel.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
@@ -15,7 +15,7 @@
       'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
       'Kansrijkheid: eerst Kopen, dan Neutraal, dan Vermijden, dan geen oordeel. Binnen elke groep staat het hoogste gemiddelde bovenaan.',
       'U kunt ook sorteren op plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
-      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.'], 'Kopen betekent: de zes metingen zijn samen duidelijk gunstig. Het is een selectiehulp, geen persoonlijk advies.'],
+      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Naast het oordeel van de app staat het NAIC-oordeel. Sorteer op “NAIC-oordeel” om de NAIC-kandidaten bovenaan te zien.'], 'Kopen betekent: de zes metingen zijn samen duidelijk gunstig. Het is een selectiehulp, geen persoonlijk advies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
       'Bij het volgen legt de app het oordeel, de zes metingen en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed en hoe het oordeel toen en nu is.',
@@ -42,7 +42,7 @@
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
       'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata. Daarna het oordeel met de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt.',
       'Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Tik op een meting voor uitleg.',
-      'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
+      'Daaronder de NAIC-kaart: het oordeel volgens de Stock Selection Guide, met groei, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar en de koerszones.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'Met de ster volgt u het aandeel.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
     koers: ['Aandeel: Koers', 'De koersontwikkeling en wat die betekent.', [
@@ -52,7 +52,7 @@
       'Is de koers ouder dan enkele dagen, dan gebruikt de app hem niet voor het oordeel.'], null],
     waarde: ['Aandeel: NAIC', 'De Stock Selection Guide van de NAIC in stappen.', [
       'Stap 1 tot 4 tonen groei, rendement op eigen vermogen, winstmarge en koerszones op basis van bevestigde jaarcijfers.',
-      'Het NAIC-label (Kopen, Neutraal of Vermijden) staat er alleen als alle controles slagen: tien jaar winst per aandeel onderbouwd, één valuta en een verse koers.',
+      'Het NAIC-oordeel (Kopen, Neutraal of Vermijden) staat ook op het Overzicht en in de lijsten. Hier kunt u met eigen aannames uw eigen koerszones uitrekenen.', 'De plek in het koersbereik (onderin, midden, bovenin) krijgt alleen een label als alle controles slagen: tien jaar winst per aandeel onderbouwd, één valuta en een verse koers.',
       'Ontbreekt iets, dan staat er wat. De app vult nooit zelf in.'], 'Dit is een rekenhulp met uw eigen invoer, geen advies.'],
     check: ['Aandeel: Verdiepen', 'Hier legt u uw eigen kennis vast. Uw beoordeling telt niet mee in het oordeel; een ontbrekend cijfer dat u invult wel.', [
       'Geef een score van 1 tot 5 voor management, concurrentiepositie, sector en risico’s en schrijf eventueel een notitie.',

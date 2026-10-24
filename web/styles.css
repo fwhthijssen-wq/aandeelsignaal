@@ -254,3 +254,11 @@ ul.dataset li { display: flex; flex-direction: column; gap: 4px; }
 .ds-kop span { white-space: nowrap; } .ds-kop { display: flex; justify-content: space-between; gap: 8px; }
 .stippen.klein { max-width: 290px; }
 .stippen.klein .stip-naam { font-size: .6rem; }
+/* NAIC-chip naast het oordeel van de app */
+.chip.naic .chip-pre { font-size: .66rem; letter-spacing: .06em; opacity: .85; font-weight: 800; }
+.chip.naic { box-shadow: inset 0 0 0 1.5px currentColor; }
+.chip.naic.leeg { background: transparent; color: var(--mut); box-shadow: inset 0 0 0 1px var(--line); }
+table.naic-tabel th { text-align: left; white-space: nowrap; padding-right: 10px; vertical-align: top; font-weight: 600; }
+table.naic-tabel td { vertical-align: top; }
+@media (max-width: 420px) { table.naic-tabel th { white-space: normal; } }
+.ds-kop b { flex: 1 1 auto; min-width: 0; }

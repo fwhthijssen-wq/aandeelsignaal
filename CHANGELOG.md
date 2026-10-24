@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026.10.24-beta.68
+- **NAIC als tweede oordeel naast dat van de app.** Bij elk aandeel staan nu twee oordelen: dat van de app (zes metingen) en dat volgens de NAIC Stock Selection Guide, automatisch berekend met voorzichtige aannames:
+  - groei: historische groei van de winst per aandeel (laatste 5 jaar), hoogstens 15% per jaar; minder dan 5% is geen NAIC-groeibedrijf (Vermijden);
+  - gemiddelde hoge en lage K/W van de laatste 5 jaar; ongewone jaren (eenmalige lasten, K/W boven 60) worden weggelaten, zoals NAIC voorschrijft;
+  - verwachte hoge koers over 5 jaar en lage koers (laagste winst per aandeel van 5 jaar × lage K/W), met drie zones: kopen, houden, verkopen;
+  - Kopen: koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts; verkoopzone: Vermijden; anders Neutraal.
+- **Waar te zien**: een NAIC-kaart op het Overzicht van elk aandeel (groei, gemiddelde K/W, verwachte koersen, zones, opwaarts tegen neerwaarts, verwacht rendement per jaar), een NAIC-chip naast het oordeel in Fondsen en Kansrijk, sorteren op “NAIC-oordeel”, en bij Kansrijk de keuze **App · NAIC · Beide**. Eigen aannames blijven mogelijk op het tabblad NAIC.
+- Op de cijfers van 22 oktober: een NAIC-oordeel bij 188 fondsen (36× Kopen, 57× Neutraal, 95× Vermijden); bij 16 fondsen zeggen app en NAIC allebei Kopen. Zonder NAIC-oordeel vooral door minder dan 4 jaar vergelijkbare winst per aandeel.
+- Het label bij de plek in het koersbereik heet nu “Onderin, ruim opwaarts / Midden / Bovenin”, om verwarring met het NAIC-oordeel te voorkomen.
+
 ## 2026.10.24-beta.67
 - **Meer winst per aandeel uit de Europese jaarverslagen.** Bij veel fondsen bleef de winst per aandeel buiten beeld, omdat de jaarverslagen onderling niet aansloten. De koppeling over de jaren is verbeterd, met het gemiddelde aantal aandelen uit de rapporten als ijkpunt (winst ÷ winst per aandeel moet daarbij passen):
   - **Tagfouten hersteld**: een macht van tien of een verkeerd minteken in de getagde waarde (3i in pence als ponden; Poste Italiane 1.483.000 i.p.v. 1,483; Solvay en Fagron een factor 100; ook Logista, Greggs en Generali, maar daar zijn nog te weinig jaren voor een reeks). Het minteken volgt dat van de winst.

@@ -35,6 +35,7 @@
              datum: datum, koers: koers !== null && valuta ? koers : null, valuta: koers !== null && valuta ? valuta : null };
         // Zes kernmetingen (vanaf beta.65): profiel als letters en hoeveel metingen er waren. Oudere momentopnames hebben dat niet.
     if (typeof x.profiel === 'string' && /^[gnolx]{5,6}$/.test(x.profiel)) uit.profiel = x.profiel;
+    if (x.naic === 'kopen' || x.naic === 'neutraal' || x.naic === 'vermijden') uit.naic = x.naic;      // NAIC-oordeel (vanaf beta.68)
     var aantal = getalOk(x.aantal, 0, 6, false), mogelijk = getalOk(x.mogelijk, 1, 6, false);
     if (aantal !== null && mogelijk !== null && aantal <= mogelijk) { uit.aantal = Math.round(aantal); uit.mogelijk = Math.round(mogelijk); }
     return uit;

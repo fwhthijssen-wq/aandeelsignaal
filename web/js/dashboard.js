@@ -85,7 +85,7 @@
   /* ---- Fondsen: alle aandelen, per index gegroepeerd en sorteerbaar ---- */
   var INDEX_VOLGORDE = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
   // Elke sortering heeft één vaste, logische richting (geen knop nodig).
-  var FONDS_SORTERING = { kansrijk: 0, naam: 1, positiePct: 1, afstandPct: 1, epsgroei: -1, omzetgroei: -1, nettomarge: -1, verhouding: -1 };
+  var FONDS_SORTERING = { kansrijk: 0, naicRang: -1, naam: 1, positiePct: 1, afstandPct: 1, epsgroei: -1, omzetgroei: -1, nettomarge: -1, verhouding: -1 };
   // Kansrijkheid: eerst Kopen, dan Neutraal, dan Vermijden, dan geen oordeel; binnen elke groep de hoogste rang (gemiddelde score).
   function kansKlasse(a) { var o = a.oordeel; return o === 'kopen' || o === 'positief' ? 0 : o === 'neutraal' ? 1 : o === 'vermijden' ? 2 : 3; }
   function telt(a) { return a.oordeel === 'kopen' || a.oordeel === 'positief'; }

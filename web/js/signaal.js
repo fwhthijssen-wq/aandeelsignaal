@@ -353,8 +353,11 @@
     if (k && !vers) oud.push('De koers is ouder dan ' + MAX_KOERS_DAGEN + ' dagen of ontbreekt: koers, trend, rust en K/W tellen niet mee.');
     if (l && opties.vandaag) { var maanden = (new Date(opties.vandaag) - new Date(l.end || (l.year + '-12-31'))) / 86400000 / 30.4; if (maanden > 18) oud.push('Het laatste jaarverslag (' + l.year + ') is ouder dan 18 maanden.'); }
     var dekking = telbaar.length ? rond(aan.length / telbaar.length * 100, 0) : 0;
+    // NAIC (Stock Selection Guide) als tweede, losstaand oordeel: zelfde jaarcijfers en koers, eigen methode.
+    var naicOordeel = null;
+    try { naicOordeel = naic && naic.ssg ? naic.ssg(c.jr, c.koersOk && c.eenValuta ? k.slot : null) : null; } catch (e3) { naicOordeel = null; }
     return { ticker: rec ? rec.ticker : null, oordeel: oordeel, score: score == null ? null : rond(score, 2), aantal: aan.length, mogelijk: telbaar.length, minMetingen: min,
-      metingen: metingen, vragen: vragen, dekking: dekking, niveau: niveau, bank: c.bank, methoden: methoden,
+      metingen: metingen, vragen: vragen, naic: naicOordeel, dekking: dekking, niveau: niveau, bank: c.bank, methoden: methoden,
       ontbreekt: telbaar.filter(function (m) { return !m.aanwezig; }).map(function (m) { return m.naam; }),
       jaar: l ? l.year : null, verouderd: oud, datum: k ? k.datum : null };
   }
