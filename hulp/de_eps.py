@@ -15,7 +15,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pdf_uitlezen import NUM, getallen, kolommen, regels_met
 
 LABEL = re.compile(r'diluted earnings per (ordinary )?share|earnings per share\W{0,3}\s*diluted|verw[äa]e?ssertes ergebnis je aktie|ergebnis je aktie\W{0,3}\s*verw[äa]e?ssert', re.I)
-NIET = re.compile(r'core|adjusted|underlying|continuing|discontinued|before|excluding|bereinigt|fortgef|aufgegeben|operativ|pro forma', re.I)
+NIET = re.compile(r'core|\bpre\b|adjusted|underlying|continuing|discontinued|before|excluding|bereinigt|fortgef|aufgegeben|operativ|pro forma', re.I)
+# Tweede ronde als er geen verwaterde winst per aandeel staat: gewone winst per aandeel (bij veel Duitse bedrijven gelijk,
+# 'unverwässert = verwässert'). 'Uit voortgezette en beëindigde activiteiten' is het totaal en telt dus wel.
+LABEL2 = re.compile(r'\b(basic )?earnings per (ordinary )?share\b|\b(unverw[äa]e?ssertes )?ergebnis je aktie\b', re.I)
+TOTAAL_ACT = re.compile(r'(from |aus )?(continuing and discontinued operations|fortgef[üu]hrten und nicht fortgef[üu]hrten [a-zäöü]+)', re.I)
 TOTAAL = re.compile(r'^\s*(net income|net profit|profit (for the year|after tax)|income after taxes|konzernergebnis|ergebnis nach steuern|jahres(überschuss|fehlbetrag))\b', re.I)
 
 
@@ -41,6 +45,15 @@ def kolomkop(regels, i):
 AANTAL = re.compile(r'number of shares|weighted average|anzahl|aktien\s*\(|shares outstanding|in thousands', re.I)
 
 
+def jaarrij(regels, i, n):
+    """Kop met precies n opeenvolgende jaartallen boven regel i (meerjarenoverzicht, bijv. 2017 2018 2019 2020 2021), of None."""
+    for j in range(i, max(-1, i - 60), -1):
+        jr = [int(m.group()) for m in re.finditer(r'(?<![\d.,])(20[0-3]\d)(?![\d.,])', regels[j][1])]
+        if len(jr) == n and n >= 3 and all(abs(b - a) == 1 for a, b in zip(jr, jr[1:])) and len(set(jr)) == n:
+            return jr
+    return None
+
+
 def twee(g, heel=False):
     """De twee jaarwaarden uit de getallen van een regel: zonder toelichtingsnummer vooraan en zonder verschilkolom achteraan.
     heel: het eerste getal staat zonder decimalen in de tekst terwijl de volgende er wel hebben (toelichting '11 16.60 26.60')."""
@@ -54,13 +67,20 @@ def twee(g, heel=False):
 
 
 def lees(tekst, jaar=None):
+    uit = _lees(tekst, jaar, LABEL)
+    if uit[0] is None:
+        uit = _lees(tekst, jaar, LABEL2)
+    return uit
+
+
+def _lees(tekst, jaar, label):
     """Uitkomst voor het verslag. Het boekjaar komt uit de jaartallenkop boven de regel (niet uit de bestandsnaam: bij een
     gebroken boekjaar of een archief dat op publicatiejaar sorteert kan dat verschillen)."""
     regels = list(regels_met(tekst))
     komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     vond = []
     for i, (p, r) in enumerate(regels):
-        if not LABEL.search(r) or NIET.search(r) or AANTAL.search(r):
+        if not label.search(r) or NIET.search(TOTAAL_ACT.sub(' ', r)) or AANTAL.search(r):
             continue
         kandidaat = []
         g = getallen(re.sub(r'\[\d+\]', ' ', r), komma)
@@ -77,6 +97,16 @@ def lees(tekst, jaar=None):
                         kandidaat.append((j, gg))
                     break
         for k, g in kandidaat:
+            rij = jaarrij(regels, k, len(g)) if len(g) >= 3 else None
+            if not rij and len(g) >= 4 and jaarrij(regels, k, len(g) - 1):
+                rij = jaarrij(regels, k, len(g) - 1)          # meerjarenoverzicht met een verschilkolom achteraan
+                g = g[:len(rij)]
+            if rij:                                      # meerjarenoverzicht: elk getal hoort bij een jaar
+                n = rij.index(max(rij)); v = n - 1 if rij[0] < rij[-1] else n + 1
+                if any(abs(x) >= 1000 for x in (g[n], g[v])):
+                    continue
+                vond.append((rij[n], g[n], g[v], rij[v], p, ' '.join(regels[k][1].split())[:140], dict(zip(rij, g))))
+                continue
             x0, x1 = twee(g, heel if k == i else False)
             if any(abs(x) >= 1000 for x in (x0, x1)) or (x0 == 0 and x1 == 0):
                 continue
@@ -87,7 +117,7 @@ def lees(tekst, jaar=None):
             if jaar is not None and nieuwjaar not in (jaar, jaar + 1):
                 continue
             nieuw, oud = (x0, x1) if kop[0] == nieuwjaar else (x1, x0)
-            vond.append((nieuwjaar, nieuw, oud, min(kop), p, ' '.join(regels[k][1].split())[:140]))
+            vond.append((nieuwjaar, nieuw, oud, min(kop), p, ' '.join(regels[k][1].split())[:140], None))
     if not vond:
         return None, 'geen regel gevonden'
     # het boekjaar van het verslag = het meest voorkomende nieuwste jaar; alle kandidaten voor dat jaar moeten gelijk zijn
@@ -100,7 +130,12 @@ def lees(tekst, jaar=None):
         return {'jaar': jr, 'eps': None, 'alternatieven': sorted(waarden), 'pagina': eerste[4], 'bewijs': eerste[5], 'kandidaten': len(vond)}, None
     a, b, c = next(iter(waarden))
     eerste = [v for v in vond if v[0] == jr][0]
-    return {'jaar': jr, 'eps': a, 'vorig_jaar': c, 'eps_vorig': b, 'pagina': eerste[4], 'bewijs': eerste[5], 'kandidaten': len(vond)}, None
+    uit = {'jaar': jr, 'eps': a, 'vorig_jaar': c, 'eps_vorig': b, 'pagina': eerste[4], 'bewijs': eerste[5], 'kandidaten': len(vond)}
+    # meerjarenoverzicht in hetzelfde verslag dat met deze lezing overeenkomt: de oudere jaren zoals het bedrijf ze nu toont
+    mj = [v[6] for v in vond if v[0] == jr and v[6] and abs(v[6].get(jr, 1e9) - a) <= 0.011 and abs(v[6].get(c, 1e9) - b) <= 0.011]
+    if mj and all(m == mj[0] for m in mj):
+        uit['meerjaren'] = {y: x for y, x in mj[0].items() if y < c}
+    return uit, None
 
 
 def keten(per_jaar):
@@ -110,14 +145,22 @@ def keten(per_jaar):
     for j in jaren:
         r = per_jaar[j]
         if r.get('eps') is None:
-            passend = [a for a in r.get('alternatieven') or [] if j in uit and abs(a[0] - uit[j]) <= 0.011]
+            alts = r.get('alternatieven') or []
+            passend = [a for a in alts if j in uit and abs(a[0] - uit[j]) <= 0.011]
+            hoe = 'het latere verslag'
+            if not passend and j not in uit:
+                # nieuwste verslag (of na een gat): kies de lezing waarvan het vorige jaar aansluit op het oudere verslag
+                ouder = per_jaar.get(j - 1) or {}
+                kandidaten = [ouder['eps']] if ouder.get('eps') is not None else [a[0] for a in ouder.get('alternatieven') or []]
+                passend = [a for a in alts if a[2] == j - 1 and any(abs(a[1] - k) <= 0.011 for k in kandidaten)]
+                hoe = 'het oudere verslag'
             if len(passend) != 1:
                 log.append(f'{j}: meerdere lezingen en geen die aansluit; reeks stopt'); break
             r = dict(r, eps=passend[0][0], eps_vorig=passend[0][1], vorig_jaar=passend[0][2])
-            log.append(f'{j}: lezing gekozen die aansluit op het latere verslag')
+            log.append(f'{j}: lezing gekozen die aansluit op {hoe}')
             per_jaar[j] = r
         if not uit:
-            uit[j] = r['eps']; uit[r['vorig_jaar']] = r['eps_vorig']; continue
+            uit[j] = r['eps']; uit[r['vorig_jaar']] = r['eps_vorig']; _meerjaren(uit, r, log); continue
         if j not in uit:
             log.append(f'{j}: sluit niet aan (gat); reeks stopt'); break
         if abs(uit[j] - r['eps']) <= 0.011:
@@ -127,7 +170,18 @@ def keten(per_jaar):
         else:
             log.append(f'{j}: verschil ({r["eps"]} in eigen verslag, {uit[j]} in later verslag); reeks stopt'); break
         uit.setdefault(r['vorig_jaar'], r['eps_vorig'])
+        _meerjaren(uit, r, log)
     return dict(sorted(uit.items())), log
+
+
+def _meerjaren(uit, r, log):
+    """Oudere jaren uit het meerjarenoverzicht van een geaccepteerd verslag: vullen een gat (ontbrekend verslag), zodat
+    het oudere verslag daar weer op kan aansluiten. Een bestaand cijfer wordt nooit vervangen."""
+    nieuw = [y for y in sorted((r.get('meerjaren') or {}), reverse=True) if y not in uit]
+    for y in nieuw:
+        uit[y] = r['meerjaren'][y]
+    if nieuw:
+        log.append(f"{r['jaar']}: meerjarenoverzicht vult {', '.join(map(str, sorted(nieuw)))}")
 
 
 def main():

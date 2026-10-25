@@ -45,9 +45,26 @@ class Keten(unittest.TestCase):
         # toelichting 11 voor waarden met .60 (Volkswagen 2020): alleen te herkennen aan de schrijfwijze in de tekst
         self.assertEqual(de_eps.twee([11.0, 16.6, 26.6], heel=True), (16.6, 26.6))
 
+    def test_nieuwste_verslag_kiest_lezing_via_ouder_verslag(self):
+        # Continental 2025: twee lezingen; de goede is die waarvan 2024 gelijk is aan het eigen cijfer in het verslag van 2024
+        per = {2025: {'jaar': 2025, 'eps': None, 'alternatieven': [(-0.83, 5.84, 2024), (99.5, 97.9, 2024)]},
+               2024: {'jaar': 2024, 'eps': 5.84, 'vorig_jaar': 2023, 'eps_vorig': 5.78}}
+        reeks, log = de_eps.keten(per)
+        self.assertEqual(reeks, {2023: 5.78, 2024: 5.84, 2025: -0.83})
+        self.assertTrue(any('oudere verslag' in x for x in log))
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_meerjarenoverzicht_overbrugt_ontbrekend_verslag(self):
+        # Merck: verslagen 2022 en 2023 ontbreken; het overzicht in 2025 toont 2021-2025, zodat 2021 weer aansluit
+        per = {2025: {'jaar': 2025, 'eps': 6.0, 'vorig_jaar': 2024, 'eps_vorig': 6.39, 'meerjaren': {2021: 7.03, 2022: 7.65, 2023: 6.49}},
+               2021: {'jaar': 2021, 'eps': 7.03, 'vorig_jaar': 2020, 'eps_vorig': 4.57}}
+        reeks, _ = de_eps.keten(per)
+        self.assertEqual(reeks, {2020: 4.57, 2021: 7.03, 2022: 7.65, 2023: 6.49, 2024: 6.39, 2025: 6.0})
+
+    def test_meerjarenregel_uitlezen(self):
+        r = ['Key figures            2017     2018     2019     2020     2021'] + [''] * 3 + ['Earnings per share in €      4.62     5.76     5.50   -10.78     8.91']
+        regels = [(1, x) for x in r]
+        self.assertEqual(de_eps.jaarrij(regels, 4, 5), [2017, 2018, 2019, 2020, 2021])
+        self.assertIsNone(de_eps.jaarrij(regels, 4, 4))
 
 
 class NachtelijkeRun(unittest.TestCase):
@@ -71,3 +88,7 @@ class NachtelijkeRun(unittest.TestCase):
         self.assertGreaterEqual(g['eps_jaarverslag']['jaren'], 10)
         self.assertEqual(g['jaren'][0]['eps_bron'], 'jaarverslag')
         self.assertEqual(oud['jaren'][0]['comparable_eps'], 1.0)        # vorige run niet aangepast
+
+
+if __name__ == '__main__':
+    unittest.main()

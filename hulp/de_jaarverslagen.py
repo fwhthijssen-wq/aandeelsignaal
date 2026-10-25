@@ -18,13 +18,14 @@ def haal(url):
 
 
 def kandidaten(spec, jaar):
-    u = (spec.get('urls') or {}).get(str(jaar))
+    u = (spec.get('urls') or {}).get(str(jaar)) or (spec['patroon'].format(jaar=jaar) if spec.get('patroon') else None)
     if u:
         yield u, 'beleggerssite'
     for slug in spec.get('slugs') or [spec['slug']]:
         for host in EQS_HOSTS:
             for taal in ('E', 'D'):
-                yield f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-00.pdf", 'EQS'
+                for versie in ('00', '01'):
+                    yield f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-{versie}.pdf", 'EQS'
 
 
 def werkende_slug(spec):
@@ -32,8 +33,8 @@ def werkende_slug(spec):
     for jaar in (2024, 2023, 2022, 2021):
         for slug in spec.get('slugs') or [spec['slug']]:
             for host in EQS_HOSTS:
-                for taal in ('E', 'D'):
-                    url = f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-00.pdf"
+                for taal, versie in (('E', '00'), ('E', '01'), ('D', '00')):
+                    url = f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-{versie}.pdf"
                     try:
                         req = urllib.request.Request(urllib.parse.quote(url, safe=':/?=&%'), headers=dict(UA, Range='bytes=0-7'))
                         with urllib.request.urlopen(req, timeout=60) as r:
@@ -58,7 +59,7 @@ def main():
     index = json.load(open(index_pad)) if index_pad.exists() else {}
     for t in tickers or list(lijst):
         spec = lijst[t]
-        if not spec.get('urls') and len(spec.get('slugs') or []) > 1:
+        if not spec.get('urls') and not spec.get('patroon') and len(spec.get('slugs') or []) > 1:
             slug = werkende_slug(spec)
             print('mapnaam', t, slug, flush=True)
             if not slug:

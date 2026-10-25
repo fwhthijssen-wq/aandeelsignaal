@@ -208,7 +208,7 @@ def vul_eps_jaarverslag(g, ticker, register=None):
     g['jaren'] = jaren
     g['eps_jaarverslag'] = {'jaren': len(reeks), 'van': min(reeks), 'tot': max(reeks),
                             'documenten': [{'boekjaar': int(j), 'url': d.get('url'), 'pagina': d.get('pagina')} for j, d in sorted((reg.get('verslagen') or {}).items())],
-                            'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Niet nagerekend.'}
+                            'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Ontbreekt een verslag, dan komt dat jaar uit het meerjarenoverzicht van een later verslag. Niet nagerekend.'}
 
 
 def _investeringen_register():

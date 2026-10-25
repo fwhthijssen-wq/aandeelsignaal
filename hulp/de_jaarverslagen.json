@@ -55,7 +55,9 @@
   "isin": "DE000A1EWWW0",
   "slug": "adidas",
   "slugs": [
-   "adidas"
+   "adidas",
+   "adidas-group",
+   "adidas-ag"
   ],
   "urls": {}
  },
@@ -83,9 +85,13 @@
   "slug": "bmw",
   "slugs": [
    "bmw",
-   "bmwgroup"
+   "bmwgroup",
+   "bmw-group",
+   "bayerische-motoren-werke",
+   "bmw-ag"
   ],
-  "urls": {}
+  "urls": {},
+  "patroon": "https://www.bmwgroup.com/en/report/{jaar}/downloads/BMW-Group-Report-{jaar}-en.pdf"
  },
  "BNR.DE": {
   "naam": "Brenntag SE",
@@ -120,7 +126,8 @@
   "slug": "daimlertruck",
   "slugs": [
    "daimlertruck",
-   "daimler_truck"
+   "daimler-truck",
+   "daimler-truck-holding"
   ],
   "urls": {}
  },
@@ -130,7 +137,9 @@
   "slug": "deutscheboerse",
   "slugs": [
    "deutscheboerse",
-   "deutsche_boerse"
+   "deutsche-boerse",
+   "deutsche_boerse",
+   "deutsche-borse"
   ],
   "urls": {}
  },
@@ -141,7 +150,10 @@
   "slugs": [
    "dhl",
    "deutschepost",
-   "dpdhl"
+   "deutsche-post",
+   "dpdhl",
+   "dhl-group",
+   "deutsche-post-dhl"
   ],
   "urls": {}
  },
@@ -160,7 +172,9 @@
   "isin": "DE000ENAG999",
   "slug": "eon",
   "slugs": [
-   "eon"
+   "eon",
+   "e-on",
+   "eon-se"
   ],
   "urls": {}
  },
@@ -189,7 +203,9 @@
   "isin": "DE0006602006",
   "slug": "gea",
   "slugs": [
-   "gea"
+   "gea",
+   "gea-group",
+   "geagroup"
   ],
   "urls": {}
  },
@@ -199,8 +215,10 @@
   "slug": "hannoverre",
   "slugs": [
    "hannoverre",
+   "hannover-rueck",
    "hannover_rueck",
-   "hannover-re"
+   "hannover-re",
+   "hannover-rueckversicherung"
   ],
   "urls": {}
  },
@@ -237,6 +255,7 @@
   "isin": "DE0007100000",
   "slug": "mercedes-benz",
   "slugs": [
+   "daimlerchrysler",
    "mercedes-benz",
    "mercedesbenz",
    "daimler"
@@ -267,8 +286,10 @@
   "isin": "DE0008430026",
   "slug": "munichre",
   "slugs": [
+   "muenchener-rueck",
    "munichre",
-   "muenchenerrueck"
+   "muenchenerrueck",
+   "munich-re"
   ],
   "urls": {}
  },
@@ -278,8 +299,9 @@
   "slug": "porsche",
   "slugs": [
    "porsche",
-   "porschese",
-   "porsche-se"
+   "porsche-se",
+   "porsche-automobil-holding",
+   "porscheholding"
   ],
   "urls": {}
  },
@@ -288,7 +310,8 @@
   "isin": "DE0007030033",
   "slug": "rheinmetall",
   "slugs": [
-   "rheinmetall"
+   "rheinmetall",
+   "rheinmetall-ag"
   ],
   "urls": {}
  },
@@ -315,8 +338,8 @@
   "isin": "DE000ENER6Y0",
   "slug": "siemensenergy",
   "slugs": [
-   "siemensenergy",
-   "siemens-energy"
+   "siemens-energy",
+   "siemensenergy"
   ],
   "urls": {}
  },
@@ -344,7 +367,8 @@
   "isin": "DE000A1ML7J1",
   "slug": "vonovia",
   "slugs": [
-   "vonovia"
+   "vonovia",
+   "vonovia-se"
   ],
   "urls": {}
  },
