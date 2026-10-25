@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-10-25T07:35:21.578Z",
+ "gemaakt": "2026-10-25T11:09:12.354Z",
  "rijen": 2642,
  "peildata": [
   "2018-04-30",
@@ -15,174 +15,396 @@
  "app": {
   "kopen": {
    "overrendement_1j": {
-    "n": 508,
-    "gemiddeld": -0.74,
-    "mediaan": -2.9,
-    "beter": 46
+    "n": 528,
+    "gemiddeld": -0.61,
+    "mediaan": -2.93,
+    "beter": 46,
+    "t": -0.5
    },
    "overrendement_3j": {
-    "n": 305,
-    "gemiddeld": -6.57,
-    "mediaan": -16.3,
-    "beter": 35
+    "n": 319,
+    "gemiddeld": -6.87,
+    "mediaan": -18.08,
+    "beter": 35,
+    "t": -1.62
    }
   },
   "neutraal": {
    "overrendement_1j": {
-    "n": 689,
-    "gemiddeld": 0.78,
-    "mediaan": -3.74,
-    "beter": 45
+    "n": 742,
+    "gemiddeld": 0.39,
+    "mediaan": -4.17,
+    "beter": 44,
+    "t": 0.29
    },
    "overrendement_3j": {
-    "n": 417,
-    "gemiddeld": -1.04,
-    "mediaan": -13.87,
-    "beter": 40
+    "n": 449,
+    "gemiddeld": -2.71,
+    "mediaan": -15.45,
+    "beter": 39,
+    "t": -0.69
    }
   },
   "vermijden": {
    "overrendement_1j": {
-    "n": 116,
-    "gemiddeld": 8.86,
-    "mediaan": 1.63,
-    "beter": 50
+    "n": 123,
+    "gemiddeld": 5.81,
+    "mediaan": -1.52,
+    "beter": 48,
+    "t": 1.48
    },
    "overrendement_3j": {
-    "n": 82,
-    "gemiddeld": 48.3,
-    "mediaan": -3.61,
-    "beter": 46
+    "n": 87,
+    "gemiddeld": 43.68,
+    "mediaan": -3.75,
+    "beter": 46,
+    "t": 1.73
    }
   },
   "geen": {
    "overrendement_1j": {
-    "n": 1329,
-    "gemiddeld": -0.9,
-    "mediaan": -4.16,
-    "beter": 43
+    "n": 1249,
+    "gemiddeld": -0.54,
+    "mediaan": -3.66,
+    "beter": 44,
+    "t": -0.62
    },
    "overrendement_3j": {
-    "n": 1152,
-    "gemiddeld": -1.32,
-    "mediaan": -17.14,
-    "beter": 38
+    "n": 1101,
+    "gemiddeld": -0.35,
+    "mediaan": -16.42,
+    "beter": 38,
+    "t": -0.14
    }
   }
  },
  "naic": {
   "kopen": {
    "overrendement_1j": {
-    "n": 53,
-    "gemiddeld": 2.77,
-    "mediaan": -4.34,
-    "beter": 47
+    "n": 75,
+    "gemiddeld": 4.54,
+    "mediaan": -2.35,
+    "beter": 47,
+    "t": 0.88
    },
    "overrendement_3j": {
-    "n": 35,
-    "gemiddeld": 31.4,
-    "mediaan": -7.7,
-    "beter": 43
+    "n": 52,
+    "gemiddeld": 21.92,
+    "mediaan": -7.67,
+    "beter": 42,
+    "t": 1.3
    }
   },
   "neutraal": {
    "overrendement_1j": {
-    "n": 262,
-    "gemiddeld": 2.49,
-    "mediaan": -2.78,
-    "beter": 46
+    "n": 284,
+    "gemiddeld": 1.56,
+    "mediaan": -4.01,
+    "beter": 44,
+    "t": 0.78
    },
    "overrendement_3j": {
-    "n": 124,
-    "gemiddeld": 5.2,
-    "mediaan": -6.79,
-    "beter": 41
+    "n": 135,
+    "gemiddeld": 0.83,
+    "mediaan": -9.21,
+    "beter": 38,
+    "t": 0.12
    }
   },
   "vermijden": {
    "overrendement_1j": {
-    "n": 199,
-    "gemiddeld": -0.69,
-    "mediaan": -4.13,
-    "beter": 46
+    "n": 241,
+    "gemiddeld": -2.38,
+    "mediaan": -4.17,
+    "beter": 44,
+    "t": -1.07
    },
    "overrendement_3j": {
-    "n": 89,
-    "gemiddeld": -2,
-    "mediaan": -26.27,
-    "beter": 37
+    "n": 118,
+    "gemiddeld": -8.52,
+    "mediaan": -26.32,
+    "beter": 37,
+    "t": -0.99
    }
   },
   "geen": {
    "overrendement_1j": {
-    "n": 2128,
-    "gemiddeld": -0.31,
-    "mediaan": -3.53,
-    "beter": 44
+    "n": 2042,
+    "gemiddeld": -0.1,
+    "mediaan": -3.41,
+    "beter": 45,
+    "t": -0.15
    },
    "overrendement_3j": {
-    "n": 1708,
-    "gemiddeld": -0.92,
-    "mediaan": -16.16,
-    "beter": 38
+    "n": 1651,
+    "gemiddeld": -0.15,
+    "mediaan": -15.91,
+    "beter": 38,
+    "t": -0.06
    }
   }
  },
  "beide": {
   "beide kopen": {
    "overrendement_1j": {
-    "n": 19,
-    "gemiddeld": 4.79,
+    "n": 26,
+    "gemiddeld": 5.48,
     "mediaan": 10.89,
-    "beter": 68
+    "beter": 62,
+    "t": 1.03
    },
    "overrendement_3j": {
-    "n": 16,
-    "gemiddeld": 25.53,
-    "mediaan": -9.02,
-    "beter": 38
+    "n": 22,
+    "gemiddeld": 21.57,
+    "mediaan": -9.07,
+    "beter": 41,
+    "t": 0.67
    }
   },
   "alleen app": {
    "overrendement_1j": {
-    "n": 489,
-    "gemiddeld": -0.95,
-    "mediaan": -3.25,
-    "beter": 46
+    "n": 502,
+    "gemiddeld": -0.92,
+    "mediaan": -3.27,
+    "beter": 45,
+    "t": -0.73
    },
    "overrendement_3j": {
-    "n": 289,
-    "gemiddeld": -8.34,
-    "mediaan": -18.03,
-    "beter": 35
+    "n": 297,
+    "gemiddeld": -8.98,
+    "mediaan": -18.46,
+    "beter": 35,
+    "t": -2.31
    }
   },
   "alleen NAIC": {
    "overrendement_1j": {
-    "n": 34,
-    "gemiddeld": 1.64,
-    "mediaan": -14.75,
-    "beter": 35
+    "n": 49,
+    "gemiddeld": 4.04,
+    "mediaan": -11.47,
+    "beter": 39,
+    "t": 0.54
    },
    "overrendement_3j": {
-    "n": 19,
-    "gemiddeld": 36.33,
-    "mediaan": -1.96,
-    "beter": 47
+    "n": 30,
+    "gemiddeld": 22.17,
+    "mediaan": -4.79,
+    "beter": 43,
+    "t": 1.24
    }
   },
   "geen van beide": {
    "overrendement_1j": {
-    "n": 2100,
-    "gemiddeld": 0.15,
-    "mediaan": -3.59,
-    "beter": 45
+    "n": 2065,
+    "gemiddeld": 0.06,
+    "mediaan": -3.66,
+    "beter": 45,
+    "t": 0.08
    },
    "overrendement_3j": {
-    "n": 1632,
-    "gemiddeld": 0.8,
-    "mediaan": -15.6,
-    "beter": 39
+    "n": 1607,
+    "gemiddeld": 0.95,
+    "mediaan": -15.45,
+    "beter": 39,
+    "t": 0.39
+   }
+  }
+ },
+ "zone": {
+  "onder": {
+   "overrendement_1j": {
+    "n": 11,
+    "gemiddeld": 20.12,
+    "mediaan": 7.26,
+    "beter": 55,
+    "t": 0.84
+   },
+   "overrendement_3j": {
+    "n": 7,
+    "gemiddeld": 2.88,
+    "mediaan": -13,
+    "beter": 43,
+    "t": 0.15
+   }
+  },
+  "koop": {
+   "overrendement_1j": {
+    "n": 192,
+    "gemiddeld": -0.29,
+    "mediaan": -4.5,
+    "beter": 40,
+    "t": -0.12
+   },
+   "overrendement_3j": {
+    "n": 103,
+    "gemiddeld": 9.58,
+    "mediaan": -9.07,
+    "beter": 39,
+    "t": 0.97
+   }
+  },
+  "houd": {
+   "overrendement_1j": {
+    "n": 156,
+    "gemiddeld": 3.97,
+    "mediaan": -0.26,
+    "beter": 49,
+    "t": 1.44
+   },
+   "overrendement_3j": {
+    "n": 77,
+    "gemiddeld": 3.17,
+    "mediaan": -7.54,
+    "beter": 39,
+    "t": 0.32
+   }
+  },
+  "verkoop": {
+   "overrendement_1j": {
+    "n": 29,
+    "gemiddeld": 1.88,
+    "mediaan": 5.1,
+    "beter": 52,
+    "t": 0.47
+   },
+   "overrendement_3j": {
+    "n": 17,
+    "gemiddeld": 31.5,
+    "mediaan": 8.14,
+    "beter": 59,
+    "t": 1.02
+   }
+  },
+  "boven": {
+   "overrendement_1j": {
+    "n": 12,
+    "gemiddeld": 13.29,
+    "mediaan": 0.99,
+    "beter": 50,
+    "t": 0.7
+   },
+   "overrendement_3j": {
+    "n": 5,
+    "gemiddeld": 140.55,
+    "mediaan": 38.61,
+    "beter": 60,
+    "t": 1.24
+   }
+  },
+  "geen": {
+   "overrendement_1j": {
+    "n": 2242,
+    "gemiddeld": -0.45,
+    "mediaan": -3.56,
+    "beter": 45,
+    "t": -0.65
+   },
+   "overrendement_3j": {
+    "n": 1747,
+    "gemiddeld": -1.42,
+    "mediaan": -17.32,
+    "beter": 38,
+    "t": -0.64
+   }
+  }
+ },
+ "totaal": {
+  "ok": {
+   "overrendement_1j": {
+    "n": 264,
+    "gemiddeld": 2.66,
+    "mediaan": -3.27,
+    "beter": 45,
+    "t": 1.17
+   },
+   "overrendement_3j": {
+    "n": 137,
+    "gemiddeld": 13.02,
+    "mediaan": -9.07,
+    "beter": 38,
+    "t": 1.5
+   }
+  },
+  "te laag": {
+   "overrendement_1j": {
+    "n": 136,
+    "gemiddeld": 2.17,
+    "mediaan": -2.74,
+    "beter": 45,
+    "t": 0.71
+   },
+   "overrendement_3j": {
+    "n": 72,
+    "gemiddeld": 9.79,
+    "mediaan": -1.55,
+    "beter": 47,
+    "t": 0.77
+   }
+  },
+  "onbekend": {
+   "overrendement_1j": {
+    "n": 2242,
+    "gemiddeld": -0.45,
+    "mediaan": -3.56,
+    "beter": 45,
+    "t": -0.65
+   },
+   "overrendement_3j": {
+    "n": 1747,
+    "gemiddeld": -1.42,
+    "mediaan": -17.32,
+    "beter": 38,
+    "t": -0.64
+   }
+  }
+ },
+ "kwaliteit": {
+  "goed": {
+   "overrendement_1j": {
+    "n": 354,
+    "gemiddeld": -2.57,
+    "mediaan": -4.3,
+    "beter": 43,
+    "t": -1.53
+   },
+   "overrendement_3j": {
+    "n": 200,
+    "gemiddeld": -7.3,
+    "mediaan": -19.74,
+    "beter": 38,
+    "t": -1.22
+   }
+  },
+  "zwak": {
+   "overrendement_1j": {
+    "n": 246,
+    "gemiddeld": 4.56,
+    "mediaan": -3.16,
+    "beter": 46,
+    "t": 1.77
+   },
+   "overrendement_3j": {
+    "n": 105,
+    "gemiddeld": 16.24,
+    "mediaan": -8.73,
+    "beter": 40,
+    "t": 1.56
+   }
+  },
+  "geen": {
+   "overrendement_1j": {
+    "n": 2042,
+    "gemiddeld": -0.1,
+    "mediaan": -3.41,
+    "beter": 45,
+    "t": -0.15
+   },
+   "overrendement_3j": {
+    "n": 1651,
+    "gemiddeld": -0.15,
+    "mediaan": -15.91,
+    "beter": 38,
+    "t": -0.06
    }
   }
  },
@@ -190,248 +412,282 @@
   "kasstroom": {
    "gunstig": {
     "overrendement_1j": {
-     "n": 1088,
-     "gemiddeld": -0.63,
-     "mediaan": -3.6,
-     "beter": 44
+     "n": 1119,
+     "gemiddeld": -0.89,
+     "mediaan": -3.83,
+     "beter": 44,
+     "t": -0.9
     },
     "overrendement_3j": {
-     "n": 681,
-     "gemiddeld": -4.59,
-     "mediaan": -15.68,
-     "beter": 37
+     "n": 691,
+     "gemiddeld": -5.06,
+     "mediaan": -16.15,
+     "beter": 37,
+     "t": -1.67
     }
    },
    "neutraal": {
     "overrendement_1j": {
-     "n": 125,
-     "gemiddeld": 7.02,
-     "mediaan": 3.86,
-     "beter": 56
+     "n": 128,
+     "gemiddeld": 6.29,
+     "mediaan": 3.32,
+     "beter": 55,
+     "t": 2.06
     },
     "overrendement_3j": {
-     "n": 76,
-     "gemiddeld": 7.46,
-     "mediaan": 17.51,
-     "beter": 58
+     "n": 77,
+     "gemiddeld": 5.39,
+     "mediaan": 13.7,
+     "beter": 57,
+     "t": 0.68
     }
    },
    "ongunstig": {
     "overrendement_1j": {
-     "n": 140,
-     "gemiddeld": 5.98,
-     "mediaan": 1.19,
-     "beter": 50
+     "n": 146,
+     "gemiddeld": 5.49,
+     "mediaan": -0.31,
+     "beter": 49,
+     "t": 1.54
     },
     "overrendement_3j": {
      "n": 97,
-     "gemiddeld": 47.75,
-     "mediaan": -3.73,
-     "beter": 48
+     "gemiddeld": 48.33,
+     "mediaan": -3.75,
+     "beter": 48,
+     "t": 2.1
     }
    },
    "onbekend": {
     "overrendement_1j": {
-     "n": 1289,
-     "gemiddeld": -0.8,
-     "mediaan": -4.71,
-     "beter": 44
+     "n": 1249,
+     "gemiddeld": -0.49,
+     "mediaan": -4.45,
+     "beter": 44,
+     "t": -0.55
     },
     "overrendement_3j": {
-     "n": 1102,
-     "gemiddeld": -1.88,
-     "mediaan": -18.71,
-     "beter": 36
+     "n": 1091,
+     "gemiddeld": -1.47,
+     "mediaan": -18.68,
+     "beter": 37,
+     "t": -0.58
     }
    }
   },
   "schuldgraad": {
    "gunstig": {
     "overrendement_1j": {
-     "n": 616,
-     "gemiddeld": -3.59,
-     "mediaan": -8.39,
-     "beter": 38
+     "n": 634,
+     "gemiddeld": -3.89,
+     "mediaan": -8.71,
+     "beter": 38,
+     "t": -2.97
     },
     "overrendement_3j": {
-     "n": 374,
-     "gemiddeld": -14.52,
-     "mediaan": -30.22,
-     "beter": 31
+     "n": 380,
+     "gemiddeld": -15.09,
+     "mediaan": -30.25,
+     "beter": 31,
+     "t": -3.61
     }
    },
    "neutraal": {
     "overrendement_1j": {
-     "n": 415,
-     "gemiddeld": -0.75,
-     "mediaan": -5.65,
-     "beter": 42
+     "n": 433,
+     "gemiddeld": -0.98,
+     "mediaan": -5.81,
+     "beter": 42,
+     "t": -0.59
     },
     "overrendement_3j": {
-     "n": 266,
-     "gemiddeld": -12.89,
-     "mediaan": -26.57,
-     "beter": 33
+     "n": 270,
+     "gemiddeld": -13.53,
+     "mediaan": -26.88,
+     "beter": 33,
+     "t": -2.92
     }
    },
    "ongunstig": {
     "overrendement_1j": {
-     "n": 309,
-     "gemiddeld": 7.57,
-     "mediaan": 2.33,
-     "beter": 55
+     "n": 313,
+     "gemiddeld": 7.33,
+     "mediaan": 2.24,
+     "beter": 55,
+     "t": 3.43
     },
     "overrendement_3j": {
-     "n": 202,
-     "gemiddeld": 37.69,
+     "n": 203,
+     "gemiddeld": 37.77,
      "mediaan": 1.13,
-     "beter": 51
+     "beter": 51,
+     "t": 3.2
     }
    },
    "onbekend": {
     "overrendement_1j": {
-     "n": 1124,
-     "gemiddeld": -1.69,
-     "mediaan": -4.44,
-     "beter": 43
+     "n": 1084,
+     "gemiddeld": -1.37,
+     "mediaan": -3.78,
+     "beter": 43,
+     "t": -1.46
     },
     "overrendement_3j": {
-     "n": 1003,
-     "gemiddeld": -5.45,
-     "mediaan": -18.32,
-     "beter": 36
+     "n": 992,
+     "gemiddeld": -5.03,
+     "mediaan": -18.09,
+     "beter": 36,
+     "t": -2.06
     }
    }
   },
   "groei": {
    "gunstig": {
     "overrendement_1j": {
-     "n": 367,
-     "gemiddeld": 1.39,
-     "mediaan": -2.92,
-     "beter": 47
+     "n": 409,
+     "gemiddeld": 1.26,
+     "mediaan": -3.03,
+     "beter": 46,
+     "t": 0.71
     },
     "overrendement_3j": {
-     "n": 180,
-     "gemiddeld": 9.59,
-     "mediaan": -7.27,
-     "beter": 42
+     "n": 206,
+     "gemiddeld": 6.25,
+     "mediaan": -9.2,
+     "beter": 40,
+     "t": 0.96
     }
    },
    "neutraal": {
     "overrendement_1j": {
-     "n": 55,
-     "gemiddeld": -5.81,
-     "mediaan": -5.43,
-     "beter": 44
+     "n": 74,
+     "gemiddeld": -5.58,
+     "mediaan": -3.68,
+     "beter": 41,
+     "t": -2.02
     },
     "overrendement_3j": {
-     "n": 31,
-     "gemiddeld": -4.89,
-     "mediaan": -16.06,
-     "beter": 39
+     "n": 46,
+     "gemiddeld": -8.89,
+     "mediaan": -16.15,
+     "beter": 41,
+     "t": -0.93
     }
    },
    "ongunstig": {
     "overrendement_1j": {
-     "n": 95,
-     "gemiddeld": -1.74,
-     "mediaan": -3.74,
-     "beter": 44
+     "n": 115,
+     "gemiddeld": -4.87,
+     "mediaan": -6.39,
+     "beter": 42,
+     "t": -1.54
     },
     "overrendement_3j": {
-     "n": 45,
-     "gemiddeld": -19.46,
-     "mediaan": -34.7,
-     "beter": 31
+     "n": 58,
+     "gemiddeld": -24.35,
+     "mediaan": -36.02,
+     "beter": 33,
+     "t": -3.39
     }
    },
    "onbekend": {
     "overrendement_1j": {
-     "n": 2125,
-     "gemiddeld": -0.01,
-     "mediaan": -3.59,
-     "beter": 44
+     "n": 2044,
+     "gemiddeld": 0.22,
+     "mediaan": -3.45,
+     "beter": 45,
+     "t": 0.31
     },
     "overrendement_3j": {
-     "n": 1700,
-     "gemiddeld": -0.41,
-     "mediaan": -16.16,
-     "beter": 38
+     "n": 1646,
+     "gemiddeld": 0.32,
+     "mediaan": -15.91,
+     "beter": 38,
+     "t": 0.14
     }
    }
   },
   "prijs": {
    "gunstig": {
     "overrendement_1j": {
-     "n": 245,
-     "gemiddeld": 5.27,
-     "mediaan": 6.27,
-     "beter": 55
+     "n": 297,
+     "gemiddeld": 3.84,
+     "mediaan": 1.23,
+     "beter": 52,
+     "t": 1.79
     },
     "overrendement_3j": {
-     "n": 99,
-     "gemiddeld": 23.08,
-     "mediaan": 2.26,
-     "beter": 51
+     "n": 134,
+     "gemiddeld": 14.09,
+     "mediaan": -5,
+     "beter": 48,
+     "t": 1.7
     }
    },
    "neutraal": {
     "overrendement_1j": {
-     "n": 114,
-     "gemiddeld": -5.53,
-     "mediaan": -6.54,
-     "beter": 32
+     "n": 128,
+     "gemiddeld": -5.18,
+     "mediaan": -6.52,
+     "beter": 33,
+     "t": -2
     },
     "overrendement_3j": {
-     "n": 47,
-     "gemiddeld": -17.5,
-     "mediaan": -19.09,
-     "beter": 26
+     "n": 55,
+     "gemiddeld": -20.51,
+     "mediaan": -20.33,
+     "beter": 25,
+     "t": -3.34
     }
    },
    "ongunstig": {
     "overrendement_1j": {
-     "n": 266,
-     "gemiddeld": -2.08,
-     "mediaan": -5.81,
-     "beter": 43
+     "n": 296,
+     "gemiddeld": -2.76,
+     "mediaan": -5.54,
+     "beter": 42,
+     "t": -1.38
     },
     "overrendement_3j": {
-     "n": 140,
-     "gemiddeld": 1.76,
-     "mediaan": -14.47,
-     "beter": 41
+     "n": 161,
+     "gemiddeld": -2.7,
+     "mediaan": -18.91,
+     "beter": 39,
+     "t": -0.36
     }
    },
    "onbekend": {
     "overrendement_1j": {
-     "n": 2017,
-     "gemiddeld": -0.05,
-     "mediaan": -3.5,
-     "beter": 45
+     "n": 1921,
+     "gemiddeld": 0.18,
+     "mediaan": -3.32,
+     "beter": 45,
+     "t": 0.24
     },
     "overrendement_3j": {
-     "n": 1670,
-     "gemiddeld": -1.02,
-     "mediaan": -16.7,
-     "beter": 38
+     "n": 1606,
+     "gemiddeld": -0.2,
+     "mediaan": -16.16,
+     "beter": 38,
+     "t": -0.08
     }
    }
   },
   "trend": {
    "gunstig": {
     "overrendement_1j": {
-     "n": 1620,
-     "gemiddeld": 0.56,
-     "mediaan": -2.29,
-     "beter": 46
+     "n": 1619,
+     "gemiddeld": 0.58,
+     "mediaan": -2.28,
+     "beter": 46,
+     "t": 0.74
     },
     "overrendement_3j": {
      "n": 1171,
-     "gemiddeld": -0.57,
-     "mediaan": -15.26,
-     "beter": 38
+     "gemiddeld": -0.53,
+     "mediaan": -14.88,
+     "beter": 39,
+     "t": -0.21
     }
    },
    "neutraal": {
@@ -444,30 +700,34 @@
    },
    "ongunstig": {
     "overrendement_1j": {
-     "n": 998,
-     "gemiddeld": -0.84,
-     "mediaan": -5.29,
-     "beter": 43
+     "n": 999,
+     "gemiddeld": -0.88,
+     "mediaan": -5.33,
+     "beter": 43,
+     "t": -0.79
     },
     "overrendement_3j": {
      "n": 765,
-     "gemiddeld": 1.6,
-     "mediaan": -15.92,
-     "beter": 39
+     "gemiddeld": 1.53,
+     "mediaan": -16.15,
+     "beter": 38,
+     "t": 0.39
     }
    },
    "onbekend": {
     "overrendement_1j": {
      "n": 24,
-     "gemiddeld": -2.56,
-     "mediaan": -10.95,
-     "beter": 33
+     "gemiddeld": -2.57,
+     "mediaan": -10.98,
+     "beter": 33,
+     "t": -0.31
     },
     "overrendement_3j": {
      "n": 20,
-     "gemiddeld": -27.68,
-     "mediaan": -22.58,
-     "beter": 15
+     "gemiddeld": -27.7,
+     "mediaan": -22.63,
+     "beter": 15,
+     "t": -2.31
     }
    }
   },
@@ -475,57 +735,65 @@
    "gunstig": {
     "overrendement_1j": {
      "n": 1455,
-     "gemiddeld": -2.1,
-     "mediaan": -3.3,
-     "beter": 45
+     "gemiddeld": -2.09,
+     "mediaan": -3.32,
+     "beter": 45,
+     "t": -3.12
     },
     "overrendement_3j": {
      "n": 1013,
-     "gemiddeld": -12.32,
-     "mediaan": -19.27,
-     "beter": 34
+     "gemiddeld": -12.31,
+     "mediaan": -19.24,
+     "beter": 34,
+     "t": -6.64
     }
    },
    "neutraal": {
     "overrendement_1j": {
      "n": 822,
      "gemiddeld": -2.43,
-     "mediaan": -6.84,
-     "beter": 40
+     "mediaan": -6.88,
+     "beter": 41,
+     "t": -1.98
     },
     "overrendement_3j": {
      "n": 621,
-     "gemiddeld": 2.22,
-     "mediaan": -18.22,
-     "beter": 38
+     "gemiddeld": 2.21,
+     "mediaan": -18.27,
+     "beter": 38,
+     "t": 0.54
     }
    },
    "ongunstig": {
     "overrendement_1j": {
      "n": 351,
-     "gemiddeld": 14.22,
-     "mediaan": 7.91,
-     "beter": 55
+     "gemiddeld": 14.19,
+     "mediaan": 7.95,
+     "beter": 55,
+     "t": 5.56
     },
     "overrendement_3j": {
      "n": 312,
      "gemiddeld": 35.93,
-     "mediaan": 4.18,
-     "beter": 53
+     "mediaan": 4.17,
+     "beter": 53,
+     "t": 4.22
     }
    },
    "onbekend": {
     "overrendement_1j": {
      "n": 14,
-     "gemiddeld": 3.97,
-     "mediaan": -5.82,
-     "beter": 43
+     "gemiddeld": 3.96,
+     "mediaan": -5.86,
+     "beter": 43,
+     "t": 0.29
     },
     "overrendement_3j": {
      "n": 10,
-     "gemiddeld": -11.21,
-     "mediaan": -6.91,
-     "beter": 30
+     "gemiddeld": -11.24,
+     "mediaan": -6.96,
+     "beter": 30,
+     "t": -0.54
     }
    }
   }
@@ -534,28 +802,32 @@
   "2018-04-30": {
    "app": {
     "kopen": {
-     "n": 17,
-     "gemiddeld": 18.3,
-     "mediaan": 21.07,
-     "beter": 82
+     "n": 19,
+     "gemiddeld": 15.68,
+     "mediaan": 21,
+     "beter": 74,
+     "t": 4.4
     },
     "neutraal": {
-     "n": 22,
-     "gemiddeld": 8.69,
-     "mediaan": 12.68,
-     "beter": 77
+     "n": 24,
+     "gemiddeld": 7.15,
+     "mediaan": 9.89,
+     "beter": 71,
+     "t": 1.66
     },
     "vermijden": {
      "n": 1,
-     "gemiddeld": -23.56,
-     "mediaan": -23.56,
-     "beter": 0
+     "gemiddeld": -23.58,
+     "mediaan": -23.58,
+     "beter": 0,
+     "t": null
     },
     "geen": {
-     "n": 277,
-     "gemiddeld": -1.73,
-     "mediaan": -0.81,
-     "beter": 49
+     "n": 273,
+     "gemiddeld": -1.63,
+     "mediaan": -0.59,
+     "beter": 50,
+     "t": -1.27
     }
    },
    "naic": {
@@ -563,70 +835,87 @@
      "n": 0
     },
     "neutraal": {
-     "n": 0
+     "n": 2,
+     "gemiddeld": -8.99,
+     "mediaan": -0.26,
+     "beter": 0,
+     "t": null
     },
     "vermijden": {
-     "n": 0
+     "n": 1,
+     "gemiddeld": -1.38,
+     "mediaan": -1.38,
+     "beter": 0,
+     "t": null
     },
     "geen": {
-     "n": 317,
-     "gemiddeld": 0,
-     "mediaan": 1.14,
-     "beter": 53
+     "n": 314,
+     "gemiddeld": 0.06,
+     "mediaan": 1.5,
+     "beter": 53,
+     "t": 0.05
     }
    }
   },
   "2019-04-30": {
    "app": {
     "kopen": {
-     "n": 25,
-     "gemiddeld": 15.99,
-     "mediaan": 14.54,
-     "beter": 84
+     "n": 30,
+     "gemiddeld": 12.6,
+     "mediaan": 13,
+     "beter": 73,
+     "t": 3.18
     },
     "neutraal": {
-     "n": 13,
-     "gemiddeld": 11.92,
-     "mediaan": 19.62,
-     "beter": 69
+     "n": 15,
+     "gemiddeld": 9.23,
+     "mediaan": 19.21,
+     "beter": 67,
+     "t": 1.16
     },
     "vermijden": {
      "n": 3,
-     "gemiddeld": 75.9,
-     "mediaan": 6.23,
-     "beter": 67
+     "gemiddeld": 75.89,
+     "mediaan": 6.21,
+     "beter": 67,
+     "t": 0.91
     },
     "geen": {
-     "n": 278,
-     "gemiddeld": -2.81,
-     "mediaan": -5.9,
-     "beter": 40
+     "n": 271,
+     "gemiddeld": -2.75,
+     "mediaan": -6.17,
+     "beter": 41,
+     "t": -1.59
     }
    },
    "naic": {
     "kopen": {
-     "n": 1,
-     "gemiddeld": -18.58,
-     "mediaan": -18.58,
-     "beter": 0
+     "n": 4,
+     "gemiddeld": -7.19,
+     "mediaan": -3.01,
+     "beter": 25,
+     "t": -0.66
     },
     "neutraal": {
-     "n": 1,
-     "gemiddeld": 36.38,
-     "mediaan": 36.38,
-     "beter": 100
+     "n": 3,
+     "gemiddeld": 11.19,
+     "mediaan": 5.05,
+     "beter": 67,
+     "t": 0.85
     },
     "vermijden": {
-     "n": 1,
-     "gemiddeld": 8.93,
-     "mediaan": 8.93,
-     "beter": 100
+     "n": 3,
+     "gemiddeld": -5.42,
+     "mediaan": -3.68,
+     "beter": 33,
+     "t": -0.61
     },
     "geen": {
-     "n": 316,
-     "gemiddeld": -0.08,
-     "mediaan": -3.58,
-     "beter": 45
+     "n": 309,
+     "gemiddeld": 0.04,
+     "mediaan": -3.59,
+     "beter": 45,
+     "t": 0.02
     }
    }
   },
@@ -634,323 +923,371 @@
    "app": {
     "kopen": {
      "n": 9,
-     "gemiddeld": 22.68,
-     "mediaan": 13.51,
-     "beter": 56
+     "gemiddeld": 22.73,
+     "mediaan": 13.55,
+     "beter": 56,
+     "t": 1.34
     },
     "neutraal": {
-     "n": 55,
-     "gemiddeld": -2.51,
-     "mediaan": -13.32,
-     "beter": 31
+     "n": 63,
+     "gemiddeld": -1.76,
+     "mediaan": -11.53,
+     "beter": 33,
+     "t": -0.26
     },
     "vermijden": {
-     "n": 23,
-     "gemiddeld": 9.88,
-     "mediaan": 8.43,
-     "beter": 61
+     "n": 25,
+     "gemiddeld": 7.11,
+     "mediaan": 4.41,
+     "beter": 56,
+     "t": 0.95
     },
     "geen": {
-     "n": 235,
-     "gemiddeld": -1.25,
-     "mediaan": -8.71,
-     "beter": 40
+     "n": 225,
+     "gemiddeld": -1.21,
+     "mediaan": -9.52,
+     "beter": 40,
+     "t": -0.51
     }
    },
    "naic": {
     "kopen": {
-     "n": 10,
-     "gemiddeld": 6.11,
-     "mediaan": 22.76,
-     "beter": 50
+     "n": 16,
+     "gemiddeld": 10.36,
+     "mediaan": 22.8,
+     "beter": 56,
+     "t": 1
     },
     "neutraal": {
-     "n": 23,
-     "gemiddeld": 2.36,
-     "mediaan": -4.59,
-     "beter": 39
+     "n": 26,
+     "gemiddeld": -1.54,
+     "mediaan": -4.54,
+     "beter": 35,
+     "t": -0.21
     },
     "vermijden": {
-     "n": 14,
-     "gemiddeld": -9.85,
-     "mediaan": -0.86,
-     "beter": 43
+     "n": 16,
+     "gemiddeld": -11.74,
+     "mediaan": -0.82,
+     "beter": 38,
+     "t": -1.24
     },
     "geen": {
-     "n": 275,
-     "gemiddeld": 0.08,
-     "mediaan": -9.56,
-     "beter": 40
+     "n": 264,
+     "gemiddeld": 0.24,
+     "mediaan": -9.52,
+     "beter": 40,
+     "t": 0.09
     }
    }
   },
   "2021-04-30": {
    "app": {
     "kopen": {
-     "n": 81,
-     "gemiddeld": -2.26,
-     "mediaan": -2.9,
-     "beter": 44
+     "n": 83,
+     "gemiddeld": -2.3,
+     "mediaan": -2.93,
+     "beter": 45,
+     "t": -1.02
     },
     "neutraal": {
-     "n": 91,
-     "gemiddeld": 6.64,
-     "mediaan": 6.3,
-     "beter": 56
+     "n": 95,
+     "gemiddeld": 5.49,
+     "mediaan": 3.42,
+     "beter": 54,
+     "t": 2.4
     },
     "vermijden": {
      "n": 13,
-     "gemiddeld": 2.92,
-     "mediaan": 1.86,
-     "beter": 62
+     "gemiddeld": 2.88,
+     "mediaan": 1.82,
+     "beter": 62,
+     "t": 0.38
     },
     "geen": {
-     "n": 142,
-     "gemiddeld": -3.23,
-     "mediaan": -2.29,
-     "beter": 44
+     "n": 136,
+     "gemiddeld": -2.71,
+     "mediaan": -1.84,
+     "beter": 46,
+     "t": -1.19
     }
    },
    "naic": {
     "kopen": {
      "n": 5,
-     "gemiddeld": 15.5,
-     "mediaan": 14.45,
-     "beter": 80
+     "gemiddeld": 15.47,
+     "mediaan": 14.41,
+     "beter": 80,
+     "t": 1.68
     },
     "neutraal": {
      "n": 24,
-     "gemiddeld": 4.38,
-     "mediaan": 6.65,
-     "beter": 54
+     "gemiddeld": 4.35,
+     "mediaan": 6.61,
+     "beter": 54,
+     "t": 1
     },
     "vermijden": {
-     "n": 27,
-     "gemiddeld": 0.24,
-     "mediaan": -3.54,
-     "beter": 44
+     "n": 36,
+     "gemiddeld": -0.38,
+     "mediaan": -2.51,
+     "beter": 44,
+     "t": -0.13
     },
     "geen": {
-     "n": 271,
-     "gemiddeld": -0.7,
-     "mediaan": -1.99,
-     "beter": 47
+     "n": 262,
+     "gemiddeld": -0.64,
+     "mediaan": -1.47,
+     "beter": 48,
+     "t": -0.41
     }
    }
   },
   "2022-04-30": {
    "app": {
     "kopen": {
-     "n": 59,
-     "gemiddeld": -4.03,
-     "mediaan": -4.48,
-     "beter": 39
+     "n": 60,
+     "gemiddeld": -3.93,
+     "mediaan": -4.01,
+     "beter": 40,
+     "t": -1.71
     },
     "neutraal": {
-     "n": 129,
-     "gemiddeld": 1.05,
-     "mediaan": -1.05,
-     "beter": 46
+     "n": 136,
+     "gemiddeld": 1.63,
+     "mediaan": -0.77,
+     "beter": 46,
+     "t": 0.92
     },
     "vermijden": {
-     "n": 33,
-     "gemiddeld": 2.95,
+     "n": 36,
+     "gemiddeld": 2.11,
      "mediaan": -1.52,
-     "beter": 45
+     "beter": 44,
+     "t": 0.41
     },
     "geen": {
-     "n": 112,
-     "gemiddeld": 0.04,
-     "mediaan": -1.89,
-     "beter": 44
+     "n": 101,
+     "gemiddeld": -0.61,
+     "mediaan": -2.22,
+     "beter": 43,
+     "t": -0.22
     }
    },
    "naic": {
     "kopen": {
-     "n": 9,
-     "gemiddeld": -1.95,
+     "n": 14,
+     "gemiddeld": 1.84,
      "mediaan": 6.38,
-     "beter": 56
+     "beter": 50,
+     "t": 0.36
     },
     "neutraal": {
-     "n": 35,
-     "gemiddeld": 3.3,
+     "n": 36,
+     "gemiddeld": 2.79,
      "mediaan": -0.77,
-     "beter": 46
+     "beter": 44,
+     "t": 0.98
     },
     "vermijden": {
-     "n": 23,
-     "gemiddeld": -1.4,
+     "n": 31,
+     "gemiddeld": -0.39,
      "mediaan": 0.24,
-     "beter": 52
+     "beter": 52,
+     "t": -0.11
     },
     "geen": {
-     "n": 266,
-     "gemiddeld": -0.25,
-     "mediaan": -2.44,
-     "beter": 42
+     "n": 252,
+     "gemiddeld": -0.45,
+     "mediaan": -2.51,
+     "beter": 42,
+     "t": -0.28
     }
    }
   },
   "2023-04-30": {
    "app": {
     "kopen": {
-     "n": 114,
-     "gemiddeld": -1.84,
+     "n": 118,
+     "gemiddeld": -1.69,
      "mediaan": -5.03,
-     "beter": 44
+     "beter": 43,
+     "t": -0.69
     },
     "neutraal": {
-     "n": 107,
-     "gemiddeld": 1.84,
-     "mediaan": -4.96,
-     "beter": 40
+     "n": 116,
+     "gemiddeld": 0.18,
+     "mediaan": -5.48,
+     "beter": 39,
+     "t": 0.05
     },
     "vermijden": {
      "n": 9,
      "gemiddeld": -17.78,
      "mediaan": -33.34,
-     "beter": 22
+     "beter": 22,
+     "t": -1.37
     },
     "geen": {
-     "n": 108,
-     "gemiddeld": 1.6,
+     "n": 95,
+     "gemiddeld": 3.56,
      "mediaan": -7.49,
-     "beter": 40
+     "beter": 42,
+     "t": 1
     }
    },
    "naic": {
     "kopen": {
-     "n": 10,
-     "gemiddeld": 4.62,
-     "mediaan": 8.95,
-     "beter": 50
+     "n": 13,
+     "gemiddeld": 4.79,
+     "mediaan": -1.31,
+     "beter": 46,
+     "t": 0.42
     },
     "neutraal": {
-     "n": 41,
-     "gemiddeld": 5.23,
-     "mediaan": -0.58,
-     "beter": 49
+     "n": 44,
+     "gemiddeld": 3.95,
+     "mediaan": -3.6,
+     "beter": 45,
+     "t": 0.99
     },
     "vermijden": {
-     "n": 24,
-     "gemiddeld": 2.66,
-     "mediaan": -10.05,
-     "beter": 33
+     "n": 31,
+     "gemiddeld": -2.58,
+     "mediaan": -10.99,
+     "beter": 32,
+     "t": -0.31
     },
     "geen": {
-     "n": 263,
-     "gemiddeld": -1.23,
-     "mediaan": -7.18,
-     "beter": 40
+     "n": 250,
+     "gemiddeld": -0.63,
+     "mediaan": -6.74,
+     "beter": 41,
+     "t": -0.31
     }
    }
   },
   "2024-04-30": {
    "app": {
     "kopen": {
-     "n": 122,
-     "gemiddeld": -3.15,
-     "mediaan": -6.95,
-     "beter": 42
+     "n": 127,
+     "gemiddeld": -2.24,
+     "mediaan": -6.85,
+     "beter": 43,
+     "t": -0.78
     },
     "neutraal": {
-     "n": 111,
-     "gemiddeld": -4.53,
-     "mediaan": -5.28,
-     "beter": 44
+     "n": 119,
+     "gemiddeld": -5.26,
+     "mediaan": -6.17,
+     "beter": 43,
+     "t": -1.85
     },
     "vermijden": {
-     "n": 12,
-     "gemiddeld": 5.2,
-     "mediaan": -1.89,
-     "beter": 42
+     "n": 13,
+     "gemiddeld": 2.5,
+     "mediaan": -18.38,
+     "beter": 38,
+     "t": 0.21
     },
     "geen": {
-     "n": 97,
-     "gemiddeld": 8.5,
-     "mediaan": 0.14,
-     "beter": 51
+     "n": 83,
+     "gemiddeld": 10.58,
+     "mediaan": 3.2,
+     "beter": 52,
+     "t": 2.17
     }
    },
    "naic": {
     "kopen": {
-     "n": 6,
-     "gemiddeld": -18.86,
-     "mediaan": -25.64,
-     "beter": 33
+     "n": 7,
+     "gemiddeld": -7.62,
+     "mediaan": -25.24,
+     "beter": 43,
+     "t": -0.48
     },
     "neutraal": {
-     "n": 64,
-     "gemiddeld": 0.23,
-     "mediaan": -3.29,
-     "beter": 42
+     "n": 69,
+     "gemiddeld": -0.88,
+     "mediaan": -4.35,
+     "beter": 41,
+     "t": -0.2
     },
     "vermijden": {
-     "n": 37,
-     "gemiddeld": -1.75,
+     "n": 43,
+     "gemiddeld": -2.05,
      "mediaan": 0.97,
-     "beter": 57
+     "beter": 56,
+     "t": -0.58
     },
     "geen": {
-     "n": 235,
-     "gemiddeld": 0.69,
-     "mediaan": -5.28,
-     "beter": 44
+     "n": 223,
+     "gemiddeld": 0.91,
+     "mediaan": -5.17,
+     "beter": 44,
+     "t": 0.36
     }
    }
   },
   "2025-04-30": {
    "app": {
     "kopen": {
-     "n": 81,
-     "gemiddeld": -3.38,
-     "mediaan": -7.84,
-     "beter": 44
+     "n": 82,
+     "gemiddeld": -3.55,
+     "mediaan": -7.93,
+     "beter": 44,
+     "t": -0.94
     },
     "neutraal": {
-     "n": 161,
-     "gemiddeld": -0.63,
-     "mediaan": -9.06,
-     "beter": 41
+     "n": 174,
+     "gemiddeld": -0.3,
+     "mediaan": -9.19,
+     "beter": 41,
+     "t": -0.08
     },
     "vermijden": {
-     "n": 22,
-     "gemiddeld": 25.36,
-     "mediaan": 13.21,
-     "beter": 55
+     "n": 23,
+     "gemiddeld": 15.09,
+     "mediaan": 3.19,
+     "beter": 52,
+     "t": 1.42
     },
     "geen": {
-     "n": 80,
-     "gemiddeld": -2.28,
-     "mediaan": -8.7,
-     "beter": 41
+     "n": 65,
+     "gemiddeld": -0.06,
+     "mediaan": -4.98,
+     "beter": 43,
+     "t": -0.01
     }
    },
    "naic": {
     "kopen": {
-     "n": 12,
-     "gemiddeld": 9.27,
-     "mediaan": -12.7,
-     "beter": 33
+     "n": 16,
+     "gemiddeld": 5.73,
+     "mediaan": -16.14,
+     "beter": 31,
+     "t": 0.31
     },
     "neutraal": {
-     "n": 74,
-     "gemiddeld": 1.52,
-     "mediaan": -4.39,
-     "beter": 47
+     "n": 80,
+     "gemiddeld": 1.88,
+     "mediaan": -7.22,
+     "beter": 45,
+     "t": 0.4
     },
     "vermijden": {
-     "n": 73,
-     "gemiddeld": 0.25,
-     "mediaan": -8.14,
-     "beter": 42
+     "n": 80,
+     "gemiddeld": -2.17,
+     "mediaan": -8.23,
+     "beter": 43,
+     "t": -0.44
     },
     "geen": {
-     "n": 185,
-     "gemiddeld": -1.31,
-     "mediaan": -8.7,
-     "beter": 42
+     "n": 168,
+     "gemiddeld": -0.41,
+     "mediaan": -7.79,
+     "beter": 43,
+     "t": -0.12
     }
    }
   }
