@@ -26,7 +26,9 @@ VERWATERD = re.compile(r'dilu|verw[aä]', re.I)
 NIET = re.compile(r'adjust|ajustad|rettificat|core|underlying|recurr|ricorrent|continuing|discontinu|interrumpid|continuad|'
                   r'cessat|operazioni|before|antes|prima|avant|excluding|sin\s|senza|hors|pro\s?forma|target|objetivo|dividend|'
                   r'number|n[uú]mero|numero|nombre|aantal|weighted|ponderad|medio|moyen|AT1|cup[oó]n|coupon|tangible|growth|'
-                  r'crecimiento|variaci|change|%', re.I)
+                  r'crecimiento|variaci|change|%|\bfor\s+(the\s+purposes?|basic|diluted|calculating)|used\s+in|attributable|atribuible|attribuibile|imputable', re.I)
+CENTEN = re.compile(r'pence|\(p\)|\bp\b|cents?\b|eurocent|c[ée]ntimos|centesim', re.I)
+MUNT = re.compile(r'[£€$]|\beuros?\b|\bEUR\b|\bGBP\b|\bUSD\b|\bdollars?\b|\bpounds?\b', re.I)
 JAAR = re.compile(r'(?<![\d.,])(20[0-3]\d)(?![\d.,])')
 GETAL = re.compile(r'\(?[-–−]?\s?\d{1,3}(?:[.,\s]\d{3})*(?:[.,]\d+)?\)?')
 
@@ -83,6 +85,7 @@ def lees_rapport(pad):
     for tabel in doc.iter(X + 'table'):
         rijen = list(tabel.iter(X + 'tr'))
         kop = None
+        koptekst = ' '.join(' '.join(''.join(tr.itertext()).split()) for tr in rijen[:4])[:400]
         for tr in rijen:
             cellen = [' '.join(''.join(c.itertext()).split()) for c in tr if c.tag in (X + 'td', X + 'th')]
             cellen = [c for c in cellen if c]
@@ -103,7 +106,8 @@ def lees_rapport(pad):
                         waarden.append(tok)
             if len(waarden) < 2:
                 continue
-            uit.append({'label': eerste[:160], 'verwaterd': bool(VERWATERD.search(eerste)), 'waarden': waarden, 'kop': kop})
+            uit.append({'label': eerste[:160], 'verwaterd': bool(VERWATERD.search(eerste)), 'waarden': waarden, 'kop': kop,
+                        'centen': bool(CENTEN.search(eerste) or CENTEN.search(koptekst)), 'munt': bool(MUNT.search(eerste) or MUNT.search(koptekst))})
     return {'komma': komma, 'regels': uit}
 
 
@@ -141,7 +145,7 @@ def lezen(uitpad, tickers):
         json.dump(uit, open(uitpad, 'w'), ensure_ascii=False, indent=1)
 
 
-def kies_rapport(r):
+def kies_rapport(r, eis_munt=False):
     """(eps_boekjaar, eps_vorig, regel) of None: verwaterd gaat voor; alle gekozen regels moeten hetzelfde zeggen."""
     pe = r.get('period_end') or ''
     try:
@@ -162,6 +166,10 @@ def kies_rapport(r):
                 continue
             w = w[:len(kop)]                               # een verschilkolom achteraan valt weg
             nu, vorig = w[kop.index(jaar)], w[kop.index(jaar - 1)]
+            if g.get('centen'):
+                nu, vorig = nu / 100, vorig / 100                  # in centen of pence gemeld
+            elif eis_munt and not g.get('munt'):
+                continue                                           # niet-euro zonder aanduiding: schaal onzeker
             if abs(nu) > 1000 or abs(vorig) > 1000:
                 continue
             lezingen.append((round(nu, 4), round(vorig, 4), g['label'] + ': ' + ' '.join(g['waarden'][:len(kop)])))
@@ -191,24 +199,21 @@ def kiezen(inpad, uitpad):
     bedrijven = {}
     for t, per in data.items():
         eenheid = eps_eenheid(t) or 'EUR/shares'
-        if eenheid != 'EUR/shares':
-            # pence/ponden en andere valuta: de schaal in de tekst (45,2p) is niet zeker; alleen euro's
-            print(t, 'overgeslagen: eenheid', eenheid)
-            continue
+        eis_munt = eenheid != 'EUR/shares'      # pence of ponden: alleen met een duidelijke aanduiding (pence, £, cent)
         docs = []
         for fx, r in per.get('rapporten', {}).items():
             if r.get('fout'):
                 continue
-            k = kies_rapport(r)
+            k = kies_rapport(r, eis_munt)
             if not k:
                 continue
             nu, vorig, bewijs = k
             pe = date.fromisoformat(r['period_end'])
             vorig_eind = date(pe.year - 1, pe.month, min(pe.day, 28 if pe.month == 2 else pe.day))
             feiten = [{'concept': 'ifrs-full:DilutedEarningsLossPerShare', 'start': (pe - timedelta(days=364)).isoformat(), 'eind': pe.isoformat(),
-                       'waarde': nu, 'eenheid': 'EUR/shares', 'oorspronkelijk': nu, 'schaal': 1, 'bewijs': 'ESEF-tekst: "' + bewijs + '"'},
+                       'waarde': nu, 'eenheid': eenheid, 'oorspronkelijk': nu, 'schaal': 1, 'bewijs': 'ESEF-tekst: "' + bewijs + '"'},
                       {'concept': 'ifrs-full:DilutedEarningsLossPerShare', 'start': (vorig_eind - timedelta(days=364)).isoformat(), 'eind': vorig_eind.isoformat(),
-                       'waarde': vorig, 'eenheid': 'EUR/shares', 'oorspronkelijk': vorig, 'schaal': 1, 'bewijs': 'ESEF-tekst (vergelijkend cijfer)'}]
+                       'waarde': vorig, 'eenheid': eenheid, 'oorspronkelijk': vorig, 'schaal': 1, 'bewijs': 'ESEF-tekst (vergelijkend cijfer)'}]
             docs.append({'document': fx, 'soort': 'esef-tekst', 'url': r.get('url'), 'ingediend': r.get('published') or r['period_end'],
                          'kenmerk': fx, 'period_end': r['period_end'], 'feiten': feiten})
         if docs:
