@@ -1,0 +1,130 @@
+{
+ "bedrijven": {
+  "CABK.MC": {
+   "documenten": [
+    {
+     "document": "7CUNS533WID6K7DGFI87-2025-12-31-ESEF-ES-0",
+     "feiten": [
+      {
+       "bewijs": "ESEF-tekst: \"BENEFICIO DILUIDO POR ACCIÓN (EN EUROS) (3): 0,79 0,76 0,61\"",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2025-12-31",
+       "oorspronkelijk": 0.79,
+       "schaal": 1,
+       "start": "2025-01-01",
+       "waarde": 0.79
+      },
+      {
+       "bewijs": "ESEF-tekst (vergelijkend cijfer)",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2024-12-31",
+       "oorspronkelijk": 0.76,
+       "schaal": 1,
+       "start": "2024-01-02",
+       "waarde": 0.76
+      }
+     ],
+     "ingediend": "2026-02-20",
+     "kenmerk": "7CUNS533WID6K7DGFI87-2025-12-31-ESEF-ES-0",
+     "period_end": "2025-12-31",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2025-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-2025-12-31-1-es/reports/ixbrlviewer.html"
+    },
+    {
+     "document": "7CUNS533WID6K7DGFI87-2024-12-31-ESEF-ES-0",
+     "feiten": [
+      {
+       "bewijs": "ESEF-tekst: \"Beneficio diluido por acción (en euros) (3): 0,76 0,61 0,37\"",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2024-12-31",
+       "oorspronkelijk": 0.76,
+       "schaal": 1,
+       "start": "2024-01-02",
+       "waarde": 0.76
+      },
+      {
+       "bewijs": "ESEF-tekst (vergelijkend cijfer)",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2023-12-31",
+       "oorspronkelijk": 0.61,
+       "schaal": 1,
+       "start": "2023-01-01",
+       "waarde": 0.61
+      }
+     ],
+     "ingediend": "2025-05-08",
+     "kenmerk": "7CUNS533WID6K7DGFI87-2024-12-31-ESEF-ES-0",
+     "period_end": "2024-12-31",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2024-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20241231-es/reports/ixbrlviewer.html"
+    },
+    {
+     "document": "7CUNS533WID6K7DGFI87-2023-12-31-ESEF-ES-0",
+     "feiten": [
+      {
+       "bewijs": "ESEF-tekst: \"Beneficio diluido por acción (en euros) (3): 0,61 0,37 0,66\"",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2023-12-31",
+       "oorspronkelijk": 0.61,
+       "schaal": 1,
+       "start": "2023-01-01",
+       "waarde": 0.61
+      },
+      {
+       "bewijs": "ESEF-tekst (vergelijkend cijfer)",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2022-12-31",
+       "oorspronkelijk": 0.37,
+       "schaal": 1,
+       "start": "2022-01-01",
+       "waarde": 0.37
+      }
+     ],
+     "ingediend": "2024-04-23",
+     "kenmerk": "7CUNS533WID6K7DGFI87-2023-12-31-ESEF-ES-0",
+     "period_end": "2023-12-31",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2023-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20231231-es/reports/ixbrlviewer.html"
+    },
+    {
+     "document": "7CUNS533WID6K7DGFI87-2022-12-31-ESEF-ES-0",
+     "feiten": [
+      {
+       "bewijs": "ESEF-tekst: \"Beneficio diluido por acción (en euros) (3): 0,37 0,66 0,21\"",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2022-12-31",
+       "oorspronkelijk": 0.37,
+       "schaal": 1,
+       "start": "2022-01-01",
+       "waarde": 0.37
+      },
+      {
+       "bewijs": "ESEF-tekst (vergelijkend cijfer)",
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "eenheid": "EUR/shares",
+       "eind": "2021-12-31",
+       "oorspronkelijk": 0.66,
+       "schaal": 1,
+       "start": "2021-01-01",
+       "waarde": 0.66
+      }
+     ],
+     "ingediend": "2023-05-09",
+     "kenmerk": "7CUNS533WID6K7DGFI87-2022-12-31-ESEF-ES-0",
+     "period_end": "2022-12-31",
+     "soort": "esef-tekst",
+     "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2022-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20221231-es/reports/ixbrlviewer.html"
+    }
+   ],
+   "lei": "7CUNS533WID6K7DGFI87"
+  }
+ },
+ "toelichting": "Winst per aandeel uit de tekst (tabellen) van ESEF-jaarverslagen waar het getal niet getagd is. Gemaakt met hulp/esef_tekst_eps.py; vult alleen aan (een getagd feit gaat voor). Alleen bedrijven waarbij de keten daarna sluit en de getallen nagekeken zijn (25 okt 2026: CaixaBank)."
+}

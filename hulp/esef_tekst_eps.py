@@ -160,16 +160,19 @@ def kies_rapport(r, eis_munt=False):
             kop = g['kop']
             if jaar not in kop or (jaar - 1) not in kop:
                 continue
-            w = [getal(x, r.get('komma')) for x in g['waarden']]
-            w = [x for x in w if x is not None]
+            ruw = [x for x in g['waarden'] if getal(x, r.get('komma')) is not None]
+            # een toelichtingsnummer vooraan (heel getal, de rest met decimalen) valt weg: "7 109.9 82.2"
+            if len(ruw) > len(kop) and not re.search(r'[.,]\d', ruw[0]) and all(re.search(r'[.,]\d', x) for x in ruw[1:len(kop) + 1]):
+                ruw = ruw[1:]
+            w = [getal(x, r.get('komma')) for x in ruw]
             if len(w) < len(kop):
                 continue
             w = w[:len(kop)]                               # een verschilkolom achteraan valt weg
             nu, vorig = w[kop.index(jaar)], w[kop.index(jaar - 1)]
             if g.get('centen'):
                 nu, vorig = nu / 100, vorig / 100                  # in centen of pence gemeld
-            elif eis_munt and not g.get('munt'):
-                continue                                           # niet-euro zonder aanduiding: schaal onzeker
+            elif eis_munt:
+                continue                                           # niet-euro zonder 'pence'/'cent': schaal onzeker
             if abs(nu) > 1000 or abs(vorig) > 1000:
                 continue
             lezingen.append((round(nu, 4), round(vorig, 4), g['label'] + ': ' + ' '.join(g['waarden'][:len(kop)])))
@@ -198,7 +201,7 @@ def kiezen(inpad, uitpad):
     data = json.load(open(inpad))
     bedrijven = {}
     for t, per in data.items():
-        eenheid = eps_eenheid(t) or 'EUR/shares'
+        eenheid = eps_eenheid(t) or ('GBP/shares' if t.endswith('.L') else 'EUR/shares')
         eis_munt = eenheid != 'EUR/shares'      # pence of ponden: alleen met een duidelijke aanduiding (pence, £, cent)
         docs = []
         for fx, r in per.get('rapporten', {}).items():

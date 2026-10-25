@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.25-beta.79
+- **CaixaBank met 5 jaar winst per aandeel** (2021–2025). CaixaBank zet de winst per aandeel niet als getal in zijn digitale (ESEF) jaarverslag; de app leest die nu uit de tabellen van het leesbare verslag zelf en controleert de jaren met het vergelijkende cijfer in het verslag erna.
+- **Winst per aandeel van Yahoo als laatste redmiddel**: bij een fonds met officiële cijfers maar zonder één bruikbaar jaar winst per aandeel (o.a. Visa, dat de winst alleen per aandelenklasse meldt) neemt de app die van Yahoo Finance over. Het fonds heet dan “Indicatief (Yahoo)”; omzet, kasstroom en balans blijven uit de officiële bron. Op het tabblad Bronnen staat dat erbij.
+- Onderzocht maar (nog) niet bruikbaar: de verslagen van de andere Italiaanse en Spaanse banken staan maar deels bij de Europese verzamelplaats, of hun tabellen zijn als plaatjes of losse tekstblokken opgemaakt; bij Iberdrola, Air France-KLM en Vodafone spreekt de tekst de getagde cijfers tegen. Die blijven buiten de reeks.
+
 ## 2026.10.25-beta.78
 - **Veel meer Europese fondsen met een winstreeks van 5 tot 10 jaar.** Bij ongeveer 50 fondsen kon de app het aantal aandelen maar voor de laatste paar jaar nagerekenen, en gebruikte daardoor maar 2 tot 5 jaar winst per aandeel, terwijl de jaarverslagen samen een langere, onderling controleerbare reeks gaven. Nu wint de langste reeks zolang er minder dan 6 jaar is nagerekend. Onder andere L'Oréal en Pernod Ricard (8 jaar), BP (10), National Grid, WPP, Experian, Barclays, Rio Tinto, LSEG, Haleon, Bunzl, Philips en KBC.
 - Tesla: de kwartaalcijfers voor het bevestigen van een splitsing worden alleen nog gebruikt als de jaarcijfers het niet kunnen (bij Tesla gaf de preciezere datum een onterechte afwijzing).
