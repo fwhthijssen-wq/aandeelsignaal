@@ -44,6 +44,12 @@ def geldige_ratio(ratio, tag=None):
     return 1 < ratio <= 1000
 
 
+def _onbevestigd(events):
+    """Aantal splitgebeurtenissen dat niet bevestigd, niet dubbel en niet buiten het dossier is."""
+    return sum(1 for e in events if isinstance(e, dict) and e.get('Datumtype') not in
+               ('effectieve_splitdatum', 'niet_van_toepassing', 'dubbel_van_bevestigde_splitsing'))
+
+
 def _samenvoeging(ratio):
     """Verhouding onder 1 (samenvoeging van aandelen, zoals Honeywell 1:2 = 0,5): alleen te gebruiken na bevestiging."""
     return isinstance(ratio, (int, float)) and not isinstance(ratio, bool) and isfinite(ratio) and 0.001 <= ratio <= 0.99
@@ -595,11 +601,15 @@ def verify_eps(result, safe_history, audit_date):
     split_source = result.get('split_events')
     checked_events = []
     if isinstance(split_source, list):
-        obs = list(result.get('eps_filing_observations') or [])
+        jaar_obs = result.get('eps_filing_observations')
+        checked_events = verify_split_events(split_source, jaar_obs, safe_history)
         kw = result.get('eps_quarter_observations')
-        if isinstance(kw, list):
-            obs += kw            # kwartalen alleen voor het bevestigen van de splitsing zelf
-        checked_events = verify_split_events(split_source, obs, safe_history)
+        if isinstance(kw, list) and kw and _onbevestigd(checked_events):
+            # Alleen als de jaarcijfers een splitsing niet kunnen bevestigen (bijv. een samenvoeging na het laatste
+            # jaarverslag): opnieuw met de kwartalen erbij, en alleen overnemen als dat minder onbevestigde gebeurtenissen geeft.
+            met_kw = verify_split_events(split_source, list(jaar_obs or []) + kw, safe_history)
+            if _onbevestigd(met_kw) < _onbevestigd(checked_events):
+                checked_events = met_kw
     split_audit = []
     validated_splits = []
     for event in checked_events if isinstance(split_source, list) else []:

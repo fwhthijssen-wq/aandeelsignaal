@@ -152,11 +152,14 @@ def gegevens_uit_esef(cf, gecontroleerd_op):
     from esef_bron import eps_keten, JAARVERSLAG_MIN_JAREN
     g = gegevens_uit_sec(samenvatting(cf, asof=gecontroleerd_op), gecontroleerd_op)
     g['bron'] = 'ESEF'
-    if g.get('eps_status') != 'independently_verified' and g.get('jaren'):
-        # Niet nagerekend (vaak ontbreekt het aantal aandelen in machineleesbare vorm). Het label-slot blijft dicht; maar de
-        # cijfers uit het officiële jaarverslag zijn er wel, mits de EPS over de jaren onderling vergelijkbaar is.
+    if g.get('jaren') and (g.get('eps_status') != 'independently_verified' or (g.get('eps_verified_years') or 0) < 6):
+        # Niet (volledig) nagerekend (vaak ontbreekt het aantal aandelen in machineleesbare vorm, of het is maar voor de laatste
+        # jaren stabiel, zoals L'Oréal en Pernod Ricard). Het label-slot blijft dicht; maar de cijfers uit het officiële
+        # jaarverslag zijn er wel, mits de EPS over de jaren onderling vergelijkbaar is. Alleen als de keten langer is, en
+        # alleen bij minder dan 6 nagerekende jaren (genoeg voor NAIC: 5 jaar K/W); een langere nagerekende reeks blijft staan.
         keten = eps_keten(cf)
-        if keten:
+        nagerekend = (g.get('eps_verified_years') or 0) if g.get('eps_status') == 'independently_verified' else 0
+        if keten and len(keten) > nagerekend:
             for j in g['jaren']:
                 if j.get('end') in keten:
                     j['comparable_eps'] = keten[j['end']]

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026.10.25-beta.78
+- **Veel meer Europese fondsen met een winstreeks van 5 tot 10 jaar.** Bij ongeveer 50 fondsen kon de app het aantal aandelen maar voor de laatste paar jaar nagerekenen, en gebruikte daardoor maar 2 tot 5 jaar winst per aandeel, terwijl de jaarverslagen samen een langere, onderling controleerbare reeks gaven. Nu wint de langste reeks zolang er minder dan 6 jaar is nagerekend. Onder andere L'Oréal en Pernod Ricard (8 jaar), BP (10), National Grid, WPP, Experian, Barclays, Rio Tinto, LSEG, Haleon, Bunzl, Philips en KBC.
+- Tesla: de kwartaalcijfers voor het bevestigen van een splitsing worden alleen nog gebruikt als de jaarcijfers het niet kunnen (bij Tesla gaf de preciezere datum een onterechte afwijzing).
+
 ## 2026.10.25-beta.77
 - **Honeywell weer met 10 jaar bevestigde winst per aandeel.** Honeywell voegde in juni 2026 aandelen samen (1 nieuw voor 2 oud). Die samenvoeging stond alleen in een kwartaalbericht en werd daarom afgewezen, waardoor Honeywell geen enkel bruikbaar jaar had. Nu bevestigt de app een recente splitsing of samenvoeging ook met kwartaalcijfers: het kwartaal van vóór de samenvoeging staat in het eerste kwartaalbericht erna opnieuw, met precies dubbele winst per aandeel. Alle jaren worden omgerekend naar de nieuwe aandelen en zijn onafhankelijk nagerekend.
 - **Meer Europese reeksen over jaarverslagen heen.** Als twee jaarverslagen dezelfde winst noemen maar een andere winst per aandeel, kan dat alleen door een ander aantal aandelen (bonusaandelen, splitsing) of een schaalfout in het bestand komen. Bij een zuivere verhouding (bijvoorbeeld 1 op 10, of x100) rekent de app de oudere jaren nu om; een willekeurige verhouding blijft een stopteken. Nieuw of langer: Air Liquide (7 jaar), AB InBev (6), Cellnex (5), Aviva (4), Engie, National Grid, GSK, Michelin, RELX, Standard Chartered, Umicore en Veolia.

@@ -64,6 +64,13 @@ class Ahold(unittest.TestCase):
         self.assertEqual((eps[2017], eps[2019], eps[2025]), (1.43, 1.59, 2.5))
         self.assertIsNone(eps[2016])            # vóór de fusie-sprong in het aantal aandelen: buiten de reeks
 
+    def test_keten_als_maar_twee_jaar_nagerekend(self):
+        # L'Oréal: aantal aandelen alleen voor de laatste 2 jaar stabiel nagerekend; de keten over de jaarverslagen geeft 8 jaar
+        import bouw_webdata as bw
+        g = bw.gegevens_uit_esef(bw.esef_ophalen('OR.PA'), '2026-10-25')
+        self.assertEqual(g['niveau'], 'jaarverslag')
+        self.assertGreaterEqual(sum(1 for j in g['jaren'] if j.get('comparable_eps') is not None), 8)
+
 
 if __name__ == '__main__':
     unittest.main()
