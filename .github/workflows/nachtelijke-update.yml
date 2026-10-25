@@ -36,6 +36,18 @@ jobs:
         id: bouw
         continue-on-error: true
         run: python bouw_webdata.py --live --email "${{ vars.SEC_CONTACT_EMAIL }}"
+      - name: Controle in het overzicht (zichtbaar als melding bij de run)
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          d = json.load(open('web/data/aandelen.json', encoding='utf-8'))
+          L = d.get('aandelen', [])
+          jv = sorted(f"{a['ticker']} {a['gegevens']['eps_jaarverslag']['jaren']}j" for a in L if (a.get('gegevens') or {}).get('eps_jaarverslag'))
+          yahoo = sum(1 for a in L if (a.get('gegevens') or {}).get('bron') == 'Yahoo Finance')
+          oud = sum(1 for a in L if (a.get('gegevens') or {}).get('uit_vorige_run'))
+          print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
+          PY
       - name: Gegevens bewaren voor de volgende run
         if: steps.bouw.outcome == 'success'
         uses: actions/cache/save@v4
