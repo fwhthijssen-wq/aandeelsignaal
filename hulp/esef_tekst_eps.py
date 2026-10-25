@@ -145,10 +145,9 @@ def kies_rapport(r):
     """(eps_boekjaar, eps_vorig, regel) of None: verwaterd gaat voor; alle gekozen regels moeten hetzelfde zeggen."""
     pe = r.get('period_end') or ''
     try:
-        jaar = int(pe[:4]) if pe[5:7] > '06' or pe[5:] == '06-30' else int(pe[:4]) - 1
+        jaar = int(pe[:4])
     except ValueError:
         return None
-    jaar = int(pe[:4])
     lezingen = []
     for soort in (True, False):
         for g in r.get('regels') or []:
