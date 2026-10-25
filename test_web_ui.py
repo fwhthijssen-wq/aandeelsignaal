@@ -829,6 +829,19 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.goto(INDEX + '#/a/GOOGL'); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-terug]').count(), 0)                # geen NAIC-oordeel: geen terugblik
+    def test_eenvoudige_weergave_via_link_en_terug_via_knop(self):
+        pg = self.pagina()
+        pg.goto(INDEX + '?weergave=eenvoudig#/a/AAPL'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.evaluate("localStorage.getItem('as_weergave')"), 'eenvoudig')
+        self.assertFalse(pg.locator('[data-app-kaart]').is_visible())
+        self.assertTrue(pg.locator('[data-naic-kaart]').is_visible())
+        self.assertTrue(pg.locator('[data-vers]').is_visible())
+        pg.click('[data-weergave-knop="uitgebreid"]'); pg.wait_for_timeout(200)
+        self.assertTrue(pg.locator('[data-app-kaart]').is_visible())
+        pg.goto(INDEX + '#/instellingen'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-weergave-kaart] [aria-pressed="true"]').inner_text(), 'Uitgebreid')
+        self.assertEqual(self.fouten, [])
+
 
 if __name__ == '__main__':
     unittest.main()

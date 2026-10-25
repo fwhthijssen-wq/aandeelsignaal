@@ -36,6 +36,7 @@
       'Back-up: uw volglijst, portefeuille en eigen beoordelingen staan alleen op dit toestel. Maak een back-up en bewaar het bestand; met Terugzetten haalt u alles weer terug.',
       'Minimum aantal metingen: het aanvullende oordeel van de zes metingen verschijnt pas als er minstens zoveel beschikbaar zijn (standaard 4). Hoger is strenger. Het NAIC-oordeel heeft eigen eisen.',
       'Uiterlijk: licht, donker of automatisch.',
+      'Weergave: Eenvoudig toont per aandeel alleen het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg; Uitgebreid toont alles. Met ?weergave=eenvoudig achter de link opent iemand anders de app meteen eenvoudig.',
       'Onderaan ziet u het versienummer van de app.'], null],
     hulp: ['Hulp en woordenlijst', 'Algemene uitleg en alle begrippen.', [
       'Open een begrip om de betekenis te lezen.',

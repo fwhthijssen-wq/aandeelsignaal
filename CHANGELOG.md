@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026.10.25-beta.85
+- **Eenvoudige en uitgebreide weergave.** In Instellingen kiest u Eenvoudig (per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg; in de lijsten zonder de zes stippen) of Uitgebreid (alles, zoals tot nu). Per toestel bewaard. Ook mee te geven in de link: <code>?weergave=eenvoudig</code>, handig om de app met iemand anders te delen. Bij een aandeel kunt u met “Alle details tonen” terug naar uitgebreid.
+- **Hoe vers zijn de cijfers?** Onder het oordeel staat tot welk boekjaar de cijfers lopen (en hoe zeker ze zijn) en van welke dag de koers is, met een waarschuwing als het jaarverslag over het laatste boekjaar nog ontbreekt of de koers verouderd is.
+
 ## 2026.10.25-beta.84
 - **Waarom dit oordeel, in één oogopslag**: onder het NAIC-oordeel de vijf stappen als vinkjes: groeibedrijf, goed bedrijf, koopzone, 3 : 1 en 15% per jaar. ✓ klopt, ✗ klopt niet, lege ring = onbekend.
 - **Koopprijs: “Kopen onder …”**: de hoogste koers waarbij alle NAIC-prijsregels kloppen, met hoe ver de koers er nu boven of onder zit en welke regel de grens bepaalt. Alleen bij een groeibedrijf zonder afgevallen kwaliteitstoets. In de lijsten staat “x% boven koopprijs” of “Onder koopprijs”; Fondsen kan sorteren op afstand tot de koopprijs en de volglijst op “Dichtst bij koopprijs” (een wachtlijst).

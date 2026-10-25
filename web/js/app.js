@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.84';
+  var APP_VERSIE = '2026.10.25-beta.85';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -31,7 +31,7 @@
   function stipWoord(m) { return m.nvt ? 'niet van toepassing' : m.aanwezig ? m.oordeel : 'ontbreekt'; }
   function stip(o, label, nvt) { var s = STIP[o]; return '<span class="stip ' + (nvt ? 'x' : s ? s.c : 'l') + '" role="img" aria-label="' + h(label + ': ' + (nvt ? 'niet van toepassing' : o || 'ontbreekt')) + '">' + (nvt ? '–' : s ? s.t : '') + '</span>'; }
   function stippen(b, klein) {
-    return '<span class="stippen' + (klein ? ' klein' : '') + '" data-profiel="' + Signaal.profiel(b) + '">' + b.metingen.map(function (m) {
+    return '<span class="stippen' + (klein ? ' klein detail' : '') + '" data-profiel="' + Signaal.profiel(b) + '">' + b.metingen.map(function (m) {
       return '<span class="stip-kol">' + stip(m.oordeel, m.kort, m.nvt) + '<span class="stip-naam" aria-hidden="true">' + h(m.kort) + '</span></span>';
     }).join('') + '</span>';
   }
@@ -102,17 +102,17 @@
     var b = laatsteBeoordeling = signaalVoor(rec, true);
     var kop = b.oordeel ? '<b class="groot-oordeel" data-app data-oordeel="' + b.oordeel + '">' + OORDEEL[b.oordeel] + '</b>' : '<b class="groot-oordeel" data-app data-oordeel="geen">Geen oordeel</b>';
     var waarom = b.oordeel ? 'Gemiddelde van ' + telTekst(b) + ': ' + String(b.score).replace('.', ',') + ' (Kopen vanaf +0,5; Vermijden vanaf −0,25).' : 'Er zijn ' + telTekst(b) + ' beschikbaar; voor een oordeel zijn er minstens ' + Math.min(b.minMetingen, b.mogelijk) + ' nodig.';
-    var s = '<div data-signaal>' + naicKaart(rec, b) + '<div class="kaart-plat aanvullend" data-app-kaart><div class="rij-kop"><h2>Aanvullend: zes metingen</h2><span class="zacht" data-dekking="' + b.dekking + '">' + telTekst(b) + '</span></div><p class="zacht">Geen NAIC-regels; telt niet mee in het NAIC-oordeel.</p>' + kop + stippen(b) +
+    var s = '<div data-signaal>' + naicKaart(rec, b) + '<div class="kaart-plat aanvullend detail" data-app-kaart><div class="rij-kop"><h2>Aanvullend: zes metingen</h2><span class="zacht" data-dekking="' + b.dekking + '">' + telTekst(b) + '</span></div><p class="zacht">Geen NAIC-regels; telt niet mee in het NAIC-oordeel.</p>' + kop + stippen(b) +
       '<p class="zacht">' + h(waarom) + '</p><ul class="methoden" data-metingen>' + b.metingen.map(function (m) { return metingRegel(m, b); }).join('') + '</ul>';
     b.verouderd.forEach(function (t) { s += '<p class="zacht" data-verouderd>⚠ ' + h(t) + '</p>'; });
-    s += '</div><h3 class="tussenkop">Ter informatie <span class="zacht">(telt niet mee)</span></h3>';
+    s += '</div><div class="detail"><h3 class="tussenkop">Ter informatie <span class="zacht">(telt niet mee)</span></h3>';
     s += b.vragen.map(function (v) {
       if (!v.info.length) return '';
       var aan = v.info.filter(function (m) { return m.aanwezig; }).length;
       return '<details class="kaart-plat info" data-info="' + v.id + '"><summary><b>' + h(v.kort) + '</b> <span class="zacht">' + h(v.vraag) + ' · ' + aan + ' van ' + v.info.length + ' bekend</span></summary><ul class="methoden">' +
         v.info.map(function (m) { return infoRegel(m, b); }).join('') + '</ul>' + (v.id === 'eigen' ? '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(b.ticker) + '/check">Zelf beoordelen bij Verdiepen</a></div>' : '') + '</details>';
     }).join('');
-    s += analistenBlok(rec);
+    s += analistenBlok(rec) + '</div>' + (weergave() === 'eenvoudig' ? '<div class="knoppen"><button type="button" class="knop rand klein" data-weergave-knop="uitgebreid">Alle details tonen</button></div>' : '');
     return s + '</div>' + uitlegOordeel();
   }
   /* ---- NAIC als tweede, losstaand oordeel naast dat van de app ---- */
@@ -122,7 +122,7 @@
       : '<span class="chip naic leeg" data-naic="geen"><span class="chip-pre">NAIC</span> –</span>';
   }
   function appChip(b) {
-    return '<span class="chip oordeel app' + (b.oordeel ? '' : ' leeg') + '" data-oordeel="' + (b.oordeel || 'geen') + '"><span class="chip-pre">App</span> ' + (b.oordeel ? OORDEEL[b.oordeel] : '–') + '</span>';
+    return '<span class="chip oordeel app detail' + (b.oordeel ? '' : ' leeg') + '" data-oordeel="' + (b.oordeel || 'geen') + '"><span class="chip-pre">App</span> ' + (b.oordeel ? OORDEEL[b.oordeel] : '–') + '</span>';
   }
   function koopKort(b) {
     var kp = b.naic && b.naic.koopprijs;
@@ -132,6 +132,21 @@
   }
   function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
   /* De vijf NAIC-stappen als rij vinkjes, de koopprijs en hoe stevig het oordeel is. */
+  /* Hoe vers zijn de cijfers? Laatste boekjaar en datum van de koers, met een waarschuwing als het laatste jaarverslag uitblijft. */
+  function versHtml(rec, b) {
+    var g = rec.gegevens || {}, jr = (g.jaren || []).filter(function (j) { return j && j.end; }).sort(function (x, y) { return x.end < y.end ? -1 : 1; });
+    var l = jr[jr.length - 1], k = rec.koers, delen = [], oud = false;
+    var niveau = b.niveau && Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : null;
+    if (l) {
+      delen.push('cijfers' + (niveau ? ' (' + niveau + ')' : '') + ' t/m boekjaar ' + l.year + ' (tot ' + datumNl(l.end) + ')');
+      var dagen = (Date.parse(vandaag()) - Date.parse(l.end)) / 86400000;
+      oud = dagen > 480;
+    } else delen.push('geen jaarcijfers');
+    var vers = k && k.datum ? Gate.priceFreshness(k.datum, vandaag()).fresh : false;
+    delen.push(k && k.datum ? 'koers van ' + datumNl(k.datum) + (vers ? '' : ' (verouderd)') : 'geen koers');
+    return '<p class="vers zacht" data-vers' + (oud || !vers ? ' data-let-op' : '') + '>' + h(delen.join(' · ').replace(/^./, function (c) { return c.toUpperCase(); })) +
+      (oud ? '<br>⚠ Het jaarverslag over het laatste boekjaar ontbreekt nog; het oordeel rust op oudere cijfers.' : '') + '</p>';
+  }
   function ladderHtml(n) {
     var l = Naic.ladder(n);
     if (!l) return '';
@@ -146,7 +161,7 @@
     var waarom = { zone: 'de bovengrens van de koopzone', verhouding: 'precies 3 : 1 opwaarts tegen neerwaarts', rendement: 'precies ' + Naic.TOTAAL_MIN + '% verwacht rendement per jaar' }[kp.bindend];
     return '<p class="koopprijs" data-koopprijs="' + kp.prijs + '"><b>Kopen onder ' + getal(kp.prijs, 2) + ' ' + h(valuta) + '</b>' +
       (kp.afstand != null ? ' · koers nu ' + (kp.afstand <= 0 ? '<b>' + pct(-kp.afstand).replace('+', '') + ' eronder</b>' : '<b>' + pct(kp.afstand).replace('+', '') + ' erboven</b>') : '') +
-      '<br><span class="zacht">Bij deze koers kloppen alle NAIC-prijsregels; de grens komt uit ' + waarom + '. Verandert de winst of de koersgeschiedenis, dan verandert de koopprijs mee.</span></p>';
+      '<span class="detail"><br><span class="zacht">Bij deze koers kloppen alle NAIC-prijsregels; de grens komt uit ' + waarom + '. Verandert de winst of de koersgeschiedenis, dan verandert de koopprijs mee.</span></span></p>';
   }
   function gevoeligHtml(n) {
     var gv = n.gevoeligheid;
@@ -178,7 +193,7 @@
     if (!n) return '';
     var kop = n.oordeel ? '<b class="groot-oordeel" data-oordeel="' + n.oordeel + '">' + OORDEEL[n.oordeel] + '</b>' : '<b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b>';
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>Oordeel</h2><span class="zacht">NAIC Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
-    s += ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n);
+    s += ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n) + versHtml(rec, b);
     if (n.oordeel) s += terugBlok(n.oordeel);
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
@@ -194,6 +209,7 @@
       if (n.par) t += rij('Verwacht gemiddeld rendement', pct(n.par.pct) + ' per jaar, als de K/W over 5 jaar op het gemiddelde (' + getal(n.relatief ? n.relatief.kwGem : 0, 1) + ') staat; koers dan ' + geld(n.par.koersDoel) + ' ' + h(rec.valuta) + ' (telt niet mee)');
       if (z.koers) t += rij('Koers nu', geld(z.koers) + ' ' + h(rec.valuta) + (z.verhouding !== null ? ' · opwaarts tegen neerwaarts ' + getal(z.verhouding, 1) + ' : 1' : '') + (z.rendementPerJaar !== null ? ' · tot de hoge koers ' + pct(z.rendementPerJaar) + ' per jaar' : ''));
     }
+    s += '<div class="detail">';
     if (n.kwaliteit && n.kwaliteit.length) s += '<h3>Is het een goed bedrijf? <span class="zacht">(NAIC deel 1 en 2)</span></h3><ul class="methoden" data-naic-kwaliteit>' + n.kwaliteit.map(function (q) {
       return '<li data-toets="' + q.id + '">' + stip(q.ok === true ? 'gunstig' : q.ok === false ? 'ongunstig' : null, { omzet: 'Omzet en winst', marge: 'Marge vóór belasting', roe: 'Rendement op eigen vermogen' }[q.id]) +
         '<div><b>' + h({ omzet: 'Groeien omzet en winst gelijk op?', marge: 'Marge vóór belasting op peil?', roe: 'Rendement op eigen vermogen op peil?' }[q.id]) + '</b><br><span' + (q.ok === null ? ' class="zacht"' : '') + '>' + h(q.tekst) + '</span></div></li>';
@@ -203,7 +219,7 @@
       '<input id="ng-in" type="number" inputmode="decimal" step="0.5" min="-50" max="50" style="max-width:7em" value="' + (n.groeiEigen != null ? h(n.groeiEigen) : '') + '" placeholder="' + h(String(n.groei != null ? n.groei : '').replace('.', ',')) + '">' +
       '<button type="button" class="knop klein" id="ng-bewaar">Reken hiermee</button>' + (n.groeiEigen != null ? '<button type="button" class="knop rand klein" id="ng-wis">Terug naar de trend</button>' : '') + '</div>' +
       '<p class="zacht">In de echte NAIC-gids kiest u zelf een voorzichtige groei voor de komende 5 jaar; NAIC raadt aan niet hoger te gaan dan de groei uit het verleden en zelden boven 15%. Leeg = de app neemt de trend. Alleen op dit toestel.</p></div>';
-    s += '<p class="zacht">NAIC kijkt eerst of het een goed groeibedrijf is (omzet en winst groeien gelijk op, marge en rendement houden stand) en dan naar de prijs ten opzichte van de eigen K/W-geschiedenis. Kopen = koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts, minstens ' + Naic.TOTAAL_MIN + '% totaalrendement per jaar, en geen kwaliteitstoets afgevallen. Automatisch berekend met voorzichtige aannames uit de jaarcijfers' + (b.niveau ? ' (' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + ')' : '') + '. Eigen aannames kunt u invullen bij het tabblad NAIC.</p>' +
+    s += '</div><p class="zacht detail">NAIC kijkt eerst of het een goed groeibedrijf is (omzet en winst groeien gelijk op, marge en rendement houden stand) en dan naar de prijs ten opzichte van de eigen K/W-geschiedenis. Kopen = koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts, minstens ' + Naic.TOTAAL_MIN + '% totaalrendement per jaar, en geen kwaliteitstoets afgevallen. Automatisch berekend met voorzichtige aannames uit de jaarcijfers' + (b.niveau ? ' (' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + ')' : '') + '. Eigen aannames kunt u invullen bij het tabblad NAIC.</p>' +
       '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(rec.ticker) + '/waarde">Naar het tabblad NAIC</a></div></div>';
     return s;
   }
@@ -1114,7 +1130,9 @@
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
-      '<div class="kaart-plat"><h2>Oordeel</h2><p class="zacht">Een aandeel krijgt pas een oordeel (Kopen, Neutraal of Vermijden) als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimum aantal metingen voor een oordeel</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
+      '<div class="kaart-plat" data-weergave-kaart><h2>Weergave</h2><div class="keuze" role="group" aria-label="Weergave">' + [['eenvoudig', 'Eenvoudig'], ['uitgebreid', 'Uitgebreid']].map(function (o) { return '<button data-weergave-knop="' + o[0] + '" aria-pressed="' + (weergave() === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div>' +
+      '<p class="zacht">Eenvoudig: per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg. Uitgebreid: ook de onderbouwing, de zes aanvullende metingen en alle kentallen. Tip: met <code>?weergave=eenvoudig</code> achter de link opent iemand anders de app meteen eenvoudig.</p></div>' +
+      '<div class="kaart-plat detail"><h2>Oordeel</h2><p class="zacht">Een aandeel krijgt pas een oordeel (Kopen, Neutraal of Vermijden) als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimum aantal metingen voor een oordeel</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
       backupKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
@@ -1170,6 +1188,19 @@
     if (ongedaan) document.getElementById('ong').addEventListener('click', function () { ongedaan(); $meld.innerHTML = ''; });
     tmr = setTimeout(function () { $meld.innerHTML = ''; }, 6000);
   }
+  /* Weergave: 'uitgebreid' (alles) of 'eenvoudig' (oordeel, stappen, koopprijs en één zin uitleg). Per toestel bewaard;
+     ook mee te geven in de link: ?weergave=eenvoudig of ?weergave=uitgebreid. */
+  function weergave() { try { return localStorage.getItem('as_weergave') === 'eenvoudig' ? 'eenvoudig' : 'uitgebreid'; } catch (e) { return 'uitgebreid'; } }
+  function zetWeergave(w) { try { localStorage.setItem('as_weergave', w === 'eenvoudig' ? 'eenvoudig' : 'uitgebreid'); } catch (e) { /* standaard */ } pasWeergave(); }
+  function pasWeergave() { document.documentElement.classList.toggle('eenvoudig', weergave() === 'eenvoudig'); }
+  (function () {
+    var m = /[?&]weergave=(eenvoudig|uitgebreid)\b/.exec(location.search || '');
+    if (m) zetWeergave(m[1]);
+  })();
+  document.addEventListener('click', function (e) {
+    var k = e.target && e.target.closest ? e.target.closest('[data-weergave-knop]') : null;
+    if (k) { zetWeergave(k.getAttribute('data-weergave-knop')); route(); }
+  });
   function pasThema() {
     var t = winkel.staat().instellingen.thema, el = document.documentElement;
     if (t === 'licht' || t === 'donker') el.setAttribute('data-theme', t === 'donker' ? 'dark' : 'light'); else el.removeAttribute('data-theme');
@@ -1199,7 +1230,7 @@
   }
   var vorigeHash = null;
   window.addEventListener('hashchange', function () { route(); if (vorigeHash !== location.hash) window.scrollTo(0, 0); vorigeHash = location.hash; });
-  pasThema(); route(); vorigeHash = location.hash;
+  pasThema(); pasWeergave(); route(); vorigeHash = location.hash;
   if (!winkel.introGezien()) toonIntro(0);
   if (window.matchMedia) { try { window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', pasThema); } catch (e) { /* oud */ } }
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) { try { navigator.serviceWorker.register('sw.js').catch(function () {}); } catch (e) { /* geen offline-modus */ } }
