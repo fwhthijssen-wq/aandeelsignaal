@@ -1,0 +1,32 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): winst per aandeel uit de tekst (tabellen) van ESEF-jaarverslagen
+# voor bedrijven die het getal niet taggen. Resultaat (alle kandidaatregels) naar de tak jaarverslagen (debug/esef_tekst_lezen.json).
+name: ESEF-tekst lezen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      bedrijven:
+        description: "tickers gescheiden door spaties"
+        required: true
+permissions:
+  contents: write
+jobs:
+  lezen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt lxml
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Lezen
+        run: mkdir -p jv/debug && python hulp/esef_tekst_eps.py lezen jv/debug/esef_tekst_lezen.json ${{ inputs.bedrijven }}
+      - name: Op tak jaarverslagen zetten
+        if: always()
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "ESEF-tekst $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen

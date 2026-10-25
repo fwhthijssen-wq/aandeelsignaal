@@ -12,6 +12,7 @@ from copy import deepcopy
 from pathlib import Path
 
 REGISTER = Path(__file__).resolve().parent / 'jaarverslag_bronnen.json'
+TEKST_REGISTER = Path(__file__).resolve().parent / 'esef_tekst_eps.json'      # hulp/esef_tekst_eps.py
 
 
 def laad(pad=REGISTER):
@@ -70,8 +71,10 @@ def aanvullen(cf, ticker, register=None):
             rijen.append(rij)
         verslag['documenten'] += 1
         verslag['toegevoegd'] += len(nieuw)
-        if doc.get('soort') == 'pdf':
+        bekend = {r.get('fxo_id') for r in uit.get('rapporten') or []}
+        if doc.get('soort') == 'pdf' or (doc.get('soort') == 'esef-tekst' and accn not in bekend):
+            # een pdf, of een ESEF-rapport dat niet in de bundel zit: als rapport toevoegen, zodat de keten de volgorde kent
             einden = [f['eind'] for f in doc.get('feiten') or []]
-            uit.setdefault('rapporten', []).append({'fxo_id': accn, 'period_end': max(einden), 'date_added': filed,
+            uit.setdefault('rapporten', []).append({'fxo_id': accn, 'period_end': doc.get('period_end') or max(einden), 'date_added': filed,
                                                    'bron': doc.get('url')})
     return uit, verslag

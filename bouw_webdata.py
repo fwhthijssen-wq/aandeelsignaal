@@ -137,6 +137,11 @@ def esef_ophalen(ticker):
             cf, verslag = aanvullen(cf, ticker)
             if verslag:
                 cf = {**cf, 'jaarverslag_bronnen': verslag}
+            # winst per aandeel uit de tekst van ESEF-rapporten waar het getal niet getagd is (esef_tekst_eps.json)
+            from jaarverslag_bronnen import laad, TEKST_REGISTER
+            cf, tverslag = aanvullen(cf, ticker, register=laad(TEKST_REGISTER))
+            if tverslag:
+                cf = {**cf, 'esef_tekst': tverslag}
             from esef_bron import corrigeer_eps_schaal
             cf, schaal = corrigeer_eps_schaal(cf)
             if schaal:
