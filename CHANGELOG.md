@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.75
+- Nog drie DAX-fondsen met winst per aandeel uit de eigen jaarverslagen: BMW (8 jaar), E.ON (5) en Mercedes-Benz (4). Samen nu 18 DAX-fondsen. Voor Munich Re, adidas, DHL, Rheinmetall, Vonovia en enkele andere is nog geen bruikbaar verslag gevonden.
+
 ## 2026.10.25-beta.74
 - **Signalen op Start.** Bij de aandelen in uw portefeuille en op uw volglijst ziet u wanneer ze volgens NAIC in de **koopzone** of **verkoopzone** staan, of wanneer de **kwaliteit terugloopt** (omzet draagt de winst niet, marge of rendement daalt). Ook in de portefeuille en de volglijst zelf staat bij elk aandeel het NAIC-oordeel met het signaal.
 - **Nieuw sinds de vorige update.** Welke fondsen sinds de vorige gegevensupdate die u zag naar NAIC Kopen of Vermijden gingen (uw eigen aandelen altijd). De app onthoudt dat alleen op dit toestel; er is geen server of abonnement voor nodig.
