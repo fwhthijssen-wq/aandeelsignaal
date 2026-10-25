@@ -1,0 +1,36 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): terugrekenen. Oordelen van de app en NAIC op vroegere peildata en
+# het rendement daarna. Resultaat naar de tak 'jaarverslagen' (debug/terugrekenen*.json en .md). Raakt de app niet.
+name: Terugrekenen (ontwikkeling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rekenen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: pip install -r requirements.txt
+      - name: Gegevens van de app ophalen
+        run: curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+      - name: Koersen en peildata
+        run: python hulp/terugrekenen.py aandelen.json uit
+      - name: Oordelen en samenvatting
+        run: node hulp/terugrekenen.js uit
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Op tak jaarverslagen zetten
+        run: |
+          mkdir -p jv/debug && cp uit/terugrekenen.json uit/terugrekenen.md uit/terugrekenen_rijen.json jv/debug/
+          gzip -c uit/puntintijd.json > jv/debug/terugrekenen_puntintijd.json.gz
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Terugrekenen $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen

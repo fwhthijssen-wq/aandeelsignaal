@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.24-beta.68';
+  var APP_VERSIE = '2026.10.25-beta.69';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -50,7 +50,7 @@
       '<li><b>Trend</b>: koers boven of onder het gemiddelde van 200 dagen.</li><li><b>Rust</b>: hoe sterk de koers schommelt.</li></ul>' +
       '<p>Elke meting is ' + stip('gunstig', 'Voorbeeld') + ' gunstig, ' + stip('neutraal', 'Voorbeeld') + ' neutraal of ' + stip('ongunstig', 'Voorbeeld') + ' ongunstig; ' + stip(null, 'Voorbeeld') + ' betekent dat het gegeven ontbreekt. Alle metingen tellen even zwaar. ' +
       '<b>Kopen</b>: gemiddeld duidelijk gunstig. <b>Vermijden</b>: gemiddeld ongunstig. Daartussen <b>Neutraal</b>. Kopen vraagt bewust meer dan Vermijden. Bij minder dan ' + minMetingen() + ' metingen geeft de app geen oordeel (instelbaar).</p>' +
-      '<p><b>NAIC</b> staat er als tweede, losstaand oordeel naast, volgens de Stock Selection Guide: de groei van de winst per aandeel (voorzichtig, hoogstens ' + Naic.GROEI_MAX + '% per jaar; minder dan ' + Naic.GROEI_MIN + '% is geen NAIC-groeibedrijf), de gemiddelde hoge en lage K/W van 5 jaar, en daaruit een verwachte hoge en lage koers over 5 jaar met drie zones. NAIC zegt Kopen als de koers in de koopzone staat met minstens 3 : 1 opwaarts tegen neerwaarts, en Vermijden in de verkoopzone. Bij Kansrijk kiest u: App, NAIC of Beide.</p>' +
+      '<p><b>NAIC</b> staat er als tweede, losstaand oordeel naast, volgens de Stock Selection Guide: de groei van de winst per aandeel (als trendlijn, voorzichtig hoogstens ' + Naic.GROEI_MAX + '% per jaar; minder dan ' + Naic.GROEI_MIN + '% is geen NAIC-groeibedrijf), of omzet en winst gelijk op groeien, of marge vóór belasting en rendement op eigen vermogen standhouden (management), de gemiddelde hoge en lage K/W van 5 jaar, en daaruit een verwachte hoge en lage koers over 5 jaar met drie zones. NAIC zegt Kopen als de koers in de koopzone staat met minstens 3 : 1 opwaarts tegen neerwaarts en geen kwaliteitstoets afvalt, en Vermijden in de verkoopzone. Bij Kansrijk kiest u: App, NAIC of Beide.</p>' +
       '<p>Andere kentallen (marge, Piotroski, Altman, Magic Formula, dividend, momentum en andere), uw eigen oordeel en het advies van analisten staan er <b>ter informatie</b> bij. Ze tellen niet mee: ze zeggen grotendeels hetzelfde als de zes metingen, of het zijn meningen. Selectiehulp, geen beleggingsadvies.</p></details>';
   }
   function signaalVoor(rec) {
@@ -131,7 +131,7 @@
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>NAIC</h2><span class="zacht">Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
-    if (n.groeiHistorisch !== null) t += rij('Groei winst per aandeel', pct(n.groeiHistorisch) + ' per jaar (' + n.van + '–' + n.tot + ')' + (n.groei !== null && n.groei < n.groeiHistorisch ? '; gerekend met ' + pct(n.groei) + ' (NAIC: voorzichtig, hoogstens ' + Naic.GROEI_MAX + '%)' : ''));
+    if (n.groeiHistorisch !== null) t += rij('Groei winst per aandeel', pct(n.groeiHistorisch) + ' per jaar (trend ' + n.van + '–' + n.tot + ')' + (n.groei !== null && n.groei < n.groeiHistorisch ? '; gerekend met ' + pct(n.groei) + ' (NAIC: voorzichtig, hoogstens ' + Naic.GROEI_MAX + '%)' : ''));
     if (n.kw) t += rij('Gemiddelde K/W', 'hoog ' + getal(n.kw.hoog, 1) + ' · laag ' + getal(n.kw.laag, 1) + ' (' + n.kw.jaren + ' jaar, ' + n.kw.van + '–' + n.kw.tot + ')' + (n.weggelaten && n.weggelaten.length ? '; ongewone jaren weggelaten: ' + n.weggelaten.join(', ') : ''));
     if (n.eps) t += rij('Winst per aandeel', 'laatste jaar ' + getal(n.eps, 2) + (n.epsLaag && n.epsLaag !== n.eps ? ' · laagste van 5 jaar ' + getal(n.epsLaag, 2) : ''));
     var z = n.zones;
@@ -140,8 +140,12 @@
       t += rij('Zones', 'kopen ' + geld(z.koop[0]) + '–' + geld(z.koop[1]) + ' · houden tot ' + geld(z.houd[1]) + ' · verkopen tot ' + geld(z.verkoop[1]));
       if (z.koers) t += rij('Koers nu', geld(z.koers) + ' ' + h(rec.valuta) + (z.verhouding !== null ? ' · opwaarts tegen neerwaarts ' + getal(z.verhouding, 1) + ' : 1' : '') + (z.rendementPerJaar !== null ? ' · tot de hoge koers ' + pct(z.rendementPerJaar) + ' per jaar' : ''));
     }
-    if (t) s += '<div class="schuif"><table class="vgl naic-tabel"><tbody>' + t + '</tbody></table></div>';
-    s += '<p class="zacht">Los van het oordeel van de app: NAIC kijkt naar groei en de prijs ten opzichte van de eigen K/W-geschiedenis. Kopen = koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts. Automatisch berekend met voorzichtige aannames uit de jaarcijfers' + (b.niveau ? ' (' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + ')' : '') + '. Eigen aannames kunt u invullen bij het tabblad NAIC.</p>' +
+    if (n.kwaliteit && n.kwaliteit.length) s += '<h3>Is het een goed bedrijf? <span class="zacht">(NAIC deel 1 en 2)</span></h3><ul class="methoden" data-naic-kwaliteit>' + n.kwaliteit.map(function (q) {
+      return '<li data-toets="' + q.id + '">' + stip(q.ok === true ? 'gunstig' : q.ok === false ? 'ongunstig' : null, { omzet: 'Omzet en winst', marge: 'Marge vóór belasting', roe: 'Rendement op eigen vermogen' }[q.id]) +
+        '<div><b>' + h({ omzet: 'Groeien omzet en winst gelijk op?', marge: 'Marge vóór belasting op peil?', roe: 'Rendement op eigen vermogen op peil?' }[q.id]) + '</b><br><span' + (q.ok === null ? ' class="zacht"' : '') + '>' + h(q.tekst) + '</span></div></li>';
+    }).join('') + '</ul>';
+    if (t) s += '<h3>Prijs <span class="zacht">(NAIC deel 3 tot 5)</span></h3><div class="schuif"><table class="vgl naic-tabel"><tbody>' + t + '</tbody></table></div>';
+    s += '<p class="zacht">Los van het oordeel van de app: NAIC kijkt eerst of het een goed groeibedrijf is (omzet en winst groeien gelijk op, marge en rendement houden stand) en dan naar de prijs ten opzichte van de eigen K/W-geschiedenis. Kopen = koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts, en geen kwaliteitstoets afgevallen. Automatisch berekend met voorzichtige aannames uit de jaarcijfers' + (b.niveau ? ' (' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + ')' : '') + '. Eigen aannames kunt u invullen bij het tabblad NAIC.</p>' +
       '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(rec.ticker) + '/waarde">Naar het tabblad NAIC</a></div></div>';
     return s;
   }

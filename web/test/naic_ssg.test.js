@@ -7,7 +7,7 @@ function jaren(eps, hoog, laag) { return eps.map((e, i) => ({ year: 2020 + i, co
 test('SSG: koopzone met minstens 3 : 1 is Kopen', function () {
   const jr = jaren([2, 2.2, 2.4, 2.7, 3.0, 3.3], [40, 44, 48, 54, 60, 66], [26, 29, 31, 35, 39, 43]);
   const n = N.ssg(jr, 45);
-  assert.strictEqual(n.groeiHistorisch, 10.5);
+  assert.ok(n.groeiHistorisch > 9 && n.groeiHistorisch < 12, String(n.groeiHistorisch));   // trendgroei
   assert.strictEqual(n.kw.jaren, 5);
   assert.ok(n.zones.hoog > n.zones.laag);
   assert.strictEqual(n.zones.zone, 'koop');
@@ -42,4 +42,25 @@ test('SSG: zonder verse koers geen oordeel maar wel zones; te weinig jaren geen 
   const n = N.ssg(jr, null);
   assert.strictEqual(n.oordeel, null); assert.ok(n.zones);
   assert.match(N.ssg(jr.slice(0, 3), 45).reden, /Minder dan 4 jaar/);
+});
+
+test('SSG deel 1 en 2: omzet draagt de winstgroei, marge en rendement niet dalend; anders geen Kopen', function () {
+  const goed = jaren([2, 2.2, 2.4, 2.7, 3.0, 3.3], [40, 44, 48, 54, 60, 66], [26, 29, 31, 35, 39, 43])
+    .map((j, i) => Object.assign(j, { sales: 100 * Math.pow(1.09, i), pretax_income: 15 * Math.pow(1.09, i), net_income: 11 * Math.pow(1.1, i), equity: 70 * Math.pow(1.09, i) }));
+  const n = N.ssg(goed, 45);
+  assert.deepStrictEqual(n.kwaliteit.map(q => q.ok), [true, true, true]);
+  assert.strictEqual(n.oordeel, 'kopen');
+  const krimp = goed.map((j, i) => Object.assign({}, j, { sales: 100 * Math.pow(0.97, i) }));
+  const k = N.ssg(krimp, 45);
+  assert.strictEqual(k.kwaliteit[0].ok, false); assert.strictEqual(k.oordeel, 'neutraal'); assert.match(k.reden, /Toch geen Kopen/);
+  const marge = goed.map((j, i) => Object.assign({}, j, { pretax_income: j.sales * (0.2 - 0.02 * i) }));
+  assert.strictEqual(N.ssg(marge, 45).kwaliteit[1].ok, false);
+  const bank = N.ssg(goed, 45, true);
+  assert.strictEqual(bank.kwaliteit[0].ok, null); assert.strictEqual(bank.kwaliteit[1].ok, null);
+});
+
+test('trendgroei: één ingezakt jaar weegt weinig', function () {
+  const v = [1, 1.1, 1.21, 0.2, 1.46, 1.61, 1.77].map((e, i) => ({ year: 2019 + i, comparable_eps: e }));
+  const t = N.trendGroei(v, 'comparable_eps');
+  assert.ok(t > 0 && t < 40, String(t));
 });

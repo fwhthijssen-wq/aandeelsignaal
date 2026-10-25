@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.10.25-beta.69
+- **NAIC compleet met deel 1 en 2 van de Stock Selection Guide** (“Is het een goed bedrijf?”), zichtbaar op de NAIC-kaart:
+  - **Groeien omzet en winst gelijk op?** De omzet moet groeien en de winst per aandeel mag niet meer dan 10 procentpunt per jaar sneller groeien; anders komt de winstgroei uit hogere marges of minder aandelen en houdt die meestal niet lang aan.
+  - **Management: marge vóór belasting en rendement op eigen vermogen** over 5 jaar stabiel of stijgend (helling van de lijn). Bij banken en verzekeraars tellen omzet en marge niet; bij heel klein eigen vermogen (veel inkoop van eigen aandelen, zoals Home Depot) zegt het rendement niets en wordt het niet getoetst.
+  - Valt een toets af, dan geeft NAIC hoogstens Neutraal: NAIC koopt alleen een goed bedrijf.
+- **Groei als trendlijn**, zoals NAIC hem tekent (rechte lijn door alle jaren, hoogstens 10), in plaats van van eerste naar laatste jaar. Eén ingezakt jaar zoals 2020 weegt zo veel minder.
+- Op de cijfers van 22 oktober: NAIC-oordeel bij 210 fondsen (14× Kopen, 79× Neutraal, 117× Vermijden). NAIC is daarmee bewust streng.
+- Nieuw hulpmiddel voor ontwikkeling: **terugrekenen** (`hulp/terugrekenen.py` en `.js`, workflow “Terugrekenen”): wat zeiden de app en NAIC op vroegere peildata en wat deed de koers daarna.
+
 ## 2026.10.24-beta.68
 - **NAIC als tweede oordeel naast dat van de app.** Bij elk aandeel staan nu twee oordelen: dat van de app (zes metingen) en dat volgens de NAIC Stock Selection Guide, automatisch berekend met voorzichtige aannames:
   - groei: historische groei van de winst per aandeel (laatste 5 jaar), hoogstens 15% per jaar; minder dan 5% is geen NAIC-groeibedrijf (Vermijden);
