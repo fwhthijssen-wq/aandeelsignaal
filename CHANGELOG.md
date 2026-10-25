@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.10.25-beta.76
+- **Uw eigen groeiverwachting in het NAIC-oordeel.** Op de NAIC-kaart van elk aandeel kunt u, zoals in de echte Stock Selection Guide, zelf de verwachte groei van de winst per aandeel invullen. Het oordeel, de koerszones en het totaalrendement rekenen dan daarmee; de historische trend blijft ter vergelijking zichtbaar. Leeg laten = de app neemt de trend (hoogstens 15%). Wordt bewaard op dit toestel en zit in de back-up.
+- **NAIC deel 3 en 5 vollediger** (ter informatie, telt niet mee in het oordeel):
+  - **Relatieve waarde**: K/W nu gedeeld door de gemiddelde K/W van 5 jaar. NAIC ziet het liefst 85–110%; daarboven is het aandeel duur ten opzichte van de eigen geschiedenis.
+  - **Verwacht gemiddeld rendement (PAR)**: het rendement per jaar als de K/W over 5 jaar op het gemiddelde staat, plus dividend.
+- **Tweede bron voor de winst per aandeel uit pdf-jaarverslagen**: per jaar vergeleken met Yahoo Finance (binnen 5%). Op het tabblad Bronnen staat in hoeveel jaren het klopt en welke jaren afwijken.
+
 ## 2026.10.25-beta.75
 - Nog drie DAX-fondsen met winst per aandeel uit de eigen jaarverslagen: BMW (8 jaar), E.ON (5) en Mercedes-Benz (4). Samen nu 18 DAX-fondsen. Voor Munich Re, adidas, DHL, Rheinmetall, Vonovia en enkele andere is nog geen bruikbaar verslag gevonden.
 

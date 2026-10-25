@@ -42,7 +42,7 @@
   }
   /* Eigen aanvullende informatie per aandeel: beoordelingen 1-5 en eigen cijfers voor wat de jaarverslagen niet geven. */
   var VERDIEP_SCORES = ['management', 'moat', 'sector', 'risico'];
-  var VERDIEP_CIJFERS = { omzetgroei: [-100, 1000], epsgroei: [-100, 1000], nettomarge: [-1000, 1000], roe: [-1000, 1000], kw: [-1000, 1000], dividend: [0, 100] };
+  var VERDIEP_CIJFERS = { omzetgroei: [-100, 1000], epsgroei: [-100, 1000], nettomarge: [-1000, 1000], roe: [-1000, 1000], kw: [-1000, 1000], dividend: [0, 100], naicgroei: [-50, 50] };
   function schoonVerdiepingBlok(b) {
     if (!b || typeof b !== 'object') return null;
     var uit = { scores: {}, cijfers: {}, notities: {}, bijgewerkt: null }, any = false;

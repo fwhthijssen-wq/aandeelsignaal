@@ -133,7 +133,7 @@
      - Kopen: koers in de koopzone (of eronder) én minstens 3 : 1 opwaarts tegen neerwaarts, totaalrendement minstens TOTAAL_MIN,
        en geen kwaliteitstoets afgevallen (anders hoogstens Neutraal). Verkoopzone of erboven: Vermijden.
      jr: jaarcijfers met comparable_eps, koers_hoog, koers_laag; koers: verse slotkoers in dezelfde valuta, of null. */
-  var GROEI_MAX = 15, GROEI_MIN = 5, HORIZON = 5, KW_UITSCHIETER = 60, TOTAAL_MIN = 15;
+  var GROEI_MAX = 15, GROEI_MIN = 5, HORIZON = 5, KW_UITSCHIETER = 60, TOTAAL_MIN = 15, RV_LAAG = 85, RV_HOOG = 110;
   /* Trendgroei zoals NAIC hem tekent: rechte lijn door de logaritme van alle positieve waarden (hoogstens 10 jaar), als % per jaar.
      Eén slecht begin- of eindjaar (zoals 2020) weegt zo veel minder dan bij groei van eerste naar laatste jaar. Null bij < 4 punten. */
   function trendGroei(v, veld) {
@@ -179,9 +179,11 @@
     else uit.push(toets('roe', 'Rendement op eigen vermogen', roe, 1, false));
     return uit;
   }
-  function ssg(jr, koers, bank) {
+  /* opties.groei: uw eigen groeiverwachting (% per jaar), zoals in de echte SSG. Dan rekent de gids daarmee in plaats van met de
+     historische trend (ook voor de toets of het een groeibedrijf is); de historische trend blijft ter vergelijking zichtbaar. */
+  function ssg(jr, koers, bank, opties) {
     var v = jaren(jr).filter(function (j) { return ok(j.comparable_eps); });
-    var uit = { oordeel: null, reden: null, totaal: null, groeiHistorisch: null, groei: null, kw: null, eps: null, epsLaag: null, zones: null, van: null, tot: null, horizon: HORIZON, kwaliteit: [] };
+    var uit = { oordeel: null, reden: null, totaal: null, relatief: null, par: null, groeiHistorisch: null, groei: null, kw: null, eps: null, epsLaag: null, zones: null, van: null, tot: null, horizon: HORIZON, kwaliteit: [] };
     if (v.length < 4) { uit.reden = 'Minder dan 4 jaar vergelijkbare winst per aandeel.'; return uit; }
     uit.kwaliteit = kwaliteit(v, bank);
     var l = v[v.length - 1], f = v.slice(-10)[0];
@@ -189,7 +191,9 @@
     if (!pos(l.comparable_eps)) { uit.reden = 'De winst per aandeel van ' + l.year + ' is niet positief.'; return uit; }
     uit.groeiHistorisch = trendGroei(v, 'comparable_eps');
     if (uit.groeiHistorisch === null) { uit.reden = 'Te weinig jaren met positieve winst per aandeel voor een trend (minstens 4).'; return uit; }
-    uit.groei = Math.min(uit.groeiHistorisch, GROEI_MAX);
+    var eigen = opties && typeof opties.groei === 'number' && isFinite(opties.groei) ? opties.groei : null;
+    uit.groeiEigen = eigen;
+    uit.groei = eigen !== null ? eigen : Math.min(uit.groeiHistorisch, GROEI_MAX);
     // Ongewone jaren (eenmalige lasten: winst per aandeel bijna nul, K/W boven KW_UITSCHIETER) doen niet mee, zoals NAIC voorschrijft.
     var kwReeks = historischKW(v), normaal = {};
     kwReeks.forEach(function (x) { if (ok(x.hoog) && ok(x.laag) && x.hoog <= KW_UITSCHIETER) normaal[x.year] = true; });
@@ -198,8 +202,9 @@
     uit.eps = l.comparable_eps;
     var laatste5 = v.slice(-5).filter(function (j) { return normaal[j.year] || !ok(j.koers_hoog); }).map(function (j) { return j.comparable_eps; }).filter(pos);
     uit.epsLaag = laatste5.length ? Math.min.apply(null, laatste5) : null;
-    if (uit.groeiHistorisch < GROEI_MIN) {
-      uit.oordeel = 'vermijden'; uit.reden = 'De winst per aandeel groeide ' + String(uit.groeiHistorisch).replace('.', ',') + '% per jaar (trend ' + f.year + '–' + l.year + '): minder dan de ' + GROEI_MIN + '% die NAIC van een groeibedrijf vraagt.';
+    if ((eigen !== null ? eigen : uit.groeiHistorisch) < GROEI_MIN) {
+      uit.oordeel = 'vermijden'; uit.reden = eigen !== null ? 'Uw groeiverwachting is ' + String(eigen).replace('.', ',') + '% per jaar: minder dan de ' + GROEI_MIN + '% die NAIC van een groeibedrijf vraagt.' :
+        'De winst per aandeel groeide ' + String(uit.groeiHistorisch).replace('.', ',') + '% per jaar (trend ' + f.year + '–' + l.year + '): minder dan de ' + GROEI_MIN + '% die NAIC van een groeibedrijf vraagt.';
       return uit;
     }
     if (!uit.kw) { uit.reden = 'Te weinig jaren met hoogste en laagste koers voor de gemiddelde K/W (minstens 3).'; return uit; }
@@ -218,6 +223,14 @@
       var tot = rond(z.rendementPerJaar + (dgem || 0), 1);
       uit.totaal = { koers: rond(z.rendementPerJaar, 1), dividend: dgem, totaal: tot, ok: tot >= TOTAAL_MIN, min: TOTAAL_MIN };
     }
+    // Ter informatie (telt niet mee in het oordeel):
+    // deel 3, relatieve waarde = K/W nu ÷ gemiddelde K/W (5 jaar) × 100; NAIC ziet het liefst 85-110%.
+    // deel 5, verwacht gemiddeld rendement (PAR) = koersstijging per jaar tot winst over 5 jaar × gemiddelde K/W, plus dividend.
+    var kwGem = (uit.kw.hoog + uit.kw.laag) / 2, kwNu = koers / uit.eps;
+    uit.relatief = { kwNu: rond(kwNu, 1), kwGem: rond(kwGem, 1), pct: rond(kwNu / kwGem * 100, 0) };
+    uit.relatief.oordeel = uit.relatief.pct > RV_HOOG ? 'duur' : uit.relatief.pct < RV_LAAG ? 'laag' : 'normaal';
+    var gemKoers = z.epsToekomst * kwGem;
+    uit.par = { koersDoel: rond(gemKoers, 2), pct: rond((Math.pow(gemKoers / koers, 1 / HORIZON) - 1) * 100 + (dgem || 0), 1) };
     uit.reden = z.zone === 'onder' ? 'De koers staat onder de verwachte lage koers.' : z.zone === 'boven' ? 'De koers staat boven de verwachte hoge koers.' :
       z.zone === 'koop' ? 'De koers staat in de koopzone' + (uit.oordeel === 'kopen' ? ', met minstens 3 : 1 opwaarts tegen neerwaarts.' : ', maar met minder dan 3 : 1 opwaarts tegen neerwaarts.') :
       z.zone === 'houd' ? 'De koers staat in de houdzone.' : 'De koers staat in de verkoopzone.';
@@ -231,6 +244,6 @@
     return uit;
   }
 
-  var api = { trendGroei: trendGroei, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
+  var api = { trendGroei: trendGroei, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, RV_LAAG: RV_LAAG, RV_HOOG: RV_HOOG, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

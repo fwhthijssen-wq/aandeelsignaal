@@ -198,6 +198,15 @@ def vul_eps_jaarverslag(g, ticker, register=None):
     eind = max(set(str(j.get('end', ''))[5:] for j in jaren if j.get('end')), key=[str(j.get('end', ''))[5:] for j in jaren].count)
     munt = jaren[-1].get('currency')
     per_jaar = {j.get('year'): j for j in jaren}
+    # tweede bron: de winst per aandeel van Yahoo in dezelfde jaren (binnen 5% = overeen)
+    vergeleken, afwijkend = 0, []
+    for jaar, eps in reeks.items():
+        y = _getal((per_jaar.get(jaar) or {}).get('comparable_eps'))
+        if y is None:
+            continue
+        vergeleken += 1
+        if not (abs(y - eps) <= 0.02 or (y * eps > 0 and abs(y / eps - 1) <= 0.05)):
+            afwijkend.append(jaar)
     for jaar, eps in reeks.items():
         rij = per_jaar.get(jaar)
         if rij is None:
@@ -208,6 +217,7 @@ def vul_eps_jaarverslag(g, ticker, register=None):
     g['jaren'] = jaren
     g['eps_jaarverslag'] = {'jaren': len(reeks), 'van': min(reeks), 'tot': max(reeks),
                             'documenten': [{'boekjaar': int(j), 'url': d.get('url'), 'pagina': d.get('pagina')} for j, d in sorted((reg.get('verslagen') or {}).items())],
+                            'controle': {'bron': 'Yahoo Finance', 'vergeleken': vergeleken, 'overeen': vergeleken - len(afwijkend), 'afwijkend': sorted(afwijkend)},
                             'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Ontbreekt een verslag, dan komt dat jaar uit het meerjarenoverzicht van een later verslag. Niet nagerekend.'}
 
 

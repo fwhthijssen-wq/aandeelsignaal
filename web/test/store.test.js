@@ -124,3 +124,13 @@ test('back-up: inhoud, voorbeeld zonder te wijzigen, en markeren pas na bewaren'
   assert.equal(b.bekijkBackup('geen json').ok, false);
   assert.equal(b.bekijkBackup('{"app":"Anders"}').ok, false);
 });
+
+test('eigen NAIC-groeiverwachting: bewaren, grenzen, wissen, in de back-up', () => {
+  const st = S.maak(geheugen(), klok('2026-10-25T10:00:00Z'));
+  assert.equal(st.zetVerdieping('SAP.DE', 'cijfers', 'naicgroei', '8,5').ok, true);
+  assert.equal(st.verdieping('SAP.DE').cijfers.naicgroei, 8.5);
+  assert.equal(st.zetVerdieping('SAP.DE', 'cijfers', 'naicgroei', 80).ok, false);
+  assert.match(st.maakBackup(true), /naicgroei/);
+  assert.equal(st.zetVerdieping('SAP.DE', 'cijfers', 'naicgroei', null).ok, true);
+  assert.equal(st.verdieping('SAP.DE').cijfers.naicgroei, undefined);
+});

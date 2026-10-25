@@ -17,6 +17,13 @@ class VulEps(unittest.TestCase):
         self.assertTrue(all(j['eps_bron'] == 'jaarverslag' for j in g['jaren']))
         self.assertEqual(g['jaren'][0]['end'], '2019-12-31'); self.assertNotIn('sales', g['jaren'][0])
         self.assertEqual(g['eps_jaarverslag']['jaren'], 7)
+        self.assertEqual(g['eps_jaarverslag']['controle']['vergeleken'], 4)       # Yahoo had 9.9 in 2022-2025: alle vier afwijkend
+        self.assertEqual(g['eps_jaarverslag']['controle']['afwijkend'], [2022, 2023, 2024, 2025])
+
+    def test_controle_met_yahoo_overeen(self):
+        g = {'jaren': [{'year': y, 'end': f'{y}-12-31', 'comparable_eps': e} for y, e in ((2024, 1.46), (2025, 1.80))]}
+        bw.vul_eps_jaarverslag(g, 'X', register={'X': {'reeks': {'2022': 1.0, '2023': 1.2, '2024': 1.45, '2025': 1.81}}})
+        self.assertEqual(g['eps_jaarverslag']['controle'], {'bron': 'Yahoo Finance', 'vergeleken': 2, 'overeen': 2, 'afwijkend': []})
 
     def test_te_weinig_jaren_doet_niets(self):
         g = {'jaren': [{'year': 2025, 'end': '2025-12-31', 'comparable_eps': 1.0}]}

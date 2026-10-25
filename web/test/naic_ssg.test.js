@@ -78,3 +78,25 @@ test('SSG deel 5: koopzone met 3 : 1 maar totaalrendement onder 15% is hoogstens
   assert.ok(d.totaal.dividend > 5); assert.ok(d.totaal.totaal >= N.TOTAAL_MIN);
   assert.strictEqual(d.oordeel, 'kopen');
 });
+
+test('SSG ter informatie: relatieve waarde (K/W nu ÷ gemiddelde K/W) en verwacht gemiddeld rendement (PAR)', function () {
+  const eps = [2, 2.2, 2.4, 2.7, 3.0, 3.3];
+  const jr = eps.map((e, i) => ({ year: 2020 + i, comparable_eps: e, koers_hoog: e * 20, koers_laag: e * 14 }));
+  const n = N.ssg(jr, 3.3 * 17);
+  assert.strictEqual(n.relatief.kwGem, 17); assert.strictEqual(n.relatief.pct, 100); assert.strictEqual(n.relatief.oordeel, 'normaal');
+  assert.strictEqual(N.ssg(jr, 3.3 * 20).relatief.oordeel, 'duur');
+  assert.strictEqual(N.ssg(jr, 3.3 * 13).relatief.oordeel, 'laag');
+  // PAR: zelfde K/W over 5 jaar → koersstijging = winstgroei (begrensd op 15%)
+  assert.ok(Math.abs(n.par.pct - n.groei) < 0.2, n.par.pct + ' vs ' + n.groei);
+});
+
+test('SSG met eigen groeiverwachting: rekent daarmee (ook boven de grens), te laag = geen groeibedrijf', function () {
+  const jr = [2, 2.2, 2.4, 2.7, 3.0, 3.3].map((e, i) => ({ year: 2020 + i, comparable_eps: e, koers_hoog: e * 20, koers_laag: e * 14 }));
+  const hist = N.ssg(jr, 50), eigen = N.ssg(jr, 50, false, { groei: 18 });
+  assert.strictEqual(eigen.groeiEigen, 18); assert.strictEqual(eigen.groei, 18);
+  assert.ok(eigen.zones.hoog > hist.zones.hoog);
+  assert.strictEqual(eigen.groeiHistorisch, hist.groeiHistorisch);
+  const laag = N.ssg(jr, 50, false, { groei: 3 });
+  assert.strictEqual(laag.oordeel, 'vermijden'); assert.match(laag.reden, /Uw groeiverwachting/);
+  assert.strictEqual(N.ssg(jr, 50, false, { groei: null }).groei, hist.groei);
+});

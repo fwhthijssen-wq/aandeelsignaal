@@ -271,3 +271,5 @@ table.naic-tabel td { vertical-align: top; }
 .signaal[data-signaal-soort="groei"] { color: var(--mut); }
 .volg-info { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 0 14px 12px; }
 .volg-info .signaal, .lijst .regel .signaal { max-width: 100%; }
+.naic-groei { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line-soft); }
+.naic-groei label { font-weight: 600; display: block; margin-bottom: 6px; }

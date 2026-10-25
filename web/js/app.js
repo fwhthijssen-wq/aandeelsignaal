@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.75';
+  var APP_VERSIE = '2026.10.25-beta.76';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -133,7 +133,7 @@
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>Oordeel</h2><span class="zacht">NAIC Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
-    if (n.groeiHistorisch !== null) t += rij('Groei winst per aandeel', pct(n.groeiHistorisch) + ' per jaar (trend ' + n.van + '–' + n.tot + ')' + (n.groei !== null && n.groei < n.groeiHistorisch ? '; gerekend met ' + pct(n.groei) + ' (NAIC: voorzichtig, hoogstens ' + Naic.GROEI_MAX + '%)' : ''));
+    if (n.groeiHistorisch !== null) t += rij('Groei winst per aandeel', pct(n.groeiHistorisch) + ' per jaar (trend ' + n.van + '–' + n.tot + ')' + (n.groeiEigen != null ? '; gerekend met <b>uw verwachting ' + pct(n.groeiEigen) + '</b>' + (n.groeiEigen > Naic.GROEI_MAX ? ' (hoger dan de ' + Naic.GROEI_MAX + '% die NAIC voorzichtig vindt)' : '') : n.groei !== null && n.groei < n.groeiHistorisch ? '; gerekend met ' + pct(n.groei) + ' (NAIC: voorzichtig, hoogstens ' + Naic.GROEI_MAX + '%)' : ''));
     if (n.kw) t += rij('Gemiddelde K/W', 'hoog ' + getal(n.kw.hoog, 1) + ' · laag ' + getal(n.kw.laag, 1) + ' (' + n.kw.jaren + ' jaar, ' + n.kw.van + '–' + n.kw.tot + ')' + (n.weggelaten && n.weggelaten.length ? '; ongewone jaren weggelaten: ' + n.weggelaten.join(', ') : ''));
     if (n.eps) t += rij('Winst per aandeel', 'laatste jaar ' + getal(n.eps, 2) + (n.epsLaag && n.epsLaag !== n.eps ? ' · laagste van 5 jaar ' + getal(n.epsLaag, 2) : ''));
     var z = n.zones;
@@ -141,6 +141,8 @@
       t += rij('Verwacht over ' + n.horizon + ' jaar', 'hoog ' + geld(z.hoog) + ' · laag ' + geld(z.laag) + ' ' + h(rec.valuta));
       t += rij('Zones', 'kopen ' + geld(z.koop[0]) + '–' + geld(z.koop[1]) + ' · houden tot ' + geld(z.houd[1]) + ' · verkopen tot ' + geld(z.verkoop[1]));
       if (n.totaal) t += rij('Totaalrendement', pct(n.totaal.totaal) + ' per jaar (koers ' + pct(n.totaal.koers) + ' + dividend ' + (n.totaal.dividend !== null ? pct(n.totaal.dividend) : 'onbekend, 0%') + '); NAIC vraagt minstens ' + n.totaal.min + '%' + (n.totaal.ok ? ' ✓' : ' ✗'));
+      if (n.relatief) t += rij('Relatieve waarde', 'K/W nu ' + getal(n.relatief.kwNu, 1) + ' tegen gemiddeld ' + getal(n.relatief.kwGem, 1) + ': <b>' + n.relatief.pct + '%</b> (' + { duur: 'duur ten opzichte van de eigen geschiedenis', laag: 'laag: ga na waarom', normaal: 'normaal' }[n.relatief.oordeel] + '; NAIC ziet het liefst ' + Naic.RV_LAAG + '–' + Naic.RV_HOOG + '%, telt niet mee)');
+      if (n.par) t += rij('Verwacht gemiddeld rendement', pct(n.par.pct) + ' per jaar, als de K/W over 5 jaar op het gemiddelde (' + getal(n.relatief ? n.relatief.kwGem : 0, 1) + ') staat; koers dan ' + geld(n.par.koersDoel) + ' ' + h(rec.valuta) + ' (telt niet mee)');
       if (z.koers) t += rij('Koers nu', geld(z.koers) + ' ' + h(rec.valuta) + (z.verhouding !== null ? ' · opwaarts tegen neerwaarts ' + getal(z.verhouding, 1) + ' : 1' : '') + (z.rendementPerJaar !== null ? ' · tot de hoge koers ' + pct(z.rendementPerJaar) + ' per jaar' : ''));
     }
     if (n.kwaliteit && n.kwaliteit.length) s += '<h3>Is het een goed bedrijf? <span class="zacht">(NAIC deel 1 en 2)</span></h3><ul class="methoden" data-naic-kwaliteit>' + n.kwaliteit.map(function (q) {
@@ -148,6 +150,10 @@
         '<div><b>' + h({ omzet: 'Groeien omzet en winst gelijk op?', marge: 'Marge vóór belasting op peil?', roe: 'Rendement op eigen vermogen op peil?' }[q.id]) + '</b><br><span' + (q.ok === null ? ' class="zacht"' : '') + '>' + h(q.tekst) + '</span></div></li>';
     }).join('') + '</ul>';
     if (t) s += '<h3>Prijs <span class="zacht">(NAIC deel 3 tot 5)</span></h3><div class="schuif"><table class="vgl naic-tabel"><tbody>' + t + '</tbody></table></div>';
+    if (n.groeiHistorisch !== null) s += '<div class="naic-groei" data-naic-groei><label for="ng-in">Uw groeiverwachting voor de winst per aandeel (% per jaar)</label><div class="knoppen" style="align-items:center">' +
+      '<input id="ng-in" type="number" inputmode="decimal" step="0.5" min="-50" max="50" style="max-width:7em" value="' + (n.groeiEigen != null ? h(n.groeiEigen) : '') + '" placeholder="' + h(String(n.groei != null ? n.groei : '').replace('.', ',')) + '">' +
+      '<button type="button" class="knop klein" id="ng-bewaar">Reken hiermee</button>' + (n.groeiEigen != null ? '<button type="button" class="knop rand klein" id="ng-wis">Terug naar de trend</button>' : '') + '</div>' +
+      '<p class="zacht">In de echte NAIC-gids kiest u zelf een voorzichtige groei voor de komende 5 jaar; NAIC raadt aan niet hoger te gaan dan de groei uit het verleden en zelden boven 15%. Leeg = de app neemt de trend. Alleen op dit toestel.</p></div>';
     s += '<p class="zacht">NAIC kijkt eerst of het een goed groeibedrijf is (omzet en winst groeien gelijk op, marge en rendement houden stand) en dan naar de prijs ten opzichte van de eigen K/W-geschiedenis. Kopen = koers in de koopzone met minstens 3 : 1 opwaarts tegen neerwaarts, minstens ' + Naic.TOTAAL_MIN + '% totaalrendement per jaar, en geen kwaliteitstoets afgevallen. Automatisch berekend met voorzichtige aannames uit de jaarcijfers' + (b.niveau ? ' (' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + ')' : '') + '. Eigen aannames kunt u invullen bij het tabblad NAIC.</p>' +
       '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(rec.ticker) + '/waarde">Naar het tabblad NAIC</a></div></div>';
     return s;
@@ -812,7 +818,7 @@
     }).join('') + '</section>';
     if (g.eps_jaarverslag && Array.isArray(g.eps_jaarverslag.documenten)) {
       var ej = g.eps_jaarverslag;
-      s += '<section data-eps-jaarverslag><h2>Winst per aandeel uit de jaarverslagen</h2><p>' + h(ej.uitleg || '') + ' ' + ej.jaren + ' jaar (' + ej.van + '–' + ej.tot + '). Omzet, kasstroom en balans blijven indicatief (Yahoo Finance).</p><ul class="punten">' +
+      s += '<section data-eps-jaarverslag><h2>Winst per aandeel uit de jaarverslagen</h2><p>' + h(ej.uitleg || '') + ' ' + ej.jaren + ' jaar (' + ej.van + '–' + ej.tot + ').' + (ej.controle && ej.controle.vergeleken ? ' Tweede bron: in ' + ej.controle.overeen + ' van de ' + ej.controle.vergeleken + ' jaren die Yahoo Finance ook heeft, klopt het cijfer (binnen 5%)' + (ej.controle.afwijkend && ej.controle.afwijkend.length ? '; afwijkend: ' + ej.controle.afwijkend.join(', ') + ' (bijv. andere aandelensoort of herziening)' : '') + '.' : '') + ' Omzet, kasstroom en balans blijven indicatief (Yahoo Finance).</p><ul class="punten">' +
         ej.documenten.filter(function (d) { return d && /^https?:\/\//.test(d.url || ''); }).map(function (d) { return '<li>Jaarverslag ' + h(d.boekjaar) + (d.pagina ? ', pagina ' + h(d.pagina) : '') + ': <a href="' + h(d.url) + '" target="_blank" rel="noopener">document</a></li>'; }).join('') + '</ul></section>';
     }
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';
@@ -911,6 +917,14 @@
     });
   }
   function aandeelKoppel(t) {
+    var ngb = document.getElementById('ng-bewaar'), ngw = document.getElementById('ng-wis');
+    if (ngb) ngb.addEventListener('click', function () {
+      var v = String(document.getElementById('ng-in').value).replace(',', '.').trim();
+      var u = winkel.zetVerdieping(t, 'cijfers', 'naicgroei', v === '' ? null : v);
+      if (!u.ok) { toast(u.reden || 'Controleer het getal'); return; }
+      fondsItemsCache = null; toast(v === '' ? 'De app rekent weer met de trend' : 'NAIC rekent nu met uw groeiverwachting'); route();
+    });
+    if (ngw) ngw.addEventListener('click', function () { winkel.zetVerdieping(t, 'cijfers', 'naicgroei', null); fondsItemsCache = null; toast('De app rekent weer met de trend'); route(); });
     var tg = document.getElementById('terug');
     if (tg) tg.addEventListener('click', function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } });
     var b = document.getElementById('volg'); if (!b) return;
