@@ -775,6 +775,19 @@ class WebUi(unittest.TestCase):
         pg.fill('#q', '<img src=x onerror=window.hack=1>')
         self.assertIsNone(pg.evaluate('window.hack'))
 
+    def test_signalen_op_start_met_vorige_update(self):
+        pg = self.pagina()
+        self.assertEqual(pg.locator('[data-signalen]').count(), 1)
+        self.assertIn('Nieuw sinds de vorige update', pg.locator('[data-signalen]').inner_text())
+        # vorige update met een ander NAIC-oordeel: de wijziging verschijnt (of de melding dat er niets veranderde)
+        pg.evaluate("""() => { const v = JSON.parse(localStorage.getItem('as_naic_vorig'));
+          v.laatst.datum = '2020-01-01'; v.laatst.oordelen = {ZZZ: 'kopen'}; localStorage.setItem('as_naic_vorig', JSON.stringify(v)); }""")
+        pg.goto(pg.url.split('#')[0] + '#/fondsen'); pg.goto(pg.url.split('#')[0] + '#/'); pg.wait_for_timeout(300)
+        tekst = pg.locator('[data-signalen]').inner_text()
+        self.assertIn('1 januari 2020', tekst)
+        self.assertEqual(pg.locator('[data-veranderingen], [data-geen-verandering]').count(), 1)
+        self.assertEqual(self.fouten, [])
+
 
 if __name__ == '__main__':
     unittest.main()

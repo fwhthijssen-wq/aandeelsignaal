@@ -263,3 +263,11 @@ table.naic-tabel th { text-align: left; white-space: nowrap; padding-right: 10px
 table.naic-tabel td { vertical-align: top; }
 @media (max-width: 420px) { table.naic-tabel th { white-space: normal; } }
 .ds-kop b { flex: 1 1 auto; min-width: 0; }
+
+/* Signalen (NAIC) */
+.signaal { display: block; font-size: .86rem; margin-top: 4px; padding: 3px 8px; border-radius: 8px; background: transparent; box-shadow: inset 0 0 0 1px var(--line); color: var(--ink); }
+.signaal[data-signaal-soort="koop"], .signaal[data-naar="kopen"] { background: var(--ok-bg, rgba(0,128,0,.08)); color: var(--ok-ink); }
+.signaal[data-signaal-soort="verkoop"], .signaal[data-signaal-soort="kwaliteit"], .signaal[data-naar="vermijden"] { background: var(--bad-bg, rgba(200,0,0,.08)); color: var(--bad-ink); }
+.signaal[data-signaal-soort="groei"] { color: var(--mut); }
+.volg-info { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 0 14px 12px; }
+.volg-info .signaal, .lijst .regel .signaal { max-width: 100%; }

@@ -4,6 +4,7 @@
   var T = {
     start: ['Start', 'Hier ziet u in één oogopslag hoe het ervoor staat en welke aandelen nu kansrijk zijn.', [
       'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
+      'Signalen: bij de aandelen in uw portefeuille en op uw volglijst ziet u wanneer ze in de koopzone of verkoopzone staan, of wanneer de kwaliteit terugloopt (NAIC). Daaronder: welke fondsen sinds de vorige gegevensupdate naar Kopen of Vermijden gingen. Dat vergelijkt de app met wat u de vorige keer zag; het staat alleen op dit toestel.',
       'Het oordeel volgt de NAIC Stock Selection Guide: groeibedrijf, goed bedrijf (deel 1 en 2), prijs in de koopzone met minstens 3 : 1 (deel 3 en 4) en minstens 15% verwacht rendement per jaar (deel 5). Bij Kansrijk staat NAIC standaard; App (zes metingen, aanvullend) en Beide kunt u kiezen.',
       'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze een aanvullend oordeel; dat telt niet mee in het NAIC-oordeel.',
       'Alle fondsen, per index en op kansrijkheid gesorteerd, staan onder Fondsen in het menu.',
