@@ -12,7 +12,7 @@ stopt (bijv. een splitsing die niet te controleren is). Gerapporteerd, niet nage
 import json, re, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pdf_uitlezen import getallen, kolommen, regels_met
+from pdf_uitlezen import NUM, getallen, kolommen, regels_met
 
 LABEL = re.compile(r'diluted earnings per (ordinary )?share|earnings per share\W{0,3}\s*diluted|verw[äa]e?ssertes ergebnis je aktie|ergebnis je aktie\W{0,3}\s*verw[äa]e?ssert', re.I)
 NIET = re.compile(r'core|adjusted|underlying|continuing|discontinued|before|excluding|bereinigt|fortgef|aufgegeben|operativ|pro forma', re.I)
@@ -41,10 +41,13 @@ def kolomkop(regels, i):
 AANTAL = re.compile(r'number of shares|weighted average|anzahl|aktien\s*\(|shares outstanding|in thousands', re.I)
 
 
-def twee(g):
-    """De twee jaarwaarden uit de getallen van een regel: zonder toelichtingsnummer vooraan en zonder verschilkolom achteraan."""
+def twee(g, heel=False):
+    """De twee jaarwaarden uit de getallen van een regel: zonder toelichtingsnummer vooraan en zonder verschilkolom achteraan.
+    heel: het eerste getal staat zonder decimalen in de tekst terwijl de volgende er wel hebben (toelichting '11 16.60 26.60')."""
     if len(g) >= 3 and abs((g[0] - g[1]) - g[2]) <= 0.011:                 # derde getal = verschil
         return g[0], g[1]
+    if len(g) >= 3 and heel and abs(g[0]) < 60 and float(g[0]).is_integer():
+        return g[1], g[2]
     if len(g) >= 3 and abs(g[0]) < 60 and round(g[0], 1) == g[0] and any(round(x, 1) != x for x in g[1:3]):
         return g[1], g[2]                                                  # eerste getal = toelichtingsnummer (6 of 8.5)
     return g[0], g[1]
@@ -63,6 +66,8 @@ def lees(tekst, jaar=None):
         g = getallen(re.sub(r'\[\d+\]', ' ', r), komma)
         if len(g) >= 2:
             kandidaat.append((i, g))
+            toks = NUM.findall(r)[-len(g):]
+            heel = len(toks) >= 3 and not re.search(r'[.,]\d', toks[0]) and all(re.search(r'[.,]\d', t) for t in toks[1:3])
         else:                                            # kop; totaal op een van de volgende regels
             for j in range(i + 1, min(i + 5, len(regels))):
                 rr = regels[j][1]
@@ -72,7 +77,7 @@ def lees(tekst, jaar=None):
                         kandidaat.append((j, gg))
                     break
         for k, g in kandidaat:
-            x0, x1 = twee(g)
+            x0, x1 = twee(g, heel if k == i else False)
             if any(abs(x) >= 1000 for x in (x0, x1)) or (x0 == 0 and x1 == 0):
                 continue
             kop = kolomkop(regels, k)

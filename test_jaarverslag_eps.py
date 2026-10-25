@@ -42,6 +42,8 @@ class Keten(unittest.TestCase):
         self.assertEqual(de_eps.twee([8.5, 21.18, 15.48]), (21.18, 15.48))
         self.assertEqual(de_eps.twee([22.59, 16.87, 5.72]), (22.59, 16.87))
         self.assertEqual(de_eps.twee([5.11, 6.61, 6.61]), (5.11, 6.61))
+        # toelichting 11 voor waarden met .60 (Volkswagen 2020): alleen te herkennen aan de schrijfwijze in de tekst
+        self.assertEqual(de_eps.twee([11.0, 16.6, 26.6], heel=True), (16.6, 26.6))
 
 
 if __name__ == '__main__':

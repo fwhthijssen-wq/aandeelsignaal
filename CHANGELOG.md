@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.25-beta.72
+- **Winst per aandeel uit Duitse jaarverslagen (pdf).** Duitse bedrijven leveren geen ESEF-bestanden bij filings.xbrl.org; daarom leest de app nu de gerapporteerde verwaterde winst per aandeel uit de jaarverslagen zelf (via de IR-sites / EQS). Elk jaar wordt gecontroleerd met het vergelijkende cijfer in het volgende verslag; past dat niet, dan stopt de reeks.
+- Nieuw met een reeks van minstens 4 jaar: BASF (12 jaar), Beiersdorf (12), Allianz (11), Volkswagen (11), Fresenius Medical Care (10), Siemens (7), MTU Aero Engines (7), RWE (5) en Scout24 (4). Daarmee kan NAIC voor deze fondsen rekenen met een langere groeitrend en K/W-geschiedenis.
+- Deze cijfers heten “uit jaarverslag” (gerapporteerd, niet nagerekend). Omzet, kasstroom en balans blijven indicatief (Yahoo Finance). Op het tabblad Bronnen staan per jaar het verslag, de pagina en een link.
+- Bij Volkswagen is het de winst per gewoon aandeel (preferente aandelen krijgen € 0,06 meer).
+
 ## 2026.10.25-beta.71
 - **Het oordeel volgt nu de NAIC-regels.** Bovenaan elk aandeel staat het NAIC-oordeel (Stock Selection Guide); de zes metingen van de app (kasstroom, schuld, groei, K/W, trend, rust) staan eronder als *aanvullend* en tellen niet mee. Ook Kansrijk (standaard NAIC), de fondsenlijst (standaard gesorteerd op NAIC) en de volglijst zetten NAIC voorop.
 - **NAIC deel 5 toegevoegd: totaalrendement.** Koersstijging tot de verwachte hoge koers plus het gemiddelde dividendrendement (5 jaar) moet minstens 15% per jaar zijn (geld verdubbelen in 5 jaar). Haalt een aandeel in de koopzone dat niet, dan is het hoogstens Neutraal. Een onbekend dividend telt als 0% (voorzichtig).
