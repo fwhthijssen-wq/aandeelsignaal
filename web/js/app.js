@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.79';
+  var APP_VERSIE = '2026.10.25-beta.80';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -573,7 +573,9 @@
   /* ---- Uitleg bij eerste gebruik ---- */
   var INTRO = [
     ['Welkom bij Aandeel Signaal', 'Vergelijk en volg grote Europese en Amerikaanse bedrijven. U heeft geen account nodig en het kost niets. De app is een hulpmiddel om te kiezen, geen beleggingsadvies.'],
-    ['Wat betekent “Bevestigd”?', 'Een aandeel krijgt pas een oordeel als alle controles kloppen: de winst per aandeel van 10 jaar is onderbouwd, cijfers en koers staan in dezelfde valuta en de koers is niet ouder dan ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen. Klopt er iets niet, dan zegt de app liever niets dan iets onzekers.'],
+    ['Het oordeel volgt de NAIC-methode', 'Bij elk aandeel staat Kopen, Neutraal of Vermijden volgens de Stock Selection Guide van de NAIC: is het een groeibedrijf, is het een goed bedrijf, en is de prijs nu gunstig (koopzone, minstens 3 : 1 opwaarts tegen neerwaarts, minstens 15% verwacht rendement per jaar)? Zes extra metingen staan er aanvullend bij.'],
+    ['Waar komen de cijfers vandaan?', '“Bevestigd” betekent: de winst per aandeel van 10 jaar is onafhankelijk nagerekend. “Uit jaarverslag”: officiële cijfers, niet nagerekend. “Indicatief (Yahoo)”: geen officiële bron beschikbaar. Ontbreekt iets, dan zegt de app liever niets dan iets onzekers; hij schat nooit.'],
+    ['Volgen en signalen', 'Zet aandelen op uw volglijst (ster) of voer uw aankopen in bij Portefeuille. Op Start ziet u dan wanneer ze in de koop- of verkoopzone komen, en welke fondsen sinds de vorige update van oordeel veranderden.'],
     ['Uw gegevens blijven van u', 'Uw volglijst en portefeuille staan alleen op dit toestel. Maak daarom af en toe een back-up via Instellingen en bewaar die in uw eigen cloud of mail. Handig: zet de app op uw beginscherm via het menu van uw browser.']
   ];
   var introOpen = false;
@@ -976,8 +978,18 @@
   var hk = document.getElementById('hulp-knop'); if (hk) hk.addEventListener('click', toonPaginaHulp);
 
   function schermHulp() {
-    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten"><li>Op Start ziet u in één oogopslag hoeveel aandelen volledig gecontroleerde gegevens hebben.</li><li>Tik op een aandeel voor details; onderin kiest u Overzicht, Koers, NAIC, Checklist (uw eigen aantekeningen over het management), Cijfers of Bronnen.</li><li>Met de ster zet u een aandeel op uw volglijst.</li><li>Maak af en toe een back-up (tandwiel rechtsboven). Het vraagteken ernaast legt uit wat u op de pagina ziet, waar u ook bent, dan raakt u niets kwijt.</li></ul></div>' +
-      '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) komt uit zes metingen die elk iets anders zeggen: vrije kasstroom (bij banken en verzekeraars rendement op eigen vermogen), schuldgraad, winstgroei, koers/winst, de trend van 200 dagen en de rust van de koers. Ze tellen even zwaar. Wat ontbreekt telt niet mee en wordt nooit geschat; bij het aandeel staat per meting waarom het ontbreekt. Andere kentallen, uw eigen beoordeling en het advies van analisten staan erbij ter informatie, maar tellen niet mee.</p><p>Daarnaast staat het oordeel volgens <b>NAIC</b> (Stock Selection Guide): groei van de winst per aandeel, gemiddelde hoge en lage K/W over 5 jaar, en daaruit koerszones voor de komende 5 jaar. Kopen als de koers in de koopzone staat met minstens 3 : 1 opwaarts tegen neerwaarts. Het label bij de plek in het koersbereik krijgt alleen een aandeel waarvan alle controles slagen: winst per aandeel van 10 jaar onderbouwd, één valuta, een koers van maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud en geen afgewezen bronnen.</p></div>' +
+    return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten">' +
+      '<li><b>Start</b>: signalen bij uw eigen aandelen, wat er sinds de vorige update veranderde, en de kansrijke aandelen volgens NAIC.</li>' +
+      '<li><b>Fondsen</b>: alle aandelen per index, standaard met NAIC Kopen bovenaan. Zoek op naam of beurscode.</li>' +
+      '<li>Tik op een aandeel voor details. Onderin kiest u <b>Overzicht</b> (oordeel en bedrijf), <b>Koers</b>, <b>NAIC</b> (de gids in stappen), <b>Verdiepen</b> (uw eigen beoordeling), <b>Cijfers</b> en <b>Bronnen</b>.</li>' +
+      '<li>Met de ster zet u een aandeel op uw <b>volglijst</b>; bij <b>Portefeuille</b> voert u aankopen in.</li>' +
+      '<li>Het vraagteken rechtsboven legt uit wat u op de pagina ziet. Het tandwiel opent Instellingen, waar u een back-up maakt.</li></ul></div>' +
+      '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) volgt de <b>Stock Selection Guide</b> van de NAIC:</p><ul class="punten">' +
+      '<li><b>Groeibedrijf?</b> De winst per aandeel groeit minstens ' + Naic.GROEI_MIN + '% per jaar. U kunt bij het aandeel ook uw eigen groeiverwachting invullen.</li>' +
+      '<li><b>Goed bedrijf?</b> Omzet en winst groeien gelijk op, en marge en rendement op eigen vermogen dalen niet.</li>' +
+      '<li><b>Gunstige prijs?</b> Uit de gemiddelde K/W van 5 jaar volgen een verwachte hoge en lage koers over 5 jaar, in drie zones. Kopen vraagt de koopzone, minstens 3 : 1 opwaarts tegen neerwaarts en minstens ' + Naic.TOTAAL_MIN + '% verwacht rendement per jaar.</li></ul>' +
+      '<p>Zes extra metingen (kasstroom, schuld, groei, K/W, koerstrend en koersrust) staan er <b>aanvullend</b> bij en tellen niet mee. Andere kentallen, uw eigen beoordeling en het advies van analisten staan erbij ter informatie. Wat ontbreekt wordt nooit geschat; bij het aandeel staat waarom het ontbreekt.</p>' +
+      '<p class="zacht">Teruggerekend over 2018–2025 deden aandelen met NAIC Kopen het gemiddeld beter dan het gemiddelde van alle fondsen en Vermijden slechter, maar dat kwam vooral van een paar uitschieters en is geen bewijs voor de toekomst.</p></div>' +
       '<div class="kaart-plat"><h2>Rondleiding</h2><p class="zacht">Nog eens kijken hoe de app werkt?</p><div class="knoppen"><button class="knop rand" id="intro-opnieuw">Rondleiding bekijken</button></div></div>' +
       '<h2>Wat betekent dit?</h2>' + UITLEG.termen.map(function (x) { return '<details><summary>' + h(x.naam) + '</summary><p>' + h(x.tekst) + '</p></details>'; }).join('') + '<p class="zacht">Aandeel Signaal is een selectiehulp en geen beleggingsadvies.</p></section>';
   }

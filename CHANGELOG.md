@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.25-beta.80
+- **Rondleiding vernieuwd** (5 stappen): welkom, het oordeel volgens NAIC, waar de cijfers vandaan komen (Bevestigd, Uit jaarverslag, Indicatief), volgen en signalen, en uw gegevens. Opnieuw te bekijken via Hulp.
+- **Hulp bijgewerkt** op alle pagina's: NAIC als hoofdoordeel, signalen en “nieuw sinds de vorige update”, eigen groeiverwachting, relatieve waarde en verwacht rendement, cijfers uit pdf-jaarverslagen en van Yahoo. De pagina Hulp legt het oordeel nu stap voor stap uit, met de uitkomst van het terugrekenen en de kanttekening daarbij.
+- **Woordenlijst uitgebreid**: NAIC, koop-/houd-/verkoopzone, opwaarts tegen neerwaarts (3 : 1), totaalrendement, relatieve waarde, verwacht gemiddeld rendement (PAR) en Bevestigd/Uit jaarverslag/Indicatief. Verouderde begrippen eruit.
+- Onderhoud: GitHub Actions bijgewerkt (geen verouderde onderdelen meer), en bij elke wijziging draaien nu automatisch alle tests.
+
 ## 2026.10.25-beta.79
 - **CaixaBank met 5 jaar winst per aandeel** (2021–2025). CaixaBank zet de winst per aandeel niet als getal in zijn digitale (ESEF) jaarverslag; de app leest die nu uit de tabellen van het leesbare verslag zelf en controleert de jaren met het vergelijkende cijfer in het verslag erna.
 - **Winst per aandeel van Yahoo als laatste redmiddel**: bij een fonds met officiële cijfers maar zonder één bruikbaar jaar winst per aandeel (o.a. Visa, dat de winst alleen per aandelenklasse meldt) neemt de app die van Yahoo Finance over. Het fonds heet dan “Indicatief (Yahoo)”; omzet, kasstroom en balans blijven uit de officiële bron. Op het tabblad Bronnen staat dat erbij.
