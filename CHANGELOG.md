@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.82
+- **Tabblad NAIC voor elk aandeel met een NAIC-oordeel.** De gids in stappen (groei, rendement op eigen vermogen, marge, K/W-geschiedenis, koerszones en rekenvoorbeeld) verscheen alleen bij 10 jaar bevestigde winst per aandeel, terwijl het NAIC-oordeel op Overzicht ook bij cijfers uit een jaarverslag of van Yahoo staat. Nu verschijnt de gids bij minstens 4 jaar winst per aandeel, met bovenaan hoe zeker de cijfers zijn. Uw eigen koerszones worden met de koers vergeleken zodra die vers is en in dezelfde valuta staat als de jaarcijfers. Het label bij de plek in het koersbereik blijft voorbehouden aan bevestigde gegevens.
+
 ## 2026.10.25-beta.81
 - **Oudere omzet, winst vóór belasting, nettowinst en eigen vermogen uit Duitse jaarverslagen.** Bij DAX-fondsen kwamen deze cijfers alleen van Yahoo (4 jaar), waardoor NAIC vaak niet kon toetsen of omzet en winst gelijk op groeien en of marge en rendement standhouden. Nu worden ze uit dezelfde pdf-jaarverslagen gelezen (tot 15 jaar), met dezelfde controle over de verslagen heen. Een reeks wordt alleen gebruikt als hij in de gedeelde jaren klopt met Yahoo (binnen 5%); een Yahoo-cijfer wordt nooit vervangen. Onder andere BMW, Beiersdorf, Brenntag, Volkswagen, Henkel, Mercedes-Benz, MTU, Zalando en Symrise. Op het tabblad Bronnen staat welke cijfers zijn aangevuld.
 

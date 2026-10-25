@@ -790,6 +790,23 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('[data-veranderingen], [data-geen-verandering]').count(), 1)
         self.assertEqual(self.fouten, [])
 
+    def test_naic_gids_ook_bij_cijfers_uit_jaarverslag(self):
+        c = self.b.new_context(viewport={'width': 390, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.gegevens.eps_status='provisional_not_independently_verified';
+            a.gegevens.eps_verified_years=0;a.gegevens.niveau='jaarverslag';}});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""")
+        pg = c.new_page()
+        fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-naic-niveau="jaarverslag"]').count(), 1)
+        self.assertIn('Stap 1', pg.inner_text('main'))
+        pg.goto(INDEX + '#/a/GOOGL/waarde'); pg.wait_for_timeout(200)
+        self.assertIn('Nog geen NAIC-gids', pg.inner_text('main'))
+        self.assertEqual(fouten, [])
+
 
 if __name__ == '__main__':
     unittest.main()

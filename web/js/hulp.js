@@ -52,7 +52,7 @@
       'Timing is alleen informatie. Het voorspelt niets.',
       'Is de koers ouder dan enkele dagen, dan gebruikt de app hem niet voor het oordeel.'], null],
     waarde: ['Aandeel: NAIC', 'De Stock Selection Guide van de NAIC in stappen.', [
-      'Stap 1 tot 4 tonen groei, rendement op eigen vermogen, winstmarge en koerszones. Deze uitgebreide gids verschijnt alleen bij aandelen met 10 jaar bevestigde winst per aandeel.',
+      'Stap 1 tot 4 tonen groei, rendement op eigen vermogen, winstmarge en koerszones. De gids verschijnt bij elk aandeel met minstens 4 jaar winst per aandeel; bovenaan staat hoe zeker de cijfers zijn (bevestigd, uit jaarverslag of indicatief).',
       'Het NAIC-oordeel (Kopen, Neutraal of Vermijden) staat ook op het Overzicht en in de lijsten. Hier kunt u met eigen aannames uw eigen koerszones uitrekenen.', 'De plek in het koersbereik (onderin, midden, bovenin) krijgt alleen een label als alle controles slagen: tien jaar winst per aandeel onderbouwd, één valuta en een verse koers.',
       'Ontbreekt iets, dan staat er wat. De app vult nooit zelf in.'], 'Dit is een rekenhulp met uw eigen invoer, geen advies.'],
     check: ['Aandeel: Verdiepen', 'Hier legt u uw eigen kennis vast. Uw beoordeling telt niet mee in het oordeel; een ontbrekend cijfer dat u invult wel.', [
