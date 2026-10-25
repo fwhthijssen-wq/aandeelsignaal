@@ -73,14 +73,27 @@ def lees(tekst, jaar=None):
     return uit
 
 
-def _lees(tekst, jaar, label):
+SCHAAL = ((re.compile(r'\b(billions?|bn|mrd\.?|milliarden)\b', re.I), 1e9), (re.compile(r'\b(millions?|mio\.?|mn|€\s?m|eur\s?m|m€|€m)\b', re.I), 1e6),
+          (re.compile(r'\b(thousands?|tsd\.?|t€|€\s?(000|thousand)|eur\s?k)\b', re.I), 1e3))
+
+
+def schaal_boven(regels, i, terug=80):
+    """Eenheid van een bedragentabel: de eerste aanduiding (miljoen, miljard, duizend) op of boven regel i, of None."""
+    for j in range(i, max(-1, i - terug), -1):
+        for rx, f in SCHAAL:
+            if rx.search(regels[j][1]):
+                return f
+    return None
+
+
+def _lees(tekst, jaar, label, niet=None, maxabs=1000, aantal=True):
     """Uitkomst voor het verslag. Het boekjaar komt uit de jaartallenkop boven de regel (niet uit de bestandsnaam: bij een
     gebroken boekjaar of een archief dat op publicatiejaar sorteert kan dat verschillen)."""
     regels = list(regels_met(tekst))
     komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     vond = []
     for i, (p, r) in enumerate(regels):
-        if not label.search(r) or NIET.search(TOTAAL_ACT.sub(' ', r)) or AANTAL.search(r):
+        if not label.search(r) or (niet or NIET).search(TOTAAL_ACT.sub(' ', r)) or (aantal and AANTAL.search(r)):
             continue
         kandidaat = []
         g = getallen(re.sub(r'\[\d+\]', ' ', r), komma)
@@ -103,13 +116,27 @@ def _lees(tekst, jaar, label):
                 g = g[:len(rij)]
             if rij:                                      # meerjarenoverzicht: elk getal hoort bij een jaar
                 n = rij.index(max(rij)); v = n - 1 if rij[0] < rij[-1] else n + 1
-                if any(abs(x) >= 1000 for x in (g[n], g[v])):
+                if maxabs and any(abs(x) >= maxabs for x in (g[n], g[v])):
                     continue
+                if not maxabs:
+                    if all(float(x).is_integer() and 1990 <= x <= 2035 for x in (g[n], g[v])):
+                        continue
+                    f = schaal_boven(regels, k)
+                    if not f:
+                        continue
+                    g = [x * f for x in g]
                 vond.append((rij[n], g[n], g[v], rij[v], p, ' '.join(regels[k][1].split())[:140], dict(zip(rij, g))))
                 continue
             x0, x1 = twee(g, heel if k == i else False)
-            if any(abs(x) >= 1000 for x in (x0, x1)) or (x0 == 0 and x1 == 0):
+            if (maxabs and any(abs(x) >= maxabs for x in (x0, x1))) or (x0 == 0 and x1 == 0):
                 continue
+            if not maxabs:
+                if all(float(x).is_integer() and 1990 <= x <= 2035 for x in (x0, x1)):
+                    continue                                    # jaartallen, geen bedragen
+                f = schaal_boven(regels, k)
+                if not f:
+                    continue
+                x0, x1 = x0 * f, x1 * f
             kop = kolomkop(regels, k)
             if not kop:
                 continue
@@ -124,6 +151,22 @@ def _lees(tekst, jaar, label):
     from collections import Counter
     jr = Counter(v[0] for v in vond).most_common(1)[0][0]
     waarden = {(round(v[1], 4), round(v[2], 4), v[3]) for v in vond if v[0] == jr}
+    if not maxabs and len(waarden) > 1:
+        # bedragen: dezelfde lezing in een andere afronding (59.7 mld in het overzicht, 59,705 mln in de tabel) telt als één
+        nauwkeurig = sorted(waarden, key=lambda w: -len(str(w[0]).rstrip('0')))
+        basis = nauwkeurig[0]
+        if all(w[2] == basis[2] and abs(w[0] - basis[0]) <= 0.006 * abs(basis[0]) + 1 and abs(w[1] - basis[1]) <= 0.006 * abs(basis[1]) + 1 for w in waarden):
+            waarden = {basis}
+        else:
+            # bedragen staan op veel plaatsen (kerncijfers, jaarrekening, segmenten): de lezing die het vaakst voorkomt, als die
+            # minstens twee keer voorkomt en vaker dan elke andere (een andere afronding telt mee als dezelfde)
+            def zelfde(w, x):
+                return w[2] == x[2] and abs(w[0] - x[0]) <= 0.006 * abs(x[0]) + 1 and abs(w[1] - x[1]) <= 0.006 * abs(x[1]) + 1
+            lezingen = [(round(v[1], 4), round(v[2], 4), v[3]) for v in vond if v[0] == jr]
+            telling = sorted(((sum(1 for y in lezingen if zelfde(y, x)), -len(str(x[0]).rstrip('0')), x) for x in set(lezingen)), reverse=True)
+            if telling[0][0] >= 2 and (len(telling) == 1 or telling[0][0] > max(t[0] for t in telling if not zelfde(t[2], telling[0][2]) ) if any(not zelfde(t[2], telling[0][2]) for t in telling) else True):
+                waarden = {telling[0][2]}
+                vond = [v for v in vond if v[0] != jr or zelfde((round(v[1], 4), round(v[2], 4), v[3]), telling[0][2])]
     if len(waarden) != 1:
         # meerdere lezingen (bijv. een tabel met omgekeerde kolommen): de keten kiest de lezing die aansluit op het latere verslag
         eerste = [v for v in vond if v[0] == jr][0]
@@ -132,27 +175,30 @@ def _lees(tekst, jaar, label):
     eerste = [v for v in vond if v[0] == jr][0]
     uit = {'jaar': jr, 'eps': a, 'vorig_jaar': c, 'eps_vorig': b, 'pagina': eerste[4], 'bewijs': eerste[5], 'kandidaten': len(vond)}
     # meerjarenoverzicht in hetzelfde verslag dat met deze lezing overeenkomt: de oudere jaren zoals het bedrijf ze nu toont
-    mj = [v[6] for v in vond if v[0] == jr and v[6] and abs(v[6].get(jr, 1e9) - a) <= 0.011 and abs(v[6].get(c, 1e9) - b) <= 0.011]
+    tol = 0.011 if maxabs else 0.006 * max(abs(a), abs(b)) + 1
+    mj = [v[6] for v in vond if v[0] == jr and v[6] and abs(v[6].get(jr, 1e18) - a) <= tol and abs(v[6].get(c, 1e18) - b) <= tol]
     if mj and all(m == mj[0] for m in mj):
         uit['meerjaren'] = {y: x for y, x in mj[0].items() if y < c}
     return uit, None
 
 
-def keten(per_jaar):
+def keten(per_jaar, relatief=False):
     """per_jaar: {jaar: lees-uitkomst}. {jaar: eps} van nieuw naar oud, zolang de overlap klopt."""
     uit, log = {}, []
+    def gelijk(x, y):
+        return abs(x - y) <= 0.011 or (relatief and abs(x - y) <= 0.006 * max(abs(x), abs(y)))
     jaren = sorted(per_jaar, reverse=True)
     for j in jaren:
         r = per_jaar[j]
         if r.get('eps') is None:
             alts = r.get('alternatieven') or []
-            passend = [a for a in alts if j in uit and abs(a[0] - uit[j]) <= 0.011]
+            passend = [a for a in alts if j in uit and gelijk(a[0], uit[j])]
             hoe = 'het latere verslag'
             if not passend and j not in uit:
                 # nieuwste verslag (of na een gat): kies de lezing waarvan het vorige jaar aansluit op het oudere verslag
                 ouder = per_jaar.get(j - 1) or {}
                 kandidaten = [ouder['eps']] if ouder.get('eps') is not None else [a[0] for a in ouder.get('alternatieven') or []]
-                passend = [a for a in alts if a[2] == j - 1 and any(abs(a[1] - k) <= 0.011 for k in kandidaten)]
+                passend = [a for a in alts if a[2] == j - 1 and any(gelijk(a[1], k) for k in kandidaten)]
                 hoe = 'het oudere verslag'
             if len(passend) != 1:
                 log.append(f'{j}: meerdere lezingen en geen die aansluit; reeks stopt'); break
@@ -163,7 +209,7 @@ def keten(per_jaar):
             uit[j] = r['eps']; uit[r['vorig_jaar']] = r['eps_vorig']; _meerjaren(uit, r, log); continue
         if j not in uit:
             log.append(f'{j}: sluit niet aan (gat); reeks stopt'); break
-        if abs(uit[j] - r['eps']) <= 0.011:
+        if gelijk(uit[j], r['eps']):
             pass
         elif uit[j] * r['eps'] > 0 and abs(uit[j] / r['eps'] - 1) <= 0.06:
             log.append(f'{j}: kleine herziening ({r["eps"]} → {uit[j]}); nieuwste telt')

@@ -115,5 +115,26 @@ class YahooEps(unittest.TestCase):
             yahoo_jaren.jaren_uit_yahoo = oud
 
 
+class PdfJaarcijfers(unittest.TestCase):
+    def g(self):
+        return {'bron': 'Yahoo Finance', 'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'sales': s, 'equity': 100.0}
+                                                   for y, s in ((2022, 8799e6), (2023, 9447e6), (2024, 9850e6), (2025, 9852e6))]}
+
+    def test_aanvullen_als_reeks_klopt_met_yahoo(self):
+        g = self.g()
+        reg = {'X': {'sales': {'reeks': {'2019': 7653e6, '2020': 7025e6, '2021': 7627e6, '2022': 8799e6, '2023': 9447e6, '2024': 9850e6}}}}
+        bw.vul_jaarcijfers_pdf(g, 'X', register=reg)
+        jr = {j['year']: j for j in g['jaren']}
+        self.assertEqual(jr[2019]['sales'], 7653e6); self.assertEqual(jr[2025]['sales'], 9852e6)        # Yahoo blijft staan
+        self.assertEqual(g['jaarcijfers_pdf']['sales'], {'gebruikt': True, 'jaren': 6, 'aangevuld': 3, 'vergeleken': 3, 'overeen': 3})
+
+    def test_ander_begrip_wordt_niet_gebruikt(self):
+        g = self.g()
+        reg = {'X': {'equity': {'reeks': {'2020': 50.0, '2021': 60.0, '2022': 70.0, '2023': 80.0}}}}     # Yahoo zegt 100: geen match
+        bw.vul_jaarcijfers_pdf(g, 'X', register=reg)
+        self.assertEqual(len(g['jaren']), 4)
+        self.assertFalse(g['jaarcijfers_pdf']['equity']['gebruikt'])
+
+
 if __name__ == '__main__':
     unittest.main()

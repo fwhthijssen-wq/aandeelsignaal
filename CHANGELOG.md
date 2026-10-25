@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.81
+- **Oudere omzet, winst vóór belasting, nettowinst en eigen vermogen uit Duitse jaarverslagen.** Bij DAX-fondsen kwamen deze cijfers alleen van Yahoo (4 jaar), waardoor NAIC vaak niet kon toetsen of omzet en winst gelijk op groeien en of marge en rendement standhouden. Nu worden ze uit dezelfde pdf-jaarverslagen gelezen (tot 15 jaar), met dezelfde controle over de verslagen heen. Een reeks wordt alleen gebruikt als hij in de gedeelde jaren klopt met Yahoo (binnen 5%); een Yahoo-cijfer wordt nooit vervangen. Onder andere BMW, Beiersdorf, Brenntag, Volkswagen, Henkel, Mercedes-Benz, MTU, Zalando en Symrise. Op het tabblad Bronnen staat welke cijfers zijn aangevuld.
+
 ## 2026.10.25-beta.80
 - **Rondleiding vernieuwd** (5 stappen): welkom, het oordeel volgens NAIC, waar de cijfers vandaan komen (Bevestigd, Uit jaarverslag, Indicatief), volgen en signalen, en uw gegevens. Opnieuw te bekijken via Hulp.
 - **Hulp bijgewerkt** op alle pagina's: NAIC als hoofdoordeel, signalen en “nieuw sinds de vorige update”, eigen groeiverwachting, relatieve waarde en verwacht rendement, cijfers uit pdf-jaarverslagen en van Yahoo. De pagina Hulp legt het oordeel nu stap voor stap uit, met de uitkomst van het terugrekenen en de kanttekening daarbij.

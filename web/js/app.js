@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.80';
+  var APP_VERSIE = '2026.10.25-beta.81';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -822,6 +822,12 @@
       var ej = g.eps_jaarverslag;
       s += '<section data-eps-jaarverslag><h2>Winst per aandeel uit de jaarverslagen</h2><p>' + h(ej.uitleg || '') + ' ' + ej.jaren + ' jaar (' + ej.van + '–' + ej.tot + ').' + (ej.controle && ej.controle.vergeleken ? ' Tweede bron: in ' + ej.controle.overeen + ' van de ' + ej.controle.vergeleken + ' jaren die Yahoo Finance ook heeft, klopt het cijfer (binnen 5%)' + (ej.controle.afwijkend && ej.controle.afwijkend.length ? '; afwijkend: ' + ej.controle.afwijkend.join(', ') + ' (bijv. andere aandelensoort of herziening)' : '') + '.' : '') + ' Omzet, kasstroom en balans blijven indicatief (Yahoo Finance).</p><ul class="punten">' +
         ej.documenten.filter(function (d) { return d && /^https?:\/\//.test(d.url || ''); }).map(function (d) { return '<li>Jaarverslag ' + h(d.boekjaar) + (d.pagina ? ', pagina ' + h(d.pagina) : '') + ': <a href="' + h(d.url) + '" target="_blank" rel="noopener">document</a></li>'; }).join('') + '</ul></section>';
+    }
+    if (g.jaarcijfers_pdf) {
+      var VN = { sales: 'omzet', pretax_income: 'winst vóór belasting', net_income: 'nettowinst', equity: 'eigen vermogen' };
+      var gebruikt = Object.keys(g.jaarcijfers_pdf).filter(function (k) { return g.jaarcijfers_pdf[k].gebruikt && g.jaarcijfers_pdf[k].aangevuld; });
+      if (gebruikt.length) s += '<section data-jaarcijfers-pdf><h2>Oudere jaarcijfers uit de jaarverslagen</h2><p>Aangevuld uit de pdf-jaarverslagen: ' + gebruikt.map(function (k) { var x = g.jaarcijfers_pdf[k]; return h(VN[k] || k) + ' (' + x.aangevuld + ' jaar extra)'; }).join(', ') +
+        '. Alleen gebruikt waar de reeks in de gedeelde jaren klopt met Yahoo Finance (binnen 5%); een cijfer van Yahoo wordt nooit vervangen.</p></section>';
     }
     if (g.eps_yahoo) s += '<section data-eps-yahoo><h2>Winst per aandeel van Yahoo Finance</h2><p>' + h(g.eps_yahoo.uitleg || '') + ' ' + g.eps_yahoo.jaren + ' jaar.</p></section>';
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';

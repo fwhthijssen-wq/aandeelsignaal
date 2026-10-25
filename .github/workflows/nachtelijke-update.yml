@@ -53,6 +53,13 @@ jobs:
               return sum(1 for j in (g.get('jaren') or []) if isinstance(j.get('comparable_eps'), (int, float)))
           ykort = sorted(a['ticker'] for a in L if (a.get('gegevens') or {}).get('bron') == 'Yahoo Finance' and not a['gegevens'].get('eps_jaarverslag'))
           kort = sorted(f"{a['ticker']}:{_neps(a.get('gegevens') or {})}" for a in L if (a.get('gegevens') or {}).get('bron') != 'Yahoo Finance' and _neps(a.get('gegevens') or {}) < 6)
+          pc = sorted(f"{a['ticker']}:" + '+'.join(k[:3] for k, v in a['gegevens']['jaarcijfers_pdf'].items() if v.get('gebruikt')) for a in L if (a.get('gegevens') or {}).get('jaarcijfers_pdf'))
+          print(f"::notice title=Pdf-jaarcijfers::{len(pc)} fondsen: {' '.join(pc)}")
+          def _div(g):
+              jr = [j for j in (g.get('jaren') or []) if j.get('koers_hoog')][-5:]
+              return (len(jr), sum(1 for j in jr if j.get('dividend_ps')))
+          geendiv = sorted(a['ticker'] for a in L if _div(a.get('gegevens') or {})[0] >= 3 and _div(a.get('gegevens') or {})[1] == 0)
+          print(f"::notice title=Dividend::{len(geendiv)} fondsen met koersen maar zonder dividend in de laatste 5 jaar: {' '.join(geendiv)}")
           ye = sorted(a['ticker'] for a in L if (a.get('gegevens') or {}).get('eps_yahoo'))
           print(f"::notice title=Yahoo-EPS::{len(ye)} fondsen met officiele cijfers maar winst per aandeel van Yahoo: {' '.join(ye)}")
           print(f"::notice title=Ontbreekt::Yahoo zonder jaarverslag-EPS ({len(ykort)}): {' '.join(ykort)} | officieel met minder dan 6 jaar EPS ({len(kort)}): {' '.join(kort)}")

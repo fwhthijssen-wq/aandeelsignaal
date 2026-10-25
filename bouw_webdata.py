@@ -229,6 +229,53 @@ def vul_eps_jaarverslag(g, ticker, register=None):
                             'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Ontbreekt een verslag, dan komt dat jaar uit het meerjarenoverzicht van een later verslag. Niet nagerekend.'}
 
 
+JAARVERSLAG_CIJFERS = HERE / 'jaarverslag_cijfers.json'     # omzet, winst vóór belasting, nettowinst, eigen vermogen uit pdf (hulp/de_cijfers.py)
+PDF_VELDEN = ('sales', 'pretax_income', 'net_income', 'equity')
+
+
+def vul_jaarcijfers_pdf(g, ticker, register=None):
+    """Omzet, winst vóór belasting, nettowinst (aandeelhouders) en eigen vermogen uit de pdf-jaarverslagen, voor fondsen met
+    alleen Yahoo-cijfers. Per veld alleen als de reeks minstens 4 jaar is EN klopt met Yahoo in de gedeelde jaren (minstens 2,
+    elk binnen 5%): dan is het hetzelfde begrip. Vult jaren aan waar Yahoo niets heeft; vervangt nooit een Yahoo-cijfer."""
+    if register is None:
+        try:
+            register = json.loads(JAARVERSLAG_CIJFERS.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            register = {}
+    reg = register.get(ticker) or {}
+    jaren = g.get('jaren') or []
+    if not reg or not jaren:
+        return
+    eind = max(set(str(j.get('end', ''))[5:] for j in jaren if j.get('end')), key=[str(j.get('end', ''))[5:] for j in jaren].count)
+    munt = jaren[-1].get('currency')
+    per_jaar = {j.get('year'): j for j in jaren}
+    verslag = {}
+    for veld in PDF_VELDEN:
+        reeks = {int(k): v for k, v in ((reg.get(veld) or {}).get('reeks') or {}).items() if _getal(v) is not None}
+        if len(reeks) < 4:
+            continue
+        gedeeld = [(y, per_jaar[y].get(veld), v) for y, v in reeks.items() if y in per_jaar and _getal(per_jaar[y].get(veld)) is not None]
+        goed = [x for x in gedeeld if x[2] and x[1] * x[2] > 0 and abs(x[1] / x[2] - 1) <= 0.05]
+        if len(gedeeld) < 2 or len(goed) < len(gedeeld):
+            verslag[veld] = {'gebruikt': False, 'vergeleken': len(gedeeld), 'overeen': len(goed)}
+            continue
+        nieuw = 0
+        for y, v in reeks.items():
+            rij = per_jaar.get(y)
+            if rij is None:
+                rij = per_jaar[y] = {'year': y, 'end': f'{y}-{eind}', 'currency': munt}
+                jaren.append(rij)
+            if _getal(rij.get(veld)) is None:
+                rij[veld] = v
+                rij.setdefault('jaarcijfers_pdf', []).append(veld)
+                nieuw += 1
+        verslag[veld] = {'gebruikt': True, 'jaren': len(reeks), 'aangevuld': nieuw, 'vergeleken': len(gedeeld), 'overeen': len(goed)}
+    jaren.sort(key=lambda j: j.get('year') or 0)
+    g['jaren'] = jaren
+    if verslag:
+        g['jaarcijfers_pdf'] = verslag
+
+
 def vul_eps_yahoo(g, ruw):
     """Winst per aandeel van Yahoo Finance in de jaren van de officiële cijfers (zelfde valuta, jaareinde binnen 15 dagen).
     Alleen als dat minstens 4 jaren oplevert; elk jaar krijgt eps_bron 'yahoo'."""
@@ -726,6 +773,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 yg = gegevens_uit_yahoo(yahoo_ruw, vandaag)
                 if yg.get('jaren'):
                     vul_eps_jaarverslag(yg, ticker)
+                    vul_jaarcijfers_pdf(yg, ticker)
                     gegevens = yg
                 else:
                     gegevens.setdefault('yahoo_fout', yg.get('fout'))
@@ -740,6 +788,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 if gegevens.get('bron') == 'Yahoo Finance':
                     gegevens['jaren'] = [dict(j) for j in gegevens['jaren']]
                     vul_eps_jaarverslag(gegevens, ticker)
+                    vul_jaarcijfers_pdf(gegevens, ticker)
         elif nr % 4 == 0 and gegevens is not oud and not gegevens.get('uit_vorige_run'):
             # Steekproef: leg Yahoo naast de officiële cijfers, zodat zichtbaar wordt hoe betrouwbaar Yahoo is.
             try:
