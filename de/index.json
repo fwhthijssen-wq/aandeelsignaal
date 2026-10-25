@@ -1,11 +1,25 @@
 {
  "ALV.DE": {
+  "2015-eqs": {
+   "bron": "EQS",
+   "bytes": 3947039,
+   "sha256": "a0da53436c0a5a3ef209622b1b35ec8e4fa226b3bbf46634e50c8fe15cf70160",
+   "tekens": 1697328,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2015-EQ-E-00.pdf"
+  },
   "2016": {
    "bron": "EQS",
    "bytes": 1682434,
    "sha256": "54f42a4e33125cda6da3b680b8c6bab2e7d88895810e15fe91a625eb02045205",
    "tekens": 1154349,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2016-EQ-E-00.pdf"
+  },
+  "2016-eqs": {
+   "bron": "EQS",
+   "bytes": 2085226,
+   "sha256": "3b52b31473e2b55800cb050c0755da62570080a08a551e657cd986f77ca3554a",
+   "tekens": 1240502,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2016-EQ-D-00.pdf"
   },
   "2017": {
    "bron": "EQS",
@@ -14,6 +28,13 @@
    "tekens": 1262374,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2017-EQ-E-00.pdf"
   },
+  "2017-eqs": {
+   "bron": "EQS",
+   "bytes": 4916897,
+   "sha256": "038dc9daa514aca025c618d611ec8d9cb27d9e35355cba5d7205f15dd3fa75f9",
+   "tekens": 1332459,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2017-EQ-D-00.pdf"
+  },
   "2018": {
    "bron": "EQS",
    "bytes": 3953911,
@@ -21,12 +42,26 @@
    "tekens": 1360990,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2018-EQ-E-00.pdf"
   },
+  "2018-eqs": {
+   "bron": "EQS",
+   "bytes": 4738761,
+   "sha256": "ac17ee4c293c3ae9a24ae6e13e0c90451a5ad5a94adb21d4d1e9046de36a7ead",
+   "tekens": 1452559,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2018-EQ-D-00.pdf"
+  },
   "2019": {
    "bron": "EQS",
    "bytes": 5856441,
    "sha256": "cf88fbdc2bbf7b2cae2fd253b7a1185cead2c963ca35582a87e264e0661a4fea",
    "tekens": 1360385,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2019-EQ-E-00.pdf"
+  },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 5063171,
+   "sha256": "d84722cd512bbabad0dc71314e7497458d2408deebfc7a62f4a9298c2f890fbc",
+   "tekens": 1451365,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2019-EQ-D-00.pdf"
   },
   "2020": {
    "bron": "EQS",
@@ -63,21 +98,49 @@
    "tekens": 2804750,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2024-EQ-E-00.pdf"
   },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 11813140,
+   "sha256": "9f1e1088333ec39b094e00f0626aa0a9a06c96893901d915c1993aafec452579",
+   "tekens": 3055603,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2024-EQ-D-00.pdf"
+  },
   "2025": {
    "bron": "EQS",
    "bytes": 15346592,
    "sha256": "dc95d2a83614df29011e5ec1c4208934d32009118b3f71de3704cbc6baca4063",
    "tekens": 2756812,
    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2025-EQ-E-00.pdf"
+  },
+  "2025-eqs": {
+   "bron": "EQS",
+   "bytes": 16365747,
+   "sha256": "fcc4f48f1194aabbd4639afd7cb30cc6eda96967e0efe30b1f82ff9c5afde0de",
+   "tekens": 3004271,
+   "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2025-EQ-D-00.pdf"
   }
  },
  "BAS.DE": {
+  "2015-eqs": {
+   "bron": "EQS",
+   "bytes": 6809479,
+   "sha256": "2dec551375f8e4800e47dc1e1170d635e9093abb968e4d172218e5872dea19bd",
+   "tekens": 1440985,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2015-EQ-E-00.pdf"
+  },
   "2016": {
    "bron": "EQS",
    "bytes": 7049238,
    "sha256": "a27eadba921f94fefe11fb197059fb034515a3ffcd110c700d584c671f235046",
    "tekens": 1469520,
    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2016-EQ-E-00.pdf"
+  },
+  "2016-eqs": {
+   "bron": "EQS",
+   "bytes": 7221777,
+   "sha256": "6c9e73f6d7029a0d01d5cf273615de7ccab393ea7baf452a71c831154a754d5c",
+   "tekens": 1536734,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2016-EQ-D-00.pdf"
   },
   "2017": {
    "bron": "beleggerssite",
@@ -86,12 +149,26 @@
    "tekens": 1556087,
    "url": "https://www.basf.com/dam/jcr:ad007a03-e35a-3f19-99f6-23eff9e47eb3/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2018/BASF_Report_2017.pdf"
   },
+  "2017-eqs": {
+   "bron": "EQS",
+   "bytes": 6153033,
+   "sha256": "f231b665ded26acb926f6985a0d6069aedefd56dbe91295ea6921aa12eae1c8a",
+   "tekens": 1556130,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2017-EQ-E-00.pdf"
+  },
   "2018": {
    "bron": "beleggerssite",
    "bytes": 8772631,
    "sha256": "44ad7113719725ca93b85dd3b93eac5ec4531ab718401618af804efb6d094f06",
    "tekens": 2174019,
    "url": "https://www.basf.com/dam/jcr:61915124-ecce-31e1-8c36-fbf00a1313c9/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2019/BASF_Report_2018.pdf"
+  },
+  "2018-eqs": {
+   "bron": "EQS",
+   "bytes": 8197002,
+   "sha256": "b2b658e24693d9899ba9ea9dd2ce81baac4b63d94e62364c9e9e06ee03065754",
+   "tekens": 2174407,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2018-EQ-E-00.pdf"
   },
   "2019": {
    "bron": "beleggerssite",
@@ -100,12 +177,26 @@
    "tekens": 2253568,
    "url": "https://www.basf.com/dam/jcr:6cbd5d72-0754-3f90-8cbb-24a8023804a1/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2020/BASF_Report_2019.pdf"
   },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 9669287,
+   "sha256": "726e6484462fc7f89ed2aa117ec51c548c3c0b791dc84200378b1c2201bc0427",
+   "tekens": 2252553,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2019-EQ-E-00.pdf"
+  },
   "2020": {
    "bron": "beleggerssite",
    "bytes": 7313099,
    "sha256": "2856781931668e6857105f2d3bae020887faf6951c6756268f6cd2fe543e3ada",
    "tekens": 2425372,
    "url": "https://www.basf.com/dam/jcr:94157e2d-45f0-3e89-97a3-dc2e509450ea/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2021/BASF_Report_2020.pdf"
+  },
+  "2020-eqs": {
+   "bron": "EQS",
+   "bytes": 7313083,
+   "sha256": "4e91021944580eb6b22c5ac2edc8f3ab2e49f80dca384bd5a4bed8633185a069",
+   "tekens": 2425372,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2020-EQ-E-00.pdf"
   },
   "2021": {
    "bron": "beleggerssite",
@@ -114,12 +205,26 @@
    "tekens": 2036168,
    "url": "https://www.basf.com/dam/jcr:3a135ce0-f0f8-3707-acb0-9c9508b22a02/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2022/BASF_Report_2021.pdf"
   },
+  "2021-eqs": {
+   "bron": "EQS",
+   "bytes": 22039370,
+   "sha256": "0755f0778ef5edef887cd1941a5f2b769c8deffd2c13f8df1afb503b41176139",
+   "tekens": 2036167,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2021-EQ-E-00.pdf"
+  },
   "2022": {
    "bron": "beleggerssite",
    "bytes": 23385031,
    "sha256": "554d34751a03bd95bc0466d812445cf2e3bcc5b62ad068f024a38f2db70037e4",
    "tekens": 2110501,
    "url": "https://www.basf.com/dam/jcr:85468ed4-23da-3dc8-aa15-20882386251c/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2023/BASF_Report_2022.pdf"
+  },
+  "2022-eqs": {
+   "bron": "EQS",
+   "bytes": 24056360,
+   "sha256": "608db8d0f1b1c9ad3906c5189afc6de683751868cb4e8f8cd1ecad041122c8d7",
+   "tekens": 2110531,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2022-EQ-E-00.pdf"
   },
   "2023": {
    "bron": "beleggerssite",
@@ -128,12 +233,26 @@
    "tekens": 2262956,
    "url": "https://www.basf.com/dam/jcr:78992bb6-9a76-3392-8b51-6c069ad8ca94/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2024/BASF_Report_2023.pdf"
   },
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 9122681,
+   "sha256": "c8bfaa415d06b8e69c9b3aef717929855e72df33a911db70c1cbd4a9d0cb37f7",
+   "tekens": 2262956,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2023-EQ-E-00.pdf"
+  },
   "2024": {
    "bron": "beleggerssite",
    "bytes": 7072323,
    "sha256": "2e8a6d86be6fec17d706f1bca85ad8e2d8558e7dfd231a5943407cdd7642bd1a",
    "tekens": 1940489,
    "url": "https://www.basf.com/dam/jcr:a0caf160-c019-40b1-a4ea-eaedb29b0685/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_Report_2024.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 7312186,
+   "sha256": "614769c7b1f55b57863c68694910529cac15283f4a5ed9992b740709d90a761c",
+   "tekens": 2028814,
+   "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2024-EQ-D-00.pdf"
   },
   "2025": {
    "bron": "beleggerssite",
@@ -144,12 +263,26 @@
   }
  },
  "SIE.DE": {
+  "2015-eqs": {
+   "bron": "EQS",
+   "bytes": 1553526,
+   "sha256": "d949dd4adb6602d498ea1d566c11cffb15cf0cd612f1eb8f9853dbde35830db9",
+   "tekens": 836401,
+   "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2015-EQ-E-00.pdf"
+  },
   "2019": {
    "bron": "EQS",
    "bytes": 1411463,
    "sha256": "799f40e7bfe21ccb8daf0e16d01c6c00629148a6230842e92f0579e086342d19",
    "tekens": 1112963,
    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2019-EQ-E-00.pdf"
+  },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 1548585,
+   "sha256": "746697457d3427e6db7b2081bddec73c31a70d87ad8a75458fe26fea89a76e03",
+   "tekens": 1171479,
+   "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2019-EQ-D-00.pdf"
   },
   "2020": {
    "bron": "EQS",
@@ -165,6 +298,13 @@
    "tekens": 881528,
    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:0ce51a51-cd5c-4ff0-b582-f41d167f0892/Annual-Financial-Report-FY2021.pdf"
   },
+  "2021-eqs": {
+   "bron": "EQS",
+   "bytes": 1698398,
+   "sha256": "0825438d8b97405926a27d8f13d9d945d7670b3b534875b3a5a51d452b533cdf",
+   "tekens": 885229,
+   "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2021-EQ-E-00.pdf"
+  },
   "2022": {
    "bron": "EQS",
    "bytes": 4872501,
@@ -179,12 +319,26 @@
    "tekens": 921658,
    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:bb51b804-05aa-4590-84e3-0cad12783255/Annual-Financial-Report-FY2023.pdf"
   },
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 4671939,
+   "sha256": "75f568180a8d35287f970a4812817dcd2b5c690ec937bf80f17b6fe68f42521e",
+   "tekens": 1342410,
+   "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2023-EQ-E-00.pdf"
+  },
   "2024": {
    "bron": "beleggerssite",
    "bytes": 6668687,
    "sha256": "02562e43ac04431193ef6b75b8e3cac34d82f58b2d8ebc921d2036b7287f157d",
    "tekens": 986773,
    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 6199134,
+   "sha256": "a702335f2c2d4f18d3ead4053df2fc3a9be3ad69b062bedd938f3b2551213b27",
+   "tekens": 2096433,
+   "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2024-EQ-E-00.pdf"
   }
  }
 }
