@@ -8,8 +8,14 @@ const inv = JSON.parse(fs.readFileSync(path.join(map, 'puntintijd.json'), 'utf8'
 
 const rijen = inv.rijen.map((r) => {
   const b = S.beoordeel(r.rec, { vandaag: r.peildatum, gate: G, naic: N });
-  return { peildatum: r.peildatum, ticker: r.ticker, app: b.oordeel || 'geen', naic: (b.naic && b.naic.oordeel) || 'geen',
-    metingen: Object.fromEntries(b.metingen.map((m) => [m.id, m.nvt ? 'nvt' : m.oordeel || 'onbekend'])), aantal: b.aantal, r1: r.r1, r3: r.r3 };
+  const n = b.naic || {};
+  return { peildatum: r.peildatum, ticker: r.ticker, app: b.oordeel || 'geen', naic: n.oordeel || 'geen',
+    zone: (n.zones && n.zones.zone) || 'geen', totaal: n.totaal ? (n.totaal.ok ? 'ok' : 'te laag') : 'onbekend',
+    kwaliteit: (n.kwaliteit || []).some((q) => q.ok === false) ? 'zwak' : 'goed',
+    zone: groep((x) => x.zone, ['onder', 'koop', 'houd', 'verkoop', 'boven', 'geen']),
+  totaal: groep((x) => x.totaal, ['ok', 'te laag', 'onbekend']),
+  kwaliteit: groep((x) => (x.naic === 'geen' ? 'geen' : x.kwaliteit), ['goed', 'zwak', 'geen']),
+  metingen: Object.fromEntries(b.metingen.map((m) => [m.id, m.nvt ? 'nvt' : m.oordeel || 'onbekend'])), aantal: b.aantal, r1: r.r1, r3: r.r3 };
 });
 // overrendement per peildatum
 for (const T of inv.peildata) {
@@ -23,7 +29,9 @@ function stat(lijst, k) {
   const v = lijst.map((x) => x[k]).filter((x) => typeof x === 'number').sort((a, b) => a - b);
   if (!v.length) return { n: 0 };
   const gem = v.reduce((a, x) => a + x, 0) / v.length;
-  return { n: v.length, gemiddeld: +(gem * 100).toFixed(2), mediaan: +(v[Math.floor(v.length / 2)] * 100).toFixed(2), beter: +(v.filter((x) => x > 0).length / v.length * 100).toFixed(0) };
+  const sd = Math.sqrt(v.reduce((a, x) => a + (x - gem) * (x - gem), 0) / Math.max(1, v.length - 1));
+  return { n: v.length, gemiddeld: +(gem * 100).toFixed(2), mediaan: +(v[Math.floor(v.length / 2)] * 100).toFixed(2), beter: +(v.filter((x) => x > 0).length / v.length * 100).toFixed(0),
+    t: v.length > 2 && sd > 0 ? +(gem / (sd / Math.sqrt(v.length))).toFixed(2) : null };
 }
 function groep(sleutel, waarden) {
   const uit = {};
@@ -49,9 +57,9 @@ const res = {
 };
 fs.writeFileSync(path.join(map, 'terugrekenen.json'), JSON.stringify(res, null, 1));
 fs.writeFileSync(path.join(map, 'terugrekenen_rijen.json'), JSON.stringify(rijen));
-const r = (s) => s.n ? `${s.gemiddeld > 0 ? '+' : ''}${s.gemiddeld}% gem · ${s.mediaan > 0 ? '+' : ''}${s.mediaan}% med · ${s.beter}% beter · n=${s.n}` : 'n=0';
+const r = (s) => s.n ? `${s.gemiddeld > 0 ? '+' : ''}${s.gemiddeld}% gem · ${s.mediaan > 0 ? '+' : ''}${s.mediaan}% med · ${s.beter}% beter · t=${s.t} · n=${s.n}` : 'n=0';
 let md = `# Terugrekenen\n\n${rijen.length} fonds-peildata (${inv.peildata[0]} t/m ${inv.peildata[inv.peildata.length - 1]}). Overrendement = rendement incl. dividend min het gewone gemiddelde van alle fondsen op die peildatum; 3 jaar = totaal over 3 jaar (niet per jaar).\n\n`;
-for (const [naam, blok] of [['App', res.app], ['NAIC', res.naic], ['App en NAIC', res.beide]]) {
+for (const [naam, blok] of [['App', res.app], ['NAIC', res.naic], ['App en NAIC', res.beide], ['NAIC-zone', res.zone], ['NAIC deel 5 (totaalrendement)', res.totaal], ['NAIC kwaliteit (deel 1-2)', res.kwaliteit]]) {
   md += `## ${naam}\n\n| Oordeel | 1 jaar | 3 jaar |\n|---|---|---|\n`;
   for (const [o, s] of Object.entries(blok)) md += `| ${o} | ${r(s.overrendement_1j)} | ${r(s.overrendement_3j)} |\n`;
   md += '\n';
