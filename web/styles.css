@@ -279,3 +279,12 @@ table.naic-tabel td { vertical-align: top; }
 .terug tr[data-huidig] th, .terug tr[data-huidig] td { font-weight: 700; background: var(--wait-bg); color: var(--wait-ink); }
 .terug table th, .terug table td { white-space: nowrap; padding: 6px 8px; font-size: .88rem; }
 .terug table { width: auto; }
+
+/* NAIC-stappen, koopprijs, stevigheid */
+.ladder { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 10px; }
+.ladder-stap { display: inline-flex; align-items: center; gap: 6px; font-size: .86rem; }
+.koopprijs { margin: 6px 0; }
+.gevoelig { font-size: .9rem; margin: 4px 0 8px; }
+.gevoelig[data-gevoelig="rand"] { color: var(--wait-ink); }
+.koop-kort { font-size: .78rem; padding: 2px 8px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); color: var(--mut); white-space: nowrap; }
+.koop-kort[data-koop="onder"] { background: var(--ok-bg); color: var(--ok-ink); box-shadow: none; }

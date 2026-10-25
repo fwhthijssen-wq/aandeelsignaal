@@ -13,6 +13,14 @@ window.AANDEEL_UITLEG = {
    "tekst": "Hoeveel de koers kan stijgen tot de verwachte hoge koers, gedeeld door hoeveel hij kan dalen tot de verwachte lage koers. NAIC koopt pas bij minstens 3 : 1: drie keer zoveel kans op winst als risico op verlies."
   },
   {
+   "naam": "Koopprijs",
+   "tekst": "De hoogste koers waarbij een aandeel aan alle NAIC-prijsregels voldoet: in de koopzone, minstens 3 : 1 opwaarts tegen neerwaarts en minstens 15% verwacht rendement per jaar. Alleen bij een groeibedrijf waarvan geen kwaliteitstoets afvalt. Verandert de winst of de koersgeschiedenis, dan verandert de koopprijs mee."
+  },
+  {
+   "naam": "Stevig of op het randje",
+   "tekst": "Wat het oordeel doet als de verwachte groei 2 procentpunt lager of hoger uitvalt. Blijft het hetzelfde, dan is het oordeel stevig; verandert het, dan staat het op het randje."
+  },
+  {
    "naam": "Totaalrendement",
    "tekst": "De verwachte koersstijging per jaar tot de verwachte hoge koers, plus het gemiddelde dividendrendement. NAIC vraagt minstens ongeveer 15% per jaar: dan verdubbelt uw geld in 5 jaar."
   },

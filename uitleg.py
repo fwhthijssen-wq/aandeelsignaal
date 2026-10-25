@@ -8,6 +8,11 @@ TERMS = (
      'Onderste derde: koopzone; middelste derde: houden; bovenste derde: verkoopzone.'),
     ('Opwaarts tegen neerwaarts (3 : 1)', 'Hoeveel de koers kan stijgen tot de verwachte hoge koers, gedeeld door hoeveel hij kan dalen tot de '
      'verwachte lage koers. NAIC koopt pas bij minstens 3 : 1: drie keer zoveel kans op winst als risico op verlies.'),
+    ('Koopprijs', 'De hoogste koers waarbij een aandeel aan alle NAIC-prijsregels voldoet: in de koopzone, minstens 3 : 1 opwaarts '
+     'tegen neerwaarts en minstens 15% verwacht rendement per jaar. Alleen bij een groeibedrijf waarvan geen kwaliteitstoets afvalt. '
+     'Verandert de winst of de koersgeschiedenis, dan verandert de koopprijs mee.'),
+    ('Stevig of op het randje', 'Wat het oordeel doet als de verwachte groei 2 procentpunt lager of hoger uitvalt. Blijft het hetzelfde, '
+     'dan is het oordeel stevig; verandert het, dan staat het op het randje.'),
     ('Totaalrendement', 'De verwachte koersstijging per jaar tot de verwachte hoge koers, plus het gemiddelde dividendrendement. NAIC vraagt '
      'minstens ongeveer 15% per jaar: dan verdubbelt uw geld in 5 jaar.'),
     ('Relatieve waarde', 'De K/W nu gedeeld door de gemiddelde K/W van de laatste 5 jaar. NAIC ziet het liefst 85 tot 110%: boven 110% is het '

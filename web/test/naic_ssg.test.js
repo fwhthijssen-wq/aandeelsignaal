@@ -100,3 +100,20 @@ test('SSG met eigen groeiverwachting: rekent daarmee (ook boven de grens), te la
   assert.strictEqual(laag.oordeel, 'vermijden'); assert.match(laag.reden, /Uw groeiverwachting/);
   assert.strictEqual(N.ssg(jr, 50, false, { groei: null }).groei, hist.groei);
 });
+
+test('koopprijs: precies op de koopprijs Kopen, net erboven niet; ladder en gevoeligheid', function () {
+  const jr = [2, 2.2, 2.4, 2.7, 3.0, 3.3].map((e, i) => ({ year: 2020 + i, comparable_eps: e, koers_hoog: e * 20, koers_laag: e * 14, dividend_ps: e * 0.3 }));
+  const n = N.ssg(jr, 60);
+  assert.ok(n.koopprijs.prijs > 0, JSON.stringify(n.koopprijs));
+  const p = n.koopprijs.prijs;
+  assert.strictEqual(N.ssg(jr, p * 0.999).oordeel, 'kopen');
+  assert.notStrictEqual(N.ssg(jr, p * 1.01).oordeel, 'kopen');
+  assert.ok(Math.abs(n.koopprijs.afstand - (60 / p - 1) * 100) < 0.1);
+  const l = N.ladder(N.ssg(jr, p * 0.999));
+  assert.deepStrictEqual(l.map((x) => x.ok), [true, null, true, true, true]);      // kwaliteit onbekend (geen omzet in de test)
+  const k = N.ssg(jr, p * 0.999); const gv = N.gevoeligheid(jr, p * 0.999, false, k);
+  assert.strictEqual(gv.hoger, 'kopen'); assert.ok(['kopen', 'neutraal'].includes(gv.lager));
+  // kwaliteit valt af: geen koopprijs
+  const slecht = jr.map((j, i) => Object.assign({ sales: 100 - i * 5 }, j));
+  assert.strictEqual(N.ssg(slecht, 60).koopprijs.prijs, null);
+});

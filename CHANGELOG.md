@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.25-beta.84
+- **Waarom dit oordeel, in één oogopslag**: onder het NAIC-oordeel de vijf stappen als vinkjes: groeibedrijf, goed bedrijf, koopzone, 3 : 1 en 15% per jaar. ✓ klopt, ✗ klopt niet, lege ring = onbekend.
+- **Koopprijs: “Kopen onder …”**: de hoogste koers waarbij alle NAIC-prijsregels kloppen, met hoe ver de koers er nu boven of onder zit en welke regel de grens bepaalt. Alleen bij een groeibedrijf zonder afgevallen kwaliteitstoets. In de lijsten staat “x% boven koopprijs” of “Onder koopprijs”; Fondsen kan sorteren op afstand tot de koopprijs en de volglijst op “Dichtst bij koopprijs” (een wachtlijst).
+- **Stevig of op het randje**: of het oordeel hetzelfde blijft als de groei 2 procentpunt lager of hoger uitvalt.
+- Woordenlijst en hulp aangevuld (koopprijs, stevig of op het randje).
+
 ## 2026.10.25-beta.83
 - **Bij het NAIC-oordeel: hoe deed dit oordeel het in het verleden?** Uitklapbaar onder het oordeel van elk aandeel: het teruggerekende rendement over 2018–2025 voor Kopen, Neutraal en Vermijden (na 1 en 3 jaar, ten opzichte van het gemiddelde van alle fondsen), met het eigen oordeel gemarkeerd en de kanttekeningen erbij (uitschieters, korte periode, geen voorspelling).
 

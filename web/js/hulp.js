@@ -15,12 +15,13 @@
     zoek: ['Fondsen', 'Alle aandelen, per index gegroepeerd.', [
       'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
       'Standaard staat NAIC Kopen bovenaan, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts. Sorteer op “Zes metingen” voor het aanvullende oordeel.',
-      'U kunt ook sorteren op plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
+      'U kunt ook sorteren op afstand tot de koopprijs, plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
       'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Per fonds staat eerst het NAIC-oordeel, daarna het aanvullende oordeel van de zes metingen (App).'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
       'Bij het volgen legt de app het oordeel (NAIC en de zes metingen) en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed, hoe het oordeel toen en nu is, en of het aandeel nu in de koop- of verkoopzone staat.',
       'Zo kunt u beoordelen of een kandidaat zijn belofte waarmaakt voordat u iets koopt.',
+      'Met “Dichtst bij koopprijs” staan de aandelen bovenaan die het dichtst bij een NAIC-koop zitten: zo werkt de volglijst als wachtlijst.',
       'Uw volglijst staat alleen op dit toestel. Maak een back-up in Instellingen.'], null],
     portefeuille: ['Mijn portefeuille', 'Hier bewaart u aankopen om ze te kunnen volgen. Er wordt niets gekocht of verkocht.', [
       'Voeg een aankoop toe met aantal, koers en datum. Vink aan als u kocht op basis van het signaal; dan legt de app het oordeel van dat moment vast.',
@@ -43,7 +44,7 @@
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
       'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata.',
       'Daaronder, aanvullend, de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt. Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Tik op een meting voor uitleg.',
-      'Bovenaan het oordeel volgens NAIC: groei, de kwaliteitstoetsen, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar, de zones, het verwachte rendement en (ter informatie) de relatieve waarde. Hier vult u ook uw eigen groeiverwachting in.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
+      'Bovenaan het oordeel volgens NAIC: groei, de kwaliteitstoetsen, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar, de zones, het verwachte rendement en (ter informatie) de relatieve waarde. Daarbij de vijf NAIC-stappen als vinkjes, de koopprijs (“Kopen onder …”) en of het oordeel stevig is of op het randje staat. Hier vult u ook uw eigen groeiverwachting in.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'Met de ster volgt u het aandeel.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
     koers: ['Aandeel: Koers', 'De koersontwikkeling en wat die betekent.', [

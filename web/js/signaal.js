@@ -360,6 +360,9 @@
     // NAIC (Stock Selection Guide) als tweede, losstaand oordeel: zelfde jaarcijfers en koers, eigen methode.
     var naicOordeel = null;
     try { naicOordeel = naic && naic.ssg ? naic.ssg(c.jr, c.koersOk && c.eenValuta ? k.slot : null, c.bank, { groei: opties.verdieping && opties.verdieping.cijfers ? opties.verdieping.cijfers.naicgroei : null }) : null; } catch (e3) { naicOordeel = null; }
+    if (naicOordeel && opties.gevoeligheid && naic.gevoeligheid) {
+      try { naicOordeel.gevoeligheid = naic.gevoeligheid(c.jr, c.koersOk && c.eenValuta ? k.slot : null, c.bank, naicOordeel); } catch (e4) { /* niet nodig voor het oordeel */ }
+    }
     return { ticker: rec ? rec.ticker : null, oordeel: oordeel, score: score == null ? null : rond(score, 2), aantal: aan.length, mogelijk: telbaar.length, minMetingen: min,
       metingen: metingen, vragen: vragen, naic: naicOordeel, dekking: dekking, niveau: niveau, bank: c.bank, methoden: methoden,
       ontbreekt: telbaar.filter(function (m) { return !m.aanwezig; }).map(function (m) { return m.naam; }),

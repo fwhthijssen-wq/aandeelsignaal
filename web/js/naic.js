@@ -183,7 +183,7 @@
      historische trend (ook voor de toets of het een groeibedrijf is); de historische trend blijft ter vergelijking zichtbaar. */
   function ssg(jr, koers, bank, opties) {
     var v = jaren(jr).filter(function (j) { return ok(j.comparable_eps); });
-    var uit = { oordeel: null, reden: null, totaal: null, relatief: null, par: null, groeiHistorisch: null, groei: null, kw: null, eps: null, epsLaag: null, zones: null, van: null, tot: null, horizon: HORIZON, kwaliteit: [] };
+    var uit = { oordeel: null, reden: null, koopprijs: null, totaal: null, relatief: null, par: null, groeiHistorisch: null, groei: null, kw: null, eps: null, epsLaag: null, zones: null, van: null, tot: null, horizon: HORIZON, kwaliteit: [] };
     if (v.length < 4) { uit.reden = 'Minder dan 4 jaar vergelijkbare winst per aandeel.'; return uit; }
     uit.kwaliteit = kwaliteit(v, bank);
     var l = v[v.length - 1], f = v.slice(-10)[0];
@@ -212,13 +212,18 @@
     try {
       uit.zones = koerszones({ eps: uit.eps, epsLaag: uit.epsLaag, groeiPct: uit.groei, jaren: HORIZON, kwHoog: uit.kw.hoog, kwLaag: uit.kw.laag, koers: pos(koers) ? koers : null });
     } catch (e) { uit.reden = 'Geen koerszones: ' + e.message; return uit; }
+    // Dividendrendement = gemiddelde van de laatste 5 jaar met een bekend dividend; onbekend telt als 0 (voorzichtig).
+    var dr = dividendRendement(v).slice(-5).map(function (x) { return x.waarde; }).filter(ok);
+    var dgem = dr.length ? rond(dr.reduce(function (a, x) { return a + x; }, 0) / dr.length, 1) : null;
+    var zwak = uit.kwaliteit.filter(function (q) { return q.ok === false; });
+    // Koopprijs: de hoogste koers waarbij alle prijsregels kloppen (koopzone, 3 : 1, totaalrendement); alleen bij een
+    // groeibedrijf zonder afgevallen kwaliteitstoets, want anders wordt het nooit Kopen.
+    uit.koopprijs = koopprijsVan(uit.zones, dgem, zwak.length ? 'kwaliteit' : null);
+    if (uit.koopprijs.prijs && pos(koers)) uit.koopprijs.afstand = rond((koers / uit.koopprijs.prijs - 1) * 100, 1);
     if (!pos(koers)) { uit.reden = 'Geen verse koers in dezelfde valuta als de winst.'; return uit; }
     var z = uit.zones;
     uit.oordeel = z.zone === 'onder' || (z.zone === 'koop' && z.verhouding !== null && z.verhouding >= 3) ? 'kopen' : z.zone === 'verkoop' || z.zone === 'boven' ? 'vermijden' : 'neutraal';
-    var zwak = uit.kwaliteit.filter(function (q) { return q.ok === false; });
-    // Deel 5: totaalrendement. Dividendrendement = gemiddelde van de laatste 5 jaar met een bekend dividend; onbekend telt als 0 (voorzichtig).
-    var dr = dividendRendement(v).slice(-5).map(function (x) { return x.waarde; }).filter(ok);
-    var dgem = dr.length ? rond(dr.reduce(function (a, x) { return a + x; }, 0) / dr.length, 1) : null;
+    // Deel 5: totaalrendement.
     if (z.rendementPerJaar !== null) {
       var tot = rond(z.rendementPerJaar + (dgem || 0), 1);
       uit.totaal = { koers: rond(z.rendementPerJaar, 1), dividend: dgem, totaal: tot, ok: tot >= TOTAAL_MIN, min: TOTAAL_MIN };
@@ -244,6 +249,37 @@
     return uit;
   }
 
-  var api = { trendGroei: trendGroei, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, RV_LAAG: RV_LAAG, RV_HOOG: RV_HOOG, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
+  /* Hoogste koers waarbij een groeibedrijf met goede kwaliteit Kopen krijgt: de laagste van (a) de bovengrens van de koopzone,
+     (b) de koers met precies 3 : 1 opwaarts tegen neerwaarts = (hoog + 3 × laag) / 4, en (c) de koers met precies het minimale
+     totaalrendement = hoog / (1 + (minimum − dividend)/100)^horizon. Onder de lage koers is het ook Kopen. */
+  function koopprijsVan(z, dividend, blokkade) {
+    if (blokkade === 'kwaliteit') return { prijs: null, reden: 'Een kwaliteitstoets valt af: dan wordt het bij geen enkele koers Kopen.' };
+    if (!z) return { prijs: null, reden: 'Geen koerszones.' };
+    var grenzen = { zone: z.koop[1], verhouding: (z.hoog + 3 * z.laag) / 4, rendement: z.hoog / Math.pow(1 + (TOTAAL_MIN - (dividend || 0)) / 100, HORIZON) };
+    var bindend = Object.keys(grenzen).reduce(function (a, k) { return grenzen[k] < grenzen[a] ? k : a; }, 'zone');
+    var p = grenzen[bindend];
+    return pos(p) ? { prijs: rond(p, 2), bindend: bindend, grenzen: { zone: rond(grenzen.zone, 2), verhouding: rond(grenzen.verhouding, 2), rendement: rond(grenzen.rendement, 2) } } : { prijs: null, reden: 'Geen positieve koopprijs.' };
+  }
+  /* De vijf NAIC-stappen als ja/nee/onbekend: groeibedrijf, goed bedrijf, koopzone, 3 : 1, totaalrendement. */
+  function ladder(n) {
+    if (!n) return null;
+    var g = n.groeiEigen != null ? n.groeiEigen : n.groeiHistorisch, q = n.kwaliteit || [], z = n.zones;
+    var opKoers = !!(z && z.koers != null);
+    return [
+      { id: 'groei', naam: 'Groeibedrijf', ok: g == null ? null : g >= GROEI_MIN },
+      { id: 'kwaliteit', naam: 'Goed bedrijf', ok: q.some(function (x) { return x.ok === false; }) ? false : q.some(function (x) { return x.ok === true; }) ? true : null },
+      { id: 'zone', naam: 'Koopzone', ok: opKoers ? (z.zone === 'koop' || z.zone === 'onder') : null },
+      { id: 'verhouding', naam: '3 : 1', ok: opKoers ? (z.zone === 'onder' || (z.verhouding !== null && z.verhouding >= 3)) : null },
+      { id: 'rendement', naam: TOTAAL_MIN + '% per jaar', ok: n.totaal ? n.totaal.ok : null }
+    ];
+  }
+  /* Hoe stevig is het oordeel? Hetzelfde met de groei 2 procentpunt lager en hoger. */
+  function gevoeligheid(jr, koers, bank, n, stap) {
+    if (!n || !n.oordeel || n.groei == null) return null;
+    stap = stap || 2;
+    return { stap: stap, lager: ssg(jr, koers, bank, { groei: n.groei - stap }).oordeel, hoger: ssg(jr, koers, bank, { groei: n.groei + stap }).oordeel };
+  }
+
+  var api = { ladder: ladder, gevoeligheid: gevoeligheid, koopprijsVan: koopprijsVan, trendGroei: trendGroei, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, RV_LAAG: RV_LAAG, RV_HOOG: RV_HOOG, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);
