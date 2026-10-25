@@ -273,3 +273,9 @@ table.naic-tabel td { vertical-align: top; }
 .volg-info .signaal, .lijst .regel .signaal { max-width: 100%; }
 .naic-groei { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line-soft); }
 .naic-groei label { font-weight: 600; display: block; margin-bottom: 6px; }
+
+.terug { margin: 6px 0 10px; }
+.terug summary { cursor: pointer; font-weight: 600; font-size: .92rem; }
+.terug tr[data-huidig] th, .terug tr[data-huidig] td { font-weight: 700; background: var(--wait-bg); color: var(--wait-ink); }
+.terug table th, .terug table td { white-space: nowrap; padding: 6px 8px; font-size: .88rem; }
+.terug table { width: auto; }

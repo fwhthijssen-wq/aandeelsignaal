@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.83
+- **Bij het NAIC-oordeel: hoe deed dit oordeel het in het verleden?** Uitklapbaar onder het oordeel van elk aandeel: het teruggerekende rendement over 2018–2025 voor Kopen, Neutraal en Vermijden (na 1 en 3 jaar, ten opzichte van het gemiddelde van alle fondsen), met het eigen oordeel gemarkeerd en de kanttekeningen erbij (uitschieters, korte periode, geen voorspelling).
+
 ## 2026.10.25-beta.82
 - **Tabblad NAIC voor elk aandeel met een NAIC-oordeel.** De gids in stappen (groei, rendement op eigen vermogen, marge, K/W-geschiedenis, koerszones en rekenvoorbeeld) verscheen alleen bij 10 jaar bevestigde winst per aandeel, terwijl het NAIC-oordeel op Overzicht ook bij cijfers uit een jaarverslag of van Yahoo staat. Nu verschijnt de gids bij minstens 4 jaar winst per aandeel, met bovenaan hoe zeker de cijfers zijn. Uw eigen koerszones worden met de koers vergeleken zodra die vers is en in dezelfde valuta staat als de jaarcijfers. Het label bij de plek in het koersbereik blijft voorbehouden aan bevestigde gegevens.
 

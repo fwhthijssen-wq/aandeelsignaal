@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.82';
+  var APP_VERSIE = '2026.10.25-beta.83';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -126,11 +126,26 @@
   }
   function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + appChip(b) + stippen(b, true) + '</span>'; }
   function geld(x) { return typeof x === 'number' && isFinite(x) ? getal(x, x >= 100 ? 0 : 2) : '–'; }
+  /* Uitkomst van het terugrekenen (hulp/terugrekenen.py + .js, 25 okt 2026, regels van beta.76): rendement incl. dividend
+     ten opzichte van het gewone gemiddelde van alle fondsen op dezelfde peildatum (30 april 2018-2025). */
+  var TERUG = { periode: '2018–2025', datum: '25 oktober 2026', rijen: {
+    kopen: { j1: 4.5, j3: 21.9, n: 75, mediaan1: -2.4, beter1: 47 },
+    neutraal: { j1: 1.6, j3: 0.8, n: 284, mediaan1: -4.0, beter1: 44 },
+    vermijden: { j1: -2.4, j3: -8.5, n: 241, mediaan1: -4.2, beter1: 44 } } };
+  function terugBlok(oordeel) {
+    var T = TERUG.rijen, tk = function (x) { return (x > 0 ? '+' : '') + String(x).replace('.', ',') + '%'; };
+    var rij = function (o) { var x = T[o]; return '<tr' + (o === oordeel ? ' data-huidig' : '') + '><th scope="row">' + OORDEEL[o] + '</th><td>' + tk(x.j1) + '</td><td>' + tk(x.j3) + '</td><td>' + x.n + '</td></tr>'; };
+    return '<details class="terug" data-terug><summary>Hoe deed dit oordeel het in het verleden?</summary>' +
+      '<p class="zacht">Teruggerekend over ' + TERUG.periode + ': elk jaar op 30 april het NAIC-oordeel zoals de app het toen had gegeven, en het rendement daarna (inclusief dividend), vergeleken met het gemiddelde van alle fondsen.</p>' +
+      '<div class="schuif"><table class="vgl"><thead><tr><th>Oordeel</th><th>1 jaar</th><th>3 jaar</th><th>Aantal</th></tr></thead><tbody>' + rij('kopen') + rij('neutraal') + rij('vermijden') + '</tbody></table></div>' +
+      '<p class="zacht">Kopen deed het gemiddeld beter en Vermijden slechter, maar dat komt vooral van een paar grote uitschieters: de helft van de Kopen-aandelen deed het na 1 jaar slechter dan gemiddeld (mediaan ' + tk(T.kopen.mediaan1) + '). Het verschil is te klein en de periode te kort om toeval uit te sluiten. Alleen fondsen van nu, jaarcijfers zoals nu bekend, geen kosten. Geen voorspelling.</p></details>';
+  }
   function naicKaart(rec, b) {
     var n = b.naic;
     if (!n) return '';
     var kop = n.oordeel ? '<b class="groot-oordeel" data-oordeel="' + n.oordeel + '">' + OORDEEL[n.oordeel] + '</b>' : '<b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b>';
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>Oordeel</h2><span class="zacht">NAIC Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
+    if (n.oordeel) s += terugBlok(n.oordeel);
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
     if (n.groeiHistorisch !== null) t += rij('Groei winst per aandeel', pct(n.groeiHistorisch) + ' per jaar (trend ' + n.van + '–' + n.tot + ')' + (n.groeiEigen != null ? '; gerekend met <b>uw verwachting ' + pct(n.groeiEigen) + '</b>' + (n.groeiEigen > Naic.GROEI_MAX ? ' (hoger dan de ' + Naic.GROEI_MAX + '% die NAIC voorzichtig vindt)' : '') : n.groei !== null && n.groei < n.groeiHistorisch ? '; gerekend met ' + pct(n.groei) + ' (NAIC: voorzichtig, hoogstens ' + Naic.GROEI_MAX + '%)' : ''));

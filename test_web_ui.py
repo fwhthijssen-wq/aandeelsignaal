@@ -807,6 +807,25 @@ class WebUi(unittest.TestCase):
         self.assertIn('Nog geen NAIC-gids', pg.inner_text('main'))
         self.assertEqual(fouten, [])
 
+    def test_terugrekenen_bij_het_naic_oordeel(self):
+        import datetime
+        c = self.b.new_context(viewport={'width': 390, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(x){x.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.koers={slot:100,datum:'%s',sma50:40,reeks:[]};
+            a.gegevens.jaren.forEach(function(j){if(j.comparable_eps>0){j.koers_hoog=j.comparable_eps*25;j.koers_laag=j.comparable_eps*15;}});}});v=x;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true}));}catch(e){}})();""" % datetime.date.today().isoformat())
+        pg = c.new_page()
+        pg.goto(INDEX + '#/a/AAPL'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.locator('[data-terug]').count(), 1)
+        pg.click('[data-terug] summary')
+        t = pg.inner_text('[data-terug]')
+        self.assertIn('3 jaar', t.lower()); self.assertIn('Geen voorspelling', t)
+        huidig = pg.locator('[data-naic-kaart] .groot-oordeel').inner_text()
+        self.assertIn(huidig, pg.inner_text('[data-terug] tr[data-huidig]'))
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pg.goto(INDEX + '#/a/GOOGL'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-terug]').count(), 0)                # geen NAIC-oordeel: geen terugblik
 
 if __name__ == '__main__':
     unittest.main()
