@@ -39,9 +39,14 @@ def main():
     for t in tickers or list(lijst):
         spec = lijst[t]
         for jaar in range(j0, j1 + 1):
-            if str(jaar) in index.get(t, {}):
-                continue
+            # Elk adres apart proberen (beleggerssite én EQS): EQS sorteert bij een gebroken boekjaar soms op beginjaar,
+            # zodat hetzelfde bestandsjaar een ander boekjaar kan zijn. Het boekjaar komt later uit de tekst zelf.
             for url, bron in kandidaten(spec, jaar):
+                sleutel = f'{jaar}' if bron == 'beleggerssite' else f'{jaar}-eqs'
+                if sleutel in index.get(t, {}) or (bron == 'EQS' and any(v.get('url') == url for v in index.get(t, {}).values())):
+                    continue
+                if bron == 'EQS' and f'{jaar}-eqs' in index.get(t, {}):
+                    continue
                 try:
                     data = haal(url)
                 except Exception as exc:
@@ -52,13 +57,15 @@ def main():
                 with tempfile.NamedTemporaryFile(suffix='.pdf') as f:
                     f.write(data); f.flush()
                     tekst = subprocess.run(['pdftotext', '-layout', f.name, '-'], capture_output=True, text=True).stdout
+                sha = hashlib.sha256(data).hexdigest()
+                if any(v.get('sha256') == sha for v in index.get(t, {}).values()):
+                    continue                                           # zelfde document al binnen
                 (uit / t).mkdir(parents=True, exist_ok=True)
-                (uit / t / f'{jaar}.txt').write_text(tekst, encoding='utf-8')
-                index.setdefault(t, {})[str(jaar)] = {'url': url, 'bron': bron, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest(), 'tekens': len(tekst)}
-                print('ok', t, jaar, bron, len(data), flush=True)
-                break
-            else:
-                print('niet gevonden', t, jaar, flush=True)
+                (uit / t / f'{sleutel}.txt').write_text(tekst, encoding='utf-8')
+                index.setdefault(t, {})[sleutel] = {'url': url, 'bron': bron, 'bytes': len(data), 'sha256': sha, 'tekens': len(tekst)}
+                print('ok', t, sleutel, bron, len(data), flush=True)
+                if bron == 'EQS':
+                    break                                              # één EQS-variant per jaar (Engels, anders Duits)
         index_pad.parent.mkdir(parents=True, exist_ok=True)
         json.dump(index, open(index_pad, 'w'), indent=1, sort_keys=True)
 
