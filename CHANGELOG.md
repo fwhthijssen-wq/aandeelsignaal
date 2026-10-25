@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.26-beta.87
+- **Start is nu een overzicht (cockpit).** Bovenaan drie tegels: Portefeuille (waarde en rendement), Actie bij uw aandelen (koop- of verkoopzone, kwaliteit loopt terug) en Kansen (aantal NAIC Kopen, en hoeveel daarvan onder hun koopprijs). Tik op een tegel om in te zoomen.
+- **Marktbeeld**: per index een gekleurde balk met de verdeling Kopen, Neutraal, Vermijden en zonder oordeel. Tik op een index en Fondsen opent met die index.
+- **Beste kansen** staat als eigen blok (de vijf sterkste). Het grote blok “van … aandelen bevestigd” is een korte regel onderaan geworden.
+
 ## 2026.10.25-beta.86
 - Bij de koopprijs staat nu ook de koers van nu (bijv. “Kopen onder 156,89 USD · Koers nu 100,00 USD: 36,3% onder de koopprijs”). In de lijsten: “Koers 100,00 · 8% boven koopprijs 92,50”.
 

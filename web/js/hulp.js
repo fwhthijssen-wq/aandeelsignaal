@@ -3,9 +3,11 @@
   'use strict';
   var T = {
     start: ['Start', 'Hier ziet u in één oogopslag wat er speelt bij uw aandelen en welke aandelen nu kansrijk zijn volgens NAIC.', [
-      'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
+      'Bovenaan drie tegels: Portefeuille (waarde en rendement; tik voor alle aankopen), Actie bij uw aandelen (hoeveel van uw aandelen in de koop- of verkoopzone staan of in kwaliteit teruglopen) en Kansen (hoeveel fondsen nu NAIC Kopen zijn). Tik op een tegel om erheen te gaan.',
+      'Marktbeeld: per index een balk met hoeveel fondsen Kopen, Neutraal of Vermijden zijn volgens NAIC. Tik op een index en u ziet die fondsen onder Fondsen.',
+      'Onderaan staat van welke dag de gegevens zijn en hoeveel aandelen volledig bevestigd zijn (tien jaar winst per aandeel onafhankelijk nagerekend). Dat zegt iets over de zekerheid, niet over goed of slecht.',
       'Signalen: bij de aandelen in uw portefeuille en op uw volglijst ziet u wanneer ze in de koopzone of verkoopzone staan, of wanneer de kwaliteit terugloopt (NAIC). Daaronder: welke fondsen sinds de vorige gegevensupdate naar Kopen of Vermijden gingen. Dat vergelijkt de app met wat u de vorige keer zag; het staat alleen op dit toestel.',
-      'Het oordeel volgt de NAIC Stock Selection Guide: groeibedrijf, goed bedrijf (deel 1 en 2), prijs in de koopzone met minstens 3 : 1 (deel 3 en 4) en minstens 15% verwacht rendement per jaar (deel 5). Bij Kansrijk staat NAIC standaard; App (zes metingen, aanvullend) en Beide kunt u kiezen.',
+      'Het oordeel volgt de NAIC Stock Selection Guide: groeibedrijf, goed bedrijf (deel 1 en 2), prijs in de koopzone met minstens 3 : 1 (deel 3 en 4) en minstens 15% verwacht rendement per jaar (deel 5). Bij Beste kansen staat NAIC standaard; App (zes metingen, aanvullend) en Beide kunt u kiezen.',
       'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze een aanvullend oordeel; dat telt niet mee in het NAIC-oordeel.',
       'Alle fondsen, per index en met NAIC Kopen bovenaan, staan onder Fondsen in het menu.',
       'Uw eigen onderzoek (tabblad Verdiepen) staat bij het aandeel, maar telt niet mee in het oordeel.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],

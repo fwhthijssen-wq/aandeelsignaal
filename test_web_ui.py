@@ -40,7 +40,10 @@ class WebUi(unittest.TestCase):
 
     def test_start_geen_fouten_en_geen_valse_bevestiging(self):
         pg = self.pagina()
-        self.assertIn('op een rij', pg.inner_text('main').lower())
+        self.assertIn('overzicht', pg.inner_text('main').lower())
+        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 3)
+        self.assertEqual(pg.locator('[data-marktbeeld] .markt-rij').count() > 1, True)
+        self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
         self.assertEqual(self.fouten, [])

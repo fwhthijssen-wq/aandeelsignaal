@@ -293,3 +293,29 @@ table.naic-tabel td { vertical-align: top; }
 html.eenvoudig .detail { display: none !important; }
 .vers { font-size: .82rem; margin: 2px 0 8px; }
 .vers[data-let-op] { color: var(--wait-ink); }
+
+/* Start als cockpit: drie tegels, marktbeeld, statusregel */
+.cockpit { gap: 14px; }
+.tegels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 620px) { .tegels { grid-template-columns: 1fr 1fr; } .tegels .tegel[data-tegel="portefeuille"] { grid-column: 1 / -1; } }
+.tegel { display: flex; flex-direction: column; gap: 2px; padding: 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; min-width: 0; min-height: 44px; }
+.tegel small { color: var(--mut); font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.tegel b { font: 700 clamp(1.7rem, 7vw, 2.3rem)/1.1 ui-rounded, "Avenir Next", system-ui, sans-serif; overflow-wrap: anywhere; }
+.tegel b .munt { font-size: .5em; color: var(--mut); }
+.tegel span { font-size: .9rem; }
+.tegel[data-tegel="portefeuille"] { background: var(--hero); color: var(--hero-ink); border-color: transparent; }
+.tegel[data-tegel="portefeuille"] small, .tegel[data-tegel="portefeuille"] .zacht, .tegel[data-tegel="portefeuille"] b .munt { color: var(--hero-mut); }
+.tegel .rend { font-weight: 700; } .tegel .rend[data-teken="plus"] { color: var(--seg-on); } .tegel .rend[data-teken="min"] { color: #FFB4B4; }
+.tegel[data-niveau="let-op"] { border-color: var(--bad-ink); } .tegel[data-niveau="let-op"] b { color: var(--bad-ink); }
+.tegel[data-niveau="kans"] b, .tegel[data-tegel="kansen"] b { color: var(--stip-g); }
+.markt { display: flex; flex-direction: column; gap: 2px; }
+.markt-rij { display: grid; grid-template-columns: minmax(84px, 9.5em) 1fr auto; align-items: center; gap: 10px; min-height: 40px; color: var(--ink); text-decoration: none; border-radius: 8px; }
+.markt-rij:first-child { font-weight: 700; border-bottom: 1px solid var(--line-soft); padding-bottom: 6px; margin-bottom: 4px; }
+.markt-naam { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.markt-balk { display: flex; height: 14px; border-radius: 7px; overflow: hidden; gap: 2px; background: var(--line-soft); }
+.markt-balk i, .markt-legenda i { display: block; }
+[data-o="kopen"] { background: var(--stip-g); } [data-o="neutraal"] { background: var(--chart-b); } [data-o="vermijden"] { background: var(--stip-o-rand); } [data-o="geen"] { background: var(--line); }
+.markt-tal { font-size: .9rem; color: var(--mut); min-width: 4.2em; text-align: right; } .markt-tal b { color: var(--ink); }
+.markt-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .82rem; color: var(--mut); margin-top: 8px; }
+.markt-legenda span { display: inline-flex; align-items: center; gap: 6px; } .markt-legenda i { width: 12px; height: 12px; border-radius: 3px; }
+.status-regel { font-size: .85rem; color: var(--mut); text-align: center; }
