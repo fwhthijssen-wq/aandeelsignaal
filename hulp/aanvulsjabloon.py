@@ -4,7 +4,7 @@ Gebruik: python hulp/aanvulsjabloon.py web/data/aandelen.json uit.xlsx
 Per fonds met een gat in de laatste 10 boekjaren: één rij per boekjaar. Bekende cijfers staan er grijs in (met de bron),
 ontbrekende cellen zijn geel. Zelfde kolommen als het tabblad 'Sjabloon jaarcijfers' van de specificatie."""
 import json, sys
-from datetime import date
+from datetime import date, timedelta
 
 VELDEN = [  # (kolom, kop, prioriteit)
     ('reported_eps', 'Winst/aandeel gerapporteerd', 1), ('comparable_eps', 'Winst/aandeel vergelijkbaar', 1),
@@ -28,7 +28,7 @@ def bron_van(g, j, veld):
     return {'Yahoo Finance': 'Yahoo'}.get(g.get('bron'), g.get('bron') or '')
 
 
-def rijen_voor(rec):
+def rijen_voor(rec, peildatum=None):
     g = rec.get('gegevens') or {}
     if g.get('fout') and not g.get('jaren'):
         g = {}
@@ -43,7 +43,11 @@ def rijen_voor(rec):
             md = (12, 31)
         tot = laatste['year']
     else:
-        md, tot = (12, 31), 2025
+        md, tot = (12, 31), 0
+    # het nieuwste boekjaar waarvan het jaarverslag er nu zou moeten zijn (einddatum minstens 4 maanden voor de gegevensdatum)
+    ref = (peildatum or date.today()) - timedelta(days=120)
+    verwacht = ref.year if md <= (ref.month, ref.day) else ref.year - 1
+    tot = max(tot, verwacht)
     uit = []
     for y in range(tot - JAREN + 1, tot + 1):
         j = per.get(y) or {}
@@ -69,8 +73,12 @@ def main(inpad, uitpad):
     GEEL = PatternFill('solid', fgColor='FFFF00'); GRIJS = PatternFill('solid', fgColor='E7E6E6')
     GEWOON = Font(name=F, size=10); VET = Font(name=F, size=10, bold=True)
     fondsen = []
+    try:
+        peil = date.fromisoformat(str(data.get('gemaakt') or '')[:10])
+    except ValueError:
+        peil = date.today()
     for rec in data.get('aandelen') or []:
-        rijen, g = rijen_voor(rec)
+        rijen, g = rijen_voor(rec, peil)
         ontbreekt1 = sum(1 for r in rijen for v, _, p in VELDEN if p == 1 and r['waarden'][v] is None)
         ontbreekt2 = sum(1 for r in rijen for v, _, p in VELDEN if p == 2 and r['waarden'][v] is None)
         if ontbreekt1 + ontbreekt2 == 0:
