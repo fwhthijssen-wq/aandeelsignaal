@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.73
+- **Herstel: winst per aandeel uit Duitse jaarverslagen kwam niet in de app.** Bij fondsen zonder officiële bron hergebruikte de nachtelijke update de cijfers van de vorige nacht in plaats van Yahoo opnieuw op te halen, waardoor de jaarverslagcijfers niet werden toegepast. Nu wordt Yahoo eerst geprobeerd; alleen als dat mislukt blijven de vorige cijfers staan, en ook dan komen de jaarverslagcijfers erbij.
+
 ## 2026.10.25-beta.72
 - **Winst per aandeel uit Duitse jaarverslagen (pdf).** Duitse bedrijven leveren geen ESEF-bestanden bij filings.xbrl.org; daarom leest de app nu de gerapporteerde verwaterde winst per aandeel uit de jaarverslagen zelf (via de IR-sites / EQS). Elk jaar wordt gecontroleerd met het vergelijkende cijfer in het volgende verslag; past dat niet, dan stopt de reeks.
 - Nieuw met een reeks van minstens 4 jaar: BASF (12 jaar), Beiersdorf (12), Allianz (11), Volkswagen (11), Fresenius Medical Care (10), Siemens (7), MTU Aero Engines (7), RWE (5) en Scout24 (4). Daarmee kan NAIC voor deze fondsen rekenen met een langere groeitrend en K/W-geschiedenis.

@@ -48,3 +48,26 @@ class Keten(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class NachtelijkeRun(unittest.TestCase):
+    """Fondsen zonder officiële bron: Yahoo wordt elke nacht opnieuw geprobeerd (niet stil de vorige run hergebruiken),
+    en de winst per aandeel uit de jaarverslagen wordt ook op hergebruikte cijfers toegepast."""
+    def test_yahoo_opnieuw_en_jaarverslag_ook_bij_uitval(self):
+        oud = {'bron': 'Yahoo Finance', 'niveau': 'indicatief', 'fout': None, 'gecontroleerd_op': '2026-10-20',
+               'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': 1.0, 'sales': 1e9} for y in range(2022, 2026)]}
+        gevraagd = []
+
+        def yahoo(t):
+            gevraagd.append(t)
+            raise TimeoutError('Yahoo onbereikbaar')
+        kw = dict(fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: 'USD' if '.' not in t else 'EUR',
+                  pauze=lambda: None, esef_ophalen=lambda t: None, diagnose=lambda t, e: {}, payload_ophalen=lambda t, e: None,
+                  sec_samenvatting=lambda t, e: {'status': 'error', 'message': 'test'}, analisten_ophalen=lambda t: None)
+        nu = bw.live('a@b.nl', vorige={'BAS.DE': oud}, yahoo_ophalen=yahoo, **kw)
+        self.assertIn('BAS.DE', gevraagd)
+        g = next(a for a in nu['aandelen'] if a['ticker'] == 'BAS.DE')['gegevens']
+        self.assertTrue(g.get('uit_vorige_run'))
+        self.assertGreaterEqual(g['eps_jaarverslag']['jaren'], 10)
+        self.assertEqual(g['jaren'][0]['eps_bron'], 'jaarverslag')
+        self.assertEqual(oud['jaren'][0]['comparable_eps'], 1.0)        # vorige run niet aangepast

@@ -665,10 +665,11 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:
                 esef_cf = None
                 gegevens.setdefault('esef_fout', f'{type(exc).__name__}: {exc}'[:200])
-        if not gegevens.get('jaren') and oud and oud.get('jaren') and not oud.get('fout'):
-            gegevens = dict(oud)                      # ophalen mislukt: de laatste goede jaarcijfers blijven staan, met hun eigen datum
-            gegevens['uit_vorige_run'] = True
         yahoo_ruw = None
+        officieel_mislukt = bool(oud and oud.get('jaren') and not oud.get('fout') and oud.get('bron') != 'Yahoo Finance')
+        if not gegevens.get('jaren') and officieel_mislukt:
+            gegevens = dict(oud)                      # officieel ophalen mislukt: de laatste goede jaarcijfers blijven staan, met hun eigen datum
+            gegevens['uit_vorige_run'] = True
         if not gegevens.get('jaren'):
             # Geen officiële bron: indicatieve jaarcijfers van Yahoo Finance (nooit het label, wel een voorlopig oordeel).
             try:
@@ -681,6 +682,15 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens.setdefault('yahoo_fout', yg.get('fout'))
             except Exception as exc:
                 gegevens.setdefault('yahoo_fout', f'{type(exc).__name__}: {exc}'[:200])
+            if not gegevens.get('jaren') and oud and oud.get('jaren') and not oud.get('fout'):
+                fout = gegevens.get('yahoo_fout')
+                gegevens = dict(oud)                  # Yahoo mislukt: de laatste goede (indicatieve) cijfers blijven staan
+                gegevens['uit_vorige_run'] = True
+                if fout:
+                    gegevens['yahoo_fout'] = fout
+                if gegevens.get('bron') == 'Yahoo Finance':
+                    gegevens['jaren'] = [dict(j) for j in gegevens['jaren']]
+                    vul_eps_jaarverslag(gegevens, ticker)
         elif nr % 4 == 0 and gegevens is not oud and not gegevens.get('uit_vorige_run'):
             # Steekproef: leg Yahoo naast de officiële cijfers, zodat zichtbaar wordt hoe betrouwbaar Yahoo is.
             try:
