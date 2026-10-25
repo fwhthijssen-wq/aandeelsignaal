@@ -49,6 +49,11 @@ jobs:
           jv = sorted(f"{a['ticker']} {a['gegevens']['eps_jaarverslag']['jaren']}j Y{_c(a['gegevens']['eps_jaarverslag'])}" for a in L if (a.get('gegevens') or {}).get('eps_jaarverslag'))
           yahoo = sum(1 for a in L if (a.get('gegevens') or {}).get('bron') == 'Yahoo Finance')
           oud = sum(1 for a in L if (a.get('gegevens') or {}).get('uit_vorige_run'))
+          def _neps(g):
+              return sum(1 for j in (g.get('jaren') or []) if isinstance(j.get('comparable_eps'), (int, float)))
+          ykort = sorted(a['ticker'] for a in L if (a.get('gegevens') or {}).get('bron') == 'Yahoo Finance' and not a['gegevens'].get('eps_jaarverslag'))
+          kort = sorted(f"{a['ticker']}:{_neps(a.get('gegevens') or {})}" for a in L if (a.get('gegevens') or {}).get('bron') != 'Yahoo Finance' and _neps(a.get('gegevens') or {}) < 6)
+          print(f"::notice title=Ontbreekt::Yahoo zonder jaarverslag-EPS ({len(ykort)}): {' '.join(ykort)} | officieel met minder dan 6 jaar EPS ({len(kort)}): {' '.join(kort)}")
           print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
           PY
       - name: Gegevens bewaren voor de volgende run
