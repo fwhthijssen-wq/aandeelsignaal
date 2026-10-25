@@ -1,0 +1,32 @@
+# Hulpmiddel (alleen handmatig): Excel met ontbrekende jaarcijfers, vooraf gevuld met de gegevens van de laatste nachtelijke
+# update. Resultaat naar de tak jaarverslagen (debug/aanvullen_jaarcijfers.xlsx). Raakt de app niet.
+name: Aanvulsjabloon maken (ontwikkeling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  maken:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - name: Gegevens van de laatste nachtelijke update
+        uses: actions/cache/restore@v5
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
+          restore-keys: gegevens-
+      - name: Excel maken
+        run: python hulp/aanvulsjabloon.py web/data/aandelen.json aanvullen_jaarcijfers.xlsx
+      - name: Op tak jaarverslagen zetten
+        run: |
+          git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+          mkdir -p jv/debug && cp aanvullen_jaarcijfers.xlsx jv/debug/
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Aanvulsjabloon $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
