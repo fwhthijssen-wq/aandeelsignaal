@@ -276,6 +276,7 @@
     if (m.bron === 'koers') return 'koers';
     if (m.bron === 'eigen') return 'eigen';
     if (m.basis && !c.laatste && c.lb) return 'jaarverslag';
+    if (m.eps && c.epsYahoo) return 'indicatief';               // winst per aandeel van Yahoo, rest officieel
     if (m.eps && c.epsJaarverslag) return 'jaarverslag';         // winst per aandeel uit de jaarverslagen (Yahoo voor de rest)   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
     return c.niveau; // 'gecontroleerd' of 'jaarverslag'
   }
@@ -301,6 +302,7 @@
     // lb: het laatste jaar voor balans en kasstroom. Splitsingen raken die niet, dus ook bruikbaar als de winst per aandeel nog niet bevestigd is.
     var lb = jarenBruikbaar ? l : (g && !g.fout && g.bron !== 'Yahoo Finance' && l ? l : null);
     var c = { k: k, koersOk: !!(vers && k && pos(k.slot)), reeks: reeks, bereik: bereik, jr: jarenBruikbaar ? jr : [], laatste: jarenBruikbaar ? l : null, lb: lb,
+      epsYahoo: !!(jarenBruikbaar && jr.some(function (j) { return j.eps_bron === 'yahoo'; })),
       epsJaarverslag: !!(jarenBruikbaar && jr.filter(function (j) { return num(j.comparable_eps); }).every(function (j) { return j.eps_bron === 'jaarverslag'; }) && jr.some(function (j) { return j.eps_bron === 'jaarverslag'; })),
       niveau: niveau, bank: bank, check: opties.check || null, eigen: opties.verdieping || null, van: f ? f.year : null, tot: l ? l.year : null,
       eenValuta: !!(g && g.currencies && g.currencies.length === 1 && rec.valuta && g.currencies[0] === rec.valuta),

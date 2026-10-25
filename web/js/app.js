@@ -821,6 +821,7 @@
       s += '<section data-eps-jaarverslag><h2>Winst per aandeel uit de jaarverslagen</h2><p>' + h(ej.uitleg || '') + ' ' + ej.jaren + ' jaar (' + ej.van + '–' + ej.tot + ').' + (ej.controle && ej.controle.vergeleken ? ' Tweede bron: in ' + ej.controle.overeen + ' van de ' + ej.controle.vergeleken + ' jaren die Yahoo Finance ook heeft, klopt het cijfer (binnen 5%)' + (ej.controle.afwijkend && ej.controle.afwijkend.length ? '; afwijkend: ' + ej.controle.afwijkend.join(', ') + ' (bijv. andere aandelensoort of herziening)' : '') + '.' : '') + ' Omzet, kasstroom en balans blijven indicatief (Yahoo Finance).</p><ul class="punten">' +
         ej.documenten.filter(function (d) { return d && /^https?:\/\//.test(d.url || ''); }).map(function (d) { return '<li>Jaarverslag ' + h(d.boekjaar) + (d.pagina ? ', pagina ' + h(d.pagina) : '') + ': <a href="' + h(d.url) + '" target="_blank" rel="noopener">document</a></li>'; }).join('') + '</ul></section>';
     }
+    if (g.eps_yahoo) s += '<section data-eps-yahoo><h2>Winst per aandeel van Yahoo Finance</h2><p>' + h(g.eps_yahoo.uitleg || '') + ' ' + g.eps_yahoo.jaren + ' jaar.</p></section>';
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';
     var open = jaarLijst(g).filter(function (j) { return j.eps_check !== 'onderbouwd'; });
     if (open.length) s += '<section><h2>Jaren zonder onderbouwde winst per aandeel</h2><ul class="punten">' + open.map(function (j) {

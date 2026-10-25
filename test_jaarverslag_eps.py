@@ -97,5 +97,23 @@ class NachtelijkeRun(unittest.TestCase):
         self.assertEqual(oud['jaren'][0]['comparable_eps'], 1.0)        # vorige run niet aangepast
 
 
+class YahooEps(unittest.TestCase):
+    def test_alleen_bij_minstens_vier_jaren_zelfde_valuta(self):
+        ruw = {'valuta': 'USD', 'jaren': None}
+        g = {'bron': 'SEC', 'jaren': [{'year': y, 'end': f'{y}-09-30', 'currency': 'USD', 'sales': 1.0} for y in range(2021, 2026)]}
+        import yahoo_jaren
+        oud = yahoo_jaren.jaren_uit_yahoo
+        try:
+            yahoo_jaren.jaren_uit_yahoo = lambda r: [{'end': f'{y}-09-30', 'comparable_eps': 8.0 + y - 2021} for y in range(2021, 2026)]
+            bw.vul_eps_yahoo(g, ruw)
+            self.assertEqual(g['jaren'][0]['comparable_eps'], 8.0); self.assertEqual(g['jaren'][0]['eps_bron'], 'yahoo')
+            self.assertEqual(g['niveau'], 'indicatief'); self.assertEqual(g['eps_yahoo']['jaren'], 5)
+            g2 = {'jaren': [{'year': 2025, 'end': '2025-09-30', 'currency': 'EUR'}]}
+            bw.vul_eps_yahoo(g2, ruw)
+            self.assertNotIn('eps_yahoo', g2)
+        finally:
+            yahoo_jaren.jaren_uit_yahoo = oud
+
+
 if __name__ == '__main__':
     unittest.main()

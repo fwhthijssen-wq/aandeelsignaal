@@ -229,6 +229,37 @@ def vul_eps_jaarverslag(g, ticker, register=None):
                             'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Ontbreekt een verslag, dan komt dat jaar uit het meerjarenoverzicht van een later verslag. Niet nagerekend.'}
 
 
+def vul_eps_yahoo(g, ruw):
+    """Winst per aandeel van Yahoo Finance in de jaren van de officiële cijfers (zelfde valuta, jaareinde binnen 15 dagen).
+    Alleen als dat minstens 4 jaren oplevert; elk jaar krijgt eps_bron 'yahoo'."""
+    from yahoo_jaren import jaren_uit_yahoo
+    if not ruw:
+        return
+    y = jaren_uit_yahoo(ruw)
+    munt = ruw.get('valuta')
+    paren = []
+    for j in g.get('jaren') or []:
+        try:
+            e = date.fromisoformat(str(j.get('end')))
+        except ValueError:
+            continue
+        if munt and j.get('currency') and j['currency'] != munt:
+            continue
+        for x in y:
+            try:
+                if abs((date.fromisoformat(str(x.get('end'))) - e).days) <= 15 and _getal(x.get('comparable_eps')) is not None:
+                    paren.append((j, x['comparable_eps'])); break
+            except ValueError:
+                continue
+    if len(paren) < 4:
+        return
+    for j, eps in paren:
+        j['comparable_eps'] = eps; j['eps_bron'] = 'yahoo'
+    if not g.get('niveau'):
+        g['niveau'] = 'indicatief'                 # zonder nagerekende of officiële winst per aandeel: indicatief
+    g['eps_yahoo'] = {'jaren': len(paren), 'uitleg': 'Winst per aandeel van Yahoo Finance (indicatief): de officiële bron meldt geen bruikbare winst per aandeel. Overige cijfers uit de officiële bron.'}
+
+
 def _investeringen_register():
     try:
         return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
@@ -717,6 +748,14 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 if ruw:
                     yahoo_samenvoegen(vergelijking, yahoo_vergelijk(jaren_uit_yahoo(ruw), gegevens['jaren']))
                     vergeleken_bedrijven += 1
+            except Exception:
+                pass
+        if (gegevens.get('jaren') and gegevens.get('bron') != 'Yahoo Finance'
+                and not any(_getal(j.get('comparable_eps')) is not None for j in gegevens['jaren'])):
+            # Officiële cijfers zonder één bruikbaar jaar winst per aandeel (Visa: alleen per aandelenklasse gemeld; banken die
+            # het niet taggen): de winst per aandeel van Yahoo Finance, als indicatief gemarkeerd. De rest blijft officieel.
+            try:
+                vul_eps_yahoo(gegevens, yahoo_ophalen(ticker))
             except Exception:
                 pass
         if gegevens is oud or gegevens.get('bron') == 'Yahoo Finance':
