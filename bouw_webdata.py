@@ -110,7 +110,8 @@ def heeft_sec(ticker):
 ESEF_LEI = HERE / 'esef_lei.json'
 ARCHIEF_MAP = HERE / 'archief'          # jaarverslagarchief (laag 1); bewaard tussen runs via de GitHub-cache
 ESEF_BUNDEL = HERE / 'esef_bundel.json.gz'
-ESEF_INVESTERINGEN = HERE / 'esef_investeringen.json'   # eigen begrippen van bedrijven voor investeringen (hulp/esef_investeringen.py)
+ESEF_INVESTERINGEN = HERE / 'esef_investeringen.json'
+JAARVERSLAG_EPS = HERE / 'jaarverslag_eps.json'      # gerapporteerde winst per aandeel uit pdf-jaarverslagen (hulp/de_eps.py)   # eigen begrippen van bedrijven voor investeringen (hulp/esef_investeringen.py)
 _ESEF_CACHE = {}
 
 
@@ -175,6 +176,39 @@ CAPEX_TERUGVAL = (
     ('us-gaap', 'PaymentsToAcquireProductiveAssets', 'betalingen voor productieve activa: materiële en immateriële vaste activa'),
     ('us-gaap', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'overige materiële vaste activa'),
 )
+
+
+def _jaarverslag_eps():
+    try:
+        return json.loads(JAARVERSLAG_EPS.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
+def vul_eps_jaarverslag(g, ticker, register=None):
+    """Voor fondsen met alleen indicatieve cijfers (Yahoo): de gerapporteerde verwaterde winst per aandeel uit de
+    jaarverslagen zelf (pdf, over de jaren gecontroleerd met de overlap tussen opeenvolgende verslagen). Vervangt de
+    winst per aandeel van Yahoo in dezelfde jaren en voegt oudere jaren toe (alleen winst per aandeel; omzet, kasstroom en
+    balans blijven van Yahoo). Elk jaar krijgt eps_bron 'jaarverslag'. Minder dan 4 jaar: niets."""
+    reg = (register if register is not None else _jaarverslag_eps()).get(ticker) or {}
+    reeks = {int(j): v for j, v in (reg.get('reeks') or {}).items() if _getal(v) is not None}
+    jaren = g.get('jaren') or []
+    if len(reeks) < 4 or not jaren:
+        return
+    eind = max(set(str(j.get('end', ''))[5:] for j in jaren if j.get('end')), key=[str(j.get('end', ''))[5:] for j in jaren].count)
+    munt = jaren[-1].get('currency')
+    per_jaar = {j.get('year'): j for j in jaren}
+    for jaar, eps in reeks.items():
+        rij = per_jaar.get(jaar)
+        if rij is None:
+            rij = {'year': jaar, 'end': f'{jaar}-{eind}', 'currency': munt}
+            jaren.append(rij)
+        rij['comparable_eps'] = eps; rij['reported_eps'] = eps; rij['eps_bron'] = 'jaarverslag'
+    jaren.sort(key=lambda j: j.get('year') or 0)
+    g['jaren'] = jaren
+    g['eps_jaarverslag'] = {'jaren': len(reeks), 'van': min(reeks), 'tot': max(reeks),
+                            'documenten': [{'boekjaar': int(j), 'url': d.get('url'), 'pagina': d.get('pagina')} for j, d in sorted((reg.get('verslagen') or {}).items())],
+                            'uitleg': 'Verwaterde winst per aandeel zoals gerapporteerd in de jaarverslagen; per jaar gecontroleerd met het volgende verslag (vergelijkend cijfer). Niet nagerekend.'}
 
 
 def _investeringen_register():
@@ -641,6 +675,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 yahoo_ruw = yahoo_ophalen(ticker)
                 yg = gegevens_uit_yahoo(yahoo_ruw, vandaag)
                 if yg.get('jaren'):
+                    vul_eps_jaarverslag(yg, ticker)
                     gegevens = yg
                 else:
                     gegevens.setdefault('yahoo_fout', yg.get('fout'))

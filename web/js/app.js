@@ -754,6 +754,11 @@
       return '<details><summary>' + h(datumNl(sp.datum)) + ' · ' + h(splitTekst(sp.ratio)) + '</summary><p>' + h(SPLIT[sp.status] || sp.status) + '.</p>' + (sp.redenen || []).map(function (x) { return '<p class="zacht">' + h(x) + '</p>'; }).join('') +
         (sp.bewijs && sp.bewijs.length ? '<ul class="punten">' + sp.bewijs.map(function (b) { return '<li>Boekjaar ' + h(b.periode) + ': winst per aandeel ' + h(b.voor.join('/')) + ' werd later ' + h(b.na.join('/')) + ' (factor ' + h(b.verhouding.join('/')) + ')</li>'; }).join('') + '</ul>' : '') + '</details>';
     }).join('') + '</section>';
+    if (g.eps_jaarverslag && Array.isArray(g.eps_jaarverslag.documenten)) {
+      var ej = g.eps_jaarverslag;
+      s += '<section data-eps-jaarverslag><h2>Winst per aandeel uit de jaarverslagen</h2><p>' + h(ej.uitleg || '') + ' ' + ej.jaren + ' jaar (' + ej.van + '–' + ej.tot + '). Omzet, kasstroom en balans blijven indicatief (Yahoo Finance).</p><ul class="punten">' +
+        ej.documenten.filter(function (d) { return d && /^https?:\/\//.test(d.url || ''); }).map(function (d) { return '<li>Jaarverslag ' + h(d.boekjaar) + (d.pagina ? ', pagina ' + h(d.pagina) : '') + ': <a href="' + h(d.url) + '" target="_blank" rel="noopener">document</a></li>'; }).join('') + '</ul></section>';
+    }
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';
     var open = jaarLijst(g).filter(function (j) { return j.eps_check !== 'onderbouwd'; });
     if (open.length) s += '<section><h2>Jaren zonder onderbouwde winst per aandeel</h2><ul class="punten">' + open.map(function (j) {

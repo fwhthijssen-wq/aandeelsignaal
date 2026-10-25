@@ -129,11 +129,11 @@
       invoer: { label: 'Omzetgroei per jaar (%)', stap: 0.1, waar: 'Jaarverslag of beleggersrelaties: omzet van het eerste en laatste jaar.' },
       waarde: function (c) { return c.groeiOmzet; },
       uit: function (x, c) { return { score: trap(x, [[8, 1], [3, 0.5], [0, 0]], -1), tekst: pct(x) + ' per jaar' + (c && c.van ? ' (' + c.van + '–' + c.tot + ').' : '.') }; } },
-    { id: 'epsgroei', groep: 'fundamenteel', naam: 'Groei winst per aandeel per jaar', gewicht: 8, bron: 'jaar',
+    { id: 'epsgroei', groep: 'fundamenteel', naam: 'Groei winst per aandeel per jaar', gewicht: 8, bron: 'jaar', eps: true,
       invoer: { label: 'Groei winst per aandeel per jaar (%)', stap: 0.1, waar: 'Jaarverslag: winst per aandeel (EPS) van het eerste en laatste jaar, gecorrigeerd voor splitsingen.' },
       waarde: function (c) { return c.groeiEps; },
       uit: function (x, c) { return { score: trap(x, [[10, 1], [4, 0.5], [0, 0]], -1), tekst: pct(x) + ' per jaar' + (c && c.van ? ' (' + c.van + '–' + c.tot + ').' : '.') }; } },
-    { id: 'epsstabiel', groep: 'fundamenteel', naam: 'Regelmaat van de winstgroei', gewicht: 5, bron: 'jaar',
+    { id: 'epsstabiel', groep: 'fundamenteel', naam: 'Regelmaat van de winstgroei', gewicht: 5, bron: 'jaar', eps: true,
       f: function (c) { var v = c.jr.filter(function (j) { return num(j.comparable_eps); }); if (v.length < 4) return null; var op = 0;
         for (var i = 1; i < v.length; i++) if (v[i].comparable_eps > v[i - 1].comparable_eps) op++;
         var f = op / (v.length - 1); return { score: trap(f, [[0.8, 1], [0.6, 0.5], [0.4, 0]], -1), tekst: 'De winst per aandeel steeg in ' + op + ' van ' + (v.length - 1) + ' jaren.' }; } },
@@ -158,7 +158,7 @@
       f: function (c) { var l = c.lb; if (c.bank || !l || !pos(l.total_assets) || !num(l.total_liabilities)) return null;
         var x = l.total_liabilities / l.total_assets * 100;
         return { score: laag(x, [[40, 1], [60, 0.5], [75, 0], [90, -0.5]], -1), tekst: 'Verplichtingen zijn ' + pct(x, 0) + ' van de bezittingen in ' + l.year + ' (lager is steviger).' }; } },
-    { id: 'kw', groep: 'fundamenteel', naam: 'Koers/winst (K/W)', gewicht: 8, bron: 'jaar',
+    { id: 'kw', groep: 'fundamenteel', naam: 'Koers/winst (K/W)', gewicht: 8, bron: 'jaar', eps: true,
       invoer: { label: 'Koers/winst (K/W)', stap: 0.1, waar: 'Koers gedeeld door winst per aandeel van het laatste jaar.' },
       f: function (c) { var l = c.laatste; if (!c.koersOk || !c.eenValuta || !l || !num(l.comparable_eps)) return null;
         if (l.comparable_eps <= 0) return { score: -1, tekst: 'De winst per aandeel is niet positief.' };
@@ -275,7 +275,8 @@
   function kwaliteitVan(m, c) {
     if (m.bron === 'koers') return 'koers';
     if (m.bron === 'eigen') return 'eigen';
-    if (m.basis && !c.laatste && c.lb) return 'jaarverslag';   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
+    if (m.basis && !c.laatste && c.lb) return 'jaarverslag';
+    if (m.eps && c.epsJaarverslag) return 'jaarverslag';         // winst per aandeel uit de jaarverslagen (Yahoo voor de rest)   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
     return c.niveau; // 'gecontroleerd' of 'jaarverslag'
   }
 
@@ -300,6 +301,7 @@
     // lb: het laatste jaar voor balans en kasstroom. Splitsingen raken die niet, dus ook bruikbaar als de winst per aandeel nog niet bevestigd is.
     var lb = jarenBruikbaar ? l : (g && !g.fout && g.bron !== 'Yahoo Finance' && l ? l : null);
     var c = { k: k, koersOk: !!(vers && k && pos(k.slot)), reeks: reeks, bereik: bereik, jr: jarenBruikbaar ? jr : [], laatste: jarenBruikbaar ? l : null, lb: lb,
+      epsJaarverslag: !!(jarenBruikbaar && jr.filter(function (j) { return num(j.comparable_eps); }).every(function (j) { return j.eps_bron === 'jaarverslag'; }) && jr.some(function (j) { return j.eps_bron === 'jaarverslag'; })),
       niveau: niveau, bank: bank, check: opties.check || null, eigen: opties.verdieping || null, van: f ? f.year : null, tot: l ? l.year : null,
       eenValuta: !!(g && g.currencies && g.currencies.length === 1 && rec.valuta && g.currencies[0] === rec.valuta),
       groeiOmzet: jarenBruikbaar && n > 0 ? groei(f.sales, l.sales, n) : null,
