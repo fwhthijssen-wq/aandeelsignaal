@@ -67,6 +67,47 @@ class EpsKeten(unittest.TestCase):
         self.assertEqual(e.eps_keten(c), {})
 
 
+class WinstZonderAandelen(unittest.TestCase):
+    """Beta.77: geen bruikbaar aantal aandelen, wel dezelfde winst in beide rapporten."""
+    def test_schaalfout_met_gelijke_winst_wordt_omgerekend(self):
+        # AB InBev 2024: winst per aandeel als 286 en 260 (centen) getagd; het rapport erna: 2,86 bij dezelfde winst
+        c = cf([('R25', '2025-12-31', {2025: (3.39, 6800 * M, None), 2024: (2.86, 5800 * M, None)}),
+                ('R24', '2024-12-31', {2024: (286.0, 5800 * M, None), 2023: (260.0, 5300 * M, None)})])
+        log = []
+        k = e.eps_keten(c, min_jaren=1, verslag=log)
+        self.assertAlmostEqual(k['2023-12-31'], 2.6, places=4)
+        self.assertTrue(any('zelfde winst' in x for x in log))
+
+    def test_willekeurige_factor_bij_gelijke_winst_stopt(self):
+        # Iberdrola-achtig: 0,589 tegen 0,838 bij dezelfde winst is geen bonus of splitsing maar een ander begrip
+        c = cf([('R25', '2025-12-31', {2025: (0.843, 5800 * M, None), 2024: (0.589, 5600 * M, None)}),
+                ('R24', '2024-12-31', {2024: (0.838, 5600 * M, None), 2023: (0.75, 4800 * M, None)})])
+        k = e.eps_keten(c, min_jaren=1)
+        self.assertNotIn('2023-12-31', k)
+
+    def test_zuivere_factoren(self):
+        self.assertTrue(e._zuivere_factor(1 / 1.1)); self.assertTrue(e._zuivere_factor(0.01)); self.assertTrue(e._zuivere_factor(2))
+        self.assertFalse(e._zuivere_factor(0.6625)); self.assertFalse(e._zuivere_factor(1.03))
+
+
+class BrugNaOmrekening(unittest.TestCase):
+    def test_brug_neemt_eerdere_omrekening_over(self):
+        # 2024: bonus 1 op 10 (2023 herrekend); rapport over 2022 ontbreekt; rapport over 2021 sluit via de brug aan.
+        c = cf([('R24', '2024-12-31', {2024: (5.72, 3306 * M, 578 * M), 2023: (5.33, 3078 * M, 577.5 * M)}),
+                ('R23', '2023-12-31', {2023: (5.87, 3078 * M, 524.4 * M), 2022: (5.27, 2759 * M, 523.5 * M)}),
+                ('R21', '2021-12-31', {2021: (5.42, 2572 * M, 474.5 * M), 2020: (5.14, 2435 * M, 473.7 * M)})])
+        log = []
+        k = e.eps_keten(c, min_jaren=1, verslag=log)
+        self.assertNotIn('2020-12-31', k)            # 2021 → 2022: aantal aandelen 10% hoger (bonus 2022 niet bewezen): geen brug
+        c2 = cf([('R24', '2024-12-31', {2024: (5.72, 3306 * M, 578 * M), 2023: (5.33, 3078 * M, 577.5 * M)}),
+                 ('R23', '2023-12-31', {2023: (5.87, 3078 * M, 524.4 * M), 2022: (5.27, 2759 * M, 523.5 * M)}),
+                 ('R21', '2021-12-31', {2021: (4.92, 2572 * M, 522.8 * M), 2020: (4.67, 2435 * M, 521 * M)})])
+        log = []
+        k = e.eps_keten(c2, min_jaren=1, verslag=log)
+        self.assertAlmostEqual(k['2021-12-31'], 4.92 * 5.33 / 5.87, places=3)      # de bonus van 2024 geldt ook voor 2021
+        self.assertTrue(any('overgenomen' in x for x in log))
+
+
 if __name__ == '__main__':
     unittest.main()
 

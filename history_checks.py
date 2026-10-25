@@ -92,8 +92,10 @@ def normalized_eps_history(history, splits, *, asof=None, geen_splitsingen=False
         if event.get('Datumtype') not in (None, 'effectieve_splitdatum'):
             invalid_event = True
             continue
-        from eps_verification import geldige_ratio
-        if (not when or not geldige_ratio(ratio, event.get('Tag')) or event.get('Eenheid') not in ('pure', None)):
+        from eps_verification import geldige_ratio, _samenvoeging
+        # samenvoeging (verhouding onder 1) alleen als ze met EPS van voor en na bevestigd is (Verificatie gezet)
+        bevestigde_samenvoeging = event.get('Datumtype') == 'effectieve_splitdatum' and event.get('Verificatie') and _samenvoeging(ratio)
+        if (not when or not (geldige_ratio(ratio, event.get('Tag')) or bevestigde_samenvoeging) or event.get('Eenheid') not in ('pure', None)):
             invalid_event = True
             continue
         # Also validate dates here: this helper is called independently of the

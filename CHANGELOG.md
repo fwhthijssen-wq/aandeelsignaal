@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.25-beta.77
+- **Honeywell weer met 10 jaar bevestigde winst per aandeel.** Honeywell voegde in juni 2026 aandelen samen (1 nieuw voor 2 oud). Die samenvoeging stond alleen in een kwartaalbericht en werd daarom afgewezen, waardoor Honeywell geen enkel bruikbaar jaar had. Nu bevestigt de app een recente splitsing of samenvoeging ook met kwartaalcijfers: het kwartaal van vóór de samenvoeging staat in het eerste kwartaalbericht erna opnieuw, met precies dubbele winst per aandeel. Alle jaren worden omgerekend naar de nieuwe aandelen en zijn onafhankelijk nagerekend.
+- **Meer Europese reeksen over jaarverslagen heen.** Als twee jaarverslagen dezelfde winst noemen maar een andere winst per aandeel, kan dat alleen door een ander aantal aandelen (bonusaandelen, splitsing) of een schaalfout in het bestand komen. Bij een zuivere verhouding (bijvoorbeeld 1 op 10, of x100) rekent de app de oudere jaren nu om; een willekeurige verhouding blijft een stopteken. Nieuw of langer: Air Liquide (7 jaar), AB InBev (6), Cellnex (5), Aviva (4), Engie, National Grid, GSK, Michelin, RELX, Standard Chartered, Umicore en Veolia.
+- **Herstel brug over een ontbrekend jaarverslag**: een eerdere omrekening (bonusaandelen in een later jaar) geldt nu ook voor de jaren vóór het gat. Een duidelijke toename van het aantal aandelen (7–12%) zonder bewijs is geen brug meer: dat kunnen onbewezen bonusaandelen zijn (Prysmian valt daardoor terug).
+
 ## 2026.10.25-beta.76
 - **Uw eigen groeiverwachting in het NAIC-oordeel.** Op de NAIC-kaart van elk aandeel kunt u, zoals in de echte Stock Selection Guide, zelf de verwachte groei van de winst per aandeel invullen. Het oordeel, de koerszones en het totaalrendement rekenen dan daarmee; de historische trend blijft ter vergelijking zichtbaar. Leeg laten = de app neemt de trend (hoogstens 15%). Wordt bewaard op dit toestel en zit in de back-up.
 - **NAIC deel 3 en 5 vollediger** (ter informatie, telt niet mee in het oordeel):

@@ -52,6 +52,33 @@ class SplitBevestiging(unittest.TestCase):
         self.assertIn('spreekt de splitverhouding tegen', uit[0]['Verificatie reden'])
 
 
+class Samenvoeging(unittest.TestCase):
+    """Honeywell: samenvoeging 1:2 (SEC-verhouding 0,5) in juni 2026, na het laatste jaarverslag. Het kwartaal van vóór de
+    samenvoeging staat in de eerste 10-Q erna opnieuw, met dubbele EPS: dat bevestigt de verhouding."""
+    HIST = [{'end': '2024-12-31'}, {'end': '2025-12-31'}]
+
+    def test_bevestigd_door_kwartaal(self):
+        o = [obs('2025-06-30', '2025-07-24', 2.45), obs('2025-06-30', '2026-07-23', 4.9)]
+        uit = ev.verify_split_events([event('2026-06-29', 0.5)], o, self.HIST)
+        self.assertEqual(uit[0]['Datumtype'], 'effectieve_splitdatum')
+
+    def test_zonder_bewijs_blijft_afgewezen(self):
+        uit = ev.verify_split_events([event('2026-06-29', 0.5)], [], self.HIST)
+        self.assertNotEqual(uit[0].get('Datumtype'), 'effectieve_splitdatum')
+        o = [obs('2025-06-30', '2025-07-24', 2.45), obs('2025-06-30', '2026-07-23', 1.22)]        # verkeerde richting
+        uit = ev.verify_split_events([event('2026-06-29', 0.5)], o, self.HIST)
+        self.assertNotEqual(uit[0].get('Datumtype'), 'effectieve_splitdatum')
+
+    def test_omrekening_verdubbelt_oude_eps(self):
+        from history_checks import normalized_eps_history
+        hist = [{'end': '2025-12-31', 'facts': {'Winst per aandeel (verwaterd)': {'val': 7.36, 'filed': '2026-02-17'}}}]
+        ev_ = {'Datum': '2026-06-29', 'Waarde SEC': 0.5, 'Eenheid': 'pure', 'Datumtype': 'effectieve_splitdatum', 'Verificatie': 'x'}
+        uit = normalized_eps_history(hist, [ev_], asof='2026-10-25')
+        self.assertAlmostEqual(uit['2025-12-31']['EPS vergelijkbaar'], 14.72, places=2)
+        zonder = normalized_eps_history(hist, [dict(ev_, Verificatie=None)], asof='2026-10-25')
+        self.assertIsNone(zonder['2025-12-31']['EPS vergelijkbaar'])
+
+
 class Verhoudingen(unittest.TestCase):
     def test_samenvoeging_alleen_als_afgeleid(self):
         self.assertFalse(ev.geldige_ratio(8 / 9))

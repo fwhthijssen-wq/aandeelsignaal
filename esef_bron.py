@@ -136,6 +136,16 @@ def _jaar(r):
 AANDELEN_BEGRIPPEN = ('AdjustedWeightedAverageShares', 'WeightedAverageShares')
 
 
+def _zuivere_factor(r, marge=0.006):
+    """Een factor die bij bonusaandelen, splitsing, samenvoeging of een schaalfout hoort: k of 1/k (2, 3, 4, 5, 8, 10, 20, 25,
+    50, 100, 1000) of een bonusverhouding 1 + 1/n (1 nieuw op n oud, n = 2..20) en het omgekeerde. Een willekeurige factor
+    (zoals 0,66 elk jaar) wijst op een ander begrip in één van de rapporten, niet op een ander aantal aandelen."""
+    if not isinstance(r, (int, float)) or r <= 0:
+        return False
+    kandidaten = [k for k in (2, 3, 4, 5, 8, 10, 20, 25, 50, 100, 1000)] + [1 + 1 / n for n in range(2, 21)]
+    return any(abs(r / f - 1) <= marge or abs(r * f - 1) <= marge for f in kandidaten)
+
+
 def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=None):
     """Winst per aandeel per boekjaar uit de officiële ESEF-jaarverslagen, alleen waar de jaren onderling vergelijkbaar zijn.
 
@@ -229,7 +239,9 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
             return None
         a_oud, a_nw = [a_oud], [a_nw]
         r = max(a_oud) / max(a_nw)                  # meer aandelen toen → winst per aandeel toen hoger op nieuwe basis
-        if 0.9 <= r <= 1.1:
+        # Minder aandelen nu (inkoop) tot 10%, of iets meer aandelen nu (tot 7%): zelfde basis. Duidelijk meer aandelen nu
+        # (7-12%) kan inkoop niet zijn en kan bonusaandelen zijn (Air Liquide 1 op 10) die niet bewezen zijn: geen brug.
+        if 0.93 <= r <= 1.1:
             return 1.0
         for k in (2, 3, 4, 5, 8, 10, 15, 20, 25, 50, 100):
             for f in (k, 1.0 / k):
@@ -237,8 +249,9 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
                     return f
         return None
     eind = {r['fxo_id']: r['period_end'] for r in cf.get('rapporten') or []}
-    keten, bron = {}, {}
+    keten, bron, cum = {}, {}, {}        # cum: factor waarmee het cijfer van dat jaar uit zijn eigen rapport is omgerekend
     for accn in sorted(per_rapport, key=lambda a: eind.get(a, ''), reverse=True):
+        fac = 1.0
         jaren = per_rapport[accn]
         if any(len(v) != 1 for v in jaren.values()):
             log.append(f'{accn}: meerdere waarden voor één jaar; keten stopt')
@@ -258,10 +271,13 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
                 if f is None:
                     log.append(f'{accn}: geen gedeeld jaar en geen bevestigde brug; keten stopt')
                     break
-                if f != 1.0:
+                # het nieuwere jaar kan al omgerekend zijn (bonusaandelen later): dezelfde omrekening geldt voor dit oudere rapport
+                f_tot = f * cum.get(oudste, 1.0)
+                if f_tot != 1.0:
                     for e in huidig:
-                        huidig[e][1] = round(huidig[e][1] * f, 6)
-                log.append(f'{accn}: brug over ontbrekend rapport ({laatste_oud} → {oudste}), ' + ('aantal aandelen gelijk' if f == 1.0 else f'splitsing omgerekend (x{f:g})'))
+                        huidig[e][1] = round(huidig[e][1] * f_tot, 6)
+                    fac *= f_tot
+                log.append(f'{accn}: brug over ontbrekend rapport ({laatste_oud} → {oudste}), ' + ('aantal aandelen gelijk' if f == 1.0 else f'splitsing omgerekend (x{f:g})') + (f'; eerdere omrekening x{cum[oudste]:.4f} overgenomen' if abs(cum.get(oudste, 1.0) - 1) > 1e-9 else ''))
                 gedeeld = []
             fouten = [e for e in gedeeld if abs(huidig[e][1] - keten[e][1]) > tolerantie]
             if False:
@@ -289,11 +305,18 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
                     (not (winst_rap.get((accn, e)) and winst_rap.get((bron[e], e)))      # winst gelijk, waar beide gemeld
                      or abs(winst_rap[(accn, e)][0] / winst_rap[(bron[e], e)][0] - 1) <= 0.01)
                     and past_bij_aandelen(accn, e, huidig[e][1]) and past_bij_aandelen(bron[e], e, keten[e][1]) for e in gedeeld)
-                if bevestigd:
+                # Zonder bruikbaar aantal aandelen: dezelfde winst in beide rapporten maar een andere winst per aandeel kan alleen
+                # uit een ander aantal aandelen komen (bonusaandelen, splitsing of een schaalfout in de tag, zoals AB InBev 286
+                # in plaats van 2,86). Dan wordt de oudere reeks met die ene factor omgerekend.
+                winst_bevestigd = gelijk and abs(ratios[0] - 1) > HERZIENING and _zuivere_factor(ratios[0]) and all(
+                    winst_rap.get((accn, e)) and winst_rap.get((bron[e], e)) and winst_rap[(bron[e], e)][0]
+                    and abs(winst_rap[(accn, e)][0] / winst_rap[(bron[e], e)][0] - 1) <= 0.01 for e in gedeeld)
+                if bevestigd or winst_bevestigd:
                     r = ratios[0]
                     for e in huidig:
                         huidig[e][1] = round(huidig[e][1] * r, 6)
-                    log.append(f'{accn}: oudere jaren omgerekend met factor {r:.4f} (bonusaandelen of splitsing, bevestigd door winst en aandelen)')
+                    fac *= r
+                    log.append(f'{accn}: oudere jaren omgerekend met factor {r:.4f} (' + ('bonusaandelen of splitsing, bevestigd door winst en aandelen' if bevestigd else 'zelfde winst, andere winst per aandeel: ander aantal aandelen of schaalfout') + ')')
                 elif all(keten[e][1] * huidig[e][1] > 0 and abs(keten[e][1] / huidig[e][1] - 1) <= HERZIENING for e in gedeeld):
                     log.append(f'{accn}: kleine herziening; nieuwste cijfer telt')
                 else:
@@ -301,7 +324,7 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
                     break
         for e, v in huidig.items():
             if e not in keten:
-                keten[e] = tuple(v); bron[e] = accn
+                keten[e] = tuple(v); bron[e] = accn; cum[e] = fac
     uit = {e: v[1] for e, v in sorted(keten.items())}
     return uit if len(uit) >= min_jaren else {}
 

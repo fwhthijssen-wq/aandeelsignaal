@@ -255,8 +255,9 @@ def sec_snapshot(ticker, asof, email, fetcher=fetch_json):
     from sec_cashflow_forensics import inspect_cashflow_extensions
     aligned['missing_cashflow_extension_audit'] = inspect_cashflow_extensions(
         payload, aligned['annual_history'], asof)
-    from sec_eps_evidence import sec_eps_filing_observations
+    from sec_eps_evidence import sec_eps_filing_observations, sec_eps_quarter_observations
     aligned['eps_filing_observations'] = sec_eps_filing_observations(payload, asof)
+    aligned['eps_quarter_observations'] = sec_eps_quarter_observations(payload, asof)
     from eps_verification import sec_eps_recompute_inputs
     aligned['eps_recompute_inputs'] = sec_eps_recompute_inputs(payload, asof)
     from history_checks import capex_comparison, split_events, eps_comparability

@@ -79,7 +79,7 @@ class YahooJaren(unittest.TestCase):
         kw = dict(fetch_prijzen=lambda t: [], historie_ophalen=lambda t: ([], []), valuta_ophalen=lambda t: None, pauze=lambda: None, esef_ophalen=lambda t: None,
                   sec_samenvatting=lambda t, e: {'status': 'geen'}, diagnose=lambda t, e: {}, payload_ophalen=lambda t, e: None, yahoo_ophalen=yahoo)
         b = bw.live('a@b.nl', **kw)
-        bmw = next(r for r in b['aandelen'] if r['ticker'] == 'BMW.DE')
+        bmw = next(r for r in b['aandelen'] if r['ticker'] == 'ADS.DE')     # zonder winst per aandeel uit pdf-jaarverslagen
         self.assertEqual(bmw['gegevens']['niveau'], 'indicatief')
         self.assertIsNone(bmw['gegevens']['eps_status'])
         self.assertEqual(len(bmw['gegevens']['jaren']), 5)

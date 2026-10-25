@@ -52,6 +52,36 @@ def sec_eps_filing_observations(payload, asof):
     return sorted(observations, key=lambda r: (r['end'], r['filed'], r['accn']))
 
 
+def sec_eps_quarter_observations(payload, asof):
+    """Kwartaal-EPS (10-Q, ongeveer 3 maanden) met herkomst, alleen om een recente splitsing te bevestigen: een kwartaal
+    van vóór de splitsing staat in de eerste 10-Q erna opnieuw, omgerekend. Zo is een splitsing na het laatste jaarverslag
+    al te controleren voordat het volgende jaarverslag er is (Honeywell, omgekeerde splitsing 1:2 in juni 2026)."""
+    cutoff = date.fromisoformat(asof)
+    seen, uit = set(), []
+    for tag in EPS_TAGS:
+        for namespace in ('us-gaap', 'ifrs-full'):
+            units = payload.get('facts', {}).get(namespace, {}).get(tag, {}).get('units', {})
+            for unit, rows in units.items():
+                if unit not in {f'{currency}/shares' for currency in MONETARY_UNITS}:
+                    continue
+                for row in rows:
+                    try:
+                        end = date.fromisoformat(row['end']); filed = date.fromisoformat(row['filed']); value = row['val']
+                        if (row.get('form') not in ('10-Q', '10-Q/A') or not 80 <= (duration_days(row) or 0) <= 100
+                                or not row.get('accn') or not end <= filed <= cutoff
+                                or isinstance(value, bool) or not isinstance(value, (int, float)) or not isfinite(value)):
+                            continue
+                    except (KeyError, ValueError, TypeError):
+                        continue
+                    key = (row['end'], row['filed'], row['accn'], tag, unit, value)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    uit.append({'end': row['end'], 'filed': row['filed'], 'val': value, 'unit': unit, 'accn': row['accn'],
+                                'tag': tag, 'source': f'SEC {namespace}:{tag} (kwartaal)'})
+    return sorted(uit, key=lambda r: (r['end'], r['filed'], r['accn']))
+
+
 def _iso_date(value):
     """Reject non-ISO, impossible and missing provenance dates."""
     if not isinstance(value, str):

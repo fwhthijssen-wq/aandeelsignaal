@@ -44,6 +44,11 @@ def geldige_ratio(ratio, tag=None):
     return 1 < ratio <= 1000
 
 
+def _samenvoeging(ratio):
+    """Verhouding onder 1 (samenvoeging van aandelen, zoals Honeywell 1:2 = 0,5): alleen te gebruiken na bevestiging."""
+    return isinstance(ratio, (int, float)) and not isinstance(ratio, bool) and isfinite(ratio) and 0.001 <= ratio <= 0.99
+
+
 def _day(value):
     if not isinstance(value, str):
         return None
@@ -451,7 +456,7 @@ def verify_split_events(split_events, observations, history):
             out.append(event)
             continue
         when, ratio = _day(event.get('Datum')), _number(event.get('Waarde SEC'))
-        if when is None or ratio is None or not geldige_ratio(ratio, event.get('Tag')):
+        if when is None or ratio is None or not (geldige_ratio(ratio, event.get('Tag')) or _samenvoeging(ratio)):
             out.append(event)          # de bestaande validatie wijst dit af met reden
             continue
         if earliest is not None and when < earliest:
@@ -590,8 +595,11 @@ def verify_eps(result, safe_history, audit_date):
     split_source = result.get('split_events')
     checked_events = []
     if isinstance(split_source, list):
-        checked_events = verify_split_events(split_source, result.get('eps_filing_observations'),
-                                             safe_history)
+        obs = list(result.get('eps_filing_observations') or [])
+        kw = result.get('eps_quarter_observations')
+        if isinstance(kw, list):
+            obs += kw            # kwartalen alleen voor het bevestigen van de splitsing zelf
+        checked_events = verify_split_events(split_source, obs, safe_history)
     split_audit = []
     validated_splits = []
     for event in checked_events if isinstance(split_source, list) else []:
@@ -621,7 +629,9 @@ def verify_eps(result, safe_history, audit_date):
                 reasons.append('splitdatum ligt in de toekomst')
         except (TypeError, ValueError):
             reasons.append('datum ontbreekt of is ongeldig')
-        if not geldige_ratio(ratio, tag):
+        if not geldige_ratio(ratio, tag) and not (event.get('Datumtype') == 'effectieve_splitdatum' and _samenvoeging(ratio)):
+            # een samenvoeging (verhouding onder 1) uit een SEC-tag telt alleen als de EPS in indieningen van voor én na
+            # haar bevestigt (verify_split_events): dan is de richting van de verhouding bewezen
             reasons.append('ongeldige splitratio')
         if unit not in ('pure', None):
             reasons.append('onverwachte eenheid')
