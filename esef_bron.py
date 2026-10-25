@@ -209,6 +209,33 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
         w = (winst_rap.get((accn, e)) or [winst_jaar.get(e)])[0]
         a = (aand_rap.get((accn, e)) or []) + aand_per_rapport.get(accn, []) + aand_jaar.get(e, [])
         return bool(w and eps and a and any(abs(w / eps / x - 1) <= 0.1 for x in a if x > 0))
+    def brugfactor(accn_oud, e_oud, accn_nieuw, e_nieuw):
+        """Factor voor de oudere winst per aandeel over een gat van precies één boekjaar, of None."""
+        try:
+            gat = (date.fromisoformat(e_nieuw) - date.fromisoformat(e_oud)).days
+        except ValueError:
+            return None
+        if not 330 <= gat <= 400:
+            return None
+        def aantal(accn, e, eps):
+            a = [x for x in (aand_rap.get((accn, e)) or aand_jaar.get(e) or []) if x > 0]
+            if a:
+                return max(a), True
+            w = (winst_rap.get((accn, e)) or [winst_jaar.get(e)])[0]
+            return (w / eps, False) if w and eps and w / eps > 0 else (None, False)      # afgeleid: winst ÷ winst per aandeel
+        (a_oud, echt_oud) = aantal(accn_oud, e_oud, next(iter(per_rapport[accn_oud][e_oud]))[1])
+        (a_nw, echt_nw) = aantal(accn_nieuw, e_nieuw, keten[e_nieuw][1])
+        if not a_oud or not a_nw or not (echt_oud or echt_nw):      # minstens één kant een gerapporteerd aantal aandelen
+            return None
+        a_oud, a_nw = [a_oud], [a_nw]
+        r = max(a_oud) / max(a_nw)                  # meer aandelen toen → winst per aandeel toen hoger op nieuwe basis
+        if 0.9 <= r <= 1.1:
+            return 1.0
+        for k in (2, 3, 4, 5, 8, 10, 15, 20, 25, 50, 100):
+            for f in (k, 1.0 / k):
+                if abs(r / f - 1) <= 0.03:
+                    return f
+        return None
     eind = {r['fxo_id']: r['period_end'] for r in cf.get('rapporten') or []}
     keten, bron = {}, {}
     for accn in sorted(per_rapport, key=lambda a: eind.get(a, ''), reverse=True):
@@ -223,6 +250,21 @@ def eps_keten(cf, min_jaren=JAARVERSLAG_MIN_JAREN, tolerantie=0.005, verslag=Non
                 break
             gedeeld = [e for e in huidig if e in keten]
             if not gedeeld:
+                # Gat van één ontbrekend rapport: het jaar erna sluit direct aan, maar er is geen gedeeld jaar om te vergelijken.
+                # Brug alleen als het aantal aandelen dat toelaat: gelijk (binnen 10%) → doorlopen; een zuivere splitsingsfactor → omrekenen.
+                oudste = min(keten)
+                laatste_oud = max(huidig)
+                f = brugfactor(accn, laatste_oud, bron[oudste], oudste)
+                if f is None:
+                    log.append(f'{accn}: geen gedeeld jaar en geen bevestigde brug; keten stopt')
+                    break
+                if f != 1.0:
+                    for e in huidig:
+                        huidig[e][1] = round(huidig[e][1] * f, 6)
+                log.append(f'{accn}: brug over ontbrekend rapport ({laatste_oud} → {oudste}), ' + ('aantal aandelen gelijk' if f == 1.0 else f'splitsing omgerekend (x{f:g})'))
+                gedeeld = []
+            fouten = [e for e in gedeeld if abs(huidig[e][1] - keten[e][1]) > tolerantie]
+            if False:
                 break
             fouten = [e for e in gedeeld if abs(huidig[e][1] - keten[e][1]) > tolerantie]
             if fouten:

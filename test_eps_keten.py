@@ -69,3 +69,26 @@ class EpsKeten(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Brug(unittest.TestCase):
+    def test_brug_over_ontbrekend_rapport_bij_gelijk_aantal_aandelen(self):
+        c = cf([('R25', '2025-12-31', {2025: (1.31, 131 * M, 100 * M), 2024: (1.25, 125 * M, 100 * M)}),
+                ('R22', '2022-12-31', {2022: (1.02, 103 * M, 101 * M), 2021: (0.92, 93 * M, 101 * M)})])
+        # gat: rapport 2023 ontbreekt, maar 2023 staat niet in R25 -> geen aansluiting op één jaar
+        self.assertNotIn('2022-12-31', e.eps_keten(c, min_jaren=1))
+        c = cf([('R24', '2024-12-31', {2024: (1.25, 125 * M, 100 * M), 2023: (1.1, 110 * M, 100 * M)}),
+                ('R22', '2022-12-31', {2022: (1.02, 103 * M, 101 * M), 2021: (0.92, 93 * M, 101 * M)})])
+        log = []
+        k = e.eps_keten(c, min_jaren=1, verslag=log)
+        self.assertEqual(k['2021-12-31'], 0.92); self.assertTrue(any('brug' in x for x in log))
+
+    def test_brug_rekent_splitsing_om_en_weigert_onduidelijke_factor(self):
+        # 1 op 10 samengevoegd: toen 10x zoveel aandelen
+        c = cf([('R24', '2024-12-31', {2024: (3.6, 934 * M, 259 * M), 2023: (2.9, 750 * M, 258 * M)}),
+                ('R22', '2022-12-31', {2022: (0.28, 728 * M, 2600 * M), 2021: (-1.0, -2600 * M, 2600 * M)})])
+        k = e.eps_keten(c, min_jaren=1)
+        self.assertAlmostEqual(k['2022-12-31'], 2.8, places=4)
+        c2 = cf([('R24', '2024-12-31', {2024: (3.6, 934 * M, 259 * M), 2023: (2.9, 750 * M, 258 * M)}),
+                 ('R22', '2022-12-31', {2022: (2.0, 600 * M, 300 * M), 2021: (1.9, 570 * M, 300 * M)})])
+        self.assertNotIn('2022-12-31', e.eps_keten(c2, min_jaren=1))

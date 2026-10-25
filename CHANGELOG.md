@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.25-beta.70
+- **Brug over een ontbrekend jaarverslag.** Bij 35 Europese bedrijven ontbreekt één ESEF-jaarverslag in de reeks (ook bij de bron, filings.xbrl.org). Het jaar erna staat wel als vergelijkend cijfer in het volgende verslag, maar er was geen gedeeld jaar om te controleren of beide op hetzelfde aantal aandelen rekenen. Nu wordt dat gecontroleerd met het aantal aandelen uit beide verslagen: ongeveer gelijk → de reeks loopt door; een zuivere splitsingsfactor → omgerekend; anders stopt de reeks zoals voorheen. Minstens één kant moet een gerapporteerd aantal aandelen hebben (bij Air France, met een samenvoeging van aandelen in 2023, blijft de reeks daarom gesplitst).
+- Gevolg: langere reeksen voor o.a. Saint-Gobain, Hermès, Bureau Veritas, DiaSorin, Eurofins en ICG; nieuw met een bruikbare reeks: Amplifon, Prysmian, Acciona en Logista.
+- Alle jaarcijfers worden bij de eerstvolgende nachtelijke update opnieuw opgehaald.
+
 ## 2026.10.25-beta.69
 - **NAIC compleet met deel 1 en 2 van de Stock Selection Guide** (“Is het een goed bedrijf?”), zichtbaar op de NAIC-kaart:
   - **Groeien omzet en winst gelijk op?** De omzet moet groeien en de winst per aandeel mag niet meer dan 10 procentpunt per jaar sneller groeien; anders komt de winstgroei uit hogere marges of minder aandelen en houdt die meestal niet lang aan.
