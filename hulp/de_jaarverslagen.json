@@ -1,0 +1,26 @@
+{
+ "_uitleg": "Duitse jaarverslagen (pdf) per fonds. 'urls': directe adressen van de eigen beleggerssite per boekjaar. Ontbreekt een jaar, dan probeert hulp/de_jaarverslagen.py het vaste patroon van EQS (verspreider van verplichte publicaties): {host}/{slug}/Annual Reports/{ISIN}-JA-{jaar}-EQ-{E|D}-00.pdf.",
+ "BAS.DE": {"naam": "BASF SE", "isin": "DE000BASF111", "slug": "basf", "urls": {
+   "2017": "https://www.basf.com/dam/jcr:ad007a03-e35a-3f19-99f6-23eff9e47eb3/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2018/BASF_Report_2017.pdf",
+   "2018": "https://www.basf.com/dam/jcr:61915124-ecce-31e1-8c36-fbf00a1313c9/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2019/BASF_Report_2018.pdf",
+   "2019": "https://www.basf.com/dam/jcr:6cbd5d72-0754-3f90-8cbb-24a8023804a1/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2020/BASF_Report_2019.pdf",
+   "2020": "https://www.basf.com/dam/jcr:94157e2d-45f0-3e89-97a3-dc2e509450ea/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2021/BASF_Report_2020.pdf",
+   "2021": "https://www.basf.com/dam/jcr:3a135ce0-f0f8-3707-acb0-9c9508b22a02/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2022/BASF_Report_2021.pdf",
+   "2022": "https://www.basf.com/dam/jcr:85468ed4-23da-3dc8-aa15-20882386251c/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2023/BASF_Report_2022.pdf",
+   "2023": "https://www.basf.com/dam/jcr:78992bb6-9a76-3392-8b51-6c069ad8ca94/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2024/BASF_Report_2023.pdf",
+   "2024": "https://www.basf.com/dam/jcr:a0caf160-c019-40b1-a4ea-eaedb29b0685/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_Report_2024.pdf",
+   "2025": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf"}},
+ "ALV.DE": {"naam": "Allianz SE", "isin": "DE0008404005", "slug": "allianz", "urls": {
+   "2017": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar2017/de-gruppe-2017-geschaeftsbericht-allianz-gruppe.pdf",
+   "2018": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2018/de-GB-Gruppe-2018.pdf",
+   "2019": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2019/de-GB-Gruppe-Geschaeftsbericht-Allianz-2019.pdf",
+   "2020": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2020/de-Allianz-Gruppe-Geschaeftsbericht-2020.pdf",
+   "2021": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2021/de-Allianz-Gruppe-Geschaeftsbericht-2021.pdf",
+   "2022": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2022/de-Allianz-Gruppe-Geschaeftsbericht-2022.pdf",
+   "2023": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2023/de-Allianz-Gruppe-Geschaeftsbericht-2023.pdf",
+   "2024": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2024/de-allianz-gruppe-geschaeftsbericht-2024.pdf"}},
+ "SIE.DE": {"naam": "Siemens AG", "isin": "DE0007236101", "slug": "siemens", "urls": {
+   "2021": "https://assets.new.siemens.com/siemens/assets/api/uuid:0ce51a51-cd5c-4ff0-b582-f41d167f0892/Annual-Financial-Report-FY2021.pdf",
+   "2023": "https://assets.new.siemens.com/siemens/assets/api/uuid:bb51b804-05aa-4590-84e3-0cad12783255/Annual-Financial-Report-FY2023.pdf",
+   "2024": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf"}}
+}

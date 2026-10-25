@@ -61,15 +61,15 @@ def past(teller, aandelen, eps, teller_eenheid=None, eps_tol=0.0055):
     return lo - eps_tol <= eps <= hi + eps_tol
 
 
-EPS_LABEL = re.compile(r'dilut|verwater|dilu[ée]', re.I)
-PER_AANDEEL = re.compile(r'per (ordinary |common )?share|par action|per (gewoon )?aandeel|\(in (€|eur|euros?)\)', re.I)
-AANDELEN = re.compile(r'(number|average|nombre|aantal|weighted|gewogen).{0,80}(shares|actions|aandelen)|(shares|actions|aandelen).{0,40}(dilut|dilu|verwater)', re.I)
+EPS_LABEL = re.compile(r'dilut|verwater|dilu[ée]|verwässert|verwaessert', re.I)
+PER_AANDEEL = re.compile(r'per (ordinary |common )?share|par action|per (gewoon )?aandeel|\(in (€|eur|euros?)\)|je (stamm)?aktie|pro aktie', re.I)
+AANDELEN = re.compile(r'(number|average|nombre|aantal|weighted|gewogen|anzahl|durchschnitt|gewichtet).{0,80}(shares|actions|aandelen|aktien)|(shares|actions|aandelen|aktien).{0,40}(dilut|dilu|verwater|verwässert)', re.I)
 WINST = re.compile(r'^\s*earnings\s{2,}|^\s*profit for the (year|period)\b|attributable|part du groupe|group share|toe te rekenen|toekomend|net (income|profit|result)|résultat net|'
-                   r'profit (for the (year|period) )?attributable|earnings attributable|nettoresultaat|nettowinst', re.I)
+                   r'profit (for the (year|period) )?attributable|earnings attributable|nettoresultaat|nettowinst|anteilseigner|aktionäre|konzernergebnis|jahresüberschuss', re.I)
 
 
 AANGEPAST = re.compile(r'before|excluding|adjusted|underlying|continuing|discontinued|recurring|core|normali|pro forma|'
-                       r'voor amortisatie|exclusief|voortgezet|hors |courant|ajust|avant |activités poursuivies|cash', re.I)
+                       r'voor amortisatie|exclusief|voortgezet|hors |courant|ajust|avant |activités poursuivies|cash|bereinigt|fortgeführt|aufgegeben|vor sondereinfl', re.I)
 
 
 def kolommen(regels, i):
