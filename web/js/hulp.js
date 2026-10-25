@@ -4,8 +4,8 @@
   var T = {
     start: ['Start', 'Hier ziet u in één oogopslag hoe het ervoor staat en welke aandelen nu kansrijk zijn.', [
       'De grote kaart bovenaan telt hoeveel aandelen volledig bevestigde gegevens hebben. Dat is iets anders dan een goed of slecht aandeel.',
-      'Bij Kansrijk kiest u wiens oordeel telt: de app (zes metingen), NAIC (Stock Selection Guide) of Beide. Naast elk aandeel staan beide oordelen.',
-      'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze het oordeel Kopen, Neutraal of Vermijden.',
+      'Het oordeel volgt de NAIC Stock Selection Guide: groeibedrijf, goed bedrijf (deel 1 en 2), prijs in de koopzone met minstens 3 : 1 (deel 3 en 4) en minstens 15% verwacht rendement per jaar (deel 5). Bij Kansrijk staat NAIC standaard; App (zes metingen, aanvullend) en Beide kunt u kiezen.',
+      'Elk aandeel krijgt zes stippen, één per meting: Kasstroom, Schuld, Groei, K/W, Trend en Rust. ✓ is gunstig, = neutraal, ✗ ongunstig; een lege ring betekent dat het gegeven ontbreekt. Samen geven ze een aanvullend oordeel; dat telt niet mee in het NAIC-oordeel.',
       'Alle fondsen, per index en op kansrijkheid gesorteerd, staan onder Fondsen in het menu.',
       'Uw eigen onderzoek (tabblad Verdiepen) staat bij het aandeel, maar telt niet mee in het oordeel.'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
     overzicht: ['Overzicht', 'De complete lijst van aandelen.', [
@@ -13,9 +13,9 @@
       'De chip bij elk aandeel toont hoe zeker de gegevens zijn: Bevestigd, Uit jaarverslag of Niet bevestigd.'], null],
     zoek: ['Fondsen', 'Alle aandelen, per index gegroepeerd.', [
       'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
-      'Kansrijkheid: eerst Kopen, dan Neutraal, dan Vermijden, dan geen oordeel. Binnen elke groep staat het hoogste gemiddelde bovenaan.',
+      'Standaard staat NAIC Kopen bovenaan, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts. Sorteer op “Zes metingen” voor het aanvullende oordeel.',
       'U kunt ook sorteren op plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
-      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Naast het oordeel van de app staat het NAIC-oordeel. Sorteer op “NAIC-oordeel” om de NAIC-kandidaten bovenaan te zien.'], 'Kopen betekent: de zes metingen zijn samen duidelijk gunstig. Het is een selectiehulp, geen persoonlijk advies.'],
+      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Per fonds staat eerst het NAIC-oordeel, daarna het aanvullende oordeel van de zes metingen (App).'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
       'Bij het volgen legt de app het oordeel, de zes metingen en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed en hoe het oordeel toen en nu is.',
@@ -40,7 +40,7 @@
       'Bij elke pagina staat bovenaan het vraagteken: dat geeft uitleg over precies dat scherm.',
       'Via de rondleiding ziet u de basis nog eens.'], null],
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
-      'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata. Daarna het oordeel met de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt.',
+      'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata. Daarna het NAIC-oordeel en, aanvullend, de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt.',
       'Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Tik op een meting voor uitleg.',
       'Daaronder de NAIC-kaart: het oordeel volgens de Stock Selection Guide, met groei, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar en de koerszones.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',

@@ -64,3 +64,17 @@ test('trendgroei: één ingezakt jaar weegt weinig', function () {
   const t = N.trendGroei(v, 'comparable_eps');
   assert.ok(t > 0 && t < 40, String(t));
 });
+
+test('SSG deel 5: koopzone met 3 : 1 maar totaalrendement onder 15% is hoogstens Neutraal; dividend telt mee', function () {
+  const eps = [2, 2.12, 2.25, 2.38, 2.52, 2.68];
+  const jr = eps.map((e, i) => ({ year: 2020 + i, comparable_eps: e, koers_hoog: e * 13, koers_laag: e * 11 }));
+  const z = N.ssg(jr, 30).zones, p = z.laag + (z.hoog - z.laag) / 4.2;
+  const n = N.ssg(jr, p);
+  assert.strictEqual(n.zones.zone, 'koop'); assert.ok(n.zones.verhouding >= 3);
+  assert.strictEqual(n.totaal.ok, false); assert.strictEqual(n.totaal.dividend, null);
+  assert.strictEqual(n.oordeel, 'neutraal'); assert.match(n.reden, /totaalrendement/);
+  const metDiv = jr.map((j) => Object.assign({ dividend_ps: j.comparable_eps * 0.7 }, j));    // ongeveer 5,8% dividendrendement
+  const d = N.ssg(metDiv, p);
+  assert.ok(d.totaal.dividend > 5); assert.ok(d.totaal.totaal >= N.TOTAAL_MIN);
+  assert.strictEqual(d.oordeel, 'kopen');
+});

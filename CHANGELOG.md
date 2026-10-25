@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.10.25-beta.71
+- **Het oordeel volgt nu de NAIC-regels.** Bovenaan elk aandeel staat het NAIC-oordeel (Stock Selection Guide); de zes metingen van de app (kasstroom, schuld, groei, K/W, trend, rust) staan eronder als *aanvullend* en tellen niet mee. Ook Kansrijk (standaard NAIC), de fondsenlijst (standaard gesorteerd op NAIC) en de volglijst zetten NAIC voorop.
+- **NAIC deel 5 toegevoegd: totaalrendement.** Koersstijging tot de verwachte hoge koers plus het gemiddelde dividendrendement (5 jaar) moet minstens 15% per jaar zijn (geld verdubbelen in 5 jaar). Haalt een aandeel in de koopzone dat niet, dan is het hoogstens Neutraal. Een onbekend dividend telt als 0% (voorzichtig).
+- Tabblad Bronnen: bij winst per aandeel uit pdf-jaarverslagen staan de gebruikte verslagen (boekjaar, pagina, link). Wordt zichtbaar zodra die cijfers er zijn.
+
 ## 2026.10.25-beta.70
 - **Brug over een ontbrekend jaarverslag.** Bij 35 Europese bedrijven ontbreekt één ESEF-jaarverslag in de reeks (ook bij de bron, filings.xbrl.org). Het jaar erna staat wel als vergelijkend cijfer in het volgende verslag, maar er was geen gedeeld jaar om te controleren of beide op hetzelfde aantal aandelen rekenen. Nu wordt dat gecontroleerd met het aantal aandelen uit beide verslagen: ongeveer gelijk → de reeks loopt door; een zuivere splitsingsfactor → omgerekend; anders stopt de reeks zoals voorheen. Minstens één kant moet een gerapporteerd aantal aandelen hebben (bij Air France, met een samenvoeging van aandelen in 2023, blijft de reeks daarom gesplitst).
 - Gevolg: langere reeksen voor o.a. Saint-Gobain, Hermès, Bureau Veritas, DiaSorin, Eurofins en ICG; nieuw met een bruikbare reeks: Amplifon, Prysmian, Acciona en Logista.
