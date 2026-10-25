@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.25-beta.85';
+  var APP_VERSIE = '2026.10.25-beta.86';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -128,7 +128,8 @@
     var kp = b.naic && b.naic.koopprijs;
     if (!kp || !kp.prijs || kp.afstand == null) return '';
     var a = kp.afstand;
-    return '<span class="koop-kort" data-koop="' + (a <= 0 ? 'onder' : 'boven') + '">' + (a <= 0 ? 'Onder koopprijs' : pct(a) + ' boven koopprijs') + '</span>';
+    var nu = b.naic.zones && b.naic.zones.koers != null ? getal(b.naic.zones.koers, 2) : null;
+    return '<span class="koop-kort" data-koop="' + (a <= 0 ? 'onder' : 'boven') + '" title="Koopprijs ' + getal(kp.prijs, 2) + '">' + (nu ? 'Koers ' + nu + ' · ' : '') + (a <= 0 ? 'onder koopprijs ' + getal(kp.prijs, 2) : pct(a) + ' boven koopprijs ' + getal(kp.prijs, 2)) + '</span>';
   }
   function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
   /* De vijf NAIC-stappen als rij vinkjes, de koopprijs en hoe stevig het oordeel is. */
@@ -160,7 +161,7 @@
     if (!kp.prijs) return '<p class="koopprijs" data-koopprijs="geen"><b>Koopprijs:</b> geen. ' + h(kp.reden || '') + '</p>';
     var waarom = { zone: 'de bovengrens van de koopzone', verhouding: 'precies 3 : 1 opwaarts tegen neerwaarts', rendement: 'precies ' + Naic.TOTAAL_MIN + '% verwacht rendement per jaar' }[kp.bindend];
     return '<p class="koopprijs" data-koopprijs="' + kp.prijs + '"><b>Kopen onder ' + getal(kp.prijs, 2) + ' ' + h(valuta) + '</b>' +
-      (kp.afstand != null ? ' · koers nu ' + (kp.afstand <= 0 ? '<b>' + pct(-kp.afstand).replace('+', '') + ' eronder</b>' : '<b>' + pct(kp.afstand).replace('+', '') + ' erboven</b>') : '') +
+      (kp.afstand != null ? '<br>Koers nu <b>' + getal(n.zones && n.zones.koers != null ? n.zones.koers : kp.prijs * (1 + kp.afstand / 100), 2) + ' ' + h(valuta) + '</b>: ' + (kp.afstand <= 0 ? '<b>' + pct(-kp.afstand).replace('+', '') + ' onder de koopprijs</b>' : '<b>' + pct(kp.afstand).replace('+', '') + ' boven de koopprijs</b>') : '') +
       '<span class="detail"><br><span class="zacht">Bij deze koers kloppen alle NAIC-prijsregels; de grens komt uit ' + waarom + '. Verandert de winst of de koersgeschiedenis, dan verandert de koopprijs mee.</span></span></p>';
   }
   function gevoeligHtml(n) {

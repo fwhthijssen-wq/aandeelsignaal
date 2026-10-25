@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.25-beta.86
+- Bij de koopprijs staat nu ook de koers van nu (bijv. “Kopen onder 156,89 USD · Koers nu 100,00 USD: 36,3% onder de koopprijs”). In de lijsten: “Koers 100,00 · 8% boven koopprijs 92,50”.
+
 ## 2026.10.25-beta.85
 - **Eenvoudige en uitgebreide weergave.** In Instellingen kiest u Eenvoudig (per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg; in de lijsten zonder de zes stippen) of Uitgebreid (alles, zoals tot nu). Per toestel bewaard. Ook mee te geven in de link: <code>?weergave=eenvoudig</code>, handig om de app met iemand anders te delen. Bij een aandeel kunt u met “Alle details tonen” terug naar uitgebreid.
 - **Hoe vers zijn de cijfers?** Onder het oordeel staat tot welk boekjaar de cijfers lopen (en hoe zeker ze zijn) en van welke dag de koers is, met een waarschuwing als het jaarverslag over het laatste boekjaar nog ontbreekt of de koers verouderd is.

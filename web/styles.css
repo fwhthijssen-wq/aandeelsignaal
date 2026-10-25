@@ -286,7 +286,7 @@ table.naic-tabel td { vertical-align: top; }
 .koopprijs { margin: 6px 0; }
 .gevoelig { font-size: .9rem; margin: 4px 0 8px; }
 .gevoelig[data-gevoelig="rand"] { color: var(--wait-ink); }
-.koop-kort { font-size: .78rem; padding: 2px 8px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); color: var(--mut); white-space: nowrap; }
+.koop-kort { font-size: .78rem; padding: 2px 8px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); color: var(--mut); white-space: normal; }
 .koop-kort[data-koop="onder"] { background: var(--ok-bg); color: var(--ok-ink); box-shadow: none; }
 
 /* Eenvoudige weergave: details verborgen */
