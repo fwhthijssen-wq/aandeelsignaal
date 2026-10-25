@@ -1,0 +1,1241 @@
+{
+ "VOD.L": {
+  "lei": "213800TB53ELEUKM7Q61",
+  "rapporten": {
+   "213800TB53ELEUKM7Q61-2026-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic (loss)/earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "(1.65)",
+       "(15.94)",
+       "4.21"
+      ],
+      "kop": [
+       2026,
+       2025,
+       2024
+      ],
+      "centen": true,
+      "munt": false
+     },
+     {
+      "label": "Diluted (loss)/earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "(1.65)",
+       "(15.94)",
+       "4.20"
+      ],
+      "kop": [
+       2026,
+       2025,
+       2024
+      ],
+      "centen": true,
+      "munt": false
+     }
+    ],
+    "period_end": "2026-03-31",
+    "published": "2026-06-25",
+    "url": "https://filings.xbrl.org/213800TB53ELEUKM7Q61/2026-03-31/ESEF/GB/0/213800TB53ELEUKM7Q61-2026-03-31/reports/ixbrlviewer.html"
+   },
+   "213800TB53ELEUKM7Q61-2025-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic (loss)/earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "(15.94)",
+       "4.21",
+       "42.77"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": false
+     },
+     {
+      "label": "Diluted (loss)/earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "(15.94)",
+       "4.20",
+       "42.62"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": false
+     }
+    ],
+    "period_end": "2025-03-31",
+    "published": "2025-08-21",
+    "url": "https://filings.xbrl.org/213800TB53ELEUKM7Q61/2025-03-31/ESEF/GB/0/213800TB53ELEUKM7Q61-2025-03-31/reports/ixbrlviewer.html"
+   },
+   "213800TB53ELEUKM7Q61-2024-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "4.21",
+       "42.77",
+       "7.71"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ],
+      "centen": true,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "4.20",
+       "42.62",
+       "7.68"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ],
+      "centen": true,
+      "munt": false
+     }
+    ],
+    "period_end": "2024-03-31",
+    "published": "2024-07-16",
+    "url": "https://filings.xbrl.org/213800TB53ELEUKM7Q61/2024-03-31/ESEF/GB/0/213800TB53ELEUKM7Q61-2024-03-31/reports/ixbrlviewer.html"
+   },
+   "213800TB53ELEUKM7Q61-2023-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-03-31",
+    "published": "2023-07-04",
+    "url": "https://filings.xbrl.org/213800TB53ELEUKM7Q61/2023-03-31/ESEF/GB/0/213800TB53ELEUKM7Q61-2023-03-31/reports/ixbrlviewer.html"
+   },
+   "213800TB53ELEUKM7Q61-2022-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-03-31",
+    "published": "2022-07-27",
+    "url": "https://filings.xbrl.org/213800TB53ELEUKM7Q61/2022-03-31/ESEF/GB/0/213800TB53ELEUKM7Q61-2022-03-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "ABF.L": {
+  "lei": "GBQKSY6W7G0OHCQ8OQ72",
+  "rapporten": {
+   "GBQKSY6W7G0OHCQ8OQ72-2025-09-13-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share (in pence)",
+      "verwaterd": false,
+      "waarden": [
+       "141.6",
+       "193.7",
+       "(26.9)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Basic and diluted earnings per ordinary share (pence)",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "141.6",
+       "193.7"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Earnings per ordinary share",
+      "verwaterd": false,
+      "waarden": [
+       "141.6",
+       "193.7"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": true,
+      "munt": false
+     },
+     {
+      "label": "Basic and diluted earnings per ordinary share (pence)",
+      "verwaterd": true,
+      "waarden": [
+       "60.5",
+       "88.6",
+       "134.2",
+       "193.7",
+       "141.6"
+      ],
+      "kop": [
+       2021,
+       2022,
+       2023,
+       2024,
+       2025
+      ],
+      "centen": true,
+      "munt": true
+     }
+    ],
+    "period_end": "2025-09-13",
+    "published": "2025-11-18",
+    "url": "https://filings.xbrl.org/GBQKSY6W7G0OHCQ8OQ72/2025-09-13/ESEF/GB/0/GBQKSY6W7G0OHCQ8OQ72-2025-09-13/reports/ixbrlviewer.html"
+   },
+   "GBQKSY6W7G0OHCQ8OQ72-2024-09-14-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic and diluted earnings per ordinary share (pence)",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "193.7",
+       "134.2"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Earnings per ordinary share",
+      "verwaterd": false,
+      "waarden": [
+       "193.7",
+       "134.2"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": false
+     }
+    ],
+    "period_end": "2024-09-14",
+    "published": "2024-11-05",
+    "url": "https://filings.xbrl.org/GBQKSY6W7G0OHCQ8OQ72/2024-09-14/ESEF/GB/0/GBQKSY6W7G0OHCQ8OQ72-2024-09-14/reports/ixbrlviewer.html"
+   },
+   "GBQKSY6W7G0OHCQ8OQ72-2023-09-16-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic and diluted earnings per ordinary share (pence)",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "134.2",
+       "88.6"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": true,
+      "munt": true
+     }
+    ],
+    "period_end": "2023-09-16",
+    "published": "2023-11-15",
+    "url": "https://filings.xbrl.org/GBQKSY6W7G0OHCQ8OQ72/2023-09-16/ESEF/GB/0/GBQKSY6W7G0OHCQ8OQ72-2023-09-16/reports/ixbrlviewer.html"
+   },
+   "GBQKSY6W7G0OHCQ8OQ72-2022-09-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-09-30",
+    "published": "2022-11-17",
+    "url": "https://filings.xbrl.org/GBQKSY6W7G0OHCQ8OQ72/2022-09-30/ESEF/GB/0/GBQKSY6W7G0OHCQ8OQ72-2022-09-17/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "CPG.L": {
+  "lei": "2138008M6MH9OZ6U2T68",
+  "rapporten": {
+   "2138008M6MH9OZ6U2T68-2025-09-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "7",
+       "110.1",
+       "82.3"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "109.9",
+       "82.2"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "7",
+       "110.1",
+       "17.4",
+       "0.5",
+       "3.0",
+       "0.9",
+       "131.9"
+      ],
+      "kop": null,
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "7",
+       "82.3",
+       "11.8",
+       "0.4",
+       "22.0",
+       "3.0",
+       "119.5"
+      ],
+      "kop": null,
+      "centen": true,
+      "munt": true
+     }
+    ],
+    "period_end": "2025-09-30",
+    "published": "2026-01-08",
+    "url": "https://filings.xbrl.org/2138008M6MH9OZ6U2T68/2025-09-30/ESEF/GB/0/2138008M6MH9OZ6U2T68-2025-09-30/reports/ixbrlviewer.html"
+   },
+   "2138008M6MH9OZ6U2T68-2024-09-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "7",
+       "82.3",
+       "92.2"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "82.2",
+       "92.1"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "82.3",
+       "11.8",
+       "0.4",
+       "22.0",
+       "3.0",
+       "119.5"
+      ],
+      "kop": null,
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "92.2",
+       "7.0",
+       "0.4",
+       "4.2",
+       "1.4",
+       "105.2"
+      ],
+      "kop": null,
+      "centen": true,
+      "munt": true
+     }
+    ],
+    "period_end": "2024-09-30",
+    "published": "2024-12-18",
+    "url": "https://filings.xbrl.org/2138008M6MH9OZ6U2T68/2024-09-30/ESEF/GB/0/2138008M6MH9OZ6U2T68-2024-09-30/reports/ixbrlviewer.html"
+   },
+   "2138008M6MH9OZ6U2T68-2023-09-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basicearnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "7",
+       "75.4",
+       "62.6"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "7",
+       "75.3",
+       "62.6"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": true
+     }
+    ],
+    "period_end": "2023-09-30",
+    "published": "2024-01-09",
+    "url": "https://filings.xbrl.org/2138008M6MH9OZ6U2T68/2023-09-30/ESEF/GB/0/2138008M6MH9OZ6U2T68-2023-09-30/reports/ixbrlviewer.html"
+   },
+   "2138008M6MH9OZ6U2T68-2022-09-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-09-30",
+    "published": "2023-01-05",
+    "url": "https://filings.xbrl.org/2138008M6MH9OZ6U2T68/2022-09-30/ESEF/GB/0/2138008M6MH9OZ6U2T68-2022-09-30/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "LMP.L": {
+  "lei": "213800OCERWWPQDURL87",
+  "rapporten": {
+   "213800OCERWWPQDURL87-2026-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2026-03-31",
+    "published": "2026-06-11",
+    "url": "https://filings.xbrl.org/213800OCERWWPQDURL87/2026-03-31/ESEF/GB/0/213800OCERWWPQDURL87-2026-03-31/reports/ixbrlviewer.html"
+   },
+   "213800OCERWWPQDURL87-2025-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2025-03-31",
+    "published": "2025-06-10",
+    "url": "https://filings.xbrl.org/213800OCERWWPQDURL87/2025-03-31/ESEF/GB/0/213800OCERWWPQDURL87-2025-03-31/reports/ixbrlviewer.html"
+   },
+   "213800OCERWWPQDURL87-2023-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-03-31",
+    "published": "2023-06-13",
+    "url": "https://filings.xbrl.org/213800OCERWWPQDURL87/2023-03-31/ESEF/GB/0/213800OCERWWPQDURL87-2023-03-31/reports/ixbrlviewer.html"
+   },
+   "213800OCERWWPQDURL87-2022-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-03-31",
+    "published": "2022-06-14",
+    "url": "https://filings.xbrl.org/213800OCERWWPQDURL87/2022-03-31/ESEF/GB/0/213800OCERWWPQDURL87-2022-03-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "MTLN.L": {
+  "lei": "213800ZSR3HVKMMPVG86",
+  "rapporten": {
+   "213800ZSR3HVKMMPVG86-2025-12-31-ESEF-GR-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share (€)",
+      "verwaterd": false,
+      "waarden": [
+       "29",
+       "2",
+       " 198",
+       "7",
+       "4.455",
+       "5"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share (€)",
+      "verwaterd": true,
+      "waarden": [
+       "29",
+       "2",
+       " 198",
+       "0",
+       "4.331",
+       "2"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Basic earnings per share (€)",
+      "verwaterd": false,
+      "waarden": [
+       "2.198",
+       "7",
+       "4.455",
+       "5"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share (€)",
+      "verwaterd": true,
+      "waarden": [
+       "2.198",
+       "0",
+       "4.331",
+       "2"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": true
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-09",
+    "url": "https://filings.xbrl.org/213800ZSR3HVKMMPVG86/2025-12-31/ESEF/GR/0/213800ZSR3HVKMMPVG86-2025-12-31-1-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "GAW.L": {
+  "lei": "213800RP9QJQYGWHNT41",
+  "rapporten": {
+   "213800RP9QJQYGWHNT41-2025-06-01-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per ordinary share",
+      "verwaterd": false,
+      "waarden": [
+       "11",
+       "594.9",
+       "458.8"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per ordinary share",
+      "verwaterd": true,
+      "waarden": [
+       "11",
+       "593.5",
+       "458.2"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2025-06-01",
+    "published": "2025-09-24",
+    "url": "https://filings.xbrl.org/213800RP9QJQYGWHNT41/2025-06-01/ESEF/GB/0/213800RP9QJQYGWHNT41-2025-06-01/reports/ixbrlviewer.html"
+   },
+   "213800RP9QJQYGWHNT41-2024-06-02-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per ordinary share",
+      "verwaterd": false,
+      "waarden": [
+       "11",
+       "458.8",
+       "409.7"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per ordinary share",
+      "verwaterd": true,
+      "waarden": [
+       "11",
+       "458.2",
+       "409.4"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2024-06-02",
+    "published": "2024-10-03",
+    "url": "https://filings.xbrl.org/213800RP9QJQYGWHNT41/2024-06-02/ESEF/GB/0/213800RP9QJQYGWHNT41-2024-06-02/reports/ixbrlviewer.html"
+   },
+   "213800RP9QJQYGWHNT41-2023-05-28-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-05-28",
+    "published": "2023-10-04",
+    "url": "https://filings.xbrl.org/213800RP9QJQYGWHNT41/2023-05-28/ESEF/GB/0/213800RP9QJQYGWHNT41-2023-05-28/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "HWDN.L": {
+  "lei": "213800KC1LJOJTY3JP45",
+  "rapporten": {
+   "213800KC1LJOJTY3JP45-2025-12-27-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "267.7",
+       "544.2",
+       "49.2",
+       "249.3",
+       "546.7",
+       "45.6"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "267.7",
+       "546.8",
+       "49.0",
+       "249.3",
+       "548.8",
+       "45.4"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2025-12-27",
+    "published": "2026-03-18",
+    "url": "https://filings.xbrl.org/213800KC1LJOJTY3JP45/2025-12-27/ESEF/GB/0/213800KC1LJOJTY3JP45-2025-12-27/reports/ixbrlviewer.html"
+   },
+   "213800KC1LJOJTY3JP45-2024-12-28-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "249.3",
+       "546.7",
+       "45.6",
+       "254.6",
+       "548.1",
+       "46.5"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "249.3",
+       "548.8",
+       "45.4",
+       "254.6",
+       "550.2",
+       "46.3"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2024-12-28",
+    "published": "2025-04-17",
+    "url": "https://filings.xbrl.org/213800KC1LJOJTY3JP45/2024-12-28/ESEF/GB/0/213800KC1LJOJTY3JP45-2024-12-28/reports/ixbrlviewer.html"
+   },
+   "213800KC1LJOJTY3JP45-2023-12-30-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "254.6",
+       "548.1",
+       "46.5",
+       "374.2",
+       "568.6",
+       "65.8"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "254.6",
+       "550.2",
+       "46.3",
+       "374.2",
+       "570.7",
+       "65.6"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2023-12-30",
+    "published": "2024-03-21",
+    "url": "https://filings.xbrl.org/213800KC1LJOJTY3JP45/2023-12-30/ESEF/GB/0/213800KC1LJOJTY3JP45-2023-12-30/reports/ixbrlviewer.html"
+   },
+   "213800KC1LJOJTY3JP45-2022-12-24-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-24",
+    "published": "2023-03-30",
+    "url": "https://filings.xbrl.org/213800KC1LJOJTY3JP45/2022-12-24/ESEF/GB/0/213800KC1LJOJTY3JP45-2022-12-24/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "INVP.L": {
+  "lei": "2138007Z3U5GWDN3MY22",
+  "rapporten": {
+   "2138007Z3U5GWDN3MY22-2026-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2026-03-31",
+    "published": "2026-07-07",
+    "url": "https://filings.xbrl.org/2138007Z3U5GWDN3MY22/2026-03-31/ESEF/GB/0/2138007Z3U5GWDN3MY22-2026-03-31/reports/ixbrlviewer.html"
+   },
+   "2138007Z3U5GWDN3MY22-2024-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-03-31",
+    "published": "2024-07-04",
+    "url": "https://filings.xbrl.org/2138007Z3U5GWDN3MY22/2024-03-31/ESEF/GB/0/2138007Z3U5GWDN3MY22-2024-03-31/reports/ixbrlviewer.html"
+   },
+   "2138007Z3U5GWDN3MY22-2023-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-03-31",
+    "published": "2023-07-04",
+    "url": "https://filings.xbrl.org/2138007Z3U5GWDN3MY22/2023-03-31/ESEF/GB/0/2138007Z3U5GWDN3MY22-2023-03-31/reports/ixbrlviewer.html"
+   },
+   "2138007Z3U5GWDN3MY22-2022-03-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-03-31",
+    "published": "2022-07-19",
+    "url": "https://filings.xbrl.org/2138007Z3U5GWDN3MY22/2022-03-31/ESEF/GB/0/2138007Z3U5GWDN3MY22-2022-03-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "ITH.L": {
+  "lei": "21380057TNFLXPXBIP34",
+  "rapporten": {
+   "21380057TNFLXPXBIP34-2025-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-15",
+    "url": "https://filings.xbrl.org/21380057TNFLXPXBIP34/2025-12-31/ESEF/GB/0/21380057TNFLXPXBIP34-2025-12-31/reports/ixbrlviewer.html"
+   },
+   "21380057TNFLXPXBIP34-2024-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/21380057TNFLXPXBIP34/2024-12-31/ESEF/GB/0/21380057TNFLXPXBIP34-2024-12-31/reports/ixbrlviewer.html"
+   },
+   "21380057TNFLXPXBIP34-2023-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-05-01",
+    "url": "https://filings.xbrl.org/21380057TNFLXPXBIP34/2023-12-31/ESEF/GB/0/21380057TNFLXPXBIP34-2023-12-31/reports/ixbrlviewer.html"
+   },
+   "21380057TNFLXPXBIP34-2022-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-02",
+    "url": "https://filings.xbrl.org/21380057TNFLXPXBIP34/2022-12-31/ESEF/GB/0/21380057TNFLXPXBIP34-2022-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "MRO.L": {
+  "lei": "213800RGNXXZY2M7TR85",
+  "rapporten": {
+   "213800RGNXXZY2M7TR85-2025-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Earnings for basis of earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "370",
+       "(49)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "29.1",
+       "(3.7)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "29.0",
+       "(3.7)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-24",
+    "url": "https://filings.xbrl.org/213800RGNXXZY2M7TR85/2025-12-31/ESEF/GB/0/213800RGNXXZY2M7TR85-2025-12-31/reports/ixbrlviewer.html"
+   },
+   "213800RGNXXZY2M7TR85-2025-03-06-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Earnings for basis of earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "(49)",
+       "(1,019)"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     },
+     {
+      "label": "A djusted diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "26.4",
+       "18.7"
+      ],
+      "kop": [
+       2024,
+       2023
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2025-03-06",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/213800RGNXXZY2M7TR85/2025-03-06/ESEF/GB/0/213800RGNXXZY2M7TR85-2024-12-31/reports/ixbrlviewer.html"
+   },
+   "213800RGNXXZY2M7TR85-2023-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Earnings for basis of earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "(1,019)",
+       "(308)"
+      ],
+      "kop": [
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": false
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-04",
+    "url": "https://filings.xbrl.org/213800RGNXXZY2M7TR85/2023-12-31/ESEF/GB/0/213800RGNXXZY2M7TR85-2023-12-31/reports/ixbrlviewer.html"
+   },
+   "213800RGNXXZY2M7TR85-2022-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-02",
+    "url": "https://filings.xbrl.org/213800RGNXXZY2M7TR85/2022-12-31/ESEF/GB/0/213800RGNXXZY2M7TR85-2022-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "RTO.L": {
+  "lei": "549300VN4WV7Z6T14K68",
+  "rapporten": {
+   "549300VN4WV7Z6T14K68-2025-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "11.49",
+       "13.72",
+       "17.37"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share (cents)",
+      "verwaterd": true,
+      "waarden": [
+       "11.44",
+       "13.69",
+       "17.29"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Basic earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "7.13",
+       "1.82",
+       "1.47"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share (cents)",
+      "verwaterd": true,
+      "waarden": [
+       "7.10",
+       "1.82",
+       "1.46"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Basic earnings per share (cents)",
+      "verwaterd": false,
+      "waarden": [
+       "18.62",
+       "15.54",
+       "18.84"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share (cents)",
+      "verwaterd": true,
+      "waarden": [
+       "18.54",
+       "15.51",
+       "18.75"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ],
+      "centen": true,
+      "munt": true
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/549300VN4WV7Z6T14K68/2025-12-31/ESEF/GB/0/549300VN4WV7Z6T14K68-2025-12-31/reports/ixbrlviewer.html"
+   },
+   "549300VN4WV7Z6T14K68-2024-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "12.17",
+       "15.14",
+       "11.57"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "12.14",
+       "15.07",
+       "11.51"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ],
+      "centen": false,
+      "munt": true
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/549300VN4WV7Z6T14K68/2024-12-31/ESEF/GB/0/549300VN4WV7Z6T14K68-2024-12-31/reports/ixbrlviewer.html"
+   },
+   "549300VN4WV7Z6T14K68-2023-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "15.14",
+       "11.57",
+       "14.16"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ],
+      "centen": false,
+      "munt": true
+     },
+     {
+      "label": "Diluted earnings per share",
+      "verwaterd": true,
+      "waarden": [
+       "15.07",
+       "11.51",
+       "14.10"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ],
+      "centen": false,
+      "munt": true
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-02",
+    "url": "https://filings.xbrl.org/549300VN4WV7Z6T14K68/2023-12-31/ESEF/GB/0/549300VN4WV7Z6T14K68-2023-12-31/reports/ixbrlviewer.html"
+   },
+   "549300VN4WV7Z6T14K68-2022-12-31-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-04-04",
+    "url": "https://filings.xbrl.org/549300VN4WV7Z6T14K68/2022-12-31/ESEF/GB/0/549300VN4WV7Z6T14K68-2022-12-31/reports/ixbrlviewer.html"
+   },
+   "549300VN4WV7Z6T14K68-2021-12-31-ESEF-GB-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-03-30",
+    "url": "https://filings.xbrl.org/549300VN4WV7Z6T14K68/2021-12-31/ESEF/GB/0/549300VN4WV7Z6T14K68-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "WTB.L": {
+  "lei": "21380099VMZKRMN3EX36",
+  "rapporten": {
+   "21380099VMZKRMN3EX36-2026-02-26-ESEF-GB-1": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2026-02-26",
+    "published": "2026-05-27",
+    "url": "https://filings.xbrl.org/21380099VMZKRMN3EX36/2026-02-26/ESEF/GB/1/21380099VMZKRMN3EX36-2026-02-26/reports/ixbrlviewer.html"
+   },
+   "21380099VMZKRMN3EX36-2025-02-27-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2025-02-27",
+    "published": "2025-05-20",
+    "url": "https://filings.xbrl.org/21380099VMZKRMN3EX36/2025-02-27/ESEF/GB/0/21380099VMZKRMN3EX36-2025-02-27/reports/ixbrlviewer.html"
+   },
+   "21380099VMZKRMN3EX36-2023-03-02-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-03-02",
+    "published": "2023-05-23",
+    "url": "https://filings.xbrl.org/21380099VMZKRMN3EX36/2023-03-02/ESEF/GB/0/21380099VMZKRMN3EX36-2023-03-02/reports/ixbrlviewer.html"
+   },
+   "21380099VMZKRMN3EX36-2022-03-03-ESEF-GB-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-03-03",
+    "published": "2022-05-17",
+    "url": "https://filings.xbrl.org/21380099VMZKRMN3EX36/2022-03-03/ESEF/GB/0/21380099VMZKRMN3EX36-2022-03-03/reports/ixbrlviewer.html"
+   }
+  }
+ }
+}
