@@ -1,6 +1,10 @@
 {
- "_uitleg": "Duitse jaarverslagen (pdf) per fonds. 'urls': directe adressen van de eigen beleggerssite per boekjaar. Ontbreekt een jaar, dan probeert hulp/de_jaarverslagen.py het vaste patroon van EQS (verspreider van verplichte publicaties): {host}/{slug}/Annual Reports/{ISIN}-JA-{jaar}-EQ-{E|D}-00.pdf.",
- "BAS.DE": {"naam": "BASF SE", "isin": "DE000BASF111", "slug": "basf", "urls": {
+ "_uitleg": "Duitse jaarverslagen (pdf) per fonds. 'urls': directe adressen van de eigen beleggerssite per boekjaar. Ontbreekt een jaar, dan probeert hulp/de_jaarverslagen.py het vaste patroon van EQS (verspreider van verplichte publicaties): {host}/{slug}/Annual Reports/{ISIN}-JA-{jaar}-EQ-{E|D}-00.pdf. 'slugs': mogelijke mapnamen bij EQS; de eerste die een verslag oplevert wordt gebruikt.",
+ "BAS.DE": {
+  "naam": "BASF SE",
+  "isin": "DE000BASF111",
+  "slug": "basf",
+  "urls": {
    "2017": "https://www.basf.com/dam/jcr:ad007a03-e35a-3f19-99f6-23eff9e47eb3/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2018/BASF_Report_2017.pdf",
    "2018": "https://www.basf.com/dam/jcr:61915124-ecce-31e1-8c36-fbf00a1313c9/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2019/BASF_Report_2018.pdf",
    "2019": "https://www.basf.com/dam/jcr:6cbd5d72-0754-3f90-8cbb-24a8023804a1/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2020/BASF_Report_2019.pdf",
@@ -9,8 +13,17 @@
    "2022": "https://www.basf.com/dam/jcr:85468ed4-23da-3dc8-aa15-20882386251c/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2023/BASF_Report_2022.pdf",
    "2023": "https://www.basf.com/dam/jcr:78992bb6-9a76-3392-8b51-6c069ad8ca94/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2024/BASF_Report_2023.pdf",
    "2024": "https://www.basf.com/dam/jcr:a0caf160-c019-40b1-a4ea-eaedb29b0685/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_Report_2024.pdf",
-   "2025": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf"}},
- "ALV.DE": {"naam": "Allianz SE", "isin": "DE0008404005", "slug": "allianz", "urls": {
+   "2025": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf"
+  },
+  "slugs": [
+   "basf"
+  ]
+ },
+ "ALV.DE": {
+  "naam": "Allianz SE",
+  "isin": "DE0008404005",
+  "slug": "allianz",
+  "urls": {
    "2017": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar2017/de-gruppe-2017-geschaeftsbericht-allianz-gruppe.pdf",
    "2018": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2018/de-GB-Gruppe-2018.pdf",
    "2019": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2019/de-GB-Gruppe-Geschaeftsbericht-Allianz-2019.pdf",
@@ -18,9 +31,341 @@
    "2021": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2021/de-Allianz-Gruppe-Geschaeftsbericht-2021.pdf",
    "2022": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2022/de-Allianz-Gruppe-Geschaeftsbericht-2022.pdf",
    "2023": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2023/de-Allianz-Gruppe-Geschaeftsbericht-2023.pdf",
-   "2024": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2024/de-allianz-gruppe-geschaeftsbericht-2024.pdf"}},
- "SIE.DE": {"naam": "Siemens AG", "isin": "DE0007236101", "slug": "siemens", "urls": {
+   "2024": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/results-reports/annual-report/ar-2024/de-allianz-gruppe-geschaeftsbericht-2024.pdf"
+  },
+  "slugs": [
+   "allianz"
+  ]
+ },
+ "SIE.DE": {
+  "naam": "Siemens AG",
+  "isin": "DE0007236101",
+  "slug": "siemens",
+  "urls": {
    "2021": "https://assets.new.siemens.com/siemens/assets/api/uuid:0ce51a51-cd5c-4ff0-b582-f41d167f0892/Annual-Financial-Report-FY2021.pdf",
    "2023": "https://assets.new.siemens.com/siemens/assets/api/uuid:bb51b804-05aa-4590-84e3-0cad12783255/Annual-Financial-Report-FY2023.pdf",
-   "2024": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf"}}
+   "2024": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf"
+  },
+  "slugs": [
+   "siemens"
+  ]
+ },
+ "ADS.DE": {
+  "naam": "adidas AG",
+  "isin": "DE000A1EWWW0",
+  "slug": "adidas",
+  "slugs": [
+   "adidas"
+  ],
+  "urls": {}
+ },
+ "BAYN.DE": {
+  "naam": "Bayer AG",
+  "isin": "DE000BAY0017",
+  "slug": "bayer",
+  "slugs": [
+   "bayer"
+  ],
+  "urls": {}
+ },
+ "BEI.DE": {
+  "naam": "Beiersdorf AG",
+  "isin": "DE0005200000",
+  "slug": "beiersdorf",
+  "slugs": [
+   "beiersdorf"
+  ],
+  "urls": {}
+ },
+ "BMW.DE": {
+  "naam": "BMW AG",
+  "isin": "DE0005190003",
+  "slug": "bmw",
+  "slugs": [
+   "bmw",
+   "bmwgroup"
+  ],
+  "urls": {}
+ },
+ "BNR.DE": {
+  "naam": "Brenntag SE",
+  "isin": "DE000A1DAHH0",
+  "slug": "brenntag",
+  "slugs": [
+   "brenntag"
+  ],
+  "urls": {}
+ },
+ "CBK.DE": {
+  "naam": "Commerzbank AG",
+  "isin": "DE000CBK1001",
+  "slug": "commerzbank",
+  "slugs": [
+   "commerzbank"
+  ],
+  "urls": {}
+ },
+ "CON.DE": {
+  "naam": "Continental AG",
+  "isin": "DE0005439004",
+  "slug": "continental",
+  "slugs": [
+   "continental"
+  ],
+  "urls": {}
+ },
+ "DTG.DE": {
+  "naam": "Daimler Truck Holding AG",
+  "isin": "DE000DTR0CK8",
+  "slug": "daimlertruck",
+  "slugs": [
+   "daimlertruck",
+   "daimler_truck"
+  ],
+  "urls": {}
+ },
+ "DB1.DE": {
+  "naam": "Deutsche Börse AG",
+  "isin": "DE0005810055",
+  "slug": "deutscheboerse",
+  "slugs": [
+   "deutscheboerse",
+   "deutsche_boerse"
+  ],
+  "urls": {}
+ },
+ "DHL.DE": {
+  "naam": "DHL Group",
+  "isin": "DE0005552004",
+  "slug": "dhl",
+  "slugs": [
+   "dhl",
+   "deutschepost",
+   "dpdhl"
+  ],
+  "urls": {}
+ },
+ "DTE.DE": {
+  "naam": "Deutsche Telekom AG",
+  "isin": "DE0005557508",
+  "slug": "telekom",
+  "slugs": [
+   "telekom",
+   "deutschetelekom"
+  ],
+  "urls": {}
+ },
+ "EOAN.DE": {
+  "naam": "E.ON SE",
+  "isin": "DE000ENAG999",
+  "slug": "eon",
+  "slugs": [
+   "eon"
+  ],
+  "urls": {}
+ },
+ "FRE.DE": {
+  "naam": "Fresenius SE & Co. KGaA",
+  "isin": "DE0005785604",
+  "slug": "fresenius",
+  "slugs": [
+   "fresenius"
+  ],
+  "urls": {}
+ },
+ "FME.DE": {
+  "naam": "Fresenius Medical Care AG",
+  "isin": "DE0005785802",
+  "slug": "fmc",
+  "slugs": [
+   "fmc",
+   "freseniusmedicalcare",
+   "fme"
+  ],
+  "urls": {}
+ },
+ "G1A.DE": {
+  "naam": "GEA Group AG",
+  "isin": "DE0006602006",
+  "slug": "gea",
+  "slugs": [
+   "gea"
+  ],
+  "urls": {}
+ },
+ "HNR1.DE": {
+  "naam": "Hannover Rück SE",
+  "isin": "DE0008402215",
+  "slug": "hannoverre",
+  "slugs": [
+   "hannoverre",
+   "hannover_rueck",
+   "hannover-re"
+  ],
+  "urls": {}
+ },
+ "HEI.DE": {
+  "naam": "Heidelberg Materials AG",
+  "isin": "DE0006047004",
+  "slug": "heidelbergmaterials",
+  "slugs": [
+   "heidelbergmaterials",
+   "heidelbergcement"
+  ],
+  "urls": {}
+ },
+ "HEN3.DE": {
+  "naam": "Henkel AG & Co. KGaA",
+  "isin": "DE0006048432",
+  "slug": "henkel",
+  "slugs": [
+   "henkel"
+  ],
+  "urls": {}
+ },
+ "IFX.DE": {
+  "naam": "Infineon Technologies AG",
+  "isin": "DE0006231004",
+  "slug": "infineon",
+  "slugs": [
+   "infineon"
+  ],
+  "urls": {}
+ },
+ "MBG.DE": {
+  "naam": "Mercedes-Benz Group AG",
+  "isin": "DE0007100000",
+  "slug": "mercedes-benz",
+  "slugs": [
+   "mercedes-benz",
+   "mercedesbenz",
+   "daimler"
+  ],
+  "urls": {}
+ },
+ "MRK.DE": {
+  "naam": "Merck KGaA",
+  "isin": "DE0006599905",
+  "slug": "merck",
+  "slugs": [
+   "merck",
+   "merckkgaa"
+  ],
+  "urls": {}
+ },
+ "MTX.DE": {
+  "naam": "MTU Aero Engines AG",
+  "isin": "DE000A0D9PT0",
+  "slug": "mtu",
+  "slugs": [
+   "mtu"
+  ],
+  "urls": {}
+ },
+ "MUV2.DE": {
+  "naam": "Münchener Rück AG",
+  "isin": "DE0008430026",
+  "slug": "munichre",
+  "slugs": [
+   "munichre",
+   "muenchenerrueck"
+  ],
+  "urls": {}
+ },
+ "PAH3.DE": {
+  "naam": "Porsche Automobil Holding SE",
+  "isin": "DE000PAH0038",
+  "slug": "porsche",
+  "slugs": [
+   "porsche",
+   "porschese",
+   "porsche-se"
+  ],
+  "urls": {}
+ },
+ "RHM.DE": {
+  "naam": "Rheinmetall AG",
+  "isin": "DE0007030033",
+  "slug": "rheinmetall",
+  "slugs": [
+   "rheinmetall"
+  ],
+  "urls": {}
+ },
+ "RWE.DE": {
+  "naam": "RWE AG",
+  "isin": "DE0007037129",
+  "slug": "rwe",
+  "slugs": [
+   "rwe"
+  ],
+  "urls": {}
+ },
+ "G24.DE": {
+  "naam": "Scout24 SE",
+  "isin": "DE000A12DM80",
+  "slug": "scout24",
+  "slugs": [
+   "scout24"
+  ],
+  "urls": {}
+ },
+ "ENR.DE": {
+  "naam": "Siemens Energy AG",
+  "isin": "DE000ENER6Y0",
+  "slug": "siemensenergy",
+  "slugs": [
+   "siemensenergy",
+   "siemens-energy"
+  ],
+  "urls": {}
+ },
+ "SY1.DE": {
+  "naam": "Symrise AG",
+  "isin": "DE000SYM9999",
+  "slug": "symrise",
+  "slugs": [
+   "symrise"
+  ],
+  "urls": {}
+ },
+ "VOW3.DE": {
+  "naam": "Volkswagen AG",
+  "isin": "DE0007664039",
+  "slug": "volkswagen",
+  "slugs": [
+   "volkswagen",
+   "vw"
+  ],
+  "urls": {}
+ },
+ "VNA.DE": {
+  "naam": "Vonovia SE",
+  "isin": "DE000A1ML7J1",
+  "slug": "vonovia",
+  "slugs": [
+   "vonovia"
+  ],
+  "urls": {}
+ },
+ "ZAL.DE": {
+  "naam": "Zalando SE",
+  "isin": "DE000ZAL1111",
+  "slug": "zalando",
+  "slugs": [
+   "zalando"
+  ],
+  "urls": {}
+ },
+ "SHL.DE": {
+  "naam": "Siemens Healthineers AG",
+  "isin": "DE000SHL1006",
+  "slug": "siemens-healthineers",
+  "slugs": [
+   "siemens-healthineers",
+   "siemenshealthineers",
+   "healthineers"
+  ],
+  "urls": {}
+ }
 }

@@ -21,9 +21,29 @@ def kandidaten(spec, jaar):
     u = (spec.get('urls') or {}).get(str(jaar))
     if u:
         yield u, 'beleggerssite'
-    for host in EQS_HOSTS:
-        for taal in ('E', 'D'):
-            yield f"{host}/{spec['slug']}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-00.pdf", 'EQS'
+    for slug in spec.get('slugs') or [spec['slug']]:
+        for host in EQS_HOSTS:
+            for taal in ('E', 'D'):
+                yield f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-00.pdf", 'EQS'
+
+
+def werkende_slug(spec):
+    """Welke EQS-mapnaam levert voor dit fonds een verslag op (proef met de laatste jaren)? Zet spec['slugs'] op die ene."""
+    for jaar in (2024, 2023, 2022, 2021):
+        for slug in spec.get('slugs') or [spec['slug']]:
+            for host in EQS_HOSTS:
+                for taal in ('E', 'D'):
+                    url = f"{host}/{slug}/Annual Reports/{spec['isin']}-JA-{jaar}-EQ-{taal}-00.pdf"
+                    try:
+                        req = urllib.request.Request(urllib.parse.quote(url, safe=':/?=&%'), headers=dict(UA, Range='bytes=0-7'))
+                        with urllib.request.urlopen(req, timeout=60) as r:
+                            if r.read(8)[:4] == b'%PDF':
+                                spec['slugs'] = [slug]
+                                return slug
+                    except Exception:
+                        pass
+                    time.sleep(0.3)
+    return None
 
 
 def main():
@@ -38,6 +58,11 @@ def main():
     index = json.load(open(index_pad)) if index_pad.exists() else {}
     for t in tickers or list(lijst):
         spec = lijst[t]
+        if not spec.get('urls') and len(spec.get('slugs') or []) > 1:
+            slug = werkende_slug(spec)
+            print('mapnaam', t, slug, flush=True)
+            if not slug:
+                continue
         for jaar in range(j0, j1 + 1):
             # Elk adres apart proberen (beleggerssite én EQS): EQS sorteert bij een gebroken boekjaar soms op beginjaar,
             # zodat hetzelfde bestandsjaar een ander boekjaar kan zijn. Het boekjaar komt later uit de tekst zelf.
