@@ -1,0 +1,25 @@
+# Draait alle tests bij elke wijziging, zodat een fout opvalt voordat de nachtelijke update hem gebruikt. Raakt de app niet.
+name: Tests
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt lxml pytest
+      - name: Python
+        run: python -m pytest -q --ignore=test_web_ui.py
+      - name: JavaScript
+        run: cd web && node --test test/*.test.js

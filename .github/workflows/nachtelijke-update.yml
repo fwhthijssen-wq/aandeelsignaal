@@ -15,19 +15,19 @@ jobs:
   bouw:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - name: Gegevens van de vorige run terughalen (goedgekeurde jaren hoeven niet opnieuw)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: web/data/aandelen.json
           key: gegevens-${{ github.run_id }}
           restore-keys: gegevens-
       - name: Jaarverslagarchief terughalen (elk jaarverslag wordt één keer bewaard en daarna niet meer aangeraakt)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: archief
           key: archief-${{ github.run_id }}
@@ -60,18 +60,18 @@ jobs:
           PY
       - name: Gegevens bewaren voor de volgende run
         if: steps.bouw.outcome == 'success'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: web/data/aandelen.json
           key: gegevens-${{ github.run_id }}
       - name: Jaarverslagarchief bewaren voor de volgende run
         if: always() && hashFiles('archief/**') != ''
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: archief
           key: archief-${{ github.run_id }}
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: web
   publiceer:
@@ -82,4 +82,4 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
