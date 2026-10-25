@@ -1,0 +1,3980 @@
+{
+ "CABK.MC": {
+  "lei": "7CUNS533WID6K7DGFI87",
+  "rapporten": {
+   "7CUNS533WID6K7DGFI87-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio neto atrib. por acción (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,83",
+       "0,80",
+       "0,04"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "BENEFICIO BÁSICO POR ACCIÓN (EN EUROS) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,79",
+       "0,76",
+       "0,61"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "BENEFICIO DILUIDO POR ACCIÓN (EN EUROS) (3)",
+      "verwaterd": true,
+      "waarden": [
+       "0,79",
+       "0,76",
+       "0,61"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-02-20",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2025-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-2025-12-31-1-es/reports/ixbrlviewer.html"
+   },
+   "7CUNS533WID6K7DGFI87-2024-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio neto atrib. por acción (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,80",
+       "0,64",
+       "0,16"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "BPA (Beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "0,80",
+       "0,64",
+       "0,40"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio neto atrib. por acción (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,80",
+       "0,64",
+       "0,16"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio básico por acción (en euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,76",
+       "0,61",
+       "0,37"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio diluido por acción (en euros) (3)",
+      "verwaterd": true,
+      "waarden": [
+       "0,76",
+       "0,61",
+       "0,37"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-05-08",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2024-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20241231-es/reports/ixbrlviewer.html"
+   },
+   "7CUNS533WID6K7DGFI87-2023-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio básico por acción (en euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,61",
+       "0,37",
+       "0,66"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "Beneficio diluido por acción (en euros) (3)",
+      "verwaterd": true,
+      "waarden": [
+       "0,61",
+       "0,37",
+       "0,66"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "Beneficio neto atrib. por acción¹ (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,64",
+       "0,40",
+       "0,24"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "BPA (Beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "0,64",
+       "0,40",
+       "0,40",
+       "0,69"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio neto atrib. por acción¹ (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,64",
+       "0,40",
+       "0,24"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2023-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20231231-es/reports/ixbrlviewer.html"
+   },
+   "7CUNS533WID6K7DGFI87-2022-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio básico por acción (en euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,37",
+       "0,66",
+       "0,21"
+      ],
+      "kop": [
+       2022,
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Beneficio diluido por acción (en euros) (3)",
+      "verwaterd": true,
+      "waarden": [
+       "0,37",
+       "0,66",
+       "0,21"
+      ],
+      "kop": [
+       2022,
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Beneficio neto atrib. por acción excl. impactos fusión (€/acción) (12 meses)",
+      "verwaterd": false,
+      "waarden": [
+       "0,37",
+       "0,28",
+       "0,09"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "BPA (Beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "0,21",
+       "0,66",
+       "0,37"
+      ],
+      "kop": [
+       2020,
+       2021,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-05-09",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2022-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20221231-es/reports/ixbrlviewer.html"
+   },
+   "7CUNS533WID6K7DGFI87-2021-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-02-25",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2021-12-31/ESEF/ES/0/7CUNS533WID6K7DGFI87-20211231-es/reports/ixbrlviewer.html"
+   },
+   "7CUNS533WID6K7DGFI87-2020-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-02-22",
+    "url": "https://filings.xbrl.org/7CUNS533WID6K7DGFI87/2020-12-31/ESEF/ES/0/cabk-2020-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "ISP.MI": {
+  "lei": "2W8N8UU78PMDQKZENC08",
+  "rapporten": {
+   "2W8N8UU78PMDQKZENC08-2022-12-31-ESEF-IT-1": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Utile base per azione (basic EPS) - euro",
+      "verwaterd": false,
+      "waarden": [
+       "0,23",
+       "0,22"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Utile diluito per azione (diluted EPS) - euro",
+      "verwaterd": true,
+      "waarden": [
+       "0,23",
+       "0,22"
+      ],
+      "kop": null
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/2W8N8UU78PMDQKZENC08/2022-12-31/ESEF/IT/1/2W8N8UU78PMDQKZENC08-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "2W8N8UU78PMDQKZENC08-2021-12-31-ESEF-IT-1": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/2W8N8UU78PMDQKZENC08/2021-12-31/ESEF/IT/1/2W8N8UU78PMDQKZENC08-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BAMI.MI": {
+  "lei": "815600E4E6DCD2D25E30",
+  "rapporten": {
+   "815600E4E6DCD2D25E30-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-03-24",
+    "url": "https://filings.xbrl.org/815600E4E6DCD2D25E30/2025-12-31/ESEF/IT/0/815600E4E6DCD2D25E30-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "815600E4E6DCD2D25E30-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/815600E4E6DCD2D25E30/2024-12-31/ESEF/IT/0/815600E4E6DCD2D25E30-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "815600E4E6DCD2D25E30-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/815600E4E6DCD2D25E30/2022-12-31/ESEF/IT/0/815600E4E6DCD2D25E30-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "815600E4E6DCD2D25E30-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/815600E4E6DCD2D25E30/2021-12-31/ESEF/IT/0/815600E4E6DCD2D25E30-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BMPS.MI": {
+  "lei": "J4CP7MHCXR8DAQMKIL78",
+  "rapporten": {
+   "J4CP7MHCXR8DAQMKIL78-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile (Perdita) base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,537",
+       "1,537",
+       "1,549",
+       "-0,8"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile (Perdita) diluito per azione (diluted EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,537",
+       "1,537",
+       "1,549",
+       "-0,8"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "1,537",
+       "1,549"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "1,537",
+       "1,549"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/J4CP7MHCXR8DAQMKIL78/2025-12-31/ESEF/IT/0/J4CP7MHCXR8DAQMKIL78-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "J4CP7MHCXR8DAQMKIL78-2024-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "UTILE (PERDITA) PER AZIONE (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "31",
+       " 12 202",
+       "4",
+       "31",
+       " 12 202",
+       "3"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile (Perdita) base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,549",
+       "1,629",
+       "-4,9"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile (Perdita) diluito per azione (diluted EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,549",
+       "1,629",
+       "-4,9"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-09-24",
+    "url": "https://filings.xbrl.org/J4CP7MHCXR8DAQMKIL78/2024-12-31/ESEF/IT/1/J4CP7MHCXR8DAQMKIL78-2024-12-31-2-it/reports/ixbrlviewer.html"
+   },
+   "J4CP7MHCXR8DAQMKIL78-2023-12-31-ESEF-IT-1": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "UTILE (PERDITA) PER AZIONE (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "31",
+       " 12 202",
+       "3",
+       "31",
+       " 12 202",
+       "2"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile (Perdita) base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,629",
+       "(0,850)"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile (Perdita) diluito per azione (diluted EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,629",
+       "(0,850)"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/J4CP7MHCXR8DAQMKIL78/2023-12-31/ESEF/IT/1/J4CP7MHCXR8DAQMKIL78-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "J4CP7MHCXR8DAQMKIL78-2022-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/J4CP7MHCXR8DAQMKIL78/2022-12-31/ESEF/IT/1/J4CP7MHCXR8DAQMKIL78-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "J4CP7MHCXR8DAQMKIL78-2021-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/J4CP7MHCXR8DAQMKIL78/2021-12-31/ESEF/IT/1/J4CP7MHCXR8DAQMKIL78-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BPE.MI": {
+  "lei": "N747OI7JINV7RUUH6190",
+  "rapporten": {
+   "N747OI7JINV7RUUH6190-2024-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/N747OI7JINV7RUUH6190/2024-12-31/ESEF/IT/1/N747OI7JINV7RUUH6190-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "N747OI7JINV7RUUH6190-2021-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-04-19",
+    "url": "https://filings.xbrl.org/N747OI7JINV7RUUH6190/2021-12-31/ESEF/IT/0/N747OI7JINV7RUUH6190-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "MB.MI": {
+  "lei": "PSNL19R2RXX5U3QWHI44",
+  "rapporten": {
+   "PSNL19R2RXX5U3QWHI44-2025-12-31-ESEF-IT-1": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "0.64",
+       "1.65"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Earnings per share, diluted",
+      "verwaterd": true,
+      "waarden": [
+       "0.64",
+       "1.63"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Earnings per share",
+      "verwaterd": false,
+      "waarden": [
+       "0.60",
+       "1.63"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Earnings per share, diluted",
+      "verwaterd": true,
+      "waarden": [
+       "0.60",
+       "1.62"
+      ],
+      "kop": null
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-15",
+    "url": "https://filings.xbrl.org/PSNL19R2RXX5U3QWHI44/2025-12-31/ESEF/IT/1/PSNL19R2RXX5U3QWHI44-2025-12-31-1-en/reports/ixbrlviewer.html"
+   },
+   "PSNL19R2RXX5U3QWHI44-2022-06-30-ESEF-IT-3": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-06-30",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/PSNL19R2RXX5U3QWHI44/2022-06-30/ESEF/IT/3/PSNL19R2RXX5U3QWHI44-2022-06-30-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "FBK.MI": {
+  "lei": "549300L7YCATGO57ZE10",
+  "rapporten": {
+   "549300L7YCATGO57ZE10-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,06",
+       "1,07"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,06",
+       "1,07"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "1,06",
+       "1,07"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "1,06",
+       "1,07"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,05",
+       "1,06"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,05",
+       "1,06"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "1,05",
+       "1,06"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "1,05",
+       "1,06"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/549300L7YCATGO57ZE10/2025-12-31/ESEF/IT/0/549300L7YCATGO57ZE10-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "549300L7YCATGO57ZE10-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,07",
+       "1,00"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,07",
+       "1,00"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "1,07",
+       "1,00"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "1,07",
+       "1,00"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,06",
+       "0,99"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,06",
+       "0,99"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "1,06",
+       "0,99"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "1,06",
+       "0,99"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/549300L7YCATGO57ZE10/2024-12-31/ESEF/IT/0/549300L7YCATGO57ZE10-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "549300L7YCATGO57ZE10-2023-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,00",
+       "0,70"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,00",
+       "0,70"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile per azione base",
+      "verwaterd": false,
+      "waarden": [
+       "0,998",
+       "0,703"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile per azione diluito",
+      "verwaterd": true,
+      "waarden": [
+       "0,996",
+       "0,701"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-03-26",
+    "url": "https://filings.xbrl.org/549300L7YCATGO57ZE10/2023-12-31/ESEF/IT/0/549300L7YCATGO57ZE10-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "549300L7YCATGO57ZE10-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300L7YCATGO57ZE10/2022-12-31/ESEF/IT/0/549300L7YCATGO57ZE10-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "549300L7YCATGO57ZE10-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300L7YCATGO57ZE10/2021-12-31/ESEF/IT/0/549300L7YCATGO57ZE10-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BMED.MI": {
+  "lei": "7LVZJ6XRIE7VNZ4UBX81",
+  "rapporten": {
+   "7LVZJ6XRIE7VNZ4UBX81-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,677",
+       "1,515"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile diluito per azione (diluited EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,663",
+       "1,498"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,677",
+       "1,515"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,663",
+       "1,498"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,685",
+       "1,519"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/7LVZJ6XRIE7VNZ4UBX81/2025-12-31/ESEF/IT/0/7LVZJ6XRIE7VNZ4UBX81-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "7LVZJ6XRIE7VNZ4UBX81-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,515",
+       "1,111"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile diluito per azione (diluited EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,498",
+       "1,105"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,515",
+       "1,111"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,498",
+       "1,105"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,519",
+       "1,121"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/7LVZJ6XRIE7VNZ4UBX81/2024-12-31/ESEF/IT/0/7LVZJ6XRIE7VNZ4UBX81-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "7LVZJ6XRIE7VNZ4UBX81-2023-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile base per azione (basic EPS)",
+      "verwaterd": false,
+      "waarden": [
+       "1,111",
+       "0,687"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile diluito per azione (diluited EPS)",
+      "verwaterd": true,
+      "waarden": [
+       "1,105",
+       "0,681"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,105",
+       "0,681"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile base per azione (euro)",
+      "verwaterd": false,
+      "waarden": [
+       "1,111",
+       "0,687"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (euro)",
+      "verwaterd": true,
+      "waarden": [
+       "1,121",
+       "0,683"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-02",
+    "url": "https://filings.xbrl.org/7LVZJ6XRIE7VNZ4UBX81/2023-12-31/ESEF/IT/0/7LVZJ6XRIE7VNZ4UBX81-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "7LVZJ6XRIE7VNZ4UBX81-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/7LVZJ6XRIE7VNZ4UBX81/2022-12-31/ESEF/IT/0/7LVZJ6XRIE7VNZ4UBX81-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "7LVZJ6XRIE7VNZ4UBX81-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/7LVZJ6XRIE7VNZ4UBX81/2021-12-31/ESEF/IT/0/7LVZJ6XRIE7VNZ4UBX81-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "UNI.MI": {
+  "lei": "8156005CE5E7340CCA86",
+  "rapporten": {
+   "8156005CE5E7340CCA86-2025-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile/(perdita) base e diluito per azione (euro per azione)",
+      "verwaterd": true,
+      "waarden": [
+       "2,03",
+       "1,46"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-04-09",
+    "url": "https://filings.xbrl.org/8156005CE5E7340CCA86/2025-12-31/ESEF/IT/1/8156005CE5E7340CCA86-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "8156005CE5E7340CCA86-2023-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-04-02",
+    "url": "https://filings.xbrl.org/8156005CE5E7340CCA86/2023-12-31/ESEF/IT/1/8156005CE5E7340CCA86-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "8156005CE5E7340CCA86-2022-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/8156005CE5E7340CCA86/2022-12-31/ESEF/IT/1/8156005CE5E7340CCA86-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "8156005CE5E7340CCA86-2021-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/8156005CE5E7340CCA86/2021-12-31/ESEF/IT/1/8156005CE5E7340CCA86-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "G.MI": {
+  "lei": "549300X5UKJVE386ZB61",
+  "rapporten": {
+   "549300X5UKJVE386ZB61-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/549300X5UKJVE386ZB61/2025-12-31/ESEF/IT/0/549300X5UKJVE386ZB61-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "549300X5UKJVE386ZB61-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile per azione (in euro)",
+      "verwaterd": false,
+      "waarden": [
+       "2,42",
+       "2,43"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (in euro)",
+      "verwaterd": true,
+      "waarden": [
+       "2,42",
+       "2,42"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/549300X5UKJVE386ZB61/2024-12-31/ESEF/IT/0/549300X5UKJVE386ZB61-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "549300X5UKJVE386ZB61-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300X5UKJVE386ZB61/2022-12-31/ESEF/IT/0/549300X5UKJVE386ZB61-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "549300X5UKJVE386ZB61-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300X5UKJVE386ZB61/2021-12-31/ESEF/IT/0/549300X5UKJVE386ZB61-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "IBE.MC": {
+  "lei": "5QK37QC7NWOJ8D7WVQ45",
+  "rapporten": {
+   "5QK37QC7NWOJ8D7WVQ45-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "P.E.R. (cotización cierre/beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "21,848",
+       "22,524"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-02-27",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2025-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2025-12-31-1-es/reports/ixbrlviewer.html"
+   },
+   "5QK37QC7NWOJ8D7WVQ45-2024-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "P.E.R. (cotización cierre/beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "15,827",
+       "17,036"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-05-08",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2024-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20241231-es/reports/ixbrlviewer.html"
+   },
+   "5QK37QC7NWOJ8D7WVQ45-2023-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "P.E.R. (cotización cierre/beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "16,521",
+       "16,687"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2023-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20231231-es/reports/ixbrlviewer.html"
+   },
+   "5QK37QC7NWOJ8D7WVQ45-2022-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "P.E.R. (cotización cierre/beneficio por acción)",
+      "verwaterd": false,
+      "waarden": [
+       "16,687",
+       "17,795"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-05-09",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2022-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20221231-es/reports/ixbrlviewer.html"
+   },
+   "5QK37QC7NWOJ8D7WVQ45-2021-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-02-25",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2021-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-20211231-es/reports/ixbrlviewer.html"
+   },
+   "5QK37QC7NWOJ8D7WVQ45-2020-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-02-26",
+    "url": "https://filings.xbrl.org/5QK37QC7NWOJ8D7WVQ45/2020-12-31/ESEF/ES/0/5QK37QC7NWOJ8D7WVQ45-2020-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "REP.MC": {
+  "lei": "BSYCX13Y0NOTV14V9N85",
+  "rapporten": {
+   "BSYCX13Y0NOTV14V9N85-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio por acción (BPA)",
+      "verwaterd": false,
+      "waarden": [
+       "202",
+       "5",
+       "202",
+       "4"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,62",
+       "1,43"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,62",
+       "1,43"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-02-19",
+    "url": "https://filings.xbrl.org/BSYCX13Y0NOTV14V9N85/2025-12-31/ESEF/ES/0/BSYCX13Y0NOTV14V9N85-2025-12-31-1-es/reports/ixbrlviewer.html"
+   },
+   "BSYCX13Y0NOTV14V9N85-2024-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio por acción (BPA)",
+      "verwaterd": false,
+      "waarden": [
+       "202",
+       "4",
+       "202",
+       "3"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,43",
+       "2,46"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,43",
+       "2,46"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-05-08",
+    "url": "https://filings.xbrl.org/BSYCX13Y0NOTV14V9N85/2024-12-31/ESEF/ES/0/BSYCX13Y0NOTV14V9N85-20241231-es/reports/ixbrlviewer.html"
+   },
+   "BSYCX13Y0NOTV14V9N85-2023-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio por acción (BPA)",
+      "verwaterd": false,
+      "waarden": [
+       "202",
+       "3",
+       "202",
+       "2"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "2,46",
+       "2,96"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "2,46",
+       "2,96"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/BSYCX13Y0NOTV14V9N85/2023-12-31/ESEF/ES/1/BSYCX13Y0NOTV14V9N85-20231231-es/reports/ixbrlviewer.html"
+   },
+   "BSYCX13Y0NOTV14V9N85-2021-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,64",
+       "(2,13)"
+      ],
+      "kop": [
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Beneficio por acción (€/acción)",
+      "verwaterd": false,
+      "waarden": [
+       "1,64",
+       "(2,13)"
+      ],
+      "kop": [
+       2021,
+       2020
+      ]
+     }
+    ],
+    "period_end": "2021-12-31",
+    "published": "2022-02-17",
+    "url": "https://filings.xbrl.org/BSYCX13Y0NOTV14V9N85/2021-12-31/ESEF/ES/0/BSYCX13Y0NOTV14V9N85-20211231-es/reports/ixbrlviewer.html"
+   },
+   "BSYCX13Y0NOTV14V9N85-2020-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-02-18",
+    "url": "https://filings.xbrl.org/BSYCX13Y0NOTV14V9N85/2020-12-31/ESEF/ES/0/bsycx13y0notv14v9n85/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "GLE.PA": {
+  "lei": "O2RNE8IBXP4R0TD8PU41",
+  "rapporten": {
+   "O2RNE8IBXP4R0TD8PU41-2025-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat par action",
+      "verwaterd": false,
+      "waarden": [
+       " 7.2",
+       "6,80",
+       "4,38"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       " 7.2",
+       "6,80",
+       "4,38"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat par action ordinaire (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "6,80",
+       "4,38"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action ordinaire (en EUR)",
+      "verwaterd": true,
+      "waarden": [
+       "6,80",
+       "4,38"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat par action",
+      "verwaterd": false,
+      "waarden": [
+       " 6.3",
+       "5,30",
+       "2,53"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       "5,30",
+       "2,53"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat par action ordinaire (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "5,30",
+       "2,53"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action ordinaire (en EUR)",
+      "verwaterd": true,
+      "waarden": [
+       "5,30",
+       "2,53"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Bénéfice net par action (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "6,80",
+       "4,38",
+       "2,17",
+       "1,50",
+       "5,97"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023,
+       2022,
+       2021
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-13",
+    "url": "https://filings.xbrl.org/O2RNE8IBXP4R0TD8PU41/2025-12-31/ESEF/FR/0/O2RNE8IBXP4R0TD8PU41-2025-12-31-1-FR/reports/ixbrlviewer.html"
+   },
+   "O2RNE8IBXP4R0TD8PU41-2023-12-31-ESEF-FR-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Résultat par action",
+      "verwaterd": false,
+      "waarden": [
+       " 7.2",
+       "2,17",
+       "1,50"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       " 7.2",
+       "2,17",
+       "1,50"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat par action ordinaire (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "2,17",
+       "1,50"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat dilué par action ordinaire (en EUR)",
+      "verwaterd": true,
+      "waarden": [
+       "2,17",
+       "1,50"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat par action",
+      "verwaterd": false,
+      "waarden": [
+       " 6.3",
+       "4,19",
+       "(0,32)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       "4,19",
+       "(0,32)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat par action ordinaire (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "4,19",
+       "(0,32)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat dilué par action ordinaire (en EUR)",
+      "verwaterd": true,
+      "waarden": [
+       "4,19",
+       "(0,32)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Bénéfice net par action (en EUR)",
+      "verwaterd": false,
+      "waarden": [
+       "2,17",
+       "1,50",
+       "5,97",
+       "-1,01",
+       "3,05"
+      ],
+      "kop": null
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-03-18",
+    "url": "https://filings.xbrl.org/O2RNE8IBXP4R0TD8PU41/2023-12-31/ESEF/FR/0/SocGen-2023-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "O2RNE8IBXP4R0TD8PU41-2022-12-31-ESEF-FR-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-03-14",
+    "url": "https://filings.xbrl.org/O2RNE8IBXP4R0TD8PU41/2022-12-31/ESEF/FR/0/SocGen-2022-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "O2RNE8IBXP4R0TD8PU41-2021-12-31-ESEF-FR-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-03-23",
+    "url": "https://filings.xbrl.org/O2RNE8IBXP4R0TD8PU41/2021-12-31/ESEF/FR/0/socgen-2021-12-31-fr/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "ACA.PA": {
+  "lei": "969500TJ5KRTCJQWXH05",
+  "rapporten": {
+   "969500TJ5KRTCJQWXH05-2025-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Bénéfice net par action (BNPA) (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2,18",
+       "2,11",
+       "1,94",
+       "1,68",
+       "1,69"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023,
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "BÉNÉFICE PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2,18",
+       "2,11",
+       " 3,4"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat net par action",
+      "verwaterd": false,
+      "waarden": [
+       "2,18",
+       "2,11",
+       " 3,3"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat par action (en euros) (³)",
+      "verwaterd": false,
+      "waarden": [
+       "6.17",
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action (³)",
+      "verwaterd": true,
+      "waarden": [
+       "6.17",
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat de base par action",
+      "verwaterd": false,
+      "waarden": [
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat de base par action des activités poursuivies",
+      "verwaterd": false,
+      "waarden": [
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action des activités poursuivies",
+      "verwaterd": true,
+      "waarden": [
+       "2,180",
+       "2,109"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-27",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2025-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2025-12-31-1-fr/reports/ixbrlviewer.html"
+   },
+   "969500TJ5KRTCJQWXH05-2024-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Bénéfice net par action (BNPA) (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2,11",
+       "1,94",
+       "1,68",
+       "1,69",
+       "1,20"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022,
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Résultat net part du Groupe par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2,11",
+       "1,94",
+       " 8,5",
+       "2,14",
+       "1,80",
+       " 18,5"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat net par action – publié",
+      "verwaterd": false,
+      "waarden": [
+       "2,11",
+       "1,94",
+       " 8,5"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat net par action – sous-jacent",
+      "verwaterd": false,
+      "waarden": [
+       "2,14",
+       "1,80",
+       " 18,5"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat par action (en euros) ²",
+      "verwaterd": false,
+      "waarden": [
+       "6.17",
+       "2,109",
+       "1,943"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat dilué par action ²",
+      "verwaterd": true,
+      "waarden": [
+       "6.17",
+       "2,109",
+       "1,943"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat de base par action",
+      "verwaterd": false,
+      "waarden": [
+       "2,109",
+       "1,943"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat de base par action des activités poursuivies",
+      "verwaterd": false,
+      "waarden": [
+       "2,109",
+       "1,944"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat dilué par action",
+      "verwaterd": true,
+      "waarden": [
+       "2,109",
+       "1,943"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat dilué par action des activités poursuivies",
+      "verwaterd": true,
+      "waarden": [
+       "2,109",
+       "1,944"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-03-24",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2024-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2024-12-31-1-fr/reports/ixbrlviewer.html"
+   },
+   "969500TJ5KRTCJQWXH05-2023-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-03-26",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2023-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2023-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "969500TJ5KRTCJQWXH05-2022-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-03-28",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2022-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2022-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "969500TJ5KRTCJQWXH05-2021-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-03-24",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2021-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2021-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "969500TJ5KRTCJQWXH05-2020-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-05-18",
+    "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2020-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2020-12-31AR/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "AF.PA": {
+  "lei": "969500AQW31GYO8JZD66",
+  "rapporten": {
+   "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat net – part du Groupe par action de base (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,93",
+       "0,43",
+       "0,50"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Résultat net – part du groupe (retenu pour le calcul du résultat dilué par action)",
+      "verwaterd": true,
+      "waarden": [
+       "267",
+       "803"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-03",
+    "url": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2024-12-31/ESEF/FR/0/afklm-2024-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "969500AQW31GYO8JZD66-2022-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat net – part du Groupe par action de base (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,35",
+       "(5,95)",
+       "6,30"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "Résultat net - propriétaires de la société mère (retenu pour le calcul du résultat dilué par action)",
+      "verwaterd": true,
+      "waarden": [
+       "600",
+       "(3 443)"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-04-25",
+    "url": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2022-12-31/ESEF/FR/0/afklm-2022-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "969500AQW31GYO8JZD66-2021-12-31-ESEF-FR-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat net – part du Groupe par action de base (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "(5,95)",
+       "(16,61)",
+       "10,66"
+      ],
+      "kop": [
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Résultat par action (de base)",
+      "verwaterd": false,
+      "waarden": [
+       "(16,56)",
+       "(0,05)",
+       "(16,61)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat par action (dilué)",
+      "verwaterd": true,
+      "waarden": [
+       "(16,56)",
+       "(0,05)",
+       "(16,61)"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Résultat net – propriétaires de la société mère (retenu pour le calcul du résultat dilué par action)",
+      "verwaterd": true,
+      "waarden": [
+       "(3 443)",
+       "(7 100)"
+      ],
+      "kop": [
+       2021,
+       2020
+      ]
+     }
+    ],
+    "period_end": "2021-12-31",
+    "published": "2023-01-19",
+    "url": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2021-12-31/ESEF/FR/1/afklm-2021-12-31AR/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BBVA.MC": {
+  "lei": "K8MS7FD7N5Z2WQ51AZ71",
+  "rapporten": {
+   "K8MS7FD7N5Z2WQ51AZ71-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (EUROS)",
+      "verwaterd": false,
+      "waarden": [
+       "5",
+       "1,76",
+       "1,68",
+       "1,29"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) atribuido por acción",
+      "verwaterd": false,
+      "waarden": [
+       "1,76",
+       "1,68",
+       "1,29"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (EUROS)",
+      "verwaterd": false,
+      "waarden": [
+       "0,91",
+       "0,85",
+       "0,83",
+       "0,84"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,76",
+       "5,0",
+       "1,68",
+       "1,29"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,76",
+       "1,68"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾",
+      "verwaterd": false,
+      "waarden": [
+       "0,42",
+       "0,42",
+       "0,46",
+       "0,45",
+       "0,40",
+       "0,44",
+       "0,47",
+       "0,36"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-02-13",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2025-12-31/ESEF/ES/0/K8MS7FD7N5Z2WQ51AZ71-2025-12-31-1-es/reports/ixbrlviewer.html"
+   },
+   "K8MS7FD7N5Z2WQ51AZ71-2024-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5",
+       "1,68",
+       "1,29",
+       "0,98"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) atribuido por acción",
+      "verwaterd": false,
+      "waarden": [
+       "1,68",
+       "1,29",
+       "0,98"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,83",
+       "0,84",
+       "0,62",
+       "0,67"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾⁽²⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,68",
+       "30,0",
+       "1,29",
+       "0,98"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,68",
+       "1,29"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾",
+      "verwaterd": false,
+      "waarden": [
+       "0,40",
+       "0,44",
+       "0,47",
+       "0,36",
+       "0,33",
+       "0,33",
+       "0,33",
+       "0,29"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-02-14",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2024-12-31/ESEF/ES/1/K8MS7FD7N5Z2WQ51AZ71-20241231-0-es/reports/ixbrlviewer.html"
+   },
+   "K8MS7FD7N5Z2WQ51AZ71-2023-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5",
+       "1,29",
+       "0,98",
+       "0,67"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) atribuido por acción",
+      "verwaterd": false,
+      "waarden": [
+       "1,29",
+       "0,98",
+       "0,67"
+      ],
+      "kop": [
+       2023,
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,62",
+       "0,67",
+       "0,44",
+       "0,54"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽¹⁾⁽²⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,29",
+       "32,0",
+       "0,98",
+       "0,67"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽²⁾",
+      "verwaterd": false,
+      "waarden": [
+       "0,33",
+       "0,33",
+       "0,33",
+       "0,29",
+       "0,24",
+       "0,28",
+       "0,24",
+       "0,19"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) ⁽²⁾",
+      "verwaterd": false,
+      "waarden": [
+       "1,29",
+       "0,98"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-02-09",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2023-12-31/ESEF/ES/1/K8MS7FD7N5Z2WQ51AZ71-20231231-es/reports/ixbrlviewer.html"
+   },
+   "K8MS7FD7N5Z2WQ51AZ71-2022-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5",
+       "0,99",
+       "0,67",
+       "0,14"
+      ],
+      "kop": [
+       2022,
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) atribuido por acción",
+      "verwaterd": false,
+      "waarden": [
+       "0,99",
+       "0,67",
+       "0,14"
+      ],
+      "kop": [
+       2022,
+       2021,
+       2020
+      ]
+     },
+     {
+      "label": "BENEFICIO (PÉRDIDA) POR ACCIÓN (Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,45",
+       "0,54",
+       "0,26",
+       "0,41"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,99",
+       "47,1",
+       "0,67",
+       "0,14"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,24",
+       "0,28",
+       "0,25",
+       "0,19",
+       "0,20",
+       "0,20",
+       "0,09",
+       "0,17"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     },
+     {
+      "label": "Beneficio (pérdida) por acción (euros) (2)",
+      "verwaterd": false,
+      "waarden": [
+       "0,99",
+       "0,67"
+      ],
+      "kop": [
+       2022,
+       2021
+      ]
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-02-14",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2022-12-31/ESEF/ES/1/K8MS7FD7N5Z2WQ51AZ71-20221231-es/reports/ixbrlviewer.html"
+   },
+   "K8MS7FD7N5Z2WQ51AZ71-2021-12-31-ESEF-ES-2": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-02-15",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2021-12-31/ESEF/ES/2/K8MS7FD7N5Z2WQ51AZ71-20211231-es/reports/ixbrlviewer.html"
+   },
+   "K8MS7FD7N5Z2WQ51AZ71-2020-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-02-12",
+    "url": "https://filings.xbrl.org/K8MS7FD7N5Z2WQ51AZ71/2020-12-31/ESEF/ES/1/bbva-2020-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "ACX.MC": {
+  "lei": "95980020140005582721",
+  "rapporten": {
+   "95980020140005582721-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio básico y diluido por acción (En Euros)",
+      "verwaterd": true,
+      "waarden": [
+       "15.9",
+       "-0,16",
+       "0,90"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Beneficio por acción (en Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "-0,16",
+       "0,90"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Beneficio por acción (euros)",
+      "verwaterd": false,
+      "waarden": [
+       "-0,16",
+       "0,90",
+       "0,91"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-02-26",
+    "url": "https://filings.xbrl.org/95980020140005582721/2025-12-31/ESEF/ES/0/95980020140005582721-2025-12-31-1-es/reports/ixbrlviewer.html"
+   },
+   "95980020140005582721-2024-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio básico y diluido por acción (En Euros)",
+      "verwaterd": true,
+      "waarden": [
+       "15.9",
+       "0,90",
+       "0,92"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio por acción (en Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,90",
+       "0,92"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Beneficio por acción (euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,90",
+       "0,91"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-05-08",
+    "url": "https://filings.xbrl.org/95980020140005582721/2024-12-31/ESEF/ES/0/95980020140005582721-20241231-es/reports/ixbrlviewer.html"
+   },
+   "95980020140005582721-2023-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Beneficio básico y diluido por acción (En Euros)",
+      "verwaterd": true,
+      "waarden": [
+       "14.9",
+       "0,92",
+       "2,16"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Beneficio por acción (en Euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0,92",
+       "2,16"
+      ],
+      "kop": [
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/95980020140005582721/2023-12-31/ESEF/ES/0/95980020140005582721-20231231-es/reports/ixbrlviewer.html"
+   },
+   "95980020140005582721-2022-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-09",
+    "url": "https://filings.xbrl.org/95980020140005582721/2022-12-31/ESEF/ES/0/95980020140005582721-2022-12-31-ES/reports/ixbrlviewer.html"
+   },
+   "95980020140005582721-2021-12-31-ESEF-ES-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-04-05",
+    "url": "https://filings.xbrl.org/95980020140005582721/2021-12-31/ESEF/ES/1/95980020140005582721-2021-12-31-ES/reports/ixbrlviewer.html"
+   },
+   "95980020140005582721-2020-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2020-12-31",
+    "published": "2021-02-26",
+    "url": "https://filings.xbrl.org/95980020140005582721/2020-12-31/ESEF/ES/0/95980020140005582721-2020-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "AGN.AS": {
+  "lei": "O4QK7KMMK83ITNTHUG69",
+  "rapporten": {
+   "O4QK7KMMK83ITNTHUG69-2025-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Net result attributable to owners for basic earnings per share calculation",
+      "verwaterd": false,
+      "waarden": [
+       "925",
+       "611",
+       "(227)"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Basic earnings per common share (EUR per share)",
+      "verwaterd": false,
+      "waarden": [
+       "0.59",
+       "0.37",
+       "(0.12)"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Basic earnings per common share B (EUR per share)",
+      "verwaterd": false,
+      "waarden": [
+       "0.01",
+       "0.01"
+      ],
+      "kop": [
+       2025,
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-26",
+    "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2025-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2025-12-31-1-en/reports/ixbrlviewer.html"
+   },
+   "O4QK7KMMK83ITNTHUG69-2024-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Net result attributable to owners for basic earnings per share calculation",
+      "verwaterd": false,
+      "waarden": [
+       "611",
+       "(227)",
+       "(1,055)"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Basic earnings per common share (EUR per share)",
+      "verwaterd": false,
+      "waarden": [
+       "0.37",
+       "(0.12)",
+       "(0.52)"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     },
+     {
+      "label": "Basic earnings per common share B (EUR per share)",
+      "verwaterd": false,
+      "waarden": [
+       "0.01",
+       "(0.01)"
+      ],
+      "kop": [
+       2024,
+       2023,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-03-27",
+    "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2024-12-31/ESEF/NL/0/Aegon_Ltd-2024-12-31-en/reports/ixbrlviewer.html"
+   },
+   "O4QK7KMMK83ITNTHUG69-2023-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-05-01",
+    "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2023-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2023-12-31-en/reports/ixbrlviewer.html"
+   },
+   "O4QK7KMMK83ITNTHUG69-2022-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-03-21",
+    "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2022-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2022-12-31-en/reports/ixbrlviewer.html"
+   },
+   "O4QK7KMMK83ITNTHUG69-2021-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-03-22",
+    "url": "https://filings.xbrl.org/O4QK7KMMK83ITNTHUG69/2021-12-31/ESEF/NL/0/O4QK7KMMK83ITNTHUG69-2021-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "AGS.BR": {
+  "lei": "5493005DJBML6LY3RV36",
+  "rapporten": {
+   "5493005DJBML6LY3RV36-2022-12-31-ESEF-BE-2": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-04-18",
+    "url": "https://filings.xbrl.org/5493005DJBML6LY3RV36/2022-12-31/ESEF/BE/2/5493005DJBML6LY3RV36-2022-12-31-en/reports/ixbrlviewer.html"
+   },
+   "5493005DJBML6LY3RV36-2021-12-31-ESEF-BE-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-04-07",
+    "url": "https://filings.xbrl.org/5493005DJBML6LY3RV36/2021-12-31/ESEF/BE/0/5493005DJBML6LY3RV36-2021-12-31-nl/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "APAM.AS": {
+  "lei": "5493001136GE6L4R7M63",
+  "rapporten": {
+   "5493001136GE6L4R7M63-2021-12-31-ESEF-LU-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-03-29",
+    "url": "https://filings.xbrl.org/5493001136GE6L4R7M63/2021-12-31/ESEF/LU/0/aperam-2021-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "AZM.MI": {
+  "lei": "81560025690EF8540635",
+  "rapporten": {
+   "81560025690EF8540635-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/81560025690EF8540635/2025-12-31/ESEF/IT/0/81560025690EF8540635-2025-12-31-it/reports/ixbrlviewer.html"
+   },
+   "81560025690EF8540635-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile netto dell’esercizio base per azione",
+      "verwaterd": false,
+      "waarden": [
+       "4,10",
+       "3,140"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile netto dell’esercizio diluito per azione",
+      "verwaterd": true,
+      "waarden": [
+       "4,10",
+       "3,140"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/81560025690EF8540635/2024-12-31/ESEF/IT/0/81560025690EF8540635-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "81560025690EF8540635-2023-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-04-10",
+    "url": "https://filings.xbrl.org/81560025690EF8540635/2023-12-31/ESEF/IT/0/81560025690EF8540635-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "81560025690EF8540635-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/81560025690EF8540635/2022-12-31/ESEF/IT/0/81560025690EF8540635-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "81560025690EF8540635-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/81560025690EF8540635/2021-12-31/ESEF/IT/0/81560025690EF8540635-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "BZU.MI": {
+  "lei": "5299003DX5YLKSVJ6K59",
+  "rapporten": {
+   "5299003DX5YLKSVJ6K59-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-09-24",
+    "url": "https://filings.xbrl.org/5299003DX5YLKSVJ6K59/2024-12-31/ESEF/IT/0/5299003DX5YLKSVJ6K59-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "5299003DX5YLKSVJ6K59-2023-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/5299003DX5YLKSVJ6K59/2023-12-31/ESEF/IT/0/5299003DX5YLKSVJ6K59-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "5299003DX5YLKSVJ6K59-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/5299003DX5YLKSVJ6K59/2022-12-31/ESEF/IT/0/5299003DX5YLKSVJ6K59-2022-12-31-it/reports/ixbrlviewer.html"
+   },
+   "5299003DX5YLKSVJ6K59-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/5299003DX5YLKSVJ6K59/2021-12-31/ESEF/IT/0/5299003DX5YLKSVJ6K59-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "CAP.PA": {
+  "lei": "96950077L0TN7BAROX36",
+  "rapporten": {
+   "96950077L0TN7BAROX36-2024-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5,71",
+       "6,87",
+       "9,09",
+       "9,70",
+       "9,82"
+      ],
+      "kop": [
+       2020,
+       2021,
+       2022,
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat normalisé par action (1) (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "7,23",
+       "9,19",
+       "11,52",
+       "12,44",
+       "12,23"
+      ],
+      "kop": [
+       2020,
+       2021,
+       2022,
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5,71",
+       "6,87",
+       "9,09",
+       "9,70",
+       "9,82"
+      ],
+      "kop": [
+       2020,
+       2021,
+       2022,
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat normalisé par action* (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "7,23",
+       "9,19",
+       "11,52",
+       "12,44",
+       "12,23"
+      ],
+      "kop": [
+       2020,
+       2021,
+       2022,
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "11",
+       "9,70",
+       "9,82"
+      ],
+      "kop": [
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "Résultat dilué par action (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "11",
+       "9,37",
+       "9,47"
+      ],
+      "kop": [
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "RÉSULTAT DE BASE PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "9,70",
+       "9,82"
+      ],
+      "kop": [
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "RÉSULTAT NET DILUÉ PAR ACTION (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "9,37",
+       "9,47"
+      ],
+      "kop": [
+       2023,
+       2024
+      ]
+     },
+     {
+      "label": "RÉSULTAT NORMALISÉ PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "12,44",
+       "12,23"
+      ],
+      "kop": [
+       2023,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-03-21",
+    "url": "https://filings.xbrl.org/96950077L0TN7BAROX36/2024-12-31/ESEF/FR/0/capg-2024-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "96950077L0TN7BAROX36-2022-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "4,37",
+       "5,15",
+       "5,71",
+       "6,87",
+       "9,09"
+      ],
+      "kop": [
+       2018,
+       2019,
+       2020,
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat normalisé par action* (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "(3)",
+       " 6,06",
+       "(3)",
+       " 6,76",
+       "(3)",
+       " 7,23",
+       "(3)",
+       " 9,19",
+       "(3)",
+       " 11,52"
+      ],
+      "kop": [
+       2018,
+       2019,
+       2020,
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "11",
+       "6,87",
+       "9,09"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "Résultat dilué par action (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "11",
+       "6,66",
+       "8,79"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "RÉSULTAT DE BASE PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "6,87",
+       "9,09"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "RÉSULTAT NET DILUÉ PAR ACTION (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "6,66",
+       "8,79"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "RÉSULTAT NORMALISÉ PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "8,97",
+       "11,09"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     },
+     {
+      "label": "RÉSULTAT NORMALISÉ PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "8,97",
+       "11,09"
+      ],
+      "kop": [
+       2021,
+       2022
+      ]
+     }
+    ],
+    "period_end": "2022-12-31",
+    "published": "2023-03-30",
+    "url": "https://filings.xbrl.org/96950077L0TN7BAROX36/2022-12-31/ESEF/FR/0/capg-2022-12-31-fr/reports/ixbrlviewer.html"
+   },
+   "96950077L0TN7BAROX36-2021-12-31-ESEF-FR-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "4,88",
+       "4,37",
+       "5,15",
+       "5,71",
+       "6,87"
+      ],
+      "kop": [
+       2017,
+       2018,
+       2019,
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "Résultat normalisé par action* (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "6,22",
+       "(4)",
+       " 6,06",
+       "(4)",
+       " 6,76",
+       "(4)",
+       " 7,23",
+       "(4)",
+       " 9,19"
+      ],
+      "kop": [
+       2017,
+       2018,
+       2019,
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "Résultat de base par action (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "11",
+       "5,71",
+       "6,87"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "Résultat dilué par action (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "11",
+       "5,55",
+       "6,66"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "RÉSULTAT DE BASE PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "5,71",
+       "6,87"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "RÉSULTAT NET DILUé PAR ACTION (en euros)",
+      "verwaterd": true,
+      "waarden": [
+       "5,55",
+       "6,66"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "RÉSULTAT NORMALISé PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "7,28",
+       "8,97"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     },
+     {
+      "label": "RÉSULTAT NORMALISÉ PAR ACTION (en euros)",
+      "verwaterd": false,
+      "waarden": [
+       "7,28",
+       "8,97"
+      ],
+      "kop": [
+       2020,
+       2021
+      ]
+     }
+    ],
+    "period_end": "2021-12-31",
+    "published": "2022-03-29",
+    "url": "https://filings.xbrl.org/96950077L0TN7BAROX36/2021-12-31/ESEF/FR/0/capg-2021-12-31AR/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "CVC.AS": {
+  "lei": "213800E8UQS1KA32YD39",
+  "rapporten": {
+   "213800E8UQS1KA32YD39-2025-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Diluted earnings per share 2",
+      "verwaterd": true,
+      "waarden": [
+       "0.77",
+       "0.79",
+       "0.24",
+       "0.75"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Basic earnings per share (€)",
+      "verwaterd": false,
+      "waarden": [
+       "1.11",
+       "0.24"
+      ],
+      "kop": null
+     },
+     {
+      "label": "Diluted earnings per share (€)",
+      "verwaterd": true,
+      "waarden": [
+       "0.77",
+       "0.24"
+      ],
+      "kop": null
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-11",
+    "url": "https://filings.xbrl.org/213800E8UQS1KA32YD39/2025-12-31/ESEF/NL/0/cvccapitalpartners-2025-12-31-0-en/reports/ixbrlviewer.html"
+   },
+   "213800E8UQS1KA32YD39-2024-12-31-ESEF-NL-0": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Basic and diluted earnings per share (€)",
+      "verwaterd": true,
+      "waarden": [
+       "0.24",
+       "0.39"
+      ],
+      "kop": null
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-03-20",
+    "url": "https://filings.xbrl.org/213800E8UQS1KA32YD39/2024-12-31/ESEF/NL/0/213800E8UQS1KA32YD39-2024-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "DIA.MI": {
+  "lei": "8156002878BDF0EE4348",
+  "rapporten": {
+   "8156002878BDF0EE4348-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-07",
+    "url": "https://filings.xbrl.org/8156002878BDF0EE4348/2025-12-31/ESEF/IT/0/8156002878BDF0EE4348-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "8156002878BDF0EE4348-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/8156002878BDF0EE4348/2024-12-31/ESEF/IT/0/8156002878BDF0EE4348-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "8156002878BDF0EE4348-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/8156002878BDF0EE4348/2022-12-31/ESEF/IT/0/8156002878BDF0EE4348-2022-12-31/reports/ixbrlviewer.html"
+   },
+   "8156002878BDF0EE4348-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/8156002878BDF0EE4348/2021-12-31/ESEF/IT/0/8156002878BDF0EE4348-2021-12-31/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "DSFIR.AS": {
+  "lei": "506700G44V67MPM4BI12",
+  "rapporten": {
+   "506700G44V67MPM4BI12-2024-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-03-06",
+    "url": "https://filings.xbrl.org/506700G44V67MPM4BI12/2024-12-31/ESEF/NL/0/506700G44V67MPM4BI12-2024-12-31-0-en/reports/ixbrlviewer.html"
+   },
+   "506700G44V67MPM4BI12-2023-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-03-05",
+    "url": "https://filings.xbrl.org/506700G44V67MPM4BI12/2023-12-31/ESEF/NL/0/506700G44V67MPM4BI12-2023-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "GLPG.AS": {
+  "lei": "549300QKJ78IY0IOV655",
+  "rapporten": {
+   "549300QKJ78IY0IOV655-2025-12-31-ESEF-BE-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Gewone en verwaterde winst per aandeel uit beëindigde activiteiten",
+      "verwaterd": true,
+      "waarden": [
+       "0,02",
+       "1,14"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Gewogen gemiddelde van de aandelen ten behoeve van de gewone winst/verlies (-) per aandeel",
+      "verwaterd": false,
+      "waarden": [
+       "65.897",
+       "65.897"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Gewone winst per aandeel (€)",
+      "verwaterd": false,
+      "waarden": [
+       "4,87",
+       "1,12"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Verwaterde winst per aandeel (in €)",
+      "verwaterd": true,
+      "waarden": [
+       "4,87",
+       "1,12"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-26",
+    "url": "https://filings.xbrl.org/549300QKJ78IY0IOV655/2025-12-31/ESEF/BE/0/549300QKJ78IY0IOV655-2025-12-31-1-nl/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "HAVAS.AS": {
+  "lei": "894500L53AVOFQK7T710",
+  "rapporten": {
+   "894500L53AVOFQK7T710-2025-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic net income per share attributable to Havas shareholders (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2.25",
+       "1.91",
+       "1.75"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Diluted net income per share attributable to Havas shareholders (in euros)",
+      "verwaterd": true,
+      "waarden": [
+       "2.25",
+       "1.90",
+       "1.73"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Basic earnings per share, Group share (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "1.91",
+       "1.75"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Diluted earnings per share, Group share (in euros)",
+      "verwaterd": true,
+      "waarden": [
+       "1.90",
+       "1.73"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Basic net income per share (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "9",
+       "1.25",
+       "(0.12)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Diluted net income per share (in euros)",
+      "verwaterd": true,
+      "waarden": [
+       "9",
+       "1.25",
+       "(0.12)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Basic earnings per share (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "1.25",
+       "(0.12)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     },
+     {
+      "label": "Diluted earnings per share (in euros)",
+      "verwaterd": true,
+      "waarden": [
+       "1.25",
+       "(0.12)"
+      ],
+      "kop": [
+       2025,
+       2024
+      ]
+     }
+    ],
+    "period_end": "2025-12-31",
+    "published": "2026-03-31",
+    "url": "https://filings.xbrl.org/894500L53AVOFQK7T710/2025-12-31/ESEF/NL/0/894500L53AVOFQK7T710-2025-12-31AR/reports/ixbrlviewer.html"
+   },
+   "894500L53AVOFQK7T710-2024-12-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Basic net income per share attributable to the shareholders of Havas (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "2.26",
+       "0.17",
+       "0.17"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Diluted net income per share attributable to the shareholders of Havas (in euros)",
+      "verwaterd": true,
+      "waarden": [
+       "2.26",
+       "0.17",
+       "0.17"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Basic earnings per share, Group share (in euros)",
+      "verwaterd": false,
+      "waarden": [
+       "0.17",
+       "0.17"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-04-15",
+    "url": "https://filings.xbrl.org/894500L53AVOFQK7T710/2024-12-31/ESEF/NL/0/894500L53AVOFQK7T710-2024-12-31AR/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "INW.MI": {
+  "lei": "81560066183FE361C071",
+  "rapporten": {
+   "81560066183FE361C071-2025-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-09",
+    "url": "https://filings.xbrl.org/81560066183FE361C071/2025-12-31/ESEF/IT/0/81560066183FE361C071-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "81560066183FE361C071-2024-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-03-25",
+    "url": "https://filings.xbrl.org/81560066183FE361C071/2024-12-31/ESEF/IT/0/81560066183FE361C071-2024-12-31-0-it/reports/ixbrlviewer.html"
+   },
+   "81560066183FE361C071-2023-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-04-02",
+    "url": "https://filings.xbrl.org/81560066183FE361C071/2023-12-31/ESEF/IT/0/81560066183FE361C071-2023-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "PRX.AS": {
+  "lei": "635400Z5LQ5F9OLVT688",
+  "rapporten": {
+   "635400Z5LQ5F9OLVT688-2024-03-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [
+     {
+      "label": "Earnings per ordinary share N",
+      "verwaterd": false,
+      "waarden": [
+       "(10)",
+       "11"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Diluted earnings per ordinary share N",
+      "verwaterd": true,
+      "waarden": [
+       "(10)",
+       "11"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Headline earnings/(loss) per ordinary share N",
+      "verwaterd": false,
+      "waarden": [
+       "(5)",
+       "(5)"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Diluted headline earnings/(loss) per ordinary share N",
+      "verwaterd": true,
+      "waarden": [
+       "(5)",
+       "(5)"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-03-31",
+    "published": "2024-07-04",
+    "url": "https://filings.xbrl.org/635400Z5LQ5F9OLVT688/2024-03-31/ESEF/NL/0/635400Z5LQ5F9OLVT688-2024-03-31-en/reports/ixbrlviewer.html"
+   },
+   "635400Z5LQ5F9OLVT688-2023-03-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2023-03-31",
+    "published": "2023-06-28",
+    "url": "https://filings.xbrl.org/635400Z5LQ5F9OLVT688/2023-03-31/ESEF/NL/0/635400Z5LQ5F9OLVT688-2023-03-31-en/reports/ixbrlviewer.html"
+   },
+   "635400Z5LQ5F9OLVT688-2022-03-31-ESEF-NL-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-03-31",
+    "published": "2022-06-30",
+    "url": "https://filings.xbrl.org/635400Z5LQ5F9OLVT688/2022-03-31/ESEF/NL/0/635400Z5LQ5F9OLVT688-2022-03-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "PRY.MI": {
+  "lei": "529900X0H1IO3RS1A464",
+  "rapporten": {
+   "529900X0H1IO3RS1A464-2024-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [
+     {
+      "label": "Utile base per azione (in Euro)",
+      "verwaterd": false,
+      "waarden": [
+       "2,59",
+       "1,94"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Risultato del periodo attribuibile ai soci della Capogruppo ai fini dell'utile per azioni diluito*",
+      "verwaterd": true,
+      "waarden": [
+       "733",
+       "537"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Media ponderata delle azioni ordinarie per calcolo utile per azione diluito (migliaia)",
+      "verwaterd": true,
+      "waarden": [
+       "290.647",
+       "291.388"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     },
+     {
+      "label": "Utile per azione diluito (in Euro)",
+      "verwaterd": true,
+      "waarden": [
+       "2,52",
+       "1,84"
+      ],
+      "kop": [
+       2024,
+       2023
+      ]
+     }
+    ],
+    "period_end": "2024-12-31",
+    "published": "2025-03-18",
+    "url": "https://filings.xbrl.org/529900X0H1IO3RS1A464/2024-12-31/ESEF/IT/1/529900X0H1IO3RS1A464-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "529900X0H1IO3RS1A464-2022-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/529900X0H1IO3RS1A464/2022-12-31/ESEF/IT/1/529900X0H1IO3RS1A464-2022-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "PUIG.MC": {
+  "lei": "549300OVHNSX30L1AQ94",
+  "rapporten": {
+   "549300OVHNSX30L1AQ94-2025-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-02-18",
+    "url": "https://filings.xbrl.org/549300OVHNSX30L1AQ94/2025-12-31/ESEF/ES/0/549300OVHNSX30L1AQ94-2025-12-31-es/reports/ixbrlviewer.html"
+   },
+   "549300OVHNSX30L1AQ94-2024-12-31-ESEF-ES-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-05-08",
+    "url": "https://filings.xbrl.org/549300OVHNSX30L1AQ94/2024-12-31/ESEF/ES/0/549300OVHNSX30L1AQ94-20241231-es/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "REC.MI": {
+  "lei": "815600FBF92FD3531704",
+  "rapporten": {
+   "815600FBF92FD3531704-2025-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-04-01",
+    "url": "https://filings.xbrl.org/815600FBF92FD3531704/2025-12-31/ESEF/IT/1/815600FBF92FD3531704-2025-12-31-1-it/reports/ixbrlviewer.html"
+   },
+   "815600FBF92FD3531704-2024-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-03-28",
+    "url": "https://filings.xbrl.org/815600FBF92FD3531704/2024-12-31/ESEF/IT/1/815600FBF92FD3531704-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "815600FBF92FD3531704-2023-12-31-ESEF-IT-1": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2023-12-31",
+    "published": "2024-04-02",
+    "url": "https://filings.xbrl.org/815600FBF92FD3531704/2023-12-31/ESEF/IT/1/815600FBF92FD3531704-2023-12-31-it/reports/ixbrlviewer.html"
+   },
+   "815600FBF92FD3531704-2022-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-04-04",
+    "url": "https://filings.xbrl.org/815600FBF92FD3531704/2022-12-31/ESEF/IT/0/815600FBF92FD3531704-2022-12-31-en/reports/ixbrlviewer.html"
+   },
+   "815600FBF92FD3531704-2021-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-04-19",
+    "url": "https://filings.xbrl.org/815600FBF92FD3531704/2021-12-31/ESEF/IT/0/815600FBF92FD3531704-2021-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "SPM.MI": {
+  "lei": "549300PHV8MBDHWB8X12",
+  "rapporten": {
+   "549300PHV8MBDHWB8X12-2022-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300PHV8MBDHWB8X12/2022-12-31/ESEF/IT/0/Saipem_2022/reports/ixbrlviewer.html"
+   },
+   "549300PHV8MBDHWB8X12-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300PHV8MBDHWB8X12/2021-12-31/ESEF/IT/0/Saipem_2021/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "SYENS.BR": {
+  "lei": "549300060XNJ90PLNS10",
+  "rapporten": {
+   "549300060XNJ90PLNS10-2024-12-31-ESEF-BE-2": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-03-28",
+    "url": "https://filings.xbrl.org/549300060XNJ90PLNS10/2024-12-31/ESEF/BE/2/549300060XNJ90PLNS10-2024-12-31-0-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "TEN.MI": {
+  "lei": "549300Y7C05BKC4HZB40",
+  "rapporten": {
+   "549300Y7C05BKC4HZB40-2025-05-06-ESEF-IT-1": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2025-05-06",
+    "published": "2025-05-21",
+    "url": "https://filings.xbrl.org/549300Y7C05BKC4HZB40/2025-05-06/ESEF/IT/1/549300Y7C05BKC4HZB40-2024-12-31-0-en/reports/ixbrlviewer.html"
+   },
+   "549300Y7C05BKC4HZB40-2024-04-30-ESEF-LU-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2024-04-30",
+    "published": "2024-04-23",
+    "url": "https://filings.xbrl.org/549300Y7C05BKC4HZB40/2024-04-30/ESEF/LU/0/549300Y7C05BKC4HZB40-2023-12-31-en/reports/ixbrlviewer.html"
+   },
+   "549300Y7C05BKC4HZB40-2022-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300Y7C05BKC4HZB40/2022-12-31/ESEF/IT/0/549300Y7C05BKC4HZB40-2022-12-31-en/reports/ixbrlviewer.html"
+   },
+   "549300Y7C05BKC4HZB40-2021-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2023-05-30",
+    "url": "https://filings.xbrl.org/549300Y7C05BKC4HZB40/2021-12-31/ESEF/IT/0/549300Y7C05BKC4HZB40-2021-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "TIT.MI": {
+  "lei": "549300W384M3RI3VXU42",
+  "rapporten": {
+   "549300W384M3RI3VXU42-2025-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2025-12-31",
+    "published": "2026-03-23",
+    "url": "https://filings.xbrl.org/549300W384M3RI3VXU42/2025-12-31/ESEF/IT/0/tim-2025-12-31-it/reports/ixbrlviewer.html"
+   },
+   "549300W384M3RI3VXU42-2024-12-31-ESEF-IT-0": {
+    "komma": true,
+    "regels": [],
+    "period_end": "2024-12-31",
+    "published": "2025-03-24",
+    "url": "https://filings.xbrl.org/549300W384M3RI3VXU42/2024-12-31/ESEF/IT/0/tim-2024-12-31-it/reports/ixbrlviewer.html"
+   },
+   "549300W384M3RI3VXU42-2021-12-31-ESEF-IT-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2021-12-31",
+    "published": "2022-04-19",
+    "url": "https://filings.xbrl.org/549300W384M3RI3VXU42/2021-12-31/ESEF/IT/0/tim-2021-12-31-it/reports/ixbrlviewer.html"
+   }
+  }
+ },
+ "UCB.BR": {
+  "lei": "21380029O1RSZIAVOR95",
+  "rapporten": {
+   "21380029O1RSZIAVOR95-2022-12-31-ESEF-BE-0": {
+    "komma": false,
+    "regels": [],
+    "period_end": "2022-12-31",
+    "published": "2023-02-23",
+    "url": "https://filings.xbrl.org/21380029O1RSZIAVOR95/2022-12-31/ESEF/BE/0/21380029O1RSZIAVOR95-2022-12-31-en/reports/ixbrlviewer.html"
+   }
+  }
+ }
+}
