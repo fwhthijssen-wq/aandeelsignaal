@@ -12,10 +12,7 @@ const rijen = inv.rijen.map((r) => {
   return { peildatum: r.peildatum, ticker: r.ticker, app: b.oordeel || 'geen', naic: n.oordeel || 'geen',
     zone: (n.zones && n.zones.zone) || 'geen', totaal: n.totaal ? (n.totaal.ok ? 'ok' : 'te laag') : 'onbekend',
     kwaliteit: (n.kwaliteit || []).some((q) => q.ok === false) ? 'zwak' : 'goed',
-    zone: groep((x) => x.zone, ['onder', 'koop', 'houd', 'verkoop', 'boven', 'geen']),
-  totaal: groep((x) => x.totaal, ['ok', 'te laag', 'onbekend']),
-  kwaliteit: groep((x) => (x.naic === 'geen' ? 'geen' : x.kwaliteit), ['goed', 'zwak', 'geen']),
-  metingen: Object.fromEntries(b.metingen.map((m) => [m.id, m.nvt ? 'nvt' : m.oordeel || 'onbekend'])), aantal: b.aantal, r1: r.r1, r3: r.r3 };
+    metingen: Object.fromEntries(b.metingen.map((m) => [m.id, m.nvt ? 'nvt' : m.oordeel || 'onbekend'])), aantal: b.aantal, r1: r.r1, r3: r.r3 };
 });
 // overrendement per peildatum
 for (const T of inv.peildata) {
@@ -52,6 +49,9 @@ const res = {
   gemaakt: new Date().toISOString(), rijen: rijen.length, peildata: inv.peildata, zonder_koersen: Object.keys(inv.fouten || {}).length,
   app: groep((x) => x.app, O), naic: groep((x) => x.naic, O),
   beide: groep((x) => (x.app === 'kopen' && x.naic === 'kopen' ? 'beide kopen' : x.app === 'kopen' ? 'alleen app' : x.naic === 'kopen' ? 'alleen NAIC' : 'geen van beide'), ['beide kopen', 'alleen app', 'alleen NAIC', 'geen van beide']),
+  zone: groep((x) => x.zone, ['onder', 'koop', 'houd', 'verkoop', 'boven', 'geen']),
+  totaal: groep((x) => x.totaal, ['ok', 'te laag', 'onbekend']),
+  kwaliteit: groep((x) => (x.naic === 'geen' ? 'geen' : x.kwaliteit), ['goed', 'zwak', 'geen']),
   metingen: Object.fromEntries(S.KERN.map((k) => [k.id, groep((x) => x.metingen[k.id], ['gunstig', 'neutraal', 'ongunstig', 'onbekend'])])),
   per_jaar,
 };
