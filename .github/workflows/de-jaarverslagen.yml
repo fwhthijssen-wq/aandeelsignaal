@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: pdftotext installeren
-        run: sudo apt-get install -y -qq poppler-utils >/dev/null
+        run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
       - name: Tak jaarverslagen ophalen
         run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
       - name: Downloaden
