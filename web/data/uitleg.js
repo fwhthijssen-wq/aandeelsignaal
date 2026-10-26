@@ -2,7 +2,7 @@ window.AANDEEL_UITLEG = {
  "termen": [
   {
    "naam": "NAIC en de Stock Selection Guide",
-   "tekst": "De NAIC (in de VS nu BetterInvesting) is een vereniging van particuliere beleggers. Haar Stock Selection Guide beoordeelt een aandeel in vijf delen: groei, kwaliteit van het management, de koers-winstgeschiedenis, risico en opbrengst, en het verwachte rendement over 5 jaar. De app volgt die regels voor het oordeel Kopen, Neutraal of Vermijden."
+   "tekst": "De NAIC (in de VS nu BetterInvesting) is een vereniging van particuliere beleggers. Haar Stock Selection Guide beoordeelt een aandeel in zes stappen: visuele analyse van de groei, evaluatie van het management, de koers-winstgeschiedenis, de verwachte hoge en lage koers over 5 jaar, risico en rendement (3 : 1), en het verwachte totaalrendement (minstens 15% per jaar). De app volgt die regels voor het oordeel Kopen, Neutraal of Vermijden."
   },
   {
    "naam": "Koopzone, houdzone en verkoopzone",

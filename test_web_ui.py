@@ -521,7 +521,7 @@ class WebUi(unittest.TestCase):
         t = pg.inner_text('main')
         for kop in ('Winstmarge vóór belasting', 'Uitgekeerd deel van de winst', 'Schuld t.o.v. totaal kapitaal', 'Investeringen t.o.v. afschrijvingen'):
             self.assertIn(kop, t)
-        self.assertEqual(pg.locator('#naic-extra ~ section svg.grafiek').count(), 4)
+        self.assertEqual(pg.locator('#naic-extra ~ section svg.grafiek').count(), 3)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pb = self._naic_extra_pagina(True)
         tb = pb.inner_text('main')
@@ -686,9 +686,9 @@ class WebUi(unittest.TestCase):
         pg = self.pagina()
         pg.goto(INDEX + '#/a/AAPL/waarde')
         tekst = pg.inner_text('main')
-        for kop in ('Groei', 'Management', 'Koers/winst-geschiedenis', 'Risico en beloning', 'Vijfjaarspotentieel'):
+        for kop in ('Visuele analyse van de groei', 'Evaluatie van het management', 'Koers/winst-geschiedenis', 'Verwachte hoge en lage koers', 'Risico en rendement', 'Verwacht totaalrendement'):
             self.assertIn(kop, tekst)
-        self.assertEqual(pg.locator('section[data-deel]').count(), 5)
+        self.assertEqual(pg.locator('section[data-deel]').count(), 6)
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
         pg.fill('#v-z-kwl', '30')   # lage K/W boven hoge K/W: geweigerd
         self.assertIn('Controleer de getallen', pg.inner_text('#zones'))
@@ -804,7 +804,7 @@ class WebUi(unittest.TestCase):
         pg.on('pageerror', lambda e: fouten.append(str(e)))
         pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-naic-niveau="jaarverslag"]').count(), 1)
-        self.assertEqual(pg.locator('section[data-deel]').count(), 5)
+        self.assertEqual(pg.locator('section[data-deel]').count(), 6)
         pg.goto(INDEX + '#/a/GOOGL/waarde'); pg.wait_for_timeout(200)
         self.assertIn('Nog geen NAIC-gids', pg.inner_text('main'))
         self.assertEqual(fouten, [])

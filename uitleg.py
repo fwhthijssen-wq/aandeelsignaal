@@ -2,8 +2,8 @@
 
 TERMS = (
     ('NAIC en de Stock Selection Guide', 'De NAIC (in de VS nu BetterInvesting) is een vereniging van particuliere beleggers. Haar Stock Selection Guide '
-     'beoordeelt een aandeel in vijf delen: groei, kwaliteit van het management, de koers-winstgeschiedenis, risico en opbrengst, '
-     'en het verwachte rendement over 5 jaar. De app volgt die regels voor het oordeel Kopen, Neutraal of Vermijden.'),
+     'beoordeelt een aandeel in zes stappen: visuele analyse van de groei, evaluatie van het management, de koers-winstgeschiedenis, '
+     'de verwachte hoge en lage koers over 5 jaar, risico en rendement (3 : 1), en het verwachte totaalrendement (minstens 15% per jaar). De app volgt die regels voor het oordeel Kopen, Neutraal of Vermijden.'),
     ('Koopzone, houdzone en verkoopzone', 'Het bereik tussen de verwachte lage en hoge koers over 5 jaar, in drie gelijke delen. '
      'Onderste derde: koopzone; middelste derde: houden; bovenste derde: verkoopzone.'),
     ('Opwaarts tegen neerwaarts (3 : 1)', 'Hoeveel de koers kan stijgen tot de verwachte hoge koers, gedeeld door hoeveel hij kan dalen tot de '

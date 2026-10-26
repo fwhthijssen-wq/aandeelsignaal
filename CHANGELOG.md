@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.26-beta.91
+- **NAIC-gids in zes stappen**: 1 Visuele analyse van de groei, 2 Evaluatie van het management (marge vóór belasting, rendement op eigen vermogen en nu ook de schuldgraad), 3 Koers/winst-geschiedenis, 4 Verwachte hoge en lage koers, 5 Risico en rendement (zone en 3 : 1), 6 Verwacht totaalrendement. Het officiële deel 4 van het formulier is zo in twee stappen gesplitst, zoals het meestal wordt uitgelegd. Ook de uitleg bij het oordeel en de hulp spreken nu van stappen.
+
 ## 2026.10.26-beta.90
 - **NAIC-gids in de vijf delen van de Stock Selection Guide**, in dezelfde volgorde als het NAIC-formulier: 1 Groei, 2 Management (winstmarge vóór belasting en rendement op eigen vermogen), 3 Koers/winst-geschiedenis (met relatieve waarde), 4 Risico en beloning (verwachte hoge en lage koers, zones, 3 : 1) en 5 Vijfjaarspotentieel (totaalrendement, PAR, koopprijs). Elk deel begint met de vraag die het beantwoordt en toont de uitkomst van de toets. Voorheen stonden er vier eigen stappen die niet op de NAIC-indeling aansloten. Uw eigen koerszones staan nu onder deel 4; de nettomarge onder “Aanvullend”.
 
