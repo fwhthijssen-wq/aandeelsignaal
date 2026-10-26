@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '17 3 * * 1-6'   # 03:17 UTC, maandag t/m zaterdag
   workflow_dispatch: {}
+  push:                      # een nieuwe app-versie meteen publiceren, niet pas 's nachts
+    branches: [main]
+    paths: ['web/**', 'VERSION']
 permissions:
   contents: read
   pages: write
