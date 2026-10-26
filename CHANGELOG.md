@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026.10.26-beta.92
+- **Door u aangeleverde jaarcijfers verwerkt** (het teruggestuurde aanvulsjabloon, vooral EODHD). 15.727 cijfers bij 320 fondsen. Regels: alleen lege plekken worden gevuld, een officieel cijfer (SEC, ESEF, jaarverslag) of een Yahoo-cijfer wordt nooit vervangen; alleen in dezelfde valuta als de jaarcijfers; een cijfer dat meer dan een factor 10 afwijkt van het jaar ernaast (andere eenheid) vervalt; winst per aandeel moet kloppen met nettowinst ÷ aandelen (Londense pence omgerekend naar ponden). Winst per aandeel wordt alleen aangevuld bij fondsen met minder dan 6 jaar eigen winst per aandeel; die fondsen heten dan “Indicatief”. Bij Bronnen staat per fonds wat er is aangevuld en wat niet gebruikt is.
+- Het label “Indicatief (Yahoo)” heet nu “Indicatief”: de bron kan Yahoo Finance of uw eigen aanlevering zijn.
+
 ## 2026.10.26-beta.91
 - **NAIC-gids in zes stappen**: 1 Visuele analyse van de groei, 2 Evaluatie van het management (marge vóór belasting, rendement op eigen vermogen en nu ook de schuldgraad), 3 Koers/winst-geschiedenis, 4 Verwachte hoge en lage koers, 5 Risico en rendement (zone en 3 : 1), 6 Verwacht totaalrendement. Het officiële deel 4 van het formulier is zo in twee stappen gesplitst, zoals het meestal wordt uitgelegd. Ook de uitleg bij het oordeel en de hulp spreken nu van stappen.
 

@@ -307,6 +307,108 @@ def vul_eps_yahoo(g, ruw):
     g['eps_yahoo'] = {'jaren': len(paren), 'uitleg': 'Winst per aandeel van Yahoo Finance (indicatief): de officiële bron meldt geen bruikbare winst per aandeel. Overige cijfers uit de officiële bron.'}
 
 
+AANGELEVERD = HERE / 'aangeleverd_jaarcijfers.json'      # door de gebruiker aangevuld sjabloon (hulp/aangeleverd_inlezen.py)
+AANGELEVERD_VELDEN = ('reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted',
+                      'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities')
+
+
+def _aangeleverd():
+    try:
+        return json.loads(AANGELEVERD.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
+def vul_aangeleverd(g, ticker, register=None):
+    """Vult gaten met de cijfers die de gebruiker aanleverde (aanvulsjabloon). Regels:
+    - nooit over een bestaand cijfer heen (officieel, jaarverslag of Yahoo gaat altijd voor);
+    - alleen in dezelfde valuta als de jaarcijfers van het fonds;
+    - per veld vergeleken met het dichtstbijzijnde bestaande jaar: meer dan een factor 10 verschil (andere eenheid, of
+      duizendtallen) of een ander teken bij omzet/eigen vermogen: dat cijfer vervalt;
+    - winst per aandeel alleen als het fonds minder dan 6 jaar eigen winst per aandeel heeft (genoeg voor NAIC: 5 jaar K/W),
+      zodat een langere officiële reeks nooit gemengd wordt; die jaren krijgen eps_bron 'aangeleverd' en het fonds niveau
+      'indicatief'.
+    Eerder aangevulde cijfers (bij hergebruik van de vorige run) worden eerst verwijderd, zodat een nieuw bestand telt."""
+    reg = ((register if register is not None else _aangeleverd()).get('fondsen') or {}).get(ticker) or {}
+    jaren = g.get('jaren') or []
+    for j in jaren:                                   # vorige aanvulling eraf
+        for v in j.pop('aangeleverd', []) or []:
+            j.pop(v, None)
+        if j.get('eps_bron') == 'aangeleverd':
+            j.pop('eps_bron', None)
+    jaren = [j for j in jaren if not j.pop('aangeleverd_rij', False)]
+    g.pop('aangeleverd', None)
+    if g.get('aangeleverd_niveau_was', 0) != 0:
+        g['niveau'] = g.pop('aangeleverd_niveau_was')
+    if g.get('aangeleverd_fout_was'):
+        g['fout'] = g.pop('aangeleverd_fout_was'); g.pop('bron_aangeleverd', None)
+    g['jaren'] = jaren
+    if not reg:
+        return
+    if g.get('fout') and not jaren:
+        # geen enkele officiële of Yahoo-jaarcijfers: alleen met minstens 4 jaar aangeleverde winst per aandeel
+        if sum(1 for r in reg.values() if _getal(r.get('comparable_eps')) is not None) < 4:
+            return
+    munt = (jaren[-1].get('currency') if jaren else None) or (g.get('currencies') or [None])[0]
+    per_jaar = {j.get('year'): j for j in jaren}
+    eigen_eps = sum(1 for j in jaren if _getal(j.get('comparable_eps')) is not None)
+    log = {'velden': {}, 'eps_jaren': 0, 'geweigerd': {}, 'valuta': 0}
+
+    def buur(jaar, veld):
+        kand = sorted((abs(y - jaar), y) for y, j in per_jaar.items() if _getal(j.get(veld)) is not None and veld not in (j.get('aangeleverd') or []))
+        return per_jaar[kand[0][1]][veld] if kand else None
+
+    for jaar_s, r in sorted(reg.items()):
+        jaar = int(jaar_s)
+        if munt and r.get('currency') and r['currency'] != munt:
+            log['valuta'] += 1
+            continue
+        rij = per_jaar.get(jaar)
+        nieuw_rij = rij is None
+        if nieuw_rij:
+            rij = {'year': jaar, 'end': r.get('end') or f'{jaar}-12-31', 'currency': munt or r.get('currency')}
+        gevuld = []
+        for v in AANGELEVERD_VELDEN:
+            x = _getal(r.get(v))
+            if x is None or _getal(rij.get(v)) is not None:
+                continue
+            if v in ('comparable_eps', 'reported_eps') and eigen_eps >= 6:
+                continue
+            b = buur(jaar, v)
+            if b is not None and b != 0 and x != 0:
+                verh = abs(x / b)
+                if verh > 10 or verh < 0.1 or (v in ('sales', 'equity', 'total_assets') and x * b < 0):
+                    log['geweigerd'][v] = log['geweigerd'].get(v, 0) + 1
+                    continue
+            rij[v] = x
+            gevuld.append(v)
+        if not gevuld:
+            continue
+        rij['aangeleverd'] = gevuld
+        if 'comparable_eps' in gevuld:
+            rij['eps_bron'] = 'aangeleverd'
+            log['eps_jaren'] += 1
+        for v in gevuld:
+            log['velden'][v] = log['velden'].get(v, 0) + 1
+        if nieuw_rij:
+            rij['aangeleverd_rij'] = True
+            jaren.append(rij)
+            per_jaar[jaar] = rij
+    jaren.sort(key=lambda j: j.get('year') or 0)
+    g['jaren'] = jaren
+    if log['velden']:
+        if log['eps_jaren'] and g.get('niveau') != 'indicatief' and not (g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10):
+            g['aangeleverd_niveau_was'] = g.get('niveau')
+            g['niveau'] = 'indicatief'                # winst per aandeel deels aangeleverd: niet meer 'uit jaarverslag'
+        if g.get('fout'):
+            g['aangeleverd_fout_was'] = g.pop('fout'); g['bron_aangeleverd'] = True
+            g.setdefault('bron', 'Aangeleverd')
+        if munt and not g.get('currencies'):
+            g['currencies'] = [munt]
+        g['aangeleverd'] = dict(log, bron=(register if register is not None else _aangeleverd()).get('bronnen'),
+                                uitleg='Aangevuld met cijfers die u zelf aanleverde (aanvulsjabloon; vooral EODHD). Niet gecontroleerd tegen het jaarverslag. Alleen gaten zijn gevuld; officiële cijfers gaan altijd voor.')
+
+
 def _investeringen_register():
     try:
         return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
@@ -688,7 +790,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -709,6 +811,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     if analisten_ophalen is None:
         # Alleen in een echte run (koersen van Yahoo) ook het analistenadvies; met nepkoersen (tests) niet.
         analisten_ophalen = _yahoo_analisten if fetch_prijzen is None else (lambda t: None)
+    if aangeleverd is None:
+        aangeleverd = _aangeleverd() if fetch_prijzen is None else {}     # tests: alleen als ze het zelf meegeven
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
@@ -829,6 +933,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['archief'] = blok
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
+        try:
+            vul_aangeleverd(gegevens, ticker, aangeleverd)
+        except Exception as exc:          # aanvulling is extra; de run gaat altijd door
+            gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
         koers, punten, dividenden = None, [], []
         pence = meta[3] == 'GBX'
         if pence:

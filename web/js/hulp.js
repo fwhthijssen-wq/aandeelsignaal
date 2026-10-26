@@ -46,7 +46,7 @@
       'Via de rondleiding ziet u de basis nog eens.'], null],
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
       'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata.',
-      'Daaronder, aanvullend, de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt. Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo) of uw eigen invoer. Tik op een meting voor uitleg.',
+      'Daaronder, aanvullend, de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt. Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo of aangeleverd) of uw eigen invoer. Tik op een meting voor uitleg.',
       'Bovenaan het oordeel volgens NAIC: groei, de kwaliteitstoetsen, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar, de zones, het verwachte rendement en (ter informatie) de relatieve waarde. Daarbij de vijf NAIC-stappen als vinkjes, de koopprijs (“Kopen onder …”) en of het oordeel stevig is of op het randje staat. Hier vult u ook uw eigen groeiverwachting in.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'Met de ster volgt u het aandeel.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
@@ -68,7 +68,7 @@
     gezondheid: ['Aandeel: Cijfers', 'De jaarcijfers en de controle erop.', [
       'De tabel toont omzet, winst, kasstroom en meer per boekjaar, in miljarden.',
       'Jaren waarvan de winst per aandeel niet is nagerekend staan apart, met de reden.',
-      'Bij aandelen met cijfers uit een jaarverslag is de winst per aandeel niet onafhankelijk nagerekend; bij Indicatief (Yahoo) komen de cijfers niet uit een officiële bron. Het label bij het aandeel zegt welke.'], null],
+      'Bij aandelen met cijfers uit een jaarverslag is de winst per aandeel niet onafhankelijk nagerekend; bij Indicatief komt (een deel van) de winst per aandeel niet uit een officiële bron (Yahoo Finance of door u aangeleverd). Het label bij het aandeel zegt welke.'], null],
     bronnen: ['Aandeel: Bronnen', 'Waar de cijfers vandaan komen en wanneer ze zijn gecontroleerd.', [
       'Jaarcijfers komen van de SEC (Verenigde Staten) of uit officiële Europese jaarverslagen (digitaal, of uit de pdf van het jaarverslag, zoals bij veel Duitse bedrijven). Ontbreken die, dan gebruikt de app indicatieve cijfers van Yahoo Finance (het label zegt dat). Koersen komen ook van Yahoo Finance.',
       'Komt de winst per aandeel uit een pdf-jaarverslag of van Yahoo, dan staat dat hier apart, met per jaar het document en de pagina.',

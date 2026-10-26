@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.26-beta.91';
+  var APP_VERSIE = '2026.10.26-beta.92';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -330,7 +330,7 @@
   }
 
   function rijen() { var t = vandaag(); return DATA.aandelen.map(function (r) { return Gate.maakRij(r, t); }); }
-  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief (Yahoo)</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
+  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
   function trendTekst(r) {
     if (!r.koersActueel) return r.koersReden ? 'Koers ontbreekt of is verouderd' : '';
     return (r.richting === 'boven' ? 'Boven' : 'Onder') + ' gemiddelde, ' + pct(r.afstandPct);
@@ -676,7 +676,7 @@
   }
 
   /* ---- Vergelijken ---- */
-  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief (Yahoo)</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
+  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
   function schermVergelijk(ta, tb) {
     var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
     var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
@@ -708,7 +708,7 @@
   var INTRO = [
     ['Welkom bij Aandeel Signaal', 'Vergelijk en volg grote Europese en Amerikaanse bedrijven. U heeft geen account nodig en het kost niets. De app is een hulpmiddel om te kiezen, geen beleggingsadvies.'],
     ['Het oordeel volgt de NAIC-methode', 'Bij elk aandeel staat Kopen, Neutraal of Vermijden volgens de Stock Selection Guide van de NAIC: is het een groeibedrijf, is het een goed bedrijf, en is de prijs nu gunstig (koopzone, minstens 3 : 1 opwaarts tegen neerwaarts, minstens 15% verwacht rendement per jaar)? Zes extra metingen staan er aanvullend bij.'],
-    ['Waar komen de cijfers vandaan?', '“Bevestigd” betekent: de winst per aandeel van 10 jaar is onafhankelijk nagerekend. “Uit jaarverslag”: officiële cijfers, niet nagerekend. “Indicatief (Yahoo)”: geen officiële bron beschikbaar. Ontbreekt iets, dan zegt de app liever niets dan iets onzekers; hij schat nooit.'],
+    ['Waar komen de cijfers vandaan?', '“Bevestigd” betekent: de winst per aandeel van 10 jaar is onafhankelijk nagerekend. “Uit jaarverslag”: officiële cijfers, niet nagerekend. “Indicatief”: (een deel van) de winst per aandeel komt niet uit een officiële bron, maar van Yahoo Finance of uit cijfers die u aanleverde. Ontbreekt iets, dan zegt de app liever niets dan iets onzekers; hij schat nooit.'],
     ['Volgen en signalen', 'Zet aandelen op uw volglijst (ster) of voer uw aankopen in bij Portefeuille. Op Start ziet u dan wanneer ze in de koop- of verkoopzone komen, en welke fondsen sinds de vorige update van oordeel veranderden.'],
     ['Uw gegevens blijven van u', 'Uw volglijst en portefeuille staan alleen op dit toestel. Maak daarom af en toe een back-up via Instellingen en bewaar die in uw eigen cloud of mail. Handig: zet de app op uw beginscherm via het menu van uw browser.']
   ];
@@ -948,7 +948,7 @@
     if (!ev && !(b.niveau && n && n.groeiHistorisch !== null)) return '<div class="melding"><b>Nog geen NAIC-gids</b><span>' + h(n && n.reden ? n.reden : 'Er zijn te weinig jaarcijfers.') + ' De NAIC-gids vraagt minstens 4 jaar winst per aandeel.</span></div>';
     var koersVgl = !!(r.bevestigd || (n && n.zones && n.zones.koers != null));
     var noot = ev ? '' : '<div class="melding" data-naic-niveau="' + h(b.niveau) + '"><b>Gegevens: ' + h(Signaal.KWALITEIT[b.niveau] ? Signaal.KWALITEIT[b.niveau].naam : b.niveau) + '</b><span>' +
-      (b.niveau === 'indicatief' ? 'Deze cijfers komen van Yahoo Finance en zijn niet nagerekend.' : 'Deze cijfers komen uit de officiële jaarverslagen maar de winst per aandeel is niet onafhankelijk nagerekend.') +
+      (b.niveau === 'indicatief' ? 'Deze cijfers komen (deels) van Yahoo Finance of uit door u aangeleverde cijfers, en zijn niet nagerekend.' : 'Deze cijfers komen uit de officiële jaarverslagen maar de winst per aandeel is niet onafhankelijk nagerekend.') +
       ' De gids rekent er wel mee, net als het NAIC-oordeel op Overzicht; alleen het label bij de plek in het koersbereik verschijnt pas bij bevestigde gegevens.</span></div>';
     var epsJr = jr.filter(function (j) { return typeof j.comparable_eps === 'number' && j.comparable_eps > 0; });
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
@@ -985,6 +985,12 @@
       var gebruikt = Object.keys(g.jaarcijfers_pdf).filter(function (k) { return g.jaarcijfers_pdf[k].gebruikt && g.jaarcijfers_pdf[k].aangevuld; });
       if (gebruikt.length) s += '<section data-jaarcijfers-pdf><h2>Oudere jaarcijfers uit de jaarverslagen</h2><p>Aangevuld uit de pdf-jaarverslagen: ' + gebruikt.map(function (k) { var x = g.jaarcijfers_pdf[k]; return h(VN[k] || k) + ' (' + x.aangevuld + ' jaar extra)'; }).join(', ') +
         '. Alleen gebruikt waar de reeks in de gedeelde jaren klopt met Yahoo Finance (binnen 5%); een cijfer van Yahoo wordt nooit vervangen.</p></section>';
+    }
+    if (g.aangeleverd) {
+      var AV = g.aangeleverd, VN2 = { comparable_eps: 'winst per aandeel', reported_eps: 'gerapporteerde winst per aandeel', sales: 'omzet', pretax_income: 'winst vóór belasting', net_income: 'nettowinst', equity: 'eigen vermogen', shares_diluted: 'aantal aandelen', operating_cash_flow: 'kasstroom', capex: 'investeringen', total_assets: 'bezittingen', total_liabilities: 'verplichtingen' };
+      var gew = Object.keys(AV.geweigerd || {}).reduce(function (a, k) { return a + AV.geweigerd[k]; }, 0);
+      s += '<section data-aangeleverd><h2>Door u aangeleverde cijfers</h2><p>' + h(AV.uitleg || '') + '</p><p>Aangevuld: ' + Object.keys(AV.velden || {}).map(function (k) { return h(VN2[k] || k) + ' (' + AV.velden[k] + ' jaar)'; }).join(', ') + '.' +
+        (AV.eps_jaren ? ' Omdat de winst per aandeel deels aangeleverd is, heet het fonds “Indicatief”.' : '') + (gew || AV.valuta ? ' Niet gebruikt: ' + [gew ? gew + ' cijfers die meer dan een factor 10 afweken van het jaar ernaast' : '', AV.valuta ? AV.valuta + ' jaren in een andere valuta dan de jaarcijfers' : ''].filter(Boolean).join(' en ') + '.' : '') + '</p></section>';
     }
     if (g.eps_yahoo) s += '<section data-eps-yahoo><h2>Winst per aandeel van Yahoo Finance</h2><p>' + h(g.eps_yahoo.uitleg || '') + ' ' + g.eps_yahoo.jaren + ' jaar.</p></section>';
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';

@@ -11,7 +11,7 @@
     gecontroleerd: { naam: 'gecontroleerd', factor: 1 },   // jaarcijfers met onafhankelijk nagerekende winst per aandeel
     koers: { naam: 'koersdata', factor: 0.9 },             // dagkoersen van één bron
     jaarverslag: { naam: 'uit jaarverslag', factor: 0.7 },
-    indicatief: { naam: 'indicatief (Yahoo)', factor: 0.5 },   // cijfers van Yahoo Finance, niet nagerekend   // officieel jaarverslag, winst per aandeel niet nagerekend
+    indicatief: { naam: 'indicatief', factor: 0.5 },   // cijfers van Yahoo Finance, niet nagerekend   // officieel jaarverslag, winst per aandeel niet nagerekend
     eigen: { naam: 'eigen invoer', factor: 0.6 }           // uw eigen antwoorden
   };
   var GROEPEN = { technisch: 'Technische analyse', fundamenteel: 'Fundamentele analyse', kwantitatief: 'Kwantitatief (factoren)', kwalitatief: 'Kwalitatief (uw check)' };
@@ -302,7 +302,7 @@
     // lb: het laatste jaar voor balans en kasstroom. Splitsingen raken die niet, dus ook bruikbaar als de winst per aandeel nog niet bevestigd is.
     var lb = jarenBruikbaar ? l : (g && !g.fout && g.bron !== 'Yahoo Finance' && l ? l : null);
     var c = { k: k, koersOk: !!(vers && k && pos(k.slot)), reeks: reeks, bereik: bereik, jr: jarenBruikbaar ? jr : [], laatste: jarenBruikbaar ? l : null, lb: lb,
-      epsYahoo: !!(jarenBruikbaar && jr.some(function (j) { return j.eps_bron === 'yahoo'; })),
+      epsYahoo: !!(jarenBruikbaar && jr.some(function (j) { return j.eps_bron === 'yahoo' || j.eps_bron === 'aangeleverd'; })),
       epsJaarverslag: !!(jarenBruikbaar && jr.filter(function (j) { return num(j.comparable_eps); }).every(function (j) { return j.eps_bron === 'jaarverslag'; }) && jr.some(function (j) { return j.eps_bron === 'jaarverslag'; })),
       niveau: niveau, bank: bank, check: opties.check || null, eigen: opties.verdieping || null, van: f ? f.year : null, tot: l ? l.year : null,
       eenValuta: !!(g && g.currencies && g.currencies.length === 1 && rec.valuta && g.currencies[0] === rec.valuta),

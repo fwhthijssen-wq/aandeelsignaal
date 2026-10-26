@@ -65,6 +65,8 @@ jobs:
           print(f"::notice title=Dividend::{len(geendiv)} fondsen met koersen maar zonder dividend in de laatste 5 jaar: {' '.join(geendiv)}")
           ye = sorted(a['ticker'] for a in L if (a.get('gegevens') or {}).get('eps_yahoo'))
           print(f"::notice title=Yahoo-EPS::{len(ye)} fondsen met officiele cijfers maar winst per aandeel van Yahoo: {' '.join(ye)}")
+          ag = [a for a in L if (a.get('gegevens') or {}).get('aangeleverd')]
+          print(f"::notice title=Aangeleverd::{len(ag)} fondsen aangevuld, {sum(a['gegevens']['aangeleverd'].get('eps_jaren', 0) for a in ag)} jaren winst per aandeel, {sum(sum(a['gegevens']['aangeleverd'].get('velden', {}).values()) for a in ag)} cijfers; geweigerd {sum(sum(a['gegevens']['aangeleverd'].get('geweigerd', {}).values()) for a in ag)}, andere valuta {sum(a['gegevens']['aangeleverd'].get('valuta', 0) for a in ag)}")
           print(f"::notice title=Ontbreekt::Yahoo zonder jaarverslag-EPS ({len(ykort)}): {' '.join(ykort)} | officieel met minder dan 6 jaar EPS ({len(kort)}): {' '.join(kort)}")
           print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
           PY
