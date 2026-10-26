@@ -205,14 +205,23 @@ details.uitleg p, details.uitleg li { font-weight: 400; }
 .filterkeuzes #f-sort { grid-column: 1 / -1; }
 @media (min-width: 640px) { .filterkeuzes { grid-template-columns: 1.2fr 1fr 2fr; } .filterkeuzes #f-sort { grid-column: auto; } }
 .vink.klein { font-size: .95rem; min-height: 36px; }
-/* Vijf vragen: stippen. ✓ gunstig (vol), = neutraal (grijs), ✗ ongunstig (oranje rand), lege gestippelde ring = te weinig gegevens. Teken én vorm, niet alleen kleur. */
-:root { --stip-g: #0B6E78; --stip-g-ink: #FFFFFF; --stip-n: #E3E8EA; --stip-n-ink: #33414A; --stip-o: #FCE3CF; --stip-o-rand: #B4460F; --stip-o-ink: #8A330A; --stip-l: #8A979E; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92; } }
-:root[data-theme="dark"] { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92; }
+/* Stippen in een kleurschaal van donkergroen naar rood, met teken: ✓ (licht) gunstig, = neutraal (half groen, half rood), ✗ (licht) ongunstig,
+   lege gestippelde ring = geen gegevens. --stip-g/-n/-o blijven voor de oordeelchips. */
+:root { --stip-g: #0B6E78; --stip-g-ink: #FFFFFF; --stip-n: #E3E8EA; --stip-n-ink: #33414A; --stip-o: #FCE3CF; --stip-o-rand: #B4460F; --stip-o-ink: #8A330A; --stip-l: #8A979E;
+  --s5-g: #1E6B3A; --s5-g-ink: #FFFFFF; --s5-h: #BFE5C8; --s5-h-rand: #6FB585; --s5-h-ink: #14532D; --s5-n-rand: #A9B4BA; --s5-n-ink: #33414A;
+  --s5-p: #F6CFCB; --s5-p-rand: #E08A80; --s5-p-ink: #8A1F1F; --s5-o: #B42318; --s5-o-ink: #FFFFFF; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92;
+  --s5-g: #1F7A44; --s5-g-ink: #FFFFFF; --s5-h: #24533A; --s5-h-rand: #5FAE7B; --s5-h-ink: #B4EBC6; --s5-n-rand: #7D8B92; --s5-n-ink: #E6EDF2;
+  --s5-p: #5E2A26; --s5-p-rand: #D0756A; --s5-p-ink: #F7C0B9; --s5-o: #C0392B; --s5-o-ink: #FFFFFF; } }
+:root[data-theme="dark"] { --stip-g: #5CC1CC; --stip-g-ink: #072A30; --stip-n: #3A474E; --stip-n-ink: #E3E8EA; --stip-o: #4A2A16; --stip-o-rand: #F0975C; --stip-o-ink: #FFC9A3; --stip-l: #7D8B92;
+  --s5-g: #1F7A44; --s5-g-ink: #FFFFFF; --s5-h: #24533A; --s5-h-rand: #5FAE7B; --s5-h-ink: #B4EBC6; --s5-n-rand: #7D8B92; --s5-n-ink: #E6EDF2;
+  --s5-p: #5E2A26; --s5-p-rand: #D0756A; --s5-p-ink: #F7C0B9; --s5-o: #C0392B; --s5-o-ink: #FFFFFF; }
 .stip { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 28px; height: 28px; border-radius: 50%; box-sizing: border-box; font-weight: 700; font-size: 14px; line-height: 1; vertical-align: middle; }
-.stip.g { background: var(--stip-g); color: var(--stip-g-ink); }
-.stip.n { background: var(--stip-n); color: var(--stip-n-ink); font-size: 15px; }
-.stip.o { background: var(--stip-o); color: var(--stip-o-ink); border: 1.5px solid var(--stip-o-rand); font-size: 13px; }
+.stip.g { background: var(--s5-g); color: var(--s5-g-ink); }
+.stip.h { background: var(--s5-h); color: var(--s5-h-ink); border: 1.5px solid var(--s5-h-rand); }
+.stip.n { background: linear-gradient(90deg, var(--s5-h) 50%, var(--s5-p) 50%); color: var(--s5-n-ink); border: 1.5px solid var(--s5-n-rand); font-size: 15px; }
+.stip.p { background: var(--s5-p); color: var(--s5-p-ink); border: 1.5px solid var(--s5-p-rand); font-size: 13px; }
+.stip.o { background: var(--s5-o); color: var(--s5-o-ink); font-size: 13px; }
 .stip.l { border: 1.5px dashed var(--stip-l); }
 .stippen { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px; max-width: 340px; margin: 6px 0; }
 .stip-kol { display: flex; flex-direction: column; align-items: center; gap: 3px; }

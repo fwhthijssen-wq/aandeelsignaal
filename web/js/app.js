@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.26-beta.87';
+  var APP_VERSIE = '2026.10.26-beta.88';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -26,13 +26,21 @@
   function vandaag() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   /* Oordeel in de woorden van NAIC. 'positief' komt alleen nog voor in momentopnames van vóór beta.65. */
   var OORDEEL = { kopen: 'Kopen', neutraal: 'Neutraal', vermijden: 'Vermijden', positief: 'Positief (oude berekening)' };
-  /* Per kernmeting een stip: ✓ gunstig, = neutraal, ✗ ongunstig, lege ring = ontbreekt, streepje = niet van toepassing. */
+  /* Per kernmeting een stip in een kleurschaal: donkergroen ✓ gunstig, lichtgroen ✓ licht gunstig, half groen/half rood = neutraal,
+     lichtrood ✗ licht ongunstig, rood ✗ ongunstig. Lege ring = ontbreekt, streepje = niet van toepassing.
+     Met een score kiest de tint de sterkte (vanaf ±0,75 donker); zonder score is gunstig donkergroen en ongunstig rood. */
   var STIP = { gunstig: { t: '✓', c: 'g' }, neutraal: { t: '=', c: 'n' }, ongunstig: { t: '✗', c: 'o' } };
+  var TINT = { g: 'gunstig', h: 'licht gunstig', n: 'neutraal', p: 'licht ongunstig', o: 'ongunstig' };
+  function tint(o, score) {
+    var s = STIP[o]; if (!s) return null;
+    if (typeof score !== 'number' || !isFinite(score)) return s.c;
+    return o === 'gunstig' ? (score >= 0.75 ? 'g' : 'h') : o === 'ongunstig' ? (score <= -0.75 ? 'o' : 'p') : 'n';
+  }
   function stipWoord(m) { return m.nvt ? 'niet van toepassing' : m.aanwezig ? m.oordeel : 'ontbreekt'; }
-  function stip(o, label, nvt) { var s = STIP[o]; return '<span class="stip ' + (nvt ? 'x' : s ? s.c : 'l') + '" role="img" aria-label="' + h(label + ': ' + (nvt ? 'niet van toepassing' : o || 'ontbreekt')) + '">' + (nvt ? '–' : s ? s.t : '') + '</span>'; }
+  function stip(o, label, nvt, score) { var s = STIP[o], c = nvt ? 'x' : tint(o, score) || 'l'; return '<span class="stip ' + c + '" role="img" aria-label="' + h(label + ': ' + (nvt ? 'niet van toepassing' : s ? TINT[c] : 'ontbreekt')) + '">' + (nvt ? '–' : s ? s.t : '') + '</span>'; }
   function stippen(b, klein) {
     return '<span class="stippen' + (klein ? ' klein detail' : '') + '" data-profiel="' + Signaal.profiel(b) + '">' + b.metingen.map(function (m) {
-      return '<span class="stip-kol">' + stip(m.oordeel, m.kort, m.nvt) + '<span class="stip-naam" aria-hidden="true">' + h(m.kort) + '</span></span>';
+      return '<span class="stip-kol">' + stip(m.oordeel, m.kort, m.nvt, m.score) + '<span class="stip-naam" aria-hidden="true">' + h(m.kort) + '</span></span>';
     }).join('') + '</span>';
   }
   function oordeelChip(b) {
@@ -81,10 +89,10 @@
   function metingRegel(m, b) {
     if (m.nvt) return '<li data-meting="' + m.id + '" data-nvt>' + stip(null, m.kort, true) + '<div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Niet van toepassing op banken en verzekeraars; telt niet mee.</span></div></li>';
     if (!m.aanwezig) return '<li data-meting="' + m.id + '" data-ontbreekt>' + stip(null, m.kort) + '<div><b>' + h(m.kort) + '</b> · ' + methKnop(m.methode, m.naam) + '<br><span class="ontbreekt-tekst">Ontbreekt: ' + h(m.reden) + '</span></div></li>';
-    return '<li data-meting="' + m.id + '">' + stip(m.oordeel, m.kort) + '<div><b>' + h(m.kort) + '</b> · ' + methKnop(m.methode, m.naam) + '<br><span>' + h(m.tekst) + '</span><br><span class="zacht bron" data-bron="' + h(m.kwaliteit) + '">Bron: ' + h(bronTekst(m, b)) + '</span></div></li>';
+    return '<li data-meting="' + m.id + '">' + stip(m.oordeel, m.kort, false, m.score) + '<div><b>' + h(m.kort) + '</b> · ' + methKnop(m.methode, m.naam) + '<br><span>' + h(m.tekst) + '</span><br><span class="zacht bron" data-bron="' + h(m.kwaliteit) + '">Bron: ' + h(bronTekst(m, b)) + '</span></div></li>';
   }
   function infoRegel(m, b) {
-    return '<li>' + (m.aanwezig ? stip(m.score >= 0.25 ? 'gunstig' : m.score <= -0.25 ? 'ongunstig' : 'neutraal', m.naam) : stip(null, m.naam, m.nvt)) + '<div>' + methKnop(m.id, m.naam) + '<br><span' + (m.aanwezig ? '' : ' class="zacht"') + '>' +
+    return '<li>' + (m.aanwezig ? stip(m.score >= 0.25 ? 'gunstig' : m.score <= -0.25 ? 'ongunstig' : 'neutraal', m.naam, false, m.score) : stip(null, m.naam, m.nvt)) + '<div>' + methKnop(m.id, m.naam) + '<br><span' + (m.aanwezig ? '' : ' class="zacht"') + '>' +
       h(m.aanwezig ? m.tekst : m.nvt ? 'Niet van toepassing op banken en verzekeraars.' : 'Gegevens ontbreken.') + '</span>' + (m.aanwezig ? '<br><span class="zacht bron">Bron: ' + h(bronTekst(m, b)) + '</span>' : '') + '</div></li>';
   }
   /* Analisten (Yahoo Finance): ter informatie, telt niet mee. */

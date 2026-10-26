@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.26-beta.88
+- **Stippen in een kleurschaal van donkergroen naar rood.** De zes metingen tonen nu ook hoe sterk ze zijn: donkergroen ✓ gunstig, lichtgroen ✓ licht gunstig, half groen en half rood = neutraal, lichtrood ✗ licht ongunstig, rood ✗ ongunstig. Een lege ring blijft: geen gegevens. Het oordeel zelf en de chips (Kopen, Neutraal, Vermijden) zijn niet veranderd.
+
 ## 2026.10.26-beta.87
 - **Start is nu een overzicht (cockpit).** Bovenaan drie tegels: Portefeuille (waarde en rendement), Actie bij uw aandelen (koop- of verkoopzone, kwaliteit loopt terug) en Kansen (aantal NAIC Kopen, en hoeveel daarvan onder hun koopprijs). Tik op een tegel om in te zoomen.
 - **Marktbeeld**: per index een gekleurde balk met de verdeling Kopen, Neutraal, Vermijden en zonder oordeel. Tik op een index en Fondsen opent met die index.
