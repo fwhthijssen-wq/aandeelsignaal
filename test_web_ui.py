@@ -686,8 +686,9 @@ class WebUi(unittest.TestCase):
         pg = self.pagina()
         pg.goto(INDEX + '#/a/AAPL/waarde')
         tekst = pg.inner_text('main')
-        for kop in ('Stap 1', 'Stap 2', 'Stap 3', 'Stap 4'):
+        for kop in ('Groei', 'Management', 'Koers/winst-geschiedenis', 'Risico en beloning', 'Vijfjaarspotentieel'):
             self.assertIn(kop, tekst)
+        self.assertEqual(pg.locator('section[data-deel]').count(), 5)
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
         pg.fill('#v-z-kwl', '30')   # lage K/W boven hoge K/W: geweigerd
         self.assertIn('Controleer de getallen', pg.inner_text('#zones'))
@@ -803,7 +804,7 @@ class WebUi(unittest.TestCase):
         pg.on('pageerror', lambda e: fouten.append(str(e)))
         pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-naic-niveau="jaarverslag"]').count(), 1)
-        self.assertIn('Stap 1', pg.inner_text('main'))
+        self.assertEqual(pg.locator('section[data-deel]').count(), 5)
         pg.goto(INDEX + '#/a/GOOGL/waarde'); pg.wait_for_timeout(200)
         self.assertIn('Nog geen NAIC-gids', pg.inner_text('main'))
         self.assertEqual(fouten, [])

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.26-beta.90
+- **NAIC-gids in de vijf delen van de Stock Selection Guide**, in dezelfde volgorde als het NAIC-formulier: 1 Groei, 2 Management (winstmarge vóór belasting en rendement op eigen vermogen), 3 Koers/winst-geschiedenis (met relatieve waarde), 4 Risico en beloning (verwachte hoge en lage koers, zones, 3 : 1) en 5 Vijfjaarspotentieel (totaalrendement, PAR, koopprijs). Elk deel begint met de vraag die het beantwoordt en toont de uitkomst van de toets. Voorheen stonden er vier eigen stappen die niet op de NAIC-indeling aansloten. Uw eigen koerszones staan nu onder deel 4; de nettomarge onder “Aanvullend”.
+
 ## 2026.10.26-beta.89
 - Het blok **Rekenvoorbeeld** onder de NAIC-gids is weggehaald. Het rekende met eigen aannames (standaard 10% rendement) naast de NAIC-gids, die al de koopprijs volgens de NAIC-regels (15%) geeft; twee antwoorden naast elkaar was verwarrend. Uw eigen koerszones blijven.
 

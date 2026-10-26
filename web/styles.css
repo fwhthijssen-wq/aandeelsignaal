@@ -328,3 +328,9 @@ html.eenvoudig .detail { display: none !important; }
 .markt-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .82rem; color: var(--mut); margin-top: 8px; }
 .markt-legenda span { display: inline-flex; align-items: center; gap: 6px; } .markt-legenda i { width: 12px; height: 12px; border-radius: 3px; }
 .status-regel { font-size: .85rem; color: var(--mut); text-align: center; }
+
+/* NAIC-gids: de vijf delen */
+.deel-kop { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.deel-nr { flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: var(--acc); color: var(--acc-ink); display: grid; place-items: center; font-size: .95rem; }
+.deel-vraag { color: var(--mut); margin-top: -4px; }
+section[data-deel] { border-top: 1px solid var(--line); padding-top: 14px; }

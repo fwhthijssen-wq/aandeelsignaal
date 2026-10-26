@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.26-beta.89';
+  var APP_VERSIE = '2026.10.26-beta.90';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -822,10 +822,10 @@
       return '<section><h2>' + h(titel) + '</h2>' + (heeft(reeks) ? staven(reeks, aria, fmt) + '<p class="zacht">' + uitleg + ' Een ontbrekende staaf betekent: het cijfer is in de bron niet eenduidig te vinden.</p>'
         : '<p class="zacht">Onbekend: dit cijfer is in de jaarverslagen niet eenduidig te vinden, dus er wordt niets getoond.</p>') + '</section>';
     }
-    var pm = Naic.margeVoorBelasting(jr), ur = Naic.uitkeringsratio(jr), sr = Naic.schuldratio(jr), ir = Naic.investeringsratio(jr);
-    var s = '<div id="naic-extra"><h2 style="margin-top:20px">Meer over het management</h2><p class="zacht">Cijfers die iets zeggen over hoe het bedrijf met geld omgaat. Het zijn aanwijzingen, geen oordeel.</p></div>';
+    var nm = Naic.nettomarges(jr), ur = Naic.uitkeringsratio(jr), sr = Naic.schuldratio(jr), ir = Naic.investeringsratio(jr);
+    var s = '<div id="naic-extra"><h2 style="margin-top:20px">Aanvullend: meer over het management</h2><p class="zacht">Geen onderdeel van de vijf NAIC-delen. Cijfers die iets zeggen over hoe het bedrijf met geld omgaat; aanwijzingen, geen oordeel.</p></div>';
     if (bank) return s + '<div class="melding"><b>Bank</b><span>Voor banken zeggen winstmarge vóór belasting, schuld en investeringen weinig. Daarom worden ze hier niet getoond.</span></div>' + blok('Uitgekeerd deel van de winst', ur, 'Uitgekeerd dividend als percentage van de nettowinst per jaar', function (v) { return getal(v, 0); }, 'Uitgekeerd dividend gedeeld door de nettowinst, in procenten.');
-    return s + blok('Winstmarge vóór belasting', pm, 'Winstmarge vóór belasting per jaar in procenten', function (v) { return getal(v, 0); }, 'Winst vóór belasting als percentage van de omzet. Dit is de marge die de NAIC bedoelt; de definitie van “winst vóór belasting” kan per bedrijf iets verschillen.') +
+    return s + blok('Nettowinstmarge', nm, 'Nettowinst als percentage van de omzet per jaar', function (v) { return getal(v, 0); }, 'Nettowinst als percentage van de omzet (na belasting). NAIC kijkt naar de marge vóór belasting (deel 2); deze staat er ter vergelijking.') +
       blok('Uitgekeerd deel van de winst', ur, 'Uitgekeerd dividend als percentage van de nettowinst per jaar', function (v) { return getal(v, 0); }, 'Uitgekeerd dividend gedeeld door de nettowinst, in procenten. Boven 100% betekent meer uitkeren dan er verdiend is.') +
       blok('Schuld t.o.v. totaal kapitaal', sr, 'Langlopende schuld als percentage van schuld plus eigen vermogen per jaar', function (v) { return getal(v, 0); }, 'Langlopende schuld gedeeld door schuld plus eigen vermogen, in procenten. Lager is veiliger; wat gebruikelijk is verschilt per sector.') +
       blok('Investeringen t.o.v. afschrijvingen', ir, 'Investeringen in vaste activa gedeeld door afschrijvingen per jaar', function (v) { return getal(v, 1); }, 'Boven 1,0 investeert het bedrijf meer dan er aan bezittingen slijt.');
@@ -834,14 +834,14 @@
   function kwHistorieHtml(jr, bank) {
     var kw = Naic.historischKW(jr), gem = Naic.kwGemiddelden(kw, 5), dr = Naic.dividendRendement(jr);
     var heeftKW = kw.some(function (x) { return x.hoog !== null || x.laag !== null; });
-    var s = '<section data-kw-historie><h2>Koers/winst in het verleden</h2>';
-    if (!heeftKW) return s + '<p class="zacht">Onbekend: voor deze jaren is er geen volledige koershistorie in dezelfde valuta als de jaarcijfers, dus er wordt niets getoond.</p></section>';
+    var s = '<div data-kw-historie><h3>Koers/winst in het verleden</h3>';
+    if (!heeftKW) return s + '<p class="zacht">Onbekend: voor deze jaren is er geen volledige koershistorie in dezelfde valuta als de jaarcijfers, dus er wordt niets getoond.</p></div>';
     s += staven(kw.map(function (x) { return { year: x.year, waarde: x.hoog }; }), 'Hoogste koers/winst per jaar', function (v) { return getal(v, 0); }) + '<p class="zacht">Hoogste koers van het jaar gedeeld door de winst per aandeel.</p>';
     s += staven(kw.map(function (x) { return { year: x.year, waarde: x.laag }; }), 'Laagste koers/winst per jaar', function (v) { return getal(v, 0); }) + '<p class="zacht">Laagste koers van het jaar gedeeld door de winst per aandeel.</p>';
     if (gem) s += '<p data-kw-gem><b>Gemiddeld over ' + gem.jaren + ' jaar (' + gem.van + '–' + gem.tot + '): hoog ' + getal(gem.hoog, 1) + ', laag ' + getal(gem.laag, 1) + '.</b> Dit is hoe duur of goedkoop de markt het bedrijf in het verleden vond. Het zegt niets over de toekomst.</p>' +
       '<button class="knop rand klein" id="kw-over" data-kwh="' + gem.hoog + '" data-kwl="' + gem.laag + '">Neem deze K/W over in mijn koerszones</button>';
     if (!bank && dr.some(function (x) { return x.waarde !== null; })) s += staven(dr, 'Dividendrendement per jaar in procenten', function (v) { return getal(v, 1); }) + '<p class="zacht">Dividend per aandeel gedeeld door de gemiddelde koers van het jaar, in procenten.</p>';
-    return s + '</section>';
+    return s + '</div>';
   }
   /* Waar staat de koers nu in het bereik van de afgelopen jaren? Alleen beschrijving, geen koop- of verkoopadvies. */
   function bereikHtml(jr, koers, bevestigd) { return bereikKaart(Naic.bereik(jr, koers, 10, 8), bevestigd, 'section'); }
@@ -855,21 +855,50 @@
       (bevestigd ? '<p data-label="' + b.label + '"><span class="chip">' + LABEL[b.label] + '</span> ' + LABEL_UITLEG[b.label] + '</p>' : '') +
       '<p>De koers staat in <b>' + T[b.derde] + '</b> van dit bereik.</p><p class="zacht">De NAIC deelt het bereik in drie gelijke stukken en kijkt of er minstens drie keer zoveel opwaarts als neerwaarts is. Dit is een beschrijving van het verleden over ' + b.jaren + ' boekjaren, geen koopadvies en geen voorspelling. Het label verschijnt alleen als de gegevens van het bedrijf bevestigd zijn. Staat de koers op of onder het laagste punt, dan is de verhouding niet te berekenen.</p></' + tag + '>';
   }
-  function naicHtml(jr, bank, koers, bevestigd) {
-    var gc = Naic.groeiCijfers(jr), roe = Naic.rendementEigenVermogen(jr), mg = Naic.nettomarges(jr);
+  /* De NAIC-gids in de vijf delen van de Stock Selection Guide, in dezelfde volgorde als het formulier van NAIC/BetterInvesting. */
+  function deelKop(nr, titel, vraag) { return '<h2 class="deel-kop"><span class="deel-nr">' + nr + '</span>' + h(titel) + '</h2><p class="deel-vraag">' + h(vraag) + '</p>'; }
+  function toetsRegels(n, ids) {
+    var q = (n && n.kwaliteit || []).filter(function (x) { return ids.indexOf(x.id) > -1; });
+    return q.length ? '<ul class="methoden">' + q.map(function (x) { return '<li>' + stip(x.ok === true ? 'gunstig' : x.ok === false ? 'ongunstig' : null, x.id) + '<div><span' + (x.ok === null ? ' class="zacht"' : '') + '>' + h(x.tekst) + '</span></div></li>'; }).join('') + '</ul>' : '';
+  }
+  function naicHtml(jr, bank, koers, bevestigd, n, zonesBlok) {
+    var gc = Naic.groeiCijfers(jr), roe = Naic.rendementEigenVermogen(jr), pm = Naic.margeVoorBelasting(jr);
     function kp(w, t) { return '<div class="kpi"><b>' + (w == null ? '–' : pct(w)) + '</b><span>' + h(t) + '</span></div>'; }
-    return '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC, een Amerikaanse beleggersvereniging, in stappen. Het is een rekenhulp met uw eigen aannames, geen koersdoel en geen advies.</p></div>' +
-      '<section><h2>Stap 1 · Groei per jaar</h2><div class="kpis">' + kp(gc.omzet10, 'Omzet (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.omzet5, 'Omzet, laatste 5 jaar') + kp(gc.eps10, 'Winst per aandeel (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.eps5, 'Winst per aandeel, laatste 5 jaar') + '</div>' +
-      '<p class="zacht">Gelijkmatige groei van omzet én winst is volgens de NAIC een teken van een gezond bedrijf. Een streepje betekent dat er te weinig of geen positieve cijfers zijn.</p></section>' +
-      '<section><h2>Stap 2 · Rendement op eigen vermogen</h2>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
-      '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar, in procenten.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen (bijvoorbeeld door terugkoop van aandelen) is dit getal niet te berekenen en blijft het leeg.</p></section>' +
-      '<section><h2>Stap 3 · Winstmarge</h2>' + staven(mg, 'Nettowinstmarge per jaar in procenten', function (v) { return getal(v, 0); }) +
-      '<p class="zacht">Nettowinst als percentage van de omzet (na belasting).</p></section>' + kwHistorieHtml(jr, bank) + bereikHtml(jr, koers, bevestigd) + naicExtraHtml(jr, bank);
+    function kpv(w, t) { return '<div class="kpi"><b>' + w + '</b><span>' + h(t) + '</span></div>'; }
+    n = n || {};
+    var s = '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC (nu BetterInvesting), een Amerikaanse beleggersvereniging, in haar vijf delen. Het oordeel op het tabblad Samenvatting volgt dezelfde delen. Geen koersdoel en geen advies.</p></div>';
+    // Deel 1
+    s += '<section data-deel="1">' + deelKop(1, 'Groei', 'Groeien omzet en winst per aandeel gelijkmatig, en minstens 5% per jaar?') + '<div class="kpis">' +
+      kp(gc.omzet10, 'Omzet (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.omzet5, 'Omzet, laatste 5 jaar') + kp(gc.eps10, 'Winst per aandeel (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.eps5, 'Winst per aandeel, laatste 5 jaar') + '</div>' +
+      (n.groeiHistorisch != null ? '<p>Trend van de winst per aandeel: <b>' + pct(n.groeiHistorisch) + ' per jaar</b>. De gids rekent verder met ' + (n.groeiEigen != null ? 'uw eigen groeiverwachting van ' + pct(n.groei) : pct(n.groei) + (n.groeiHistorisch > Naic.GROEI_MAX ? ' (NAIC rekent met hoogstens ' + Naic.GROEI_MAX + '%)' : '')) + '.</p>' : '') +
+      toetsRegels(n, ['omzet']) + '<p class="zacht">Een streepje betekent dat er te weinig of geen positieve cijfers zijn.</p></section>';
+    // Deel 2
+    s += '<section data-deel="2">' + deelKop(2, 'Management', 'Houdt het management de winstmarge vóór belasting en het rendement op eigen vermogen op peil?') +
+      (bank ? '<p class="zacht">Bij een bank of verzekeraar zegt de winstmarge vóór belasting weinig; die wordt niet getoond.</p>' : '<h3>Winstmarge vóór belasting</h3>' + staven(pm, 'Winstmarge vóór belasting per jaar in procenten', function (v) { return getal(v, 0); }) + '<p class="zacht">Winst vóór belasting als percentage van de omzet. Dit is de marge die de NAIC bedoelt.</p>') +
+      '<h3>Rendement op eigen vermogen</h3>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
+      '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen blijft het leeg.</p>' +
+      toetsRegels(n, ['marge', 'roe']) + '</section>';
+    // Deel 3
+    s += '<section data-deel="3">' + deelKop(3, 'Koers/winst-geschiedenis', 'Hoeveel keer de winst betaalde de markt de afgelopen vijf jaar, op het hoogste en laagste punt?') + kwHistorieHtml(jr, bank) +
+      (n.relatief ? '<p data-relatief>Relatieve waarde: de K/W nu (' + getal(n.relatief.kwNu, 1) + ') is <b>' + n.relatief.pct + '%</b> van de gemiddelde K/W (' + getal(n.relatief.kwGem, 1) + '). NAIC ziet het liefst ' + Naic.RV_LAAG + '–' + Naic.RV_HOOG + '%. Ter informatie; telt niet mee in het oordeel.</p>' : '') + '</section>';
+    // Deel 4
+    var z = n.zones;
+    s += '<section data-deel="4">' + deelKop(4, 'Risico en beloning', 'Waar staat de koers tussen de verwachte hoge en lage koers over 5 jaar, en is er minstens 3 keer zoveel opwaarts als neerwaarts?') +
+      (z ? '<div class="kpis">' + kpv(getal(z.hoog, 2), 'Verwachte hoge koers over ' + (n.horizon || 5) + ' jaar') + kpv(getal(z.laag, 2), 'Verwachte lage koers') + (z.koers != null ? kpv(getal(z.koers, 2), 'Koers nu') + kpv(z.verhouding == null ? '–' : getal(z.verhouding, 1) + ' : 1', 'Opwaarts tegen neerwaarts (NAIC: 3 : 1 of meer)') : '') + '</div>' +
+        '<p class="zacht">Hoge koers = winst per aandeel over ' + (n.horizon || 5) + ' jaar × gemiddelde hoge K/W. Lage koers = laagste winst per aandeel van de laatste 5 jaar × gemiddelde lage K/W. Het bereik wordt in drie gelijke stukken verdeeld: koop-, houd- en verkoopzone.</p>' : '<p class="zacht">' + h(n.reden || 'Niet te berekenen.') + '</p>') +
+      bereikHtml(jr, koers, bevestigd) + (zonesBlok || '') + '</section>';
+    // Deel 5
+    var t = n.totaal, kp5 = n.koopprijs;
+    s += '<section data-deel="5">' + deelKop(5, 'Vijfjaarspotentieel', 'Levert het aandeel bij de huidige koers minstens ' + Naic.TOTAAL_MIN + '% per jaar op, koersstijging plus dividend?') +
+      (t ? '<div class="kpis">' + kpv(pct(t.koers), 'Koersstijging per jaar tot de hoge koers') + kpv(t.dividend == null ? '–' : pct(t.dividend), 'Gemiddeld dividendrendement') + kpv('<span style="color:' + (t.ok ? 'var(--ok-ink)' : 'var(--bad-ink)') + '">' + pct(t.totaal) + '</span>', 'Totaalrendement per jaar (NAIC: minstens ' + t.min + '%)') + '</div>' : '<p class="zacht">Niet te berekenen zonder verse koers in dezelfde valuta als de winst.</p>') +
+      (n.par ? '<p data-par>Verwacht gemiddeld rendement (PAR): <b>' + pct(n.par.pct) + ' per jaar</b>, als de koers over ' + (n.horizon || 5) + ' jaar uitkomt op de gemiddelde K/W (' + getal(n.par.koersDoel, 2) + '). Ter informatie.</p>' : '') +
+      (kp5 && kp5.prijs ? '<p data-koopprijs-gids>Koopprijs: alle prijsregels uit deel 4 en 5 kloppen onder <b>' + getal(kp5.prijs, 2) + '</b>.</p>' : '') + '</section>';
+    return s + naicExtraHtml(jr, bank);
   }
   function zonesHtml(start, opgeslagen, koersVgl) {
     if (opgeslagen) start = { eps: opgeslagen.eps, groei: opgeslagen.groeiPct, epsl: opgeslagen.epsLaag, jaren: opgeslagen.jaren, kwh: opgeslagen.kwHoog, kwl: opgeslagen.kwLaag };
     else start = { eps: start.eps, groei: start.groei, epsl: start.eps, jaren: 5, kwh: 20, kwl: 10 };
-    return '<div class="kaart-plat"><h2>Stap 4 · Koerszones</h2><p class="zacht">Wat zou de koers over een aantal jaar hoog en laag kunnen zijn bij uw aannames, en waar staat de koers nu in dat bereik? Pas de getallen aan.</p><div class="velden">' +
+    return '<div class="kaart-plat"><h3>Zelf rekenen: uw eigen koerszones</h3><p class="zacht">Wilt u met andere aannames rekenen dan de gids? Pas de getallen aan. Dit verandert het NAIC-oordeel niet.</p><div class="velden">' +
       veld('z-eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('z-groei', 'Groei per jaar (%)', start.groei, '1') + veld('z-jaren', 'Jaren vooruit', start.jaren, '1') +
       veld('z-kwh', 'Hoge K/W', start.kwh, '1') + veld('z-kwl', 'Lage K/W', start.kwl, '1') + veld('z-epsl', 'Winst per aandeel in een slecht jaar', start.epsl, '0.01') +
       '</div><div id="zones" aria-live="polite"' + (koersVgl ? ' data-vergelijk="1"' : '') + '></div><div class="knoppen"><button class="knop klein" id="z-bewaar">Bewaar mijn zones</button><button class="knop rand klein" id="z-wis" hidden>Wis bewaarde zones</button></div><p class="zacht" id="z-status" aria-live="polite">Bewaard op dit toestel, zodat Start laat zien waar de koers in uw zones staat. Het is uw eigen aanname, geen koersdoel.</p></div>';
@@ -921,7 +950,7 @@
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return noot + naicHtml(jr, b.bank || (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null, r.bevestigd) + zonesHtml(start, winkel.zones(rec.ticker), koersVgl);
+    return noot + naicHtml(jr, b.bank || (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null, r.bevestigd, n, zonesHtml(start, winkel.zones(rec.ticker), koersVgl));
   }
   function veld(id, tekst, v, stap) { return '<div><label for="v-' + id + '">' + h(tekst) + '</label><input id="v-' + id + '" type="number" inputmode="decimal" step="' + stap + '" value="' + h(v) + '"></div>'; }
   function gezondHtml(g, jr) {
