@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.26-beta.89
+- Het blok **Rekenvoorbeeld** onder de NAIC-gids is weggehaald. Het rekende met eigen aannames (standaard 10% rendement) naast de NAIC-gids, die al de koopprijs volgens de NAIC-regels (15%) geeft; twee antwoorden naast elkaar was verwarrend. Uw eigen koerszones blijven.
+
 ## 2026.10.26-beta.88
 - **Stippen in een kleurschaal van donkergroen naar rood.** De zes metingen tonen nu ook hoe sterk ze zijn: donkergroen ✓ gunstig, lichtgroen ✓ licht gunstig, half groen en half rood = neutraal, lichtrood ✗ licht ongunstig, rood ✗ ongunstig. Een lege ring blijft: geen gegevens. Het oordeel zelf en de chips (Kopen, Neutraal, Vermijden) zijn niet veranderd.
 

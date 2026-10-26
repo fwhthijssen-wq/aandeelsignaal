@@ -707,14 +707,12 @@ class WebUi(unittest.TestCase):
         self.assertIn(': 1', z)
         self.assertEqual(self.fouten, [])
 
-    def test_waarde_rekenvoorbeeld_reageert(self):
+    def test_waarde_zonder_rekenvoorbeeld(self):
         pg = self.pagina()
-        pg.goto(INDEX + '#/a/AAPL/waarde')
-        voor = pg.inner_text('#uitkomst')
-        pg.fill('#v-groei', '12')
-        self.assertNotEqual(voor, pg.inner_text('#uitkomst'))
-        pg.fill('#v-marge', '150')
-        self.assertIn('Controleer de getallen', pg.inner_text('#uitkomst'))
+        pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('#uitkomst').count(), 0)
+        self.assertNotIn('Rekenvoorbeeld', pg.inner_text('main'))
+        self.assertEqual(self.fouten, [])
 
     def test_onbekend_aandeel_en_zoeken(self):
         pg = self.pagina()

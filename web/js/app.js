@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.26-beta.88';
+  var APP_VERSIE = '2026.10.26-beta.89';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -886,7 +886,7 @@
         var balk = '<svg class="grafiek" viewBox="0 0 320 54" role="img" aria-label="Koerszones van laag naar hoog"><rect x="0" y="14" width="' + (W / 3) + '" height="16" fill="var(--ok-bg)" stroke="var(--ok-ink)"/><rect x="' + (W / 3) + '" y="14" width="' + (W / 3) + '" height="16" fill="var(--wait-bg)" stroke="var(--wait-ink)"/><rect x="' + (2 * W / 3) + '" y="14" width="' + (W / 3) + '" height="16" fill="var(--bad-bg, var(--line))" stroke="var(--bad-ink)"/>' +
           (koers != null ? '<path d="M' + p(koers).toFixed(1) + ' 8 v28" stroke="var(--ink)" stroke-width="3"/><text text-anchor="middle" x="' + Math.max(24, Math.min(296, p(koers))).toFixed(1) + '" y="52">nu ' + getal(koers, 2) + '</text>' : '') + '<text x="0" y="10">' + getal(z.laag, 2) + '</text><text text-anchor="end" x="320" y="10">' + getal(z.hoog, 2) + '</text></svg>';
         var rest = koers == null
-          ? '<div class="melding"><b>Geen vergelijking met de koers</b><span>De gegevens zijn nog niet volledig bevestigd of de koers ontbreekt. De zones hierboven zijn alleen uw eigen rekenvoorbeeld.</span></div>'
+          ? '<div class="melding"><b>Geen vergelijking met de koers</b><span>De gegevens zijn nog niet volledig bevestigd of de koers ontbreekt. De zones hierboven zijn alleen uw eigen aannames.</span></div>'
           : '<div class="kpis"><div class="kpi"><b>' + (z.verhouding == null ? '–' : getal(z.verhouding, 1) + ' : 1') + '</b><span>Opwaarts tegen neerwaarts (NAIC-richtlijn: 3 : 1 of hoger)</span></div><div class="kpi"><b>' + pct(z.rendementPerJaar) + '</b><span>Mogelijk rendement per jaar tot de hoge koers, zonder dividend</span></div></div><p>De koers van ' + getal(koers, 2) + ' ' + h(rec.valuta) + ' ligt ' + ZN[z.zone] + '.</p>';
         uit.innerHTML = '<div class="kpis"><div class="kpi"><b>' + getal(z.hoog, 2) + '</b><span>Hoge koers over ' + lees('z-jaren') + ' jaar</span></div><div class="kpi"><b>' + getal(z.laag, 2) + '</b><span>Lage koers</span></div></div>' + balk + rest;
       } catch (e) { uit.innerHTML = '<div class="melding"><b>Controleer de getallen</b><span>' + h(e.message) + '</span></div>'; }
@@ -921,26 +921,9 @@
     var laatste = epsJr[epsJr.length - 1], eerste = epsJr[0];
     var gr = laatste && eerste && laatste.year > eerste.year ? groei(eerste.comparable_eps, laatste.comparable_eps, laatste.year - eerste.year) : null;
     var start = { eps: laatste ? Math.round(laatste.comparable_eps * 100) / 100 : 1, groei: gr == null ? 5 : Math.max(0, Math.min(15, Math.round(gr))), kw: 15, jaren: 5, rend: 10, marge: 25 };
-    return noot + naicHtml(jr, b.bank || (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null, r.bevestigd) + zonesHtml(start, winkel.zones(rec.ticker), koersVgl) + '<div class="kaart-plat"><h2>Rekenvoorbeeld</h2><p class="zacht">Dit is een som met uw eigen aannames, geen koersdoel en geen advies. Pas de getallen aan om te zien wat er uitkomt.</p><div class="velden">' +
-      veld('eps', 'Winst per aandeel nu', start.eps, '0.01') + veld('groei', 'Groei per jaar (%)', start.groei, '1') + veld('kw', 'K/W over de horizon', start.kw, '1') + veld('jaren', 'Jaren vooruit', start.jaren, '1') + veld('rend', 'Gewenst rendement (%)', start.rend, '1') + veld('marge', 'Veiligheidsmarge (%)', start.marge, '1') +
-      '</div><div id="uitkomst" class="kpis" aria-live="polite"' + (koersVgl ? ' data-vergelijk="1"' : '') + '></div></div>' +
-      (koersVgl ? '' : '<p class="zacht">Er wordt geen vergelijking met de koers gemaakt: de koers ontbreekt, is verouderd of staat in een andere valuta dan de jaarcijfers.</p>');
+    return noot + naicHtml(jr, b.bank || (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); }), r.koersActueel && rec.koers ? rec.koers.slot : null, r.bevestigd) + zonesHtml(start, winkel.zones(rec.ticker), koersVgl);
   }
   function veld(id, tekst, v, stap) { return '<div><label for="v-' + id + '">' + h(tekst) + '</label><input id="v-' + id + '" type="number" inputmode="decimal" step="' + stap + '" value="' + h(v) + '"></div>'; }
-  function waardeKoppel(rec, r) {
-    var uit = document.getElementById('uitkomst'); if (!uit) return;
-    function lees(id) { return parseFloat(String(document.getElementById('v-' + id).value).replace(',', '.')); }
-    function reken() {
-      try {
-        var x = Gate.scenario(lees('eps'), lees('groei'), lees('kw'), lees('jaren'), lees('rend'), lees('marge'));
-        var k = rec.koers, vgl = '';
-        if ((r.bevestigd || uit.getAttribute('data-vergelijk')) && k && r.koersActueel) vgl = '<div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers nu</span></div>';
-        uit.innerHTML = '<div class="kpi"><b>' + getal(x.toekomstigeKoers, 2) + '</b><span>Koers over de horizon</span></div><div class="kpi"><b>' + getal(x.contanteWaarde, 2) + '</b><span>Waarde nu bij uw rendement</span></div><div class="kpi"><b>' + getal(x.naMarge, 2) + '</b><span>Na veiligheidsmarge</span></div>' + vgl;
-      } catch (e) { uit.innerHTML = '<div class="melding" style="grid-column:1/-1"><b>Controleer de getallen</b><span>' + h(e.message) + '</span></div>'; }
-    }
-    ['eps', 'groei', 'kw', 'jaren', 'rend', 'marge'].forEach(function (i) { document.getElementById('v-' + i).addEventListener('input', reken); });
-    reken();
-  }
   function gezondHtml(g, jr) {
     if (!g || !jr.length) return '<div class="melding"><b>Nog geen jaarcijfers</b><span>Deze gegevens worden door de nachtelijke update opgehaald zodra dit aandeel is gecontroleerd.</span></div>';
     var f = jr[0], l = jr[jr.length - 1], n = l.year - f.year;
@@ -1269,7 +1252,7 @@
       html = schermAandeel(t, tab);
       $menu.innerHTML = menuHtml(TABS.map(function (x) { return ['#/a/' + encodeURIComponent(t) + '/' + x[0], x[1], x[0]]; }), '#/a/' + encodeURIComponent(t) + '/' + tab);
       var rec = zoek(t); if (rec) titel = rec.naam + ' · Aandeel Signaal';
-      na = function () { aandeelKoppel(t); if (tab === 'check' && rec) { checkKoppel(rec); verdiepKoppel(rec); } if (tab === 'waarde' && rec) { var rr = Gate.maakRij(rec, vandaag()); waardeKoppel(rec, rr); zonesKoppel(rec, rr); } };
+      na = function () { aandeelKoppel(t); if (tab === 'check' && rec) { checkKoppel(rec); verdiepKoppel(rec); } if (tab === 'waarde' && rec) { zonesKoppel(rec, Gate.maakRij(rec, vandaag())); } };
     } else if ((m2 = hash.match(/^#\/vergelijk(?:\/([^\/]+)\/([^\/]+))?$/))) {
       html = schermVergelijk(m2[1] ? decodeURIComponent(m2[1]).toUpperCase() : null, m2[2] ? decodeURIComponent(m2[2]).toUpperCase() : null);
       $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';
