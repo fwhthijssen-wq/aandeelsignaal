@@ -1,4 +1,5 @@
-# Hulpmiddel (alleen handmatig): toont de jaarcijfers van enkele fondsen uit de gegevens van de laatste nachtelijke update.
+# Hulpmiddel (alleen handmatig): jaarcijfers van enkele fondsen uit de gegevens van de laatste nachtelijke update,
+# naar de tak jaarverslagen (debug/inspectie.txt). Raakt de app niet.
 name: Fondsen inspecteren (ontwikkeling)
 on:
   workflow_dispatch:
@@ -7,7 +8,7 @@ on:
         description: 'Tickers, gescheiden door spaties'
         required: true
 permissions:
-  contents: read
+  contents: write
 jobs:
   toon:
     runs-on: ubuntu-latest
@@ -21,7 +22,7 @@ jobs:
         env:
           TICKERS: ${{ inputs.tickers }}
         run: |
-          python3 - <<'PY'
+          python3 - > inspectie.txt <<'PY'
           import json, os
           d = json.load(open('web/data/aandelen.json'))
           want = os.environ['TICKERS'].split()
@@ -33,3 +34,12 @@ jobs:
                       print(j.get('year'), j.get('currency'), 'eps', j.get('comparable_eps'), 'rep', j.get('reported_eps'), 'ni', j.get('net_income'), 'sh', j.get('shares_diluted'), 'bron', j.get('eps_bron'), 'corr', j.get('eps_correctie'), 'aang', j.get('aangeleverd'))
                   print('tweede_bron', json.dumps(g.get('tweede_bron'))[:1500])
           PY
+      - name: Op tak jaarverslagen zetten (debug/inspectie.txt)
+        run: |
+          cat inspectie.txt | head -50
+          git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+          mkdir -p jv/debug && cp inspectie.txt jv/debug/
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Inspectie $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
