@@ -344,6 +344,6 @@ class PdfNarekenen(unittest.TestCase):
         B.reken_pdf_eps_na(g, 'X', self.reg(fout=5))
         self.assertEqual(g['pdf_narekening']['jaren'], 9); self.assertNotIn('bevestigd', g['pdf_narekening'])
         self.assertNotIn('eps_status', g)
-        a = self.g(); a['jaren'][0]['aangeleverd'] = ['net_income']        # aangeleverde nettowinst telt niet als bewijs
+        a = self.g(); a['jaren'][0]['aangeleverd'] = ['net_income']        # aangeleverde nettowinst telt wel (onafhankelijke derde bron)
         B.reken_pdf_eps_na(a, 'X', self.reg())
-        self.assertEqual(a['pdf_narekening']['jaren'], 9)
+        self.assertEqual(a['pdf_narekening']['jaren'], 10)

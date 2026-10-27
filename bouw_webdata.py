@@ -650,8 +650,8 @@ JAARVERSLAG_AANDELEN = HERE / 'jaarverslag_aandelen.json'   # kandidaten voor he
 
 def reken_pdf_eps_na(g, ticker, register=None):
     """Rekent de winst per aandeel uit de pdf-jaarverslagen na: winst per aandeel × gemiddeld aantal aandelen (uit hetzelfde
-    verslag) moet binnen 1,5% uitkomen op de nettowinst van dat jaar uit een andere bron (Yahoo of het officiële dossier;
-    nooit een aangeleverd cijfer). Elk jaar dat klopt krijgt eps_narekening. Zijn de laatste 10 jaren met winst per aandeel
+    verslag) moet binnen 1,5% uitkomen op de nettowinst van dat jaar uit een andere bron (Yahoo, het officiële dossier of
+    uw aanlevering, bijv. EODHD: geen van die bronnen is van de winst per aandeel uit het jaarverslag afgeleid). Elk jaar dat klopt krijgt eps_narekening. Zijn de laatste 10 jaren met winst per aandeel
     allemaal nagerekend, dan is het fonds onafhankelijk bevestigd (zoals bij SEC en ESEF). Draait eerdere uitkomsten eerst terug."""
     oud = g.pop('pdf_narekening', None) if isinstance(g, dict) else None
     if oud and 'status_was' in oud:
@@ -673,7 +673,7 @@ def reken_pdf_eps_na(g, ticker, register=None):
     pdf_jaren = [j for j in g['jaren'] if j.get('eps_bron') == 'jaarverslag' and _getal(j.get('comparable_eps'))]
     nagerekend = []
     for j in pdf_jaren:
-        ni = None if 'net_income' in (j.get('aangeleverd') or []) else _getal(j.get('net_income'))
+        ni = _getal(j.get('net_income'))           # ook een aangeleverde nettowinst: die komt niet uit het jaarverslag zelf, dus geen kringredenering
         e = j['comparable_eps']
         if not ni or not e:
             continue

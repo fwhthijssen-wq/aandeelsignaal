@@ -3,7 +3,7 @@
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
 ## 1.1 (2026.10.28)
-- **Duitse fondsen nagerekend**: de winst per aandeel uit de pdf-jaarverslagen wordt nagerekend met het gemiddeld aantal aandelen uit hetzelfde verslag: winst per aandeel × aandelen moet (binnen 1,5%) uitkomen op de nettowinst uit een andere bron. Zijn de laatste 10 jaren allemaal nagerekend, dan krijgt het fonds het label Bevestigd. Bij Bronnen staat per fonds hoeveel jaren kloppen.
+- **Duitse fondsen nagerekend**: de winst per aandeel uit de pdf-jaarverslagen wordt nagerekend met het gemiddeld aantal aandelen uit hetzelfde verslag: winst per aandeel × aandelen moet (binnen 1,5%) uitkomen op de nettowinst uit een andere bron (Yahoo, of uw aanlevering voor oudere jaren). Zijn de laatste 10 jaren allemaal nagerekend, dan krijgt het fonds het label Bevestigd. Bij Bronnen staat per fonds hoeveel jaren kloppen.
 
 ## 1.0.1 (2026.10.28)
 - **ADR's**: Shell (SHEL) en AstraZeneca (AZN) staan genoteerd als Amerikaans aandeelbewijs (ADS). Eén Shell-ADS is twee gewone aandelen, één AstraZeneca-ADS een half. De winst per aandeel wordt nu omgerekend naar winst per ADS, zodat koers en winst over hetzelfde gaan: de K/W (ook bij de zes metingen) en de kwartaalwinst kloppen nu. De NAIC-koerszones veranderen niet (daar viel het verschil tegen elkaar weg). Novartis is 1 : 1.
