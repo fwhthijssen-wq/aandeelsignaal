@@ -26,6 +26,17 @@ jobs:
           import json, os
           d = json.load(open('web/data/aandelen.json'))
           want = os.environ['TICKERS'].split()
+          if want == ['SAMENVATTING']:
+              L = d['aandelen']; G = [a.get('gegevens') or {} for a in L]
+              ttm = [a['ticker'] for a, g in zip(L, G) if g.get('ttm')]
+              tw = [a['ticker'] for a, g in zip(L, G) if g.get('twee_bronnen_eens')]
+              ind = [a['ticker'] for a, g in zip(L, G) if g.get('niveau') == 'indicatief']
+              print('kwartaalwinst', len(ttm), 'van', len(L)); print('twee bronnen eens', len(tw), 'van', len(ind), 'indicatief:', ' '.join(tw))
+              for a, g in list(zip(L, G))[:400]:
+                  if g.get('ttm'):
+                      jr = [j for j in g.get('jaren') or [] if isinstance(j.get('comparable_eps'), (int, float))]
+                      print(' ', a['ticker'], 'ttm', g['ttm']['eps'], 'tot', g['ttm']['tot'], 'jaar', jr[-1]['year'] if jr else None, jr[-1]['comparable_eps'] if jr else None)
+              raise SystemExit
           if want == ['VALUTA']:
               for a in d['aandelen']:
                   jr = (a.get('gegevens') or {}).get('jaren') or []
