@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
-      - run: pip install -r requirements.txt lxml pytest
+      - run: pip install -r requirements.txt lxml pytest openpyxl
       - name: Python
         run: python -m pytest -q --ignore=test_web_ui.py
       - name: JavaScript
