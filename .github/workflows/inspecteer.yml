@@ -26,6 +26,13 @@ jobs:
           import json, os
           d = json.load(open('web/data/aandelen.json'))
           want = os.environ['TICKERS'].split()
+          if want == ['VALUTA']:
+              for a in d['aandelen']:
+                  jr = (a.get('gegevens') or {}).get('jaren') or []
+                  c = [j.get('currency') for j in jr if j.get('currency')]
+                  if len(set(c)) > 1:
+                      print(a['ticker'], a.get('valuta'), ' '.join(f"{j.get('year')}:{j.get('currency')}" for j in jr))
+              raise SystemExit
           for a in d['aandelen']:
               if a['ticker'] in want:
                   g = a.get('gegevens') or {}
