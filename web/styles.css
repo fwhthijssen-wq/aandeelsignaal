@@ -86,6 +86,7 @@ ul.punten { margin: 0; padding-left: 1.2em; display: flex; flex-direction: colum
 .knoppen { display: flex; flex-wrap: wrap; gap: 10px; }
 .volg { min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--acc); background: var(--surface); color: var(--acc); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
 .volg[aria-pressed="true"] svg { fill: var(--acc); }
+.stel-knoppen { display: flex; gap: 8px; flex-wrap: wrap; }
 
 input[type="search"], input[type="number"], input[type="text"], input[type="date"], select { width: 100%; min-height: 48px; padding: 0 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; }
 label { font-weight: 600; font-size: .92rem; display: block; margin-bottom: 4px; }
