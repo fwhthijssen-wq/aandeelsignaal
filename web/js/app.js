@@ -993,6 +993,14 @@
       s += '<section data-aangeleverd><h2>Door u aangeleverde cijfers</h2><p>' + h(AV.uitleg || '') + '</p><p>Aangevuld: ' + Object.keys(AV.velden || {}).map(function (k) { return h(VN2[k] || k) + ' (' + AV.velden[k] + ' jaar)'; }).join(', ') + '.' +
         (AV.eps_jaren ? ' Omdat de winst per aandeel deels aangeleverd is, heet het fonds “Indicatief”.' : '') + (gew || AV.valuta ? ' Niet gebruikt: ' + [gew ? gew + ' cijfers die meer dan een factor 10 afweken van het jaar ernaast' : '', AV.valuta ? AV.valuta + ' jaren in een andere valuta dan de jaarcijfers' : ''].filter(Boolean).join(' en ') + '.' : '') + '</p></section>';
     }
+    if (g.tweede_bron && g.tweede_bron.vergeleken) {
+      var TB = g.tweede_bron, VN3 = { comparable_eps: 'winst per aandeel', sales: 'omzet', net_income: 'nettowinst', equity: 'eigen vermogen' };
+      var fmt = function (v, x) { return v === 'comparable_eps' ? getal(x, 2) : mld(x); };
+      s += '<section data-tweede-bron><h2>Vergeleken met een tweede bron (' + h(TB.bron) + ')</h2><p>' + TB.overeen + ' van de ' + TB.vergeleken + ' cijfers komen overeen (winst per aandeel binnen 3%, bedragen binnen 2%).' +
+        (TB.aantal_afwijkend ? ' Afwijkend: ' + TB.aantal_afwijkend + '. Een verschil betekent niet dat de app fout zit: vaak gaat het om een herziening, een andere definitie of een splitsing.' : ' Alles klopt.') + '</p>' +
+        (TB.afwijkend && TB.afwijkend.length ? '<div class="schuif"><table class="vgl"><thead><tr><th>Jaar</th><th>Cijfer</th><th>App</th><th>' + h(TB.bron) + '</th><th>Verschil</th></tr></thead><tbody>' + TB.afwijkend.map(function (x) {
+          return '<tr><td>' + x.jaar + '</td><td>' + h(VN3[x.veld] || x.veld) + '</td><td>' + fmt(x.veld, x.app) + '</td><td>' + fmt(x.veld, x.tweede) + '</td><td>' + (x.soort === 'eenheid' ? 'andere eenheid' : x.pct == null ? '–' : pct(x.pct)) + '</td></tr>'; }).join('') + '</tbody></table></div>' : '') + '</section>';
+    }
     if (g.eps_yahoo) s += '<section data-eps-yahoo><h2>Winst per aandeel van Yahoo Finance</h2><p>' + h(g.eps_yahoo.uitleg || '') + ' ' + g.eps_yahoo.jaren + ' jaar.</p></section>';
     if (g.eps_toelichting) s += '<section><h2>Toelichting bij de controle</h2><p>' + h(g.eps_toelichting) + '</p></section>';
     var open = jaarLijst(g).filter(function (j) { return j.eps_check !== 'onderbouwd'; });

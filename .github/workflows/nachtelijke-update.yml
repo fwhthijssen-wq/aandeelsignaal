@@ -67,6 +67,9 @@ jobs:
           print(f"::notice title=Yahoo-EPS::{len(ye)} fondsen met officiele cijfers maar winst per aandeel van Yahoo: {' '.join(ye)}")
           ag = [a for a in L if (a.get('gegevens') or {}).get('aangeleverd')]
           print(f"::notice title=Aangeleverd::{len(ag)} fondsen aangevuld, {sum(a['gegevens']['aangeleverd'].get('eps_jaren', 0) for a in ag)} jaren winst per aandeel, {sum(sum(a['gegevens']['aangeleverd'].get('velden', {}).values()) for a in ag)} cijfers; geweigerd {sum(sum(a['gegevens']['aangeleverd'].get('geweigerd', {}).values()) for a in ag)}, andere valuta {sum(a['gegevens']['aangeleverd'].get('valuta', 0) for a in ag)}")
+          tb = [a for a in L if (a.get('gegevens') or {}).get('tweede_bron')]
+          if tb:
+              print(f"::notice title=Tweede bron::{len(tb)} fondsen vergeleken: {sum(a['gegevens']['tweede_bron']['overeen'] for a in tb)} van {sum(a['gegevens']['tweede_bron']['vergeleken'] for a in tb)} cijfers overeen; meeste afwijkingen: {' '.join(a['ticker'] + ':' + str(a['gegevens']['tweede_bron']['aantal_afwijkend']) for a in sorted(tb, key=lambda a: -a['gegevens']['tweede_bron']['aantal_afwijkend'])[:25])}")
           print(f"::notice title=Ontbreekt::Yahoo zonder jaarverslag-EPS ({len(ykort)}): {' '.join(ykort)} | officieel met minder dan 6 jaar EPS ({len(kort)}): {' '.join(kort)}")
           print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
           PY

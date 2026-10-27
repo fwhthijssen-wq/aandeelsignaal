@@ -21,6 +21,8 @@ def getal(x):
 
 
 def bron_van(g, j, veld):
+    if veld in (j.get('aangeleverd') or []):
+        return 'door u aangeleverd'
     if veld in (j.get('jaarcijfers_pdf') or []):
         return 'pdf-jaarverslag'
     if veld in ('reported_eps', 'comparable_eps') and j.get('eps_bron'):
@@ -57,7 +59,8 @@ def rijen_voor(rec, peildatum=None):
             eind = f'{y}-12-31'
         waarden = {v: getal(j.get(v)) for v, _, _ in VELDEN}
         bronnen = {v: bron_van(g, j, v) for v, _, _ in VELDEN if waarden[v] is not None}
-        uit.append({'year': y, 'end': eind, 'currency': j.get('currency') or (g.get('currencies') or [rec.get('valuta')])[0],
+        # valuta: die van het jaar zelf, anders die van het laatste boekjaar (de rapportagevaluta), pas daarna die van de beurs
+        uit.append({'year': y, 'end': eind, 'currency': j.get('currency') or (jaren[-1].get('currency') if jaren else None) or (g.get('currencies') or [rec.get('valuta')])[0],
                     'waarden': waarden, 'bronnen': bronnen})
     return uit, g
 
@@ -105,7 +108,13 @@ def main(inpad, uitpad):
         ('', GEWOON),
         ('Prioriteit', VET),
         ('Tabblad Overzicht staat op volgorde: eerst fondsen met minder dan 4 jaar winst per aandeel (zonder die cijfers geen NAIC-oordeel), dan de rest. Prioriteit 1-velden zijn het belangrijkst voor het NAIC-oordeel.', GEWOON),
-        ('Gebruik cijfers uit de jaarverslagen van de bedrijven zelf; gegevens van betaalde aanbieders mogen meestal niet openbaar worden gepubliceerd. Aangeleverde cijfers zijn zichtbaar voor alle gebruikers van de app.', GEWOON),
+        ('Aangeleverde cijfers zijn zichtbaar voor alle gebruikers van de app. Gebruik alleen bronnen die u mag publiceren.', GEWOON),
+        ('', GEWOON),
+        ('Opmerkingen bij gele cellen', VET),
+        ('Staat er een opmerking bij een gele cel of bij de valuta, dan heeft u dat cijfer al eens aangeleverd maar is het niet gebruikt: in een andere valuta dan waarin het bedrijf rapporteert, of meer dan een factor 10 anders dan het jaar ernaast. De opmerking zegt welk getal en waarom. Eerder aangeleverde cijfers die wel gebruikt zijn, staan grijs met als bron “door u aangeleverd”; u hoeft ze niet opnieuw te sturen.', GEWOON),
+        ('', GEWOON),
+        ('Tabblad Controle (tweede bron)', VET),
+        ('Hier staan de cijfers die de app uit officiële bronnen heeft (SEC, ESEF, jaarverslag of Yahoo). Vul in de gele kolom “uw bron” hetzelfde cijfer uit uw eigen bron in. De app vervangt niets, maar vergelijkt: afwijkingen staan daarna bij het fonds onder Bronnen. Zo komen fouten aan het licht, zoals een gemiste splitsing of een verkeerde eenheid.', GEWOON),
     ]
     for i, (t, f) in enumerate(tekst, 1):
         c = ws.cell(row=i, column=1, value=t); c.font = f; c.alignment = Alignment(wrap_text=True, vertical='top')
@@ -138,10 +147,20 @@ def main(inpad, uitpad):
             a.cell(row=r, column=3, value=str(rij['year'])).font = GEWOON
             a.cell(row=r, column=4, value=rij['end']).font = GEWOON
             a.cell(row=r, column=5, value=rij['currency']).font = GEWOON
+            av = g.get('aangeleverd') or {}
+            afg = {(x['jaar'], x['veld']): x for x in av.get('afgewezen') or []}
+            vj = {x['jaar']: x for x in av.get('valuta_jaren') or []}
+            if rij['year'] in vj:
+                x = vj[rij['year']]
+                a.cell(row=r, column=5).comment = Comment(f"Vorige aanlevering stond in {x['valuta']} en is niet gebruikt: dit bedrijf rapporteert in {x['nodig']}. Vul de cijfers in {x['nodig']} in.", 'Aandeel Signaal')
+                a.cell(row=r, column=5).font = VET
             for v, _, _ in VELDEN:
                 cel = a.cell(row=r, column=kol[v], value=rij['waarden'][v]); cel.font = GEWOON
                 if rij['waarden'][v] is None:
                     cel.fill = GEEL
+                    x = afg.get((rij['year'], v))
+                    if x:
+                        cel.comment = Comment(f"Vorige aanlevering: {x['waarde']:,} niet gebruikt; wijkt meer dan een factor 10 af van {x['buur']:,} in een jaar ernaast (andere eenheid of ander begrip?). Controleer en vul opnieuw in, of laat leeg.", 'Aandeel Signaal')
                 else:
                     cel.fill = GRIJS
                     if rij['bronnen'].get(v):
@@ -158,6 +177,37 @@ def main(inpad, uitpad):
     a.column_dimensions[get_column_letter(len(kop))].width = 40
     a.row_dimensions[1].height = 45
     a.freeze_panes = 'F3'; a.auto_filter.ref = f'A2:{get_column_letter(len(kop))}{r - 1}'
+
+    # Tabblad Controle: de cijfers van de app (officieel, jaarverslag of Yahoo; niet de aangeleverde) naast een lege kolom voor
+    # dezelfde cijfers uit een tweede bron. Teruggestuurd vergelijkt de app ze en toont de verschillen bij Bronnen.
+    CV = [('comparable_eps', 'Winst/aandeel vergelijkbaar'), ('sales', 'Omzet'), ('net_income', 'Nettowinst aandeelhouders'), ('equity', 'Eigen vermogen aandeelhouders')]
+    k = wb.create_sheet('Controle')
+    ckop = ['ticker', 'naam', 'year', 'end', 'currency'] + [x for v, _ in CV for x in (v + '_app', v)]
+    cnaam = ['Ticker', 'Naam', 'Boekjaar', 'Einddatum', 'Valuta'] + [x for _, n in CV for x in (n + ' – app', n + ' – uw bron')]
+    for c, (kk, n) in enumerate(zip(ckop, cnaam), 1):
+        cel = k.cell(row=1, column=c, value=n); cel.font = KOP; cel.fill = KOPFILL; cel.alignment = Alignment(wrap_text=True, vertical='top')
+        k.cell(row=2, column=c, value=kk).font = Font(name=F, size=8, italic=True, color='808080')
+    rk = 3
+    for rec in data.get('aandelen') or []:
+        g = rec.get('gegevens') or {}
+        for j in sorted((j for j in g.get('jaren') or [] if isinstance(j.get('year'), int)), key=lambda j: j['year'])[-JAREN:]:
+            eigen = {v: getal(j.get(v)) for v, _ in CV if v not in (j.get('aangeleverd') or [])}
+            if not any(x is not None for x in eigen.values()):
+                continue
+            for c, v in enumerate([rec.get('ticker'), rec.get('naam'), str(j['year']), j.get('end'), j.get('currency')], 1):
+                k.cell(row=rk, column=c, value=v).font = GEWOON
+            for i, (v, _) in enumerate(CV):
+                ca = k.cell(row=rk, column=6 + 2 * i, value=eigen.get(v)); ca.font = GEWOON; ca.fill = GRIJS
+                cb = k.cell(row=rk, column=7 + 2 * i); cb.font = GEWOON
+                if eigen.get(v) is not None:
+                    cb.fill = GEEL
+                for cc in (ca, cb):
+                    cc.number_format = '0.00' if v.endswith('eps') else '#,##0;(#,##0);-'
+            rk += 1
+    for c in range(1, len(ckop) + 1):
+        k.column_dimensions[get_column_letter(c)].width = {1: 10, 2: 30, 3: 9, 4: 12, 5: 8}.get(c, 16)
+    k.row_dimensions[1].height = 45
+    k.freeze_panes = 'F3'; k.auto_filter.ref = f'A2:{get_column_letter(len(ckop))}{rk - 1}'
 
     h = wb.create_sheet('Herkomst')
     kop = ['Ticker', 'Boekjaar', 'Veld (of: alle)', 'Bron (jaarverslag, website, …)', 'Document of url', 'Publicatiedatum (JJJJ-MM-DD)', 'Pagina', 'Opmerking']

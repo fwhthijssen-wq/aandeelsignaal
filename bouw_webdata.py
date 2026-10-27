@@ -352,7 +352,7 @@ def vul_aangeleverd(g, ticker, register=None):
     munt = (jaren[-1].get('currency') if jaren else None) or (g.get('currencies') or [None])[0]
     per_jaar = {j.get('year'): j for j in jaren}
     eigen_eps = sum(1 for j in jaren if _getal(j.get('comparable_eps')) is not None)
-    log = {'velden': {}, 'eps_jaren': 0, 'geweigerd': {}, 'valuta': 0}
+    log = {'velden': {}, 'eps_jaren': 0, 'geweigerd': {}, 'valuta': 0, 'afgewezen': [], 'valuta_jaren': []}
 
     def buur(jaar, veld):
         kand = sorted((abs(y - jaar), y) for y, j in per_jaar.items() if _getal(j.get(veld)) is not None and veld not in (j.get('aangeleverd') or []))
@@ -362,12 +362,13 @@ def vul_aangeleverd(g, ticker, register=None):
         jaar = int(jaar_s)
         if munt and r.get('currency') and r['currency'] != munt:
             log['valuta'] += 1
+            log['valuta_jaren'].append({'jaar': jaar, 'valuta': r['currency'], 'nodig': munt})
             continue
         rij = per_jaar.get(jaar)
         nieuw_rij = rij is None
         if nieuw_rij:
             rij = {'year': jaar, 'end': r.get('end') or f'{jaar}-12-31', 'currency': munt or r.get('currency')}
-        gevuld = []
+        gevuld = rij.setdefault('aangeleverd', [])
         for v in AANGELEVERD_VELDEN:
             x = _getal(r.get(v))
             if x is None or _getal(rij.get(v)) is not None:
@@ -379,12 +380,13 @@ def vul_aangeleverd(g, ticker, register=None):
                 verh = abs(x / b)
                 if verh > 10 or verh < 0.1 or (v in ('sales', 'equity', 'total_assets') and x * b < 0):
                     log['geweigerd'][v] = log['geweigerd'].get(v, 0) + 1
+                    log['afgewezen'].append({'jaar': jaar, 'veld': v, 'waarde': x, 'buur': b})
                     continue
             rij[v] = x
             gevuld.append(v)
         if not gevuld:
+            rij.pop('aangeleverd', None)
             continue
-        rij['aangeleverd'] = gevuld
         if 'comparable_eps' in gevuld:
             rij['eps_bron'] = 'aangeleverd'
             log['eps_jaren'] += 1
@@ -396,17 +398,67 @@ def vul_aangeleverd(g, ticker, register=None):
             per_jaar[jaar] = rij
     jaren.sort(key=lambda j: j.get('year') or 0)
     g['jaren'] = jaren
-    if log['velden']:
+    if log['velden'] or log['afgewezen'] or log['valuta_jaren']:
         if log['eps_jaren'] and g.get('niveau') != 'indicatief' and not (g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10):
             g['aangeleverd_niveau_was'] = g.get('niveau')
             g['niveau'] = 'indicatief'                # winst per aandeel deels aangeleverd: niet meer 'uit jaarverslag'
-        if g.get('fout'):
+        if g.get('fout') and log['velden']:
             g['aangeleverd_fout_was'] = g.pop('fout'); g['bron_aangeleverd'] = True
             g.setdefault('bron', 'Aangeleverd')
         if munt and not g.get('currencies'):
             g['currencies'] = [munt]
         g['aangeleverd'] = dict(log, bron=(register if register is not None else _aangeleverd()).get('bronnen'),
                                 uitleg='Aangevuld met cijfers die u zelf aanleverde (aanvulsjabloon; vooral EODHD). Niet gecontroleerd tegen het jaarverslag. Alleen gaten zijn gevuld; officiële cijfers gaan altijd voor.')
+
+
+TWEEDE_BRON = HERE / 'tweede_bron.json'        # controlecijfers van de gebruiker (tabblad Controle van het aanvulsjabloon)
+TWEEDE_VELDEN = ('comparable_eps', 'sales', 'net_income', 'equity')
+
+
+def _tweede_bron():
+    try:
+        return json.loads(TWEEDE_BRON.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
+def vergelijk_tweede_bron(g, ticker, register=None):
+    """Legt de cijfers van de app (niet de aangeleverde) naast een tweede bron die de gebruiker aanleverde. Vervangt niets:
+    het resultaat staat in g['tweede_bron'] (vergeleken, overeen, afwijkend). Overeen: winst per aandeel binnen 3% of 0,02;
+    bedragen binnen 2%. Een verschil van ongeveer een factor 100 of 1000 wordt als eenheid aangeduid."""
+    register = register if register is not None else _tweede_bron()
+    reg = (register.get('fondsen') or {}).get(ticker) or {}
+    g.pop('tweede_bron', None)
+    if not reg or not g.get('jaren'):
+        return
+    per_jaar = {j.get('year'): j for j in g['jaren']}
+    vergeleken, overeen, afwijkend = 0, 0, []
+    for jaar_s, r in sorted(reg.items()):
+        j = per_jaar.get(int(jaar_s))
+        if not j:
+            continue
+        for v in TWEEDE_VELDEN:
+            a, b = _getal(j.get(v)), _getal(r.get(v))
+            if a is None or b is None or v in (j.get('aangeleverd') or []):
+                continue
+            vergeleken += 1
+            if v == 'comparable_eps':
+                gelijk = abs(a - b) <= 0.02 or (a * b > 0 and abs(a / b - 1) <= 0.03)
+            else:
+                gelijk = abs(a - b) <= 0.02 * max(abs(a), abs(b))
+            if gelijk:
+                overeen += 1
+                continue
+            soort = None
+            if a and b:
+                f = abs(a / b)
+                for n in (100, 1000, 1e6):
+                    if 0.9 * n <= f <= 1.1 * n or 0.9 / n <= f <= 1.1 / n:
+                        soort = 'eenheid'
+            afwijkend.append({'jaar': int(jaar_s), 'veld': v, 'app': a, 'tweede': b, 'pct': round((a / b - 1) * 100, 1) if b else None, 'soort': soort})
+    if vergeleken:
+        g['tweede_bron'] = {'bron': register.get('bron') or 'tweede bron', 'vergeleken': vergeleken, 'overeen': overeen,
+                            'afwijkend': afwijkend[:40], 'aantal_afwijkend': len(afwijkend)}
 
 
 def _investeringen_register():
@@ -790,7 +842,7 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -813,6 +865,8 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         analisten_ophalen = _yahoo_analisten if fetch_prijzen is None else (lambda t: None)
     if aangeleverd is None:
         aangeleverd = _aangeleverd() if fetch_prijzen is None else {}     # tests: alleen als ze het zelf meegeven
+    if tweede_bron is None:
+        tweede_bron = _tweede_bron() if fetch_prijzen is None else {}
     if fetch_prijzen is None:
         fetch_prijzen = _yahoo_reeks
     diagnose = diagnose or sec_diagnose
@@ -935,6 +989,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         try:
             vul_aangeleverd(gegevens, ticker, aangeleverd)
+            vergelijk_tweede_bron(gegevens, ticker, tweede_bron)
         except Exception as exc:          # aanvulling is extra; de run gaat altijd door
             gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
         koers, punten, dividenden = None, [], []

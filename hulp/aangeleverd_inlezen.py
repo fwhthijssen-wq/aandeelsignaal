@@ -138,16 +138,84 @@ def lees(pad):
     return uit, log, correcties
 
 
+def samenvoegen(oud, nieuw):
+    """Nieuwe aanlevering bij de vorige: per fonds, jaar en veld wint het nieuwe cijfer. Staat het jaar nu in een andere valuta
+    (het vorige sjabloon had soms de valuta van de beurs), dan vervalt de vorige rij van dat jaar helemaal."""
+    uit = {t: {j: dict(r) for j, r in f.items()} for t, f in (oud or {}).items()}
+    for t, f in nieuw.items():
+        for j, r in f.items():
+            o = uit.setdefault(t, {}).get(j)
+            if o is None or (o.get('currency') and r.get('currency') and o['currency'] != r['currency']):
+                uit[t][j] = dict(r)
+            else:
+                o.update(r)
+    return uit
+
+
+CONTROLE_VELDEN = ('comparable_eps', 'sales', 'net_income', 'equity')
+
+
+def lees_controle(pad):
+    """Tabblad Controle: per fonds en jaar de cijfers uit de tweede bron (kolom zonder _app). Leeg = niet vergeleken."""
+    wb = openpyxl.load_workbook(pad, read_only=True)
+    if 'Controle' not in wb.sheetnames:
+        return {}, Counter()
+    ws = wb['Controle']
+    rijen = ws.iter_rows(values_only=True)
+    next(rijen, None)
+    kop = list(next(rijen, None) or [])
+    kol = {v: kop.index(v) for v in CONTROLE_VELDEN if v in kop}
+    uit, log = {}, Counter()
+    for r in rijen:
+        if not r or not r[0]:
+            continue
+        try:
+            jaar = int(r[2])
+        except (TypeError, ValueError):
+            continue
+        w = {v: getal(r[i]) for v, i in kol.items() if getal(r[i]) is not None}
+        if w:
+            if str(r[0]).strip().endswith('.L') and 'comparable_eps' in w and getal(r[kop.index('comparable_eps_app')]):
+                app = r[kop.index('comparable_eps_app')]
+                if 90 <= abs(w['comparable_eps'] / app) <= 110:
+                    w['comparable_eps'] = round(w['comparable_eps'] / 100, 6); log['pence'] += 1
+            uit.setdefault(str(r[0]).strip(), {})[str(jaar)] = w
+            log['cellen'] += len(w)
+    return uit, log
+
+
 def main():
     pad = Path(sys.argv[1])
-    doel = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(__file__).resolve().parent.parent / 'aangeleverd_jaarcijfers.json'
+    root = Path(__file__).resolve().parent.parent
+    doel = Path(sys.argv[2]) if len(sys.argv) > 2 else root / 'aangeleverd_jaarcijfers.json'
     data, log, correcties = lees(pad)
-    bronnen = Counter(r['bron'] for f in data.values() for r in f.values())
+    try:
+        vorig = json.loads(doel.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        vorig = {}
+    alles = samenvoegen(vorig.get('fondsen'), data)
+    bronnen = Counter(r['bron'] for f in alles.values() for r in f.values())
     uit = {'uitleg': 'Jaarcijfers aangeleverd door de gebruiker via het aanvulsjabloon (gele cellen). Niet gecontroleerd tegen het jaarverslag. '
-                     'Alleen gaten worden gevuld; officiële cijfers gaan altijd voor.',
-           'bestand': pad.name, 'bronnen': dict(bronnen), 'controle': dict(log), 'correcties': correcties, 'fondsen': data}
+                     'Alleen gaten worden gevuld; officiële cijfers gaan altijd voor. Elke nieuwe aanlevering komt bij de vorige (nieuw wint).',
+           'bestanden': (vorig.get('bestanden') or ([vorig['bestand']] if vorig.get('bestand') else [])) + [pad.name],
+           'bronnen': dict(bronnen), 'controle': dict(log), 'correcties': (vorig.get('correcties') or []) + correcties, 'fondsen': alles}
     doel.write_text(json.dumps(uit, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-    print(len(data), 'fondsen,', log['cellen'], 'cellen;', dict(log), dict(bronnen), len(correcties), 'opmerkingen')
+    print('aanvulling:', len(data), 'fondsen,', log['cellen'], 'nieuwe cellen;', dict(log), '| totaal', len(alles), 'fondsen;', len(correcties), 'opmerkingen')
+    ctl, clog = lees_controle(pad)
+    if ctl:
+        tdoel = root / 'tweede_bron.json'
+        try:
+            tvorig = json.loads(tdoel.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            tvorig = {}
+        tf = {t: {j: dict(r) for j, r in f.items()} for t, f in (tvorig.get('fondsen') or {}).items()}
+        for t, f in ctl.items():
+            for j, r in f.items():
+                tf.setdefault(t, {}).setdefault(j, {}).update(r)
+        bron = bronnen.most_common(1)[0][0] if bronnen else 'tweede bron'
+        tdoel.write_text(json.dumps({'bron': bron, 'uitleg': 'Controlecijfers uit een tweede bron, aangeleverd door de gebruiker (tabblad Controle). Alleen vergeleken, nooit gebruikt.',
+                                     'fondsen': tf}, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+        print('controle:', len(ctl), 'fondsen,', dict(clog))
 
 
 if __name__ == '__main__':

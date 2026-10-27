@@ -71,7 +71,9 @@ class Vullen(unittest.TestCase):
         B.vul_aangeleverd(g, 'X', reg({2020: {'sales': 950000, 'currency': 'EUR'}, 2019: {'comparable_eps': 0.8, 'currency': 'USD'}}))
         self.assertNotIn(2019, [x['year'] for x in g['jaren']])
         self.assertNotIn(2020, [x['year'] for x in g['jaren']])                 # factor 950: andere eenheid, geweigerd
-        self.assertEqual(g['aangeleverd'] if 'aangeleverd' in g else None, None)
+        self.assertEqual(g['aangeleverd']['valuta_jaren'], [{'jaar': 2019, 'valuta': 'USD', 'nodig': 'EUR'}])
+        self.assertEqual(g['aangeleverd']['afgewezen'][0]['veld'], 'sales'); self.assertEqual(g['aangeleverd']['velden'], {})
+        self.assertEqual(g['niveau'], 'jaarverslag')
         lang = self.g(range(2016, 2022))                                        # 6 jaar eigen winst per aandeel
         B.vul_aangeleverd(lang, 'X', reg({2015: {'comparable_eps': 0.9, 'sales': 990, 'currency': 'EUR'}}))
         r = [x for x in lang['jaren'] if x['year'] == 2015][0]
@@ -101,3 +103,55 @@ class Vullen(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TweedeRonde(unittest.TestCase):
+    def test_samenvoegen_nieuw_wint_en_andere_valuta_vervangt_rij(self):
+        oud = {'X': {'2019': {'sales': 1, 'net_income': 2, 'currency': 'EUR'}, '2020': {'sales': 5, 'currency': 'EUR'}}}
+        nieuw = {'X': {'2019': {'sales': 10, 'currency': 'EUR'}, '2020': {'sales': 7, 'currency': 'USD'}}, 'Y': {'2021': {'sales': 3, 'currency': 'GBP'}}}
+        m = AI.samenvoegen(oud, nieuw)
+        self.assertEqual(m['X']['2019'], {'sales': 10, 'net_income': 2, 'currency': 'EUR'})
+        self.assertEqual(m['X']['2020'], {'sales': 7, 'currency': 'USD'})
+        self.assertIn('Y', m)
+        self.assertEqual(oud['X']['2019']['sales'], 1)             # het origineel blijft ongemoeid
+
+    def test_tweede_bron_vergelijkt_alleen_eigen_cijfers(self):
+        g = {'jaren': [{'year': 2020, 'comparable_eps': 2.0, 'sales': 1000.0, 'net_income': 100.0},
+                       {'year': 2021, 'comparable_eps': 2.5, 'sales': 1100.0, 'equity': 50.0, 'aangeleverd': ['equity']}]}
+        B.vergelijk_tweede_bron(g, 'X', {'bron': 'EODHD', 'fondsen': {'X': {'2020': {'comparable_eps': 2.04, 'sales': 1000000.0, 'net_income': 120.0},
+                                                                            '2021': {'comparable_eps': 2.5, 'equity': 999}}}})
+        tb = g['tweede_bron']
+        self.assertEqual((tb['vergeleken'], tb['overeen']), (4, 2))   # eps 2020 (binnen 3%) en eps 2021 kloppen; aangeleverd eigen vermogen telt niet
+        soorten = {x['veld']: x['soort'] for x in tb['afwijkend']}
+        self.assertEqual(soorten, {'sales': 'eenheid', 'net_income': None})
+        B.vergelijk_tweede_bron(g, 'X', {})
+        self.assertNotIn('tweede_bron', g)
+
+    def test_sjabloon_meldt_afgewezen_cijfers_valuta_en_heeft_controle(self):
+        import json as _json
+        sys.path.insert(0, str(Path(__file__).resolve().parent / 'hulp'))
+        import aanvulsjabloon as S
+        data = {'gemaakt': '2026-10-27T00:00:00Z', 'aandelen': [{'ticker': 'TTE.PA', 'naam': 'Total', 'valuta': 'EUR', 'gegevens': {
+            'currencies': ['EUR', 'USD'],
+            'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'USD', 'comparable_eps': 5.0, 'sales': 2e11} for y in range(2021, 2026)] +
+                     [{'year': 2020, 'end': '2020-12-31', 'currency': 'USD', 'net_income': 7.0, 'aangeleverd': ['net_income'], 'aangeleverd_rij': True}],
+            'aangeleverd': {'afgewezen': [{'jaar': 2019, 'veld': 'sales', 'waarde': 5e14, 'buur': 2e11}], 'valuta_jaren': [{'jaar': 2018, 'valuta': 'EUR', 'nodig': 'USD'}]}}}]}
+        d = Path(tempfile.mkdtemp()); inp = d / 'a.json'; inp.write_text(_json.dumps(data)); uit = d / 'u.xlsx'
+        S.main(str(inp), str(uit))
+        wb = openpyxl.load_workbook(uit)
+        ws = wb['Aanvullen']
+        rij = {int(r[2].value): r for r in ws.iter_rows(min_row=3)}
+        self.assertEqual(rij[2018][4].value, 'USD')                                  # rapportagevaluta, niet die van de beurs
+        self.assertIn('stond in EUR', rij[2018][4].comment.text)
+        kop = [c.value for c in ws[2]]
+        self.assertIn('factor 10', rij[2019][kop.index('sales')].comment.text)
+        self.assertIn('door u aangeleverd', rij[2020][kop.index('net_income')].comment.text)
+        k = wb['Controle']
+        jaren = [int(r[2].value) for r in k.iter_rows(min_row=3)]
+        self.assertEqual(jaren, [2021, 2022, 2023, 2024, 2025])                      # het aangeleverde jaar 2020 niet
+        # teruggestuurd met een tweede bron
+        kk = [c.value for c in k[2]]
+        k.cell(row=3, column=kk.index('comparable_eps') + 1, value=5.1)
+        wb.save(uit)
+        ctl, log = AI.lees_controle(uit)
+        self.assertEqual(ctl, {'TTE.PA': {'2021': {'comparable_eps': 5.1}}})
