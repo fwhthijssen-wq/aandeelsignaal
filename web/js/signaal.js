@@ -278,7 +278,7 @@
     if (m.bron === 'eigen') return 'eigen';
     if (m.basis && !c.laatste && c.lb) return 'jaarverslag';
     if (m.eps && c.epsYahoo) return c.tweeBronnen ? 'tweebronnen' : 'indicatief';               // winst per aandeel van Yahoo, rest officieel
-    if (m.eps && c.epsJaarverslag) return 'jaarverslag';         // winst per aandeel uit de jaarverslagen (Yahoo voor de rest)   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
+    if (m.eps && c.epsJaarverslag) return c.niveau === 'gecontroleerd' ? 'gecontroleerd' : 'jaarverslag';         // winst per aandeel uit de jaarverslagen (Yahoo voor de rest)   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
     return c.niveau === 'indicatief' && c.tweeBronnen ? 'tweebronnen' : c.niveau; // 'gecontroleerd' of 'jaarverslag'
   }
 

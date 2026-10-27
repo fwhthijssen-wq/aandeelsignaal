@@ -321,3 +321,29 @@ class Adr(unittest.TestCase):
         B.adr_toe(a, 'AZN'); self.assertEqual(a['jaren'][0]['comparable_eps'], 3.27)
         n = {'jaren': [{'year': 2025, 'comparable_eps': 7.15}]}
         B.adr_toe(n, 'NVS'); self.assertEqual(n['jaren'][0]['comparable_eps'], 7.15)
+
+
+class PdfNarekenen(unittest.TestCase):
+    def g(self, n=10):
+        return {'niveau': 'indicatief', 'bron': 'Yahoo Finance', 'currencies': ['EUR'], 'jaren': [
+            {'year': 2016 + i, 'currency': 'EUR', 'comparable_eps': 2.0 + i / 10, 'eps_bron': 'jaarverslag', 'net_income': (2.0 + i / 10) * 400e6} for i in range(n)]}
+
+    def reg(self, n=10, fout=None):
+        return {'X': {str(2016 + i): {'document': 'u', 'kandidaten': [{'aandelen': 999e6}, {'aandelen': 401e6 if i != fout else 300e6}]} for i in range(n)}}
+
+    def test_tien_jaar_nagerekend_is_bevestigd_en_terug(self):
+        g = self.g()
+        B.reken_pdf_eps_na(g, 'X', self.reg())
+        self.assertTrue(g['pdf_narekening']['bevestigd']); self.assertEqual(g['eps_status'], 'independently_verified')
+        self.assertEqual(g['jaren'][0]['eps_narekening']['aandelen'], 401e6)
+        B.reken_pdf_eps_na(g, 'X', {})
+        self.assertNotIn('eps_status', g); self.assertNotIn('eps_narekening', g['jaren'][0])
+
+    def test_een_jaar_klopt_niet_dan_niet_bevestigd(self):
+        g = self.g()
+        B.reken_pdf_eps_na(g, 'X', self.reg(fout=5))
+        self.assertEqual(g['pdf_narekening']['jaren'], 9); self.assertNotIn('bevestigd', g['pdf_narekening'])
+        self.assertNotIn('eps_status', g)
+        a = self.g(); a['jaren'][0]['aangeleverd'] = ['net_income']        # aangeleverde nettowinst telt niet als bewijs
+        B.reken_pdf_eps_na(a, 'X', self.reg())
+        self.assertEqual(a['pdf_narekening']['jaren'], 9)

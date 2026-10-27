@@ -37,6 +37,15 @@ jobs:
                       jr = [j for j in g.get('jaren') or [] if isinstance(j.get('comparable_eps'), (int, float))]
                       print(' ', a['ticker'], 'ttm', g['ttm']['eps'], 'tot', g['ttm']['tot'], 'jaar', jr[-1]['year'] if jr else None, jr[-1]['comparable_eps'] if jr else None)
               raise SystemExit
+          if want == ['NAREKENEN']:
+              for a in d['aandelen']:
+                  g = a.get('gegevens') or {}
+                  if g.get('pdf_narekening') or any(j.get('eps_bron') == 'jaarverslag' for j in g.get('jaren') or []):
+                      pn = g.get('pdf_narekening') or {}
+                      jr = [j for j in g.get('jaren') or [] if j.get('eps_bron') == 'jaarverslag']
+                      mis = [f"{j['year']}:{j.get('comparable_eps')}x?={j.get('net_income')}" for j in jr if not j.get('eps_narekening')]
+                      print(a['ticker'], 'nagerekend', pn.get('jaren', 0), 'van', len(jr), 'bevestigd' if pn.get('bevestigd') else '', 'mist:', ' '.join(mis)[:600])
+              raise SystemExit
           if want == ['VALUTA']:
               for a in d['aandelen']:
                   jr = (a.get('gegevens') or {}).get('jaren') or []

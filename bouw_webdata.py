@@ -645,6 +645,56 @@ def adr_toe(g, ticker):
                 'De winst per aandeel is daarom omgerekend naar winst per ADS, zodat koers en winst over hetzelfde gaan.'}
 
 
+JAARVERSLAG_AANDELEN = HERE / 'jaarverslag_aandelen.json'   # kandidaten voor het gemiddeld aantal aandelen uit de pdf's (hulp/de_narekenen.py)
+
+
+def reken_pdf_eps_na(g, ticker, register=None):
+    """Rekent de winst per aandeel uit de pdf-jaarverslagen na: winst per aandeel × gemiddeld aantal aandelen (uit hetzelfde
+    verslag) moet binnen 1,5% uitkomen op de nettowinst van dat jaar uit een andere bron (Yahoo of het officiële dossier;
+    nooit een aangeleverd cijfer). Elk jaar dat klopt krijgt eps_narekening. Zijn de laatste 10 jaren met winst per aandeel
+    allemaal nagerekend, dan is het fonds onafhankelijk bevestigd (zoals bij SEC en ESEF). Draait eerdere uitkomsten eerst terug."""
+    oud = g.pop('pdf_narekening', None) if isinstance(g, dict) else None
+    if oud and 'status_was' in oud:
+        for k in ('eps_status', 'eps_verified_years', 'rejected_sources'):
+            if oud['status_was'].get(k) is None:
+                g.pop(k, None)
+            else:
+                g[k] = oud['status_was'][k]
+    for j in (g.get('jaren') or []) if isinstance(g, dict) else []:
+        j.pop('eps_narekening', None)
+    if register is None:
+        try:
+            register = json.loads(JAARVERSLAG_AANDELEN.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            register = {}
+    reg = register.get(ticker) or {}
+    if not reg or not g.get('jaren'):
+        return
+    pdf_jaren = [j for j in g['jaren'] if j.get('eps_bron') == 'jaarverslag' and _getal(j.get('comparable_eps'))]
+    nagerekend = []
+    for j in pdf_jaren:
+        ni = None if 'net_income' in (j.get('aangeleverd') or []) else _getal(j.get('net_income'))
+        e = j['comparable_eps']
+        if not ni or not e:
+            continue
+        for k in (reg.get(str(j['year'])) or {}).get('kandidaten') or []:
+            sh = _getal(k.get('aandelen'))
+            if sh and abs(e * sh / ni - 1) <= 0.015:
+                j['eps_narekening'] = {'aandelen': sh, 'bewijs': k.get('bewijs'), 'document': reg[str(j['year'])].get('document')}
+                nagerekend.append(j['year'])
+                break
+    if not nagerekend:
+        return
+    laatste10 = [j['year'] for j in g['jaren'] if _getal(j.get('comparable_eps')) is not None][-10:]
+    info = {'jaren': len(nagerekend), 'van': min(nagerekend), 'tot': max(nagerekend), 'van_de': len(pdf_jaren),
+            'uitleg': 'Winst per aandeel uit het jaarverslag × het gemiddeld aantal aandelen uit hetzelfde verslag komt (binnen 1,5%) uit op de nettowinst uit een andere bron.'}
+    if len(laatste10) >= 10 and all(y in nagerekend for y in laatste10) and len(set(j.get('currency') for j in g['jaren'] if j.get('currency'))) == 1:
+        info['status_was'] = {k: g.get(k) for k in ('eps_status', 'eps_verified_years', 'rejected_sources')}
+        g['eps_status'] = 'independently_verified'; g['eps_verified_years'] = 10; g['rejected_sources'] = 0
+        info['bevestigd'] = True
+    g['pdf_narekening'] = info
+
+
 def _investeringen_register():
     try:
         return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
@@ -1171,6 +1221,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     gegevens['archief'] = blok
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
+        try:
+            reken_pdf_eps_na(gegevens, ticker)       # winst per aandeel uit de pdf-jaarverslagen narekenen
+        except Exception as exc:
+            gegevens.setdefault('narekening_fout', f'{type(exc).__name__}: {exc}'[:200])
         try:
             adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
             vul_aangeleverd(gegevens, ticker, aangeleverd)

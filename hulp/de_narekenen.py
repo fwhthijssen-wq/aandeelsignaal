@@ -1,0 +1,129 @@
+"""Hulpmiddel (ontwikkeling): rekent de winst per aandeel uit de Duitse pdf-jaarverslagen na met nettowinst ÷ gemiddeld aantal
+aandelen uit hetzelfde verslag. Gebruik: python hulp/de_narekenen.py tekstmap(de/) [TICKER...] > uit.json
+
+Per verslag (boekjaar J) zoeken we de regel met het gewogen gemiddelde aantal aandelen (verwaterd, anders gewoon) en, in de
+regels erboven (tot 30), de nettowinst toe te rekenen aan de aandeelhouders. Eenheden komen van de regel zelf (Million €,
+1,000, Mio., Tsd., Stück) of uit de kop erboven. Een jaar is nagerekend als nettowinst ÷ aandelen binnen 1% ligt van de winst
+per aandeel uit het register (jaarverslag_eps.json, verwaterd) — met zowel de verwaterde als de gewone aandelen als proef.
+Uitvoer per fonds: {jaar: {eps, nettowinst, aandelen, verhouding, bewijs: [regels]}}."""
+import json, re, sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+NUM = re.compile(r'(?<![\w.,])[-–(]?\d{1,3}(?:[.,\s ]\d{3})+(?:[.,]\d+)?\)?|(?<![\w.,])[-–(]?\d+(?:[.,]\d+)?\)?')
+
+AANDELEN = re.compile(r'(weighted\s+average|average\s+number|gewichtete[nrs]?\s+durchschnitt|durchschnittlich\w*\s+(?:anzahl|zahl)|'
+                      r'(?:anzahl|zahl)\s+der\s+(?:im\s+durchschnitt|durchschnittlich)|gewogen)', re.I)
+AANDELEN2 = re.compile(r'(shares|aktien|stückaktien)', re.I)
+NIET_AANDELEN = re.compile(r'cost\s+of\s+capital|kapitalkosten|tax\s+rate|steuersatz|wacc|zinssatz|interest|maturity|laufzeit|'
+                           r'remaining|restlaufzeit|price|preis|kurs|exercise|ausübung|employees|mitarbeiter|treasury\s+shares\s+held', re.I)
+VERWATERD = re.compile(r'dilut|verwässert', re.I)
+WINST = re.compile(r'(attributable\s+to\s+(?:the\s+)?(?:shareholders|owners|equity\s+holders|stockholders)|'
+                   r'net\s+income(?!\s+from\s+(?:continuing|discontinued))|net\s+profit|profit\s+attributable|'
+                   r'anteil\s+der\s+aktionäre|aktionären\s+(?:der|zuzurechnen)|anteilseigner|auf\s+die\s+aktionäre|'
+                   r'konzernergebnis|jahresüberschuss|periodenergebnis|ergebnis\s+nach\s+steuern)', re.I)
+NIET_WINST = re.compile(r'non-?controlling|minderheit|nicht\s+beherrsch|hybrid|per\s+share|je\s+aktie|margin|marge|'
+                        r'continuing|fortgeführt|discontinued|aufgegeben|adjusted|bereinigt|%|before|vor\s+steuern|other\s+comprehensive|sonstig', re.I)
+
+
+def getal(t, komma):
+    neg = t.startswith(('(', '-', '–'))
+    t = t.strip('()-– ').replace(' ', '').replace(' ', '').replace(' ', '')
+    if komma:
+        t = t.replace('.', '').replace(',', '.')
+    else:
+        t = t.replace(',', '')
+    try:
+        x = float(t)
+    except ValueError:
+        return None
+    return -x if neg else x
+
+
+def getallen(regel, komma):
+    """Getallen na het label (tekst vóór het eerste getal), zonder voetnootcijfers direct achter woorden."""
+    m = re.search(r'\s(?=[-–(]?\d)', regel)
+    rest = regel[m.start():] if m else ''
+    uit = []
+    for t in NUM.findall(rest):
+        x = getal(t, komma)
+        if x is not None:
+            uit.append(x)
+    return uit
+
+
+def schaal(regel, boven):
+    """Eenheid: eerst op de regel zelf, dan in de 8 regels erboven."""
+    for r in [regel] + boven[::-1]:
+        l = r.lower()
+        if re.search(r'\b(million|millions|mio\.?|mn|€\s*m\b|eur\s*m\b|in\s+millionen)', l):
+            return 1e6
+        if re.search(r'\b(billion|mrd\.?|bn)\b', l):
+            return 1e9
+        if re.search(r'(\b1[.,]000\b|thousand|thousands|tsd\.?|tausend|in\s+t\b|€\s*k\b|\bk€)', l):
+            return 1e3
+        if re.search(r'\b(stück|units|number of shares)\b', l):
+            return 1.0
+    return None
+
+
+RUW = re.compile(r'(?<![\w.,])\d{1,3}(?:[.,\s\u00a0\u202f]\d{3}){2,}(?![\d])')   # volledig uitgeschreven aantal (≥ 1.000.000)
+
+
+def kandidaten(tekst):
+    """Alle getallen die het gewogen gemiddelde aantal aandelen kunnen zijn: uitgeschreven aantallen (≥ 10 miljoen) in of vlak
+    na een regel over het gemiddelde aantal aandelen, en tabelgetallen met een eenheid (1,000, million, Mio., Tsd.)."""
+    regels = tekst.splitlines()
+    komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
+    uit = {}
+    for i, r in enumerate(regels):
+        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien', r, re.I)) or NIET_AANDELEN.search(r):
+            continue
+        blok = ' '.join(regels[i:i + 4])
+        if not AANDELEN2.search(blok):
+            continue
+        for t in RUW.findall(blok):
+            x = getal(t, komma) if not re.search(r'\s', t) else getal(re.sub(r'[\s\u00a0\u202f]', ',' if not komma else '.', t), komma)
+            if x and 1e7 <= x <= 3e10:
+                uit.setdefault(round(x), ' '.join(r.split())[:160])
+        if AANDELEN2.search(r):
+            fs = schaal(r, regels[max(0, i - 8):i])
+            if fs and fs > 1:
+                for x in getallen(r, komma)[:3]:
+                    if x and 1e7 <= x * fs <= 3e10:
+                        uit.setdefault(round(x * fs), ' '.join(r.split())[:160])
+    return [{'aandelen': k, 'bewijs': v} for k, v in uit.items()]
+
+
+def main():
+    """Per fonds en boekjaar de kandidaten uit het verslag van dat jaar (en anders dat van het jaar erna)."""
+    map_ = Path(sys.argv[1])
+    alleen = set(sys.argv[2:])
+    register = json.loads((HERE.parent / 'jaarverslag_eps.json').read_text(encoding='utf-8'))
+    index = json.loads((map_ / 'index.json').read_text(encoding='utf-8'))
+    uit = {}
+    for t, reg in sorted(register.items()):
+        if alleen and t not in alleen:
+            continue
+        docs = index.get(t) or {}
+        jaren = sorted(int(j) for j in (reg.get('reeks') or {}))
+        per = {}
+        for jaar in jaren:
+            for naam in [k for k in docs if k.split('-')[0] == str(jaar)] + [k for k in docs if k.split('-')[0] == str(jaar + 1)]:
+                pad = map_ / t / f'{naam}.txt'
+                if not pad.exists():
+                    continue
+                k = kandidaten(pad.read_text(encoding='utf-8', errors='replace'))
+                if k:
+                    per.setdefault(str(jaar), {'document': docs[naam].get('url'), 'kandidaten': []})
+                    bekend = {x['aandelen'] for x in per[str(jaar)]['kandidaten']}
+                    per[str(jaar)]['kandidaten'] += [x for x in k if x['aandelen'] not in bekend][:12]
+                if naam.split('-')[0] == str(jaar) and k:
+                    break
+        uit[t] = per
+        print(t, f'{len(per)}/{len(jaren)}', file=sys.stderr, flush=True)
+    json.dump(uit, sys.stdout, ensure_ascii=False, indent=1)
+
+
+if __name__ == '__main__':
+    main()
