@@ -77,7 +77,7 @@ def kandidaten(tekst):
     komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     uit = {}
     for i, r in enumerate(regels):
-        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien', r, re.I)) or NIET_AANDELEN.search(r):
+        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien|(?:no\.|number)\s+of\s+shares|anzahl\s+(?:der\s+)?aktien|aktienanzahl', r, re.I)) or NIET_AANDELEN.search(r):
             continue
         blok = ' '.join(regels[i:i + 4])
         if not AANDELEN2.search(blok):
@@ -90,6 +90,8 @@ def kandidaten(tekst):
             fs = schaal(r, regels[max(0, i - 8):i])
             if fs and fs > 1:
                 for x in getallen(r, komma)[:3]:
+                    if x and float(x).is_integer() and 1990 <= x <= 2035:
+                        continue                              # jaartal, geen aantal
                     if x and 1e7 <= x * fs <= 3e10:
                         uit.setdefault(round(x * fs), ' '.join(r.split())[:160])
     return [{'aandelen': k, 'bewijs': v} for k, v in uit.items()]
