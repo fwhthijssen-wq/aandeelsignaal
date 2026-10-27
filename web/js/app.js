@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.27-beta.93';
+  var APP_VERSIE = '2026.10.27-beta.94';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -998,6 +998,9 @@
       var fmt = function (v, x) { return v === 'comparable_eps' ? getal(x, 2) : mld(x); };
       s += '<section data-tweede-bron><h2>Vergeleken met een tweede bron (' + h(TB.bron) + ')</h2><p>' + TB.overeen + ' van de ' + TB.vergeleken + ' cijfers komen overeen (winst per aandeel binnen 3%, bedragen binnen 2%).' +
         (TB.aantal_afwijkend ? ' Afwijkend: ' + TB.aantal_afwijkend + '. Een verschil betekent niet dat de app fout zit: vaak gaat het om een herziening, een andere definitie of een splitsing.' : ' Alles klopt.') + '</p>' +
+        (TB.gecorrigeerd && TB.gecorrigeerd.length ? '<p data-gecorrigeerd><b>Gecorrigeerd met de tweede bron:</b> ' + TB.gecorrigeerd.map(function (c) {
+          return c.jaar + ': winst per aandeel ' + getal(c.was, 2) + ' → ' + getal(c.nu, 2) + ' (' + (c.regel === 'splitsing' ? 'stond nog op het aantal aandelen van vóór een splitsing' : 'nettowinst ÷ aantal aandelen geeft het cijfer van de tweede bron') + ')'; }).join('; ') +
+          '. Alleen gedaan als de eigen nettowinst en het aantal aandelen van de app dat aantonen.</p>' : '') +
         (TB.afwijkend && TB.afwijkend.length ? '<div class="schuif"><table class="vgl"><thead><tr><th>Jaar</th><th>Cijfer</th><th>App</th><th>' + h(TB.bron) + '</th><th>Verschil</th></tr></thead><tbody>' + TB.afwijkend.map(function (x) {
           return '<tr><td>' + x.jaar + '</td><td>' + h(VN3[x.veld] || x.veld) + '</td><td>' + fmt(x.veld, x.app) + '</td><td>' + fmt(x.veld, x.tweede) + '</td><td>' + (x.soort === 'eenheid' ? 'andere eenheid' : x.pct == null ? '–' : pct(x.pct)) + '</td></tr>'; }).join('') + '</tbody></table></div>' : '') + '</section>';
     }

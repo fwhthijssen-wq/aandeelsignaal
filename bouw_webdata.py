@@ -330,6 +330,7 @@ def vul_aangeleverd(g, ticker, register=None):
       'indicatief'.
     Eerder aangevulde cijfers (bij hergebruik van de vorige run) worden eerst verwijderd, zodat een nieuw bestand telt."""
     reg = ((register if register is not None else _aangeleverd()).get('fondsen') or {}).get(ticker) or {}
+    _herstel_tweede_bron(g)                           # eerst een correctie uit de tweede bron terugdraaien (die komt erna opnieuw)
     jaren = g.get('jaren') or []
     for j in jaren:                                   # vorige aanvulling eraf
         for v in j.pop('aangeleverd', []) or []:
@@ -424,15 +425,86 @@ def _tweede_bron():
         return {}
 
 
+def _dichtbij(a, b, tol):
+    return a is not None and b is not None and b != 0 and a * b > 0 and abs(a / b - 1) <= tol
+
+
+def _herstel_tweede_bron(g):
+    """Draait een correctie uit een vorige run terug (bij hergebruik van de vorige gegevens), zodat elke run opnieuw beslist."""
+    for j in g.get('jaren') or []:
+        c = j.pop('eps_correctie', None)
+        if c:
+            j['comparable_eps'] = c['was']
+    tb = g.pop('tweede_bron', None) or {}
+    if tb.get('niveau_was'):
+        g['niveau'] = tb['niveau_was']
+
+
+def corrigeer_eps_tweede_bron(g, reg):
+    """Herstelt winst per aandeel van de app met de tweede bron, alleen waar de eigen cijfers van de app (nettowinst en aantal
+    aandelen) dat aantonen. Nooit bij een bevestigd fonds (10 jaar onafhankelijk nagerekend). Twee regels:
+    1. splitsing: in de oudere jaren wijkt de app steeds met dezelfde factor af (binnen 10%), de nettowinst klopt (5%), het
+       laatste jaar klopt (3%) en het aantal aandelen van de app veranderde met diezelfde factor (35%, i.v.m. emissies):
+       die jaren staan nog op het oude aantal aandelen; de vergelijkbare winst per aandeel wordt die van de tweede bron;
+    2. narekenen: nettowinst ÷ aandelen van de app (zelfde aandelenbasis als het laatste jaar, binnen 30%) klopt met de tweede
+       bron (15%) en niet met de app: de app nam het verkeerde cijfer over.
+    Elke correctie staat in het jaar (eps_correctie) en in g['tweede_bron']['gecorrigeerd']."""
+    if g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10:
+        return []
+    jaren = [j for j in g.get('jaren') or [] if 'comparable_eps' not in (j.get('aangeleverd') or [])]
+    rij = {j['year']: j for j in jaren if isinstance(j.get('year'), int)}
+    paren = []
+    for y in sorted(rij):
+        r = reg.get(str(y)) or {}
+        a, b = _getal(rij[y].get('comparable_eps')), _getal(r.get('comparable_eps'))
+        if a is not None and b is not None and a != 0 and b != 0:
+            paren.append((y, a, b, r))
+    if len(paren) < 2:
+        return []
+    uit = []
+    laatste_y, la, lb, _ = paren[-1]
+    sh = lambda y: _getal(rij[y].get('shares_diluted'))
+    sh_laatst = next((sh(y) for y, *_ in reversed(paren) if sh(y)), None)
+    laatste_klopt = _dichtbij(la, lb, 0.03)
+    # regel 1: blok oudere jaren met een constante factor
+    if laatste_klopt and sh_laatst:
+        blok = [(y, a, b, r) for y, a, b, r in paren[:-1] if not _dichtbij(a, b, 0.2)]
+        if len(blok) >= 1:
+            f = [a / b for y, a, b, r in blok]
+            gem = sum(f) / len(f)
+            if gem > 0 and all(abs(x / gem - 1) <= 0.1 for x in f) and (gem >= 1.8 or gem <= 0.55):
+                for y, a, b, r in blok:
+                    ni_a, ni_b, s_y = _getal(rij[y].get('net_income')), _getal(r.get('net_income')), sh(y)
+                    if _dichtbij(ni_a, ni_b, 0.05) and s_y and _dichtbij(sh_laatst / s_y, gem, 0.35):
+                        uit.append((y, a, b, 'splitsing'))
+    gedaan = {y for y, *_ in uit}
+    # regel 2: narekenen met nettowinst en aandelen van de app
+    for y, a, b, r in paren:
+        if y in gedaan or _dichtbij(a, b, 0.2):
+            continue
+        ni, s_y = _getal(rij[y].get('net_income')), sh(y)
+        if not ni or not s_y or not sh_laatst or not _dichtbij(s_y, sh_laatst, 0.3):
+            continue
+        ref = ni / s_y
+        if _dichtbij(b, ref, 0.15) and not _dichtbij(a, ref, 0.15):
+            uit.append((y, a, b, 'narekenen'))
+    for y, a, b, regel in uit:
+        rij[y]['eps_correctie'] = {'was': a, 'regel': regel}
+        rij[y]['comparable_eps'] = b
+    return [{'jaar': y, 'was': a, 'nu': b, 'regel': regel} for y, a, b, regel in sorted(uit)]
+
+
 def vergelijk_tweede_bron(g, ticker, register=None):
-    """Legt de cijfers van de app (niet de aangeleverde) naast een tweede bron die de gebruiker aanleverde. Vervangt niets:
-    het resultaat staat in g['tweede_bron'] (vergeleken, overeen, afwijkend). Overeen: winst per aandeel binnen 3% of 0,02;
+    """Legt de cijfers van de app (niet de aangeleverde) naast een tweede bron die de gebruiker aanleverde. Eerst
+    corrigeer_eps_tweede_bron (alleen als de eigen cijfers van de app het aantonen); verder vervangt het niets: het resultaat
+    staat in g['tweede_bron'] (vergeleken, overeen, afwijkend, gecorrigeerd). Overeen: winst per aandeel binnen 3% of 0,02;
     bedragen binnen 2%. Een verschil van ongeveer een factor 100 of 1000 wordt als eenheid aangeduid."""
     register = register if register is not None else _tweede_bron()
     reg = (register.get('fondsen') or {}).get(ticker) or {}
-    g.pop('tweede_bron', None)
+    _herstel_tweede_bron(g)
     if not reg or not g.get('jaren'):
         return
+    gecorrigeerd = corrigeer_eps_tweede_bron(g, reg)
     per_jaar = {j.get('year'): j for j in g['jaren']}
     vergeleken, overeen, afwijkend = 0, 0, []
     for jaar_s, r in sorted(reg.items()):
@@ -441,7 +513,7 @@ def vergelijk_tweede_bron(g, ticker, register=None):
             continue
         for v in TWEEDE_VELDEN:
             a, b = _getal(j.get(v)), _getal(r.get(v))
-            if a is None or b is None or v in (j.get('aangeleverd') or []):
+            if a is None or b is None or v in (j.get('aangeleverd') or []) or (v == 'comparable_eps' and j.get('eps_correctie')):
                 continue
             vergeleken += 1
             if v == 'comparable_eps':
@@ -458,9 +530,13 @@ def vergelijk_tweede_bron(g, ticker, register=None):
                     if 0.9 * n <= f <= 1.1 * n or 0.9 / n <= f <= 1.1 / n:
                         soort = 'eenheid'
             afwijkend.append({'jaar': int(jaar_s), 'veld': v, 'app': a, 'tweede': b, 'pct': round((a / b - 1) * 100, 1) if b else None, 'soort': soort})
-    if vergeleken:
-        g['tweede_bron'] = {'bron': register.get('bron') or 'tweede bron', 'vergeleken': vergeleken, 'overeen': overeen,
-                            'afwijkend': afwijkend[:40], 'aantal_afwijkend': len(afwijkend)}
+    if vergeleken or gecorrigeerd:
+        tb = {'bron': register.get('bron') or 'tweede bron', 'vergeleken': vergeleken, 'overeen': overeen,
+              'afwijkend': afwijkend[:40], 'aantal_afwijkend': len(afwijkend), 'gecorrigeerd': gecorrigeerd}
+        if gecorrigeerd and g.get('niveau') == 'jaarverslag':
+            tb['niveau_was'] = 'jaarverslag'
+            g['niveau'] = 'indicatief'                 # winst per aandeel deels uit de tweede bron
+        g['tweede_bron'] = tb
 
 
 def _investeringen_register():

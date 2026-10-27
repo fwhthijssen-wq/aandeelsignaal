@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.27-beta.94
+- **Winst per aandeel hersteld met de tweede bron**, alleen waar de eigen cijfers van de app het aantonen: (1) een splitsing die niet verwerkt was (oudere jaren steeds met dezelfde factor anders, nettowinst en laatste jaar kloppen, aantal aandelen veranderde met die factor, bijv. Aena); (2) nettowinst ÷ aantal aandelen geeft het cijfer van de tweede bron en niet dat van de app (bijv. Cellnex). Klopt de app, dan blijft alles staan (bijv. Shell, Tesco). Nooit bij bevestigde fondsen. Bij Bronnen staat per jaar de oude en nieuwe waarde; het fonds heet dan “Indicatief”.
+
 ## 2026.10.27-beta.93
 - **Tweede bron**: bij Bronnen staat per fonds hoe de cijfers van de app overeenkomen met een tweede bron die u aanlevert (tabblad Controle van het aanvulsjabloon): hoeveel cijfers kloppen en een tabel met de afwijkingen (ook “andere eenheid”). Er wordt niets vervangen.
 - Aanvulsjabloon, tweede ronde: ontbrekende jaren krijgen de valuta waarin het bedrijf rapporteert; bij cijfers die vorige keer niet gebruikt zijn staat in een opmerking welk getal en waarom (andere valuta, factor 10). Een nieuwe aanlevering komt bij de vorige; per cijfer wint de nieuwste.

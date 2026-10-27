@@ -165,3 +165,47 @@ class ValutaWissel(unittest.TestCase):
         self.assertEqual(j[2021]['net_income'], 10.0)                     # bestaand GBP-jaar: GBP is goed
         self.assertNotIn(2020, j)                                         # nieuw jaar: rapportagevaluta (USD) nodig
         self.assertEqual(g['aangeleverd']['valuta_jaren'], [{'jaar': 2020, 'valuta': 'GBP', 'nodig': 'USD'}])
+
+
+class Correctie(unittest.TestCase):
+    def tb(self, jaren):
+        return {'bron': 'EODHD', 'fondsen': {'X': {str(y): r for y, r in jaren.items()}}}
+
+    def test_splitsing_aena(self):
+        g = {'niveau': 'jaarverslag', 'jaren': [
+            {'year': 2022, 'comparable_eps': 6.01, 'net_income': 906e6, 'shares_diluted': 150e6},
+            {'year': 2023, 'comparable_eps': 10.87, 'net_income': 1645e6, 'shares_diluted': 150e6},
+            {'year': 2024, 'comparable_eps': 12.89, 'net_income': 1972e6, 'shares_diluted': 150e6},
+            {'year': 2025, 'comparable_eps': 1.42, 'net_income': 2185e6, 'shares_diluted': 1500e6}]}
+        reg = self.tb({2022: {'comparable_eps': 0.601, 'net_income': 901e6}, 2023: {'comparable_eps': 1.0872, 'net_income': 1631e6},
+                       2024: {'comparable_eps': 1.2895, 'net_income': 1934e6}, 2025: {'comparable_eps': 1.4245, 'net_income': 2137e6}})
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        eps = [j['comparable_eps'] for j in g['jaren']]
+        self.assertEqual(eps, [0.601, 1.0872, 1.2895, 1.42])
+        self.assertEqual([c['regel'] for c in g['tweede_bron']['gecorrigeerd']], ['splitsing'] * 3)
+        self.assertEqual(g['niveau'], 'indicatief')
+        B.vergelijk_tweede_bron(g, 'X', reg)                                   # opnieuw: zelfde uitkomst
+        self.assertEqual([j['comparable_eps'] for j in g['jaren']], eps)
+        B.vergelijk_tweede_bron(g, 'X', {})                                    # zonder tweede bron: alles terug
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 6.01); self.assertEqual(g['niveau'], 'jaarverslag')
+
+    def test_shell_tweede_bron_fout_blijft_staan(self):
+        g = {'jaren': [{'year': 2020 + i, 'comparable_eps': e, 'net_income': n, 'shares_diluted': s} for i, (e, n, s) in
+                       enumerate([(2.57, 20.6e9, 8.0e9), (2.0, 16e9, 7.9e9), (5.71, 42.9e9, 7.5e9), (2.85, 19.6e9, 6.9e9)])]}
+        reg = self.tb({2020: {'comparable_eps': 12.85, 'net_income': 20.1e9}, 2021: {'comparable_eps': 10.0, 'net_income': 15.8e9},
+                       2022: {'comparable_eps': 5.709, 'net_income': 42.3e9}, 2023: {'comparable_eps': 2.847, 'net_income': 19.4e9}})
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 2.57)
+        self.assertEqual(g['tweede_bron']['gecorrigeerd'], [])
+
+    def test_narekenen_cellnex_en_bevestigd_nooit(self):
+        rijen = [{'year': 2021, 'comparable_eps': -0.358, 'net_income': -386e6, 'shares_diluted': 700e6},
+                 {'year': 2022, 'comparable_eps': -0.45, 'net_income': -313e6, 'shares_diluted': 705e6}]
+        reg = self.tb({2021: {'comparable_eps': -0.5938}, 2022: {'comparable_eps': -0.4415}})
+        g = {'jaren': copy.deepcopy(rijen)}
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        self.assertEqual(g['jaren'][0]['comparable_eps'], -0.5938)
+        self.assertEqual(g['tweede_bron']['gecorrigeerd'][0]['regel'], 'narekenen')
+        b = {'eps_status': 'independently_verified', 'eps_verified_years': 10, 'jaren': copy.deepcopy(rijen)}
+        B.vergelijk_tweede_bron(b, 'X', reg)
+        self.assertEqual(b['jaren'][0]['comparable_eps'], -0.358)
