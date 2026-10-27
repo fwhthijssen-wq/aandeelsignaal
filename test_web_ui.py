@@ -41,7 +41,7 @@ class WebUi(unittest.TestCase):
     def test_start_geen_fouten_en_geen_valse_bevestiging(self):
         pg = self.pagina()
         self.assertIn('overzicht', pg.inner_text('main').lower())
-        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 3)
+        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 4)
         self.assertEqual(pg.locator('[data-marktbeeld] .markt-rij').count() > 1, True)
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
@@ -250,7 +250,7 @@ class WebUi(unittest.TestCase):
         self.assertIn('niet zelf nagerekend', pg.locator('[data-jaarverslag]').inner_text())
         pg.evaluate("location.hash='#/a/AAPL/samenvatting'")
         pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('main .chip[data-niveau="jaarverslag"]').count(), 1)
+        self.assertEqual(pg.locator('main [data-label-link] .chip[data-niveau="jaarverslag"]').count(), 1)
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
         pg.evaluate("location.hash='#/a/AAPL/koers'")
         pg.wait_for_timeout(150)
@@ -610,7 +610,7 @@ class WebUi(unittest.TestCase):
             jaren: [2021, 2022, 2023, 2024, 2025].map((y, i) => ({ year: y, end: y + '-12-31', currency: a.valuta, sales: 1000 + 50 * i, net_income: 100 + 10 * i, reported_eps: 2 + 0.2 * i, comparable_eps: 2 + 0.2 * i, operating_cash_flow: 140, capex: 30, equity: 700 })) }; }""")
         pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(100)
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(200)
-        self.assertEqual(pg.locator('[data-niveau="indicatief"]').count(), 1)
+        self.assertEqual(pg.locator('[data-label-link] [data-niveau="indicatief"]').count(), 1)       # label bovenaan, naar de bronnen
         self.assertEqual(pg.locator('.chip.ok').count(), 0)                                  # nooit "Bevestigd"
         self.assertIn('indicatief', pg.inner_text('[data-metingen]').lower())               # bron bij elke meting
         pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(200)
@@ -727,6 +727,19 @@ class WebUi(unittest.TestCase):
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
         pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-status-regel] a[href="#/kwaliteit"]').count(), 1)
+        self.assertEqual(self.fouten, [])
+
+    def test_label_bij_fonds_leidt_naar_kwaliteitskaart_en_filter_zekerheid(self):
+        pg = self.pagina(390)
+        pg.goto(INDEX + '#/a/AAPL/samenvatting'); pg.wait_for_timeout(150)
+        pg.click('[data-label-link]'); pg.wait_for_timeout(150)
+        self.assertTrue(pg.evaluate('location.hash').endswith('/bronnen'))
+        self.assertIn('Hoe zeker zijn de cijfers?', pg.locator('[data-kwaliteitkaart]').inner_text())
+        pg.goto(INDEX + '#/fondsen'); pg.wait_for_timeout(150)
+        pg.select_option('#f-zeker', 'bevestigd'); pg.wait_for_timeout(100)
+        self.assertEqual(pg.locator('[data-fonds]').count(), 0)                 # demo: niets bevestigd
+        pg.select_option('#f-zeker', ''); pg.wait_for_timeout(100)
+        self.assertGreater(pg.locator('[data-fonds]').count(), 0)
         self.assertEqual(self.fouten, [])
 
     def test_onbekend_aandeel_en_zoeken(self):

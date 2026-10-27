@@ -1,5 +1,14 @@
 # Changelog
 
+Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
+
+## 1.0 (2026.10.27)
+- **Eerste volwaardige versie**: geen “beta” meer.
+- **Zekerheid van de cijfers dichtbij**: bij elk fonds is het label (Bevestigd, Uit jaarverslag, Twee bronnen eens, Indicatief) bovenaan aan te tikken en leidt naar Bronnen, dat nu begint met een kwaliteitskaart: label en waarom, jaren winst per aandeel en uit welke bron, actuele winst, tweede bron, correcties en aanvullingen.
+- **Start**: vierde tegel “Zekerheid van de cijfers” (hoeveel fondsen een NAIC-oordeel hebben, hoeveel uit officiële jaarverslagen, met een gekleurde balk); tikken opent Datakwaliteit.
+- **Fondsen**: keuze “Zekerheid van de cijfers” (officieel, alleen bevestigd, minstens twee bronnen eens, alleen indicatief) in plaats van alleen “bevestigd”.
+- Uitleg bij indicatieve cijfers en cijfers uit het jaarverslag bijgewerkt: het NAIC-oordeel rekent er gewoon mee (vanaf 4 jaar winst per aandeel).
+
 ## 2026.10.27-beta.98
 - Winst van de laatste 4 kwartalen alleen als die binnen een factor 2 van de laatste jaarwinst ligt (was 3): voorzichtiger bij grote eenmalige posten of een andere aandelenbasis.
 

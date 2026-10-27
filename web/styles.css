@@ -346,3 +346,15 @@ section[data-deel] { border-top: 1px solid var(--line); padding-top: 14px; }
 [data-lab="indicatief"] { background: var(--wait-ink); } [data-lab="geen"] { background: var(--line); }
 .kw-legenda { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
 .kw-legenda li { display: flex; gap: 8px; align-items: flex-start; flex-wrap: wrap; }
+
+/* Label bij een fonds als ingang naar de bronnen; kwaliteitskaart; tegel Zekerheid */
+.kop-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; align-items: center; }
+.label-link { text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+.kw-kaart { display: grid; grid-template-columns: minmax(110px, 11em) 1fr; gap: 6px 12px; margin: 0; }
+.kw-kaart dt { color: var(--mut); font-weight: 700; } .kw-kaart dd { margin: 0; }
+@media (max-width: 420px) { .kw-kaart { grid-template-columns: 1fr; } .kw-kaart dd { margin-bottom: 6px; } }
+.kw-balk.klein { height: 8px; margin: 8px 0 0; }
+@media (min-width: 621px) { .tegels { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .tegels .tegel[data-tegel="zekerheid"] { grid-column: 1 / -1; } }
+.label-link .chip, .kw-kaart .chip { background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); color: var(--ink); }
+.label-link .chip[data-niveau="tweebronnen"] { box-shadow: inset 0 0 0 1.5px var(--ok-ink); }
