@@ -443,11 +443,12 @@ def _herstel_tweede_bron(g):
 def corrigeer_eps_tweede_bron(g, reg):
     """Herstelt winst per aandeel van de app met de tweede bron, alleen waar de eigen cijfers van de app (nettowinst en aantal
     aandelen) dat aantonen. Nooit bij een bevestigd fonds (10 jaar onafhankelijk nagerekend). Twee regels:
-    1. splitsing: in de oudere jaren wijkt de app steeds met dezelfde factor af (binnen 10%), de nettowinst klopt (5%), het
-       laatste jaar klopt (3%) en het aantal aandelen van de app veranderde met diezelfde factor (35%, i.v.m. emissies):
-       die jaren staan nog op het oude aantal aandelen; de vergelijkbare winst per aandeel wordt die van de tweede bron;
+    1. splitsing: oudere jaren wijken met (bijna) dezelfde factor af (binnen 10% van de mediaan), de nettowinst klopt (5%),
+       het laatste jaar klopt (3%) en het aantal aandelen achter de winst per aandeel van de app (nettowinst ÷ winst per
+       aandeel) veranderde met diezelfde factor (35%, i.v.m. emissies): die jaren staan nog op het oude aantal aandelen;
     2. narekenen: nettowinst ÷ aandelen van de app (zelfde aandelenbasis als het laatste jaar, binnen 30%) klopt met de tweede
        bron (15%) en niet met de app: de app nam het verkeerde cijfer over.
+    Als bewijs tellen alleen de eigen cijfers van de app, nooit aangeleverde (die komen vaak uit dezelfde tweede bron).
     Elke correctie staat in het jaar (eps_correctie) en in g['tweede_bron']['gecorrigeerd']."""
     if g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10:
         return []
@@ -463,26 +464,34 @@ def corrigeer_eps_tweede_bron(g, reg):
         return []
     uit = []
     laatste_y, la, lb, _ = paren[-1]
-    sh = lambda y: _getal(rij[y].get('shares_diluted'))
-    sh_laatst = next((sh(y) for y, *_ in reversed(paren) if sh(y)), None)
-    laatste_klopt = _dichtbij(la, lb, 0.03)
-    # regel 1: blok oudere jaren met een constante factor
-    if laatste_klopt and sh_laatst:
-        blok = [(y, a, b, r) for y, a, b, r in paren[:-1] if not _dichtbij(a, b, 0.2)]
-        if len(blok) >= 1:
-            f = [a / b for y, a, b, r in blok]
-            gem = sum(f) / len(f)
-            if gem > 0 and all(abs(x / gem - 1) <= 0.1 for x in f) and (gem >= 1.8 or gem <= 0.55):
+
+    def eigen(y, veld):                               # alleen cijfers van de app zelf, nooit aangeleverde (die komen vaak uit de tweede bron)
+        return None if veld in (rij[y].get('aangeleverd') or []) else _getal(rij[y].get(veld))
+
+    def aandelen_uit_winst(y):                       # aantal aandelen achter de winst per aandeel van de app: nettowinst ÷ winst per aandeel
+        ni, e = eigen(y, 'net_income'), _getal(rij[y].get('comparable_eps'))
+        return abs(ni / e) if ni and e else None
+
+    a_laatst = aandelen_uit_winst(laatste_y)
+    # regel 1: de oudere jaren die met (bijna) dezelfde factor afwijken: die staan nog op het oude aantal aandelen
+    if _dichtbij(la, lb, 0.03) and a_laatst:
+        blok = [(y, a, b, r) for y, a, b, r in paren[:-1] if not _dichtbij(a, b, 0.2) and a / b > 0]
+        if blok:
+            f = sorted(a / b for y, a, b, r in blok)
+            mediaan = f[len(f) // 2]
+            if mediaan >= 1.8 or mediaan <= 0.55:
                 for y, a, b, r in blok:
-                    ni_a, ni_b, s_y = _getal(rij[y].get('net_income')), _getal(r.get('net_income')), sh(y)
-                    if _dichtbij(ni_a, ni_b, 0.05) and s_y and _dichtbij(sh_laatst / s_y, gem, 0.35):
+                    a_y = aandelen_uit_winst(y)
+                    if (abs((a / b) / mediaan - 1) <= 0.1 and _dichtbij(eigen(y, 'net_income'), _getal(r.get('net_income')), 0.05)
+                            and a_y and _dichtbij(a_laatst / a_y, a / b, 0.35)):
                         uit.append((y, a, b, 'splitsing'))
     gedaan = {y for y, *_ in uit}
-    # regel 2: narekenen met nettowinst en aandelen van de app
+    # regel 2: nettowinst ÷ aantal aandelen, beide van de app zelf, op de aandelenbasis van het laatste jaar
+    sh_laatst = next((eigen(y, 'shares_diluted') for y, *_ in reversed(paren) if eigen(y, 'shares_diluted')), None)
     for y, a, b, r in paren:
         if y in gedaan or _dichtbij(a, b, 0.2):
             continue
-        ni, s_y = _getal(rij[y].get('net_income')), sh(y)
+        ni, s_y = eigen(y, 'net_income'), eigen(y, 'shares_diluted')
         if not ni or not s_y or not sh_laatst or not _dichtbij(s_y, sh_laatst, 0.3):
             continue
         ref = ni / s_y

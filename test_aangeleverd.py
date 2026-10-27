@@ -209,3 +209,23 @@ class Correctie(unittest.TestCase):
         b = {'eps_status': 'independently_verified', 'eps_verified_years': 10, 'jaren': copy.deepcopy(rijen)}
         B.vergelijk_tweede_bron(b, 'X', reg)
         self.assertEqual(b['jaren'][0]['comparable_eps'], -0.358)
+
+    def test_aangeleverde_cijfers_tellen_niet_als_bewijs(self):
+        # Merck 2016: nettowinst en aandelen kwamen uit de tweede bron zelf; dan geen correctie
+        g = {'jaren': [{'year': 2016, 'comparable_eps': 3.75, 'net_income': 3920e6, 'shares_diluted': 434e6, 'aangeleverd': ['net_income', 'shares_diluted']},
+                       {'year': 2017, 'comparable_eps': 5.99, 'net_income': 2605e6, 'shares_diluted': 435e6}]}
+        B.vergelijk_tweede_bron(g, 'X', self.tb({2016: {'comparable_eps': 9.02}, 2017: {'comparable_eps': 5.99}}))
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 3.75)
+
+    def test_aena_echt_met_uitschieter_en_aangeleverde_aandelen(self):
+        g = {'niveau': 'jaarverslag', 'jaren': [
+            {'year': 2021, 'comparable_eps': -3.17, 'net_income': -505e6, 'shares_diluted': 222e6},
+            {'year': 2022, 'comparable_eps': 6.01, 'net_income': 906e6, 'shares_diluted': 1500e6, 'aangeleverd': ['shares_diluted']},
+            {'year': 2023, 'comparable_eps': 10.87, 'net_income': 1645e6, 'shares_diluted': 150e6, 'aangeleverd': ['shares_diluted']},
+            {'year': 2024, 'comparable_eps': 12.89, 'net_income': 1972e6, 'shares_diluted': 150e6, 'aangeleverd': ['shares_diluted']},
+            {'year': 2025, 'comparable_eps': 1.42, 'net_income': 2185e6, 'shares_diluted': 1500e6}]}
+        reg = self.tb({2021: {'comparable_eps': -0.04, 'net_income': -60e6}, 2022: {'comparable_eps': 0.601, 'net_income': 901e6},
+                       2023: {'comparable_eps': 1.0872, 'net_income': 1631e6}, 2024: {'comparable_eps': 1.2895, 'net_income': 1934e6},
+                       2025: {'comparable_eps': 1.4245, 'net_income': 2137e6}})
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        self.assertEqual([j['comparable_eps'] for j in g['jaren']], [-3.17, 0.601, 1.0872, 1.2895, 1.42])

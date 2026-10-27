@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.27-beta.95
+- Correctie met de tweede bron strenger: als bewijs tellen alleen de eigen cijfers van de app (nettowinst, aantal aandelen), nooit aangeleverde, want die komen vaak uit dezelfde tweede bron (zo werd Merck 2016 ten onrechte aangepast). Een splitsing wordt nu ook herkend als één jaar ernaast uit de toon valt (Aena 2022–2024).
+
 ## 2026.10.27-beta.94
 - **Winst per aandeel hersteld met de tweede bron**, alleen waar de eigen cijfers van de app het aantonen: (1) een splitsing die niet verwerkt was (oudere jaren steeds met dezelfde factor anders, nettowinst en laatste jaar kloppen, aantal aandelen veranderde met die factor, bijv. Aena); (2) nettowinst ÷ aantal aandelen geeft het cijfer van de tweede bron en niet dat van de app (bijv. Cellnex). Klopt de app, dan blijft alles staan (bijv. Shell, Tesco). Nooit bij bevestigde fondsen. Bij Bronnen staat per jaar de oude en nieuwe waarde; het fonds heet dan “Indicatief”.
 
