@@ -136,14 +136,30 @@
   var GROEI_MAX = 15, GROEI_MIN = 5, HORIZON = 5, KW_UITSCHIETER = 60, TOTAAL_MIN = 15, RV_LAAG = 85, RV_HOOG = 110;
   /* Trendgroei zoals NAIC hem tekent: rechte lijn door de logaritme van alle positieve waarden (hoogstens 10 jaar), als % per jaar.
      Eén slecht begin- of eindjaar (zoals 2020) weegt zo veel minder dan bij groei van eerste naar laatste jaar. Null bij < 4 punten. */
-  function trendGroei(v, veld) {
+  /* Groeitrend (log-lineair, hoogstens 10 jaar, alleen positieve jaren). Zoals NAIC voorschrijft tellen ongewone jaren niet mee:
+     een jaar dat meer dan een factor 1,5 (en meer dan 3× de gewone afwijking) van de trendlijn ligt, valt weg en de lijn wordt
+     opnieuw getrokken; hoogstens 2 jaren, en er blijven er altijd minstens 5 over. */
+  function trendDetail(v, veld) {
     var p = v.slice(-10).filter(function (j) { return pos(j[veld]); });
     if (p.length < 4) return null;
-    var mx = p.reduce(function (a, j) { return a + j.year; }, 0) / p.length, my = p.reduce(function (a, j) { return a + Math.log(j[veld]); }, 0) / p.length;
-    var t = 0, nm = 0;
-    p.forEach(function (j) { t += (j.year - mx) * (Math.log(j[veld]) - my); nm += (j.year - mx) * (j.year - mx); });
-    return nm ? rond((Math.exp(t / nm) - 1) * 100, 1) : null;
+    function lijn(q) {
+      var mx = q.reduce(function (a, j) { return a + j.year; }, 0) / q.length, my = q.reduce(function (a, j) { return a + Math.log(j[veld]); }, 0) / q.length;
+      var t = 0, nm = 0;
+      q.forEach(function (j) { t += (j.year - mx) * (Math.log(j[veld]) - my); nm += (j.year - mx) * (j.year - mx); });
+      var b = nm ? t / nm : 0;
+      return { b: b, rest: function (j) { return Math.log(j[veld]) - (my + b * (j.year - mx)); } };
+    }
+    var weg = [];
+    for (var r = 0; r < 2 && p.length >= 6; r++) {
+      var l = lijn(p), afw = p.map(function (j) { return Math.abs(l.rest(j)); });
+      var gesorteerd = afw.slice().sort(function (a, b) { return a - b; }), mediaan = gesorteerd[Math.floor(gesorteerd.length / 2)];
+      var i = afw.indexOf(Math.max.apply(null, afw));
+      if (afw[i] > Math.max(Math.log(1.5), 3 * mediaan)) { weg.push(p[i].year); p = p.slice(0, i).concat(p.slice(i + 1)); } else break;
+    }
+    var e = lijn(p);
+    return { groei: rond((Math.exp(e.b) - 1) * 100, 1), weggelaten: weg.sort(), jaren: p.length };
   }
+  function trendGroei(v, veld) { var d = trendDetail(v, veld); return d ? d.groei : null; }
   /* Helling (per jaar) van een reeks {year, waarde} over de laatste n jaren met waarde; null bij minder dan 4 punten. */
   function helling(reeks, n) {
     var v = (reeks || []).filter(function (r) { return ok(r.waarde); }).slice(-(n || 5));
@@ -189,7 +205,9 @@
     var l = v[v.length - 1], f = v.slice(-10)[0];
     uit.van = f.year; uit.tot = l.year;
     if (!pos(l.comparable_eps)) { uit.reden = 'De winst per aandeel van ' + l.year + ' is niet positief.'; return uit; }
-    uit.groeiHistorisch = trendGroei(v, 'comparable_eps');
+    var td = trendDetail(v, 'comparable_eps');
+    uit.groeiHistorisch = td ? td.groei : null;
+    uit.trendWeggelaten = td ? td.weggelaten : [];
     if (uit.groeiHistorisch === null) { uit.reden = 'Te weinig jaren met positieve winst per aandeel voor een trend (minstens 4).'; return uit; }
     var eigen = opties && typeof opties.groei === 'number' && isFinite(opties.groei) ? opties.groei : null;
     uit.groeiEigen = eigen;
@@ -200,6 +218,10 @@
     uit.weggelaten = kwReeks.filter(function (x) { return ok(x.hoog) && x.hoog > KW_UITSCHIETER; }).map(function (x) { return x.year; });
     uit.kw = kwGemiddelden(kwReeks.filter(function (x) { return normaal[x.year]; }), 5);
     uit.eps = l.comparable_eps;
+    // Winst over de laatste 4 kwartalen (als die recenter is dan het laatste boekjaar en geloofwaardig: binnen een factor 3
+    // van de laatste jaarwinst). NAIC rekent de huidige K/W en de verwachting vanaf de meest recente winst.
+    var ttm = opties && opties.ttm && pos(opties.ttm.eps) ? opties.ttm : null;
+    if (ttm && pos(uit.eps) && ttm.eps / uit.eps <= 3 && ttm.eps / uit.eps >= 1 / 3) { uit.ttm = { eps: ttm.eps, tot: ttm.tot || null, jaarEps: uit.eps }; uit.eps = ttm.eps; }
     var laatste5 = v.slice(-5).filter(function (j) { return normaal[j.year] || !ok(j.koers_hoog); }).map(function (j) { return j.comparable_eps; }).filter(pos);
     uit.epsLaag = laatste5.length ? Math.min.apply(null, laatste5) : null;
     if ((eigen !== null ? eigen : uit.groeiHistorisch) < GROEI_MIN) {
@@ -277,9 +299,10 @@
   function gevoeligheid(jr, koers, bank, n, stap) {
     if (!n || !n.oordeel || n.groei == null) return null;
     stap = stap || 2;
-    return { stap: stap, lager: ssg(jr, koers, bank, { groei: n.groei - stap }).oordeel, hoger: ssg(jr, koers, bank, { groei: n.groei + stap }).oordeel };
+    var t = n.ttm ? { eps: n.ttm.eps, tot: n.ttm.tot } : null;
+    return { stap: stap, lager: ssg(jr, koers, bank, { groei: n.groei - stap, ttm: t }).oordeel, hoger: ssg(jr, koers, bank, { groei: n.groei + stap, ttm: t }).oordeel };
   }
 
-  var api = { ladder: ladder, gevoeligheid: gevoeligheid, koopprijsVan: koopprijsVan, trendGroei: trendGroei, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, RV_LAAG: RV_LAAG, RV_HOOG: RV_HOOG, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
+  var api = { ladder: ladder, gevoeligheid: gevoeligheid, koopprijsVan: koopprijsVan, trendGroei: trendGroei, trendDetail: trendDetail, ssg: ssg, kwaliteit: kwaliteit, helling: helling, GROEI_MAX: GROEI_MAX, GROEI_MIN: GROEI_MIN, TOTAAL_MIN: TOTAAL_MIN, RV_LAAG: RV_LAAG, RV_HOOG: RV_HOOG, groeiCijfers: groeiCijfers, rendementEigenVermogen: rendementEigenVermogen, nettomarges: nettomarges, margeVoorBelasting: margeVoorBelasting, uitkeringsratio: uitkeringsratio, schuldratio: schuldratio, investeringsratio: investeringsratio, historischKW: historischKW, kwGemiddelden: kwGemiddelden, dividendRendement: dividendRendement, bereik: bereik, bereikUitKoers: bereikUitKoers, koerszones: koerszones };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Naic = api;
 })(typeof self !== 'undefined' ? self : this);

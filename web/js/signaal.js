@@ -11,7 +11,8 @@
     gecontroleerd: { naam: 'gecontroleerd', factor: 1 },   // jaarcijfers met onafhankelijk nagerekende winst per aandeel
     koers: { naam: 'koersdata', factor: 0.9 },             // dagkoersen van één bron
     jaarverslag: { naam: 'uit jaarverslag', factor: 0.7 },
-    indicatief: { naam: 'indicatief', factor: 0.5 },   // cijfers van Yahoo Finance, niet nagerekend   // officieel jaarverslag, winst per aandeel niet nagerekend
+    indicatief: { naam: 'indicatief', factor: 0.5 },
+    tweebronnen: { naam: 'indicatief, twee bronnen eens', factor: 0.6 },   // indicatief, maar de winst per aandeel klopt met een tweede bron   // cijfers van Yahoo Finance, niet nagerekend   // officieel jaarverslag, winst per aandeel niet nagerekend
     eigen: { naam: 'eigen invoer', factor: 0.6 }           // uw eigen antwoorden
   };
   var GROEPEN = { technisch: 'Technische analyse', fundamenteel: 'Fundamentele analyse', kwantitatief: 'Kwantitatief (factoren)', kwalitatief: 'Kwalitatief (uw check)' };
@@ -276,9 +277,9 @@
     if (m.bron === 'koers') return 'koers';
     if (m.bron === 'eigen') return 'eigen';
     if (m.basis && !c.laatste && c.lb) return 'jaarverslag';
-    if (m.eps && c.epsYahoo) return 'indicatief';               // winst per aandeel van Yahoo, rest officieel
+    if (m.eps && c.epsYahoo) return c.tweeBronnen ? 'tweebronnen' : 'indicatief';               // winst per aandeel van Yahoo, rest officieel
     if (m.eps && c.epsJaarverslag) return 'jaarverslag';         // winst per aandeel uit de jaarverslagen (Yahoo voor de rest)   // officiële jaarcijfers, winst per aandeel (nog) niet bevestigd
-    return c.niveau; // 'gecontroleerd' of 'jaarverslag'
+    return c.niveau === 'indicatief' && c.tweeBronnen ? 'tweebronnen' : c.niveau; // 'gecontroleerd' of 'jaarverslag'
   }
 
   /* rec: record uit aandelen.json; opties: { vandaag: 'YYYY-MM-DD', minDekking, check: {totaal, ja, nee, onzeker}, gate: Gate, naic: Naic } */
@@ -304,7 +305,7 @@
     var c = { k: k, koersOk: !!(vers && k && pos(k.slot)), reeks: reeks, bereik: bereik, jr: jarenBruikbaar ? jr : [], laatste: jarenBruikbaar ? l : null, lb: lb,
       epsYahoo: !!(jarenBruikbaar && jr.some(function (j) { return j.eps_bron === 'yahoo' || j.eps_bron === 'aangeleverd'; })),
       epsJaarverslag: !!(jarenBruikbaar && jr.filter(function (j) { return num(j.comparable_eps); }).every(function (j) { return j.eps_bron === 'jaarverslag'; }) && jr.some(function (j) { return j.eps_bron === 'jaarverslag'; })),
-      niveau: niveau, bank: bank, check: opties.check || null, eigen: opties.verdieping || null, van: f ? f.year : null, tot: l ? l.year : null,
+      niveau: niveau, tweeBronnen: !!(g && g.twee_bronnen_eens && niveau === 'indicatief'), bank: bank, check: opties.check || null, eigen: opties.verdieping || null, van: f ? f.year : null, tot: l ? l.year : null,
       eenValuta: !!(g && g.currencies && g.currencies.length === 1 && rec.valuta && g.currencies[0] === rec.valuta),
       groeiOmzet: jarenBruikbaar && n > 0 ? groei(f.sales, l.sales, n) : null,
       groeiEps: jarenBruikbaar && n > 0 ? groei(f.comparable_eps, l.comparable_eps, n) : null };
@@ -359,12 +360,12 @@
     var dekking = telbaar.length ? rond(aan.length / telbaar.length * 100, 0) : 0;
     // NAIC (Stock Selection Guide) als tweede, losstaand oordeel: zelfde jaarcijfers en koers, eigen methode.
     var naicOordeel = null;
-    try { naicOordeel = naic && naic.ssg ? naic.ssg(c.jr, c.koersOk && c.eenValuta ? k.slot : null, c.bank, { groei: opties.verdieping && opties.verdieping.cijfers ? opties.verdieping.cijfers.naicgroei : null }) : null; } catch (e3) { naicOordeel = null; }
+    try { naicOordeel = naic && naic.ssg ? naic.ssg(c.jr, c.koersOk && c.eenValuta ? k.slot : null, c.bank, { groei: opties.verdieping && opties.verdieping.cijfers ? opties.verdieping.cijfers.naicgroei : null, ttm: g && g.ttm ? g.ttm : null }) : null; } catch (e3) { naicOordeel = null; }
     if (naicOordeel && opties.gevoeligheid && naic.gevoeligheid) {
       try { naicOordeel.gevoeligheid = naic.gevoeligheid(c.jr, c.koersOk && c.eenValuta ? k.slot : null, c.bank, naicOordeel); } catch (e4) { /* niet nodig voor het oordeel */ }
     }
     return { ticker: rec ? rec.ticker : null, oordeel: oordeel, score: score == null ? null : rond(score, 2), aantal: aan.length, mogelijk: telbaar.length, minMetingen: min,
-      metingen: metingen, vragen: vragen, naic: naicOordeel, dekking: dekking, niveau: niveau, bank: c.bank, methoden: methoden,
+      metingen: metingen, vragen: vragen, naic: naicOordeel, dekking: dekking, niveau: niveau, tweeBronnen: c.tweeBronnen, bank: c.bank, methoden: methoden,
       ontbreekt: telbaar.filter(function (m) { return !m.aanwezig; }).map(function (m) { return m.naam; }),
       jaar: l ? l.year : null, verouderd: oud, datum: k ? k.datum : null };
   }

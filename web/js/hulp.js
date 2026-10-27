@@ -74,6 +74,11 @@
       'Komt de winst per aandeel uit een pdf-jaarverslag of van Yahoo, dan staat dat hier apart, met per jaar het document en de pagina.',
       'Per bron staat de datum van de laatste controle.',
       'Een gegeven zonder bron wordt niet gebruikt.'], null]
+    ,kwaliteit: ['Datakwaliteit', 'Hoe zeker zijn de cijfers achter de oordelen?', [
+      'De balk telt de fondsen per soort gegevens: Bevestigd (10 jaar winst per aandeel onafhankelijk nagerekend), Uit jaarverslag (officieel, niet nagerekend), Twee bronnen eens (Yahoo, maar de winst per aandeel klopt met uw tweede bron), Indicatief (Yahoo of door u aangeleverd) en zonder jaarcijfers.',
+      'Tweede bron: hoeveel cijfers van de app overeenkomen met de controlecijfers die u aanleverde. Een afwijking betekent niet dat de app fout zit; vaak is het een andere definitie of een herziening.',
+      'Gecorrigeerd: de winst per aandeel is vervangen door die van de tweede bron, alleen als de eigen nettowinst en het aantal aandelen van de app dat aantonen (bijvoorbeeld een splitsing die niet verwerkt was).',
+      'Met de knoppen filtert u, bijvoorbeeld op fondsen met minder dan 6 jaar winst per aandeel. Tik op een fonds voor de bronnen.'], 'Wilt u gaten vullen? Het aanvulsjabloon (Excel) vraagt precies wat hier ontbreekt.']
   };
   function voor(sleutel) {
     var x = T[sleutel] || T.start;

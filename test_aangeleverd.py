@@ -269,3 +269,39 @@ class Valutawissel(unittest.TestCase):
         self.assertIn('1.1 GBP', rij[2021][kop.index('comparable_eps')].comment.text)
         self.assertEqual(rij[2021][kop.index('shares_diluted')].value, 2e9)
         self.assertEqual(rij[2022][kop.index('comparable_eps')].value, 1.5)
+
+
+class KwartaalWinst(unittest.TestCase):
+    def g(self):
+        return {'jaren': [{'year': 2025, 'end': '2025-12-31', 'currency': 'EUR', 'comparable_eps': 3.0}]}
+
+    def ts(self, d):
+        import datetime as dt
+        return int(dt.datetime.fromisoformat(d).timestamp())
+
+    def test_gebruikt_alleen_recent_geloofwaardig_zelfde_valuta(self):
+        info = {'trailingEps': 3.4, 'financialCurrency': 'EUR', 'mostRecentQuarter': self.ts('2026-09-30')}
+        t = B.ttm_uit_info(info, self.g(), '2026-10-27')
+        self.assertEqual((t['eps'], t['tot']), (3.4, '2026-09-30'))
+        self.assertIsNone(B.ttm_uit_info(dict(info, financialCurrency='USD'), self.g(), '2026-10-27'))
+        self.assertIsNone(B.ttm_uit_info(dict(info, mostRecentQuarter=self.ts('2025-12-31')), self.g(), '2026-10-27'))   # = jaarwinst
+        self.assertIsNone(B.ttm_uit_info(dict(info, trailingEps=12.0), self.g(), '2026-10-27'))                          # factor 4
+        self.assertEqual(B.ttm_uit_info(dict(info, trailingEps=340.0), self.g(), '2026-10-27')['eps'], 3.4)               # pence
+        self.assertIsNone(B.ttm_uit_info(None, self.g(), '2026-10-27'))
+
+
+class TweeBronnen(unittest.TestCase):
+    def g(self, n=6):
+        return {'niveau': 'indicatief', 'bron': 'Yahoo Finance', 'jaren': [{'year': 2020 + i, 'comparable_eps': 1 + i / 10, 'eps_bron': 'yahoo', 'sales': 100.0} for i in range(n)]}
+
+    def test_eens_bij_genoeg_overeenkomende_jaren(self):
+        g = self.g()
+        reg = {'bron': 'EODHD', 'fondsen': {'X': {str(2020 + i): {'comparable_eps': 1 + i / 10} for i in range(6)}}}
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        self.assertEqual(g['twee_bronnen_eens']['jaren'], 6)
+        reg['fondsen']['X']['2023']['comparable_eps'] = 2.0                          # één afwijkend jaar: niet eens
+        B.vergelijk_tweede_bron(g, 'X', reg)
+        self.assertNotIn('twee_bronnen_eens', g)
+        g2 = self.g(); g2['jaren'][0]['aangeleverd'] = ['comparable_eps']             # winst uit de tweede bron zelf: telt niet
+        B.vergelijk_tweede_bron(g2, 'X', {'bron': 'EODHD', 'fondsen': {'X': {str(2020 + i): {'comparable_eps': 1 + i / 10} for i in range(6)}}})
+        self.assertNotIn('twee_bronnen_eens', g2)

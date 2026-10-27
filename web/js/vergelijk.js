@@ -12,7 +12,7 @@
   function kant(rec, vandaag, gate) {
     var rij = gate.maakRij(rec, vandaag), g = rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null, k = rec.koers;
     var fr = k ? gate.priceFreshness(k.datum, vandaag) : { fresh: false };
-    var uit = { niveau: rij.niveau || null, ticker: rec.ticker, naam: rec.naam, valuta: rec.valuta, indices: Array.isArray(rec.indices) ? rec.indices : [], bevestigd: rij.bevestigd, reden: rij.bevestigd ? null : (rij.redenen && rij.redenen.length ? rij.redenen.join(' ') : 'Nog niet gecontroleerd.'),
+    var uit = { niveau: rij.niveau || null, tweeBronnen: !!rij.tweeBronnen, ticker: rec.ticker, naam: rec.naam, valuta: rec.valuta, indices: Array.isArray(rec.indices) ? rec.indices : [], bevestigd: rij.bevestigd, reden: rij.bevestigd ? null : (rij.redenen && rij.redenen.length ? rij.redenen.join(' ') : 'Nog niet gecontroleerd.'),
       koers: fr.fresh && typeof k.slot === 'number' ? k.slot : null, afstandPct: fr.fresh ? rij.afstandPct : null,
       omzetgroei: null, epsgroei: null, nettomarge: null, kw: null, jarenBereik: null,
       positiePct: null, verhouding: null, trend200: fr.fresh && typeof k.slot === 'number' && typeof k.sma200 === 'number' && k.sma200 > 0 ? (k.slot > k.sma200 ? 'boven' : 'onder') : null };

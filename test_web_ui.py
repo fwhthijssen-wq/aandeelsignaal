@@ -715,6 +715,20 @@ class WebUi(unittest.TestCase):
         self.assertNotIn('Rekenvoorbeeld', pg.inner_text('main'))
         self.assertEqual(self.fouten, [])
 
+    def test_datakwaliteit_pagina_en_filter(self):
+        pg = self.pagina(320)
+        pg.goto(INDEX + '#/kwaliteit'); pg.wait_for_timeout(200)
+        self.assertIn('Datakwaliteit', pg.inner_text('main'))
+        n = pg.evaluate('window.AANDEEL_DATA.aandelen.length')
+        self.assertEqual(pg.locator('[data-kw-fonds]').count(), n)
+        pg.click('[data-kwf="geen"]'); pg.wait_for_timeout(100)
+        self.assertLessEqual(pg.locator('[data-kw-fonds]').count(), n)
+        self.assertEqual(pg.locator('[data-kwf][aria-pressed="true"]').get_attribute('data-kwf'), 'geen')
+        self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
+        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-status-regel] a[href="#/kwaliteit"]').count(), 1)
+        self.assertEqual(self.fouten, [])
+
     def test_onbekend_aandeel_en_zoeken(self):
         pg = self.pagina()
         pg.goto(INDEX + '#/a/ZZZZ')

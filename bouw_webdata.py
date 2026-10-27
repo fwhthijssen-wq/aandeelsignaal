@@ -9,7 +9,7 @@ laat dan geen oordeel zien. Het label-slot zelf draait in de webapp, met de datu
 """
 import argparse
 import json
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 SCHEMA = 1
@@ -480,6 +480,7 @@ def _herstel_tweede_bron(g):
     tb = g.pop('tweede_bron', None) or {}
     if tb.get('niveau_was'):
         g['niveau'] = tb['niveau_was']
+    g.pop('twee_bronnen_eens', None)
 
 
 def corrigeer_eps_tweede_bron(g, reg):
@@ -588,6 +589,17 @@ def vergelijk_tweede_bron(g, ticker, register=None):
             tb['niveau_was'] = 'jaarverslag'
             g['niveau'] = 'indicatief'                 # winst per aandeel deels uit de tweede bron
         g['tweede_bron'] = tb
+    # Twee bronnen eens: een indicatief fonds (Yahoo) waarvan de winst per aandeel van de laatste 10 jaar niet uit de tweede
+    # bron zelf komt (niet aangeleverd, niet gecorrigeerd) en in minstens 5 jaren én 80% van de jaren overeenkomt met de tweede
+    # bron, zonder één afwijkend jaar. Het label blijft 'indicatief' voor alle drempels; alleen de weging is iets zwaarder.
+    if g.get('niveau') == 'indicatief' and 'tweede_bron' in g:
+        laatste = [j for j in g['jaren'] if _getal(j.get('comparable_eps')) is not None][-10:]
+        if laatste and not any('comparable_eps' in (j.get('aangeleverd') or []) or j.get('eps_correctie') for j in laatste):
+            eps_paren = [(j, _getal((reg.get(str(j.get('year'))) or {}).get('comparable_eps'))) for j in laatste]
+            eps_paren = [(j, b) for j, b in eps_paren if b is not None]
+            eens = [1 for j, b in eps_paren if abs(j['comparable_eps'] - b) <= 0.02 or (j['comparable_eps'] * b > 0 and abs(j['comparable_eps'] / b - 1) <= 0.03)]
+            if len(eps_paren) >= 5 and len(eens) == len(eps_paren) and len(eps_paren) >= 0.8 * len(laatste):
+                g['twee_bronnen_eens'] = {'jaren': len(eps_paren), 'bron': g['tweede_bron']['bron']}
 
 
 def _investeringen_register():
@@ -1146,11 +1158,19 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             if koers is not None:
                 from koershistorie import koersbereik
                 koers['bereik'] = koersbereik(punten)
-        analisten = None
+        analisten, info = None, None
         try:
-            analisten = analisten_uit_info(analisten_ophalen(ticker), vandaag, pence)
+            info = analisten_ophalen(ticker)
+            analisten = analisten_uit_info(info, vandaag, pence)
         except Exception:
             analisten = None       # ter informatie; ontbreekt het, dan staat er dat het niet bekend is
+        try:
+            gegevens.pop('ttm', None)
+            t = ttm_uit_info(info, gegevens, vandaag)
+            if t:
+                gegevens['ttm'] = t
+        except Exception:
+            pass                   # zonder kwartaalwinst rekent NAIC met het laatste boekjaar
         pauze()
         rec = maak_record(meta, koers=koers, gegevens=gegevens)
         if analisten:
@@ -1259,6 +1279,40 @@ def analisten_uit_info(info, vandaag, pence=False):
     return {'advies': adv, 'gemiddeld': round(float(gem), 2) if isinstance(gem, (int, float)) and 1 <= gem <= 5 else None,
             'aantal': int(n), 'koersdoel': round(doel, 2) if doel else None, 'valuta': valuta if isinstance(valuta, str) else None,
             'datum': vandaag, 'bron': 'Yahoo Finance'}
+
+
+def ttm_uit_info(info, g, vandaag):
+    """Winst per aandeel over de laatste 4 kwartalen (Yahoo: trailingEps), voor de huidige K/W en als vertrekpunt van NAIC.
+    Alleen als: de financiële valuta gelijk is aan die van de jaarcijfers; het laatste kwartaal na het laatste boekjaar ligt
+    (anders is het hetzelfde als de jaarwinst) en hoogstens 9 maanden oud is; het bedrag binnen een factor 3 van de laatste
+    positieve jaarwinst ligt (Londen: een factor 100 in pence wordt rechtgezet). Anders None."""
+    if not isinstance(info, dict) or not g or not g.get('jaren'):
+        return None
+    eps = info.get('trailingEps')
+    if not isinstance(eps, (int, float)) or isinstance(eps, bool) or eps != eps:
+        return None
+    jaren = [j for j in g['jaren'] if _getal(j.get('comparable_eps')) is not None]
+    if not jaren:
+        return None
+    l = jaren[-1]
+    munt, fc = l.get('currency'), info.get('financialCurrency')
+    if fc and munt and fc != munt:
+        return None
+    mrq = info.get('mostRecentQuarter')
+    try:
+        kwartaal = date.fromtimestamp(int(mrq)) if isinstance(mrq, (int, float)) else None
+        eind = date.fromisoformat(str(l.get('end'))[:10])
+        nu = date.fromisoformat(str(vandaag)[:10])
+    except (ValueError, OverflowError, OSError):
+        return None
+    if not kwartaal or kwartaal <= eind + timedelta(days=45) or (nu - kwartaal).days > 270:
+        return None
+    jaar_eps = l['comparable_eps']
+    if jaar_eps > 0 and eps > 0 and 33 <= eps / jaar_eps <= 300:
+        eps = eps / 100                                 # pence
+    if not (eps > 0 and jaar_eps > 0 and 1 / 3 <= eps / jaar_eps <= 3):
+        return None
+    return {'eps': round(float(eps), 4), 'tot': kwartaal.isoformat(), 'valuta': munt, 'bron': 'Yahoo Finance'}
 
 
 def _yahoo_analisten(ticker):

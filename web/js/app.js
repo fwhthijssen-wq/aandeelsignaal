@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.27-beta.96';
+  var APP_VERSIE = '2026.10.27-beta.97';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -331,17 +331,17 @@
   }
 
   function rijen() { var t = vandaag(); return DATA.aandelen.map(function (r) { return Gate.maakRij(r, t); }); }
-  function chip(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief</span>' : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
+  function chip(ok, niveau, twee) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? (twee ? '<span class="chip" data-niveau="tweebronnen" title="Indicatief, maar de winst per aandeel klopt met een tweede bron">Twee bronnen eens</span>' : '<span class="chip" data-niveau="indicatief">Indicatief</span>') : '<span class="chip wacht">… Nog niet bevestigd</span>'); }
   function trendTekst(r) {
     if (!r.koersActueel) return r.koersReden ? 'Koers ontbreekt of is verouderd' : '';
     return (r.richting === 'boven' ? 'Boven' : 'Onder') + ' gemiddelde, ' + pct(r.afstandPct);
   }
   function regel2(rec, r) { return h(rec.land + ' · ' + (r.koersActueel ? 'koers actueel' : 'geen actuele koers') + (r.richting ? ' · ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' gemiddelde' : '')); }
   function rijLink(rec, r) {
-    return '<a href="#/a/' + encodeURIComponent(rec.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + regel2(rec, r) + '</span></div>' + chip(r.bevestigd, r.niveau) + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+    return '<a href="#/a/' + encodeURIComponent(rec.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + regel2(rec, r) + '</span></div>' + chip(r.bevestigd, r.niveau, r.tweeBronnen) + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
   }
   function kaartLink(rec, r) {
-    return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd, r.niveau) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
+    return '<a class="kaart" href="#/a/' + encodeURIComponent(rec.ticker) + '"><b>' + h(rec.ticker) + '</b><span class="zacht">' + h(rec.naam) + '</span>' + chip(r.bevestigd, r.niveau, r.tweeBronnen) + '<span>' + h(trendTekst(r)) + '</span>' + I.pijl + '</a>';
   }
 
   /* ---- Signalen volgens NAIC (bij uw eigen aandelen, en wat er veranderde sinds de vorige update) ---- */
@@ -393,6 +393,65 @@
       }).join('') + '</div>' + (ver.length > kort.length ? '<p class="zacht">En nog ' + (ver.length - kort.length) + ' andere. Zie Fondsen voor alles.</p>' : '');
     }
     return s + '<details class="uitleg"><summary>Wat betekenen de signalen?</summary><p>Koopzone: koers in het onderste derde van het verwachte bereik met minstens 3 : 1. Verkoopzone: bovenste derde. NAIC verkoopt ook als de kwaliteit terugloopt. Selectiehulp, geen beleggingsadvies.</p></details></section>';
+  }
+
+  /* ---- Datakwaliteit: per fonds hoe zeker de cijfers zijn, wat er aangevuld of gecorrigeerd is en wat de tweede bron zegt ---- */
+  var kwaliteitFilter = 'alle';
+  var KW_FILTER = [['alle', 'Alle'], ['gecorrigeerd', 'Gecorrigeerd'], ['afwijkend', 'Wijkt af van tweede bron'], ['aangeleverd', 'Door u aangevuld'], ['weinig', 'Minder dan 6 jaar winst'], ['geen', 'Zonder NAIC-oordeel']];
+  function kwaliteitItems() {
+    var t = vandaag();
+    return DATA.aandelen.map(function (rec) {
+      var g = rec.gegevens || {}, r = Gate.maakRij(rec, t), b = signaalVoor(rec);
+      var jr = (g.jaren || []).filter(function (j) { return typeof j.comparable_eps === 'number'; });
+      var eps = jr.length, epsAang = jr.filter(function (j) { return j.eps_bron === 'aangeleverd'; }).length, epsYahoo = jr.filter(function (j) { return j.eps_bron === 'yahoo'; }).length;
+      var lab = r.bevestigd ? 'bevestigd' : r.niveau === 'jaarverslag' ? 'jaarverslag' : r.niveau === 'indicatief' ? (r.tweeBronnen ? 'tweebronnen' : 'indicatief') : 'geen';
+      var tb = g.tweede_bron || null, av = g.aangeleverd || null;
+      return { rec: rec, r: r, b: b, g: g, lab: lab, eps: eps, epsAang: epsAang, epsYahoo: epsYahoo, tb: tb, av: av,
+        gecorrigeerd: tb && tb.gecorrigeerd ? tb.gecorrigeerd.length : 0, afwijkend: tb ? tb.aantal_afwijkend || 0 : 0,
+        aangevuld: av && av.velden ? Object.keys(av.velden).reduce(function (s, k) { return s + av.velden[k]; }, 0) : 0, naic: b.naic && b.naic.oordeel ? b.naic.oordeel : null };
+    });
+  }
+  var LAB_NAAM = { bevestigd: 'Bevestigd', jaarverslag: 'Uit jaarverslag', tweebronnen: 'Twee bronnen eens', indicatief: 'Indicatief', geen: 'Geen jaarcijfers' };
+  var LAB_UITLEG = { bevestigd: '10 jaar winst per aandeel onafhankelijk nagerekend', jaarverslag: 'officieel jaarverslag, winst per aandeel niet nagerekend', tweebronnen: 'Yahoo, maar de winst per aandeel klopt met uw tweede bron', indicatief: 'Yahoo Finance of door u aangeleverd', geen: 'geen bruikbare jaarcijfers' };
+  function schermKwaliteit() {
+    var items = kwaliteitItems(), n = items.length, tel = {};
+    items.forEach(function (x) { tel[x.lab] = (tel[x.lab] || 0) + 1; });
+    var balk = ['bevestigd', 'jaarverslag', 'tweebronnen', 'indicatief', 'geen'].map(function (k) { return tel[k] ? '<i data-lab="' + k + '" style="flex:' + tel[k] + '" title="' + h(LAB_NAAM[k] + ': ' + tel[k]) + '"></i>' : ''; }).join('');
+    var legenda = ['bevestigd', 'jaarverslag', 'tweebronnen', 'indicatief', 'geen'].map(function (k) { return '<li><span class="kw-stip" data-lab="' + k + '"></span><b>' + (tel[k] || 0) + '</b> ' + h(LAB_NAAM[k]) + ' <span class="zacht">– ' + h(LAB_UITLEG[k]) + '</span></li>'; }).join('');
+    var tbV = 0, tbO = 0, tbF = 0, corr = 0, corrF = 0, avF = 0, avC = 0, eps6 = 0, naic = 0;
+    items.forEach(function (x) { if (x.tb) { tbV += x.tb.vergeleken; tbO += x.tb.overeen; tbF++; } if (x.gecorrigeerd) { corr += x.gecorrigeerd; corrF++; } if (x.aangevuld) { avF++; avC += x.aangevuld; } if (x.eps >= 6) eps6++; if (x.naic) naic++; });
+    var s = '<section data-kwaliteit><h1>Datakwaliteit</h1><p class="zacht">Hoe zeker zijn de cijfers achter de oordelen? Per fonds de bron, wat er is aangevuld of gecorrigeerd en hoe de cijfers overeenkomen met een tweede bron. Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + '.</p>';
+    s += '<div class="kpis">' +
+      '<div class="kpi"><b>' + naic + ' / ' + n + '</b><span>Fondsen met een NAIC-oordeel</span></div>' +
+      '<div class="kpi"><b>' + eps6 + '</b><span>Met minstens 6 jaar winst per aandeel</span></div>' +
+      (tbV ? '<div class="kpi"><b>' + Math.round(tbO / tbV * 100) + '%</b><span>Klopt met de tweede bron (' + tbO + ' van ' + tbV + ' cijfers, ' + tbF + ' fondsen)</span></div>' : '') +
+      '<div class="kpi"><b>' + corr + '</b><span>Winst per aandeel gecorrigeerd (' + corrF + ' fondsen)</span></div>' +
+      (avC ? '<div class="kpi"><b>' + getal(avC, 0) + '</b><span>Cijfers door u aangevuld (' + avF + ' fondsen)</span></div>' : '') + '</div>';
+    s += '<div class="kaart-plat"><h2>Zekerheid van de gegevens</h2><span class="kw-balk" aria-hidden="true">' + balk + '</span><ul class="kw-legenda">' + legenda + '</ul></div>';
+    s += '<div class="regels" role="group" aria-label="Filter" data-kw-filter>' + KW_FILTER.map(function (f) { return '<button type="button" class="chip-knop" data-kwf="' + f[0] + '" aria-pressed="' + (f[0] === kwaliteitFilter) + '">' + f[1] + '</button>'; }).join('') + '</div><div id="kw-lijst"></div>';
+    return s + '<p class="zacht">Tik op een fonds voor de bronnen. Gecorrigeerd: alleen als de eigen nettowinst en het aantal aandelen van de app aantonen dat de tweede bron gelijk heeft. Een afwijking van de tweede bron betekent niet dat de app fout zit: vaak gaat het om een andere definitie of een herziening.</p></section>';
+  }
+  function kwaliteitKoppel() {
+    var lijst = document.getElementById('kw-lijst'); if (!lijst) return;
+    var items = kwaliteitItems();
+    function toon() {
+      var f = kwaliteitFilter, sel = items.filter(function (x) {
+        return f === 'alle' || (f === 'gecorrigeerd' && x.gecorrigeerd) || (f === 'afwijkend' && x.afwijkend) || (f === 'aangeleverd' && x.aangevuld) || (f === 'weinig' && x.eps < 6) || (f === 'geen' && !x.naic);
+      });
+      sel.sort(function (a, b) { return (b.gecorrigeerd - a.gecorrigeerd) || (b.afwijkend - a.afwijkend) || a.rec.naam.localeCompare(b.rec.naam); });
+      lijst.innerHTML = '<p class="zacht">' + sel.length + ' fondsen</p>' + (sel.length ? '<div class="lijst" data-kw-fondsen>' + sel.map(function (x) {
+        var delen = [x.eps + ' jaar winst per aandeel' + (x.epsAang ? ' (' + x.epsAang + ' aangeleverd)' : x.epsYahoo ? ' (Yahoo)' : '')];
+        if (x.tb) delen.push('tweede bron ' + x.tb.overeen + '/' + x.tb.vergeleken);
+        if (x.gecorrigeerd) delen.push(x.gecorrigeerd + '× gecorrigeerd');
+        if (x.aangevuld) delen.push(x.aangevuld + ' cijfers aangevuld');
+        if (x.g.ttm) delen.push('kwartaalwinst tot ' + datumNl(x.g.ttm.tot));
+        return '<a href="#/a/' + encodeURIComponent(x.rec.ticker) + '/bronnen" data-kw-fonds="' + h(x.rec.ticker) + '"><div class="tekstkolom"><b>' + h(x.rec.naam) + '</b><span class="zacht">' + h(x.rec.ticker + ' · ' + delen.join(' · ')) + '</span><span class="oordeel-rij"><span class="chip" data-niveau="' + x.lab + '">' + h(LAB_NAAM[x.lab]) + '</span>' + naicChip(x.b) + '</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+      }).join('') + '</div>' : '<div class="kaart-plat"><p>Geen fondsen bij dit filter.</p></div>');
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-kwf]'), function (bt) {
+      bt.addEventListener('click', function () { kwaliteitFilter = bt.getAttribute('data-kwf'); Array.prototype.forEach.call(document.querySelectorAll('[data-kwf]'), function (x) { x.setAttribute('aria-pressed', String(x === bt)); }); toon(); });
+    });
+    toon();
   }
 
   var HOOFD = [['#/', 'Start', 'start'], ['#/fondsen', 'Fondsen', 'zoek'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille']];
@@ -447,7 +506,7 @@
   }
   function statusRegel() {
     var R = rijen(), ok = R.filter(function (r) { return r.bevestigd; }).length;
-    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + ok + ' van ' + R.length + ' aandelen volledig bevestigd · <a href="#/hulp">Hoe werkt het?</a></p>';
+    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + ok + ' van ' + R.length + ' aandelen volledig bevestigd · <a href="#/kwaliteit">Datakwaliteit</a> · <a href="#/hulp">Hoe werkt het?</a></p>';
   }
   function schermStart() {
     var R = rijen(), by = {}; R.forEach(function (r) { by[r.ticker] = r; });
@@ -503,7 +562,7 @@
       '<label for="d-sort" class="zacht">Sorteer op</label><select id="d-sort">' + Dashboard.KOLOMMEN.map(function (k) { return '<option value="' + k + '"' + (k === tabelKeuze.sorteer ? ' selected' : '') + '>' + h(TABEL_KOP[k]) + '</option>'; }).join('') + '</select>' +
       '<button class="knop rand klein" id="d-rtg" aria-label="Sorteervolgorde omdraaien">' + (tabelKeuze.richting === 'op' ? '↑ Oplopend' : '↓ Aflopend') + '</button></div>';
     s += rijenT.length ? '<div class="schuif"><table class="vgl dash"><thead><tr><th>Aandeel</th><th>Koers vs gem.</th><th>Omzet p.j.</th><th>Winst p.j.</th><th>Marge</th></tr></thead><tbody>' + rijenT.map(function (k) {
-      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd, k.niveau) + ' ' + stippen(signaalVoor(zoek(k.ticker)), true) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
+      return '<tr><th scope="row"><a href="#/a/' + encodeURIComponent(k.ticker) + '">' + h(k.naam) + '</a><br>' + chipKort(k.bevestigd, k.niveau, k.tweeBronnen) + ' ' + stippen(signaalVoor(zoek(k.ticker)), true) + (k.positiePct != null ? '<br><span class="zacht" data-plek>Plek in bereik ' + getal(k.positiePct, 0) + '%' + (k.verhouding != null ? ' · ' + getal(k.verhouding, 1) + ' : 1' : '') + '</span>' : '') + '</th><td>' + c(k.afstandPct, pct) + '</td><td>' + c(k.omzetgroei, pct) + '</td><td>' + c(k.epsgroei, pct) + '</td><td>' + c(k.nettomarge, function (v) { return getal(v, 1) + '%'; }) + '</td></tr>';
     }).join('') + '</tbody></table></div><p class="zacht">Groei en marge staan er bij bevestigde aandelen en bij aandelen "uit jaarverslag" (cijfers uit het officiële jaarverslag, niet nagerekend). Een streepje betekent onbekend. Dit is geen rangorde of advies.</p>' + (beperktT ? '<p class="zacht" data-beperkt>De eerste 60 van ' + totaalT + ' aandelen. Kies een index of een filter om de rest te zien.</p>' : '')
       : '<div class="kaart-plat"><p>Geen aandelen die aan dit filter voldoen.</p></div>';
     return s + '</section>';
@@ -561,7 +620,7 @@
       '<label for="f-weergave" class="vh">Weergave</label><select id="f-weergave">' + opt('index', 'Per index', k.weergave) + opt('lijst', 'Eén lijst', k.weergave) + '</select>' +
       '<label for="f-sort" class="vh">Sorteer op</label><select id="f-sort">' + Object.keys(FONDS_SORT_NAAM).map(function (x) { return opt(x, 'Sorteer: ' + FONDS_SORT_NAAM[x], k.sorteer); }).join('') + '</select></div>' +
       '<label class="vink klein"><input type="checkbox" id="f-bev"' + (k.alleenBevestigd ? ' checked' : '') + '> Alleen bevestigde cijfers</label></div>' +
-      '<div id="res"></div>' + datasetOverzicht(fondsItems()) + uitlegOordeel() + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Standaardvolgorde: NAIC Kopen eerst, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts bovenaan. Selectiehulp, geen beleggingsadvies.</p></section>';
+      '<div id="res"></div>' + datasetOverzicht(fondsItems()) + '<div class="knoppen"><a class="knop rand klein" href="#/kwaliteit" data-naar-kwaliteit>Datakwaliteit per fonds</a></div>' + uitlegOordeel() + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Standaardvolgorde: NAIC Kopen eerst, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts bovenaan. Selectiehulp, geen beleggingsadvies.</p></section>';
   }
   function fondsRegel(a) {
     var plek = a.positiePct != null ? 'plek in bereik ' + getal(a.positiePct, 0) + '%' : '';
@@ -677,7 +736,7 @@
   }
 
   /* ---- Vergelijken ---- */
-  function chipKort(ok, niveau) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? '<span class="chip" data-niveau="indicatief">Indicatief</span>' : '<span class="chip wacht">… Onbevestigd</span>'); }
+  function chipKort(ok, niveau, twee) { return ok ? '<span class="chip ok">✓ Bevestigd</span>' : (niveau === 'jaarverslag' ? '<span class="chip" data-niveau="jaarverslag">Uit jaarverslag</span>' : niveau === 'indicatief' ? (twee ? '<span class="chip" data-niveau="tweebronnen">Twee bronnen eens</span>' : '<span class="chip" data-niveau="indicatief">Indicatief</span>') : '<span class="chip wacht">… Onbevestigd</span>'); }
   function schermVergelijk(ta, tb) {
     var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
     var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
@@ -691,7 +750,7 @@
     }
     var rijenDef = [['Koers (laatste slot)', 'koers', 'koers'], ['Afstand tot gemiddelde 50 dagen', 'afstandPct', 'pct'], ['Omzetgroei per jaar', 'omzetgroei', 'pct'], ['Groei winst per aandeel per jaar', 'epsgroei', 'pct'], ['Nettomarge laatste jaar', 'nettomarge', 'plain'], ['Koers-winstverhouding (K/W)', 'kw', 'kw']];
     var tb2 = '<div class="schuif"><table class="vgl"><thead><tr><th></th><th>' + h(A.naam) + '</th><th>' + h(B.naam) + '</th></tr></thead><tbody>' +
-      '<tr><th scope="row">Gegevens</th><td>' + chipKort(A.bevestigd, A.niveau) + '</td><td>' + chipKort(B.bevestigd, B.niveau) + '</td></tr>' +
+      '<tr><th scope="row">Gegevens</th><td>' + chipKort(A.bevestigd, A.niveau, A.tweeBronnen) + '</td><td>' + chipKort(B.bevestigd, B.niveau, B.tweeBronnen) + '</td></tr>' +
       rijenDef.map(function (d) { return '<tr><th scope="row">' + h(d[0]) + '</th>' + cel(A[d[1]], d[2], A) + cel(B[d[1]], d[2], B) + '</tr>'; }).join('') + '</tbody></table></div>';
     var uitleg = [A, B].filter(function (x) { return !x.bevestigd; }).map(function (x) { return '<li><b>' + h(x.naam) + ':</b> ' + h(x.reden) + '</li>'; }).join('');
     return '<section><div class="stelregel"><a class="link" href="#/" id="terug">' + I.terug + 'Terug</a></div><h1>Vergelijken</h1><div class="velden">' + sel('vg-a', ra, 'Eerste aandeel') + sel('vg-b', rb, 'Tweede aandeel') + '</div>' +
@@ -765,7 +824,7 @@
     return '<ul class="vinkjes">' + lst.join('') + '</ul>';
   }
   function indicatiefUitleg(g) {
-    return '<div class="melding" data-indicatief><b>Indicatieve cijfers van Yahoo Finance</b><span>Voor dit bedrijf is geen officieel jaarverslag beschikbaar in een bron die de app kan lezen. De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen van Yahoo Finance en zijn niet nagerekend. Ze tellen daarom minder zwaar mee in het totaalbeeld, er is geen NAIC-label en geen koersdoel. Twijfelachtige cijfers (zoals winst per aandeel rond een aandelensplitsing) zijn weggelaten.</span></div>';
+    return '<div class="melding" data-indicatief><b>Indicatieve cijfers van Yahoo Finance</b><span>Voor dit bedrijf is geen officieel jaarverslag beschikbaar in een bron die de app kan lezen. De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen van Yahoo Finance en zijn niet nagerekend. Ze tellen daarom minder zwaar mee in het totaalbeeld, er is geen NAIC-label en geen koersdoel. Twijfelachtige cijfers (zoals winst per aandeel rond een aandelensplitsing) zijn weggelaten.' + (g.twee_bronnen_eens ? ' <b>Twee bronnen eens:</b> de winst per aandeel komt in alle ' + g.twee_bronnen_eens.jaren + ' vergeleken jaren overeen met ' + h(g.twee_bronnen_eens.bron) + ' (binnen 3%); daarom telt hij iets zwaarder mee.' : '') + '</span></div>';
   }
   function jaarverslagUitleg(g) {
     return '<div class="melding" data-jaarverslag><b>Cijfers uit het officiële jaarverslag</b><span>De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen uit de ESEF-jaarverslagen van het bedrijf zelf. De winst per aandeel is niet zelf nagerekend (dat lukt niet altijd, bijvoorbeeld als het aantal aandelen niet machineleesbaar in het verslag staat). Wel geven de opeenvolgende verslagen voor de overlappende jaren dezelfde winst per aandeel, dus de jaren zijn onderling vergelijkbaar. Daarom geen label en geen koersdoel; de NAIC-gids vraagt 10 onderbouwde jaren.</span></div>';
@@ -783,7 +842,7 @@
       s += bedrijfBlok(rec) + signaalKaart(rec);
       s += '<div class="kaart-plat">' + (fr.fresh ? '<div class="rij-kop"><b style="font:700 2rem ui-rounded,system-ui">' + getal(k.slot, 2) + ' ' + h(rec.valuta) + '</b><span class="zacht">Slotkoers ' + h(datumNl(k.datum)) + '</span></div>' + sparkSvg(k.reeks, k.sma50) + '<p>' + (r.richting ? 'De koers staat ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' het gemiddelde van de laatste 50 handelsdagen (' + pct(r.afstandPct) + ').' : '') + '</p>' :
         '<b>Geen actuele koers</b><p class="zacht">' + h(fr.reason) + ' Daarom tonen we geen oordeel en geen trend.</p>') + '</div>';
-      s += '<div class="kaart-plat"><div class="rij-kop"><h2>' + (r.bevestigd ? 'Gegevens bevestigd' : (g && g.eps_status === 'independently_verified' && !fr.fresh ? 'Jaarcijfers bevestigd, koers ontbreekt' : 'Gegevens nog niet bevestigd')) + '</h2>' + chip(r.bevestigd, r.niveau) + '</div>' + (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + checks(rec, g, null, fr) +
+      s += '<div class="kaart-plat"><div class="rij-kop"><h2>' + (r.bevestigd ? 'Gegevens bevestigd' : (g && g.eps_status === 'independently_verified' && !fr.fresh ? 'Jaarcijfers bevestigd, koers ontbreekt' : 'Gegevens nog niet bevestigd')) + '</h2>' + chip(r.bevestigd, r.niveau, r.tweeBronnen) + '</div>' + (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : '') + checks(rec, g, null, fr) +
         (r.bevestigd ? '' : '<p class="zacht">' + h(r.redenen.join(' ')) + '</p>') + '</div>';
     } else if (tab === 'koers') {
       s += fr.fresh ? '<div class="kaart-plat">' + sparkSvg(k.reeks, k.sma50) + '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers</span><span><i style="background:var(--chart-b)"></i>Gemiddelde 50 dagen</span></div></div>' +
@@ -871,6 +930,7 @@
     s += '<section data-deel="1">' + deelKop(1, 'Visuele analyse van de groei', 'Groeien omzet en winst per aandeel gelijkmatig, en minstens 5% per jaar?') + '<div class="kpis">' +
       kp(gc.omzet10, 'Omzet (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.omzet5, 'Omzet, laatste 5 jaar') + kp(gc.eps10, 'Winst per aandeel (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.eps5, 'Winst per aandeel, laatste 5 jaar') + '</div>' +
       (n.groeiHistorisch != null ? '<p>Trend van de winst per aandeel: <b>' + pct(n.groeiHistorisch) + ' per jaar</b>. De gids rekent verder met ' + (n.groeiEigen != null ? 'uw eigen groeiverwachting van ' + pct(n.groei) : pct(n.groei) + (n.groeiHistorisch > Naic.GROEI_MAX ? ' (NAIC rekent met hoogstens ' + Naic.GROEI_MAX + '%)' : '')) + '.</p>' : '') +
+      (n.trendWeggelaten && n.trendWeggelaten.length ? '<p data-trend-weg>Niet in de trend: <b>' + n.trendWeggelaten.join(', ') + '</b>. Die winst week meer dan een factor 1,5 af van de lijn door de andere jaren (een eenmalige winst of last). NAIC laat zulke ongewone jaren buiten de groeitrend.</p>' : '') +
       toetsRegels(n, ['omzet']) + '<p class="zacht">Een streepje betekent dat er te weinig of geen positieve cijfers zijn.</p></section>';
     // Deel 2
     s += '<section data-deel="2">' + deelKop(2, 'Evaluatie van het management', 'Houdt het management de winstmarge vóór belasting en het rendement op eigen vermogen op peil, en hoeveel schuld heeft het bedrijf?') +
@@ -881,11 +941,12 @@
       (bank ? '' : (function () { var sr = Naic.schuldratio(jr); return sr.some(function (x) { return x.waarde !== null; }) ? '<h3>Schuld t.o.v. totaal kapitaal</h3>' + staven(sr, 'Langlopende schuld als percentage van schuld plus eigen vermogen per jaar', function (v) { return getal(v, 0); }) + '<p class="zacht">Langlopende schuld gedeeld door schuld plus eigen vermogen. Lager is veiliger; wat gebruikelijk is verschilt per sector. Ter informatie; telt niet mee in het oordeel.</p>' : '<h3>Schuld t.o.v. totaal kapitaal</h3><p class="zacht">Onbekend: niet eenduidig te vinden in de jaarverslagen.</p>'; })()) + '</section>';
     // Deel 3
     s += '<section data-deel="3">' + deelKop(3, 'Koers/winst-geschiedenis', 'Hoeveel keer de winst betaalde de markt de afgelopen vijf jaar, op het hoogste en laagste punt? Is het aandeel nu historisch goedkoop of duur?') + kwHistorieHtml(jr, bank) +
-      (n.relatief ? '<p data-relatief>Relatieve waarde: de K/W nu (' + getal(n.relatief.kwNu, 1) + ') is <b>' + n.relatief.pct + '%</b> van de gemiddelde K/W (' + getal(n.relatief.kwGem, 1) + '). NAIC ziet het liefst ' + Naic.RV_LAAG + '–' + Naic.RV_HOOG + '%. Ter informatie; telt niet mee in het oordeel.</p>' : '') + '</section>';
+      (n.relatief ? '<p data-relatief>Relatieve waarde: de K/W nu' + (n.ttm ? ' (op de winst van de laatste 4 kwartalen)' : '') + ' (' + getal(n.relatief.kwNu, 1) + ') is <b>' + n.relatief.pct + '%</b> van de gemiddelde K/W (' + getal(n.relatief.kwGem, 1) + '). NAIC ziet het liefst ' + Naic.RV_LAAG + '–' + Naic.RV_HOOG + '%. Ter informatie; telt niet mee in het oordeel.</p>' : '') + '</section>';
     // Stap 4 en 5
     var z = n.zones;
     s += '<section data-deel="4">' + deelKop(4, 'Verwachte hoge en lage koers', 'Wat kan de koers over ' + (n.horizon || 5) + ' jaar op zijn hoogst en op zijn laagst zijn, bij de verwachte groei?') +
       (z ? '<div class="kpis">' + kpv(pct(n.groei), 'Verwachte groei winst per aandeel per jaar') + kpv(getal(z.epsToekomst, 2), 'Winst per aandeel over ' + (n.horizon || 5) + ' jaar') + kpv(getal(z.hoog, 2), 'Verwachte hoge koers') + kpv(getal(z.laag, 2), 'Verwachte lage koers') + '</div>' +
+        (n.ttm ? '<p data-ttm>Vertrekpunt: de winst per aandeel van de <b>laatste 4 kwartalen</b> (tot ' + h(datumNl(n.ttm.tot)) + '): ' + getal(n.ttm.eps, 2) + ', tegen ' + getal(n.ttm.jaarEps, 2) + ' over het laatste boekjaar. Bron: Yahoo Finance.</p>' : '') +
         '<p class="zacht">Hoge koers = winst per aandeel over ' + (n.horizon || 5) + ' jaar × gemiddelde hoge K/W (' + getal(n.kw.hoog, 1) + '). Lage koers = laagste winst per aandeel van de laatste 5 jaar (' + getal(n.epsLaag, 2) + ') × gemiddelde lage K/W (' + getal(n.kw.laag, 1) + ').</p>' : '<p class="zacht">' + h(n.reden || 'Niet te berekenen.') + '</p>') +
       (zonesBlok || '') + '</section>';
     s += '<section data-deel="5">' + deelKop(5, 'Risico en rendement', 'In welke zone staat de koers, en is er minstens 3 keer zoveel opwaarts als neerwaarts?') +
@@ -1330,11 +1391,11 @@
       $menu.innerHTML = menuHtml(HOOFD, '#/'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';
     } else {
       if (hash === '#/zoek' || hash === '#/overzicht') hash = '#/fondsen';     // oude adressen
-      var kaart = { '#/': schermStart, '#/fondsen': schermFondsen, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/hulp': schermHulp, '#/instellingen': schermInstellingen };
+      var kaart = { '#/': schermStart, '#/fondsen': schermFondsen, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/hulp': schermHulp, '#/instellingen': schermInstellingen, '#/kwaliteit': schermKwaliteit };
       var fn = kaart[hash] || schermStart; html = fn(); actief = kaart[hash] ? hash : '#/';
       $menu.innerHTML = menuHtml(HOOFD, actief);
       if (hash === '#/hulp') na = function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); };
-      if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/volglijst') na = volgKoppel; if (hash === '#/fondsen') na = fondsenKoppel; if (kaart[hash] === schermStart || !kaart[hash]) na = dashboardKoppel; if (hash === '#/instellingen') na = instKoppel;
+      if (hash === '#/portefeuille') na = portefeuilleKoppel; if (hash === '#/volglijst') na = volgKoppel; if (hash === '#/fondsen') na = fondsenKoppel; if (kaart[hash] === schermStart || !kaart[hash]) na = dashboardKoppel; if (hash === '#/instellingen') na = instKoppel; if (hash === '#/kwaliteit') { na = kwaliteitKoppel; titel = 'Datakwaliteit · Aandeel Signaal'; }
     }
     $inhoud.innerHTML = html; document.title = titel;
     if (na) na();

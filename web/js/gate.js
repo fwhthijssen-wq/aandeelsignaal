@@ -87,7 +87,8 @@
     var t = fr.fresh ? trend(k.slot, k.sma50) : { richting: null, afstandPct: null };
     return { ticker: rec.ticker, naam: rec.naam, bevestigd: toegestaan, koersActueel: fr.fresh,
       koersReden: fr.fresh ? null : fr.reason, richting: t.richting, afstandPct: t.afstandPct, redenen: redenen,
-      niveau: !toegestaan && g && !g.fout && (g.niveau === 'jaarverslag' || g.niveau === 'indicatief') ? g.niveau : null };
+      niveau: !toegestaan && g && !g.fout && (g.niveau === 'jaarverslag' || g.niveau === 'indicatief') ? g.niveau : null,
+      tweeBronnen: !!(!toegestaan && g && g.niveau === 'indicatief' && g.twee_bronnen_eens) };
   }
 
   function sorteer(rijen) {

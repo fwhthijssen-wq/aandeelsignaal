@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.10.27-beta.97
+- **Actuele winst**: NAIC rekent de huidige K/W en de verwachting nu vanaf de winst per aandeel van de laatste 4 kwartalen (Yahoo Finance), als die recenter is dan het laatste boekjaar, in dezelfde valuta en binnen een factor 3 van de jaarwinst. In stap 4 van de gids staat welk vertrekpunt gebruikt is.
+- **Uitschieters buiten de groeitrend**: een jaar dat meer dan een factor 1,5 van de trendlijn ligt (eenmalige winst of last) telt niet mee in de groei, zoals NAIC voorschrijft (hoogstens 2 jaren, minstens 5 blijven over). Stap 1 van de gids noemt welke jaren.
+- **Twee bronnen eens**: een indicatief fonds waarvan de eigen winst per aandeel in minstens 5 jaar overeenkomt met uw tweede bron krijgt dat label en telt iets zwaarder mee.
+- **Nieuwe pagina Datakwaliteit** (link onderaan Start en bij Fondsen): per soort gegevens het aantal fondsen, hoeveel klopt met de tweede bron, wat gecorrigeerd en aangevuld is, en een filterbare lijst per fonds.
+
 ## 2026.10.27-beta.96
 - **Valutawissel**: bij bedrijven die van rapportagevaluta wisselden (Compass, Diageo, Rentokil: van ponden naar dollars) vervangen aangeleverde cijfers in de huidige valuta het hele oude jaar, zodat de reeks in één valuta loopt. Het aanvulsjabloon vraagt die jaren opnieuw, met het huidige cijfer in de opmerking. Bij Bronnen staat welke jaren vervangen zijn.
 
