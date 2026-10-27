@@ -305,3 +305,19 @@ class TweeBronnen(unittest.TestCase):
         g2 = self.g(); g2['jaren'][0]['aangeleverd'] = ['comparable_eps']             # winst uit de tweede bron zelf: telt niet
         B.vergelijk_tweede_bron(g2, 'X', {'bron': 'EODHD', 'fondsen': {'X': {str(2020 + i): {'comparable_eps': 1 + i / 10} for i in range(6)}}})
         self.assertNotIn('twee_bronnen_eens', g2)
+
+
+class Adr(unittest.TestCase):
+    def test_shell_per_ads_en_terug(self):
+        g = {'jaren': [{'year': 2025, 'comparable_eps': 3.0, 'reported_eps': 3.0, 'net_income': 18e9, 'shares_diluted': 6e9}]}
+        B.adr_toe(g, 'SHEL')
+        j = g['jaren'][0]
+        self.assertEqual((j['comparable_eps'], j['shares_diluted'], j['net_income']), (6.0, 3e9, 18e9))
+        B.adr_toe(g, 'SHEL')                                   # niet dubbel
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 6.0)
+        B.adr_terug(g)
+        self.assertEqual((g['jaren'][0]['comparable_eps'], g['jaren'][0]['shares_diluted']), (3.0, 6e9)); self.assertNotIn('adr', g)
+        a = {'jaren': [{'year': 2025, 'comparable_eps': 6.54}]}
+        B.adr_toe(a, 'AZN'); self.assertEqual(a['jaren'][0]['comparable_eps'], 3.27)
+        n = {'jaren': [{'year': 2025, 'comparable_eps': 7.15}]}
+        B.adr_toe(n, 'NVS'); self.assertEqual(n['jaren'][0]['comparable_eps'], 7.15)

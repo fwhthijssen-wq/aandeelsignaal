@@ -58,6 +58,13 @@ def rijen_voor(rec, peildatum=None):
         except ValueError:
             eind = f'{y}-12-31'
         waarden = {v: getal(j.get(v)) for v, _, _ in VELDEN}
+        r_adr = (g.get('adr') or {}).get('aandelen_per_ads')
+        if r_adr:                                     # het sjabloon werkt per gewoon aandeel, zoals de jaarverslagen
+            for v in ('reported_eps', 'comparable_eps'):
+                if waarden[v] is not None:
+                    waarden[v] = round(waarden[v] / r_adr, 6)
+            if waarden['shares_diluted'] is not None:
+                waarden['shares_diluted'] = round(waarden['shares_diluted'] * r_adr)
         oud = None
         munt = jaren[-1].get('currency') if jaren else None
         if j.get('currency') and munt and j['currency'] != munt:
@@ -204,6 +211,8 @@ def main(inpad, uitpad):
         g = rec.get('gegevens') or {}
         for j in sorted((j for j in g.get('jaren') or [] if isinstance(j.get('year'), int)), key=lambda j: j['year'])[-JAREN:]:
             eigen = {v: getal(j.get(v)) for v, _ in CV if v not in (j.get('aangeleverd') or [])}
+            if (g.get('adr') or {}).get('aandelen_per_ads') and eigen.get('comparable_eps') is not None:
+                eigen['comparable_eps'] = round(eigen['comparable_eps'] / g['adr']['aandelen_per_ads'], 6)
             if not any(x is not None for x in eigen.values()):
                 continue
             for c, v in enumerate([rec.get('ticker'), rec.get('naam'), str(j['year']), j.get('end'), j.get('currency')], 1):

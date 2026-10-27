@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.0.1 (2026.10.28)
+- **ADR's**: Shell (SHEL) en AstraZeneca (AZN) staan genoteerd als Amerikaans aandeelbewijs (ADS). Eén Shell-ADS is twee gewone aandelen, één AstraZeneca-ADS een half. De winst per aandeel wordt nu omgerekend naar winst per ADS, zodat koers en winst over hetzelfde gaan: de K/W (ook bij de zes metingen) en de kwartaalwinst kloppen nu. De NAIC-koerszones veranderen niet (daar viel het verschil tegen elkaar weg). Novartis is 1 : 1.
+
 ## 1.0 (2026.10.27)
 - **Eerste volwaardige versie**: geen “beta” meer.
 - **Zekerheid van de cijfers dichtbij**: bij elk fonds is het label (Bevestigd, Uit jaarverslag, Twee bronnen eens, Indicatief) bovenaan aan te tikken en leidt naar Bronnen, dat nu begint met een kwaliteitskaart: label en waarom, jaren winst per aandeel en uit welke bron, actuele winst, tweede bron, correcties en aanvullingen.

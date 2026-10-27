@@ -602,6 +602,49 @@ def vergelijk_tweede_bron(g, ticker, register=None):
                 g['twee_bronnen_eens'] = {'jaren': len(eps_paren), 'bron': g['tweede_bron']['bron']}
 
 
+# Amerikaanse noteringen van buitenlandse bedrijven (ADR's): hoeveel gewone aandelen één ADS vertegenwoordigt. De koers is per
+# ADS, de jaarcijfers (20-F) melden de winst per gewoon aandeel. Novartis is 1 : 1 en staat er daarom niet in.
+ADR_AANDELEN = {'SHEL': 2.0,      # Shell plc: 1 ADS = 2 gewone aandelen
+                'AZN': 0.5}       # AstraZeneca: 2 ADS = 1 gewoon aandeel
+ADR_PER_AANDEEL = ('comparable_eps', 'reported_eps')
+
+
+def adr_terug(g):
+    """Draait een eerdere ADR-omrekening terug (bij hergebruik van de vorige run), zodat de andere stappen per gewoon aandeel rekenen."""
+    a = g.pop('adr', None) if isinstance(g, dict) else None
+    if not a:
+        return
+    r = a['aandelen_per_ads']
+    for j in g.get('jaren') or []:
+        for v in ADR_PER_AANDEEL:
+            if _getal(j.get(v)) is not None:
+                j[v] = round(j[v] / r, 6)
+        if _getal(j.get('shares_diluted')) is not None:
+            j['shares_diluted'] = round(j['shares_diluted'] * r)
+        c = j.get('eps_correctie')
+        if c and _getal(c.get('was')) is not None:
+            c['was'] = round(c['was'] / r, 6)
+
+
+def adr_toe(g, ticker):
+    """Rekent winst per aandeel om naar winst per ADS (× aantal aandelen per ADS) en het aantal aandelen naar aantal ADS's, zodat
+    koers en winst over hetzelfde stuk gaan (K/W, koerszones, kwartaalwinst). Nettowinst en bedragen veranderen niet."""
+    r = ADR_AANDELEN.get(ticker)
+    if not r or not isinstance(g, dict) or not g.get('jaren') or g.get('adr'):
+        return
+    for j in g['jaren']:
+        for v in ADR_PER_AANDEEL:
+            if _getal(j.get(v)) is not None:
+                j[v] = round(j[v] * r, 6)
+        if _getal(j.get('shares_diluted')) is not None:
+            j['shares_diluted'] = round(j['shares_diluted'] / r)
+        c = j.get('eps_correctie')
+        if c and _getal(c.get('was')) is not None:
+            c['was'] = round(c['was'] * r, 6)
+    g['adr'] = {'aandelen_per_ads': r, 'uitleg': f"De koers is per ADS (Amerikaans aandeelbewijs); één ADS staat voor {('twee' if r == 2 else 'een half') if r in (2, 0.5) else r} gewone aande{'len' if r != 0.5 else 'el'}. "
+                'De winst per aandeel is daarom omgerekend naar winst per ADS, zodat koers en winst over hetzelfde gaan.'}
+
+
 def _investeringen_register():
     try:
         return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
@@ -1129,10 +1172,12 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         try:
+            adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
             vul_aangeleverd(gegevens, ticker, aangeleverd)
             vergelijk_tweede_bron(gegevens, ticker, tweede_bron)
         except Exception as exc:          # aanvulling is extra; de run gaat altijd door
             gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
+        adr_toe(gegevens, ticker)                    # daarna pas per ADS, voor koers, K/W en kwartaalwinst
         koers, punten, dividenden = None, [], []
         pence = meta[3] == 'GBX'
         if pence:

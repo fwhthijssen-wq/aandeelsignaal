@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.0 (2026.10.27)';
+  var APP_VERSIE = '1.0.1 (2026.10.28)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1035,7 +1035,7 @@
     var kp = '<div class="kpis"><div class="kpi"><b>' + (gs == null ? '–' : pct(gs)) + '</b><span>Omzetgroei per jaar (' + f.year + '–' + l.year + ')</span></div><div class="kpi"><b>' + (gw == null ? '–' : pct(gw)) + '</b><span>Groei winst per aandeel per jaar</span></div><div class="kpi"><b>' + mld(fcf) + '</b><span>Vrije kasstroom ' + l.year + ' (' + h(l.currency) + ')</span></div></div>';
     var rows = [['Omzet', function (j) { return mld(j.sales); }], ['Nettowinst', function (j) { return mld(j.net_income); }], ['EPS gemeld', function (j) { return getal(j.reported_eps, 2); }], ['EPS vergelijkbaar', function (j) { return getal(j.comparable_eps, 2); }], ['Kasstroom bedrijf', function (j) { return mld(j.operating_cash_flow); }], ['Investeringen', function (j) { return mld(j.capex); }], ['Eigen vermogen', function (j) { return mld(j.equity); }], ['EPS-controle', function (j) { return j.eps_check || '–'; }]];
     var tb = '<div class="schuif"><table><thead><tr><th></th>' + jr.map(function (j) { return '<th>' + j.year + '</th>'; }).join('') + '</tr></thead><tbody>' + rows.map(function (rw) { return '<tr><th scope="row">' + h(rw[0]) + '</th>' + jr.map(function (j) { return '<td' + (rw[0] === 'EPS vergelijkbaar' ? ' class="omg"' : '') + '>' + h(rw[1](j)) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
-    return kp + '<div class="kaart-plat"><h2>Winst per aandeel</h2><p class="zacht">Omgerekend voor aandelensplitsingen, zodat alle jaren vergelijkbaar zijn.</p>' + epsBalken(jr) + '</div><section><h2>Jaarcijfers (in miljarden, ' + h(l.currency) + ')</h2>' + tb + '</section>';
+    return kp + '<div class="kaart-plat"><h2>Winst per ' + (g.adr ? 'ADS' : 'aandeel') + '</h2><p class="zacht">Omgerekend voor aandelensplitsingen, zodat alle jaren vergelijkbaar zijn.' + (g.adr ? ' ' + h(g.adr.uitleg) : '') + '</p>' + epsBalken(jr) + '</div><section><h2>Jaarcijfers (in miljarden, ' + h(l.currency) + ')</h2>' + tb + '</section>';
   }
   var SPLIT = { candidate: 'Splitsing herkend en gecontroleerd met herziene jaarcijfers', niet_van_toepassing: 'Geen invloed: ligt vóór het eerste jaar in het dossier', dubbel: 'Dezelfde splitsing onder een andere datum (de aankondiging); telt niet mee', rejected: 'Niet bevestigd door de herziene jaarcijfers; daarom niet gebruikt', bevestigd: 'Bevestigd' };
   function kwaliteitKaart(rec, g) {
@@ -1048,6 +1048,7 @@
       var mix = [pdf ? pdf + ' uit pdf-jaarverslag' : '', yah ? yah + ' van Yahoo' : '', aang ? aang + ' door u aangeleverd' : ''].filter(Boolean);
       rijen.push(['Winst per aandeel', jr.length + ' jaar (' + jr[0].year + '–' + jr[jr.length - 1].year + ')' + (mix.length ? ': ' + mix.join(', ') : '') + (jr.length < 6 ? '. Minder dan 6 jaar: het NAIC-oordeel is minder zeker.' : '')]);
     }
+    if (g && g.adr) rijen.push(['ADR', h(g.adr.uitleg)]);
     if (g && g.ttm) rijen.push(['Actuele winst', 'laatste 4 kwartalen tot ' + h(datumNl(g.ttm.tot)) + ': ' + getal(g.ttm.eps, 2) + ' (Yahoo Finance)']);
     if (g && g.tweede_bron) rijen.push(['Tweede bron', g.tweede_bron.overeen + ' van ' + g.tweede_bron.vergeleken + ' cijfers kloppen met ' + h(g.tweede_bron.bron) + (g.tweede_bron.aantal_afwijkend ? ' (afwijkingen hieronder)' : '')]);
     if (g && g.tweede_bron && g.tweede_bron.gecorrigeerd && g.tweede_bron.gecorrigeerd.length) rijen.push(['Gecorrigeerd', g.tweede_bron.gecorrigeerd.map(function (c) { return c.jaar; }).join(', ') + ' (winst per aandeel; zie hieronder)']);
