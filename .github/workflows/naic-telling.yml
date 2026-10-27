@@ -1,8 +1,11 @@
-# Eenmalige telling op de gegevens van de laatste nachtrun. Raakt main en GitHub Pages niet.
+# Tijdelijk: één fondsrecord uit de laatste nachtrun op deze tak zetten. Raakt main en GitHub Pages niet.
 name: NAIC-telling
 on:
   push:
     branches: [naic-telling]
+    paths: ['.github/workflows/naic-telling.yml', 'hulp/fonds_dump.js']
+permissions:
+  contents: write
 jobs:
   tel:
     runs-on: ubuntu-latest
@@ -14,4 +17,7 @@ jobs:
           key: gegevens-telling-${{ github.run_id }}
           restore-keys: gegevens-
           fail-on-cache-miss: true
-      - run: node hulp/fonds_dump.js ASML.AS
+      - run: |
+          node -e "const D=require('./web/data/aandelen.json');const r=D.aandelen.find(a=>a.ticker==='ASML.AS');require('fs').writeFileSync('voorbeeld_ASML.json',JSON.stringify({gemaakt:D.gemaakt,rec:r}))"
+          git config user.name github-actions && git config user.email github-actions@users.noreply.github.com
+          git add voorbeeld_ASML.json && git commit -m "Tijdelijk: ASML-record" && git push
