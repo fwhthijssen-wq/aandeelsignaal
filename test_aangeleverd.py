@@ -229,3 +229,43 @@ class Correctie(unittest.TestCase):
                        2025: {'comparable_eps': 1.4245, 'net_income': 2137e6}})
         B.vergelijk_tweede_bron(g, 'X', reg)
         self.assertEqual([j['comparable_eps'] for j in g['jaren']], [-3.17, 0.601, 1.0872, 1.2895, 1.42])
+
+
+class Valutawissel(unittest.TestCase):
+    def g(self):
+        return {'niveau': 'jaarverslag', 'currencies': ['GBP', 'USD'], 'jaren': [
+            {'year': 2020, 'currency': 'GBP', 'comparable_eps': 1.0, 'sales': 10e9, 'net_income': 2e9, 'shares_diluted': 2e9},
+            {'year': 2021, 'currency': 'GBP', 'comparable_eps': 1.1, 'sales': 11e9, 'net_income': 2.2e9, 'shares_diluted': 2e9, 'koers_hoog': 30},
+            {'year': 2022, 'currency': 'USD', 'comparable_eps': 1.5, 'sales': 15e9, 'net_income': 3e9},
+            {'year': 2023, 'currency': 'USD', 'comparable_eps': 1.6, 'sales': 16e9, 'net_income': 3.2e9}]}
+
+    def test_oud_jaar_in_nieuwe_valuta_vervangt_heel_jaar_en_terug(self):
+        g = self.g()
+        B.vul_aangeleverd(g, 'X', reg({2021: {'currency': 'USD', 'comparable_eps': 1.4, 'sales': 14e9}}))
+        j = {x['year']: x for x in g['jaren']}
+        self.assertEqual((j[2021]['currency'], j[2021]['comparable_eps'], j[2021]['sales']), ('USD', 1.4, 14e9))
+        self.assertNotIn('net_income', j[2021])                   # geen GBP-bedrag naast USD-bedragen
+        self.assertEqual(j[2021]['shares_diluted'], 2e9); self.assertEqual(j[2021]['koers_hoog'], 30)
+        self.assertEqual(j[2020]['currency'], 'GBP')              # niet aangeleverd: blijft
+        self.assertEqual(g['aangeleverd']['valuta_vervangen'], [{'jaar': 2021, 'was': 'GBP', 'nu': 'USD'}])
+        self.assertEqual(g['niveau'], 'indicatief')
+        B.vul_aangeleverd(g, 'X', {'fondsen': {}})
+        j = {x['year']: x for x in g['jaren']}
+        self.assertEqual((j[2021]['currency'], j[2021]['comparable_eps'], j[2021]['net_income']), ('GBP', 1.1, 2.2e9))
+        self.assertEqual(g['currencies'], ['GBP', 'USD']); self.assertEqual(g['niveau'], 'jaarverslag')
+
+    def test_sjabloon_vraagt_oude_valutajaren_opnieuw(self):
+        import json as _json
+        import aanvulsjabloon as S
+        data = {'gemaakt': '2026-10-27T00:00:00Z', 'aandelen': [{'ticker': 'DGE.L', 'naam': 'Diageo', 'valuta': 'GBP', 'gegevens': self.g()}]}
+        d = Path(tempfile.mkdtemp()); inp = d / 'a.json'; inp.write_text(_json.dumps(data)); uit = d / 'u.xlsx'
+        S.main(str(inp), str(uit))
+        ws = openpyxl.load_workbook(uit)['Aanvullen']
+        kop = [c.value for c in ws[2]]
+        rij = {int(r[2].value): r for r in ws.iter_rows(min_row=3)}
+        self.assertEqual(rij[2021][4].value, 'USD')
+        self.assertIn('nog in GBP', rij[2021][4].comment.text)
+        self.assertIsNone(rij[2021][kop.index('comparable_eps')].value)
+        self.assertIn('1.1 GBP', rij[2021][kop.index('comparable_eps')].comment.text)
+        self.assertEqual(rij[2021][kop.index('shares_diluted')].value, 2e9)
+        self.assertEqual(rij[2022][kop.index('comparable_eps')].value, 1.5)

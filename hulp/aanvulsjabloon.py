@@ -58,10 +58,17 @@ def rijen_voor(rec, peildatum=None):
         except ValueError:
             eind = f'{y}-12-31'
         waarden = {v: getal(j.get(v)) for v, _, _ in VELDEN}
+        oud = None
+        munt = jaren[-1].get('currency') if jaren else None
+        if j.get('currency') and munt and j['currency'] != munt:
+            # het bedrijf rapporteert nu in een andere valuta: dit jaar opnieuw, in de huidige valuta (aandelen blijven)
+            oud = {'valuta': j['currency'], 'waarden': {v: x for v, x in waarden.items() if x is not None and v != 'shares_diluted'}}
+            waarden = {v: (x if v == 'shares_diluted' else None) for v, x in waarden.items()}
+            j = dict(j, currency=munt)
         bronnen = {v: bron_van(g, j, v) for v, _, _ in VELDEN if waarden[v] is not None}
         # valuta: die van het jaar zelf, anders die van het laatste boekjaar (de rapportagevaluta), pas daarna die van de beurs
         uit.append({'year': y, 'end': eind, 'currency': j.get('currency') or (jaren[-1].get('currency') if jaren else None) or (g.get('currencies') or [rec.get('valuta')])[0],
-                    'waarden': waarden, 'bronnen': bronnen})
+                    'waarden': waarden, 'bronnen': bronnen, 'oud': oud})
     return uit, g
 
 
@@ -154,12 +161,17 @@ def main(inpad, uitpad):
                 x = vj[rij['year']]
                 a.cell(row=r, column=5).comment = Comment(f"Vorige aanlevering stond in {x['valuta']} en is niet gebruikt: dit bedrijf rapporteert in {x['nodig']}. Vul de cijfers in {x['nodig']} in.", 'Aandeel Signaal')
                 a.cell(row=r, column=5).font = VET
+            if rij.get('oud'):
+                a.cell(row=r, column=5).comment = Comment(f"Dit jaar staat in de app nog in {rij['oud']['valuta']}, terwijl het bedrijf nu in {rij['currency']} rapporteert. Vul alle cijfers van dit jaar in {rij['currency']} in (bijv. het vergelijkende cijfer in het jaarverslag van na de valutawissel); de app vervangt dan het hele jaar.", 'Aandeel Signaal')
+                a.cell(row=r, column=5).font = VET
             for v, _, _ in VELDEN:
                 cel = a.cell(row=r, column=kol[v], value=rij['waarden'][v]); cel.font = GEWOON
                 if rij['waarden'][v] is None:
                     cel.fill = GEEL
                     x = afg.get((rij['year'], v))
-                    if x:
+                    if rij.get('oud') and v in rij['oud']['waarden']:
+                        cel.comment = Comment(f"Nu in de app: {rij['oud']['waarden'][v]:,} {rij['oud']['valuta']}. Vul het cijfer in {rij['currency']} in.", 'Aandeel Signaal')
+                    elif x:
                         cel.comment = Comment(f"Vorige aanlevering: {x['waarde']:,} niet gebruikt; wijkt meer dan een factor 10 af van {x['buur']:,} in een jaar ernaast (andere eenheid of ander begrip?). Controleer en vul opnieuw in, of laat leeg.", 'Aandeel Signaal')
                 else:
                     cel.fill = GRIJS

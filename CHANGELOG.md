@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026.10.27-beta.96
+- **Valutawissel**: bij bedrijven die van rapportagevaluta wisselden (Compass, Diageo, Rentokil: van ponden naar dollars) vervangen aangeleverde cijfers in de huidige valuta het hele oude jaar, zodat de reeks in één valuta loopt. Het aanvulsjabloon vraagt die jaren opnieuw, met het huidige cijfer in de opmerking. Bij Bronnen staat welke jaren vervangen zijn.
+
 ## 2026.10.27-beta.95
 - Correctie met de tweede bron strenger: als bewijs tellen alleen de eigen cijfers van de app (nettowinst, aantal aandelen), nooit aangeleverde, want die komen vaak uit dezelfde tweede bron (zo werd Merck 2016 ten onrechte aangepast). Een splitsing wordt nu ook herkend als één jaar ernaast uit de toon valt (Aena 2022–2024).
 

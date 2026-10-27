@@ -332,6 +332,14 @@ def vul_aangeleverd(g, ticker, register=None):
     reg = ((register if register is not None else _aangeleverd()).get('fondsen') or {}).get(ticker) or {}
     _herstel_tweede_bron(g)                           # eerst een correctie uit de tweede bron terugdraaien (die komt erna opnieuw)
     jaren = g.get('jaren') or []
+    for j in jaren:                                   # vorige valutavervanging terugdraaien
+        bk = j.pop('valuta_vervangen', None)
+        if bk:
+            for k in AANGELEVERD_VELDEN + ('currency', 'eps_bron', 'aangeleverd'):
+                j.pop(k, None)
+            j.update({k: v for k, v in bk.items() if v is not None})
+    if 'aangeleverd_currencies_was' in g:
+        g['currencies'] = g.pop('aangeleverd_currencies_was')
     for j in jaren:                                   # vorige aanvulling eraf
         for v in j.pop('aangeleverd', []) or []:
             j.pop(v, None)
@@ -353,7 +361,7 @@ def vul_aangeleverd(g, ticker, register=None):
     munt = (jaren[-1].get('currency') if jaren else None) or (g.get('currencies') or [None])[0]
     per_jaar = {j.get('year'): j for j in jaren}
     eigen_eps = sum(1 for j in jaren if _getal(j.get('comparable_eps')) is not None)
-    log = {'velden': {}, 'eps_jaren': 0, 'geweigerd': {}, 'valuta': 0, 'afgewezen': [], 'valuta_jaren': []}
+    log = {'velden': {}, 'eps_jaren': 0, 'geweigerd': {}, 'valuta': 0, 'afgewezen': [], 'valuta_jaren': [], 'valuta_vervangen': []}
 
     def buur(jaar, veld):
         kand = sorted((abs(y - jaar), y) for y, j in per_jaar.items() if _getal(j.get(veld)) is not None and veld not in (j.get('aangeleverd') or []))
@@ -362,6 +370,37 @@ def vul_aangeleverd(g, ticker, register=None):
     for jaar_s, r in sorted(reg.items()):
         jaar = int(jaar_s)
         bestaand = per_jaar.get(jaar)
+        if (bestaand and munt and bestaand.get('currency') and bestaand['currency'] != munt and r.get('currency') == munt
+                and any(_getal(r.get(v)) is not None for v in AANGELEVERD_VELDEN if v != 'shares_diluted')):
+            # het bedrijf wisselde van rapportagevaluta: dit oude jaar in de huidige valuta vervangt het hele jaar, zodat de
+            # reeks in één valuta loopt (bedragen in de oude valuta worden niet bewaard naast die in de nieuwe)
+            bk = {k: bestaand.get(k) for k in AANGELEVERD_VELDEN + ('currency', 'eps_bron')}
+            for k in AANGELEVERD_VELDEN:
+                if k != 'shares_diluted':
+                    bestaand.pop(k, None)
+            bestaand.pop('eps_bron', None)
+            gevuld = []
+            for v in AANGELEVERD_VELDEN:
+                x = _getal(r.get(v))
+                if x is None or _getal(bestaand.get(v)) is not None:
+                    continue
+                b = buur(jaar, v)
+                if b is not None and b != 0 and x != 0 and (abs(x / b) > 10 or abs(x / b) < 0.1):
+                    log['geweigerd'][v] = log['geweigerd'].get(v, 0) + 1
+                    log['afgewezen'].append({'jaar': jaar, 'veld': v, 'waarde': x, 'buur': b})
+                    continue
+                bestaand[v] = x
+                gevuld.append(v)
+            bestaand['currency'] = munt
+            bestaand['valuta_vervangen'] = bk
+            bestaand['aangeleverd'] = gevuld
+            if 'comparable_eps' in gevuld:
+                bestaand['eps_bron'] = 'aangeleverd'
+                log['eps_jaren'] += 1
+            for v in gevuld:
+                log['velden'][v] = log['velden'].get(v, 0) + 1
+            log['valuta_vervangen'].append({'jaar': jaar, 'was': bk.get('currency'), 'nu': munt})
+            continue
         nodig = (bestaand.get('currency') if bestaand else None) or munt     # een bestaand jaar in zijn eigen valuta (bedrijven die van valuta wisselden)
         if nodig and r.get('currency') and r['currency'] != nodig:
             log['valuta'] += 1
@@ -401,6 +440,9 @@ def vul_aangeleverd(g, ticker, register=None):
             per_jaar[jaar] = rij
     jaren.sort(key=lambda j: j.get('year') or 0)
     g['jaren'] = jaren
+    if log['valuta_vervangen']:
+        g['aangeleverd_currencies_was'] = g.get('currencies')
+        g['currencies'] = sorted({j.get('currency') for j in jaren if j.get('currency')})
     if log['velden'] or log['afgewezen'] or log['valuta_jaren']:
         if log['eps_jaren'] and g.get('niveau') != 'indicatief' and not (g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10):
             g['aangeleverd_niveau_was'] = g.get('niveau')

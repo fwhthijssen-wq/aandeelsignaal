@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '2026.10.27-beta.95';
+  var APP_VERSIE = '2026.10.27-beta.96';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -991,7 +991,7 @@
       var AV = g.aangeleverd, VN2 = { comparable_eps: 'winst per aandeel', reported_eps: 'gerapporteerde winst per aandeel', sales: 'omzet', pretax_income: 'winst vóór belasting', net_income: 'nettowinst', equity: 'eigen vermogen', shares_diluted: 'aantal aandelen', operating_cash_flow: 'kasstroom', capex: 'investeringen', total_assets: 'bezittingen', total_liabilities: 'verplichtingen' };
       var gew = Object.keys(AV.geweigerd || {}).reduce(function (a, k) { return a + AV.geweigerd[k]; }, 0);
       s += '<section data-aangeleverd><h2>Door u aangeleverde cijfers</h2><p>' + h(AV.uitleg || '') + '</p><p>Aangevuld: ' + Object.keys(AV.velden || {}).map(function (k) { return h(VN2[k] || k) + ' (' + AV.velden[k] + ' jaar)'; }).join(', ') + '.' +
-        (AV.eps_jaren ? ' Omdat de winst per aandeel deels aangeleverd is, heet het fonds “Indicatief”.' : '') + (gew || AV.valuta ? ' Niet gebruikt: ' + [gew ? gew + ' cijfers die meer dan een factor 10 afweken van het jaar ernaast' : '', AV.valuta ? AV.valuta + ' jaren in een andere valuta dan de jaarcijfers' : ''].filter(Boolean).join(' en ') + '.' : '') + '</p></section>';
+        (AV.eps_jaren ? ' Omdat de winst per aandeel deels aangeleverd is, heet het fonds “Indicatief”.' : '') + (AV.valuta_vervangen && AV.valuta_vervangen.length ? ' Het bedrijf wisselde van rapportagevaluta; deze jaren zijn vervangen door uw cijfers in ' + h(AV.valuta_vervangen[0].nu) + ', zodat alles in één valuta staat: ' + AV.valuta_vervangen.map(function (x) { return x.jaar + ' (was ' + h(x.was) + ')'; }).join(', ') + '.' : '') + (gew || AV.valuta ? ' Niet gebruikt: ' + [gew ? gew + ' cijfers die meer dan een factor 10 afweken van het jaar ernaast' : '', AV.valuta ? AV.valuta + ' jaren in een andere valuta dan de jaarcijfers' : ''].filter(Boolean).join(' en ') + '.' : '') + '</p></section>';
     }
     if (g.tweede_bron && g.tweede_bron.vergeleken) {
       var TB = g.tweede_bron, VN3 = { comparable_eps: 'winst per aandeel', sales: 'omzet', net_income: 'nettowinst', equity: 'eigen vermogen' };
