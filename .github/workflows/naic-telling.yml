@@ -1,0 +1,17 @@
+# Eenmalige telling op de gegevens van de laatste nachtrun. Raakt main en GitHub Pages niet.
+name: NAIC-telling
+on:
+  push:
+    branches: [naic-telling]
+jobs:
+  tel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/cache/restore@v5
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-telling-${{ github.run_id }}
+          restore-keys: gegevens-
+          fail-on-cache-miss: true
+      - run: node hulp/naic_telling.js
