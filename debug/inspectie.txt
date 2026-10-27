@@ -1,0 +1,82 @@
+===== KPN.AS niveau indicatief bron ESEF eps_status partially_independently_verified 9
+2016 EUR eps 0.17 rep 0.17 ni 742000000 sh 4263343860 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2017 EUR eps 0.0801 rep 0.1 ni 339000000 sh 4230185047 bron None corr {'was': 0.1, 'regel': 'narekenen'} aang ['sales', 'pretax_income', 'net_income', 'equity', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2018 EUR eps 0.06 rep 0.06 ni 223000000 sh 4201358761 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 EUR eps 0.15 rep 0.15 ni 625000000 sh 4201325214 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2020 EUR eps 0.13 rep 0.13 ni 561000000.0 sh 4201925886 bron None corr None aang ['equity']
+2021 EUR eps 0.31 rep 0.31 ni 1288000000.0 sh 4183325441 bron None corr None aang ['equity']
+2022 EUR eps 0.18 rep 0.18 ni 761000000.0 sh 4086444227 bron None corr None aang ['equity']
+2023 EUR eps 0.2 rep 0.2 ni 844000000.0 sh 3976082596 bron None corr None aang ['equity']
+2024 EUR eps 0.2 rep 0.2 ni 848000000.0 sh 3900456571.0 bron None corr None aang ['equity']
+2025 EUR eps 0.21 rep 0.21 ni 855000000.0 sh 3851167366.0 bron None corr None aang ['equity']
+tweede_bron {"bron": "EODHD", "vergeleken": 21, "overeen": 20, "afwijkend": [{"jaar": 2022, "veld": "net_income", "app": 761000000.0, "tweede": 742000000, "pct": 2.6, "soort": null}], "aantal_afwijkend": 1, "gecorrigeerd": [{"jaar": 2017, "was": 0.1, "nu": 0.0801, "regel": "narekenen"}], "niveau_was": "jaarverslag"}
+===== MRK.DE niveau indicatief bron Yahoo Finance eps_status None 0
+2015 EUR eps 2.56 rep 2.56 ni None sh None bron jaarverslag corr None aang None
+2016 EUR eps 9.0239 rep 3.75 ni 3920000000 sh 434400000 bron jaarverslag corr {'was': 3.75, 'regel': 'narekenen'} aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2017 EUR eps 5.99 rep 5.99 ni 2605000000 sh 434891486 bron jaarverslag corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2018 EUR eps 7.76 rep 7.76 ni 3374000000 sh 434777878 bron jaarverslag corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 EUR eps 3.04 rep 3.04 ni 1320000000 sh 434777878 bron jaarverslag corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2020 EUR eps 4.57 rep 4.57 ni 1987000000 sh 434777878 bron jaarverslag corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2021 EUR eps 7.03 rep 7.03 ni 3065000000 sh 435988620 bron jaarverslag corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2022 EUR eps 7.65 rep 7.65 ni 3326000000.0 sh 434777878.0 bron jaarverslag corr None aang None
+2023 EUR eps 6.49 rep 6.49 ni 2824000000.0 sh 434777878.0 bron jaarverslag corr None aang None
+2024 EUR eps 6.39 rep 6.39 ni 2777000000.0 sh 434777878.0 bron jaarverslag corr None aang None
+2025 EUR eps 6.0 rep 6.0 ni 2608000000.0 sh 434777878.0 bron jaarverslag corr None aang None
+tweede_bron {"bron": "EODHD", "vergeleken": 21, "overeen": 21, "afwijkend": [], "aantal_afwijkend": 0, "gecorrigeerd": [{"jaar": 2016, "was": 3.75, "nu": 9.0239, "regel": "narekenen"}]}
+===== FCT.MI niveau indicatief bron ESEF eps_status missing_split_evidence 0
+2019 EUR eps None rep None ni None sh None bron None corr None aang ['equity']
+2020 EUR eps -0.14055 rep -0.14055 ni -244520000.0 sh None bron None corr None aang None
+2021 EUR eps 0.01271 rep 0.01271 ni 21815000.0 sh 2166000000.0 bron None corr None aang None
+2022 EUR eps -1.4099 rep -0.17985 ni -323953000.0 sh 219079933 bron None corr {'was': -0.17985, 'regel': 'narekenen'} aang ['shares_diluted']
+2023 EUR eps -0.03073 rep -0.03073 ni -53111000.0 sh 1699651360.0 bron None corr None aang None
+2024 EUR eps 0.13557 rep 0.13557 ni 27377000.0 sh 201939957 bron None corr None aang ['shares_diluted']
+2025 EUR eps 0.3793 rep 0.3793 ni 122999000 sh 324284998 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+tweede_bron {"bron": "EODHD", "vergeleken": 11, "overeen": 7, "afwijkend": [{"jaar": 2022, "veld": "net_income", "app": -323953000.0, "tweede": -308870000, "pct": 4.9, "soort": null}, {"jaar": 2023, "veld": "comparable_eps", "app": -0.03073, "tweede": -0.2421, "pct": -87.3, "soort": null}, {"jaar": 2024, "veld": "comparable_eps", "app": 0.13557, "tweede": 0.1017, "pct": 33.3, "soort": null}, {"jaar": 2024, "veld": "net_income", "app": 27377000.0, "tweede": 32833000, "pct": -16.6, "soort": null}], "aantal_afwijkend": 4, "gecorrigeerd": [{"jaar": 2022, "was": -0.17985, "nu": -1.4099, "regel": "narekenen"}]}
+===== CLNX.MC niveau indicatief bron ESEF eps_status missing_split_evidence 0
+2016 EUR eps 0.1309 rep 0.1309 ni 39817000 sh 304271487 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'net_income', 'shares_diluted', 'operating_cash_flow', 'capex']
+2017 EUR eps 0.0864 rep 0.0864 ni None sh 304225966 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_liabilities']
+2018 EUR eps -0.0493 rep -0.0493 ni None sh 304044625 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 EUR eps None rep None ni None sh 342863712 bron None corr None aang ['sales', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2020 EUR eps -0.3256 rep -0.3256 ni -135425000 sh 415863130 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2021 EUR eps -0.358334 rep -0.43 ni -386184000.0 sh 850000000.0 bron None corr None aang ['sales']
+2022 EUR eps -0.4415 rep -0.29 ni -312936000.0 sh 672772636 bron None corr {'was': -0.241667, 'regel': 'narekenen'} aang ['sales', 'shares_diluted']
+2023 EUR eps -0.241667 rep -0.29 ni -315823000.0 sh 1024896552 bron None corr None aang ['sales', 'shares_diluted']
+2024 EUR eps -0.1 rep 0.1 ni -43155000.0 sh 548984928 bron None corr None aang ['sales', 'shares_diluted']
+2025 EUR eps -0.5354 rep -0.35 ni -352674000.0 sh 673839490 bron None corr {'was': -0.35, 'regel': 'narekenen'} aang ['sales', 'shares_diluted']
+tweede_bron {"bron": "EODHD", "vergeleken": 13, "overeen": 5, "afwijkend": [{"jaar": 2021, "veld": "comparable_eps", "app": -0.358334, "tweede": -0.5938, "pct": -39.7, "soort": null}, {"jaar": 2021, "veld": "net_income", "app": -386184000.0, "tweede": -362539000, "pct": 6.5, "soort": null}, {"jaar": 2022, "veld": "net_income", "app": -312936000.0, "tweede": -297058000, "pct": 5.3, "soort": null}, {"jaar": 2023, "veld": "comparable_eps", "app": -0.241667, "tweede": -0.4445, "pct": -45.6, "soort": null}, {"jaar": 2023, "veld": "net_income", "app": -315823000.0, "tweede": -297220000, "pct": 6.3, "soort": null}, {"jaar": 2024, "veld": "comparable_eps", "app": -0.1, "tweede": -0.0511, "pct": 95.7, "soort": null}, {"jaar": 2024, "veld": "net_income", "app": -43155000.0, "tweede": -28043000, "pct": 53.9, "soort": null}, {"jaar": 2025, "veld": "net_income", "app": -352674000.0, "tweede": -360776000, "pct": -2.2, "soort": null}], "aantal_afwijkend": 8, "gecorrigeerd": [{"jaar": 2022, "was": -0.241667, "nu": -0.4415, "regel": "narekenen"}, {"jaar": 2025, "was": -0.35, "nu": -0.5354, "regel": "narekenen"}]}
+===== AENA.MC niveau indicatief bron ESEF eps_status missing_split_evidence 0
+2016 EUR eps 0.7761 rep 0.7761 ni 1164149000 sh 1500000000 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2017 EUR eps 0.8213 rep 0.8213 ni 1232005000 sh 1500000000 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2018 EUR eps 0.8853 rep 0.8853 ni 1327882000 sh 1500000000 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 EUR eps 0.9613 rep 0.9613 ni 1442022000 sh 1500000000 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2020 EUR eps None rep None ni -126786000 sh 1500000000 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2021 EUR eps -3.17 rep -3.17 ni -504991000.0 sh 222140000.0 bron None corr None aang ['equity']
+2022 EUR eps 0.601 rep 6.01 ni 906348000.0 sh 1500000000 bron None corr {'was': 6.01, 'regel': 'narekenen'} aang ['equity', 'shares_diluted']
+2023 EUR eps 10.87 rep 10.87 ni 1645069000.0 sh 150028887 bron None corr None aang ['equity', 'shares_diluted']
+2024 EUR eps 12.89 rep 12.89 ni 1972028000.0 sh 150056168 bron None corr None aang ['equity', 'shares_diluted']
+2025 EUR eps 1.42 rep 1.42 ni 2184966000.0 sh 1500000000.0 bron None corr None aang ['equity']
+tweede_bron {"bron": "EODHD", "vergeleken": 14, "overeen": 9, "afwijkend": [{"jaar": 2021, "veld": "comparable_eps", "app": -3.17, "tweede": -0.04, "pct": 7825.0, "soort": null}, {"jaar": 2021, "veld": "net_income", "app": -504991000.0, "tweede": -60041000, "pct": 741.1, "soort": null}, {"jaar": 2023, "veld": "comparable_eps", "app": 10.87, "tweede": 1.0872, "pct": 899.8, "soort": null}, {"jaar": 2024, "veld": "comparable_eps", "app": 12.89, "tweede": 1.2895, "pct": 899.6, "soort": null}, {"jaar": 2025, "veld": "net_income", "app": 2184966000.0, "tweede": 2136676000, "pct": 2.3, "soort": null}], "aantal_afwijkend": 5, "gecorrigeerd": [{"jaar": 2022, "was": 6.01, "nu": 0.601, "regel": "narekenen"}]}
+===== MRL.MC niveau indicatief bron ESEF eps_status independently_verified 2
+2016 EUR eps 1.619 rep 1.619 ni 582645000 sh 359870354 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2017 EUR eps 2.3518 rep 2.3518 ni 1100418000 sh 467899126 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2018 EUR eps 1.82 rep 1.82 ni 854878000 sh 469713187 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 EUR eps 1.2 rep 1.2 ni 563639000 sh 469699167 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2020 EUR eps 0.1199 rep 0.1199 ni 56358000 sh 469993000 bron aangeleverd corr None aang ['reported_eps', 'comparable_eps', 'sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2021 EUR eps 1.0982 rep 1.08 ni 512217000.0 sh 472176000.0 bron None corr {'was': 0.85, 'regel': 'narekenen'} aang ['pretax_income']
+2022 EUR eps 0.5623 rep 0.09 ni 263087000.0 sh 467891000 bron None corr {'was': 0.09, 'regel': 'narekenen'} aang ['shares_diluted', 'operating_cash_flow']
+2023 EUR eps -0.18 rep -0.18 ni -83497000.0 sh 468324000 bron None corr None aang ['shares_diluted', 'operating_cash_flow']
+2024 EUR eps 0.56 rep 0.56 ni 283759000.0 sh 509857000.0 bron None corr None aang ['operating_cash_flow']
+2025 EUR eps 1.4 rep 1.4 ni 786129000.0 sh 562702000.0 bron None corr None aang ['operating_cash_flow']
+tweede_bron {"bron": "EODHD", "vergeleken": 18, "overeen": 13, "afwijkend": [{"jaar": 2023, "veld": "sales", "app": 464779000.0, "tweede": 504702000, "pct": -7.9, "soort": null}, {"jaar": 2024, "veld": "comparable_eps", "app": 0.56, "tweede": 0.2441, "pct": 129.4, "soort": null}, {"jaar": 2024, "veld": "net_income", "app": 283759000.0, "tweede": 124431000, "pct": 128.0, "soort": null}, {"jaar": 2025, "veld": "comparable_eps", "app": 1.4, "tweede": 0.2279, "pct": 514.3, "soort": null}, {"jaar": 2025, "veld": "net_income", "app": 786129000.0, "tweede": 128254000, "pct": 512.9, "soort": null}], "aantal_afwijkend": 5, "gecorrigeerd": [{"jaar": 2021, "was": 0.85, "nu": 1.0982, "regel": "narekenen"}, {"jaar": 2022, "was": 0.09, "nu": 0.5623, "regel": "narekenen"}]}
+===== GSK.L niveau indicatief bron ESEF eps_status missing_split_evidence 0
+2016 GBP eps None rep None ni 912000000 sh 3927200000 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2017 GBP eps None rep None ni 1532000000 sh 3952800000 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2018 GBP eps None rep None ni 3623000000 sh 3976800000 bron None corr None aang ['sales', 'pretax_income', 'net_income', 'equity', 'shares_diluted', 'operating_cash_flow', 'capex', 'total_assets', 'total_liabilities']
+2019 GBP eps 1.156965 rep 0.926 ni 5268000000.0 sh 4012800000 bron None corr None aang ['equity', 'shares_diluted', 'total_assets', 'total_liabilities']
+2020 GBP eps 1.426 rep 1.426 ni 6388000000.0 sh 4030400000 bron None corr None aang ['shares_diluted']
+2021 GBP eps 1.3527 rep 1.082 ni 5096000000.0 sh 3241600000 bron None corr {'was': 1.082, 'regel': 'narekenen'} aang ['shares_diluted']
+2022 GBP eps 3.662 rep 3.662 ni 15621000000.0 sh 4084000000 bron None corr None aang ['shares_diluted']
+2023 GBP eps 1.199 rep 1.199 ni 5308000000.0 sh 4110091743 bron None corr None aang ['shares_diluted']
+2024 GBP eps 0.622 rep 0.622 ni 2951000000.0 sh 4139871383 bron None corr None aang ['sales', 'shares_diluted']
+2025 GBP eps 1.388 rep 1.388 ni 6289000000.0 sh 4118155620 bron None corr None aang ['sales', 'shares_diluted']
+tweede_bron {"bron": "EODHD", "vergeleken": 24, "overeen": 16, "afwijkend": [{"jaar": 2019, "veld": "net_income", "app": 5268000000.0, "tweede": 4645000000, "pct": 13.4, "soort": null}, {"jaar": 2020, "veld": "sales", "app": 24354000000.0, "tweede": 34099000000, "pct": -28.6, "soort": null}, {"jaar": 2020, "veld": "net_income", "app": 6388000000.0, "tweede": 5749000000, "pct": 11.1, "soort": null}, {"jaar": 2021, "veld": "net_income", "app": 5096000000.0, "tweede": 4385000000, "pct": 16.2, "soort": null}, {"jaar": 2022, "veld": "net_income", "app": 15621000000.0, "tweede": 14956000000, "pct": 4.4, "soort": null}, {"jaar": 2023, "veld": "net_income", "app": 5308000000.0, "tweede": 4928000000, "pct": 7.7, "soort": null}, {"jaar": 2024, "veld": "net_income", "app": 2951000000.0, "tweede": 2575000000, "pct": 14.6, "soort": null}, {"jaar": 2025, "veld": "net_income", "app": 6289000000.0, "tweede": 5716000000, "pct": 10.0, "soort": null}], "aantal_afwijkend": 8, "gecorrigeerd": [{"jaar": 2021, "was": 1.082, "nu": 1.3527, "regel": "narekenen"}], "niveau_was": "jaarverslag"}
