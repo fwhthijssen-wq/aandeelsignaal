@@ -155,3 +155,13 @@ class TweedeRonde(unittest.TestCase):
         wb.save(uit)
         ctl, log = AI.lees_controle(uit)
         self.assertEqual(ctl, {'TTE.PA': {'2021': {'comparable_eps': 5.1}}})
+
+
+class ValutaWissel(unittest.TestCase):
+    def test_bestaand_jaar_in_eigen_valuta(self):
+        g = {'jaren': [{'year': 2021, 'currency': 'GBP', 'sales': 100.0}, {'year': 2024, 'currency': 'USD', 'sales': 130.0}]}
+        B.vul_aangeleverd(g, 'X', reg({2021: {'net_income': 10.0, 'currency': 'GBP'}, 2020: {'sales': 95.0, 'currency': 'GBP'}}))
+        j = {x['year']: x for x in g['jaren']}
+        self.assertEqual(j[2021]['net_income'], 10.0)                     # bestaand GBP-jaar: GBP is goed
+        self.assertNotIn(2020, j)                                         # nieuw jaar: rapportagevaluta (USD) nodig
+        self.assertEqual(g['aangeleverd']['valuta_jaren'], [{'jaar': 2020, 'valuta': 'GBP', 'nodig': 'USD'}])

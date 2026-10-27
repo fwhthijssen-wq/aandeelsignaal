@@ -360,9 +360,11 @@ def vul_aangeleverd(g, ticker, register=None):
 
     for jaar_s, r in sorted(reg.items()):
         jaar = int(jaar_s)
-        if munt and r.get('currency') and r['currency'] != munt:
+        bestaand = per_jaar.get(jaar)
+        nodig = (bestaand.get('currency') if bestaand else None) or munt     # een bestaand jaar in zijn eigen valuta (bedrijven die van valuta wisselden)
+        if nodig and r.get('currency') and r['currency'] != nodig:
             log['valuta'] += 1
-            log['valuta_jaren'].append({'jaar': jaar, 'valuta': r['currency'], 'nodig': munt})
+            log['valuta_jaren'].append({'jaar': jaar, 'valuta': r['currency'], 'nodig': nodig})
             continue
         rij = per_jaar.get(jaar)
         nieuw_rij = rij is None

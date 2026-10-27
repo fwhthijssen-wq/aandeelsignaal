@@ -150,7 +150,7 @@ def main(inpad, uitpad):
             av = g.get('aangeleverd') or {}
             afg = {(x['jaar'], x['veld']): x for x in av.get('afgewezen') or []}
             vj = {x['jaar']: x for x in av.get('valuta_jaren') or []}
-            if rij['year'] in vj:
+            if rij['year'] in vj and vj[rij['year']]['valuta'] != rij['currency']:
                 x = vj[rij['year']]
                 a.cell(row=r, column=5).comment = Comment(f"Vorige aanlevering stond in {x['valuta']} en is niet gebruikt: dit bedrijf rapporteert in {x['nodig']}. Vul de cijfers in {x['nodig']} in.", 'Aandeel Signaal')
                 a.cell(row=r, column=5).font = VET
