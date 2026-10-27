@@ -14,4 +14,4 @@ jobs:
           key: gegevens-telling-${{ github.run_id }}
           restore-keys: gegevens-
           fail-on-cache-miss: true
-      - run: node hulp/naic_telling.js
+      - run: node hulp/fonds_dump.js ASML.AS
