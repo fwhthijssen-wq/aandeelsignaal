@@ -1,0 +1,35 @@
+# Hulpmiddel (alleen handmatig): toont de jaarcijfers van enkele fondsen uit de gegevens van de laatste nachtelijke update.
+name: Fondsen inspecteren (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Tickers, gescheiden door spaties'
+        required: true
+permissions:
+  contents: read
+jobs:
+  toon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/cache/restore@v5
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
+          restore-keys: gegevens-
+      - name: Toon
+        env:
+          TICKERS: ${{ inputs.tickers }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          d = json.load(open('web/data/aandelen.json'))
+          want = os.environ['TICKERS'].split()
+          for a in d['aandelen']:
+              if a['ticker'] in want:
+                  g = a.get('gegevens') or {}
+                  print('=====', a['ticker'], 'niveau', g.get('niveau'), 'bron', g.get('bron'), 'eps_status', g.get('eps_status'), g.get('eps_verified_years'))
+                  for j in g.get('jaren') or []:
+                      print(j.get('year'), j.get('currency'), 'eps', j.get('comparable_eps'), 'rep', j.get('reported_eps'), 'ni', j.get('net_income'), 'sh', j.get('shares_diluted'), 'bron', j.get('eps_bron'), 'corr', j.get('eps_correctie'), 'aang', j.get('aangeleverd'))
+                  print('tweede_bron', json.dumps(g.get('tweede_bron'))[:1500])
+          PY
