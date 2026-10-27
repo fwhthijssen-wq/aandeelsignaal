@@ -1284,7 +1284,7 @@ def analisten_uit_info(info, vandaag, pence=False):
 def ttm_uit_info(info, g, vandaag):
     """Winst per aandeel over de laatste 4 kwartalen (Yahoo: trailingEps), voor de huidige K/W en als vertrekpunt van NAIC.
     Alleen als: de financiële valuta gelijk is aan die van de jaarcijfers; het laatste kwartaal na het laatste boekjaar ligt
-    (anders is het hetzelfde als de jaarwinst) en hoogstens 9 maanden oud is; het bedrag binnen een factor 3 van de laatste
+    (anders is het hetzelfde als de jaarwinst) en hoogstens 9 maanden oud is; het bedrag binnen een factor 2 van de laatste
     positieve jaarwinst ligt (Londen: een factor 100 in pence wordt rechtgezet). Anders None."""
     if not isinstance(info, dict) or not g or not g.get('jaren'):
         return None
@@ -1310,7 +1310,7 @@ def ttm_uit_info(info, g, vandaag):
     jaar_eps = l['comparable_eps']
     if jaar_eps > 0 and eps > 0 and 33 <= eps / jaar_eps <= 300:
         eps = eps / 100                                 # pence
-    if not (eps > 0 and jaar_eps > 0 and 1 / 3 <= eps / jaar_eps <= 3):
+    if not (eps > 0 and jaar_eps > 0 and 0.5 <= eps / jaar_eps <= 2):
         return None
     return {'eps': round(float(eps), 4), 'tot': kwartaal.isoformat(), 'valuta': munt, 'bron': 'Yahoo Finance'}
 

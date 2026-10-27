@@ -218,10 +218,10 @@
     uit.weggelaten = kwReeks.filter(function (x) { return ok(x.hoog) && x.hoog > KW_UITSCHIETER; }).map(function (x) { return x.year; });
     uit.kw = kwGemiddelden(kwReeks.filter(function (x) { return normaal[x.year]; }), 5);
     uit.eps = l.comparable_eps;
-    // Winst over de laatste 4 kwartalen (als die recenter is dan het laatste boekjaar en geloofwaardig: binnen een factor 3
+    // Winst over de laatste 4 kwartalen (als die recenter is dan het laatste boekjaar en geloofwaardig: binnen een factor 2
     // van de laatste jaarwinst). NAIC rekent de huidige K/W en de verwachting vanaf de meest recente winst.
     var ttm = opties && opties.ttm && pos(opties.ttm.eps) ? opties.ttm : null;
-    if (ttm && pos(uit.eps) && ttm.eps / uit.eps <= 3 && ttm.eps / uit.eps >= 1 / 3) { uit.ttm = { eps: ttm.eps, tot: ttm.tot || null, jaarEps: uit.eps }; uit.eps = ttm.eps; }
+    if (ttm && pos(uit.eps) && ttm.eps / uit.eps <= 2 && ttm.eps / uit.eps >= 0.5) { uit.ttm = { eps: ttm.eps, tot: ttm.tot || null, jaarEps: uit.eps }; uit.eps = ttm.eps; }
     var laatste5 = v.slice(-5).filter(function (j) { return normaal[j.year] || !ok(j.koers_hoog); }).map(function (j) { return j.comparable_eps; }).filter(pos);
     uit.epsLaag = laatste5.length ? Math.min.apply(null, laatste5) : null;
     if ((eigen !== null ? eigen : uit.groeiHistorisch) < GROEI_MIN) {

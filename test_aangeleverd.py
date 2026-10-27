@@ -285,7 +285,7 @@ class KwartaalWinst(unittest.TestCase):
         self.assertEqual((t['eps'], t['tot']), (3.4, '2026-09-30'))
         self.assertIsNone(B.ttm_uit_info(dict(info, financialCurrency='USD'), self.g(), '2026-10-27'))
         self.assertIsNone(B.ttm_uit_info(dict(info, mostRecentQuarter=self.ts('2025-12-31')), self.g(), '2026-10-27'))   # = jaarwinst
-        self.assertIsNone(B.ttm_uit_info(dict(info, trailingEps=12.0), self.g(), '2026-10-27'))                          # factor 4
+        self.assertIsNone(B.ttm_uit_info(dict(info, trailingEps=6.6), self.g(), '2026-10-27'))                           # factor 2,2
         self.assertEqual(B.ttm_uit_info(dict(info, trailingEps=340.0), self.g(), '2026-10-27')['eps'], 3.4)               # pence
         self.assertIsNone(B.ttm_uit_info(None, self.g(), '2026-10-27'))
 
