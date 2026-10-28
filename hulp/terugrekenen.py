@@ -70,6 +70,7 @@ def main():
                 koers['bereik'] = koersbereik(tot)
             grens = (date.fromisoformat(T) - timedelta(days=PUBLICATIE_DAGEN)).isoformat()
             g_t = dict(g)
+            g_t.pop('ttm', None)               # kwartaalwinst van nu: op een vroegere peildatum niet bekend (geen vooruitkijken)
             g_t['jaren'] = [j for j in g.get('jaren') or [] if str(j.get('end') or '9') <= grens]
             r_t = dict(rec, koers=koers, gegevens=g_t, analisten=None)
             begin = [p for p in punten if p[0] <= T][-1]
