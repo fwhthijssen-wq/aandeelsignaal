@@ -686,6 +686,10 @@ def reken_pdf_eps_na(g, ticker, register=None):
     # pdf-jaren (Duitse jaarverslagen) en de officiële ESEF-jaren (winst per aandeel uit het ESEF-dossier zelf)
     pdf_jaren = [j for j in g['jaren'] if _getal(j.get('comparable_eps')) and (j.get('eps_bron') == 'jaarverslag'
                  or (g.get('bron') == 'ESEF' and not j.get('eps_bron') and 'comparable_eps' not in (j.get('aangeleverd') or [])))]
+    # Overige jaren (winst per aandeel van Yahoo of aangeleverd) tellen alleen als het verslag het zelf bevestigt: aantal
+    # aandelen én nettowinst uit hetzelfde verslag (anders zou EODHD zichzelf kunnen bevestigen).
+    alleen_intern = {id(j) for j in g['jaren'] if _getal(j.get('comparable_eps')) and j not in pdf_jaren}
+    pdf_jaren = pdf_jaren + [j for j in g['jaren'] if id(j) in alleen_intern]
     # Winst per aandeel × aantal aandelen moet de nettowinst geven: uit een andere bron (1,5%) of uit hetzelfde verslag (1%).
     nagerekend = []
     for j in pdf_jaren:
@@ -699,7 +703,7 @@ def reken_pdf_eps_na(g, ticker, register=None):
             sh = _getal(k.get('aandelen'))
             if not sh:
                 continue
-            if ni and abs(e * sh / ni - 1) <= 0.015:          # nettowinst uit een andere bron
+            if ni and id(j) not in alleen_intern and abs(e * sh / ni - 1) <= 0.015:   # nettowinst uit een andere bron
                 gevonden = {'aandelen': sh, 'bewijs': k.get('bewijs'), 'nettowinst_bron': 'andere bron'}
                 break
             for n in r.get('nettowinst') or []:              # nettowinst uit hetzelfde verslag (zoals de SEC-controle)
@@ -716,9 +720,11 @@ def reken_pdf_eps_na(g, ticker, register=None):
     if not nagerekend:
         return
     laatste10 = [j['year'] for j in g['jaren'] if _getal(j.get('comparable_eps')) is not None][-10:]
-    info = {'jaren': len(nagerekend), 'van': min(nagerekend), 'tot': max(nagerekend), 'van_de': len(pdf_jaren),
+    # jaren die de bestaande controle (SEC/ESEF, winst ÷ aandelen uit het dossier) al onderbouwde, tellen ook mee
+    onderbouwd = {j['year'] for j in g['jaren'] if j.get('eps_check') == 'onderbouwd'}
+    info = {'jaren': len(nagerekend), 'van': min(nagerekend), 'tot': max(nagerekend), 'van_de': len([j for j in pdf_jaren if id(j) not in alleen_intern]) or len(pdf_jaren),
             'uitleg': 'Winst per aandeel uit het jaarverslag × het gemiddeld aantal aandelen uit hetzelfde verslag komt uit op de nettowinst (uit hetzelfde verslag binnen 1%, of uit een andere bron binnen 1,5%).'}
-    if len(laatste10) >= 10 and all(y in nagerekend for y in laatste10) and len(set(j.get('currency') for j in g['jaren'] if j.get('currency'))) == 1:
+    if len(laatste10) >= 10 and all(y in nagerekend or y in onderbouwd for y in laatste10) and len(set(j.get('currency') for j in g['jaren'] if j.get('currency'))) == 1:
         info['status_was'] = {k: g.get(k) for k in ('eps_status', 'eps_verified_years', 'rejected_sources')}
         g['eps_status'] = 'independently_verified'; g['eps_verified_years'] = 10; g['rejected_sources'] = 0
         info['bevestigd'] = True

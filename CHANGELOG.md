@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.2 (2026.10.28)
+- **Kwaliteitsbewaker**: de nachtelijke update vergelijkt elke nacht de kerngetallen (fondsen met jaarcijfers, Bevestigd, ≥ 6 jaar winst per aandeel, verse koersen, officiële cijfers) met de vorige run. Bij een duidelijke daling volgt een waarschuwing met de fondsen die iets kwijtraakten; bij een ernstige daling blijven de gegevens van gisteren staan.
+- **Europese fondsen naar Bevestigd**: de oudere (pdf-)jaarverslagen van Nederlandse, Franse en Britse fondsen worden nu ook gelezen op aantal aandelen en nettowinst. Een jaar telt als nagerekend als het verslag zelf de winst per aandeel bevestigt (winst per aandeel × aantal aandelen = nettowinst uit hetzelfde verslag), ook als het cijfer zelf van Yahoo of uit uw aanlevering komt. Samen met de jaren die de officiële controle al onderbouwde, kan zo een reeks van 10 jaar ontstaan.
+
 ## 1.1.5 (2026.10.28)
 - Winst per aandeel uit de eigen jaarverslagen nu ook voor Hannover Rück (13 jaar), Rheinmetall (13), adidas (6) en Daimler Truck (4), en daarmee narekenen waar dat kan.
 - Dividendcontrole: bij de Duitse fondsen staat bij Bronnen hoeveel jaren het dividend van Yahoo klopt met het jaarverslag.

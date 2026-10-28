@@ -356,6 +356,18 @@ class PdfNarekenen(unittest.TestCase):
         self.assertEqual(g['pdf_narekening']['jaren'], 5)                 # het aangeleverde jaar niet
         self.assertNotIn('bevestigd', g['pdf_narekening'])
 
+    def test_aangeleverde_winst_alleen_met_bevestiging_uit_het_verslag_en_onderbouwd_telt_mee(self):
+        g = {'bron': 'ESEF', 'currencies': ['EUR'], 'jaren':
+             [{'year': 2016 + i, 'currency': 'EUR', 'comparable_eps': 1.0 + i / 10, 'eps_bron': 'aangeleverd', 'aangeleverd': ['comparable_eps', 'net_income'], 'net_income': (1.0 + i / 10) * 200e6} for i in range(4)] +
+             [{'year': 2020 + i, 'currency': 'EUR', 'comparable_eps': 2.0 + i / 10, 'eps_check': 'onderbouwd', 'net_income': (2.0 + i / 10) * 200e6} for i in range(6)]}
+        reg = {'X': {str(2016 + i): {'kandidaten': [{'aandelen': 200e6}], 'nettowinst': []} for i in range(4)}}
+        B.reken_pdf_eps_na(g, 'X', copy.deepcopy(reg))
+        self.assertNotIn('bevestigd', g.get('pdf_narekening') or {})       # alleen een externe (aangeleverde) nettowinst: telt niet
+        for i in range(4):
+            reg['X'][str(2016 + i)]['nettowinst'] = [{'nettowinst': (1.0 + i / 10) * 200e6}]
+        B.reken_pdf_eps_na(g, 'X', reg)
+        self.assertTrue(g['pdf_narekening']['bevestigd'])                   # verslag bevestigt 2016-2019, 2020-2025 al onderbouwd
+
     def test_een_jaar_klopt_niet_dan_niet_bevestigd(self):
         g = self.g()
         B.reken_pdf_eps_na(g, 'X', self.reg(fout=5))
