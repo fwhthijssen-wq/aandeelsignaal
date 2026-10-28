@@ -1222,12 +1222,15 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         try:
-            reken_pdf_eps_na(gegevens, ticker)       # winst per aandeel uit de pdf-jaarverslagen narekenen
+            adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
+            vul_aangeleverd(gegevens, ticker, aangeleverd)
+        except Exception as exc:
+            gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
+        try:
+            reken_pdf_eps_na(gegevens, ticker)       # na het aanvullen: ook oudere jaren hebben dan een nettowinst
         except Exception as exc:
             gegevens.setdefault('narekening_fout', f'{type(exc).__name__}: {exc}'[:200])
         try:
-            adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
-            vul_aangeleverd(gegevens, ticker, aangeleverd)
             vergelijk_tweede_bron(gegevens, ticker, tweede_bron)
         except Exception as exc:          # aanvulling is extra; de run gaat altijd door
             gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
