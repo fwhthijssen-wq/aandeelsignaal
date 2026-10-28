@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.1.1 (2026.10.28)
+- Start leest nu van groot naar klein: na uw eigen aandelen het blok **Kansen in de markt**, eerst het marktbeeld per index en direct daaronder de beste kansen. De tegel Kansen springt naar dat blok.
+
 ## 1.1 (2026.10.28)
 - **Duitse fondsen nagerekend**: de winst per aandeel uit de pdf-jaarverslagen wordt nagerekend met het gemiddeld aantal aandelen uit hetzelfde verslag: winst per aandeel × aandelen moet (binnen 1,5%) uitkomen op de nettowinst uit een andere bron (Yahoo, of uw aanlevering voor oudere jaren). Zijn de laatste 10 jaren allemaal nagerekend, dan krijgt het fonds het label Bevestigd. Bij Bronnen staat per fonds hoeveel jaren kloppen.
 

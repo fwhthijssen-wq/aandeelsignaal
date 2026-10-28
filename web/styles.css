@@ -358,3 +358,6 @@ section[data-deel] { border-top: 1px solid var(--line); padding-top: 14px; }
 @media (max-width: 620px) { .tegels .tegel[data-tegel="zekerheid"] { grid-column: 1 / -1; } }
 .label-link .chip, .kw-kaart .chip { background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); color: var(--ink); }
 .label-link .chip[data-niveau="tweebronnen"] { box-shadow: inset 0 0 0 1.5px var(--ok-ink); }
+
+.kansen-blok h3 { margin-top: 6px; }
+.kansen-blok > div[data-kansen] { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }

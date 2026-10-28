@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.1 (2026.10.28)';
+  var APP_VERSIE = '1.1.1 (2026.10.28)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -248,7 +248,7 @@
       return '<button type="button" class="chip-knop" data-kans="' + k + '" aria-pressed="' + (k === m) + '">' + KANS_NAAM[k] + '</button>'; }).join('') + '</div>';
     var wat = { app: 'Kopen volgens de aanvullende zes metingen (geen NAIC).', naic: 'Oordeel Kopen volgens NAIC (koopzone, minstens 3 : 1 en ' + Naic.TOTAAL_MIN + '% per jaar).', beide: 'Kopen volgens de app én volgens NAIC.' }[m];
     var naarFondsen = '<div class="knoppen"><a class="knop rand klein" href="#/fondsen" data-naar-fondsen>Alle fondsen per index, op kansrijkheid</a></div>';
-    var kop = '<div class="rij-kop"><h2>Beste kansen</h2><a class="link" href="#/fondsen">Alle fondsen</a></div>' + keuze + '<p class="zacht">' + wat + '</p>';
+    var kop = '<div class="rij-kop"><h3>Beste kansen</h3><a class="link" href="#/fondsen">Alle fondsen</a></div>' + keuze + '<p class="zacht">' + wat + '</p>';
     if (!top.length) return kop + '<div class="kaart-plat" data-kansrijk><p>Nu voldoet geen aandeel hieraan.</p></div>' + naarFondsen;
     return kop + '<div class="lijst" data-kansrijk>' + top.map(function (b) {
       var rec = zoek(b.ticker);
@@ -497,10 +497,10 @@
       var titel = p.kopen + ' Kopen, ' + p.neutraal + ' Neutraal, ' + p.vermijden + ' Vermijden, ' + p.geen + ' zonder oordeel';
       return '<a class="markt-rij" href="#/fondsen" data-naar-index="' + h(ix) + '" aria-label="' + h(naam + ': ' + titel) + '"><span class="markt-naam">' + h(naam) + '</span><span class="markt-balk" title="' + h(titel) + '">' + d + '</span><span class="markt-tal"><b>' + p.kopen + '</b>/' + p.n + '</span></a>';
     }
-    return '<section data-marktbeeld><div class="rij-kop"><h2>Marktbeeld</h2><span class="zacht">NAIC-oordeel per index</span></div><div class="kaart-plat markt">' +
+    return '<div data-marktbeeld><div class="rij-kop"><h3>Marktbeeld</h3><span class="zacht">NAIC-oordeel per index</span></div><div class="kaart-plat markt">' +
       balk('Alle fondsen', alles, '') + namen.map(function (g) { return balk((INDEX_NAAM[g] || g).replace(/ \(.*\)$/, ''), per[g], g); }).join('') +
       '<div class="markt-legenda" aria-hidden="true"><span><i data-o="kopen"></i>Kopen</span><span><i data-o="neutraal"></i>Neutraal</span><span><i data-o="vermijden"></i>Vermijden</span><span><i data-o="geen"></i>Geen oordeel</span></div></div>' +
-      '<p class="zacht">Het getal is het aantal fondsen met NAIC Kopen. Tik op een index om de fondsen te zien.</p></section>';
+      '<p class="zacht">Het getal is het aantal fondsen met NAIC Kopen. Tik op een index om de fondsen te zien.</p></div>';
   }
   function marktKoppel() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-spring]'), function (a) {
@@ -519,8 +519,9 @@
     var vol = winkel.volglijst().map(function (v) { return zoek(v.ticker); }).filter(Boolean);
     var s = '<section class="cockpit"><div class="rij-kop"><h1>Overzicht</h1><span class="zacht">' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + '</span></div>' + tegelsHtml() + '</section>';
     s += signalenHtml();
-    s += '<section id="kansen" data-kansen>' + kansrijkHtml() + '</section>';
-    s += marktbeeldHtml();
+    // Kansen: van de markt (per index) naar de afzonderlijke fondsen
+    s += '<section id="kansen" class="kansen-blok"><div class="rij-kop"><h2>Kansen in de markt</h2><span class="zacht">van markt naar fonds</span></div>' +
+      marktbeeldHtml() + '<div data-kansen>' + kansrijkHtml() + '</div></section>';
     s += dashboardHtml(R);
     s += '<section><div class="rij-kop"><h2>Mijn volglijst</h2><a class="link" href="#/volglijst">Alles zien</a></div>';
     s += vol.length ? '<div class="kaarten">' + vol.slice(0, 6).map(function (rec) { return kaartLink(rec, by[rec.ticker]); }).join('') + '</div>' + (vol.length > 6 ? '<p class="zacht">En nog ' + (vol.length - 6) + '. Zie Volglijst.</p>' : '')
