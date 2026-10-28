@@ -35,10 +35,17 @@ jobs:
           path: archief
           key: archief-${{ github.run_id }}
           restore-keys: archief-
+      - name: Vorige gegevens apart zetten (voor de kwaliteitsbewaker)
+        run: cp web/data/aandelen.json vorige.json 2>/dev/null || true
       - name: Gegevens ophalen en controleren (bij een fout blijven de vorige gegevens staan)
         id: bouw
         continue-on-error: true
         run: python bouw_webdata.py --live --email "${{ vars.SEC_CONTACT_EMAIL }}"
+      - name: Kwaliteitsbewaker (bij een ernstige daling blijven de gegevens van gisteren staan)
+        id: bewaker
+        if: steps.bouw.outcome == 'success'
+        continue-on-error: true
+        run: python bewaker.py vorige.json web/data/aandelen.json
       - name: Controle in het overzicht (zichtbaar als melding bij de run)
         if: always()
         run: |
@@ -74,7 +81,7 @@ jobs:
           print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
           PY
       - name: Gegevens bewaren voor de volgende run
-        if: steps.bouw.outcome == 'success'
+        if: steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
         uses: actions/cache/save@v5
         with:
           path: web/data/aandelen.json
