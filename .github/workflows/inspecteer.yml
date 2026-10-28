@@ -82,8 +82,8 @@ jobs:
                   g = a.get('gegevens') or {}
                   print('=====', a['ticker'], 'niveau', g.get('niveau'), 'bron', g.get('bron'), 'eps_status', g.get('eps_status'), g.get('eps_verified_years'))
                   for j in g.get('jaren') or []:
-                      print(j.get('year'), j.get('currency'), 'eps', j.get('comparable_eps'), 'rep', j.get('reported_eps'), 'ni', j.get('net_income'), 'sh', j.get('shares_diluted'), 'bron', j.get('eps_bron'), 'corr', j.get('eps_correctie'), 'aang', j.get('aangeleverd'))
-                  print('tweede_bron', json.dumps(g.get('tweede_bron'))[:1500])
+                      print(j.get('year'), j.get('currency'), 'eps', j.get('comparable_eps'), 'rep', j.get('reported_eps'), 'ni', j.get('net_income'), 'sh', j.get('shares_diluted'), 'bron', j.get('eps_bron'), 'corr', j.get('eps_correctie'), 'aang', j.get('aangeleverd'), 'check', j.get('eps_check'), 'narek', (j.get('eps_narekening') or {}).get('nettowinst_bron'))
+                  print('tweede_bron', json.dumps(g.get('tweede_bron'))[:300]); print('pdf_narekening', json.dumps(g.get('pdf_narekening'))[:300])
           PY
       - name: Op tak jaarverslagen zetten (debug/inspectie.txt)
         run: |
