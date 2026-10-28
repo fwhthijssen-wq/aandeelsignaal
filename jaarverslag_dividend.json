@@ -1,4 +1,40 @@
 {
+ "ADS.DE": {
+  "reeks": {
+   "2024": 2.0,
+   "2025": 2.8
+  },
+  "log": [
+   "2019: sluit niet aan (gat); reeks stopt"
+  ],
+  "verslagen": {
+   "2014": {
+    "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2014-EQ-E-00.pdf",
+    "pagina": 43,
+    "bewijs": "Dividend per share € 1.50 4) 1.50 / \u0007Euronext Vigeo"
+   },
+   "2015": {
+    "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2015-EQ-E-00.pdf",
+    "pagina": 51,
+    "bewijs": "Dividend per share € 1.60 5 1.50 •• Ethibel Sustainability Indices"
+   },
+   "2016": {
+    "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2016-EQ-E-00.pdf",
+    "pagina": 46,
+    "bewijs": "Dividend per share € 2.00 4 1.60"
+   },
+   "2019": {
+    "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2019-EQ-E-00.pdf",
+    "pagina": 47,
+    "bewijs": "Dividend per share € 3.85 5 3.35"
+   },
+   "2025": {
+    "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2025-EQ-E-00.pdf",
+    "pagina": 48,
+    "bewijs": "Dividend per share4 € 2.80 2.00 — MSCI World ESG Leaders Index"
+   }
+  }
+ },
  "ALV.DE": {
   "reeks": {},
   "log": [],
@@ -350,6 +386,20 @@
    }
   }
  },
+ "DHL.DE": {
+  "reeks": {
+   "2024": 1.85,
+   "2025": 1.9
+  },
+  "log": [],
+  "verslagen": {
+   "2025": {
+    "url": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-center/investors/documents/annual-reports/DHL-Group-2025-Annual-Report.pdf",
+    "pagina": 41,
+    "bewijs": "Dividend per share € 1.85 1.90 - -"
+   }
+  }
+ },
  "DTE.DE": {
   "reeks": {
    "2012": 0.5,
@@ -381,6 +431,11 @@
     "bewijs": "Dividend per shareb € (14.3) 0.60 0.70 0.65 0.60 0.55 0.50 0.50 0.70"
    }
   }
+ },
+ "DTG.DE": {
+  "reeks": {},
+  "log": [],
+  "verslagen": {}
  },
  "EOAN.DE": {
   "reeks": {
@@ -669,6 +724,76 @@
    }
   }
  },
+ "HNR1.DE": {
+  "reeks": {
+   "2016": 5.0,
+   "2017": 5.0,
+   "2018": 5.25,
+   "2019": 5.5,
+   "2020": 4.5,
+   "2021": 5.75,
+   "2022": 6.0,
+   "2023": 7.2,
+   "2024": 9.0,
+   "2025": 12.5
+  },
+  "log": [
+   "2025: meerjarenoverzicht vult 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+   "2022: verschil (5.0 in eigen verslag, 6.0 in later verslag); reeks stopt"
+  ],
+  "verslagen": {
+   "2014": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2014-EQ-E-00.pdf",
+    "pagina": 15,
+    "bewijs": "Dividend per share 3.00 + 1.25 3.00 2.60 + 0.40 2.10 2.30"
+   },
+   "2015": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2015-EQ-E-00.pdf",
+    "pagina": 17,
+    "bewijs": "Dividend per share 3.25 + 1.50 3, 4 3.00 + 1.25 4 3.00 2.60 + 0.40 4 2.10"
+   },
+   "2016": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2016-EQ-E-00.pdf",
+    "pagina": 15,
+    "bewijs": "Dividend per share 3.50 + 1.50 3.25 + 1.50 3.00 + 1.25 3.00 2.60 + 0.40 4"
+   },
+   "2017": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2017-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share in EUR 3.50 + 1.50 – 3.50 + 1.50 3.25 + 1.50 3.00 + 1.25 3.00"
+   },
+   "2018": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2018-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share in EUR 3.75 + 1.50 2, 3"
+   },
+   "2019": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2019-EQ-E-01.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share in EUR 4.00 + 1.50 3, 4"
+   },
+   "2020": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2020-EQ-E-00.pdf",
+    "pagina": 28,
+    "bewijs": "Dividend per share 4.50 2, 3 4.00 + 1.50 3 3.75 + 1.50 3 3.50 + 1.50 3 3.50 + 1.50 3"
+   },
+   "2021": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2021-EQ-E-00.pdf",
+    "pagina": 28,
+    "bewijs": "Dividend per share 4.50 + 1.25 2, 3"
+   },
+   "2022": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2022-EQ-E-00.pdf",
+    "pagina": 18,
+    "bewijs": "Dividend per share 5.00 + 1.00 2, 3 4.50 + 1.25 3 4.50 3 4.00 + 1.50 3 3.75 + 1.50 3"
+   },
+   "2025": {
+    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2025-EQ-E-00.pdf",
+    "pagina": 9,
+    "bewijs": "Dividend per share 5.00 5.00 5.25 5.50 4.50 5.75 6.00 7.20 9.00 12.50 ⁴"
+   }
+  }
+ },
  "IFX.DE": {
   "reeks": {
    "2022": 0.32,
@@ -893,6 +1018,75 @@
     "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2025-EQ-E-00.pdf",
     "pagina": 2,
     "bewijs": "Dividend per share3 € 24.00 20.00 15.00 11.60 11.00"
+   }
+  }
+ },
+ "RHM.DE": {
+  "reeks": {
+   "2013": 0.4,
+   "2014": 0.3,
+   "2015": 1.1,
+   "2016": 1.45,
+   "2017": 1.7,
+   "2018": 2.1,
+   "2019": 2.4,
+   "2020": 2.0,
+   "2021": 3.3,
+   "2022": 4.3,
+   "2023": 5.7,
+   "2024": 8.1
+  },
+  "log": [
+   "2023: meerjarenoverzicht vult 2017, 2018, 2019, 2020, 2021",
+   "2022: meerjarenoverzicht vult 2016",
+   "2021: meerjarenoverzicht vult 2015",
+   "2014: één verslag ontbreekt; gat overbrugd"
+  ],
+  "verslagen": {
+   "2014": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2014-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 0.30 0.40 1.80 1.80 1.50 0.30 1.30"
+   },
+   "2016": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2016-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 1.45 1.10 0.30 0.40 1.80 1.80 1.50"
+   },
+   "2017": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2017-EQ-E-01.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 1.70 1.45 1.10 0.30 0.40 1.80 1.80"
+   },
+   "2019": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2019-EQ-E-01.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 2.40 2.10 1.70 1.45 1.10 0.30 0.40"
+   },
+   "2020": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2020-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 2.00 2.40 2.10 1.70 1.45 1.10 0.30"
+   },
+   "2021": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2021-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 3.30 2.00 2.40 2.10 1.70 1.45 1.10"
+   },
+   "2022": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2022-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 4.30 3.30 2.00 2.40 2.10 1.70 1.45"
+   },
+   "2023": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2023-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 5.70 4.30 3.30 2.00 2.40 2.10 1.70"
+   },
+   "2024": {
+    "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2024-EQ-E-00.pdf",
+    "pagina": 2,
+    "bewijs": "Dividend per share € 8.10 5.70 4.30 3.30 2.00 2.40 2.10"
    }
   }
  },

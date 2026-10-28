@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.1.5 (2026.10.28)
+- Winst per aandeel uit de eigen jaarverslagen nu ook voor Hannover Rück (13 jaar), Rheinmetall (13), adidas (6) en Daimler Truck (4), en daarmee narekenen waar dat kan.
+- Dividendcontrole: bij de Duitse fondsen staat bij Bronnen hoeveel jaren het dividend van Yahoo klopt met het jaarverslag.
+- Elk voorjaar worden de nieuwe Duitse jaarverslagen automatisch opgehaald en verwerkt.
+
 ## 1.1.4 (2026.10.28)
 - Meer Duitse fondsen met winst per aandeel uit de eigen jaarverslagen: Infineon (11 jaar), Zalando (12), Munich Re (15), Continental (8, was 4), Siemens (11, was 9). Eén ontbrekend verslag in een reeks wordt overbrugd; bij Henkel telt het preferente aandeel; een onleesbaar decimaalteken in de pdf wordt hersteld.
 - Veiligheid: een reeks uit de jaarverslagen wordt niet gebruikt als een jaar meer dan 15% afwijkt van Yahoo Finance, en een onzinwaarde (meer dan 20× de middelste) valt weg.
