@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.2 (2026.10.28)';
+  var APP_VERSIE = '1.2.1 (2026.10.28)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -183,19 +183,19 @@
     return '<p class="gevoelig" data-gevoelig="' + (gv.lager === o && gv.hoger === o ? 'stevig' : 'rand') + '">' + h(tekst) + '</p>';
   }
   function geld(x) { return typeof x === 'number' && isFinite(x) ? getal(x, x >= 100 ? 0 : 2) : '–'; }
-  /* Uitkomst van het terugrekenen (hulp/terugrekenen.py + .js, 25 okt 2026, regels van beta.76): rendement incl. dividend
-     ten opzichte van het gewone gemiddelde van alle fondsen op dezelfde peildatum (30 april 2018-2025). */
-  var TERUG = { periode: '2018–2025', datum: '25 oktober 2026', rijen: {
-    kopen: { j1: 4.5, j3: 21.9, n: 75, mediaan1: -2.4, beter1: 47 },
-    neutraal: { j1: 1.6, j3: 0.8, n: 284, mediaan1: -4.0, beter1: 44 },
-    vermijden: { j1: -2.4, j3: -8.5, n: 241, mediaan1: -4.2, beter1: 44 } } };
+  /* Uitkomst van het terugrekenen (hulp/terugrekenen.py + .js, 28 okt 2026, regels van 1.2, 2642 fonds-peildata): rendement
+     incl. dividend ten opzichte van het gewone gemiddelde van alle fondsen op dezelfde peildatum (30 april 2018-2025). */
+  var TERUG = { periode: '2018–2025', datum: '28 oktober 2026', rijen: {
+    kopen: { j1: -6.3, j3: 1.7, n: 113, mediaan1: -12.8, beter1: 35 },
+    neutraal: { j1: 1.2, j3: 3.0, n: 562, mediaan1: -3.3, beter1: 45 },
+    vermijden: { j1: -0.9, j3: 0.0, n: 536, mediaan1: -3.0, beter1: 45 } } };
   function terugBlok(oordeel) {
     var T = TERUG.rijen, tk = function (x) { return (x > 0 ? '+' : '') + String(x).replace('.', ',') + '%'; };
     var rij = function (o) { var x = T[o]; return '<tr' + (o === oordeel ? ' data-huidig' : '') + '><th scope="row">' + OORDEEL[o] + '</th><td>' + tk(x.j1) + '</td><td>' + tk(x.j3) + '</td><td>' + x.n + '</td></tr>'; };
     return '<details class="terug" data-terug><summary>Hoe deed dit oordeel het in het verleden?</summary>' +
-      '<p class="zacht">Teruggerekend over ' + TERUG.periode + ': elk jaar op 30 april het NAIC-oordeel zoals de app het toen had gegeven, en het rendement daarna (inclusief dividend), vergeleken met het gemiddelde van alle fondsen.</p>' +
+      '<p class="zacht">Teruggerekend over ' + TERUG.periode + ' (stand ' + TERUG.datum + '): elk jaar op 30 april het NAIC-oordeel zoals de app het toen had gegeven, en het rendement daarna (inclusief dividend), vergeleken met het gemiddelde van alle fondsen.</p>' +
       '<div class="schuif"><table class="vgl"><thead><tr><th>Oordeel</th><th>1 jaar</th><th>3 jaar</th><th>Aantal</th></tr></thead><tbody>' + rij('kopen') + rij('neutraal') + rij('vermijden') + '</tbody></table></div>' +
-      '<p class="zacht">Kopen deed het gemiddeld beter en Vermijden slechter, maar dat komt vooral van een paar grote uitschieters: de helft van de Kopen-aandelen deed het na 1 jaar slechter dan gemiddeld (mediaan ' + tk(T.kopen.mediaan1) + '). Het verschil is te klein en de periode te kort om toeval uit te sluiten. Alleen fondsen van nu, jaarcijfers zoals nu bekend, geen kosten. Geen voorspelling.</p></details>';
+      '<p class="zacht">In deze periode deed Kopen het niet beter dan gemiddeld: na 1 jaar ' + tk(T.kopen.j1) + ' (mediaan ' + tk(T.kopen.mediaan1) + ', ' + T.kopen.beter1 + '% deed het beter), na 3 jaar ongeveer gelijk. De verschillen tussen de oordelen zijn klein en kunnen toeval zijn; 2018–2025 was een periode waarin vooral dure groeiaandelen stegen, waar de NAIC-methode juist voorzichtig mee is. Alleen fondsen van nu, jaarcijfers zoals nu bekend, geen kosten. Geen voorspelling.</p></details>';
   }
   function naicKaart(rec, b) {
     var n = b.naic;
