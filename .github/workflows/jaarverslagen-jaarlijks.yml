@@ -40,7 +40,7 @@ jobs:
           cd jv
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
           git add -A && git commit -qm "Duitse jaarverslagen $(date -u +%F)" || echo "niets nieuw"
-          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
+          for i in 1 2 3; do git pull -q --rebase "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen && git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen && break; sleep 20; done
       - name: Registers opnieuw opbouwen
         run: |
           python hulp/de_eps.py jv/de jaarverslag_eps.json > eps.log
