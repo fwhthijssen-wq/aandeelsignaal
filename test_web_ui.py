@@ -331,14 +331,12 @@ class WebUi(unittest.TestCase):
         pg.evaluate("localStorage.setItem('as_minmeting', '2')")                     # lager dan het menu: de test heeft alleen koersdata
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('.groot-oordeel[data-app][data-oordeel="geen"]').count(), 0)
-        self.assertIn(pg.locator('.groot-oordeel[data-app]').inner_text(), ('Kopen', 'Neutraal', 'Vermijden'))
+        self.assertIn(pg.locator('.groot-oordeel[data-app]').inner_text(), ('Gezond', 'Gemengd', 'Zwak'))   # gezondheidscheck, geen koopadvies
+        self.assertEqual(pg.locator('[data-naic-kaart] [data-aandacht]').count(), 1)          # aandachtspunten bij het NAIC-oordeel
         self.assertEqual(pg.locator('[data-naic-kaart]').count(), 1)                      # NAIC ernaast
         pg.evaluate("location.hash='#/'")
         pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-kansrijk]').count() + pg.locator('[data-kans-keuze]').count(), 2)
-        pg.click('[data-kans="naic"]'); pg.wait_for_timeout(150)
-        self.assertEqual(pg.evaluate("localStorage.getItem('as_kansrijk')"), 'naic')
-        self.assertEqual(pg.locator('[data-kans][aria-pressed="true"]').get_attribute('data-kans'), 'naic')
+        self.assertEqual(pg.locator('[data-kans-keuze]').count(), 0)                      # sinds 1.2.2 alleen NAIC
         pg.evaluate("location.hash='#/fondsen'"); pg.wait_for_timeout(150)
         self.assertGreater(pg.locator('[data-fonds] [data-naic]').count(), 0)
         pg.click('[data-dataset] summary')

@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.2.2 (2026.10.28)
+- **De zes metingen zijn nu een gezondheidscheck, geen tweede koopadvies.** Het NAIC-oordeel (Kopen, Neutraal, Vermijden) is het enige advies. De zes metingen zeggen hoe het bedrijf ervoor staat: **Gezond**, **Gemengd** of **Zwak** (zelfde berekening als eerder Kopen/Neutraal/Vermijden).
+- Bij het NAIC-oordeel staan nu de **aandachtspunten**: elke ongunstige meting als "Let op" (bijv. goedkoop volgens NAIC, maar hoge schuld). Geen aandachtspunten? Dan staat dat er ook.
+- Beste kansen: alleen nog volgens NAIC (de keuze App/Beide is weg). In lijsten heet de tweede chip nu "Check".
+
 ## 1.2.1 (2026.10.28)
 - **Terugrekenen opnieuw gedaan** met de verbeterde cijfers (2642 fonds-peildata, 2018–2025). Uitkomst: NAIC Kopen deed het in deze periode niet beter dan gemiddeld (na 1 jaar −6,3%, na 3 jaar +1,7%; 113 gevallen). Bij "Hoe deed dit oordeel het in het verleden?" staan nu deze cijfers en een eerlijke uitleg. De eerdere toets (25 okt, 75 gevallen, +4,5%) was te klein.
 - Technisch: alle automatische taken draaien vast op Ubuntu 24.04; een wankele schermtest is stabiel gemaakt; het terugrekenen gebruikt geen recente kwartaalwinst meer (dat zou vooruitkijken zijn).

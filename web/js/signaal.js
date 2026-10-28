@@ -370,6 +370,8 @@
       jaar: l ? l.year : null, verouderd: oud, datum: k ? k.datum : null };
   }
 
-  var api = { beoordeel: beoordeel, kandidaten: kandidaten, KERN: KERN, VRAGEN: VRAGEN, OORDELEN: OORDELEN, profiel: profiel, MIN_METINGEN: MIN_METINGEN, METHODEN: METHODEN, KWALITEIT: KWALITEIT, GROEPEN: GROEPEN, DREMPEL: DREMPEL, DREMPEL_KOPEN: DREMPEL_KOPEN, INFO: INFO };
+  /* De zes metingen zijn een gezondheidscheck naast het NAIC-oordeel, geen koopadvies: zelfde berekening, andere woorden. */
+  var GEZOND = { kopen: 'Gezond', neutraal: 'Gemengd', vermijden: 'Zwak', positief: 'Gezond' };
+  var api = { GEZOND: GEZOND, beoordeel: beoordeel, kandidaten: kandidaten, KERN: KERN, VRAGEN: VRAGEN, OORDELEN: OORDELEN, profiel: profiel, MIN_METINGEN: MIN_METINGEN, METHODEN: METHODEN, KWALITEIT: KWALITEIT, GROEPEN: GROEPEN, DREMPEL: DREMPEL, DREMPEL_KOPEN: DREMPEL_KOPEN, INFO: INFO };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Signaal = api;
 })(typeof self !== 'undefined' ? self : this);

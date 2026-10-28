@@ -4,6 +4,7 @@
 (function (root) {
   'use strict';
   var OORDEEL = { kopen: 'Kopen', neutraal: 'Neutraal', vermijden: 'Vermijden' };
+  var GEZOND = { kopen: 'Gezond', neutraal: 'Gemengd', vermijden: 'Zwak', positief: 'Gezond' };   // gezondheidscheck (zes metingen)
   var STAP_UITLEG = {
     groei: 'Groeit de winst per aandeel minstens 5% per jaar? NAIC zoekt groeibedrijven.',
     kwaliteit: 'Groeien omzet en winst gelijk op, en houden marge en rendement op eigen vermogen stand?',
@@ -235,8 +236,8 @@
     s += '<div class="tegel"><div class="lbl">Koopprijs (NAIC)</div><div class="groot">' + (kp && kp.prijs ? geld(kp.prijs) + ' <span class="klein">' + h(val) + '</span>' : 'Geen') + '</div><div class="zacht">' +
       h(kp && kp.prijs ? (kp.afstand != null ? 'Koers nu ' + (kp.afstand <= 0 ? getal(-kp.afstand, 1) + '% eronder.' : getal(kp.afstand, 1) + '% erboven.') : '') : kp ? kp.reden : '') + '</div>' +
       (n && n.gevoeligheid ? '<div class="zacht klein" style="margin-top:1.5mm">' + h(n.gevoeligheid.lager === n.oordeel && n.gevoeligheid.hoger === n.oordeel ? 'Stevig: blijft ' + OORDEEL[n.oordeel] + ' bij 2 procentpunt meer of minder groei.' : 'Op het randje: bij 2 procentpunt minder groei ' + (OORDEEL[n.gevoeligheid.lager] || 'geen oordeel') + ', bij meer groei ' + (OORDEEL[n.gevoeligheid.hoger] || 'geen oordeel') + '.') + '</div>' : '') + '</div>';
-    s += '<div class="tegel"><div class="lbl">Zes metingen (aanvullend)</div><div class="groot o-' + (b.oordeel || 'geen') + '">' + (b.oordeel ? OORDEEL[b.oordeel] : 'Geen oordeel') + '</div><div class="zacht">' +
-      h(b.oordeel ? 'Gemiddelde ' + getal(b.score, 2) + ' over ' + b.aantal + ' van ' + b.mogelijk + ' metingen. Telt niet mee in het NAIC-oordeel.' : b.aantal + ' van ' + b.mogelijk + ' metingen beschikbaar.') + '</div>' +
+    s += '<div class="tegel"><div class="lbl">Gezondheidscheck (zes metingen)</div><div class="groot o-' + (b.oordeel || 'geen') + '">' + (b.oordeel ? GEZOND[b.oordeel] : 'Te weinig metingen') + '</div><div class="zacht">' +
+      h(b.oordeel ? 'Gemiddelde ' + getal(b.score, 2) + ' over ' + b.aantal + ' van ' + b.mogelijk + ' metingen. Geen koopadvies; telt niet mee in het NAIC-oordeel.' : b.aantal + ' van ' + b.mogelijk + ' metingen beschikbaar.') + '</div>' +
       '<div class="zacht klein" style="margin-top:1.5mm">Gegevens: ' + (gate.allowed ? '✓ bevestigd' : 'niet bevestigd') + '</div></div>';
     s += '</div>';
 
@@ -279,7 +280,7 @@
     }
 
     // Zes metingen
-    s += '<section><h2>Zes metingen <span class="zacht klein">(aanvullend, geen NAIC-regels)</span></h2><ul class="met">' + b.metingen.map(function (m) {
+    s += '<section><h2>Gezondheidscheck: zes metingen <span class="zacht klein">(geen koopadvies, geen NAIC-regels)</span></h2><ul class="met">' + b.metingen.map(function (m) {
       if (m.nvt) return '<li><span class="mk onb">–</span><div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Niet van toepassing.</span></div></li>';
       if (!m.aanwezig) return '<li><span class="mk onb">?</span><div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Ontbreekt: ' + h(m.reden) + '</span></div></li>';
       return '<li><span class="mk ' + scoreKlasse(m.score) + '">' + (m.score >= 0.25 ? '+' : m.score <= -0.25 ? '−' : '•') + '</span><div><b>' + h(m.kort) + '</b> · ' + h(m.naam) + ' — <i>' + scoreWoord(m.score) + '</i><br>' + h(m.tekst) +

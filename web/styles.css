@@ -285,6 +285,9 @@ table.naic-tabel td { vertical-align: top; }
 .naic-groei label { font-weight: 600; display: block; margin-bottom: 6px; }
 
 .terug { margin: 6px 0 10px; }
+.aandacht { margin: 8px 0; padding: 8px 10px; border-left: 3px solid var(--bad-ink); background: var(--bad-bg); color: var(--ink); border-radius: 6px; }
+.aandacht.ok { border-left-color: var(--ok-ink); background: var(--ok-bg); }
+.aandacht ul { margin: 4px 0 0; padding-left: 18px; }
 .terug summary { cursor: pointer; font-weight: 600; font-size: .92rem; }
 .terug tr[data-huidig] th, .terug tr[data-huidig] td { font-weight: 700; background: var(--wait-bg); color: var(--wait-ink); }
 .terug table th, .terug table td { white-space: nowrap; padding: 6px 8px; font-size: .88rem; }

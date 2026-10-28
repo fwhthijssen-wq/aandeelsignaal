@@ -40,7 +40,7 @@ test('Afdruk: complete pagina met oordeel, stappen, berekening, jaarcijfers, beg
   assert.match(html, /De berekening/);
   assert.match(html, /Verwachte hoge koers/);
   assert.match(html, /<th>2016<\/th>[\s\S]*<th>2025<\/th>/);
-  assert.match(html, /Zes metingen/);
+  assert.match(html, /Gezondheidscheck: zes metingen/);
   assert.match(html, /Wat betekenen de begrippen\?/);
   assert.match(html, /Het onderste derde\./);
   assert.match(html, /geen beleggingsadvies/);

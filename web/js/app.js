@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.2.1 (2026.10.28)';
+  var APP_VERSIE = '1.2.2 (2026.10.28)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -26,6 +26,7 @@
   function vandaag() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   /* Oordeel in de woorden van NAIC. 'positief' komt alleen nog voor in momentopnames van vóór beta.65. */
   var OORDEEL = { kopen: 'Kopen', neutraal: 'Neutraal', vermijden: 'Vermijden', positief: 'Positief (oude berekening)' };
+  var GEZOND = Signaal.GEZOND;
   /* Per kernmeting een stip in een kleurschaal: donkergroen ✓ gunstig, lichtgroen ✓ licht gunstig, half groen/half rood = neutraal,
      lichtrood ✗ licht ongunstig, rood ✗ ongunstig. Lege ring = ontbreekt, streepje = niet van toepassing.
      Met een score kiest de tint de sterkte (vanaf ±0,75 donker); zonder score is gunstig donkergroen en ongunstig rood. */
@@ -44,7 +45,7 @@
     }).join('') + '</span>';
   }
   function oordeelChip(b) {
-    return b.oordeel ? '<span class="chip oordeel" data-oordeel="' + b.oordeel + '">' + OORDEEL[b.oordeel] + '</span>' : '<span class="chip wacht" data-oordeel="geen">Geen oordeel</span>';
+    return b.oordeel ? '<span class="chip oordeel" data-oordeel="' + b.oordeel + '">Gezondheidscheck: ' + GEZOND[b.oordeel] + '</span>' : '<span class="chip wacht" data-oordeel="geen">Gezondheidscheck: te weinig metingen</span>';
   }
   function telTekst(b) { return b.aantal + ' van ' + b.mogelijk + ' metingen'; }
   function minMetingen() { try { var v = parseInt(localStorage.getItem('as_minmeting'), 10); return v >= 2 && v <= 6 ? v : Signaal.MIN_METINGEN; } catch (e) { return Signaal.MIN_METINGEN; } }
@@ -57,7 +58,7 @@
       '<li><b>Prijs (stap 3 tot 5)</b> Uit de gemiddelde hoge en lage K/W van 5 jaar volgt een verwachte hoge en lage koers over 5 jaar, verdeeld in drie zones: kopen, houden, verkopen. Kopen vraagt minstens 3 : 1 opwaarts tegen neerwaarts.</li>' +
       '<li><b>Rendement (stap 6)</b> Koersstijging tot de hoge koers plus dividend: minstens ' + Naic.TOTAAL_MIN + '% per jaar (geld verdubbelen in 5 jaar).</li></ul>' +
       '<p><b>Kopen</b>: koers in de koopzone, minstens 3 : 1, minstens ' + Naic.TOTAAL_MIN + '% per jaar en geen kwaliteitstoets afgevallen. <b>Vermijden</b>: verkoopzone, of geen groeibedrijf. Anders <b>Neutraal</b>.</p>' +
-      '<p>Daaronder staan, <b>aanvullend</b>, zes metingen die NAIC niet gebruikt (kasstroom, schuld, groei, K/W, koerstrend en koersrust) met een eigen Kopen/Neutraal/Vermijden. Dat telt niet mee in het NAIC-oordeel; bij Kansrijk kunt u er wel op selecteren (App of Beide). ' +
+      '<p>Daaronder staan, <b>aanvullend</b>, zes metingen die NAIC niet gebruikt (kasstroom, schuld, groei, K/W, koerstrend en koersrust) als <b>gezondheidscheck</b>: Gezond, Gemengd of Zwak. Dat is geen koopadvies (het zegt hoe het bedrijf ervoor staat, niet of de prijs goed is) en telt niet mee in het NAIC-oordeel. Ongunstige metingen ziet u bij het NAIC-oordeel als aandachtspunt. ' +
       'Andere kentallen, uw eigen oordeel en het advies van analisten staan er ter informatie bij. Selectiehulp, geen beleggingsadvies.</p></details>';
   }
   function signaalVoor(rec, gevoeligheid) {
@@ -75,7 +76,7 @@
     if (!x) return 'geen oordeel';
     var tel = typeof x.aantal === 'number' && typeof x.mogelijk === 'number' ? ' (' + x.aantal + ' van ' + x.mogelijk + ' metingen)' : (x.oordeel === 'positief' || !x.oordeel ? '' : '');
     var nc = x.naic && typeof x.naic === 'object' ? x.naic.oordeel : x.naic;
-    return 'NAIC ' + (nc && OORDEEL[nc] ? OORDEEL[nc] : '–') + ' · zes metingen ' + (x.oordeel ? OORDEEL[x.oordeel] : 'geen oordeel') + tel;
+    return 'NAIC ' + (nc && OORDEEL[nc] ? OORDEEL[nc] : '–') + ' · gezondheidscheck ' + (x.oordeel ? GEZOND[x.oordeel] : 'te weinig metingen') + tel;
   }
   function bronTekst(m, b) {
     var q = m.kwaliteit, K = Signaal.KWALITEIT;
@@ -108,9 +109,9 @@
   var laatsteBeoordeling = null;
   function signaalKaart(rec) {
     var b = laatsteBeoordeling = signaalVoor(rec, true);
-    var kop = b.oordeel ? '<b class="groot-oordeel" data-app data-oordeel="' + b.oordeel + '">' + OORDEEL[b.oordeel] + '</b>' : '<b class="groot-oordeel" data-app data-oordeel="geen">Geen oordeel</b>';
-    var waarom = b.oordeel ? 'Gemiddelde van ' + telTekst(b) + ': ' + String(b.score).replace('.', ',') + ' (Kopen vanaf +0,5; Vermijden vanaf −0,25).' : 'Er zijn ' + telTekst(b) + ' beschikbaar; voor een oordeel zijn er minstens ' + Math.min(b.minMetingen, b.mogelijk) + ' nodig.';
-    var s = '<div data-signaal>' + naicKaart(rec, b) + '<div class="kaart-plat aanvullend detail" data-app-kaart><div class="rij-kop"><h2>Aanvullend: zes metingen</h2><span class="zacht" data-dekking="' + b.dekking + '">' + telTekst(b) + '</span></div><p class="zacht">Geen NAIC-regels; telt niet mee in het NAIC-oordeel.</p>' + kop + stippen(b) +
+    var kop = b.oordeel ? '<b class="groot-oordeel" data-app data-oordeel="' + b.oordeel + '">' + GEZOND[b.oordeel] + '</b>' : '<b class="groot-oordeel" data-app data-oordeel="geen">Te weinig metingen</b>';
+    var waarom = b.oordeel ? 'Gemiddelde van ' + telTekst(b) + ': ' + String(b.score).replace('.', ',') + ' (Gezond vanaf +0,5; Zwak vanaf −0,25).' : 'Er zijn ' + telTekst(b) + ' beschikbaar; voor een uitkomst zijn er minstens ' + Math.min(b.minMetingen, b.mogelijk) + ' nodig.';
+    var s = '<div data-signaal>' + naicKaart(rec, b) + '<div class="kaart-plat aanvullend detail" data-app-kaart><div class="rij-kop"><h2>Gezondheidscheck: zes metingen</h2><span class="zacht" data-dekking="' + b.dekking + '">' + telTekst(b) + '</span></div><p class="zacht">Hoe staat het bedrijf ervoor? Geen koopadvies en geen NAIC-regels: een gezond bedrijf kan te duur zijn. Telt niet mee in het NAIC-oordeel.</p>' + kop + stippen(b) +
       '<p class="zacht">' + h(waarom) + '</p><ul class="methoden" data-metingen>' + b.metingen.map(function (m) { return metingRegel(m, b); }).join('') + '</ul>';
     b.verouderd.forEach(function (t) { s += '<p class="zacht" data-verouderd>⚠ ' + h(t) + '</p>'; });
     s += '</div><div class="detail"><h3 class="tussenkop">Ter informatie <span class="zacht">(telt niet mee)</span></h3>';
@@ -130,7 +131,7 @@
       : '<span class="chip naic leeg" data-naic="geen"><span class="chip-pre">NAIC</span> –</span>';
   }
   function appChip(b) {
-    return '<span class="chip oordeel app detail' + (b.oordeel ? '' : ' leeg') + '" data-oordeel="' + (b.oordeel || 'geen') + '"><span class="chip-pre">App</span> ' + (b.oordeel ? OORDEEL[b.oordeel] : '–') + '</span>';
+    return '<span class="chip oordeel app detail' + (b.oordeel ? '' : ' leeg') + '" data-oordeel="' + (b.oordeel || 'geen') + '"><span class="chip-pre">Check</span> ' + (b.oordeel ? GEZOND[b.oordeel] : '–') + '</span>';
   }
   function koopKort(b) {
     var kp = b.naic && b.naic.koopprijs;
@@ -197,12 +198,21 @@
       '<div class="schuif"><table class="vgl"><thead><tr><th>Oordeel</th><th>1 jaar</th><th>3 jaar</th><th>Aantal</th></tr></thead><tbody>' + rij('kopen') + rij('neutraal') + rij('vermijden') + '</tbody></table></div>' +
       '<p class="zacht">In deze periode deed Kopen het niet beter dan gemiddeld: na 1 jaar ' + tk(T.kopen.j1) + ' (mediaan ' + tk(T.kopen.mediaan1) + ', ' + T.kopen.beter1 + '% deed het beter), na 3 jaar ongeveer gelijk. De verschillen tussen de oordelen zijn klein en kunnen toeval zijn; 2018–2025 was een periode waarin vooral dure groeiaandelen stegen, waar de NAIC-methode juist voorzichtig mee is. Alleen fondsen van nu, jaarcijfers zoals nu bekend, geen kosten. Geen voorspelling.</p></details>';
   }
+  /* Gezondheidscheck bij het NAIC-oordeel: de ongunstige metingen als aandachtspunt (bijv. goedkoop volgens NAIC, maar hoge schuld). */
+  function aandachtHtml(b) {
+    var ms = (b.metingen || []).filter(function (m) { return m.aanwezig && !m.nvt; });
+    if (!ms.length) return '';
+    var slecht = ms.filter(function (m) { return m.oordeel === 'ongunstig'; });
+    var kop = '<b>Gezondheidscheck' + (b.oordeel ? ': ' + GEZOND[b.oordeel] : '') + '</b> <span class="zacht">(' + telTekst(b) + ')</span>';
+    if (!slecht.length) return '<div class="aandacht ok" data-aandacht="0">' + kop + '<br><span class="zacht">Geen aandachtspunten in kasstroom, schuld, groei, K/W, trend en koersrust.</span></div>';
+    return '<div class="aandacht" data-aandacht="' + slecht.length + '">' + kop + '<ul>' + slecht.map(function (m) { return '<li><b>Let op: ' + h(m.kort) + '</b> – ' + h(m.tekst) + '</li>'; }).join('') + '</ul></div>';
+  }
   function naicKaart(rec, b) {
     var n = b.naic;
     if (!n) return '';
     var kop = n.oordeel ? '<b class="groot-oordeel" data-oordeel="' + n.oordeel + '">' + OORDEEL[n.oordeel] + '</b>' : '<b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b>';
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>Oordeel</h2><span class="zacht">NAIC Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
-    s += ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n) + versHtml(rec, b);
+    s += aandachtHtml(b) + ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n) + versHtml(rec, b);
     if (n.oordeel) s += terugBlok(n.oordeel);
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
@@ -232,8 +242,7 @@
       '<div class="knoppen"><a class="knop rand klein" href="#/a/' + encodeURIComponent(rec.ticker) + '/waarde">Naar het tabblad NAIC</a></div></div>';
     return s;
   }
-  function kansMethode() { try { var v = localStorage.getItem('as_kansrijk'); return v === 'app' || v === 'beide' ? v : 'naic'; } catch (e) { return 'naic'; } }
-  function zetKansMethode(v) { try { localStorage.setItem('as_kansrijk', v); } catch (e) { /* standaard blijft */ } }
+  function kansMethode() { return 'naic'; }      // sinds 1.2.2 alleen NAIC; de zes metingen zijn een gezondheidscheck
   function naicRang(b) { var n = b.naic; if (!n || !n.oordeel) return null; var k = { kopen: 3, neutraal: 2, vermijden: 1 }[n.oordeel], z = n.zones; return k + (z && z.verhouding !== null ? Math.min(z.verhouding, 50) / 100 : z && z.zone === 'onder' ? 0.5 : 0); }
   function kandidatenVolgens(lijst, m, max) {
     if (m === 'app') return Signaal.kandidaten(lijst, max);
@@ -244,11 +253,9 @@
   function kansrijkHtml() {
     var lijst = DATA.aandelen.map(function (rec) { return signaalVoor(rec); }), m = kansMethode(), top = kandidatenVolgens(lijst, m, 5);
     var meer = kandidatenVolgens(lijst, m, 9999).length;
-    var keuze = '<div class="regels" role="group" aria-label="Kansrijk volgens" data-kans-keuze>' + ['naic', 'app', 'beide'].map(function (k) {
-      return '<button type="button" class="chip-knop" data-kans="' + k + '" aria-pressed="' + (k === m) + '">' + KANS_NAAM[k] + '</button>'; }).join('') + '</div>';
     var wat = { app: 'Kopen volgens de aanvullende zes metingen (geen NAIC).', naic: 'Oordeel Kopen volgens NAIC (koopzone, minstens 3 : 1 en ' + Naic.TOTAAL_MIN + '% per jaar).', beide: 'Kopen volgens de app én volgens NAIC.' }[m];
     var naarFondsen = '<div class="knoppen"><a class="knop rand klein" href="#/fondsen" data-naar-fondsen>Alle fondsen per index, op kansrijkheid</a></div>';
-    var kop = '<div class="rij-kop"><h3>Beste kansen</h3><a class="link" href="#/fondsen">Alle fondsen</a></div>' + keuze + '<p class="zacht">' + wat + '</p>';
+    var kop = '<div class="rij-kop"><h3>Beste kansen</h3><a class="link" href="#/fondsen">Alle fondsen</a></div><p class="zacht">' + wat + ' Bij elk fonds ook de gezondheidscheck.</p>';
     if (!top.length) return kop + '<div class="kaart-plat" data-kansrijk><p>Nu voldoet geen aandeel hieraan.</p></div>' + naarFondsen;
     return kop + '<div class="lijst" data-kansrijk>' + top.map(function (b) {
       var rec = zoek(b.ticker);
@@ -257,7 +264,7 @@
   }
   function kansKoppel() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-kans]'), function (bt) {
-      bt.addEventListener('click', function () { zetKansMethode(bt.getAttribute('data-kans')); route(); });
+      bt.addEventListener('click', function () { route(); });
     });
   }
   /* Overzicht over alle fondsen: per meting hoeveel fondsen het gegeven hebben, en waarom het ontbreekt. */
@@ -268,7 +275,7 @@
       a.b.metingen.forEach(function (m, i) { if (m.nvt) return; per[i].kan++; if (m.aanwezig) per[i].aan++; else { var r = String(m.reden).replace(/ in \d{4} /, ' in een jaar '); per[i].red[r] = (per[i].red[r] || 0) + 1; } });
     });
     return '<details class="uitleg" data-dataset><summary>Welke gegevens zijn er, en wat ontbreekt?</summary>' +
-      '<p>Van de ' + items.length + ' fondsen hebben er ' + (items.length - oo.geen) + ' een oordeel: ' + oo.kopen + '× Kopen, ' + oo.neutraal + '× Neutraal, ' + oo.vermijden + '× Vermijden. Bij ' + oo.geen + ' zijn er te weinig metingen.</p>' +
+      '<p>Gezondheidscheck: van de ' + items.length + ' fondsen zijn er ' + oo.kopen + ' Gezond, ' + oo.neutraal + ' Gemengd en ' + oo.vermijden + ' Zwak. Bij ' + oo.geen + ' zijn er te weinig metingen.</p>' +
       (function () {
         var nk = { kopen: 0, neutraal: 0, vermijden: 0 }, red = {}, geen = 0;
         items.forEach(function (a) { var n = a.b.naic; if (n && n.oordeel) nk[n.oordeel]++; else { geen++; var r = String(n && n.reden || 'Geen gegevens.').replace(/\d{4}/g, 'een jaar'); red[r] = (red[r] || 0) + 1; } });
@@ -617,7 +624,7 @@
   var fondsKeuze = { zoek: '', index: '', weergave: 'index', sorteer: 'naicRang', alleenBevestigd: false, zekerheid: '' };
   var ZEKERHEID = [['', 'Alle zekerheid'], ['officieel', 'Officiële cijfers (bevestigd of jaarverslag)'], ['bevestigd', 'Alleen bevestigd'], ['tweebronnen', 'Minstens twee bronnen eens'], ['indicatief', 'Alleen indicatief']];
   function zekerOk(lab, z) { return !z || (z === 'officieel' ? lab === 'bevestigd' || lab === 'jaarverslag' : z === 'tweebronnen' ? lab !== 'indicatief' && lab !== 'geen' : z === 'indicatief' ? lab === 'indicatief' || lab === 'tweebronnen' : lab === z); }
-  var FONDS_SORT_NAAM = { naicRang: 'NAIC-oordeel (Kopen eerst)', koopAfstand: 'Afstand tot koopprijs (dichtst eerst)', kansrijk: 'Zes metingen (Kopen eerst)', naam: 'Naam (A–Z)', positiePct: 'Plek in koersbereik (laag eerst)', afstandPct: 'Afstand tot gemiddelde (laag eerst)',
+  var FONDS_SORT_NAAM = { naicRang: 'NAIC-oordeel (Kopen eerst)', koopAfstand: 'Afstand tot koopprijs (dichtst eerst)', kansrijk: 'Gezondheidscheck (Gezond eerst)', naam: 'Naam (A–Z)', positiePct: 'Plek in koersbereik (laag eerst)', afstandPct: 'Afstand tot gemiddelde (laag eerst)',
     epsgroei: 'Winstgroei p.j. (hoog eerst)', omzetgroei: 'Omzetgroei p.j. (hoog eerst)', nettomarge: 'Nettomarge (hoog eerst)', verhouding: 'Opwaarts tegen neerwaarts (hoog eerst)' };
   function schermFondsen() {
     var k = fondsKeuze;
@@ -1333,7 +1340,7 @@
       '<div class="kaart-plat"><h2>Uiterlijk</h2><div class="keuze" role="group" aria-label="Licht of donker">' + [['auto', 'Automatisch'], ['licht', 'Licht'], ['donker', 'Donker']].map(function (o) { return '<button data-th="' + o[0] + '" aria-pressed="' + (th === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></div>' +
       '<div class="kaart-plat" data-weergave-kaart><h2>Weergave</h2><div class="keuze" role="group" aria-label="Weergave">' + [['eenvoudig', 'Eenvoudig'], ['uitgebreid', 'Uitgebreid']].map(function (o) { return '<button data-weergave-knop="' + o[0] + '" aria-pressed="' + (weergave() === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div>' +
       '<p class="zacht">Eenvoudig: per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg. Uitgebreid: ook de onderbouwing, de zes aanvullende metingen en alle kentallen. Tip: met <code>?weergave=eenvoudig</code> achter de link opent iemand anders de app meteen eenvoudig.</p></div>' +
-      '<div class="kaart-plat detail"><h2>Oordeel</h2><p class="zacht">Een aandeel krijgt pas een oordeel (Kopen, Neutraal of Vermijden) als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn.</p><label for="mind">Minimum aantal metingen voor een oordeel</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
+      '<div class="kaart-plat detail"><h2>Gezondheidscheck</h2><p class="zacht">De gezondheidscheck (Gezond, Gemengd of Zwak) verschijnt pas als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn. Het NAIC-oordeel heeft eigen eisen.</p><label for="mind">Minimum aantal metingen voor de gezondheidscheck</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
       backupKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';

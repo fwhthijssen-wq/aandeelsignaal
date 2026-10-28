@@ -16,11 +16,11 @@
       'De chip bij elk aandeel toont hoe zeker de gegevens zijn: Bevestigd, Uit jaarverslag of Niet bevestigd.'], null],
     zoek: ['Fondsen', 'Alle aandelen, per index gegroepeerd.', [
       'Per index staan de vijf meest kansrijke bovenaan; met “Alle tonen” ziet u de rest. Kies “Eén lijst” om alle fondsen samen te rangschikken.',
-      'Standaard staat NAIC Kopen bovenaan, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts. Sorteer op “Zes metingen” voor het aanvullende oordeel.',
+      'Standaard staat NAIC Kopen bovenaan, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts. Sorteer op “Gezondheidscheck” om de gezondste bedrijven eerst te zien.',
       'U kunt ook sorteren op afstand tot de koopprijs, plek in het koersbereik, winstgroei, omzetgroei of marge, en zoeken op naam of beurscode.',
-      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Per fonds staat eerst het NAIC-oordeel, daarna het aanvullende oordeel van de zes metingen (App).'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],
+      'Een aandeel dat in twee indices zit, staat in beide groepen.', 'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.', 'Per fonds staat eerst het NAIC-oordeel, daarna de gezondheidscheck van de zes metingen (Check: Gezond, Gemengd of Zwak).'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],
     volglijst: ['Mijn volglijst', 'Aandelen die u wilt volgen om te zien of ze echt potentie hebben.', [
-      'Bij het volgen legt de app het oordeel (NAIC en de zes metingen) en de koers van dat moment vast.',
+      'Bij het volgen legt de app het NAIC-oordeel, de gezondheidscheck en de koers van dat moment vast.',
       'Op de lijst ziet u wat de koers sindsdien deed, hoe het oordeel toen en nu is, en of het aandeel nu in de koop- of verkoopzone staat.',
       'Zo kunt u beoordelen of een kandidaat zijn belofte waarmaakt voordat u iets koopt.',
       'Met “Dichtst bij koopprijs” staan de aandelen bovenaan die het dichtst bij een NAIC-koop zitten: zo werkt de volglijst als wachtlijst.',
@@ -36,7 +36,7 @@
       'De app wijst geen winnaar aan; het is een hulpmiddel om te kiezen.'], null],
     instellingen: ['Instellingen en back-up', 'Hier regelt u uiterlijk, het minimum voor een oordeel en uw back-up.', [
       'Back-up: uw volglijst, portefeuille en eigen beoordelingen staan alleen op dit toestel. Maak een back-up en bewaar het bestand; met Terugzetten haalt u alles weer terug.',
-      'Minimum aantal metingen: het aanvullende oordeel van de zes metingen verschijnt pas als er minstens zoveel beschikbaar zijn (standaard 4). Hoger is strenger. Het NAIC-oordeel heeft eigen eisen.',
+      'Minimum aantal metingen: de gezondheidscheck (Gezond, Gemengd of Zwak) verschijnt pas als er minstens zoveel beschikbaar zijn (standaard 4). Hoger is strenger. Het NAIC-oordeel heeft eigen eisen.',
       'Uiterlijk: licht, donker of automatisch.',
       'Weergave: Eenvoudig toont per aandeel alleen het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg; Uitgebreid toont alles. Met ?weergave=eenvoudig achter de link opent iemand anders de app meteen eenvoudig.',
       'Onderaan ziet u het versienummer van de app.'], null],
@@ -46,7 +46,7 @@
       'Via de rondleiding ziet u de basis nog eens.'], null],
     samenvatting: ['Aandeel: Overzicht', 'De samenvatting van één aandeel.', [
       'Over het bedrijf: een korte beschrijving, de sector en vaste gegevens uit Wikipedia en Wikidata.',
-      'Daaronder, aanvullend, de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt. Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo of aangeleverd) of uw eigen invoer. Tik op een meting voor uitleg.',
+      'Bij het NAIC-oordeel staan de aandachtspunten uit de gezondheidscheck (ongunstige metingen, bijv. hoge schuld). Daaronder de gezondheidscheck zelf, met de zes metingen: per meting de waarde en de bron, of waarom ze ontbreekt. Bij elk cijfer staat de bron: gecontroleerd, uit jaarverslag (met boekjaar), koersdata (met datum), indicatief (Yahoo of aangeleverd) of uw eigen invoer. Tik op een meting voor uitleg.',
       'Bovenaan het oordeel volgens NAIC: groei, de kwaliteitstoetsen, gemiddelde K/W, de verwachte hoge en lage koers over 5 jaar, de zones, het verwachte rendement en (ter informatie) de relatieve waarde. Daarbij de vijf NAIC-stappen als vinkjes, de koopprijs (“Kopen onder …”) en of het oordeel stevig is of op het randje staat. Hier vult u ook uw eigen groeiverwachting in.', 'Ter informatie (telt niet mee): andere kentallen per onderwerp, uw eigen oordeel en het advies van analisten (Yahoo Finance).',
       'Eronder ziet u of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'Met de ster volgt u het aandeel.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
