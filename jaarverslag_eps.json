@@ -555,11 +555,11 @@
     "vorig_jaar": 2024,
     "eps_vorig": 1.45,
     "pagina": 302,
-    "bewijs": "Diluted earnings per share (€) [6] 1.81 1.45",
+    "bewijs": "Verwässertes Ergebnis je Aktie (€) [6] 1,81 1,45",
     "kandidaten": 1,
-    "url": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf",
-    "sha256": "6fa0a9f60a3149e585a5b52f06efde1e0aaa5d1156da0d71a1fd40822df7f8b7",
-    "bestand": "2025"
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2025-EQ-D-01.pdf",
+    "sha256": "14b43723daa94e1cdf3a1e3acda924271a5db933bcff6f3c78ff91b1180ed13b",
+    "bestand": "2025-eqs"
    }
   },
   "niet_gelezen": {},
@@ -3444,7 +3444,8 @@
    "2021": 4.09,
    "2022": 6.06,
    "2023": -1.9,
-   "2024": 11.53
+   "2024": 11.53,
+   "2025": 18.49
   },
   "verslagen": {
    "2015": {
@@ -3618,6 +3619,18 @@
     "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2024-EQ-E-00.pdf",
     "sha256": "0a911c5eaf5ba54c0e41ec53a2ab6928e9bf10bad364706845944d00abe7e744",
     "bestand": "2024-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": 18.49,
+    "vorig_jaar": 2024,
+    "eps_vorig": 11.53,
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share 18.49 11.53 60.3",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2025-EQ-E-01.pdf",
+    "sha256": "52edb9448b6bfa5afc67c915f5504ae68e5c80cc5cffa42fe202cb10c6a1ea83",
+    "bestand": "2025-eqs"
    }
   },
   "niet_gelezen": {},
