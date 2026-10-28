@@ -1,4 +1,90 @@
 {
+ "ADS.DE": {
+  "2014-eqs": {
+   "bron": "EQS",
+   "bytes": 3530198,
+   "sha256": "174480808785128d4c625653348f349d8ab6c7762409fa8557ae12b8620ee79c",
+   "tekens": 1237996,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2014-EQ-E-00.pdf"
+  },
+  "2015-eqs": {
+   "bron": "EQS",
+   "bytes": 3239333,
+   "sha256": "38d7879bc99d33cc6a449a3637a0f55e95ca31a2b62e0dcf7cb870c95b509cd7",
+   "tekens": 1128585,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2015-EQ-E-00.pdf"
+  },
+  "2016-eqs": {
+   "bron": "EQS",
+   "bytes": 3586641,
+   "sha256": "fa8884f730f7368a06db7bfb5fa415dd267b124223838f811349e721056f0f9b",
+   "tekens": 1195078,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2016-EQ-E-00.pdf"
+  },
+  "2017-eqs": {
+   "bron": "EQS",
+   "bytes": 8771366,
+   "sha256": "f2f30ef67d4bb8832dff7d8542e8481b59532cfa7b00fce04d9b0651b436bc6f",
+   "tekens": 1895764,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2017-EQ-E-00.pdf"
+  },
+  "2018-eqs": {
+   "bron": "EQS",
+   "bytes": 8289378,
+   "sha256": "71971196d772a3673a6e7c1b6e7645778f6e689a737bf2cb8691c764f24f7e2a",
+   "tekens": 1923588,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2018-EQ-E-00.pdf"
+  },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 9586930,
+   "sha256": "1e5d7c166c104d3e650d07f39981c8b766c7adef7774e1358ace066bf9839a7d",
+   "tekens": 1827222,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2019-EQ-E-00.pdf"
+  },
+  "2020-eqs": {
+   "bron": "EQS",
+   "bytes": 8214215,
+   "sha256": "a3ef12aa146c51f250009c2bc74902795a2006ad1551994505c667c9adbfc140",
+   "tekens": 1209494,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2020-EQ-E-00.pdf"
+  },
+  "2021-eqs": {
+   "bron": "EQS",
+   "bytes": 5822980,
+   "sha256": "0b92db1af4ec0407cae1a1d70ddeccda810890ff91a1ad20bd8246bd67421d88",
+   "tekens": 1338458,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2021-EQ-E-00.pdf"
+  },
+  "2022-eqs": {
+   "bron": "EQS",
+   "bytes": 11842119,
+   "sha256": "ab7baf37599c99ac463a2ee57c4e191b41677e170054ca2129b9903f69081431",
+   "tekens": 1238912,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2022-EQ-E-00.pdf"
+  },
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 21012593,
+   "sha256": "13495a5d0c6597a6d7785312bff6f6c0db95672010ba4337480ae11c85c17d7b",
+   "tekens": 1254450,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2023-EQ-E-01.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 18714779,
+   "sha256": "83de7a89e459274658182ee6b3b48f96f8350ea058953687abac7130a54fca56",
+   "tekens": 2052286,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2024-EQ-E-00.pdf"
+  },
+  "2025-eqs": {
+   "bron": "EQS",
+   "bytes": 38719297,
+   "sha256": "9703900a0e36ce5b124b4a2fcfe1b5bd36da421d52a0f11a19e090b024bf3e90",
+   "tekens": 1752427,
+   "url": "https://irpages2.eqs.com/Download/Companies/adidas-salomon/Annual Reports/DE000A1EWWW0-JA-2025-EQ-E-00.pdf"
+  }
+ },
  "ALV.DE": {
   "2015-eqs": {
    "bron": "EQS",
@@ -731,6 +817,29 @@
    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2025-EQ-E-00.pdf"
   }
  },
+ "DHL.DE": {
+  "2023": {
+   "bron": "beleggerssite",
+   "bytes": 8074543,
+   "sha256": "7a1c8763c2468001c9adb993eee603f2fe9c6ec0ed09d13b5056f84ae6204564",
+   "tekens": 967664,
+   "url": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-center/investors/documents/annual-reports/DHL-Group-2023-Annual-Report.pdf"
+  },
+  "2024": {
+   "bron": "beleggerssite",
+   "bytes": 6246324,
+   "sha256": "306003ec97f74dcb3a01ed681c400ab9e72f128baa4355acceb5f1836f009cf1",
+   "tekens": 1129201,
+   "url": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-center/investors/documents/annual-reports/DHL-Group-2024-Annual-Report.pdf"
+  },
+  "2025": {
+   "bron": "beleggerssite",
+   "bytes": 9055157,
+   "sha256": "29722e681339ab624fbe1088d08a56824dd2dbea2d8fc93fc2ae00ff35b9c4f1",
+   "tekens": 1230728,
+   "url": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-center/investors/documents/annual-reports/DHL-Group-2025-Annual-Report.pdf"
+  }
+ },
  "DTE.DE": {
   "2015-eqs": {
    "bron": "EQS",
@@ -801,6 +910,29 @@
    "sha256": "e7cb002dc8e4b1f6b59f7afce5fe46fd706962cc0caddae11524707c92b9d411",
    "tekens": 2200667,
    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2025-EQ-E-00.pdf"
+  }
+ },
+ "DTG.DE": {
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 12839786,
+   "sha256": "668ace8488e962e46acd187f6eb60343392b1318151aaf0e5fd8886a0fb93287",
+   "tekens": 2016138,
+   "url": "https://irpages2.eqs.com/Download/Companies/58610a/Annual Reports/DE000DTR0CK8-JA-2023-EQ-E-01.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 7087272,
+   "sha256": "0a36ffa93818d6ba3c276a23d89e1c7f70eef6426b897116461bd0ce7463b1ec",
+   "tekens": 1946043,
+   "url": "https://irpages2.eqs.com/Download/Companies/58610a/Annual Reports/DE000DTR0CK8-JA-2024-EQ-E-00.pdf"
+  },
+  "2025-eqs": {
+   "bron": "EQS",
+   "bytes": 10458532,
+   "sha256": "77b4a595c6f4abdae664392d095647f6c58374e8839b846df75d647b78f34ae6",
+   "tekens": 1967830,
+   "url": "https://irpages2.eqs.com/Download/Companies/58610a/Annual Reports/DE000DTR0CK8-JA-2025-EQ-E-00.pdf"
   }
  },
  "EOAN.DE": {
@@ -1228,6 +1360,92 @@
    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2025-EQ-E-00.pdf"
   }
  },
+ "HNR1.DE": {
+  "2014-eqs": {
+   "bron": "EQS",
+   "bytes": 5094968,
+   "sha256": "a184342b42f5562d0850a93cc2c86f5353f91fe834ede56790e4113942f52a43",
+   "tekens": 1182964,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2014-EQ-E-00.pdf"
+  },
+  "2015-eqs": {
+   "bron": "EQS",
+   "bytes": 3898803,
+   "sha256": "497b5046a1dbc61c68d53ef10b2fc709f4f56b3b21a62477f1908917582500c5",
+   "tekens": 1174330,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2015-EQ-E-00.pdf"
+  },
+  "2016-eqs": {
+   "bron": "EQS",
+   "bytes": 3054044,
+   "sha256": "c9c994f7e40149e1f388a1bd1075e7b601c67e84d6fa94d8e69b1edaf79b0304",
+   "tekens": 1207718,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2016-EQ-E-00.pdf"
+  },
+  "2017-eqs": {
+   "bron": "EQS",
+   "bytes": 3524141,
+   "sha256": "bae4aed34a6a7d7453d8ddee433ebf69cabd3e075b0e83cefb34acb846ae62ad",
+   "tekens": 1296998,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2017-EQ-E-00.pdf"
+  },
+  "2018-eqs": {
+   "bron": "EQS",
+   "bytes": 5611756,
+   "sha256": "1edcb1c193ccca0821c4c4278dd5ce6183cd39f57b7b2852829c6f6fdfd6aea7",
+   "tekens": 1391418,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2018-EQ-E-00.pdf"
+  },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 3905274,
+   "sha256": "09c33df5a08b8d6528a0d1f3aca9b96cfe7f17b95f4326fdca18750176a15945",
+   "tekens": 1395514,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2019-EQ-E-01.pdf"
+  },
+  "2020-eqs": {
+   "bron": "EQS",
+   "bytes": 6227539,
+   "sha256": "4e84b06d2eb30e65c0dd06386b24c7f556c2ab660ca1f895242ea08fa053bc25",
+   "tekens": 1379204,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2020-EQ-E-00.pdf"
+  },
+  "2021-eqs": {
+   "bron": "EQS",
+   "bytes": 5476800,
+   "sha256": "04987ece6c028aaeb748c994a3df8ac6ccaeb062c91c36d322d53741b32a4589",
+   "tekens": 1430167,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2021-EQ-E-00.pdf"
+  },
+  "2022-eqs": {
+   "bron": "EQS",
+   "bytes": 4093192,
+   "sha256": "baedaaf7b80882d919eeb488331591f05c52fc04ee5e6a3a07b6145f607333d1",
+   "tekens": 1438656,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2022-EQ-E-00.pdf"
+  },
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 641730,
+   "sha256": "80c24e4e8b5a959d7088f595084352c5a863d8bd432b8f192dad5bde042dbd68",
+   "tekens": 201773,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2023-EQ-E-00.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 1725110,
+   "sha256": "95a38e229ea067cd87c18699930dce72e4ba5e878d22b06195ee757fb080b419",
+   "tekens": 1849086,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2024-EQ-E-00.pdf"
+  },
+  "2025-eqs": {
+   "bron": "EQS",
+   "bytes": 4871937,
+   "sha256": "522021a341a96eef75246cb22408fd95a5fbda7a67b7fc7361d710fae2aa9958",
+   "tekens": 1796621,
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2025-EQ-E-00.pdf"
+  }
+ },
  "IFX.DE": {
   "2015-eqs": {
    "bron": "EQS",
@@ -1551,6 +1769,85 @@
    "sha256": "b74a8ca39c9a34005965d631cea4794887aea8e52f614e54c765c7bdabb838ba",
    "tekens": 2226934,
    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2025-EQ-E-00.pdf"
+  }
+ },
+ "RHM.DE": {
+  "2014-eqs": {
+   "bron": "EQS",
+   "bytes": 5741194,
+   "sha256": "9a069ba925d0b1a7db6e4e99176dc8bb75337eea0845176f56ba59d41c402207",
+   "tekens": 739744,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2014-EQ-E-00.pdf"
+  },
+  "2016-eqs": {
+   "bron": "EQS",
+   "bytes": 3689246,
+   "sha256": "7dc73178982250c24c7602a00ca20395087c80b1adb2ebaf47241e54ded32420",
+   "tekens": 679818,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2016-EQ-E-00.pdf"
+  },
+  "2017-eqs": {
+   "bron": "EQS",
+   "bytes": 3521385,
+   "sha256": "8a520d7d30286168387310f2ebc7a81b6079be735e8a6b02ca7795f1c030477e",
+   "tekens": 803275,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2017-EQ-E-01.pdf"
+  },
+  "2018-eqs": {
+   "bron": "EQS",
+   "bytes": 7274755,
+   "sha256": "0f344b6a9c70feeffc059dc7434308fe8c75ab1ef59ad03d20102866f08179c1",
+   "tekens": 810398,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2018-EQ-E-00.pdf"
+  },
+  "2019-eqs": {
+   "bron": "EQS",
+   "bytes": 5319898,
+   "sha256": "f0ff869b445284bb7b0d3ff73ce7b84a7f6ea4864263beb33911a32ca2fc0013",
+   "tekens": 881021,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2019-EQ-E-01.pdf"
+  },
+  "2020-eqs": {
+   "bron": "EQS",
+   "bytes": 7400373,
+   "sha256": "530e5bf4f6a580e63ad4b7c4a4f13bec0bef0bd79e2629241902cd3c6827cbb9",
+   "tekens": 981895,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2020-EQ-E-00.pdf"
+  },
+  "2021-eqs": {
+   "bron": "EQS",
+   "bytes": 7101398,
+   "sha256": "8a089024e4de93e531dffc6c87689a1dc421b21e563855b9ffcb2907770b4870",
+   "tekens": 1158678,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2021-EQ-E-00.pdf"
+  },
+  "2022-eqs": {
+   "bron": "EQS",
+   "bytes": 6928564,
+   "sha256": "906c0b013c1702a3816a7e4d2cd04663a279b44e2b3856087af88883a0a76c96",
+   "tekens": 1237024,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2022-EQ-E-00.pdf"
+  },
+  "2023-eqs": {
+   "bron": "EQS",
+   "bytes": 10243496,
+   "sha256": "7fb42a4f60d291c98c3e62a134d56a1878187f41a71892c158f8eaa9720ec216",
+   "tekens": 1274021,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2023-EQ-E-00.pdf"
+  },
+  "2024-eqs": {
+   "bron": "EQS",
+   "bytes": 8733662,
+   "sha256": "ffa79d5955ceb4c26d0a04afe9a782507493834a1bb46ea0aa3b8fa83e51bb53",
+   "tekens": 1713056,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2024-EQ-E-00.pdf"
+  },
+  "2025-eqs": {
+   "bron": "EQS",
+   "bytes": 13487603,
+   "sha256": "54fb4baddd582a0a7f825571f7a4de6fc0435dc1681dafb0bfc691fe79cffd3e",
+   "tekens": 2530336,
+   "url": "https://irpages2.eqs.com/Download/Companies/rheinmetall/Annual Reports/DE0007030009-JA-2025-EQ-E-01.pdf"
   }
  },
  "RWE.DE": {
