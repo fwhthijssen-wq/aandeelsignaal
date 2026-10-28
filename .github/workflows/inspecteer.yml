@@ -46,6 +46,20 @@ jobs:
                       mis = [f"{j['year']}:{j.get('comparable_eps')}x?={j.get('net_income')}" for j in jr if not j.get('eps_narekening')]
                       print(a['ticker'], 'nagerekend', pn.get('jaren', 0), 'van', len(jr), 'bevestigd' if pn.get('bevestigd') else '', 'mist:', ' '.join(mis)[:600])
               raise SystemExit
+          if want == ['GEVERIFIEERD']:
+              import collections
+              c = collections.Counter(); per = collections.defaultdict(list)
+              for a in d['aandelen']:
+                  g = a.get('gegevens') or {}
+                  if g.get('bron') != 'ESEF':
+                      continue
+                  n = g.get('eps_verified_years') or 0 if g.get('eps_status') in ('independently_verified', 'partially_independently_verified') else 0
+                  jr = [j['year'] for j in g.get('jaren') or [] if isinstance(j.get('comparable_eps'), (int, float))]
+                  c[n] += 1; per[n].append(f"{a['ticker']}({min(jr) if jr else '-'})")
+              print(sorted(c.items()))
+              for n in sorted(per, reverse=True):
+                  print(n, ' '.join(per[n]))
+              raise SystemExit
           if want == ['ESEFJV']:
               lijst = []
               for a in d['aandelen']:
