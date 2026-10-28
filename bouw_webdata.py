@@ -656,6 +656,7 @@ def adr_toe(g, ticker):
 
 
 JAARVERSLAG_AANDELEN = HERE / 'jaarverslag_aandelen.json'   # kandidaten voor het gemiddeld aantal aandelen uit de pdf's (hulp/de_narekenen.py)
+ESEF_AANDELEN = HERE / 'esef_aandelen.json'                 # idem uit de tekst van ESEF-jaarverslagen (hulp/esef_aandelen.py)
 
 
 def reken_pdf_eps_na(g, ticker, register=None):
@@ -673,10 +674,12 @@ def reken_pdf_eps_na(g, ticker, register=None):
     for j in (g.get('jaren') or []) if isinstance(g, dict) else []:
         j.pop('eps_narekening', None)
     if register is None:
-        try:
-            register = json.loads(JAARVERSLAG_AANDELEN.read_text(encoding='utf-8'))
-        except (OSError, ValueError):
-            register = {}
+        register = {}
+        for pad in (JAARVERSLAG_AANDELEN, ESEF_AANDELEN):      # Duitse pdf's en ESEF-teksten (andere fondsen, dus geen overlap)
+            try:
+                register.update(json.loads(pad.read_text(encoding='utf-8')))
+            except (OSError, ValueError):
+                pass
     reg = register.get(ticker) or {}
     if not reg or not g.get('jaren'):
         return
