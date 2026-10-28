@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   bouw:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -98,7 +98,7 @@ jobs:
           path: web
   publiceer:
     needs: bouw
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
