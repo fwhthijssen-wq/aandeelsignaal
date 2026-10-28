@@ -55,6 +55,7 @@
   "isin": "DE000A1EWWW0",
   "slug": "adidas",
   "slugs": [
+   "adidas-salomon",
    "adidas",
    "adidas-group",
    "adidas-ag"
@@ -125,6 +126,7 @@
   "isin": "DE000DTR0CK8",
   "slug": "daimlertruck",
   "slugs": [
+   "58610a",
    "daimlertruck",
    "daimler-truck",
    "daimler-truck-holding"
@@ -155,7 +157,8 @@
    "dhl-group",
    "deutsche-post-dhl"
   ],
-  "urls": {}
+  "urls": {},
+  "patroon": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-center/investors/documents/annual-reports/DHL-Group-{jaar}-Annual-Report.pdf"
  },
  "DTE.DE": {
   "naam": "Deutsche Telekom AG",
@@ -214,6 +217,7 @@
   "isin": "DE0008402215",
   "slug": "hannoverre",
   "slugs": [
+   "hannoverrueck",
    "hannoverre",
    "hannover-rueck",
    "hannover_rueck",

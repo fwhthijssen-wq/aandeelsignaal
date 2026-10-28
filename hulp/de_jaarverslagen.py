@@ -7,7 +7,7 @@ from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
 UA = {'User-Agent': 'Mozilla/5.0 (compatible; AandeelSignaal/1.0; +https://github.com/fwhthijssen-wq/aandeelsignaal)'}
-EQS_HOSTS = ('https://irpages2.eqs.com/Download/Companies', 'https://www.more-ir.de/download/companies')
+EQS_HOSTS = ('https://irpages2.eqs.com/Download/Companies', 'https://irpages2.eqs.com/download/companies', 'https://www.more-ir.de/download/companies')
 
 
 def haal(url):
