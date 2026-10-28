@@ -1,0 +1,33 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): kandidaten voor het gemiddeld aantal aandelen uit de tekst van
+# ESEF-jaarverslagen. Resultaat naar de tak jaarverslagen (debug/esef_aandelen.json). Raakt de app niet.
+name: ESEF aantal aandelen lezen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      bedrijven:
+        description: "tickers gescheiden door spaties"
+        required: true
+permissions:
+  contents: write
+jobs:
+  lezen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt lxml
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Lezen
+        run: mkdir -p jv/debug && python hulp/esef_aandelen.py jv/debug/esef_aandelen.json ${{ inputs.bedrijven }}
+      - name: Op tak jaarverslagen zetten
+        if: always()
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "ESEF aantal aandelen $(date -u +%F)" || echo "niets nieuw"
+          git pull -q --rebase "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen || true
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen

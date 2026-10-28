@@ -46,6 +46,16 @@ jobs:
                       mis = [f"{j['year']}:{j.get('comparable_eps')}x?={j.get('net_income')}" for j in jr if not j.get('eps_narekening')]
                       print(a['ticker'], 'nagerekend', pn.get('jaren', 0), 'van', len(jr), 'bevestigd' if pn.get('bevestigd') else '', 'mist:', ' '.join(mis)[:600])
               raise SystemExit
+          if want == ['ESEFJV']:
+              lijst = []
+              for a in d['aandelen']:
+                  g = a.get('gegevens') or {}
+                  if g.get('bron') == 'ESEF' and not (g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10):
+                      n = sum(1 for j in g.get('jaren') or [] if isinstance(j.get('comparable_eps'), (int, float)))
+                      ni = sum(1 for j in g.get('jaren') or [] if isinstance(j.get('net_income'), (int, float)) and 'net_income' not in (j.get('aangeleverd') or []))
+                      lijst.append(f"{a['ticker']}:{n}/{ni}")
+              print(len(lijst)); print(' '.join(lijst))
+              raise SystemExit
           if want == ['VALUTA']:
               for a in d['aandelen']:
                   jr = (a.get('gegevens') or {}).get('jaren') or []
