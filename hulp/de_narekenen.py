@@ -118,7 +118,28 @@ def winst_kandidaten(tekst):
                     v = x * ff
                     if 1e7 <= abs(v) <= 2e11:
                         uit.setdefault(round(v), ' '.join(w.split())[:160])
+    # daarnaast: tabelregels in het hele verslag die met een duidelijk winstlabel beginnen (winst-en-verliesrekening, kerncijfers)
+    for k, w in enumerate(regels):
+        st = w.strip()
+        lab = re.split(r'\s(?=[-–−(]?\d)', st, 1)[0]                # alleen het label toetsen (niet een %-kolom erachter)
+        if not STERK.match(st) or NIET_WINST.search(re.sub(r'attributable to .{0,40}?(shareholders|owners)', '', lab, flags=re.I)):
+            continue
+        f = schaal(w, regels[max(0, k - 60):k]) or 1e6        # zonder aanduiding: miljoenen (gebruikelijk in deze verslagen)
+        if f < 1e3:
+            continue
+        for x in getallen(w, komma)[:2]:
+            if x is None or (float(x).is_integer() and 1990 <= abs(x) <= 2035):
+                continue
+            v = x * f
+            if 1e7 <= abs(v) <= 2e11:
+                uit.setdefault(round(v), ' '.join(w.split())[:160])
     return [{'nettowinst': k, 'bewijs': v} for k, v in uit.items()]
+
+
+# Winstlabels vooraan een tabelregel: nettowinst toe te rekenen aan de aandeelhouders (niet: incl. minderheden).
+STERK = re.compile(r'(net\s+income(\s+attributable\s+to\s+(the\s+)?shareholders.*)?\s{2,}|'
+                   r'(net\s+)?(profit|income|earnings)\s+(after\s+tax(es)?\s+)?attributable\s+to\s+(the\s+)?([\w.&-]+\s+){0,3}(shareholders|owners|equity\s+holders)|'
+                   r'(konzern)?ergebnis\s+(nach\s+steuern\s+)?(der|den)\s+aktionären|anteil\s+der\s+aktionäre|auf\s+(die\s+)?aktionäre\s+\S+\s+entfallend)', re.I)
 
 
 def main():

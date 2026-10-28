@@ -14,57 +14,168 @@
    "2025": 27.67
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": null,
+    "alternatieven": [
+     [
+      14.55,
+      6.6,
+      2014
+     ],
+     [
+      14.55,
+      13.64,
+      2014
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Diluted earnings per share € 14.55 6.6 % 13.64 13.05 11.48 5.58 11.12 9.30 231",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2015-EQ-E-00.pdf",
+    "sha256": "a0da53436c0a5a3ef209622b1b35ec8e4fa226b3bbf46634e50c8fe15cf70160",
+    "bestand": "2015-eqs"
+   },
    "2016": {
-    "bewijs": "Verwässertes Ergebnis je Aktie € 15,00 14,55 0,45",
+    "jaar": 2016,
+    "eps": 15.0,
+    "vorig_jaar": 2015,
+    "eps_vorig": 14.55,
     "pagina": 45,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2016-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie € 15,00 14,55 0,45",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2016-EQ-D-00.pdf",
+    "sha256": "3b52b31473e2b55800cb050c0755da62570080a08a551e657cd986f77ca3554a",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Verwässertes Ergebnis je Aktie4 € 15,23 15,18 0,05 Geschäftsbereich Corporate und Sonstiges verbesserte sich das",
+    "jaar": 2017,
+    "eps": 15.23,
+    "vorig_jaar": 2016,
+    "eps_vorig": 15.18,
     "pagina": 43,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2017-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie4 € 15,23 15,18 0,05 Geschäftsbereich Corporate und Sonstiges verbesserte sich das",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2017-EQ-D-00.pdf",
+    "sha256": "038dc9daa514aca025c618d611ec8d9cb27d9e35355cba5d7205f15dd3fa75f9",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Verwässertes Ergebnis je Aktie € 17,30 15,23 2,07 Körperschaftsteuersatz von 35 % im Jahr 2017 auf 21 % im Jahr 2018",
+    "jaar": 2018,
+    "eps": 17.3,
+    "alternatieven": [
+     [
+      15.23,
+      17.3,
+      2017
+     ],
+     [
+      17.3,
+      15.23,
+      2017
+     ]
+    ],
     "pagina": 58,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2018-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie € 17,30 15,23 2,07 Körperschaftsteuersatz von 35 % im Jahr 2017 auf 21 % im Jahr 2018",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2018-EQ-D-00.pdf",
+    "sha256": "ac17ee4c293c3ae9a24ae6e13e0c90451a5ad5a94adb21d4d1e9046de36a7ead",
+    "bestand": "2018-eqs",
+    "eps_vorig": 15.23,
+    "vorig_jaar": 2017
    },
    "2019": {
-    "bewijs": "Verwässertes Ergebnis je Aktie € 18,83 17,30 1,54 bensversicherungsportfolios in Taiwan belastet worden).",
+    "jaar": 2019,
+    "eps": 18.83,
+    "vorig_jaar": 2018,
+    "eps_vorig": 17.3,
     "pagina": 58,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2019-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie € 18,83 17,30 1,54 bensversicherungsportfolios in Taiwan belastet worden).",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2019-EQ-D-00.pdf",
+    "sha256": "d84722cd512bbabad0dc71314e7497458d2408deebfc7a62f4a9298c2f890fbc",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Diluted earnings per share € 16.32 18.83 (2.52) 207 %9.",
+    "jaar": 2020,
+    "eps": 16.32,
+    "vorig_jaar": 2019,
+    "eps_vorig": 18.83,
     "pagina": 66,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share € 16.32 18.83 (2.52) 207 %9.",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2020-EQ-E-00.pdf",
+    "sha256": "68f17db08178e0df89b808dfff42da2ac54689eaa2592ca780dfa783e781fa4f",
+    "bestand": "2020"
    },
    "2021": {
-    "bewijs": "Diluted earnings per share € 15.83 16.32 (0.48) foreign currency translation adjustments of € 1.2 bn. These effects",
+    "jaar": 2021,
+    "eps": 15.83,
+    "vorig_jaar": 2020,
+    "eps_vorig": 16.32,
     "pagina": 79,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share € 15.83 16.32 (0.48) foreign currency translation adjustments of € 1.2 bn. These effects",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2021-EQ-E-00.pdf",
+    "sha256": "af01ec17e055595c9aa20433684d60210e92ed5dac963f6a4b67b7b1ac1e1e58",
+    "bestand": "2021"
    },
    "2022": {
-    "bewijs": "Diluted earnings per share € 16.26 15.83 0.43 increased to 25.6 % (2021: 25.4 %), mostly due to higher local taxes and",
+    "jaar": 2022,
+    "eps": 16.26,
+    "vorig_jaar": 2021,
+    "eps_vorig": 15.83,
     "pagina": 81,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share € 16.26 15.83 0.43 increased to 25.6 % (2021: 25.4 %), mostly due to higher local taxes and",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2022-EQ-E-00.pdf",
+    "sha256": "84cea448a95fd501e8795c59bf18f3786f16f0deb859493590f3c7b704ed0a75",
+    "bestand": "2022"
    },
    "2023": {
-    "bewijs": "Diluted earnings per share (€) 8.5 21.18 15.48",
+    "jaar": 2023,
+    "eps": 21.18,
+    "vorig_jaar": 2022,
+    "eps_vorig": 15.48,
     "pagina": 153,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) 8.5 21.18 15.48",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2023-EQ-E-00.pdf",
+    "sha256": "51551b0a70a5dca9156fdc71cd82dbcf434fc9c1cce25b080ed7882e24611540",
+    "bestand": "2023"
    },
    "2024": {
-    "bewijs": "Verwässertes Ergebnis je Aktie (€) 8.5 25,18 21,18",
+    "jaar": 2024,
+    "eps": 25.18,
+    "vorig_jaar": 2023,
+    "eps_vorig": 21.18,
     "pagina": 255,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2024-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie (€) 8.5 25,18 21,18",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2024-EQ-D-00.pdf",
+    "sha256": "9f1e1088333ec39b094e00f0626aa0a9a06c96893901d915c1993aafec452579",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Verwässertes Ergebnis je Aktie (€) 8.5 27,67 25,18",
+    "jaar": 2025,
+    "eps": 27.67,
+    "vorig_jaar": 2024,
+    "eps_vorig": 25.18,
     "pagina": 226,
-    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2025-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie (€) 8.5 27,67 25,18",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/allianz/Annual Reports/DE0008404005-JA-2025-EQ-D-00.pdf",
+    "sha256": "fcc4f48f1194aabbd4639afd7cb30cc6eda96967e0efe30b1f82ff9c5afde0de",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2022: kleine herziening (16.26 → 15.48); nieuwste telt",
+   "2018: lezing gekozen die aansluit op het latere verslag",
+   "2016: kleine herziening (15.0 → 15.18); nieuwste telt",
+   "2015: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
  },
  "BAS.DE": {
   "reeks": {
@@ -83,61 +194,140 @@
   },
   "verslagen": {
    "2015": {
-    "bewijs": "Diluted earnings per share (€) [5] 4.33 5.60",
+    "jaar": 2015,
+    "eps": 4.33,
+    "vorig_jaar": 2014,
+    "eps_vorig": 5.6,
     "pagina": 173,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2015-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [5] 4.33 5.60",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2015-EQ-E-00.pdf",
+    "sha256": "2dec551375f8e4800e47dc1e1170d635e9093abb968e4d172218e5872dea19bd",
+    "bestand": "2015-eqs"
    },
    "2016": {
-    "bewijs": "Verwässertes Ergebnis je Aktie (€) [5] 4,41 4,33",
+    "jaar": 2016,
+    "eps": 4.41,
+    "vorig_jaar": 2015,
+    "eps_vorig": 4.33,
     "pagina": 173,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2016-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie (€) [5] 4,41 4,33",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2016-EQ-D-00.pdf",
+    "sha256": "6c9e73f6d7029a0d01d5cf273615de7ccab393ea7baf452a71c831154a754d5c",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Diluted earnings per share (€) [5] 6.61 4.41",
+    "jaar": 2017,
+    "eps": 6.61,
+    "vorig_jaar": 2016,
+    "eps_vorig": 4.41,
     "pagina": 178,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [5] 6.61 4.41",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2017-EQ-E-00.pdf",
+    "sha256": "f231b665ded26acb926f6985a0d6069aedefd56dbe91295ea6921aa12eae1c8a",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Diluted earnings per share (€) [5] 5.11 6.61 6.61",
+    "jaar": 2018,
+    "eps": 5.11,
+    "vorig_jaar": 2017,
+    "eps_vorig": 6.61,
     "pagina": 176,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [5] 5.11 6.61 6.61",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2018-EQ-E-00.pdf",
+    "sha256": "b2b658e24693d9899ba9ea9dd2ce81baac4b63d94e62364c9e9e06ee03065754",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "Diluted earnings per share (€) [5] 9.15 5.11 5.11",
+    "jaar": 2019,
+    "eps": 9.15,
+    "vorig_jaar": 2018,
+    "eps_vorig": 5.11,
     "pagina": 194,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [5] 9.15 5.11 5.11",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2019-EQ-E-00.pdf",
+    "sha256": "726e6484462fc7f89ed2aa117ec51c548c3c0b791dc84200378b1c2201bc0427",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Diluted earnings per share (€) [6] –1.15 9.15",
+    "jaar": 2020,
+    "eps": -1.15,
+    "vorig_jaar": 2019,
+    "eps_vorig": 9.15,
     "pagina": 222,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [6] –1.15 9.15",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2020-EQ-E-00.pdf",
+    "sha256": "4e91021944580eb6b22c5ac2edc8f3ab2e49f80dca384bd5a4bed8633185a069",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Diluted earnings per share (€) [6] 6.00 –1.15",
+    "jaar": 2021,
+    "eps": 6.0,
+    "vorig_jaar": 2020,
+    "eps_vorig": -1.15,
     "pagina": 194,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [6] 6.00 –1.15",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2021-EQ-E-00.pdf",
+    "sha256": "0755f0778ef5edef887cd1941a5f2b769c8deffd2c13f8df1afb503b41176139",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Diluted earnings per share (€) [6] –0.70 6.00",
+    "jaar": 2022,
+    "eps": -0.7,
+    "vorig_jaar": 2021,
+    "eps_vorig": 6.0,
     "pagina": 203,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [6] –0.70 6.00",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2022-EQ-E-00.pdf",
+    "sha256": "608db8d0f1b1c9ad3906c5189afc6de683751868cb4e8f8cd1ecad041122c8d7",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Diluted earnings per share (€) [6] 0.25 -0.70",
+    "jaar": 2023,
+    "eps": 0.25,
+    "vorig_jaar": 2022,
+    "eps_vorig": -0.7,
     "pagina": 227,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share (€) [6] 0.25 -0.70",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2023-EQ-E-00.pdf",
+    "sha256": "c8bfaa415d06b8e69c9b3aef717929855e72df33a911db70c1cbd4a9d0cb37f7",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Verwässertes Ergebnis je Aktie (€) 6 1,45 0,25",
+    "jaar": 2024,
+    "eps": 1.45,
+    "vorig_jaar": 2023,
+    "eps_vorig": 0.25,
     "pagina": 329,
-    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2024-EQ-D-00.pdf"
+    "bewijs": "Verwässertes Ergebnis je Aktie (€) 6 1,45 0,25",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/basf/Annual Reports/DE000BASF111-JA-2024-EQ-D-00.pdf",
+    "sha256": "614769c7b1f55b57863c68694910529cac15283f4a5ed9992b740709d90a761c",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Diluted earnings per share (€) [6] 1.81 1.45",
+    "jaar": 2025,
+    "eps": 1.81,
+    "vorig_jaar": 2024,
+    "eps_vorig": 1.45,
     "pagina": 302,
-    "url": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf"
+    "bewijs": "Diluted earnings per share (€) [6] 1.81 1.45",
+    "kandidaten": 1,
+    "url": "https://www.basf.com/dam/jcr:d54ddca4-f9c7-4b4f-b65e-d6ae3188ee24/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2026/BASF_Report_2025.pdf",
+    "sha256": "6fa0a9f60a3149e585a5b52f06efde1e0aaa5d1156da0d71a1fd40822df7f8b7",
+    "bestand": "2025"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": []
  },
  "BAYN.DE": {
   "reeks": {
@@ -153,42 +343,234 @@
    "2025": -3.68
   },
   "verslagen": {
-   "2019": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.97 5.44 8.29 1.80 4.17",
+   "2015": {
+    "jaar": 2015,
+    "eps": 4.97,
+    "vorig_jaar": 2014,
+    "eps_vorig": 4.14,
+    "pagina": 51,
+    "bewijs": "Earnings per share € 4.14 4.97",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2015-EQ-E-00.pdf",
+    "sha256": "9e958fe554ad66cf4474a9176f5a277f2550bf84e41c5b0e5e2b47a12ca8f85a",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": null,
+    "alternatieven": [
+     [
+      5.44,
+      4.97,
+      2015
+     ],
+     [
+      5.45,
+      4.97,
+      2015
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.97 5.44 + 9.5",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2016-EQ-E-00.pdf",
+    "sha256": "6ec4a5ca688b85db4f150437c9547222f6e1cb5e96f46495cc81edcf59e17891",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": null,
+    "alternatieven": [
+     [
+      2.2,
+      4.0,
+      2016
+     ],
+     [
+      8.41,
+      5.44,
+      2016
+     ]
+    ],
+    "pagina": 5,
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 5.44 8.41 + 54.6%",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2017-EQ-E-00.pdf",
+    "sha256": "a7b54b0bba523abcc20c506bd325ca1ec2eaf3c3446797424b791790624da092",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": null,
+    "alternatieven": [
+     [
+      -4.0,
+      0.17,
+      2017
+     ],
+     [
+      1.8,
+      8.29,
+      2017
+     ],
+     [
+      1.8,
+      8.41,
+      2017
+     ]
+    ],
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.14 4.97 5.44 8.29 1.80",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2018-EQ-E-00.pdf",
+    "sha256": "fec44cff8eab6088df24b20c13afc33928df59cd4cb0a2c3869dd734ca21f6fd",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 4.17,
+    "alternatieven": [
+     [
+      1.8,
+      1.44,
+      2018
+     ],
+     [
+      4.17,
+      1.8,
+      2018
+     ]
+    ],
+    "pagina": 2,
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.97 5.44 8.29 1.80 4.17",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2019-EQ-E-00.pdf",
+    "sha256": "4b921db101da3bdbff27dca02c8384906c7b511fe06b8a417ee24aca3593d0a0",
+    "bestand": "2019-eqs",
+    "eps_vorig": 1.8,
+    "vorig_jaar": 2018
    },
    "2020": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 5.44 8.29 1.80 4.17 (10.68)",
+    "jaar": 2020,
+    "eps": -10.68,
+    "vorig_jaar": 2019,
+    "eps_vorig": 4.17,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 5.44 8.29 1.80 4.17 (10.68)",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2016": 5.44,
+     "2017": 8.29,
+     "2018": 1.8
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2020-EQ-E-00.pdf",
+    "sha256": "0b756367db783d1398ff86f66a7c4bb97c580835d1c6362d9542ccc5557b9e57",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 8.29 1.80 4.17 (10.68) 1.02",
+    "jaar": 2021,
+    "eps": 1.02,
+    "vorig_jaar": 2020,
+    "eps_vorig": -10.68,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 8.29 1.80 4.17 (10.68) 1.02",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2017": 8.29,
+     "2018": 1.8,
+     "2019": 4.17
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2021-EQ-E-00.pdf",
+    "sha256": "1ff7ee2733f4b1fbe66f2c41972574102046ddc41caf33d8ad4130eea6cfca7f",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 1.80 4.17 (10.68) 1.02 4.22",
+    "jaar": 2022,
+    "eps": 4.22,
+    "vorig_jaar": 2021,
+    "eps_vorig": 1.02,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 1.80 4.17 (10.68) 1.02 4.22",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2018": 1.8,
+     "2019": 4.17,
+     "2020": -10.68
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2022-EQ-E-00.pdf",
+    "sha256": "214fb701745dcddd63e46f57ce37c29480aae03b3580b8859438ad98f1984fff",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.17 (10.68) 1.02 4.22 (2.99)",
+    "jaar": 2023,
+    "eps": -2.99,
+    "vorig_jaar": 2022,
+    "eps_vorig": 4.22,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 4.17 (10.68) 1.02 4.22 (2.99)",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2019": 4.17,
+     "2020": -10.68,
+     "2021": 1.02
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2023-EQ-E-00.pdf",
+    "sha256": "22fd42fdaed19c2f2818cc84c97e3fc124775276b24654cd53d35d70d27776af",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 (10.68) 1.02 4.22 (2.99) (2.60)",
+    "jaar": 2024,
+    "eps": -2.6,
+    "alternatieven": [
+     [
+      -2.6,
+      -2.99,
+      2023
+     ],
+     [
+      -2.38,
+      -2.99,
+      2023
+     ]
+    ],
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€) 1 (10.68) 1.02 4.22 (2.99) (2.60)",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2024-EQ-E-00.pdf",
+    "sha256": "4bc5fca6ee7fc8a1f6f0e618486a4d1798662bddf8fc61166c2d87a373591323",
+    "bestand": "2024-eqs",
+    "eps_vorig": -2.99,
+    "vorig_jaar": 2023
    },
    "2025": {
-    "bewijs": "Earnings per share (from continuing and discontinued operations) (€)1 1.02 4.22 (2.99) (2.60) (3.68)",
+    "jaar": 2025,
+    "eps": -3.68,
+    "vorig_jaar": 2024,
+    "eps_vorig": -2.6,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (from continuing and discontinued operations) (€)1 1.02 4.22 (2.99) (2.60) (3.68)",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2021": 1.02,
+     "2022": 4.22,
+     "2023": -2.99
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/bayer/Annual Reports/DE000BAY0017-JA-2025-EQ-E-00.pdf",
+    "sha256": "62ecaf999613b13d9cf71467ab7c70042ccc018a2b985e190f037450550307db",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: lezing gekozen die aansluit op het latere verslag",
+   "2023: meerjarenoverzicht vult 2019, 2020",
+   "2022: meerjarenoverzicht vult 2018",
+   "2021: meerjarenoverzicht vult 2017",
+   "2020: meerjarenoverzicht vult 2016",
+   "2019: lezing gekozen die aansluit op het latere verslag",
+   "2018: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
  },
  "BEI.DE": {
   "reeks": {
@@ -207,64 +589,147 @@
   },
   "verslagen": {
    "2015": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 2.33 2.91",
+    "jaar": 2015,
+    "eps": 2.91,
+    "vorig_jaar": 2014,
+    "eps_vorig": 2.33,
     "pagina": 48,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2015-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 2.33 2.91",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2015-EQ-E-00.pdf",
+    "sha256": "bd528d2de664b562d06a88f3c412ccdd235986d3bde9b9ce0c3d14cbbff7146a",
+    "bestand": "2015-eqs"
    },
    "2016": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 2.91 3.13",
+    "jaar": 2016,
+    "eps": 3.13,
+    "vorig_jaar": 2015,
+    "eps_vorig": 2.91,
     "pagina": 52,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 2.91 3.13",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2016-EQ-E-00.pdf",
+    "sha256": "37a17d9262ec4dae57f37768791175ca6949ff56976efd8bad277295f7ec1379",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 3.13 2.96",
+    "jaar": 2017,
+    "eps": 2.96,
+    "vorig_jaar": 2016,
+    "eps_vorig": 3.13,
     "pagina": 56,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 3.13 2.96",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2017-EQ-E-00.pdf",
+    "sha256": "2ac977e0a260b0ddbbf363c79ba85aff24b55c2ebe55e7c0570577dcaba5b5d8",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 2.96 3.21",
+    "jaar": 2018,
+    "eps": 3.21,
+    "vorig_jaar": 2017,
+    "eps_vorig": 2.96,
     "pagina": 58,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 2.96 3.21",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2018-EQ-E-00.pdf",
+    "sha256": "3d67d98a0a2bb1d68e43d58bcc54c2f893c99850e4ecbea92d7cebb2fdc61ebe",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 3.21 3.17",
+    "jaar": 2019,
+    "eps": 3.17,
+    "vorig_jaar": 2018,
+    "eps_vorig": 3.21,
     "pagina": 76,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 3.21 3.17",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2019-EQ-E-00.pdf",
+    "sha256": "e8b3e505085dbacc0496e7d6474a5f2ed5cfdd6418dadfbeef373cf8017ce81a",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 3.17 2.47",
+    "jaar": 2020,
+    "eps": 2.47,
+    "vorig_jaar": 2019,
+    "eps_vorig": 3.17,
     "pagina": 106,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 3.17 2.47",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2020-EQ-E-00.pdf",
+    "sha256": "0bf887eb427e59f3a71c9298006f1ba975a9f89a552d560f5b81a5219ffc5a67",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Basic/diluted earnings per share (in €) 09 2.47 2.81",
+    "jaar": 2021,
+    "eps": 2.81,
+    "vorig_jaar": 2020,
+    "eps_vorig": 2.47,
     "pagina": 122,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 09 2.47 2.81",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2021-EQ-E-00.pdf",
+    "sha256": "cfefe7ccaedb6b664cfbc2c669fd258750311b9be3c9aeaad9b1be13a5bfe132",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Basic/diluted earnings per share (in €) 10 2.81 3.33",
+    "jaar": 2022,
+    "eps": 3.33,
+    "vorig_jaar": 2021,
+    "eps_vorig": 2.81,
     "pagina": 191,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 10 2.81 3.33",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2022-EQ-E-00.pdf",
+    "sha256": "9ae509bc2a9a75e2f7bd3e362191811af007459f974640dff3deacd50c6d9e3a",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Basic/diluted earnings per share (in €) 10 3.33 3.24",
+    "jaar": 2023,
+    "eps": 3.24,
+    "vorig_jaar": 2022,
+    "eps_vorig": 3.33,
     "pagina": 190,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 10 3.33 3.24",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2023-EQ-E-00.pdf",
+    "sha256": "0ce08b2a43443602b2d82ae1befee2c78282034d8dca06bc881bb3c9ba075cb7",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Basic/diluted earnings per share (in €) 10 3.24 4.05",
+    "jaar": 2024,
+    "eps": 4.05,
+    "vorig_jaar": 2023,
+    "eps_vorig": 3.24,
     "pagina": 234,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 10 3.24 4.05",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2024-EQ-E-00.pdf",
+    "sha256": "dbfa58caa8777293a06bbf1981e6527f319ec498d5a3b0febc89b7e3b187f888",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Basic/diluted earnings per share (in €) 10 4.05 4.25",
+    "jaar": 2025,
+    "eps": 4.25,
+    "vorig_jaar": 2024,
+    "eps_vorig": 4.05,
     "pagina": 233,
-    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per share (in €) 10 4.05 4.25",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/beiersdorf/Annual Reports/DE0005200000-JA-2025-EQ-E-00.pdf",
+    "sha256": "e72f6184b8bd6c03d3dfd4630b5ff43413a34f19988dc26472c2a1290242b61a",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": []
  },
  "BMW.DE": {
   "reeks": {
+   "2014": 8.83,
+   "2015": 9.7,
+   "2016": 10.45,
+   "2017": 13.07,
    "2018": 10.6,
    "2019": 7.47,
    "2020": 5.73,
@@ -275,42 +740,144 @@
    "2025": 11.89
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 9.7,
+    "vorig_jaar": 2014,
+    "eps_vorig": 8.83,
+    "pagina": 90,
+    "bewijs": "Policies Diluted earnings per share of common stock in € 17 9.70 8.83",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2015-EQ-E-00.pdf",
+    "sha256": "404795ffbb6655096d954881887e11ea8a5cd42278300eb92c9b397db3947916",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 10.45,
+    "vorig_jaar": 2015,
+    "eps_vorig": 9.7,
+    "pagina": 112,
+    "bewijs": "Diluted earnings per share of common stock in € 13 10.45 9.70",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2016-EQ-E-00.pdf",
+    "sha256": "19b4aa17ff42e700c0b950320fc9e92f5dd5fda52476350b8e2ce07a9178cbbe",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 13.12,
+    "vorig_jaar": 2016,
+    "eps_vorig": 10.45,
+    "pagina": 120,
+    "bewijs": "Diluted earnings per share of common stock in € 13 13.12 10.45",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2017-EQ-E-00.pdf",
+    "sha256": "7a15a0faacf4b5a9549b60e53bcf2d930e88a5c6d48d467f2cd43cb322901559",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 10.82,
+    "vorig_jaar": 2017,
+    "eps_vorig": 13.07,
+    "pagina": 112,
+    "bewijs": "Diluted earnings per share of common stock in € 15 10.82 13.07",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2018-EQ-E-00.pdf",
+    "sha256": "9c4698150256ac5546c0bd62437da024c852ed49a03acffa043c18953f8ebded",
+    "bestand": "2018-eqs"
+   },
    "2019": {
-    "bewijs": "Diluted earnings per share of common stock in € 14 7.47 10.60",
+    "jaar": 2019,
+    "eps": 7.47,
+    "vorig_jaar": 2018,
+    "eps_vorig": 10.6,
     "pagina": 110,
-    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 14 7.47 10.60",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2019-EQ-E-00.pdf",
+    "sha256": "8ed70adef8938825b5992e7449803f24ec19d161d552f09c72a38d775fbf00a0",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Diluted earnings per share of common stock in € 14 5.73 7.47",
+    "jaar": 2020,
+    "eps": 5.73,
+    "vorig_jaar": 2019,
+    "eps_vorig": 7.47,
     "pagina": 186,
-    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 14 5.73 7.47",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/bmw/Annual Reports/DE0005190003-JA-2020-EQ-E-00.pdf",
+    "sha256": "1ec7a2a4f27be93ec555f5a4ad6ed53cca68aebfd497206cef050b0ee608e615",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Diluted earnings per share of common stock in € 14 18.77 5.73",
+    "jaar": 2021,
+    "eps": 18.77,
+    "vorig_jaar": 2020,
+    "eps_vorig": 5.73,
     "pagina": 149,
-    "url": "https://www.bmwgroup.com/en/report/2021/downloads/BMW-Group-Report-2021-en.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 14 18.77 5.73",
+    "kandidaten": 2,
+    "url": "https://www.bmwgroup.com/en/report/2021/downloads/BMW-Group-Report-2021-en.pdf",
+    "sha256": "397dcf8cb8c9359fd7e809774c3b81edd1e651f6bd12f69e7866e0b390852875",
+    "bestand": "2021"
    },
    "2022": {
-    "bewijs": "Diluted earnings per share of common stock in € 15 27.31 18.77",
+    "jaar": 2022,
+    "eps": 27.31,
+    "vorig_jaar": 2021,
+    "eps_vorig": 18.77,
     "pagina": 153,
-    "url": "https://www.bmwgroup.com/en/report/2022/downloads/BMW-Group-Report-2022-en.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 15 27.31 18.77",
+    "kandidaten": 2,
+    "url": "https://www.bmwgroup.com/en/report/2022/downloads/BMW-Group-Report-2022-en.pdf",
+    "sha256": "dbd57b24e8fceb4a01fbed9b66ca6a9afbe3ddd1be2062e1868f0440407dc407",
+    "bestand": "2022"
    },
    "2023": {
-    "bewijs": "Diluted earnings per share of common stock in € 14 17.67 27.31",
+    "jaar": 2023,
+    "eps": 17.67,
+    "vorig_jaar": 2022,
+    "eps_vorig": 27.31,
     "pagina": 152,
-    "url": "https://www.bmwgroup.com/en/report/2023/downloads/BMW-Group-Report-2023-en.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 14 17.67 27.31",
+    "kandidaten": 2,
+    "url": "https://www.bmwgroup.com/en/report/2023/downloads/BMW-Group-Report-2023-en.pdf",
+    "sha256": "07a384192eaec2286a221fc7d1c86d6f74a83ab0f0c31e90764764caf74694a9",
+    "bestand": "2023"
    },
    "2024": {
-    "bewijs": "Diluted earnings per share of common stock in € 14 11.62 17.67",
+    "jaar": 2024,
+    "eps": 11.62,
+    "vorig_jaar": 2023,
+    "eps_vorig": 17.67,
     "pagina": 269,
-    "url": "https://www.bmwgroup.com/en/report/2024/downloads/BMW-Group-Report-2024-en.pdf"
+    "bewijs": "Diluted earnings per share of common stock in € 14 11.62 17.67",
+    "kandidaten": 2,
+    "url": "https://www.bmwgroup.com/en/report/2024/downloads/BMW-Group-Report-2024-en.pdf",
+    "sha256": "40eac69d256a1efdab5835871687c23f01120735431b3465c0a4e45b8bac8de3",
+    "bestand": "2024"
    },
    "2025": {
-    "bewijs": "Diluted earnings per ordinary share in € 14 11.89 11.62",
+    "jaar": 2025,
+    "eps": 11.89,
+    "vorig_jaar": 2024,
+    "eps_vorig": 11.62,
     "pagina": 271,
-    "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Report-2025-en.pdf"
+    "bewijs": "Diluted earnings per ordinary share in € 14 11.89 11.62",
+    "kandidaten": 2,
+    "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Report-2025-en.pdf",
+    "sha256": "7a7fd36bf7f274e776ef7eda30d3cda4335a99cbb45f097ae5e8268ccf7759e7",
+    "bestand": "2025"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2018: kleine herziening (10.82 → 10.6); nieuwste telt",
+   "2017: kleine herziening (13.12 → 13.07); nieuwste telt"
+  ]
  },
  "BNR.DE": {
   "reeks": {
@@ -329,56 +896,163 @@
   },
   "verslagen": {
    "2015": {
-    "bewijs": "Diluted earnings per share in euro 13.) 2.36 2.20",
+    "jaar": 2015,
+    "eps": 2.36,
+    "vorig_jaar": 2014,
+    "eps_vorig": 2.2,
     "pagina": 148,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2015-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 13.) 2.36 2.20",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2015-EQ-E-00.pdf",
+    "sha256": "96c50b080b97bb9521f90e3dd3f3c299b7541f5ccfb116743ff9a7d2ca4b2ad4",
+    "bestand": "2015-eqs"
    },
    "2016": {
-    "bewijs": "Diluted earnings per share in euro 13.) 2.33 2.36",
+    "jaar": 2016,
+    "eps": 2.33,
+    "vorig_jaar": 2015,
+    "eps_vorig": 2.36,
     "pagina": 148,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 13.) 2.33 2.36",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2016-EQ-E-00.pdf",
+    "sha256": "e4ab88441ebb31b7df948b301542d51b360ab2da132d48e52f4ce4d63b490d85",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Diluted earnings per share in euro 13.) 2.34 2.33",
+    "jaar": 2017,
+    "eps": 2.34,
+    "vorig_jaar": 2016,
+    "eps_vorig": 2.33,
     "pagina": 152,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 13.) 2.34 2.33",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2017-EQ-E-00.pdf",
+    "sha256": "e383220064c79ce3dc7b71161ecb9d5f107792468e9098d63c849b44af6bd32f",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Diluted earnings per share in euro 13.) 2.98 2.34",
+    "jaar": 2018,
+    "eps": 2.98,
+    "vorig_jaar": 2017,
+    "eps_vorig": 2.34,
     "pagina": 88,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 13.) 2.98 2.34",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2018-EQ-E-00.pdf",
+    "sha256": "fac6db2cbe153d244837182a35146284de0c839406aca1dbea855646759a1205",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "Diluted earnings per share in euro 12.) 3.02 2.98",
+    "jaar": 2019,
+    "eps": 3.02,
+    "vorig_jaar": 2018,
+    "eps_vorig": 2.98,
     "pagina": 96,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 12.) 3.02 2.98",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2019-EQ-E-00.pdf",
+    "sha256": "101624e037613166121d9a83fcfdd7f9de4852002527dfd09b1393cd7039ac3c",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Diluted earnings per share in euro 12.) 3.02 3.02",
+    "jaar": 2020,
+    "eps": 3.02,
+    "vorig_jaar": 2019,
+    "eps_vorig": 3.02,
     "pagina": 110,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in euro 12.) 3.02 3.02",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2020-EQ-E-00.pdf",
+    "sha256": "d1056520806bbec54146a3d64daf5592a95cf84f13622b2885936fe47700bb0b",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Diluted earnings per share EUR 2.89 3.02",
+    "jaar": 2021,
+    "eps": 2.89,
+    "vorig_jaar": 2020,
+    "eps_vorig": 3.02,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share EUR 2.89 3.02",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2021-EQ-E-00.pdf",
+    "sha256": "8f4c87b6cb3058627fb28bc99de77d873da60bf78453266e34653f3a5f722d08",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Diluted earnings per share EUR 5.74 2.89",
+    "jaar": 2022,
+    "eps": 5.74,
+    "vorig_jaar": 2021,
+    "eps_vorig": 2.89,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share EUR 5.74 2.89",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2022-EQ-E-00.pdf",
+    "sha256": "d03ff89dbe798c3761060bd487e790ed3eddda674fecc27feb7aecf63d8ad352",
+    "bestand": "2022-eqs"
    },
    "2024": {
-    "bewijs": "Diluted earnings per share EUR 3.71 4.73",
+    "jaar": 2024,
+    "eps": 3.71,
+    "vorig_jaar": 2023,
+    "eps_vorig": 4.73,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share EUR 3.71 4.73",
+    "kandidaten": 4,
+    "meerjaren": {
+     "2022": 5.74,
+     "2021": 2.89,
+     "2020": 3.02
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2024-EQ-E-00.pdf",
+    "sha256": "bb4186f158412e0cfe8042216aa7411f229dbe5e8631330890d95e62a74c40dd",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Diluted earnings per share EUR 1.83 3.71",
+    "jaar": 2025,
+    "eps": 1.83,
+    "vorig_jaar": 2024,
+    "eps_vorig": 3.71,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share EUR 1.83 3.71",
+    "kandidaten": 4,
+    "meerjaren": {
+     "2023": 4.73,
+     "2022": 5.74,
+     "2021": 2.89
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2025-EQ-E-00.pdf",
+    "sha256": "6b61a34dd6196433bf3042dfcd7eb1af91606e9a3ab9eca13849a010388745cf",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: meerjarenoverzicht vult 2020"
+  ]
+ },
+ "CBK.DE": {
+  "reeks": {
+   "2021": 0.23,
+   "2022": 0.99
+  },
+  "verslagen": {
+   "2022": {
+    "jaar": 2022,
+    "eps": 0.99,
+    "vorig_jaar": 2021,
+    "eps_vorig": 0.23,
+    "pagina": 2,
+    "bewijs": "Earnings per share (€) 0.99 0.23",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/commerzbank/Annual Reports/DE000CBK1001-JA-2022-EQ-E-00.pdf",
+    "sha256": "23433822ac4a42f0b1807a94b07b932a51125232b1eaa80149beed750fce1632",
+    "bestand": "2022-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": []
  },
  "CON.DE": {
   "reeks": {
@@ -388,22 +1062,302 @@
    "2025": -0.83
   },
   "verslagen": {
-   "2023": {
-    "bewijs": "Diluted earnings per share in € 5.78 0.33 1,635.3",
+   "2015": {
+    "jaar": 2015,
+    "eps": 13.64,
+    "vorig_jaar": 2014,
+    "eps_vorig": 11.88,
+    "pagina": 132,
+    "bewijs": "Diluted earnings per share in € 35 13.64 11.88",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2015-EQ-E-00.pdf",
+    "sha256": "b183af88b2bfcde55b8809e156b9307c5da4e571159128a7f30f38d6f5414e3b",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 14.01,
+    "vorig_jaar": 2015,
+    "eps_vorig": 13.64,
+    "pagina": 132,
+    "bewijs": "Diluted earnings per share in € 35 14.01 13.64",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2016-EQ-E-00.pdf",
+    "sha256": "557df19a6b8d7130af2c15bb45f307324d94fc2810c01df3b221b0091c0e030b",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 14.92,
+    "vorig_jaar": 2016,
+    "eps_vorig": 14.01,
+    "pagina": 19,
+    "bewijs": "Diluted earnings per share 14.92 14.01",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2017-EQ-E-00.pdf",
+    "sha256": "69e72639e2a9278a6349788f9dee2f1c9fa4310b2cc33bb7479dd6d994f4aab5",
+    "bestand": "2017-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": null,
+    "alternatieven": [
+     [
+      -142.3,
+      14.49,
+      2018
+     ],
+     [
+      -6.13,
+      14.49,
+      2018
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Diluted earnings per share in € –6.13 14.49 –142.3",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2019-EQ-E-00.pdf",
+    "sha256": "5f4ab5226b19114a69aa86aed69b3e77647c1b869f96796e791a40039fe8e6b9",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": null,
+    "alternatieven": [
+     [
+      -4.81,
+      -6.13,
+      2019
+     ],
+     [
+      21.5,
+      -6.13,
+      2019
+     ]
+    ],
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in € –4.81 –6.13 21.5",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2020-EQ-E-00.pdf",
+    "sha256": "c8834751205cc137d04bc406597bdf5e1fc615c8ce262d9102e121b182fca8de",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 7.28,
+    "vorig_jaar": 2020,
+    "eps_vorig": -4.81,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share in € 7.28 –4.81 251.3",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2021-EQ-E-00.pdf",
+    "sha256": "e8d53b629b8ab5561ca81c1af4225e6e91727b1cf08b7c25cb94826ca6a945f8",
+    "bestand": "2021-eqs"
+   },
+   "2023": {
+    "jaar": 2023,
+    "eps": 5.78,
+    "vorig_jaar": 2022,
+    "eps_vorig": 0.33,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share in € 5.78 0.33 1,635.3",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2023-EQ-E-00.pdf",
+    "sha256": "3a9076d4841befcae57490c888cf79064ac3b08f85f3654093e93013ba047e0f",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Diluted earnings per share in € 5.84 5.78 1.0",
+    "jaar": 2024,
+    "eps": 5.84,
+    "vorig_jaar": 2023,
+    "eps_vorig": 5.78,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in € 5.84 5.78 1.0",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2024-EQ-E-00.pdf",
+    "sha256": "789900bc0e8a751f9394145f608c58bbb970641dc0aee4a05ec4c0cc3b90b5ff",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Diluted earnings per share in € –0.83 5.84 –114.1",
+    "jaar": 2025,
+    "eps": -0.83,
+    "vorig_jaar": 2024,
+    "eps_vorig": 5.84,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share in € –0.83 5.84 –114.1",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2025-EQ-E-00.pdf",
+    "sha256": "62072f217d8a7a77f744a16ec6db313ce1c611b67b291719d82bc42d74a81923",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {
+   "2018-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2021: sluit niet aan (gat); reeks stopt"
+  ]
+ },
+ "DB1.DE": {
+  "reeks": {
+   "2014": 4.14,
+   "2015": 3.6,
+   "2016": 6.81,
+   "2017": 4.68,
+   "2018": 4.46,
+   "2019": 5.47,
+   "2020": 5.89,
+   "2021": 6.59,
+   "2022": 8.14,
+   "2023": 9.35,
+   "2024": 10.6,
+   "2025": 10.9
+  },
+  "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 3.6,
+    "vorig_jaar": 2014,
+    "eps_vorig": 4.14,
+    "pagina": 164,
+    "bewijs": "Earnings per share (diluted) (€) 34 3.60 4.14 4.14",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2015-EQ-E-00.pdf",
+    "sha256": "9a08a96323d0504e1aa56f67a91f79f01054490c7a05bf10ffe12a81c3ec02e3",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 6.81,
+    "vorig_jaar": 2015,
+    "eps_vorig": 3.6,
+    "pagina": 264,
+    "bewijs": "Earnings per share (diluted) (€) 6.81 3.60",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2016-EQ-E-00.pdf",
+    "sha256": "28cd222ecd60e86c2c9d789542040a13ac3b18aea6d43389298927b9c48df919",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 4.68,
+    "vorig_jaar": 2016,
+    "eps_vorig": 6.81,
+    "pagina": 176,
+    "bewijs": "Earnings per share (diluted) (¤) 34 4.68 6.81",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2017-EQ-E-00.pdf",
+    "sha256": "a7a198c22e55bf1834e533a0963fd09b68a11e2c9dc8c6d6d8cfbfa5f5e33c69",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 4.46,
+    "vorig_jaar": 2017,
+    "eps_vorig": 4.68,
+    "pagina": 315,
+    "bewijs": "Earnings per share (diluted) (€) 4.46 4.68",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2018-EQ-E-00.pdf",
+    "sha256": "53aa5f3f869eb87be6b81487f190ea45bfa12a14ed464fc1a050aa9154f9b672",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 5.47,
+    "vorig_jaar": 2018,
+    "eps_vorig": 4.46,
+    "pagina": 231,
+    "bewijs": "Earnings per share (diluted) (€) 5.47 4.46",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2019-EQ-E-01.pdf",
+    "sha256": "77cf4976d9273adc5339e7ca4c565937cba66ee1edd250f695fc6dbccb88f44d",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 5.89,
+    "vorig_jaar": 2019,
+    "eps_vorig": 5.47,
+    "pagina": 254,
+    "bewijs": "Earnings per share (diluted) (€) 5.89 5.47",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2020-EQ-E-00.pdf",
+    "sha256": "f1688f5cdc38ef905e096ac0d6aaa3221c678246f3aeb5d40327ed747f8d59ec",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 6.58,
+    "vorig_jaar": 2020,
+    "eps_vorig": 5.89,
+    "pagina": 149,
+    "bewijs": "Earnings per share (diluted) (€) 22 6.58 5.89",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2021-EQ-E-00.pdf",
+    "sha256": "10c719670a659b1548ee878ed63d4bf4fd5d21120058744d50bfef708c5c9a75",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 8.12,
+    "vorig_jaar": 2021,
+    "eps_vorig": 6.58,
+    "pagina": 134,
+    "bewijs": "Earnings per share (diluted) (€) 23 8.12 6.58",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2022-EQ-E-00.pdf",
+    "sha256": "889b65644edcca60c2546e1248313dfbfc355bac2838b1c8523f3ab10994dbfa",
+    "bestand": "2022-eqs"
+   },
+   "2023": {
+    "jaar": 2023,
+    "eps": 9.34,
+    "vorig_jaar": 2022,
+    "eps_vorig": 8.12,
+    "pagina": 210,
+    "bewijs": "Notes on the consolidated income statement Earnings per share (diluted) (€) 9.34 8.12",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2023-EQ-E-00.pdf",
+    "sha256": "e2c35d65f0f51f67594d5257073947d886cb90ee6c052b9eb96b335626afe559",
+    "bestand": "2023-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": 10.58,
+    "vorig_jaar": 2023,
+    "eps_vorig": 9.34,
+    "pagina": 270,
+    "bewijs": "Earnings per share (diluted) () 10.58 9.34",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2024-EQ-E-00.pdf",
+    "sha256": "0f368b8ba5809ff373694f859a93d961ee7c9a6d4c3e40f473da439261abb6f9",
+    "bestand": "2024-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": 10.9,
+    "vorig_jaar": 2024,
+    "eps_vorig": 10.6,
+    "pagina": 42,
+    "bewijs": "Earnings per share (basic) € 6.59 8.14 9.35 10.60 10.90",
+    "kandidaten": 4,
+    "meerjaren": {
+     "2021": 6.59,
+     "2022": 8.14,
+     "2023": 9.35
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/deutsche-boerse/Annual Reports/DE0005810055-JA-2025-EQ-E-00.pdf",
+    "sha256": "acd87e73d4c285492ae16f7d6cfc0031c3d8c36d6f9bbccd78604401a4a45247",
+    "bestand": "2025-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: kleine herziening (10.58 → 10.6); nieuwste telt",
+   "2022: kleine herziening (8.12 → 8.14); nieuwste telt"
+  ]
  },
  "DTE.DE": {
   "reeks": {
@@ -415,35 +1369,191 @@
    "2025": 1.97
   },
   "verslagen": {
+   "2016": {
+    "jaar": 2016,
+    "eps": null,
+    "alternatieven": [
+     [
+      -18.3,
+      0.58,
+      2015
+     ],
+     [
+      0.58,
+      0.71,
+      2015
+     ]
+    ],
+    "pagina": 2,
+    "bewijs": "Earnings per share (basic and diluted) € (18.3) 0.58 0.71 0.65 0.21 (1.24) 0.13 0.39 0.08",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2016-EQ-E-00.pdf",
+    "sha256": "7e1b09e0f6c72286f4fb00e8707db8a0bb3edd7330c140fac2ac31aac993ac1d",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 15.0,
+    "vorig_jaar": 2016,
+    "eps_vorig": 206.0,
+    "pagina": 217,
+    "bewijs": "Basic and diluted earnings per share are calculated in accordance with impact on cash flows (see Note 15 “Shareholders’ equity,” page 206 et",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2017-EQ-E-00.pdf",
+    "sha256": "a80eff04d76b096fc793bce269b31f3144e77dc278fd1448fded18582d91096c",
+    "bestand": "2017-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": null,
+    "alternatieven": [
+     [
+      0.82,
+      0.46,
+      2018
+     ],
+     [
+      78.3,
+      0.82,
+      2018
+     ]
+    ],
+    "pagina": 2,
+    "bewijs": "Earnings per share (basic and diluted) € 78.3 0.82 0.46 0.74 0.58 0.71 0.65 0.21 (1.24)",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2019-EQ-E-00.pdf",
+    "sha256": "035b4fffe52a4b6efa18b15bbddb381760f3bc8d7f274675d201deebb70292e8",
+    "bestand": "2019-eqs"
+   },
    "2021": {
-    "bewijs": "Earnings per share € (1.1) 0.87 0.88 0.82 0.46 0.74 0.58 0.71 0.65",
+    "jaar": 2021,
+    "eps": 0.87,
+    "alternatieven": [
+     [
+      -1.1,
+      0.87,
+      2020
+     ],
+     [
+      0.87,
+      0.88,
+      2020
+     ]
+    ],
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € (1.1) 0.87 0.88 0.82 0.46 0.74 0.58 0.71 0.65",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2021-EQ-E-00.pdf",
+    "sha256": "2f4c8f1aef73b39f02c242947612b9db1726d75f8b4f2d08423f61d34b16d7cb",
+    "bestand": "2021-eqs",
+    "eps_vorig": 0.88,
+    "vorig_jaar": 2020
    },
    "2022": {
-    "bewijs": "Earnings per share € 85.1 1.61 0.87 0.88 0.82 0.46 0.74 0.58 0.71",
+    "jaar": 2022,
+    "eps": 1.61,
+    "alternatieven": [
+     [
+      1.61,
+      0.87,
+      2021
+     ],
+     [
+      85.1,
+      1.61,
+      2021
+     ]
+    ],
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € 85.1 1.61 0.87 0.88 0.82 0.46 0.74 0.58 0.71",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2022-EQ-E-00.pdf",
+    "sha256": "15125e410b6ae2653c2fbc41b26fedf8e2fbf5d0806cf440586585c5afc6ca1b",
+    "bestand": "2022-eqs",
+    "eps_vorig": 0.87,
+    "vorig_jaar": 2021
    },
    "2023": {
-    "bewijs": "Earnings per share € n.a. 3.57 1.61 0.87 0.88 0.82",
+    "jaar": 2023,
+    "eps": 3.57,
+    "vorig_jaar": 2022,
+    "eps_vorig": 1.61,
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € n.a. 3.57 1.61 0.87 0.88 0.82",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2023-EQ-E-00.pdf",
+    "sha256": "32434211c140ed866d019d5ea7a8af0d69cbcee75e00d222f10ce81cdc0770d6",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Earnings per share € (36.5) 2.27 3.57 1.61 0.87 0.88",
+    "jaar": 2024,
+    "eps": 2.27,
+    "alternatieven": [
+     [
+      -36.5,
+      2.27,
+      2023
+     ],
+     [
+      2.27,
+      3.57,
+      2023
+     ],
+     [
+      3.57,
+      0.82,
+      2023
+     ]
+    ],
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € (36.5) 2.27 3.57 1.61 0.87 0.88",
+    "kandidaten": 6,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2024-EQ-E-00.pdf",
+    "sha256": "960064d1f9814dee7847d67878342b0e3a2ace7fd0fc71e6ee866087660bf333",
+    "bestand": "2024-eqs",
+    "eps_vorig": 3.57,
+    "vorig_jaar": 2023
    },
    "2025": {
-    "bewijs": "Earnings per share € (13.1) 1.97 2.27 3.57 1.61 0.87",
+    "jaar": 2025,
+    "eps": 1.97,
+    "alternatieven": [
+     [
+      -13.1,
+      1.97,
+      2024
+     ],
+     [
+      1.97,
+      2.27,
+      2024
+     ]
+    ],
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € (13.1) 1.97 2.27 3.57 1.61 0.87",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/deutschetelekom/Annual Reports/DE0005557508-JA-2025-EQ-E-00.pdf",
+    "sha256": "e7cb002dc8e4b1f6b59f7afce5fe46fd706962cc0caddae11524707c92b9d411",
+    "bestand": "2025-eqs",
+    "eps_vorig": 2.27,
+    "vorig_jaar": 2024
    }
-  }
+  },
+  "niet_gelezen": {
+   "2015-eqs": "geen regel gevonden",
+   "2018-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2025: lezing gekozen die aansluit op het oudere verslag",
+   "2024: lezing gekozen die aansluit op het latere verslag",
+   "2022: lezing gekozen die aansluit op het latere verslag",
+   "2021: lezing gekozen die aansluit op het latere verslag",
+   "2019: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
  },
  "EOAN.DE": {
   "reeks": {
+   "2020": 0.4,
    "2021": 1.8,
    "2022": 0.7,
    "2023": 0.2,
@@ -451,27 +1561,175 @@
    "2025": 0.66
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": null,
+    "alternatieven": [
+     [
+      -242.0,
+      198.0,
+      2014
+     ],
+     [
+      -3.6,
+      -1.64,
+      2014
+     ]
+    ],
+    "pagina": 41,
+    "bewijs": "earnings per share of -€3.60 were substantially below the affecting net income -242 198",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2015-EQ-E-00.pdf",
+    "sha256": "df8fec6132c779d3a2dbad6ac16eb78adc40faa5209b2f633e368655a19ba910",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 36.0,
+    "vorig_jaar": 2015,
+    "eps_vorig": 36.0,
+    "pagina": 121,
+    "bewijs": "putation of diluted earnings per share is identical to that of basic accordance with IAS 36, “Impairment of Assets,” (“IAS 36”) it",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2016-EQ-E-00.pdf",
+    "sha256": "a87bcb2db1880faa661e0b9a946aa88ff1abf7438d6b8a5be59303064961dc2b",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 1.84,
+    "vorig_jaar": 2016,
+    "eps_vorig": -4.33,
+    "pagina": 231,
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) 1.1 -1.64 -3.6 -4.33 1.84",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2013": 1.1,
+     "2014": -1.64,
+     "2015": -3.6
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2017-EQ-E-01.pdf",
+    "sha256": "c3d13dca7fc3b5b7e222ecbbd504173f6de87b7012ee0d31a4c3a0284f3d46db",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 1.49,
+    "vorig_jaar": 2017,
+    "eps_vorig": 1.84,
+    "pagina": 247,
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) -1.64 -3.6 -4.33 1.84 1.49",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2014": -1.64,
+     "2015": -3.6,
+     "2016": -4.33
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2018-EQ-E-00.pdf",
+    "sha256": "2c2160ac97d9a212fa8b408eb90fab6d17fc83d9bde6bc7ab06424af6cda867f",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 0.68,
+    "vorig_jaar": 2018,
+    "eps_vorig": 1.49,
+    "pagina": 245,
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) -3.6 -4.33 1.84 1.49 0.68",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2015": -3.6,
+     "2016": -4.33,
+     "2017": 1.84
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2019-EQ-E-00.pdf",
+    "sha256": "74da79c57fc519fdb7c04c9fec18171598814866597dd6d9ebea4615ae919bf4",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 36.0,
+    "vorig_jaar": 2019,
+    "eps_vorig": 36.0,
+    "pagina": 131,
+    "bewijs": "Basic (undiluted) earnings per share is computed by dividing the dance with IAS 36, “Impairment of Assets,” (“IAS 36”) it is",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2020-EQ-E-00.pdf",
+    "sha256": "7ccdd224574216a254abbdafe2cef78e20e07cd31f6f747cd6d159e46077ddf8",
+    "bestand": "2020-eqs"
+   },
    "2021": {
-    "bewijs": "Domestic 4 6 The computation of diluted earnings per share is identical to that of",
-    "pagina": 200,
-    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2021-EQ-E-00.pdf"
+    "jaar": 2021,
+    "eps": 0.39,
+    "vorig_jaar": 2020,
+    "eps_vorig": 362.0,
+    "pagina": 9,
+    "bewijs": "Earnings per share‌ (€)5, 6 1.80 0.39 +362",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2021-EQ-E-00.pdf",
+    "sha256": "0e31f06a8520ad75c696288ff0bb33f1492d7e07a1f2f76cefb295c7507ddbb7",
+    "bestand": "2021-eqs"
    },
    "2023": {
-    "bewijs": "market proceeds, which took effect on December 24, 2022. Southeastern Turkey and northern Syria experienced several major forecast range of ",
-    "pagina": 99,
-    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2022-EQ-E-00.pdf"
+    "jaar": 2023,
+    "eps": 0.7,
+    "vorig_jaar": 2022,
+    "eps_vorig": 1.8,
+    "pagina": 265,
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) 0,68 0.40 1.80 0.70 0.20",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2020": 0.68,
+     "2021": 0.4
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2023-EQ-E-00.pdf",
+    "sha256": "cddc676ec8d0ebeefcddb75a97c4a2415b661575bb224d42c54a8c37dddd3eeb",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Financial statement audits 36 34 The computation of basic and diluted earnings per share for the periods",
-    "pagina": 159,
-    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2024-EQ-E-00.pdf"
+    "jaar": 2024,
+    "eps": 1.77,
+    "vorig_jaar": 2023,
+    "eps_vorig": 0.2,
+    "pagina": 223,
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) 0,4 1.80 0.70 0.20 1.77",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2020": 0.4,
+     "2021": 1.8,
+     "2022": 0.7
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2024-EQ-E-00.pdf",
+    "sha256": "9c16cf0ab8af7239c2bb68b6b9673af2450aa506849788a3ea288699a846328d",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) 1.8 0.70 0.20 1.73 0.66",
+    "jaar": 2025,
+    "eps": 0.66,
+    "vorig_jaar": 2024,
+    "eps_vorig": 1.73,
     "pagina": 272,
-    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share attributable to shareholders of E.ON SE (€) 1.8 0.70 0.20 1.73 0.66",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2021": 1.8,
+     "2022": 0.7,
+     "2023": 0.2
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/e-on/Annual Reports/DE000ENAG999-JA-2025-EQ-E-00.pdf",
+    "sha256": "b4dbb934d683e3cddac1731144ff36c05ce4cff8cdd4cdf9770b33f9bdbdd1ca",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {
+   "2022-eqs": "zelfde boekjaar 2021 als een ander bestand, met andere cijfers"
+  },
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: kleine herziening (1.77 → 1.73); nieuwste telt",
+   "2024: meerjarenoverzicht vult 2020",
+   "2023: verschil (0.7 in eigen verslag, 0.2 in later verslag); reeks stopt"
+  ]
  },
  "FME.DE": {
   "reeks": {
@@ -487,52 +1745,301 @@
    "2025": 3.36
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": null,
+    "alternatieven": [
+     [
+      3.38,
+      3.45,
+      2014
+     ],
+     [
+      4.0,
+      3.0,
+      2014
+     ]
+    ],
+    "pagina": 201,
+    "bewijs": "FULLY DILUTED EARNINGS PER SHARE 15 3.38 3.45",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2015-EQ-E-00.pdf",
+    "sha256": "1ff034c98e5f0bb9fcf8b106112314cec3b6d268dd2c361922b3eeb2b4800550",
+    "bestand": "2015-eqs"
+   },
    "2017": {
-    "bewijs": "FULLY DILUTED EARNINGS PER SHARE 19 4.16 3.73 3.13",
+    "jaar": 2017,
+    "eps": 4.16,
+    "alternatieven": [
+     [
+      4.16,
+      3.73,
+      2016
+     ],
+     [
+      19.0,
+      4.16,
+      2016
+     ]
+    ],
     "pagina": 134,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2017-EQ-E-00.pdf"
+    "bewijs": "FULLY DILUTED EARNINGS PER SHARE 19 4.16 3.73 3.13",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2017-EQ-E-00.pdf",
+    "sha256": "e892060f16433a2962ca5752e7d08c409e2ae63cc74c09c50df94b02b54a6431",
+    "bestand": "2017-eqs",
+    "eps_vorig": 3.73,
+    "vorig_jaar": 2016
    },
    "2018": {
-    "bewijs": "Operating (income) expenses FULLY DILUTED EARNINGS PER SHARE 19 6.45 4.16 3.73",
+    "jaar": 2018,
+    "eps": 6.45,
+    "vorig_jaar": 2017,
+    "eps_vorig": 4.16,
     "pagina": 148,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Operating (income) expenses FULLY DILUTED EARNINGS PER SHARE 19 6.45 4.16 3.73",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2018-EQ-E-00.pdf",
+    "sha256": "1d274da8583290d1b8dcf9b4b4a054df7c26e6e482d3344af21c8b2e972b7a5d",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.96 6.45 4.16",
+    "jaar": 2019,
+    "eps": 3.96,
+    "vorig_jaar": 2018,
+    "eps_vorig": 6.45,
     "pagina": 154,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2019-EQ-E-00.pdf"
+    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.96 6.45 4.16",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2019-EQ-E-00.pdf",
+    "sha256": "d33241a0c9955001b48b49ddf637ed38589fa6e1ae9db6a1c523bf41915646d4",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.96 3.96 6.45",
+    "jaar": 2020,
+    "eps": 3.96,
+    "vorig_jaar": 2019,
+    "eps_vorig": 3.96,
     "pagina": 148,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2020-EQ-E-00.pdf"
+    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.96 3.96 6.45",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2020-EQ-E-00.pdf",
+    "sha256": "b052c20d8d07d2997d7aa74e1337a67f1e6398dc7d5fb0474925aee65fd25cbe",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.31 3.96 3.96",
+    "jaar": 2021,
+    "eps": 3.31,
+    "vorig_jaar": 2020,
+    "eps_vorig": 3.96,
     "pagina": 177,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2021-EQ-E-00.pdf"
+    "bewijs": "DILUTED EARNINGS PER SHARE 19 3.31 3.96 3.96",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2019": 3.96
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2021-EQ-E-00.pdf",
+    "sha256": "44e621053ca7134c1f644db52d98d43a9b7cbf58ac2a5598a643ec9ebbca6c67",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "DILUTED EARNINGS PER SHARE 19 2.30 3.31 3.96",
+    "jaar": 2022,
+    "eps": 2.3,
+    "vorig_jaar": 2021,
+    "eps_vorig": 3.31,
     "pagina": 183,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2022-EQ-E-00.pdf"
+    "bewijs": "DILUTED EARNINGS PER SHARE 19 2.30 3.31 3.96",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2022-EQ-E-00.pdf",
+    "sha256": "3bd9f7f8bb4a4428a0a1469f9bbfe369ca9e2af87bcdfafea39384aa28c6e90f",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Key Performance Indicators Basic and diluted earnings per share in € 1.70 2.30 (26) (2) (24)",
+    "jaar": 2023,
+    "eps": 1.7,
+    "vorig_jaar": 2022,
+    "eps_vorig": 2.3,
     "pagina": 56,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Key Performance Indicators Basic and diluted earnings per share in € 1.70 2.30 (26) (2) (24)",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2023-EQ-E-00.pdf",
+    "sha256": "92a4ce8848e4b25df71d7c95e295236ceec34c32526ffb07000afdbd98e862dd",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Basic and diluted earnings per share in € 1.83 1.70 8 (1) 9",
+    "jaar": 2024,
+    "eps": 1.83,
+    "vorig_jaar": 2023,
+    "eps_vorig": 1.7,
     "pagina": 159,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € 1.83 1.70 8 (1) 9",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2024-EQ-E-00.pdf",
+    "sha256": "f93107961cc916480b1c1aa7fb4a9582ae9b246a4971f3a09ed36d6f25989aa7",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Basic and diluted earnings per share in € 3.36 1.83 83 (6) 89 bursement rate increases, and favorable payor mix",
+    "jaar": 2025,
+    "eps": 3.36,
+    "vorig_jaar": 2024,
+    "eps_vorig": 1.83,
     "pagina": 158,
-    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € 3.36 1.83 83 (6) 89 bursement rate increases, and favorable payor mix",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fmc/Annual Reports/DE0005785802-JA-2025-EQ-E-00.pdf",
+    "sha256": "b6e37644333b7dcbe605d18015ce7148ce09a3b799d27c1cf345d45ab9c8dc84",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2021: meerjarenoverzicht vult 2019",
+   "2017: lezing gekozen die aansluit op het latere verslag",
+   "2015: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
+ },
+ "FRE.DE": {
+  "reeks": {},
+  "verslagen": {
+   "2016": {
+    "jaar": 2016,
+    "eps": 2.9,
+    "vorig_jaar": 2015,
+    "eps_vorig": 2.48,
+    "pagina": 105,
+    "bewijs": "Fully diluted earnings per share in € 12 2.90 2.48",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2016-EQ-E-00.pdf",
+    "sha256": "c1754b468d7b041d4ec048c10d47c4a67862de927441f294d5d336e346f8b77a",
+    "bestand": "2016-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 3.63,
+    "vorig_jaar": 2017,
+    "eps_vorig": 3.25,
+    "pagina": 164,
+    "bewijs": "Fully diluted earnings per share in € 13 3.63 3.25",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2018-EQ-E-00.pdf",
+    "sha256": "3d97f85fd9cddf6fdd729ea1d886e27cdfa5358569dc11795098ab7f23b883dd",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 3.38,
+    "vorig_jaar": 2018,
+    "eps_vorig": 3.63,
+    "pagina": 165,
+    "bewijs": "Fully diluted earnings per share in € 13 3.38 3.63",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2019-EQ-E-00.pdf",
+    "sha256": "b39a982c895c8d4f63e767429c315126864f04fd30ab4704181d89d9ae68368f",
+    "bestand": "2019-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": null,
+    "alternatieven": [
+     [
+      3.0,
+      50.0,
+      2020
+     ],
+     [
+      3.26,
+      3.06,
+      2020
+     ],
+     [
+      3.35,
+      3.22,
+      2020
+     ]
+    ],
+    "pagina": 71,
+    "bewijs": "Fully diluted earnings per ordinary share in €1,2 3.35 3.22 4%",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2021-EQ-E-00.pdf",
+    "sha256": "ed9d49a82b5563489fd71ecfc15476b96a83b9c5880a9c81ea7c07288e17c2e9",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": null,
+    "alternatieven": [
+     [
+      2.44,
+      3.26,
+      2021
+     ],
+     [
+      3.08,
+      3.35,
+      2021
+     ]
+    ],
+    "pagina": 60,
+    "bewijs": "Fully diluted earnings per ordinary share in €1,2 3.08 3.35 -8%",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
+    "sha256": "89a5ea1785c572a09fe5d5dcb7cd461e890a386783c7a02839a0d765772abbb7",
+    "bestand": "2022-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": null,
+    "alternatieven": [
+     [
+      -1.05,
+      0.84,
+      2023
+     ],
+     [
+      0.84,
+      -1.05,
+      2023
+     ],
+     [
+      3.11,
+      2.74,
+      2023
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Earnings per share in € 1,2,3 3.11 2.74 3.08 3.35 3.22",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2024-EQ-E-00.pdf",
+    "sha256": "618845ccd15ea3afd534d0f0407144df14f5ee794c7fd1a65936e3ac9b04df96",
+    "bestand": "2024-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": null,
+    "alternatieven": [
+     [
+      2.24,
+      0.84,
+      2024
+     ],
+     [
+      3.54,
+      3.11,
+      2024
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Earnings per share in €1,2,3 3.54 3.11 2.74 3.08 3.35",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2025-EQ-E-00.pdf",
+    "sha256": "11158966ec8639a53d23915ade25f261b4ac8d58830d3f6e43bb3ce0a30a85fd",
+    "bestand": "2025-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
  },
  "G24.DE": {
   "reeks": {
@@ -542,25 +2049,206 @@
    "2025": 3.33
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 6.3,
+    "vorig_jaar": 2014,
+    "eps_vorig": 12.0,
+    "pagina": 100,
+    "bewijs": "Diluted earnings per share 6.3.12",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2015-EQ-E-00.pdf",
+    "sha256": "1e831de1444df255c456c2e146449c0c78f5a4f76655fefb860ce2cb26e338ce",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 0.62,
+    "vorig_jaar": 2015,
+    "eps_vorig": 0.56,
+    "pagina": 102,
+    "bewijs": "Earnings per share after tax 0.62 0.56",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2016-EQ-E-00.pdf",
+    "sha256": "bfc45f1527921a26dd87428b7afb9964b989e4df45b8782bd97ed9811c4c911a",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 1.03,
+    "vorig_jaar": 2016,
+    "eps_vorig": 0.62,
+    "pagina": 93,
+    "bewijs": "Earnings per share after tax 1.03 0.62",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2017-EQ-E-00.pdf",
+    "sha256": "017ee073e5d693ab088783d62eb9a1808a024c6b462ef90969f0e1b4c8d0079e",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 1.53,
+    "vorig_jaar": 2017,
+    "eps_vorig": 1.03,
+    "pagina": 98,
+    "bewijs": "Earnings per share after tax 1.53 1.03",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2018-EQ-E-00.pdf",
+    "sha256": "a330f224f253721f5f01ee8c656e8edba5753b5d187451eadeb8d4a4b1847770",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": null,
+    "alternatieven": [
+     [
+      0.15,
+      0.82,
+      2018
+     ],
+     [
+      0.59,
+      0.7,
+      2018
+     ],
+     [
+      0.59,
+      0.71,
+      2018
+     ],
+     [
+      0.75,
+      1.52,
+      2018
+     ],
+     [
+      0.75,
+      1.53,
+      2018
+     ]
+    ],
+    "pagina": 117,
+    "bewijs": "Earnings per share after tax 0.75 1.53",
+    "kandidaten": 6,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2019-EQ-E-00.pdf",
+    "sha256": "20ca689612705c36f7e41008e38e42ddf8e04eaaa5f5e4864ab20ddfd78b30a4",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": null,
+    "alternatieven": [
+     [
+      1.0,
+      0.59,
+      2019
+     ],
+     [
+      22.17,
+      0.15,
+      2019
+     ],
+     [
+      23.17,
+      0.75,
+      2019
+     ]
+    ],
+    "pagina": 93,
+    "bewijs": "Earnings per share after tax 23.17 0.75",
+    "kandidaten": 6,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2020-EQ-E-00.pdf",
+    "sha256": "1869f97465029710c613ef7074dbd8fbdd1c449819cebb9419bec92fc90fe6ba",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": null,
+    "alternatieven": [
+     [
+      -0.0,
+      22.17,
+      2020
+     ],
+     [
+      1.03,
+      1.0,
+      2020
+     ],
+     [
+      1.03,
+      23.17,
+      2020
+     ]
+    ],
+    "pagina": 108,
+    "bewijs": "Earnings per share after tax 1.03 23.17",
+    "kandidaten": 6,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2021-EQ-E-00.pdf",
+    "sha256": "fc10780e643e579efcdcdc7d15a25358d87e0746e64fb9755c05b2aed59551a9",
+    "bestand": "2021-eqs"
+   },
    "2023": {
-    "bewijs": "Diluted earnings per share 3.12. 2.43 1.59",
+    "jaar": 2023,
+    "eps": 2.43,
+    "alternatieven": [
+     [
+      2.43,
+      1.59,
+      2022
+     ],
+     [
+      3.12,
+      2.43,
+      2022
+     ]
+    ],
     "pagina": 143,
-    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 3.12. 2.43 1.59",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2023-EQ-E-00.pdf",
+    "sha256": "e94fe2caad3317af54acc6792c5ede923cedf784d8b7c30a7fa474e4db51f417",
+    "bestand": "2023-eqs",
+    "eps_vorig": 1.59,
+    "vorig_jaar": 2022
    },
    "2024": {
-    "bewijs": "Diluted earnings per share 3.8. 2.22 2.43",
+    "jaar": 2024,
+    "eps": 2.22,
+    "vorig_jaar": 2023,
+    "eps_vorig": 2.43,
     "pagina": 115,
-    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 3.8. 2.22 2.43",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2024-EQ-E-00.pdf",
+    "sha256": "cc74d6010bcdd24f2a5865a61924564fc4fc78881eabf21522e3b30ea5773dcf",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Diluted earnings per share 3.8. 3.33 2.22",
+    "jaar": 2025,
+    "eps": 3.33,
+    "vorig_jaar": 2024,
+    "eps_vorig": 2.22,
     "pagina": 117,
-    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 3.8. 3.33 2.22",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/scout24/Annual Reports/DE000A12DM80-JA-2025-EQ-E-00.pdf",
+    "sha256": "688e1b1a59b14b795f63e94f7c3152e2585cc927ce60a5b340a40dc5998c0d86",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2023: lezing gekozen die aansluit op het latere verslag",
+   "2021: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
  },
  "HEI.DE": {
   "reeks": {
+   "2011": 1.86,
+   "2012": 1.52,
+   "2013": 3.93,
+   "2014": 2.59,
    "2015": 4.26,
    "2016": 3.4,
    "2017": 4.62,
@@ -574,57 +2262,507 @@
    "2025": 10.92
   },
   "verslagen": {
-   "2016": {
-    "bewijs": "Earnings per share in € 1.83 1.86 1.52 3.93 2.59 4.26 3.66",
+   "2015": {
+    "jaar": 2015,
+    "eps": 4.26,
+    "vorig_jaar": 2014,
+    "eps_vorig": 2.59,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Earnings per share in € 0.30 1.83 1.86 1.52 3.93 2.59 4.26",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2015-EQ-E-00.pdf",
+    "sha256": "f37c911c3a3c65bf58e22460c7a147df6b51f0a49ebed94a41d5fcdcca4feaec",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 3.66,
+    "vorig_jaar": 2015,
+    "eps_vorig": 4.26,
+    "pagina": 2,
+    "bewijs": "Earnings per share in € 1.83 1.86 1.52 3.93 2.59 4.26 3.66",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2016-EQ-E-00.pdf",
+    "sha256": "df101a06d3765ef7de8db405b07fcbd1819b2acfab9dcfc51994454fa4a947a3",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Earnings per share in € 1.86 1.52 3.93 2.59 4.26 3.40 4.62",
+    "jaar": 2017,
+    "eps": 4.62,
+    "vorig_jaar": 2016,
+    "eps_vorig": 3.4,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Earnings per share in € 1.86 1.52 3.93 2.59 4.26 3.40 4.62",
+    "kandidaten": 4,
+    "meerjaren": {
+     "2011": 1.86,
+     "2012": 1.52,
+     "2013": 3.93,
+     "2014": 2.59,
+     "2015": 4.26
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2017-EQ-E-00.pdf",
+    "sha256": "215193bdff7d9af569028bdf14f290d4e741448d7b78d2c2355675c7291ea748",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Earnings per share in € 1.52 3.93 2.59 4.26 3.40 4.62 5.76",
+    "jaar": 2018,
+    "eps": 5.76,
+    "alternatieven": [
+     [
+      1.0,
+      74.47,
+      2017
+     ],
+     [
+      5.76,
+      4.62,
+      2017
+     ]
+    ],
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Earnings per share in € 1.52 3.93 2.59 4.26 3.40 4.62 5.76",
+    "kandidaten": 6,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2018-EQ-E-00.pdf",
+    "sha256": "93d3f5fbe8a710034d03f47c87d641801cf020326f0063442e2f88cf1b6c569b",
+    "bestand": "2018-eqs",
+    "eps_vorig": 4.62,
+    "vorig_jaar": 2017
    },
    "2019": {
-    "bewijs": "Earnings per share in € 4.26 3.40 4.62 5.76 5.50",
+    "jaar": 2019,
+    "eps": 5.5,
+    "vorig_jaar": 2018,
+    "eps_vorig": 5.76,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2019-EQ-E-00.pdf"
-   },
-   "2020": {
-    "bewijs": "and the MSCI World Construction Materials Index grew by year was €-10.78 (previous year: earnings per share of €5.50).",
-    "pagina": 16,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Earnings per share in € 4.26 3.40 4.62 5.76 5.50",
+    "kandidaten": 5,
+    "meerjaren": {
+     "2015": 4.26,
+     "2016": 3.4,
+     "2017": 4.62
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2019-EQ-E-00.pdf",
+    "sha256": "4fd23e8742f6d0a7fe79018ec9efdd10d702b9070c54fdbf2bf03d0962a16bb1",
+    "bestand": "2019-eqs"
    },
    "2021": {
-    "bewijs": "Earnings per share in € 4.62 5.76 5.50 -10.78 8.91",
+    "jaar": 2021,
+    "eps": 8.91,
+    "vorig_jaar": 2020,
+    "eps_vorig": -10.78,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Earnings per share in € 4.62 5.76 5.50 -10.78 8.91",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2017": 4.62,
+     "2018": 5.76,
+     "2019": 5.5
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2021-EQ-E-00.pdf",
+    "sha256": "662bb67ef94c2696ff5e05c484b849d34dfec19ad74a2032d01d5b9833c96a72",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "A study conducted at the end of 2022 showed that the Earnings per share 8.91 8.45",
-    "pagina": 19,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2022-EQ-E-00.pdf"
+    "jaar": 2022,
+    "eps": 8.45,
+    "alternatieven": [
+     [
+      8.45,
+      8.91,
+      2021
+     ],
+     [
+      8.91,
+      7.12,
+      2021
+     ]
+    ],
+    "pagina": 92,
+    "bewijs": "Earnings per share (€) 8.91 8.45",
+    "kandidaten": 4,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2022-EQ-E-00.pdf",
+    "sha256": "b829f0c6c99f72174cb30a89df74cabecddece5f4cb514cc83aee2fae298e228",
+    "bestand": "2022-eqs",
+    "eps_vorig": 8.91,
+    "vorig_jaar": 2021
    },
    "2023": {
-    "bewijs": "totalled €546,204,360 and has been divided into 13.3 ● UK & Ireland Earnings per share 8.45 10.43",
-    "pagina": 21,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2023-EQ-E-00.pdf"
+    "jaar": 2023,
+    "eps": 10.43,
+    "alternatieven": [
+     [
+      8.45,
+      7.12,
+      2022
+     ],
+     [
+      10.43,
+      8.45,
+      2022
+     ]
+    ],
+    "pagina": 103,
+    "bewijs": "Earnings per share (€) 8.45 10.43 Net debt 5,532 5,294",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2023-EQ-E-00.pdf",
+    "sha256": "0645f9ec5209909c9388ec3aa1aeda835693671a07d348b51b0c9bd9b33ef894",
+    "bestand": "2023-eqs",
+    "eps_vorig": 8.45,
+    "vorig_jaar": 2022
    },
    "2024": {
-    "bewijs": "Earnings per share 10.43 9.87",
+    "jaar": 2024,
+    "eps": 9.87,
+    "alternatieven": [
+     [
+      9.87,
+      10.43,
+      2023
+     ],
+     [
+      10.43,
+      7.12,
+      2023
+     ]
+    ],
     "pagina": 26,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Earnings per share 10.43 9.87",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2024-EQ-E-00.pdf",
+    "sha256": "6d97d47690f0ccddc49a853db100e99f7e773ac505651028a4053283858f1001",
+    "bestand": "2024-eqs",
+    "eps_vorig": 10.43,
+    "vorig_jaar": 2023
    },
    "2025": {
-    "bewijs": "Earnings per share 9.87 10.92",
+    "jaar": 2025,
+    "eps": 10.92,
+    "alternatieven": [
+     [
+      9.87,
+      7.12,
+      2024
+     ],
+     [
+      10.92,
+      9.87,
+      2024
+     ]
+    ],
     "pagina": 24,
-    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share 9.87 10.92",
+    "kandidaten": 5,
+    "url": "https://irpages2.eqs.com/Download/Companies/heidelbergcement/Annual Reports/DE0006047004-JA-2025-EQ-E-00.pdf",
+    "sha256": "281e7a43ec4fd277bec7466a5ef80aa88f6f4fdc1b05ae91c8957a8b83c2891c",
+    "bestand": "2025-eqs",
+    "eps_vorig": 9.87,
+    "vorig_jaar": 2024
    }
-  }
+  },
+  "niet_gelezen": {
+   "2020-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2025: lezing gekozen die aansluit op het oudere verslag",
+   "2024: lezing gekozen die aansluit op het latere verslag",
+   "2023: lezing gekozen die aansluit op het latere verslag",
+   "2022: lezing gekozen die aansluit op het latere verslag",
+   "2021: meerjarenoverzicht vult 2017, 2018, 2019",
+   "2019: meerjarenoverzicht vult 2015, 2016",
+   "2018: lezing gekozen die aansluit op het latere verslag",
+   "2017: meerjarenoverzicht vult 2011, 2012, 2013, 2014",
+   "2016: verschil (3.66 in eigen verslag, 3.4 in later verslag); reeks stopt"
+  ]
+ },
+ "HEN3.DE": {
+  "reeks": {},
+  "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 4.42,
+    "vorig_jaar": 2014,
+    "eps_vorig": 3.74,
+    "pagina": 124,
+    "bewijs": "Earnings per ordinary share – basic and diluted\b in euros 3.74 4.42 18.2 %",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2015-EQ-E-00.pdf",
+    "sha256": "9276f1009faead4d88384eadce92e09128879d3c5be33f17280075f9a344576c",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 4.72,
+    "vorig_jaar": 2015,
+    "eps_vorig": 4.42,
+    "pagina": 122,
+    "bewijs": "Earnings per ordinary share – basic and diluted\b in euros 4.42 4.72 6.8 %",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2016-EQ-E-00.pdf",
+    "sha256": "f8f3a87fc2f371ceab092f7e2001c96d2a1bbb9f1d9369cc69b743d0f06ad467",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 5.34,
+    "vorig_jaar": 2016,
+    "eps_vorig": 4.72,
+    "pagina": 175,
+    "bewijs": "Diluted earnings per ordinary share in euros 4.72 5.34 5.79 5.83",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2017-EQ-E-00.pdf",
+    "sha256": "01973a8ddc8a957e5194bf1a35bea2fea768b042841b7b3b7c287342a2eb4fc1",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 5.83,
+    "vorig_jaar": 2017,
+    "eps_vorig": 5.79,
+    "pagina": 218,
+    "bewijs": "and the appropriation of the profit Diluted earnings per ordinary share in euros 5.79 5.83 5.31 5.99",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2018-EQ-E-00.pdf",
+    "sha256": "9acfbdb0524551db2ce685e566537aa990d030bca71c2510999ee5910779beec",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": null,
+    "alternatieven": [
+     [
+      4.16,
+      3.49,
+      2018
+     ],
+     [
+      4.79,
+      5.32,
+      2018
+     ]
+    ],
+    "pagina": 139,
+    "bewijs": "of the annual financial statements Earnings per ordinary share – basic and diluted\b in euros 5.32 4.79 – 10.0 %",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2019-EQ-E-00.pdf",
+    "sha256": "f56df1ce93b440f38c6dc98923e34c93441aa2ab0deaeb52dccc89151f753855",
+    "bestand": "2019-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 4.24,
+    "vorig_jaar": 2020,
+    "eps_vorig": 3.23,
+    "pagina": 289,
+    "bewijs": "Diluted earnings per ordinary share in euros 3.23 4.24 3.76 4.54",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2021-EQ-E-00.pdf",
+    "sha256": "f9f34f0119bc6716a25e2b52434b163f0767d55f657054f4789cf6c0ab5d9946",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 2.93,
+    "vorig_jaar": 2021,
+    "eps_vorig": 3.76,
+    "pagina": 205,
+    "bewijs": "Earnings per ordinary share – basic and diluted in euros 3.76 2.93 -22.1%",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2022-EQ-E-00.pdf",
+    "sha256": "5de451f8b471b114bf0ac1ead200cec61ba2c44ce8009fee9754a572bdc2ff17",
+    "bestand": "2022-eqs"
+   },
+   "2023": {
+    "jaar": 2023,
+    "eps": 3.13,
+    "vorig_jaar": 2022,
+    "eps_vorig": 2.93,
+    "pagina": 214,
+    "bewijs": "Earnings per ordinary share – basic and diluted in euros 2.93 3.13 6.8%",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2023-EQ-E-00.pdf",
+    "sha256": "7a1948fbd147dcafdfc4f04aea3fc8fedd3ad8fc27e8657122076d959f152349",
+    "bestand": "2023-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": 4.78,
+    "vorig_jaar": 2023,
+    "eps_vorig": 3.13,
+    "pagina": 213,
+    "bewijs": "Earnings per ordinary share – basic and diluted in euros 3.13 4.78 52.7%",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2024-EQ-E-00.pdf",
+    "sha256": "32b70a90fe571ec63c3ddf9238090daa46ebe9a7556acf0c1202de7a19e37114",
+    "bestand": "2024-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": null,
+    "alternatieven": [
+     [
+      4.9,
+      4.78,
+      2024
+     ],
+     [
+      5.34,
+      4.78,
+      2024
+     ]
+    ],
+    "pagina": 344,
+    "bewijs": "Earnings per ordinary share – basic and diluted in euros 4.78 4.90 2.5%",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/henkel/Annual Reports/DE0006048432-JA-2025-EQ-E-00.pdf",
+    "sha256": "2c1925a2c9d54b067c253a1912436102e21c882418955183acba1d3324177fbe",
+    "bestand": "2025-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
+ },
+ "IFX.DE": {
+  "reeks": {
+   "2024": 0.97,
+   "2025": 0.76
+  },
+  "verslagen": {
+   "2016": {
+    "jaar": 2016,
+    "eps": 0.66,
+    "vorig_jaar": 2015,
+    "eps_vorig": 0.56,
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share in € 0.66 0.56 18",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2015-EQ-E-00.pdf",
+    "sha256": "388651b40f7cd431db4a5afb14e07a4803da81e79bf0e6c9f68f26477cca62e9",
+    "bestand": "2015-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": null,
+    "alternatieven": [
+     [
+      0.66,
+      6.0,
+      2016
+     ],
+     [
+      0.7,
+      0.66,
+      2016
+     ]
+    ],
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share in € 0.70 0.66 6",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2016-EQ-E-00.pdf",
+    "sha256": "a3dc6b1eed0166e8deb8b9e127bb4b9ba0b75a007202f6db7b16455fc7e64dbd",
+    "bestand": "2016-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 0.95,
+    "vorig_jaar": 2017,
+    "eps_vorig": 0.7,
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share in € 0.95 0.70 36",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2017-EQ-E-00.pdf",
+    "sha256": "df2cbef29df7470f2a61a6e2b97b973621b4d97b36594341c9a45ea87386445b",
+    "bestand": "2017-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 0.75,
+    "vorig_jaar": 2018,
+    "eps_vorig": 0.95,
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share in € 0.75 0.95 (21)",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2018-EQ-E-00.pdf",
+    "sha256": "9e297e9c9e52a53d502f4097450392456b7e829d365816e4623ee13e10def977",
+    "bestand": "2018-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": null,
+    "alternatieven": [
+     [
+      -5.3,
+      -6.0,
+      2019
+     ],
+     [
+      0.26,
+      0.75,
+      2019
+     ]
+    ],
+    "pagina": 97,
+    "bewijs": "Diluted earnings per share (in euro) 0.26 0.75 0% Other Operating Segments,",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2019-EQ-E-00.pdf",
+    "sha256": "d536f70a0024efd51c799845150d48102013aea194dd913b838696d162ea8841",
+    "bestand": "2019-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 0.87,
+    "vorig_jaar": 2020,
+    "eps_vorig": 0.26,
+    "pagina": 100,
+    "bewijs": "Diluted earnings per share (in euro) 0.87 0.26 demand for semiconductors in a wide range of applications. Growth was also driven by",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2020-EQ-E-00.pdf",
+    "sha256": "617b148ac1fd9488212d36c625ddafeb14cf278590f6f9a95c619e266ee66b29",
+    "bestand": "2020-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 1.65,
+    "vorig_jaar": 2021,
+    "eps_vorig": 0.87,
+    "pagina": 49,
+    "bewijs": "Diluted earnings per share (in euro) 1.65 0.87 storm.",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2021-EQ-E-00.pdf",
+    "sha256": "6344c41465889207b4c225fd9d71f4c417ba40efa8c715cefc4a3233f9e5e0b0",
+    "bestand": "2021-eqs"
+   },
+   "2023": {
+    "jaar": 2023,
+    "eps": 2.38,
+    "vorig_jaar": 2022,
+    "eps_vorig": 1.65,
+    "pagina": 3,
+    "bewijs": "Diluted earnings per share in € 2.38 1.65 44 Return on Capital Employed (RoCE)4 16.6% 12.6% 400 bp",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2022-EQ-E-00.pdf",
+    "sha256": "427ba2a2c94521d0d79d8e2f56e1d2f76824c8966501f3aea73c94971060c767",
+    "bestand": "2022-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": 0.76,
+    "vorig_jaar": 2024,
+    "eps_vorig": 0.97,
+    "pagina": 3,
+    "bewijs": "Diluted earnings per share in € 0.76 0.97 (22)",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2024-EQ-E-00.pdf",
+    "sha256": "78068b183696d4cf8f2ac2de0c8897b07ca1e51b436a0f2bd3ca86748f05fd71",
+    "bestand": "2024-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2023: sluit niet aan (gat); reeks stopt"
+  ]
  },
  "MBG.DE": {
   "reeks": {
@@ -634,22 +2772,119 @@
    "2025": 5.34
   },
   "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 7.87,
+    "vorig_jaar": 2014,
+    "eps_vorig": 6.51,
+    "pagina": 283,
+    "bewijs": "Konzernergebnis je Aktie, verwässert (€) 2 3,64 3,80 1,40 -2,63 4,28 5,31 6,02 6,40 6,51 7,87",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2006": 3.64,
+     "2007": 3.8,
+     "2008": 1.4,
+     "2009": -2.63,
+     "2010": 4.28,
+     "2011": 5.31,
+     "2012": 6.02,
+     "2013": 6.4
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2015-EQ-D-01.pdf",
+    "sha256": "19a83ba2e2d237c8604d129c8c3c14cced56ad612d079022210f168e1688535e",
+    "bestand": "2015-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 9.84,
+    "vorig_jaar": 2016,
+    "eps_vorig": 7.97,
+    "pagina": 4,
+    "bewijs": "Earnings per share (in €) 9.84 7.97 +23",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2017-EQ-E-01.pdf",
+    "sha256": "11598c231e72601ece40e828b3da5d20d5be283019e825bcbfe9a1d062c7cea9",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 6.78,
+    "vorig_jaar": 2017,
+    "eps_vorig": 9.61,
+    "pagina": 4,
+    "bewijs": "Earnings per share (in €) 6.78 9.61 2 -29",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2018-EQ-E-00.pdf",
+    "sha256": "00137ee22220ab6883bea341185a8e903a133a4b62ec949c6ec4e4a76a82ceb0",
+    "bestand": "2018-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 3.39,
+    "vorig_jaar": 2019,
+    "eps_vorig": 2.22,
+    "pagina": 4,
+    "bewijs": "Earnings per share (in €) 3.39 2.22 +53",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2020-EQ-E-00.pdf",
+    "sha256": "a2e3508344daace4fbd380f56af323051d136ede6cf97bab1d9a2b80956002a9",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 3.39,
+    "vorig_jaar": 2020,
+    "eps_vorig": 534.0,
+    "pagina": 347,
+    "bewijs": "Earnings per share (in €)2 21.50 3.39 +534",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2021-EQ-E-00.pdf",
+    "sha256": "47967ccbc6c93722a77cccdcab8860c45b311de473a9bec9f49a06f74cb73845",
+    "bestand": "2021-eqs"
+   },
    "2023": {
-    "bewijs": "Earnings per share (in euros)1 13.46 13.55 -1",
+    "jaar": 2023,
+    "eps": 13.46,
+    "vorig_jaar": 2022,
+    "eps_vorig": 13.55,
     "pagina": 349,
-    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in euros)1 13.46 13.55 -1",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2023-EQ-E-00.pdf",
+    "sha256": "e6de1082eb1f2227736aa80e17d457294d73d2ad025f5978a91e3f7d4ff3ee3d",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Earnings per share (in euros)2 10.19 13.46 -24",
+    "jaar": 2024,
+    "eps": 10.19,
+    "vorig_jaar": 2023,
+    "eps_vorig": 13.46,
     "pagina": 449,
-    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in euros)2 10.19 13.46 -24",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2024-EQ-E-00.pdf",
+    "sha256": "1fcb0d1bf053bf5667fcd2e14fe858cc89090881a80ec5efbf0d1a17df49704e",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Earnings per share (in euros)1 5.34 10.19 -48",
+    "jaar": 2025,
+    "eps": 5.34,
+    "vorig_jaar": 2024,
+    "eps_vorig": 10.19,
     "pagina": 405,
-    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in euros)1 5.34 10.19 -48",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/daimlerchrysler/Annual Reports/DE0007100000-JA-2025-EQ-E-00.pdf",
+    "sha256": "14a69ab18bdaee49d9314ffe21aa88fafb0d954ab25518e2eac0cb444cd19da7",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {
+   "2016-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2021: sluit niet aan (gat); reeks stopt"
+  ]
  },
  "MRK.DE": {
   "reeks": {
@@ -667,36 +2902,112 @@
   },
   "verslagen": {
    "2016": {
-    "bewijs": "Earnings per share (€) 3.75 2.56 1.19 46.5 %",
+    "jaar": 2016,
+    "eps": 3.75,
+    "vorig_jaar": 2015,
+    "eps_vorig": 2.56,
     "pagina": 4,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (€) 3.75 2.56 1.19 46.5 %",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2016-EQ-E-00.pdf",
+    "sha256": "3f0989eeb53bdd79eb9df1a2c4376529431c334874f0d6e617fecf3d7c3c2180",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Earnings per share (€) 5.98 3.75 2.23 59.5%",
+    "jaar": 2017,
+    "eps": 5.98,
+    "vorig_jaar": 2016,
+    "eps_vorig": 3.75,
     "pagina": 14,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (€) 5.98 3.75 2.23 59.5%",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2017-EQ-E-00.pdf",
+    "sha256": "eaf294683f709575a6c7a35eb87ba961c4f668e83474ace0ef5579329846e690",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Earnings per share (€) 7.76 5.99 1.77 29.5%",
+    "jaar": 2018,
+    "eps": 7.76,
+    "alternatieven": [
+     [
+      5.1,
+      5.92,
+      2017
+     ],
+     [
+      7.76,
+      5.99,
+      2017
+     ]
+    ],
     "pagina": 6,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (€) 7.76 5.99 1.77 29.5%",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2018-EQ-E-00.pdf",
+    "sha256": "c3d51116f728cd3cd7dd7d7cf54f481028903ef617e11aa7fbc31060c1c880c6",
+    "bestand": "2018-eqs",
+    "eps_vorig": 5.99,
+    "vorig_jaar": 2017
    },
    "2021": {
-    "bewijs": "Earnings per share (in €) 7.03 4.57 2.46 53.8%",
+    "jaar": 2021,
+    "eps": 7.03,
+    "vorig_jaar": 2020,
+    "eps_vorig": 4.57,
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in €) 7.03 4.57 2.46 53.8%",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2017": 5.99,
+     "2018": 7.76,
+     "2019": 3.04
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2021-EQ-E-00.pdf",
+    "sha256": "60450dd3f9261b703fa888a20bc949c11302121794255a2a1e6b0ec800ade10e",
+    "bestand": "2021-eqs"
    },
    "2024": {
-    "bewijs": "Earnings per share (in €) 6.39 6.49 -0.10 -1.5%",
+    "jaar": 2024,
+    "eps": 6.39,
+    "vorig_jaar": 2023,
+    "eps_vorig": 6.49,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in €) 6.39 6.49 -0.10 -1.5%",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2020": 4.57,
+     "2021": 7.03,
+     "2022": 7.65
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2024-EQ-E-00.pdf",
+    "sha256": "9f2254eba299babeb66cf14042c92732ca39e42c05240c2c44078c87bff17f2f",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Earnings per share (in €) 6.00 6.39 -0.39 -6.1%",
+    "jaar": 2025,
+    "eps": 6.0,
+    "vorig_jaar": 2024,
+    "eps_vorig": 6.39,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Earnings per share (in €) 6.00 6.39 -0.39 -6.1%",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2021": 7.03,
+     "2022": 7.65,
+     "2023": 6.49
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2025-EQ-E-00.pdf",
+    "sha256": "04e549e124977904c5c4de64dc3d8a600cd4e77088fb0fe4494ea2df2920909c",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: meerjarenoverzicht vult 2020",
+   "2021: meerjarenoverzicht vult 2017, 2018, 2019",
+   "2018: lezing gekozen die aansluit op het latere verslag"
+  ]
  },
  "MTX.DE": {
   "reeks": {
@@ -709,37 +3020,358 @@
    "2024": 11.53
   },
   "verslagen": {
-   "2019": {
-    "bewijs": "Diluted earnings per share 8.46 8.10 4.4",
+   "2015": {
+    "jaar": 2015,
+    "eps": null,
+    "alternatieven": [
+     [
+      0.43,
+      11.2,
+      2014
+     ],
+     [
+      4.26,
+      3.83,
+      2014
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Diluted earnings per share 4.26 3.83 11.2 %",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2015-EQ-E-00.pdf",
+    "sha256": "3271c1fdfcd3c6b3c3230755f95dd0b732ac853d9edd94eb468717576bc78fbe",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": null,
+    "alternatieven": [
+     [
+      5.83,
+      4.26,
+      2015
+     ],
+     [
+      6.09,
+      4.26,
+      2015
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Undiluted earnings per share 6.09 4.26 43.0",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2016-EQ-E-00.pdf",
+    "sha256": "c95611e047de726ebd943be070e65f7a4f429d0d8390db5c8d2de059f9d11e80",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": null,
+    "alternatieven": [
+     [
+      6.88,
+      5.83,
+      2016
+     ],
+     [
+      7.35,
+      6.09,
+      2016
+     ]
+    ],
+    "pagina": 3,
+    "bewijs": "Undiluted earnings per share 7.35 6.09 20.7",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2017-EQ-E-00.pdf",
+    "sha256": "976c8ce8bbcb130f85baf4afdd01a59fc0a133702cad9b247a568a8606ab8a2f",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": null,
+    "alternatieven": [
+     [
+      6.46,
+      25.4,
+      2017
+     ],
+     [
+      8.67,
+      6.9,
+      2017
+     ]
+    ],
     "pagina": 4,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Undiluted earnings per share 8.67 6.90 25.7",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2018-EQ-E-00.pdf",
+    "sha256": "aea54b95b9c663345034a316133264120b28a0b27215d36f6d599916be7139fa",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 8.46,
+    "vorig_jaar": 2018,
+    "eps_vorig": 8.1,
+    "pagina": 4,
+    "bewijs": "Diluted earnings per share 8.46 8.10 4.4",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2019-EQ-E-00.pdf",
+    "sha256": "7fbff40b3cb263d3ee866e3642f0d1d5d661eb83822d56db5e0e0d4be570ecb8",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Diluted earnings per share 2.59 8.46 –69.4",
+    "jaar": 2020,
+    "eps": 2.59,
+    "vorig_jaar": 2019,
+    "eps_vorig": 8.46,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 2.59 8.46 –69.4",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2020-EQ-E-00.pdf",
+    "sha256": "e3ffaad4d4cd448b6647a4a30b99a88348788898f77710188ff63e35f3170b73",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Diluted earnings per share 4.09 2.59 57.9",
+    "jaar": 2021,
+    "eps": 4.09,
+    "vorig_jaar": 2020,
+    "eps_vorig": 2.59,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 4.09 2.59 57.9",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2021-EQ-E-00.pdf",
+    "sha256": "4f9f56229878a09f6560ae5955ace40029a18c92a39e21b2c36ed28b31eb805e",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Diluted earnings per share 6.06 4.09 48.3",
+    "jaar": 2022,
+    "eps": 6.06,
+    "vorig_jaar": 2021,
+    "eps_vorig": 4.09,
     "pagina": 2,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 6.06 4.09 48.3",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2022-EQ-E-00.pdf",
+    "sha256": "9aa31f892242047b975b9e599e0717ec488f9a7b749fbdbd186be4780cde0d49",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Diluted earnings per share –1.90 6.06 <-100",
+    "jaar": 2023,
+    "eps": -1.9,
+    "alternatieven": [
+     [
+      -1.9,
+      6.06,
+      2022
+     ],
+     [
+      6.06,
+      -100.0,
+      2022
+     ]
+    ],
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share –1.90 6.06 <-100",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2023-EQ-E-00.pdf",
+    "sha256": "c0c5c561385d11e43e5c34de7caa32e471580d682c94a0cf916c7aeee48f9a3b",
+    "bestand": "2023-eqs",
+    "eps_vorig": 6.06,
+    "vorig_jaar": 2022
    },
    "2024": {
-    "bewijs": "Diluted earnings per share 11.53 –1.90 >100",
+    "jaar": 2024,
+    "eps": 11.53,
+    "vorig_jaar": 2023,
+    "eps_vorig": -1.9,
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per share 11.53 –1.90 >100",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/mtu/Annual Reports/DE000A0D9PT0-JA-2024-EQ-E-00.pdf",
+    "sha256": "0a911c5eaf5ba54c0e41ec53a2ab6928e9bf10bad364706845944d00abe7e744",
+    "bestand": "2024-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2023: lezing gekozen die aansluit op het latere verslag",
+   "2018: meerdere lezingen en geen die aansluit; reeks stopt"
+  ]
+ },
+ "MUV2.DE": {
+  "reeks": {
+   "2024": 78.0,
+   "2025": 42.0
+  },
+  "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 18.73,
+    "vorig_jaar": 2014,
+    "eps_vorig": 18.31,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 18.73 18.31 18.45 17.94 3.94",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2013": 18.45,
+     "2012": 17.94,
+     "2011": 3.94
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2015-EQ-E-00.pdf",
+    "sha256": "270d729792aeef481dfc125a5a443d032c331dc099b939602cfb0f351586640f",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 16.13,
+    "vorig_jaar": 2015,
+    "eps_vorig": 18.73,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 16.13 18.73 18.31 18.45 17.94",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2014": 18.31,
+     "2013": 18.45,
+     "2012": 17.94
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2016-EQ-E-00.pdf",
+    "sha256": "52a2942860375db2d03d4978287493b611143f8f05042f6bd7b28e06a1d405f5",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 2.44,
+    "vorig_jaar": 2016,
+    "eps_vorig": 16.13,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 2.44 16.13 18.73 18.31 18.45",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2015": 18.73,
+     "2014": 18.31,
+     "2013": 18.45
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2017-EQ-E-00.pdf",
+    "sha256": "65cdf6189324763be1f0cb00d83237269c5688a0ef5634d6b5e34acef58a2382",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 15.53,
+    "vorig_jaar": 2017,
+    "eps_vorig": 2.44,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 15.53 2.44 16.13 18.73 18.31",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2016": 16.13,
+     "2015": 18.73,
+     "2014": 18.31
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2018-EQ-E-00.pdf",
+    "sha256": "7a983dc2b1eb0210604732b3773c86d27ddacd0f4fe90a7705c12d89c01e86e8",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 18.97,
+    "vorig_jaar": 2018,
+    "eps_vorig": 15.53,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 18.97 15.53 2.44 16.13 18.73",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2017": 2.44,
+     "2016": 16.13,
+     "2015": 18.73
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2019-EQ-E-00.pdf",
+    "sha256": "0f630a92880671a7f7b332b91b328387b991c704f9ca823306db44b888dc9584",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 8.63,
+    "vorig_jaar": 2019,
+    "eps_vorig": 18.97,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 8.63 18.97 15.53 2.44 16.13",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2018": 15.53,
+     "2017": 2.44,
+     "2016": 16.13
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2020-EQ-E-00.pdf",
+    "sha256": "52ec19931db7987315d3a1f652b45f9701f2232256d871aedab69cdd2480d079",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 20.93,
+    "vorig_jaar": 2020,
+    "eps_vorig": 8.63,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 20.93 8.63 18.97 15.53 2.44",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2019": 18.97,
+     "2018": 15.53,
+     "2017": 2.44
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2021-EQ-E-00.pdf",
+    "sha256": "2b8a18e0b4dd54b6a813b80f6d07630a2f9ca7e9df3d2739d81ebb044325c859",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 24.63,
+    "vorig_jaar": 2021,
+    "eps_vorig": 20.93,
+    "pagina": 2,
+    "bewijs": "Earnings per share € 24.63 20.93 8.63 18.97 15.53",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2020": 8.63,
+     "2019": 18.97,
+     "2018": 15.53
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2022-EQ-E-00.pdf",
+    "sha256": "1443bd75dd8d4dd2e01765d072886784ccc65aade0087bf734921d4c63f63801",
+    "bestand": "2022-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": 33.0,
+    "vorig_jaar": 2023,
+    "eps_vorig": 88.0,
+    "pagina": 307,
+    "bewijs": "Earnings per share € 33�88 38�12 net retained profits be used for payment of a dividend of",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2023-EQ-E-01.pdf",
+    "sha256": "7012535c8a3869c26b3dc7365595fbbfac9298457e1c993bb77c66e59867abc1",
+    "bestand": "2023-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": 42.0,
+    "vorig_jaar": 2024,
+    "eps_vorig": 78.0,
+    "pagina": 349,
+    "bewijs": "on the contractual service margin upon initial recognition Earnings per share € 42�78 33�88",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/muenchener-rueck/Annual Reports/DE0008430026-JA-2024-EQ-E-00.pdf",
+    "sha256": "052b369c346b7e590787ed76a3d7171ccab04f6ec63c1ba985172e6f7b3ecae6",
+    "bestand": "2024-eqs"
+   }
+  },
+  "niet_gelezen": {
+   "2025-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2024: verschil (33.0 in eigen verslag, 78.0 in later verslag); reeks stopt"
+  ]
  },
  "RWE.DE": {
   "reeks": {
@@ -759,56 +3391,161 @@
   },
   "verslagen": {
    "2016": {
-    "bewijs": "Earnings per share € − 9.29 − 0.28 –",
+    "jaar": 2016,
+    "eps": 9.29,
+    "vorig_jaar": 2015,
+    "eps_vorig": 0.28,
     "pagina": 4,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € − 9.29 − 0.28 –",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2014": 2.77,
+     "2013": 4.49,
+     "2012": 2.13
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2016-EQ-E-00.pdf",
+    "sha256": "280bd3114a47135b14252c34efcbd4cafa6de316fa59bb69fc9cfb3eae72c787",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Earnings per share € 3.09 – 9.29 133.3",
+    "jaar": 2017,
+    "eps": 3.09,
+    "vorig_jaar": 2016,
+    "eps_vorig": -9.29,
     "pagina": 4,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € 3.09 – 9.29 133.3",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2015": -0.28,
+     "2014": 2.77,
+     "2013": -4.49
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2017-EQ-E-00.pdf",
+    "sha256": "fa332feaba470a1b11ced9088a7a0fe3f63d6b7d196b161c6c01f9b917e4306f",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Earnings per share € 0.54 3.09 – 82.5",
+    "jaar": 2018,
+    "eps": 0.54,
+    "vorig_jaar": 2017,
+    "eps_vorig": 3.09,
     "pagina": 4,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € 0.54 3.09 – 82.5",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2016": -9.29,
+     "2015": -0.28,
+     "2014": 2.77
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2018-EQ-E-00.pdf",
+    "sha256": "79ac154fbc174aeda1ccb411679dd7c49bf03b542e9c79ceb2ef12aa6ab2b5ef",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "Earnings per share € 13.82 0.54 13.28",
+    "jaar": 2019,
+    "eps": 13.82,
+    "vorig_jaar": 2018,
+    "eps_vorig": 0.54,
     "pagina": 12,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € 13.82 0.54 13.28",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2017": 3.09,
+     "2016": -9.29,
+     "2015": -0.28
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2019-EQ-E-00.pdf",
+    "sha256": "2f0e8362437f88438c75c8a14fcb3d1418e72e8c93dbce9eda64123cec8a49ad",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Basic and diluted earnings per share in € (26) 1.56 13.82",
+    "jaar": 2020,
+    "eps": 1.56,
+    "vorig_jaar": 2019,
+    "eps_vorig": 13.82,
     "pagina": 100,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € (26) 1.56 13.82",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2020-EQ-E-00.pdf",
+    "sha256": "b5f38b4aa69a69c49824737297d51cacd664ce65adff24df3a5a35dfdff09c99",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Earnings per share € 1.07 1.65 – 0.58",
+    "jaar": 2021,
+    "eps": 1.07,
+    "vorig_jaar": 2020,
+    "eps_vorig": 1.65,
     "pagina": 3,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Earnings per share € 1.07 1.65 – 0.58",
+    "kandidaten": 3,
+    "meerjaren": {
+     "2019": 13.82,
+     "2018": 0.54,
+     "2017": 3.09
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2021-EQ-E-00.pdf",
+    "sha256": "9e51960a7699017f84d770ad1bc0f84649484956ca2425d2214bc4f78fe7df82",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Basic and diluted earnings per share in € (26) 3.93 1.07",
+    "jaar": 2022,
+    "eps": 3.93,
+    "vorig_jaar": 2021,
+    "eps_vorig": 1.07,
     "pagina": 119,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € (26) 3.93 1.07",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2022-EQ-E-00.pdf",
+    "sha256": "ac0a532c1c8afdbfa3be97421d9cc6634a6bb73332bbf05a4bdca2cc7ebaf498",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Basic and diluted earnings per share in € (26) 1.95 3.93",
+    "jaar": 2023,
+    "eps": 1.95,
+    "vorig_jaar": 2022,
+    "eps_vorig": 3.93,
     "pagina": 120,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € (26) 1.95 3.93",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2023-EQ-E-00.pdf",
+    "sha256": "287e4ffc297984084985e6dde39697604a770f1beecfc2960db98ee9300faa6d",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Basic and diluted earnings per share in €1 (26) 6.91 2.04",
+    "jaar": 2024,
+    "eps": 6.91,
+    "vorig_jaar": 2023,
+    "eps_vorig": 2.04,
     "pagina": 188,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in €1 (26) 6.91 2.04",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2024-EQ-E-00.pdf",
+    "sha256": "a4d2afc3cfc51df4c872aa23572dfc3a93c02be6f5dbf6ff2b4546c3b8963840",
+    "bestand": "2024-eqs"
    },
    "2025": {
-    "bewijs": "Basic and diluted earnings per share in € (26) 4.30 6.91",
+    "jaar": 2025,
+    "eps": 4.3,
+    "vorig_jaar": 2024,
+    "eps_vorig": 6.91,
     "pagina": 166,
-    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2025-EQ-E-00.pdf"
+    "bewijs": "Basic and diluted earnings per share in € (26) 4.30 6.91",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/rwe/Annual Reports/DE0007037129-JA-2025-EQ-E-00.pdf",
+    "sha256": "c7a9818477318878d02966b1f354ead7721f0bf65ed45942ad950443825b2d7c",
+    "bestand": "2025-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2023: kleine herziening (1.95 → 2.04); nieuwste telt",
+   "2021: meerjarenoverzicht vult 2017, 2018, 2019",
+   "2020: kleine herziening (1.56 → 1.65); nieuwste telt",
+   "2019: meerjarenoverzicht vult 2015, 2016",
+   "2018: meerjarenoverzicht vult 2014",
+   "2017: meerjarenoverzicht vult 2013",
+   "2016: verschil (9.29 in eigen verslag, -9.29 in later verslag); reeks stopt"
+  ]
  },
  "SIE.DE": {
   "reeks": {
@@ -823,37 +3560,297 @@
    "2025": 12.11
   },
   "verslagen": {
+   "2016": {
+    "jaar": 2016,
+    "eps": 6.65,
+    "vorig_jaar": 2015,
+    "eps_vorig": 8.74,
+    "pagina": 58,
+    "bewijs": "Net income 6.65 8.74",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2015-EQ-E-00.pdf",
+    "sha256": "d949dd4adb6602d498ea1d566c11cffb15cf0cd612f1eb8f9853dbde35830db9",
+    "bestand": "2015-eqs"
+   },
    "2020": {
-    "bewijs": "Net income 4.93 6.32",
+    "jaar": 2020,
+    "eps": 4.93,
+    "vorig_jaar": 2019,
+    "eps_vorig": 6.32,
     "pagina": 90,
-    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Net income 4.93 6.32",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2019-EQ-E-00.pdf",
+    "sha256": "799f40e7bfe21ccb8daf0e16d01c6c00629148a6230842e92f0579e086342d19",
+    "bestand": "2019"
    },
    "2021": {
-    "bewijs": "Net income 7.59 4.93",
+    "jaar": 2021,
+    "eps": 7.59,
+    "vorig_jaar": 2020,
+    "eps_vorig": 4.93,
     "pagina": 42,
-    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:0ce51a51-cd5c-4ff0-b582-f41d167f0892/Annual-Financial-Report-FY2021.pdf"
+    "bewijs": "Net income 7.59 4.93",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2019": 6.32,
+     "2018": 7.01,
+     "2017": 7.19
+    },
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:0ce51a51-cd5c-4ff0-b582-f41d167f0892/Annual-Financial-Report-FY2021.pdf",
+    "sha256": "1deaec4afcf2e2d7e414f5fbcb07359f7e474a7378fe8fbe07912ddbe53ec4b2",
+    "bestand": "2021"
    },
    "2022": {
-    "bewijs": "Net income 4.59 7.59",
+    "jaar": 2022,
+    "eps": 4.59,
+    "vorig_jaar": 2021,
+    "eps_vorig": 7.59,
     "pagina": 40,
-    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Net income 4.59 7.59",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2020": 4.93,
+     "2019": 6.32,
+     "2018": 7.01
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2021-EQ-E-00.pdf",
+    "sha256": "0825438d8b97405926a27d8f13d9d945d7670b3b534875b3a5a51d452b533cdf",
+    "bestand": "2021-eqs"
    },
    "2023": {
-    "bewijs": "Net income 9.91 4.59",
+    "jaar": 2023,
+    "eps": 9.91,
+    "vorig_jaar": 2022,
+    "eps_vorig": 4.59,
     "pagina": 47,
-    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:bb51b804-05aa-4590-84e3-0cad12783255/Annual-Financial-Report-FY2023.pdf"
+    "bewijs": "Net income 9.91 4.59",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2021": 7.59,
+     "2020": 4.93,
+     "2019": 6.32
+    },
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:bb51b804-05aa-4590-84e3-0cad12783255/Annual-Financial-Report-FY2023.pdf",
+    "sha256": "20b459aedb7b11a5d334dbf792d9322373740925a6bae2e70c73d4483f3ee99b",
+    "bestand": "2023"
    },
    "2024": {
-    "bewijs": "Net income 10.38 9.91",
+    "jaar": 2024,
+    "eps": 10.38,
+    "vorig_jaar": 2023,
+    "eps_vorig": 9.91,
     "pagina": 47,
-    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf"
+    "bewijs": "Net income 10.38 9.91",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2022": 4.59,
+     "2021": 7.59,
+     "2020": 4.93
+    },
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae46683e-14dd-4455-a882-09d4184457c7/Annual-Financial-Report-FY2024.pdf",
+    "sha256": "02562e43ac04431193ef6b75b8e3cac34d82f58b2d8ebc921d2036b7287f157d",
+    "bestand": "2024"
    },
    "2025": {
-    "bewijs": "Net income 12.11 10.38",
+    "jaar": 2025,
+    "eps": 12.11,
+    "vorig_jaar": 2024,
+    "eps_vorig": 10.38,
     "pagina": 43,
-    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Net income 12.11 10.38",
+    "kandidaten": 2,
+    "meerjaren": {
+     "2023": 9.91,
+     "2022": 4.59,
+     "2021": 7.59
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/siemens/Annual Reports/DE0007236101-JA-2024-EQ-E-00.pdf",
+    "sha256": "a702335f2c2d4f18d3ead4053df2fc3a9be3ad69b062bedd938f3b2551213b27",
+    "bestand": "2024-eqs"
    }
-  }
+  },
+  "niet_gelezen": {
+   "2019-eqs": "zelfde boekjaar 2020 als een ander bestand, met andere cijfers"
+  },
+  "log": [
+   "2025: meerjarenoverzicht vult 2021, 2022, 2023",
+   "2024: meerjarenoverzicht vult 2020",
+   "2023: meerjarenoverzicht vult 2019",
+   "2022: meerjarenoverzicht vult 2018",
+   "2021: meerjarenoverzicht vult 2017",
+   "2016: sluit niet aan (gat); reeks stopt"
+  ]
+ },
+ "SY1.DE": {
+  "reeks": {
+   "2015": 1.9,
+   "2016": 1.94,
+   "2017": 2.06,
+   "2018": 2.12,
+   "2019": 2.2,
+   "2020": 2.27,
+   "2021": 2.74,
+   "2022": 2.91,
+   "2023": 2.44,
+   "2024": 3.42
+  },
+  "verslagen": {
+   "2016": {
+    "jaar": 2016,
+    "eps": 1.95,
+    "vorig_jaar": 2015,
+    "eps_vorig": 1.9,
+    "pagina": 99,
+    "bewijs": "Earnings per share (€) 1.90 1.95",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2016-EQ-E-00.pdf",
+    "sha256": "36f4aeaae15369fdf70f8747717b36ae606ad50abd5c5d7e3aa282c416639e58",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 2.06,
+    "vorig_jaar": 2016,
+    "eps_vorig": 1.94,
+    "pagina": 90,
+    "bewijs": "Diluted earnings per share € 1.94 2.06",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2017-EQ-E-00.pdf",
+    "sha256": "a3948db98edc0bcdef8fd69145850149a34677886f730078c7c5b6e635790bc9",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 2.08,
+    "vorig_jaar": 2017,
+    "eps_vorig": 2.06,
+    "pagina": 96,
+    "bewijs": "Diluted earnings per share € 2.06 2.08",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2018-EQ-E-00.pdf",
+    "sha256": "4ef44726b73c00490da481b5f3b8e1e62da2ac7c565d75c640a08fcbc001f4a6",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 2.21,
+    "alternatieven": [
+     [
+      2.17,
+      2.08,
+      2018
+     ],
+     [
+      2.21,
+      2.12,
+      2018
+     ]
+    ],
+    "pagina": 107,
+    "bewijs": "Unverwässertes Ergebnis je Aktie € 2,12 2,21",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2019-EQ-D-00.pdf",
+    "sha256": "066fc2ee708c7bbfab43c7cfb79f0c761a5af0b43c6d3be5d8121d7cd8d3fee1",
+    "bestand": "2019-eqs",
+    "eps_vorig": 2.12,
+    "vorig_jaar": 2018
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 2.22,
+    "vorig_jaar": 2019,
+    "eps_vorig": 2.12,
+    "pagina": 107,
+    "bewijs": "Diluted earnings per share € 2.12 2.22",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2020-EQ-E-00.pdf",
+    "sha256": "6b2ae42b501171fb02caba2f3386b4934019c859e89d14d4c99ad5027e370910",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 2.7,
+    "vorig_jaar": 2020,
+    "eps_vorig": 2.22,
+    "pagina": 98,
+    "bewijs": "Diluted earnings per share € 2.22 2.70",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2021-EQ-E-00.pdf",
+    "sha256": "2bf0b01a7f78f3227fe2d82c33ba2c4068da7715161d4c164e02f8167c84fd28",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 2.91,
+    "alternatieven": [
+     [
+      2.0,
+      2.74,
+      2021
+     ],
+     [
+      2.91,
+      2.74,
+      2021
+     ]
+    ],
+    "pagina": 2,
+    "bewijs": "Earnings per share 1,2 in € 2.12 2.20 2.27 2.74 2.91",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2022-EQ-E-00.pdf",
+    "sha256": "df34e2fbece0e41d96a9c7ef68065b46f383fbf69974e6ad6223d9feeffdd081",
+    "bestand": "2022-eqs",
+    "eps_vorig": 2.74,
+    "vorig_jaar": 2021
+   },
+   "2023": {
+    "jaar": 2023,
+    "eps": 2.44,
+    "vorig_jaar": 2022,
+    "eps_vorig": 2.91,
+    "pagina": 2,
+    "bewijs": "Earnings per share 1,2 in € 2.20 2.27 2.74 2.91 2.44",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2019": 2.2,
+     "2020": 2.27,
+     "2021": 2.74
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2023-EQ-E-00.pdf",
+    "sha256": "c2bf7a9560b92ce8b1d896fc055625f8fcf4ee4acdebbd875d77de1f103d48ac",
+    "bestand": "2023-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": 3.42,
+    "vorig_jaar": 2023,
+    "eps_vorig": 2.44,
+    "pagina": 2,
+    "bewijs": "Earnings per share in € 2.27 2.74 2.91 2.44 3.42",
+    "kandidaten": 1,
+    "meerjaren": {
+     "2020": 2.27,
+     "2021": 2.74,
+     "2022": 2.91
+    },
+    "url": "https://irpages2.eqs.com/Download/Companies/symrise/Annual Reports/DE000SYM9999-JA-2024-EQ-E-00.pdf",
+    "sha256": "55c4e5316aff8423716f800bccf287c11a16bb26f022063fdef8df7665312b88",
+    "bestand": "2024-eqs"
+   }
+  },
+  "niet_gelezen": {
+   "2025-eqs": "geen regel gevonden"
+  },
+  "log": [
+   "2024: meerjarenoverzicht vult 2020, 2021, 2022",
+   "2023: meerjarenoverzicht vult 2019",
+   "2022: lezing gekozen die aansluit op het latere verslag",
+   "2021: kleine herziening (2.7 → 2.74); nieuwste telt",
+   "2020: kleine herziening (2.22 → 2.27); nieuwste telt",
+   "2019: lezing gekozen die aansluit op het latere verslag",
+   "2018: kleine herziening (2.08 → 2.12); nieuwste telt"
+  ]
  },
  "VOW3.DE": {
   "reeks": {
@@ -871,55 +3868,264 @@
   },
   "verslagen": {
    "2015": {
-    "bewijs": "Diluted earnings per ordinary share in € 11 – 3.20 21.82",
+    "jaar": 2015,
+    "eps": -3.2,
+    "vorig_jaar": 2014,
+    "eps_vorig": 21.82,
     "pagina": 225,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2015-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per ordinary share in € 11 – 3.20 21.82",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2015-EQ-E-00.pdf",
+    "sha256": "521a6d9a6fcc0e60e9c0af1a75b8c02bd2666c8502a26c0d9e1f009cf610d1d9",
+    "bestand": "2015-eqs"
    },
    "2016": {
-    "bewijs": "Diluted earnings per ordinary share in € 11 10.24 –3.20",
+    "jaar": 2016,
+    "eps": 10.24,
+    "vorig_jaar": 2015,
+    "eps_vorig": -3.2,
     "pagina": 209,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2016-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per ordinary share in € 11 10.24 –3.20",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2016-EQ-E-00.pdf",
+    "sha256": "157041a2355aa5289ca583a084f2e83c4d37db324371e009426c8591a52a6854",
+    "bestand": "2016-eqs"
    },
    "2017": {
-    "bewijs": "Diluted earnings per ordinary share in € 11 22.63 10.24",
+    "jaar": 2017,
+    "eps": 22.63,
+    "vorig_jaar": 2016,
+    "eps_vorig": 10.24,
     "pagina": 197,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2017-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per ordinary share in € 11 22.63 10.24",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2017-EQ-E-00.pdf",
+    "sha256": "a643043a86ccf1a9fa6808c8619598fd92226f6c7516944f0ab0dbb8e64a9f60",
+    "bestand": "2017-eqs"
    },
    "2018": {
-    "bewijs": "Diluted earnings per ordinary share in € 11 23.57 22.28",
+    "jaar": 2018,
+    "eps": 23.57,
+    "vorig_jaar": 2017,
+    "eps_vorig": 22.28,
     "pagina": 195,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2018-EQ-E-00.pdf"
+    "bewijs": "Diluted earnings per ordinary share in € 11 23.57 22.28",
+    "kandidaten": 2,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2018-EQ-E-00.pdf",
+    "sha256": "c1c7673e6cbec34f5831ae4af982d417830bb13882b0311e4d1c1a1eaa313feb",
+    "bestand": "2018-eqs"
    },
    "2019": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 26.60 23.57",
+    "jaar": 2019,
+    "eps": 26.6,
+    "vorig_jaar": 2018,
+    "eps_vorig": 23.57,
     "pagina": 197,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2019-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 26.60 23.57",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2019-EQ-E-00.pdf",
+    "sha256": "c5a1dd8824a2bac0402a4076b1f5b0ab78b3a4b25783cfc3e0761f21aceac10c",
+    "bestand": "2019-eqs"
    },
    "2020": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 16.60 26.60",
+    "jaar": 2020,
+    "eps": 16.6,
+    "vorig_jaar": 2019,
+    "eps_vorig": 26.6,
     "pagina": 209,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2020-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 16.60 26.60",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2020-EQ-E-00.pdf",
+    "sha256": "5b93053c174655c7d985491acb77d694c06921fab1a9640cc4a92fc37addd58b",
+    "bestand": "2020-eqs"
    },
    "2021": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 29.59 16.60",
+    "jaar": 2021,
+    "eps": 29.59,
+    "vorig_jaar": 2020,
+    "eps_vorig": 16.6,
     "pagina": 221,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2021-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 29.59 16.60",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2021-EQ-E-00.pdf",
+    "sha256": "f882791de772e1091ae4eea66237c537388d251c06fc57481854e60bd85b5aa7",
+    "bestand": "2021-eqs"
    },
    "2022": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 29.63 29.59",
+    "jaar": 2022,
+    "eps": 29.63,
+    "vorig_jaar": 2021,
+    "eps_vorig": 29.59,
     "pagina": 279,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2022-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 29.63 29.59",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2022-EQ-E-00.pdf",
+    "sha256": "21bbc754c5562c489354b66de6f474ac8f8abe29c4afc269b16e254e4093c11a",
+    "bestand": "2022-eqs"
    },
    "2023": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 31.92 29.66",
+    "jaar": 2023,
+    "eps": 31.92,
+    "vorig_jaar": 2022,
+    "eps_vorig": 29.66,
     "pagina": 269,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2023-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 31.92 29.66",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2023-EQ-E-00.pdf",
+    "sha256": "6f1e656aabad986c743e13415d8e9cdb4e726feb9b8e073b70fcc29ce11539c1",
+    "bestand": "2023-eqs"
    },
    "2024": {
-    "bewijs": "Basic/diluted earnings per ordinary share in € 11 21.36 31.79",
+    "jaar": 2024,
+    "eps": 21.36,
+    "vorig_jaar": 2023,
+    "eps_vorig": 31.79,
     "pagina": 472,
-    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2024-EQ-E-00.pdf"
+    "bewijs": "Basic/diluted earnings per ordinary share in € 11 21.36 31.79",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/vw/Annual Reports/DE0007664039-JA-2024-EQ-E-00.pdf",
+    "sha256": "48dfd913979245ae936471b3f5ddf7d6dcf62a8b099c2c9aae5c64dff450c017",
+    "bestand": "2024-eqs"
    }
-  }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2023: kleine herziening (31.92 → 31.79); nieuwste telt",
+   "2022: kleine herziening (29.63 → 29.66); nieuwste telt",
+   "2017: kleine herziening (22.63 → 22.28); nieuwste telt"
+  ]
+ },
+ "ZAL.DE": {
+  "reeks": {
+   "2023": 0.32,
+   "2024": 0.96,
+   "2025": 0.82
+  },
+  "verslagen": {
+   "2015": {
+    "jaar": 2015,
+    "eps": 0.48,
+    "vorig_jaar": 2014,
+    "eps_vorig": 0.2,
+    "pagina": 131,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.48 0.20",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2015-EQ-E-00.pdf",
+    "sha256": "b264513252588dfd6e82cb9ce56b6627e01207a4a34aa282a9d9836a3e6868d6",
+    "bestand": "2015-eqs"
+   },
+   "2016": {
+    "jaar": 2016,
+    "eps": 0.47,
+    "vorig_jaar": 2015,
+    "eps_vorig": 0.48,
+    "pagina": 127,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.47 0.48",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2016-EQ-E-00.pdf",
+    "sha256": "eeb7a44e448ea1606cfcd52785102af555e604d737c3a5b582b40b50ced649fb",
+    "bestand": "2016-eqs"
+   },
+   "2017": {
+    "jaar": 2017,
+    "eps": 0.4,
+    "vorig_jaar": 2016,
+    "eps_vorig": 0.47,
+    "pagina": 139,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.40 0.47",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2017-EQ-E-00.pdf",
+    "sha256": "13018101e945b531a4bbbe1c6ab414ab4b17b5f68a2ee231995ef42b1076ad06",
+    "bestand": "2017-eqs"
+   },
+   "2018": {
+    "jaar": 2018,
+    "eps": 0.2,
+    "vorig_jaar": 2017,
+    "eps_vorig": 0.4,
+    "pagina": 133,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.20 0.40",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2018-EQ-E-00.pdf",
+    "sha256": "61bcb9d379b25c06035de49deaade95abc48e3ebb8970afa233c85d6f5113e3b",
+    "bestand": "2018-eqs"
+   },
+   "2019": {
+    "jaar": 2019,
+    "eps": 0.39,
+    "vorig_jaar": 2018,
+    "eps_vorig": 0.2,
+    "pagina": 135,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.39 0.20",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2019-EQ-E-00.pdf",
+    "sha256": "2f97a2a02ee7aa8fb3ad2f9b997eebd5933aa91eb5396c6401cbad25670b800b",
+    "bestand": "2019-eqs"
+   },
+   "2020": {
+    "jaar": 2020,
+    "eps": 0.88,
+    "vorig_jaar": 2019,
+    "eps_vorig": 0.39,
+    "pagina": 114,
+    "bewijs": "Diluted earnings per share (in EUR) (9.) 0.88 0.39",
+    "kandidaten": 1,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2020-EQ-E-00.pdf",
+    "sha256": "daf84d0aee6cbdb7089e4e6577c10dca76e0684cdf2d16a1a7ebf6c6b33779be",
+    "bestand": "2020-eqs"
+   },
+   "2021": {
+    "jaar": 2021,
+    "eps": 0.88,
+    "vorig_jaar": 2020,
+    "eps_vorig": 0.86,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share (in EUR) 0.88 0.86 2.3%",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2021-EQ-E-00.pdf",
+    "sha256": "efb2befe1962197cbe34c3dddf785df4745f34a3523666cf614883d8b8c5e5c1",
+    "bestand": "2021-eqs"
+   },
+   "2022": {
+    "jaar": 2022,
+    "eps": 0.06,
+    "vorig_jaar": 2021,
+    "eps_vorig": 0.88,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share (in EUR) 0.06 0.88 -92.7%",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2022-EQ-E-00.pdf",
+    "sha256": "ebe4828287eacf2ce9e2dc278f508cffcd5e780eef4410aa793af7813d522115",
+    "bestand": "2022-eqs"
+   },
+   "2024": {
+    "jaar": 2024,
+    "eps": 0.96,
+    "vorig_jaar": 2023,
+    "eps_vorig": 0.32,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share (in EUR) 0.96 0.32 >100%",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2024-EQ-E-00.pdf",
+    "sha256": "40b49811998bbd4108fd648877fc33d6b7d3e896cfbd74051e4e0ba007c71262",
+    "bestand": "2024-eqs"
+   },
+   "2025": {
+    "jaar": 2025,
+    "eps": 0.82,
+    "vorig_jaar": 2024,
+    "eps_vorig": 0.96,
+    "pagina": 2,
+    "bewijs": "Diluted earnings per share (in EUR) 0.82 0.96 -14.8%",
+    "kandidaten": 3,
+    "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2025-EQ-E-00.pdf",
+    "sha256": "817ebceed415077f3508e1c785924a6cf1b7a67431410cf444e363f3bdd05136",
+    "bestand": "2025-eqs"
+   }
+  },
+  "niet_gelezen": {},
+  "log": [
+   "2022: sluit niet aan (gat); reeks stopt"
+  ]
  }
 }

@@ -66,10 +66,18 @@ def twee(g, heel=False):
     return g[0], g[1]
 
 
-def lees(tekst, jaar=None):
-    uit = _lees(tekst, jaar, LABEL)
+VOORKEUR = {'VOW3.DE', 'HEN3.DE', 'PAH3.DE'}     # genoteerd zijn de preferente aandelen (Vorzugsaktien)
+NIET_PREF = re.compile(NIET.pattern + r'|preferred|preference|vorzug', re.I)
+NIET_GEWOON = re.compile(NIET.pattern + r'|common stock|ordinary share|stammaktie', re.I)
+
+
+def lees(tekst, jaar=None, ticker=None):
+    """Bij bedrijven met gewone én preferente aandelen (BMW, VW, Henkel, Porsche) staan twee winsten per aandeel: we nemen die
+    van het genoteerde aandeel (preferent bij VOW3/HEN3/PAH3, anders gewoon)."""
+    niet = NIET if ticker in VOORKEUR else NIET_PREF          # preferente aandelen: zoals voorheen (beide soorten, keten kiest)
+    uit = _lees(tekst, jaar, LABEL, niet=niet)
     if uit[0] is None:
-        uit = _lees(tekst, jaar, LABEL2)
+        uit = _lees(tekst, jaar, LABEL2, niet=niet)
     return uit
 
 
@@ -95,6 +103,9 @@ def _lees(tekst, jaar, label, niet=None, maxabs=1000, aantal=True):
     for i, (p, r) in enumerate(regels):
         if not label.search(r) or (niet or NIET).search(TOTAAL_ACT.sub(' ', r)) or (aantal and AANTAL.search(r)):
             continue
+        mlab = label.search(r)
+        if NUM.findall(r[:mlab.start()]):
+            continue                                     # getallen vóór het label: tekst uit een andere kolom (bijv. 'audits 36 34 … earnings per share')
         kandidaat = []
         g = getallen(re.sub(r'\[\d+\]', ' ', r), komma)
         if len(g) >= 2:
@@ -150,6 +161,11 @@ def _lees(tekst, jaar, label, niet=None, maxabs=1000, aantal=True):
     # het boekjaar van het verslag = het meest voorkomende nieuwste jaar; alle kandidaten voor dat jaar moeten gelijk zijn
     from collections import Counter
     jr = Counter(v[0] for v in vond).most_common(1)[0][0]
+    if maxabs:
+        # tabelregels (label vooraan) gaan voor op lopende tekst ('… earnings per share were €760 million and €0.20')
+        tabel = [v for v in vond if v[0] == jr and (lambda m: m is not None and m.start() <= 2)(label.search(v[5]))]
+        if tabel and len({(round(v[1], 4), round(v[2], 4), v[3]) for v in tabel}) < len({(round(v[1], 4), round(v[2], 4), v[3]) for v in vond if v[0] == jr}):
+            vond = tabel + [v for v in vond if v[0] != jr]
     waarden = {(round(v[1], 4), round(v[2], 4), v[3]) for v in vond if v[0] == jr}
     if not maxabs and len(waarden) > 1:
         # bedragen: dezelfde lezing in een andere afronding (59.7 mld in het overzicht, 59,705 mln in de tabel) telt als één
@@ -237,7 +253,7 @@ def main():
     for t, docs in sorted(index.items()):
         per_jaar, fouten = {}, {}
         for j, meta in docs.items():
-            r, reden = lees((map_ / t / f'{j}.txt').read_text(encoding='utf-8'))
+            r, reden = lees((map_ / t / f'{j}.txt').read_text(encoding='utf-8'), ticker=t)
             if r and r['jaar'] in per_jaar and per_jaar[r['jaar']].get('eps') is not None and (per_jaar[r['jaar']]['eps'], per_jaar[r['jaar']]['eps_vorig']) != (r.get('eps'), r.get('eps_vorig')):
                 fouten[j] = f'zelfde boekjaar {r["jaar"]} als een ander bestand, met andere cijfers'; continue
             if r:

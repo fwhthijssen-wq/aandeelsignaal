@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.1.3 (2026.10.28)
+- Lezer van de Duitse jaarverslagen verbeterd: bij gewone én preferente aandelen (BMW) de winst per gewoon aandeel; getallen uit een andere kolom en losse tekst tellen niet mee. Daardoor nu ook winst per aandeel uit de jaarverslagen voor Deutsche Börse (12 jaar) en Symrise (10 jaar), en BMW 12 jaar (was 8).
+- Narekenen vindt de nettowinst nu ook in de winst-en-verliesrekening en de kerncijfers (o.a. Merck, Siemens, RWE, MTU), niet alleen naast het aantal aandelen.
+
 ## 1.1.2 (2026.10.28)
 - Narekenen van de Duitse winst per aandeel ook met de nettowinst uit hetzelfde jaarverslag (binnen 1%), en ook met de vergelijkende (soms herziene) cijfers uit het verslag van het jaar erna. Daarmee worden meer jaren nagerekend; o.a. BASF en RWE kunnen Bevestigd worden.
 
