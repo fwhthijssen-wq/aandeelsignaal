@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.1.2 (2026.10.28)
+- Narekenen van de Duitse winst per aandeel ook met de nettowinst uit hetzelfde jaarverslag (binnen 1%), en ook met de vergelijkende (soms herziene) cijfers uit het verslag van het jaar erna. Daarmee worden meer jaren nagerekend; o.a. BASF en RWE kunnen Bevestigd worden.
+
 ## 1.1.1 (2026.10.28)
 - Start leest nu van groot naar klein: na uw eigen aandelen het blok **Kansen in de markt**, eerst het marktbeeld per index en direct daaronder de beste kansen. De tegel Kansen springt naar dat blok.
 

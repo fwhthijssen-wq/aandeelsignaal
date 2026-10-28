@@ -97,8 +97,32 @@ def kandidaten(tekst):
     return [{'aandelen': k, 'bewijs': v} for k, v in uit.items()]
 
 
+def winst_kandidaten(tekst):
+    """Nettowinst toe te rekenen aan de aandeelhouders, in de regels rond het gemiddeld aantal aandelen (de toelichting bij
+    de winst per aandeel staat meestal als één tabel: nettowinst, aantal aandelen, winst per aandeel). Bedragen met eenheid."""
+    regels = tekst.splitlines()
+    komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
+    uit = {}
+    for i, r in enumerate(regels):
+        if not (AANDELEN.search(r) and AANDELEN2.search(' '.join(regels[i:i + 2]))) or NIET_AANDELEN.search(r):
+            continue
+        for k in range(max(0, i - 30), min(len(regels), i + 8)):
+            w = regels[k]
+            if not WINST.search(w) or NIET_WINST.search(w):
+                continue
+            f = schaal(w, regels[max(0, k - 10):k])
+            for x in getallen(w, komma)[:2]:
+                if x is None or (float(x).is_integer() and 1990 <= abs(x) <= 2035):
+                    continue
+                for ff in ([f] if f and f > 1 else [1e6, 1e3, 1.0]):
+                    v = x * ff
+                    if 1e7 <= abs(v) <= 2e11:
+                        uit.setdefault(round(v), ' '.join(w.split())[:160])
+    return [{'nettowinst': k, 'bewijs': v} for k, v in uit.items()]
+
+
 def main():
-    """Per fonds en boekjaar de kandidaten uit het verslag van dat jaar (en anders dat van het jaar erna)."""
+    """Per fonds en boekjaar de kandidaten uit het verslag van dat jaar én dat van het jaar erna (vergelijkende, soms herziene cijfers)."""
     map_ = Path(sys.argv[1])
     alleen = set(sys.argv[2:])
     register = json.loads((HERE.parent / 'jaarverslag_eps.json').read_text(encoding='utf-8'))
@@ -115,13 +139,14 @@ def main():
                 pad = map_ / t / f'{naam}.txt'
                 if not pad.exists():
                     continue
-                k = kandidaten(pad.read_text(encoding='utf-8', errors='replace'))
+                tekst = pad.read_text(encoding='utf-8', errors='replace')
+                k = kandidaten(tekst)
                 if k:
-                    per.setdefault(str(jaar), {'document': docs[naam].get('url'), 'kandidaten': []})
+                    per.setdefault(str(jaar), {'document': docs[naam].get('url'), 'kandidaten': [], 'nettowinst': []})
                     bekend = {x['aandelen'] for x in per[str(jaar)]['kandidaten']}
                     per[str(jaar)]['kandidaten'] += [x for x in k if x['aandelen'] not in bekend][:12]
-                if naam.split('-')[0] == str(jaar) and k:
-                    break
+                    nb = {x['nettowinst'] for x in per[str(jaar)]['nettowinst']}
+                    per[str(jaar)]['nettowinst'] += [x for x in winst_kandidaten(tekst) if x['nettowinst'] not in nb][:30]
         uit[t] = per
         print(t, f'{len(per)}/{len(jaren)}', file=sys.stderr, flush=True)
     json.dump(uit, sys.stdout, ensure_ascii=False, indent=1)

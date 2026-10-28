@@ -339,6 +339,15 @@ class PdfNarekenen(unittest.TestCase):
         B.reken_pdf_eps_na(g, 'X', {})
         self.assertNotIn('eps_status', g); self.assertNotIn('eps_narekening', g['jaren'][0])
 
+    def test_nettowinst_uit_hetzelfde_verslag(self):
+        g = self.g()
+        for j in g['jaren']:
+            j.pop('net_income')
+        reg = {'X': {str(2016 + i): {'document': 'u', 'kandidaten': [{'aandelen': 400e6}], 'nettowinst': [{'nettowinst': 5e9}, {'nettowinst': (2.0 + i / 10) * 400e6}]} for i in range(10)}}
+        B.reken_pdf_eps_na(g, 'X', reg)
+        self.assertTrue(g['pdf_narekening']['bevestigd'])
+        self.assertEqual(g['jaren'][3]['eps_narekening']['nettowinst_bron'], 'jaarverslag')
+
     def test_een_jaar_klopt_niet_dan_niet_bevestigd(self):
         g = self.g()
         B.reken_pdf_eps_na(g, 'X', self.reg(fout=5))
