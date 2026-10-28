@@ -7,6 +7,10 @@ on:
       bedrijven:
         description: "tickers gescheiden door spaties"
         required: true
+      bestand:
+        description: "uitvoerbestand in debug/"
+        required: false
+        default: "esef_aandelen.json"
 permissions:
   contents: write
 jobs:
@@ -22,7 +26,7 @@ jobs:
       - name: Tak jaarverslagen ophalen
         run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
       - name: Lezen
-        run: mkdir -p jv/debug && python hulp/esef_aandelen.py jv/debug/esef_aandelen.json ${{ inputs.bedrijven }}
+        run: mkdir -p jv/debug && python hulp/esef_aandelen.py "jv/debug/${{ inputs.bestand }}" ${{ inputs.bedrijven }}
       - name: Op tak jaarverslagen zetten
         if: always()
         run: |
