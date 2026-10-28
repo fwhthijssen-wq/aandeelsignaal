@@ -160,7 +160,7 @@ def main():
                 pad = map_ / t / f'{naam}.txt'
                 if not pad.exists():
                     continue
-                tekst = pad.read_text(encoding='utf-8', errors='replace')
+                tekst = re.sub(r'(\d)\ufffd(\d)', r'\1.\2', pad.read_text(encoding='utf-8', errors='replace'))
                 k = kandidaten(tekst)
                 if k:
                     per.setdefault(str(jaar), {'document': docs[naam].get('url'), 'kandidaten': [], 'nettowinst': []})

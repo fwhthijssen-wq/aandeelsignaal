@@ -348,6 +348,14 @@ class PdfNarekenen(unittest.TestCase):
         self.assertTrue(g['pdf_narekening']['bevestigd'])
         self.assertEqual(g['jaren'][3]['eps_narekening']['nettowinst_bron'], 'jaarverslag')
 
+    def test_esef_jaren_worden_ook_nagerekend(self):
+        g = {'bron': 'ESEF', 'niveau': 'jaarverslag', 'jaren': [{'year': 2021 + i, 'currency': 'EUR', 'comparable_eps': 1.5 + i / 10, 'net_income': (1.5 + i / 10) * 300e6} for i in range(5)]
+             + [{'year': 2016, 'currency': 'EUR', 'comparable_eps': 1.0, 'eps_bron': 'aangeleverd', 'aangeleverd': ['comparable_eps'], 'net_income': 3e8}]}
+        reg = {'X': {str(2021 + i): {'kandidaten': [{'aandelen': 300e6}]} for i in range(5)} | {'2016': {'kandidaten': [{'aandelen': 300e6}]}}}
+        B.reken_pdf_eps_na(g, 'X', reg)
+        self.assertEqual(g['pdf_narekening']['jaren'], 5)                 # het aangeleverde jaar niet
+        self.assertNotIn('bevestigd', g['pdf_narekening'])
+
     def test_een_jaar_klopt_niet_dan_niet_bevestigd(self):
         g = self.g()
         B.reken_pdf_eps_na(g, 'X', self.reg(fout=5))

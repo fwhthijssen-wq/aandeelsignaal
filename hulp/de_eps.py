@@ -74,7 +74,8 @@ NIET_GEWOON = re.compile(NIET.pattern + r'|common stock|ordinary share|stammakti
 def lees(tekst, jaar=None, ticker=None):
     """Bij bedrijven met gewone én preferente aandelen (BMW, VW, Henkel, Porsche) staan twee winsten per aandeel: we nemen die
     van het genoteerde aandeel (preferent bij VOW3/HEN3/PAH3, anders gewoon)."""
-    niet = NIET if ticker in VOORKEUR else NIET_PREF          # preferente aandelen: zoals voorheen (beide soorten, keten kiest)
+    niet = NIET if ticker == 'VOW3.DE' else NIET_GEWOON if ticker in VOORKEUR else NIET_PREF   # VW: beide soorten, keten kiest (zoals voorheen)
+    tekst = re.sub(r'(\d)\ufffd(\d)', r'\1.\2', tekst)       # onleesbaar decimaalteken in de pdf-tekst (Munich Re: '42\ufffd78')
     uit = _lees(tekst, jaar, LABEL, niet=niet)
     if uit[0] is None:
         uit = _lees(tekst, jaar, LABEL2, niet=niet)
@@ -201,6 +202,7 @@ def _lees(tekst, jaar, label, niet=None, maxabs=1000, aantal=True):
 def keten(per_jaar, relatief=False):
     """per_jaar: {jaar: lees-uitkomst}. {jaar: eps} van nieuw naar oud, zolang de overlap klopt."""
     uit, log = {}, []
+    overbrugd = False
     def gelijk(x, y):
         return abs(x - y) <= 0.011 or (relatief and abs(x - y) <= 0.006 * max(abs(x), abs(y)))
     jaren = sorted(per_jaar, reverse=True)
@@ -223,6 +225,12 @@ def keten(per_jaar, relatief=False):
             per_jaar[j] = r
         if not uit:
             uit[j] = r['eps']; uit[r['vorig_jaar']] = r['eps_vorig']; _meerjaren(uit, r, log); continue
+        if j not in uit and (j + 1) in uit and not overbrugd and r.get('eps') is not None:
+            # één ontbrekend verslag (j+1): het jaar j+1 komt uit het verslag van j+2, het jaar j uit het eigen verslag;
+            # alleen de overlapcontrole tussen die twee ontbreekt. Hoogstens één keer per reeks.
+            overbrugd = True
+            uit[j] = r['eps']; uit.setdefault(r['vorig_jaar'], r['eps_vorig']); _meerjaren(uit, r, log)
+            log.append(f'{j}: één verslag ontbreekt; gat overbrugd'); continue
         if j not in uit:
             log.append(f'{j}: sluit niet aan (gat); reeks stopt'); break
         if gelijk(uit[j], r['eps']):

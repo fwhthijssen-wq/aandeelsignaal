@@ -200,8 +200,18 @@ def vul_eps_jaarverslag(g, ticker, register=None):
     balans blijven van Yahoo). Elk jaar krijgt eps_bron 'jaarverslag'. Minder dan 4 jaar: niets."""
     reg = (register if register is not None else _jaarverslag_eps()).get(ticker) or {}
     reeks = {int(j): v for j, v in (reg.get('reeks') or {}).items() if _getal(v) is not None}
+    # onzin uit de pdf-tekst eruit: een waarde die meer dan 20× zo groot is als de middelste van de reeks (bijv. 534 tussen 3 en 20)
+    if reeks:
+        m = sorted(abs(v) for v in reeks.values())[len(reeks) // 2]
+        reeks = {j: v for j, v in reeks.items() if not m or abs(v) <= 20 * m}
     jaren = g.get('jaren') or []
     if len(reeks) < 4 or not jaren:
+        return
+    # tweede bron als slot: wijkt een jaar meer dan 15% af van Yahoo, dan is de lezing niet te vertrouwen en wordt de reeks niet gebruikt
+    yahoo = {j.get('year'): _getal(j.get('comparable_eps')) for j in jaren if j.get('eps_bron') != 'jaarverslag'}
+    grof = [y for y, e in reeks.items() if yahoo.get(y) is not None and not (abs(yahoo[y] - e) <= 0.05 or (yahoo[y] * e > 0 and abs(yahoo[y] / e - 1) <= 0.15))]
+    if grof:
+        g['eps_jaarverslag_afgewezen'] = {'jaren': sorted(grof), 'reden': 'De winst per aandeel uit de jaarverslagen wijkt in deze jaren meer dan 15% af van Yahoo Finance; de reeks wordt niet gebruikt.'}
         return
     eind = max(set(str(j.get('end', ''))[5:] for j in jaren if j.get('end')), key=[str(j.get('end', ''))[5:] for j in jaren].count)
     munt = jaren[-1].get('currency')
@@ -670,7 +680,9 @@ def reken_pdf_eps_na(g, ticker, register=None):
     reg = register.get(ticker) or {}
     if not reg or not g.get('jaren'):
         return
-    pdf_jaren = [j for j in g['jaren'] if j.get('eps_bron') == 'jaarverslag' and _getal(j.get('comparable_eps'))]
+    # pdf-jaren (Duitse jaarverslagen) en de officiële ESEF-jaren (winst per aandeel uit het ESEF-dossier zelf)
+    pdf_jaren = [j for j in g['jaren'] if _getal(j.get('comparable_eps')) and (j.get('eps_bron') == 'jaarverslag'
+                 or (g.get('bron') == 'ESEF' and not j.get('eps_bron') and 'comparable_eps' not in (j.get('aangeleverd') or [])))]
     # Winst per aandeel × aantal aandelen moet de nettowinst geven: uit een andere bron (1,5%) of uit hetzelfde verslag (1%).
     nagerekend = []
     for j in pdf_jaren:

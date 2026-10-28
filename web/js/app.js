@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.1.3 (2026.10.28)';
+  var APP_VERSIE = '1.1.4 (2026.10.28)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1050,7 +1050,7 @@
       rijen.push(['Winst per aandeel', jr.length + ' jaar (' + jr[0].year + '–' + jr[jr.length - 1].year + ')' + (mix.length ? ': ' + mix.join(', ') : '') + (jr.length < 6 ? '. Minder dan 6 jaar: het NAIC-oordeel is minder zeker.' : '')]);
     }
     if (g && g.adr) rijen.push(['ADR', h(g.adr.uitleg)]);
-    if (g && g.pdf_narekening) rijen.push(['Nagerekend', g.pdf_narekening.jaren + ' van de ' + g.pdf_narekening.van_de + ' jaren winst per aandeel uit de jaarverslagen: × het gemiddeld aantal aandelen uit hetzelfde verslag komt uit op de nettowinst (uit dat verslag of een andere bron)' + (g.pdf_narekening.bevestigd ? '. Alle 10 recente jaren kloppen: bevestigd.' : '.')]);
+    if (g && g.pdf_narekening) rijen.push(['Nagerekend', g.pdf_narekening.jaren + ' van de ' + g.pdf_narekening.van_de + ' jaren winst per aandeel uit de jaarverslagen: × het gemiddeld aantal aandelen uit hetzelfde verslag komt uit op de nettowinst (uit dat verslag of een andere bron)' + (g.pdf_narekening.bevestigd ? '' : '. Voor Bevestigd zijn 10 nagerekende jaren nodig') + (g.pdf_narekening.bevestigd ? '. Alle 10 recente jaren kloppen: bevestigd.' : '.')]);
     if (g && g.ttm) rijen.push(['Actuele winst', 'laatste 4 kwartalen tot ' + h(datumNl(g.ttm.tot)) + ': ' + getal(g.ttm.eps, 2) + ' (Yahoo Finance)']);
     if (g && g.tweede_bron) rijen.push(['Tweede bron', g.tweede_bron.overeen + ' van ' + g.tweede_bron.vergeleken + ' cijfers kloppen met ' + h(g.tweede_bron.bron) + (g.tweede_bron.aantal_afwijkend ? ' (afwijkingen hieronder)' : '')]);
     if (g && g.tweede_bron && g.tweede_bron.gecorrigeerd && g.tweede_bron.gecorrigeerd.length) rijen.push(['Gecorrigeerd', g.tweede_bron.gecorrigeerd.map(function (c) { return c.jaar; }).join(', ') + ' (winst per aandeel; zie hieronder)']);

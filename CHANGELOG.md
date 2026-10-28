@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.1.4 (2026.10.28)
+- Meer Duitse fondsen met winst per aandeel uit de eigen jaarverslagen: Infineon (11 jaar), Zalando (12), Munich Re (15), Continental (8, was 4), Siemens (11, was 9). Eén ontbrekend verslag in een reeks wordt overbrugd; bij Henkel telt het preferente aandeel; een onleesbaar decimaalteken in de pdf wordt hersteld.
+- Veiligheid: een reeks uit de jaarverslagen wordt niet gebruikt als een jaar meer dan 15% afwijkt van Yahoo Finance, en een onzinwaarde (meer dan 20× de middelste) valt weg.
+- Narekenen telt nu ook de officiële ESEF-jaren mee (winst per aandeel × aantal aandelen uit de tekst van het verslag = nettowinst).
+
 ## 1.1.3 (2026.10.28)
 - Lezer van de Duitse jaarverslagen verbeterd: bij gewone én preferente aandelen (BMW) de winst per gewoon aandeel; getallen uit een andere kolom en losse tekst tellen niet mee. Daardoor nu ook winst per aandeel uit de jaarverslagen voor Deutsche Börse (12 jaar) en Symrise (10 jaar), en BMW 12 jaar (was 8).
 - Narekenen vindt de nettowinst nu ook in de winst-en-verliesrekening en de kerncijfers (o.a. Merck, Siemens, RWE, MTU), niet alleen naast het aantal aandelen.

@@ -8,7 +8,7 @@ import de_eps
 
 class VulEps(unittest.TestCase):
     def test_vervangt_en_vult_aan(self):
-        g = {'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': 9.9, 'sales': 1.0} for y in (2022, 2023, 2024, 2025)]}
+        g = {'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': e, 'sales': 1.0} for y, e in ((2022, -0.7), (2023, 0.28), (2024, 1.45), (2025, 1.81))]}
         reg = {'BAS.DE': {'reeks': {'2019': 9.15, '2020': -1.15, '2021': 6.0, '2022': -0.7, '2023': 0.25, '2024': 1.45, '2025': 1.81},
                           'verslagen': {'2025': {'url': 'https://x/2025.pdf', 'pagina': 301}}}}
         bw.vul_eps_jaarverslag(g, 'BAS.DE', register=reg)
@@ -17,8 +17,16 @@ class VulEps(unittest.TestCase):
         self.assertTrue(all(j['eps_bron'] == 'jaarverslag' for j in g['jaren']))
         self.assertEqual(g['jaren'][0]['end'], '2019-12-31'); self.assertNotIn('sales', g['jaren'][0])
         self.assertEqual(g['eps_jaarverslag']['jaren'], 7)
-        self.assertEqual(g['eps_jaarverslag']['controle']['vergeleken'], 4)       # Yahoo had 9.9 in 2022-2025: alle vier afwijkend
-        self.assertEqual(g['eps_jaarverslag']['controle']['afwijkend'], [2022, 2023, 2024, 2025])
+        self.assertEqual(g['eps_jaarverslag']['controle']['vergeleken'], 4)
+        self.assertEqual(g['eps_jaarverslag']['controle']['afwijkend'], [2023])  # 12% anders: gemeld, niet afgewezen
+
+    def test_grote_afwijking_met_yahoo_of_onzin_reeks_niet_gebruikt(self):
+        g = {'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': 9.9} for y in (2022, 2023, 2024, 2025)]}
+        bw.vul_eps_jaarverslag(g, 'X', register={'X': {'reeks': {'2021': 1.0, '2022': 1.1, '2023': 1.2, '2024': 1.45, '2025': 1.81}}})
+        self.assertNotIn('eps_jaarverslag', g); self.assertEqual(g['eps_jaarverslag_afgewezen']['jaren'], [2022, 2023, 2024, 2025])
+        h = {'jaren': [{'year': 2025, 'end': '2025-12-31', 'comparable_eps': 1.8}]}
+        bw.vul_eps_jaarverslag(h, 'X', register={'X': {'reeks': {'2020': 534.0, '2021': 1.0, '2022': 1.1, '2023': 1.2, '2024': 1.45, '2025': 1.81}}})
+        self.assertNotIn(2020, [j['year'] for j in h['jaren']])
 
     def test_controle_met_yahoo_overeen(self):
         g = {'jaren': [{'year': y, 'end': f'{y}-12-31', 'comparable_eps': e} for y, e in ((2024, 1.46), (2025, 1.80))]}
@@ -79,7 +87,7 @@ class NachtelijkeRun(unittest.TestCase):
     en de winst per aandeel uit de jaarverslagen wordt ook op hergebruikte cijfers toegepast."""
     def test_yahoo_opnieuw_en_jaarverslag_ook_bij_uitval(self):
         oud = {'bron': 'Yahoo Finance', 'niveau': 'indicatief', 'fout': None, 'gecontroleerd_op': '2026-10-20',
-               'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': 1.0, 'sales': 1e9} for y in range(2022, 2026)]}
+               'jaren': [{'year': y, 'end': f'{y}-12-31', 'currency': 'EUR', 'comparable_eps': e, 'sales': 1e9} for y, e in ((2022, -0.7), (2023, 0.25), (2024, 1.45), (2025, 1.81))]}
         gevraagd = []
 
         def yahoo(t):
@@ -94,7 +102,7 @@ class NachtelijkeRun(unittest.TestCase):
         self.assertTrue(g.get('uit_vorige_run'))
         self.assertGreaterEqual(g['eps_jaarverslag']['jaren'], 10)
         self.assertEqual(g['jaren'][0]['eps_bron'], 'jaarverslag')
-        self.assertEqual(oud['jaren'][0]['comparable_eps'], 1.0)        # vorige run niet aangepast
+        self.assertEqual(oud['jaren'][0]['comparable_eps'], -0.7)        # vorige run niet aangepast
 
 
 class YahooEps(unittest.TestCase):
