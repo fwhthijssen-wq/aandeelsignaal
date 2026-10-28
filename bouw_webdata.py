@@ -659,6 +659,18 @@ JAARVERSLAG_AANDELEN = HERE / 'jaarverslag_aandelen.json'   # kandidaten voor he
 ESEF_AANDELEN = HERE / 'esef_aandelen.json'                 # idem uit de tekst van ESEF-jaarverslagen (hulp/esef_aandelen.py)
 
 
+def _klopt(eps, aandelen, winst, marge):
+    """Winst per aandeel × aantal aandelen ≈ nettowinst: binnen de marge, of binnen de afronding van het gemelde cijfer
+    (een halve eenheid van de laatste decimaal; bij een winst van een paar cent is 1% kleiner dan die afronding)."""
+    if not winst or not aandelen or eps * winst < 0 and abs(eps) > 0.001:
+        return False
+    if abs(eps * aandelen / winst - 1) <= marge:
+        return True
+    dec = len(repr(float(eps)).split('.')[1].rstrip('0')) if '.' in repr(float(eps)) else 0
+    halve = 0.5 * 10 ** -max(2, min(dec, 4))
+    return abs(winst / aandelen - eps) <= halve
+
+
 def reken_pdf_eps_na(g, ticker, register=None):
     """Rekent de winst per aandeel uit de pdf-jaarverslagen na: winst per aandeel × gemiddeld aantal aandelen (uit hetzelfde
     verslag) moet binnen 1,5% uitkomen op de nettowinst van dat jaar uit een andere bron (Yahoo, het officiële dossier of
@@ -703,12 +715,12 @@ def reken_pdf_eps_na(g, ticker, register=None):
             sh = _getal(k.get('aandelen'))
             if not sh:
                 continue
-            if ni and id(j) not in alleen_intern and abs(e * sh / ni - 1) <= 0.015:   # nettowinst uit een andere bron
+            if ni and id(j) not in alleen_intern and _klopt(e, sh, ni, 0.015):           # nettowinst uit een andere bron
                 gevonden = {'aandelen': sh, 'bewijs': k.get('bewijs'), 'nettowinst_bron': 'andere bron'}
                 break
             for n in r.get('nettowinst') or []:              # nettowinst uit hetzelfde verslag (zoals de SEC-controle)
                 nv = _getal(n.get('nettowinst'))
-                if nv and abs(e * sh / nv - 1) <= 0.01:
+                if nv and _klopt(e, sh, nv, 0.01):
                     gevonden = {'aandelen': sh, 'bewijs': k.get('bewijs'), 'nettowinst': nv, 'nettowinst_bewijs': n.get('bewijs'), 'nettowinst_bron': 'jaarverslag'}
                     break
             if gevonden:

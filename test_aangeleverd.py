@@ -378,6 +378,14 @@ class PdfNarekenen(unittest.TestCase):
         self.assertEqual(a['pdf_narekening']['jaren'], 10)
 
 
+class Afronding(unittest.TestCase):
+    def test_lage_winst_per_aandeel_binnen_afronding(self):
+        self.assertTrue(B._klopt(0.22, 3.85e9, 855e6, 0.01))        # 0,2221: 1% te krap, maar binnen de afronding op de cent
+        self.assertTrue(B._klopt(0.0034, 15.9e9, 54e6, 0.01))       # BP: 0,00340 binnen een halve tiende cent
+        self.assertFalse(B._klopt(0.06, 4.2e9, 223e6, 0.01))        # KPN 2018: 0,053 tegen 0,06: echt verschil
+        self.assertTrue(B._klopt(2.0, 100e6, 200e6, 0.01))
+
+
 class Dividend(unittest.TestCase):
     def test_verslag_j_tegen_yahoo_j_plus_1(self):
         g = {'jaren': [{'year': 2022, 'dividend_ps': 3.3}, {'year': 2023, 'dividend_ps': 3.4}, {'year': 2024, 'dividend_ps': 3.0}]}
