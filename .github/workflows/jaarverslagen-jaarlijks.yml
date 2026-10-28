@@ -1,0 +1,63 @@
+# Elk voorjaar (1e en 15e van maart t/m juni): de nieuwe Duitse jaarverslagen ophalen (tak jaarverslagen, map de/) en de
+# registers opnieuw opbouwen: winst per aandeel, jaarcijfers, aantal aandelen + nettowinst (narekenen) en dividend. Alleen als
+# alle tests slagen gaan de registers naar main; de nachtelijke update gebruikt ze daarna. Ook met de hand te starten.
+name: Jaarverslagen bijwerken (jaarlijks)
+on:
+  schedule:
+    - cron: '23 4 1,15 3-6 *'
+  workflow_dispatch:
+    inputs:
+      jaren:
+        description: "boekjaren, bijv. 2024-2025 (leeg = vorig en dit jaar)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: jaarverslagen-jaarlijks
+  cancel-in-progress: false
+jobs:
+  bijwerken:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt pytest openpyxl
+      - name: pdftotext installeren
+        run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Tak jaarverslagen ophalen
+        run: git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+      - name: Nieuwe verslagen downloaden
+        run: |
+          J="${{ inputs.jaren }}"
+          if [ -z "$J" ]; then J="$(( $(date -u +%Y) - 1 ))-$(date -u +%Y)"; fi
+          python hulp/de_jaarverslagen.py jv/de --jaren "$J" || echo "::warning title=Jaarverslagen::download deels mislukt"
+      - name: Teksten bewaren op tak jaarverslagen
+        run: |
+          cd jv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Duitse jaarverslagen $(date -u +%F)" || echo "niets nieuw"
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen
+      - name: Registers opnieuw opbouwen
+        run: |
+          python hulp/de_eps.py jv/de jaarverslag_eps.json > eps.log
+          python hulp/de_cijfers.py jv/de jaarverslag_cijfers.json > cijfers.log
+          python hulp/de_narekenen.py jv/de > jaarverslag_aandelen.json 2> aandelen.log
+          python hulp/de_dividend.py jv/de jaarverslag_dividend.json 2> dividend.log
+          python - <<'PY'
+          import json
+          e = json.load(open('jaarverslag_eps.json'))
+          print('::notice title=Registers::' + ' '.join(f"{t}:{len(v.get('reeks') or {})}" for t, v in sorted(e.items())))
+          PY
+      - name: Tests
+        run: python -m pytest -q --ignore=test_web_ui.py
+      - name: Naar main
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add jaarverslag_eps.json jaarverslag_cijfers.json jaarverslag_aandelen.json jaarverslag_dividend.json
+          git commit -qm "Registers Duitse jaarverslagen bijgewerkt $(date -u +%F)" || { echo "niets nieuw"; exit 0; }
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main

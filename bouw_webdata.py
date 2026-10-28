@@ -722,6 +722,37 @@ def reken_pdf_eps_na(g, ticker, register=None):
     g['pdf_narekening'] = info
 
 
+JAARVERSLAG_DIVIDEND = HERE / 'jaarverslag_dividend.json'   # dividend per aandeel uit de Duitse jaarverslagen (hulp/de_dividend.py)
+
+
+def vergelijk_dividend(g, ticker, register=None):
+    """Legt het dividend uit de jaarverslagen naast dat van Yahoo. Het dividend over boekjaar J wordt in J+1 uitgekeerd; Yahoo
+    telt de uitkeringen per boekjaar, dus J uit het verslag hoort bij jaar J+1 van Yahoo. Overeen: binnen 3% of 1 cent.
+    Vervangt niets; resultaat in g['dividend_controle']."""
+    g.pop('dividend_controle', None)
+    if register is None:
+        try:
+            register = json.loads(JAARVERSLAG_DIVIDEND.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            register = {}
+    reeks = {int(j): v for j, v in ((register.get(ticker) or {}).get('reeks') or {}).items() if _getal(v)}
+    if len(reeks) < 2 or not g.get('jaren'):
+        return
+    per_jaar = {j.get('year'): j for j in g['jaren']}
+    vergeleken, overeen, afwijkend = 0, 0, []
+    for jaar, d in sorted(reeks.items()):
+        y = _getal((per_jaar.get(jaar + 1) or {}).get('dividend_ps'))
+        if y is None:
+            continue
+        vergeleken += 1
+        if abs(y - d) <= 0.01 or abs(y / d - 1) <= 0.03:
+            overeen += 1
+        else:
+            afwijkend.append({'boekjaar': jaar, 'verslag': d, 'yahoo': y})
+    if vergeleken:
+        g['dividend_controle'] = {'vergeleken': vergeleken, 'overeen': overeen, 'afwijkend': afwijkend[:10]}
+
+
 def _investeringen_register():
     try:
         return json.loads(ESEF_INVESTERINGEN.read_text(encoding='utf-8'))
@@ -1284,6 +1315,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                     voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
                 except Exception:
                     pass        # geen koershistorie: K/W-historie en dividendrendement ontbreken, de rest blijft geldig
+                try:
+                    vergelijk_dividend(gegevens, ticker)     # na de koershistorie: dan is het dividend van Yahoo per jaar bekend
+                except Exception:
+                    pass
             if koers is not None:
                 from koershistorie import koersbereik
                 koers['bereik'] = koersbereik(punten)

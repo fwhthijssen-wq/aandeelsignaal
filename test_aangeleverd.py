@@ -364,3 +364,11 @@ class PdfNarekenen(unittest.TestCase):
         a = self.g(); a['jaren'][0]['aangeleverd'] = ['net_income']        # aangeleverde nettowinst telt wel (onafhankelijke derde bron)
         B.reken_pdf_eps_na(a, 'X', self.reg())
         self.assertEqual(a['pdf_narekening']['jaren'], 10)
+
+
+class Dividend(unittest.TestCase):
+    def test_verslag_j_tegen_yahoo_j_plus_1(self):
+        g = {'jaren': [{'year': 2022, 'dividend_ps': 3.3}, {'year': 2023, 'dividend_ps': 3.4}, {'year': 2024, 'dividend_ps': 3.0}]}
+        B.vergelijk_dividend(g, 'X', {'X': {'reeks': {'2021': 3.3, '2022': 3.4, '2023': 3.4}}})
+        dc = g['dividend_controle']
+        self.assertEqual((dc['vergeleken'], dc['overeen']), (3, 2)); self.assertEqual(dc['afwijkend'][0]['boekjaar'], 2023)
