@@ -13,8 +13,10 @@ HERE = Path(__file__).resolve().parent
 NUM = re.compile(r'(?<![\w.,])[-–(]?\d{1,3}(?:[.,\s ]\d{3})+(?:[.,]\d+)?\)?|(?<![\w.,])[-–(]?\d+(?:[.,]\d+)?\)?')
 
 AANDELEN = re.compile(r'(weighted\s+average|average\s+number|gewichtete[nrs]?\s+durchschnitt|durchschnittlich\w*\s+(?:anzahl|zahl)|'
-                      r'(?:anzahl|zahl)\s+der\s+(?:im\s+durchschnitt|durchschnittlich)|gewogen)', re.I)
-AANDELEN2 = re.compile(r'(shares|aktien|stückaktien)', re.I)
+                      r'(?:anzahl|zahl)\s+der\s+(?:im\s+durchschnitt|durchschnittlich)|gewogen|'
+                      r'moyen\w*\s+pond[ée]r[ée]|nombre\s+moyen|n[uú]mero\s+medio|medio\s+ponderad|media\s+ponderata|medio\s+ponderato|'
+                      r'numero\s+medio|gewogen\s+gemiddeld)', re.I)
+AANDELEN2 = re.compile(r'(shares|aktien|stückaktien|actions|acciones|azioni|aandelen|titres)', re.I)
 NIET_AANDELEN = re.compile(r'cost\s+of\s+capital|kapitalkosten|tax\s+rate|steuersatz|wacc|zinssatz|interest|maturity|laufzeit|'
                            r'remaining|restlaufzeit|price|preis|kurs|exercise|ausübung|employees|mitarbeiter|treasury\s+shares\s+held', re.I)
 VERWATERD = re.compile(r'dilut|verwässert', re.I)
@@ -77,13 +79,14 @@ def kandidaten(tekst):
     komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     uit = {}
     for i, r in enumerate(regels):
-        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien|(?:no\.|number)\s+of\s+shares|anzahl\s+(?:der\s+)?aktien|aktienanzahl', r, re.I)) or NIET_AANDELEN.search(r):
+        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien|(?:no\.|number)\s+of\s+shares|anzahl\s+(?:der\s+)?aktien|aktienanzahl|'
+                                                r'nombre\s+d.actions|n[uú]mero\s+de\s+acciones|numero\s+(?:di\s+|delle\s+)?azioni|aantal\s+aandelen', r, re.I)) or NIET_AANDELEN.search(r):
             continue
         blok = ' '.join(regels[i:i + 4])
         if not AANDELEN2.search(blok):
             continue
         for t in RUW.findall(blok):
-            x = getal(t, komma) if not re.search(r'\s', t) else getal(re.sub(r'[\s\u00a0\u202f]', ',' if not komma else '.', t), komma)
+            x = float(re.sub(r'[.,\s\u00a0\u202f]', '', t))       # uitgeschreven aantal: alle scheidingstekens zijn duizendtallen
             if x and 1e7 <= x <= 3e10:
                 uit.setdefault(round(x), ' '.join(r.split())[:160])
         if AANDELEN2.search(r):
