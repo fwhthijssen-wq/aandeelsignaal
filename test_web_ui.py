@@ -110,11 +110,21 @@ class WebUi(unittest.TestCase):
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'), 'menu met 5 items past op 320px')
 
     def _alles_op_volglijst(self, pg):
-        """De lange cijfertabel op Start toont alleen de volglijst; zet daarom alle aandelen erop."""
-        pg.evaluate("""(function(){var d=JSON.parse(localStorage.getItem('aandeelsignaal.v1')||'{}');
-          d.volglijst=window.AANDEEL_DATA.aandelen.map(function(a){return {ticker:a.ticker};});d.introGezien=true;
-          localStorage.setItem('aandeelsignaal.v1',JSON.stringify(d));})()""")
-        pg.reload(); pg.wait_for_timeout(200)
+        """De lange cijfertabel op Start toont alleen de volglijst; zet daarom alle aandelen erop. De app schrijft bij het
+        opstarten zelf naar de opslag; schrijven we te vroeg, dan kan dat onze volglijst overschrijven. Daarom: wachten tot de
+        app klaar is, schrijven, herladen en controleren dat de tabel er is (hoogstens drie keer)."""
+        for _ in range(3):
+            pg.wait_for_function("document.querySelector('[data-tegels]') !== null", timeout=10000)
+            pg.evaluate("""(function(){var d=JSON.parse(localStorage.getItem('aandeelsignaal.v1')||'{}');
+              d.volglijst=window.AANDEEL_DATA.aandelen.map(function(a){return {ticker:a.ticker};});d.introGezien=true;
+              localStorage.setItem('aandeelsignaal.v1',JSON.stringify(d));})()""")
+            pg.reload()
+            try:
+                pg.wait_for_selector('#d-trend', timeout=5000)
+                return
+            except Exception:
+                continue
+        self.fail('volglijst niet bewaard')
 
     def test_dashboard_op_start_tabel_filter_en_spreiding(self):
         pg = self.pagina(320)
