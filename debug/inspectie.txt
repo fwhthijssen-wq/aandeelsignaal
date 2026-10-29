@@ -1,26 +1,6 @@
-===== ASML.AS niveau None bron None eps_status independently_verified 10
-2016 EUR eps 3.64 rep 3.64 ni 1557800000 sh 427700000 bron None corr None aang None check onderbouwd narek None
-2017 EUR eps 4.79 rep 4.79 ni 2066700000 sh 431600000 bron None corr None aang None check onderbouwd narek None
-2018 EUR eps 6.08 rep 6.08 ni 2591600000 sh 426400000 bron None corr None aang None check onderbouwd narek None
-2019 EUR eps 6.15 rep 6.15 ni 2592300000 sh 421600000 bron None corr None aang None check onderbouwd narek None
-2020 EUR eps 8.48 rep 8.48 ni 3553700000 sh 419100000 bron None corr None aang None check onderbouwd narek None
-2021 EUR eps 14.34 rep 14.34 ni 5883200000 sh 410400000 bron None corr None aang None check onderbouwd narek None
-2022 EUR eps 14.13 rep 14.13 ni 5624200000 sh 398000000 bron None corr None aang None check onderbouwd narek None
-2023 EUR eps 19.89 rep 19.89 ni 7839000000 sh 394100000 bron None corr None aang None check onderbouwd narek None
-2024 EUR eps 19.24 rep 19.24 ni 7571600000 sh 393600000 bron None corr None aang None check onderbouwd narek None
-2025 EUR eps 24.71 rep 24.71 ni 9609400000 sh 388900000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 40, "overeen": 39, "afwijkend": [{"jaar": 2019, "veld": "equity", "app": 12592200000, "tweede": 13876900000, "pct": -9.3, "soort": null}], "aantal_afwijkend": 1, "gecorrigeerd": []}
-pdf_narekening null
-===== AAPL niveau None bron None eps_status independently_verified 10
-2016 USD eps 2.0775 rep 8.31 ni 45687000000 sh 5500281000 bron None corr None aang None check onderbouwd narek None
-2017 USD eps 2.3025 rep 9.21 ni 48351000000 sh 5251692000 bron None corr None aang None check onderbouwd narek None
-2018 USD eps 2.98 rep 2.98 ni 59531000000 sh 20000435000 bron None corr None aang None check onderbouwd narek None
-2019 USD eps 2.97 rep 2.97 ni 55256000000 sh 18595651000 bron None corr None aang None check onderbouwd narek None
-2020 USD eps 3.28 rep 3.28 ni 57411000000 sh 17528214000 bron None corr None aang None check onderbouwd narek None
-2021 USD eps 5.61 rep 5.61 ni 94680000000 sh 16864919000 bron None corr None aang None check onderbouwd narek None
-2022 USD eps 6.11 rep 6.11 ni 99803000000 sh 16325819000 bron None corr None aang None check onderbouwd narek None
-2023 USD eps 6.13 rep 6.13 ni 96995000000 sh 15812547000 bron None corr None aang None check onderbouwd narek None
-2024 USD eps 6.08 rep 6.08 ni 93736000000 sh 15408095000 bron None corr None aang None check onderbouwd narek None
-2025 USD eps 7.46 rep 7.46 ni 112010000000 sh 15004697000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 40, "overeen": 40, "afwijkend": [], "aantal_afwijkend": 0, "gecorrigeerd": []}
-pdf_narekening null
+gemaakt 2026-10-29T16:53:46+00:00 fondsen 347 met management 345
+ceo 339 bezit 345 governance 331 insiders 127
+zonder: GLPG.AS ML.PA
+insiders per land: {'België': 0, 'Bermuda': 0, 'Cyprus': 0, 'Duitsland': 0, 'Finland': 0, 'Frankrijk': 1, 'Griekenland': 1, 'Ierland': 1, 'Italië': 0, 'Jersey': 0, 'Luxemburg': 0, 'Nederland': 2, 'Spanje': 1, 'Verenigd Koninkrijk': 86, 'Verenigde Staten': 34, 'Zwitserland': 1}
+ASML.AS {"ceo": {"naam": "Mr. Christophe D. Fouquet", "functie": "President, CEO and Chair of the Board of Management", "geboren": 1973}, "bestuurders": [{"naam": "Mr. Christophe D. Fouquet", "functie": "President, CEO and Chair of the Board of Management", "geboren": 1973}, {"naam": "Mr. Roger J. M. Dassen Ph.D.", "functie": "Executive VP, CFO & Member of the Management Board", "geboren": 1965}, {"naam": "Mr. Frederic J. M. Schneider-Maunoury", "functie": "Executive VP, COO & Member of the Management B
+AAPL {"ceo": {"naam": "Mr. John Ternus", "functie": "CEO & Director", "geboren": 1976}, "bestuurders": [{"naam": "Mr. Timothy D. Cook", "functie": "Executive Chairman of the Board", "geboren": 1961}, {"naam": "Mr. Kevan Parekh", "functie": "Senior VP & CFO", "geboren": 1972}, {"naam": "Mr. Sabih Khan", "functie": "Senior VP & Chief Operating Officer", "geboren": 1967}, {"naam": "Ms. Deirdre O'Brien", "functie": "Senior Vice President of Retail & People", "geboren": 1967}, {"naam": "Ms. Katherine L. A
