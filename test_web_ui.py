@@ -173,6 +173,40 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg2.locator('[data-timing]').count(), 0)
         self.assertEqual(fouten + fouten2, [])
 
+    def test_management_feiten_op_verdiepen(self):
+        def ctx(man):
+            c = self.b.new_context(viewport={'width': 390, 'height': 800})
+            self.addCleanup(c.close)
+            c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,
+              get:function(){return v;},set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL'&&%s)a.management=%s;});v=d;}});
+              try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % ('true' if man else 'false', man or 'null'))
+            pg = c.new_page()
+            fouten = []
+            pg.on('pageerror', lambda e: fouten.append(str(e)))
+            return pg, fouten
+        man = ("{ceo:{naam:'Ms. Jane <b>Doe</b>',functie:'CEO',geboren:1968},bestuurders:[{naam:'Ms. Jane Doe',functie:'CEO'},{naam:'Mr. Roe',functie:'CFO'}],"
+               "bezit_insiders_pct:2.41,governance:{audit:2,bestuur:3,beloning:7,aandeelhoudersrechten:1,totaal:3,datum:'2025-10-01'},"
+               "insiders:{aankopen:3,verkopen:0,personen_gekocht:2,personen_verkocht:0,van:'2025-10-29',tot:'2026-10-29',bron:'Yahoo Finance (insidertransacties)'},"
+               "datum:'2026-10-29',bron:'Yahoo Finance'}")
+        pg, f1 = ctx(man)
+        pg.goto(INDEX + '#/a/AAPL/check')
+        pg.wait_for_timeout(200)
+        kaart = pg.locator('[data-management]')
+        txt = kaart.inner_text()
+        self.assertIn('Management: feiten', txt)
+        self.assertIn('Ms. Jane <b>Doe</b> (geboren 1968)', txt)        # tekst uit de bron wordt nooit als html gelezen
+        self.assertIn('3 aankopen (2 personen)', txt)
+        self.assertIn('3 / 10', txt)
+        self.assertIn('Topbestuurders (2)', txt)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        # Het blok staat vóór de eigen beoordeling.
+        self.assertTrue(pg.evaluate("document.querySelector('[data-management]').compareDocumentPosition(document.querySelector('[data-verdiepen]')) & 4"))
+        pg2, f2 = ctx(None)
+        pg2.goto(INDEX + '#/a/AAPL/check')
+        pg2.wait_for_timeout(200)
+        self.assertIn('onbekend', pg2.locator('[data-feit="ceo"]').inner_text())
+        self.assertEqual(f1 + f2, [])
+
     def test_kortetermijnsignaal_los_van_het_oordeel(self):
         import datetime
         def ctx(koers):

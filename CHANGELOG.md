@@ -2,6 +2,12 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.4 (2026.10.29)
+- **Nieuw: Management: feiten** op het tabblad Verdiepen, boven uw eigen beoordeling. Per fonds: wie de topman of -vrouw is, hoeveel aandelen bestuur en insiders bezitten, aan- en verkopen door insiders in de afgelopen 12 maanden (met het aantal personen), hoe het aantal aandelen in 5 jaar veranderde (inkoop of uitgifte), het rendement op eigen vermogen aan begin en eind van 5 jaar, en de governance-scores van ISS (audit, bestuur, beloning, rechten van aandeelhouders). Bij elke regel staan bron en datum; ontbreekt iets, dan staat er "onbekend".
+- Alleen feiten, geen oordeel: het blok verandert het NAIC-oordeel, de gezondheidscheck en uw eigen score niet.
+- Insidertransacties zijn er vooral voor Amerikaanse en Britse fondsen. Bij Britse fondsen tellen ook kleine maandelijkse aankopen via personeelsregelingen mee; dat staat erbij.
+- Technisch: de nachtelijke update haalt de bestuurders, het bezit en de governance-scores uit de Yahoo-bedrijfsinfo die al werd opgehaald, plus één extra aanroep per fonds voor de insidertransacties. Gecontroleerd op echte gegevens van 13 fondsen in de VS, Nederland, Duitsland, Frankrijk en het VK. Nieuwe controle in de inspectie-workflow: `MANAGEMENT` gevolgd door tickers.
+
 ## 1.3 (2026.10.29)
 - **Nieuw: kortetermijnsignaal** op het tabblad Koers, voor wie het moment van kopen wil kiezen. Vijf vaste checks op de dagkoersen: koers boven het gemiddelde van 200 dagen, gemiddelde van 50 dagen boven dat van 200 dagen (met sinds hoeveel handelsdagen), koers hoger dan 6 maanden geleden, MACD boven de signaallijn en RSI onder 70. Uitkomst: **Gunstig moment** (4 of 5), **Neutraal** (2 of 3) of **Afwachten** (0 of 1). Ontbreekt een check, dan staat er "Onvoldoende gegevens" in plaats van een gok.
 - Het signaal staat volledig los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Bij een koers ouder dan 7 dagen wordt het niet getoond.

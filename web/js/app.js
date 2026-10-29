@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.3 (2026.10.29)';
+  var APP_VERSIE = '1.4 (2026.10.29)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -869,7 +869,7 @@
     } else if (tab === 'waarde') {
       s += waardeHtml(rec, g, jr, r);
     } else if (tab === 'check') {
-      s += verdiepHtml(rec) + checkHtml(rec);
+      s += managementHtml(rec, jr) + verdiepHtml(rec) + checkHtml(rec);
     } else if (tab === 'gezondheid') {
       s += (r.niveau === 'jaarverslag' ? jaarverslagUitleg(g) : r.niveau === 'indicatief' ? indicatiefUitleg(g) : '') + gezondHtml(g, jr);
     } else {
@@ -1110,6 +1110,20 @@
     return s;
   }
   var ANTW_TEKST = { ja: 'Ja', nee: 'Nee', onzeker: 'Weet ik niet' };
+  /* Management: feiten uit de nachtelijke update en de jaarcijfers. Geen oordeel; verandert niets aan oordeel of scores. */
+  function managementHtml(rec, jr) {
+    var f = Management.feiten(rec, jr);
+    var rijen = f.regels.map(function (r) {
+      return '<div data-feit="' + r.id + '" style="padding:8px 0;border-top:1px solid var(--line)"><div>' + h(r.label) + '</div><div style="margin-top:2px"><b>' +
+        (r.waarde === null ? '<span class="zacht" style="font-weight:400">onbekend</span>' : h(r.waarde)) + '</b></div>' + (r.toelichting ? '<div style="font-size:.85rem;margin-top:2px">' + h(r.toelichting) + '</div>' : '') + '<div class="zacht" style="font-size:.8rem">' + h(r.bron) + '</div></div>';
+    }).join('');
+    var top = f.bestuurders.length ? '<details style="margin-top:8px"><summary>Topbestuurders (' + f.bestuurders.length + ')</summary><ul>' +
+      f.bestuurders.map(function (b) { return '<li>' + h(b.naam) + ' <span class="zacht">· ' + h(b.functie) + '</span></li>'; }).join('') + '</ul></details>' : '';
+    return '<div class="kaart-plat" data-management><h2>Management: feiten</h2>' +
+      '<div>' + rijen + '</div>' + top +
+      '<p class="zacht">Feiten om uw eigen beoordeling van het management op te baseren, geen oordeel. Ontbreekt een feit, dan staat er "onbekend"; insidertransacties zijn vooral voor Amerikaanse fondsen beschikbaar. ' +
+      'Een governance-score van ISS is een risicoschatting van dat bureau, geen feit over de prestaties. Wordt elke nacht bijgewerkt en verandert het oordeel en uw score niet.</p></div>';
+  }
   /* Kortetermijnsignaal: vijf technische checks, volledig los van het NAIC-oordeel en de gezondheidscheck. */
   function kortetermijnHtml(rec, fr) {
     var t = Kortetermijn.kortetermijn(rec.koers, fr.fresh);

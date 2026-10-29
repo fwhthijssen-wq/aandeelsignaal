@@ -13,6 +13,42 @@ jobs:
   toon:
     runs-on: ubuntu-24.04
     steps:
+      # 'MANAGEMENT AAPL ASML.AS …': haalt de management-feiten live bij Yahoo op voor die fondsen (staat in het log en in debug/inspectie.txt).
+      - if: startsWith(inputs.tickers, 'MANAGEMENT')
+        uses: actions/checkout@v6
+        with:
+          path: code
+      - if: startsWith(inputs.tickers, 'MANAGEMENT')
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Management-feiten live controleren
+        if: startsWith(inputs.tickers, 'MANAGEMENT')
+        env:
+          TICKERS: ${{ inputs.tickers }}
+        run: |
+          pip install -q -r code/requirements.txt
+          cd code && python - > ../management.txt <<'PY'
+          import json, os, time
+          from datetime import date
+          import yfinance as yf
+          from management import management_uit_info, insiders_uit_transacties, yahoo_insiders
+          vandaag = date.today().isoformat()
+          for t in os.environ['TICKERS'].split()[1:]:
+              try:
+                  m = management_uit_info(yf.Ticker(t).get_info(), vandaag)
+              except Exception as e:
+                  m = f'fout: {e}'
+              try:
+                  rijen = yahoo_insiders(t)
+                  ins = insiders_uit_transacties(rijen, vandaag)
+                  teksten = sorted({str(r.get('Text') or '')[:30] for r in rijen})[:12]
+              except Exception as e:
+                  ins, teksten = f'fout: {e}', []
+              print(t, json.dumps({'management': m, 'insiders': ins, 'soorten_transacties': teksten}, ensure_ascii=False, default=str))
+              time.sleep(1)
+          PY
+          cat ../management.txt
       - uses: actions/cache/restore@v5
         with:
           path: web/data/aandelen.json
@@ -89,6 +125,7 @@ jobs:
         run: |
           cat inspectie.txt | head -50
           git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+          [ -f management.txt ] && cat management.txt >> inspectie.txt
           mkdir -p jv/debug && cp inspectie.txt jv/debug/
           cd jv
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
