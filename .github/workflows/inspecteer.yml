@@ -106,6 +106,17 @@ jobs:
                       lijst.append(f"{a['ticker']}:{n}/{ni}")
               print(len(lijst)); print(' '.join(lijst))
               raise SystemExit
+          if want == ['DEKKING']:
+              L = d['aandelen']; M = [a for a in L if a.get('management')]
+              tel = lambda f: sum(1 for a in M if f(a['management']))
+              print('gemaakt', d.get('gemaakt'), 'fondsen', len(L), 'met management', len(M))
+              print('ceo', tel(lambda m: m.get('ceo')), 'bezit', tel(lambda m: m.get('bezit_insiders_pct') is not None), 'governance', tel(lambda m: m.get('governance')), 'insiders', tel(lambda m: m.get('insiders')))
+              print('zonder:', ' '.join(a['ticker'] for a in L if not a.get('management')))
+              print('insiders per land:', {k: sum(1 for a in M if a['management'].get('insiders') and a.get('land') == k) for k in sorted({a.get('land') for a in L if a.get('land')})})
+              for a in M:
+                  if a['ticker'] in ('AAPL', 'SHEL.L', 'ASML.AS'):
+                      print(a['ticker'], json.dumps(a['management'], ensure_ascii=False)[:500])
+              raise SystemExit
           if want == ['VALUTA']:
               for a in d['aandelen']:
                   jr = (a.get('gegevens') or {}).get('jaren') or []
