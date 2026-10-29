@@ -1198,7 +1198,8 @@ def extra_namen(payload, max_per_veld=10):
 
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
-         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None):
+         valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None,
+         insiders_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -1219,6 +1220,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     if analisten_ophalen is None:
         # Alleen in een echte run (koersen van Yahoo) ook het analistenadvies; met nepkoersen (tests) niet.
         analisten_ophalen = _yahoo_analisten if fetch_prijzen is None else (lambda t: None)
+    if insiders_ophalen is None:
+        # Ook de insidertransacties alleen in een echte run.
+        from management import yahoo_insiders
+        insiders_ophalen = yahoo_insiders if fetch_prijzen is None else (lambda t: [])
     if aangeleverd is None:
         aangeleverd = _aangeleverd() if fetch_prijzen is None else {}     # tests: alleen als ze het zelf meegeven
     if tweede_bron is None:
@@ -1399,10 +1404,25 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 gegevens['ttm'] = t
         except Exception:
             pass                   # zonder kwartaalwinst rekent NAIC met het laatste boekjaar
+        # Management-feiten: ter informatie. Elk onderdeel apart, zodat een storing bij het ene het andere niet wegneemt.
+        from management import management_uit_info, insiders_uit_transacties
+        management = None
+        try:
+            management = management_uit_info(info, vandaag)
+        except Exception:
+            pass
+        try:
+            ins = insiders_uit_transacties(insiders_ophalen(ticker), vandaag)
+            if ins:
+                management = {**(management or {'datum': vandaag, 'bron': 'Yahoo Finance'}), 'insiders': ins}
+        except Exception:
+            pass
         pauze()
         rec = maak_record(meta, koers=koers, gegevens=gegevens)
         if analisten:
             rec['analisten'] = analisten
+        if management:
+            rec['management'] = management
         records.append(rec)
     bestand = maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (koersen en indicatieve jaarcijfers)')
     bestand['yahoo_vergelijk'] = {'bedrijven': vergeleken_bedrijven, 'velden': vergelijking}
