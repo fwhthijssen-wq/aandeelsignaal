@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.4 (2026.10.29)';
+  var APP_VERSIE = '1.4.1 (2026.10.29)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1258,7 +1258,7 @@
      Lukt een nieuw venster niet (pop-ups geblokkeerd), dan direct afdrukken via een onzichtbaar frame. */
   function afdrukken(rec) {
     var html;
-    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true }); }
+    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, Kortetermijn: Kortetermijn, Management: Management, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true }); }
     catch (e) { toast('Afdrukken lukt niet voor dit aandeel'); return; }
     var w = null;
     try { w = window.open('', '_blank'); } catch (e2) { w = null; }

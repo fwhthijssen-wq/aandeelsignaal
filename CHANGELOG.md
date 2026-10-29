@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.4.1 (2026.10.29)
+- **Afdrukken / PDF bijgewerkt**: het fondsrapport bevat nu ook het **kortetermijnsignaal** (uitkomst, de vijf checks en hoeveel er kloppen) en **Management: feiten** (topman of -vrouw, bezit en transacties van insiders, aantal aandelen en rendement op eigen vermogen over 5 jaar, governance-scores en topbestuurders, met bron en datum). Ontbreekt iets, dan staat er "onbekend"; bij een koers ouder dan 7 dagen staat er dat het signaal niet wordt getoond.
+- Management: feiten staat in het rapport direct boven "Ter informatie", waar uw eigen beoordeling van het management al stond.
+
 ## 1.4 (2026.10.29)
 - **Nieuw: Management: feiten** op het tabblad Verdiepen, boven uw eigen beoordeling. Per fonds: wie de topman of -vrouw is, hoeveel aandelen bestuur en insiders bezitten, aan- en verkopen door insiders in de afgelopen 12 maanden (met het aantal personen), hoe het aantal aandelen in 5 jaar veranderde (inkoop of uitgifte), het rendement op eigen vermogen aan begin en eind van 5 jaar, en de governance-scores van ISS (audit, bestuur, beloning, rechten van aandeelhouders). Bij elke regel staan bron en datum; ontbreekt iets, dan staat er "onbekend".
 - Alleen feiten, geen oordeel: het blok verandert het NAIC-oordeel, de gezondheidscheck en uw eigen score niet.

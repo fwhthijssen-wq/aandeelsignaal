@@ -81,3 +81,38 @@ test('Afdruk: fonds zonder gegevens geeft toch een pagina', function () {
   assert.match(html, /Leeg/);
   assert.match(html, /geen beleggingsadvies/);
 });
+
+const Kortetermijn = require('../js/kortetermijn.js');
+const Management = require('../js/management.js');
+function maakMet(r) { return maak(r, { Kortetermijn, Management }); }
+
+test('Afdruk: kortetermijnsignaal met vijf checks en uitkomst, los van het NAIC-oordeel', function () {
+  const r = rec();
+  Object.assign(r.koers, { mom6: 8.2, macd: 1.1, macd_signaal: 0.7, kruis_dagen: 34 });
+  const { html } = maakMet(r);
+  assert.match(html, /data-kortetermijn="gunstig"/);
+  assert.match(html, /Gunstig moment/);
+  ['Koers boven gemiddelde van 200 dagen', 'sinds 34 handelsdagen', 'MACD boven de signaallijn', 'RSI niet overkocht', '5 van 5 checks'].forEach(t => assert.ok(html.includes(t), t));
+});
+
+test('Afdruk: kortetermijnsignaal "Onvoldoende gegevens" als een check ontbreekt, en niet getoond bij een oude koers', function () {
+  const { html } = maakMet(rec());   // geen MACD en geen 6-maandsrendement
+  assert.match(html, /Onvoldoende gegevens/);
+  assert.match(html, /2 niet te berekenen/);
+  const oud = rec(); oud.koers.datum = '2026-10-01';
+  const h2 = maakMet(oud).html;
+  assert.match(h2, /data-kortetermijn="geen"/);
+  assert.ok(!h2.includes('Gunstig moment') && !h2.includes('checks</b>'));
+});
+
+test('Afdruk: management-feiten met bron, "onbekend" waar iets ontbreekt', function () {
+  const r = rec();
+  r.management = { datum: '2026-10-28', ceo: { naam: 'A. Jansen', geboren: 1965 }, bezit_insiders_pct: 0.4,
+    insiders: { aankopen: 3, verkopen: 1, personen_gekocht: 2, personen_verkocht: 1, bron: 'Yahoo Finance', van: '2025-10-28', tot: '2026-10-28' },
+    bestuurders: [{ naam: 'B. de Vries', functie: 'CFO' }] };
+  const { html } = maakMet(r);
+  assert.match(html, /Management: feiten/);
+  ['A. Jansen (geboren 1965)', '0,40%', '3 aankopen (2 personen)', 'B. de Vries', 'Yahoo Finance, 2026-10-28', 'Rendement op eigen vermogen 2021–2025'].forEach(t => assert.ok(html.includes(t), t));
+  assert.match(html, /data-feit="governance"><th scope="row">[^<]+<\/th><td><span class="zacht">onbekend/);
+  assert.ok(html.indexOf('Management: feiten') < html.indexOf('<h2>Ter informatie'), 'feiten staan boven uw eigen beoordeling');
+});
