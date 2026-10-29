@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.3 (2026.10.29)';
+  var APP_VERSIE = '1.4 (2026.10.29)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1115,7 +1115,7 @@
     var f = Management.feiten(rec, jr);
     var rijen = f.regels.map(function (r) {
       return '<div data-feit="' + r.id + '" style="padding:8px 0;border-top:1px solid var(--line)"><div>' + h(r.label) + '</div><div style="margin-top:2px"><b>' +
-        (r.waarde === null ? '<span class="zacht" style="font-weight:400">onbekend</span>' : h(r.waarde)) + '</b></div><div class="zacht" style="font-size:.8rem">' + h(r.bron) + '</div></div>';
+        (r.waarde === null ? '<span class="zacht" style="font-weight:400">onbekend</span>' : h(r.waarde)) + '</b></div>' + (r.toelichting ? '<div style="font-size:.85rem;margin-top:2px">' + h(r.toelichting) + '</div>' : '') + '<div class="zacht" style="font-size:.8rem">' + h(r.bron) + '</div></div>';
     }).join('');
     var top = f.bestuurders.length ? '<details style="margin-top:8px"><summary>Topbestuurders (' + f.bestuurders.length + ')</summary><ul>' +
       f.bestuurders.map(function (b) { return '<li>' + h(b.naam) + ' <span class="zacht">· ' + h(b.functie) + '</span></li>'; }).join('') + '</ul></details>' : '';

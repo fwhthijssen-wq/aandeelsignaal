@@ -42,5 +42,7 @@ test('management: aandelen en rendement vragen minstens 4 jaar', () => {
   assert.match(regel(M.feiten({}, hoog), 'roe').waarde, /^150,0% → 150,0% \(weinig zeggend/);
   const een = { management: { insiders: { aankopen: 1, verkopen: 1, personen_gekocht: 1, personen_verkocht: 1, van: 'a', tot: 'b', bron: 'Y' } } };
   assert.equal(regel(M.feiten(een, []), 'insiders').waarde, '1 aankoop (1 persoon), 1 verkoop (1 persoon)');
+  assert.equal(regel(M.feiten(een, []), 'insiders').toelichting, null);
+  assert.match(regel(M.feiten({ ...een, ticker: 'BP.L' }, []), 'insiders').toelichting, /personeelsregelingen/);
   assert.equal(M.roeVerloop([2020, 2021, 2022, 2023].map(y => ({ year: y, net_income: 5, equity: -10 }))), null);   // negatief eigen vermogen telt niet
 });

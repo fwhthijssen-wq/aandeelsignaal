@@ -41,7 +41,8 @@
     var ins = m.insiders;
     uit.push({ id: 'insiders', label: 'Aan- en verkopen door insiders, 12 maanden', bron: ins ? ins.bron + ', ' + ins.van + ' t/m ' + ins.tot : 'Yahoo Finance (insidertransacties)',
       waarde: ins ? aantal(ins.aankopen, 'aankoop', 'aankopen', ins.personen_gekocht) + ', ' + aantal(ins.verkopen, 'verkoop', 'verkopen', ins.personen_verkocht) : null,
-      richting: ins ? (ins.aankopen > ins.verkopen ? 'aan' : ins.verkopen > ins.aankopen ? 'ver' : null) : null });
+      richting: ins ? (ins.aankopen > ins.verkopen ? 'aan' : ins.verkopen > ins.aankopen ? 'ver' : null) : null,
+      toelichting: ins && /\.L$/.test((rec && rec.ticker) || '') ? 'Bij Britse fondsen tellen ook de kleine maandelijkse aankopen via personeelsregelingen mee; het aantal personen zegt dan meer.' : null });
     var a = aandelenVerloop(jr);
     uit.push({ id: 'aandelen', label: 'Aantal aandelen' + (a ? ' ' + a.van + '–' + a.tot : ', 5 jaar'), bron: 'Jaarcijfers (verwaterd, na splitsingen)',
       waarde: a ? pct(a.pct) + (a.pct <= -1 ? ' (inkoop eigen aandelen)' : a.pct >= 1 ? ' (nieuwe aandelen uitgegeven)' : ' (vrijwel gelijk)') : null });
