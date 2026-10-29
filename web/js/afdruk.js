@@ -5,14 +5,6 @@
   'use strict';
   var OORDEEL = { kopen: 'Kopen', neutraal: 'Neutraal', vermijden: 'Vermijden' };
   var GEZOND = { kopen: 'Gezond', neutraal: 'Gemengd', vermijden: 'Zwak', positief: 'Gezond' };   // gezondheidscheck (zes metingen)
-  var STAP_UITLEG = {
-    groei: 'Groeit de winst per aandeel minstens 5% per jaar? NAIC zoekt groeibedrijven.',
-    kwaliteit: 'Groeien omzet en winst gelijk op, en houden marge en rendement op eigen vermogen stand?',
-    zone: 'Staat de koers in het onderste derde van de verwachte koersband over 5 jaar?',
-    verhouding: 'Kan de koers minstens 3 keer zoveel stijgen als dalen?',
-    rendement: 'Levert het naar verwachting minstens 15% per jaar op, koers plus dividend?'
-  };
-
   function ok(x) { return typeof x === 'number' && isFinite(x); }
   function h(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function getal(n, dec) { return ok(n) ? n.toLocaleString('nl-NL', { minimumFractionDigits: dec || 0, maximumFractionDigits: dec == null ? 0 : dec }) : '–'; }
@@ -131,18 +123,65 @@
   }
 
   /* ---- De vijf stappen als leesbare redenering ---- */
-  function stappen(n, valuta) {
-    var l = n ? (n.ladder || []) : [];
-    var z = n && n.zones, q = n && n.kwaliteit || [];
-    var uitleg = {
-      groei: n && n.groeiHistorisch !== null ? 'Winst per aandeel ' + pct(n.groeiHistorisch) + ' per jaar (trend ' + n.van + '–' + n.tot + '); NAIC vraagt minstens 5%.' : 'Te weinig jaren om de groei te bepalen.',
-      kwaliteit: q.length ? q.map(function (x) { return (x.ok === false ? 'Valt af: ' : '') + x.tekst; }).join(' ') : 'Niet te toetsen.',
-      zone: z && ok(z.koers) ? 'Koers ' + geld(z.koers) + ' ' + valuta + '; koopzone ' + geld(z.koop[0]) + '–' + geld(z.koop[1]) + ', houdzone tot ' + geld(z.houd[1]) + '. Nu: ' + { koop: 'koopzone', houd: 'houdzone', verkoop: 'verkoopzone', onder: 'onder de verwachte lage koers', boven: 'boven de verwachte hoge koers' }[z.zone] + '.' : 'Geen koerszones.',
-      verhouding: z && z.verhouding !== null && ok(z.verhouding) ? 'Opwaarts ' + geld(z.opwaarts) + ' tot de hoge koers, neerwaarts ' + geld(z.neerwaarts) + ' tot de lage koers: ' + getal(z.verhouding, 1) + ' : 1.' : 'Niet te berekenen.',
-      rendement: n && n.totaal ? 'Koers ' + pct(n.totaal.koers) + ' + dividend ' + (n.totaal.dividend !== null ? pct(n.totaal.dividend) : '0%') + ' = ' + pct(n.totaal.totaal) + ' per jaar.' : 'Niet te berekenen.'
-    };
-    return '<ol class="stappen">' + l.map(function (x) {
-      return '<li class="' + (x.ok === true ? 'ja' : x.ok === false ? 'nee' : 'onb') + '">' + merk(x.ok) + '<div><b>' + h(x.naam) + '</b> <span class="zacht">' + h(STAP_UITLEG[x.id] || '') + '</span><br>' + h(uitleg[x.id] || '') + '</div></li>';
+  /* De NAIC-gids in zes stappen, zoals op het tabblad NAIC van de app (spiegel van naicHtml in app.js). */
+  function stappen(n, valuta, jr, N, bank) {
+    n = n || {};
+    var l = n.ladder || [], z = n.zones, q = n.kwaliteit || [];
+    var lad = function (id) { var x = l.filter(function (y) { return y.id === id; })[0]; return x ? x.ok : null; };
+    var toets = function (ids) { return q.filter(function (x) { return ids.indexOf(x.id) > -1; }); };
+    var samen = function (oks) { return oks.some(function (x) { return x === false; }) ? false : oks.some(function (x) { return x === true; }) ? true : null; };
+    var tregel = function (x) { return (x.ok === false ? '✗ ' : x.ok === true ? '✓ ' : '') + x.tekst; };
+    var gc = N && N.groeiCijfers ? N.groeiCijfers(jr) : {}, roe = N && N.rendementEigenVermogen ? N.rendementEigenVermogen(jr) : {};
+    var sr = !bank && N && N.schuldratio ? N.schuldratio(jr).filter(function (x) { return x.waarde !== null; }) : [];
+    var zoneNaam = { koop: 'koopzone', houd: 'houdzone', verkoop: 'verkoopzone', onder: 'onder de verwachte lage koers', boven: 'boven de verwachte hoge koers' };
+    var d = [];
+    // 1
+    var r1 = [];
+    if (n.groeiHistorisch != null) r1.push('Trend winst per aandeel ' + pct(n.groeiHistorisch) + ' per jaar (' + n.van + '–' + n.tot + '); NAIC vraagt minstens 5%. Gerekend met ' + pct(n.groei) + (n.groeiEigen != null ? ' (uw eigen verwachting)' : '') + '.');
+    else r1.push(n.reden || 'Te weinig jaren om de groei te bepalen.');
+    if (gc && (ok(gc.omzet10) || ok(gc.eps10))) r1.push('Omzet ' + pct(gc.omzet10) + ' per jaar, winst per aandeel ' + pct(gc.eps10) + ' per jaar (' + (gc.van || '?') + '–' + (gc.tot || '?') + '); laatste 5 jaar ' + pct(gc.omzet5) + ' en ' + pct(gc.eps5) + '.');
+    if (n.trendWeggelaten && n.trendWeggelaten.length) r1.push('Niet in de trend (ongewoon jaar): ' + n.trendWeggelaten.join(', ') + '.');
+    toets(['omzet']).forEach(function (x) { r1.push(tregel(x)); });
+    d.push({ titel: 'Visuele analyse van de groei', vraag: 'Groeien omzet en winst per aandeel gelijkmatig, en minstens 5% per jaar?', ok: samen([lad('groei')].concat(toets(['omzet']).map(function (x) { return x.ok; }))), regels: r1 });
+    // 2
+    var r2 = toets(['marge', 'roe']).map(tregel);
+    if (roe && roe.gemiddelde != null) r2.push('Rendement op eigen vermogen gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.');
+    if (bank) r2.push('Bank of verzekeraar: winstmarge en schuldgraad zeggen hier weinig.');
+    else if (sr.length) {
+      var a = sr[0], b = sr[sr.length - 1];
+      r2.push('Schuld t.o.v. totaal kapitaal (langlopende schuld ÷ schuld plus eigen vermogen): ' + getal(b.waarde, 0) + '% in ' + b.year + (sr.length > 1 ? ' (' + getal(a.waarde, 0) + '% in ' + a.year + ')' : '') + '. Lager is veiliger; ter informatie.');
+    } else r2.push('Schuld t.o.v. totaal kapitaal: onbekend.');
+    d.push({ titel: 'Evaluatie van het management', vraag: 'Houdt het management de winstmarge vóór belasting en het rendement op eigen vermogen op peil, en hoeveel schuld heeft het bedrijf?', ok: samen(toets(['marge', 'roe']).map(function (x) { return x.ok; })), regels: r2 });
+    // 3
+    var r3 = [];
+    if (n.kw) r3.push('Gemiddelde K/W ' + n.kw.van + '–' + n.kw.tot + ': hoog ' + getal(n.kw.hoog, 1) + ', laag ' + getal(n.kw.laag, 1) + '.' + (n.weggelaten && n.weggelaten.length ? ' Ongewone jaren weggelaten: ' + n.weggelaten.join(', ') + '.' : ''));
+    if (n.relatief) r3.push('Relatieve waarde: K/W nu ' + getal(n.relatief.kwNu, 1) + (n.ttm ? ' (laatste 4 kwartalen)' : '') + ' is ' + n.relatief.pct + '% van het gemiddelde (' + getal(n.relatief.kwGem, 1) + ')' + (N && N.RV_LAAG != null ? '; NAIC ziet het liefst ' + N.RV_LAAG + '–' + N.RV_HOOG + '%' : '') + '. Ter informatie.');
+    if (!r3.length) r3.push('Niet te berekenen.');
+    d.push({ titel: 'Koers/winst-geschiedenis', vraag: 'Hoeveel keer de winst betaalde de markt de afgelopen vijf jaar? Is het aandeel nu historisch goedkoop of duur?', ok: null, regels: r3 });
+    // 4
+    var r4 = [];
+    if (z) {
+      r4.push('Winst per aandeel over ' + n.horizon + ' jaar ' + geld(z.epsToekomst) + ' (groei ' + pct(n.groei) + ' per jaar).');
+      r4.push('Verwachte hoge koers ' + geld(z.hoog) + ' ' + valuta + ' (× K/W hoog ' + getal(n.kw.hoog, 1) + '); verwachte lage koers ' + geld(z.laag) + ' ' + valuta + ' (laagste winst per aandeel van 5 jaar ' + geld(n.epsLaag) + ' × K/W laag ' + getal(n.kw.laag, 1) + ').');
+      if (n.ttm) r4.push('Vertrekpunt: winst per aandeel van de laatste 4 kwartalen (tot ' + datumNl(n.ttm.tot) + '): ' + geld(n.ttm.eps) + '.');
+    } else r4.push(n.reden || 'Niet te berekenen.');
+    d.push({ titel: 'Verwachte hoge en lage koers', vraag: 'Wat kan de koers over ' + (n.horizon || 5) + ' jaar op zijn hoogst en op zijn laagst zijn?', ok: null, regels: r4 });
+    // 5
+    var r5 = [];
+    if (z && ok(z.koers)) {
+      r5.push('Koers ' + geld(z.koers) + ' ' + valuta + ': ' + (zoneNaam[z.zone] || '–') + ' (kopen ' + geld(z.koop[0]) + '–' + geld(z.koop[1]) + ', houden tot ' + geld(z.houd[1]) + ').');
+      r5.push(z.verhouding !== null && ok(z.verhouding) ? 'Opwaarts ' + geld(z.opwaarts) + ', neerwaarts ' + geld(z.neerwaarts) + ': ' + getal(z.verhouding, 1) + ' : 1 (NAIC: minstens 3 : 1).' : 'Verhouding opwaarts/neerwaarts niet te berekenen.');
+    } else r5.push('Niet te berekenen zonder verwachte koersen en een verse koers.');
+    d.push({ titel: 'Risico en rendement', vraag: 'In welke zone staat de koers, en is er minstens 3 keer zoveel opwaarts als neerwaarts?', ok: samen([lad('zone'), lad('verhouding')]), regels: r5 });
+    // 6
+    var r6 = [];
+    if (n.totaal) r6.push('Koers ' + pct(n.totaal.koers) + ' + dividend ' + (n.totaal.dividend !== null ? pct(n.totaal.dividend) : '0%') + ' = ' + pct(n.totaal.totaal) + ' per jaar (NAIC: minstens ' + n.totaal.min + '%).');
+    else r6.push('Niet te berekenen.');
+    if (n.par) r6.push('Verwacht gemiddeld rendement (PAR): ' + pct(n.par.pct) + ' per jaar. Ter informatie.');
+    if (n.koopprijs && n.koopprijs.prijs) r6.push('Koopprijs: alle prijsregels kloppen onder ' + geld(n.koopprijs.prijs) + ' ' + valuta + '.');
+    d.push({ titel: 'Verwacht totaalrendement', vraag: 'Levert het aandeel minstens ' + (N && N.TOTAAL_MIN ? N.TOTAAL_MIN : 15) + '% per jaar op, koersstijging plus dividend?', ok: lad('rendement'), regels: r6 });
+    return '<ol class="stappen">' + d.map(function (x, i) {
+      return '<li class="' + (x.ok === true ? 'ja' : x.ok === false ? 'nee' : 'onb') + '" data-stap="' + (i + 1) + '">' + (x.ok === null ? '<span class="mk onb">' + (i + 1) + '</span>' : merk(x.ok)) + '<div><b>' + (i + 1) + '. ' + h(x.titel) + '</b> <span class="zacht">' + h(x.vraag) + '</span><br>' + x.regels.map(h).join('<br>') + '</div></li>';
     }).join('') + '</ol>';
   }
 
@@ -205,6 +244,7 @@
     '.werkbalk { position: sticky; top: 0; z-index: 2; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; padding: 10px 16px; background: #0D3B47; }',
     '.werkbalk button { font: 600 15px/1 Inter, system-ui, sans-serif; min-height: 44px; padding: 0 18px; border-radius: 12px; border: 1px solid #B7DADF; background: #fff; color: #0D3B47; cursor: pointer; } .werkbalk button.rand { background: transparent; color: #fff; }',
     '@media print { .werkbalk { display: none !important; } }',
+    '.aandacht { margin: 2.5mm 0; padding: 2mm 3mm; border-left: 3px solid var(--bad); background: var(--badbg); border-radius: 2mm; break-inside: avoid; } .aandacht.ok { border-left-color: var(--ok); background: var(--okbg); } .aandacht ul { margin: 1mm 0 0; }',
     '@media screen { body { background: #EEF2F5; } .blad { background: #fff; padding: 12mm 14mm; margin: 6mm auto; max-width: 210mm; box-shadow: 0 1px 8px rgba(0,0,0,.08); } }',
     '@media screen and (max-width: 640px) { .blad { padding: 16px; margin: 0; } .tegels, .twee { grid-template-columns: 1fr; } .titel { flex-direction: column; align-items: flex-start; } .titel .koers { text-align: left; } .schuif { overflow-x: auto; } dl.begrip { columns: 1; } }'
   ].join('\n');
@@ -243,13 +283,18 @@
 
     // Wat betekent dit
     s += '<section class="blok"><h2>Wat betekent dit?</h2><div class="uitleg">' + h(samenvattingTekst(n)) + '</div>';
+    var slecht = (b.metingen || []).filter(function (m) { return m.aanwezig && !m.nvt && m.oordeel === 'ongunstig'; });
+    if ((b.metingen || []).some(function (m) { return m.aanwezig && !m.nvt; })) s += '<div class="aandacht' + (slecht.length ? '' : ' ok') + '" data-aandacht="' + slecht.length + '"><b>Aandachtspunten uit de gezondheidscheck</b>' +
+      (slecht.length ? '<ul class="punt">' + slecht.map(function (m) { return '<li><b>Let op: ' + h(m.kort) + '</b> – ' + h(m.tekst) + '</li>'; }).join('') + '</ul>' : '<br><span class="zacht">Geen: kasstroom, schuld, groei, K/W, trend en koersrust zijn niet ongunstig.</span>') + '</div>';
+    if (o.terug && o.terug.rijen && o.terug.rijen.kopen) { var tk = o.terug.rijen.kopen; s += '<p class="zacht klein">Teruggerekend over ' + h(o.terug.periode) + ' (stand ' + h(o.terug.datum) + '): NAIC Kopen deed het na 1 jaar ' + pct(tk.j1) + ' en na 3 jaar ' + pct(tk.j3) + ' ten opzichte van het gemiddelde van alle fondsen (' + tk.n + ' gevallen). Geen voorspelling.</p>'; }
     if (n && n.zones) s += '<h3>Verwachte koersband over ' + n.horizon + ' jaar</h3>' + zonesSvg(n.zones, val) +
       '<p class="zacht klein">De band loopt van de verwachte lage koers (' + geld(n.zones.laag) + ') tot de verwachte hoge koers (' + geld(n.zones.hoog) + ' ' + h(val) + '), in drie gelijke delen. NAIC koopt in het onderste derde.</p>';
     s += '</section>';
 
     // De vijf stappen
-    s += '<section class="blok"><h2>Zo komt het NAIC-oordeel tot stand</h2>' + (n && n.ladder ? stappen(n, val) : '<p>' + h(n ? n.reden : 'Geen NAIC-uitkomst.') + '</p>') +
-      '<p class="zacht klein" style="margin-top:2mm">Kopen = alle vijf stappen ✓. Valt stap 1 af, dan Vermijden. Valt stap 2 af, dan hoogstens Neutraal. Anders beslist de plek van de koers: koopzone of eronder met 3 : 1 is Kopen; verkoopzone of erboven is Vermijden; daartussen Neutraal.</p></section>';
+    var bank = (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); });
+    s += '<section class="blok"><h2>De NAIC-gids in zes stappen</h2>' + (n && n.ladder ? stappen(n, val, jr, N, bank) : '<p>' + h(n ? n.reden : 'Geen NAIC-uitkomst.') + '</p>') +
+      '<p class="zacht klein" style="margin-top:2mm">Kopen = stap 1, 2, 5 en 6 ✓ (stap 3 en 4 leveren de getallen). Valt de groei in stap 1 af, dan Vermijden. Valt stap 2 af, dan hoogstens Neutraal. Anders beslist de plek van de koers: koopzone of eronder met 3 : 1 en voldoende totaalrendement is Kopen; verkoopzone of erboven is Vermijden.</p></section>';
 
     // Berekening
     if (n && n.groeiHistorisch !== null) {
@@ -269,7 +314,7 @@
         if (n.par) t += rij('Verwacht gemiddeld rendement', pct(n.par.pct) + ' per jaar', 'Als de K/W over 5 jaar op het gemiddelde staat: koers dan ' + geld(n.par.koersDoel) + ' ' + h(val) + '. Ter informatie.');
       }
       if (kp && kp.prijs && kp.grenzen) t += rij('Koopprijs', geld(kp.prijs) + ' ' + h(val), 'laagste van: bovengrens koopzone ' + geld(kp.grenzen.zone) + ', 3 : 1-grens ' + geld(kp.grenzen.verhouding) + ', 15%-grens ' + geld(kp.grenzen.rendement));
-      s += '<section class="blok"><h2>De berekening</h2><table class="kv"><tbody>' + t + '</tbody></table></section>';
+      s += '<section class="blok"><h2>De berekening in detail</h2><table class="kv"><tbody>' + t + '</tbody></table></section>';
     }
 
     // Groeigrafiek en jaarcijfers
@@ -285,7 +330,7 @@
       if (!m.aanwezig) return '<li><span class="mk onb">?</span><div><b>' + h(m.kort) + '</b> · ' + h(m.naam || '') + '<br><span class="zacht">Ontbreekt: ' + h(m.reden) + '</span></div></li>';
       return '<li><span class="mk ' + scoreKlasse(m.score) + '">' + (m.score >= 0.25 ? '+' : m.score <= -0.25 ? '−' : '•') + '</span><div><b>' + h(m.kort) + '</b> · ' + h(m.naam) + ' — <i>' + scoreWoord(m.score) + '</i><br>' + h(m.tekst) +
         (m.detail && m.detail.length ? '<div class="rek">' + h(m.detail.join(' · ')) + '</div>' : '') + '</div></li>';
-    }).join('') + '</ul><p class="zacht klein" style="margin-top:1.5mm">Elke meting telt even zwaar (+1 gunstig, 0 neutraal, −1 ongunstig). Kopen vanaf gemiddeld +0,5; Vermijden vanaf −0,25.</p></section>';
+    }).join('') + '</ul><p class="zacht klein" style="margin-top:1.5mm">Elke meting telt even zwaar (+1 gunstig, 0 neutraal, −1 ongunstig). Gezond vanaf gemiddeld +0,5; Zwak vanaf −0,25. Geen koopadvies: een gezond bedrijf kan te duur zijn.</p></section>';
 
     // Ter informatie
     s += '<section><h2>Ter informatie <span class="zacht klein">(telt niet mee)</span></h2><div class="twee">';
@@ -312,7 +357,7 @@
     // Gegevens en bronnen
     var arch = g.archief || {}, lv = arch.laatste_verslag || {}, herw = (arch.meldingen || []).filter(function (m) { return m.soort === 'herwerking'; }).length;
     s += '<section class="blok"><h2>Gegevens en bronnen</h2><table class="kv"><tbody>' +
-      '<tr><th>Status</th><td>' + (gate.allowed ? '✓ Bevestigd: winst per aandeel onafhankelijk nagerekend over ' + g.eps_verified_years + ' jaar, één valuta (' + h((g.currencies || []).join(', ')) + '), geen bronregels afgewezen, koers niet ouder dan ' + G.MAX_PRICE_AGE_DAYS + ' dagen.' : 'Niet bevestigd: ' + h(gate.reasons.join(' '))) + '</td></tr>' +
+      '<tr><th>Status</th><td>' + (gate.allowed ? '✓ Bevestigd: winst per aandeel onafhankelijk nagerekend over ' + g.eps_verified_years + ' jaar, één valuta (' + h((g.currencies || []).join(', ')) + '), geen bronregels afgewezen, koers niet ouder dan ' + G.MAX_PRICE_AGE_DAYS + ' dagen.' : (g.niveau === 'jaarverslag' ? 'Uit jaarverslag (officieel, winst per aandeel niet nagerekend). ' : g.niveau === 'indicatief' ? (g.twee_bronnen_eens ? 'Twee bronnen eens (Yahoo, bevestigd door een tweede bron). ' : 'Indicatief (Yahoo Finance, niet officieel). ') : '') + 'Niet bevestigd: ' + h(gate.reasons.join(' '))) + '</td></tr>' +
       (g.gecontroleerd_op ? '<tr><th>Gecontroleerd op</th><td>' + h(datumNl(g.gecontroleerd_op)) + '</td></tr>' : '') +
       (lv.form ? '<tr><th>Bron jaarcijfers</th><td>SEC-indieningen (' + h(lv.form) + '), ' + (arch.verslagen || '?') + ' verslagen; laatste ingediend ' + h(datumNl(lv.ingediend)) + ' over het boekjaar tot ' + h(datumNl(lv.boekjaar_einde)) + '.' + (herw ? ' ' + herw + ' latere herwerkingen van oude cijfers gevonden en verwerkt.' : '') + '</td></tr>' : '') +
       (g.eps_toelichting ? '<tr><th>Aantal aandelen</th><td>' + h(g.eps_toelichting.replace(/^./, function (c) { return c.toUpperCase(); })) + '.</td></tr>' : '') +
@@ -325,7 +370,7 @@
     // Begrippen
     if (o.uitleg && o.uitleg.length) s += '<section><h2>Wat betekenen de begrippen?</h2><dl class="begrip">' + o.uitleg.map(function (t) { return '<div><dt>' + h(t.naam) + '</dt><dd>' + h(t.tekst) + '</dd></div>'; }).join('') + '</dl></section>';
 
-    s += '<div class="voet">Aandeel Signaal (bèta) · automatisch berekend uit de jaarcijfers en de koers op de genoemde datums · geen beleggingsadvies. Controleer belangrijke cijfers zelf in het jaarverslag.</div>';
+    s += '<div class="voet">Aandeel Signaal · automatisch berekend uit de jaarcijfers en de koers op de genoemde datums · geen beleggingsadvies. Controleer belangrijke cijfers zelf in het jaarverslag.</div>';
     return s + '</main></body></html>';
   }
 

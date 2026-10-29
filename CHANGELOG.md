@@ -13,6 +13,14 @@ Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … v
 - Het signaal staat volledig los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Bij een koers ouder dan 7 dagen wordt het niet getoond.
 - Technisch: de nachtelijke update berekent nu ook MACD (12, 26, 9), het rendement over 126 handelsdagen en de leeftijd van de laatste kruising van de gemiddelden, uit dezelfde dagkoersen als voorheen. Gecontroleerd tegen een onafhankelijke berekening.
 
+## 1.2.3 (2026.10.29)
+- **Fondsrapport (Afdrukken / PDF) bijgewerkt** met de recente aanpassingen in de app:
+  - de NAIC-gids in **zes stappen**, met stap 2 *Evaluatie van het management* (winstmarge, rendement op eigen vermogen en schuld t.o.v. totaal kapitaal);
+  - de **aandachtspunten uit de gezondheidscheck** onder "Wat betekent dit?";
+  - de uitkomst van het **terugrekenen** (stand 28 oktober);
+  - het **datakwaliteitslabel** (Uit jaarverslag, Twee bronnen eens, Indicatief) bij niet-bevestigde fondsen;
+  - gezondheidscheck-woorden (Gezond/Zwak) in plaats van Kopen/Vermijden, en geen "bèta" meer.
+
 ## 1.2.2 (2026.10.28)
 - **De zes metingen zijn nu een gezondheidscheck, geen tweede koopadvies.** Het NAIC-oordeel (Kopen, Neutraal, Vermijden) is het enige advies. De zes metingen zeggen hoe het bedrijf ervoor staat: **Gezond**, **Gemengd** of **Zwak** (zelfde berekening als eerder Kopen/Neutraal/Vermijden).
 - Bij het NAIC-oordeel staan nu de **aandachtspunten**: elke ongunstige meting als "Let op" (bijv. goedkoop volgens NAIC, maar hoge schuld). Geen aandachtspunten? Dan staat dat er ook.

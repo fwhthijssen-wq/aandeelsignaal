@@ -1258,7 +1258,7 @@
      Lukt een nieuw venster niet (pop-ups geblokkeerd), dan direct afdrukken via een onzichtbaar frame. */
   function afdrukken(rec) {
     var html;
-    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true }); }
+    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true, terug: TERUG }); }
     catch (e) { toast('Afdrukken lukt niet voor dit aandeel'); return; }
     var w = null;
     try { w = window.open('', '_blank'); } catch (e2) { w = null; }

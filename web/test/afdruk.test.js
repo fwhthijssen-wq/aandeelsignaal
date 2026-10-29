@@ -38,6 +38,12 @@ test('Afdruk: complete pagina met oordeel, stappen, berekening, jaarcijfers, beg
   assert.ok(html.includes({ kopen: 'Kopen', neutraal: 'Neutraal', vermijden: 'Vermijden' }[b.naic.oordeel]));
   ['Groeibedrijf', 'Goed bedrijf', 'Koopzone', '3 : 1', '15% per jaar'].forEach(s => assert.ok(html.includes(s), s));
   assert.match(html, /De berekening/);
+  assert.match(html, /De NAIC-gids in zes stappen/);
+  assert.strictEqual((html.match(/data-stap="/g) || []).length, 6);
+  assert.match(html, /Evaluatie van het management/);
+  assert.match(html, /Schuld t\.o\.v\. totaal kapitaal[^<]*% in 2025/);
+  assert.match(html, /data-aandacht="\d+"/);
+  assert.ok(!/bèta/.test(html));
   assert.match(html, /Verwachte hoge koers/);
   assert.match(html, /<th>2016<\/th>[\s\S]*<th>2025<\/th>/);
   assert.match(html, /Gezondheidscheck: zes metingen/);
@@ -80,4 +86,10 @@ test('Afdruk: fonds zonder gegevens geeft toch een pagina', function () {
   const { html } = maak(r);
   assert.match(html, /Leeg/);
   assert.match(html, /geen beleggingsadvies/);
+});
+
+test('Afdruk: uitkomst van het terugrekenen als het is meegegeven', function () {
+  const terug = { periode: '2018–2025', datum: '28 oktober 2026', rijen: { kopen: { j1: -6.3, j3: 1.7, n: 113 } } };
+  assert.match(maak(rec(), { terug }).html, /Teruggerekend over 2018–2025[^<]*−6,3%[^<]*113 gevallen/);
+  assert.ok(!/Teruggerekend/.test(maak(rec()).html));
 });
