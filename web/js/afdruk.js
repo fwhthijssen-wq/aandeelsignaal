@@ -287,6 +287,18 @@
         (m.detail && m.detail.length ? '<div class="rek">' + h(m.detail.join(' · ')) + '</div>' : '') + '</div></li>';
     }).join('') + '</ul><p class="zacht klein" style="margin-top:1.5mm">Elke meting telt even zwaar (+1 gunstig, 0 neutraal, −1 ongunstig). Kopen vanaf gemiddeld +0,5; Vermijden vanaf −0,25.</p></section>';
 
+    // Management: feiten (nachtelijke update en jaarcijfers). Geen oordeel; uw eigen beoordeling staat hieronder bij Ter informatie.
+    var MG = o.Management || root.Management, mf = MG ? MG.feiten(rec, jr) : null;
+    if (mf) {
+      s += '<section class="blok" data-management><h2>Management: feiten <span class="zacht klein">(geen oordeel, telt niet mee)</span></h2><table class="kv"><tbody>' +
+        mf.regels.map(function (r) {
+          return '<tr data-feit="' + r.id + '"><th scope="row">' + h(r.label) + '</th><td>' + (r.waarde === null ? '<span class="zacht">onbekend</span>' : '<b>' + h(r.waarde) + '</b>') +
+            (r.toelichting ? '<div class="klein">' + h(r.toelichting) + '</div>' : '') + '<div class="zacht klein">' + h(r.bron) + '</div></td></tr>';
+        }).join('') +
+        (mf.bestuurders.length ? '<tr><th scope="row">Topbestuurders</th><td>' + mf.bestuurders.map(function (x) { return h(x.naam) + ' <span class="zacht">(' + h(x.functie) + ')</span>'; }).join('; ') + '</td></tr>' : '') +
+        '</tbody></table><p class="zacht klein" style="margin-top:1.5mm">Feiten om uw eigen beoordeling van het management op te baseren. Insidertransacties zijn vooral voor Amerikaanse en Britse fondsen beschikbaar. Een governance-score van ISS is een risicoschatting van dat bureau, geen feit over de prestaties.</p></section>';
+    }
+
     // Ter informatie
     s += '<section><h2>Ter informatie <span class="zacht klein">(telt niet mee)</span></h2><div class="twee">';
     b.vragen.forEach(function (v) {
@@ -308,6 +320,24 @@
     s += '<div><h2>Analisten</h2>' + (ana && ana.aantal > 0 ? '<p>Gemiddeld advies van ' + ana.aantal + ' analisten: <b>' + h(ADV[ana.advies] || ana.advies) + '</b>' + (ok(ana.gemiddeld) ? ' (' + getal(ana.gemiddeld, 2) + ' op een schaal van 1 = sterk kopen tot 5 = verkopen)' : '') + '.' +
       (ok(ana.koersdoel) ? ' Gemiddeld koersdoel ' + geld(ana.koersdoel) + ' ' + h(ana.valuta || val) + '.' : '') + '</p>' : '<p class="zacht">Geen analistenadvies bekend.</p>') +
       '<p class="zacht klein">Bron: Yahoo Finance' + (ana && ana.datum ? ', ' + h(datumNl(ana.datum)) : '') + '. Een mening; telt niet mee. Analisten zijn gemiddeld optimistisch.</p></div></section>';
+
+    // Kortetermijnsignaal: zelfde regels als het tabblad Koers (alleen bij een verse koers); los van NAIC-oordeel en gezondheidscheck
+    var KT = o.Kortetermijn || root.Kortetermijn, kt = KT ? KT.kortetermijn(rec.koers, vers) : null;
+    if (kt) {
+      var ktDetail = function (c) {
+        if (c.ok === null) return 'onbekend';
+        if (c.id === 'trend200' || c.id === 'mom6') return pct(c.waarde);
+        if (c.id === 'kruis') return c.dagen == null ? (c.ok ? 'ja' : 'nee') : (c.minstens ? 'al minstens ' : 'sinds ') + c.dagen + (c.dagen === 1 ? ' handelsdag' : ' handelsdagen');
+        if (c.id === 'rsi') return getal(c.waarde, 0) + (c.ok ? '' : ' (hoog)');
+        return c.ok ? 'ja' : 'nee';
+      };
+      s += '<section class="blok" data-kortetermijn="' + kt.status + '"><h2>Kortetermijnsignaal: <span class="o-' + ({ gunstig: 'kopen', neutraal: 'neutraal', afwachten: 'vermijden', onvoldoende: 'geen' }[kt.status]) + '">' + h(kt.label) + '</span> <span class="zacht klein">(los van het NAIC-oordeel)</span></h2><ul class="met">' +
+        kt.checks.map(function (c) { return '<li>' + merk(c.ok) + '<div>' + h(c.label) + ': <b>' + h(ktDetail(c)) + '</b></div></li>'; }).join('') + '</ul>' +
+        '<p><b>' + kt.ja + ' van ' + kt.totaal + ' checks</b>' + (kt.status === 'onvoldoende' ? ' (' + (kt.totaal - kt.bekend) + ' niet te berekenen, dus geen uitkomst)' : '') + '. Gunstig moment bij 4 of 5, neutraal bij 2 of 3, afwachten bij 0 of 1.</p>' +
+        '<p class="zacht klein">Alleen over het koersverloop van de afgelopen maanden, voor wie het moment van kopen wil kiezen. Verandert het NAIC-oordeel en de gezondheidscheck niet. Geen garantie voor wat de koers gaat doen.</p></section>';
+    } else if (ok(k.slot) && !vers) {
+      s += '<section class="blok" data-kortetermijn="geen"><h2>Kortetermijnsignaal</h2><p class="zacht">Niet getoond: de koers is ouder dan ' + G.MAX_PRICE_AGE_DAYS + ' dagen.</p></section>';
+    }
 
     // Gegevens en bronnen
     var arch = g.archief || {}, lv = arch.laatste_verslag || {}, herw = (arch.meldingen || []).filter(function (m) { return m.soort === 'herwerking'; }).length;
