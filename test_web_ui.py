@@ -173,6 +173,44 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg2.locator('[data-timing]').count(), 0)
         self.assertEqual(fouten + fouten2, [])
 
+    def test_kortetermijnsignaal_los_van_het_oordeel(self):
+        import datetime
+        def ctx(koers):
+            c = self.b.new_context(viewport={'width': 390, 'height': 800})
+            self.addCleanup(c.close)
+            c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,
+              get:function(){return v;},set:function(d){d.aandelen.forEach(function(a){if(a.ticker==='AAPL')a.koers=%s;});v=d;}});
+              try{if(!localStorage.getItem('aandeelsignaal.v1'))localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[]}));}catch(e){}})();""" % koers)
+            pg = c.new_page()
+            fouten = []
+            pg.on('pageerror', lambda e: fouten.append(str(e)))
+            return pg, fouten
+        vandaag = datetime.date.today().isoformat()
+        basis = ("{slot:110,datum:'%s',sma50:105,sma200:100,hoog52:120,laag52:90,rsi14:71.3,macd:1.2,macd_signaal:0.8,mom6:11,"
+                 "kruis_dagen:9,kruis_minstens:false,reeks:[['2026-10-01',108],['2026-10-02',109],['2026-10-05',110]]}")
+        pg, f1 = ctx(basis % vandaag)
+        pg.goto(INDEX + '#/a/AAPL/koers')
+        pg.wait_for_timeout(200)
+        kaart = pg.locator('[data-kortetermijn]')
+        self.assertEqual(kaart.get_attribute('data-kortetermijn'), 'gunstig')
+        txt = kaart.inner_text()
+        self.assertIn('Gunstig moment', txt)
+        self.assertIn('4 van 5 checks', txt)
+        self.assertIn('sinds 9 handelsdagen', txt)
+        self.assertIn('los van het NAIC-oordeel', txt)
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        # Zonder de nieuwe kentallen (bijv. gegevens van een oudere run): geen uitkomst, wel de bekende checks.
+        pg2, f2 = ctx(("{slot:110,datum:'%s',sma50:105,sma200:100,rsi14:50,reeks:[['2026-10-05',110]]}") % vandaag)
+        pg2.goto(INDEX + '#/a/AAPL/koers')
+        pg2.wait_for_timeout(200)
+        self.assertEqual(pg2.locator('[data-kortetermijn]').get_attribute('data-kortetermijn'), 'onvoldoende')
+        # Oude koers: geen kaart.
+        pg3, f3 = ctx(basis % '2020-01-01')
+        pg3.goto(INDEX + '#/a/AAPL/koers')
+        pg3.wait_for_timeout(200)
+        self.assertEqual(pg3.locator('[data-kortetermijn]').count(), 0)
+        self.assertEqual(f1 + f2 + f3, [])
+
     def test_dashboard_trendfilter_200_dagen(self):
         import datetime
         c = self.b.new_context(viewport={'width': 390, 'height': 800})

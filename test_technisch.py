@@ -18,7 +18,8 @@ def reeks(n, start='2025-01-02', seed=7):
 class TechnischTests(unittest.TestCase):
     def test_te_weinig_data_geeft_none(self):
         t = bw.technisch(reeks(60))
-        self.assertEqual(t, {'sma200': None, 'hoog52': None, 'laag52': None, 'rsi14': None})
+        self.assertEqual(t, {'sma200': None, 'hoog52': None, 'laag52': None, 'rsi14': None, 'macd': None,
+                             'macd_signaal': None, 'mom6': None, 'kruis_dagen': None, 'kruis_minstens': None})
 
     def test_sma200_en_range(self):
         r = reeks(380)
@@ -52,8 +53,47 @@ class TechnischTests(unittest.TestCase):
 
     def test_koersblok_bevat_nieuwe_velden(self):
         blok = bw.koers_uit_reeks(reeks(380))
-        for veld in ('sma200', 'hoog52', 'laag52', 'rsi14'):
+        for veld in ('sma200', 'hoog52', 'laag52', 'rsi14', 'macd', 'macd_signaal', 'mom6', 'kruis_dagen'):
             self.assertIn(veld, blok)
+
+
+class KortetermijnTests(unittest.TestCase):
+    def test_macd_komt_overeen_met_pandas(self):
+        import pandas as pd
+        r = reeks(400)
+        s = pd.Series([p[1] for p in r])
+        lijn = s.ewm(span=12, adjust=False).mean() - s.ewm(span=26, adjust=False).mean()
+        sig = lijn.ewm(span=9, adjust=False).mean()
+        t = bw.kortetermijn(r)
+        # Andere beginwaarde (pandas start bij de eerste koers); na 400 punten is dat verschil weg.
+        self.assertAlmostEqual(t['macd'], lijn.iloc[-1], delta=0.01)
+        self.assertAlmostEqual(t['macd_signaal'], sig.iloc[-1], delta=0.01)
+
+    def test_momentum_zes_maanden(self):
+        r = reeks(300)
+        self.assertEqual(bw.kortetermijn(r)['mom6'], round((r[-1][1] / r[-127][1] - 1) * 100, 1))
+        self.assertIsNone(bw.kortetermijn(reeks(126))['mom6'])
+
+    def test_kruis_dagen_telt_vanaf_de_omslag(self):
+        d0 = date(2024, 1, 1)
+        # 260 dagen dalend, daarna stijgend: het 50-daags gaat ergens boven het 200-daagse.
+        k = [200 - i * 0.3 for i in range(260)] + [122 + i * 0.8 for i in range(140)]
+        r = [((d0 + timedelta(days=i)).isoformat(), round(x, 4)) for i, x in enumerate(k)]
+        t = bw.kortetermijn(r)
+        sma = lambda j, n: sum(k[j - n + 1:j + 1]) / n
+        boven = [sma(j, 50) > sma(j, 200) for j in range(199, len(k))]
+        verwacht = len(boven) - 1 - max(j for j, b in enumerate(boven) if not b)
+        self.assertTrue(boven[-1])
+        self.assertEqual(t['kruis_dagen'], verwacht)
+        self.assertFalse(t['kruis_minstens'])
+
+    def test_kruis_zonder_omslag_is_minstens(self):
+        op = [((date(2024, 1, 1) + timedelta(days=i)).isoformat(), 10 + i * 0.1) for i in range(320)]
+        t = bw.kortetermijn(op)
+        self.assertTrue(t['kruis_minstens'])
+        self.assertGreater(t['kruis_dagen'], 100)
+        self.assertGreater(t['macd'], t['macd_signaal'] - 1e-9)
+        self.assertGreater(t['mom6'], 0)
 
 
 if __name__ == '__main__':

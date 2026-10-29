@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.3 (2026.10.29)
+- **Nieuw: kortetermijnsignaal** op het tabblad Koers, voor wie het moment van kopen wil kiezen. Vijf vaste checks op de dagkoersen: koers boven het gemiddelde van 200 dagen, gemiddelde van 50 dagen boven dat van 200 dagen (met sinds hoeveel handelsdagen), koers hoger dan 6 maanden geleden, MACD boven de signaallijn en RSI onder 70. Uitkomst: **Gunstig moment** (4 of 5), **Neutraal** (2 of 3) of **Afwachten** (0 of 1). Ontbreekt een check, dan staat er "Onvoldoende gegevens" in plaats van een gok.
+- Het signaal staat volledig los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Bij een koers ouder dan 7 dagen wordt het niet getoond.
+- Technisch: de nachtelijke update berekent nu ook MACD (12, 26, 9), het rendement over 126 handelsdagen en de leeftijd van de laatste kruising van de gemiddelden, uit dezelfde dagkoersen als voorheen. Gecontroleerd tegen een onafhankelijke berekening.
+
 ## 1.2.2 (2026.10.28)
 - **De zes metingen zijn nu een gezondheidscheck, geen tweede koopadvies.** Het NAIC-oordeel (Kopen, Neutraal, Vermijden) is het enige advies. De zes metingen zeggen hoe het bedrijf ervoor staat: **Gezond**, **Gemengd** of **Zwak** (zelfde berekening als eerder Kopen/Neutraal/Vermijden).
 - Bij het NAIC-oordeel staan nu de **aandachtspunten**: elke ongunstige meting als "Let op" (bijv. goedkoop volgens NAIC, maar hoge schuld). Geen aandachtspunten? Dan staat dat er ook.
