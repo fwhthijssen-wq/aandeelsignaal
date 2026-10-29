@@ -1043,6 +1043,49 @@ def technisch(punten):
             winst = (winst * 13 + max(d, 0)) / 14
             verlies = (verlies * 13 + max(-d, 0)) / 14
         uit['rsi14'] = 100.0 if verlies == 0 and winst > 0 else (50.0 if verlies == 0 else round(100 - 100 / (1 + winst / verlies), 1))
+    uit.update(kortetermijn(punten))
+    return uit
+
+
+def _ema(waarden, n):
+    """Exponentieel gemiddelde; begint met het gewone gemiddelde van de eerste n waarden. Geeft een lijst vanaf index n-1."""
+    if len(waarden) < n:
+        return []
+    a, e = 2 / (n + 1), sum(waarden[:n]) / n
+    uit = [e]
+    for w in waarden[n:]:
+        e = a * w + (1 - a) * e
+        uit.append(e)
+    return uit
+
+
+def kortetermijn(punten):
+    """Kentallen voor het kortetermijnsignaal (los van het oordeel): MACD (12, 26, 9), rendement over 6 maanden
+    (126 handelsdagen) en hoeveel handelsdagen het 50-daags gemiddelde al aan dezelfde kant van het 200-daagse ligt.
+    Te weinig data geeft None, nooit een schatting."""
+    uit = {'macd': None, 'macd_signaal': None, 'mom6': None, 'kruis_dagen': None, 'kruis_minstens': None}
+    koersen = [p[1] for p in punten]
+    if len(koersen) >= 100:                       # genoeg aanloop zodat de beginwaarde van de gemiddelden is uitgedoofd
+        e12, e26 = _ema(koersen, 12), _ema(koersen, 26)
+        lijn = [a - b for a, b in zip(e12[26 - 12:], e26)]
+        sig = _ema(lijn, 9)
+        uit['macd'], uit['macd_signaal'] = round(lijn[-1], 4), round(sig[-1], 4)
+    if len(koersen) >= 127:
+        uit['mom6'] = round((koersen[-1] / koersen[-127] - 1) * 100, 1)
+    if len(koersen) >= 201:
+        som50, som200 = sum(koersen[-50:]), sum(koersen[-200:])
+        boven = som50 / 50 > som200 / 200
+        dagen, i = 0, len(koersen)
+        # Terug in de tijd zolang beide gemiddelden berekend kunnen worden en de verhouding gelijk blijft.
+        while i - 1 >= 200:
+            if (som50 / 50 > som200 / 200) != boven:
+                break
+            dagen += 1
+            i -= 1
+            som50 += koersen[i - 50] - koersen[i]
+            som200 += koersen[i - 200] - koersen[i]
+        # Geen omslag gevonden binnen de reeks: dan weten we alleen "minstens zo lang".
+        uit['kruis_dagen'], uit['kruis_minstens'] = dagen, i - 1 < 200
     return uit
 
 

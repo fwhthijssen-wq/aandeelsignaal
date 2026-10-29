@@ -1,7 +1,7 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.2.2 (2026.10.28)';
+  var APP_VERSIE = '1.3 (2026.10.29)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -864,7 +864,7 @@
       s += fr.fresh ? '<div class="kaart-plat">' + sparkSvg(k.reeks, k.sma50) + '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers</span><span><i style="background:var(--chart-b)"></i>Gemiddelde 50 dagen</span></div></div>' +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
-      s += timingHtml(rec, fr);
+      s += kortetermijnHtml(rec, fr) + timingHtml(rec, fr);
       if (fr.fresh && rec.koers) s += bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div');
     } else if (tab === 'waarde') {
       s += waardeHtml(rec, g, jr, r);
@@ -1110,6 +1110,27 @@
     return s;
   }
   var ANTW_TEKST = { ja: 'Ja', nee: 'Nee', onzeker: 'Weet ik niet' };
+  /* Kortetermijnsignaal: vijf technische checks, volledig los van het NAIC-oordeel en de gezondheidscheck. */
+  function kortetermijnHtml(rec, fr) {
+    var t = Kortetermijn.kortetermijn(rec.koers, fr.fresh);
+    if (!t) return '';
+    var KLEUR = { gunstig: 'positief', neutraal: 'neutraal', afwachten: 'vermijden', onvoldoende: 'neutraal' };
+    function detail(c) {
+      if (c.ok === null) return 'onbekend';
+      if (c.id === 'trend200' || c.id === 'mom6') return pct(c.waarde);
+      if (c.id === 'kruis') return c.dagen == null ? (c.ok ? 'ja' : 'nee') : (c.minstens ? 'al minstens ' : 'sinds ') + c.dagen + (c.dagen === 1 ? ' handelsdag' : ' handelsdagen');
+      if (c.id === 'rsi') return getal(c.waarde, 0) + (c.ok ? '' : ' (hoog)');
+      return c.ok ? 'ja' : 'nee';
+    }
+    var regels = t.checks.map(function (c) {
+      var teken = c.ok === true ? '✓' : c.ok === false ? '✗' : '–';
+      return '<li data-check="' + c.id + '" data-ok="' + c.ok + '"><span aria-hidden="true" style="display:inline-block;width:1.2em;font-weight:700">' + teken + '</span>' + h(c.label) + ': <b>' + h(detail(c)) + '</b></li>';
+    }).join('');
+    return '<div class="kaart-plat" data-kortetermijn="' + t.status + '"><div class="rij-kop"><h2>Kortetermijnsignaal</h2><span class="chip" data-oordeel="' + KLEUR[t.status] + '">' + h(t.label) + '</span></div>' +
+      '<ul style="list-style:none;padding-left:0">' + regels + '</ul>' +
+      '<p><b>' + t.ja + ' van ' + t.totaal + ' checks</b>' + (t.status === 'onvoldoende' ? ' (' + (t.totaal - t.bekend) + ' niet te berekenen, dus geen uitkomst)' : '') + '. Gunstig moment bij 4 of 5, neutraal bij 2 of 3, afwachten bij 0 of 1.</p>' +
+      '<p class="zacht">Alleen over het koersverloop van de afgelopen maanden, voor wie het moment van kopen wil kiezen. Staat los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Wordt elke nacht opnieuw berekend. Geen garantie voor wat de koers gaat doen.</p></div>';
+  }
   /* Timing-informatie: los van het signaal; verandert het oordeel nooit. */
   function timingHtml(rec, fr) {
     var t = Timing.timing(rec.koers, fr.fresh);
