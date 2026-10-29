@@ -10,10 +10,12 @@ from datetime import date, datetime, timedelta, timezone
 GOVERNANCE = (('auditRisk', 'audit'), ('boardRisk', 'bestuur'), ('compensationRisk', 'beloning'),
               ('shareHolderRightsRisk', 'aandeelhoudersrechten'), ('overallRisk', 'totaal'))
 MAX_BESTUURDERS = 5
+# Yahoo schrijft Amerikaanse transacties als 'Purchase/Sale at price …' en Britse als 'Bought/Sold at price …'.
+KOOP, VERKOOP = ('purchase', 'bought', 'buy '), ('sale', 'sold', 'sell ')
 
 
 def _tekst(x, n=120):
-    return x.strip()[:n] if isinstance(x, str) and x.strip() else None
+    return ' '.join(x.split())[:n] if isinstance(x, str) and x.strip() else None     # Yahoo zet soms dubbele spaties
 
 
 def _pct(x):
@@ -76,7 +78,7 @@ def _dag(x):
 
 def insiders_uit_transacties(rijen, vandaag, maanden=12):
     """rijen: [{'Text', 'Start Date', 'Shares', 'Insider'}, ...] uit Yahoo. Telt alleen echte aan- en verkopen op de beurs
-    ('Purchase at price …', 'Sale at price …'); toekenningen, schenkingen en uitoefening van opties tellen niet.
+    ('Purchase/Bought at price …', 'Sale/Sold at price …'); toekenningen, schenkingen en uitoefening van opties tellen niet.
     Geeft {'aankopen', 'verkopen', 'aandelen_gekocht', 'aandelen_verkocht', 'personen_gekocht', 'personen_verkocht',
     'van', 'tot', 'bron'} of None als er geen bruikbare gegevens zijn."""
     if not rijen:
@@ -100,9 +102,9 @@ def insiders_uit_transacties(rijen, vandaag, maanden=12):
         n = r.get('Shares')
         n = int(n) if isinstance(n, (int, float)) and not isinstance(n, bool) and n == n and n > 0 else 0
         wie = str(r.get('Insider') or '').strip()
-        if tekst.startswith('purchase'):
+        if tekst.startswith(KOOP):
             uit['aankopen'] += 1; uit['aandelen_gekocht'] += n; kopers.add(wie)
-        elif tekst.startswith('sale'):
+        elif tekst.startswith(VERKOOP):
             uit['verkopen'] += 1; uit['aandelen_verkocht'] += n; verkopers.add(wie)
     if not bruikbaar:
         return None          # Yahoo heeft voor dit fonds geen transacties: onbekend, niet "nul"

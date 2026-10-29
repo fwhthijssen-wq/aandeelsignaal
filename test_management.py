@@ -66,6 +66,15 @@ class InsiderTests(unittest.TestCase):
         self.assertEqual(r['tot'], '2026-10-29')
         self.assertTrue(r['van'].startswith('2025-10'))
 
+    def test_britse_schrijfwijze(self):
+        r = m.insiders_uit_transacties([rij('2026-09-01', 'Bought at price 5.73 per share', 50),
+                                        rij('2026-09-02', 'Sold at price 6.00 per share', 20, 'X')], '2026-10-29')
+        self.assertEqual((r['aankopen'], r['verkopen'], r['aandelen_gekocht']), (1, 1, 50))
+
+    def test_dubbele_spaties_in_namen(self):
+        r = m.management_uit_info({'companyOfficers': [{'name': 'Mr. John  Ternus', 'title': 'CEO  & Director'}]}, 'd')
+        self.assertEqual(r['ceo'], {'naam': 'Mr. John Ternus', 'functie': 'CEO & Director'})
+
     def test_geen_gegevens_is_onbekend_niet_nul(self):
         self.assertIsNone(m.insiders_uit_transacties([], '2026-10-29'))
         self.assertIsNone(m.insiders_uit_transacties([{'Text': '', 'Start Date': None}], '2026-10-29'))
