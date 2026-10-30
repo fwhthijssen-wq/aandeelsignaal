@@ -1,0 +1,38 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): terugrekenen van het kortetermijnsignaal (tabblad Koers).
+# Resultaat naar de tak 'jaarverslagen' (debug/terugrekenen_ta*.json en .md). Raakt de app niet.
+name: Terugrekenen kortetermijnsignaal (ontwikkeling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rekenen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Gegevens van de app ophalen
+        run: curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+      - name: Koersen en maandelijkse peildata
+        run: python hulp/terugrekenen_ta.py aandelen.json uit
+      - name: Signaal en samenvatting
+        run: node hulp/terugrekenen_ta.js uit
+      - name: Op tak jaarverslagen zetten
+        run: |
+          for poging in 1 2 3; do
+            rm -rf jv && git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+            mkdir -p jv/debug && cp uit/terugrekenen_ta.json uit/terugrekenen_ta.md jv/debug/ && cp uit/ta_koersen.json.gz jv/debug/terugrekenen_ta_koersen.json.gz
+            cd jv
+            git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+            git add -A && git commit -qm "Terugrekenen kortetermijnsignaal $(date -u +%F)" || { echo "niets nieuw"; exit 0; }
+            if git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen; then exit 0; fi
+            cd ..; sleep 10
+          done
+          exit 1
