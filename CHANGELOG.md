@@ -2,6 +2,31 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.5 (2026.10.30)
+**Nieuwe indeling: van overzicht naar detail.**
+- **Hoofdmenu met vijf knoppen**: Start, Markt, Volglijst, Portefeuille en Achtergrond.
+- **Start is een dashboard met zes tegels** en verder niets: Portefeuille, Volglijst en Signalen (uw eigen aandelen), en Kansen, Marktbeeld en Zekerheid (de markt). Elke tegel opent één scherm.
+- **Markt** voegt het marktbeeld, de beste kansen volgens NAIC en alle fondsen per index samen. Tik op een index en de lijst eronder toont die fondsen.
+- **Signalen** heeft een eigen scherm (via de tegel). De cijfertabel en uw koerszones staan bij Volglijst, de spreiding per land bij Portefeuille.
+- **Achtergrond**: datakwaliteit, hoe het NAIC-oordeel het in het verleden deed, de methode, hulp, instellingen en vergelijken.
+- **Per aandeel vijf tabbladen**, van oordeel naar onderbouwing:
+  - *Oordeel*: NAIC-oordeel met aandachtspunten, één regel timing, zekerheid en gezondheidscheck, analistenadvies en het bedrijf;
+  - *NAIC*: de zes stappen, met de managementfeiten bij stap 2;
+  - *Gezondheid*: de zes metingen, kentallen ter informatie en uw eigen onderzoek (beoordeling en checklist);
+  - *Koers*: koers en timing;
+  - *Cijfers*: zekerheid, jaarcijfers, ontbrekende cijfers invullen en bronnen.
+  Het tabblad Verdiepen is opgegaan in Gezondheid (uw beoordeling en checklist), NAIC (de managementfeiten, bij stap 2) en Cijfers (ontbrekende cijfers).
+- **Terug** brengt u naar het scherm waar u vandaan kwam (bijv. "‹ Markt").
+- Oude links blijven werken.
+
+## 1.4.1 (2026.10.29)
+- **Fondsrapport (Afdrukken / PDF) bijgewerkt** met de recente aanpassingen in de app:
+  - de NAIC-gids in **zes stappen**, met stap 2 *Evaluatie van het management* (winstmarge, rendement op eigen vermogen en schuld t.o.v. totaal kapitaal);
+  - de **aandachtspunten uit de gezondheidscheck** onder "Wat betekent dit?";
+  - de uitkomst van het **terugrekenen** (stand 28 oktober);
+  - het **datakwaliteitslabel** (Uit jaarverslag, Twee bronnen eens, Indicatief) bij niet-bevestigde fondsen;
+  - gezondheidscheck-woorden (Gezond/Zwak) in plaats van Kopen/Vermijden, en geen "bèta" meer.
+
 ## 1.4 (2026.10.29)
 - **Nieuw: Management: feiten** op het tabblad Verdiepen, boven uw eigen beoordeling. Per fonds: wie de topman of -vrouw is, hoeveel aandelen bestuur en insiders bezitten, aan- en verkopen door insiders in de afgelopen 12 maanden (met het aantal personen), hoe het aantal aandelen in 5 jaar veranderde (inkoop of uitgifte), het rendement op eigen vermogen aan begin en eind van 5 jaar, en de governance-scores van ISS (audit, bestuur, beloning, rechten van aandeelhouders). Bij elke regel staan bron en datum; ontbreekt iets, dan staat er "onbekend".
 - Alleen feiten, geen oordeel: het blok verandert het NAIC-oordeel, de gezondheidscheck en uw eigen score niet.
@@ -12,14 +37,6 @@ Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … v
 - **Nieuw: kortetermijnsignaal** op het tabblad Koers, voor wie het moment van kopen wil kiezen. Vijf vaste checks op de dagkoersen: koers boven het gemiddelde van 200 dagen, gemiddelde van 50 dagen boven dat van 200 dagen (met sinds hoeveel handelsdagen), koers hoger dan 6 maanden geleden, MACD boven de signaallijn en RSI onder 70. Uitkomst: **Gunstig moment** (4 of 5), **Neutraal** (2 of 3) of **Afwachten** (0 of 1). Ontbreekt een check, dan staat er "Onvoldoende gegevens" in plaats van een gok.
 - Het signaal staat volledig los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Bij een koers ouder dan 7 dagen wordt het niet getoond.
 - Technisch: de nachtelijke update berekent nu ook MACD (12, 26, 9), het rendement over 126 handelsdagen en de leeftijd van de laatste kruising van de gemiddelden, uit dezelfde dagkoersen als voorheen. Gecontroleerd tegen een onafhankelijke berekening.
-
-## 1.2.3 (2026.10.29)
-- **Fondsrapport (Afdrukken / PDF) bijgewerkt** met de recente aanpassingen in de app:
-  - de NAIC-gids in **zes stappen**, met stap 2 *Evaluatie van het management* (winstmarge, rendement op eigen vermogen en schuld t.o.v. totaal kapitaal);
-  - de **aandachtspunten uit de gezondheidscheck** onder "Wat betekent dit?";
-  - de uitkomst van het **terugrekenen** (stand 28 oktober);
-  - het **datakwaliteitslabel** (Uit jaarverslag, Twee bronnen eens, Indicatief) bij niet-bevestigde fondsen;
-  - gezondheidscheck-woorden (Gezond/Zwak) in plaats van Kopen/Vermijden, en geen "bèta" meer.
 
 ## 1.2.2 (2026.10.28)
 - **De zes metingen zijn nu een gezondheidscheck, geen tweede koopadvies.** Het NAIC-oordeel (Kopen, Neutraal, Vermijden) is het enige advies. De zes metingen zeggen hoe het bedrijf ervoor staat: **Gezond**, **Gemengd** of **Zwak** (zelfde berekening als eerder Kopen/Neutraal/Vermijden).

@@ -41,11 +41,22 @@ class WebUi(unittest.TestCase):
     def test_start_geen_fouten_en_geen_valse_bevestiging(self):
         pg = self.pagina()
         self.assertIn('overzicht', pg.inner_text('main').lower())
-        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 4)
-        self.assertEqual(pg.locator('[data-marktbeeld] .markt-rij').count() > 1, True)
+        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 6)                    # dashboard: alleen tegels
+        self.assertEqual([pg.locator('[data-tegels] .tegel').nth(i).get_attribute('data-tegel') for i in range(6)],
+                         ['portefeuille', 'volglijst', 'signalen', 'kansen', 'marktbeeld', 'zekerheid'])
+        self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansrijk]').count(), 0)  # geen lange pagina onder de tegels
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
+        self.assertEqual(pg.locator('nav.menu a').all_inner_texts(), ['Start', 'Markt', 'Volglijst', 'Portefeuille', 'Achtergrond'])
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
+        pg.click('[data-tegel="kansen"]'); pg.wait_for_timeout(200)                        # tegel opent het scherm Markt
+        self.assertEqual(pg.evaluate('location.hash'), '#/markt')
+        self.assertTrue(pg.locator('[data-marktbeeld] .markt-rij').count() > 1)
+        self.assertEqual(pg.locator('nav.menu a[aria-current="page"]').inner_text(), 'Markt')
+        pg.click('[data-fonds] >> nth=0'); pg.wait_for_timeout(200)                         # vanuit de markt naar een fonds ...
+        self.assertIn('Markt', pg.inner_text('[data-kruimel]'))                            # ... en Terug brengt u naar de markt
+        pg.click('[data-kruimel]'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.evaluate('location.hash'), '#/markt')
         self.assertEqual(self.fouten, [])
 
     def test_aandeel_open_en_volglijst_blijft_bewaard(self):
@@ -60,7 +71,7 @@ class WebUi(unittest.TestCase):
 
     def test_alle_tabs_zonder_fouten_en_zonder_scrollbalk(self):
         pg = self.pagina()
-        for t in ('samenvatting', 'koers', 'waarde', 'gezondheid', 'bronnen'):
+        for t in ('oordeel', 'naic', 'gezond', 'koers', 'cijfers', 'samenvatting', 'waarde', 'check', 'bronnen'):
             pg.goto(INDEX + f'#/a/AAPL/{t}')
             self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'), t)
         self.assertEqual(self.fouten, [])
@@ -120,6 +131,7 @@ class WebUi(unittest.TestCase):
               localStorage.setItem('aandeelsignaal.v1',JSON.stringify(d));})()""")
             pg.reload()
             try:
+                pg.evaluate("location.hash='#/volglijst'")
                 pg.wait_for_selector('#d-trend', timeout=5000)
                 return
             except Exception:
@@ -130,7 +142,7 @@ class WebUi(unittest.TestCase):
         pg = self.pagina(320)
         self._alles_op_volglijst(pg)
         txt = pg.inner_text('#dash')
-        self.assertIn('Dashboard', txt)
+        self.assertIn('In cijfers', txt)
         self.assertNotIn('0 / 22', txt)
         self.assertEqual(pg.locator('#dash table.dash tbody tr').count(), pg.evaluate('window.AANDEEL_DATA.aandelen.length'))
         # onbevestigd: geen enkel groei- of margecijfer, alleen streepjes
@@ -189,7 +201,7 @@ class WebUi(unittest.TestCase):
                "insiders:{aankopen:3,verkopen:0,personen_gekocht:2,personen_verkocht:0,van:'2025-10-29',tot:'2026-10-29',bron:'Yahoo Finance (insidertransacties)'},"
                "datum:'2026-10-29',bron:'Yahoo Finance'}")
         pg, f1 = ctx(man)
-        pg.goto(INDEX + '#/a/AAPL/check')
+        pg.goto(INDEX + '#/a/AAPL/naic')
         pg.wait_for_timeout(200)
         kaart = pg.locator('[data-management]')
         txt = kaart.inner_text()
@@ -199,10 +211,10 @@ class WebUi(unittest.TestCase):
         self.assertIn('3 / 10', txt)
         self.assertIn('Topbestuurders (2)', txt)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
-        # Het blok staat vóór de eigen beoordeling.
-        self.assertTrue(pg.evaluate("document.querySelector('[data-management]').compareDocumentPosition(document.querySelector('[data-verdiepen]')) & 4"))
+        # Het blok hoort bij NAIC-stap 2 (management), als er een gids is.
+        self.assertTrue(pg.evaluate("!document.querySelector('[data-deel=\"2\"]') || !!document.querySelector('[data-deel=\"2\"] [data-management]')"))
         pg2, f2 = ctx(None)
-        pg2.goto(INDEX + '#/a/AAPL/check')
+        pg2.goto(INDEX + '#/a/AAPL/naic')
         pg2.wait_for_timeout(200)
         self.assertIn('onbekend', pg2.locator('[data-feit="ceo"]').inner_text())
         self.assertEqual(f1 + f2, [])
@@ -315,10 +327,11 @@ class WebUi(unittest.TestCase):
         pg.select_option('#f-sort', 'naam')
         namen = pg.eval_on_selector_all('#res [data-fonds] b', 'els => els.map(e => e.textContent.toLowerCase())')
         self.assertEqual(namen, sorted(namen))
-        self.assertEqual(pg.locator('[data-uitleg-oordeel]').count(), 1)
-        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('#dash table.dash').count(), 0)      # zonder volglijst geen lange tabel op Start
         self.assertEqual(pg.locator('[data-naar-fondsen]').count(), 1)
+        pg.goto(INDEX + '#/achtergrond'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-uitleg-oordeel]').count(), 1)                   # de methode staat bij Achtergrond
+        pg.goto(INDEX + '#/volglijst'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('#dash table.dash').count(), 0)      # zonder volglijst geen cijfertabel
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertEqual(self.fouten, [])
 
@@ -349,7 +362,7 @@ class WebUi(unittest.TestCase):
         self.assertIn('Start', pg.locator('#ph-t').inner_text())
         pg.keyboard.press('Escape')
         self.assertEqual(pg.locator('#ph-t').count(), 0)
-        for hash_, woord in (('#/portefeuille', 'portefeuille'), ('#/instellingen', 'back-up'), ('#/a/MSFT/check', 'Verdiepen'), ('#/a/MSFT/waarde', 'NAIC')):
+        for hash_, woord in (('#/portefeuille', 'portefeuille'), ('#/instellingen', 'back-up'), ('#/a/MSFT/gezond', 'Gezondheid'), ('#/a/MSFT/naic', 'NAIC'), ('#/markt', 'Markt'), ('#/achtergrond', 'Achtergrond')):
             pg.evaluate("h => location.hash = h", hash_)
             pg.wait_for_timeout(150)
             pg.click('#hulp-knop')
@@ -363,17 +376,17 @@ class WebUi(unittest.TestCase):
         self.assertEqual(self.fouten, [])
 
     def test_methode_aanklikken_toont_wat_erachter_zit(self):
-        pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
-        knoppen = pg.locator('[data-signaal] .meth-knop')
+        pg = self._pagina_met_indexen('#/a/MSFT/gezond')
+        knoppen = pg.locator('[data-gezond] .meth-knop')
         self.assertGreaterEqual(knoppen.count(), 3)
-        pg.click('[data-signaal] .meth-knop >> nth=0')
+        pg.click('[data-gezond] .meth-knop >> nth=0')
         tekst = pg.locator('.hulp-blad').inner_text()
         for kop in ('Wat meet dit?', 'Hoe wordt het beoordeeld?', 'Gewicht en betrouwbaarheid'):
             self.assertIn(kop, tekst)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.keyboard.press('Escape')
         self.assertEqual(pg.locator('.hulp-blad').count(), 0)
-        pg.click('[data-signaal] [data-ontbreekt] .meth-knop >> nth=0')         # ontbrekende meting: uitleg wat er nodig is
+        pg.click('[data-gezond] [data-ontbreekt] .meth-knop >> nth=0')         # ontbrekende meting: uitleg wat er nodig is
         self.assertIn('Wat is er nodig?', pg.locator('.hulp-blad').inner_text())
         pg.click('#mt-sluit')
         self.assertEqual(self.fouten, [])
@@ -382,28 +395,32 @@ class WebUi(unittest.TestCase):
         pg = self._pagina_met_indexen('#/a/MSFT/samenvatting')
         pg.evaluate("""() => { const a = AANDEEL_DATA.aandelen.find(x => x.ticker === 'MSFT'); a.koers.sma200 = a.koers.slot * 0.9;
           a.koers.reeks = Array.from({ length: 130 }, (_, i) => ['2026-05-01', a.koers.slot * (1 + 0.01 * Math.sin(i))]); }""")
-        pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
-        kaart = pg.locator('[data-signaal]')
+        pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/a/MSFT/gezond'"); pg.wait_for_timeout(150)
+        kaart = pg.locator('[data-gezond]')
         self.assertEqual(kaart.count(), 1)
         self.assertEqual(pg.locator('[data-metingen] [data-meting]').count(), 6)          # zes kernmetingen
-        self.assertEqual(len(pg.locator('[data-signaal] .stippen').get_attribute('data-profiel')), 6)
-        self.assertIn('van 6 metingen', pg.locator('[data-signaal] [data-dekking]').inner_text())
+        self.assertEqual(len(pg.locator('[data-app-kaart] .stippen').get_attribute('data-profiel')), 6)
+        self.assertIn('van 6 metingen', pg.locator('[data-app-kaart] [data-dekking]').inner_text())
         ontbreekt = pg.locator('[data-meting][data-ontbreekt]')
         self.assertGreater(ontbreekt.count(), 0)
         self.assertIn('Ontbreekt:', ontbreekt.first.inner_text())                          # met reden
         self.assertEqual(pg.locator('.groot-oordeel[data-app][data-oordeel="geen"]').count(), 1)     # alleen koersdata: te weinig metingen
         self.assertIn('Bron: koersdata', pg.locator('[data-metingen]').inner_text())
         self.assertIn('Ter informatie', kaart.inner_text())
-        self.assertEqual(pg.locator('[data-info="eigen"] a[href$="/check"]').count(), 1)
+        self.assertEqual(pg.locator('[data-eigen-onderzoek]').count(), 1)                 # uw eigen onderzoek op hetzelfde tabblad
+        self.assertEqual(pg.locator('[data-analisten]').count(), 0)                       # analisten staan bij Oordeel
+        pg.evaluate("location.hash='#/a/MSFT/oordeel'"); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-analisten]').count(), 1)
+        self.assertEqual(pg.locator('[data-snel-gezond] .stippen').count(), 1)             # één regel gezondheidscheck, met de weg erheen
         pg.evaluate("location.hash='#/instellingen'")
         pg.wait_for_timeout(150)
         pg.select_option('#mind', '3')
         self.assertEqual(pg.evaluate("localStorage.getItem('as_minmeting')"), '3')
         pg.evaluate("localStorage.setItem('as_minmeting', '2')")                     # lager dan het menu: de test heeft alleen koersdata
-        pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(150)
+        pg.evaluate("location.hash='#/a/MSFT/gezond'"); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('.groot-oordeel[data-app][data-oordeel="geen"]').count(), 0)
         self.assertIn(pg.locator('.groot-oordeel[data-app]').inner_text(), ('Gezond', 'Gemengd', 'Zwak'))   # gezondheidscheck, geen koopadvies
+        pg.evaluate("location.hash='#/a/MSFT/oordeel'"); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-naic-kaart] [data-aandacht]').count(), 1)          # aandachtspunten bij het NAIC-oordeel
         self.assertEqual(pg.locator('[data-naic-kaart]').count(), 1)                      # NAIC ernaast
         pg.evaluate("location.hash='#/'")
@@ -432,22 +449,26 @@ class WebUi(unittest.TestCase):
 
     def test_verdiepen_beoordeling_telt_niet_eigen_cijfer_vult_meting_aan_en_blijft_bewaard(self):
         pg = self.pagina(320)
-        pg.goto(INDEX + '#/a/ASML.AS/check')
+        pg.goto(INDEX + '#/a/ASML.AS/gezond')
         pg.wait_for_timeout(150)
         d0 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
         pg.click('[data-vd-score="management"] [data-cijfer="5"]')
         d1 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
         self.assertEqual(d1, d0)                                                        # uw oordeel telt niet mee
         self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 1)
+        pg.evaluate("location.hash='#/a/ASML.AS/cijfers'"); pg.wait_for_timeout(150)  # ontbrekende cijfers vult u in bij Cijfers
         pg.fill('#vd-c-kw', '14,5'); pg.dispatch_event('#vd-c-kw', 'change')            # ontbrekend feit: vult de meting K/W aan
+        pg.evaluate("location.hash='#/a/ASML.AS/gezond'"); pg.wait_for_timeout(150)
         d2 = int(pg.locator('#vd-meter [data-dekking]').get_attribute('data-dekking'))
         self.assertGreater(d2, d1)
+        pg.evaluate("location.hash='#/a/ASML.AS/cijfers'"); pg.wait_for_timeout(150)
         pg.fill('#vd-c-kw', 'abc'); pg.dispatch_event('#vd-c-kw', 'change')
         self.assertTrue(pg.locator('[data-vd-cijfer="kw"] [data-vd-fout]').inner_text())
         pg.wait_for_timeout(300)
         pg.reload(); pg.wait_for_timeout(200)
-        self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').get_attribute('data-cijfer'), '5')
         self.assertEqual(pg.input_value('#vd-c-kw'), '14,5')
+        pg.evaluate("location.hash='#/a/ASML.AS/gezond'"); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').get_attribute('data-cijfer'), '5')
         pg.click('[data-vd-score="management"] [data-cijfer="5"]')                      # nogmaals klikken wist
         self.assertEqual(pg.locator('[data-vd-score="management"] [aria-pressed="true"]').count(), 0)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
@@ -513,14 +534,14 @@ class WebUi(unittest.TestCase):
         pg = c.new_page()
         fouten = []
         pg.on('pageerror', lambda e: fouten.append(str(e)))
-        pg.goto(INDEX)
+        pg.goto(INDEX + '#/portefeuille')
         pg.wait_for_timeout(200)
-        txt = pg.inner_text('#dash')
+        txt = pg.inner_text('main')
         self.assertEqual(pg.locator('[data-spreiding]').count(), 2)   # USD en EUR apart
         self.assertIn('100%', pg.locator('[data-spreiding="USD"]').inner_text())
         self.assertIn('Verenigde Staten', pg.locator('[data-spreiding="USD"]').inner_text())
         self.assertIn('Nederland', pg.locator('[data-spreiding="EUR"]').inner_text())
-        self.assertIn('Aankopen zonder waarde', txt)   # MSFT: koers verouderd
+        self.assertIn('telt niet mee', txt)   # MSFT: koers verouderd
         self.assertEqual(fouten, [])
 
     def _naic_extra_pagina(self, bank):
@@ -623,7 +644,7 @@ class WebUi(unittest.TestCase):
         pg.dispatch_event('#ck-n5', 'change')
         self.assertIn('3 van 15 beantwoord (1 ja, 1 nee, 1 weet ik niet)', pg.inner_text('#ck-voortgang'))
         self.assertNotIn('%', pg.inner_text('#ck-voortgang') + ' '.join(pg.locator('.ck').all_inner_texts()))   # de check zelf geeft geen score; de dekking-meter staat apart
-        self.assertEqual(pg.locator('main h3').all_inner_texts(), ['Concurrentiepositie', 'Management', 'Financieel'])
+        self.assertEqual(pg.locator('main h3').all_inner_texts()[-3:], ['Concurrentiepositie', 'Management', 'Financieel'])
         pg.click('[data-punt="7"] [data-ant="nee"]')       # nogmaals klikken haalt het antwoord weg
         self.assertIn('2 van 15 beantwoord', pg.inner_text('#ck-voortgang'))
         pg.reload(); pg.wait_for_timeout(150)
@@ -692,6 +713,7 @@ class WebUi(unittest.TestCase):
         pg.evaluate("location.hash='#/a/MSFT/samenvatting'"); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-label-link] [data-niveau="indicatief"]').count(), 1)       # label bovenaan, naar de bronnen
         self.assertEqual(pg.locator('.chip.ok').count(), 0)                                  # nooit "Bevestigd"
+        pg.evaluate("location.hash='#/a/MSFT/gezond'"); pg.wait_for_timeout(200)
         self.assertIn('indicatief', pg.inner_text('[data-metingen]').lower())               # bron bij elke meting
         pg.evaluate("location.hash='#/a/MSFT/gezondheid'"); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-indicatief]').count(), 1)
@@ -701,7 +723,7 @@ class WebUi(unittest.TestCase):
     def test_alle_tabs_bereikbaar_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/a/AAPL/samenvatting')
-        self.assertEqual(pg.locator('nav.menu a').count(), 6)
+        self.assertEqual(pg.locator('nav.menu a').all_inner_texts(), ['Oordeel', 'NAIC', 'Gezondheid', 'Koers', 'Cijfers'])
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         self.assertTrue(pg.evaluate("Array.from(document.querySelectorAll('nav.menu a')).every(a => a.getBoundingClientRect().width >= 44)"))
 
@@ -806,14 +828,17 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('[data-kwf][aria-pressed="true"]').get_attribute('data-kwf'), 'geen')
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
         pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
-        self.assertEqual(pg.locator('[data-status-regel] a[href="#/kwaliteit"]').count(), 1)
+        self.assertEqual(pg.locator('[data-tegel="zekerheid"][href="#/kwaliteit"]').count(), 1)
+        pg.goto(INDEX + '#/achtergrond'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-naar-kwaliteit][href="#/kwaliteit"]').count(), 1)
+        self.assertEqual(pg.locator('[data-terug-algemeen] tbody tr').count(), 3)
         self.assertEqual(self.fouten, [])
 
     def test_label_bij_fonds_leidt_naar_kwaliteitskaart_en_filter_zekerheid(self):
         pg = self.pagina(390)
         pg.goto(INDEX + '#/a/AAPL/samenvatting'); pg.wait_for_timeout(150)
         pg.click('[data-label-link]'); pg.wait_for_timeout(150)
-        self.assertTrue(pg.evaluate('location.hash').endswith('/bronnen'))
+        self.assertTrue(pg.evaluate('location.hash').endswith('/cijfers'))
         self.assertIn('Hoe zeker zijn de cijfers?', pg.locator('[data-kwaliteitkaart]').inner_text())
         pg.goto(INDEX + '#/fondsen'); pg.wait_for_timeout(150)
         pg.select_option('#f-zeker', 'bevestigd'); pg.wait_for_timeout(100)
@@ -842,13 +867,13 @@ class WebUi(unittest.TestCase):
             pg.on('pageerror', lambda e: self.fouten.append(str(e)))
             return pg
         pg = maak(0)
-        pg.goto(INDEX + '#/')
+        pg.goto(INDEX + '#/volglijst')
         self.assertEqual(pg.locator('[data-zones]').count(), 0)       # nog niets bewaard: geen kaart
         pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(150)
         pg.fill('#v-z-eps', '7'); pg.fill('#v-z-epsl', '5')
         pg.click('#z-bewaar')
         self.assertFalse(pg.is_hidden('#z-wis'))
-        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
+        pg.goto(INDEX + '#/volglijst'); pg.wait_for_timeout(150)
         tekst = pg.inner_text('[data-zones]')
         self.assertIn('Apple', tekst); self.assertRegex(tekst, 'zone|koers')
         pg.goto(INDEX + '#/a/AAPL/waarde'); pg.wait_for_timeout(150)
@@ -861,7 +886,7 @@ class WebUi(unittest.TestCase):
         oud = maak(30)
         oud.goto(INDEX + '#/a/AAPL/waarde'); oud.wait_for_timeout(150)
         oud.click('#z-bewaar')
-        oud.goto(INDEX + '#/'); oud.wait_for_timeout(150)
+        oud.goto(INDEX + '#/volglijst'); oud.wait_for_timeout(150)
         self.assertIn('Geen actuele koers', oud.inner_text('[data-zones]'))
         self.assertNotIn('positieve zone', oud.inner_text('[data-zones]'))
         self.assertEqual(self.fouten, [])
@@ -888,12 +913,14 @@ class WebUi(unittest.TestCase):
 
     def test_signalen_op_start_met_vorige_update(self):
         pg = self.pagina()
+        pg.click('[data-tegel="signalen"]'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.evaluate('location.hash'), '#/signalen')
         self.assertEqual(pg.locator('[data-signalen]').count(), 1)
         self.assertIn('Nieuw sinds de vorige update', pg.locator('[data-signalen]').inner_text())
         # vorige update met een ander NAIC-oordeel: de wijziging verschijnt (of de melding dat er niets veranderde)
         pg.evaluate("""() => { const v = JSON.parse(localStorage.getItem('as_naic_vorig'));
           v.laatst.datum = '2020-01-01'; v.laatst.oordelen = {ZZZ: 'kopen'}; localStorage.setItem('as_naic_vorig', JSON.stringify(v)); }""")
-        pg.goto(pg.url.split('#')[0] + '#/fondsen'); pg.goto(pg.url.split('#')[0] + '#/'); pg.wait_for_timeout(300)
+        pg.goto(pg.url.split('#')[0] + '#/markt'); pg.goto(pg.url.split('#')[0] + '#/signalen'); pg.wait_for_timeout(300)
         tekst = pg.locator('[data-signalen]').inner_text()
         self.assertIn('1 januari 2020', tekst)
         self.assertEqual(pg.locator('[data-veranderingen], [data-geen-verandering]').count(), 1)
@@ -942,11 +969,11 @@ class WebUi(unittest.TestCase):
         pg = self.pagina()
         pg.goto(INDEX + '?weergave=eenvoudig#/a/AAPL'); pg.wait_for_timeout(300)
         self.assertEqual(pg.evaluate("localStorage.getItem('as_weergave')"), 'eenvoudig')
-        self.assertFalse(pg.locator('[data-app-kaart]').is_visible())
+        self.assertFalse(pg.locator('[data-snel]').is_visible())
         self.assertTrue(pg.locator('[data-naic-kaart]').is_visible())
         self.assertTrue(pg.locator('[data-vers]').is_visible())
         pg.click('[data-weergave-knop="uitgebreid"]'); pg.wait_for_timeout(200)
-        self.assertTrue(pg.locator('[data-app-kaart]').is_visible())
+        self.assertTrue(pg.locator('[data-snel]').is_visible())
         pg.goto(INDEX + '#/instellingen'); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-weergave-kaart] [aria-pressed="true"]').inner_text(), 'Uitgebreid')
         self.assertEqual(self.fouten, [])
