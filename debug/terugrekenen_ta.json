@@ -1,0 +1,679 @@
+{
+ "peildata": 121,
+ "waarnemingen": 39011,
+ "van": "2016-10",
+ "tot": "2026-10",
+ "status": {
+  "gunstig": {
+   "m1": {
+    "n": 21964,
+    "gemiddeld": 0.09,
+    "mediaan": -0.08,
+    "beter": 49,
+    "t": 1.91
+   },
+   "m3": {
+    "n": 21555,
+    "gemiddeld": 0.35,
+    "mediaan": -0.32,
+    "beter": 49,
+    "t": 3.93
+   },
+   "m6": {
+    "n": 20910,
+    "gemiddeld": 0.85,
+    "mediaan": -0.63,
+    "beter": 48,
+    "t": 6.08
+   },
+   "m12": {
+    "n": 19685,
+    "gemiddeld": 1.7,
+    "mediaan": -1.97,
+    "beter": 47,
+    "t": 6.88
+   }
+  },
+  "neutraal": {
+   "m1": {
+    "n": 11852,
+    "gemiddeld": -0.16,
+    "mediaan": -0.31,
+    "beter": 48,
+    "t": -2.2
+   },
+   "m3": {
+    "n": 11662,
+    "gemiddeld": -0.35,
+    "mediaan": -1.06,
+    "beter": 46,
+    "t": -2.76
+   },
+   "m6": {
+    "n": 11374,
+    "gemiddeld": -1.03,
+    "mediaan": -2.33,
+    "beter": 44,
+    "t": -5.28
+   },
+   "m12": {
+    "n": 10786,
+    "gemiddeld": -2.02,
+    "mediaan": -5.49,
+    "beter": 42,
+    "t": -6.02
+   }
+  },
+  "afwachten": {
+   "m1": {
+    "n": 4852,
+    "gemiddeld": -0.03,
+    "mediaan": -0.2,
+    "beter": 49,
+    "t": -0.28
+   },
+   "m3": {
+    "n": 4765,
+    "gemiddeld": -0.72,
+    "mediaan": -1.19,
+    "beter": 46,
+    "t": -3.55
+   },
+   "m6": {
+    "n": 4669,
+    "gemiddeld": -1.31,
+    "mediaan": -3.14,
+    "beter": 43,
+    "t": -4.19
+   },
+   "m12": {
+    "n": 4437,
+    "gemiddeld": -2.63,
+    "mediaan": -6.79,
+    "beter": 40,
+    "t": -4.84
+   }
+  },
+  "onvoldoende": {
+   "m1": {
+    "n": 0
+   },
+   "m3": {
+    "n": 0
+   },
+   "m6": {
+    "n": 0
+   },
+   "m12": {
+    "n": 0
+   }
+  }
+ },
+ "aantalJa": {
+  "0": {
+   "m1": {
+    "n": 0
+   },
+   "m3": {
+    "n": 0
+   },
+   "m6": {
+    "n": 0
+   },
+   "m12": {
+    "n": 0
+   }
+  },
+  "1": {
+   "m1": {
+    "n": 4852,
+    "gemiddeld": -0.03,
+    "mediaan": -0.2,
+    "beter": 49,
+    "t": -0.28
+   },
+   "m3": {
+    "n": 4765,
+    "gemiddeld": -0.72,
+    "mediaan": -1.19,
+    "beter": 46,
+    "t": -3.55
+   },
+   "m6": {
+    "n": 4669,
+    "gemiddeld": -1.31,
+    "mediaan": -3.14,
+    "beter": 43,
+    "t": -4.19
+   },
+   "m12": {
+    "n": 4437,
+    "gemiddeld": -2.63,
+    "mediaan": -6.79,
+    "beter": 40,
+    "t": -4.84
+   }
+  },
+  "2": {
+   "m1": {
+    "n": 7970,
+    "gemiddeld": -0.17,
+    "mediaan": -0.34,
+    "beter": 48,
+    "t": -1.92
+   },
+   "m3": {
+    "n": 7856,
+    "gemiddeld": -0.41,
+    "mediaan": -1.08,
+    "beter": 46,
+    "t": -2.63
+   },
+   "m6": {
+    "n": 7667,
+    "gemiddeld": -1.19,
+    "mediaan": -2.68,
+    "beter": 44,
+    "t": -4.91
+   },
+   "m12": {
+    "n": 7263,
+    "gemiddeld": -2.11,
+    "mediaan": -5.95,
+    "beter": 42,
+    "t": -5.12
+   }
+  },
+  "3": {
+   "m1": {
+    "n": 3882,
+    "gemiddeld": -0.13,
+    "mediaan": -0.27,
+    "beter": 48,
+    "t": -1.08
+   },
+   "m3": {
+    "n": 3806,
+    "gemiddeld": -0.22,
+    "mediaan": -1,
+    "beter": 46,
+    "t": -1.04
+   },
+   "m6": {
+    "n": 3707,
+    "gemiddeld": -0.69,
+    "mediaan": -1.56,
+    "beter": 46,
+    "t": -2.13
+   },
+   "m12": {
+    "n": 3523,
+    "gemiddeld": -1.84,
+    "mediaan": -4.4,
+    "beter": 43,
+    "t": -3.17
+   }
+  },
+  "4": {
+   "m1": {
+    "n": 14162,
+    "gemiddeld": 0.07,
+    "mediaan": -0.12,
+    "beter": 49,
+    "t": 1.19
+   },
+   "m3": {
+    "n": 13882,
+    "gemiddeld": 0.41,
+    "mediaan": -0.21,
+    "beter": 49,
+    "t": 3.65
+   },
+   "m6": {
+    "n": 13493,
+    "gemiddeld": 0.81,
+    "mediaan": -0.7,
+    "beter": 48,
+    "t": 4.55
+   },
+   "m12": {
+    "n": 12718,
+    "gemiddeld": 1.93,
+    "mediaan": -1.95,
+    "beter": 47,
+    "t": 6.1
+   }
+  },
+  "5": {
+   "m1": {
+    "n": 7802,
+    "gemiddeld": 0.13,
+    "mediaan": 0,
+    "beter": 50,
+    "t": 1.63
+   },
+   "m3": {
+    "n": 7673,
+    "gemiddeld": 0.24,
+    "mediaan": -0.49,
+    "beter": 48,
+    "t": 1.64
+   },
+   "m6": {
+    "n": 7417,
+    "gemiddeld": 0.93,
+    "mediaan": -0.56,
+    "beter": 49,
+    "t": 4.11
+   },
+   "m12": {
+    "n": 6967,
+    "gemiddeld": 1.29,
+    "mediaan": -2.02,
+    "beter": 46,
+    "t": 3.26
+   }
+  }
+ },
+ "spreiding": {
+  "m1": {
+   "n": 119,
+   "gemiddeld": 0.31,
+   "t": 0.97,
+   "positief": 56
+  },
+  "m3": {
+   "n": 117,
+   "gemiddeld": 1.85,
+   "t": 2.56,
+   "positief": 68
+  },
+  "m6": {
+   "n": 114,
+   "gemiddeld": 3.29,
+   "t": 2.34,
+   "positief": 67
+  },
+  "m12": {
+   "n": 108,
+   "gemiddeld": 5.65,
+   "t": 3.12,
+   "positief": 70
+  }
+ },
+ "checks": {
+  "trend200": {
+   "m1": {
+    "n": 120,
+    "gemiddeld": 0.27,
+    "t": 1.13,
+    "positief": 57
+   },
+   "m3": {
+    "n": 118,
+    "gemiddeld": 1.12,
+    "t": 2.19,
+    "positief": 68
+   },
+   "m6": {
+    "n": 115,
+    "gemiddeld": 2.4,
+    "t": 2.3,
+    "positief": 67
+   },
+   "m12": {
+    "n": 109,
+    "gemiddeld": 4.7,
+    "t": 2.8,
+    "positief": 72
+   }
+  },
+  "kruis": {
+   "m1": {
+    "n": 120,
+    "gemiddeld": 0.28,
+    "t": 1.14,
+    "positief": 57
+   },
+   "m3": {
+    "n": 118,
+    "gemiddeld": 1.12,
+    "t": 2.15,
+    "positief": 68
+   },
+   "m6": {
+    "n": 115,
+    "gemiddeld": 2.46,
+    "t": 2.39,
+    "positief": 67
+   },
+   "m12": {
+    "n": 109,
+    "gemiddeld": 4.35,
+    "t": 2.67,
+    "positief": 72
+   }
+  },
+  "mom6": {
+   "m1": {
+    "n": 120,
+    "gemiddeld": 0.24,
+    "t": 1.06,
+    "positief": 58
+   },
+   "m3": {
+    "n": 118,
+    "gemiddeld": 0.88,
+    "t": 1.85,
+    "positief": 65
+   },
+   "m6": {
+    "n": 115,
+    "gemiddeld": 2.21,
+    "t": 2.37,
+    "positief": 68
+   },
+   "m12": {
+    "n": 109,
+    "gemiddeld": 4.21,
+    "t": 2.75,
+    "positief": 72
+   }
+  },
+  "macd": {
+   "m1": {
+    "n": 120,
+    "gemiddeld": 0.16,
+    "t": 0.72,
+    "positief": 52
+   },
+   "m3": {
+    "n": 118,
+    "gemiddeld": 0.06,
+    "t": 0.17,
+    "positief": 47
+   },
+   "m6": {
+    "n": 115,
+    "gemiddeld": 0.31,
+    "t": 0.54,
+    "positief": 49
+   },
+   "m12": {
+    "n": 109,
+    "gemiddeld": 0.35,
+    "t": 0.48,
+    "positief": 49
+   }
+  },
+  "rsi": {
+   "m1": {
+    "n": 107,
+    "gemiddeld": -0.29,
+    "t": -1.1,
+    "positief": 50
+   },
+   "m3": {
+    "n": 105,
+    "gemiddeld": -0.81,
+    "t": -1.51,
+    "positief": 41
+   },
+   "m6": {
+    "n": 102,
+    "gemiddeld": -2.83,
+    "t": -3.3,
+    "positief": 37
+   },
+   "m12": {
+    "n": 96,
+    "gemiddeld": -6.78,
+    "t": -4.07,
+    "positief": 36
+   }
+  }
+ },
+ "regio": {
+  "EU": {
+   "m1": {
+    "n": 119,
+    "gemiddeld": 0.29,
+    "t": 0.92,
+    "positief": 56
+   },
+   "m3": {
+    "n": 117,
+    "gemiddeld": 1.83,
+    "t": 2.79,
+    "positief": 68
+   },
+   "m6": {
+    "n": 114,
+    "gemiddeld": 3.4,
+    "t": 2.44,
+    "positief": 70
+   },
+   "m12": {
+    "n": 108,
+    "gemiddeld": 5.74,
+    "t": 2.82,
+    "positief": 73
+   }
+  },
+  "VS": {
+   "m1": {
+    "n": 59,
+    "gemiddeld": -0.69,
+    "t": -0.93,
+    "positief": 46
+   },
+   "m3": {
+    "n": 57,
+    "gemiddeld": 0.53,
+    "t": 0.32,
+    "positief": 51
+   },
+   "m6": {
+    "n": 54,
+    "gemiddeld": -0.52,
+    "t": -0.16,
+    "positief": 46
+   },
+   "m12": {
+    "n": 48,
+    "gemiddeld": -6.21,
+    "t": -1.2,
+    "positief": 48
+   }
+  }
+ },
+ "jaar": {
+  "2016": {
+   "gunstig": {
+    "n": 558,
+    "gemiddeld": -0.14,
+    "mediaan": -1.62,
+    "beter": 42,
+    "t": -0.31
+   },
+   "afwachten": {
+    "n": 48,
+    "gemiddeld": -0.42,
+    "mediaan": 1.86,
+    "beter": 54,
+    "t": -0.22
+   },
+   "verschil": 0.28
+  },
+  "2017": {
+   "gunstig": {
+    "n": 2654,
+    "gemiddeld": 0.6,
+    "mediaan": -0.57,
+    "beter": 47,
+    "t": 2.32
+   },
+   "afwachten": {
+    "n": 265,
+    "gemiddeld": -2.55,
+    "mediaan": -2.47,
+    "beter": 38,
+    "t": -3.96
+   },
+   "verschil": 3.15
+  },
+  "2018": {
+   "gunstig": {
+    "n": 1791,
+    "gemiddeld": 0.3,
+    "mediaan": 0.13,
+    "beter": 50,
+    "t": 1.2
+   },
+   "afwachten": {
+    "n": 585,
+    "gemiddeld": 0.26,
+    "mediaan": 0.03,
+    "beter": 50,
+    "t": 0.56
+   },
+   "verschil": 0.04
+  },
+  "2019": {
+   "gunstig": {
+    "n": 2155,
+    "gemiddeld": 0.22,
+    "mediaan": 0.21,
+    "beter": 51,
+    "t": 0.92
+   },
+   "afwachten": {
+    "n": 458,
+    "gemiddeld": -0.78,
+    "mediaan": -1.9,
+    "beter": 43,
+    "t": -1.22
+   },
+   "verschil": 1
+  },
+  "2020": {
+   "gunstig": {
+    "n": 1569,
+    "gemiddeld": 0.38,
+    "mediaan": -0.7,
+    "beter": 48,
+    "t": 0.91
+   },
+   "afwachten": {
+    "n": 674,
+    "gemiddeld": -1.06,
+    "mediaan": -2.25,
+    "beter": 43,
+    "t": -1.68
+   },
+   "verschil": 1.44
+  },
+  "2021": {
+   "gunstig": {
+    "n": 2808,
+    "gemiddeld": -0.15,
+    "mediaan": -0.77,
+    "beter": 47,
+    "t": -0.68
+   },
+   "afwachten": {
+    "n": 268,
+    "gemiddeld": 1.32,
+    "mediaan": 1.22,
+    "beter": 54,
+    "t": 1.68
+   },
+   "verschil": -1.47
+  },
+  "2022": {
+   "gunstig": {
+    "n": 1226,
+    "gemiddeld": -0.25,
+    "mediaan": -0.74,
+    "beter": 47,
+    "t": -0.69
+   },
+   "afwachten": {
+    "n": 927,
+    "gemiddeld": 0.19,
+    "mediaan": 0.07,
+    "beter": 50,
+    "t": 0.41
+   },
+   "verschil": -0.44
+  },
+  "2023": {
+   "gunstig": {
+    "n": 2333,
+    "gemiddeld": 0.38,
+    "mediaan": 0.21,
+    "beter": 51,
+    "t": 1.5
+   },
+   "afwachten": {
+    "n": 461,
+    "gemiddeld": -0.24,
+    "mediaan": -0.43,
+    "beter": 48,
+    "t": -0.38
+   },
+   "verschil": 0.62
+  },
+  "2024": {
+   "gunstig": {
+    "n": 2528,
+    "gemiddeld": 0.51,
+    "mediaan": 0.1,
+    "beter": 50,
+    "t": 2.03
+   },
+   "afwachten": {
+    "n": 375,
+    "gemiddeld": -0.84,
+    "mediaan": -1.56,
+    "beter": 46,
+    "t": -1.15
+   },
+   "verschil": 1.35
+  },
+  "2025": {
+   "gunstig": {
+    "n": 2492,
+    "gemiddeld": 1.39,
+    "mediaan": -0.09,
+    "beter": 50,
+    "t": 4.71
+   },
+   "afwachten": {
+    "n": 413,
+    "gemiddeld": -4.72,
+    "mediaan": -6.32,
+    "beter": 34,
+    "t": -6.77
+   },
+   "verschil": 6.11
+  },
+  "2026": {
+   "gunstig": {
+    "n": 1441,
+    "gemiddeld": -0.34,
+    "mediaan": -1.13,
+    "beter": 46,
+    "t": -0.84
+   },
+   "afwachten": {
+    "n": 291,
+    "gemiddeld": 0.04,
+    "mediaan": -1.05,
+    "beter": 48,
+    "t": 0.04
+   },
+   "verschil": -0.38
+  }
+ }
+}
