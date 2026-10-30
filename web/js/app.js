@@ -1,7 +1,8 @@
 /* Aandeel Signaal - schermen. Alle labels komen uit Gate.labelGate met de datum van VANDAAG op dit toestel. */
 (function () {
   'use strict';
-  var APP_VERSIE = '1.5 (2026.10.30)';
+  var MAKER = 'Made by Frans Thijssen';
+  var APP_VERSIE = '1.5.1 (2026.10.30)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -556,7 +557,7 @@
   }
   function statusRegel() {
     var R = rijen(), ok = R.filter(function (r) { return r.bevestigd; }).length;
-    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · <a href="#/achtergrond">Achtergrond en hulp</a></p>';
+    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · <a href="#/achtergrond">Achtergrond en hulp</a></p><p class="status-regel maker" data-maker>' + h(MAKER) + '</p>';
   }
   /* Start is een dashboard: alleen tegels. Elke tegel opent één scherm; daar zoomt u verder in. */
   function schermStart() {
@@ -588,7 +589,7 @@
     s += '<div class="lijst"><a href="#/hulp"><div class="tekstkolom"><b>Hulp en begrippen</b><span class="zacht">Zo gebruikt u de app, rondleiding en woordenlijst</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a href="#/instellingen"><div class="tekstkolom"><b>Instellingen en back-up</b><span class="zacht">Uiterlijk, weergave, gezondheidscheck en uw back-up</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a href="#/vergelijk"><div class="tekstkolom"><b>Twee aandelen vergelijken</b><span class="zacht">Groei, marge en K/W naast elkaar</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a></div>';
-    return s + '<p class="zacht">Aandeel Signaal ' + h(APP_VERSIE) + ' · selectiehulp, geen beleggingsadvies.</p></section>';
+    return s + '<p class="zacht">Aandeel Signaal ' + h(APP_VERSIE) + ' · ' + h(MAKER) + ' · selectiehulp, geen beleggingsadvies.</p></section>';
   }
 
   var tabelKeuze = { alleenBevestigd: false, trend200: '', index: '', sorteer: 'naam', richting: 'op' };
@@ -1313,7 +1314,9 @@
      Lukt een nieuw venster niet (pop-ups geblokkeerd), dan direct afdrukken via een onzichtbaar frame. */
   function afdrukken(rec) {
     var html;
-    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true, terug: TERUG }); }
+    try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true, terug: TERUG, maker: MAKER,
+      management: Management.feiten(rec, jaarLijst(rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null)),
+      kortetermijn: rec.koers ? Kortetermijn.kortetermijn(rec.koers, Gate.priceFreshness(rec.koers.datum, vandaag()).fresh) : null }); }
     catch (e) { toast('Afdrukken lukt niet voor dit aandeel'); return; }
     var w = null;
     try { w = window.open('', '_blank'); } catch (e2) { w = null; }
@@ -1434,7 +1437,7 @@
       '<div class="kaart-plat detail"><h2>Gezondheidscheck</h2><p class="zacht">De gezondheidscheck (Gezond, Gemengd of Zwak) verschijnt pas als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn. Het NAIC-oordeel heeft eigen eisen.</p><label for="mind">Minimum aantal metingen voor de gezondheidscheck</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
       backupKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
-      '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
+      '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · ' + h(MAKER) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
   }
   function instKoppel() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-th]'), function (b) { b.addEventListener('click', function () { winkel.zetThema(b.getAttribute('data-th')); pasThema(); route(); }); });

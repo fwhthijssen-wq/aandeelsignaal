@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.5.1 (2026.10.30)
+- "Made by Frans Thijssen" onderaan Start, bij Achtergrond, bij Instellingen en in de voet van het fondsrapport.
+- Fondsrapport (PDF): de **managementfeiten** staan nu bij stap 2 (topman of -vrouw, bezit van bestuur en insiders, insidertransacties, aantal aandelen, governance-risico en de topbestuurders), en het **kortetermijnsignaal** met zijn vijf checks staat bij Koers.
+
 ## 1.5 (2026.10.30)
 **Nieuwe indeling: van overzicht naar detail.**
 - **Hoofdmenu met vijf knoppen**: Start, Markt, Volglijst, Portefeuille en Achtergrond.

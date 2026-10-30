@@ -341,6 +341,7 @@ a.kaart-link .rij-kop svg { opacity: .55; }
 .markt-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .82rem; color: var(--mut); margin-top: 8px; }
 .markt-legenda span { display: inline-flex; align-items: center; gap: 6px; } .markt-legenda i { width: 12px; height: 12px; border-radius: 3px; }
 .status-regel { font-size: .85rem; color: var(--mut); text-align: center; }
+.status-regel.maker { margin-top: -6px; font-size: .8rem; letter-spacing: .02em; }
 
 /* NAIC-gids: de vijf delen */
 .deel-kop { display: flex; align-items: center; gap: 10px; margin-top: 8px; }

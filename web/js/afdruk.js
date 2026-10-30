@@ -124,7 +124,7 @@
 
   /* ---- De vijf stappen als leesbare redenering ---- */
   /* De NAIC-gids in zes stappen, zoals op het tabblad NAIC van de app (spiegel van naicHtml in app.js). */
-  function stappen(n, valuta, jr, N, bank) {
+  function stappen(n, valuta, jr, N, bank, mg) {
     n = n || {};
     var l = n.ladder || [], z = n.zones, q = n.kwaliteit || [];
     var lad = function (id) { var x = l.filter(function (y) { return y.id === id; })[0]; return x ? x.ok : null; };
@@ -151,6 +151,12 @@
       var a = sr[0], b = sr[sr.length - 1];
       r2.push('Schuld t.o.v. totaal kapitaal (langlopende schuld ÷ schuld plus eigen vermogen): ' + getal(b.waarde, 0) + '% in ' + b.year + (sr.length > 1 ? ' (' + getal(a.waarde, 0) + '% in ' + a.year + ')' : '') + '. Lager is veiliger; ter informatie.');
     } else r2.push('Schuld t.o.v. totaal kapitaal: onbekend.');
+    if (mg && mg.regels) {
+      var bekend = mg.regels.filter(function (x) { return x.waarde !== null && x.id !== 'roe'; });   // rendement op eigen vermogen staat er al
+      if (bekend.length) r2.push('Managementfeiten (bron: Yahoo Finance en de jaarcijfers; feiten, geen oordeel):');
+      bekend.forEach(function (x) { r2.push('– ' + x.label + ': ' + x.waarde); });
+      if (mg.bestuurders && mg.bestuurders.length) r2.push('Topbestuurders: ' + mg.bestuurders.slice(0, 6).map(function (b) { return b.naam + ' (' + b.functie + ')'; }).join(', ') + (mg.bestuurders.length > 6 ? ' en ' + (mg.bestuurders.length - 6) + ' anderen' : '') + '.');
+    }
     d.push({ titel: 'Evaluatie van het management', vraag: 'Houdt het management de winstmarge vóór belasting en het rendement op eigen vermogen op peil, en hoeveel schuld heeft het bedrijf?', ok: samen(toets(['marge', 'roe']).map(function (x) { return x.ok; })), regels: r2 });
     // 3
     var r3 = [];
@@ -293,7 +299,7 @@
 
     // De vijf stappen
     var bank = (g.waarschuwingen || []).some(function (w) { return /^Bank:/.test(w); });
-    s += '<section class="blok"><h2>De NAIC-gids in zes stappen</h2>' + (n && n.ladder ? stappen(n, val, jr, N, bank) : '<p>' + h(n ? n.reden : 'Geen NAIC-uitkomst.') + '</p>') +
+    s += '<section class="blok"><h2>De NAIC-gids in zes stappen</h2>' + (n && n.ladder ? stappen(n, val, jr, N, bank, o.management) : '<p>' + h(n ? n.reden : 'Geen NAIC-uitkomst.') + '</p>') +
       '<p class="zacht klein" style="margin-top:2mm">Kopen = stap 1, 2, 5 en 6 ✓ (stap 3 en 4 leveren de getallen). Valt de groei in stap 1 af, dan Vermijden. Valt stap 2 af, dan hoogstens Neutraal. Anders beslist de plek van de koers: koopzone of eronder met 3 : 1 en voldoende totaalrendement is Kopen; verkoopzone of erboven is Vermijden.</p></section>';
 
     // Berekening
@@ -349,7 +355,9 @@
       '<tr><th>Slotkoers</th><td>' + geld(k.slot) + ' ' + h(val) + ' (' + h(datumNl(k.datum)) + ')</td></tr>' +
       '<tr><th>Gemiddelde 50 dagen</th><td>' + geld(k.sma50) + '</td></tr><tr><th>Gemiddelde 200 dagen</th><td>' + geld(k.sma200) + '</td></tr>' +
       '<tr><th>52 weken</th><td>laag ' + geld(k.laag52) + ' · hoog ' + geld(k.hoog52) + '</td></tr><tr><th>RSI (14 dagen)</th><td>' + getal(k.rsi14, 1) + '</td></tr>' +
-      (k.bereik ? '<tr><th>' + (k.bereik.jaren || 10) + ' jaar</th><td>laag ' + geld(k.bereik.laag) + ' · hoog ' + geld(k.bereik.hoog) + '</td></tr>' : '') + '</tbody></table></div>';
+      (k.bereik ? '<tr><th>' + (k.bereik.jaren || 10) + ' jaar</th><td>laag ' + geld(k.bereik.laag) + ' · hoog ' + geld(k.bereik.hoog) + '</td></tr>' : '') + '</tbody></table>' +
+      (o.kortetermijn ? '<h3 data-kortetermijn-afdruk>Kortetermijnsignaal: ' + h(o.kortetermijn.label) + ' <span class="zacht klein">(' + o.kortetermijn.ja + ' van ' + o.kortetermijn.totaal + ' checks)</span></h3><ul class="punt">' +
+        o.kortetermijn.checks.map(function (c) { return '<li>' + (c.ok === true ? '✓ ' : c.ok === false ? '✗ ' : '? ') + h(c.label) + '</li>'; }).join('') + '</ul><p class="zacht klein">Timing, los van het NAIC-oordeel.</p>' : '') + '</div>';
     s += '<div><h2>Analisten</h2>' + (ana && ana.aantal > 0 ? '<p>Gemiddeld advies van ' + ana.aantal + ' analisten: <b>' + h(ADV[ana.advies] || ana.advies) + '</b>' + (ok(ana.gemiddeld) ? ' (' + getal(ana.gemiddeld, 2) + ' op een schaal van 1 = sterk kopen tot 5 = verkopen)' : '') + '.' +
       (ok(ana.koersdoel) ? ' Gemiddeld koersdoel ' + geld(ana.koersdoel) + ' ' + h(ana.valuta || val) + '.' : '') + '</p>' : '<p class="zacht">Geen analistenadvies bekend.</p>') +
       '<p class="zacht klein">Bron: Yahoo Finance' + (ana && ana.datum ? ', ' + h(datumNl(ana.datum)) : '') + '. Een mening; telt niet mee. Analisten zijn gemiddeld optimistisch.</p></div></section>';
@@ -370,7 +378,7 @@
     // Begrippen
     if (o.uitleg && o.uitleg.length) s += '<section><h2>Wat betekenen de begrippen?</h2><dl class="begrip">' + o.uitleg.map(function (t) { return '<div><dt>' + h(t.naam) + '</dt><dd>' + h(t.tekst) + '</dd></div>'; }).join('') + '</dl></section>';
 
-    s += '<div class="voet">Aandeel Signaal · automatisch berekend uit de jaarcijfers en de koers op de genoemde datums · geen beleggingsadvies. Controleer belangrijke cijfers zelf in het jaarverslag.</div>';
+    s += '<div class="voet">Aandeel Signaal' + (o.maker ? ' · ' + h(o.maker) : '') + ' · automatisch berekend uit de jaarcijfers en de koers op de genoemde datums · geen beleggingsadvies. Controleer belangrijke cijfers zelf in het jaarverslag.</div>';
     return s + '</main></body></html>';
   }
 

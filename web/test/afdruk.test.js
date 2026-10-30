@@ -5,6 +5,8 @@ const Gate = require('../js/gate.js');
 const Naic = require('../js/naic.js');
 const Signaal = require('../js/signaal.js');
 const Afdruk = require('../js/afdruk.js');
+const Management = require('../js/management.js');
+const Kortetermijn = require('../js/kortetermijn.js');
 
 const VANDAAG = '2026-10-27';
 function rec(opties) {
@@ -92,4 +94,21 @@ test('Afdruk: uitkomst van het terugrekenen als het is meegegeven', function () 
   const terug = { periode: '2018–2025', datum: '28 oktober 2026', rijen: { kopen: { j1: -6.3, j3: 1.7, n: 113 } } };
   assert.match(maak(rec(), { terug }).html, /Teruggerekend over 2018–2025[^<]*−6,3%[^<]*113 gevallen/);
   assert.ok(!/Teruggerekend/.test(maak(rec()).html));
+});
+
+test('Afdruk: managementfeiten bij stap 2, kortetermijnsignaal bij Koers en de maker in de voet', function () {
+  const r = rec();
+  r.management = { ceo: { naam: 'Jane <b>Doe</b>', geboren: 1968 }, bezit_insiders_pct: 2.4, bestuurders: [{ naam: 'Jane Doe', functie: 'CEO' }],
+    governance: { totaal: 3, audit: 2, bestuur: 3, beloning: 7, aandeelhoudersrechten: 1, datum: '2025-10-01' }, datum: '2026-10-29' };
+  r.koers = Object.assign({}, r.koers, { macd: 1, macd_signaal: 0.5, mom6: 8 });
+  const mg = Management.feiten(r, r.gegevens.jaren);
+  const kt = Kortetermijn.kortetermijn(r.koers, true);
+  const html = maak(r, { management: mg, kortetermijn: kt, maker: 'Made by Frans Thijssen' }).html;
+  const stap2 = html.slice(html.indexOf('data-stap="2"'), html.indexOf('data-stap="3"'));
+  assert.match(stap2, /Managementfeiten[^<]*<br>– Topman of -vrouw \(CEO\): Jane &lt;b&gt;Doe&lt;\/b&gt; \(geboren 1968\)/);
+  assert.match(stap2, /Governance-risico[^<]*3 \/ 10/);
+  assert.match(stap2, /Topbestuurders: Jane Doe \(CEO\)/);
+  assert.match(html, /data-kortetermijn-afdruk>Kortetermijnsignaal: /);
+  assert.match(html, /class="voet">Aandeel Signaal · Made by Frans Thijssen/);
+  assert.ok(!/Managementfeiten/.test(maak(rec()).html));        // zonder feiten geen lege regel
 });

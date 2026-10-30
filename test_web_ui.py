@@ -46,6 +46,7 @@ class WebUi(unittest.TestCase):
                          ['portefeuille', 'volglijst', 'signalen', 'kansen', 'marktbeeld', 'zekerheid'])
         self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansrijk]').count(), 0)  # geen lange pagina onder de tegels
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
+        self.assertEqual(pg.inner_text('[data-maker]'), 'Made by Frans Thijssen')
         self.assertEqual(pg.locator('nav.menu a').all_inner_texts(), ['Start', 'Markt', 'Volglijst', 'Portefeuille', 'Achtergrond'])
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
