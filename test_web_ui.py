@@ -127,6 +127,7 @@ class WebUi(unittest.TestCase):
         opstarten zelf naar de opslag; schrijven we te vroeg, dan kan dat onze volglijst overschrijven. Daarom: wachten tot de
         app klaar is, schrijven, herladen en controleren dat de tabel er is (hoogstens drie keer)."""
         for _ in range(3):
+            pg.evaluate("location.hash='#/'")                                      # na een herlaadronde staat de app nog op de volglijst
             pg.wait_for_function("document.querySelector('[data-tegels]') !== null", timeout=10000)
             pg.evaluate("""(function(){var d=JSON.parse(localStorage.getItem('aandeelsignaal.v1')||'{}');
               d.volglijst=window.AANDEEL_DATA.aandelen.map(function(a){return {ticker:a.ticker};});d.introGezien=true;
@@ -975,10 +976,10 @@ class WebUi(unittest.TestCase):
         week = [[(vandaag - datetime.timedelta(weeks=30 - i)).isoformat(), 80 + i] for i in range(31)]
         c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
           set:function(x){x.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.koers={slot:100,datum:'%s',sma50:95,sma200:90,rsi14:55,macd:1,macd_signaal:0.5,mom6:10,kruis_dagen:30,
-            reeks:[['2026-10-01',98],['2026-10-02',100]],week:%s,week200:%s,relatief:{index:'VS',naam:'S&P 500',datum:'%s',m3:2.5,m6:4,m12:6},risico:{onder_top:-8.2,top_datum:'2026-07-01',max_daling:-31.5,daling_van:'2022-01-03',daling_tot:'2022-10-12',jaren:5,beweeglijk:27.4,beta:1.21}};
+            reeks:[['2026-10-01',98],['2026-10-02',100]],week:%s,week200:%s,relatief:{index:'VS',naam:'S&P 500',datum:'%s',m3:2.5,m6:4,m12:6},risico:{onder_top:-8.2,top_datum:'2026-07-01',max_daling:-31.5,daling_van:'2022-01-03',daling_tot:'2022-10-12',jaren:5,beweeglijk:27.4,beta:1.21}};a.verwachting={datum:'%s',bijstelling:{dit_jaar:{d30:1.2,d90:4.1,omhoog:6,omlaag:1},volgend_jaar:{d90:3.0}},verrassingen:[{datum:'2026-10-14',pct:7.5},{datum:'2026-07-13',pct:4.0}],volgende_cijfers:'%s'};
             a.gegevens.jaren.forEach(function(j){if(j.comparable_eps>0){j.koers_hoog=j.comparable_eps*25;j.koers_laag=j.comparable_eps*15;}});}});v=x;}});
           try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[{id:'1',ticker:'AAPL',aantal:2,koers:90,valuta:'USD',datum:'2025-01-01'}]}));}catch(e){}})();"""
-          % (vandaag.isoformat(), json.dumps(week), json.dumps([None] * 10 + [85] * 21), vandaag.isoformat()))
+          % (vandaag.isoformat(), json.dumps(week), json.dumps([None] * 10 + [85] * 21), vandaag.isoformat(), vandaag.isoformat(), (vandaag + datetime.timedelta(days=12)).isoformat()))
         pg = c.new_page(); fouten = []
         pg.on('pageerror', lambda e: fouten.append(str(e)))
         pg.goto(INDEX + '#/a/AAPL/oordeel'); pg.wait_for_timeout(300)
@@ -986,6 +987,8 @@ class WebUi(unittest.TestCase):
         if oordeel == 'Kopen':
             self.assertEqual(pg.locator('[data-koopmoment="gunstig"]').count(), 1)          # NAIC Kopen én een stijgende trend
         self.assertIn('sterker dan de S&P 500', pg.inner_text('[data-snel-koers]'))
+        self.assertIn('Positief', pg.inner_text('[data-snel-koers]'))
+        self.assertIn('kwartaalcijfers over 12 dagen', pg.inner_text('[data-snel-kort]').lower())
         pg.goto(INDEX + '#/a/AAPL/koers'); pg.wait_for_timeout(300)
         self.assertEqual(pg.locator('[data-koersgrafiek="2j"]').count(), 1)                  # standaard 2 jaar
         self.assertEqual(pg.locator('[data-koersgrafiek] .gem').count(), 1)                  # met het 200-daags gemiddelde
@@ -995,6 +998,12 @@ class WebUi(unittest.TestCase):
         self.assertIn('+6,0%', pg.inner_text('[data-relatief-kaart]'))
         self.assertIn('beter dan de index', pg.inner_text('[data-relatief-kaart]'))
         self.assertEqual(pg.locator('[data-kt-terug]').count(), 1)                           # onderbouwing uit het terugrekenen
+        self.assertEqual(pg.locator('[data-laag]').all_inner_texts()[0].split('\n')[0].split(' ')[0], 'Middellange')    # drie lagen
+        self.assertEqual([x.get_attribute('data-laag') for x in pg.locator('[data-laag]').all()], ['middellang', 'kort', 'risico'])
+        self.assertEqual(pg.locator('[data-middellang="positief"]').count(), 1)              # trend, sterkte, bijstelling en verrassing: alle vier +1
+        self.assertIn('over 12 dagen', pg.inner_text('[data-kort-kaart]'))
+        self.assertIn('Verwachte bandbreedte komende maand', pg.inner_text('[data-kort-kaart]'))
+        self.assertIn('6 omhoog, 1 omlaag', pg.inner_text('[data-verwachting]'))
         rk = pg.inner_text('[data-risico-kaart]')
         self.assertIn('−31,5%', rk); self.assertIn('gemiddeld', rk); self.assertIn('beweegt sterker dan de markt', rk)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))

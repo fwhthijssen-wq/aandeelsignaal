@@ -381,3 +381,10 @@ section[data-deel] { border-top: 1px solid var(--line); padding-top: 14px; }
 
 .kansen-blok h3 { margin-top: 6px; }
 .kansen-blok > div[data-kansen] { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+
+.laag-kop { margin-top: 22px; padding-top: 10px; border-top: 2px solid var(--line); }
+.termijn-delen { list-style: none; padding: 0; margin: 8px 0; }
+.termijn-delen li { display: flex; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line-soft); }
+.termijn-delen li:first-child { border-top: 0; }
+.termijn-delen .teken { width: 1.4em; font-weight: 700; text-align: center; flex: none; }
+.termijn-delen li[data-punt="1"] .teken { color: var(--ok-ink); } .termijn-delen li[data-punt="-1"] .teken { color: var(--bad-ink); }

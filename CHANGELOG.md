@@ -2,6 +2,17 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.7 (2026.10.31)
+**Analyse per termijn.** NAIC blijft de lange termijn (3–5 jaar); daarnaast nu de middellange en de korte termijn.
+- **Tabblad Koers in drie lagen:**
+  - *Middellange termijn (3–12 maanden):* één oordeel (positief, neutraal of negatief) uit vier onderdelen: trend, relatieve sterkte, **bijstellingen van de winstverwachting door analisten** (nieuw) en **kwartaalcijfers tegenover de verwachting** (nieuw). Daaronder het trendsignaal (voorheen “kortetermijnsignaal”; het terugrekenen liet zien dat het op 3–12 maanden werkt), de relatieve sterkte en de cijfers van de analisten.
+  - *Korte termijn (dagen tot weken):* alleen feiten, geen signaal: de datum van de volgende kwartaalcijfers, de verwachte bandbreedte voor de komende maand, RSI en de afstand tot de top.
+  - *Risico:* zoals in 1.6.1.
+- Op het tabblad Oordeel staan onder het NAIC-oordeel twee regels: middellange termijn en korte termijn.
+- Ook in het fondsrapport.
+- Trend en relatieve sterkte zijn teruggerekend; voor de winstverwachtingen en kwartaalcijfers steunen we op onderzoek, want Yahoo bewaart die geschiedenis niet. Dat staat er ook bij.
+- Technisch: de nachtelijke update haalt per fonds de bijstellingen, de verrassingen en de cijferdatum op (verwachting.py).
+
 ## 1.6.2 (2026.10.31)
 - Bij Relatieve sterkte en bij Risico staat nu wat het terugrekenen (2016–2026) liet zien: het sterkste vijfde deel over 12 maanden deed het het jaar erna gemiddeld 8,7 procentpunt beter dan het zwakste vijfde deel; de afstand tot de top en de grootste daling zeiden niets over het rendement daarna.
 

@@ -1298,7 +1298,7 @@ def extra_namen(payload, max_per_veld=10):
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
          valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None,
-         insiders_ophalen=None):
+         insiders_ophalen=None, verwachting_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -1323,6 +1323,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         # Ook de insidertransacties alleen in een echte run.
         from management import yahoo_insiders
         insiders_ophalen = yahoo_insiders if fetch_prijzen is None else (lambda t: [])
+    if verwachting_ophalen is None:
+        # Verwachtingen van analisten (bijstellingen, verrassingen, cijferdatum): alleen in een echte run.
+        from verwachting import yahoo_verwachting
+        verwachting_ophalen = yahoo_verwachting if fetch_prijzen is None else (lambda t: None)
     if aangeleverd is None:
         aangeleverd = _aangeleverd() if fetch_prijzen is None else {}     # tests: alleen als ze het zelf meegeven
     if tweede_bron is None:
@@ -1535,8 +1539,15 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                 management = {**(management or {'datum': vandaag, 'bron': 'Yahoo Finance'}), 'insiders': ins}
         except Exception:
             pass
+        verw = None
+        try:
+            verw = verwachting_ophalen(ticker)
+        except Exception:
+            pass
         pauze()
         rec = maak_record(meta, koers=koers, gegevens=gegevens)
+        if verw:
+            rec['verwachting'] = verw
         if analisten:
             rec['analisten'] = analisten
         if management:

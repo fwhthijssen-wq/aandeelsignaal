@@ -111,6 +111,12 @@ jobs:
               L = d['aandelen']; K = [(a['ticker'], a.get('koers') or {}) for a in L]
               wk = [t for t, k in K if k.get('week')]; rel = [t for t, k in K if k.get('relatief')]
               print('weekreeks', len(wk), 'van', len(L), '| relatieve sterkte', len(rel)); print('zonder relatief:', ' '.join(t for t, k in K if k and not k.get('relatief')))
+              V = [(a['ticker'], a.get('verwachting') or {}) for a in L]
+              print('verwachting', sum(1 for t, v in V if v), '| bijstelling', sum(1 for t, v in V if v.get('bijstelling')), '| verrassingen', sum(1 for t, v in V if v.get('verrassingen')), '| volgende cijfers', sum(1 for t, v in V if v.get('volgende_cijfers')), '| risico', sum(1 for t, k in K if k.get('risico')))
+              print('zonder verwachting:', ' '.join(t for t, v in V if not v))
+              for t, v in V:
+                  if t in ('ASML.AS', 'AAPL', 'SAP.DE', 'SHEL.L', 'MC.PA'):
+                      print(' ', t, 'verwachting', v)
               for t, k in K:
                   if t in ('ASML.AS', 'AAPL', 'SAP.DE', 'SHEL.L', 'MC.PA'):
                       print(' ', t, 'weken', len(k.get('week') or []), 'laatste', (k.get('week') or [None])[-1], 'w200', (k.get('week200') or [None])[-1], 'relatief', k.get('relatief'))

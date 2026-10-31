@@ -7,6 +7,7 @@ const Signaal = require('../js/signaal.js');
 const Afdruk = require('../js/afdruk.js');
 const Management = require('../js/management.js');
 const Kortetermijn = require('../js/kortetermijn.js');
+const Termijn = require('../js/termijn.js');
 
 const VANDAAG = '2026-10-27';
 function rec(opties) {
@@ -108,7 +109,7 @@ test('Afdruk: managementfeiten bij stap 2, kortetermijnsignaal bij Koers en de m
   assert.match(stap2, /Managementfeiten[^<]*<br>– Topman of -vrouw \(CEO\): Jane &lt;b&gt;Doe&lt;\/b&gt; \(geboren 1968\)/);
   assert.match(stap2, /Governance-risico[^<]*3 \/ 10/);
   assert.match(stap2, /Topbestuurders: Jane Doe \(CEO\)/);
-  assert.match(html, /data-kortetermijn-afdruk>Kortetermijnsignaal: /);
+  assert.match(html, /data-kortetermijn-afdruk>Trendsignaal: /);
   assert.match(html, /class="voet">Aandeel Signaal · Made by Frans Thijssen/);
   assert.ok(!/Managementfeiten/.test(maak(rec()).html));        // zonder feiten geen lege regel
 });
@@ -123,4 +124,15 @@ test('Afdruk: koopmoment bij NAIC Kopen en relatieve sterkte bij Koers', functio
   else assert.ok(!/data-koopmoment-afdruk/.test(html));
   assert.match(html, /data-risico-afdruk><th>Risico<\/th><td>−5,0% onder de top van 1 jaar · grootste daling 5 jaar −28,4%/);
   assert.match(html, /T\.o\.v\. AEX<\/th><td>3 mnd \+2,1% · 6 mnd −1,4% · 12 mnd \+6,0%/);
+});
+
+test('Afdruk: middellange en korte termijn bij Koers', function () {
+  const r = rec();
+  r.koers = Object.assign({}, r.koers, { macd: 1, macd_signaal: 0.5, mom6: 8, relatief: { naam: 'AEX', m12: 9 }, risico: { beweeglijk: 24 } });
+  r.verwachting = { datum: VANDAAG, bijstelling: { dit_jaar: { d90: 4 } }, verrassingen: [{ datum: '2026-10-01', pct: 6 }], volgende_cijfers: '2027-01-27' };
+  const ml = Termijn.middellang(r, Kortetermijn.kortetermijn(r.koers, true), VANDAAG), kt = Termijn.kort(r, VANDAAG, true);
+  const html = maak(r, { middellang: ml, kort: kt }).html;
+  assert.match(html, /data-middellang-afdruk>Middellange termijn \(3–12 maanden\): /);
+  assert.match(html, /Winstverwachting analisten:<\/b> Verwachte winst per aandeel verhoogd/);
+  assert.match(html, /data-kort-afdruk>Korte termijn<\/h3><ul class="punt"><li>Volgende kwartaalcijfers: 27 januari 2027/);
 });

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.6.2 (2026.10.31)';
+  var APP_VERSIE = '1.7 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -115,8 +115,14 @@
     var s = '<div data-signaal>' + (b.naic ? naicKaart(rec, b) : '<div class="kaart-plat" data-naic-kaart><h2>Oordeel</h2><b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b><p class="zacht">Er zijn te weinig gegevens.</p></div>');
     // Timing en zekerheid: één regel elk, met de weg naar de details
     var mt = fr.fresh ? momentVan(rec) : null, rt = fr.fresh ? relatiefTekst(k.relatief) : '';
-    var tm = fr.fresh ? (mt ? h(MOMENT_NAAM[mt.status]) + ' (' + mt.ja + ' van 5 checks). ' : '') + 'Koers ' + getal(k.slot, 2) + ' ' + h(rec.valuta) + (rt ? ', ' + h(rt) : '') + '.' : h(fr.reason);
-    s += '<div class="kaart-plat snel detail" data-snel><a class="snel-rij" href="#/a/' + T + '/koers" data-snel-koers><span><b>Timing</b><br><span class="zacht">' + tm + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
+    var ml = Termijn.middellang(rec, mt, vandaag()), kt = Termijn.kort(rec, vandaag(), fr.fresh);
+    var mlTekst = (ml.status === 'onbekend' ? 'Te weinig gegevens' : ml.naam + ' (' + (ml.score > 0 ? '+' : '') + ml.score + ' uit ' + ml.bekend + ' onderdelen)') + (mt ? ' · ' + h(MOMENT_NAAM[mt.status]) : '') + (rt ? ' · ' + h(rt) : '') + '.';
+    var ktDelen = [];
+    if (kt.cijfers) ktDelen.push('kwartaalcijfers ' + (kt.cijfers.dagen === 0 ? 'vandaag' : kt.cijfers.dagen === 1 ? 'morgen' : 'over ' + kt.cijfers.dagen + ' dagen') + ' (' + h(datumNl(kt.cijfers.datum)) + ')');
+    if (kt.band) ktDelen.push('verwachte bandbreedte komende maand ±' + getal(kt.band.pct, 1) + '%');
+    var ktTekst = ktDelen.length ? ktDelen.join(' · ').replace(/^./, function (c) { return c.toUpperCase(); }) + '.' : (fr.fresh ? 'Geen gegevens.' : h(fr.reason));
+    s += '<div class="kaart-plat snel detail" data-snel><a class="snel-rij" href="#/a/' + T + '/koers" data-snel-koers data-middellang-rij="' + ml.status + '"><span><b>Middellange termijn</b> <span class="zacht">3–12 maanden</span><br><span class="zacht">' + (fr.fresh ? mlTekst : h(fr.reason)) + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
+      '<a class="snel-rij" href="#/a/' + T + '/koers" data-snel-kort><span><b>Korte termijn</b> <span class="zacht">dagen tot weken</span><br><span class="zacht">' + ktTekst + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a class="snel-rij" href="#/a/' + T + '/cijfers" data-snel-zeker><span><b>Zekerheid</b> ' + chip(r.bevestigd, r.niveau, r.tweeBronnen) + '<br><span class="zacht">' + (r.bevestigd ? '10 jaar winst per aandeel onafhankelijk nagerekend.' : h(r.redenen[0] || '')) + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a class="snel-rij" href="#/a/' + T + '/gezond" data-snel-gezond><span><b>Gezondheidscheck</b> <span class="zacht">' + (b.oordeel ? GEZOND[b.oordeel] : 'te weinig metingen') + ' · ' + telTekst(b) + '</span><br>' + stippen(b, true) + '</span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a></div>';
     s += '<div class="detail">' + analistenBlok(rec) + '</div>' + bedrijfBlok(rec);
@@ -304,6 +310,42 @@
     if (bw) s += kpi(getal(x.beweeglijk, 0) + '%', 'Beweeglijkheid per jaar: ' + bw);
     if (bt) s += kpi(getal(x.beta, 2), 'Beta t.o.v. de ' + h(rec.koers.relatief ? rec.koers.relatief.naam : 'index') + ': ' + bt);
     return s + '</div><p class="zacht">De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag. Teruggerekend 2016–2026 deden beweeglijke aandelen het beter, maar dat komt deels doordat alleen de fondsen van nu zijn meegeteld (beweeglijke fondsen die hard onderuit gingen, vielen uit de index) en past bij een periode waarin groeiaandelen wonnen. De afstand tot de top en de grootste daling zeiden niets over het rendement daarna. Informatie, telt niet mee in het oordeel.</p></div>';
+  }
+  /* Middellange termijn: één oordeel uit vier onderdelen (Termijn.middellang). */
+  function middellangHtml(rec, fr) {
+    if (!fr.fresh) return '';
+    var m = Termijn.middellang(rec, momentVan(rec), vandaag());
+    var KL = { positief: 'positief', neutraal: 'neutraal', negatief: 'vermijden', onbekend: 'neutraal' };
+    var teken = function (p) { return p === 1 ? '✓' : p === -1 ? '✗' : p === 0 ? '=' : '–'; };
+    return '<div class="kaart-plat" data-middellang="' + m.status + '"><div class="rij-kop"><h2>Oordeel middellange termijn</h2><span class="chip" data-oordeel="' + KL[m.status] + '">' + h(m.naam) + '</span></div>' +
+      '<ul class="termijn-delen">' + m.delen.map(function (d) { return '<li data-deel-ml="' + d.id + '" data-punt="' + d.punt + '"><span class="teken" aria-hidden="true">' + teken(d.punt) + '</span><span><b>' + h(d.naam) + '</b><br><span class="zacht">' + h(d.tekst) + '</span></span></li>'; }).join('') + '</ul>' +
+      '<p>' + (m.status === 'onbekend' ? 'Minder dan 3 onderdelen bekend, dus geen oordeel.' : 'Samen ' + (m.score > 0 ? '+' : '') + m.score + ' uit ' + m.bekend + ' onderdelen. Positief vanaf +2, negatief vanaf −2.') + '</p>' +
+      '<p class="zacht">Trend en relatieve sterkte zijn teruggerekend (2016–2026) en werkten op 3 tot 12 maanden. Voor de winstverwachtingen van analisten en de kwartaalcijfers steunen we op onderzoek: Yahoo bewaart die geschiedenis niet, dus terugrekenen kan niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
+  }
+  /* Winstverwachtingen van analisten en kwartaalcijfers (Yahoo Finance), ter informatie. */
+  function verwachtingHtml(rec) {
+    var v = rec.verwachting; if (!v) return '';
+    var bij = v.bijstelling || {}, rij = function (naam, x) {
+      if (!x) return '';
+      var p = function (w) { return typeof w === 'number' ? '<b style="color:' + kleur(w) + '">' + pct(w) + '</b>' : '–'; };
+      return '<tr><th scope="row">' + naam + '</th><td>' + p(x.d30) + '</td><td>' + p(x.d90) + '</td><td>' + (typeof x.omhoog === 'number' ? x.omhoog + ' omhoog, ' + x.omlaag + ' omlaag' : '–') + '</td></tr>';
+    };
+    var s = '<div class="kaart-plat" data-verwachting><h2>Analisten en kwartaalcijfers</h2>';
+    if (bij.dit_jaar || bij.volgend_jaar) s += '<h3>Verwachte winst per aandeel: bijgesteld</h3><div class="schuif"><table class="vgl"><thead><tr><th></th><th>30 dagen</th><th>90 dagen</th><th>Analisten, 30 dagen</th></tr></thead><tbody>' + rij('Dit boekjaar', bij.dit_jaar) + rij('Volgend boekjaar', bij.volgend_jaar) + '</tbody></table></div>' +
+      '<p class="zacht">Hoeveel de gemiddelde verwachting van analisten veranderde. Verhogingen worden vaak gevolgd door een betere koers in de maanden erna (onderzoek); het advies zelf (kopen/houden) zegt minder.</p>';
+    if (v.verrassingen && v.verrassingen.length) s += '<h3>Kwartaalcijfers tegenover de verwachting</h3><ul class="punten">' + v.verrassingen.map(function (x) { return '<li>' + h(datumNl(x.datum)) + ': <b style="color:' + kleur(x.pct) + '">' + pct(x.pct) + '</b> ' + (x.pct >= 0 ? 'boven' : 'onder') + ' de verwachting</li>'; }).join('') + '</ul>' +
+      '<p class="zacht">Na cijfers die duidelijk beter zijn dan verwacht, loopt de koers vaak nog weken door (onderzoek).</p>';
+    return s + '<p class="zacht">Bron: Yahoo Finance, ' + h(datumNl(v.datum)) + '.</p></div>';
+  }
+  /* Korte termijn: alleen feiten, geen signaal. */
+  function kortHtml(rec, fr) {
+    var k = Termijn.kort(rec, vandaag(), fr.fresh), d = [];
+    if (k.cijfers) d.push('<li data-kort="cijfers"><b>Volgende kwartaalcijfers:</b> ' + h(datumNl(k.cijfers.datum)) + ' (' + (k.cijfers.dagen === 0 ? 'vandaag' : k.cijfers.dagen === 1 ? 'morgen' : 'over ' + k.cijfers.dagen + ' dagen') + '). Rond die dag kan de koers flink bewegen.</li>');
+    if (k.band) d.push('<li data-kort="band"><b>Verwachte bandbreedte komende maand:</b> ' + getal(k.band.laag, 2) + ' – ' + getal(k.band.hoog, 2) + ' ' + h(rec.valuta) + ' (±' + getal(k.band.pct, 1) + '%). Met ongeveer 2 op 3 kans ligt de koers over een maand hiertussen, als het aandeel net zo beweeglijk blijft als het afgelopen jaar.</li>');
+    if (typeof k.rsi === 'number') d.push('<li data-kort="rsi"><b>RSI ' + getal(k.rsi, 0) + ':</b> ' + (k.rsi >= 70 ? 'de koers is de laatste weken hard gestegen (“overkocht”). In het terugrekenen liepen zulke koersen vaak juist door; het is geen verkoopsignaal.' : k.rsi <= 30 ? 'de koers is de laatste weken hard gedaald (“oversold”). Dat is op zich geen koopsignaal.' : 'geen uitschieter.') + '</li>');
+    if (typeof k.onderTop === 'number') d.push('<li data-kort="top"><b>' + (k.onderTop >= -1 ? 'Vlak bij' : getal(-k.onderTop, 1) + '% onder') + ' het hoogste punt van het afgelopen jaar.</b></li>');
+    if (!d.length) return '';
+    return '<div class="kaart-plat" data-kort-kaart><h2>Feiten voor de korte termijn</h2><ul class="punten">' + d.join('') + '</ul><p class="zacht">Geen koop- of verkoopsignaal: in het terugrekenen voorspelde geen enkele maatstaf het rendement over 1 maand. Wie speculeert, doet dat op eigen risico; deze feiten helpen alleen om het moment en het risico in te schatten.</p></div>';
   }
   function naicKaart(rec, b) {
     var n = b.naic;
@@ -1000,8 +1042,11 @@
       s += fr.fresh ? koersGrafiekHtml(rec, signaalVoor(rec)) +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
-      s += kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + risicoHtml(rec, fr) + timingHtml(rec, fr);
+      s += '<h2 class="tussenkop laag-kop" data-laag="middellang">Middellange termijn <span class="zacht">3–12 maanden</span></h2>' + middellangHtml(rec, fr) + kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + verwachtingHtml(rec);
+      s += '<h2 class="tussenkop laag-kop" data-laag="kort">Korte termijn <span class="zacht">dagen tot weken</span></h2>' + kortHtml(rec, fr) + timingHtml(rec, fr);
+      s += '<h2 class="tussenkop laag-kop" data-laag="risico">Risico</h2>' + risicoHtml(rec, fr);
       if (fr.fresh && rec.koers) s += bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div');
+      s += '<p class="zacht">De lange termijn (3–5 jaar) is het NAIC-oordeel op het tabblad Oordeel en NAIC.</p>';
     } else if (tab === 'naic') {
       s += waardeHtml(rec, g, jr, r);
     } else if (tab === 'gezond') {
@@ -1277,7 +1322,7 @@
       var teken = c.ok === true ? '✓' : c.ok === false ? '✗' : '–';
       return '<li data-check="' + c.id + '" data-ok="' + c.ok + '"><span aria-hidden="true" style="display:inline-block;width:1.2em;font-weight:700">' + teken + '</span>' + h(c.label) + ': <b>' + h(detail(c)) + '</b></li>';
     }).join('');
-    return '<div class="kaart-plat" data-kortetermijn="' + t.status + '"><div class="rij-kop"><h2>Kortetermijnsignaal</h2><span class="chip" data-oordeel="' + KLEUR[t.status] + '">' + h(t.label) + '</span></div>' +
+    return '<div class="kaart-plat" data-kortetermijn="' + t.status + '"><div class="rij-kop"><h2>Trendsignaal</h2><span class="chip" data-oordeel="' + KLEUR[t.status] + '">' + h(t.label) + '</span></div>' +
       '<ul style="list-style:none;padding-left:0">' + regels + '</ul>' +
       '<p><b>' + t.ja + ' van ' + t.totaal + ' checks</b>' + (t.status === 'onvoldoende' ? ' (' + (t.totaal - t.bekend) + ' niet te berekenen, dus geen uitkomst)' : '') + '. Gunstig moment bij 4 of 5, neutraal bij 2 of 3, afwachten bij 0 of 1.</p>' +
       '<p class="zacht" data-kt-terug>Teruggerekend over ' + TERUG_TA.periode + ' (elke maand, alle fondsen): aandelen met een gunstig moment deden het na 12 maanden gemiddeld ' + String(TERUG_TA.spread12).replace('.', ',') + ' procentpunt beter dan aandelen met afwachten, na 3 maanden ' + String(TERUG_TA.spread3).replace('.', ',') + '. Het werkt vooral door dalende trends te mijden. De drie trendchecks doen het werk; MACD voegt weinig toe en “niet overkocht” werkte eerder averechts. Geen garantie.</p>' +
@@ -1406,7 +1451,9 @@
     var html;
     try { html = Afdruk.pagina(rec, signaalVoor(rec, true), { Naic: Naic, Gate: Gate, vandaag: vandaag(), gemaakt: DATA.gemaakt, uitleg: UITLEG.termen, werkbalk: true, terug: TERUG, maker: MAKER,
       management: Management.feiten(rec, jaarLijst(rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null)),
-      kortetermijn: rec.koers ? Kortetermijn.kortetermijn(rec.koers, Gate.priceFreshness(rec.koers.datum, vandaag()).fresh) : null }); }
+      kortetermijn: rec.koers ? Kortetermijn.kortetermijn(rec.koers, Gate.priceFreshness(rec.koers.datum, vandaag()).fresh) : null,
+      middellang: rec.koers && Gate.priceFreshness(rec.koers.datum, vandaag()).fresh ? Termijn.middellang(rec, momentVan(rec), vandaag()) : null,
+      kort: Termijn.kort(rec, vandaag(), !!(rec.koers && Gate.priceFreshness(rec.koers.datum, vandaag()).fresh)) }); }
     catch (e) { toast('Afdrukken lukt niet voor dit aandeel'); return; }
     var w = null;
     try { w = window.open('', '_blank'); } catch (e2) { w = null; }
