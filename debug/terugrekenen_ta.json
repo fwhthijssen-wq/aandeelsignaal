@@ -299,6 +299,30 @@
    "gemiddeld": 5.65,
    "t": 3.12,
    "positief": 70
+  },
+  "gunstig_en_sterk_m1": {
+   "n": 120,
+   "gemiddeld": 0.26,
+   "t": 1.08,
+   "positief": 63
+  },
+  "gunstig_en_sterk_m3": {
+   "n": 118,
+   "gemiddeld": 0.99,
+   "t": 1.85,
+   "positief": 64
+  },
+  "gunstig_en_sterk_m6": {
+   "n": 115,
+   "gemiddeld": 2.4,
+   "t": 2.16,
+   "positief": 71
+  },
+  "gunstig_en_sterk_m12": {
+   "n": 109,
+   "gemiddeld": 4.45,
+   "t": 2.25,
+   "positief": 70
   }
  },
  "checks": {
@@ -674,6 +698,442 @@
     "t": 0.04
    },
    "verschil": -0.38
+  }
+ },
+ "kwintielen": {
+  "rel_m3": {
+   "m1": {
+    "groepen": [
+     -0.06,
+     -0.07,
+     -0.02,
+     -0.02,
+     0.16
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": 0.23,
+     "t": 0.68,
+     "positief": 59
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.49,
+     -0.26,
+     -0.03,
+     0.02,
+     0.75
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 1.24,
+     "t": 1.88,
+     "positief": 58
+    }
+   },
+   "m6": {
+    "groepen": [
+     -1.2,
+     -0.62,
+     -0.06,
+     0.22,
+     1.66
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 2.84,
+     "t": 2.43,
+     "positief": 65
+    }
+   },
+   "m12": {
+    "groepen": [
+     -2.36,
+     -1.66,
+     -0.3,
+     0.02,
+     4.35
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 6.66,
+     "t": 3.09,
+     "positief": 71
+    }
+   }
+  },
+  "rel_m6": {
+   "m1": {
+    "groepen": [
+     -0.17,
+     -0.05,
+     -0.05,
+     0.07,
+     0.2
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": 0.37,
+     "t": 1.08,
+     "positief": 61
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.73,
+     -0.45,
+     -0.21,
+     0.35,
+     1.03
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 1.75,
+     "t": 2.32,
+     "positief": 69
+    }
+   },
+   "m6": {
+    "groepen": [
+     -1.74,
+     -1.04,
+     -0.5,
+     0.82,
+     2.48
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 4.19,
+     "t": 2.55,
+     "positief": 72
+    }
+   },
+   "m12": {
+    "groepen": [
+     -2.61,
+     -2.49,
+     -1.44,
+     1.08,
+     5.52
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 8.07,
+     "t": 2.57,
+     "positief": 69
+    }
+   }
+  },
+  "rel_m12": {
+   "m1": {
+    "groepen": [
+     -0.18,
+     -0.12,
+     -0.12,
+     0.07,
+     0.35
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": 0.52,
+     "t": 1.2,
+     "positief": 61
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.68,
+     -0.57,
+     -0.27,
+     0.1,
+     1.42
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 2.09,
+     "t": 2.01,
+     "positief": 71
+    }
+   },
+   "m6": {
+    "groepen": [
+     -1.48,
+     -1.38,
+     -0.69,
+     0.05,
+     3.51
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 4.96,
+     "t": 2.31,
+     "positief": 75
+    }
+   },
+   "m12": {
+    "groepen": [
+     -1.83,
+     -2.65,
+     -1.58,
+     -0.77,
+     6.89
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 8.67,
+     "t": 2.37,
+     "positief": 72
+    }
+   }
+  },
+  "onder_top": {
+   "m1": {
+    "groepen": [
+     0.08,
+     -0.18,
+     -0.06,
+     0.17,
+     -0.01
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": -0.11,
+     "t": -0.25,
+     "positief": 52
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.16,
+     -0.42,
+     0.19,
+     0.37,
+     0.02
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 0.15,
+     "t": 0.15,
+     "positief": 51
+    }
+   },
+   "m6": {
+    "groepen": [
+     -0.52,
+     -0.66,
+     0.38,
+     0.55,
+     0.24
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 0.71,
+     "t": 0.39,
+     "positief": 60
+    }
+   },
+   "m12": {
+    "groepen": [
+     -0.12,
+     -1.58,
+     -0.09,
+     0.91,
+     0.89
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 0.94,
+     "t": 0.34,
+     "positief": 60
+    }
+   }
+  },
+  "beweeglijk": {
+   "m1": {
+    "groepen": [
+     -0.23,
+     -0.25,
+     -0.16,
+     0.08,
+     0.56
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": 0.79,
+     "t": 1.72,
+     "positief": 55
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.77,
+     -0.78,
+     -0.45,
+     0.16,
+     1.85
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 2.61,
+     "t": 2.59,
+     "positief": 61
+    }
+   },
+   "m6": {
+    "groepen": [
+     -1.76,
+     -1.52,
+     -0.85,
+     0.21,
+     3.96
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 5.68,
+     "t": 2.9,
+     "positief": 68
+    }
+   },
+   "m12": {
+    "groepen": [
+     -4.11,
+     -2.89,
+     -2.27,
+     0.86,
+     8.49
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 12.45,
+     "t": 3.03,
+     "positief": 78
+    }
+   }
+  },
+  "max_daling": {
+   "m1": {
+    "groepen": [
+     0.16,
+     -0.09,
+     0.04,
+     -0.07,
+     -0.06
+    ],
+    "hoogMinLaag": {
+     "n": 108,
+     "gemiddeld": -0.2,
+     "t": -0.4,
+     "positief": 43
+    }
+   },
+   "m3": {
+    "groepen": [
+     0.65,
+     -0.24,
+     0.1,
+     -0.23,
+     -0.31
+    ],
+    "hoogMinLaag": {
+     "n": 106,
+     "gemiddeld": -0.9,
+     "t": -0.75,
+     "positief": 45
+    }
+   },
+   "m6": {
+    "groepen": [
+     1.52,
+     -0.38,
+     0.14,
+     -0.55,
+     -0.72
+    ],
+    "hoogMinLaag": {
+     "n": 103,
+     "gemiddeld": -2.09,
+     "t": -0.85,
+     "positief": 43
+    }
+   },
+   "m12": {
+    "groepen": [
+     4.74,
+     -0.36,
+     -0.23,
+     -1.58,
+     -2.41
+    ],
+    "hoogMinLaag": {
+     "n": 97,
+     "gemiddeld": -6.8,
+     "t": -1.26,
+     "positief": 40
+    }
+   }
+  },
+  "beta": {
+   "m1": {
+    "groepen": [
+     -0.19,
+     -0.16,
+     -0.04,
+     -0.01,
+     0.39
+    ],
+    "hoogMinLaag": {
+     "n": 120,
+     "gemiddeld": 0.57,
+     "t": 1.14,
+     "positief": 57
+    }
+   },
+   "m3": {
+    "groepen": [
+     -0.6,
+     -0.53,
+     -0.23,
+     0.17,
+     1.2
+    ],
+    "hoogMinLaag": {
+     "n": 118,
+     "gemiddeld": 1.75,
+     "t": 1.58,
+     "positief": 56
+    }
+   },
+   "m6": {
+    "groepen": [
+     -1.23,
+     -1.07,
+     -0.58,
+     0.38,
+     2.5
+    ],
+    "hoogMinLaag": {
+     "n": 115,
+     "gemiddeld": 3.61,
+     "t": 1.7,
+     "positief": 58
+    }
+   },
+   "m12": {
+    "groepen": [
+     -2.74,
+     -1.98,
+     -1.46,
+     0.69,
+     5.56
+    ],
+    "hoogMinLaag": {
+     "n": 109,
+     "gemiddeld": 8.06,
+     "t": 1.66,
+     "positief": 68
+    }
+   }
   }
  }
 }
