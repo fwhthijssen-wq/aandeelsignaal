@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.6.1 (2026.10.31)';
+  var APP_VERSIE = '1.6.2 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -289,7 +289,7 @@
     var cel = function (x, t) { return '<div class="kpi"><b style="color:' + (typeof x === 'number' ? kleur(x) : 'var(--mut)') + '">' + (typeof x === 'number' ? pct(x) : '–') + '</b><span>' + t + '</span></div>'; };
     var richting = typeof rel.m12 === 'number' && typeof rel.m3 === 'number' ? (rel.m12 > 0 && rel.m3 > 0 ? 'Het fonds doet het al een jaar beter dan de index, en de laatste maanden ook.' : rel.m12 < 0 && rel.m3 < 0 ? 'Het fonds blijft al een jaar achter bij de index, en de laatste maanden ook.' : rel.m12 > 0 ? 'Over een jaar sterker dan de index, maar de laatste maanden zwakker.' : 'Over een jaar zwakker dan de index, maar de laatste maanden sterker.') : '';
     return '<div class="kaart-plat" data-relatief-kaart><div class="rij-kop"><h2>Relatieve sterkte</h2><span class="zacht">t.o.v. de ' + h(rel.naam) + '</span></div><div class="kpis">' + cel(rel.m3, '3 maanden') + cel(rel.m6, '6 maanden') + cel(rel.m12, '12 maanden') + '</div>' +
-      '<p>' + h(richting) + '</p><p class="zacht">Hoeveel procent de koers meer (+) of minder (−) steeg dan de index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat volgens onderzoek vaak nog een tijd doen (momentum), maar zeker is dat niet. Informatie, telt niet mee in het oordeel.</p></div>';
+      '<p>' + h(richting) + '</p><p class="zacht">Hoeveel procent de koers meer (+) of minder (−) steeg dan de index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat vaak nog een tijd doen (momentum). Teruggerekend 2016–2026 (elke maand, alle fondsen): het sterkste vijfde deel over 12 maanden deed het het jaar erna gemiddeld 8,7 procentpunt beter dan het zwakste vijfde deel; in 72% van de maanden was het sterkste deel beter. Geen garantie. Informatie, telt niet mee in het oordeel.</p></div>';
   }
   /* Risico en terugval (tabblad Koers): informatie, los van het oordeel. */
   function risicoHtml(rec, fr) {
@@ -303,7 +303,7 @@
     if (typeof x.max_daling === 'number') s += kpi(pct(x.max_daling), 'Grootste daling in ' + (x.jaren || 5) + ' jaar' + (x.daling_van ? ' (' + h(datumNl(x.daling_van)) + ' tot ' + h(datumNl(x.daling_tot)) + ')' : ''));
     if (bw) s += kpi(getal(x.beweeglijk, 0) + '%', 'Beweeglijkheid per jaar: ' + bw);
     if (bt) s += kpi(getal(x.beta, 2), 'Beta t.o.v. de ' + h(rec.koers.relatief ? rec.koers.relatief.naam : 'index') + ': ' + bt);
-    return s + '</div><p class="zacht">De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag. Informatie, telt niet mee in het oordeel; het verleden is geen garantie.</p></div>';
+    return s + '</div><p class="zacht">De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag. Teruggerekend 2016–2026 deden beweeglijke aandelen het beter, maar dat komt deels doordat alleen de fondsen van nu zijn meegeteld (beweeglijke fondsen die hard onderuit gingen, vielen uit de index) en past bij een periode waarin groeiaandelen wonnen. De afstand tot de top en de grootste daling zeiden niets over het rendement daarna. Informatie, telt niet mee in het oordeel.</p></div>';
   }
   function naicKaart(rec, b) {
     var n = b.naic;

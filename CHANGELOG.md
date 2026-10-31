@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.6.2 (2026.10.31)
+- Bij Relatieve sterkte en bij Risico staat nu wat het terugrekenen (2016–2026) liet zien: het sterkste vijfde deel over 12 maanden deed het het jaar erna gemiddeld 8,7 procentpunt beter dan het zwakste vijfde deel; de afstand tot de top en de grootste daling zeiden niets over het rendement daarna.
+
 ## 1.6.1 (2026.10.31)
 - **Risico en terugval** op het tabblad Koers: hoeveel de koers onder het hoogste punt van het afgelopen jaar staat, de grootste daling in 5 jaar (met de periode), de beweeglijkheid per jaar en de beta tegen de index. Ook in het fondsrapport. Informatie, telt niet mee in het oordeel.
 - Technisch: het terugrekenen van het kortetermijnsignaal toetst nu ook de relatieve sterkte, de beweeglijkheid, de terugval en de beta.
