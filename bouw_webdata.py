@@ -1017,7 +1017,65 @@ def koers_uit_reeks(reeks):
         sma = round(sum(p[1] for p in punten[-50:]) / 50, 4)
     blok = {'datum': laatste[0], 'slot': laatste[1], 'sma50': sma, 'reeks': [list(p) for p in punten[-130:]]}
     blok.update(technisch(punten))
+    blok.update(weekreeks(punten))
     return blok
+
+
+def weekreeks(punten, weken=105):
+    """Voor de koersgrafiek van 2 jaar: per week de slotkoers van de laatste handelsdag, met het 200-daags gemiddelde op die
+    dag (None zolang er nog geen 200 dagen zijn). Klein gehouden: twee decimalen."""
+    per = {}
+    for i, (d, _) in enumerate(punten):
+        per[date.fromisoformat(d).isocalendar()[:2]] = i
+    som = [0.0]
+    for _, c in punten:
+        som.append(som[-1] + c)
+    week, w200 = [], []
+    for i in sorted(per.values())[-weken:]:
+        week.append([punten[i][0], round(punten[i][1], 2)])
+        w200.append(round((som[i + 1] - som[i - 199]) / 200, 2) if i >= 199 else None)
+    return {'week': week, 'week200': w200} if len(week) >= 8 else {}
+
+
+# Relatieve sterkte: het fonds tegen zijn index (koersen zonder dividend aan beide kanten). Index van het fonds: de eerste uit de
+# indexlijst; Amerikaanse fondsen tegen de S&P 500. Informatief, los van het oordeel.
+INDEX_YAHOO = {'AEX': '^AEX', 'AMX': '^AMX', 'BEL20': '^BFX', 'CAC40': '^FCHI', 'DAX': '^GDAXI', 'FTSE': '^FTSE', 'IBEX': '^IBEX', 'MIB': 'FTSEMIB.MI', 'VS': '^GSPC'}
+INDEX_KORT = {'AEX': 'AEX', 'AMX': 'AMX', 'BEL20': 'BEL 20', 'CAC40': 'CAC 40', 'DAX': 'DAX', 'FTSE': 'FTSE 100', 'IBEX': 'IBEX 35', 'MIB': 'FTSE MIB', 'VS': 'S&P 500'}
+
+
+def index_voor(ticker):
+    ix = [i for i in (INDICES.get(ticker) or []) if i in INDEX_YAHOO]
+    if ix:
+        return ix[0]
+    return 'VS' if '.' not in ticker else None
+
+
+def _op_of_voor(punten, dag, max_dagen=7):
+    """Slotkoers op de laatste handelsdag op of vóór dag (hoogstens max_dagen eerder), anders None."""
+    import bisect
+    i = bisect.bisect_right([p[0] for p in punten], dag) - 1
+    if i < 0 or (date.fromisoformat(dag) - date.fromisoformat(punten[i][0])).days > max_dagen:
+        return None
+    return punten[i][1]
+
+
+def relatieve_sterkte(punten, index_punten, code):
+    """Hoeveel procent het fonds het beter (+) of slechter (−) deed dan zijn index over 3, 6 en 12 maanden."""
+    if not punten or not index_punten or code not in INDEX_KORT:
+        return None
+    eind = punten[-1][0]
+    f1, i1 = punten[-1][1], _op_of_voor(index_punten, eind)
+    if not f1 or not i1:
+        return None
+    uit = {'index': code, 'naam': INDEX_KORT[code], 'datum': eind}
+    d = date.fromisoformat(eind)
+    for naam, mnd in (('m3', 3), ('m6', 6), ('m12', 12)):
+        j, m = d.year + (d.month - 1 - mnd) // 12, (d.month - 1 - mnd) % 12 + 1
+        start = date(j, m, min(d.day, 28)).isoformat()
+        f0, i0 = _op_of_voor(punten, start), _op_of_voor(index_punten, start)
+        if f0 and i0:
+            uit[naam] = round(((f1 / f0) / (i1 / i0) - 1) * 100, 1) + 0.0
+    return uit if any(k in uit for k in ('m3', 'm6', 'm12')) else None
 
 
 def technisch(punten):
@@ -1242,6 +1300,15 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     from yahoo_jaren import gegevens_uit_yahoo, vergelijk as yahoo_vergelijk, samenvoegen as yahoo_samenvoegen, haal_yahoo
     yahoo_ophalen = yahoo_ophalen if yahoo_ophalen is not None else haal_yahoo
     vergelijking, vergeleken_bedrijven = {}, 0
+    index_cache = {}
+
+    def index_reeks(code):
+        if code not in index_cache:
+            try:
+                index_cache[code] = fetch_prijzen(INDEX_YAHOO[code]) or []
+            except Exception:
+                index_cache[code] = []
+        return index_cache[code]
     for nr, meta in enumerate(CATALOGUS):
         ticker = meta[0]
         oud = vorige.get(ticker)
@@ -1391,6 +1458,12 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             if koers is not None:
                 from koershistorie import koersbereik
                 koers['bereik'] = koersbereik(punten)
+                code = index_voor(ticker)
+                if code:
+                    try:
+                        koers['relatief'] = relatieve_sterkte(punten, index_reeks(code), code)
+                    except Exception:
+                        koers['relatief'] = None
         analisten, info = None, None
         try:
             info = analisten_ophalen(ticker)

@@ -98,3 +98,38 @@ class KortetermijnTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class WeekreeksEnRelatieveSterkte(unittest.TestCase):
+    def _reeks(self, start='2024-10-01', eind='2026-10-30', groei=0.0005, begin=100.0):
+        import datetime
+        d, e, p, uit = datetime.date.fromisoformat(start), datetime.date.fromisoformat(eind), begin, []
+        while d < e:
+            if d.weekday() < 5:
+                p *= 1 + groei
+                uit.append((d.isoformat(), p))
+            d += datetime.timedelta(days=1)
+        return uit
+
+    def test_weekreeks_laatste_handelsdag_per_week_met_200_daags_gemiddelde(self):
+        from bouw_webdata import weekreeks, koers_uit_reeks
+        pts = self._reeks()
+        w = weekreeks(pts)
+        self.assertEqual(len(w['week']), 105)
+        self.assertEqual(len(w['week200']), 105)
+        self.assertEqual(w['week'][-1][0], pts[-1][0])                       # de laatste dag zit erin
+        self.assertIsNone(w['week200'][0])                                   # eerste weken: nog geen 200 dagen
+        self.assertAlmostEqual(w['week200'][-1], koers_uit_reeks(pts)['sma200'], places=1)
+        self.assertEqual(weekreeks(pts[:20]), {})                            # te kort: niets
+
+    def test_relatieve_sterkte_fonds_tegen_index(self):
+        from bouw_webdata import relatieve_sterkte, index_voor
+        fonds = self._reeks(groei=0.001)
+        index = self._reeks(groei=0.0005)
+        r = relatieve_sterkte(fonds, index, 'AEX')
+        self.assertEqual(r['naam'], 'AEX')
+        self.assertGreater(r['m12'], r['m6']); self.assertGreater(r['m6'], r['m3']); self.assertGreater(r['m3'], 0)
+        self.assertLess(relatieve_sterkte(index, fonds, 'AEX')['m12'], 0)
+        self.assertIsNone(relatieve_sterkte(fonds, [], 'AEX'))
+        self.assertIsNone(relatieve_sterkte(fonds, index[:-30], 'AEX'))     # index niet bij: geen vergelijking
+        self.assertEqual(index_voor('AAPL'), 'VS')

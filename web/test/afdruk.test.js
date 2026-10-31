@@ -112,3 +112,14 @@ test('Afdruk: managementfeiten bij stap 2, kortetermijnsignaal bij Koers en de m
   assert.match(html, /class="voet">Aandeel Signaal · Made by Frans Thijssen/);
   assert.ok(!/Managementfeiten/.test(maak(rec()).html));        // zonder feiten geen lege regel
 });
+
+test('Afdruk: koopmoment bij NAIC Kopen en relatieve sterkte bij Koers', function () {
+  const r = rec();
+  r.koers = Object.assign({}, r.koers, { macd: 1, macd_signaal: 0.5, mom6: 8, relatief: { index: 'AEX', naam: 'AEX', m3: 2.1, m6: -1.4, m12: 6 } });
+  const b = Signaal.beoordeel(r, { vandaag: VANDAAG, gate: Gate, naic: Naic, gevoeligheid: true });
+  const kt = Kortetermijn.kortetermijn(r.koers, true);
+  const html = maak(r, { kortetermijn: kt }).html;
+  if (b.naic && b.naic.oordeel === 'kopen') assert.match(html, new RegExp('data-koopmoment-afdruk="' + kt.status + '"'));
+  else assert.ok(!/data-koopmoment-afdruk/.test(html));
+  assert.match(html, /T\.o\.v\. AEX<\/th><td>3 mnd \+2,1% · 6 mnd −1,4% · 12 mnd \+6,0%/);
+});

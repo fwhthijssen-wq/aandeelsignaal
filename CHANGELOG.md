@@ -2,6 +2,15 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.6 (2026.10.31)
+**Technische analyse als aanvulling op NAIC: NAIC kiest wát, het kortetermijnsignaal wannéér.**
+- **Koopmoment bij NAIC Kopen.** Op het tabblad Oordeel staat bij NAIC Kopen of het moment gunstig is (koers in een stijgende trend), neutraal, of dat u beter kunt afwachten (koers nog in een dalende trend). Teruggerekend 2018–2025 deed NAIC Kopen het na 1 jaar −1,5% bij een gunstig moment tegen −15,2% bij afwachten, ten opzichte van het gemiddelde (kleine aantallen).
+- Beste kansen zet de fondsen met een gunstig koopmoment bovenaan; in de lijsten, bij uw volglijst en bij de signalen staat het koopmoment erbij. De tegel Kansen telt hoeveel koopkansen een gunstig moment hebben.
+- **Nieuwe koersgrafiek** op het tabblad Koers: 6 maanden of 2 jaar, met het gemiddelde van 200 dagen, de NAIC-koopzone als groene band en uw gemiddelde aankoopkoers.
+- **Relatieve sterkte**: hoeveel procent het fonds het beter of slechter deed dan zijn index (AEX, DAX, S&P 500, …) over 3, 6 en 12 maanden. Ook in de regel Timing op het tabblad Oordeel en in het fondsrapport.
+- Bij het kortetermijnsignaal staat nu de uitkomst van het terugrekenen (2016–2026: na 12 maanden gemiddeld 5,7 procentpunt verschil tussen gunstig en afwachten).
+- Technisch: de nachtelijke update bewaart per fonds de weekkoersen van 2 jaar met het 200-daags gemiddelde, en haalt de koersen van de indices op.
+
 ## 1.5.1 (2026.10.30)
 - "Made by Frans Thijssen" onderaan Start, bij Achtergrond, bij Instellingen en in de voet van het fondsrapport.
 - Fondsrapport (PDF): de **managementfeiten** staan nu bij stap 2 (topman of -vrouw, bezit van bestuur en insiders, insidertransacties, aantal aandelen, governance-risico en de topbestuurders), en het **kortetermijnsignaal** met zijn vijf checks staat bij Koers.

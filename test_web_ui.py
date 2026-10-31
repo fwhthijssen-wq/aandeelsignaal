@@ -1,4 +1,5 @@
 """Echte-browsertest van de webapp (Chromium via Playwright). Wordt overgeslagen als Playwright ontbreekt."""
+import json
 import unittest
 from pathlib import Path
 
@@ -966,6 +967,40 @@ class WebUi(unittest.TestCase):
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.goto(INDEX + '#/a/GOOGL'); pg.wait_for_timeout(200)
         self.assertEqual(pg.locator('[data-terug]').count(), 0)                # geen NAIC-oordeel: geen terugblik
+    def test_koopmoment_grafiek_en_relatieve_sterkte(self):
+        import datetime
+        c = self.b.new_context(viewport={'width': 390, 'height': 800})
+        self.addCleanup(c.close)
+        vandaag = datetime.date.today()
+        week = [[(vandaag - datetime.timedelta(weeks=30 - i)).isoformat(), 80 + i] for i in range(31)]
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(x){x.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.koers={slot:100,datum:'%s',sma50:95,sma200:90,rsi14:55,macd:1,macd_signaal:0.5,mom6:10,kruis_dagen:30,
+            reeks:[['2026-10-01',98],['2026-10-02',100]],week:%s,week200:%s,relatief:{index:'VS',naam:'S&P 500',datum:'%s',m3:2.5,m6:4,m12:6}};
+            a.gegevens.jaren.forEach(function(j){if(j.comparable_eps>0){j.koers_hoog=j.comparable_eps*25;j.koers_laag=j.comparable_eps*15;}});}});v=x;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[{id:'1',ticker:'AAPL',aantal:2,koers:90,valuta:'USD',datum:'2025-01-01'}]}));}catch(e){}})();"""
+          % (vandaag.isoformat(), json.dumps(week), json.dumps([None] * 10 + [85] * 21), vandaag.isoformat()))
+        pg = c.new_page(); fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX + '#/a/AAPL/oordeel'); pg.wait_for_timeout(300)
+        oordeel = pg.locator('[data-naic-kaart] .groot-oordeel').inner_text()
+        if oordeel == 'Kopen':
+            self.assertEqual(pg.locator('[data-koopmoment="gunstig"]').count(), 1)          # NAIC Kopen én een stijgende trend
+        self.assertIn('sterker dan de S&P 500', pg.inner_text('[data-snel-koers]'))
+        pg.goto(INDEX + '#/a/AAPL/koers'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.locator('[data-koersgrafiek="2j"]').count(), 1)                  # standaard 2 jaar
+        self.assertEqual(pg.locator('[data-koersgrafiek] .gem').count(), 1)                  # met het 200-daags gemiddelde
+        self.assertIn('Uw aankoop', pg.inner_text('[data-koersgrafiek]'))
+        pg.click('[data-grafiek="6m"]'); pg.wait_for_timeout(200)
+        self.assertEqual(pg.locator('[data-koersgrafiek="6m"]').count(), 1)
+        self.assertIn('+6,0%', pg.inner_text('[data-relatief-kaart]'))
+        self.assertIn('beter dan de index', pg.inner_text('[data-relatief-kaart]'))
+        self.assertEqual(pg.locator('[data-kt-terug]').count(), 1)                           # onderbouwing uit het terugrekenen
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        if oordeel == 'Kopen':
+            pg.goto(INDEX + '#/markt'); pg.wait_for_timeout(300)
+            self.assertEqual(pg.locator('[data-kansrijk] [data-moment="gunstig"]').count(), 1)
+        self.assertEqual(fouten, [])
+
     def test_eenvoudige_weergave_via_link_en_terug_via_knop(self):
         pg = self.pagina()
         pg.goto(INDEX + '?weergave=eenvoudig#/a/AAPL'); pg.wait_for_timeout(300)

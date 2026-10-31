@@ -114,7 +114,8 @@
     var b = laatsteBeoordeling = signaalVoor(rec, true), k = rec.koers, T = encodeURIComponent(rec.ticker);
     var s = '<div data-signaal>' + (b.naic ? naicKaart(rec, b) : '<div class="kaart-plat" data-naic-kaart><h2>Oordeel</h2><b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b><p class="zacht">Er zijn te weinig gegevens.</p></div>');
     // Timing en zekerheid: één regel elk, met de weg naar de details
-    var tm = fr.fresh ? (r.richting ? 'Koers ' + getal(k.slot, 2) + ' ' + h(rec.valuta) + ', ' + (r.richting === 'boven' ? 'boven' : 'onder') + ' het gemiddelde van 50 dagen (' + pct(r.afstandPct) + ').' : 'Koers ' + getal(k.slot, 2) + ' ' + h(rec.valuta) + '.') : h(fr.reason);
+    var mt = fr.fresh ? momentVan(rec) : null, rt = fr.fresh ? relatiefTekst(k.relatief) : '';
+    var tm = fr.fresh ? (mt ? h(MOMENT_NAAM[mt.status]) + ' (' + mt.ja + ' van 5 checks). ' : '') + 'Koers ' + getal(k.slot, 2) + ' ' + h(rec.valuta) + (rt ? ', ' + h(rt) : '') + '.' : h(fr.reason);
     s += '<div class="kaart-plat snel detail" data-snel><a class="snel-rij" href="#/a/' + T + '/koers" data-snel-koers><span><b>Timing</b><br><span class="zacht">' + tm + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a class="snel-rij" href="#/a/' + T + '/cijfers" data-snel-zeker><span><b>Zekerheid</b> ' + chip(r.bevestigd, r.niveau, r.tweeBronnen) + '<br><span class="zacht">' + (r.bevestigd ? '10 jaar winst per aandeel onafhankelijk nagerekend.' : h(r.redenen[0] || '')) + '</span></span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a class="snel-rij" href="#/a/' + T + '/gezond" data-snel-gezond><span><b>Gezondheidscheck</b> <span class="zacht">' + (b.oordeel ? GEZOND[b.oordeel] : 'te weinig metingen') + ' · ' + telTekst(b) + '</span><br>' + stippen(b, true) + '</span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a></div>';
@@ -156,7 +157,7 @@
     var nu = b.naic.zones && b.naic.zones.koers != null ? getal(b.naic.zones.koers, 2) : null;
     return '<span class="koop-kort" data-koop="' + (a <= 0 ? 'onder' : 'boven') + '" title="Koopprijs ' + getal(kp.prijs, 2) + '">' + (nu ? 'Koers ' + nu + ' · ' : '') + (a <= 0 ? 'onder koopprijs ' + getal(kp.prijs, 2) : pct(a) + ' boven koopprijs ' + getal(kp.prijs, 2)) + '</span>';
   }
-  function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
+  function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + (b.naic && b.naic.oordeel === 'kopen' ? momentChip(momentVan(zoek(b.ticker))) : '') + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
   /* De vijf NAIC-stappen als rij vinkjes, de koopprijs en hoe stevig het oordeel is. */
   /* Hoe vers zijn de cijfers? Laatste boekjaar en datum van de koers, met een waarschuwing als het laatste jaarverslag uitblijft. */
   function versHtml(rec, b) {
@@ -223,12 +224,79 @@
     if (!slecht.length) return '<div class="aandacht ok" data-aandacht="0">' + kop + '<br><span class="zacht">Geen aandachtspunten in kasstroom, schuld, groei, K/W, trend en koersrust.</span></div>';
     return '<div class="aandacht" data-aandacht="' + slecht.length + '">' + kop + '<ul>' + slecht.map(function (m) { return '<li><b>Let op: ' + h(m.kort) + '</b> – ' + h(m.tekst) + '</li>'; }).join('') + '</ul></div>';
   }
+  /* ---- Koopmoment: NAIC kiest wát, het kortetermijnsignaal wannéér (terugrekenen 30 okt 2026, zie Achtergrond) ---- */
+  var TERUG_TA = { periode: '2016–2026', spread12: 5.7, spread3: 1.9, kopenGunstig: -1.5, kopenNeutraal: -8.4, kopenAfwachten: -15.2, nG: 46, nN: 56, nA: 11 };
+  var MOMENT_NAAM = { gunstig: 'Gunstig moment', neutraal: 'Moment neutraal', afwachten: 'Afwachten', onvoldoende: 'Moment onbekend' };
+  var MOMENT_VOLG = { gunstig: 0, neutraal: 1, onvoldoende: 2, afwachten: 3 };
+  function momentVan(rec) {
+    var k = rec && rec.koers; if (!k) return null;
+    return Kortetermijn.kortetermijn(k, Gate.priceFreshness(k.datum, vandaag()).fresh);
+  }
+  function momentChip(t) { return t ? '<span class="chip moment" data-moment="' + t.status + '">' + h(MOMENT_NAAM[t.status]) + '</span>' : ''; }
+  function koopmomentHtml(rec, b) {
+    if (!b.naic || b.naic.oordeel !== 'kopen') return '';
+    var t = momentVan(rec), T = TERUG_TA, link = ' <a class="link" href="#/a/' + encodeURIComponent(rec.ticker) + '/koers">Naar Koers</a>';
+    if (!t) return '<div class="koopmoment" data-koopmoment="onbekend"><b>Koopmoment onbekend</b><br><span class="zacht">Geen verse koers, dus geen kortetermijnsignaal.</span></div>';
+    var tekst = {
+      gunstig: '<b>Koopmoment: gunstig.</b> NAIC vindt de prijs gunstig én de koers zit in een stijgende trend (' + t.ja + ' van 5 checks).',
+      neutraal: '<b>Koopmoment: neutraal.</b> NAIC vindt de prijs gunstig; de trend is nog niet duidelijk (' + t.ja + ' van 5 checks).',
+      afwachten: '<b>Let op: afwachten.</b> NAIC vindt de prijs gunstig, maar de koers zit nog in een dalende trend (' + t.ja + ' van 5 checks). Zulke koopkansen daalden in het verleden vaak nog verder.',
+      onvoldoende: '<b>Koopmoment onbekend.</b> Niet alle checks van het kortetermijnsignaal zijn te berekenen.'
+    }[t.status];
+    return '<div class="koopmoment" data-koopmoment="' + t.status + '">' + tekst + link + '<br><span class="zacht">Teruggerekend 2018–2025: NAIC Kopen deed het na 1 jaar ' + pct(T.kopenGunstig) + ' bij een gunstig moment, ' + pct(T.kopenNeutraal) + ' bij neutraal en ' + pct(T.kopenAfwachten) + ' bij afwachten, ten opzichte van het gemiddelde (' + T.nG + ', ' + T.nN + ' en ' + T.nA + ' gevallen; kleine aantallen, geen garantie).</span></div>';
+  }
+  /* Koersgrafiek: 6 maanden (dagkoersen, met het gemiddelde van 50 dagen) of 2 jaar (weekkoersen, met het gemiddelde van 200
+     dagen). De NAIC-koopzone als groene band en uw gemiddelde aankoopkoers als stippellijn. */
+  var grafiekPeriode = '2j';
+  function aankoopKoers(rec) {
+    var p = winkel.portefeuille().filter(function (x) { return x.ticker === rec.ticker && String(x.valuta || '').toUpperCase() === String(rec.valuta || '').toUpperCase(); });
+    var n = p.reduce(function (s, x) { return s + Number(x.aantal); }, 0);
+    return n > 0 ? p.reduce(function (s, x) { return s + Number(x.aantal) * Number(x.koers); }, 0) / n : null;
+  }
+  function koersGrafiekHtml(rec, b) {
+    var k = rec.koers, kanLang = !!(k.week && k.week.length >= 8), lang = kanLang && grafiekPeriode === '2j';
+    var pts = lang ? k.week.map(function (x, i) { return { d: x[0], c: x[1], g: k.week200 ? k.week200[i] : null }; }) : (k.reeks || []).map(function (x) { return { d: x[0], c: x[1], g: null }; });
+    if (pts.length < 2) return '';
+    var z = b.naic && b.naic.zones, band = z && z.koop && typeof z.koop[0] === 'number' ? z.koop : null, ak = aankoopKoers(rec);
+    var vals = []; pts.forEach(function (p) { vals.push(p.c); if (typeof p.g === 'number') vals.push(p.g); });
+    if (!lang && typeof k.sma50 === 'number') vals.push(k.sma50);
+    var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), ver = null;
+    if (band) { if (band[1] >= lo * 0.6) { lo = Math.min(lo, band[0] > lo * 0.6 ? band[0] : lo * 0.6); hi = Math.max(hi, Math.min(band[1], hi * 1.1)); } else ver = band[1]; }
+    if (typeof ak === 'number' && ak > 0 && ak >= lo * 0.6 && ak <= hi * 1.6) { lo = Math.min(lo, ak); hi = Math.max(hi, ak); }
+    var W = 320, Ht = 170, sp = (hi - lo) || 1, X = function (i) { return i / (pts.length - 1) * W; }, Y = function (v) { return 10 + (1 - (v - lo) / sp) * (Ht - 32); };
+    var s = '';
+    if (band && !ver) { var y1 = Y(Math.min(band[1], hi)), y0 = Y(Math.max(band[0], lo)); s += '<rect class="zone-koop" x="0" width="' + W + '" y="' + y1.toFixed(1) + '" height="' + Math.max(1, y0 - y1).toFixed(1) + '"/><text class="zone-tekst" x="4" y="' + (y0 - 4).toFixed(1) + '">NAIC-koopzone</text>'; }
+    if (lang) { var g = '', open = false; pts.forEach(function (p, i) { if (typeof p.g === 'number') { g += (open ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(p.g).toFixed(1); open = true; } else open = false; }); if (g) s += '<path class="gem" d="' + g + '"/>'; }
+    else if (typeof k.sma50 === 'number') s += '<path class="gem" d="M0 ' + Y(k.sma50).toFixed(1) + ' L' + W + ' ' + Y(k.sma50).toFixed(1) + '"/>';
+    if (typeof ak === 'number' && ak >= lo && ak <= hi) s += '<path class="aankoop" d="M0 ' + Y(ak).toFixed(1) + ' L' + W + ' ' + Y(ak).toFixed(1) + '"/><text class="aankoop-tekst" x="' + (W - 4) + '" y="' + (Y(ak) - 4).toFixed(1) + '" text-anchor="end">Uw aankoop ' + getal(ak, 2) + '</text>';
+    s += '<path class="lijn" d="' + pts.map(function (p, i) { return (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(p.c).toFixed(1); }).join(' ') + '"/>';
+    s += '<circle cx="' + W + '" cy="' + Y(pts[pts.length - 1].c).toFixed(1) + '" r="4" fill="var(--chart-a)"/>';
+    var mnd = function (d) { var t = Gate.parseDay(d); return t === null ? d : new Date(t).toLocaleDateString('nl-NL', { month: 'short', year: '2-digit', timeZone: 'UTC' }); };
+    s += '<text x="0" y="' + (Ht - 4) + '">' + h(mnd(pts[0].d)) + '</text><text x="' + (W / 2) + '" y="' + (Ht - 4) + '" text-anchor="middle">' + h(mnd(pts[Math.floor(pts.length / 2)].d)) + '</text><text x="' + W + '" y="' + (Ht - 4) + '" text-anchor="end">' + h(mnd(pts[pts.length - 1].d)) + '</text>';
+    var keuze = kanLang ? '<div class="regels" role="group" aria-label="Periode" data-grafiek-keuze>' + [['6m', '6 maanden'], ['2j', '2 jaar']].map(function (x) { return '<button type="button" class="chip-knop" data-grafiek="' + x[0] + '" aria-pressed="' + (x[0] === (lang ? '2j' : '6m')) + '">' + x[1] + '</button>'; }).join('') + '</div>' : '';
+    var legenda = '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers' + (lang ? ' (per week)' : '') + '</span><span><i style="background:var(--chart-b)"></i>Gemiddelde ' + (lang ? '200' : '50') + ' dagen</span>' +
+      (band && !ver ? '<span><i class="i-zone"></i>NAIC-koopzone</span>' : '') + (typeof ak === 'number' && ak >= lo && ak <= hi ? '<span><i class="i-aankoop"></i>Uw gemiddelde aankoopkoers</span>' : '') + '</div>';
+    return '<div class="kaart-plat" data-koersgrafiek="' + (lang ? '2j' : '6m') + '">' + keuze + '<svg class="grafiek groot" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="Koersverloop ' + (lang ? 'van 2 jaar' : 'van 6 maanden') + '">' + s + '</svg>' + legenda +
+      (ver ? '<p class="zacht" data-koopzone-ver>De NAIC-koopzone ligt ver onder de koers: tot ' + getal(ver, 2) + ' ' + h(rec.valuta) + '.</p>' : '') + '</div>';
+  }
+  function relatiefTekst(rel) {
+    if (!rel || typeof rel.m12 !== 'number') return '';
+    return (rel.m12 >= 0 ? 'sterker' : 'zwakker') + ' dan de ' + rel.naam + ' over 12 maanden (' + pct(rel.m12) + ')';
+  }
+  function relatiefHtml(rec, fr) {
+    var rel = rec.koers && rec.koers.relatief;
+    if (!fr.fresh || !rel) return '';
+    var cel = function (x, t) { return '<div class="kpi"><b style="color:' + (typeof x === 'number' ? kleur(x) : 'var(--mut)') + '">' + (typeof x === 'number' ? pct(x) : '–') + '</b><span>' + t + '</span></div>'; };
+    var richting = typeof rel.m12 === 'number' && typeof rel.m3 === 'number' ? (rel.m12 > 0 && rel.m3 > 0 ? 'Het fonds doet het al een jaar beter dan de index, en de laatste maanden ook.' : rel.m12 < 0 && rel.m3 < 0 ? 'Het fonds blijft al een jaar achter bij de index, en de laatste maanden ook.' : rel.m12 > 0 ? 'Over een jaar sterker dan de index, maar de laatste maanden zwakker.' : 'Over een jaar zwakker dan de index, maar de laatste maanden sterker.') : '';
+    return '<div class="kaart-plat" data-relatief-kaart><div class="rij-kop"><h2>Relatieve sterkte</h2><span class="zacht">t.o.v. de ' + h(rel.naam) + '</span></div><div class="kpis">' + cel(rel.m3, '3 maanden') + cel(rel.m6, '6 maanden') + cel(rel.m12, '12 maanden') + '</div>' +
+      '<p>' + h(richting) + '</p><p class="zacht">Hoeveel procent de koers meer (+) of minder (−) steeg dan de index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat volgens onderzoek vaak nog een tijd doen (momentum), maar zeker is dat niet. Informatie, telt niet mee in het oordeel.</p></div>';
+  }
   function naicKaart(rec, b) {
     var n = b.naic;
     if (!n) return '';
     var kop = n.oordeel ? '<b class="groot-oordeel" data-oordeel="' + n.oordeel + '">' + OORDEEL[n.oordeel] + '</b>' : '<b class="groot-oordeel" data-oordeel="geen">Geen NAIC-oordeel</b>';
     var s = '<div class="kaart-plat" data-naic-kaart><div class="rij-kop"><h2>Oordeel</h2><span class="zacht">NAIC Stock Selection Guide</span></div>' + kop + '<p>' + h(n.reden || '') + '</p>';
-    s += aandachtHtml(b) + ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n) + versHtml(rec, b);
+    s += aandachtHtml(b) + koopmomentHtml(rec, b) + ladderHtml(n) + koopprijsHtml(n, rec.valuta) + gevoeligHtml(n) + versHtml(rec, b);
     if (n.oordeel) s += terugBlok(n.oordeel);
     var rij = function (a, v) { return '<tr><th scope="row">' + a + '</th><td>' + v + '</td></tr>'; };
     var t = '';
@@ -263,7 +331,7 @@
   function kandidatenVolgens(lijst, m, max) {
     if (m === 'app') return Signaal.kandidaten(lijst, max);
     return lijst.filter(function (b) { return b.naic && b.naic.oordeel === 'kopen' && (m === 'naic' || b.oordeel === 'kopen'); })
-      .sort(function (a, b) { return (naicRang(b) - naicRang(a)) || ((b.score || 0) - (a.score || 0)); }).slice(0, max || 8);
+      .sort(function (a, b) { var ma = momentVan(zoek(a.ticker)), mb = momentVan(zoek(b.ticker)); return (MOMENT_VOLG[ma ? ma.status : 'onvoldoende'] - MOMENT_VOLG[mb ? mb.status : 'onvoldoende']) || (naicRang(b) - naicRang(a)) || ((b.score || 0) - (a.score || 0)); }).slice(0, max || 8);
   }
   var KANS_NAAM = { app: 'App', naic: 'NAIC', beide: 'Beide' };
   function kansrijkHtml() {
@@ -276,7 +344,7 @@
     return kop + '<div class="lijst" data-kansrijk>' + top.map(function (b) {
       var rec = zoek(b.ticker);
       return '<a href="#/a/' + encodeURIComponent(b.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + h([rec.ticker, sectorVan(rec), telTekst(b)].filter(Boolean).join(' · ')) + '</span>' + oordeelRij(b) + '</div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
-    }).join('') + '</div><p class="zacht">' + (meer > top.length ? 'De ' + top.length + ' sterkste van ' + meer + '. ' : '') + (m === 'app' ? 'Volgorde: hoogste gemiddelde van de zes metingen.' : 'Volgorde: meeste opwaarts tegen neerwaarts volgens NAIC.') + '</p>' + naarFondsen;
+    }).join('') + '</div><p class="zacht">' + (meer > top.length ? 'De ' + top.length + ' sterkste van ' + meer + '. ' : '') + 'Volgorde: eerst een gunstig koopmoment (kortetermijnsignaal), dan de meeste ruimte opwaarts tegen neerwaarts. Bij “Afwachten” zit de koers nog in een dalende trend.' + '</p>' + naarFondsen;
   }
   function kansKoppel() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-naar-fondsen]'), function (a) {
@@ -376,7 +444,10 @@
   var SIGNAAL_NAAM = { koop: 'Koopzone', verkoop: 'Verkoopzone', kwaliteit: 'Kwaliteit daalt', groei: 'Te weinig groei' };
   function signaalRegel(b) {
     var sg = Signalen.naicSignaal(b);
-    return sg ? '<span class="signaal" data-signaal-soort="' + sg.soort + '"><b>' + SIGNAAL_NAAM[sg.soort] + ':</b> ' + h(sg.tekst) + '</span>' : '';
+    if (!sg) return '';
+    var mt = sg.soort === 'koop' ? momentVan(zoek(b.ticker)) : null;
+    var extra = mt ? (mt.status === 'gunstig' ? ' <b data-koopmoment-signaal="gunstig">En het koopmoment is gunstig.</b>' : mt.status === 'afwachten' ? ' <b data-koopmoment-signaal="afwachten">Maar afwachten: de koers zit nog in een dalende trend.</b>' : '') : '';
+    return '<span class="signaal" data-signaal-soort="' + sg.soort + '"><b>' + SIGNAAL_NAAM[sg.soort] + ':</b> ' + h(sg.tekst) + extra + '</span>';
   }
   function eigenTickers() {
     var o = {};
@@ -515,7 +586,8 @@
     var t3 = '<a class="tegel" href="#/signalen" data-tegel="signalen" data-niveau="' + (urgent ? 'let-op' : telS.koop ? 'kans' : 'rustig') + '"><small>Signalen bij uw aandelen</small><b>' + sig.filter(function (x) { return x.sg.soort !== 'groei'; }).length + '</b><span>' +
       (urgent || telS.koop ? [telS.verkoop ? telS.verkoop + '× verkoopzone' : '', telS.kwaliteit ? telS.kwaliteit + '× kwaliteit daalt' : '', telS.koop ? telS.koop + '× koopzone' : ''].filter(Boolean).join(' · ') : 'Alles rustig') + '</span>' + pijl + '</a>';
     // 4. Kansen in de markt
-    var t4 = '<a class="tegel" href="#/markt" data-tegel="kansen" data-spring-na="kansen"><small>Kansen (NAIC Kopen)</small><b>' + nk.kopen + '</b><span>' + (onderKp ? onderKp + ' onder hun koopprijs' : 'van ' + (nk.kopen + nk.neutraal + nk.vermijden) + ' met oordeel') + '</span>' + pijl + '</a>';
+    var kpGunstig = items.filter(function (a) { var m = a.b.naic && a.b.naic.oordeel === 'kopen' ? momentVan(zoek(a.ticker)) : null; return m && m.status === 'gunstig'; }).length;
+    var t4 = '<a class="tegel" href="#/markt" data-tegel="kansen" data-spring-na="kansen"><small>Kansen (NAIC Kopen)</small><b>' + nk.kopen + '</b><span>' + (nk.kopen ? kpGunstig + ' met een gunstig koopmoment' + (onderKp ? ' · ' + onderKp + ' onder hun koopprijs' : '') : 'van ' + (nk.kopen + nk.neutraal + nk.vermijden) + ' met oordeel') + '</span>' + pijl + '</a>';
     // 5. Marktbeeld: verdeling van het NAIC-oordeel over alle fondsen
     var geen = items.length - nk.kopen - nk.neutraal - nk.vermijden;
     var mb = ['kopen', 'neutraal', 'vermijden'].map(function (o) { return nk[o] ? '<i data-o="' + o + '" style="flex:' + nk[o] + '"></i>' : ''; }).join('') + (geen ? '<i data-o="geen" style="flex:' + geen + '"></i>' : '');
@@ -645,7 +717,7 @@
     var f = Portefeuille.volg(item, rec, vandaag(), Gate), s = item && item.sinds, nu = signaalVoor(rec);
     var tekst = f.status === 'ok' ? 'Sinds ' + h(datumNl(s.datum)) + ' (' + f.dagen + ' dagen): <b style="color:' + kleur(f.pct) + '">' + pct(f.pct) + '</b>' : (f.status === 'geen' ? 'Geen startpunt vastgelegd' : 'Sinds het volgen: onbekend (' + h(f.reden) + ')');
     var toen = s ? 'Oordeel toen: ' + h(oordeelTekst(s)) + ' · nu: ' + h(oordeelTekst(nu)) : 'Oordeel nu: ' + h(oordeelTekst(nu));
-    return '<div class="volg-info" data-volg="' + h(rec.ticker) + '" ><span class="oordeel-rij">' + naicChip(nu) + '</span>' + signaalRegel(nu) + '<span class="zacht">' + tekst + '<br>' + toen + '</span></div>';
+    return '<div class="volg-info" data-volg="' + h(rec.ticker) + '" ><span class="oordeel-rij">' + naicChip(nu) + (nu.naic && nu.naic.oordeel === 'kopen' ? momentChip(momentVan(rec)) : '') + '</span>' + signaalRegel(nu) + '<span class="zacht">' + tekst + '<br>' + toen + '</span></div>';
   }
   function volgSortering() { try { return localStorage.getItem('as_volgsort') === 'koop' ? 'koop' : 'toegevoegd'; } catch (e) { return 'toegevoegd'; } }
   function volgKoppel() {
@@ -911,10 +983,10 @@
     if (tab === 'oordeel') {
       s += oordeelTab(rec, r, fr);
     } else if (tab === 'koers') {
-      s += fr.fresh ? '<div class="kaart-plat">' + sparkSvg(k.reeks, k.sma50) + '<div class="legenda"><span><i style="background:var(--chart-a)"></i>Slotkoers</span><span><i style="background:var(--chart-b)"></i>Gemiddelde 50 dagen</span></div></div>' +
+      s += fr.fresh ? koersGrafiekHtml(rec, signaalVoor(rec)) +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
-      s += kortetermijnHtml(rec, fr) + timingHtml(rec, fr);
+      s += kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + timingHtml(rec, fr);
       if (fr.fresh && rec.koers) s += bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div');
     } else if (tab === 'naic') {
       s += waardeHtml(rec, g, jr, r);
@@ -1194,6 +1266,7 @@
     return '<div class="kaart-plat" data-kortetermijn="' + t.status + '"><div class="rij-kop"><h2>Kortetermijnsignaal</h2><span class="chip" data-oordeel="' + KLEUR[t.status] + '">' + h(t.label) + '</span></div>' +
       '<ul style="list-style:none;padding-left:0">' + regels + '</ul>' +
       '<p><b>' + t.ja + ' van ' + t.totaal + ' checks</b>' + (t.status === 'onvoldoende' ? ' (' + (t.totaal - t.bekend) + ' niet te berekenen, dus geen uitkomst)' : '') + '. Gunstig moment bij 4 of 5, neutraal bij 2 of 3, afwachten bij 0 of 1.</p>' +
+      '<p class="zacht" data-kt-terug>Teruggerekend over ' + TERUG_TA.periode + ' (elke maand, alle fondsen): aandelen met een gunstig moment deden het na 12 maanden gemiddeld ' + String(TERUG_TA.spread12).replace('.', ',') + ' procentpunt beter dan aandelen met afwachten, na 3 maanden ' + String(TERUG_TA.spread3).replace('.', ',') + '. Het werkt vooral door dalende trends te mijden. De drie trendchecks doen het werk; MACD voegt weinig toe en “niet overkocht” werkte eerder averechts. Geen garantie.</p>' +
       '<p class="zacht">Alleen over het koersverloop van de afgelopen maanden, voor wie het moment van kopen wil kiezen. Staat los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Wordt elke nacht opnieuw berekend. Geen garantie voor wat de koers gaat doen.</p></div>';
   }
   /* Timing-informatie: los van het signaal; verandert het oordeel nooit. */
@@ -1299,6 +1372,9 @@
     if (ngw) ngw.addEventListener('click', function () { winkel.zetVerdieping(t, 'cijfers', 'naicgroei', null); fondsItemsCache = null; toast('De app rekent weer met de trend'); route(); });
     var tg = document.getElementById('terug');
     // Terug gaat naar het algemene scherm waar u vandaan kwam (niet door alle tabbladen terug)
+    Array.prototype.forEach.call(document.querySelectorAll('[data-grafiek]'), function (bt) {
+      bt.addEventListener('click', function () { grafiekPeriode = bt.getAttribute('data-grafiek'); var y = window.scrollY; route(); window.scrollTo(0, y); });
+    });
     var ad = document.getElementById('afdruk');
     if (ad) ad.addEventListener('click', function () { var rec = zoek(t); if (rec) afdrukken(rec); });
     var b = document.getElementById('volg'); if (!b) return;

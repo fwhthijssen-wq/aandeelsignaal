@@ -292,6 +292,11 @@
     var slecht = (b.metingen || []).filter(function (m) { return m.aanwezig && !m.nvt && m.oordeel === 'ongunstig'; });
     if ((b.metingen || []).some(function (m) { return m.aanwezig && !m.nvt; })) s += '<div class="aandacht' + (slecht.length ? '' : ' ok') + '" data-aandacht="' + slecht.length + '"><b>Aandachtspunten uit de gezondheidscheck</b>' +
       (slecht.length ? '<ul class="punt">' + slecht.map(function (m) { return '<li><b>Let op: ' + h(m.kort) + '</b> – ' + h(m.tekst) + '</li>'; }).join('') + '</ul>' : '<br><span class="zacht">Geen: kasstroom, schuld, groei, K/W, trend en koersrust zijn niet ongunstig.</span>') + '</div>';
+    if (n && n.oordeel === 'kopen' && o.kortetermijn) {
+      var KM = { gunstig: 'Koopmoment: gunstig. NAIC vindt de prijs gunstig én de koers zit in een stijgende trend.', neutraal: 'Koopmoment: neutraal. De trend is nog niet duidelijk.',
+        afwachten: 'Let op, afwachten: NAIC vindt de prijs gunstig, maar de koers zit nog in een dalende trend. Zulke koopkansen daalden in het verleden vaak nog verder.', onvoldoende: 'Koopmoment onbekend: niet alle checks zijn te berekenen.' };
+      s += '<div class="aandacht' + (o.kortetermijn.status === 'gunstig' ? ' ok' : '') + '" data-koopmoment-afdruk="' + o.kortetermijn.status + '"><b>' + h(KM[o.kortetermijn.status]) + '</b> <span class="zacht">(' + o.kortetermijn.ja + ' van 5 checks van het kortetermijnsignaal)</span></div>';
+    }
     if (o.terug && o.terug.rijen && o.terug.rijen.kopen) { var tk = o.terug.rijen.kopen; s += '<p class="zacht klein">Teruggerekend over ' + h(o.terug.periode) + ' (stand ' + h(o.terug.datum) + '): NAIC Kopen deed het na 1 jaar ' + pct(tk.j1) + ' en na 3 jaar ' + pct(tk.j3) + ' ten opzichte van het gemiddelde van alle fondsen (' + tk.n + ' gevallen). Geen voorspelling.</p>'; }
     if (n && n.zones) s += '<h3>Verwachte koersband over ' + n.horizon + ' jaar</h3>' + zonesSvg(n.zones, val) +
       '<p class="zacht klein">De band loopt van de verwachte lage koers (' + geld(n.zones.laag) + ') tot de verwachte hoge koers (' + geld(n.zones.hoog) + ' ' + h(val) + '), in drie gelijke delen. NAIC koopt in het onderste derde.</p>';
@@ -355,7 +360,8 @@
       '<tr><th>Slotkoers</th><td>' + geld(k.slot) + ' ' + h(val) + ' (' + h(datumNl(k.datum)) + ')</td></tr>' +
       '<tr><th>Gemiddelde 50 dagen</th><td>' + geld(k.sma50) + '</td></tr><tr><th>Gemiddelde 200 dagen</th><td>' + geld(k.sma200) + '</td></tr>' +
       '<tr><th>52 weken</th><td>laag ' + geld(k.laag52) + ' · hoog ' + geld(k.hoog52) + '</td></tr><tr><th>RSI (14 dagen)</th><td>' + getal(k.rsi14, 1) + '</td></tr>' +
-      (k.bereik ? '<tr><th>' + (k.bereik.jaren || 10) + ' jaar</th><td>laag ' + geld(k.bereik.laag) + ' · hoog ' + geld(k.bereik.hoog) + '</td></tr>' : '') + '</tbody></table>' +
+      (k.bereik ? '<tr><th>' + (k.bereik.jaren || 10) + ' jaar</th><td>laag ' + geld(k.bereik.laag) + ' · hoog ' + geld(k.bereik.hoog) + '</td></tr>' : '') +
+      (k.relatief ? '<tr data-relatief-afdruk><th>T.o.v. ' + h(k.relatief.naam) + '</th><td>3 mnd ' + pct(k.relatief.m3) + ' · 6 mnd ' + pct(k.relatief.m6) + ' · 12 mnd ' + pct(k.relatief.m12) + '</td></tr>' : '') + '</tbody></table>' +
       (o.kortetermijn ? '<h3 data-kortetermijn-afdruk>Kortetermijnsignaal: ' + h(o.kortetermijn.label) + ' <span class="zacht klein">(' + o.kortetermijn.ja + ' van ' + o.kortetermijn.totaal + ' checks)</span></h3><ul class="punt">' +
         o.kortetermijn.checks.map(function (c) { return '<li>' + (c.ok === true ? '✓ ' : c.ok === false ? '✗ ' : '? ') + h(c.label) + '</li>'; }).join('') + '</ul><p class="zacht klein">Timing, los van het NAIC-oordeel.</p>' : '') + '</div>';
     s += '<div><h2>Analisten</h2>' + (ana && ana.aantal > 0 ? '<p>Gemiddeld advies van ' + ana.aantal + ' analisten: <b>' + h(ADV[ana.advies] || ana.advies) + '</b>' + (ok(ana.gemiddeld) ? ' (' + getal(ana.gemiddeld, 2) + ' op een schaal van 1 = sterk kopen tot 5 = verkopen)' : '') + '.' +
