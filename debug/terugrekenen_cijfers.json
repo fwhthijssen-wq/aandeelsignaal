@@ -1,0 +1,257 @@
+{
+ "gebeurtenissen": 8652,
+ "fondsen_met_cijfers": 251,
+ "van": "2004-07-26",
+ "toets1": {
+  "1 maand": {
+   "onder −5%": {
+    "n": 2197,
+    "gemiddeld": 0.74,
+    "mediaan": 0.36,
+    "beter": 53,
+    "t": 4.6
+   },
+   "−5% tot 0": {
+    "n": 859,
+    "gemiddeld": 0.22,
+    "mediaan": 0.19,
+    "beter": 52,
+    "t": 0.98
+   },
+   "0 tot +5%": {
+    "n": 1568,
+    "gemiddeld": 0.71,
+    "mediaan": 0.56,
+    "beter": 55,
+    "t": 5.06
+   },
+   "+5% tot +10%": {
+    "n": 1073,
+    "gemiddeld": 0.72,
+    "mediaan": 0.61,
+    "beter": 55,
+    "t": 3.67
+   },
+   "boven +10%": {
+    "n": 2873,
+    "gemiddeld": 0.81,
+    "mediaan": 0.52,
+    "beter": 54,
+    "t": 6.22
+   }
+  },
+  "3 maanden": {
+   "onder −5%": {
+    "n": 2190,
+    "gemiddeld": 1.64,
+    "mediaan": 1.28,
+    "beter": 55,
+    "t": 5.71
+   },
+   "−5% tot 0": {
+    "n": 858,
+    "gemiddeld": 1.63,
+    "mediaan": 1.16,
+    "beter": 55,
+    "t": 3.61
+   },
+   "0 tot +5%": {
+    "n": 1557,
+    "gemiddeld": 1.83,
+    "mediaan": 1.77,
+    "beter": 58,
+    "t": 7.17
+   },
+   "+5% tot +10%": {
+    "n": 1067,
+    "gemiddeld": 1.4,
+    "mediaan": 1.49,
+    "beter": 55,
+    "t": 4.31
+   },
+   "boven +10%": {
+    "n": 2855,
+    "gemiddeld": 2.14,
+    "mediaan": 1.47,
+    "beter": 56,
+    "t": 9.56
+   }
+  },
+  "6 maanden": {
+   "onder −5%": {
+    "n": 2170,
+    "gemiddeld": 3.32,
+    "mediaan": 1.77,
+    "beter": 54,
+    "t": 7.24
+   },
+   "−5% tot 0": {
+    "n": 844,
+    "gemiddeld": 2.76,
+    "mediaan": 0.86,
+    "beter": 55,
+    "t": 4.32
+   },
+   "0 tot +5%": {
+    "n": 1526,
+    "gemiddeld": 2.66,
+    "mediaan": 2.09,
+    "beter": 57,
+    "t": 7.14
+   },
+   "+5% tot +10%": {
+    "n": 1035,
+    "gemiddeld": 2.49,
+    "mediaan": 1.46,
+    "beter": 55,
+    "t": 5.34
+   },
+   "boven +10%": {
+    "n": 2815,
+    "gemiddeld": 4.44,
+    "mediaan": 3.09,
+    "beter": 58,
+    "t": 12.37
+   }
+  }
+ },
+ "spreiding1": {
+  "1 maand": {
+   "gemiddeld": 0.21,
+   "t": 0.9,
+   "positief": 62,
+   "n": 86
+  },
+  "3 maanden": {
+   "gemiddeld": 0.47,
+   "t": 1.1,
+   "positief": 56,
+   "n": 86
+  },
+  "6 maanden": {
+   "gemiddeld": 1.28,
+   "t": 2.16,
+   "positief": 69,
+   "n": 85
+  }
+ },
+ "toets2": {
+  "1": {
+   "m1": {
+    "n": 11981,
+    "gemiddeld": 0.11,
+    "mediaan": 0.06,
+    "beter": 50,
+    "t": 1.71
+   },
+   "m3": {
+    "n": 11812,
+    "gemiddeld": 0.43,
+    "mediaan": -0.14,
+    "beter": 49,
+    "t": 3.65
+   },
+   "m6": {
+    "n": 11573,
+    "gemiddeld": 0.83,
+    "mediaan": -0.39,
+    "beter": 49,
+    "t": 4.46
+   },
+   "m12": {
+    "n": 11124,
+    "gemiddeld": 1.33,
+    "mediaan": -1.82,
+    "beter": 47,
+    "t": 4.17
+   }
+  },
+  "0": {
+   "m1": {
+    "n": 4711,
+    "gemiddeld": -0.05,
+    "mediaan": -0.22,
+    "beter": 48,
+    "t": -0.46
+   },
+   "m3": {
+    "n": 4638,
+    "gemiddeld": -0.35,
+    "mediaan": -0.99,
+    "beter": 46,
+    "t": -1.97
+   },
+   "m6": {
+    "n": 4521,
+    "gemiddeld": -0.82,
+    "mediaan": -1.65,
+    "beter": 46,
+    "t": -3.2
+   },
+   "m12": {
+    "n": 4270,
+    "gemiddeld": -1.82,
+    "mediaan": -3.22,
+    "beter": 45,
+    "t": -4.41
+   }
+  },
+  "-1": {
+   "m1": {
+    "n": 8828,
+    "gemiddeld": -0.13,
+    "mediaan": -0.34,
+    "beter": 48,
+    "t": -1.49
+   },
+   "m3": {
+    "n": 8742,
+    "gemiddeld": -0.4,
+    "mediaan": -1.01,
+    "beter": 47,
+    "t": -2.48
+   },
+   "m6": {
+    "n": 8608,
+    "gemiddeld": -0.68,
+    "mediaan": -2.54,
+    "beter": 44,
+    "t": -2.69
+   },
+   "m12": {
+    "n": 8326,
+    "gemiddeld": -0.84,
+    "mediaan": -5.06,
+    "beter": 43,
+    "t": -1.89
+   }
+  }
+ },
+ "spreiding2": {
+  "m1": {
+   "gemiddeld": 0.23,
+   "t": 1.89,
+   "positief": 60,
+   "n": 144
+  },
+  "m3": {
+   "gemiddeld": 0.81,
+   "t": 2.83,
+   "positief": 68,
+   "n": 142
+  },
+  "m6": {
+   "gemiddeld": 1.44,
+   "t": 2.43,
+   "positief": 63,
+   "n": 139
+  },
+  "m12": {
+   "gemiddeld": 2.11,
+   "t": 1.79,
+   "positief": 64,
+   "n": 133
+  }
+ },
+ "waarnemingen2": 25683
+}
