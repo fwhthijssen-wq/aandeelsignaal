@@ -130,6 +130,27 @@ jobs:
                       mis = [f"{j['year']}:{j.get('comparable_eps')}x?={j.get('net_income')}" for j in jr if not j.get('eps_narekening')]
                       print(a['ticker'], 'nagerekend', pn.get('jaren', 0), 'van', len(jr), 'bevestigd' if pn.get('bevestigd') else '', 'mist:', ' '.join(mis)[:600])
               raise SystemExit
+          if want == ['BEVESTIGD']:
+              # Per niet-bevestigd fonds: de laatste 10 jaren met winst per aandeel en per jaar of het is nagerekend.
+              # N = nagerekend met het jaarverslag, O = onderbouwd door de officiële controle, x = niet nagerekend; daarna bron/niveau.
+              rijen = []
+              for a in d['aandelen']:
+                  g = a.get('gegevens') or {}
+                  if not g.get('jaren') or (g.get('eps_status') == 'independently_verified' and (g.get('eps_verified_years') or 0) >= 10):
+                      continue
+                  jr = [j for j in g['jaren'] if isinstance(j.get('comparable_eps'), (int, float))]
+                  l10 = jr[-10:]
+                  code = ''.join('N' if j.get('eps_narekening') else 'O' if j.get('eps_check') == 'onderbouwd' else 'x' for j in l10)
+                  ok = code.count('N') + code.count('O')
+                  mis = [j['year'] for j in l10 if not (j.get('eps_narekening') or j.get('eps_check') == 'onderbouwd')]
+                  rijen.append((ok, len(jr), a['ticker'], g.get('bron') or '-', g.get('niveau') or '-', code, (l10[0]['year'] if l10 else '-'), mis,
+                                len(set(j.get('currency') for j in g['jaren'] if j.get('currency'))), (g.get('pdf_narekening') or {}).get('jaren')))
+              rijen.sort(key=lambda r: (-r[0], -r[1]))
+              import collections
+              print('niet bevestigd:', len(rijen), '| per aantal nagerekend van de laatste 10:', sorted(collections.Counter(r[0] for r in rijen).items(), reverse=True))
+              for r in rijen:
+                  print(f"{r[2]:<10} ok {r[0]:>2} eps {r[1]:>2} {r[3]:<14} {r[4]:<11} vanaf {r[6]} {r[5]:<10} valuta {r[8]} mist {' '.join(map(str, r[7]))}")
+              raise SystemExit
           if want == ['GEVERIFIEERD']:
               import collections
               c = collections.Counter(); per = collections.defaultdict(list)
