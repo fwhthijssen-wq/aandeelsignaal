@@ -1,0 +1,35 @@
+# Hulpmiddel voor ontwikkeling (alleen handmatig te starten): terugrekenen van "kwartaalcijfers tegenover de verwachting".
+# Gebruikt de bewaarde koersen van het terugrekenen van het trendsignaal; resultaat naar de tak 'jaarverslagen'.
+name: Terugrekenen kwartaalcijfers (ontwikkeling)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rekenen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Gegevens van de app en bewaarde koersen
+        run: |
+          curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+          curl -sSfL "https://raw.githubusercontent.com/${{ github.repository }}/jaarverslagen/debug/terugrekenen_ta_koersen.json.gz" -o koersen.json.gz
+      - name: Kwartaalcijfers ophalen en rekenen
+        run: python hulp/terugrekenen_cijfers.py aandelen.json koersen.json.gz uit
+      - name: Op tak jaarverslagen zetten
+        run: |
+          for poging in 1 2 3; do
+            rm -rf jv && git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jv
+            mkdir -p jv/debug && cp uit/terugrekenen_cijfers.json uit/terugrekenen_cijfers.md jv/debug/ && cp uit/cijfers.json jv/debug/terugrekenen_cijfers_bron.json
+            cd jv
+            git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+            git add -A && git commit -qm "Terugrekenen kwartaalcijfers $(date -u +%F)" || { echo "niets nieuw"; exit 0; }
+            if git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jaarverslagen; then exit 0; fi
+            cd ..; sleep 10
+          done
+          exit 1
