@@ -388,3 +388,6 @@ section[data-deel] { border-top: 1px solid var(--line); padding-top: 14px; }
 .termijn-delen li:first-child { border-top: 0; }
 .termijn-delen .teken { width: 1.4em; font-weight: 700; text-align: center; flex: none; }
 .termijn-delen li[data-punt="1"] .teken { color: var(--ok-ink); } .termijn-delen li[data-punt="-1"] .teken { color: var(--bad-ink); }
+
+details.onderbouwing { margin: 8px 0; }
+details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(--acc); padding: 10px 2px; min-height: 44px; display: flex; align-items: center; }

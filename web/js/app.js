@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.7.1 (2026.10.31)';
+  var APP_VERSIE = '1.7.2 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -320,7 +320,7 @@
     return '<div class="kaart-plat" data-middellang="' + m.status + '"><div class="rij-kop"><h2>Oordeel middellange termijn</h2><span class="chip" data-oordeel="' + KL[m.status] + '">' + h(m.naam) + '</span></div>' +
       '<ul class="termijn-delen">' + m.delen.map(function (d) { return '<li data-deel-ml="' + d.id + '" data-punt="' + d.punt + '"><span class="teken" aria-hidden="true">' + teken(d.punt) + '</span><span><b>' + h(d.naam) + '</b><br><span class="zacht">' + h(d.tekst) + '</span></span></li>'; }).join('') + '</ul>' +
       '<p>' + (m.status === 'onbekend' ? 'Minder dan 3 onderdelen bekend, dus geen oordeel.' : 'Samen ' + (m.score > 0 ? '+' : '') + m.score + ' uit ' + m.bekend + ' onderdelen. Positief vanaf +2, negatief vanaf −2.') + '</p>' +
-      '<p class="zacht">Teruggerekend (elke maand, alle fondsen): trend en relatieve sterkte werkten op 3 tot 12 maanden het sterkst (5 à 9 procentpunt verschil na een jaar); de kwartaalcijfers zwakker maar wel meetbaar (+1 tegen −1: 1,4 procentpunt na 6 maanden). Voor de winstverwachtingen van analisten steunen we op onderzoek: Yahoo bewaart die geschiedenis niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
+      '<p class="zacht">Teruggerekend (elke maand, alle fondsen, 2016–2026): het oordeel samen werkte beter dan elk onderdeel apart: positief deed het na 12 maanden gemiddeld 6,9 procentpunt beter dan negatief, in 76% van de maanden. Trend en relatieve sterkte wegen het zwaarst in die uitkomst; de kwartaalcijfers zijn zwakker maar wel meetbaar. Zwaarder wegen van trend en sterkte maakte het niet beter, dus alle onderdelen tellen even zwaar. Voor de winstverwachtingen van analisten steunen we op onderzoek: Yahoo bewaart die geschiedenis niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
   }
   /* Winstverwachtingen van analisten en kwartaalcijfers (Yahoo Finance), ter informatie. */
   function verwachtingHtml(rec) {
@@ -713,6 +713,15 @@
     s += '<div class="kaart-plat" data-terug-algemeen><h2>Hoe deed het NAIC-oordeel het in het verleden?</h2><p class="zacht">Teruggerekend over ' + TERUG.periode + ' (stand ' + TERUG.datum + '): elk jaar op 30 april het oordeel zoals de app het toen had gegeven, en het rendement daarna inclusief dividend, vergeleken met het gemiddelde van alle fondsen.</p>' +
       '<div class="schuif"><table class="vgl"><thead><tr><th>Oordeel</th><th>1 jaar</th><th>3 jaar</th><th>Aantal</th></tr></thead><tbody>' + rij('kopen') + rij('neutraal') + rij('vermijden') + '</tbody></table></div>' +
       '<p class="zacht">In deze periode deed Kopen het niet beter dan gemiddeld. De verschillen zijn klein en kunnen toeval zijn; 2018–2025 was een periode waarin vooral dure groeiaandelen stegen, waar de NAIC-methode juist voorzichtig mee is. Alleen fondsen van nu, jaarcijfers zoals nu bekend, geen kosten. Geen voorspelling.</p></div>';
+    s += '<div class="kaart-plat" data-terug-ta><h2>Hoe deden de technische maatstaven het?</h2><p class="zacht">Teruggerekend 2016–2026 (kwartaalcijfers 2014–2026): elke maand alle fondsen, verschil in rendement daarna tussen de beste en de slechtste groep.</p>' +
+      '<div class="schuif"><table class="vgl"><thead><tr><th>Maatstaf</th><th>Na 3 mnd</th><th>Na 12 mnd</th><th>Werkt?</th></tr></thead><tbody>' +
+      '<tr><th scope="row">Middellange termijn samen: positief − negatief</th><td>+1,6</td><td>+6,9</td><td>ja, het sterkst</td></tr>' +
+      '<tr><th scope="row">Trendsignaal: gunstig − afwachten</th><td>+1,9</td><td>+5,7</td><td>ja</td></tr>' +
+      '<tr><th scope="row">Relatieve sterkte: sterkste − zwakste vijfde</th><td>+2,1</td><td>+8,7</td><td>ja</td></tr>' +
+      '<tr><th scope="row">Kwartaalcijfers: +1 − −1</th><td>+0,8</td><td>+2,1</td><td>klein</td></tr>' +
+      '<tr><th scope="row">Afstand tot de top, grootste daling</th><td>±0</td><td>±0</td><td>nee</td></tr>' +
+      '<tr><th scope="row">Alles op 1 maand</th><td colspan="2">geen meetbaar effect</td><td>nee</td></tr></tbody></table></div>' +
+      '<p class="zacht">In procentpunten. Daarom: NAIC voor de lange termijn, trend en relatieve sterkte voor de middellange termijn, en voor de korte termijn alleen feiten. Bij NAIC Kopen deed een gunstig koopmoment het veel beter dan afwachten (−1,5% tegen −15,2% na 1 jaar, kleine aantallen). Alleen fondsen van nu, geen kosten. Geen voorspelling.</p></div>';
     s += '<div class="kaart-plat"><h2>De methode</h2>' + uitlegOordeel().replace('<details class="uitleg" data-uitleg-oordeel>', '<details class="uitleg" data-uitleg-oordeel open>') + '</div>';
     s += '<div class="lijst"><a href="#/hulp"><div class="tekstkolom"><b>Hulp en begrippen</b><span class="zacht">Zo gebruikt u de app, rondleiding en woordenlijst</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
       '<a href="#/instellingen"><div class="tekstkolom"><b>Instellingen en back-up</b><span class="zacht">Uiterlijk, weergave, gezondheidscheck en uw back-up</span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>' +
@@ -966,6 +975,7 @@
     ['Welkom bij Aandeel Signaal', 'Vergelijk en volg grote Europese en Amerikaanse bedrijven. U heeft geen account nodig en het kost niets. De app is een hulpmiddel om te kiezen, geen beleggingsadvies.'],
     ['Het oordeel volgt de NAIC-methode', 'Bij elk aandeel staat Kopen, Neutraal of Vermijden volgens de Stock Selection Guide van de NAIC: is het een groeibedrijf, is het een goed bedrijf, en is de prijs nu gunstig (koopzone, minstens 3 : 1 opwaarts tegen neerwaarts, minstens 15% verwacht rendement per jaar)? Daarnaast toont de gezondheidscheck (zes metingen) hoe het bedrijf ervoor staat.'],
     ['Waar komen de cijfers vandaan?', '“Bevestigd” betekent: de winst per aandeel van 10 jaar is onafhankelijk nagerekend. “Uit jaarverslag”: officiële cijfers, niet nagerekend. “Indicatief”: (een deel van) de winst per aandeel komt niet uit een officiële bron, maar van Yahoo Finance of uit cijfers die u aanleverde. Ontbreekt iets, dan zegt de app liever niets dan iets onzekers; hij schat nooit.'],
+    ['Lange, middellange en korte termijn', 'Het NAIC-oordeel is voor de lange termijn (3–5 jaar). Bij Kopen ziet u ook het koopmoment: zit de koers in een stijgende trend of beter afwachten? Op het tabblad Koers staat de middellange termijn (3–12 maanden: trend, relatieve sterkte, analisten en kwartaalcijfers) en voor de korte termijn alleen feiten, zoals de datum van de volgende cijfers.'],
     ['Volgen en signalen', 'Zet aandelen op uw volglijst (ster) of voer uw aankopen in bij Portefeuille. Op Start ziet u dan in de tegels hoe uw aandelen ervoor staan, en bij Signalen wanneer ze in de koop- of verkoopzone komen.'],
     ['Uw gegevens blijven van u', 'Uw volglijst en portefeuille staan alleen op dit toestel. Maak daarom af en toe een back-up via Instellingen en bewaar die in uw eigen cloud of mail. Handig: zet de app op uw beginscherm via het menu van uw browser.']
   ];
@@ -1042,10 +1052,14 @@
       s += fr.fresh ? koersGrafiekHtml(rec, signaalVoor(rec)) +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
-      s += '<h2 class="tussenkop laag-kop" data-laag="middellang">Middellange termijn <span class="zacht">3–12 maanden</span></h2>' + middellangHtml(rec, fr) + kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + verwachtingHtml(rec);
-      s += '<h2 class="tussenkop laag-kop" data-laag="kort">Korte termijn <span class="zacht">dagen tot weken</span></h2>' + kortHtml(rec, fr) + timingHtml(rec, fr);
-      s += '<h2 class="tussenkop laag-kop" data-laag="risico">Risico</h2>' + risicoHtml(rec, fr);
-      if (fr.fresh && rec.koers) s += bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div');
+      var ond = kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + verwachtingHtml(rec);
+      s += '<h2 class="tussenkop laag-kop" data-laag="middellang">Middellange termijn <span class="zacht">3–12 maanden</span></h2>' + middellangHtml(rec, fr) +
+        (ond ? '<details class="onderbouwing" data-onderbouwing><summary>Onderbouwing: trendsignaal, relatieve sterkte en analisten</summary>' + ond + '</details>' : '');
+      var tmg = timingHtml(rec, fr);
+      s += '<h2 class="tussenkop laag-kop" data-laag="kort">Korte termijn <span class="zacht">dagen tot weken</span></h2>' + kortHtml(rec, fr) +
+        (tmg ? '<details class="onderbouwing"><summary>Meer koerscijfers</summary>' + tmg + '</details>' : '');
+      var brk = fr.fresh && rec.koers ? bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div') : '';
+      s += '<h2 class="tussenkop laag-kop" data-laag="risico">Risico</h2>' + risicoHtml(rec, fr) + (brk ? '<details class="onderbouwing"><summary>Koersbereik over 10 jaar</summary>' + brk + '</details>' : '');
       s += '<p class="zacht">De lange termijn (3–5 jaar) is het NAIC-oordeel op het tabblad Oordeel en NAIC.</p>';
     } else if (tab === 'naic') {
       s += waardeHtml(rec, g, jr, r);
@@ -1512,7 +1526,7 @@
       '<li><b>Markt</b>: het marktbeeld per index, de beste kansen volgens NAIC en alle fondsen per index. Zoek op naam of beurscode.</li>' +
       '<li><b>Volglijst</b> en <b>Portefeuille</b>: uw eigen aandelen. Met de ster zet u een aandeel op uw volglijst; bij Portefeuille voert u aankopen in.</li>' +
       '<li><b>Achtergrond</b>: de datakwaliteit, hoe het oordeel het in het verleden deed, de methode, en deze hulp.</li>' +
-      '<li>Tik op een aandeel voor details. Onderin kiest u <b>Oordeel</b> (wat vindt de app en waar moet u op letten), <b>NAIC</b> (de gids in zes stappen), <b>Gezondheid</b> (de zes metingen en uw eigen onderzoek), <b>Koers</b> (timing) en <b>Cijfers</b> (jaarcijfers en bronnen).</li>' +
+      '<li>Tik op een aandeel voor details. Onderin kiest u <b>Oordeel</b> (wat vindt de app en waar moet u op letten), <b>NAIC</b> (de gids in zes stappen), <b>Gezondheid</b> (de zes metingen en uw eigen onderzoek), <b>Koers</b> (middellange en korte termijn, risico) en <b>Cijfers</b> (jaarcijfers en bronnen).</li>' +
       '<li>Het vraagteken rechtsboven legt uit wat u op de pagina ziet. Het tandwiel opent Instellingen, waar u een back-up maakt.</li></ul></div>' +
       '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) volgt de <b>Stock Selection Guide</b> van de NAIC:</p><ul class="punten">' +
       '<li><b>Groeibedrijf?</b> De winst per aandeel groeit minstens ' + Naic.GROEI_MIN + '% per jaar. U kunt bij het aandeel ook uw eigen groeiverwachting invullen.</li>' +

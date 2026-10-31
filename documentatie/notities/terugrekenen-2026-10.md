@@ -69,6 +69,21 @@ Werkwijze: `hulp/terugrekenen_cijfers.py`, workflow “Terugrekenen kwartaalcijf
 - Toets 2 (de regel van de app, maandelijks, 25.683 waarnemingen; +1 min −1, Newey-West): 1 mnd +0,2 pp (t 1,9), 3 mnd +0,8 (2,8), 6 mnd +1,4 (2,4), 12 mnd +2,1 (1,8).
 Lezing: klein maar meetbaar effect, zwakker dan trend (+5,7 pp na 12 mnd) en relatieve sterkte (+8,7). Het onderdeel blijft in het oordeel middellange termijn; uitleg in de app bijgewerkt (1.7.1). Bijstellingen van analisten blijven ongetoetst (geen geschiedenis bij Yahoo).
 
+## Middellange termijn als geheel (31 okt 2026)
+Lokaal gerekend met de bewaarde koersen (`debug/terugrekenen_ta_koersen.json.gz`) en kwartaalcijfers (`debug/terugrekenen_cijfers_bron.json`): elke maand 2016–2026 per fonds trend (+1/0/−1), relatieve sterkte 12 mnd (> +5% / < −5%) en kwartaalcijfers (regel van de app). 39.011 waarnemingen, 21.105 met alle drie (bijstellingen van analisten ontbreken historisch). Per maand positief min negatief, Newey-West:
+
+| Variant | 3 mnd | 6 mnd | 12 mnd |
+|---|---|---|---|
+| Trend alleen | +1,9 (t 2,6) | +3,3 (2,3) | +5,7 (3,1) |
+| Relatieve sterkte alleen | +1,3 (1,9) | +3,1 (2,2) | +5,0 (2,1) |
+| Kwartaalcijfers alleen | +0,7 (2,2) | +1,3 (1,9) | +1,9 (1,4) |
+| **App: som ≥ 2 / ≤ −2 (gelijk gewogen)** | +1,6 (2,0) | +3,8 (2,4) | **+6,9 (t 4,1; 76%)** |
+| Gewogen 2-2-1, ≥ 3 / ≤ −3 | +1,7 (1,9) | +3,9 (2,3) | +7,0 (3,6) |
+| Trend én sterkte beide +1 / beide −1 | +2,3 (2,4) | +4,4 (2,4) | +7,8 (3,0) |
+| Alle drie +1 / alle drie −1 | +2,2 (1,7) | +4,6 (2,0) | +9,1 (3,5) |
+
+Lezing: het gezamenlijke oordeel is betrouwbaarder dan elk onderdeel apart (hoogste t). Zwaarder wegen van trend en sterkte verbetert niets; de app houdt gelijke gewichten (1.7.2). Uitersten (alle drie gelijk) geven het grootste verschil, maar weinig gevallen.
+
 ## Ronde 2 (25 okt, beta.76-regels: strikt NAIC incl. deel 5, Duitse jaarverslag-EPS)
 | Oordeel | 1 jaar gem / med / % beter / t / n | 3 jaar gem / med / t / n |
 |---|---|---|

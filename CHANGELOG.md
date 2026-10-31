@@ -2,6 +2,12 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.7.2 (2026.10.31)
+- **Tabblad Koers compacter:** per laag eerst de conclusie; de onderbouwing (trendsignaal, relatieve sterkte, analisten), meer koerscijfers en het koersbereik over 10 jaar zijn dichtgeklapt.
+- **Middellange termijn als geheel teruggerekend** (2016–2026, 21.105 waarnemingen met trend, relatieve sterkte en kwartaalcijfers): positief deed het na 12 maanden gemiddeld 6,9 procentpunt beter dan negatief (t 4,1; 76% van de maanden), beter dan elk onderdeel apart. Zwaarder wegen van trend en relatieve sterkte maakte het niet beter; de onderdelen blijven even zwaar.
+- **Achtergrond:** nieuwe tabel met de uitkomsten van alle technische maatstaven.
+- **Hulp en rondleiding** bijgewerkt: de drie termijnen en het koopmoment.
+
 ## 1.7.1 (2026.10.31)
 - Het onderdeel **kwartaalcijfers tegenover de verwachting** is teruggerekend (2014–2026, 251 fondsen, 8.652 bekendmakingen). Na een verrassing van meer dan +5% deed een fonds het in de 6 maanden erna gemiddeld 1,3 procentpunt beter dan na cijfers onder de verwachting, gemeten vanaf de dag ná de bekendmaking. De regel van de app (+1 tegen −1) gaf 0,8 procentpunt na 3 maanden en 1,4 na 6 maanden. Klein maar meetbaar; de uitleg in de app zegt dat nu.
 

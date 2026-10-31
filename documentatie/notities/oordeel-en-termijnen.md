@@ -1,4 +1,4 @@
-# Oordeel per termijn (stand 31 okt 2026, versie 1.7.1)
+# Oordeel per termijn (stand 31 okt 2026, versie 1.7.2)
 
 Vervangt het oordeelgedeelte van `vijf-vragen-model.md` (25 okt). De app geeft één advies (NAIC) en daarnaast informatie per termijn.
 
@@ -15,6 +15,7 @@ Vier onderdelen van +1 / 0 / −1; positief vanaf +2, negatief vanaf −2, minst
 3. Bijstelling winstverwachting analisten, 90 dagen, dit en volgend boekjaar (`verwachting.py`, Yahoo eps_trend/eps_revisions): > +2% → +1, < −2% → −1. Niet terug te rekenen (Yahoo bewaart geen geschiedenis); steunt op onderzoek.
 4. Kwartaalcijfers t.o.v. verwachting (laatste ≤ 4; Yahoo get_earnings_dates): gemiddeld ≥ +3% en laatste positief → +1; gemiddeld ≤ −3% of laatste ≤ −5% → −1. Teruggerekend: +1 − −1 +1,4 pp na 6 mnd (t 2,4).
 Verouderde verwachtingen (> 10 dagen) tellen niet.
+Als geheel teruggerekend (trend, sterkte en kwartaalcijfers samen): positief − negatief +6,9 pp na 12 mnd (t 4,1; 76% van de maanden); beter dan elk onderdeel apart. Weging 2-2-1 was niet beter, dus gelijke gewichten.
 
 ## Korte termijn (dagen tot weken): alleen feiten, geen signaal
 `Termijn.kort`: datum volgende kwartaalcijfers; verwachte bandbreedte voor een maand (koers × (1 ± beweeglijkheid/√12)); RSI; afstand tot de top van 1 jaar. Reden: in het terugrekenen voorspelde geen enkele maatstaf het rendement over 1 maand.

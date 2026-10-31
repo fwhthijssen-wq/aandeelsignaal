@@ -177,6 +177,7 @@ class WebUi(unittest.TestCase):
         pg, fouten = ctx(datetime.date.today().isoformat())
         pg.goto(INDEX + '#/a/AAPL/koers')
         pg.wait_for_timeout(200)
+        pg.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         txt = pg.locator('[data-timing]').inner_text()
         self.assertIn('Timing (informatie)', txt)
         self.assertIn('onder', txt)            # onder SMA200
@@ -185,6 +186,7 @@ class WebUi(unittest.TestCase):
         pg2, fouten2 = ctx('2020-01-01')
         pg2.goto(INDEX + '#/a/AAPL/koers')
         pg2.wait_for_timeout(200)
+        pg2.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         self.assertEqual(pg2.locator('[data-timing]').count(), 0)
         self.assertEqual(fouten + fouten2, [])
 
@@ -240,6 +242,7 @@ class WebUi(unittest.TestCase):
         pg, f1 = ctx(basis % vandaag)
         pg.goto(INDEX + '#/a/AAPL/koers')
         pg.wait_for_timeout(200)
+        pg.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         kaart = pg.locator('[data-kortetermijn]')
         self.assertEqual(kaart.get_attribute('data-kortetermijn'), 'gunstig')
         txt = kaart.inner_text()
@@ -252,11 +255,13 @@ class WebUi(unittest.TestCase):
         pg2, f2 = ctx(("{slot:110,datum:'%s',sma50:105,sma200:100,rsi14:50,reeks:[['2026-10-05',110]]}") % vandaag)
         pg2.goto(INDEX + '#/a/AAPL/koers')
         pg2.wait_for_timeout(200)
+        pg2.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         self.assertEqual(pg2.locator('[data-kortetermijn]').get_attribute('data-kortetermijn'), 'onvoldoende')
         # Oude koers: geen kaart.
         pg3, f3 = ctx(basis % '2020-01-01')
         pg3.goto(INDEX + '#/a/AAPL/koers')
         pg3.wait_for_timeout(200)
+        pg3.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         self.assertEqual(pg3.locator('[data-kortetermijn]').count(), 0)
         self.assertEqual(f1 + f2 + f3, [])
 
@@ -512,11 +517,13 @@ class WebUi(unittest.TestCase):
         pg = self._pagina_met_indexen('#/a/ASML.AS')
         self.assertIn('AEX (Amsterdam)', pg.locator('[data-indices]').inner_text())
         pg2 = self._pagina_met_indexen('#/a/AAPL/koers')
+        pg2.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         kaart = pg2.locator('[data-bereik]')
         self.assertIn('onderste derde', kaart.inner_text())
         self.assertIn('3,1 : 1', kaart.inner_text())
         self.assertEqual(kaart.locator('[data-label]').count(), 1)           # AAPL: bevestigd
         pg3 = self._pagina_met_indexen('#/a/MSFT/koers')
+        pg3.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         k3 = pg3.locator('[data-bereik]')
         self.assertIn('onderste derde', k3.inner_text())
         self.assertEqual(k3.locator('[data-label]').count(), 0)               # MSFT: onbevestigd, dus geen label
@@ -742,6 +749,7 @@ class WebUi(unittest.TestCase):
         self.assertIn('Welkom', pg.inner_text('.intro'))
         pg.click('#intro-vk'); self.assertIn('NAIC', pg.inner_text('.intro'))
         pg.click('#intro-vk'); self.assertIn('Bevestigd', pg.inner_text('.intro'))
+        pg.click('#intro-vk'); self.assertIn('middellange termijn', pg.inner_text('.intro').lower())
         pg.click('#intro-vk'); self.assertIn('signalen', pg.inner_text('.intro').lower())
         pg.click('#intro-vk'); self.assertIn('Uw gegevens', pg.inner_text('.intro'))
         self.assertEqual(pg.locator('#intro-sl').count(), 0, 'op de laatste stap geen Overslaan')
@@ -835,6 +843,7 @@ class WebUi(unittest.TestCase):
         pg.goto(INDEX + '#/achtergrond'); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-naar-kwaliteit][href="#/kwaliteit"]').count(), 1)
         self.assertEqual(pg.locator('[data-terug-algemeen] tbody tr').count(), 3)
+        self.assertEqual(pg.locator('[data-terug-ta] tbody tr').count(), 6)
         self.assertEqual(self.fouten, [])
 
     def test_label_bij_fonds_leidt_naar_kwaliteitskaart_en_filter_zekerheid(self):
@@ -990,10 +999,12 @@ class WebUi(unittest.TestCase):
         self.assertIn('Positief', pg.inner_text('[data-snel-koers]'))
         self.assertIn('kwartaalcijfers over 12 dagen', pg.inner_text('[data-snel-kort]').lower())
         pg.goto(INDEX + '#/a/AAPL/koers'); pg.wait_for_timeout(300)
+        pg.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         self.assertEqual(pg.locator('[data-koersgrafiek="2j"]').count(), 1)                  # standaard 2 jaar
         self.assertEqual(pg.locator('[data-koersgrafiek] .gem').count(), 1)                  # met het 200-daags gemiddelde
         self.assertIn('Uw aankoop', pg.inner_text('[data-koersgrafiek]'))
         pg.click('[data-grafiek="6m"]'); pg.wait_for_timeout(200)
+        pg.evaluate("document.querySelectorAll('details.onderbouwing').forEach(function(d){d.open=true})")
         self.assertEqual(pg.locator('[data-koersgrafiek="6m"]').count(), 1)
         self.assertIn('+6,0%', pg.inner_text('[data-relatief-kaart]'))
         self.assertIn('beter dan de index', pg.inner_text('[data-relatief-kaart]'))

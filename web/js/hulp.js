@@ -47,9 +47,9 @@
       'Bij elke pagina staat bovenaan het vraagteken: dat geeft uitleg over precies dat scherm.',
       'Via de rondleiding ziet u de basis nog eens.'], null],
     oordeel: ['Aandeel: Oordeel', 'Wat vindt de app, en waar moet u op letten? Kort; de onderbouwing staat op de andere tabbladen.', [
-      'Bovenaan het NAIC-oordeel (Kopen, Neutraal of Vermijden) met de vijf toetsen als vinkjes, de koopprijs (“Kopen onder …”) en of het oordeel stevig is of op het randje staat. Hier vult u ook uw eigen groeiverwachting in.',
+      'Bovenaan het NAIC-oordeel (lange termijn: Kopen, Neutraal of Vermijden) met de vijf toetsen als vinkjes, bij Kopen het koopmoment (gunstig, neutraal of afwachten), de koopprijs (“Kopen onder …”) en of het oordeel stevig is of op het randje staat. Hier vult u ook uw eigen groeiverwachting in.',
       'Aandachtspunten: de ongunstige metingen uit de gezondheidscheck, bijvoorbeeld hoge schuld.',
-      'Daaronder één regel over de timing (koers en trend), de zekerheid van de cijfers en de gezondheidscheck. Tik op een regel voor de details.',
+      'Daaronder één regel per termijn (middellang en kort), de zekerheid van de cijfers en de gezondheidscheck. Tik op een regel voor de details.',
       'Het advies van analisten (Yahoo Finance) is een mening en telt niet mee. Onderaan staat het bedrijf.',
       'Met de ster volgt u het aandeel; met Afdrukken / PDF maakt u een fondsrapport.'], 'Het oordeel is nooit een koop- of verkoopadvies.'],
     naic: ['Aandeel: NAIC', 'De Stock Selection Guide van de NAIC in zes stappen.', [
@@ -62,11 +62,12 @@
       'Ter informatie: andere kentallen per onderwerp. Die tellen niet mee.',
       'Uw eigen onderzoek: geef een score van 1 tot 5 voor management, concurrentiepositie, sector en risico’s, en vul de kwaliteitscheck van Philip Fisher in. Dat telt niet mee in het oordeel.',
       'Alles wat u invult staat op dit toestel en zit in de back-up.'], null],
-    koers: ['Aandeel: Koers', 'De koersontwikkeling en de timing.', [
-      'De grafiek toont het verloop; de lijn is het gemiddelde van 50 dagen.',
-      'Koers boven het gemiddelde duidt op een stijgende trend, daaronder op een dalende.',
-      'Timing (technische analyse) is alleen informatie. Het voorspelt niets.',
-      'Is de koers ouder dan enkele dagen, dan gebruikt de app hem niet voor het oordeel.'], null],
+    koers: ['Aandeel: Koers', 'De koers, en wat die zegt voor de middellange en de korte termijn.', [
+      'Bovenaan de grafiek: 6 maanden of 2 jaar, met het gemiddelde van 50 of 200 dagen, de NAIC-koopzone als groene band en uw gemiddelde aankoopkoers.',
+      'Middellange termijn (3–12 maanden): één oordeel, positief, neutraal of negatief, uit vier onderdelen: trend, relatieve sterkte t.o.v. de index, bijstellingen van de winstverwachting door analisten en de kwartaalcijfers t.o.v. de verwachting. Onder “Onderbouwing” staan de details.',
+      'Korte termijn (dagen tot weken): alleen feiten, zoals de datum van de volgende kwartaalcijfers en de verwachte bandbreedte voor een maand. Geen signaal: op 1 maand werkte in het terugrekenen niets.',
+      'Risico: hoeveel de koers onder de top staat, de grootste daling in 5 jaar, de beweeglijkheid en de beta.',
+      'Is de koers ouder dan 7 dagen, dan gebruikt de app hem niet.'], 'Dit is informatie naast het NAIC-oordeel (lange termijn); het verandert dat oordeel niet.'],
     cijfers: ['Aandeel: Cijfers', 'De jaarcijfers, hoe zeker ze zijn en waar ze vandaan komen.', [
       'Bovenaan of de gegevens bevestigd zijn; zo niet, dan staat er waarom.',
       'De tabel toont omzet, winst, kasstroom en meer per boekjaar, in miljarden. Jaren waarvan de winst per aandeel niet is nagerekend staan apart, met de reden.',
