@@ -20,7 +20,7 @@ AANDELEN2 = re.compile(r'(shares|aktien|stückaktien|actions|acciones|azioni|aan
 NIET_AANDELEN = re.compile(r'cost\s+of\s+capital|kapitalkosten|tax\s+rate|steuersatz|wacc|zinssatz|interest|maturity|laufzeit|'
                            r'remaining|restlaufzeit|price|preis|kurs|exercise|ausübung|employees|mitarbeiter|treasury\s+shares\s+held', re.I)
 VERWATERD = re.compile(r'dilut|verwässert', re.I)
-WINST = re.compile(r'(attributable\s+to\s+(?:the\s+)?(?:shareholders|owners|equity\s+holders|stockholders)|'
+WINST = re.compile(r'(attributable\s+to\s+(?:the\s+)?(?:[\w.&-]+\s+){0,3}?(?:shareholders|owners|equity\s+holders|stockholders)|'
                    r'net\s+income(?!\s+from\s+(?:continuing|discontinued))|net\s+profit|profit\s+attributable|'
                    r'anteil\s+der\s+aktionäre|aktionären\s+(?:der|zuzurechnen)|anteilseigner|auf\s+die\s+aktionäre|'
                    r'konzernergebnis|jahresüberschuss|periodenergebnis|ergebnis\s+nach\s+steuern)', re.I)
@@ -100,6 +100,18 @@ def kandidaten(tekst):
     return [{'aandelen': k, 'bewijs': v} for k, v in uit.items()]
 
 
+def _met_vorige(regels, k):
+    """De regel zelf, en als de vorige regel alleen tekst is (geen cijfers): beide samen. Zo wordt een omschrijving die over
+    twee regels loopt (\"thereof net income attributable to the / shareholders of ZALANDO SE  226.1\") toch herkend."""
+    w = regels[k]
+    uit = [w]
+    if k > 0:
+        v = regels[k - 1].strip()
+        if v and not re.search(r'\d', v) and len(v) < 120:
+            uit.append(v + ' ' + w.strip())
+    return uit
+
+
 def winst_kandidaten(tekst):
     """Nettowinst toe te rekenen aan de aandeelhouders, in de regels rond het gemiddeld aantal aandelen (de toelichting bij
     de winst per aandeel staat meestal als één tabel: nettowinst, aantal aandelen, winst per aandeel). Bedragen met eenheid."""
@@ -110,7 +122,7 @@ def winst_kandidaten(tekst):
         if not (AANDELEN.search(r) and AANDELEN2.search(' '.join(regels[i:i + 2]))) or NIET_AANDELEN.search(r):
             continue
         for k in range(max(0, i - 30), min(len(regels), i + 8)):
-            w = regels[k]
+          for w in _met_vorige(regels, k):
             if not WINST.search(w) or NIET_WINST.search(w):
                 continue
             f = schaal(w, regels[max(0, k - 10):k])
@@ -122,9 +134,10 @@ def winst_kandidaten(tekst):
                     if 1e7 <= abs(v) <= 2e11:
                         uit.setdefault(round(v), ' '.join(w.split())[:160])
     # daarnaast: tabelregels in het hele verslag die met een duidelijk winstlabel beginnen (winst-en-verliesrekening, kerncijfers)
-    for k, w in enumerate(regels):
+    for k in range(len(regels)):
+      for w in _met_vorige(regels, k):
         st = w.strip()
-        lab = re.split(r'\s(?=[-–−(]?\d)', st, 1)[0]                # alleen het label toetsen (niet een %-kolom erachter)
+        lab = re.split(r'\s(?=[-–−(]?\d)', st, maxsplit=1)[0]      # alleen het label toetsen (niet een %-kolom erachter)
         if not STERK.match(st) or NIET_WINST.search(re.sub(r'attributable to .{0,40}?(shareholders|owners)', '', lab, flags=re.I)):
             continue
         f = schaal(w, regels[max(0, k - 60):k]) or 1e6        # zonder aanduiding: miljoenen (gebruikelijk in deze verslagen)
@@ -140,7 +153,7 @@ def winst_kandidaten(tekst):
 
 
 # Winstlabels vooraan een tabelregel: nettowinst toe te rekenen aan de aandeelhouders (niet: incl. minderheden).
-STERK = re.compile(r'(net\s+income(\s+attributable\s+to\s+(the\s+)?shareholders.*)?\s{2,}|'
+STERK = re.compile(r'(?:thereof\s+|davon\s+|of\s+which\s+|share\s+of\s+)?(net\s+income(\s+attributable\s+to\s+(the\s+)?shareholders.*)?\s{2,}|'
                    r'(net\s+)?(profit|income|earnings)\s+(after\s+tax(es)?\s+)?attributable\s+to\s+(the\s+)?([\w.&-]+\s+){0,3}(shareholders|owners|equity\s+holders)|'
                    r'(konzern)?ergebnis\s+(nach\s+steuern\s+)?(der|den)\s+aktionären|anteil\s+der\s+aktionäre|auf\s+(die\s+)?aktionäre\s+\S+\s+entfallend)', re.I)
 
