@@ -548,11 +548,6 @@
  },
  "FRE.DE": {
   "reeks": {
-   "2015": 0.62,
-   "2016": 0.75,
-   "2017": 0.8,
-   "2018": 0.84,
-   "2019": 0.88,
    "2020": 0.88,
    "2021": 0.92,
    "2022": 0.92,
@@ -562,11 +557,7 @@
   },
   "log": [
    "2024: meerjarenoverzicht vult 2020, 2021, 2022",
-   "2022: meerjarenoverzicht vult 2018, 2019",
-   "2021: meerjarenoverzicht vult 2017",
-   "2019: kleine herziening (0.84 → 0.88); nieuwste telt",
-   "2019: meerjarenoverzicht vult 2015, 2016",
-   "2016: verschil (0.62 in eigen verslag, 0.75 in later verslag); reeks stopt"
+   "2023: verschil (0.92 in eigen verslag, 7.0 in later verslag); reeks stopt"
   ],
   "verslagen": {
    "2016": {
@@ -579,6 +570,11 @@
     "pagina": 4,
     "bewijs": "Dividend per share in € 0.84 8 0.80 0.75 0.62 0.55"
    },
+   "2020": {
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2020-EQ-E-01.pdf",
+    "pagina": 3,
+    "bewijs": "Dividend per share in € 0.88 8 0.84 0.80 0.75 0.62"
+   },
    "2021": {
     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2021-EQ-E-00.pdf",
     "pagina": 3,
@@ -588,6 +584,11 @@
     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
     "pagina": 3,
     "bewijs": "Dividend per share in € 0.92 9 0.92 0.88 0.84 0.80"
+   },
+   "2023": {
+    "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2023-EQ-E-01.pdf",
+    "pagina": 3,
+    "bewijs": "Dividend per share in € – 0.92 0.92 0.88 0.84"
    },
    "2024": {
     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2024-EQ-E-00.pdf",
@@ -802,7 +803,6 @@
    "2025": 0.35
   },
   "log": [
-   "2023: één verslag ontbreekt; gat overbrugd",
    "2019: sluit niet aan (gat); reeks stopt"
   ],
   "verslagen": {
@@ -830,6 +830,11 @@
     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2022-EQ-E-00.pdf",
     "pagina": 3,
     "bewijs": "Dividend per share in € 3 0.35 0.32 9"
+   },
+   "2024": {
+    "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2023-EQ-E-01.pdf",
+    "pagina": 3,
+    "bewijs": "Dividend per share in € 3 0.35 0.35 – 2 See the chapter “Review of results of operations” for definition, p. 51."
    },
    "2025": {
     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2024-EQ-E-00.pdf",

@@ -1281,7 +1281,8 @@
    "log": [
     "2025: meerjarenoverzicht vult 2021, 2022, 2023",
     "2024: meerjarenoverzicht vult 2020",
-    "2022: meerjarenoverzicht vult 2018, 2019",
+    "2023: meerjarenoverzicht vult 2019",
+    "2022: meerjarenoverzicht vult 2018",
     "2021: meerjarenoverzicht vult 2017",
     "2020: meerjarenoverzicht vult 2016",
     "2019: meerjarenoverzicht vult 2015",
@@ -1331,6 +1332,11 @@
      "pagina": 2,
      "bewijs": "Sales EUR m 19,429.3 14,382.5 35.1 27.7"
     },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2023-EQ-E-01.pdf",
+     "pagina": 2,
+     "bewijs": "Sales EUR m 16,815.1 19,429.3 – 13.5 – 11.0"
+    },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2024-EQ-E-00.pdf",
      "pagina": 2,
@@ -1358,9 +1364,7 @@
     "2024": 742600000.0,
     "2025": 485400000.0
    },
-   "log": [
-    "2022: één verslag ontbreekt; gat overbrugd"
-   ],
+   "log": [],
    "verslagen": {
     "2015": {
      "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2015-EQ-E-00.pdf",
@@ -1402,6 +1406,11 @@
      "pagina": 154,
      "bewijs": "Profit before tax 1,234.9 650.3 – –"
     },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2023-EQ-E-01.pdf",
+     "pagina": 151,
+     "bewijs": "Profit before tax 1,002.8 1,234.9 – –"
+    },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2024-EQ-E-00.pdf",
      "pagina": 41,
@@ -1440,7 +1449,8 @@
    "log": [
     "2025: meerjarenoverzicht vult 2021, 2022, 2023",
     "2024: meerjarenoverzicht vult 2020",
-    "2022: meerjarenoverzicht vult 2018, 2019",
+    "2023: meerjarenoverzicht vult 2019",
+    "2022: meerjarenoverzicht vult 2018",
     "2021: meerjarenoverzicht vult 2017",
     "2020: meerjarenoverzicht vult 2016",
     "2019: meerjarenoverzicht vult 2015",
@@ -1489,6 +1499,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2022-EQ-E-00.pdf",
      "pagina": 2,
      "bewijs": "Equity EUR m 4,802.7 3,995.3"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2023-EQ-E-01.pdf",
+     "pagina": 2,
+     "bewijs": "Total equity EUR m 4,356.7 4,802.7"
     },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/brenntag/Annual Reports/DE000A1DAHH0-JA-2024-EQ-E-00.pdf",
@@ -1565,6 +1580,11 @@
      "pagina": 2,
      "bewijs": "Sales 33,765.2 31,864.4 6.0"
     },
+    "2022": {
+     "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2022-EQ-E-01.pdf",
+     "pagina": 2,
+     "bewijs": "Sales 39,408.9 33,765.2 16.7"
+    },
     "2023": {
      "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2023-EQ-E-00.pdf",
      "pagina": 2,
@@ -1627,18 +1647,22 @@
   },
   "net_income": {
    "reeks": {
+    "2014": 2375300000.0,
+    "2015": 2727400000.0,
+    "2016": 2802500000.0,
+    "2017": 2984600000.0,
     "2018": 2897300000.0,
     "2019": -1225000000.0,
     "2020": -961900000.0,
-    "2021": 1455000000.0,
+    "2021": 1435200000.0,
     "2022": 66600000.0,
     "2023": 1156000000.0,
     "2024": 1168000000.0,
     "2025": -165000000.0
    },
    "log": [
-    "2021: één verslag ontbreekt; gat overbrugd",
-    "2017: sluit niet aan (gat); reeks stopt"
+    "2021: kleine herziening (1455000000.0 → 1435200000.0); nieuwste telt",
+    "2017: één verslag ontbreekt; gat overbrugd"
    ],
    "verslagen": {
     "2015": {
@@ -1671,6 +1695,11 @@
      "pagina": 2,
      "bewijs": "Net income attributable to the shareholders of the parent 1,455.0 –961.9 251.3"
     },
+    "2022": {
+     "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2022-EQ-E-01.pdf",
+     "pagina": 2,
+     "bewijs": "Net income attributable to the shareholders of the parent 1 66.6 1,435.2 –95.4"
+    },
     "2023": {
      "url": "https://irpages2.eqs.com/Download/Companies/continental/Annual Reports/DE0005439004-JA-2023-EQ-E-00.pdf",
      "pagina": 2,
@@ -1690,18 +1719,13 @@
   },
   "equity": {
    "reeks": {
-    "2018": 18333300000.0,
-    "2019": 15875700000.0,
-    "2020": 12639100000.0,
-    "2021": 12643200000.0,
     "2022": 13735000000.0,
     "2023": 14125000000.0,
     "2024": 14798000000.0,
     "2025": 4158000000.0
    },
    "log": [
-    "2021: één verslag ontbreekt; gat overbrugd",
-    "2017: sluit niet aan (gat); reeks stopt"
+    "2022: meerdere lezingen en geen die aansluit; reeks stopt"
    ],
    "verslagen": {
     "2015": {
@@ -2454,26 +2478,18 @@
  "FRE.DE": {
   "sales": {
    "reeks": {
-    "2014": 23459000000.0,
-    "2015": 27995000000.0,
-    "2016": 29471000000.0,
-    "2017": 33886000000.0,
-    "2018": 33530000000.0,
-    "2019": 35409000000.0,
-    "2020": 36277000000.0,
-    "2021": 37520000000.0,
-    "2022": 40840000000.0,
+    "2019": 17993000000.0,
+    "2020": 18476000000.0,
+    "2021": 19969000000.0,
+    "2022": 21532000000.0,
     "2023": 21067000000.0,
     "2024": 21954000000.0,
     "2025": 22873000000.0
    },
    "log": [
-    "2022: meerjarenoverzicht vult 2018, 2019, 2020",
-    "2022: één verslag ontbreekt; gat overbrugd",
-    "2021: meerjarenoverzicht vult 2017",
-    "2019: meerjarenoverzicht vult 2015, 2016",
-    "2018: meerjarenoverzicht vult 2014",
-    "2016: kleine herziening (29083000000.0 → 29471000000.0); nieuwste telt"
+    "2023: kleine herziening (22299000000.0 → 21067000000.0); nieuwste telt",
+    "2023: meerjarenoverzicht vult 2019, 2020, 2021",
+    "2022: verschil (40840000000.0 in eigen verslag, 21532000000.0 in later verslag); reeks stopt"
    ],
    "verslagen": {
     "2016": {
@@ -2491,6 +2507,11 @@
      "pagina": 4,
      "bewijs": "Sales 35,524 33,530 33,886 29,471 27,995"
     },
+    "2020": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2020-EQ-E-01.pdf",
+     "pagina": 3,
+     "bewijs": "Sales 36,277 35,409 33,530 33,886 29,471"
+    },
     "2021": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2021-EQ-E-00.pdf",
      "pagina": 3,
@@ -2500,6 +2521,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
      "pagina": 3,
      "bewijs": "Revenue 40,840 37,520 36,277 35,409 33,530"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2023-EQ-E-01.pdf",
+     "pagina": 3,
+     "bewijs": "Revenue 1 22,299 21,532 19,969 18,476 17,993"
     },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2024-EQ-E-00.pdf",
@@ -2537,6 +2563,11 @@
      "pagina": 165,
      "bewijs": "Income before income taxes 3,912 4,664"
     },
+    "2020": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2020-EQ-E-01.pdf",
+     "pagina": 219,
+     "bewijs": "Income before income taxes 3,726 3,912"
+    },
     "2021": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2021-EQ-E-00.pdf",
      "pagina": 278,
@@ -2546,6 +2577,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
      "pagina": 287,
      "bewijs": "Income before income taxes 2,814 3,652"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2023-EQ-E-01.pdf",
+     "pagina": 262,
+     "bewijs": "Income before income taxes 715 1,597 2,814"
     },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2024-EQ-E-00.pdf",
@@ -2570,20 +2606,14 @@
    },
    "log": [
     "2024: lezing gekozen die aansluit op het latere verslag",
-    "2022: één verslag ontbreekt; gat overbrugd",
     "2021: lezing gekozen die aansluit op het latere verslag",
-    "2020: verschil (1200000000.0 in eigen verslag, 1707000000.0 in later verslag); reeks stopt"
+    "2020: meerdere lezingen en geen die aansluit; reeks stopt"
    ],
    "verslagen": {
     "2018": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2018-EQ-E-00.pdf",
      "pagina": 164,
      "bewijs": "Net income attributable to shareholders of Fresenius SE & Co. KGaA 2,027 1,814"
-    },
-    "2020": {
-     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2019-EQ-E-00.pdf",
-     "pagina": 75,
-     "bewijs": "Net income (as reported) 1,883 1,200"
     },
     "2021": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2021-EQ-E-00.pdf",
@@ -2594,6 +2624,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
      "pagina": 287,
      "bewijs": "Net income attributable to shareholders of Fresenius SE & Co. KGaA 1,372 1,818"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2023-EQ-E-01.pdf",
+     "pagina": 62,
+     "bewijs": "Net income attributable to shareholders of Fresenius SE & Co. KGaA -594 1,372 1,372 --"
     },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2024-EQ-E-00.pdf",
@@ -2627,6 +2662,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2019-EQ-E-00.pdf",
      "pagina": 245,
      "bewijs": "Shareholders’ equity 26,580 25,008"
+    },
+    "2020": {
+     "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2020-EQ-E-01.pdf",
+     "pagina": 302,
+     "bewijs": "Shareholders’ equity 26,023 26,580 investment grade credit ratings. The Fresenius Group is ments in property, plant and equipment in the amo"
     },
     "2022": {
      "url": "https://irpages2.eqs.com/Download/Companies/fresenius/Annual Reports/DE0005785604-JA-2022-EQ-E-00.pdf",
@@ -3172,9 +3212,23 @@
  },
  "IFX.DE": {
   "sales": {
-   "reeks": {},
+   "reeks": {
+    "2015": 5795000000.0,
+    "2016": 6473000000.0,
+    "2017": 7063000000.0,
+    "2018": 7599000000.0,
+    "2019": 8029000000.0,
+    "2020": 8567000000.0,
+    "2021": 11060000000.0,
+    "2022": 14218000000.0,
+    "2023": 16309000000.0,
+    "2024": 14955000000.0,
+    "2025": 14662000000.0
+   },
    "log": [
-    "2025: meerdere lezingen en geen die aansluit; reeks stopt"
+    "2025: lezing gekozen die aansluit op het oudere verslag",
+    "2024: lezing gekozen die aansluit op het latere verslag",
+    "2023: lezing gekozen die aansluit op het latere verslag"
    ],
    "verslagen": {
     "2016": {
@@ -3211,6 +3265,21 @@
      "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2021-EQ-E-00.pdf",
      "pagina": 49,
      "bewijs": "Revenue 14,218 11,060"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2022-EQ-E-00.pdf",
+     "pagina": 50,
+     "bewijs": "Revenue 16,309 14,218 2,091 15"
+    },
+    "2024": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2023-EQ-E-01.pdf",
+     "pagina": 49,
+     "bewijs": "Revenue decreased by €1,354 million or 8 percent in the 2024 fiscal year to €14,955 mil-"
+    },
+    "2025": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2024-EQ-E-00.pdf",
+     "pagina": 52,
+     "bewijs": "Revenue in the 2025 fiscal year amounted to €14,662 million (previous year:"
     }
    }
   },
@@ -3261,9 +3330,23 @@
    }
   },
   "equity": {
-   "reeks": {},
+   "reeks": {
+    "2015": 4665000000.0,
+    "2016": 5023000000.0,
+    "2017": 5636000000.0,
+    "2018": 6446000000.0,
+    "2019": 8633000000.0,
+    "2020": 10219000000.0,
+    "2021": 11401000000.0,
+    "2022": 14944000000.0,
+    "2023": 17044000000.0,
+    "2024": 17219000000.0,
+    "2025": 17051000000.0
+   },
    "log": [
-    "2025: meerdere lezingen en geen die aansluit; reeks stopt"
+    "2025: lezing gekozen die aansluit op het oudere verslag",
+    "2021: lezing gekozen die aansluit op het latere verslag",
+    "2020: lezing gekozen die aansluit op het latere verslag"
    ],
    "verslagen": {
     "2016": {
@@ -3286,6 +3369,16 @@
      "pagina": 4,
      "bewijs": "Total equity 8,633 6,446 34"
     },
+    "2020": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2019-EQ-E-00.pdf",
+     "pagina": 126,
+     "bewijs": "Shareholders’ equity 9,519 8,929 hedging contracts amounting to €66 million (2019: €0 million) and for reimbursement"
+    },
+    "2021": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2020-EQ-E-00.pdf",
+     "pagina": 127,
+     "bewijs": "Shareholders’ equity 9,488 9,519"
+    },
     "2022": {
      "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2021-EQ-E-00.pdf",
      "pagina": 53,
@@ -3295,6 +3388,16 @@
      "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2022-EQ-E-00.pdf",
      "pagina": 92,
      "bewijs": "Total equity 17,044 14,944 2,100 14"
+    },
+    "2024": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2023-EQ-E-01.pdf",
+     "pagina": 53,
+     "bewijs": "Equity 17,219 17,044 175 1 Goodwill increased by €250 million to €6,797 million as of 30 September 2024. The"
+    },
+    "2025": {
+     "url": "https://irpages2.eqs.com/Download/Companies/infineon/Annual Reports/DE0006231004-JA-2024-EQ-E-00.pdf",
+     "pagina": 84,
+     "bewijs": "Equity 11,201 10,904 297 3"
     }
    }
   }
@@ -3514,7 +3617,13 @@
    "log": [
     "2025: meerdere lezingen en geen die aansluit; reeks stopt"
    ],
-   "verslagen": {}
+   "verslagen": {
+    "2019": {
+     "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2019-EQ-E-01.pdf",
+     "pagina": 28,
+     "bewijs": "Net sales 16,152 14,836 1,315 8.9"
+    }
+   }
   },
   "pretax_income": {
    "reeks": {
@@ -3540,6 +3649,16 @@
      "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2018-EQ-E-00.pdf",
      "pagina": 204,
      "bewijs": "Profit before income tax 1,461 2,129"
+    },
+    "2019": {
+     "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2019-EQ-E-01.pdf",
+     "pagina": 174,
+     "bewijs": "Profit before income tax 1,735 1,461"
+    },
+    "2020": {
+     "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2020-EQ-E-00.pdf",
+     "pagina": 192,
+     "bewijs": "Profit before income tax 2,630 1,735"
     },
     "2021": {
      "url": "https://irpages2.eqs.com/Download/Companies/merck/Annual Reports/DE0006599905-JA-2021-EQ-E-00.pdf",
@@ -4642,10 +4761,12 @@
     "2019": 6482500000.0,
     "2020": 7982000000.0,
     "2021": 10354000000.0,
-    "2022": 10344800000.0
+    "2022": 10344800000.0,
+    "2023": 10143100000.0
    },
    "log": [
-    "2022: lezing gekozen die aansluit op het oudere verslag",
+    "2023: lezing gekozen die aansluit op het oudere verslag",
+    "2022: lezing gekozen die aansluit op het latere verslag",
     "2021: lezing gekozen die aansluit op het latere verslag",
     "2020: lezing gekozen die aansluit op het latere verslag",
     "2019: lezing gekozen die aansluit op het latere verslag",
@@ -4694,6 +4815,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2022-EQ-E-00.pdf",
      "pagina": 122,
      "bewijs": "Revenue 9,270.0 1,602.8 373.4 11,246.1 -901.4 10,344.8"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2023-EQ-E-01.pdf",
+     "pagina": 113,
+     "bewijs": "Revenue 8,241.9 1,776.1 399.6 10,417.6 -274.5 10,143.1"
     }
    }
   },
@@ -4707,7 +4833,8 @@
     "2019": 144900000.0,
     "2020": 318500000.0,
     "2021": 354300000.0,
-    "2022": 38800000.0
+    "2022": 38800000.0,
+    "2023": 152900000.0
    },
    "log": [],
    "verslagen": {
@@ -4750,6 +4877,11 @@
      "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2022-EQ-E-00.pdf",
      "pagina": 172,
      "bewijs": "Earnings before taxes (EBT) 38.8 354.3"
+    },
+    "2023": {
+     "url": "https://irpages2.eqs.com/Download/Companies/zalando/Annual Reports/DE000ZAL1111-JA-2023-EQ-E-01.pdf",
+     "pagina": 167,
+     "bewijs": "Earnings before taxes (EBT) 152.9 38.8"
     }
    }
   },
