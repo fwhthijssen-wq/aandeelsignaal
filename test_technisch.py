@@ -133,3 +133,26 @@ class WeekreeksEnRelatieveSterkte(unittest.TestCase):
         self.assertIsNone(relatieve_sterkte(fonds, [], 'AEX'))
         self.assertIsNone(relatieve_sterkte(fonds, index[:-30], 'AEX'))     # index niet bij: geen vergelijking
         self.assertEqual(index_voor('AAPL'), 'VS')
+
+
+class Risico(unittest.TestCase):
+    def test_terugval_grootste_daling_beweeglijkheid_en_beta(self):
+        import datetime
+        from bouw_webdata import risico
+        d, pts, idx, p, q = datetime.date(2020, 1, 1), [], [], 100.0, 100.0
+        i = 0
+        while d < datetime.date(2026, 10, 30):
+            if d.weekday() < 5:
+                stap = 0.01 if i % 2 else -0.008                  # zigzag: beweeglijk
+                if datetime.date(2022, 1, 1) <= d < datetime.date(2022, 7, 1):
+                    stap -= 0.004                                 # een halfjaar daling
+                p *= 1 + 2 * stap; q *= 1 + stap                   # fonds beweegt twee keer zo sterk als de index
+                pts.append((d.isoformat(), p)); idx.append((d.isoformat(), q)); i += 1
+            d += datetime.timedelta(days=1)
+        r = risico(pts, idx)
+        self.assertLess(r['max_daling'], -20)
+        self.assertTrue('2022' in r['daling_tot'])
+        self.assertLessEqual(r['onder_top'], 0)
+        self.assertGreater(r['beweeglijk'], 10)
+        self.assertAlmostEqual(r['beta'], 2.0, delta=0.15)
+        self.assertIsNone(risico(pts[:50]))

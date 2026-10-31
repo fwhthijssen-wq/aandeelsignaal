@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.6.1 (2026.10.31)
+- **Risico en terugval** op het tabblad Koers: hoeveel de koers onder het hoogste punt van het afgelopen jaar staat, de grootste daling in 5 jaar (met de periode), de beweeglijkheid per jaar en de beta tegen de index. Ook in het fondsrapport. Informatie, telt niet mee in het oordeel.
+- Technisch: het terugrekenen van het kortetermijnsignaal toetst nu ook de relatieve sterkte, de beweeglijkheid, de terugval en de beta.
+
 ## 1.6 (2026.10.31)
 **Technische analyse als aanvulling op NAIC: NAIC kiest wát, het kortetermijnsignaal wannéér.**
 - **Koopmoment bij NAIC Kopen.** Op het tabblad Oordeel staat bij NAIC Kopen of het moment gunstig is (koers in een stijgende trend), neutraal, of dat u beter kunt afwachten (koers nog in een dalende trend). Teruggerekend 2018–2025 deed NAIC Kopen het na 1 jaar −1,5% bij een gunstig moment tegen −15,2% bij afwachten, ten opzichte van het gemiddelde (kleine aantallen).

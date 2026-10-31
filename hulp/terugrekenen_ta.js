@@ -75,6 +75,28 @@ for (const j of jaren) {
   const g = stat(sub.filter(G), 'om3'), a = stat(sub.filter(A), 'om3');
   res.jaar[j] = { gunstig: g, afwachten: a, verschil: g.n && a.n ? r2(g.gemiddeld - a.gemiddeld) : null };
 }
+// Relatieve sterkte, beweeglijkheid, terugval en beta: per maand in vijf even grote groepen (kwintielen), van laag (1) naar hoog (5)
+res.kwintielen = {};
+function kwintielen(veld) {
+  const per = {}; for (const h of H) per[h] = [[], [], [], [], []];
+  const spr = {}; for (const h of H) spr[h] = [];
+  for (const m of Object.keys(perMaand).sort()) {
+    const l = perMaand[m].filter((r) => typeof r[veld] === 'number').sort((a, b) => a[veld] - b[veld]);
+    if (l.length < 25) continue;
+    const groep = (i) => Math.min(4, Math.floor(i / l.length * 5));
+    for (const h of H) {
+      const som = [0, 0, 0, 0, 0], n = [0, 0, 0, 0, 0];
+      l.forEach((r, i) => { if (typeof r['o' + h] === 'number') { const g = groep(i); som[g] += r['o' + h]; n[g]++; per[h][g].push(r['o' + h]); } });
+      if (n[0] >= 3 && n[4] >= 3) spr[h].push(som[4] / n[4] - som[0] / n[0]);
+    }
+  }
+  const uit = {};
+  for (const h of H) uit[h] = { groepen: per[h].map((v) => v.length ? r2(v.reduce((a, b) => a + b, 0) / v.length) : null), hoogMinLaag: nw(spr[h], HN[h] - 1) };
+  return uit;
+}
+for (const v of ['rel_m3', 'rel_m6', 'rel_m12', 'onder_top', 'beweeglijk', 'max_daling', 'beta']) res.kwintielen[v] = kwintielen(v);
+// combinatie: gunstig moment én sterker dan de index over 12 maanden, tegen de rest
+for (const h of H) res.spreiding['gunstig_en_sterk_' + h] = spreiding((r) => G(r) && r.rel_m12 > 0, (r) => !(G(r) && r.rel_m12 > 0), h);
 fs.writeFileSync(path.join(map, 'terugrekenen_ta.json'), JSON.stringify(res, null, 1));
 
 const fmt = (s) => !s || !s.n ? 'n=0' : `${s.gemiddeld > 0 ? '+' : ''}${s.gemiddeld}% gem · ${s.mediaan}% med · ${s.beter}% beter · n=${s.n}`;
@@ -89,5 +111,12 @@ md += '## Per check: ja min nee, per maand (Newey-West)\n\n| Check | 1 maand | 3
   Object.entries(res.checks).map(([c, v]) => `| ${c} | ${fsp(v.m1)} | ${fsp(v.m3)} | ${fsp(v.m12)} |`).join('\n') + '\n\n';
 md += '## Per regio: Gunstig min Afwachten (3 en 12 maanden)\n\n' + Object.entries(res.regio).map(([g, v]) => `- ${g}: 3 mnd ${fsp(v.m3)} · 12 mnd ${fsp(v.m12)}`).join('\n') + '\n\n';
 md += '## Per jaar (3 maanden, Gunstig min Afwachten)\n\n' + Object.entries(res.jaar).map(([j, v]) => `- ${j}: ${v.verschil == null ? '–' : (v.verschil > 0 ? '+' : '') + v.verschil + ' pp'} (gunstig n=${v.gunstig.n || 0}, afwachten n=${v.afwachten.n || 0})`).join('\n') + '\n';
+const VNAAM = { rel_m3: 'Relatieve sterkte 3 mnd', rel_m6: 'Relatieve sterkte 6 mnd', rel_m12: 'Relatieve sterkte 12 mnd', onder_top: 'Afstand tot top 1 jaar (laag = ver eronder)', beweeglijk: 'Beweeglijkheid', max_daling: 'Grootste daling 5 jaar (laag = diepe daling)', beta: 'Beta' };
+md += '\n## Kwintielen (per maand 5 groepen, 1 = laagste waarde, 5 = hoogste): gemiddeld overrendement en groep 5 min groep 1\n\n';
+for (const [v, x] of Object.entries(res.kwintielen)) {
+  md += `### ${VNAAM[v]}\n\n| Horizon | 1 | 2 | 3 | 4 | 5 | 5 min 1 |\n|---|---|---|---|---|---|---|\n` +
+    H.map((h) => `| ${HTEKST[h]} | ${x[h].groepen.map((g) => g == null ? '–' : (g > 0 ? '+' : '') + g + '%').join(' | ')} | ${fsp(x[h].hoogMinLaag)} |`).join('\n') + '\n\n';
+}
+md += '## Gunstig moment én sterker dan de index (12 mnd) tegen de rest\n\n' + H.map((h) => `- ${HTEKST[h]}: ${fsp(res.spreiding['gunstig_en_sterk_' + h])}`).join('\n') + '\n';
 fs.writeFileSync(path.join(map, 'terugrekenen_ta.md'), md);
 console.log(md);

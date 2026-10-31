@@ -20,8 +20,10 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Gegevens van de app ophalen
         run: curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+      - name: Bewaarde koersen van de vorige keer (scheelt ophalen)
+        run: curl -sSfL "https://raw.githubusercontent.com/${{ github.repository }}/jaarverslagen/debug/terugrekenen_ta_koersen.json.gz" -o koersen.json.gz || true
       - name: Koersen en maandelijkse peildata
-        run: python hulp/terugrekenen_ta.py aandelen.json uit
+        run: python hulp/terugrekenen_ta.py aandelen.json uit koersen.json.gz
       - name: Signaal en samenvatting
         run: node hulp/terugrekenen_ta.js uit
       - name: Op tak jaarverslagen zetten

@@ -975,7 +975,7 @@ class WebUi(unittest.TestCase):
         week = [[(vandaag - datetime.timedelta(weeks=30 - i)).isoformat(), 80 + i] for i in range(31)]
         c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
           set:function(x){x.aandelen.forEach(function(a){if(a.ticker==='AAPL'){a.koers={slot:100,datum:'%s',sma50:95,sma200:90,rsi14:55,macd:1,macd_signaal:0.5,mom6:10,kruis_dagen:30,
-            reeks:[['2026-10-01',98],['2026-10-02',100]],week:%s,week200:%s,relatief:{index:'VS',naam:'S&P 500',datum:'%s',m3:2.5,m6:4,m12:6}};
+            reeks:[['2026-10-01',98],['2026-10-02',100]],week:%s,week200:%s,relatief:{index:'VS',naam:'S&P 500',datum:'%s',m3:2.5,m6:4,m12:6},risico:{onder_top:-8.2,top_datum:'2026-07-01',max_daling:-31.5,daling_van:'2022-01-03',daling_tot:'2022-10-12',jaren:5,beweeglijk:27.4,beta:1.21}};
             a.gegevens.jaren.forEach(function(j){if(j.comparable_eps>0){j.koers_hoog=j.comparable_eps*25;j.koers_laag=j.comparable_eps*15;}});}});v=x;}});
           try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({volglijst:[],introGezien:true,portefeuille:[{id:'1',ticker:'AAPL',aantal:2,koers:90,valuta:'USD',datum:'2025-01-01'}]}));}catch(e){}})();"""
           % (vandaag.isoformat(), json.dumps(week), json.dumps([None] * 10 + [85] * 21), vandaag.isoformat()))
@@ -995,6 +995,8 @@ class WebUi(unittest.TestCase):
         self.assertIn('+6,0%', pg.inner_text('[data-relatief-kaart]'))
         self.assertIn('beter dan de index', pg.inner_text('[data-relatief-kaart]'))
         self.assertEqual(pg.locator('[data-kt-terug]').count(), 1)                           # onderbouwing uit het terugrekenen
+        rk = pg.inner_text('[data-risico-kaart]')
+        self.assertIn('−31,5%', rk); self.assertIn('gemiddeld', rk); self.assertIn('beweegt sterker dan de markt', rk)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         if oordeel == 'Kopen':
             pg.goto(INDEX + '#/markt'); pg.wait_for_timeout(300)

@@ -1059,6 +1059,47 @@ def _op_of_voor(punten, dag, max_dagen=7):
     return punten[i][1]
 
 
+def risico(punten, index_punten=None):
+    """Risico uit de dagkoersen (splitsingscorrect): hoever de koers onder het hoogste punt van het afgelopen jaar staat, de
+    grootste daling van top tot dal in 5 jaar (met data), de beweeglijkheid (standaardafwijking van de dagrendementen over
+    1 jaar, op jaarbasis) en de beta tegen de index over 2 jaar (1 = beweegt even sterk als de markt). Te weinig data: None."""
+    if not punten or len(punten) < 200:
+        return None
+    eind = date.fromisoformat(punten[-1][0])
+    jaar = [p for p in punten if (eind - date.fromisoformat(p[0])).days <= 365]
+    uit = {'datum': punten[-1][0]}
+    if len(jaar) >= 200:
+        top = max(jaar, key=lambda p: p[1])
+        uit['onder_top'] = round((punten[-1][1] / top[1] - 1) * 100, 1) + 0.0
+        uit['top_datum'] = top[0]
+        r = [jaar[i][1] / jaar[i - 1][1] - 1 for i in range(1, len(jaar))]
+        m = sum(r) / len(r)
+        uit['beweeglijk'] = round((sum((x - m) ** 2 for x in r) / (len(r) - 1)) ** 0.5 * (252 ** 0.5) * 100, 1)
+    vijf = [p for p in punten if (eind - date.fromisoformat(p[0])).days <= 5 * 365 + 2]
+    if len(vijf) >= 750:
+        piek, piek_d, best = vijf[0][1], vijf[0][0], (0.0, None, None)
+        for d, c in vijf:
+            if c > piek:
+                piek, piek_d = c, d
+            val = c / piek - 1
+            if val < best[0]:
+                best = (val, piek_d, d)
+        uit['max_daling'] = round(best[0] * 100, 1) + 0.0
+        uit['daling_van'], uit['daling_tot'] = best[1], best[2]
+        uit['jaren'] = round((eind - date.fromisoformat(vijf[0][0])).days / 365.25)
+    if index_punten:
+        ix = dict(index_punten)
+        gem = [(p[0], p[1]) for p in punten if p[0] in ix and (eind - date.fromisoformat(p[0])).days <= 730]
+        if len(gem) >= 250:
+            rf = [gem[i][1] / gem[i - 1][1] - 1 for i in range(1, len(gem))]
+            ri = [ix[gem[i][0]] / ix[gem[i - 1][0]] - 1 for i in range(1, len(gem))]
+            mf, mi = sum(rf) / len(rf), sum(ri) / len(ri)
+            var = sum((x - mi) ** 2 for x in ri)
+            if var > 0:
+                uit['beta'] = round(sum((a - mf) * (b - mi) for a, b in zip(rf, ri)) / var, 2)
+    return uit if len(uit) > 1 else None
+
+
 def relatieve_sterkte(punten, index_punten, code):
     """Hoeveel procent het fonds het beter (+) of slechter (−) deed dan zijn index over 3, 6 en 12 maanden."""
     if not punten or not index_punten or code not in INDEX_KORT:
@@ -1464,6 +1505,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
                         koers['relatief'] = relatieve_sterkte(punten, index_reeks(code), code)
                     except Exception:
                         koers['relatief'] = None
+                try:
+                    koers['risico'] = risico(punten, index_reeks(code) if code else None)
+                except Exception:
+                    koers['risico'] = None
         analisten, info = None, None
         try:
             info = analisten_ophalen(ticker)

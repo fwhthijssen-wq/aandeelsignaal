@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.6 (2026.10.31)';
+  var APP_VERSIE = '1.6.1 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -290,6 +290,20 @@
     var richting = typeof rel.m12 === 'number' && typeof rel.m3 === 'number' ? (rel.m12 > 0 && rel.m3 > 0 ? 'Het fonds doet het al een jaar beter dan de index, en de laatste maanden ook.' : rel.m12 < 0 && rel.m3 < 0 ? 'Het fonds blijft al een jaar achter bij de index, en de laatste maanden ook.' : rel.m12 > 0 ? 'Over een jaar sterker dan de index, maar de laatste maanden zwakker.' : 'Over een jaar zwakker dan de index, maar de laatste maanden sterker.') : '';
     return '<div class="kaart-plat" data-relatief-kaart><div class="rij-kop"><h2>Relatieve sterkte</h2><span class="zacht">t.o.v. de ' + h(rel.naam) + '</span></div><div class="kpis">' + cel(rel.m3, '3 maanden') + cel(rel.m6, '6 maanden') + cel(rel.m12, '12 maanden') + '</div>' +
       '<p>' + h(richting) + '</p><p class="zacht">Hoeveel procent de koers meer (+) of minder (−) steeg dan de index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat volgens onderzoek vaak nog een tijd doen (momentum), maar zeker is dat niet. Informatie, telt niet mee in het oordeel.</p></div>';
+  }
+  /* Risico en terugval (tabblad Koers): informatie, los van het oordeel. */
+  function risicoHtml(rec, fr) {
+    var x = rec.koers && rec.koers.risico;
+    if (!fr.fresh || !x) return '';
+    var bw = typeof x.beweeglijk === 'number' ? (x.beweeglijk < 20 ? 'rustig' : x.beweeglijk <= 35 ? 'gemiddeld' : 'beweeglijk') : null;
+    var bt = typeof x.beta === 'number' ? (x.beta < 0.8 ? 'beweegt minder dan de markt' : x.beta <= 1.2 ? 'beweegt ongeveer met de markt mee' : 'beweegt sterker dan de markt') : null;
+    var kpi = function (w, t) { return '<div class="kpi"><b>' + w + '</b><span>' + t + '</span></div>'; };
+    var s = '<div class="kaart-plat" data-risico-kaart><div class="rij-kop"><h2>Risico en terugval</h2><span class="zacht">uit de dagkoersen</span></div><div class="kpis">';
+    if (typeof x.onder_top === 'number') s += kpi(pct(x.onder_top), 'Onder het hoogste punt van het afgelopen jaar' + (x.top_datum ? ' (' + h(datumNl(x.top_datum)) + ')' : ''));
+    if (typeof x.max_daling === 'number') s += kpi(pct(x.max_daling), 'Grootste daling in ' + (x.jaren || 5) + ' jaar' + (x.daling_van ? ' (' + h(datumNl(x.daling_van)) + ' tot ' + h(datumNl(x.daling_tot)) + ')' : ''));
+    if (bw) s += kpi(getal(x.beweeglijk, 0) + '%', 'Beweeglijkheid per jaar: ' + bw);
+    if (bt) s += kpi(getal(x.beta, 2), 'Beta t.o.v. de ' + h(rec.koers.relatief ? rec.koers.relatief.naam : 'index') + ': ' + bt);
+    return s + '</div><p class="zacht">De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag. Informatie, telt niet mee in het oordeel; het verleden is geen garantie.</p></div>';
   }
   function naicKaart(rec, b) {
     var n = b.naic;
@@ -986,7 +1000,7 @@
       s += fr.fresh ? koersGrafiekHtml(rec, signaalVoor(rec)) +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'
         : '<div class="melding"><b>Geen actuele koers beschikbaar</b><span>' + h(fr.reason) + '</span></div>';
-      s += kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + timingHtml(rec, fr);
+      s += kortetermijnHtml(rec, fr) + relatiefHtml(rec, fr) + risicoHtml(rec, fr) + timingHtml(rec, fr);
       if (fr.fresh && rec.koers) s += bereikKaart(Naic.bereikUitKoers(rec.koers.bereik, rec.koers.slot), r.bevestigd, 'div');
     } else if (tab === 'naic') {
       s += waardeHtml(rec, g, jr, r);

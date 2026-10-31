@@ -12,7 +12,7 @@ import gzip, json, sys, time
 from datetime import date
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from bouw_webdata import koers_uit_reeks
+from bouw_webdata import koers_uit_reeks, relatieve_sterkte, risico, index_voor, INDEX_YAHOO
 
 VENSTER = 504                       # 2 jaar handelsdagen, zoals de nachtelijke update (period='2y')
 HORIZON = {'m1': 1, 'm3': 3, 'm6': 6, 'm12': 12}
@@ -54,8 +54,19 @@ def main():
     if len(sys.argv) > 3 and Path(sys.argv[3]).exists():
         cache = json.loads(gzip.decompress(Path(sys.argv[3]).read_bytes()))
     alle, fouten, rijen = {}, {}, []
+    indexen = {c: [tuple(p) for p in v] for c, v in (cache.get('__index__') or {}).items()}
+
+    def index_reeks(code):
+        if code not in indexen:
+            try:
+                indexen[code] = koersen(INDEX_YAHOO[code])
+            except Exception as exc:
+                fouten['index ' + code] = str(exc)[:100]; indexen[code] = []
+        return indexen[code]
     for nr, rec in enumerate(data['aandelen']):
         t = rec['ticker']
+        if t == '__index__':
+            continue
         punten = [tuple(p) for p in cache.get(t) or []]
         if not punten:
             try:
@@ -76,6 +87,14 @@ def main():
                 continue
             k.pop('reeks', None)
             rij = {'ticker': t, 'peil': punten[i][0], 'regio': 'VS' if '.' not in t else 'EU', 'koers': k}
+            code = index_voor(t)
+            ix = [p for p in index_reeks(code) if p[0] <= punten[i][0]] if code else []
+            rel = relatieve_sterkte(punten[max(0, i - 300):i + 1], ix[-300:], code) if ix else None
+            if rel:
+                rij.update({'rel_' + h: rel[h] for h in ('m3', 'm6', 'm12') if h in rel})
+            rs = risico(punten[max(0, i - 1300):i + 1], ix[-600:] or None)
+            if rs:
+                rij.update({k2: rs[k2] for k2 in ('onder_top', 'beweeglijk', 'max_daling', 'beta') if k2 in rs})
             for naam, n in HORIZON.items():
                 jj, mm = maand_plus(date(j, m, 1), n)
                 ie = einde.get(f'{jj:04d}-{mm:02d}')
@@ -85,6 +104,7 @@ def main():
         if nr % 25 == 0:
             print(nr, t, len(rijen), file=sys.stderr, flush=True)
     (uit_map / 'ta_punten.json').write_text(json.dumps({'rijen': rijen, 'fouten': fouten}, separators=(',', ':')), encoding='utf-8')
+    alle['__index__'] = indexen
     (uit_map / 'ta_koersen.json.gz').write_bytes(gzip.compress(json.dumps(alle, separators=(',', ':')).encode()))
     print('rijen', len(rijen), 'fondsen', sum(1 for v in alle.values() if v), 'fouten', len(fouten), file=sys.stderr)
 
