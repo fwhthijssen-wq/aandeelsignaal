@@ -1,52 +1,12 @@
-===== ASML.AS niveau None bron None eps_status independently_verified 10
-2016 EUR eps 3.64 rep 3.64 ni 1557800000 sh 427700000 bron None corr None aang None check onderbouwd narek None
-2017 EUR eps 4.79 rep 4.79 ni 2066700000 sh 431600000 bron None corr None aang None check onderbouwd narek None
-2018 EUR eps 6.08 rep 6.08 ni 2591600000 sh 426400000 bron None corr None aang None check onderbouwd narek None
-2019 EUR eps 6.15 rep 6.15 ni 2592300000 sh 421600000 bron None corr None aang None check onderbouwd narek None
-2020 EUR eps 8.48 rep 8.48 ni 3553700000 sh 419100000 bron None corr None aang None check onderbouwd narek None
-2021 EUR eps 14.34 rep 14.34 ni 5883200000 sh 410400000 bron None corr None aang None check onderbouwd narek None
-2022 EUR eps 14.13 rep 14.13 ni 5624200000 sh 398000000 bron None corr None aang None check onderbouwd narek None
-2023 EUR eps 19.89 rep 19.89 ni 7839000000 sh 394100000 bron None corr None aang None check onderbouwd narek None
-2024 EUR eps 19.24 rep 19.24 ni 7571600000 sh 393600000 bron None corr None aang None check onderbouwd narek None
-2025 EUR eps 24.71 rep 24.71 ni 9609400000 sh 388900000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 40, "overeen": 39, "afwijkend": [{"jaar": 2019, "veld": "equity", "app": 12592200000, "tweede": 13876900000, "pct": -9.3, "soort": null}], "aantal_afwijkend": 1, "gecorrigeerd": []}
-pdf_narekening null
-===== AAPL niveau None bron None eps_status independently_verified 10
-2016 USD eps 2.0775 rep 8.31 ni 45687000000 sh 5500281000 bron None corr None aang None check onderbouwd narek None
-2017 USD eps 2.3025 rep 9.21 ni 48351000000 sh 5251692000 bron None corr None aang None check onderbouwd narek None
-2018 USD eps 2.98 rep 2.98 ni 59531000000 sh 20000435000 bron None corr None aang None check onderbouwd narek None
-2019 USD eps 2.97 rep 2.97 ni 55256000000 sh 18595651000 bron None corr None aang None check onderbouwd narek None
-2020 USD eps 3.28 rep 3.28 ni 57411000000 sh 17528214000 bron None corr None aang None check onderbouwd narek None
-2021 USD eps 5.61 rep 5.61 ni 94680000000 sh 16864919000 bron None corr None aang None check onderbouwd narek None
-2022 USD eps 6.11 rep 6.11 ni 99803000000 sh 16325819000 bron None corr None aang None check onderbouwd narek None
-2023 USD eps 6.13 rep 6.13 ni 96995000000 sh 15812547000 bron None corr None aang None check onderbouwd narek None
-2024 USD eps 6.08 rep 6.08 ni 93736000000 sh 15408095000 bron None corr None aang None check onderbouwd narek None
-2025 USD eps 7.46 rep 7.46 ni 112010000000 sh 15004697000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 40, "overeen": 40, "afwijkend": [], "aantal_afwijkend": 0, "gecorrigeerd": []}
-pdf_narekening null
-===== SAP.DE niveau None bron None eps_status independently_verified 10
-2016 EUR eps 3.04 rep 3.04 ni 3629000000 sh 1199000000 bron None corr None aang None check onderbouwd narek None
-2017 EUR eps 3.35 rep 3.35 ni 4046000000 sh 1198000000 bron None corr None aang None check onderbouwd narek None
-2018 EUR eps 3.42 rep 3.42 ni 4088000000 sh 1194000000 bron None corr None aang None check onderbouwd narek None
-2019 EUR eps 2.78 rep 2.78 ni 3370000000 sh 1194000000 bron None corr None aang None check onderbouwd narek None
-2020 EUR eps 4.35 rep 4.35 ni 5283000000 sh 1182000000 bron None corr None aang None check onderbouwd narek None
-2021 EUR eps 4.46 rep 4.46 ni 5376000000 sh 1180000000 bron None corr None aang None check onderbouwd narek None
-2022 EUR eps 1.94 rep 1.94 ni 1708000000 sh 1175000000 bron None corr None aang None check onderbouwd narek None
-2023 EUR eps 5.2 rep 5.2 ni 5964000000 sh 1180000000 bron None corr None aang None check onderbouwd narek None
-2024 EUR eps 2.65 rep 2.65 ni 3150000000 sh 1180000000 bron None corr None aang None check onderbouwd narek None
-2025 EUR eps 6.1 rep 6.1 ni 7326000000 sh 1175000000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 40, "overeen": 35, "afwijkend": [{"jaar": 2020, "veld": "net_income", "app": 5283000000, "tweede": 5145000000, "pct": 2.7, "soort": null}, {"jaar": 2021, "veld": "net_income", "app": 5376000000, "tweede": 5256000000, "pct": 2.3, "soort": null}, {"jaar": 2022, "veld": 
-pdf_narekening null
-===== INGA.AS niveau None bron None eps_status independently_verified 10
-2016 EUR eps 1.28 rep 1.28 ni 6753000000 sh 3878500000 bron None corr None aang ['total_liabilities'] check onderbouwd narek None
-2017 EUR eps 1.41 rep 1.41 ni 8085000000 sh 3885600000 bron None corr None aang None check onderbouwd narek None
-2018 EUR eps 1.22 rep 1.22 ni 6986000000 sh 3890400000 bron None corr None aang None check onderbouwd narek None
-2019 EUR eps 1.0 rep 1 ni 5653000000 sh 3895300000 bron None corr None aang None check onderbouwd narek None
-2020 EUR eps 0.58 rep 0.58 ni 2485000000 sh 3901100000 bron None corr None aang ['net_income'] check onderbouwd narek None
-2021 EUR eps 1.53 rep 1.53 ni 4776000000 sh 3890700000 bron None corr None aang ['net_income'] check onderbouwd narek None
-2022 EUR eps 3.35 rep 3.35 ni 12126000000 sh 3624300000 bron None corr None aang ['net_income'] check onderbouwd narek None
-2023 EUR eps 1.16 rep 1.16 ni 4374000000 sh 3565300000 bron None corr None aang None check onderbouwd narek None
-2024 EUR eps 1.65 rep 1.65 ni 5592000000 sh 3228700000 bron None corr None aang None check onderbouwd narek None
-2025 EUR eps 2.78 rep 2.78 ni 8599000000 sh 2989700000 bron None corr None aang None check onderbouwd narek None
-tweede_bron {"bron": "EODHD", "vergeleken": 37, "overeen": 4, "afwijkend": [{"jaar": 2016, "veld": "sales", "app": 17902000000, "tweede": 17386000000, "pct": 3.0, "soort": null}, {"jaar": 2016, "veld": "net_income", "app": 6753000000, "tweede": 4975000000, "pct": 35.7, "soort": null}, {"jaar": 2016, "veld": "eq
-pdf_narekening null
+weekreeks 343 van 347 | relatieve sterkte 342
+zonder relatief: NOKIA.HE
+verwachting 346 | bijstelling 345 | verrassingen 251 | volgende cijfers 342 | risico 341
+zonder verwachting: GLPG.AS
+  ASML.AS verwachting {'datum': '2026-10-31', 'bron': 'Yahoo Finance', 'bijstelling': {'dit_jaar': {'d30': 7.5, 'd90': 8.3, 'omhoog': 2, 'omlaag': 1}, 'volgend_jaar': {'d30': 8.1, 'd90': 9.5, 'omhoog': 4, 'omlaag': 1}}, 'verrassingen': [{'datum': '2026-10-14', 'pct': 9.9}, {'datum': '2026-07-13', 'pct': 9.1}, {'datum': '2026-04-14', 'pct': 8.0}, {'datum': '2026-01-27', 'pct': -2.7}], 'volgende_cijfers': '2027-01-27'}
+  AAPL verwachting {'datum': '2026-10-31', 'bron': 'Yahoo Finance', 'bijstelling': {'dit_jaar': {'d30': 0.1, 'd90': 0.2, 'omhoog': 2, 'omlaag': 2}, 'volgend_jaar': {'d30': -0.5, 'd90': -0.3, 'omhoog': 5, 'omlaag': 3}}, 'verrassingen': [{'datum': '2026-07-30', 'pct': 6.7}, {'datum': '2026-04-30', 'pct': 3.5}, {'datum': '2026-01-29', 'pct': 6.2}, {'datum': '2025-10-30', 'pct': 4.5}], 'volgende_cijfers': '2026-11-02'}
+  SAP.DE verwachting {'datum': '2026-10-31', 'bron': 'Yahoo Finance', 'bijstelling': {'dit_jaar': {'d30': 0.3, 'd90': 0.1, 'omhoog': 1, 'omlaag': 4}, 'volgend_jaar': {'d30': 1.3, 'd90': 0.9, 'omhoog': 2, 'omlaag': 3}}, 'verrassingen': [{'datum': '2026-10-20', 'pct': 3.1}, {'datum': '2026-07-22', 'pct': -9.3}, {'datum': '2026-04-23', 'pct': 3.7}, {'datum': '2026-01-29', 'pct': 7.6}], 'volgende_cijfers': '2027-01-28'}
+  MC.PA verwachting {'datum': '2026-10-31', 'bron': 'Yahoo Finance', 'bijstelling': {'dit_jaar': {'d30': -0.1, 'd90': 1.6, 'omhoog': 1, 'omlaag': 10}, 'volgend_jaar': {'d30': -2.6, 'd90': -5.5, 'omhoog': 1, 'omlaag': 10}}, 'volgende_cijfers': '2027-01-26'}
+  ASML.AS weken 105 laatste ['2026-10-30', 1412.8] w200 1387.37 relatief {'index': 'AEX', 'naam': 'AEX', 'datum': '2026-10-30', 'm3': -2.0, 'm6': 6.4, 'm12': 33.8}
+  AAPL weken 105 laatste ['2026-10-30', 344.63] w200 296.27 relatief {'index': 'VS', 'naam': 'S&P 500', 'datum': '2026-10-30', 'm3': -0.7, 'm6': 19.9, 'm12': 16.5}
+  SAP.DE weken 105 laatste ['2026-10-30', 211.25] w200 164.27 relatief {'index': 'DAX', 'naam': 'DAX', 'datum': '2026-10-30', 'm3': 30.8, 'm6': 32.0, 'm12': -15.1}
+  MC.PA weken 105 laatste ['2026-10-30', 387.0] w200 466.96 relatief {'index': 'CAC40', 'naam': 'CAC 40', 'datum': '2026-10-30', 'm3': -12.7, 'm6': -13.5, 'm12': -35.1}
