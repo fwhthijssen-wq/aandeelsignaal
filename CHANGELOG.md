@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.7.3 (2026.10.31)
+- **Signalen bij een omslag op de middellange termijn:** slaat het oordeel voor de middellange termijn van een aandeel op uw volglijst of in uw portefeuille om naar positief of negatief (of daarvandaan), dan staat dat bij Signalen en telt de tegel Signalen het mee. Bijgehouden per gegevensupdate, op dit toestel.
+- **Koopmoment:** bij NAIC Kopen met een negatieve middellange termijn staat een extra waarschuwing (teruggerekend −18% na 1 jaar, 16 gevallen). Getoetst of het koopmoment beter op de middellange termijn kan rusten dan op de trend: nee (NAIC Kopen + positief kwam maar 17 keer voor en deed het niet beter), dus het blijft de trend.
+
 ## 1.7.2 (2026.10.31)
 - **Tabblad Koers compacter:** per laag eerst de conclusie; de onderbouwing (trendsignaal, relatieve sterkte, analisten), meer koerscijfers en het koersbereik over 10 jaar zijn dichtgeklapt.
 - **Middellange termijn als geheel teruggerekend** (2016–2026, 21.105 waarnemingen met trend, relatieve sterkte en kwartaalcijfers): positief deed het na 12 maanden gemiddeld 6,9 procentpunt beter dan negatief (t 4,1; 76% van de maanden), beter dan elk onderdeel apart. Zwaarder wegen van trend en relatieve sterkte maakte het niet beter; de onderdelen blijven even zwaar.

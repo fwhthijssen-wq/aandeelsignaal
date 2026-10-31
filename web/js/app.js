@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.7.2 (2026.10.31)';
+  var APP_VERSIE = '1.7.3 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -249,6 +249,8 @@
       afwachten: '<b>Let op: afwachten.</b> NAIC vindt de prijs gunstig, maar de koers zit nog in een dalende trend (' + t.ja + ' van 5 checks). Zulke koopkansen daalden in het verleden vaak nog verder.',
       onvoldoende: '<b>Koopmoment onbekend.</b> Niet alle checks van het kortetermijnsignaal zijn te berekenen.'
     }[t.status];
+    var mlk = Termijn.middellang(rec, t, vandaag());
+    if (mlk.status === 'negatief') tekst += ' <b data-koopmoment-ml="negatief">Ook de middellange termijn is negatief.</b> NAIC-koopkansen met een negatieve middellange termijn deden het teruggerekend slecht (−18% na 1 jaar, 16 gevallen).';
     return '<div class="koopmoment" data-koopmoment="' + t.status + '">' + tekst + link + '<br><span class="zacht">Teruggerekend 2018–2025: NAIC Kopen deed het na 1 jaar ' + pct(T.kopenGunstig) + ' bij een gunstig moment, ' + pct(T.kopenNeutraal) + ' bij neutraal en ' + pct(T.kopenAfwachten) + ' bij afwachten, ten opzichte van het gemiddelde (' + T.nG + ', ' + T.nN + ' en ' + T.nA + ' gevallen; kleine aantallen, geen garantie).</span></div>';
   }
   /* Koersgrafiek: 6 maanden (dagkoersen, met het gemiddelde van 50 dagen) of 2 jaar (weekkoersen, met het gemiddelde van 200
@@ -517,6 +519,26 @@
       return JSON.parse(localStorage.getItem('as_naic_vorig') || 'null');
     } catch (e) { return null; }
   }
+  /* Middellange termijn per fonds (positief/neutraal/negatief), om omslagen bij te houden zoals de NAIC-oordelen. */
+  function mlStanden(tickers) {
+    var o = {};
+    tickers.forEach(function (t) { var rec = zoek(t); if (!rec || !rec.koers || !Gate.priceFreshness(rec.koers.datum, vandaag()).fresh) return; var m = Termijn.middellang(rec, momentVan(rec), vandaag()); if (m.status !== 'onbekend') o[t] = m.status; });
+    return o;
+  }
+  function mlVorig(nieuw) {
+    try {
+      if (nieuw !== undefined) { localStorage.setItem('as_ml_vorig', JSON.stringify(nieuw)); return nieuw; }
+      return JSON.parse(localStorage.getItem('as_ml_vorig') || 'null');
+    } catch (e) { return null; }
+  }
+  /* Omslagen bij uw eigen aandelen sinds de vorige gegevensupdate: naar positief of naar negatief. bewaar=false: alleen lezen. */
+  function mlOmslagen(bewaar) {
+    var eigen = eigenTickers(), datum = String(DATA.gemaakt || '').slice(0, 10), nu = mlStanden(Object.keys(eigen));
+    var r = Signalen.bijwerken(mlVorig(), datum, nu);
+    if (bewaar) mlVorig(r.opslag);
+    return Signalen.veranderingen(r.basis, r.opslag.laatst ? r.opslag.laatst.oordelen : {}).filter(function (v) { return v.van && v.naar && v.van !== v.naar && (v.naar === 'positief' || v.naar === 'negatief' || v.van === 'positief' || v.van === 'negatief'); })
+      .map(function (v) { v.waar = eigen[v.ticker]; return v; });
+  }
   function signalenHtml() {
     var items = fondsItems(), per = {}; items.forEach(function (a) { per[a.ticker] = a; });
     var eigen = eigenTickers(), datum = String(DATA.gemaakt || '').slice(0, 10);
@@ -547,7 +569,16 @@
         return regel(a, tekst, eigen[v.ticker] ? (eigen[v.ticker] === 'portefeuille' ? 'in portefeuille' : 'op volglijst') : '');
       }).join('') + '</div>' + (ver.length > kort.length ? '<p class="zacht">En nog ' + (ver.length - kort.length) + ' andere. Zie Markt voor alles.</p>' : '');
     }
-    return s + '<details class="uitleg"><summary>Wat betekenen de signalen?</summary><p>Koopzone: koers in het onderste derde van het verwachte bereik met minstens 3 : 1. Verkoopzone: bovenste derde. NAIC verkoopt ook als de kwaliteit terugloopt. Selectiehulp, geen beleggingsadvies.</p></details></section>';
+    var om = mlOmslagen(true), ML = { positief: 'Positief', neutraal: 'Neutraal', negatief: 'Negatief' };
+    if (aantalEigen) s += '<h3 class="tussenkop">Middellange termijn omgeslagen <span class="zacht">(uw aandelen, 3–12 maanden)</span></h3>';
+    if (!aantalEigen) s += '';
+    else if (!r.basis && !om.length) s += '<div><p class="zacht">Vanaf de volgende gegevensupdate ziet u hier wanneer het oordeel voor de middellange termijn van uw aandelen omslaat. Dit wordt alleen op dit toestel bijgehouden.</p></div>';
+    else if (!om.length) s += '<div class="kaart-plat" data-geen-ml-omslag><p>Geen omslagen bij uw aandelen.</p></div>';
+    else s += '<div class="lijst" data-ml-omslagen>' + om.map(function (v) {
+      var a = per[v.ticker] || { ticker: v.ticker, naam: (zoek(v.ticker) || {}).naam || v.ticker };
+      return regel(a, '<span class="signaal" data-ml-naar="' + v.naar + '">Middellange termijn ' + ML[v.van] + ' → <b>' + ML[v.naar] + '</b></span>', v.waar === 'portefeuille' ? 'in portefeuille' : 'op volglijst');
+    }).join('') + '</div>';
+    return s + '<details class="uitleg"><summary>Wat betekenen de signalen?</summary><p>Koopzone: koers in het onderste derde van het verwachte bereik met minstens 3 : 1. Verkoopzone: bovenste derde. NAIC verkoopt ook als de kwaliteit terugloopt. Middellange termijn: het oordeel uit trend, relatieve sterkte, analisten en kwartaalcijfers (tabblad Koers); een omslag naar positief of negatief is teruggerekend de best onderbouwde aanwijzing voor de komende 3 tot 12 maanden. Selectiehulp, geen beleggingsadvies.</p></details></section>';
   }
 
   /* ---- Datakwaliteit: per fonds hoe zeker de cijfers zijn, wat er aangevuld of gecorrigeerd is en wat de tweede bron zegt ---- */
@@ -639,8 +670,9 @@
     var t2 = '<a class="tegel" href="#/volglijst" data-tegel="volglijst"><small>Volglijst</small><b>' + vol.length + '</b><span>' + (vol.length ? volKoop + '× NAIC Kopen' : 'Nog leeg: zet aandelen op uw volglijst') + '</span>' + pijl + '</a>';
     // 3. Signalen bij uw eigen aandelen
     var urgent = telS.verkoop + telS.kwaliteit;
-    var t3 = '<a class="tegel" href="#/signalen" data-tegel="signalen" data-niveau="' + (urgent ? 'let-op' : telS.koop ? 'kans' : 'rustig') + '"><small>Signalen bij uw aandelen</small><b>' + sig.filter(function (x) { return x.sg.soort !== 'groei'; }).length + '</b><span>' +
-      (urgent || telS.koop ? [telS.verkoop ? telS.verkoop + '× verkoopzone' : '', telS.kwaliteit ? telS.kwaliteit + '× kwaliteit daalt' : '', telS.koop ? telS.koop + '× koopzone' : ''].filter(Boolean).join(' · ') : 'Alles rustig') + '</span>' + pijl + '</a>';
+    var omsl = mlOmslagen(false).length;
+    var t3 = '<a class="tegel" href="#/signalen" data-tegel="signalen" data-niveau="' + (urgent ? 'let-op' : telS.koop ? 'kans' : 'rustig') + '"><small>Signalen bij uw aandelen</small><b>' + (sig.filter(function (x) { return x.sg.soort !== 'groei'; }).length + omsl) + '</b><span>' +
+      (urgent || telS.koop || omsl ? [telS.verkoop ? telS.verkoop + '× verkoopzone' : '', telS.kwaliteit ? telS.kwaliteit + '× kwaliteit daalt' : '', telS.koop ? telS.koop + '× koopzone' : '', omsl ? omsl + '× omslag middellang' : ''].filter(Boolean).join(' · ') : 'Alles rustig') + '</span>' + pijl + '</a>';
     // 4. Kansen in de markt
     var kpGunstig = items.filter(function (a) { var m = a.b.naic && a.b.naic.oordeel === 'kopen' ? momentVan(zoek(a.ticker)) : null; return m && m.status === 'gunstig'; }).length;
     var t4 = '<a class="tegel" href="#/markt" data-tegel="kansen" data-spring-na="kansen"><small>Kansen (NAIC Kopen)</small><b>' + nk.kopen + '</b><span>' + (nk.kopen ? kpGunstig + ' met een gunstig koopmoment' + (onderKp ? ' · ' + onderKp + ' onder hun koopprijs' : '') : 'van ' + (nk.kopen + nk.neutraal + nk.vermijden) + ' met oordeel') + '</span>' + pijl + '</a>';

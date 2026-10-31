@@ -84,6 +84,9 @@ Lokaal gerekend met de bewaarde koersen (`debug/terugrekenen_ta_koersen.json.gz`
 
 Lezing: het gezamenlijke oordeel is betrouwbaarder dan elk onderdeel apart (hoogste t). Zwaarder wegen van trend en sterkte verbetert niets; de app houdt gelijke gewichten (1.7.2). Uitersten (alle drie gelijk) geven het grootste verschil, maar weinig gevallen.
 
+## NAIC Kopen en de middellange termijn (31 okt 2026)
+April-peildata 2018–2025, 1 jaar t.o.v. gemiddeld: Kopen + ML positief −0,1% (med −8,0%, n 17); + neutraal −5,2% (n 80); + negatief −18,2% (t −2,7, n 16). Ter vergelijking Kopen + trend gunstig −1,5% (med −3,0%, n 46). Besluit: koopmoment blijft op de trend; extra waarschuwing bij een negatieve middellange termijn (1.7.3). Over alle fondsen: ML positief +2,4% na 1 jaar (t 2,3), negatief −2,5%.
+
 ## Ronde 2 (25 okt, beta.76-regels: strikt NAIC incl. deel 5, Duitse jaarverslag-EPS)
 | Oordeel | 1 jaar gem / med / % beter / t / n | 3 jaar gem / med / t / n |
 |---|---|---|
