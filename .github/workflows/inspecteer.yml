@@ -49,6 +49,40 @@ jobs:
               time.sleep(1)
           PY
           cat ../management.txt
+      # 'VERWACHTING AAPL ASML.AS …': toont wat Yahoo levert over winstverwachtingen, bijstellingen, verrassingen en de cijferdatum.
+      - if: startsWith(inputs.tickers, 'VERWACHTING')
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verwachtingen live bekijken
+        if: startsWith(inputs.tickers, 'VERWACHTING')
+        env:
+          TICKERS: ${{ inputs.tickers }}
+        run: |
+          pip install -q 'yfinance>=0.2.40,<2' pandas
+          python - > verwachting.txt <<'PY'
+          import os, time
+          import yfinance as yf
+          for tk in os.environ['TICKERS'].split()[1:]:
+              t = yf.Ticker(tk)
+              print('=====', tk)
+              for naam in ('eps_trend', 'eps_revisions', 'earnings_estimate', 'earnings_history', 'calendar'):
+                  try:
+                      v = getattr(t, naam)
+                      print('--', naam, type(v).__name__); print(v if not hasattr(v, 'to_string') else v.to_string())
+                  except Exception as e:
+                      print('--', naam, 'fout', e)
+              try:
+                  ed = t.get_earnings_dates(limit=8); print('-- earnings_dates'); print(ed.to_string() if ed is not None else None)
+              except Exception as e:
+                  print('-- earnings_dates fout', e)
+              time.sleep(1)
+          PY
+          cat verwachting.txt
+          git clone -q --depth 1 -b jaarverslagen "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" jvv
+          mkdir -p jvv/debug && cp verwachting.txt jvv/debug/verwachting.txt && cd jvv
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Inspectie verwachtingen" && git push -q || true
       - uses: actions/cache/restore@v5
         with:
           path: web/data/aandelen.json
