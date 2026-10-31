@@ -1,8 +1,9 @@
 /* Analyse per termijn, naast NAIC (lange termijn, 3-5 jaar):
    - middellang (3-12 maanden): vier onderdelen van +1, 0 of -1 — trendsignaal, relatieve sterkte (12 maanden), bijstelling
      van de winstverwachting door analisten (90 dagen) en de verrassingen bij de laatste kwartaalcijfers. Positief vanaf +2,
-     negatief vanaf -2, met minstens 3 bekende onderdelen. Trend en relatieve sterkte zijn teruggerekend (2016-2026); voor
-     bijstellingen en verrassingen steunen we op onderzoek, want Yahoo bewaart die geschiedenis niet.
+     negatief vanaf -2, met minstens 3 bekende onderdelen. Trend, relatieve sterkte en verrassingen zijn teruggerekend
+     (hulp/terugrekenen_ta.py, hulp/terugrekenen_cijfers.py); voor bijstellingen steunen we op onderzoek, want Yahoo bewaart
+     die geschiedenis niet.
    - kort (dagen tot weken): alleen feiten — de volgende kwartaalcijfers, de verwachte bandbreedte voor een maand, RSI en
      de afstand tot de top. Geen signaal: op 1 maand werkte in het terugrekenen niets.
    Geen DOM, geen netwerk. Telt niet mee in het NAIC-oordeel. */

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.7 (2026.10.31)';
+  var APP_VERSIE = '1.7.1 (2026.10.31)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -320,7 +320,7 @@
     return '<div class="kaart-plat" data-middellang="' + m.status + '"><div class="rij-kop"><h2>Oordeel middellange termijn</h2><span class="chip" data-oordeel="' + KL[m.status] + '">' + h(m.naam) + '</span></div>' +
       '<ul class="termijn-delen">' + m.delen.map(function (d) { return '<li data-deel-ml="' + d.id + '" data-punt="' + d.punt + '"><span class="teken" aria-hidden="true">' + teken(d.punt) + '</span><span><b>' + h(d.naam) + '</b><br><span class="zacht">' + h(d.tekst) + '</span></span></li>'; }).join('') + '</ul>' +
       '<p>' + (m.status === 'onbekend' ? 'Minder dan 3 onderdelen bekend, dus geen oordeel.' : 'Samen ' + (m.score > 0 ? '+' : '') + m.score + ' uit ' + m.bekend + ' onderdelen. Positief vanaf +2, negatief vanaf −2.') + '</p>' +
-      '<p class="zacht">Trend en relatieve sterkte zijn teruggerekend (2016–2026) en werkten op 3 tot 12 maanden. Voor de winstverwachtingen van analisten en de kwartaalcijfers steunen we op onderzoek: Yahoo bewaart die geschiedenis niet, dus terugrekenen kan niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
+      '<p class="zacht">Teruggerekend (elke maand, alle fondsen): trend en relatieve sterkte werkten op 3 tot 12 maanden het sterkst (5 à 9 procentpunt verschil na een jaar); de kwartaalcijfers zwakker maar wel meetbaar (+1 tegen −1: 1,4 procentpunt na 6 maanden). Voor de winstverwachtingen van analisten steunen we op onderzoek: Yahoo bewaart die geschiedenis niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
   }
   /* Winstverwachtingen van analisten en kwartaalcijfers (Yahoo Finance), ter informatie. */
   function verwachtingHtml(rec) {
@@ -334,7 +334,7 @@
     if (bij.dit_jaar || bij.volgend_jaar) s += '<h3>Verwachte winst per aandeel: bijgesteld</h3><div class="schuif"><table class="vgl"><thead><tr><th></th><th>30 dagen</th><th>90 dagen</th><th>Analisten, 30 dagen</th></tr></thead><tbody>' + rij('Dit boekjaar', bij.dit_jaar) + rij('Volgend boekjaar', bij.volgend_jaar) + '</tbody></table></div>' +
       '<p class="zacht">Hoeveel de gemiddelde verwachting van analisten veranderde. Verhogingen worden vaak gevolgd door een betere koers in de maanden erna (onderzoek); het advies zelf (kopen/houden) zegt minder.</p>';
     if (v.verrassingen && v.verrassingen.length) s += '<h3>Kwartaalcijfers tegenover de verwachting</h3><ul class="punten">' + v.verrassingen.map(function (x) { return '<li>' + h(datumNl(x.datum)) + ': <b style="color:' + kleur(x.pct) + '">' + pct(x.pct) + '</b> ' + (x.pct >= 0 ? 'boven' : 'onder') + ' de verwachting</li>'; }).join('') + '</ul>' +
-      '<p class="zacht">Na cijfers die duidelijk beter zijn dan verwacht, loopt de koers vaak nog weken door (onderzoek).</p>';
+      '<p class="zacht">Na cijfers die duidelijk beter zijn dan verwacht, loopt de koers vaak nog een tijd door. Teruggerekend (2014–2026, 8.652 bekendmakingen): na een verrassing van meer dan +5% deed het fonds het in de 6 maanden erna gemiddeld 1,3 procentpunt beter dan na cijfers onder de verwachting, gerekend vanaf de dag ná de bekendmaking. Een klein maar meetbaar effect.</p>';
     return s + '<p class="zacht">Bron: Yahoo Finance, ' + h(datumNl(v.datum)) + '.</p></div>';
   }
   /* Korte termijn: alleen feiten, geen signaal. */
