@@ -261,6 +261,8 @@ def main():
     for t, docs in sorted(index.items()):
         per_jaar, fouten = {}, {}
         for j, meta in docs.items():
+            if j.startswith('_'):
+                continue
             r, reden = lees((map_ / t / f'{j}.txt').read_text(encoding='utf-8'), ticker=t)
             if r and r['jaar'] in per_jaar and per_jaar[r['jaar']].get('eps') is not None and (per_jaar[r['jaar']]['eps'], per_jaar[r['jaar']]['eps_vorig']) != (r.get('eps'), r.get('eps_vorig')):
                 fouten[j] = f'zelfde boekjaar {r["jaar"]} als een ander bestand, met andere cijfers'; continue

@@ -64,6 +64,11 @@ def main():
     lijst = {k: v for k, v in json.load(open(HIER / 'de_jaarverslagen.json')).items() if not k.startswith('_')}
     index_pad = uit / 'index.json'
     index = json.load(open(index_pad)) if index_pad.exists() else {}
+    afgewezen_pad = uit / 'afgewezen.json'
+    afgewezen = json.load(open(afgewezen_pad)) if afgewezen_pad.exists() else {}
+    for t in index:                                                    # oude opslag in de index zelf verplaatsen
+        for k in [k for k in index[t] if k.startswith('_afgewezen_')]:
+            afgewezen.setdefault(t, {})[k[len('_afgewezen_'):]] = index[t].pop(k)
     for t in tickers or list(lijst):
         spec = lijst[t]
         if not spec.get('urls') and not spec.get('patroon') and len(spec.get('slugs') or []) > 1:
@@ -80,7 +85,7 @@ def main():
                 if sleutel in index.get(t, {}) and bestaand.exists() and not is_groep(bestaand.read_text(encoding='utf-8', errors='replace')):
                     print('geen groepsverslag, opnieuw zoeken', t, sleutel, flush=True)
                     oud = index[t].pop(sleutel); bestaand.unlink()
-                    index[t]['_afgewezen_' + sleutel] = {'url': oud.get('url'), 'reden': 'geen groepsverslag'}
+                    afgewezen.setdefault(t, {})[sleutel] = {'url': oud.get('url'), 'reden': 'geen groepsverslag'}
                 if sleutel in index.get(t, {}) or (bron == 'EQS' and any(v.get('url') == url for v in index.get(t, {}).values())):
                     continue
                 if bron == 'EQS' and f'{jaar}-eqs' in index.get(t, {}):
@@ -97,6 +102,7 @@ def main():
                     tekst = subprocess.run(['pdftotext', '-layout', f.name, '-'], capture_output=True, text=True).stdout
                 if not is_groep(tekst):
                     print('geen groepsverslag, overgeslagen', t, url, flush=True)
+                    afgewezen.setdefault(t, {})[sleutel] = {'url': url, 'reden': 'geen groepsverslag'}
                     continue
                 sha = hashlib.sha256(data).hexdigest()
                 if any(v.get('sha256') == sha for v in index.get(t, {}).values()):
@@ -109,6 +115,7 @@ def main():
                     break                                              # één EQS-variant per jaar (Engels, anders Duits)
         index_pad.parent.mkdir(parents=True, exist_ok=True)
         json.dump(index, open(index_pad, 'w'), indent=1, sort_keys=True)
+        json.dump(afgewezen, open(afgewezen_pad, 'w'), indent=1, sort_keys=True)
 
 
 if __name__ == '__main__':

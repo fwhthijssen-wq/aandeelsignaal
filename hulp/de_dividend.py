@@ -21,6 +21,8 @@ def main():
     for t, docs in sorted(index.items()):
         per_jaar = {}
         for j, meta in docs.items():
+            if j.startswith('_'):
+                continue
             tekst = re.sub(r'(\d)�(\d)', r'\1.\2', (map_ / t / f'{j}.txt').read_text(encoding='utf-8'))
             r, reden = de_eps._lees(tekst, None, LABEL, niet=NIET, maxabs=100)
             if r and r.get('eps') is not None and r['jaar'] not in per_jaar:
