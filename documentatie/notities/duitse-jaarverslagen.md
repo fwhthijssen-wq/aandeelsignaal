@@ -25,6 +25,13 @@ Stand 28 okt: 31 fondsen in het register; o.a. Munich Re 15, Heidelberg 15, Hann
 - Laatste 10 jaren allemaal nagerekend, één valuta → **Bevestigd** (`eps_status independently_verified`).
 - Uitkomst 28 okt: **Bevestigd: Allianz, BASF, Bayer, BMW, Deutsche Börse, Fresenius Medical Care, Rheinmetall, RWE.** ESEF: 90 fondsen met 1–5 nagerekende jaren (ESEF bestaat pas vanaf 2020, dus daar zelden 10 jaar).
 
+## Ronde 1 nov 2026 (versie 1.7.4): Bevestigd 76 → 81
+- Narekenen: aantal aandelen ook met woorden ertussen ("Number of Brenntag SE shares"), getallen op de volgende regel (Zalando), winstregel met een tekstregel ervoor samengevoegd; elk jaar met een verslag wordt bekeken, niet alleen jaren uit het EPS-register (Symrise 2025). → **Brenntag, Zalando, Symrise Bevestigd.**
+- `is_groep` (≥ 3 keer "earnings per share"/"Ergebnis je Aktie"): een enkelvoudig HGB-verslag van de moeder wordt overgeslagen. Afgewezen documenten staan in `de/afgewezen.json` (niet in `index.json`; leesscripts slaan sleutels met `_` over). Directe adressen die mislukken worden gelogd.
+- Hannover Rück: groepsverslag 2023 van hannover-re.com binnen, maar 2022 is onder IFRS 17 herrekend (11,66 → 6,47); de keten stopt terecht → 4 jaar. Geen oplossing zonder IFRS 4- en IFRS 17-jaren te mengen.
+- Merck 2022–2023: emdgroup.com geeft 403 aan GitHub Actions. Alleen met handmatig aangeleverde pdf's.
+- Infineon: 2025 klopt niet omdat de winst per aandeel na de coupon op hybride kapitaal is; bewust niet aangepast.
+
 ## Dividend (`hulp/de_dividend.py` → `jaarverslag_dividend.json`; `bouw_webdata.vergelijk_dividend`)
 - Dividend per aandeel over boekjaar J uit het verslag, vergeleken met wat Yahoo in boekjaar J+1 telt (binnen 3% of 1 cent). Alleen ter controle (`dividend_controle`, kwaliteitskaart); vervangt niets. Lezer maakt soms fouten (o.a. Fresenius 2023, Heidelberg 2018/2026), die als verschil verschijnen.
 
@@ -32,4 +39,4 @@ Stand 28 okt: 31 fondsen in het register; o.a. Munich Re 15, Heidelberg 15, Hann
 - 1 en 15 maart t/m juni (en met de hand, invoer `jaren`): nieuwe verslagen ophalen → tak jaarverslagen; `de_eps`, `de_cijfers`, `de_narekenen`, `de_dividend` opnieuw; alleen als alle tests slagen naar main. Proefrun 28 okt geslaagd.
 
 ## Nachtelijke update en meldingen
-Meldingen per run (check-run annotations): "Gegevens", "Ontbreekt", "Yahoo-EPS", "Pdf-jaarcijfers", "Dividend", "Aangeleverd", "Tweede bron", "Kwaliteit". Inspectie van live gegevens: workflow `inspecteer.yml` (tickers, of SAMENVATTING / VALUTA / NAREKENEN / ESEFJV / KOERS / VERWACHTING / MANAGEMENT) → `debug/inspectie.txt` (VERWACHTING: `debug/verwachting.txt`) op tak `jaarverslagen`.
+Meldingen per run (check-run annotations): "Gegevens", "Ontbreekt", "Yahoo-EPS", "Pdf-jaarcijfers", "Dividend", "Aangeleverd", "Tweede bron", "Kwaliteit". Inspectie van live gegevens: workflow `inspecteer.yml` (tickers, of SAMENVATTING / VALUTA / NAREKENEN / ESEFJV / KOERS / VERWACHTING / MANAGEMENT / BEVESTIGD) → `debug/inspectie.txt` (VERWACHTING: `debug/verwachting.txt`) op tak `jaarverslagen`.

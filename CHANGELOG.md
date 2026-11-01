@@ -2,6 +2,12 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.7.4 (2026.11.01)
+- **Meer fondsen Bevestigd: 76 → 81**, onder meer Brenntag, Zalando en Symrise (10 of meer jaren winst per aandeel nagerekend met het eigen jaarverslag).
+- Duitse jaarverslagen: het aantal aandelen wordt ook gevonden als er woorden tussen staan ("Number of Brenntag SE shares") of als de getallen op de volgende regel staan; elk jaar met een verslag wordt nagerekend, ook als dat jaar nog niet in de reeks stond.
+- Alleen jaarverslagen van de groep: een enkelvoudig verslag van de moedermaatschappij (Hannover Rück 2023 bij EQS) wordt herkend en vervangen door het groepsverslag van de eigen site.
+- Niet gelukt: Hannover Rück (winst per aandeel 2022 herrekend door IFRS 17, dus geen doorlopende reeks) en Merck (site weigert de download van de verslagen 2022–2023).
+
 ## 1.7.3 (2026.10.31)
 - **Signalen bij een omslag op de middellange termijn:** slaat het oordeel voor de middellange termijn van een aandeel op uw volglijst of in uw portefeuille om naar positief of negatief (of daarvandaan), dan staat dat bij Signalen en telt de tegel Signalen het mee. Bijgehouden per gegevensupdate, op dit toestel.
 - **Koopmoment:** bij NAIC Kopen met een negatieve middellange termijn staat een extra waarschuwing (teruggerekend −18% na 1 jaar, 16 gevallen). Getoetst of het koopmoment beter op de middellange termijn kan rusten dan op de trend: nee (NAIC Kopen + positief kwam maar 17 keer voor en deed het niet beter), dus het blijft de trend.
