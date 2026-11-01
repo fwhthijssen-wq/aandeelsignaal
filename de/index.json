@@ -1459,12 +1459,12 @@
    "tekens": 1438656,
    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2022-EQ-E-00.pdf"
   },
-  "2023-eqs": {
-   "bron": "EQS",
-   "bytes": 641730,
-   "sha256": "80c24e4e8b5a959d7088f595084352c5a863d8bd432b8f192dad5bde042dbd68",
-   "tekens": 201773,
-   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2023-EQ-E-00.pdf"
+  "2023": {
+   "bron": "beleggerssite",
+   "bytes": 6191933,
+   "sha256": "f31085c3f43368e4f11d39e05c383d56fd2e72f264194c8f230768d75ba94ba4",
+   "tekens": 1221180,
+   "url": "https://www.hannover-re.com/2011493/annual-report-2023.pdf"
   },
   "2024-eqs": {
    "bron": "EQS",
@@ -1479,6 +1479,10 @@
    "sha256": "522021a341a96eef75246cb22408fd95a5fbda7a67b7fc7361d710fae2aa9958",
    "tekens": 1796621,
    "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2025-EQ-E-00.pdf"
+  },
+  "_afgewezen_2023-eqs": {
+   "reden": "geen groepsverslag",
+   "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2023-EQ-E-00.pdf"
   }
  },
  "IFX.DE": {
