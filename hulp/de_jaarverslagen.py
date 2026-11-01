@@ -94,8 +94,12 @@ def main():
                     data = haal(url)
                 except Exception as exc:
                     data = None
+                    if bron == 'beleggerssite':
+                        print('mislukt', t, url, type(exc).__name__, str(exc)[:120], flush=True)
                 time.sleep(1)
                 if not data:
+                    if bron == 'beleggerssite':
+                        print('geen pdf', t, url, flush=True)
                     continue
                 with tempfile.NamedTemporaryFile(suffix='.pdf') as f:
                     f.write(data); f.flush()
