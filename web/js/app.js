@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.7.4 (2026.11.01)';
+  var APP_VERSIE = '1.8 (2026.11.01)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -257,7 +257,9 @@
      dagen). De NAIC-koopzone als groene band en uw gemiddelde aankoopkoers als stippellijn. */
   var grafiekPeriode = '2j';
   function aankoopKoers(rec) {
-    var p = winkel.portefeuille().filter(function (x) { return x.ticker === rec.ticker && String(x.valuta || '').toUpperCase() === String(rec.valuta || '').toUpperCase(); });
+    var zelfde = function (x) { return x.ticker === rec.ticker && String(x.valuta || '').toUpperCase() === String(rec.valuta || '').toUpperCase(); };
+    var p = winkel.portefeuille(winkel.actief().id).filter(zelfde);
+    if (!p.length) p = winkel.portefeuille().filter(zelfde);        // niet in de gekozen portefeuille: dan uit de andere
     var n = p.reduce(function (s, x) { return s + Number(x.aantal); }, 0);
     return n > 0 ? p.reduce(function (s, x) { return s + Number(x.aantal) * Number(x.koers); }, 0) / n : null;
   }
@@ -654,16 +656,16 @@
     return Object.keys(eigen).map(function (t) { var a = per[t]; return a ? { a: a, sg: Signalen.naicSignaal(a.b), waar: eigen[t] } : null; }).filter(function (x) { return x && x.sg; });
   }
   function tegelsHtml() {
-    var pos = winkel.portefeuille(), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate);
+    var act = winkel.actief(), aantalPf = winkel.portefeuilles().length, pos = winkel.portefeuille(act.id), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate);
     var items = fondsItems(), per = {}, nk = { kopen: 0, neutraal: 0, vermijden: 0 }, onderKp = 0;
     items.forEach(function (a) { per[a.ticker] = a; var n = a.b.naic; if (n && n.oordeel) nk[n.oordeel]++; if (n && n.oordeel === 'kopen' && a.koopAfstand != null && a.koopAfstand <= 0) onderKp++; });
     var sig = eigenSignalen(), telS = { koop: 0, verkoop: 0, kwaliteit: 0, groei: 0 }; sig.forEach(function (x) { telS[x.sg.soort]++; });
     var pijl = I.pijl.replace('class="pijl"', 'class="pijl tegel-pijl"');
     // 1. Portefeuille
     var pf = res.totalen.filter(function (t) { return t.meegeteld; })[0];
-    var t1 = '<a class="tegel" href="#/portefeuille" data-tegel="portefeuille"><small>Portefeuille</small>' + (pf
+    var t1 = '<a class="tegel" href="#/portefeuille" data-tegel="portefeuille"><small>' + (aantalPf > 1 ? h(act.naam) : 'Portefeuille') + '</small>' + (pf
       ? '<b>' + getal(pf.waarde, 0) + ' <span class="munt">' + h(pf.valuta) + '</span></b><span class="rend" data-teken="' + (pf.winst > 0 ? 'plus' : pf.winst < 0 ? 'min' : 'nul') + '">' + (pf.pct != null ? pct(pf.pct) + ' · ' : '') + (pf.winst >= 0 ? '+' : '−') + getal(Math.abs(pf.winst), 0) + ' ' + h(pf.valuta) + '</span>' + (res.totalen.length > 1 ? '<span class="zacht">+ ' + (res.totalen.length - 1) + ' andere valuta</span>' : '')
-      : '<b>–</b><span class="zacht">' + (pos.length ? 'Nog geen actuele waarde' : 'Nog geen aankopen') + '</span>') + pijl + '</a>';
+      : '<b>–</b><span class="zacht">' + (pos.length ? 'Nog geen actuele waarde' : 'Nog geen aankopen') + '</span>') + (aantalPf > 1 ? '<span class="zacht" data-andere-pf>+ ' + (aantalPf - 1) + ' andere portefeuille' + (aantalPf > 2 ? 's' : '') + '</span>' : '') + pijl + '</a>';
     // 2. Volglijst
     var vol = winkel.volglijst().map(function (v) { return per[v.ticker]; }).filter(Boolean);
     var volKoop = vol.filter(function (a) { return a.b.naic && a.b.naic.oordeel === 'kopen'; }).length;
@@ -906,10 +908,26 @@
   function euro(n, valuta) { return getal(n, 2) + ' ' + h(valuta); }
   function kleur(n) { return n > 0 ? 'var(--ok-ink)' : n < 0 ? 'var(--bad-ink)' : 'var(--ink)'; }
   function teken(n, valuta) { return (n > 0 ? '+' : n < 0 ? '−' : '') + getal(Math.abs(n), 2) + ' ' + h(valuta); }
+  var pfBeheer = false;
+  function portefeuilleKeuzeHtml(act, pfs) {
+    var s = '';
+    if (pfs.length > 1) s += '<div class="pf-keuze" role="tablist" aria-label="Kies een portefeuille" data-pf-keuze>' + pfs.map(function (x) {
+      return '<button class="knop klein' + (x.id === act.id ? '' : ' rand') + '" role="tab" aria-selected="' + (x.id === act.id) + '" data-pf-kies="' + h(x.id) + '">' + h(x.naam) + ' <span class="zacht">' + x.aantal + '</span></button>';
+    }).join('') + '</div>';
+    s += '<details class="pf-beheer" data-pf-beheer' + (pfBeheer ? ' open' : '') + '><summary>' + (pfs.length > 1 ? 'Portefeuilles beheren' : 'Nog een portefeuille bijhouden (bijv. van een beleggingsclub)') + '</summary>' +
+      '<div class="velden"><div><label for="pf-nieuw">Nieuwe portefeuille</label><input id="pf-nieuw" type="text" maxlength="40" placeholder="Naam, bijv. Beleggingsclub"></div>' +
+      '<div><label for="pf-naam">Naam van “' + h(act.naam) + '”</label><input id="pf-naam" type="text" maxlength="40" value="' + h(act.naam) + '"></div></div>' +
+      '<div class="knoppen"><button class="knop rand klein" id="pf-maak">Portefeuille toevoegen</button><button class="knop rand klein" id="pf-hernoem">Naam opslaan</button>' +
+      (pfs.length > 1 ? '<button class="knop rand klein" id="pf-weg">“' + h(act.naam) + '” verwijderen</button>' : '') + '</div>' +
+      '<p id="pf-beheer-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p>' +
+      '<p class="zacht">Elke portefeuille heeft eigen aankopen en eigen totalen. Signalen en de volglijst gelden voor de aandelen uit alle portefeuilles samen. Een portefeuille van iemand anders (zoals een club) kunt u met een back-upbestand toevoegen: Achtergrond › Instellingen › Back-up terugzetten › Toevoegen.</p></details>';
+    return s;
+  }
   function schermPortefeuille() {
-    var res = Portefeuille.waardeer(winkel.portefeuille(), DATA.aandelen, vandaag(), Gate), s = '<section><h1>Mijn portefeuille</h1>';
+    var act = winkel.actief(), pfs = winkel.portefeuilles();
+    var res = Portefeuille.waardeer(winkel.portefeuille(act.id), DATA.aandelen, vandaag(), Gate), s = '<section><h1>' + (pfs.length > 1 ? h(act.naam) : 'Mijn portefeuille') + '</h1>' + portefeuilleKeuzeHtml(act, pfs);
     if (!res.regels.length) {
-      s += '<div class="kaart-plat"><p>U heeft nog geen aankopen ingevoerd. Vul hieronder in wat u heeft gekocht; de app rekent uit wat het nu waard is.</p><p class="zacht">Alles blijft op dit toestel. Geen rekening, geen koppeling met uw bank.</p></div>';
+      s += '<div class="kaart-plat"><p>' + (pfs.length > 1 ? 'In deze portefeuille staan nog geen aankopen.' : 'U heeft nog geen aankopen ingevoerd.') + ' Vul hieronder in wat u heeft gekocht; de app rekent uit wat het nu waard is.</p><p class="zacht">Alles blijft op dit toestel. Geen rekening, geen koppeling met uw bank.</p></div>';
     } else {
       s += '<div class="kpis">' + res.totalen.map(function (t) {
         return '<div class="kpi"><b>' + (t.meegeteld ? getal(t.waarde, 2) + ' ' + h(t.valuta) : '–') + '</b><span>Waarde nu (' + h(t.valuta) + ')</span>' +
@@ -938,7 +956,7 @@
       }).join('') + '</div>';
     }
     var opties = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); }).map(function (a) { return '<option value="' + h(a.ticker) + '" data-valuta="' + h(a.valuta) + '">' + h(a.naam + ' (' + a.ticker + ')') + '</option>'; }).join('');
-    s += '<div class="kaart-plat"><h2>Aankoop toevoegen</h2><form id="pf" novalidate><div class="velden">' +
+    s += '<div class="kaart-plat"><h2>Aankoop toevoegen' + (pfs.length > 1 ? ' aan ' + h(act.naam) : '') + '</h2><form id="pf" novalidate><div class="velden">' +
       '<div><label for="pf-t">Aandeel</label><select id="pf-t">' + opties + '</select></div>' +
       '<div><label for="pf-n">Aantal stuks</label><input id="pf-n" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
@@ -950,6 +968,30 @@
     return s;
   }
   function portefeuilleKoppel() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pf-kies]'), function (b) {
+      b.addEventListener('click', function () { winkel.kiesPortefeuille(b.getAttribute('data-pf-kies')); route(); });
+    });
+    var bh = document.querySelector('[data-pf-beheer]');
+    if (bh) {
+      bh.addEventListener('toggle', function () { pfBeheer = bh.open; });
+      var fout = function (u) { var f = document.getElementById('pf-beheer-fout'); if (f) f.textContent = u.reden || ''; };
+      document.getElementById('pf-maak').addEventListener('click', function () {
+        var u = winkel.nieuwePortefeuille(document.getElementById('pf-nieuw').value);
+        if (!u.ok) return fout(u);
+        pfBeheer = false; toast('Portefeuille toegevoegd'); route();
+      });
+      document.getElementById('pf-hernoem').addEventListener('click', function () {
+        var u = winkel.hernoemPortefeuille(winkel.actief().id, document.getElementById('pf-naam').value);
+        if (!u.ok) return fout(u);
+        toast('Naam opgeslagen'); route();
+      });
+      var wb = document.getElementById('pf-weg'), zeker = false;
+      if (wb) wb.addEventListener('click', function () {
+        var a = winkel.actief(), n = winkel.portefeuille(a.id).length;
+        if (!zeker) { zeker = true; wb.textContent = n ? 'Zeker weten? Ook de ' + n + ' aankopen gaan weg. Tik nogmaals' : 'Zeker weten? Tik nogmaals'; return; }
+        winkel.verwijderPortefeuille(a.id); pfBeheer = false; toast('Portefeuille verwijderd'); route();
+      });
+    }
     var sel = document.getElementById('pf-t'), val = document.getElementById('pf-v'); if (!sel) return;
     function vul() {
       var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : '';
@@ -1593,9 +1635,9 @@
     var inh = winkel.inhoud(), nw = v.nieuw, niets = !nw.volglijst && !nw.portefeuille && !nw.beoordelingen;
     var regel = function (n, enk, mv) { return n + ' ' + (n === 1 ? enk : mv); };
     $laag.innerHTML = '<div class="intro-achter" id="tz-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="tz-t"><h2 id="tz-t">Back-up terugzetten?</h2>' +
-      '<p>Gelezen uit ' + h(bron) + (v.gemaakt ? ', gemaakt op ' + h(datumNl(v.gemaakt.slice(0, 10))) : '') + '.</p><h3>Wat zit erin</h3><ul class="punten"><li>' + regel(v.volglijst, 'aandeel op de volglijst', 'aandelen op de volglijst') + '</li><li>' + regel(v.portefeuille, 'aankoop', 'aankopen') + '</li><li>' + regel(v.beoordelingen, 'aandeel met eigen beoordeling', 'aandelen met eigen beoordeling') + '</li></ul>' +
+      '<p>Gelezen uit ' + h(bron) + (v.gemaakt ? ', gemaakt op ' + h(datumNl(v.gemaakt.slice(0, 10))) : '') + '.</p><h3>Wat zit erin</h3><ul class="punten"><li>' + regel(v.volglijst, 'aandeel op de volglijst', 'aandelen op de volglijst') + '</li><li>' + regel(v.portefeuille, 'aankoop', 'aankopen') + (v.portefeuilles && v.portefeuilles.length ? ' (' + h(v.portefeuilles.join(', ')) + ')' : '') + '</li><li>' + regel(v.beoordelingen, 'aandeel met eigen beoordeling', 'aandelen met eigen beoordeling') + '</li></ul>' +
       '<h3>Wat is er nu op dit toestel</h3><ul class="punten"><li>' + regel(inh.volglijst, 'aandeel op de volglijst', 'aandelen op de volglijst') + '</li><li>' + regel(inh.portefeuille, 'aankoop', 'aankopen') + '</li><li>' + regel(inh.beoordelingen, 'aandeel met eigen beoordeling', 'aandelen met eigen beoordeling') + '</li></ul>' +
-      '<p><b>' + (niets ? 'Er is niets nieuws: alles uit dit bestand staat al op dit toestel.' : 'Nieuw uit dit bestand: ' + [nw.volglijst ? regel(nw.volglijst, 'volglijst-aandeel', 'volglijst-aandelen') : '', nw.portefeuille ? regel(nw.portefeuille, 'aankoop', 'aankopen') : '', nw.beoordelingen ? regel(nw.beoordelingen, 'beoordeling', 'beoordelingen') : ''].filter(Boolean).join(', ') + '.') + '</b></p>' +
+      '<p><b>' + (niets ? 'Er is niets nieuws: alles uit dit bestand staat al op dit toestel.' : 'Nieuw uit dit bestand: ' + [nw.volglijst ? regel(nw.volglijst, 'volglijst-aandeel', 'volglijst-aandelen') : '', nw.portefeuille ? regel(nw.portefeuille, 'aankoop', 'aankopen') : '', nw.beoordelingen ? regel(nw.beoordelingen, 'beoordeling', 'beoordelingen') : ''].filter(Boolean).join(', ') + '.') + '</b>' + (nw.portefeuilles && nw.portefeuilles.length ? ' Nieuwe portefeuille: ' + h(nw.portefeuilles.join(', ')) + '; uw eigen portefeuille blijft zoals hij is.' : '') + '</p>' +
       '<div class="knoppen" style="flex-direction:column;align-items:stretch"><button class="knop" id="tz-voeg"' + (niets ? ' disabled' : '') + '>Toevoegen aan wat er al staat (aanbevolen)</button><button class="knop rand" id="tz-vervang">Alles vervangen door deze back-up</button><button class="knop rand" id="tz-stop">Annuleren</button></div>' +
       '<p class="zacht">Toevoegen wist niets. Vervangen haalt uw huidige volglijst, aankopen en beoordelingen weg en zet die van de back-up terug.</p></div></div>';
     function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }

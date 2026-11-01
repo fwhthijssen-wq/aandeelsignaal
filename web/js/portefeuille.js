@@ -19,9 +19,9 @@
     var per = {}, regels = [];
     (aandelen || []).forEach(function (a) { per[a.ticker] = a; });
     (posities || []).forEach(function (p) {
-      var rec = per[p.ticker], kosten = afrond(p.aantal * p.koers), r = { positie: p, naam: rec ? rec.naam : p.ticker, kosten: kosten, status: 'ok', reden: null, waarde: null, winst: null, pct: null };
+      var rec = per[p.ticker], kosten = afrond(p.aantal * p.koers), r = { positie: p, naam: rec ? rec.naam : (p.naam || p.ticker), kosten: kosten, status: 'ok', reden: null, waarde: null, winst: null, pct: null };
       if (!rec || !rec.koers || typeof rec.koers.slot !== 'number' || !isFinite(rec.koers.slot) || rec.koers.slot <= 0) {
-        r.status = 'geen_koers'; r.reden = rec ? 'Geen koers beschikbaar.' : 'Dit aandeel zit niet meer in de lijst.';
+        r.status = 'geen_koers'; r.reden = rec ? 'Geen koers beschikbaar.' : 'De app volgt dit aandeel niet, dus er is geen koers.';
       } else {
         var fr = gate.priceFreshness(rec.koers.datum, vandaag);
         if (!fr.fresh) { r.status = 'verouderd'; r.reden = fr.reason; }

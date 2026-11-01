@@ -31,6 +31,7 @@
       'Voeg een aankoop toe met aantal, koers en datum. Vink aan als u kocht op basis van het signaal; dan legt de app het oordeel van dat moment vast.',
       'Aankopen op signaal zijn herkenbaar aan een label. De kaart Op signaal gekocht vergelijkt het rendement met uw overige aankopen.',
       'Bedragen in verschillende valuta’s worden nooit omgerekend, maar apart getoond.',
+      'Meerdere portefeuilles, bijvoorbeeld een eigen en die van een beleggingsclub: kies Nog een portefeuille bijhouden. Bovenaan wisselt u tussen de portefeuilles; elke heeft eigen aankopen en totalen. Een portefeuille die u als back-upbestand krijgt, zet u erbij met Terugzetten › Toevoegen.',
       'Alles staat alleen op dit toestel. Maak een back-up in Instellingen.'], 'Het rendement is een momentopname en geen belofte voor later.'],
     vergelijk: ['Vergelijken', 'Zet twee aandelen naast elkaar.', [
       'Kies links en rechts een aandeel. Er worden alleen percentages en verhoudingen vergeleken, zodat valuta niet uitmaakt.',

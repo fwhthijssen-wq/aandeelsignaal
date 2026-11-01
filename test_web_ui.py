@@ -115,6 +115,42 @@ class WebUi(unittest.TestCase):
         self.assertIn('gekocht voor', pg.inner_text('main'))
         self.assertEqual(self.fouten, [])
 
+    def test_meerdere_portefeuilles_en_club_via_backup(self):
+        pg = self.pagina()
+        pg.goto(INDEX + '#/portefeuille')
+        pg.select_option('#pf-t', 'AAPL'); pg.fill('#pf-n', '2'); pg.fill('#pf-k', '100'); pg.click('#pf button[type=submit]')
+        pg.evaluate("document.querySelector('[data-pf-beheer]').open = true")
+        pg.fill('#pf-nieuw', 'Mijn eigen')                      # tweede portefeuille, wordt de gekozen
+        pg.click('#pf-maak')
+        self.assertEqual(pg.inner_text('h1'), 'Mijn eigen')
+        self.assertEqual(pg.locator('[data-pf-kies]').count(), 2)
+        self.assertIn('nog geen aankopen', pg.inner_text('main'))
+        pg.click('[data-pf-kies="eigen"]')
+        self.assertIn('gekocht voor', pg.inner_text('main'))
+        # club toevoegen via een back-up (als tekst geplakt)
+        b = json.dumps({'app': 'Aandeel Signaal', 'soort': 'back-up', 'versie': 1, 'portefeuilles': [{'id': 'gouden-greep', 'naam': 'BC De Gouden Greep'}],
+                        'portefeuille': [{'id': 'gg1', 'pf': 'gouden-greep', 'ticker': 'MSFT', 'aantal': 5, 'koers': 300, 'valuta': 'USD', 'datum': None}]})
+        pg.goto(INDEX + '#/instellingen')
+        pg.evaluate("document.querySelectorAll('details').forEach(d => d.open = true)")
+        pg.fill('#bktekst', b); pg.click('#plak')
+        self.assertIn('Nieuwe portefeuille: BC De Gouden Greep', pg.inner_text('#tz-achter'))
+        pg.click('#tz-voeg')
+        pg.goto(INDEX + '#/portefeuille')
+        self.assertEqual(pg.locator('[data-pf-kies]').count(), 3)
+        pg.click('[data-pf-kies="gouden-greep"]')
+        self.assertEqual(pg.inner_text('h1'), 'BC De Gouden Greep')
+        self.assertIn('5 stuks', pg.inner_text('main'))
+        pg.goto(INDEX + '#/')
+        self.assertIn('BC DE GOUDEN GREEP', pg.inner_text('[data-tegel=portefeuille]').upper())
+        self.assertIn('2 andere portefeuilles', pg.inner_text('[data-tegel=portefeuille]'))
+        # verwijderen vraagt eerst om bevestiging
+        pg.goto(INDEX + '#/portefeuille')
+        pg.evaluate("document.querySelector('[data-pf-beheer]').open = true")
+        pg.click('#pf-weg'); self.assertIn('Zeker weten', pg.inner_text('#pf-weg'))
+        pg.click('#pf-weg')
+        self.assertEqual(pg.locator('[data-pf-kies]').count(), 2)
+        self.assertEqual(self.fouten, [])
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')

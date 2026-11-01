@@ -119,7 +119,7 @@ test('back-up: inhoud, voorbeeld zonder te wijzigen, en markeren pas na bewaren'
   assert.equal(a.inhoud().volglijst, 2);
   b.voegToe('AAPL');
   const v = b.bekijkBackup(tekst);
-  assert.equal(v.ok, true); assert.equal(v.volglijst, 2); assert.deepEqual(v.nieuw, { volglijst: 1, portefeuille: 0, beoordelingen: 0 });
+  assert.equal(v.ok, true); assert.equal(v.volglijst, 2); assert.deepEqual(v.nieuw, { volglijst: 1, portefeuille: 0, beoordelingen: 0, portefeuilles: [] });
   assert.equal(b.inhoud().volglijst, 1);                      // alleen bekeken, niets gewijzigd
   assert.equal(b.bekijkBackup('geen json').ok, false);
   assert.equal(b.bekijkBackup('{"app":"Anders"}').ok, false);
@@ -133,4 +133,40 @@ test('eigen NAIC-groeiverwachting: bewaren, grenzen, wissen, in de back-up', () 
   assert.match(st.maakBackup(true), /naicgroei/);
   assert.equal(st.zetVerdieping('SAP.DE', 'cijfers', 'naicgroei', null).ok, true);
   assert.equal(st.verdieping('SAP.DE').cijfers.naicgroei, undefined);
+});
+
+test('meerdere portefeuilles: aanmaken, kiezen, aankopen per portefeuille, verwijderen', () => {
+  const w = S.maak(geheugen());
+  assert.deepEqual(w.actief(), { id: 'eigen', naam: 'Mijn portefeuille' });
+  assert.equal(w.voegPositieToe({ ticker: 'ASML.AS', aantal: 1, koers: 600, valuta: 'EUR' }).ok, true);
+  const n = w.nieuwePortefeuille('BC De Gouden Greep');
+  assert.equal(n.ok, true); assert.equal(n.id, 'bc-de-gouden-greep'); assert.equal(w.actief().id, n.id);
+  assert.equal(w.nieuwePortefeuille('bc de gouden greep').ok, false);         // zelfde naam
+  w.voegPositieToe({ ticker: 'INGA.AS', aantal: 184, koers: 11.77, valuta: 'EUR' });
+  assert.equal(w.portefeuille().length, 2);
+  assert.equal(w.portefeuille('eigen').length, 1); assert.equal(w.portefeuille(n.id)[0].ticker, 'INGA.AS');
+  assert.deepEqual(w.portefeuilles().map(p => p.aantal), [1, 1]);
+  assert.equal(w.hernoemPortefeuille(n.id, 'Club').ok, true); assert.equal(w.actief().naam, 'Club');
+  assert.equal(w.kiesPortefeuille('eigen'), true); assert.equal(w.kiesPortefeuille('bestaat-niet'), false);
+  assert.equal(w.verwijderPortefeuille(n.id), true);
+  assert.equal(w.portefeuille().length, 1); assert.equal(w.verwijderPortefeuille('eigen'), false);   // laatste blijft
+});
+
+test('oude gegevens zonder portefeuilles: alle aankopen in de eerste', () => {
+  const g = geheugen(); g.setItem(S.SLEUTEL, JSON.stringify({ versie: 1, volglijst: [], portefeuille: [{ id: 'a1', ticker: 'ASML.AS', aantal: 1, koers: 600, valuta: 'EUR' }] }));
+  const w = S.maak(g);
+  assert.equal(w.portefeuille('eigen').length, 1); assert.equal(w.portefeuilles().length, 1);
+});
+
+test('back-up met een andere portefeuille samenvoegen: portefeuille en aankopen komen erbij, eigen blijft', () => {
+  const w = S.maak(geheugen());
+  w.voegPositieToe({ ticker: 'ASML.AS', aantal: 1, koers: 600, valuta: 'EUR' });
+  const b = JSON.stringify({ app: 'Aandeel Signaal', soort: 'back-up', versie: 1, portefeuilles: [{ id: 'gouden-greep', naam: 'BC De Gouden Greep' }],
+    portefeuille: [{ id: 'gg1', pf: 'gouden-greep', ticker: 'INGA.AS', aantal: 184, koers: 11.77602, valuta: 'EUR' }, { id: 'gg2', pf: 'gouden-greep', ticker: 'ASML.AS', aantal: 1, koers: 600, valuta: 'EUR' }] });
+  const v = w.bekijkBackup(b);
+  assert.deepEqual(v.nieuw.portefeuilles, ['BC De Gouden Greep']); assert.equal(v.nieuw.portefeuille, 2);   // zelfde aankoop in andere portefeuille is nieuw
+  const u = w.zetTerug(b, 'samenvoegen');
+  assert.equal(u.ok, true);
+  assert.deepEqual(w.portefeuilles().map(p => [p.id, p.aantal]), [['eigen', 1], ['gouden-greep', 2]]);
+  assert.equal(w.zetTerug(b, 'samenvoegen').toegevoegd, 0);       // nog een keer: niets dubbel
 });

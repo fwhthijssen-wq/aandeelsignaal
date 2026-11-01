@@ -6,8 +6,25 @@
   var MAX_VOLGLIJST = 50;
   var MAX_POSITIES = 200;
   var TICKER = /^[A-Z0-9][A-Z0-9.\-]{0,14}$/;
+  var MAX_PORTEFEUILLES = 10, PF_ID = /^[a-z0-9][a-z0-9\-]{0,39}$/, EERSTE_PF = { id: 'eigen', naam: 'Mijn portefeuille' };
 
-  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], checklist: {}, zones: {}, verdieping: {}, instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
+  function leeg() { return { versie: 1, volglijst: [], portefeuille: [], portefeuilles: [{ id: EERSTE_PF.id, naam: EERSTE_PF.naam }], actief: EERSTE_PF.id, checklist: {}, zones: {}, verdieping: {}, instellingen: { thema: 'auto' }, introGezien: false, laatsteBackup: null, gewijzigd: null }; }
+
+  /* Meerdere portefeuilles (vanaf 1.8): elke aankoop hoort bij één portefeuille (pf). Oude aankopen zonder pf horen bij de eerste. */
+  function schoonNaam(n) { return typeof n === 'string' ? n.replace(/[\u0000-\u001f<>]/g, '').trim().slice(0, 40) : ''; }
+  function schoonPortefeuilles(lijst) {
+    var uit = [];
+    (Array.isArray(lijst) ? lijst : []).forEach(function (x) {
+      var id = x && typeof x.id === 'string' && PF_ID.test(x.id) ? x.id : null, naam = schoonNaam(x && x.naam);
+      if (id && naam && uit.length < MAX_PORTEFEUILLES && !uit.some(function (y) { return y.id === id; })) uit.push({ id: id, naam: naam });
+    });
+    return uit;
+  }
+  function pfId(naam, bestaand) {
+    var basis = schoonNaam(naam).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 30) || 'portefeuille', id = basis, i = 2;
+    while (bestaand.some(function (x) { return x.id === id; })) id = basis + '-' + (i++);
+    return id;
+  }
 
   function normTicker(t) {
     if (typeof t !== 'string') return null;
@@ -72,6 +89,8 @@
     var id = typeof p.id === 'string' && /^[A-Za-z0-9_\-]{1,40}$/.test(p.id) ? p.id : null;
     var signaal = schoonSignaal(p.signaal);
     var uit = { id: id, ticker: t, aantal: aantal, koers: koers, valuta: valuta, datum: datum };
+    if (typeof p.pf === 'string' && PF_ID.test(p.pf)) uit.pf = p.pf;
+    var nm = schoonNaam(p.naam); if (nm) uit.naam = nm;                       // naam van een fonds dat de app niet volgt
     if (signaal) { uit.signaal = signaal; uit.opSignaal = p.opSignaal === true; }
     return uit;
   }
@@ -115,7 +134,7 @@
     Object.keys(data).forEach(function (k) { var t = normTicker(k), z = schoonZone(data[k]); if (t && z && !uit[t] && n < MAX_CHECKLIST) { uit[t] = z; n++; } });
     return uit;
   }
-  function zelfde(a, b) { return a.ticker === b.ticker && a.aantal === b.aantal && a.koers === b.koers && a.valuta === b.valuta && a.datum === b.datum; }
+  function zelfde(a, b) { return (a.pf || '') === (b.pf || '') && a.ticker === b.ticker && a.aantal === b.aantal && a.koers === b.koers && a.valuta === b.valuta && a.datum === b.datum; }
 
   function schoon(data) {
     var uit = leeg();
@@ -135,6 +154,10 @@
       if (x && uit.portefeuille.length < MAX_POSITIES && !uit.portefeuille.some(function (y) { return y.id && y.id === x.id; })) uit.portefeuille.push(x);
     });
     uit.portefeuille.forEach(function (p, i) { if (!p.id) p.id = 'p' + (i + 1) + '-' + Date.now().toString(36); });
+    var pfs = schoonPortefeuilles(data.portefeuilles);
+    if (pfs.length) uit.portefeuilles = pfs;
+    uit.portefeuille.forEach(function (p) { if (!p.pf || !uit.portefeuilles.some(function (x) { return x.id === p.pf; })) p.pf = uit.portefeuilles[0].id; });
+    uit.actief = uit.portefeuilles.some(function (x) { return x.id === data.actief; }) ? data.actief : uit.portefeuilles[0].id;
     uit.checklist = schoonChecklist(data.checklist);
     uit.zones = schoonZones(data.zones);
     uit.verdieping = schoonVerdieping(data.verdieping);
@@ -183,12 +206,41 @@
         if (staat.volglijst.length !== voor) bewaar(true);
         return voor !== staat.volglijst.length;
       },
-      portefeuille: function () { return staat.portefeuille.slice(); },
+      /* Zonder argument: alle aankopen uit alle portefeuilles (voor signalen en het aandeelscherm); met een id alleen die portefeuille. */
+      portefeuille: function (pf) { return pf ? staat.portefeuille.filter(function (x) { return x.pf === pf; }) : staat.portefeuille.slice(); },
+      portefeuilles: function () { return staat.portefeuilles.map(function (x) { return { id: x.id, naam: x.naam, aantal: staat.portefeuille.filter(function (p) { return p.pf === x.id; }).length }; }); },
+      actief: function () { var a = staat.portefeuilles.filter(function (x) { return x.id === staat.actief; })[0] || staat.portefeuilles[0]; return { id: a.id, naam: a.naam }; },
+      kiesPortefeuille: function (id) { if (!staat.portefeuilles.some(function (x) { return x.id === id; })) return false; staat.actief = id; bewaar(false); return true; },
+      nieuwePortefeuille: function (naam) {
+        var n = schoonNaam(naam);
+        if (!n) return { ok: false, reden: 'Geef de portefeuille een naam.' };
+        if (staat.portefeuilles.length >= MAX_PORTEFEUILLES) return { ok: false, reden: 'Maximaal ' + MAX_PORTEFEUILLES + ' portefeuilles.' };
+        if (staat.portefeuilles.some(function (x) { return x.naam.toLowerCase() === n.toLowerCase(); })) return { ok: false, reden: 'Er is al een portefeuille met deze naam.' };
+        var id = pfId(n, staat.portefeuilles);
+        staat.portefeuilles.push({ id: id, naam: n }); staat.actief = id;
+        return { ok: bewaar(true), id: id };
+      },
+      hernoemPortefeuille: function (id, naam) {
+        var n = schoonNaam(naam), pf = staat.portefeuilles.filter(function (x) { return x.id === id; })[0];
+        if (!pf) return { ok: false, reden: 'Onbekende portefeuille.' };
+        if (!n) return { ok: false, reden: 'Geef de portefeuille een naam.' };
+        if (staat.portefeuilles.some(function (x) { return x.id !== id && x.naam.toLowerCase() === n.toLowerCase(); })) return { ok: false, reden: 'Er is al een portefeuille met deze naam.' };
+        pf.naam = n; return { ok: bewaar(true) };
+      },
+      /* Verwijdert de portefeuille met al haar aankopen. De laatste portefeuille blijft altijd bestaan. */
+      verwijderPortefeuille: function (id) {
+        if (staat.portefeuilles.length <= 1 || !staat.portefeuilles.some(function (x) { return x.id === id; })) return false;
+        staat.portefeuilles = staat.portefeuilles.filter(function (x) { return x.id !== id; });
+        staat.portefeuille = staat.portefeuille.filter(function (p) { return p.pf !== id; });
+        if (staat.actief === id) staat.actief = staat.portefeuilles[0].id;
+        return bewaar(true);
+      },
       voegPositieToe: function (p) {
         var x = schoonPositie(p);
         if (!x) return { ok: false, reden: 'Controleer aantal, aankoopkoers en valuta: alleen getallen groter dan nul.' };
         if (staat.portefeuille.length >= MAX_POSITIES) return { ok: false, reden: 'portefeuille vol (maximaal ' + MAX_POSITIES + ' aankopen)' };
         x.id = 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+        if (!x.pf || !staat.portefeuilles.some(function (y) { return y.id === x.pf; })) x.pf = staat.actief;
         staat.portefeuille.push(x);
         return { ok: bewaar(true), id: x.id };
       },
@@ -198,7 +250,7 @@
         if (staat.portefeuille.length !== voor) bewaar(true);
         return voor !== staat.portefeuille.length;
       },
-      herstelPositie: function (p) { var x = schoonPositie(p); if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
+      herstelPositie: function (p) { var x = schoonPositie(p); if (x && (!x.pf || !staat.portefeuilles.some(function (y) { return y.id === x.pf; }))) x.pf = staat.actief; if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
       checklist: function (t) { t = normTicker(t); var b = t && staat.checklist[t]; return b ? JSON.parse(JSON.stringify(b.punten)) : {}; },
       zetPunt: function (t, id, antwoord, notitie) {
         t = normTicker(t); id = Number(id);
@@ -249,12 +301,12 @@
       /* Back-up als tekst (JSON). Markeert het moment van back-up. */
       maakBackup: function (zonderMarkering) {
         var b = { app: 'Aandeel Signaal', soort: 'back-up', versie: 1, gemaakt: nu(),
-          volglijst: staat.volglijst, portefeuille: staat.portefeuille, checklist: staat.checklist, zones: staat.zones, verdieping: staat.verdieping, instellingen: staat.instellingen };
+          volglijst: staat.volglijst, portefeuille: staat.portefeuille, portefeuilles: staat.portefeuilles, actief: staat.actief, checklist: staat.checklist, zones: staat.zones, verdieping: staat.verdieping, instellingen: staat.instellingen };
         if (!zonderMarkering) { staat.laatsteBackup = b.gemaakt; bewaar(false); }
         return JSON.stringify(b, null, 1);
       },
       /* Zonder te bewaren: wat zit er nu op dit toestel? */
-      inhoud: function () { return { volglijst: staat.volglijst.length, portefeuille: staat.portefeuille.length, beoordelingen: Object.keys(staat.verdieping).length, checklists: Object.keys(staat.checklist).length, laatsteBackup: staat.laatsteBackup, gewijzigd: staat.gewijzigd || null }; },
+      inhoud: function () { return { volglijst: staat.volglijst.length, portefeuille: staat.portefeuille.length, portefeuilles: staat.portefeuilles.length, beoordelingen: Object.keys(staat.verdieping).length, checklists: Object.keys(staat.checklist).length, laatsteBackup: staat.laatsteBackup, gewijzigd: staat.gewijzigd || null }; },
       /* Zet het moment van back-up pas nadat het bestand echt bewaard of gedeeld is. */
       markeerBackup: function (moment) { staat.laatsteBackup = moment || nu(); bewaar(false); },
       /* Kijkt in een back-upbestand zonder iets te wijzigen: wat staat erin en wat is daarvan nieuw? */
@@ -266,9 +318,11 @@
         var nieuwV = sc.volglijst.filter(function (it) { return !staat.volglijst.some(function (x) { return x.ticker === it.ticker; }); }).length;
         var nieuwP = sc.portefeuille.filter(function (p) { return !staat.portefeuille.some(function (y) { return zelfde(y, p); }); }).length;
         var nieuwB = Object.keys(sc.verdieping).filter(function (t) { return !staat.verdieping[t]; }).length;
+        var pfNamen = sc.portefeuilles.filter(function (x) { return sc.portefeuille.some(function (p) { return p.pf === x.id; }); }).map(function (x) { return x.naam; });
+        var nieuwPf = sc.portefeuilles.filter(function (x) { return !staat.portefeuilles.some(function (y) { return y.id === x.id; }); }).map(function (x) { return x.naam; });
         return { ok: true, gemaakt: typeof data.gemaakt === 'string' ? data.gemaakt : null,
           volglijst: sc.volglijst.length, portefeuille: sc.portefeuille.length, beoordelingen: Object.keys(sc.verdieping).length, checklists: Object.keys(sc.checklist).length,
-          nieuw: { volglijst: nieuwV, portefeuille: nieuwP, beoordelingen: nieuwB } };
+          portefeuilles: pfNamen, nieuw: { volglijst: nieuwV, portefeuille: nieuwP, beoordelingen: nieuwB, portefeuilles: nieuwPf } };
       },
       /* Terugzetten voegt toe en vervangt nooit stilzwijgend: standaard samenvoegen. */
       zetTerug: function (tekst, modus) {
@@ -276,7 +330,7 @@
         try { data = JSON.parse(tekst); } catch (e) { return { ok: false, reden: 'Dit bestand is geen geldige back-up.' }; }
         if (!data || data.app !== 'Aandeel Signaal' || data.soort !== 'back-up') return { ok: false, reden: 'Dit is geen back-up van Aandeel Signaal.' };
         var s = schoon(data), nieuw = 0;
-        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; staat.checklist = s.checklist; staat.zones = s.zones; staat.verdieping = s.verdieping; nieuw = s.volglijst.length + s.portefeuille.length; }
+        if (modus === 'vervang') { staat.volglijst = s.volglijst; staat.portefeuille = s.portefeuille; staat.portefeuilles = s.portefeuilles; staat.actief = s.actief; staat.checklist = s.checklist; staat.zones = s.zones; staat.verdieping = s.verdieping; nieuw = s.volglijst.length + s.portefeuille.length; }
         else {
           s.volglijst.forEach(function (it) {
             if (!staat.volglijst.some(function (x) { return x.ticker === it.ticker; }) && staat.volglijst.length < MAX_VOLGLIJST) {
@@ -284,7 +338,11 @@
             }
           });
         }
+        if (modus !== 'vervang') s.portefeuilles.forEach(function (x) {     // portefeuilles uit de back-up erbij (zelfde id = dezelfde portefeuille)
+          if (!staat.portefeuilles.some(function (y) { return y.id === x.id; }) && staat.portefeuilles.length < MAX_PORTEFEUILLES) staat.portefeuilles.push(x);
+        });
         if (modus !== 'vervang') s.portefeuille.forEach(function (p) {
+          if (!staat.portefeuilles.some(function (y) { return y.id === p.pf; })) p.pf = staat.portefeuilles[0].id;
           if (!staat.portefeuille.some(function (y) { return zelfde(y, p); }) && staat.portefeuille.length < MAX_POSITIES) {
             if (staat.portefeuille.some(function (y) { return y.id === p.id; })) p.id = p.id + 'b' + Math.random().toString(36).slice(2, 5);
             staat.portefeuille.push(p); nieuw++;
@@ -315,6 +373,6 @@
     };
   }
 
-  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonVerdieping: schoonVerdieping, schoonSignaal: schoonSignaal, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
+  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, MAX_PORTEFEUILLES: MAX_PORTEFEUILLES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonVerdieping: schoonVerdieping, schoonSignaal: schoonSignaal, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Store = api;
 })(typeof self !== 'undefined' ? self : this);

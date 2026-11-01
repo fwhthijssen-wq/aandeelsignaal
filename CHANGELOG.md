@@ -2,6 +2,13 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.8 (2026.11.01)
+**Meerdere portefeuilles.**
+- Houd naast uw eigen portefeuille bijvoorbeeld die van een beleggingsclub bij (Portefeuille › Nog een portefeuille bijhouden). Bovenaan wisselt u met één tik; elke portefeuille heeft eigen aankopen, totalen en spreiding. Naam wijzigen en verwijderen (met bevestiging) kan ook.
+- De tegel op Start toont de gekozen portefeuille en hoeveel andere er zijn. Signalen gelden voor de aandelen uit alle portefeuilles samen.
+- Een back-up kan een portefeuille meenemen: Terugzetten › Toevoegen zet die er als aparte portefeuille bij; uw eigen portefeuille blijft zoals hij is. Bestaande aankopen horen automatisch bij de eerste portefeuille.
+- Een aankoop van een fonds dat de app niet volgt, houdt zijn naam en zegt dat er geen koers is.
+
 ## 1.7.4 (2026.11.01)
 - **Meer fondsen Bevestigd: 76 → 81**, onder meer Brenntag, Zalando en Symrise (10 of meer jaren winst per aandeel nagerekend met het eigen jaarverslag).
 - Duitse jaarverslagen: het aantal aandelen wordt ook gevonden als er woorden tussen staan ("Number of Brenntag SE shares") of als de getallen op de volgende regel staan; elk jaar met een verslag wordt nagerekend, ook als dat jaar nog niet in de reeks stond.
