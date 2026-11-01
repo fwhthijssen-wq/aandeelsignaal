@@ -2953,16 +2953,7 @@
  },
  "HNR1.DE": {
   "reeks": {
-   "2013": 7.43,
-   "2014": 8.17,
-   "2015": 9.54,
-   "2016": 9.71,
-   "2017": 7.95,
-   "2018": 8.79,
-   "2019": 10.65,
-   "2020": 7.32,
-   "2021": 10.21,
-   "2022": 11.66,
+   "2022": 6.47,
    "2023": 15.13,
    "2024": 19.31,
    "2025": 21.9
@@ -3076,6 +3067,18 @@
     "sha256": "baedaaf7b80882d919eeb488331591f05c52fc04ee5e6a3a07b6145f607333d1",
     "bestand": "2022-eqs"
    },
+   "2023": {
+    "jaar": 2023,
+    "eps": 15.13,
+    "vorig_jaar": 2022,
+    "eps_vorig": 6.47,
+    "pagina": 102,
+    "bewijs": "Diluted earnings per share 15.13 6.47",
+    "kandidaten": 2,
+    "url": "https://www.hannover-re.com/2011493/annual-report-2023.pdf",
+    "sha256": "f31085c3f43368e4f11d39e05c383d56fd2e72f264194c8f230768d75ba94ba4",
+    "bestand": "2023"
+   },
    "2024": {
     "jaar": 2024,
     "eps": 19.31,
@@ -3101,11 +3104,9 @@
     "bestand": "2025-eqs"
    }
   },
-  "niet_gelezen": {
-   "2023-eqs": "geen regel gevonden"
-  },
+  "niet_gelezen": {},
   "log": [
-   "2022: één verslag ontbreekt; gat overbrugd"
+   "2022: verschil (11.66 in eigen verslag, 6.47 in later verslag); reeks stopt"
   ]
  },
  "IFX.DE": {

@@ -3092,22 +3092,13 @@
   },
   "pretax_income": {
    "reeks": {
-    "2013": 1102392000.0,
-    "2014": 1370670000.0,
-    "2015": 1670920000.0,
-    "2016": 1617655000.0,
-    "2017": 1292619000.0,
-    "2018": 1518388000.0,
-    "2019": 1766097000.0,
-    "2020": 1123871000.0,
-    "2021": 1651790000.0,
-    "2022": 1996369000.0,
+    "2022": 1424200000.0,
     "2023": 1854000000.0,
     "2024": 3213300000.0,
     "2025": 3412800000.0
    },
    "log": [
-    "2022: één verslag ontbreekt; gat overbrugd"
+    "2022: verschil (1996369000.0 in eigen verslag, 1424200000.0 in later verslag); reeks stopt"
    ],
    "verslagen": {
     "2014": {
@@ -3155,6 +3146,11 @@
      "pagina": 249,
      "bewijs": "Profit before taxes on income 1,996,369 1,651,790"
     },
+    "2023": {
+     "url": "https://www.hannover-re.com/2011493/annual-report-2023.pdf",
+     "pagina": 194,
+     "bewijs": "Profit before taxes on income 1,854.0 1,424.2"
+    },
     "2024": {
      "url": "https://irpages2.eqs.com/Download/Companies/hannoverrueck/Annual Reports/DE0008402215-JA-2024-EQ-E-00.pdf",
      "pagina": 166,
@@ -3189,7 +3185,7 @@
    "log": [
     "2025: meerjarenoverzicht vult 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
     "2024: meerjarenoverzicht vult 2015",
-    "2022: meerdere lezingen en geen die aansluit; reeks stopt"
+    "2023: meerdere lezingen en geen die aansluit; reeks stopt"
    ],
    "verslagen": {
     "2014": {
