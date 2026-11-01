@@ -79,7 +79,7 @@ def kandidaten(tekst):
     komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     uit = {}
     for i, r in enumerate(regels):
-        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien|(?:no\.|number)\s+of\s+shares|anzahl\s+(?:der\s+)?aktien|aktienanzahl|'
+        if not (AANDELEN.search(r) or re.search(r'theoretical\s+shares|theoretische\s+aktien|(?:no\.|number)\s+of\s+(?:[\w.&-]+\s+){0,3}?shares|anzahl\s+(?:der\s+)?aktien|aktienanzahl|'
                                                 r'nombre\s+d.actions|n[uú]mero\s+de\s+acciones|numero\s+(?:di\s+|delle\s+)?azioni|aantal\s+aandelen', r, re.I)) or NIET_AANDELEN.search(r):
             continue
         blok = ' '.join(regels[i:i + 4])
@@ -90,13 +90,17 @@ def kandidaten(tekst):
             if x and 1e7 <= x <= 3e10:
                 uit.setdefault(round(x), ' '.join(r.split())[:160])
         if AANDELEN2.search(r):
-            fs = schaal(r, regels[max(0, i - 8):i])
+            # staan de getallen op de volgende regel ("Basic weighted average number of shares / (in millions)  259.7"), dan die erbij
+            rr = r
+            if not re.search(r'\s[-–(]?\d', r) and i + 1 < len(regels):
+                rr = r.rstrip() + ' ' + regels[i + 1].strip()
+            fs = schaal(rr, regels[max(0, i - 8):i])
             if fs and fs > 1:
-                for x in getallen(r, komma)[:3]:
+                for x in getallen(rr, komma)[:3]:
                     if x and float(x).is_integer() and 1990 <= x <= 2035:
                         continue                              # jaartal, geen aantal
                     if x and 1e7 <= x * fs <= 3e10:
-                        uit.setdefault(round(x * fs), ' '.join(r.split())[:160])
+                        uit.setdefault(round(x * fs), ' '.join(rr.split())[:160])
     return [{'aandelen': k, 'bewijs': v} for k, v in uit.items()]
 
 
@@ -169,7 +173,9 @@ def main():
         if alleen and t not in alleen:
             continue
         docs = index.get(t) or {}
-        jaren = sorted(int(j) for j in (reg.get('reeks') or {}))
+        # de jaren uit het register, én elk jaar waarvoor een verslag is (de winst per aandeel van dat jaar kan van Yahoo komen
+        # en wordt dan alleen bevestigd met aantal aandelen én nettowinst uit het verslag zelf)
+        jaren = sorted({int(j) for j in (reg.get('reeks') or {})} | {int(k[:4]) for k in docs if k[:4].isdigit()})
         per = {}
         for jaar in jaren:
             for naam in [k for k in docs if k.split('-')[0] == str(jaar)] + [k for k in docs if k.split('-')[0] == str(jaar + 1)]:

@@ -2,7 +2,7 @@
 aandelen en winst uit te lezen (hulp/pdf_uitlezen.py). Gebruik: python hulp/de_jaarverslagen.py uitmap [TICKER ...] [--jaren 2016-2025]
 Per boekjaar eerst het directe adres uit hulp/de_jaarverslagen.json; anders het vaste patroon van EQS (Engels, dan Duits).
 Schrijft uitmap/{TICKER}/{jaar}.txt (pdftotext -layout) en uitmap/index.json met adres, grootte en sha256 per document."""
-import hashlib, json, os, subprocess, sys, tempfile, time, urllib.parse, urllib.request
+import hashlib, json, os, re, subprocess, sys, tempfile, time, urllib.parse, urllib.request
 from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
@@ -47,6 +47,13 @@ def werkende_slug(spec):
     return None
 
 
+def is_groep(tekst):
+    """Is dit het jaarverslag van de groep (geconsolideerd)? EQS heeft soms ook het enkelvoudige verslag van de moeder
+    (Hannover Rück 2023: 200.000 tekens, alleen HGB-cijfers van de SE). Dat bevat geen geconsolideerde jaarrekening."""
+    # Een groepsverslag noemt de winst per aandeel vele keren; het enkelvoudige (HGB-)verslag van de moeder niet.
+    return len(re.findall(r'earnings\s+per\s+share|ergebnis\s+je\s+aktie', tekst, re.I)) >= 3
+
+
 def main():
     args = sys.argv[1:]
     jaren = '2016-2025'
@@ -69,6 +76,11 @@ def main():
             # zodat hetzelfde bestandsjaar een ander boekjaar kan zijn. Het boekjaar komt later uit de tekst zelf.
             for url, bron in kandidaten(spec, jaar):
                 sleutel = f'{jaar}' if bron == 'beleggerssite' else f'{jaar}-eqs'
+                bestaand = uit / t / f'{sleutel}.txt'
+                if sleutel in index.get(t, {}) and bestaand.exists() and not is_groep(bestaand.read_text(encoding='utf-8', errors='replace')):
+                    print('geen groepsverslag, opnieuw zoeken', t, sleutel, flush=True)
+                    oud = index[t].pop(sleutel); bestaand.unlink()
+                    index[t]['_afgewezen_' + sleutel] = {'url': oud.get('url'), 'reden': 'geen groepsverslag'}
                 if sleutel in index.get(t, {}) or (bron == 'EQS' and any(v.get('url') == url for v in index.get(t, {}).values())):
                     continue
                 if bron == 'EQS' and f'{jaar}-eqs' in index.get(t, {}):
@@ -83,6 +95,9 @@ def main():
                 with tempfile.NamedTemporaryFile(suffix='.pdf') as f:
                     f.write(data); f.flush()
                     tekst = subprocess.run(['pdftotext', '-layout', f.name, '-'], capture_output=True, text=True).stdout
+                if not is_groep(tekst):
+                    print('geen groepsverslag, overgeslagen', t, url, flush=True)
+                    continue
                 sha = hashlib.sha256(data).hexdigest()
                 if any(v.get('sha256') == sha for v in index.get(t, {}).values()):
                     continue                                           # zelfde document al binnen
