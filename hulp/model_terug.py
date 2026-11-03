@@ -54,6 +54,16 @@ def werkelijk(reeks, splitsingen):
 
 
 def ecb_reeks():
+    for poging in range(5):                      # de ECB geeft soms een tijdelijke 504
+        try:
+            return _ecb_reeks()
+        except Exception as exc:
+            print('ECB poging', poging + 1, exc, flush=True)
+            time.sleep(30 * (poging + 1))
+    raise RuntimeError('ECB-koersen niet opgehaald')
+
+
+def _ecb_reeks():
     url = f'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP.EUR.SP00.A?startPeriod={START_KOERS}&format=csvdata'
     with urllib.request.urlopen(urllib.request.Request(url, headers={'Accept': 'text/csv'}), timeout=120) as r:
         rijen = list(csv.DictReader(io.StringIO(r.read().decode('utf-8'))))
@@ -80,6 +90,7 @@ def peildata(laatste):
 def main():
     data = json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'))
     uit_map = Path(sys.argv[2]); uit_map.mkdir(parents=True, exist_ok=True)
+    fx = ecb_reeks()                             # eerst: zonder wisselkoersen heeft de rest geen zin
     fondsen, fouten, aangepast = {}, {}, {}
     for nr, rec in enumerate(data['aandelen']):
         t = rec['ticker']
@@ -100,7 +111,6 @@ def main():
             indexen[code] = index_reeks(code)
         except Exception as exc:
             fouten['index ' + code] = str(exc)[:100]
-    fx = ecb_reeks()
     laatste = max(p[-1][0] for p in aangepast.values())
     datums = {t: [p[0] for p in r] for t, r in aangepast.items()}
     signalen = {}
