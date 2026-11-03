@@ -1,10 +1,11 @@
-# Modelportefeuille (versie 1.9, 3 nov 2026)
+# Modelportefeuille (versie 1.9.1, 3 nov 2026)
 
 Een fictieve portefeuille die de signalen automatisch volgt, om de betrouwbaarheid over langere tijd te zien (een eerlijke test vooruit, naast het terugrekenen). Voorstel en keuzes met Frans op 3 nov: zoals voorgesteld, in een eigen kleur (paars, label *fictief*).
 
 ## Regels (`web/js/model.js`, één bron voor nacht, terugrekenen en tests)
 - **Kopen:** NAIC Kopen (variant *moment*: ook een gunstig koopmoment). Voor ongeveer € 1.000, minstens 1 aandeel. Geen bijkoop als het fonds al in de portefeuille zit.
-- **Verkopen:** alleen bij de NAIC-verkoopzone of erboven (niet als de kwaliteit wegvalt). Daarna opnieuw te kopen bij een nieuwe kans.
+- **Verkopen:** bij de NAIC-verkoopzone of erboven. Daarna opnieuw te kopen bij een nieuwe kans.
+- **Variant kwaliteit (1.9.1, op verzoek van Frans):** ook verkopen als de kwaliteit wegvalt (`kwaliteitVan` in modelportefeuille.js): een NAIC-kwaliteitstoets valt af (omzet draagt de winstgroei niet, marge vóór belasting of ROE daalt), geen groeibedrijf meer (Vermijden zonder zones), of een verliesjaar. Reden *Kwaliteit* bij de verkoop.
 - **Uitvoering:** het signaal ontstaat op een slotkoers; uitgevoerd tegen de slotkoers van de volgende handelsdag. € 3 kosten per transactie.
 - **Euro:** USD en GBP met de ECB-referentiekoers (euro per eenheid). Dividend bruto op de ex-datum, als geld. Splitsingen passen het aantal aan. Fonds uit de lijst: verkocht tegen de laatste koers.
 - **Index:** per aankoop hetzelfde bedrag in de eigen index (index_voor), met dezelfde kosten, verkocht op hetzelfde moment. Indexen zonder dividend, behalve de DAX; daarom toont de app ook het rendement zonder dividend.
@@ -28,3 +29,14 @@ Een fictieve portefeuille die de signalen automatisch volgt, om de betrouwbaarhe
 - Per zekerheid wisselend (Bevestigd +63% tegen index +61%; indicatief +87% tegen +67%; uit jaarverslag +26% tegen +26%); kleine aantallen.
 - Beperkingen: fondsen van nu (overlevers), jaarcijfers zoals nu bekend, wekelijks i.p.v. dagelijks.
 - Proef nachtelijke stap 3 nov: 343 fondsen, 15 kooporders (moment: 5); ECB-koersen opgehaald. Echte start: eerste geplande nachtelijke run na 1.9.
+
+## Drie regels naast elkaar (terugrekenen 3 nov, 2018-04-27 t/m 2026-11-03)
+| | posities | rendement | index | verschil | zonder dividend | per ingezette euro per jaar (index) |
+|---|---|---|---|---|---|---|
+| Alle kansen | 119 (82 open) | +66,6% | +56,6% | +10,0 | +50,8% | 20,6% (17,5%) |
+| Ook verkopen bij zwakkere kwaliteit | 133 (33 open) | +28,9% | +25,4% | +3,5 | +23,4% | 18,5% (16,2%) |
+| Gunstig koopmoment | 86 (59 open) | +55,4% | +49,6% | +5,8 | +40,6% | 16,6% (14,9%) |
+
+- Verkopen bij zwakkere kwaliteit werkte slechter: 86 verkopen om kwaliteit (gemiddeld na 18 maanden, 33 met verlies). Bij 59 van de 77 vergelijkbare aankopen had vasthouden (de hoofdregel) meer opgeleverd, gemiddeld 57 procentpunt. De kwaliteitstoetsen slaan vaak tijdelijk aan; veel van die bedrijven herstelden.
+- De rendementen over het ingelegde geld zijn niet direct te vergelijken (andere looptijden); daarom ook het resultaat per ingezette euro per jaar.
+- Conclusie: de hoofdregel (alleen verkopen in de verkoopzone) blijft de beste van de drie.
