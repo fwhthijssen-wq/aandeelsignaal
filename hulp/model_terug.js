@@ -39,7 +39,7 @@ for (const d of handelsdagen) {
     const k = kw[t](d);
     if (!k) continue;                                       // nog niet genoteerd
     const f = Object.assign({ koers: k[1], koersDatum: k[0] }, meta[t]);
-    if (sig && sig[t]) Object.assign(f, { oordeel: sig[t].oordeel, zone: sig[t].zone, moment: sig[t].moment, zekerheid: sig[t].zekerheid });
+    if (sig && sig[t]) Object.assign(f, { oordeel: sig[t].oordeel, zone: sig[t].zone, moment: sig[t].moment, zekerheid: sig[t].zekerheid, kwaliteit: sig[t].kwaliteit });
     fondsen[t] = f;
   }
   const indexen = {};

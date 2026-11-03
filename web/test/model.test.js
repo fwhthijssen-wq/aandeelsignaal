@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const M = require('../js/model.js');
 
+const V = (s, id) => s.varianten.find((v) => v.id === id);
 function fonds(x) { return Object.assign({ naam: 'Test', valuta: 'EUR', index: 'AEX', dividenden: [], splitsingen: [] }, x); }
 function dag(datum, fondsen, extra) { return Object.assign({ datum, fx: { USD: 0.9, GBP: 1.2 }, fondsen, indexen: { AEX: { datum, stand: 900 }, VS: { datum, stand: 5000 } } }, extra || {}); }
 
@@ -9,7 +10,7 @@ test('kopen pas op de volgende koers, voor ongeveer 1000 euro, met kosten', () =
   const s = M.nieuw('2026-11-04');
   M.stap(s, dag('2026-11-04', { 'A.AS': fonds({ koers: 33, koersDatum: '2026-11-03', oordeel: 'kopen', zone: 'koop', moment: 'neutraal', zekerheid: 'bevestigd' }) }));
   assert.equal(s.varianten[0].posities.length, 0); assert.equal(s.varianten[0].wacht.length, 1);
-  assert.equal(s.varianten[1].wacht.length, 0);                 // moment niet gunstig: variant 2 koopt niet
+  assert.equal(V(s, 'moment').wacht.length, 0);                 // moment niet gunstig: variant 2 koopt niet
   M.stap(s, dag('2026-11-04', { 'A.AS': fonds({ koers: 33, koersDatum: '2026-11-03', oordeel: 'kopen' }) }));   // zelfde dag nog eens: niets
   assert.equal(s.varianten[0].posities.length, 0); assert.equal(s.varianten[0].wacht.length, 1);
   M.stap(s, dag('2026-11-05', { 'A.AS': fonds({ koers: 34, koersDatum: '2026-11-04', oordeel: 'kopen' }) }));
@@ -72,7 +73,7 @@ test('fonds uit de lijst: verkocht tegen de laatste koers', () => {
 test('variant koopmoment koopt alleen bij een gunstig moment; oude koers geeft geen signaal', () => {
   const s = M.nieuw('2026-11-04');
   M.stap(s, dag('2026-11-04', { G: fonds({ koers: 10, koersDatum: '2026-11-03', oordeel: 'kopen', moment: 'gunstig' }), O: fonds({ koers: 10, koersDatum: '2026-10-20', oordeel: 'kopen', moment: 'gunstig' }) }));
-  assert.deepEqual(s.varianten[1].wacht.map(o => o.ticker), ['G']);
+  assert.deepEqual(V(s, 'moment').wacht.map(o => o.ticker), ['G']);
   assert.deepEqual(s.varianten[0].wacht.map(o => o.ticker), ['G']);
 });
 
@@ -87,4 +88,34 @@ test('voor de app: historie per week en samenvatting', () => {
   assert.equal(a.varianten[0].historie[a.varianten[0].historie.length - 1][0], s.bijgewerkt);
   assert.equal(a.varianten[0].samenvatting.open, 1);
   assert.ok(a.varianten[0].posities[0].uitkomst.resultaat > 0);
+});
+
+test('variant kwaliteit: verkoopt ook als de kwaliteit wegvalt; de andere varianten niet', () => {
+  const s = M.nieuw('2026-11-04');
+  M.stap(s, dag('2026-11-04', { Q: fonds({ koers: 10, koersDatum: '2026-11-03', oordeel: 'kopen', zone: 'koop', kwaliteit: 'goed' }) }));
+  M.stap(s, dag('2026-11-05', { Q: fonds({ koers: 10, koersDatum: '2026-11-04', oordeel: 'kopen', zone: 'koop', kwaliteit: 'goed' }) }));
+  assert.equal(V(s, 'kwaliteit').posities.length, 1); assert.equal(V(s, 'naic').posities.length, 1);
+  M.stap(s, dag('2026-12-01', { Q: fonds({ koers: 8, koersDatum: '2026-11-30', oordeel: 'neutraal', zone: 'houd', kwaliteit: 'zwak' }) }));
+  assert.equal(V(s, 'kwaliteit').wacht[0].reden, 'Kwaliteit'); assert.equal(V(s, 'naic').wacht.length, 0);
+  M.stap(s, dag('2026-12-02', { Q: fonds({ koers: 7.5, koersDatum: '2026-12-01', oordeel: 'neutraal', zone: 'houd', kwaliteit: 'zwak' }) }));
+  const p = V(s, 'kwaliteit').posities[0];
+  assert.equal(p.verkoop.reden, 'Kwaliteit'); assert.equal(p.verkoop.koers, 7.5);
+  assert.equal(V(s, 'naic').posities[0].verkoop, null, 'de hoofdregel houdt vast');
+});
+
+test('een bestaande staat zonder de nieuwe variant krijgt die erbij, leeg vanaf die dag', () => {
+  const s = M.nieuw('2026-11-04');
+  s.varianten = s.varianten.filter((v) => v.id !== 'kwaliteit');
+  M.stap(s, dag('2026-11-10', {}));
+  assert.deepEqual(s.varianten.map((v) => v.id), ['naic', 'kwaliteit', 'moment']);
+  assert.equal(V(s, 'kwaliteit').sinds, '2026-11-10'); assert.equal(V(s, 'naic').sinds, '2026-11-10');
+});
+
+test('kwaliteit volgens NAIC: zwak bij afgevallen toets, geen groeibedrijf of verliesjaar', () => {
+  const { kwaliteitVan } = require('../../modelportefeuille.js');
+  assert.equal(kwaliteitVan({ oordeel: 'neutraal', zones: {}, kwaliteit: [{ id: 'marge', ok: false }] }), 'zwak');
+  assert.equal(kwaliteitVan({ oordeel: 'vermijden', zones: null, kwaliteit: [] }), 'zwak');
+  assert.equal(kwaliteitVan({ oordeel: null, reden: 'De winst per aandeel van 2025 is niet positief.', kwaliteit: [] }), 'zwak');
+  assert.equal(kwaliteitVan({ oordeel: 'vermijden', zones: { zone: 'verkoop' }, kwaliteit: [{ id: 'roe', ok: null }] }), 'goed');
+  assert.equal(kwaliteitVan({ oordeel: null, reden: 'Minder dan 4 jaar vergelijkbare winst per aandeel.', kwaliteit: [] }), null);
 });

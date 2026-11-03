@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.9 (2026.11.03)';
+  var APP_VERSIE = '1.9.1 (2026.11.03)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -942,7 +942,7 @@
     var naam = rec ? '<a href="#/a/' + encodeURIComponent(p.ticker) + '">' + h(p.naam) + '</a>' : h(p.naam);
     var regel1 = getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht ' + h(datumNl(p.koop.datum)) + ' voor ' + getal(p.koop.koers, 2) + ' ' + h(p.valuta);
     var regel2 = open ? 'Nu ' + getal(p.laatst.koers, 2) + ' ' + h(p.valuta) + ' (' + h(datumNl(p.laatst.datum)) + ')'
-      : 'Verkocht ' + h(datumNl(p.verkoop.datum)) + ' voor ' + getal(p.verkoop.koers, 2) + ' ' + h(p.valuta) + (p.verkoop.reden && p.verkoop.reden !== 'Verkoopzone' ? ' (' + h(p.verkoop.reden.toLowerCase()) + ')' : '');
+      : 'Verkocht ' + h(datumNl(p.verkoop.datum)) + ' voor ' + getal(p.verkoop.koers, 2) + ' ' + h(p.valuta) + (p.verkoop.reden === 'Kwaliteit' ? ' (kwaliteit viel weg)' : p.verkoop.reden && p.verkoop.reden !== 'Verkoopzone' ? ' (' + h(p.verkoop.reden.toLowerCase()) + ')' : ' (verkoopzone)');
     var duur = u.looptijd >= 60 ? getal(u.looptijd / 30.44, 0) + ' maanden' : u.looptijd + ' dagen';
     var extra = [u.dividend ? 'dividend ' + eur(u.dividend, 2) : '', duur, u.perJaar != null && !open ? pct(u.perJaar) + ' per jaar' : '', sg.zekerheid ? 'zekerheid bij aankoop: ' + (LAB_NAAM[sg.zekerheid] || sg.zekerheid) : ''].filter(Boolean).join(' · ');
     return '<div class="regel model-regel" data-model-positie="' + h(p.ticker) + '"><div class="tekstkolom"><b>' + naam + '</b><span class="zacht">' + regel1 + '</span><span class="zacht">' + regel2 + '</span><span class="zacht">' + extra + '</span>' +
@@ -980,14 +980,14 @@
     if (v.wacht.length) {
       var naamVan = function (t) { var r = zoek(t); return r ? r.naam : t; };
       var k = v.wacht.filter(function (o) { return o.soort === 'koop'; }), vk = v.wacht.filter(function (o) { return o.soort === 'verkoop'; });
-      s += '<div class="kaart-plat" data-model-wacht><h2>Bij de volgende koers</h2>' + (k.length ? '<p><b>Kopen:</b> ' + k.map(function (o) { return h(naamVan(o.ticker)); }).join(', ') + '</p>' : '') + (vk.length ? '<p><b>Verkopen:</b> ' + vk.map(function (o) { return h(naamVan(o.ticker)); }).join(', ') + '</p>' : '') + '<p class="zacht">Het signaal ontstond op de laatste slotkoers; uitgevoerd wordt tegen de slotkoers van de volgende handelsdag.</p></div>';
+      s += '<div class="kaart-plat" data-model-wacht><h2>Bij de volgende koers</h2>' + (k.length ? '<p><b>Kopen:</b> ' + k.map(function (o) { return h(naamVan(o.ticker)); }).join(', ') + '</p>' : '') + (vk.length ? '<p><b>Verkopen:</b> ' + vk.map(function (o) { return h(naamVan(o.ticker)) + (o.reden === 'Kwaliteit' ? ' (kwaliteit viel weg)' : ''); }).join(', ') + '</p>' : '') + '<p class="zacht">Het signaal ontstond op de laatste slotkoers; uitgevoerd wordt tegen de slotkoers van de volgende handelsdag.</p></div>';
     }
     var open = v.posities.filter(function (p) { return !p.verkoop; }).sort(function (a, b) { return a.koop.datum < b.koop.datum ? 1 : -1; });
     var dicht = v.posities.filter(function (p) { return p.verkoop; }).sort(function (a, b) { return a.verkoop.datum < b.verkoop.datum ? 1 : -1; });
     s += modelLijstHtml('Open posities', bron + v.id + 'o', open) + modelLijstHtml('Verkocht', bron + v.id + 'd', dicht);
     s += '<details class="kaart-plat" data-model-regels><summary><b>De regels</b></summary><ul class="punten">' +
       '<li><b>Kopen</b>: ' + h(v.regel) + '. Voor ongeveer ' + eur(B.bedrag) + '; is één aandeel duurder, dan 1 aandeel. Een fonds dat al in de portefeuille zit, wordt niet bijgekocht.</li>' +
-      '<li><b>Verkopen</b>: als de koers in de NAIC-verkoopzone of erboven staat. Daarna kan het fonds bij een nieuwe kans opnieuw worden gekocht.</li>' +
+      '<li><b>Verkopen</b>: als de koers in de NAIC-verkoopzone of erboven staat' + (v.id === 'kwaliteit' ? ', én als de kwaliteit wegvalt: geen groeibedrijf meer (winstgroei onder 5% per jaar), een verliesjaar, of een NAIC-kwaliteitstoets valt af (de omzet draagt de winstgroei niet, de marge vóór belasting of het rendement op eigen vermogen daalt)' : '') + '. Daarna kan het fonds bij een nieuwe kans opnieuw worden gekocht.</li>' +
       '<li><b>Uitvoering</b>: tegen de slotkoers van de handelsdag ná het signaal (niet vooruitkijken). Kosten ' + eur(B.kosten) + ' per aankoop en per verkoop.</li>' +
       '<li><b>Euro</b>: dollars en ponden met de dagkoers van de ECB' + (B.fx && B.fx.datum ? ' (laatst ' + h(datumNl(B.fx.datum)) + ')' : '') + '. Dividend bruto op de ex-datum, als geld (niet herbelegd). Splitsingen passen het aantal aan.</li>' +
       '<li><b>Index</b>: bij elke aankoop hetzelfde bedrag fictief in de eigen index van het fonds (AEX, DAX, S&amp;P 500 …), met dezelfde kosten, verkocht op hetzelfde moment. Indexen zonder dividend, behalve de DAX.</li>' +

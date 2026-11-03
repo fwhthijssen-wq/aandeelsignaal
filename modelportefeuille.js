@@ -22,6 +22,17 @@ function zekerheid(rec, vandaag) {
   return k.bevestigd ? 'bevestigd' : k.niveau === 'jaarverslag' ? 'jaarverslag' : k.niveau === 'indicatief' ? (k.tweeBronnen ? 'tweebronnen' : 'indicatief') : 'geen';
 }
 
+/* Kwaliteit volgens NAIC: 'zwak' als het geen groeibedrijf meer is (Vermijden zonder koerszones), het laatste jaar verlies
+   gaf, of een kwaliteitstoets (omzet, marge vóór belasting, rendement op eigen vermogen) afvalt; 'goed' anders; null als
+   NAIC te weinig gegevens heeft. */
+function kwaliteitVan(n) {
+  if (!n) return null;
+  if ((n.kwaliteit || []).some((q) => q.ok === false)) return 'zwak';
+  if (n.oordeel === 'vermijden' && !n.zones) return 'zwak';
+  if (!n.oordeel && /niet positief/.test(n.reden || '')) return 'zwak';
+  return n.oordeel ? 'goed' : null;
+}
+
 /* Eén fonds zoals de modelportefeuille het nodig heeft. */
 function fondsVoorModel(rec, vandaag) {
   const k = rec.koers;
@@ -29,7 +40,7 @@ function fondsVoorModel(rec, vandaag) {
   const b = S.beoordeel(rec, { vandaag, gate: G, naic: N }), n = b.naic || {};
   const t = K.kortetermijn(k, G.priceFreshness(k.datum, vandaag).fresh);
   return { naam: rec.naam, valuta: rec.valuta, koers: k.slot, koersDatum: k.datum, index: indexVan(rec),
-    oordeel: n.oordeel || null, zone: (n.zones && n.zones.zone) || null, moment: t ? t.status : null, zekerheid: zekerheid(rec, vandaag),
+    oordeel: n.oordeel || null, zone: (n.zones && n.zones.zone) || null, moment: t ? t.status : null, zekerheid: zekerheid(rec, vandaag), kwaliteit: kwaliteitVan(n),
     dividenden: k.dividenden || [], splitsingen: k.splitsingen || [] };
 }
 
@@ -86,4 +97,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
-module.exports = { fondsVoorModel, ecbUitCsv, dagVoorModel, schrijfApp, indexVan };
+module.exports = { kwaliteitVan, fondsVoorModel, ecbUitCsv, dagVoorModel, schrijfApp, indexVan };

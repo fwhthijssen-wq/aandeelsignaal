@@ -4,7 +4,9 @@
    Regels
    - Kopen: het NAIC-oordeel is Kopen (variant "moment": ook een gunstig koopmoment). Voor ongeveer BEDRAG euro, en
      minstens 1 aandeel als één aandeel duurder is.
-   - Verkopen: de koers staat in de NAIC-verkoopzone of erboven. Alleen dan; een tijdelijk Neutraal verandert niets.
+   - Verkopen: de koers staat in de NAIC-verkoopzone of erboven; een tijdelijk Neutraal verandert niets. Variant
+     "kwaliteit" verkoopt ook als de kwaliteit wegvalt: geen groeibedrijf meer, een verliesjaar, of een NAIC-kwaliteitstoets
+     (omzet, marge, rendement op eigen vermogen) valt af.
    - Uitvoering: het signaal ontstaat op een slotkoers; gekocht of verkocht wordt tegen de slotkoers van de eerstvolgende
      handelsdag (geen vooruitkijken). Kosten: KOSTEN euro per transactie.
    - Bedragen in euro met de dagkoers van de ECB (fx = euro per eenheid valuta). Dividend bruto op de ex-datum, als geld
@@ -17,6 +19,7 @@
   var BEDRAG = 1000, KOSTEN = 3, MAX_OUD = 5;
   var VARIANTEN = [
     { id: 'naic', naam: 'Alle kansen', regel: 'NAIC Kopen' },
+    { id: 'kwaliteit', naam: 'Ook verkopen bij zwakkere kwaliteit', regel: 'NAIC Kopen; verkopen in de verkoopzone én als de kwaliteit wegvalt' },
     { id: 'moment', naam: 'Kansen met gunstig koopmoment', regel: 'NAIC Kopen én een gunstig koopmoment' }
   ];
   var INDEX_VALUTA = { FTSE: 'GBP', VS: 'USD' };
@@ -28,7 +31,18 @@
   function dagen(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
 
   function koopt(variant, f) { return f.oordeel === 'kopen' && (variant.id !== 'moment' || f.moment === 'gunstig'); }
-  function verkoopt(f) { return f.zone === 'verkoop' || f.zone === 'boven'; }
+  /* Reden om te verkopen, of null. */
+  function verkoopt(variant, f) {
+    if (f.zone === 'verkoop' || f.zone === 'boven') return 'Verkoopzone';
+    if (variant && variant.id === 'kwaliteit' && f.kwaliteit === 'zwak') return 'Kwaliteit';
+    return null;
+  }
+  function zorgVarianten(staat) {          // nieuwe varianten in een bestaande staat: beginnen leeg vanaf nu
+    VARIANTEN.forEach(function (v, i) {
+      if (!staat.varianten.some(function (x) { return x.id === v.id; })) staat.varianten.splice(Math.min(i, staat.varianten.length), 0, { id: v.id, naam: v.naam, regel: v.regel, posities: [], wacht: [], historie: [], sinds: null });
+    });
+    staat.varianten.forEach(function (x) { var d = VARIANTEN.filter(function (v) { return v.id === x.id; })[0]; if (d) { x.naam = d.naam; x.regel = d.regel; } });
+  }
 
   function nieuw(start, opties) {
     opties = opties || {};
@@ -98,6 +112,8 @@
      verwerken verandert niets. */
   function stap(staat, dag) {
     var uit = { gekocht: [], verkocht: [] };
+    zorgVarianten(staat);
+    staat.varianten.forEach(function (v) { if (v.sinds == null) v.sinds = dag.datum; });
     if (dag.fx) staat.fx = { datum: dag.fx.datum || dag.datum, USD: dag.fx.USD, GBP: dag.fx.GBP };
     var F = dag.fondsen || {};
     staat.varianten.forEach(function (v) {
@@ -109,7 +125,7 @@
           if (!p) return false;
           if (!f) { verkoop(staat, p, p.laatst.koers, p.laatst.datum, p.laatst.fx, 'Niet meer in de lijst', o.datum, dag); uit.verkocht.push(p); return false; }
           if (!(f.koersDatum > o.koersDatum) || !pos(f.koers)) return true;
-          verkoop(staat, p, f.koers, f.koersDatum, fxVan(staat, dag, p.valuta) || p.laatst.fx, 'Verkoopzone', o.datum, dag); uit.verkocht.push(p); return false;
+          verkoop(staat, p, f.koers, f.koersDatum, fxVan(staat, dag, p.valuta) || p.laatst.fx, o.reden || 'Verkoopzone', o.datum, dag); uit.verkocht.push(p); return false;
         }
         if (p) return false;
         if (!f) return false;                                              // fonds verdwenen voordat er gekocht kon worden
@@ -132,7 +148,8 @@
         if (!f.koersDatum || dagen(f.koersDatum, dag.datum) > MAX_OUD || !pos(f.koers)) return;
         var p = openVoor(v, t), wacht = v.wacht.some(function (o) { return o.ticker === t; });
         if (wacht) return;
-        if (p && verkoopt(f)) v.wacht.push({ ticker: t, soort: 'verkoop', datum: dag.datum, koersDatum: f.koersDatum });
+        var reden = p ? verkoopt(def, f) : null;
+        if (reden) v.wacht.push({ ticker: t, soort: 'verkoop', datum: dag.datum, koersDatum: f.koersDatum, reden: reden });
         else if (!p && koopt(def, f)) v.wacht.push({ ticker: t, soort: 'koop', datum: dag.datum, koersDatum: f.koersDatum,
           signaal: { datum: f.koersDatum, koers: f.koers, zone: f.zone || null, moment: f.moment || null, zekerheid: f.zekerheid || null } });
       });
@@ -195,7 +212,7 @@
     opties = opties || {};
     return { start: staat.start, bijgewerkt: staat.bijgewerkt, bedrag: staat.bedrag, kosten: staat.kosten, fx: staat.fx,
       varianten: staat.varianten.map(function (v) {
-        return { id: v.id, naam: v.naam, regel: v.regel, samenvatting: samenvatting(v), wacht: v.wacht.map(function (o) { return { ticker: o.ticker, soort: o.soort, datum: o.datum }; }),
+        return { id: v.id, naam: v.naam, regel: v.regel, sinds: v.sinds || staat.start, samenvatting: samenvatting(v), wacht: v.wacht.map(function (o) { return { ticker: o.ticker, soort: o.soort, datum: o.datum, reden: o.reden || null }; }),
           posities: v.posities.map(function (p) {
             return { ticker: p.ticker, naam: p.naam, valuta: p.valuta, index: p.index, aantal: p.aantal, koop: p.koop, verkoop: p.verkoop, laatst: p.laatst,
               dividend: p.dividend.length, splitsingen: p.splitsingen, uitkomst: uitkomst(p) };

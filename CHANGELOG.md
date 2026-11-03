@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.9.1 (2026.11.03)
+- **Modelportefeuille, derde regel: ook verkopen bij zwakkere kwaliteit.** Dezelfde aankopen als *Alle kansen*, maar een fonds wordt ook verkocht als de kwaliteit wegvalt: geen groeibedrijf meer, een verliesjaar, of een NAIC-kwaliteitstoets valt af (omzet, marge vóór belasting, rendement op eigen vermogen). Zo is te zien of verkopen bij verslechtering beter werkt dan verliezers laten staan. Ook teruggerekend vanaf 2018.
+- Bij een verkoop staat de reden: verkoopzone of kwaliteit viel weg.
+
 ## 1.9 (2026.11.03)
 **Modelportefeuille.** Een fictieve portefeuille die de signalen van de app automatisch volgt, om te zien hoe betrouwbaar ze over langere tijd zijn. In een eigen paarse kleur met het label *fictief*, zodat hij nooit met uw eigen portefeuille verward wordt.
 - **Regels:** bij NAIC Kopen voor ongeveer € 1.000 kopen (minstens 1 aandeel), bij de verkoopzone verkopen. Uitgevoerd tegen de slotkoers van de handelsdag ná het signaal, met € 3 kosten per transactie. Dollars en ponden met de dagkoers van de ECB; dividend bruto op de ex-datum; splitsingen passen het aantal aan.
