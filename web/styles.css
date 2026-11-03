@@ -420,3 +420,5 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .hulp-deel { border-top: 1px solid var(--line-soft); margin-top: 10px; padding-top: 6px; scroll-margin-top: 8px; }
 .hulp-deel[data-gekozen] { background: var(--ok-bg); border-radius: 12px; padding: 6px 10px; border-top-color: transparent; }
 .hulp-deel p { margin: 6px 0; }
+.pence-let-op { display: block; background: var(--wait-bg); color: var(--wait-ink); border-radius: 10px; padding: 8px 10px; margin: 6px 0; font-size: .92rem; }
+.pence-let-op .knop { margin-top: 6px; }

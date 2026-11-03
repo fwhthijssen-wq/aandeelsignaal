@@ -172,3 +172,12 @@ test('Londen: koers in ponden, aankoop in pence telt mee (vaste eenheid, geen wi
   assert.equal(P.koersIn({ valuta: 'GBP', koers: { slot: 45 } }, 'EUR'), null);
   assert.equal(P.koersIn({ valuta: 'GBX', koers: { slot: 4500 } }, 'GBP'), null);
 });
+
+test('Londen: aankoopkoers in pence ingevoerd als GBP wordt herkend', () => {
+  const P = require('../js/portefeuille.js');
+  const rec = { ticker: 'JD.L', valuta: 'GBP', koers: { slot: 0.956 } };
+  assert.equal(P.penceVermoeden({ ticker: 'JD.L', valuta: 'GBP', koers: 94.98 }, rec), 95.6);
+  assert.equal(P.penceVermoeden({ ticker: 'JD.L', valuta: 'GBP', koers: 0.9498 }, rec), null);     // al in ponden
+  assert.equal(P.penceVermoeden({ ticker: 'JD.L', valuta: 'GBX', koers: 94.98 }, rec), null);     // al in pence
+  assert.equal(P.penceVermoeden({ ticker: 'ASML.AS', valuta: 'EUR', koers: 600 }, { ticker: 'ASML.AS', valuta: 'EUR', koers: { slot: 6 } }), null);
+});

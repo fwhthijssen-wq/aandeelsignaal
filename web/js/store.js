@@ -250,6 +250,12 @@
         if (staat.portefeuille.length !== voor) bewaar(true);
         return voor !== staat.portefeuille.length;
       },
+      /* Alleen de valuta van een aankoop verbeteren (bijv. GBP → GBX als de koers in pence is ingevoerd). */
+      zetValuta: function (id, valuta) {
+        var v = typeof valuta === 'string' && /^[A-Za-z]{3}$/.test(valuta.trim()) ? valuta.trim().toUpperCase() : null, x = staat.portefeuille.filter(function (p) { return p.id === id; })[0];
+        if (!v || !x) return false;
+        x.valuta = v; return bewaar(true);
+      },
       herstelPositie: function (p) { var x = schoonPositie(p); if (x && (!x.pf || !staat.portefeuilles.some(function (y) { return y.id === x.pf; }))) x.pf = staat.actief; if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
       checklist: function (t) { t = normTicker(t); var b = t && staat.checklist[t]; return b ? JSON.parse(JSON.stringify(b.punten)) : {}; },
       zetPunt: function (t, id, antwoord, notitie) {

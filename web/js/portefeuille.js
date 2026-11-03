@@ -73,6 +73,16 @@
     return uit;
   }
 
-  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn };
+  /* Londen: een aankoopkoers in GBP die zo'n 100 keer de huidige koers is, is vrijwel zeker in pence ingevoerd
+     (de bank toont pence, de app rekent in ponden). Geeft de huidige koers in pence, anders null. */
+  function penceVermoeden(p, rec) {
+    if (!p || !rec || !/\.L$/.test(p.ticker || '') || String(p.valuta).toUpperCase() !== 'GBP' || String(rec.valuta).toUpperCase() !== 'GBP') return null;
+    var slot = rec.koers && rec.koers.slot, k = Number(p.koers);
+    if (!(slot > 0) || !(k > 0)) return null;
+    var r = k / slot;
+    return r >= 30 && r <= 300 ? Math.round(slot * 100 * 100) / 100 : null;
+  }
+
+  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn, penceVermoeden: penceVermoeden };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Portefeuille = api;
 })(typeof self !== 'undefined' ? self : this);

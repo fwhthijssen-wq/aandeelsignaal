@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.9.2 (2026.11.03)';
+  var APP_VERSIE = '1.9.3 (2026.11.03)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1040,6 +1040,7 @@
         return '<div class="regel" style="flex-wrap:wrap"><div class="tekstkolom" style="flex:1 1 200px"><b>' + h(r.naam) + '</b><span class="zacht">' + getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht voor ' + euro(p.koers, p.valuta) + (p.datum ? ' op ' + h(datumNl(p.datum)) : '') + '</span>' +
           (p.opSignaal && p.signaal ? '<span class="zacht" data-op-signaal>Op signaal gekocht: ' + h(oordeelTekst(p.signaal)) + ' op ' + h(datumNl(p.signaal.datum)) + (zoek(p.ticker) ? ' · nu: ' + h(oordeelTekst(signaalVoor(zoek(p.ticker)))) : '') + '</span>' : '') +
           (zoek(p.ticker) ? (function (nb) { return '<span class="oordeel-rij">' + naicChip(nb) + '</span>' + signaalRegel(nb); })(signaalVoor(zoek(p.ticker))) : '') +
+          (function (pc) { return pc ? '<span class="pence-let-op" data-pence-let-op="' + h(p.id) + '">Let op: de aankoopkoers lijkt in pence ingevoerd. De koers is nu ' + getal(pc, 2) + ' pence (' + getal(pc / 100, 4) + ' GBP), uw aankoop ' + getal(p.koers, 2) + ' GBP. <button type="button" class="knop klein" data-pence="' + h(p.id) + '">Verbeteren: koers was in pence (GBX)</button></span>' : ''; })(Portefeuille.penceVermoeden(p, zoek(p.ticker))) +
           (r.status === 'ok' ? '<span style="color:' + kleur(r.winst) + ';font-weight:700">Nu ' + euro(r.waarde, p.valuta) + ' · ' + teken(r.winst, p.valuta) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>'
             : '<span class="zacht" style="color:var(--wait-ink)">Geen waarde: ' + h(r.reden) + '</span>') + '</div>' +
           '<button class="knop rand klein" data-weg="' + h(p.id) + '" aria-label="Verwijder aankoop ' + h(r.naam) + '">Verwijder</button></div>';
@@ -1088,14 +1089,26 @@
       var hint = document.getElementById('pf-hint');
       if (hint) hint.textContent = /\.L$/.test(sel.value) ? 'Londen: de app rekent in ponden (GBP). Geeft uw bank de koers in pence (bijv. 4500), vul dan GBX in als valuta.' : '';
     }
-    sel.addEventListener('change', vul); vul();
+    sel.addEventListener('change', function () { penceGezien = false; vul(); }); vul();
+    var penceGezien = false;
     document.getElementById('pf').addEventListener('submit', function (e) {
       e.preventDefault();
       var rec = zoek(sel.value), op = document.getElementById('pf-sig').checked && rec;
+      var pc = Portefeuille.penceVermoeden({ ticker: sel.value, valuta: val.value, koers: String(document.getElementById('pf-k').value).replace(',', '.') }, rec);
+      if (pc && !penceGezien) {
+        var f = document.getElementById('pf-fout');
+        f.innerHTML = 'Deze koers lijkt in pence: de koers is nu ' + getal(pc, 2) + ' pence (' + getal(pc / 100, 4) + ' GBP). <button type="button" class="knop klein" id="pf-gbx">Ja, in pence (GBX)</button> <button type="button" class="knop rand klein" id="pf-gbp">Nee, in ponden</button>';
+        document.getElementById('pf-gbx').addEventListener('click', function () { val.value = 'GBX'; penceGezien = true; document.getElementById('pf').requestSubmit ? document.getElementById('pf').requestSubmit() : document.getElementById('pf').dispatchEvent(new Event('submit', { cancelable: true })); });
+        document.getElementById('pf-gbp').addEventListener('click', function () { penceGezien = true; document.getElementById('pf').requestSubmit ? document.getElementById('pf').requestSubmit() : document.getElementById('pf').dispatchEvent(new Event('submit', { cancelable: true })); });
+        return;
+      }
       var u = winkel.voegPositieToe({ ticker: sel.value, aantal: document.getElementById('pf-n').value, koers: document.getElementById('pf-k').value, valuta: val.value, datum: document.getElementById('pf-d').value || null,
         signaal: op ? momentopname(rec) : undefined, opSignaal: op ? true : undefined });
       if (!u.ok) { document.getElementById('pf-fout').textContent = u.reden; return; }
       toast('Aankoop toegevoegd'); route();
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pence]'), function (b) {
+      b.addEventListener('click', function () { if (winkel.zetValuta(b.getAttribute('data-pence'), 'GBX')) { toast('Verbeterd: aankoopkoers in pence'); route(); } });
     });
     Array.prototype.forEach.call(document.querySelectorAll('[data-weg]'), function (b) {
       b.addEventListener('click', function () {

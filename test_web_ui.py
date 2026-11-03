@@ -207,6 +207,30 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertGreaterEqual(gezien, 8)
         self.assertEqual(self.fouten, [])
 
+    def test_londen_koers_in_pence_herkend_en_te_verbeteren(self):
+        import datetime
+        pg = self.pagina()
+        pg.goto(INDEX + '#/')
+        d = datetime.date.today().isoformat()
+        pg.evaluate("""d => { const a = JSON.parse(JSON.stringify(AANDEEL_DATA.aandelen[0])); a.ticker = 'JD.L'; a.naam = 'JD Sports'; a.valuta = 'GBP'; a.koers = { slot: 0.956, datum: d, reeks: [] };
+            AANDEEL_DATA.aandelen.push(a); location.hash = '#/markt'; location.hash = '#/portefeuille'; }""", d)
+        pg.wait_for_selector('#pf-t')
+        pg.select_option('#pf-t', 'JD.L'); pg.fill('#pf-n', '200'); pg.fill('#pf-k', '94.98')
+        pg.click('#pf button[type=submit]')
+        self.assertIn('lijkt in pence', pg.inner_text('#pf-fout'))
+        self.assertEqual(pg.locator('[data-pence-let-op]').count(), 0, 'nog niet toegevoegd')
+        pg.click('#pf-gbx')
+        main = pg.inner_text('main')
+        self.assertIn('94,98 GBX', main); self.assertIn('+0,7%', main)
+        # een eerder in GBP ingevoerde aankoop: waarschuwing en verbeteren met één tik
+        pg.select_option('#pf-t', 'JD.L'); pg.fill('#pf-n', '100'); pg.fill('#pf-k', '90'); pg.fill('#pf-v', 'GBP')
+        pg.click('#pf button[type=submit]'); pg.click('#pf-gbp')
+        self.assertEqual(pg.locator('[data-pence-let-op]').count(), 1)
+        pg.click('[data-pence]')
+        self.assertEqual(pg.locator('[data-pence-let-op]').count(), 0)
+        self.assertNotIn('−99', pg.inner_text('main'))
+        self.assertEqual(self.fouten, [])
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')

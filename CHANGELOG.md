@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.9.3 (2026.11.03)
+- **Londen: koers in pence herkend.** Vult u bij een Londens aandeel een aankoopkoers in die zo'n 100 keer de huidige koers in ponden is (bijv. 94,98 terwijl de koers 0,96 GBP is), dan vraagt de app of dat pence zijn en zet de valuta op GBX. Een eerder zo ingevoerde aankoop krijgt een waarschuwing met een knop om het met één tik te verbeteren (geen −99% meer).
+
 ## 1.9.2 (2026.11.03)
 - **Uitleg in de hulp, niet tussen de gegevens.** Elk scherm toont de gegevens en de conclusie; hoe het werkt, de regels en de uitkomsten van het terugrekenen staan in de hulp (het vraagteken) van dat scherm, met kopjes. Een link **ⓘ Hoe werkt dit?** bij een onderdeel opent de hulp meteen op de goede plek.
 - Doorgevoerd op: Modelportefeuille (de regels), Signalen, Aandeel › Oordeel (hoe het oordeel tot stand komt, koopmoment), Koers (middellange termijn, trendsignaal, relatieve sterkte, analisten en kwartaalcijfers, korte termijn, risico), NAIC (de gids, begrippen, koersbereik), Gezondheid (kwaliteitscheck, uw beoordeling), Markt (volgorde) en Datakwaliteit.

@@ -170,3 +170,10 @@ test('back-up met een andere portefeuille samenvoegen: portefeuille en aankopen 
   assert.deepEqual(w.portefeuilles().map(p => [p.id, p.aantal]), [['eigen', 1], ['gouden-greep', 2]]);
   assert.equal(w.zetTerug(b, 'samenvoegen').toegevoegd, 0);       // nog een keer: niets dubbel
 });
+
+test('valuta van een aankoop verbeteren', () => {
+  const w = S.maak(geheugen());
+  const id = w.voegPositieToe({ ticker: 'JD.L', aantal: 200, koers: 94.98, valuta: 'GBP' }).id;
+  assert.equal(w.zetValuta(id, 'gbx'), true); assert.equal(w.portefeuille()[0].valuta, 'GBX');
+  assert.equal(w.zetValuta(id, 'xx'), false); assert.equal(w.zetValuta('bestaat-niet', 'GBX'), false);
+});
