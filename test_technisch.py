@@ -162,7 +162,7 @@ class ModelGegevens(unittest.TestCase):
     def test_recent_dividend_en_splitsingen(self):
         import bouw_webdata as bw
         k = {}
-        bw.recent_acties(k, [('2024-01-02', 0.5), ('2026-05-01', 0.6)], [('2026-06-01', 4.0), ('2026-07-01', 1.0)], '2026-11-03')
+        bw.recent_acties(k, [('2024-01-02', 0.5), ('2026-05-01', 0.6)], [('2026-06-01', 4.0), ('2026-07-01', 1.0)], '2026-11-03', dagen=400)
         self.assertEqual(k['dividenden'], [['2026-05-01', 0.6]])
         self.assertEqual(k['splitsingen'], [['2026-06-01', 4.0]])
 
@@ -170,3 +170,7 @@ class ModelGegevens(unittest.TestCase):
         import bouw_webdata as bw
         u = bw.index_standen({'AEX': [('2026-10-30', 900.0), ('2026-11-02', 905.5)], 'DAX': []})
         self.assertEqual(u, {'AEX': {'datum': '2026-11-02', 'stand': 905.5, 'vorige': {'datum': '2026-10-30', 'stand': 900.0}}})
+
+    def test_per_week(self):
+        import bouw_webdata as bw
+        self.assertEqual(bw.per_week([('2026-10-26', 1.0), ('2026-10-30', 2.0), ('2026-11-02', 3.0)]), [['2026-10-30', 2.0], ['2026-11-02', 3.0]])

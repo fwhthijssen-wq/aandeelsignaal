@@ -181,3 +181,31 @@ test('Londen: aankoopkoers in pence ingevoerd als GBP wordt herkend', () => {
   assert.equal(P.penceVermoeden({ ticker: 'JD.L', valuta: 'GBX', koers: 94.98 }, rec), null);     // al in pence
   assert.equal(P.penceVermoeden({ ticker: 'ASML.AS', valuta: 'EUR', koers: 600 }, { ticker: 'ASML.AS', valuta: 'EUR', koers: { slot: 6 } }), null);
 });
+
+test('overzicht in euro: kosten, dividend, splitsing, verkoop en index', () => {
+  const vandaag = '2026-11-03';
+  const rec = { ticker: 'AAPL', naam: 'Apple', valuta: 'USD', indices: [], koers: { slot: 110, datum: '2026-11-02', splitsingen: [['2025-06-01', 2]], dividenden: [['2025-03-01', 1], ['2025-09-01', 0.5], ['2024-01-01', 9]] } };
+  const p = { id: 'a', ticker: 'AAPL', aantal: 10, koers: 200, valuta: 'USD', datum: '2025-01-02', kosten: 5, eur: 1800,
+    verkopen: [{ id: 'v', datum: '2026-01-05', aantal: 4, koers: 105, kosten: 5, eur: 380 }] };
+  const fx = { datum: '2026-11-02', USD: 0.9, GBP: 1.2 };
+  const reeksen = { VS: [['2025-01-03', 5000], ['2026-01-02', 5500], ['2026-10-30', 6000]] };
+  const o = P.overzicht([p], [rec], vandaag, G, { fx, indexreeksen: reeksen });
+  const r = o.regels[0];
+  assert.equal(r.status, 'ok');
+  assert.equal(r.inleg, 1805);
+  assert.equal(r.open, 16, '10 stuks, 2-voor-1 gesplitst = 20, waarvan 4 verkocht');
+  assert.equal(r.waardeOpen, 16 * 110 * 0.9);
+  assert.equal(r.opbrengst, 375);
+  // dividend: maart 2025 1 × 20 (huidige basis) + september 2025 0,5 × 20, in euro tegen 0,9
+  assert.equal(r.dividend, 27);
+  assert.equal(r.resultaat, Math.round((1584 + 375 + 27 - 1805) * 100) / 100);
+  assert.ok(r.idx && r.idx.pct > 0, 'index gestegen');
+  assert.equal(o.totalen.open, 1); assert.equal(o.totalen.inleg, 1805);
+});
+
+test('overzicht: zonder eurobedrag of met een andere notering telt een aankoop niet mee', () => {
+  const rec = { ticker: 'SHEL', naam: 'Shell', valuta: 'USD', koers: { slot: 70, datum: '2026-11-02' } };
+  const o = P.overzicht([{ id: 'a', ticker: 'SHEL', aantal: 30, koers: 36.73, valuta: 'EUR', eur: 1101.9 }, { id: 'b', ticker: 'SHEL', aantal: 1, koers: 70, valuta: 'USD' }], [rec], '2026-11-03', G, { fx: { USD: 0.9, GBP: 1.2 } });
+  assert.equal(o.regels[0].status, 'valuta'); assert.equal(o.regels[1].status, 'ok'); assert.match(o.regels[1].notities[0], /geschat/); assert.equal(o.totalen.buiten, 1);
+  assert.equal(P.overzicht([{ id: 'b', ticker: 'SHEL', aantal: 1, koers: 70, valuta: 'USD' }], [rec], '2026-11-03', G, {}).regels[0].status, 'euro', 'zonder ECB-koers niet te schatten');
+});

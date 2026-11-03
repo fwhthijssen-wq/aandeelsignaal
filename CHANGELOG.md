@@ -2,6 +2,16 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.10 (2026.11.03)
+**Uw portefeuille zoals de modelportefeuille, in euro, met kosten en verkopen.**
+- **Kosten met de hand:** aankoopkosten bij elke aankoop, verkoopkosten bij elke verkoop; ze tellen mee in het rendement.
+- **Verkopen vastleggen:** per aankoop *Verkopen* (ook een deel), met datum, koers, kosten en het ontvangen bedrag in euro. Verkochte posities staan apart onder *Verkocht*, met het gerealiseerde resultaat. Met *Bewerken* vult u aan of verbetert u (ook een verkoop schrappen).
+- **In euro:** bij dollars en ponden het betaalde bedrag in euro zoals op het afschrift (de app vult een schatting in met de ECB-koers van vandaag); de waarde nu met de ECB-koers van vandaag. Oudere aankopen zonder eurobedrag worden geschat, met een opmerking.
+- **Overzicht:** waarde nu, resultaat (na kosten, met dividend), rendement, totaal ingelegd, dividend (bruto, automatisch sinds de aankoopdatum), open/verkocht, per aankoop de looptijd en het rendement per jaar.
+- **Vergelijking met de index:** wat dezelfde bedragen in de eigen index deden, ook zonder dividend; grafiek van de laatste 2 jaar.
+- Splitsingen na de aankoop passen het aantal automatisch aan. De tegel op Start toont de waarde en het resultaat in euro.
+- Nachtelijke update: dividend en splitsingen van 12 jaar per fonds, ECB-koersen en 10 jaar indexstanden per week.
+
 ## 1.9.3 (2026.11.03)
 - **Londen: koers in pence herkend.** Vult u bij een Londens aandeel een aankoopkoers in die zo'n 100 keer de huidige koers in ponden is (bijv. 94,98 terwijl de koers 0,96 GBP is), dan vraagt de app of dat pence zijn en zet de valuta op GBX. Een eerder zo ingevoerde aankoop krijgt een waarschuwing met een knop om het met één tik te verbeteren (geen −99% meer).
 

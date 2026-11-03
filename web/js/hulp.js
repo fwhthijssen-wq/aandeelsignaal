@@ -34,9 +34,10 @@
       'Met “Dichtst bij koopprijs” staan de aandelen bovenaan die het dichtst bij een NAIC-koop zitten: zo werkt de volglijst als wachtlijst.',
       'Uw volglijst staat alleen op dit toestel. Maak een back-up in Instellingen.'], null],
     portefeuille: ['Mijn portefeuille', 'Hier bewaart u aankopen om ze te kunnen volgen. Er wordt niets gekocht of verkocht.', [
-      'Voeg een aankoop toe met aantal, koers en datum. Vink aan als u kocht op basis van het signaal; dan legt de app het oordeel van dat moment vast.',
+      'Voeg een aankoop toe met aantal, koers, datum, aankoopkosten en (bij dollars of ponden) het betaalde bedrag in euro. Vink aan als u kocht op basis van het signaal; dan legt de app het oordeel van dat moment vast.',
+      'Bovenaan in euro: waarde, resultaat (na kosten, met dividend), rendement, wat de index met dezelfde bedragen deed, en een grafiek. Daaronder de open posities en wat u verkocht.',
+      'Per aankoop: Verkopen (ook een deel), Bewerken (aanvullen of verbeteren) en Verwijderen.',
       'Aankopen op signaal zijn herkenbaar aan een label. De kaart Op signaal gekocht vergelijkt het rendement met uw overige aankopen.',
-      'Bedragen in verschillende valuta’s worden nooit omgerekend, maar apart getoond.',
       'Meerdere portefeuilles, bijvoorbeeld een eigen en die van een beleggingsclub: kies Nog een portefeuille bijhouden. Bovenaan wisselt u tussen de portefeuilles; elke heeft eigen aankopen en totalen. Een portefeuille die u als back-upbestand krijgt, zet u erbij met Terugzetten › Toevoegen.',
       'Alles staat alleen op dit toestel. Maak een back-up in Instellingen.'], 'Het rendement is een momentopname en geen belofte voor later.'],
     vergelijk: ['Vergelijken', 'Zet twee aandelen naast elkaar.', [

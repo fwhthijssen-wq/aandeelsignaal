@@ -177,3 +177,22 @@ test('valuta van een aankoop verbeteren', () => {
   assert.equal(w.zetValuta(id, 'gbx'), true); assert.equal(w.portefeuille()[0].valuta, 'GBX');
   assert.equal(w.zetValuta(id, 'xx'), false); assert.equal(w.zetValuta('bestaat-niet', 'GBX'), false);
 });
+
+test('aankoop met kosten en eurobedrag; verkopen in delen; bewerken', () => {
+  const w = S.maak(geheugen());
+  const a = w.voegPositieToe({ ticker: 'AAPL', aantal: 10, koers: 200, valuta: 'USD', datum: '2025-01-02', kosten: 3, eur: 1850 });
+  const e = w.voegPositieToe({ ticker: 'ASML.AS', aantal: 2, koers: 600, valuta: 'EUR', datum: '2025-01-02', kosten: 2 });
+  let p = w.portefeuille();
+  assert.equal(p[0].kosten, 3); assert.equal(p[0].eur, 1850);
+  assert.equal(p[1].eur, 1200, 'bij euro volgt het bedrag uit aantal en koers');
+  assert.equal(w.verkoopPositie(a.id, { datum: '2025-06-01', aantal: 4, koers: 220, kosten: 3, eur: 810 }).ok, true);
+  assert.equal(w.verkoopPositie(a.id, { datum: '2025-07-01', aantal: 7, koers: 220 }).ok, false, 'meer dan er nog is');
+  assert.equal(w.verkoopPositie(a.id, { datum: '2024-07-01', aantal: 1, koers: 220 }).ok, false, 'vóór de aankoop');
+  const v2 = w.verkoopPositie(e.id, { datum: '2025-08-01', aantal: 2, koers: 700, kosten: 2 });
+  assert.equal(w.portefeuille()[1].verkopen[0].eur, 1400);
+  assert.equal(w.wijzigPositie(a.id, { kosten: 5 }).ok, true); assert.equal(w.portefeuille()[0].kosten, 5); assert.equal(w.portefeuille()[0].verkopen.length, 1);
+  assert.equal(w.wijzigPositie(a.id, { aantal: 3 }).ok, false, 'kleiner dan al verkocht');
+  assert.equal(w.verwijderVerkoop(e.id, v2.id), true); assert.equal(w.portefeuille()[1].verkopen, undefined);
+  // blijft na opnieuw laden en in een back-up
+  const b = JSON.parse(w.maakBackup(true)); assert.equal(b.portefeuille[0].verkopen[0].eur, 810);
+});

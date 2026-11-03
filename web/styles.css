@@ -422,3 +422,9 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .hulp-deel p { margin: 6px 0; }
 .pence-let-op { display: block; background: var(--wait-bg); color: var(--wait-ink); border-radius: 10px; padding: 8px 10px; margin: 6px 0; font-size: .92rem; }
 .pence-let-op .knop { margin-top: 6px; }
+/* Eigen portefeuille in euro (1.10) */
+.pf-regel .tekstkolom { flex: 1 1 auto; min-width: 0; }
+.pf-knoppen { margin-top: 6px; gap: 8px; }
+.pf-form { margin-top: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); }
+.pf-form h3 { margin: 0 0 6px; }
+.pf-form input[data-vk-eur] { width: 9em; }

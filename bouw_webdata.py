@@ -1050,11 +1050,46 @@ def index_voor(ticker):
     return 'VS' if '.' not in ticker else None
 
 
-def recent_acties(koers, dividenden, splitsingen, vandaag, dagen=400):
-    """Voor de modelportefeuille: dividend per aandeel (ex-datum) en splitsingen van het laatste ruim jaar."""
+def recent_acties(koers, dividenden, splitsingen, vandaag, dagen=4400):
+    """Voor de modelportefeuille en de eigen portefeuille: dividend per aandeel (ex-datum) en splitsingen van de laatste 12 jaar."""
     grens = (date.fromisoformat(vandaag) - timedelta(days=dagen)).isoformat()
     koers['dividenden'] = [[d, round(float(v), 6)] for d, v in dividenden or [] if d >= grens and v and v > 0]
     koers['splitsingen'] = [[d, float(v)] for d, v in splitsingen or [] if d >= grens and v and v > 0 and abs(float(v) - 1) > 1e-9]
+
+
+def per_week(punten):
+    """Per ISO-week de slotstand van de laatste handelsdag: [[datum, stand], ...]."""
+    per = {}
+    for d, v in punten or []:
+        if v and v > 0:
+            per[date.fromisoformat(d).isocalendar()[:2]] = [d, round(float(v), 2)]
+    return [per[k] for k in sorted(per)]
+
+
+def ecb_koersen(pogingen=3):
+    """Laatste ECB-referentiekoersen als euro per eenheid: {'datum', 'USD', 'GBP'}."""
+    import csv, io, time, urllib.request
+    url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata'
+    for i in range(pogingen):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'Accept': 'text/csv'}), timeout=30) as r:
+                rijen = list(csv.DictReader(io.StringIO(r.read().decode('utf-8'))))
+            laatst = {}
+            for x in rijen:
+                v, d, w = x.get('CURRENCY'), x.get('TIME_PERIOD'), x.get('OBS_VALUE')
+                if v in ('USD', 'GBP') and w and (v not in laatst or d > laatst[v][0]):
+                    laatst[v] = (d, float(w))
+            if 'USD' in laatst and 'GBP' in laatst:
+                return {'datum': max(laatst['USD'][0], laatst['GBP'][0]), 'USD': round(1 / laatst['USD'][1], 6), 'GBP': round(1 / laatst['GBP'][1], 6)}
+        except Exception:
+            time.sleep(10 * (i + 1))
+    return None
+
+
+def _yahoo_index_historie(code):
+    import yfinance as yf
+    h = yf.Ticker(INDEX_YAHOO[code]).history(period='10y', interval='1d', auto_adjust=False)
+    return [(i.date().isoformat(), float(v)) for i, v in h['Close'].dropna().items()]
 
 
 def index_standen(cache):
@@ -1317,7 +1352,7 @@ def extra_namen(payload, max_per_veld=10):
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
          valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None,
-         insiders_ophalen=None, verwachting_ophalen=None):
+         insiders_ophalen=None, verwachting_ophalen=None, fx_ophalen=None, indexhistorie_ophalen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -1342,6 +1377,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         # Ook de insidertransacties alleen in een echte run.
         from management import yahoo_insiders
         insiders_ophalen = yahoo_insiders if fetch_prijzen is None else (lambda t: [])
+    if fetch_prijzen is None:
+        # Alleen in een echte run: ECB-koersen en 10 jaar indexstanden per week (eigen portefeuille in euro, vergelijking met de index).
+        fx_ophalen = fx_ophalen or ecb_koersen
+        indexhistorie_ophalen = indexhistorie_ophalen or _yahoo_index_historie
     if verwachting_ophalen is None:
         # Verwachtingen van analisten (bijstellingen, verrassingen, cijferdatum): alleen in een echte run.
         from verwachting import yahoo_verwachting
@@ -1577,6 +1616,19 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         records.append(rec)
     bestand = maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (koersen en indicatieve jaarcijfers)')
     bestand['indexen'] = index_standen(index_cache)
+    try:
+        bestand['fx'] = fx_ophalen() if fx_ophalen else None
+    except Exception:
+        bestand['fx'] = None
+    reeksen = {}
+    for code in (INDEX_YAHOO if indexhistorie_ophalen else []):
+        try:
+            w = per_week(indexhistorie_ophalen(code))
+            if w:
+                reeksen[code] = w
+        except Exception:
+            pass
+    bestand['indexreeksen'] = reeksen
     bestand['yahoo_vergelijk'] = {'bedrijven': vergeleken_bedrijven, 'velden': vergelijking}
     return bestand
 

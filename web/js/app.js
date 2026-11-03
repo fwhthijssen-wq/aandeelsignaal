@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.9.3 (2026.11.03)';
+  var APP_VERSIE = '1.10 (2026.11.03)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -656,15 +656,14 @@
     return Object.keys(eigen).map(function (t) { var a = per[t]; return a ? { a: a, sg: Signalen.naicSignaal(a.b), waar: eigen[t] } : null; }).filter(function (x) { return x && x.sg; });
   }
   function tegelsHtml() {
-    var act = winkel.actief(), aantalPf = winkel.portefeuilles().length, pos = winkel.portefeuille(act.id), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate);
+    var act = winkel.actief(), aantalPf = winkel.portefeuilles().length, pos = winkel.portefeuille(act.id), ov = pfOverzicht(pos).totalen;
     var items = fondsItems(), per = {}, nk = { kopen: 0, neutraal: 0, vermijden: 0 }, onderKp = 0;
     items.forEach(function (a) { per[a.ticker] = a; var n = a.b.naic; if (n && n.oordeel) nk[n.oordeel]++; if (n && n.oordeel === 'kopen' && a.koopAfstand != null && a.koopAfstand <= 0) onderKp++; });
     var sig = eigenSignalen(), telS = { koop: 0, verkoop: 0, kwaliteit: 0, groei: 0 }; sig.forEach(function (x) { telS[x.sg.soort]++; });
     var pijl = I.pijl.replace('class="pijl"', 'class="pijl tegel-pijl"');
     // 1. Portefeuille
-    var pf = res.totalen.filter(function (t) { return t.meegeteld; })[0];
-    var t1 = '<a class="tegel" href="#/portefeuille" data-tegel="portefeuille"><small>' + (aantalPf > 1 ? h(act.naam) : 'Portefeuille') + '</small>' + (pf
-      ? '<b>' + getal(pf.waarde, 0) + ' <span class="munt">' + h(pf.valuta) + '</span></b><span class="rend" data-teken="' + (pf.winst > 0 ? 'plus' : pf.winst < 0 ? 'min' : 'nul') + '">' + (pf.pct != null ? pct(pf.pct) + ' · ' : '') + (pf.winst >= 0 ? '+' : '−') + getal(Math.abs(pf.winst), 0) + ' ' + h(pf.valuta) + '</span>' + (res.totalen.length > 1 ? '<span class="zacht">+ ' + (res.totalen.length - 1) + ' andere valuta</span>' : '')
+    var t1 = '<a class="tegel" href="#/portefeuille" data-tegel="portefeuille"><small>' + (aantalPf > 1 ? h(act.naam) : 'Portefeuille') + '</small>' + (ov.inleg > 0
+      ? '<b>' + getal(ov.waardeOpen, 0) + ' <span class="munt">EUR</span></b><span class="rend" data-teken="' + (ov.resultaat > 0 ? 'plus' : ov.resultaat < 0 ? 'min' : 'nul') + '">' + (ov.pct != null ? pct(ov.pct) + ' · ' : '') + (ov.resultaat >= 0 ? '+' : '−') + getal(Math.abs(ov.resultaat), 0) + ' EUR</span>' + (ov.buiten ? '<span class="zacht">' + ov.buiten + ' aankoop' + (ov.buiten === 1 ? '' : 'en') + ' telt niet mee</span>' : '')
       : '<b>–</b><span class="zacht">' + (pos.length ? 'Nog geen actuele waarde' : 'Nog geen aankopen') + '</span>') + (aantalPf > 1 ? '<span class="zacht" data-andere-pf>+ ' + (aantalPf - 1) + ' andere portefeuille' + (aantalPf > 2 ? 's' : '') + '</span>' : '') + pijl + '</a>';
     // 2. Volglijst
     var vol = winkel.volglijst().map(function (v) { return per[v.ticker]; }).filter(Boolean);
@@ -923,8 +922,9 @@
     var terug = st && st.inleg > 0 ? '<span class="zacht" data-model-terug>Teruggerekend sinds ' + h(String(d.terug.periode[0]).slice(0, 4)) + ': ' + pct(st.pct) + (st.idxPct != null ? ' (index ' + pct(st.idxPct) + ')' : '') + '</span>' : '';
     return '<a class="tegel tegel-model" href="#/model" data-tegel="model"><small>Modelportefeuille <span class="fictief">fictief</span></small>' + hoofd + terug + pijl + '</a>';
   }
-  function modelGrafiekHtml(v) {
-    var pts = (v.historie || []).filter(function (r) { return r[1] > 0; }).map(function (r) { return { d: r[0], a: r[2] / r[1] * 100, b: r[3] > 0 ? r[4] / r[3] * 100 : null }; });
+  function modelGrafiekHtml(v) { return rendementGrafiekHtml(v.historie, 'Modelportefeuille', 'var(--model)', 'model-lijn', 'Resultaat (koerswinst, verkopen en dividend, na kosten) als percentage van wat er tot dan toe is ingelegd.'); }
+  function rendementGrafiekHtml(historie, label, kleurVar, lijnKlasse, uitleg) {
+    var pts = (historie || []).filter(function (r) { return r[1] > 0; }).map(function (r) { return { d: r[0], a: r[2] / r[1] * 100, b: r[3] > 0 ? r[4] / r[3] * 100 : null }; });
     if (pts.length < 2) return '';
     var vals = [0]; pts.forEach(function (p) { vals.push(p.a); if (p.b != null) vals.push(p.b); });
     var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), sp = (hi - lo) || 1, W = 320, Ht = 170;
@@ -932,10 +932,10 @@
     var lijn = function (k) { var s = '', aan = false; pts.forEach(function (p, i) { if (p[k] == null) { aan = false; return; } s += (aan ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(p[k]).toFixed(1); aan = true; }); return s; };
     var mnd = function (d) { var t = Gate.parseDay(d); return t === null ? d : new Date(t).toLocaleDateString('nl-NL', { month: 'short', year: '2-digit', timeZone: 'UTC' }); };
     var s = '<path class="rast" d="M0 ' + Y(0).toFixed(1) + ' L' + W + ' ' + Y(0).toFixed(1) + '"/><text x="2" y="' + (Y(0) - 3).toFixed(1) + '">0%</text>' +
-      '<path class="gem" d="' + lijn('b') + '"/><path class="lijn model-lijn" d="' + lijn('a') + '"/>' +
+      '<path class="gem" d="' + lijn('b') + '"/><path class="lijn ' + lijnKlasse + '" d="' + lijn('a') + '"/>' +
       '<text x="0" y="' + (Ht - 4) + '">' + h(mnd(pts[0].d)) + '</text><text x="' + W + '" y="' + (Ht - 4) + '" text-anchor="end">' + h(mnd(pts[pts.length - 1].d)) + '</text>';
-    return '<div class="kaart-plat" data-model-grafiek><h2>Rendement in de tijd</h2><svg class="grafiek groot" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="Rendement van de modelportefeuille tegenover de index">' + s + '</svg>' +
-      '<div class="legenda"><span><i style="background:var(--model)"></i>Modelportefeuille</span><span><i style="background:var(--chart-b)"></i>Dezelfde bedragen in de index</span></div><p class="zacht">Resultaat (koerswinst, verkopen en dividend, na kosten) als percentage van wat er tot dan toe is ingelegd.</p></div>';
+    return '<div class="kaart-plat" data-' + (lijnKlasse === 'model-lijn' ? 'model' : 'pf') + '-grafiek><h2>Rendement in de tijd</h2><svg class="grafiek groot" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="Rendement van ' + h(label.toLowerCase()) + ' tegenover de index">' + s + '</svg>' +
+      '<div class="legenda"><span><i style="background:' + kleurVar + '"></i>' + h(label) + '</span><span><i style="background:var(--chart-b)"></i>Dezelfde bedragen in de index</span></div><p class="zacht">' + h(uitleg) + '</p></div>';
   }
   function modelPositieHtml(p) {
     var u = p.uitkomst, rec = zoek(p.ticker), sg = p.koop.signaal || {}, open = !p.verkoop;
@@ -1013,38 +1013,83 @@
       '<p class="zacht">Elke portefeuille heeft eigen aankopen en eigen totalen. Signalen en de volglijst gelden voor de aandelen uit alle portefeuilles samen. Een portefeuille van iemand anders (zoals een club) kunt u met een back-upbestand toevoegen: Achtergrond › Instellingen › Back-up terugzetten › Toevoegen.</p></details>';
     return s;
   }
+  var pfOpen = { id: null, soort: null };          // welk formulier (verkopen/bewerken) bij welke aankoop open staat
+  function pfOverzicht(posities) { return Portefeuille.overzicht(posities, DATA.aandelen, vandaag(), Gate, { fx: DATA.fx || null, indexreeksen: DATA.indexreeksen || null }); }
+  function stuks(n) { return getal(n, 4).replace(/,?0+$/, ''); }
+  function pfPositieHtml(r) {
+    var p = r.positie, rec = zoek(p.ticker), verk = p.verkopen || [], vandaagD = vandaag();
+    var naam = rec ? '<a href="#/a/' + encodeURIComponent(p.ticker) + '">' + h(r.naam) + '</a>' : h(r.naam);
+    var regels = ['<b>' + naam + '</b>'];
+    regels.push('<span class="zacht">' + (r.heelVerkocht ? stuks(p.aantal) + ' stuks' : stuks(r.open) + ' stuks' + (verk.length ? ' (van ' + stuks(p.aantal) + ', rest verkocht)' : '')) + ' · gekocht' + (p.datum ? ' ' + h(datumNl(p.datum)) : '') + ' voor ' + getal(p.koers, 2) + ' ' + h(p.valuta) +
+      (p.eur != null && String(p.valuta).toUpperCase() !== 'EUR' ? ' (' + eur(p.eur, 2) + ')' : '') + (p.kosten ? ' + ' + eur(p.kosten, 2) + ' kosten' : '') + '</span>');
+    verk.forEach(function (v) { regels.push('<span class="zacht" data-verkoop>Verkocht ' + h(datumNl(v.datum)) + ': ' + stuks(v.aantal) + ' stuks voor ' + getal(v.koers, 2) + ' ' + h(p.valuta) + (v.eur != null && String(p.valuta).toUpperCase() !== 'EUR' ? ' (' + eur(v.eur, 2) + ')' : '') + (v.kosten ? ' − ' + eur(v.kosten, 2) + ' kosten' : '') + '</span>'); });
+    if (p.opSignaal && p.signaal) regels.push('<span class="zacht" data-op-signaal>Op signaal gekocht: ' + h(oordeelTekst(p.signaal)) + ' op ' + h(datumNl(p.signaal.datum)) + (rec ? ' · nu: ' + h(oordeelTekst(signaalVoor(rec))) : '') + '</span>');
+    if (rec && !r.heelVerkocht) { var nb = signaalVoor(rec); regels.push('<span class="oordeel-rij">' + naicChip(nb) + '</span>' + signaalRegel(nb)); }
+    var pc = Portefeuille.penceVermoeden(p, rec);
+    if (pc) regels.push('<span class="pence-let-op" data-pence-let-op="' + h(p.id) + '">Let op: de aankoopkoers lijkt in pence ingevoerd. De koers is nu ' + getal(pc, 2) + ' pence (' + getal(pc / 100, 4) + ' GBP), uw aankoop ' + getal(p.koers, 2) + ' GBP. <button type="button" class="knop klein" data-pence="' + h(p.id) + '">Verbeteren: koers was in pence (GBX)</button></span>');
+    if (r.status === 'ok') {
+      var extra = [!r.heelVerkocht && r.koersNu != null ? 'nu ' + getal(r.koersNu, 2) + ' ' + h(rec.valuta) + ' (' + eur(r.waardeOpen) + ')' : '', r.dividend ? 'dividend ' + eur(r.dividend, 2) : '', r.looptijd != null ? (r.looptijd >= 60 ? getal(r.looptijd / 30.44, 0) + ' maanden' : r.looptijd + ' dagen') : '', r.perJaar != null ? pct(r.perJaar) + ' per jaar' : ''].filter(Boolean).join(' · ');
+      if (extra) regels.push('<span class="zacht">' + extra + '</span>');
+      regels.push('<span style="color:' + kleur(r.resultaat) + ';font-weight:700" data-pf-resultaat>' + eurTeken(r.resultaat) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>');
+      if (r.idx) regels.push('<span class="zacht">Index in dezelfde periode: ' + pct(r.idx.pct) + '</span>');
+      if (r.notities.length) regels.push('<span class="zacht">Let op: ' + h(r.notities.join('; ')) + '.</span>');
+    } else regels.push('<span class="zacht" style="color:var(--wait-ink)" data-pf-buiten="' + h(r.status) + '">Telt niet mee: ' + h(r.reden) + '</span>');
+    var knoppen = '<div class="knoppen pf-knoppen">' + (!r.heelVerkocht ? '<button class="knop rand klein" data-pf-verkoop="' + h(p.id) + '">Verkopen</button>' : '') + '<button class="knop rand klein" data-pf-bewerk="' + h(p.id) + '">Bewerken</button><button class="knop rand klein" data-weg="' + h(p.id) + '" aria-label="Verwijder aankoop ' + h(r.naam) + '">Verwijder</button></div>';
+    var form = '';
+    if (pfOpen.id === p.id && pfOpen.soort === 'verkoop') {
+      var nietEur = String(p.valuta).toUpperCase() !== 'EUR';
+      form = '<form class="pf-form" data-pf-verkoopform="' + h(p.id) + '" novalidate><h3>Verkopen</h3><div class="velden">' +
+        '<div><label for="vk-d">Datum</label><input id="vk-d" type="date" value="' + h(vandaagD) + '"></div>' +
+        '<div><label for="vk-n">Aantal stuks</label><input id="vk-n" type="number" inputmode="decimal" step="any" min="0" value="' + h(String(r.open || '')) + '"></div>' +
+        '<div><label for="vk-k">Verkoopkoers per stuk (' + h(p.valuta) + ')</label><input id="vk-k" type="number" inputmode="decimal" step="any" min="0" value="' + h(r.koersNu != null ? String(String(p.valuta).toUpperCase() === 'GBX' ? Math.round(r.koersNu * 10000) / 100 : r.koersNu) : '') + '"></div>' +
+        (nietEur ? '<div><label for="vk-e">Ontvangen in euro, zonder kosten</label><input id="vk-e" type="number" inputmode="decimal" step="any" min="0"></div>' : '') +
+        '<div><label for="vk-c">Verkoopkosten (€)</label><input id="vk-c" type="number" inputmode="decimal" step="any" min="0" value="0"></div></div>' +
+        (nietEur ? '<p class="zacht">Het bedrag in euro staat op het afschrift van uw bank. Leeg laten: de app schat het met de ECB-koers van vandaag.</p>' : '') +
+        '<p class="zacht" id="vk-fout" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Verkoop vastleggen</button><button class="knop rand" type="button" data-pf-sluit>Annuleren</button></div></form>';
+    }
+    if (pfOpen.id === p.id && pfOpen.soort === 'bewerk') {
+      form = '<form class="pf-form" data-pf-bewerkform="' + h(p.id) + '" novalidate><h3>Bewerken</h3><div class="velden">' +
+        '<div><label for="bw-n">Aantal stuks</label><input id="bw-n" type="number" inputmode="decimal" step="any" min="0" value="' + h(String(p.aantal)) + '"></div>' +
+        '<div><label for="bw-k">Aankoopkoers per stuk</label><input id="bw-k" type="number" inputmode="decimal" step="any" min="0" value="' + h(String(p.koers)) + '"></div>' +
+        '<div><label for="bw-v">Valuta</label><input id="bw-v" type="text" maxlength="3" value="' + h(p.valuta) + '"></div>' +
+        '<div><label for="bw-d">Datum</label><input id="bw-d" type="date" value="' + h(p.datum || '') + '"></div>' +
+        '<div><label for="bw-e">Betaald in euro, zonder kosten</label><input id="bw-e" type="number" inputmode="decimal" step="any" min="0" value="' + h(p.eur != null ? String(p.eur) : '') + '"></div>' +
+        '<div><label for="bw-c">Aankoopkosten (€)</label><input id="bw-c" type="number" inputmode="decimal" step="any" min="0" value="' + h(String(p.kosten || 0)) + '"></div></div>' +
+        (verk.length ? '<p><b>Verkopen</b></p><ul class="punten">' + verk.map(function (v) { return '<li>' + h(datumNl(v.datum)) + ': ' + stuks(v.aantal) + ' stuks voor ' + getal(v.koers, 2) + ' ' + h(p.valuta) + (String(p.valuta).toUpperCase() !== 'EUR' ? '<br><label class="zacht">Ontvangen in euro: <input type="number" step="any" min="0" data-vk-eur="' + h(v.id) + '" value="' + h(v.eur != null ? String(v.eur) : '') + '"></label>' : '') + ' <button type="button" class="knop rand klein" data-vk-weg="' + h(v.id) + '">Verkoop schrappen</button></li>'; }).join('') + '</ul>' : '') +
+        '<p class="zacht" id="bw-fout" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Opslaan</button><button class="knop rand" type="button" data-pf-sluit>Annuleren</button></div></form>';
+    }
+    return '<div class="regel pf-regel" data-pf-positie="' + h(p.id) + '"><div class="tekstkolom">' + regels.join('') + knoppen + form + '</div></div>';
+  }
   function schermPortefeuille() {
-    var act = winkel.actief(), pfs = winkel.portefeuilles();
-    var res = Portefeuille.waardeer(winkel.portefeuille(act.id), DATA.aandelen, vandaag(), Gate), s = '<section><h1>' + (pfs.length > 1 ? h(act.naam) : 'Mijn portefeuille') + '</h1>' + portefeuilleKeuzeHtml(act, pfs);
-    if (!res.regels.length) {
+    var act = winkel.actief(), pfs = winkel.portefeuilles(), pos = winkel.portefeuille(act.id);
+    var o = pfOverzicht(pos), t = o.totalen, s = '<section><h1>' + (pfs.length > 1 ? h(act.naam) : 'Mijn portefeuille') + '</h1>' + portefeuilleKeuzeHtml(act, pfs);
+    if (!pos.length) {
       s += '<div class="kaart-plat"><p>' + (pfs.length > 1 ? 'In deze portefeuille staan nog geen aankopen.' : 'U heeft nog geen aankopen ingevoerd.') + ' Vul hieronder in wat u heeft gekocht; de app rekent uit wat het nu waard is.</p><p class="zacht">Alles blijft op dit toestel. Geen rekening, geen koppeling met uw bank.</p></div>';
     } else {
-      s += '<div class="kpis">' + res.totalen.map(function (t) {
-        return '<div class="kpi"><b>' + (t.meegeteld ? getal(t.waarde, 2) + ' ' + h(t.valuta) : '–') + '</b><span>Waarde nu (' + h(t.valuta) + ')</span>' +
-          (t.meegeteld ? '<span style="color:' + kleur(t.winst) + ';font-weight:700">' + teken(t.winst, t.valuta) + (t.pct == null ? '' : ' (' + pct(t.pct) + ')') + '</span>' : '') +
-          (t.buiten ? '<span>' + t.buiten + ' van ' + (t.meegeteld + t.buiten) + ' aankopen telt niet mee: zie hieronder</span>' : '') + '</div>';
-      }).join('') + '</div>';
-      if (res.totalen.length > 1) s += '<p class="zacht">Totalen staan per valuta. De app rekent nooit om tussen valuta’s.</p>';
+      var kpi = function (w, tk, k) { return '<div class="kpi"><b' + (k != null ? ' style="color:' + kleur(k) + '"' : '') + '>' + w + '</b><span>' + tk + '</span></div>'; };
+      if (t.inleg > 0) {
+        s += '<div class="kpis" data-pf-kpis>' + kpi(eur(t.waardeOpen), 'Waarde nu (open posities)') + kpi(eurTeken(t.resultaat), 'Resultaat (na kosten, met dividend)', t.resultaat) + kpi(pct(t.pct), 'Rendement op het ingelegde geld', t.pct) +
+          kpi(t.idxPct != null ? pct(t.idxPct) : '–', 'Dezelfde bedragen in de index' + (t.idxResultaat ? ' (' + eurTeken(t.idxResultaat) + ')' : ''), t.idxPct) +
+          kpi(eur(t.inleg), 'Totaal ingelegd (met kosten)') + kpi(eur(t.dividend), 'Dividend ontvangen (bruto)') + kpi(t.open + ' / ' + t.gesloten, 'Open / verkocht' + (t.gesloten ? ' (' + t.gewonnen + ' met winst)' : '')) + '</div>';
+        if (t.idxPct != null && t.pctMetIdx != null) s += '<p class="zacht" data-pf-vergelijk>' + (t.pctMetIdx > t.idxPct ? 'Uw aankopen deden het beter dan de index: ' : t.pctMetIdx < t.idxPct ? 'Uw aankopen deden het slechter dan de index: ' : 'Gelijk met de index: ') + pct(t.pctMetIdx) + ' tegenover ' + pct(t.idxPct) + ' (alleen aankopen met een datum en een index).' + (t.dividend > 0 && t.pctZonderDiv != null ? ' De meeste indexen tellen geen dividend mee (alleen de DAX wel); zonder dividend: <b>' + pct(t.pctZonderDiv) + '</b>.' : '') + '</p>';
+        s += rendementGrafiekHtml(o.reeks, pfs.length > 1 ? act.naam : 'Uw portefeuille', 'var(--acc)', 'pf-lijn', 'Laatste 2 jaar, per week; een benadering met de weekkoersen en de wisselkoers van vandaag.');
+      }
+      if (t.buiten) s += '<p class="melding" data-pf-buiten-telling>' + t.buiten + ' van ' + pos.length + ' aankopen tellen niet mee in de totalen; bij die aankopen staat waarom.</p>';
+      var res = Portefeuille.waardeer(pos.filter(function (x) { return !(x.verkopen && x.verkopen.length); }), DATA.aandelen, vandaag(), Gate);
       var sp = Dashboard.spreiding(res.regels, DATA.aandelen);
       if (sp.length) s += '<div class="kaart-plat" data-spreiding-blok><h2>Spreiding per land</h2>' + sp.map(function (v) {
         return '<div data-spreiding="' + h(v.valuta) + '"><b>' + h(v.valuta) + '</b>' + v.delen.map(function (d) {
           return '<div class="balk-rij"><span>' + h(d.land) + '</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(2, d.pct) + '%"></i></span><b>' + getal(d.pct, 0) + '%</b></div>';
         }).join('') + '</div>';
-      }).join('') + (sp.length > 1 ? '<p class="zacht">Per valuta apart; de app rekent niet om.</p>' : '') + '</div>';
+      }).join('') + (sp.length > 1 ? '<p class="zacht">Per valuta apart.</p>' : '') + '</div>';
       var hk = Portefeuille.herkomst(res.regels).filter(function (x) { return x.signaal.n > 0; });
       if (hk.length) s += '<div class="kaart-plat" data-herkomst><h2>Op signaal gekocht</h2><p class="zacht">Aankopen die u deed op basis van het oordeel van de app, apart gehouden om te zien of het signaal in de praktijk werkt.</p>' + hk.map(function (x) {
         return '<p><b>' + h(x.valuta) + ':</b> ' + x.signaal.n + ' aankoop' + (x.signaal.n === 1 ? '' : 'en') + ' op signaal: <b style="color:' + kleur(x.signaal.winst) + '">' + (x.signaal.pct == null ? '–' : pct(x.signaal.pct)) + '</b>' + (x.overig.n ? ' · overige ' + x.overig.n + ': ' + (x.overig.pct == null ? '–' : pct(x.overig.pct)) : '') + '</p>';
       }).join('') + '<p class="zacht">Een kleine steekproef zegt weinig; het is een hulpmiddel, geen bewijs.</p></div>';
-      s += '<div class="lijst">' + res.regels.map(function (r) {
-        var p = r.positie;
-        return '<div class="regel" style="flex-wrap:wrap"><div class="tekstkolom" style="flex:1 1 200px"><b>' + h(r.naam) + '</b><span class="zacht">' + getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht voor ' + euro(p.koers, p.valuta) + (p.datum ? ' op ' + h(datumNl(p.datum)) : '') + '</span>' +
-          (p.opSignaal && p.signaal ? '<span class="zacht" data-op-signaal>Op signaal gekocht: ' + h(oordeelTekst(p.signaal)) + ' op ' + h(datumNl(p.signaal.datum)) + (zoek(p.ticker) ? ' · nu: ' + h(oordeelTekst(signaalVoor(zoek(p.ticker)))) : '') + '</span>' : '') +
-          (zoek(p.ticker) ? (function (nb) { return '<span class="oordeel-rij">' + naicChip(nb) + '</span>' + signaalRegel(nb); })(signaalVoor(zoek(p.ticker))) : '') +
-          (function (pc) { return pc ? '<span class="pence-let-op" data-pence-let-op="' + h(p.id) + '">Let op: de aankoopkoers lijkt in pence ingevoerd. De koers is nu ' + getal(pc, 2) + ' pence (' + getal(pc / 100, 4) + ' GBP), uw aankoop ' + getal(p.koers, 2) + ' GBP. <button type="button" class="knop klein" data-pence="' + h(p.id) + '">Verbeteren: koers was in pence (GBX)</button></span>' : ''; })(Portefeuille.penceVermoeden(p, zoek(p.ticker))) +
-          (r.status === 'ok' ? '<span style="color:' + kleur(r.winst) + ';font-weight:700">Nu ' + euro(r.waarde, p.valuta) + ' · ' + teken(r.winst, p.valuta) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>'
-            : '<span class="zacht" style="color:var(--wait-ink)">Geen waarde: ' + h(r.reden) + '</span>') + '</div>' +
-          '<button class="knop rand klein" data-weg="' + h(p.id) + '" aria-label="Verwijder aankoop ' + h(r.naam) + '">Verwijder</button></div>';
-      }).join('') + '</div>';
+      var open = o.regels.filter(function (r) { return !r.heelVerkocht; }), dicht = o.regels.filter(function (r) { return r.heelVerkocht; });
+      s += '<h2>Open posities <span class="zacht">' + open.length + '</span></h2><div class="lijst">' + open.map(pfPositieHtml).join('') + '</div>';
+      if (dicht.length) s += '<h2>Verkocht <span class="zacht">' + dicht.length + '</span></h2><div class="lijst">' + dicht.map(pfPositieHtml).join('') + '</div>';
+      s += '<p class="hoe-rij">' + hoe('berekening', 'Hoe rekent de portefeuille?') + '</p>';
     }
     var opties = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); }).map(function (a) { return '<option value="' + h(a.ticker) + '" data-valuta="' + h(a.valuta) + '">' + h(a.naam + ' (' + a.ticker + ')') + '</option>'; }).join('');
     s += '<div class="kaart-plat"><h2>Aankoop toevoegen' + (pfs.length > 1 ? ' aan ' + h(act.naam) : '') + '</h2><form id="pf" novalidate><div class="velden">' +
@@ -1052,10 +1097,12 @@
       '<div><label for="pf-n">Aantal stuks</label><input id="pf-n" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-v">Valuta</label><input id="pf-v" type="text" maxlength="3" autocapitalize="characters" autocomplete="off"></div>' +
-      '<div><label for="pf-d">Datum (mag leeg)</label><input id="pf-d" type="date"></div></div><p id="pf-hint" class="zacht"></p>' +
+      '<div><label for="pf-d">Datum</label><input id="pf-d" type="date"></div>' +
+      '<div id="pf-e-veld"><label for="pf-e">Betaald in euro, zonder kosten</label><input id="pf-e" type="number" inputmode="decimal" step="any" min="0"></div>' +
+      '<div><label for="pf-c">Aankoopkosten (€)</label><input id="pf-c" type="number" inputmode="decimal" step="any" min="0" value="0"></div></div><p id="pf-hint" class="zacht"></p>' +
       '<label class="vink"><input type="checkbox" id="pf-sig"> Gekocht op basis van het signaal van de app</label><p class="zacht">De app legt dan het oordeel en de dekking van nu vast, zodat u later kunt terugkijken of het signaal klopte.</p>' +
       '<p id="pf-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p><div class="knoppen"><button class="knop" type="submit">Toevoegen</button></div></form></div>' +
-      '<p class="zacht">Alleen een overzicht van wat u zelf invoert, geen beleggingsadvies. Kosten en belasting zijn niet meegerekend. De waarde gebruikt de laatste slotkoers en alleen als die maximaal ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud is.</p></section>' + backupBalk();
+      '<p class="zacht">Alleen een overzicht van wat u zelf invoert, geen beleggingsadvies. Kosten zoals u ze invoert; belasting is niet meegerekend. De waarde gebruikt de laatste slotkoers (hoogstens ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud) en de ECB-koers van vandaag.</p></section>' + backupBalk();
     return s;
   }
   function portefeuilleKoppel() {
@@ -1083,12 +1130,52 @@
         winkel.verwijderPortefeuille(a.id); pfBeheer = false; toast('Portefeuille verwijderd'); route();
       });
     }
-    var sel = document.getElementById('pf-t'), val = document.getElementById('pf-v'); if (!sel) return;
-    function vul() {
-      var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : '';
-      var hint = document.getElementById('pf-hint');
-      if (hint) hint.textContent = /\.L$/.test(sel.value) ? 'Londen: de app rekent in ponden (GBP). Geeft uw bank de koers in pence (bijv. 4500), vul dan GBX in als valuta.' : '';
+    function getalVan(id) { var e = document.getElementById(id); if (!e) return null; var v = String(e.value).trim().replace(',', '.'); return v === '' ? null : Number(v); }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pf-verkoop]'), function (b) { b.addEventListener('click', function () { pfOpen = { id: b.getAttribute('data-pf-verkoop'), soort: 'verkoop' }; route(); var f = document.querySelector('[data-pf-verkoopform]'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'center' }); }); });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pf-bewerk]'), function (b) { b.addEventListener('click', function () { pfOpen = { id: b.getAttribute('data-pf-bewerk'), soort: 'bewerk' }; route(); var f = document.querySelector('[data-pf-bewerkform]'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'center' }); }); });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pf-sluit]'), function (b) { b.addEventListener('click', function () { pfOpen = { id: null, soort: null }; route(); }); });
+    var vf = document.querySelector('[data-pf-verkoopform]');
+    if (vf) vf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var id = vf.getAttribute('data-pf-verkoopform'), p = winkel.portefeuille().filter(function (x) { return x.id === id; })[0];
+      var v = { datum: document.getElementById('vk-d').value, aantal: getalVan('vk-n'), koers: getalVan('vk-k'), kosten: getalVan('vk-c') || 0, eur: getalVan('vk-e') };
+      if (p && String(p.valuta).toUpperCase() !== 'EUR' && v.eur == null && v.aantal > 0 && v.koers > 0) { var f = Portefeuille.fxNu(DATA.fx, p.valuta); if (f) v.eur = Math.round(v.aantal * v.koers * f * 100) / 100; }
+      var u = winkel.verkoopPositie(id, v);
+      if (!u.ok) { document.getElementById('vk-fout').textContent = u.reden; return; }
+      pfOpen = { id: null, soort: null }; toast('Verkoop vastgelegd', function () { winkel.verwijderVerkoop(id, u.id); route(); }); route();
+    });
+    var bf = document.querySelector('[data-pf-bewerkform]');
+    if (bf) {
+      var bid = bf.getAttribute('data-pf-bewerkform');
+      Array.prototype.forEach.call(bf.querySelectorAll('[data-vk-weg]'), function (b) { b.addEventListener('click', function () { if (winkel.verwijderVerkoop(bid, b.getAttribute('data-vk-weg'))) { toast('Verkoop geschrapt'); route(); } }); });
+      bf.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var oud = winkel.portefeuille().filter(function (x) { return x.id === bid; })[0];
+        var verk = (oud.verkopen || []).map(function (v) { var inp = bf.querySelector('[data-vk-eur="' + v.id + '"]'), w = inp ? String(inp.value).trim().replace(',', '.') : ''; var x = {}; for (var k in v) x[k] = v[k]; if (inp) { if (w === '') delete x.eur; else x.eur = Number(w); } return x; });
+        var u = winkel.wijzigPositie(bid, { aantal: getalVan('bw-n'), koers: getalVan('bw-k'), valuta: document.getElementById('bw-v').value, datum: document.getElementById('bw-d').value || null, eur: String(document.getElementById('bw-v').value).trim().toUpperCase() === 'EUR' ? null : getalVan('bw-e'), kosten: getalVan('bw-c') || 0, verkopen: verk });
+        if (!u.ok) { document.getElementById('bw-fout').textContent = u.reden; return; }
+        pfOpen = { id: null, soort: null }; toast('Opgeslagen'); route();
+      });
     }
+    var sel = document.getElementById('pf-t'), val = document.getElementById('pf-v'); if (!sel) return;
+    var eurAangeraakt = false;
+    function schatEur() {
+      var veld = document.getElementById('pf-e-veld'), e = document.getElementById('pf-e'), v = String(val.value).toUpperCase();
+      if (veld) veld.style.display = v === 'EUR' ? 'none' : '';
+      if (!e || eurAangeraakt || v === 'EUR') return;
+      var n = getalVan('pf-n'), k = getalVan('pf-k'), f = Portefeuille.fxNu(DATA.fx, v);
+      e.value = n > 0 && k > 0 && f ? String(Math.round(n * k * f * 100) / 100) : '';
+    }
+    function vul() { var o = sel.options[sel.selectedIndex]; val.value = o ? o.getAttribute('data-valuta') || '' : ''; hintEnSchat(); }
+    function hintEnSchat() {
+      var hint = document.getElementById('pf-hint');
+      if (hint) hint.textContent = (/\.L$/.test(sel.value) ? 'Londen: de app rekent in ponden (GBP). Geeft uw bank de koers in pence (bijv. 4500), vul dan GBX in als valuta. ' : '') +
+        (String(val.value).toUpperCase() !== 'EUR' ? 'Betaald in euro: het bedrag van uw afschrift (zonder kosten). De app vult een schatting in met de ECB-koers van vandaag.' : '');
+      schatEur();
+    }
+    ['pf-n', 'pf-k'].forEach(function (id) { document.getElementById(id).addEventListener('input', schatEur); });
+    val.addEventListener('input', hintEnSchat);
+    document.getElementById('pf-e').addEventListener('input', function () { eurAangeraakt = true; });
     sel.addEventListener('change', function () { penceGezien = false; vul(); }); vul();
     var penceGezien = false;
     document.getElementById('pf').addEventListener('submit', function (e) {
@@ -1102,7 +1189,9 @@
         document.getElementById('pf-gbp').addEventListener('click', function () { penceGezien = true; document.getElementById('pf').requestSubmit ? document.getElementById('pf').requestSubmit() : document.getElementById('pf').dispatchEvent(new Event('submit', { cancelable: true })); });
         return;
       }
+      schatEur();                                   // schatting altijd met de valuta zoals die nu is (bijv. na GBP → GBX)
       var u = winkel.voegPositieToe({ ticker: sel.value, aantal: document.getElementById('pf-n').value, koers: document.getElementById('pf-k').value, valuta: val.value, datum: document.getElementById('pf-d').value || null,
+        kosten: getalVan('pf-c') || 0, eur: String(val.value).toUpperCase() === 'EUR' ? null : getalVan('pf-e'),
         signaal: op ? momentopname(rec) : undefined, opSignaal: op ? true : undefined });
       if (!u.ok) { document.getElementById('pf-fout').textContent = u.reden; return; }
       toast('Aankoop toegevoegd'); route();
@@ -1723,6 +1812,18 @@
     },
     kwaliteit: function () {
       return [{ id: 'termen', kop: 'Gecorrigeerd en tweede bron', html: lijst(['<b>Gecorrigeerd</b>: alleen als de eigen nettowinst en het aantal aandelen van de app aantonen dat de tweede bron gelijk heeft.', '<b>Tweede bron</b>: een afwijking betekent niet dat de app fout zit; vaak gaat het om een andere definitie of een herziening.']) }];
+    },
+    portefeuille: function () {
+      return [{ id: 'berekening', kop: 'Hoe rekent de portefeuille?', html: lijst([
+        '<b>Ingelegd</b>: het bedrag dat u in euro betaalde (zoals op het afschrift van uw bank) plus de aankoopkosten. Bij aandelen in euro volgt het bedrag uit aantal × koers.',
+        '<b>Waarde nu</b>: het aantal dat u nog heeft × de laatste slotkoers × de ECB-koers van vandaag (alleen met een koers van hoogstens ' + Gate.MAX_PRICE_AGE_DAYS + ' dagen oud).',
+        '<b>Verkopen</b>: tik bij een aankoop op Verkopen en vul datum, aantal, koers en kosten in; ook een deel verkopen kan. Bij dollars of ponden vult u het ontvangen bedrag in euro in (leeg: geschat met de ECB-koers van vandaag).',
+        '<b>Resultaat</b> = waarde nu + wat verkopen opbrachten (na kosten) + dividend − ingelegd. Het rendement per jaar staat bij aankopen die langer dan een maand lopen.',
+        '<b>Dividend</b>: bruto dividend per aandeel sinds de aankoopdatum × het aantal dat u toen had, omgerekend tegen de koers van vandaag. Bronbelasting en de kosten van uw bank zijn niet meegerekend. Zonder aankoopdatum geen dividend.',
+        '<b>Splitsingen</b> na de aankoop passen het aantal automatisch aan.',
+        '<b>Index</b>: wat hetzelfde bedrag in de eigen index van het fonds had opgeleverd (met dezelfde kosten), verkocht in dezelfde delen. Indexen zonder dividend, behalve de DAX; daarom staat ook uw rendement zonder dividend erbij.',
+        '<b>Grafiek</b>: de laatste 2 jaar per week, een benadering met de weekkoersen van de app en de wisselkoers van vandaag.',
+        'Telt een aankoop niet mee (geen eurobedrag, andere notering, geen verse koers), dan staat bij die aankoop waarom. Met Bewerken vult u aan of verbetert u.']) }];
     },
     model: function () {
       var d = modelData(), B = d && (d.live || d.terug) || { bedrag: 1000, kosten: 3, fx: null };

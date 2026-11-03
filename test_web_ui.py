@@ -81,6 +81,8 @@ class WebUi(unittest.TestCase):
     def test_portefeuille_toevoegen_bewaren_verwijderen_en_waarde(self):
         pg = self.pagina()
         pg.goto(INDEX + '#/portefeuille')
+        pg.evaluate("AANDEEL_DATA.fx = { datum: '2026-11-01', USD: 0.9, GBP: 1.2 }; location.hash = '#/'; location.hash = '#/portefeuille'")
+        pg.wait_for_selector('#pf-t')
         self.assertIn('nog geen aankopen', pg.inner_text('main'))
         pg.select_option('#pf-t', 'AAPL')
         self.assertTrue(pg.input_value('#pf-v'))
@@ -88,26 +90,45 @@ class WebUi(unittest.TestCase):
         pg.click('#pf button[type=submit]')
         self.assertTrue(pg.inner_text('#pf-fout').strip(), 'ongeldige invoer moet een melding geven')
         pg.fill('#pf-n', '10'); pg.fill('#pf-k', '100.5')
+        self.assertEqual(pg.input_value('#pf-e'), '904.5', 'schatting in euro met de ECB-koers')
+        pg.fill('#pf-c', '3')
         pg.click('#pf button[type=submit]')
         self.assertIn('gekocht voor', pg.inner_text('main'))
+        self.assertIn('904,50 €', pg.inner_text('main')); self.assertIn('3,00 € kosten', pg.inner_text('main'))
         pg.wait_for_timeout(300)
         pg.reload()
+        pg.evaluate("AANDEEL_DATA.fx = { datum: '2026-11-01', USD: 0.9, GBP: 1.2 }; location.hash = '#/'; location.hash = '#/portefeuille'")
+        pg.wait_for_selector('#pf-t')
         self.assertIn('gekocht voor', pg.inner_text('main'), 'moet na herladen blijven staan')
         # zonder verse koers: nooit een waarde of winst tonen
         pg.evaluate("AANDEEL_DATA.aandelen.forEach(a => { a.koers = null; })"); pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/portefeuille'")
-        self.assertIn('Geen waarde', pg.inner_text('main'))
-        self.assertFalse([l for l in pg.inner_text('main').split('\n') if l.startswith('Nu ')], 'geen waarde zonder verse koers')
+        self.assertIn('Telt niet mee', pg.inner_text('main'))
+        self.assertEqual(pg.locator('[data-pf-resultaat]').count(), 0, 'geen waarde zonder verse koers')
         # met verse koers in dezelfde valuta: wel een waarde
         pg.evaluate("""() => { const d = new Date(), p = n => String(n).padStart(2, '0');
             const a = AANDEEL_DATA.aandelen.find(x => x.ticker === 'AAPL');
             a.koers = { slot: 200, datum: d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()), sma50: 190, reeks: [] };
             location.hash = '#/'; location.hash = '#/portefeuille'; }""")
         txt = pg.inner_text('main')
-        self.assertIn('Nu 2.000,00', txt)
-        self.assertIn('+995,00', txt)
-        # andere valuta bij de aankoop: niet omrekenen
+        self.assertIn('1.800 €', txt)                       # 10 × 200 USD × 0,9
+        self.assertIn('+893 €', txt)                        # 1.800 − 904,50 − 3 kosten = 892,50
+        # verkopen: een deel, met kosten
+        pg.click('[data-pf-verkoop]'); pg.fill('#vk-n', '4'); pg.fill('#vk-k', '210'); pg.fill('#vk-e', '750'); pg.fill('#vk-c', '3')
+        pg.click('[data-pf-verkoopform] button[type=submit]')
+        txt = pg.inner_text('main')
+        self.assertIn('Verkocht', txt); self.assertIn('6 stuks', txt)
+        self.assertIn('+920 €', txt)                        # 6×200×0,9 + 750 − 3 − 907,50 = 919,50
+        # alles verkopen: naar de lijst Verkocht
+        pg.click('[data-pf-verkoop]'); pg.fill('#vk-n', '6'); pg.fill('#vk-k', '200'); pg.fill('#vk-e', '1080'); pg.fill('#vk-c', '3')
+        pg.click('[data-pf-verkoopform] button[type=submit]')
+        self.assertEqual(pg.locator('[data-pf-verkoop]').count(), 0)
+        self.assertIn('0 / 1', pg.inner_text('[data-pf-kpis]'))
+        # bewerken: verkoop schrappen
+        pg.click('[data-pf-bewerk]'); pg.locator('[data-vk-weg]').first.click()
+        self.assertEqual(pg.locator('[data-pf-verkoop]').count(), 1)
+        # andere notering bij de aankoop: niet omrekenen
         pg.evaluate("AANDEEL_DATA.aandelen.find(x => x.ticker === 'AAPL').valuta = 'EUR'"); pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/portefeuille'")
-        self.assertIn('niet omgerekend', pg.inner_text('main'))
+        self.assertIn('Koers staat in EUR', pg.inner_text('main'))
         # verwijderen en ongedaan maken
         pg.click('[data-weg]')
         self.assertIn('nog geen aankopen', pg.inner_text('main'))
@@ -212,7 +233,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg = self.pagina()
         pg.goto(INDEX + '#/')
         d = datetime.date.today().isoformat()
-        pg.evaluate("""d => { const a = JSON.parse(JSON.stringify(AANDEEL_DATA.aandelen[0])); a.ticker = 'JD.L'; a.naam = 'JD Sports'; a.valuta = 'GBP'; a.koers = { slot: 0.956, datum: d, reeks: [] };
+        pg.evaluate("""d => { AANDEEL_DATA.fx = { datum: '2026-11-01', USD: 0.9, GBP: 1.2 }; const a = JSON.parse(JSON.stringify(AANDEEL_DATA.aandelen[0])); a.ticker = 'JD.L'; a.naam = 'JD Sports'; a.valuta = 'GBP'; a.koers = { slot: 0.956, datum: d, reeks: [] };
             AANDEEL_DATA.aandelen.push(a); location.hash = '#/markt'; location.hash = '#/portefeuille'; }""", d)
         pg.wait_for_selector('#pf-t')
         pg.select_option('#pf-t', 'JD.L'); pg.fill('#pf-n', '200'); pg.fill('#pf-k', '94.98')
@@ -671,7 +692,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('100%', pg.locator('[data-spreiding="USD"]').inner_text())
         self.assertIn('Verenigde Staten', pg.locator('[data-spreiding="USD"]').inner_text())
         self.assertIn('Nederland', pg.locator('[data-spreiding="EUR"]').inner_text())
-        self.assertIn('telt niet mee', txt)   # MSFT: koers verouderd
+        self.assertIn('telt niet mee', txt.lower())   # MSFT: koers verouderd
         self.assertEqual(fouten, [])
 
     def _naic_extra_pagina(self, bank):

@@ -79,6 +79,17 @@
     Object.keys(data).forEach(function (k) { var t = normTicker(k), b = schoonVerdiepingBlok(data[k]); if (t && b && !uit[t] && n < MAX_CHECKLIST) { uit[t] = b; n++; } });
     return uit;
   }
+  /* Eén verkoop van (een deel van) een aankoop: datum, aantal, koers, kosten en de ontvangen euro's (zonder kosten). */
+  function schoonVerkoop(v) {
+    if (!v || typeof v !== 'object') return null;
+    var datum = typeof v.datum === 'string' && /^\d{4}-\d{2}-\d{2}/.test(v.datum) ? v.datum.slice(0, 10) : null;
+    var aantal = getalOk(v.aantal, 0, 1e9, true), koers = getalOk(v.koers, 0, 1e9, true), kosten = getalOk(v.kosten, 0, 1e7, false), eur = getalOk(v.eur, 0, 1e10, true);
+    if (!datum || aantal === null || koers === null) return null;
+    var uit = { id: typeof v.id === 'string' && /^[A-Za-z0-9_\-]{1,40}$/.test(v.id) ? v.id : 'v' + Math.random().toString(36).slice(2, 9), datum: datum, aantal: aantal, koers: koers };
+    if (kosten) uit.kosten = kosten;
+    if (eur !== null) uit.eur = eur;
+    return uit;
+  }
   /* Eén aankoop. Ongeldige invoer geeft null; er wordt nooit iets geraden of afgerond naar een andere waarde. */
   function schoonPositie(p) {
     if (!p || typeof p !== 'object') return null;
@@ -89,6 +100,14 @@
     var id = typeof p.id === 'string' && /^[A-Za-z0-9_\-]{1,40}$/.test(p.id) ? p.id : null;
     var signaal = schoonSignaal(p.signaal);
     var uit = { id: id, ticker: t, aantal: aantal, koers: koers, valuta: valuta, datum: datum };
+    // Vanaf 1.10: kosten van de aankoop en het betaalde bedrag in euro (zonder kosten), zoals op het afschrift van de bank.
+    var kosten = getalOk(p.kosten, 0, 1e7, false), eur = getalOk(p.eur, 0, 1e10, true);
+    if (kosten !== null && kosten > 0) uit.kosten = kosten;
+    if (eur !== null) uit.eur = eur;
+    else if (valuta === 'EUR') uit.eur = Math.round(aantal * koers * 100) / 100;
+    var verk = [], over = aantal;
+    (Array.isArray(p.verkopen) ? p.verkopen : []).forEach(function (v) { var x = schoonVerkoop(v); if (x && x.aantal <= over + 1e-9 && verk.length < 50) { verk.push(x); over -= x.aantal; } });
+    if (verk.length) uit.verkopen = verk;
     if (typeof p.pf === 'string' && PF_ID.test(p.pf)) uit.pf = p.pf;
     var nm = schoonNaam(p.naam); if (nm) uit.naam = nm;                       // naam van een fonds dat de app niet volgt
     if (signaal) { uit.signaal = signaal; uit.opSignaal = p.opSignaal === true; }
@@ -256,6 +275,42 @@
         if (!v || !x) return false;
         x.valuta = v; return bewaar(true);
       },
+      /* Een aankoop aanpassen (aanvullen met kosten, eurobedrag of datum, of een tikfout verbeteren). Verkopen blijven. */
+      wijzigPositie: function (id, velden) {
+        var i = staat.portefeuille.map(function (x) { return x.id; }).indexOf(id);
+        if (i < 0) return { ok: false, reden: 'Onbekende aankoop.' };
+        var oud = staat.portefeuille[i], samen = {}, k;
+        for (k in oud) samen[k] = oud[k];
+        for (k in velden) if (Object.prototype.hasOwnProperty.call(velden, k)) samen[k] = velden[k];
+        if (velden.valuta && String(velden.valuta).toUpperCase() !== 'EUR' && !('eur' in velden)) delete samen.eur;
+        var x = schoonPositie(samen);
+        if (!x) return { ok: false, reden: 'Controleer aantal, aankoopkoers en valuta: alleen getallen groter dan nul.' };
+        var verkocht = (x.verkopen || []).reduce(function (a, v) { return a + v.aantal; }, 0);
+        if ((oud.verkopen || []).length !== (x.verkopen || []).length) return { ok: false, reden: 'Het aantal is kleiner dan wat er al verkocht is.' };
+        x.id = oud.id; x.pf = oud.pf;
+        staat.portefeuille[i] = x;
+        return { ok: bewaar(true), verkocht: verkocht };
+      },
+      /* (Een deel van) een aankoop verkopen. */
+      verkoopPositie: function (id, v) {
+        var x = staat.portefeuille.filter(function (p) { return p.id === id; })[0], vk = schoonVerkoop(v);
+        if (!x) return { ok: false, reden: 'Onbekende aankoop.' };
+        if (!vk) return { ok: false, reden: 'Vul de datum, het aantal en de verkoopkoers in (getallen groter dan nul).' };
+        var open = x.aantal - (x.verkopen || []).reduce(function (a, y) { return a + y.aantal; }, 0);
+        if (vk.aantal > open + 1e-9) return { ok: false, reden: 'U heeft nog ' + Math.round(open * 10000) / 10000 + ' stuks; meer verkopen kan niet.' };
+        if (x.datum && vk.datum < x.datum) return { ok: false, reden: 'De verkoopdatum ligt vóór de aankoopdatum.' };
+        if (x.valuta === 'EUR' && vk.eur == null) vk.eur = Math.round(vk.aantal * vk.koers * 100) / 100;
+        (x.verkopen = x.verkopen || []).push(vk);
+        return { ok: bewaar(true), id: vk.id };
+      },
+      verwijderVerkoop: function (id, vid) {
+        var x = staat.portefeuille.filter(function (p) { return p.id === id; })[0];
+        if (!x || !x.verkopen) return false;
+        var voor = x.verkopen.length; x.verkopen = x.verkopen.filter(function (v) { return v.id !== vid; });
+        if (!x.verkopen.length) delete x.verkopen;
+        if ((x.verkopen || []).length !== voor) return bewaar(true);
+        return false;
+      },
       herstelPositie: function (p) { var x = schoonPositie(p); if (x && (!x.pf || !staat.portefeuilles.some(function (y) { return y.id === x.pf; }))) x.pf = staat.actief; if (!x || staat.portefeuille.some(function (y) { return y.id === x.id; })) return false; staat.portefeuille.push(x); return bewaar(true); },
       checklist: function (t) { t = normTicker(t); var b = t && staat.checklist[t]; return b ? JSON.parse(JSON.stringify(b.punten)) : {}; },
       zetPunt: function (t, id, antwoord, notitie) {
@@ -379,6 +434,6 @@
     };
   }
 
-  var api = { SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, MAX_PORTEFEUILLES: MAX_PORTEFEUILLES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonVerdieping: schoonVerdieping, schoonSignaal: schoonSignaal, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
+  var api = { schoonVerkoop: schoonVerkoop, SLEUTEL: SLEUTEL, MAX_VOLGLIJST: MAX_VOLGLIJST, MAX_POSITIES: MAX_POSITIES, MAX_PORTEFEUILLES: MAX_PORTEFEUILLES, PUNTEN_AANTAL: PUNTEN_AANTAL, MAX_NOTITIE: MAX_NOTITIE, schoonChecklist: schoonChecklist, schoonZones: schoonZones, schoonVerdieping: schoonVerdieping, schoonSignaal: schoonSignaal, schoonPositie: schoonPositie, normTicker: normTicker, schoon: schoon, maak: maak };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Store = api;
 })(typeof self !== 'undefined' ? self : this);
