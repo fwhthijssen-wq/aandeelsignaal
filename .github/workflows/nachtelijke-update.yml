@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths: ['web/**', 'VERSION']
 permissions:
-  contents: read
+  contents: write            # de modelportefeuille wordt bewaard op de tak 'model'
   pages: write
   id-token: write
 concurrency:
@@ -80,6 +80,22 @@ jobs:
           print(f"::notice title=Ontbreekt::Yahoo zonder jaarverslag-EPS ({len(ykort)}): {' '.join(ykort)} | officieel met minder dan 6 jaar EPS ({len(kort)}): {' '.join(kort)}")
           print(f"::notice title=Gegevens::{len(L)} fondsen, gemaakt {d.get('gemaakt')}; Yahoo {yahoo}; uit vorige run {oud}; winst per aandeel uit jaarverslag: {len(jv)} ({', '.join(jv)})")
           PY
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Modelportefeuille (alleen 's nachts en met goede gegevens wordt de dag verwerkt; anders alleen getoond)
+        continue-on-error: true
+        run: |
+          git clone -q --depth 1 -b model "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" mt || { echo "::warning title=Modelportefeuille::tak model niet opgehaald"; exit 0; }
+          STAP=""
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ steps.bouw.outcome }}" = "success" ] && [ "${{ steps.bewaker.outcome }}" = "success" ]; then STAP="--stap"; fi
+          node modelportefeuille.js web/data/aandelen.json mt/staat.json web/data --terug mt/terug.json $STAP
+          if [ -n "$STAP" ]; then
+            cd mt
+            git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+            git add staat.json && git commit -qm "Modelportefeuille $(date -u +%F)" || echo "niets nieuw"
+            for i in 1 2 3; do git pull -q --rebase origin model && git push -q origin model && break; sleep 15; done
+          fi
       - name: Gegevens bewaren voor de volgende run
         if: steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
         uses: actions/cache/save@v5

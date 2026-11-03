@@ -1,0 +1,39 @@
+# Modelportefeuille terugrekenen vanaf 2018 (alleen handmatig). Proeft ook de nachtelijke stap op de gegevens van nu,
+# zonder iets te bewaren. Resultaat naar de tak 'model' (terug.json, terug.md); de nachtelijke update zet het in de app.
+name: Modelportefeuille terugrekenen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: model
+  cancel-in-progress: false
+jobs:
+  rekenen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Gegevens van de app ophalen
+        run: curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+      - name: Proef van de nachtelijke stap (niets bewaard)
+        run: mkdir -p proef && node modelportefeuille.js aandelen.json proef/staat.json proef --stap
+      - name: Koersen, dividend, splitsingen, indexen, ECB en wekelijkse signalen
+        run: python hulp/model_terug.py aandelen.json uit
+      - name: Modelportefeuille afspelen
+        run: node hulp/model_terug.js uit
+      - name: Op tak model zetten
+        run: |
+          git clone -q --depth 1 -b model "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" mt
+          cp uit/terug.json uit/terug.md mt/
+          cd mt
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Modelportefeuille teruggerekend $(date -u +%F)" || echo "niets nieuw"
+          for i in 1 2 3; do git pull -q --rebase origin model && git push -q origin model && break; sleep 15; done

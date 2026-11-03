@@ -1050,6 +1050,25 @@ def index_voor(ticker):
     return 'VS' if '.' not in ticker else None
 
 
+def recent_acties(koers, dividenden, splitsingen, vandaag, dagen=400):
+    """Voor de modelportefeuille: dividend per aandeel (ex-datum) en splitsingen van het laatste ruim jaar."""
+    grens = (date.fromisoformat(vandaag) - timedelta(days=dagen)).isoformat()
+    koers['dividenden'] = [[d, round(float(v), 6)] for d, v in dividenden or [] if d >= grens and v and v > 0]
+    koers['splitsingen'] = [[d, float(v)] for d, v in splitsingen or [] if d >= grens and v and v > 0 and abs(float(v) - 1) > 1e-9]
+
+
+def index_standen(cache):
+    """Laatste en voorlaatste slotstand per index (voor de vergelijking in de modelportefeuille)."""
+    uit = {}
+    for code, reeks in sorted((cache or {}).items()):
+        p = [x for x in reeks or [] if x and x[1]]
+        if p:
+            uit[code] = {'datum': p[-1][0], 'stand': round(float(p[-1][1]), 4)}
+            if len(p) > 1:
+                uit[code]['vorige'] = {'datum': p[-2][0], 'stand': round(float(p[-2][1]), 4)}
+    return uit
+
+
 def _op_of_voor(punten, dag, max_dagen=7):
     """Slotkoers op de laatste handelsdag op of vóór dag (hoogstens max_dagen eerder), anders None."""
     import bisect
@@ -1474,7 +1493,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         except Exception as exc:          # aanvulling is extra; de run gaat altijd door
             gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
         adr_toe(gegevens, ticker)                    # daarna pas per ADS, voor koers, K/W en kwartaalwinst
-        koers, punten, dividenden = None, [], []
+        koers, punten, dividenden, splitsingen = None, [], [], []
         pence = meta[3] == 'GBX'
         if pence:
             meta = meta[:3] + ('GBP',) + meta[4:]     # Londen noteert in pence; de app rekent alles in ponden
@@ -1485,12 +1504,14 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception:
                 koers = None
             try:
-                punten, dividenden = historie_ophalen(ticker)
+                hist = historie_ophalen(ticker)
+                punten, dividenden = hist[0], hist[1]
+                splitsingen = list(hist[2]) if len(hist) > 2 else []
                 if pence:
                     punten = pence_naar_pond(punten)
                     dividenden = dividend_naar_pond(dividenden, punten)
             except Exception:
-                punten, dividenden = [], []
+                punten, dividenden, splitsingen = [], [], []
             if gegevens.get('jaren'):
                 try:
                     voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
@@ -1503,6 +1524,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             if koers is not None:
                 from koershistorie import koersbereik
                 koers['bereik'] = koersbereik(punten)
+                recent_acties(koers, dividenden, splitsingen, vandaag)
                 code = index_voor(ticker)
                 if code:
                     try:
@@ -1554,6 +1576,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             rec['management'] = management
         records.append(rec)
     bestand = maak_bestand(records, bron='SEC companyfacts, ESEF-jaarverslagen en Yahoo Finance (koersen en indicatieve jaarcijfers)')
+    bestand['indexen'] = index_standen(index_cache)
     bestand['yahoo_vergelijk'] = {'bedrijven': vergeleken_bedrijven, 'velden': vergelijking}
     return bestand
 
@@ -1714,7 +1737,8 @@ def _yahoo_historie(ticker):
     h = yf.Ticker(ticker).history(period='12y', interval='1d', auto_adjust=False, actions=True)
     punten = [(idx.date().isoformat(), float(v)) for idx, v in h['Close'].dropna().items()]
     dividenden = [(idx.date().isoformat(), float(v)) for idx, v in h['Dividends'].items() if v and v > 0] if 'Dividends' in h else []
-    return punten, dividenden
+    splitsingen = [(idx.date().isoformat(), float(v)) for idx, v in h['Stock Splits'].items() if v and v > 0] if 'Stock Splits' in h else []
+    return punten, dividenden, splitsingen
 
 
 def _yahoo_reeks(ticker):
