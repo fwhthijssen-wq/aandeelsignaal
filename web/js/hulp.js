@@ -9,7 +9,7 @@
       'In het menu: Markt (kansen en alle fondsen), Volglijst, Portefeuille en Achtergrond (datakwaliteit, het oordeel in het verleden, uitleg en instellingen).'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
     model: ['Modelportefeuille', 'Een fictieve portefeuille die de signalen van de app automatisch volgt, om te zien of ze over langere tijd werken.', [
       'Bij elke NAIC-koopkans koopt de modelportefeuille voor ongeveer 1.000 euro (minstens 1 aandeel); staat de koers in de verkoopzone, dan verkoopt hij. Uitgevoerd tegen de slotkoers van de dag erna, met 3 euro kosten per transactie.',
-      'Twee regels naast elkaar: alle kansen, en alleen kansen met een gunstig koopmoment. Zo ziet u of het koopmoment helpt.',
+      'Drie regels naast elkaar: alle kansen; ook verkopen als de kwaliteit wegvalt; en alleen kansen met een gunstig koopmoment. Zo ziet u welke regel het best werkt.',
       'De vergelijking met de index laat zien wat hetzelfde geld in de index had opgeleverd. Pas na een paar jaar zegt dat echt iets.',
       'Teruggerekend toont dezelfde regels vanaf 2018 op oude koersen: een indruk, geen bewijs (fondsen en cijfers van nu).',
       'De paarse kleur en het label fictief houden hem apart van uw eigen portefeuille.'], 'Fictief en geen beleggingsadvies.'],

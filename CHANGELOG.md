@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.9.2 (2026.11.03)
+- **Uitleg in de hulp, niet tussen de gegevens.** Elk scherm toont de gegevens en de conclusie; hoe het werkt, de regels en de uitkomsten van het terugrekenen staan in de hulp (het vraagteken) van dat scherm, met kopjes. Een link **ⓘ Hoe werkt dit?** bij een onderdeel opent de hulp meteen op de goede plek.
+- Doorgevoerd op: Modelportefeuille (de regels), Signalen, Aandeel › Oordeel (hoe het oordeel tot stand komt, koopmoment), Koers (middellange termijn, trendsignaal, relatieve sterkte, analisten en kwartaalcijfers, korte termijn, risico), NAIC (de gids, begrippen, koersbereik), Gezondheid (kwaliteitscheck, uw beoordeling), Markt (volgorde) en Datakwaliteit.
+- Blijft op het scherm: gegevens (zoals de terugrekentabel bij een oordeel), bediening (back-up, portefeuilles) en waarschuwingen bij een concreet getal. Achtergrond › De methode blijft de uitlegpagina.
+
 ## 1.9.1 (2026.11.03)
 - **Modelportefeuille, derde regel: ook verkopen bij zwakkere kwaliteit.** Dezelfde aankopen als *Alle kansen*, maar een fonds wordt ook verkocht als de kwaliteit wegvalt: geen groeibedrijf meer, een verliesjaar, of een NAIC-kwaliteitstoets valt af (omzet, marge vóór belasting, rendement op eigen vermogen). Zo is te zien of verkopen bij verslechtering beter werkt dan verliezers laten staan. Ook teruggerekend vanaf 2018.
 - Bij een verkoop staat de reden: verkoopzone of kwaliteit viel weg.

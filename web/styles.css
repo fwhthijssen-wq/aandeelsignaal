@@ -413,3 +413,10 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .model-scherm .lijst { border-left: 4px solid var(--model); }
 .grafiek .model-lijn { stroke: var(--model); }
 .model-regel { flex-wrap: wrap; }
+
+/* Hulp per pagina (1.9.2): link "Hoe werkt dit?" en onderdelen in het helpscherm */
+.hoe-link { background: none; border: 0; padding: 4px 0; min-height: 32px; color: var(--acc); font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: 3px; }
+.hoe-rij { margin: 4px 0 0; }
+.hulp-deel { border-top: 1px solid var(--line-soft); margin-top: 10px; padding-top: 6px; scroll-margin-top: 8px; }
+.hulp-deel[data-gekozen] { background: var(--ok-bg); border-radius: 12px; padding: 6px 10px; border-top-color: transparent; }
+.hulp-deel p { margin: 6px 0; }

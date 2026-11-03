@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.9.1 (2026.11.03)';
+  var APP_VERSIE = '1.9.2 (2026.11.03)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -51,16 +51,16 @@
   function telTekst(b) { return b.aantal + ' van ' + b.mogelijk + ' metingen'; }
   function minMetingen() { try { var v = parseInt(localStorage.getItem('as_minmeting'), 10); return v >= 2 && v <= 6 ? v : Signaal.MIN_METINGEN; } catch (e) { return Signaal.MIN_METINGEN; } }
   function zetMinMetingen(v) { try { localStorage.setItem('as_minmeting', String(v)); } catch (e) { /* standaard blijft */ } }
-  function uitlegOordeel() {
-    return '<details class="uitleg" data-uitleg-oordeel><summary>Hoe komt het oordeel tot stand?</summary>' +
-      '<p>Het oordeel volgt de regels van de <b>NAIC Stock Selection Guide</b>:</p><ul class="punten">' +
+  function uitlegOordeel() { return '<details class="uitleg" data-uitleg-oordeel><summary>Hoe komt het oordeel tot stand?</summary>' + uitlegOordeelInhoud() + '</details>'; }
+  function uitlegOordeelInhoud() {
+    return '<p>Het oordeel volgt de regels van de <b>NAIC Stock Selection Guide</b>:</p><ul class="punten">' +
       '<li><b>Groeibedrijf?</b> De winst per aandeel groeit minstens ' + Naic.GROEI_MIN + '% per jaar (trendlijn over hoogstens 10 jaar). In de berekening rekent de app voorzichtig met hoogstens ' + Naic.GROEI_MAX + '%.</li>' +
       '<li><b>Goed bedrijf? (stap 1 en 2)</b> Omzet en winst groeien gelijk op, en de marge vóór belasting en het rendement op eigen vermogen dalen niet.</li>' +
       '<li><b>Prijs (stap 3 tot 5)</b> Uit de gemiddelde hoge en lage K/W van 5 jaar volgt een verwachte hoge en lage koers over 5 jaar, verdeeld in drie zones: kopen, houden, verkopen. Kopen vraagt minstens 3 : 1 opwaarts tegen neerwaarts.</li>' +
       '<li><b>Rendement (stap 6)</b> Koersstijging tot de hoge koers plus dividend: minstens ' + Naic.TOTAAL_MIN + '% per jaar (geld verdubbelen in 5 jaar).</li></ul>' +
       '<p><b>Kopen</b>: koers in de koopzone, minstens 3 : 1, minstens ' + Naic.TOTAAL_MIN + '% per jaar en geen kwaliteitstoets afgevallen. <b>Vermijden</b>: verkoopzone, of geen groeibedrijf. Anders <b>Neutraal</b>.</p>' +
       '<p>Daaronder staan, <b>aanvullend</b>, zes metingen die NAIC niet gebruikt (kasstroom, schuld, groei, K/W, koerstrend en koersrust) als <b>gezondheidscheck</b>: Gezond, Gemengd of Zwak. Dat is geen koopadvies (het zegt hoe het bedrijf ervoor staat, niet of de prijs goed is) en telt niet mee in het NAIC-oordeel. Ongunstige metingen ziet u bij het NAIC-oordeel als aandachtspunt. ' +
-      'Andere kentallen, uw eigen oordeel en het advies van analisten staan er ter informatie bij. Selectiehulp, geen beleggingsadvies.</p></details>';
+      'Andere kentallen, uw eigen oordeel en het advies van analisten staan er ter informatie bij. Selectiehulp, geen beleggingsadvies.</p>';
   }
   function signaalVoor(rec, gevoeligheid) {
     var ck = Checklist.voortgang(winkel.checklist(rec.ticker));
@@ -127,7 +127,7 @@
       '<a class="snel-rij" href="#/a/' + T + '/gezond" data-snel-gezond><span><b>Gezondheidscheck</b> <span class="zacht">' + (b.oordeel ? GEZOND[b.oordeel] : 'te weinig metingen') + ' · ' + telTekst(b) + '</span><br>' + stippen(b, true) + '</span>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a></div>';
     s += '<div class="detail">' + analistenBlok(rec) + '</div>' + bedrijfBlok(rec);
     if (weergave() === 'eenvoudig') s += '<div class="knoppen"><button type="button" class="knop rand klein" data-weergave-knop="uitgebreid">Alle details tonen</button></div>';
-    return s + '</div>' + uitlegOordeel();
+    return s + '</div><p class="hoe-rij">' + hoe('oordeel', 'Hoe komt het oordeel tot stand?') + '</p>';
   }
   /* Tabblad Gezondheid: hoe staat het bedrijf ervoor? De zes metingen, kentallen ter informatie en uw eigen onderzoek. */
   function gezondTab(rec) {
@@ -251,7 +251,7 @@
     }[t.status];
     var mlk = Termijn.middellang(rec, t, vandaag());
     if (mlk.status === 'negatief') tekst += ' <b data-koopmoment-ml="negatief">Ook de middellange termijn is negatief.</b> NAIC-koopkansen met een negatieve middellange termijn deden het teruggerekend slecht (−18% na 1 jaar, 16 gevallen).';
-    return '<div class="koopmoment" data-koopmoment="' + t.status + '">' + tekst + link + '<br><span class="zacht">Teruggerekend 2018–2025: NAIC Kopen deed het na 1 jaar ' + pct(T.kopenGunstig) + ' bij een gunstig moment, ' + pct(T.kopenNeutraal) + ' bij neutraal en ' + pct(T.kopenAfwachten) + ' bij afwachten, ten opzichte van het gemiddelde (' + T.nG + ', ' + T.nN + ' en ' + T.nA + ' gevallen; kleine aantallen, geen garantie).</span></div>';
+    return '<div class="koopmoment" data-koopmoment="' + t.status + '">' + tekst + link + ' ' + hoe('koopmoment') + '</div>';
   }
   /* Koersgrafiek: 6 maanden (dagkoersen, met het gemiddelde van 50 dagen) of 2 jaar (weekkoersen, met het gemiddelde van 200
      dagen). De NAIC-koopzone als groene band en uw gemiddelde aankoopkoers als stippellijn. */
@@ -299,7 +299,7 @@
     var cel = function (x, t) { return '<div class="kpi"><b style="color:' + (typeof x === 'number' ? kleur(x) : 'var(--mut)') + '">' + (typeof x === 'number' ? pct(x) : '–') + '</b><span>' + t + '</span></div>'; };
     var richting = typeof rel.m12 === 'number' && typeof rel.m3 === 'number' ? (rel.m12 > 0 && rel.m3 > 0 ? 'Het fonds doet het al een jaar beter dan de index, en de laatste maanden ook.' : rel.m12 < 0 && rel.m3 < 0 ? 'Het fonds blijft al een jaar achter bij de index, en de laatste maanden ook.' : rel.m12 > 0 ? 'Over een jaar sterker dan de index, maar de laatste maanden zwakker.' : 'Over een jaar zwakker dan de index, maar de laatste maanden sterker.') : '';
     return '<div class="kaart-plat" data-relatief-kaart><div class="rij-kop"><h2>Relatieve sterkte</h2><span class="zacht">t.o.v. de ' + h(rel.naam) + '</span></div><div class="kpis">' + cel(rel.m3, '3 maanden') + cel(rel.m6, '6 maanden') + cel(rel.m12, '12 maanden') + '</div>' +
-      '<p>' + h(richting) + '</p><p class="zacht">Hoeveel procent de koers meer (+) of minder (−) steeg dan de index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat vaak nog een tijd doen (momentum). Teruggerekend 2016–2026 (elke maand, alle fondsen): het sterkste vijfde deel over 12 maanden deed het het jaar erna gemiddeld 8,7 procentpunt beter dan het zwakste vijfde deel; in 72% van de maanden was het sterkste deel beter. Geen garantie. Informatie, telt niet mee in het oordeel.</p></div>';
+      '<p>' + h(richting) + ' ' + hoe('relatief') + '</p></div>';
   }
   /* Risico en terugval (tabblad Koers): informatie, los van het oordeel. */
   function risicoHtml(rec, fr) {
@@ -313,7 +313,7 @@
     if (typeof x.max_daling === 'number') s += kpi(pct(x.max_daling), 'Grootste daling in ' + (x.jaren || 5) + ' jaar' + (x.daling_van ? ' (' + h(datumNl(x.daling_van)) + ' tot ' + h(datumNl(x.daling_tot)) + ')' : ''));
     if (bw) s += kpi(getal(x.beweeglijk, 0) + '%', 'Beweeglijkheid per jaar: ' + bw);
     if (bt) s += kpi(getal(x.beta, 2), 'Beta t.o.v. de ' + h(rec.koers.relatief ? rec.koers.relatief.naam : 'index') + ': ' + bt);
-    return s + '</div><p class="zacht">De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag. Teruggerekend 2016–2026 deden beweeglijke aandelen het beter, maar dat komt deels doordat alleen de fondsen van nu zijn meegeteld (beweeglijke fondsen die hard onderuit gingen, vielen uit de index) en past bij een periode waarin groeiaandelen wonnen. De afstand tot de top en de grootste daling zeiden niets over het rendement daarna. Informatie, telt niet mee in het oordeel.</p></div>';
+    return s + '</div><p class="hoe-rij">' + hoe('risico') + '</p></div>';
   }
   /* Middellange termijn: één oordeel uit vier onderdelen (Termijn.middellang). */
   function middellangHtml(rec, fr) {
@@ -324,7 +324,7 @@
     return '<div class="kaart-plat" data-middellang="' + m.status + '"><div class="rij-kop"><h2>Oordeel middellange termijn</h2><span class="chip" data-oordeel="' + KL[m.status] + '">' + h(m.naam) + '</span></div>' +
       '<ul class="termijn-delen">' + m.delen.map(function (d) { return '<li data-deel-ml="' + d.id + '" data-punt="' + d.punt + '"><span class="teken" aria-hidden="true">' + teken(d.punt) + '</span><span><b>' + h(d.naam) + '</b><br><span class="zacht">' + h(d.tekst) + '</span></span></li>'; }).join('') + '</ul>' +
       '<p>' + (m.status === 'onbekend' ? 'Minder dan 3 onderdelen bekend, dus geen oordeel.' : 'Samen ' + (m.score > 0 ? '+' : '') + m.score + ' uit ' + m.bekend + ' onderdelen. Positief vanaf +2, negatief vanaf −2.') + '</p>' +
-      '<p class="zacht">Teruggerekend (elke maand, alle fondsen, 2016–2026): het oordeel samen werkte beter dan elk onderdeel apart: positief deed het na 12 maanden gemiddeld 6,9 procentpunt beter dan negatief, in 76% van de maanden. Trend en relatieve sterkte wegen het zwaarst in die uitkomst; de kwartaalcijfers zijn zwakker maar wel meetbaar. Zwaarder wegen van trend en sterkte maakte het niet beter, dus alle onderdelen tellen even zwaar. Voor de winstverwachtingen van analisten steunen we op onderzoek: Yahoo bewaart die geschiedenis niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p></div>';
+      '<p class="hoe-rij">' + hoe('middellang') + '</p></div>';
   }
   /* Winstverwachtingen van analisten en kwartaalcijfers (Yahoo Finance), ter informatie. */
   function verwachtingHtml(rec) {
@@ -336,10 +336,10 @@
     };
     var s = '<div class="kaart-plat" data-verwachting><h2>Analisten en kwartaalcijfers</h2>';
     if (bij.dit_jaar || bij.volgend_jaar) s += '<h3>Verwachte winst per aandeel: bijgesteld</h3><div class="schuif"><table class="vgl"><thead><tr><th></th><th>30 dagen</th><th>90 dagen</th><th>Analisten, 30 dagen</th></tr></thead><tbody>' + rij('Dit boekjaar', bij.dit_jaar) + rij('Volgend boekjaar', bij.volgend_jaar) + '</tbody></table></div>' +
-      '<p class="zacht">Hoeveel de gemiddelde verwachting van analisten veranderde. Verhogingen worden vaak gevolgd door een betere koers in de maanden erna (onderzoek); het advies zelf (kopen/houden) zegt minder.</p>';
+      '';
     if (v.verrassingen && v.verrassingen.length) s += '<h3>Kwartaalcijfers tegenover de verwachting</h3><ul class="punten">' + v.verrassingen.map(function (x) { return '<li>' + h(datumNl(x.datum)) + ': <b style="color:' + kleur(x.pct) + '">' + pct(x.pct) + '</b> ' + (x.pct >= 0 ? 'boven' : 'onder') + ' de verwachting</li>'; }).join('') + '</ul>' +
-      '<p class="zacht">Na cijfers die duidelijk beter zijn dan verwacht, loopt de koers vaak nog een tijd door. Teruggerekend (2014–2026, 8.652 bekendmakingen): na een verrassing van meer dan +5% deed het fonds het in de 6 maanden erna gemiddeld 1,3 procentpunt beter dan na cijfers onder de verwachting, gerekend vanaf de dag ná de bekendmaking. Een klein maar meetbaar effect.</p>';
-    return s + '<p class="zacht">Bron: Yahoo Finance, ' + h(datumNl(v.datum)) + '.</p></div>';
+      '';
+    return s + '<p class="zacht">Bron: Yahoo Finance, ' + h(datumNl(v.datum)) + '. ' + hoe('verwachting') + '</p></div>';
   }
   /* Korte termijn: alleen feiten, geen signaal. */
   function kortHtml(rec, fr) {
@@ -349,7 +349,7 @@
     if (typeof k.rsi === 'number') d.push('<li data-kort="rsi"><b>RSI ' + getal(k.rsi, 0) + ':</b> ' + (k.rsi >= 70 ? 'de koers is de laatste weken hard gestegen (“overkocht”). In het terugrekenen liepen zulke koersen vaak juist door; het is geen verkoopsignaal.' : k.rsi <= 30 ? 'de koers is de laatste weken hard gedaald (“oversold”). Dat is op zich geen koopsignaal.' : 'geen uitschieter.') + '</li>');
     if (typeof k.onderTop === 'number') d.push('<li data-kort="top"><b>' + (k.onderTop >= -1 ? 'Vlak bij' : getal(-k.onderTop, 1) + '% onder') + ' het hoogste punt van het afgelopen jaar.</b></li>');
     if (!d.length) return '';
-    return '<div class="kaart-plat" data-kort-kaart><h2>Feiten voor de korte termijn</h2><ul class="punten">' + d.join('') + '</ul><p class="zacht">Geen koop- of verkoopsignaal: in het terugrekenen voorspelde geen enkele maatstaf het rendement over 1 maand. Wie speculeert, doet dat op eigen risico; deze feiten helpen alleen om het moment en het risico in te schatten.</p></div>';
+    return '<div class="kaart-plat" data-kort-kaart><h2>Feiten voor de korte termijn</h2><ul class="punten">' + d.join('') + '</ul><p class="zacht">Geen koop- of verkoopsignaal. ' + hoe('kort') + '</p></div>';
   }
   function naicKaart(rec, b) {
     var n = b.naic;
@@ -580,7 +580,7 @@
       var a = per[v.ticker] || { ticker: v.ticker, naam: (zoek(v.ticker) || {}).naam || v.ticker };
       return regel(a, '<span class="signaal" data-ml-naar="' + v.naar + '">Middellange termijn ' + ML[v.van] + ' → <b>' + ML[v.naar] + '</b></span>', v.waar === 'portefeuille' ? 'in portefeuille' : 'op volglijst');
     }).join('') + '</div>';
-    return s + '<details class="uitleg"><summary>Wat betekenen de signalen?</summary><p>Koopzone: koers in het onderste derde van het verwachte bereik met minstens 3 : 1. Verkoopzone: bovenste derde. NAIC verkoopt ook als de kwaliteit terugloopt. Middellange termijn: het oordeel uit trend, relatieve sterkte, analisten en kwartaalcijfers (tabblad Koers); een omslag naar positief of negatief is teruggerekend de best onderbouwde aanwijzing voor de komende 3 tot 12 maanden. Selectiehulp, geen beleggingsadvies.</p></details></section>';
+    return s + '<p class="hoe-rij">' + hoe('signalen', 'Wat betekenen de signalen?') + '</p></section>';
   }
 
   /* ---- Datakwaliteit: per fonds hoe zeker de cijfers zijn, wat er aangevuld of gecorrigeerd is en wat de tweede bron zegt ---- */
@@ -618,7 +618,7 @@
       (avC ? '<div class="kpi"><b>' + getal(avC, 0) + '</b><span>Cijfers door u aangevuld (' + avF + ' fondsen)</span></div>' : '') + '</div>';
     s += '<div class="kaart-plat"><h2>Zekerheid van de gegevens</h2><span class="kw-balk" aria-hidden="true">' + balk + '</span><ul class="kw-legenda">' + legenda + '</ul></div>';
     s += '<div class="regels" role="group" aria-label="Filter" data-kw-filter>' + KW_FILTER.map(function (f) { return '<button type="button" class="chip-knop" data-kwf="' + f[0] + '" aria-pressed="' + (f[0] === kwaliteitFilter) + '">' + f[1] + '</button>'; }).join('') + '</div><div id="kw-lijst"></div>';
-    return s + '<p class="zacht">Tik op een fonds voor de bronnen. Gecorrigeerd: alleen als de eigen nettowinst en het aantal aandelen van de app aantonen dat de tweede bron gelijk heeft. Een afwijking van de tweede bron betekent niet dat de app fout zit: vaak gaat het om een andere definitie of een herziening.</p></section>';
+    return s + '<p class="zacht">Tik op een fonds voor de bronnen. ' + hoe('termen', 'Wat betekenen gecorrigeerd en tweede bron?') + '</p></section>';
   }
   function kwaliteitKoppel() {
     var lijst = document.getElementById('kw-lijst'); if (!lijst) return;
@@ -854,7 +854,7 @@
       '<label for="f-weergave" class="vh">Weergave</label><select id="f-weergave">' + opt('index', 'Per index', k.weergave) + opt('lijst', 'Eén lijst', k.weergave) + '</select>' +
       '<label for="f-sort" class="vh">Sorteer op</label><select id="f-sort">' + Object.keys(FONDS_SORT_NAAM).map(function (x) { return opt(x, 'Sorteer: ' + FONDS_SORT_NAAM[x], k.sorteer); }).join('') + '</select></div>' +
       '<label for="f-zeker" class="vh">Zekerheid van de cijfers</label><select id="f-zeker">' + ZEKERHEID.map(function (x) { return opt(x[0], x[1], k.zekerheid); }).join('') + '</select></div>' +
-      '<div id="res"></div>' + datasetOverzicht(fondsItems()) + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. Standaardvolgorde: NAIC Kopen eerst, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts bovenaan. Selectiehulp, geen beleggingsadvies.</p></section>';
+      '<div id="res"></div>' + datasetOverzicht(fondsItems()) + '<p class="zacht">U ziet de ' + DATA.aandelen.length + ' aandelen die de nachtelijke update bijhoudt. ' + hoe('volgorde', 'In welke volgorde?') + '</p></section>';
   }
   function fondsRegel(a) {
     var plek = a.positiePct != null ? 'plek in bereik ' + getal(a.positiePct, 0) + '%' : '';
@@ -985,13 +985,7 @@
     var open = v.posities.filter(function (p) { return !p.verkoop; }).sort(function (a, b) { return a.koop.datum < b.koop.datum ? 1 : -1; });
     var dicht = v.posities.filter(function (p) { return p.verkoop; }).sort(function (a, b) { return a.verkoop.datum < b.verkoop.datum ? 1 : -1; });
     s += modelLijstHtml('Open posities', bron + v.id + 'o', open) + modelLijstHtml('Verkocht', bron + v.id + 'd', dicht);
-    s += '<details class="kaart-plat" data-model-regels><summary><b>De regels</b></summary><ul class="punten">' +
-      '<li><b>Kopen</b>: ' + h(v.regel) + '. Voor ongeveer ' + eur(B.bedrag) + '; is één aandeel duurder, dan 1 aandeel. Een fonds dat al in de portefeuille zit, wordt niet bijgekocht.</li>' +
-      '<li><b>Verkopen</b>: als de koers in de NAIC-verkoopzone of erboven staat' + (v.id === 'kwaliteit' ? ', én als de kwaliteit wegvalt: geen groeibedrijf meer (winstgroei onder 5% per jaar), een verliesjaar, of een NAIC-kwaliteitstoets valt af (de omzet draagt de winstgroei niet, de marge vóór belasting of het rendement op eigen vermogen daalt)' : '') + '. Daarna kan het fonds bij een nieuwe kans opnieuw worden gekocht.</li>' +
-      '<li><b>Uitvoering</b>: tegen de slotkoers van de handelsdag ná het signaal (niet vooruitkijken). Kosten ' + eur(B.kosten) + ' per aankoop en per verkoop.</li>' +
-      '<li><b>Euro</b>: dollars en ponden met de dagkoers van de ECB' + (B.fx && B.fx.datum ? ' (laatst ' + h(datumNl(B.fx.datum)) + ')' : '') + '. Dividend bruto op de ex-datum, als geld (niet herbelegd). Splitsingen passen het aantal aan.</li>' +
-      '<li><b>Index</b>: bij elke aankoop hetzelfde bedrag fictief in de eigen index van het fonds (AEX, DAX, S&amp;P 500 …), met dezelfde kosten, verkocht op hetzelfde moment. Indexen zonder dividend, behalve de DAX.</li>' +
-      '<li>Elke nacht bijgewerkt; aankopen en verkopen worden nooit achteraf veranderd.' + (bron === 'terug' ? ' De teruggerekende versie gebruikt dezelfde regels met wekelijkse signalen.' : '') + '</li></ul></details>';
+    s += '<p class="hoe-rij">' + hoe('regels', 'De regels van de modelportefeuille') + '</p>';
     return s + '<p class="zacht">Fictief, om de signalen te toetsen. Geen beleggingsadvies; belasting is niet meegerekend.' + (B.bijgewerkt ? ' Bijgewerkt ' + h(datumNl(B.bijgewerkt)) + '.' : '') + '</p></section>';
   }
   function modelKoppel() {
@@ -1294,7 +1288,7 @@
     return s + '<div class="kpis"><div class="kpi"><b>' + getal(b.laag, 2) + '</b><span>Laagste slotkoers (' + b.van + '–' + b.tot + ')</span></div><div class="kpi"><b>' + getal(b.hoog, 2) + '</b><span>Hoogste slotkoers</span></div>' +
       '<div class="kpi"><b>' + getal(b.positiePct, 0) + '%</b><span>Plek in het bereik (0 = laagste, 100 = hoogste)</span></div><div class="kpi"><b>' + (b.verhouding == null ? '–' : getal(b.verhouding, 1) + ' : 1') + '</b><span>Opwaarts tegen neerwaarts</span></div></div>' +
       (bevestigd ? '<p data-label="' + b.label + '"><span class="chip">' + LABEL[b.label] + '</span> ' + LABEL_UITLEG[b.label] + '</p>' : '') +
-      '<p>De koers staat in <b>' + T[b.derde] + '</b> van dit bereik.</p><p class="zacht">De NAIC deelt het bereik in drie gelijke stukken en kijkt of er minstens drie keer zoveel opwaarts als neerwaarts is. Dit is een beschrijving van het verleden over ' + b.jaren + ' boekjaren, geen koopadvies en geen voorspelling. Het label verschijnt alleen als de gegevens van het bedrijf bevestigd zijn. Staat de koers op of onder het laagste punt, dan is de verhouding niet te berekenen.</p></' + tag + '>';
+      '<p>De koers staat in <b>' + T[b.derde] + '</b> van dit bereik.</p><p class="zacht">Over ' + b.jaren + ' boekjaren. ' + hoe('bereik') + '</p></' + tag + '>';
   }
   /* De NAIC-gids in de vijf delen van de Stock Selection Guide, in dezelfde volgorde als het formulier van NAIC/BetterInvesting. */
   function deelKop(nr, titel, vraag) { return '<h2 class="deel-kop"><span class="deel-nr">' + nr + '</span>' + h(titel) + '</h2><p class="deel-vraag">' + h(vraag) + '</p>'; }
@@ -1307,7 +1301,7 @@
     function kp(w, t) { return '<div class="kpi"><b>' + (w == null ? '–' : pct(w)) + '</b><span>' + h(t) + '</span></div>'; }
     function kpv(w, t) { return '<div class="kpi"><b>' + w + '</b><span>' + h(t) + '</span></div>'; }
     n = n || {};
-    var s = '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De Stock Selection Guide van de NAIC (nu BetterInvesting), een Amerikaanse beleggersvereniging, in zes stappen. Het oordeel op het tabblad Oordeel volgt dezelfde stappen. Geen koersdoel en geen advies.</p></div>';
+    var s = '<div class="kaart-plat"><h2>NAIC-gids</h2><p class="zacht">De zes stappen van de Stock Selection Guide. ' + hoe('naic', 'Wat is de NAIC-gids?') + '</p></div>';
     // Deel 1
     s += '<section data-deel="1">' + deelKop(1, 'Visuele analyse van de groei', 'Groeien omzet en winst per aandeel gelijkmatig, en minstens 5% per jaar?') + '<div class="kpis">' +
       kp(gc.omzet10, 'Omzet (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.omzet5, 'Omzet, laatste 5 jaar') + kp(gc.eps10, 'Winst per aandeel (' + (gc.van || '?') + '–' + (gc.tot || '?') + ')') + kp(gc.eps5, 'Winst per aandeel, laatste 5 jaar') + '</div>' +
@@ -1316,11 +1310,11 @@
       toetsRegels(n, ['omzet']) + '<p class="zacht">Een streepje betekent dat er te weinig of geen positieve cijfers zijn.</p></section>';
     // Deel 2
     s += '<section data-deel="2">' + deelKop(2, 'Evaluatie van het management', 'Houdt het management de winstmarge vóór belasting en het rendement op eigen vermogen op peil, en hoeveel schuld heeft het bedrijf?') +
-      (bank ? '<p class="zacht">Bij een bank of verzekeraar zegt de winstmarge vóór belasting weinig; die wordt niet getoond.</p>' : '<h3>Winstmarge vóór belasting</h3>' + staven(pm, 'Winstmarge vóór belasting per jaar in procenten', function (v) { return getal(v, 0); }) + '<p class="zacht">Winst vóór belasting als percentage van de omzet. Dit is de marge die de NAIC bedoelt.</p>') +
+      (bank ? '<p class="zacht">Bij een bank of verzekeraar zegt de winstmarge vóór belasting weinig; die wordt niet getoond.</p>' : '<h3>Winstmarge vóór belasting</h3>' + staven(pm, 'Winstmarge vóór belasting per jaar in procenten', function (v) { return getal(v, 0); }) + '<p class="zacht">' + hoe('begrippen', 'Wat betekent dit?') + '</p>') +
       '<h3>Rendement op eigen vermogen</h3>' + staven(roe.reeks, 'Rendement op eigen vermogen per jaar in procenten', function (v) { return getal(v, 0); }) +
-      '<p class="zacht">Nettowinst gedeeld door het eigen vermogen aan het eind van het jaar.' + (roe.gemiddelde == null ? '' : ' Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.') + ' Bij negatief of nul eigen vermogen blijft het leeg.</p>' +
+      (roe.gemiddelde == null ? '' : '<p class="zacht">Gemiddeld ' + getal(roe.gemiddelde, 1) + '% over ' + roe.jarenMetWaarde + ' jaar.</p>') +
       toetsRegels(n, ['marge', 'roe']) +
-      (bank ? '' : (function () { var sr = Naic.schuldratio(jr); return sr.some(function (x) { return x.waarde !== null; }) ? '<h3>Schuld t.o.v. totaal kapitaal</h3>' + staven(sr, 'Langlopende schuld als percentage van schuld plus eigen vermogen per jaar', function (v) { return getal(v, 0); }) + '<p class="zacht">Langlopende schuld gedeeld door schuld plus eigen vermogen. Lager is veiliger; wat gebruikelijk is verschilt per sector. Ter informatie; telt niet mee in het oordeel.</p>' : '<h3>Schuld t.o.v. totaal kapitaal</h3><p class="zacht">Onbekend: niet eenduidig te vinden in de jaarverslagen.</p>'; })()) + (mgmtBlok || '') + '</section>';
+      (bank ? '' : (function () { var sr = Naic.schuldratio(jr); return sr.some(function (x) { return x.waarde !== null; }) ? '<h3>Schuld t.o.v. totaal kapitaal</h3>' + staven(sr, 'Langlopende schuld als percentage van schuld plus eigen vermogen per jaar', function (v) { return getal(v, 0); }) + '' : '<h3>Schuld t.o.v. totaal kapitaal</h3><p class="zacht">Onbekend: niet eenduidig te vinden in de jaarverslagen.</p>'; })()) + (mgmtBlok || '') + '</section>';
     // Deel 3
     s += '<section data-deel="3">' + deelKop(3, 'Koers/winst-geschiedenis', 'Hoeveel keer de winst betaalde de markt de afgelopen vijf jaar, op het hoogste en laagste punt? Is het aandeel nu historisch goedkoop of duur?') + kwHistorieHtml(jr, bank) +
       (n.relatief ? '<p data-relatief>Relatieve waarde: de K/W nu' + (n.ttm ? ' (op de winst van de laatste 4 kwartalen)' : '') + ' (' + getal(n.relatief.kwNu, 1) + ') is <b>' + n.relatief.pct + '%</b> van de gemiddelde K/W (' + getal(n.relatief.kwGem, 1) + '). NAIC ziet het liefst ' + Naic.RV_LAAG + '–' + Naic.RV_HOOG + '%. Ter informatie; telt niet mee in het oordeel.</p>' : '') + '</section>';
@@ -1509,8 +1503,8 @@
     return '<div class="kaart-plat" data-kortetermijn="' + t.status + '"><div class="rij-kop"><h2>Trendsignaal</h2><span class="chip" data-oordeel="' + KLEUR[t.status] + '">' + h(t.label) + '</span></div>' +
       '<ul style="list-style:none;padding-left:0">' + regels + '</ul>' +
       '<p><b>' + t.ja + ' van ' + t.totaal + ' checks</b>' + (t.status === 'onvoldoende' ? ' (' + (t.totaal - t.bekend) + ' niet te berekenen, dus geen uitkomst)' : '') + '. Gunstig moment bij 4 of 5, neutraal bij 2 of 3, afwachten bij 0 of 1.</p>' +
-      '<p class="zacht" data-kt-terug>Teruggerekend over ' + TERUG_TA.periode + ' (elke maand, alle fondsen): aandelen met een gunstig moment deden het na 12 maanden gemiddeld ' + String(TERUG_TA.spread12).replace('.', ',') + ' procentpunt beter dan aandelen met afwachten, na 3 maanden ' + String(TERUG_TA.spread3).replace('.', ',') + '. Het werkt vooral door dalende trends te mijden. De drie trendchecks doen het werk; MACD voegt weinig toe en “niet overkocht” werkte eerder averechts. Geen garantie.</p>' +
-      '<p class="zacht">Alleen over het koersverloop van de afgelopen maanden, voor wie het moment van kopen wil kiezen. Staat los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Wordt elke nacht opnieuw berekend. Geen garantie voor wat de koers gaat doen.</p></div>';
+
+      '<p class="hoe-rij">' + hoe('trend') + '</p></div>';
   }
   /* Timing-informatie: los van het signaal; verandert het oordeel nooit. */
   function timingHtml(rec, fr) {
@@ -1530,7 +1524,7 @@
     var b = signaalVoor(rec), v = winkel.verdieping(rec.ticker);
     var ci = b.methoden.filter(function (m) { return m.invoer && (!m.aanwezig || m.kwaliteit === 'eigen'); });
     if (deel === 'cijfers') return ci.length ? cijferInvoerHtml(ci, v) : '';
-    var s = '<div class="kaart-plat" data-verdiepen><h2>Uw beoordeling</h2><p class="zacht">Leg hier vast wat u zelf over dit aandeel weet. Uw beoordeling staat bij het aandeel ter informatie en telt niet mee in het oordeel. Een ontbrekend cijfer dat u invult (uit het jaarverslag) vult wel de bijbehorende meting aan, en vervangt nooit een cijfer uit het jaarverslag. Alles blijft op dit toestel en zit in uw back-up.</p><div id="vd-meter">' + verdiepMeterHtml(b) + '</div></div>';
+    var s = '<div class="kaart-plat" data-verdiepen><h2>Uw beoordeling</h2><p class="zacht">Leg hier vast wat u zelf over dit aandeel weet. ' + hoe('beoordeling') + '</p><div id="vd-meter">' + verdiepMeterHtml(b) + '</div></div>';
     var bo = b.methoden.filter(function (m) { return m.beoordeling; });
     s += '<div class="kaart-plat"><h2>Uw eigen beoordeling</h2><p class="zacht">Geef een cijfer van 1 (slecht) tot 5 (uitstekend); 3 is neutraal. Klik nogmaals op uw cijfer om het weg te halen.</p>' + bo.map(function (m) {
       var cur = v.scores[m.id];
@@ -1578,7 +1572,7 @@
     });
   }
   function checkHtml(rec) {
-    var ant = winkel.checklist(rec.ticker), s = '<div class="kaart-plat"><h2>Kwaliteitscheck</h2><p class="zacht">De 15 punten van Philip Fisher over concurrentiepositie en management, ook gebruikt door NAIC-beleggers. U vult zelf in wat u weet. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten u beantwoord heeft. Wat u hier schrijft blijft op dit toestel en zit in uw back-up.</p><p id="ck-voortgang" aria-live="polite"><b>' + h(voortgangTekst(Checklist.voortgang(ant))) + '</b></p></div>';
+    var ant = winkel.checklist(rec.ticker), s = '<div class="kaart-plat"><h2>Kwaliteitscheck</h2><p class="zacht">De 15 punten van Philip Fisher. ' + hoe('fisher') + '</p><p id="ck-voortgang" aria-live="polite"><b>' + h(voortgangTekst(Checklist.voortgang(ant))) + '</b></p></div>';
     ['Concurrentiepositie', 'Management', 'Financieel'].forEach(function (gn) { s += '<h3>' + h(gn) + '</h3>'; Checklist.PUNTEN.filter(function (p) { return p.groep === gn; }).forEach(function (p) {
       var a = ant[p.id] || { a: null, n: '' };
       s += '<div class="kaart-plat ck" data-punt="' + p.id + '"><p><b>' + p.id + '. ' + h(p.tekst) + '</b></p><div class="keuze" role="group" aria-label="Antwoord op punt ' + p.id + '">' +
@@ -1675,10 +1669,65 @@
   }
   document.addEventListener('click', function (e) { var k = e.target.closest ? e.target.closest('[data-methode]') : null; if (k) toonMethode(k.getAttribute('data-methode')); });
 
-  function toonPaginaHulp() {
+
+  /* ---- Hulp per pagina: hoe het werkt staat in de hulp (het vraagteken), niet tussen de gegevens. Een link opent de hulp
+     meteen op het goede onderdeel. Onderdelen met getallen uit de app staan hier; de vaste tekst in hulp.js. ---- */
+  function hoe(id, tekst) { return '<button type="button" class="hoe-link" data-hoe="' + h(id) + '">ⓘ ' + h(tekst || 'Hoe werkt dit?') + '</button>'; }
+  function lijst(items) { return '<ul class="punten">' + items.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>'; }
+  var HULP_EXTRA = {
+    oordeel: function () {
+      var T = TERUG_TA;
+      return [{ id: 'oordeel', kop: 'Hoe komt het oordeel tot stand?', html: uitlegOordeelInhoud() },
+        { id: 'koopmoment', kop: 'Koopmoment', html: '<p>Bij NAIC Kopen zegt het trendsignaal (tabblad Koers) of het moment gunstig is: NAIC kiest wát, de trend wannéér.</p><p class="zacht">Teruggerekend 2018–2025: NAIC Kopen deed het na 1 jaar ' + pct(T.kopenGunstig) + ' bij een gunstig moment, ' + pct(T.kopenNeutraal) + ' bij neutraal en ' + pct(T.kopenAfwachten) + ' bij afwachten, ten opzichte van het gemiddelde (' + T.nG + ', ' + T.nN + ' en ' + T.nA + ' gevallen; kleine aantallen, geen garantie). Met ook een negatieve middellange termijn: −18% na 1 jaar (16 gevallen).</p>' }];
+    },
+    koers: function () {
+      return [{ id: 'middellang', kop: 'Oordeel middellange termijn', html: '<p>Vier onderdelen (trend, relatieve sterkte, bijstelling van de winstverwachting en kwartaalcijfers) tellen elk +1, 0 of −1. Positief vanaf +2, negatief vanaf −2; minstens 3 onderdelen moeten bekend zijn.</p><p class="zacht">Teruggerekend (elke maand, alle fondsen, 2016–2026): het oordeel samen werkte beter dan elk onderdeel apart: positief deed het na 12 maanden gemiddeld 6,9 procentpunt beter dan negatief, in 76% van de maanden. Trend en relatieve sterkte wegen het zwaarst in die uitkomst; de kwartaalcijfers zijn zwakker maar wel meetbaar. Zwaarder wegen van trend en sterkte maakte het niet beter, dus alle onderdelen tellen even zwaar. Voor de winstverwachtingen van analisten steunen we op onderzoek: Yahoo bewaart die geschiedenis niet. Telt niet mee in het NAIC-oordeel; geen garantie.</p>' },
+        { id: 'trend', kop: 'Trendsignaal', html: '<p>Vijf vaste checks op de dagkoersen: koers boven het gemiddelde van 200 dagen, gemiddelde van 50 boven dat van 200 dagen, koers hoger dan 6 maanden geleden, MACD boven de signaallijn en RSI onder 70. 4 of 5 ja: gunstig; 2 of 3: neutraal; 0 of 1: afwachten.</p><p class="zacht">Alleen over het koersverloop van de afgelopen maanden, voor wie het moment van kopen wil kiezen. Staat los van het NAIC-oordeel en de gezondheidscheck en verandert die niet. Wordt elke nacht opnieuw berekend. Teruggerekend over ' + TERUG_TA.periode + ' (elke maand, alle fondsen): aandelen met een gunstig moment deden het na 12 maanden gemiddeld ' + String(TERUG_TA.spread12).replace('.', ',') + ' procentpunt beter dan aandelen met afwachten, na 3 maanden ' + String(TERUG_TA.spread3).replace('.', ',') + '. Het werkt vooral door dalende trends te mijden. De drie trendchecks doen het werk; MACD voegt weinig toe en “niet overkocht” werkte eerder averechts. Geen garantie.</p>' },
+        { id: 'relatief', kop: 'Relatieve sterkte', html: '<p>Hoeveel procent de koers meer (+) of minder (−) steeg dan de eigen index; koersen zonder dividend aan beide kanten. Fondsen die het al maanden beter doen dan de markt, blijven dat vaak nog een tijd doen (momentum).</p><p class="zacht">Teruggerekend 2016–2026 (elke maand, alle fondsen): het sterkste vijfde deel over 12 maanden deed het het jaar erna gemiddeld 8,7 procentpunt beter dan het zwakste vijfde deel; in 72% van de maanden was het sterkste deel beter. Geen garantie. Informatie, telt niet mee in het oordeel.</p>' },
+        { id: 'verwachting', kop: 'Analisten en kwartaalcijfers', html: '<p>Bijgesteld: hoeveel de gemiddelde verwachting van analisten voor de winst per aandeel veranderde. Verhogingen worden vaak gevolgd door een betere koers in de maanden erna (onderzoek); het advies zelf (kopen/houden) zegt minder.</p><p>Kwartaalcijfers: na cijfers die duidelijk beter zijn dan verwacht, loopt de koers vaak nog een tijd door.</p><p class="zacht">Teruggerekend (2014–2026, 8.652 bekendmakingen): na een verrassing van meer dan +5% deed het fonds het in de 6 maanden erna gemiddeld 1,3 procentpunt beter dan na cijfers onder de verwachting, gerekend vanaf de dag ná de bekendmaking. Een klein maar meetbaar effect.</p>' },
+        { id: 'kort', kop: 'Feiten voor de korte termijn', html: '<p>Datum van de volgende kwartaalcijfers, de verwachte bandbreedte voor een maand (uit de beweeglijkheid van het afgelopen jaar), de RSI en de afstand tot het hoogste punt van het jaar.</p><p class="zacht">Geen koop- of verkoopsignaal: in het terugrekenen voorspelde geen enkele maatstaf het rendement over 1 maand. Wie speculeert, doet dat op eigen risico; deze feiten helpen alleen om het moment en het risico in te schatten.</p>' },
+        { id: 'risico', kop: 'Risico en terugval', html: '<p>De grootste daling laat zien wat u in een slechte periode had moeten uithouden. Beweeglijkheid: hoe sterk de koers per jaar schommelt (onder 20% rustig, boven 35% beweeglijk). Beta 1,5 betekent dat de koers gemiddeld anderhalf keer zo hard beweegt als de index, omhoog en omlaag.</p><p class="zacht">Teruggerekend 2016–2026 deden beweeglijke aandelen het beter, maar dat komt deels doordat alleen de fondsen van nu zijn meegeteld (beweeglijke fondsen die hard onderuit gingen, vielen uit de index) en past bij een periode waarin groeiaandelen wonnen. De afstand tot de top en de grootste daling zeiden niets over het rendement daarna. Informatie, telt niet mee in het oordeel.</p>' }];
+    },
+    naic: function () {
+      return [{ id: 'naic', kop: 'De NAIC-gids', html: '<p>De Stock Selection Guide van de NAIC (nu BetterInvesting), een Amerikaanse beleggersvereniging, in zes stappen. Het oordeel op het tabblad Oordeel volgt dezelfde stappen. Geen koersdoel en geen advies.</p>' + uitlegOordeelInhoud() },
+        { id: 'begrippen', kop: 'Begrippen', html: lijst(['<b>Winstmarge vóór belasting</b>: winst vóór belasting als percentage van de omzet. Dit is de marge die de NAIC bedoelt. Bij banken en verzekeraars zegt die weinig en wordt ze niet getoond.',
+          '<b>Rendement op eigen vermogen</b>: nettowinst gedeeld door het eigen vermogen aan het eind van het jaar. Bij negatief of nul eigen vermogen blijft het leeg.',
+          '<b>Schuld t.o.v. totaal kapitaal</b>: langlopende schuld gedeeld door schuld plus eigen vermogen. Lager is veiliger; wat gebruikelijk is verschilt per sector. Ter informatie; telt niet mee in het oordeel.',
+          'Een streepje betekent dat er te weinig of geen positieve cijfers zijn.']) },
+        { id: 'bereik', kop: 'Koersbereik in derden', html: '<p>De NAIC deelt het bereik tussen de lage en de hoge koers in drie gelijke stukken en kijkt of er minstens drie keer zoveel opwaarts als neerwaarts is. Dit is een beschrijving van het verleden, geen koopadvies en geen voorspelling. Het label verschijnt alleen als de gegevens van het bedrijf bevestigd zijn. Staat de koers op of onder het laagste punt, dan is de verhouding niet te berekenen.</p>' }];
+    },
+    gezond: function () {
+      return [{ id: 'fisher', kop: 'Kwaliteitscheck (Philip Fisher)', html: '<p>De 15 punten van Philip Fisher over concurrentiepositie en management, ook gebruikt door NAIC-beleggers. U vult zelf in wat u weet. De app beoordeelt niets en geeft geen score; ze telt alleen hoeveel punten u beantwoord heeft. Wat u hier schrijft blijft op dit toestel en zit in uw back-up.</p>' },
+        { id: 'beoordeling', kop: 'Uw beoordeling', html: '<p>Uw beoordeling staat bij het aandeel ter informatie en telt niet mee in het oordeel. Een ontbrekend cijfer dat u invult (uit het jaarverslag) vult wel de bijbehorende meting aan, en vervangt nooit een cijfer uit het jaarverslag. Alles blijft op dit toestel en zit in uw back-up.</p>' }];
+    },
+    cijfers: function () { return HULP_EXTRA.gezond(); },
+    signalen: function () {
+      return [{ id: 'signalen', kop: 'Wat betekenen de signalen?', html: lijst(['<b>Koopzone</b>: koers in het onderste derde van het verwachte bereik met minstens 3 : 1.', '<b>Verkoopzone</b>: het bovenste derde.', '<b>Kwaliteit daalt</b>: een NAIC-kwaliteitstoets valt af (omzet, marge of rendement op eigen vermogen). NAIC verkoopt ook als de kwaliteit terugloopt.',
+        '<b>Middellange termijn</b>: het oordeel uit trend, relatieve sterkte, analisten en kwartaalcijfers (tabblad Koers). Een omslag naar positief of negatief is teruggerekend de best onderbouwde aanwijzing voor de komende 3 tot 12 maanden.']) + '<p class="zacht">Selectiehulp, geen beleggingsadvies.</p>' }];
+    },
+    markt: function () {
+      return [{ id: 'volgorde', kop: 'Volgorde', html: '<p>Standaard: NAIC Kopen eerst, dan Neutraal, dan Vermijden; binnen elke groep de meeste ruimte opwaarts tegen neerwaarts bovenaan. U kunt ook anders sorteren.</p><p class="zacht">Selectiehulp, geen beleggingsadvies.</p>' }];
+    },
+    kwaliteit: function () {
+      return [{ id: 'termen', kop: 'Gecorrigeerd en tweede bron', html: lijst(['<b>Gecorrigeerd</b>: alleen als de eigen nettowinst en het aantal aandelen van de app aantonen dat de tweede bron gelijk heeft.', '<b>Tweede bron</b>: een afwijking betekent niet dat de app fout zit; vaak gaat het om een andere definitie of een herziening.']) }];
+    },
+    model: function () {
+      var d = modelData(), B = d && (d.live || d.terug) || { bedrag: 1000, kosten: 3, fx: null };
+      return [{ id: 'regels', kop: 'De regels', html: lijst([
+        '<b>Kopen</b>: bij NAIC Kopen (regel “Gunstig koopmoment”: ook een gunstig koopmoment). Voor ongeveer ' + eur(B.bedrag) + '; is één aandeel duurder, dan 1 aandeel. Een fonds dat al in de portefeuille zit, wordt niet bijgekocht.',
+        '<b>Verkopen</b>: als de koers in de NAIC-verkoopzone of erboven staat. Regel “Ook verkopen bij zwakkere kwaliteit”: ook als de kwaliteit wegvalt (geen groeibedrijf meer, een verliesjaar, of een NAIC-kwaliteitstoets valt af: de omzet draagt de winstgroei niet, de marge vóór belasting of het rendement op eigen vermogen daalt). Daarna kan het fonds bij een nieuwe kans opnieuw worden gekocht.',
+        '<b>Uitvoering</b>: tegen de slotkoers van de handelsdag ná het signaal (niet vooruitkijken). Kosten ' + eur(B.kosten) + ' per aankoop en per verkoop.',
+        '<b>Euro</b>: dollars en ponden met de dagkoers van de ECB' + (B.fx && B.fx.datum ? ' (laatst ' + h(datumNl(B.fx.datum)) + ')' : '') + '. Dividend bruto op de ex-datum, als geld (niet herbelegd). Splitsingen passen het aantal aan.',
+        '<b>Index</b>: bij elke aankoop hetzelfde bedrag fictief in de eigen index van het fonds (AEX, DAX, S&amp;P 500 …), met dezelfde kosten, verkocht op hetzelfde moment. Indexen zonder dividend, behalve de DAX; daarom staat ook het rendement zonder dividend erbij.',
+        'Elke nacht bijgewerkt; aankopen en verkopen worden nooit achteraf veranderd. De teruggerekende versie gebruikt dezelfde regels met wekelijkse signalen, de fondsen van nu en de jaarcijfers zoals nu bekend.']) }];
+    }
+  };
+  function toonPaginaHulp(sectie) {
     var x = Hulp.voor(Hulp.sleutelVoorHash(location.hash)), vorige = document.activeElement;
+    var extra = HULP_EXTRA[x.sleutel] ? HULP_EXTRA[x.sleutel]() : [];
     $laag.innerHTML = '<div class="intro-achter" id="ph-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="ph-t"><h2 id="ph-t">' + h(x.titel) + '</h2><p>' + h(x.intro) + '</p>' +
-      '<ul class="punten">' + x.punten.map(function (p) { return '<li>' + h(p) + '</li>'; }).join('') + '</ul>' + (x.tip ? '<p class="zacht">' + h(x.tip) + '</p>' : '') +
+      (extra.length ? '<h3>Wat ziet u</h3>' : '') + '<ul class="punten">' + x.punten.map(function (p) { return '<li>' + h(p) + '</li>'; }).join('') + '</ul>' + (x.tip ? '<p class="zacht">' + h(x.tip) + '</p>' : '') +
+      extra.map(function (e) { return '<section class="hulp-deel" id="hulp-' + h(e.id) + '" data-hulp-deel="' + h(e.id) + '"><h3>' + h(e.kop) + '</h3>' + e.html + '</section>'; }).join('') +
       '<div class="knoppen"><button class="knop" id="ph-sluit">Sluiten</button><a class="knop rand" id="ph-alles" href="#/hulp">Alle uitleg en begrippen</a></div></div></div>';
     function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
     function toets(e) { if (e.key === 'Escape') sluit(); }
@@ -1686,9 +1735,12 @@
     document.getElementById('ph-sluit').addEventListener('click', sluit);
     document.getElementById('ph-alles').addEventListener('click', function () { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); });
     document.getElementById('ph-achter').addEventListener('click', function (e) { if (e.target.id === 'ph-achter') sluit(); });
-    document.getElementById('ph-sluit').focus();
+    var doel = sectie && document.getElementById('hulp-' + sectie);
+    if (doel) { doel.setAttribute('data-gekozen', ''); if (doel.scrollIntoView) doel.scrollIntoView({ block: 'start' }); }
+    document.getElementById('ph-sluit').focus({ preventScroll: true });
   }
-  var hk = document.getElementById('hulp-knop'); if (hk) hk.addEventListener('click', toonPaginaHulp);
+  var hk = document.getElementById('hulp-knop'); if (hk) hk.addEventListener('click', function () { toonPaginaHulp(); });
+  document.addEventListener('click', function (e) { var k = e.target.closest ? e.target.closest('[data-hoe]') : null; if (k) { e.preventDefault(); toonPaginaHulp(k.getAttribute('data-hoe')); } });
 
   function schermHulp() {
     return '<section><h1>Hulp</h1><div class="kaart-plat"><h2>Zo gebruikt u de app</h2><ul class="punten">' +
@@ -1697,7 +1749,7 @@
       '<li><b>Volglijst</b> en <b>Portefeuille</b>: uw eigen aandelen. Met de ster zet u een aandeel op uw volglijst; bij Portefeuille voert u aankopen in.</li>' +
       '<li><b>Achtergrond</b>: de datakwaliteit, hoe het oordeel het in het verleden deed, de methode, en deze hulp.</li>' +
       '<li>Tik op een aandeel voor details. Onderin kiest u <b>Oordeel</b> (wat vindt de app en waar moet u op letten), <b>NAIC</b> (de gids in zes stappen), <b>Gezondheid</b> (de zes metingen en uw eigen onderzoek), <b>Koers</b> (middellange en korte termijn, risico) en <b>Cijfers</b> (jaarcijfers en bronnen).</li>' +
-      '<li>Het vraagteken rechtsboven legt uit wat u op de pagina ziet. Het tandwiel opent Instellingen, waar u een back-up maakt.</li></ul></div>' +
+      '<li>Het vraagteken rechtsboven legt uit wat u op de pagina ziet en hoe het werkt (regels en terugrekenen); een link <b>ⓘ Hoe werkt dit?</b> bij een onderdeel opent die uitleg meteen op de goede plek. Het tandwiel opent Instellingen, waar u een back-up maakt.</li></ul></div>' +
       '<div class="kaart-plat"><h2>Hoe komt het oordeel tot stand?</h2><p>Het oordeel (Kopen, Neutraal of Vermijden) volgt de <b>Stock Selection Guide</b> van de NAIC:</p><ul class="punten">' +
       '<li><b>Groeibedrijf?</b> De winst per aandeel groeit minstens ' + Naic.GROEI_MIN + '% per jaar. U kunt bij het aandeel ook uw eigen groeiverwachting invullen.</li>' +
       '<li><b>Goed bedrijf?</b> Omzet en winst groeien gelijk op, en marge en rendement op eigen vermogen dalen niet.</li>' +

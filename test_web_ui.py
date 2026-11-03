@@ -190,6 +190,23 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
         self.assertEqual(self.fouten, [])
 
+    def test_elke_hoe_werkt_dit_link_opent_een_onderdeel_van_de_hulp(self):
+        pg = self.pagina()
+        pg.goto(INDEX + '#/')
+        pg.evaluate("window.MODEL_DATA = { gemaakt: '2026-11-03', live: { start: '2026-11-03', bijgewerkt: '2026-11-03', bedrag: 1000, kosten: 3, fx: null, varianten: [{ id: 'naic', naam: 'Alle kansen', regel: 'NAIC Kopen', samenvatting: { inleg: 0, wacht: 0 }, wacht: [], posities: [], historie: [] }] }, terug: null }")
+        gezien = 0
+        for hash_ in ('#/', '#/markt', '#/signalen', '#/kwaliteit', '#/model', '#/a/AAPL/oordeel', '#/a/AAPL/naic', '#/a/AAPL/gezond', '#/a/AAPL/koers', '#/a/AAPL/cijfers'):
+            pg.evaluate("h => { location.hash = h; }", hash_); pg.wait_for_timeout(150)
+            pg.evaluate("document.querySelectorAll('details').forEach(function(d){d.open=true})")
+            ids = pg.evaluate("[...new Set([...document.querySelectorAll('main [data-hoe]')].map(function(x){return x.getAttribute('data-hoe')}))]")
+            for i in ids:
+                pg.locator('main [data-hoe="%s"]' % i).first.click()
+                self.assertEqual(pg.locator('#hulp-' + i).count(), 1, hash_ + ' ' + i)
+                self.assertIsNotNone(pg.locator('#hulp-' + i).get_attribute('data-gekozen'))
+                pg.click('#ph-sluit'); gezien += 1
+        self.assertGreaterEqual(gezien, 8)
+        self.assertEqual(self.fouten, [])
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')
@@ -324,7 +341,11 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('Gunstig moment', txt)
         self.assertIn('4 van 5 checks', txt)
         self.assertIn('sinds 9 handelsdagen', txt)
-        self.assertIn('los van het NAIC-oordeel', txt)
+        kaart.locator('[data-hoe=trend]').click()
+        self.assertIn('los van het NAIC-oordeel', pg.inner_text('#hulp-trend'))
+        self.assertIsNotNone(pg.locator('#hulp-trend').get_attribute('data-gekozen'))
+        self.assertIn('5,7 procentpunt', pg.inner_text('#hulp-trend'))
+        pg.click('#ph-sluit')
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         # Zonder de nieuwe kentallen (bijv. gegevens van een oudere run): geen uitkomst, wel de bekende checks.
         pg2, f2 = ctx(("{slot:110,datum:'%s',sma50:105,sma200:100,rsi14:50,reeks:[['2026-10-05',110]]}") % vandaag)
@@ -695,7 +716,9 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         if n >= 8:
             self.assertIn('onderste derde', t)
             self.assertEqual(pg.locator('[data-bereik] [data-label]').count(), 0 if 'Nog niet bevestigd' in pg.inner_text('main') else 1)
-            self.assertIn('geen koopadvies', t)
+            pg.locator('[data-bereik] [data-hoe=bereik]').click()
+            self.assertIn('geen koopadvies', pg.inner_text('#hulp-bereik'))
+            pg.click('#ph-sluit')
         else:
             self.assertIn('Onbekend', t)
         pg2 = pagina('2020-01-01')
@@ -1084,7 +1107,9 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertEqual(pg.locator('[data-koersgrafiek="6m"]').count(), 1)
         self.assertIn('+6,0%', pg.inner_text('[data-relatief-kaart]'))
         self.assertIn('beter dan de index', pg.inner_text('[data-relatief-kaart]'))
-        self.assertEqual(pg.locator('[data-kt-terug]').count(), 1)                           # onderbouwing uit het terugrekenen
+        self.assertEqual(pg.locator('[data-kortetermijn] [data-hoe=trend]').count(), 1)       # onderbouwing uit het terugrekenen: in de hulp
+        for deel in ('relatief', 'middellang', 'kort', 'risico', 'verwachting'):
+            self.assertEqual(pg.locator('[data-hoe=%s]' % deel).count(), 1, deel)
         self.assertEqual(pg.locator('[data-laag]').all_inner_texts()[0].split('\n')[0].split(' ')[0], 'Middellange')    # drie lagen
         self.assertEqual([x.get_attribute('data-laag') for x in pg.locator('[data-laag]').all()], ['middellang', 'kort', 'risico'])
         self.assertEqual(pg.locator('[data-middellang="positief"]').count(), 1)              # trend, sterkte, bijstelling en verrassing: alle vier +1
