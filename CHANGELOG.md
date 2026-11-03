@@ -2,6 +2,16 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.9 (2026.11.03)
+**Modelportefeuille.** Een fictieve portefeuille die de signalen van de app automatisch volgt, om te zien hoe betrouwbaar ze over langere tijd zijn. In een eigen paarse kleur met het label *fictief*, zodat hij nooit met uw eigen portefeuille verward wordt.
+- **Regels:** bij NAIC Kopen voor ongeveer € 1.000 kopen (minstens 1 aandeel), bij de verkoopzone verkopen. Uitgevoerd tegen de slotkoers van de handelsdag ná het signaal, met € 3 kosten per transactie. Dollars en ponden met de dagkoers van de ECB; dividend bruto op de ex-datum; splitsingen passen het aantal aan.
+- **Twee regels naast elkaar:** alle kansen, en alleen kansen met een gunstig koopmoment.
+- **Vergelijking met de index:** bij elke aankoop hetzelfde bedrag fictief in de eigen index, verkocht op hetzelfde moment.
+- **Zekerheid vastgelegd:** bij elke aankoop hoe zeker de cijfers waren (Bevestigd, uit jaarverslag, indicatief), om later te zien of dat uitmaakt.
+- **Elke nacht bijgewerkt** op de server, voor iedereen gelijk; aankopen en verkopen worden nooit achteraf veranderd (tak *model*).
+- **Teruggerekend vanaf 2018** met dezelfde regels (wekelijkse signalen), apart en duidelijk gemarkeerd.
+- Tegel op Start; scherm met resultaat in euro en procent, grafiek tegenover de index, open en verkochte posities (aantal, aankoop- en verkoopdatum, dividend, winst of verlies per aandeel, rendement per jaar) en de regels.
+
 ## 1.8 (2026.11.01)
 **Meerdere portefeuilles.**
 - Houd naast uw eigen portefeuille bijvoorbeeld die van een beleggingsclub bij (Portefeuille › Nog een portefeuille bijhouden). Bovenaan wisselt u met één tik; elke portefeuille heeft eigen aankopen, totalen en spreiding. Naam wijzigen en verwijderen (met bevestiging) kan ook.

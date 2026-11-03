@@ -6,6 +6,7 @@
   --ok-bg: #DDF1E5; --ok-ink: #0F5F3A; --wait-bg: #FBEFD2; --wait-ink: #6E4700; --bad-ink: #8C2F2F; --bad-bg: #F7DEDE;
   --seg-on: #6CD4A0; --seg-off: #2F5E6B; --chart-a: #0B6E78; --chart-b: #9AA9B6; --shadow: 0 1px 2px rgba(18,32,44,.06), 0 6px 18px rgba(18,32,44,.05);
   --radius: 18px; --nav-h: 64px; color-scheme: light;
+  --model: #6B46C1; --model-bg: #F0EBFC; --model-ink: #4A2C96;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -13,9 +14,11 @@
     --acc: #5CC1CC; --acc-ink: #072A30; --hero: #123F4C; --hero-ink: #FFFFFF; --hero-mut: #B6DDE2;
     --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3; --bad-bg: #4A2020;
     --seg-on: #6CD4A0; --seg-off: #2F5E6B; --chart-a: #5CC1CC; --chart-b: #6F8190; --shadow: none; color-scheme: dark;
+    --model: #B9A2FF; --model-bg: #2A2342; --model-ink: #D6C9FF;
   }
 }
 :root[data-theme="dark"] {
+  --model: #B9A2FF; --model-bg: #2A2342; --model-ink: #D6C9FF;
   --bg: #0F161C; --surface: #1A242D; --ink: #E6EDF2; --mut: #A3B2BF; --line: #2E3C48; --line-soft: #243039;
   --acc: #5CC1CC; --acc-ink: #072A30; --hero: #123F4C; --hero-ink: #FFFFFF; --hero-mut: #B6DDE2;
   --ok-bg: #1B4331; --ok-ink: #8EE0B4; --wait-bg: #4A3A12; --wait-ink: #F4D58A; --bad-ink: #F0A3A3; --bad-bg: #4A2020;
@@ -397,3 +400,16 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .pf-keuze .zacht { font-weight: 400; margin-left: 4px; }
 .pf-beheer { margin: 0 0 14px; }
 .pf-beheer summary { cursor: pointer; color: var(--accent, inherit); padding: 6px 0; }
+
+/* Modelportefeuille (1.9): eigen kleur, zodat hij nooit met de eigen portefeuille verward wordt */
+.tegel-model { grid-column: 1 / -1; background: var(--model-bg); border-color: var(--model); border-left: 6px solid var(--model); }
+.tegel-model small { color: var(--model-ink); }
+.tegel-model b { color: var(--model-ink); }
+.tegel-model .rend[data-teken="plus"] { color: var(--ok-ink); } .tegel-model .rend[data-teken="min"] { color: var(--bad-ink); }
+.fictief { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--model-ink); background: var(--model-bg); border: 1px solid var(--model); border-radius: 999px; padding: 1px 8px; vertical-align: 2px; }
+.model-scherm h1 { color: var(--model-ink); }
+.model-scherm .kpi { border-color: var(--model); }
+.model-scherm .knop.model-aan { background: var(--model); color: #fff; border-color: var(--model); }
+.model-scherm .lijst { border-left: 4px solid var(--model); }
+.grafiek .model-lijn { stroke: var(--model); }
+.model-regel { flex-wrap: wrap; }

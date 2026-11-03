@@ -7,6 +7,12 @@
       'Onderste rij, de markt: Kansen (hoeveel fondsen nu NAIC Kopen zijn), Marktbeeld (de verdeling Kopen, Neutraal en Vermijden over alle fondsen) en Zekerheid (hoeveel fondsen bevestigde of officiële cijfers hebben).',
       'Onderaan staat van welke dag de gegevens zijn.',
       'In het menu: Markt (kansen en alle fondsen), Volglijst, Portefeuille en Achtergrond (datakwaliteit, het oordeel in het verleden, uitleg en instellingen).'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
+    model: ['Modelportefeuille', 'Een fictieve portefeuille die de signalen van de app automatisch volgt, om te zien of ze over langere tijd werken.', [
+      'Bij elke NAIC-koopkans koopt de modelportefeuille voor ongeveer 1.000 euro (minstens 1 aandeel); staat de koers in de verkoopzone, dan verkoopt hij. Uitgevoerd tegen de slotkoers van de dag erna, met 3 euro kosten per transactie.',
+      'Twee regels naast elkaar: alle kansen, en alleen kansen met een gunstig koopmoment. Zo ziet u of het koopmoment helpt.',
+      'De vergelijking met de index laat zien wat hetzelfde geld in de index had opgeleverd. Pas na een paar jaar zegt dat echt iets.',
+      'Teruggerekend toont dezelfde regels vanaf 2018 op oude koersen: een indruk, geen bewijs (fondsen en cijfers van nu).',
+      'De paarse kleur en het label fictief houden hem apart van uw eigen portefeuille.'], 'Fictief en geen beleggingsadvies.'],
     signalen: ['Signalen', 'Wat er speelt bij uw eigen aandelen, en wat er sinds de vorige update veranderde.', [
       'Uw aandelen: bij de aandelen in uw portefeuille en op uw volglijst ziet u wanneer ze in de koopzone of verkoopzone staan, of wanneer de kwaliteit terugloopt (NAIC).',
       'Nieuw sinds de vorige update: welke fondsen naar NAIC Kopen of Vermijden gingen. Dat vergelijkt de app met wat u de vorige keer zag; het staat alleen op dit toestel.'], null],

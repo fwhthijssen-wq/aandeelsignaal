@@ -182,7 +182,8 @@
     var uit = [], wk = null;
     h.forEach(function (r, i) {
       var d = new Date(r[0] + 'T12:00:00Z'), k = d.getUTCFullYear() + '-' + Math.floor((Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()) - Date.UTC(d.getUTCFullYear(), 0, 1)) / 604800000);
-      if (k !== wk || i === h.length - 1) { if (k === wk) uit[uit.length - 1] = r; else uit.push(r); wk = k; }
+      if (k === wk) uit[uit.length - 1] = r; else uit.push(r);       // per week het laatste punt
+      wk = k;
     });
     return uit;
   }

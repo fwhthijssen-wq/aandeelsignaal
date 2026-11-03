@@ -151,6 +151,44 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('[data-pf-kies]').count(), 2)
         self.assertEqual(self.fouten, [])
 
+    def test_modelportefeuille_tegel_en_scherm(self):
+        import subprocess
+        js = r"""
+const M = require('./web/js/model.js');
+const f = (koers, d, o) => Object.assign({ naam: 'Apple', valuta: 'USD', index: 'VS', dividenden: [['2026-03-01', 0.25]], splitsingen: [] }, { koers, koersDatum: d }, o || {});
+const s = M.nieuw('2026-01-05');
+M.stap(s, { datum: '2026-01-05', fx: { USD: 0.9, GBP: 1.2 }, fondsen: { AAPL: f(100, '2026-01-02', { oordeel: 'kopen', zone: 'koop', moment: 'gunstig', zekerheid: 'bevestigd' }) }, indexen: { VS: { datum: '2026-01-02', stand: 5000 } } });
+M.stap(s, { datum: '2026-01-06', fx: { USD: 0.9, GBP: 1.2 }, fondsen: { AAPL: f(101, '2026-01-05') }, indexen: { VS: { datum: '2026-01-05', stand: 5000 } } });
+M.stap(s, { datum: '2026-06-02', fx: { USD: 0.9, GBP: 1.2 }, fondsen: { AAPL: f(130, '2026-06-01', { zone: 'verkoop' }), MSFT: f(300, '2026-06-01', { naam: 'Microsoft', oordeel: 'kopen' }) }, indexen: { VS: { datum: '2026-06-01', stand: 5250 } } });
+M.stap(s, { datum: '2026-06-03', fx: { USD: 0.9, GBP: 1.2 }, fondsen: { AAPL: f(131, '2026-06-02'), MSFT: f(305, '2026-06-02', { naam: 'Microsoft' }) }, indexen: { VS: { datum: '2026-06-02', stand: 5300 } } });
+const a = M.voorApp(s);
+process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Object.assign(M.voorApp(s), { periode: ['2018-04-27', '2026-10-30'], opmerking: 'Teruggerekend (test).' }) }));
+"""
+        data = subprocess.run(['node', '-e', js], capture_output=True, text=True, check=True, cwd=str(Path(__file__).resolve().parent)).stdout
+        pg = self.pagina()
+        pg.goto(INDEX + '#/')
+        self.assertEqual(pg.locator('[data-tegel=model]').count(), 0, 'zonder gegevens geen tegel')
+        pg.evaluate("d => { window.MODEL_DATA = JSON.parse(d); location.hash = '#/markt'; location.hash = '#/'; }", data)
+        tegel = pg.inner_text('[data-tegel=model]')
+        self.assertIn('MODELPORTEFEUILLE', tegel.upper()); self.assertIn('FICTIEF', tegel.upper())
+        self.assertIn('Teruggerekend sinds 2018', tegel)
+        pg.click('[data-tegel=model]'); pg.wait_for_selector('.model-scherm')
+        main = pg.inner_text('main')
+        self.assertIn('Modelportefeuille', main)
+        self.assertIn('Open posities', main); self.assertIn('Verkocht', main)
+        self.assertIn('Apple', main); self.assertIn('Microsoft', main)
+        self.assertIn('Dezelfde bedragen in de index', main)
+        self.assertEqual(pg.locator('[data-model-grafiek] svg').count(), 1)
+        self.assertIn('zekerheid bij aankoop: Bevestigd', main)
+        # regel kiezen: alleen gunstig koopmoment (Microsoft had geen gunstig moment)
+        pg.click('[data-model-variant=moment]')
+        self.assertNotIn('Microsoft', pg.inner_text('[data-model-positie=MSFT]') if pg.locator('[data-model-positie=MSFT]').count() else '')
+        self.assertEqual(pg.locator('[data-model-positie=MSFT]').count(), 0)
+        pg.click('[data-model-bron=terug]')
+        self.assertIn('Teruggerekend (test).', pg.inner_text('[data-model-terug-melding]'))
+        self.assertFalse(pg.evaluate('document.documentElement.scrollWidth>innerWidth'))
+        self.assertEqual(self.fouten, [])
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')

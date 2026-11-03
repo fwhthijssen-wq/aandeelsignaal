@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.8 (2026.11.01)';
+  var APP_VERSIE = '1.9 (2026.11.03)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -645,8 +645,8 @@
 
   var HOOFD = [['#/', 'Start', 'start'], ['#/markt', 'Markt', 'markt'], ['#/volglijst', 'Volglijst', 'volglijst'], ['#/portefeuille', 'Portefeuille', 'portefeuille'], ['#/achtergrond', 'Achtergrond', 'achtergrond']];
   /* Schermen die niet in het menu staan, horen bij een menuknop (voor het actieve menu en het kruimelpad). */
-  var HOORT_BIJ = { '#/signalen': '#/', '#/kwaliteit': '#/achtergrond', '#/hulp': '#/achtergrond', '#/instellingen': '#/achtergrond' };
-  var SCHERM_NAAM = { '#/': 'Start', '#/markt': 'Markt', '#/volglijst': 'Volglijst', '#/portefeuille': 'Portefeuille', '#/achtergrond': 'Achtergrond', '#/signalen': 'Signalen', '#/kwaliteit': 'Datakwaliteit', '#/hulp': 'Hulp', '#/instellingen': 'Instellingen', '#/vergelijk': 'Vergelijken' };
+  var HOORT_BIJ = { '#/signalen': '#/', '#/model': '#/', '#/kwaliteit': '#/achtergrond', '#/hulp': '#/achtergrond', '#/instellingen': '#/achtergrond' };
+  var SCHERM_NAAM = { '#/': 'Start', '#/markt': 'Markt', '#/volglijst': 'Volglijst', '#/portefeuille': 'Portefeuille', '#/achtergrond': 'Achtergrond', '#/signalen': 'Signalen', '#/model': 'Modelportefeuille', '#/kwaliteit': 'Datakwaliteit', '#/hulp': 'Hulp', '#/instellingen': 'Instellingen', '#/vergelijk': 'Vergelijken' };
   var herkomst = '#/';      // laatste algemene scherm: daar brengt Terug u heen vanaf een aandeel
 
   /* ---- Start als cockpit: eerst het geheel (portefeuille, actie, kansen, markt), van daaruit inzoomen ---- */
@@ -688,7 +688,7 @@
     var balk = ['bevestigd', 'jaarverslag', 'tweebronnen', 'indicatief', 'geen'].map(function (k) { return tel[k] ? '<i data-lab="' + k + '" style="flex:' + tel[k] + '"></i>' : ''; }).join('');
     var officieel = (tel.bevestigd || 0) + (tel.jaarverslag || 0);
     var t6 = '<a class="tegel" href="#/kwaliteit" data-tegel="zekerheid"><small>Zekerheid van de cijfers</small><b>' + (tel.bevestigd || 0) + '<span class="munt"> bevestigd</span></b><span>' + officieel + ' van ' + items.length + ' uit officiële jaarverslagen</span><span class="kw-balk klein" aria-hidden="true">' + balk + '</span>' + pijl + '</a>';
-    return '<div class="tegels" data-tegels><h2 class="vh">Mijn aandelen</h2>' + t1 + t2 + t3 + '<h2 class="vh">De markt</h2>' + t4 + t5 + t6 + '</div>';
+    return '<div class="tegels" data-tegels><h2 class="vh">Mijn aandelen</h2>' + t1 + t2 + t3 + '<h2 class="vh">De markt</h2>' + t4 + t5 + t6 + modelTegelHtml(pijl) + '</div>';
   }
   function marktbeeldHtml() {
     var per = {}, alles = { kopen: 0, neutraal: 0, vermijden: 0, geen: 0, n: 0 };
@@ -904,6 +904,102 @@
   }
   var INDEX_NAAM = { VS: 'Verenigde Staten', OVERIG: 'Overige', AEX: 'AEX (Amsterdam)', AMX: 'AMX (Amsterdam midcap)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)' };
   function indexLijst() { var o = {}; DATA.aandelen.forEach(function (a) { (a.indices || []).forEach(function (i) { o[i] = true; }); }); return Object.keys(o).sort(); }
+  /* ---- Modelportefeuille: fictief, volgt de signalen automatisch (web/js/model.js, elke nacht bijgewerkt) ---- */
+  var modelKeuze = { variant: 'naic', bron: null, alles: {} };
+  function modelData() { return window.MODEL_DATA || null; }
+  function modelHeeft(b) { return !!(b && b.varianten && b.varianten.some(function (v) { return v.posities.length || v.wacht.length; })); }
+  function modelBronKeuze(d) {
+    if (modelKeuze.bron && d[modelKeuze.bron]) return modelKeuze.bron;
+    return modelHeeft(d.live) || !d.terug ? 'live' : 'terug';
+  }
+  function eur(n, dec) { return getal(n, dec == null ? 0 : dec) + ' €'; }
+  function eurTeken(n) { return (n > 0 ? '+' : n < 0 ? '−' : '') + getal(Math.abs(n), 0) + ' €'; }
+  function modelTegelHtml(pijl) {
+    var d = modelData(); if (!d || (!d.live && !d.terug)) return '';
+    var live = d.live && d.live.varianten[0], sl = live && live.samenvatting, tb = d.terug && d.terug.varianten[0], st = tb && tb.samenvatting;
+    var hoofd = sl && sl.inleg > 0
+      ? '<b>' + pct(sl.pct) + '</b><span class="rend" data-teken="' + (sl.resultaat > 0 ? 'plus' : sl.resultaat < 0 ? 'min' : 'nul') + '">' + eurTeken(sl.resultaat) + ' · ' + sl.open + ' open' + (sl.gesloten ? ', ' + sl.gesloten + ' verkocht' : '') + '</span>' + (sl.idxPct != null ? '<span class="zacht">Index met dezelfde bedragen: ' + pct(sl.idxPct) + '</span>' : '')
+      : '<b>' + (live ? 'Gestart' : '–') + '</b><span class="zacht">' + (live ? (sl && sl.wacht ? sl.wacht + ' aankopen bij de volgende koers' : 'Sinds ' + h(datumNl(d.live.start)) + '; de eerste aankopen volgen bij een kans') : 'Start bij de volgende nachtelijke update') + '</span>';
+    var terug = st && st.inleg > 0 ? '<span class="zacht" data-model-terug>Teruggerekend sinds ' + h(String(d.terug.periode[0]).slice(0, 4)) + ': ' + pct(st.pct) + (st.idxPct != null ? ' (index ' + pct(st.idxPct) + ')' : '') + '</span>' : '';
+    return '<a class="tegel tegel-model" href="#/model" data-tegel="model"><small>Modelportefeuille <span class="fictief">fictief</span></small>' + hoofd + terug + pijl + '</a>';
+  }
+  function modelGrafiekHtml(v) {
+    var pts = (v.historie || []).filter(function (r) { return r[1] > 0; }).map(function (r) { return { d: r[0], a: r[2] / r[1] * 100, b: r[3] > 0 ? r[4] / r[3] * 100 : null }; });
+    if (pts.length < 2) return '';
+    var vals = [0]; pts.forEach(function (p) { vals.push(p.a); if (p.b != null) vals.push(p.b); });
+    var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), sp = (hi - lo) || 1, W = 320, Ht = 170;
+    var X = function (i) { return i / (pts.length - 1) * W; }, Y = function (v) { return 10 + (1 - (v - lo) / sp) * (Ht - 32); };
+    var lijn = function (k) { var s = '', aan = false; pts.forEach(function (p, i) { if (p[k] == null) { aan = false; return; } s += (aan ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(p[k]).toFixed(1); aan = true; }); return s; };
+    var mnd = function (d) { var t = Gate.parseDay(d); return t === null ? d : new Date(t).toLocaleDateString('nl-NL', { month: 'short', year: '2-digit', timeZone: 'UTC' }); };
+    var s = '<path class="rast" d="M0 ' + Y(0).toFixed(1) + ' L' + W + ' ' + Y(0).toFixed(1) + '"/><text x="2" y="' + (Y(0) - 3).toFixed(1) + '">0%</text>' +
+      '<path class="gem" d="' + lijn('b') + '"/><path class="lijn model-lijn" d="' + lijn('a') + '"/>' +
+      '<text x="0" y="' + (Ht - 4) + '">' + h(mnd(pts[0].d)) + '</text><text x="' + W + '" y="' + (Ht - 4) + '" text-anchor="end">' + h(mnd(pts[pts.length - 1].d)) + '</text>';
+    return '<div class="kaart-plat" data-model-grafiek><h2>Rendement in de tijd</h2><svg class="grafiek groot" viewBox="0 0 ' + W + ' ' + Ht + '" role="img" aria-label="Rendement van de modelportefeuille tegenover de index">' + s + '</svg>' +
+      '<div class="legenda"><span><i style="background:var(--model)"></i>Modelportefeuille</span><span><i style="background:var(--chart-b)"></i>Dezelfde bedragen in de index</span></div><p class="zacht">Resultaat (koerswinst, verkopen en dividend, na kosten) als percentage van wat er tot dan toe is ingelegd.</p></div>';
+  }
+  function modelPositieHtml(p) {
+    var u = p.uitkomst, rec = zoek(p.ticker), sg = p.koop.signaal || {}, open = !p.verkoop;
+    var naam = rec ? '<a href="#/a/' + encodeURIComponent(p.ticker) + '">' + h(p.naam) + '</a>' : h(p.naam);
+    var regel1 = getal(p.aantal, 4).replace(/,?0+$/, '') + ' stuks · gekocht ' + h(datumNl(p.koop.datum)) + ' voor ' + getal(p.koop.koers, 2) + ' ' + h(p.valuta);
+    var regel2 = open ? 'Nu ' + getal(p.laatst.koers, 2) + ' ' + h(p.valuta) + ' (' + h(datumNl(p.laatst.datum)) + ')'
+      : 'Verkocht ' + h(datumNl(p.verkoop.datum)) + ' voor ' + getal(p.verkoop.koers, 2) + ' ' + h(p.valuta) + (p.verkoop.reden && p.verkoop.reden !== 'Verkoopzone' ? ' (' + h(p.verkoop.reden.toLowerCase()) + ')' : '');
+    var duur = u.looptijd >= 60 ? getal(u.looptijd / 30.44, 0) + ' maanden' : u.looptijd + ' dagen';
+    var extra = [u.dividend ? 'dividend ' + eur(u.dividend, 2) : '', duur, u.perJaar != null && !open ? pct(u.perJaar) + ' per jaar' : '', sg.zekerheid ? 'zekerheid bij aankoop: ' + (LAB_NAAM[sg.zekerheid] || sg.zekerheid) : ''].filter(Boolean).join(' · ');
+    return '<div class="regel model-regel" data-model-positie="' + h(p.ticker) + '"><div class="tekstkolom"><b>' + naam + '</b><span class="zacht">' + regel1 + '</span><span class="zacht">' + regel2 + '</span><span class="zacht">' + extra + '</span>' +
+      '<span style="color:' + kleur(u.resultaat) + ';font-weight:700">' + eurTeken(u.resultaat) + (u.pct == null ? '' : ' (' + pct(u.pct) + ')') + '</span>' + (u.idx ? '<span class="zacht">Index in dezelfde periode: ' + pct(u.idx.pct) + '</span>' : '') + '</div></div>';
+  }
+  function modelLijstHtml(titel, sleutel, lijst) {
+    if (!lijst.length) return '';
+    var alles = modelKeuze.alles[sleutel], N = 25, toon = alles ? lijst : lijst.slice(0, N);
+    return '<h2>' + h(titel) + ' <span class="zacht">' + lijst.length + '</span></h2><div class="lijst">' + toon.map(modelPositieHtml).join('') + '</div>' +
+      (lijst.length > N ? '<div class="knoppen"><button class="knop rand klein" data-model-alles="' + sleutel + '">' + (alles ? 'Toon minder' : 'Toon alle ' + lijst.length) + '</button></div>' : '');
+  }
+  function schermModel() {
+    var d = modelData(), s = '<section class="model-scherm"><div class="rij-kop"><h1>Modelportefeuille</h1><span class="fictief">fictief</span></div>';
+    if (!d || (!d.live && !d.terug)) return s + '<div class="kaart-plat"><p>De modelportefeuille start bij de volgende nachtelijke update.</p></div></section>';
+    var bron = modelBronKeuze(d), B = d[bron], v = B.varianten.filter(function (x) { return x.id === modelKeuze.variant; })[0] || B.varianten[0], sv = v.samenvatting;
+    s += '<p>Een fictieve portefeuille die de signalen van de app automatisch volgt: bij elke NAIC-koopkans wordt voor ongeveer ' + eur(B.bedrag) + ' gekocht, in de verkoopzone wordt verkocht. Zo ziet u na verloop van tijd hoe betrouwbaar de signalen zijn.</p>';
+    s += '<div class="pf-keuze" role="group" aria-label="Welke versie">' + [['live', 'Vanaf ' + (d.live ? datumNl(d.live.start) : 'nu')], ['terug', d.terug ? 'Teruggerekend ' + String(d.terug.periode[0]).slice(0, 4) + '–' + String(d.terug.periode[1]).slice(0, 4) : null]].filter(function (x) { return x[1] && d[x[0]]; }).map(function (x) {
+      return '<button class="knop klein' + (x[0] === bron ? ' model-aan' : ' rand') + '" data-model-bron="' + x[0] + '" aria-pressed="' + (x[0] === bron) + '">' + h(x[1]) + '</button>';
+    }).join('') + '</div>';
+    s += '<div class="pf-keuze" role="group" aria-label="Welke regel">' + B.varianten.map(function (x) {
+      return '<button class="knop klein' + (x.id === v.id ? ' model-aan' : ' rand') + '" data-model-variant="' + x.id + '" aria-pressed="' + (x.id === v.id) + '">' + h(x.naam) + '</button>';
+    }).join('') + '</div>';
+    if (bron === 'terug') s += '<div class="melding" data-model-terug-melding>' + h(d.terug.opmerking || 'Teruggerekend.') + '</div>';
+    if (!sv.inleg) {
+      s += '<div class="kaart-plat"><p>' + (v.wacht.length ? 'De eerste aankopen gebeuren bij de volgende koers.' : 'Nog geen aankopen: de portefeuille koopt zodra er een kans is.') + '</p></div>';
+    } else {
+      var kpi = function (w, t, k) { return '<div class="kpi"><b' + (k != null ? ' style="color:' + kleur(k) + '"' : '') + '>' + w + '</b><span>' + t + '</span></div>'; };
+      s += '<div class="kpis" data-model-kpis>' + kpi(eurTeken(sv.resultaat), 'Resultaat (na kosten, met dividend)', sv.resultaat) + kpi(pct(sv.pct), 'Rendement op het ingelegde geld', sv.pct) +
+        kpi(sv.idxPct != null ? pct(sv.idxPct) : '–', 'Dezelfde bedragen in de index' + (sv.idxResultaat ? ' (' + eurTeken(sv.idxResultaat) + ')' : ''), sv.idxPct) +
+        kpi(eur(sv.inleg), 'Totaal ingelegd') + kpi(eur(sv.dividend), 'Dividend ontvangen') +
+        kpi(sv.open + ' / ' + sv.gesloten, 'Open / verkocht' + (sv.gesloten ? ' (' + sv.gewonnen + ' met winst)' : '')) + '</div>';
+      if (sv.idxPct != null && sv.pctMetIdx != null) s += '<p class="zacht" data-model-vergelijk>' + (sv.pctMetIdx > sv.idxPct ? 'De signalen deden het tot nu toe beter dan de index: ' : sv.pctMetIdx < sv.idxPct ? 'De signalen deden het tot nu toe slechter dan de index: ' : 'Gelijk met de index: ') + pct(sv.pctMetIdx) + ' tegenover ' + pct(sv.idxPct) + ' (alleen posities met een index).</p>';
+      s += modelGrafiekHtml(v);
+    }
+    if (v.wacht.length) {
+      var naamVan = function (t) { var r = zoek(t); return r ? r.naam : t; };
+      var k = v.wacht.filter(function (o) { return o.soort === 'koop'; }), vk = v.wacht.filter(function (o) { return o.soort === 'verkoop'; });
+      s += '<div class="kaart-plat" data-model-wacht><h2>Bij de volgende koers</h2>' + (k.length ? '<p><b>Kopen:</b> ' + k.map(function (o) { return h(naamVan(o.ticker)); }).join(', ') + '</p>' : '') + (vk.length ? '<p><b>Verkopen:</b> ' + vk.map(function (o) { return h(naamVan(o.ticker)); }).join(', ') + '</p>' : '') + '<p class="zacht">Het signaal ontstond op de laatste slotkoers; uitgevoerd wordt tegen de slotkoers van de volgende handelsdag.</p></div>';
+    }
+    var open = v.posities.filter(function (p) { return !p.verkoop; }).sort(function (a, b) { return a.koop.datum < b.koop.datum ? 1 : -1; });
+    var dicht = v.posities.filter(function (p) { return p.verkoop; }).sort(function (a, b) { return a.verkoop.datum < b.verkoop.datum ? 1 : -1; });
+    s += modelLijstHtml('Open posities', bron + v.id + 'o', open) + modelLijstHtml('Verkocht', bron + v.id + 'd', dicht);
+    s += '<details class="kaart-plat" data-model-regels><summary><b>De regels</b></summary><ul class="punten">' +
+      '<li><b>Kopen</b>: ' + h(v.regel) + '. Voor ongeveer ' + eur(B.bedrag) + '; is één aandeel duurder, dan 1 aandeel. Een fonds dat al in de portefeuille zit, wordt niet bijgekocht.</li>' +
+      '<li><b>Verkopen</b>: als de koers in de NAIC-verkoopzone of erboven staat. Daarna kan het fonds bij een nieuwe kans opnieuw worden gekocht.</li>' +
+      '<li><b>Uitvoering</b>: tegen de slotkoers van de handelsdag ná het signaal (niet vooruitkijken). Kosten ' + eur(B.kosten) + ' per aankoop en per verkoop.</li>' +
+      '<li><b>Euro</b>: dollars en ponden met de dagkoers van de ECB' + (B.fx && B.fx.datum ? ' (laatst ' + h(datumNl(B.fx.datum)) + ')' : '') + '. Dividend bruto op de ex-datum, als geld (niet herbelegd). Splitsingen passen het aantal aan.</li>' +
+      '<li><b>Index</b>: bij elke aankoop hetzelfde bedrag fictief in de eigen index van het fonds (AEX, DAX, S&amp;P 500 …), met dezelfde kosten, verkocht op hetzelfde moment. Indexen zonder dividend, behalve de DAX.</li>' +
+      '<li>Elke nacht bijgewerkt; aankopen en verkopen worden nooit achteraf veranderd.' + (bron === 'terug' ? ' De teruggerekende versie gebruikt dezelfde regels met wekelijkse signalen.' : '') + '</li></ul></details>';
+    return s + '<p class="zacht">Fictief, om de signalen te toetsen. Geen beleggingsadvies; belasting is niet meegerekend.' + (B.bijgewerkt ? ' Bijgewerkt ' + h(datumNl(B.bijgewerkt)) + '.' : '') + '</p></section>';
+  }
+  function modelKoppel() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-model-bron]'), function (b) { b.addEventListener('click', function () { modelKeuze.bron = b.getAttribute('data-model-bron'); route(); }); });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-model-variant]'), function (b) { b.addEventListener('click', function () { modelKeuze.variant = b.getAttribute('data-model-variant'); route(); }); });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-model-alles]'), function (b) { b.addEventListener('click', function () { var k = b.getAttribute('data-model-alles'); modelKeuze.alles[k] = !modelKeuze.alles[k]; route(); }); });
+  }
+
   /* ---- Portefeuille ---- */
   function euro(n, valuta) { return getal(n, 2) + ' ' + h(valuta); }
   function kleur(n) { return n > 0 ? 'var(--ok-ink)' : n < 0 ? 'var(--bad-ink)' : 'var(--ink)'; }
@@ -1748,13 +1844,13 @@
       $menu.innerHTML = menuHtml(HOOFD, '#/achtergrond'); na = vergelijkKoppel; titel = 'Vergelijken · Aandeel Signaal';
     } else {
       if (hash === '#/zoek' || hash === '#/overzicht' || hash === '#/fondsen') hash = '#/markt';     // oude adressen
-      var kaart = { '#/': schermStart, '#/markt': schermMarkt, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/achtergrond': schermAchtergrond, '#/signalen': schermSignalen, '#/hulp': schermHulp, '#/instellingen': schermInstellingen, '#/kwaliteit': schermKwaliteit };
+      var kaart = { '#/': schermStart, '#/markt': schermMarkt, '#/volglijst': schermVolglijst, '#/portefeuille': schermPortefeuille, '#/achtergrond': schermAchtergrond, '#/signalen': schermSignalen, '#/model': schermModel, '#/hulp': schermHulp, '#/instellingen': schermInstellingen, '#/kwaliteit': schermKwaliteit };
       if (!kaart[hash]) hash = '#/';
       html = kaart[hash](); actief = HOORT_BIJ[hash] || hash; herkomst = hash;
       $menu.innerHTML = menuHtml(HOOFD, actief);
       if (HOORT_BIJ[hash]) html = '<div class="stelregel"><a class="link" href="' + HOORT_BIJ[hash] + '" data-kruimel>' + I.terug + h(SCHERM_NAAM[HOORT_BIJ[hash]]) + '</a></div>' + html;
       titel = (hash === '#/' ? '' : SCHERM_NAAM[hash] + ' · ') + 'Aandeel Signaal';
-      var KOPPEL = { '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
+      var KOPPEL = { '#/model': modelKoppel, '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
         '#/hulp': function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); } };
       na = KOPPEL[hash] || null;
     }
