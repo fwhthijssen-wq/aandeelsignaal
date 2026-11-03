@@ -179,6 +179,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('Apple', main); self.assertIn('Microsoft', main)
         self.assertIn('Dezelfde bedragen in de index', main)
         self.assertEqual(pg.locator('[data-model-grafiek] svg').count(), 1)
+        self.assertEqual(pg.locator('[data-model-zonder-div]').count(), 1, 'vergelijking zonder dividend')
         self.assertIn('zekerheid bij aankoop: Bevestigd', main)
         # regel kiezen: alleen gunstig koopmoment (Microsoft had geen gunstig moment)
         pg.click('[data-model-variant=moment]')

@@ -54,7 +54,7 @@ fs.writeFileSync(path.join(map, 'terug.json'), JSON.stringify(uit));
 let md = `# Modelportefeuille teruggerekend\n\n${start} t/m ${eind}, ${handelsdagen.length} handelsdagen, ${peil.length} peildata.\n\n`;
 for (const v of staat.varianten) {
   const s = M.samenvatting(v);
-  md += `## ${v.naam}\n\n- posities: ${s.open} open, ${s.gesloten} verkocht (${s.gewonnen} met winst, ${s.verloren} met verlies)\n- ingelegd ${s.inleg.toFixed(0)} euro; resultaat ${s.resultaat.toFixed(0)} euro (${s.pct}%), waarvan dividend ${s.dividend.toFixed(0)}\n- dezelfde bedragen in de index: ${s.idxResultaat.toFixed(0)} euro (${s.idxPct}%); eigen rendement op de posities met index ${s.pctMetIdx}%\n\n`;
+  md += `## ${v.naam}\n\n- posities: ${s.open} open, ${s.gesloten} verkocht (${s.gewonnen} met winst, ${s.verloren} met verlies)\n- ingelegd ${s.inleg.toFixed(0)} euro; resultaat ${s.resultaat.toFixed(0)} euro (${s.pct}%), waarvan dividend ${s.dividend.toFixed(0)}\n- dezelfde bedragen in de index: ${s.idxResultaat.toFixed(0)} euro (${s.idxPct}%); eigen rendement op de posities met index ${s.pctMetIdx}%; zonder dividend ${s.pctZonderDiv}%\n\n`;
   const per = {};
   v.posities.forEach((p) => { const z = p.koop.signaal && p.koop.signaal.zekerheid || 'onbekend', u = M.uitkomst(p), x = per[z] || (per[z] = { n: 0, inleg: 0, res: 0, idx: 0, idxInleg: 0 }); x.n++; x.inleg += u.inleg; x.res += u.resultaat; if (u.idx) { x.idx += u.idx.resultaat; x.idxInleg += u.inleg; } });
   md += '| Zekerheid bij aankoop | posities | rendement | index |\n|---|---|---|---|\n';

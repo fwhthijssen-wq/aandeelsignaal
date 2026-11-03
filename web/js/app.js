@@ -974,7 +974,7 @@
         kpi(sv.idxPct != null ? pct(sv.idxPct) : '–', 'Dezelfde bedragen in de index' + (sv.idxResultaat ? ' (' + eurTeken(sv.idxResultaat) + ')' : ''), sv.idxPct) +
         kpi(eur(sv.inleg), 'Totaal ingelegd') + kpi(eur(sv.dividend), 'Dividend ontvangen') +
         kpi(sv.open + ' / ' + sv.gesloten, 'Open / verkocht' + (sv.gesloten ? ' (' + sv.gewonnen + ' met winst)' : '')) + '</div>';
-      if (sv.idxPct != null && sv.pctMetIdx != null) s += '<p class="zacht" data-model-vergelijk>' + (sv.pctMetIdx > sv.idxPct ? 'De signalen deden het tot nu toe beter dan de index: ' : sv.pctMetIdx < sv.idxPct ? 'De signalen deden het tot nu toe slechter dan de index: ' : 'Gelijk met de index: ') + pct(sv.pctMetIdx) + ' tegenover ' + pct(sv.idxPct) + ' (alleen posities met een index).</p>';
+      if (sv.idxPct != null && sv.pctMetIdx != null) s += '<p class="zacht" data-model-vergelijk>' + (sv.pctMetIdx > sv.idxPct ? 'De signalen deden het tot nu toe beter dan de index: ' : sv.pctMetIdx < sv.idxPct ? 'De signalen deden het tot nu toe slechter dan de index: ' : 'Gelijk met de index: ') + pct(sv.pctMetIdx) + ' tegenover ' + pct(sv.idxPct) + ' (alleen posities met een index).' + (sv.pctZonderDiv != null && sv.dividend > 0 ? ' Let op: de meeste indexen tellen geen dividend mee (alleen de DAX wel). Zonder dividend kwamen de signalen op <b data-model-zonder-div>' + pct(sv.pctZonderDiv) + '</b>' + (sv.pctZonderDiv < sv.idxPct ? ', dus lager dan de index.' : sv.pctZonderDiv > sv.idxPct ? ', dus nog steeds hoger dan de index.' : '.') : '') + '</p>';
       s += modelGrafiekHtml(v);
     }
     if (v.wacht.length) {

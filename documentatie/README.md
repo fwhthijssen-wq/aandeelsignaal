@@ -3,6 +3,7 @@
 - `WEBAPP.md` — opzet van de webapp.
 - `notities/` — ontwerpnotities en besluiten (dezelfde als in het Claude-project "AandeelSignaal"):
   - `oordeel-en-termijnen.md` — **actueel**: NAIC (lange termijn), middellange en korte termijn, risico, waar het in de app staat.
+  - `modelportefeuille.md` — fictieve portefeuille die de signalen volgt: regels, techniek, eerste uitkomst terugrekenen.
   - `terugrekenen-2026-10.md` — alle uitkomsten van het terugrekenen en de besluiten die erop volgden.
   - `duitse-jaarverslagen.md` — pdf-jaarverslagen van DAX-fondsen, narekenen, Bevestigd.
   - `jaarverslagbronnen-aex.md` — Europese jaarverslagbronnen (AFM, FCA, Frankrijk) en de pdf-uitlezer.

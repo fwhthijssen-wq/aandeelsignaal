@@ -171,9 +171,11 @@
     s.pct = s.inleg > 0 ? Math.round(s.resultaat / s.inleg * 1000) / 10 : null;
     s.idxPct = s.idxInleg > 0 ? Math.round(s.idxResultaat / s.idxInleg * 1000) / 10 : null;
     // dezelfde posities zonder index (Helsinki) tellen niet mee in de vergelijking: daarom ook het eigen rendement over de posities mét index
-    var metIdx = v.posities.filter(function (p) { return p.idx; }), rI = 0, iI = 0;
-    metIdx.forEach(function (p) { var u = uitkomst(p); rI += u.resultaat; iI += u.inleg; });
+    var metIdx = v.posities.filter(function (p) { return p.idx; }), rI = 0, iI = 0, dI = 0;
+    metIdx.forEach(function (p) { var u = uitkomst(p); rI += u.resultaat; iI += u.inleg; dI += u.dividend; });
     s.pctMetIdx = iI > 0 ? Math.round(rI / iI * 1000) / 10 : null;
+    // de meeste indexen zijn zonder dividend: daarom ook het rendement zonder dividend (alleen koers en kosten)
+    s.pctZonderDiv = iI > 0 ? Math.round((rI - dI) / iI * 1000) / 10 : null;
     return s;
   }
 
