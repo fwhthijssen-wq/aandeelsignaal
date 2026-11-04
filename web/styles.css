@@ -428,3 +428,10 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .pf-form { margin-top: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); }
 .pf-form h3 { margin: 0 0 6px; }
 .pf-form input[data-vk-eur] { width: 9em; }
+/* Zoekbare keuzelijst voor fondsen (1.10.1) */
+.zoek-veld { width: 100%; margin-bottom: 6px; }
+.zoek-treffers { list-style: none; margin: 0 0 8px; padding: 4px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.zoek-treffers button { display: block; width: 100%; text-align: left; min-height: 44px; padding: 8px 10px; border: 0; border-radius: 8px; background: none; color: var(--ink); font: inherit; cursor: pointer; }
+.zoek-treffers button:hover, .zoek-treffers button:focus { background: var(--line-soft); outline: none; }
+.zoek-treffers .zacht { padding: 8px 10px; }
+.velden .veld-breed { grid-column: 1 / -1; }

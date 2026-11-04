@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.10.1 (2026.11.04)
+- **Aandeel zoeken in plaats van de hele lijst doorlopen.** Boven de keuzelijst bij *Aankoop toevoegen* en bij *Vergelijken* staat een zoekveld: typ een deel van de naam of de beurscode en tik op een treffer (Enter kiest de eerste). De lijst blijft eronder staan.
+
 ## 1.10 (2026.11.03)
 **Uw portefeuille zoals de modelportefeuille, in euro, met kosten en verkopen.**
 - **Kosten met de hand:** aankoopkosten bij elke aankoop, verkoopkosten bij elke verkoop; ze tellen mee in het rendement.

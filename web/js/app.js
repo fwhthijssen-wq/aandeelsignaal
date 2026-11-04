@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.10 (2026.11.03)';
+  var APP_VERSIE = '1.10.1 (2026.11.04)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1013,6 +1013,39 @@
       '<p class="zacht">Elke portefeuille heeft eigen aankopen en eigen totalen. Signalen en de volglijst gelden voor de aandelen uit alle portefeuilles samen. Een portefeuille van iemand anders (zoals een club) kunt u met een back-upbestand toevoegen: Achtergrond › Instellingen › Back-up terugzetten › Toevoegen.</p></details>';
     return s;
   }
+  /* Een lange keuzelijst met fondsen zoekbaar maken: een zoekveld boven de lijst; typ een deel van de naam of de beurscode en
+     tik op een treffer (Enter kiest de eerste). De lijst zelf blijft eronder staan en toont wat gekozen is. */
+  function zonderAccent(t) { return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function maakZoekbaar() {
+    Array.prototype.forEach.call(document.querySelectorAll('select[data-zoek]:not([data-zoekbaar])'), function (sel, nr) {
+      sel.setAttribute('data-zoekbaar', '');
+      var id = (sel.id || 'kz' + nr) + '-zoek', lijstId = id + '-lijst';
+      var inp = document.createElement('input');
+      inp.type = 'search'; inp.id = id; inp.className = 'zoek-veld'; inp.placeholder = 'Zoek op naam of beurscode'; inp.autocomplete = 'off';
+      inp.setAttribute('aria-label', 'Zoek een aandeel'); inp.setAttribute('aria-controls', lijstId); inp.setAttribute('aria-autocomplete', 'list');
+      var ul = document.createElement('ul'); ul.id = lijstId; ul.className = 'zoek-treffers'; ul.setAttribute('role', 'listbox'); ul.hidden = true;
+      sel.parentNode.insertBefore(inp, sel); sel.parentNode.insertBefore(ul, sel);
+      var opties = Array.prototype.map.call(sel.options, function (o) { return { waarde: o.value, tekst: o.textContent, z: zonderAccent(o.textContent), t: zonderAccent(o.value) }; });
+      var treffers = [];
+      function kies(w) { sel.value = w; inp.value = ''; ul.hidden = true; ul.innerHTML = ''; sel.dispatchEvent(new Event('change', { bubbles: true })); }
+      function toon() {
+        var q = zonderAccent(inp.value).trim();
+        if (!q) { ul.hidden = true; ul.innerHTML = ''; treffers = []; return; }
+        treffers = opties.map(function (o) {
+          var r = o.t === q || o.t.split('.')[0] === q ? 0 : o.z.indexOf(q) === 0 ? 1 : o.z.split(/[\s(]+/).some(function (w) { return w.indexOf(q) === 0; }) ? 2 : o.z.indexOf(q) > -1 ? 3 : -1;
+          return { o: o, r: r };
+        }).filter(function (x) { return x.r >= 0; }).sort(function (a, b) { return a.r - b.r || a.o.tekst.localeCompare(b.o.tekst); }).slice(0, 8).map(function (x) { return x.o; });
+        ul.innerHTML = treffers.length ? treffers.map(function (o) { return '<li role="option"><button type="button" data-treffer="' + h(o.waarde) + '">' + h(o.tekst) + '</button></li>'; }).join('') : '<li class="zacht">Geen aandeel gevonden.</li>';
+        ul.hidden = false;
+      }
+      inp.addEventListener('input', toon);
+      inp.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') { e.preventDefault(); if (treffers[0]) kies(treffers[0].waarde); }
+        if (e.key === 'Escape') { inp.value = ''; toon(); }
+      });
+      ul.addEventListener('click', function (e) { var b = e.target.closest ? e.target.closest('[data-treffer]') : null; if (b) kies(b.getAttribute('data-treffer')); });
+    });
+  }
   var pfOpen = { id: null, soort: null };          // welk formulier (verkopen/bewerken) bij welke aankoop open staat
   function pfOverzicht(posities) { return Portefeuille.overzicht(posities, DATA.aandelen, vandaag(), Gate, { fx: DATA.fx || null, indexreeksen: DATA.indexreeksen || null }); }
   function stuks(n) { return getal(n, 4).replace(/,?0+$/, ''); }
@@ -1093,7 +1126,7 @@
     }
     var opties = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); }).map(function (a) { return '<option value="' + h(a.ticker) + '" data-valuta="' + h(a.valuta) + '">' + h(a.naam + ' (' + a.ticker + ')') + '</option>'; }).join('');
     s += '<div class="kaart-plat"><h2>Aankoop toevoegen' + (pfs.length > 1 ? ' aan ' + h(act.naam) : '') + '</h2><form id="pf" novalidate><div class="velden">' +
-      '<div><label for="pf-t">Aandeel</label><select id="pf-t">' + opties + '</select></div>' +
+      '<div class="veld-breed"><label for="pf-t">Aandeel</label><select id="pf-t" data-zoek>' + opties + '</select></div>' +
       '<div><label for="pf-n">Aantal stuks</label><input id="pf-n" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-k">Aankoopkoers per stuk</label><input id="pf-k" type="number" inputmode="decimal" step="any" min="0"></div>' +
       '<div><label for="pf-v">Valuta</label><input id="pf-v" type="text" maxlength="3" autocapitalize="characters" autocomplete="off"></div>' +
@@ -1106,6 +1139,7 @@
     return s;
   }
   function portefeuilleKoppel() {
+    maakZoekbaar();
     Array.prototype.forEach.call(document.querySelectorAll('[data-pf-kies]'), function (b) {
       b.addEventListener('click', function () { winkel.kiesPortefeuille(b.getAttribute('data-pf-kies')); route(); });
     });
@@ -1213,7 +1247,7 @@
     var lijst = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); });
     var ra = zoek(ta) || lijst[0], rb = zoek(tb) || lijst[1] || lijst[0];
     function sel(id, gekozen, tekst) {
-      return '<div><label for="' + id + '">' + tekst + '</label><select id="' + id + '">' + lijst.map(function (r) { return '<option value="' + h(r.ticker) + '"' + (r.ticker === gekozen.ticker ? ' selected' : '') + '>' + h(r.naam + ' (' + r.ticker + ')') + '</option>'; }).join('') + '</select></div>';
+      return '<div><label for="' + id + '">' + tekst + '</label><select id="' + id + '" data-zoek>' + lijst.map(function (r) { return '<option value="' + h(r.ticker) + '"' + (r.ticker === gekozen.ticker ? ' selected' : '') + '>' + h(r.naam + ' (' + r.ticker + ')') + '</option>'; }).join('') + '</select></div>';
     }
     var v = Vergelijk.vergelijk(ra, rb, vandaag(), Gate), A = v.a, B = v.b;
     function cel(w, soort, k) {
@@ -1231,6 +1265,7 @@
       '<p class="zacht">Alleen percentages en verhoudingen, zodat verschillende valuta’s geen probleem zijn. De app wijst geen winnaar aan: selectiehulp, geen beleggingsadvies.</p></section>';
   }
   function vergelijkKoppel() {
+    maakZoekbaar();
     var a = document.getElementById('vg-a'), b = document.getElementById('vg-b'); if (!a) return;
     function ga() { location.hash = '#/vergelijk/' + encodeURIComponent(a.value) + '/' + encodeURIComponent(b.value); }
     a.addEventListener('change', ga); b.addEventListener('change', ga);

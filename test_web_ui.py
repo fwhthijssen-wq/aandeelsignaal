@@ -252,6 +252,24 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertNotIn('−99', pg.inner_text('main'))
         self.assertEqual(self.fouten, [])
 
+    def test_aandeel_zoeken_in_plaats_van_hele_lijst(self):
+        pg = self.pagina()
+        pg.goto(INDEX + '#/portefeuille')
+        pg.fill('#pf-t-zoek', 'micro')
+        self.assertIn('Microsoft Corp. (MSFT)', pg.inner_text('#pf-t-zoek-lijst'))
+        pg.click('[data-treffer="MSFT"]')
+        self.assertEqual(pg.input_value('#pf-t'), 'MSFT'); self.assertEqual(pg.input_value('#pf-v'), 'USD')
+        self.assertTrue(pg.locator('#pf-t-zoek-lijst').is_hidden())
+        pg.fill('#pf-t-zoek', 'asml'); pg.press('#pf-t-zoek', 'Enter')          # beurscode, Enter kiest de eerste
+        self.assertEqual(pg.input_value('#pf-t'), 'ASML.AS'); self.assertEqual(pg.input_value('#pf-v'), 'EUR')
+        pg.fill('#pf-t-zoek', 'xyzxyz')
+        self.assertIn('Geen aandeel gevonden', pg.inner_text('#pf-t-zoek-lijst'))
+        # ook bij Vergelijken
+        pg.goto(INDEX + '#/vergelijk')
+        pg.fill('#vg-b-zoek', 'nvidia'); pg.click('[data-treffer="NVDA"]'); pg.wait_for_timeout(200)
+        self.assertIn('/NVDA', pg.evaluate('location.hash'))
+        self.assertEqual(self.fouten, [])
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')
