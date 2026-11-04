@@ -1,0 +1,24 @@
+# Hulpmiddel (ontwikkeling, handmatig): nieuwe fondsen controleren (Yahoo-code, LEI, ESEF). Raakt niets aan.
+name: Nieuwe fondsen controleren
+on:
+  workflow_dispatch:
+    inputs:
+      fondsen:
+        description: 'TICKER=Naam, gescheiden door ;'
+        required: true
+permissions:
+  contents: read
+jobs:
+  controle:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q yfinance
+      - env:
+          FONDSEN: ${{ inputs.fondsen }}
+        run: |
+          IFS=';' read -ra L <<< "$FONDSEN"
+          python hulp/nieuwe_fondsen.py "${L[@]}"
