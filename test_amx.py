@@ -51,3 +51,10 @@ class AScX(unittest.TestCase):
         lei = json.load(open('esef_lei.json'))
         for t in ('ACOMO.AS', 'PNL.AS', 'SLIGR.AS', 'NEDAP.AS'):
             self.assertIn(t, lei)
+
+    def test_overige_lokale_fondsen(self):
+        import bouw_webdata as bw
+        ix = ei.indices()
+        lok = sorted(t for t, v in ix.items() if 'NLOVERIG' in v)
+        self.assertEqual(len(lok), 13)
+        self.assertIn('HEIO.AS', lok); self.assertEqual(bw.index_voor('AJAX.AS'), 'AMX')

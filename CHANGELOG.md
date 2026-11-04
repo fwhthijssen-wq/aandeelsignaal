@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.11.1 (2026.11.04)
+- **Overige lokale fondsen op Euronext Amsterdam** (13, zonder index): AFC Ajax, Azerion, Cabka, Ctac, Ebusco, Heineken Holding, Holland Colours, Hydratec, Morefield, NX Filtration, Royal Delft (Porceleyne Fles), Value8 en Vivoryon. Bij Markt onder *Amsterdam overig (lokaal)*. Vergelijkingsindex: de AMX. Niet opgenomen (geen koersen meer): Beter Bed, Brill, DGB, KAS Bank, Rood Testhouse; Nedsense (lege beursschil).
+
 ## 1.11 (2026.11.04)
 - **Nederlandse lokale fondsen erbij: de AScX** (19 fondsen): Accsys, Acomo, Alfen, Avantium, Brunel, CM.com, Envipco, Fastned, Ferrari Group, ForFarmers, Kendrion, Nedap, NSI, PostNL, Sif, Sligro, TomTom, Vastned (noteert in Brussel) en Wereldhave. B&S Group is van de beurs gehaald. Ze staan bij Markt onder *AScX (Amsterdam smallcap)*.
 - Jaarcijfers via de officiële ESEF-jaarverslagen (LEI-codes gekoppeld waar die er zijn); verder Yahoo. Bij kleine fondsen zijn er vaak minder jaren, dus vaker geen NAIC-oordeel.

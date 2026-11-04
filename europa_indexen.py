@@ -34,6 +34,11 @@ LIJST = [
     ('FFARM.AS', 'ForFarmers', 'ASCX'), ('KENDR.AS', 'Kendrion', 'ASCX'), ('NEDAP.AS', 'Nedap', 'ASCX'), ('NSI.AS', 'NSI', 'ASCX'),
     ('PNL.AS', 'PostNL', 'ASCX'), ('SIFG.AS', 'Sif Holding', 'ASCX'), ('SLIGR.AS', 'Sligro Food Group', 'ASCX'),
     ('TOM2.AS', 'TomTom', 'ASCX'), ('VASTB.BR', 'Vastned', 'ASCX', 'Nederland'), ('WHA.AS', 'Wereldhave', 'ASCX'),
+    # Overige lokale fondsen op Euronext Amsterdam (geen index; met koersen bij Yahoo, november 2026)
+    ('AJAX.AS', 'AFC Ajax', 'NLOVERIG'), ('AZRN.AS', 'Azerion', 'NLOVERIG'), ('CABKA.AS', 'Cabka', 'NLOVERIG'), ('CTAC.AS', 'Ctac', 'NLOVERIG'),
+    ('EBUS.AS', 'Ebusco', 'NLOVERIG'), ('HEIO.AS', 'Heineken Holding', 'NLOVERIG'), ('HOLCO.AS', 'Holland Colours', 'NLOVERIG'),
+    ('HYDRA.AS', 'Hydratec Industries', 'NLOVERIG'), ('MORE.AS', 'Morefield', 'NLOVERIG'), ('NXFIL.AS', 'NX Filtration', 'NLOVERIG'),
+    ('PORF.AS', 'Royal Delft (Porceleyne Fles)', 'NLOVERIG'), ('VALUE.AS', 'Value8', 'NLOVERIG'), ('VVY.AS', 'Vivoryon Therapeutics', 'NLOVERIG', 'Duitsland'),
     # CAC 40
     ('AC.PA', 'Accor', 'CAC40'), ('AI.PA', 'Air Liquide', 'CAC40'), ('AIR.PA', 'Airbus', 'CAC40,DAX', 'Nederland'), ('BNP.PA', 'BNP Paribas', 'CAC40'),
     ('CS.PA', 'AXA', 'CAC40'), ('EN.PA', 'Bouygues', 'CAC40'), ('BVI.PA', 'Bureau Veritas', 'CAC40'), ('CAP.PA', 'Capgemini', 'CAC40'),
