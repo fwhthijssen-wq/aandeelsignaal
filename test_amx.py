@@ -37,3 +37,17 @@ class AmxTienJaar(unittest.TestCase):
         import bouw_webdata as bw
         g = bw.gegevens_uit_esef(bw.esef_ophalen('BFIT.AS'), '2026-10-22')
         self.assertEqual(g['eps_verified_years'], 9)
+
+
+class AScX(unittest.TestCase):
+    def test_lokale_fondsen(self):
+        import bouw_webdata as bw
+        ix = ei.indices()
+        ascx = sorted(t for t, v in ix.items() if 'ASCX' in v)
+        self.assertEqual(len(ascx), 19)
+        for t in ('ACOMO.AS', 'PNL.AS', 'TOM2.AS', 'VASTB.BR'):
+            self.assertIn(t, ascx)
+        self.assertEqual(bw.index_voor('PNL.AS'), 'AMX')          # Yahoo heeft geen AScX-index
+        lei = json.load(open('esef_lei.json'))
+        for t in ('ACOMO.AS', 'PNL.AS', 'SLIGR.AS', 'NEDAP.AS'):
+            self.assertIn(t, lei)

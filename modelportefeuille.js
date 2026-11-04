@@ -15,7 +15,7 @@ const K = require(path.join(W, 'kortetermijn.js')), V = require(path.join(W, 've
 const INDEX_CODES = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS'];
 function indexVan(rec) {                     // zoals bouw_webdata.index_voor
   const ix = (rec.indices || []).filter((i) => INDEX_CODES.includes(i));
-  return ix.length ? ix[0] : (rec.ticker.includes('.') ? null : 'VS');
+  return ix.length ? ix[0] : (rec.indices || []).includes('ASCX') ? 'AMX' : (rec.ticker.includes('.') ? null : 'VS');     // geen AScX-index bij Yahoo
 }
 function zekerheid(rec, vandaag) {
   const k = V.kant(rec, vandaag, G);

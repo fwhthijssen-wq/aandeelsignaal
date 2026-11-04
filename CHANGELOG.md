@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.11 (2026.11.04)
+- **Nederlandse lokale fondsen erbij: de AScX** (19 fondsen): Accsys, Acomo, Alfen, Avantium, Brunel, CM.com, Envipco, Fastned, Ferrari Group, ForFarmers, Kendrion, Nedap, NSI, PostNL, Sif, Sligro, TomTom, Vastned (noteert in Brussel) en Wereldhave. B&S Group is van de beurs gehaald. Ze staan bij Markt onder *AScX (Amsterdam smallcap)*.
+- Jaarcijfers via de officiële ESEF-jaarverslagen (LEI-codes gekoppeld waar die er zijn); verder Yahoo. Bij kleine fondsen zijn er vaak minder jaren, dus vaker geen NAIC-oordeel.
+- Yahoo heeft geen AScX-index: relatieve sterkte en de vergelijking met de index gaan bij deze fondsen tegen de AMX.
+
 ## 1.10.1 (2026.11.04)
 - **Aandeel zoeken in plaats van de hele lijst doorlopen.** Boven de keuzelijst bij *Aankoop toevoegen* en bij *Vergelijken* staat een zoekveld: typ een deel van de naam of de beurscode en tik op een treffer (Enter kiest de eerste). De lijst blijft eronder staan.
 

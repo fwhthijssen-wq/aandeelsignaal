@@ -1047,6 +1047,8 @@ def index_voor(ticker):
     ix = [i for i in (INDICES.get(ticker) or []) if i in INDEX_YAHOO]
     if ix:
         return ix[0]
+    if 'ASCX' in (INDICES.get(ticker) or []):
+        return 'AMX'            # Yahoo heeft geen AScX-index: de lokale fondsen tegen de AMX
     return 'VS' if '.' not in ticker else None
 
 

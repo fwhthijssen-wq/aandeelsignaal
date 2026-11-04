@@ -1,4 +1,4 @@
-"""Europese aandelen uit AEX, AMX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026).
+"""Europese aandelen uit AEX, AMX, AScX, BEL 20, CAC 40, DAX, FTSE 100, FTSE MIB en IBEX 35 (samenstelling volgens Wikipedia, oktober 2026).
 
 De samenstelling van indices verandert; dit is een bewuste momentopname. Deze bedrijven krijgen koersen, trend en koersbereik.
 Jaarcijfers en een label komen er alleen bij als er een SEC-jaarverslag is dat de controle doorstaat (zie SEC_KOPPELING).
@@ -27,6 +27,13 @@ LIJST = [
     ('HAL.AS', 'HAL Trust', 'AMX', 'Bermuda'), ('HAVAS.AS', 'Havas', 'AMX'), ('HEIJM.AS', 'Heijmans', 'AMX'), ('PHARM.AS', 'Pharming', 'AMX'),
     ('LIGHT.AS', 'Signify', 'AMX'), ('TWEKA.AS', 'TKH Group', 'AMX'), ('VLK.AS', 'Van Lanschot Kempen', 'AMX'), ('VPK.AS', 'Vopak', 'AMX'),
     ('THEON.AS', 'Theon International', 'AMX', 'Cyprus'), ('CSG.AS', 'CSG', 'AMX'),
+    # AScX (lokale fondsen; Euronext, januari 2026; B&S Group is van de beurs gehaald). Vastned noteert in Brussel.
+    ('ACOMO.AS', 'Acomo', 'ASCX'), ('AXS.AS', 'Accsys Technologies', 'ASCX', 'Verenigd Koninkrijk'), ('ALFEN.AS', 'Alfen', 'ASCX'),
+    ('AVTX.AS', 'Avantium', 'ASCX'), ('BRNL.AS', 'Brunel International', 'ASCX'), ('CMCOM.AS', 'CM.com', 'ASCX'),
+    ('ENVI.AS', 'Envipco', 'ASCX'), ('FAST.AS', 'Fastned', 'ASCX'), ('FERGR.AS', 'Ferrari Group', 'ASCX', 'Verenigd Koninkrijk'),
+    ('FFARM.AS', 'ForFarmers', 'ASCX'), ('KENDR.AS', 'Kendrion', 'ASCX'), ('NEDAP.AS', 'Nedap', 'ASCX'), ('NSI.AS', 'NSI', 'ASCX'),
+    ('PNL.AS', 'PostNL', 'ASCX'), ('SIFG.AS', 'Sif Holding', 'ASCX'), ('SLIGR.AS', 'Sligro Food Group', 'ASCX'),
+    ('TOM2.AS', 'TomTom', 'ASCX'), ('VASTB.BR', 'Vastned', 'ASCX', 'Nederland'), ('WHA.AS', 'Wereldhave', 'ASCX'),
     # CAC 40
     ('AC.PA', 'Accor', 'CAC40'), ('AI.PA', 'Air Liquide', 'CAC40'), ('AIR.PA', 'Airbus', 'CAC40,DAX', 'Nederland'), ('BNP.PA', 'BNP Paribas', 'CAC40'),
     ('CS.PA', 'AXA', 'CAC40'), ('EN.PA', 'Bouygues', 'CAC40'), ('BVI.PA', 'Bureau Veritas', 'CAC40'), ('CAP.PA', 'Capgemini', 'CAC40'),
