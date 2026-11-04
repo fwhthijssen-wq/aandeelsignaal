@@ -1,0 +1,29 @@
+# Hulpmiddel (handmatig): ESEF-rapporten van nieuwe fondsen toevoegen aan esef_bundel.json.gz en op main zetten (na de tests).
+name: ESEF-bundel aanvullen
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Tickers, gescheiden door spaties'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: esef-bundel
+jobs:
+  aanvullen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python hulp/esef_bundel_aanvullen.py ${{ inputs.tickers }}
+      - run: python -m pytest -q --ignore=test_web_ui.py
+      - name: Op main zetten
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add esef_bundel.json.gz && git commit -qm "ESEF-bundel aangevuld: ${{ inputs.tickers }}" || echo "niets nieuw"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && break; sleep 15; done
