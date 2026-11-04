@@ -1,0 +1,16 @@
+# Hulpmiddel (ontwikkeling, handmatig): de gepubliceerde app in een echte browser proberen. Raakt niets aan.
+name: Site proef
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  proef:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null
+      - run: python hulp/site_proef.py https://fwhthijssen-wq.github.io/aandeelsignaal/
