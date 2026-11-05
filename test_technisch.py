@@ -191,3 +191,17 @@ class KoersenOverdag(unittest.TestCase):
         self.assertEqual(k['bereik'], {'x': 1}); self.assertEqual(k['dividenden'], [['2025-02-01', 0.2]])
         self.assertEqual(best['aandelen'][1]['koers']['slot'], 5, 'een oudere koers vervangt niets')
         self.assertTrue(best['koersen_bijgewerkt'].startswith('2025-10-28T17:05'))
+
+
+class Fondsencontrole(unittest.TestCase):
+    def test_naam_en_koers(self):
+        import fondsen_controle as fc
+        self.assertTrue(fc.naam_past('Sligro Food Group', 'Sligro Food Group N.V.'))
+        self.assertTrue(fc.naam_past('ASML Holding', 'ASML Holding N.V.'))
+        self.assertFalse(fc.naam_past('Galapagos', 'Lakefront Biotherapeutics NV'))
+        info = {'GLPG.AS': {}, 'PNL.AS': {'longName': 'PostNL N.V.', 'quoteType': 'EQUITY'}, 'X.AS': {'longName': 'Iets Anders NV', 'quoteType': 'EQUITY'}}
+        a = [{'ticker': 'GLPG.AS', 'naam': 'Galapagos', 'koers': {'datum': '2026-10-01'}}, {'ticker': 'PNL.AS', 'naam': 'PostNL', 'koers': {'datum': '2026-11-04'}},
+             {'ticker': 'X.AS', 'naam': 'Voorbeeld', 'koers': {'datum': '2026-11-04'}}]
+        m = fc.controle(a, '2026-11-05', lambda t: info[t])
+        self.assertEqual([x[0] for x in m], ['GLPG.AS', 'GLPG.AS', 'X.AS'])
+        self.assertIn('laatste koers van 2026-10-01', m[0][2]); self.assertIn('kent deze code niet', m[1][2]); self.assertIn('Iets Anders', m[2][2])

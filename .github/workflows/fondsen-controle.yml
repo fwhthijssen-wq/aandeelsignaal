@@ -1,0 +1,31 @@
+# Maandelijkse controle op wijzigingen bij fondsen (naam, beurscode, notering). Bij aandachtspunten een GitHub-melding (issue
+# "Fondsencontrole"); GitHub stuurt de eigenaar daarvan een e-mail. Raakt de app niet.
+name: Fondsencontrole
+on:
+  schedule:
+    - cron: '23 6 1 * *'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+  issues: write
+jobs:
+  controle:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: curl -sSf "https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json" -o aandelen.json
+      - run: python fondsen_controle.py aandelen.json rapport.md
+      - name: Melding als issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q '^| [A-Z0-9]' rapport.md; then
+            NR=$(gh issue list --state open --search "Fondsencontrole in:title" --json number -q '.[0].number')
+            if [ -n "$NR" ]; then gh issue comment "$NR" --body-file rapport.md; else gh issue create --title "Fondsencontrole: fondsen om na te kijken" --body-file rapport.md; fi
+          else
+            echo "geen aandachtspunten"
+          fi
