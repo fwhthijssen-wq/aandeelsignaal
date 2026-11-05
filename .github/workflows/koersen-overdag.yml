@@ -1,4 +1,4 @@
-# Lichte koersupdate op werkdagen na het sluiten van de Europese beurzen (17:05 UTC = 18:05 in de winter, 19:05 in de zomer).
+# Lichte koersupdate op werkdagen na het sluiten van de Europese beurzen (17:05 UTC = 18:05 uur in de winter, 19:05 in de zomer).
 # Alleen de koersen worden vernieuwd; de nachtelijke update maakt alles opnieuw. De modelportefeuille verandert hier niet.
 name: Koersen overdag
 on:
