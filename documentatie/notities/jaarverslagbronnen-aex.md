@@ -19,3 +19,10 @@
 - Bevestigde jaren opgeteld: Londen 3 → 221, Parijs 43 → 80, Madrid 20 → 71, Milaan 25 → 41, Brussel 27 → 40, Frankfurt 13 → 17.
 
 **Bewust niet / open:** BP (ADS-EPS met hetzelfde begrip getagd → 2020 dubbelzinnig), AkzoNobel 2016–2019, IMCD 2016–2019, ArcelorMittal, Pharming, Fugro, HAL, Theon/CSG, CVC/Havas/Allfunds/CTP/InPost. Spanje (CNMV) en België (FSMA STORI) nog niet onderzocht; Duitsland: zie duitse-jaarverslagen.md.
+
+## Nederlandse small caps (AScX en Amsterdam overig, 5 nov 2026, versie 1.11–1.12)
+- 32 fondsen toegevoegd; LEI's via GLEIF (`hulp/nieuwe_fondsen.py`, workflow *Nieuwe fondsen controleren*); ESEF-rapporten in de bundel via workflow *ESEF-bundel aanvullen* (`hulp/esef_bundel_aanvullen.py`): 26 fondsen, rapporten vanaf boekjaar 2021 (NL: ESEF verplicht vanaf 2021).
+- ESEF-aantallen aandelen (`esef_aandelen.json`, 26 fondsen) en AFM-jaarverslagen 2015–2020 (workflow *AFM-jaarverslagen ophalen*). Het **AFM-verslag over 2020 is de brug**: zonder overlappend jaar sluit de keten oud → ESEF niet aan.
+- Automatisch uitgelezen (`hulp/afm_uitlezen.py` → `pdf_naar_register.py ... afm`): Avantium, Brunel, Kendrion (2014–2020), Sif, Sligro, TomTom, Heineken Holding. Veel Nederlandstalige verslagen worden nog niet herkend (Nedap, PostNL, Wereldhave, NSI, Ctac, Hydratec, Holland Colours, Ajax, ForFarmers, Vastned).
+- Narekenkandidaten uit de AFM-teksten (`hulp/eu_narekenen.py`, pdf's eerst met pdftotext naar .txt): Kendrion 8/10, Alfen 6/6, Acomo 5/5, TomTom 4/5. Nog geen nieuw Bevestigd (81).
+- Open: Nederlandse labels in de pdf-lezer ('verwaterd', 'per aandeel', 'toe te rekenen aan aandeelhouders'); Kendrion 2019 en 2022.
