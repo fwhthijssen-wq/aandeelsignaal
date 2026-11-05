@@ -8,7 +8,7 @@ REG = os.path.join(HIER, 'jaarverslag_bronnen.json')
 LEI = json.load(open(os.path.join(HIER, 'esef_lei.json')))
 res = json.load(open(sys.argv[1]))
 BRON = sys.argv[2] if len(sys.argv) > 2 else 'fr'
-PREFIX, REGISTER = {'fr': ('AMF-FR:', 'info-financiere.gouv.fr'), 'uk': ('NSM:', 'FCA National Storage Mechanism')}[BRON]
+PREFIX, REGISTER = {'fr': ('AMF-FR:', 'info-financiere.gouv.fr'), 'uk': ('NSM:', 'FCA National Storage Mechanism'), 'afm': ('AFM:', 'AFM-register financiële verslaggeving')}[BRON]
 reg = json.load(open(REG))
 import bouw_webdata as bw
 
