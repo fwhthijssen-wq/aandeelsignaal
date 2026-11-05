@@ -1,4 +1,4 @@
-niet bevestigd: 266 | per aantal nagerekend van de laatste 10: [(9, 11), (8, 1), (7, 14), (6, 26), (5, 22), (4, 18), (3, 24), (2, 37), (1, 10), (0, 103)]
+niet bevestigd: 297 | per aantal nagerekend van de laatste 10: [(9, 11), (8, 1), (7, 14), (6, 28), (5, 23), (4, 22), (3, 27), (2, 39), (1, 12), (0, 120)]
 IFX.DE     ok  9 eps 11 Yahoo Finance  indicatief  vanaf 2016 NNNNNNNNNx valuta 1 mist 2025
 MRK.DE     ok  9 eps 11 Yahoo Finance  indicatief  vanaf 2016 NNNNNNxNNN valuta 1 mist 2022
 MA         ok  9 eps 10 -              -           vanaf 2016 OOOOxOOOOO valuta 1 mist 2020
@@ -36,6 +36,8 @@ EXPN.L     ok  6 eps  7 ESEF           jaarverslag vanaf 2020 NNxNNNN    valuta 
 AKZA.AS    ok  6 eps  6 ESEF           -           vanaf 2020 OOOOOO     valuta 1 mist 
 MT.AS      ok  6 eps  6 ESEF           -           vanaf 2019 OOOOOO     valuta 1 mist 
 PHARM.AS   ok  6 eps  6 ESEF           -           vanaf 2020 ONNNNN     valuta 1 mist 
+ALFEN.AS   ok  6 eps  6 ESEF           -           vanaf 2020 OONNNN     valuta 1 mist 
+NEDAP.AS   ok  6 eps  6 ESEF           -           vanaf 2020 OOOOOO     valuta 1 mist 
 SGO.PA     ok  6 eps  6 ESEF           -           vanaf 2020 OOOOOO     valuta 1 mist 
 HO.PA      ok  6 eps  6 ESEF           -           vanaf 2020 OONOOO     valuta 1 mist 
 DTE.DE     ok  6 eps  6 Yahoo Finance  indicatief  vanaf 2020 NNNNNN     valuta 1 mist 
@@ -65,6 +67,7 @@ RMS.PA     ok  5 eps  7 ESEF           jaarverslag vanaf 2019 xxNNNNO    valuta 
 ENG.MC     ok  5 eps  7 ESEF           jaarverslag vanaf 2019 xxOOOOO    valuta 1 mist 2019 2020
 BARC.L     ok  5 eps  7 ESEF           jaarverslag vanaf 2019 xxOOOOO    valuta 1 mist 2019 2020
 NG.L       ok  5 eps  7 ESEF           jaarverslag vanaf 2020 NNxxNNN    valuta 1 mist 2022 2023
+CTAC.AS    ok  5 eps  6 ESEF           jaarverslag vanaf 2020 xOOOOO     valuta 1 mist 2020
 CA.PA      ok  5 eps  6 ESEF           jaarverslag vanaf 2020 xOONNO     valuta 1 mist 2020
 EL.PA      ok  5 eps  6 ESEF           indicatief  vanaf 2020 OOOOOx     valuta 1 mist 2025
 LR.PA      ok  5 eps  6 ESEF           jaarverslag vanaf 2020 xNNNNN     valuta 1 mist 2020
@@ -86,11 +89,15 @@ RI.PA      ok  4 eps  8 ESEF           jaarverslag vanaf 2018 NxxxxNNN   valuta 
 AZE.BR     ok  4 eps  8 ESEF           indicatief  vanaf 2018 xxxOOOOx   valuta 1 mist 2018 2019 2020 2025
 URW.PA     ok  4 eps  7 ESEF           jaarverslag vanaf 2019 NxxOxOO    valuta 1 mist 2020 2021 2023
 IHG.L      ok  4 eps  7 ESEF           jaarverslag vanaf 2019 xNxxNNN    valuta 1 mist 2019 2021 2022
+FAST.AS    ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xxNNNN     valuta 1 mist 2020 2021
+KENDR.AS   ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xNxNNN     valuta 1 mist 2020 2022
+HEIO.AS    ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xxOOOO     valuta 1 mist 2020 2021
 DSY.PA     ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xNxNNN     valuta 1 mist 2020 2022
 ML.PA      ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xxNNNN     valuta 1 mist 2020 2021
 KBC.BR     ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xxONNO     valuta 1 mist 2020 2021
 CRDA.L     ok  4 eps  6 ESEF           jaarverslag vanaf 2020 xxOOOO     valuta 1 mist 2020 2021
 BBOX.L     ok  4 eps  6 ESEF           jaarverslag vanaf 2020 NNxxOO     valuta 1 mist 2022 2023
+ACOMO.AS   ok  4 eps  5 ESEF           jaarverslag vanaf 2020 xNNNN      valuta 1 mist 2020
 DHL.DE     ok  3 eps 10 Yahoo Finance  indicatief  vanaf 2016 xxxxxxxNNN valuta 1 mist 2016 2017 2018 2019 2020 2021 2022
 MRL.MC     ok  3 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxNON valuta 1 mist 2016 2017 2018 2019 2020 2021 2022
 ADM.L      ok  3 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxNNN valuta 1 mist 2016 2017 2018 2019 2020 2021 2022
@@ -110,12 +117,16 @@ DTG.DE     ok  3 eps  7 Yahoo Finance  indicatief  vanaf 2018 xxxxNNN    valuta 
 IDR.MC     ok  3 eps  7 ESEF           jaarverslag vanaf 2019 xxxxONN    valuta 1 mist 2019 2020 2021 2022
 ITX.MC     ok  3 eps  7 ESEF           jaarverslag vanaf 2020 xxxNNNx    valuta 1 mist 2020 2021 2022 2026
 EXO.AS     ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xxxNNN     valuta 1 mist 2020 2021 2022
+CMCOM.AS   ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xxxNNN     valuta 1 mist 2020 2021 2022
+ENVI.AS    ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xNxNNx     valuta 1 mist 2020 2022 2025
 MONC.MI    ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xxxONN     valuta 1 mist 2020 2021 2022
 TIT.MI     ok  3 eps  6 ESEF           indicatief  vanaf 2020 xxxOOO     valuta 1 mist 2020 2021 2022
 LSEG.L     ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xNxxOO     valuta 1 mist 2020 2022 2023
 RR.L       ok  3 eps  6 ESEF           jaarverslag vanaf 2020 xNxNNx     valuta 1 mist 2020 2022 2025
 SN.L       ok  3 eps  6 ESEF           jaarverslag vanaf 2020 NxxxOO     valuta 1 mist 2021 2022 2023
+TOM2.AS    ok  3 eps  5 ESEF           jaarverslag vanaf 2020 xxNNN      valuta 1 mist 2020 2021
 FAGR.BR    ok  2 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxNNx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2025
+SLIGR.AS   ok  2 eps 10 ESEF           jaarverslag vanaf 2015 xxxxxxxxNN valuta 1 mist 2015 2016 2017 2018 2019 2020 2021 2022
 SU.PA      ok  2 eps 10 ESEF           jaarverslag vanaf 2016 xxxxxNxxxN valuta 1 mist 2016 2017 2018 2019 2020 2022 2023 2024
 DG.PA      ok  2 eps 10 ESEF           indicatief  vanaf 2016 NNxxxxxxxx valuta 1 mist 2018 2019 2020 2021 2022 2023 2024 2025
 CBK.DE     ok  2 eps 10 Yahoo Finance  indicatief  vanaf 2016 xxxxxNNxxx valuta 1 mist 2016 2017 2018 2019 2020 2023 2024 2025
@@ -152,6 +163,8 @@ TSCO.L     ok  2 eps  6 ESEF           jaarverslag vanaf 2021 xxxNNx     valuta 
 CVC.AS     ok  2 eps  5 ESEF           indicatief  vanaf 2021 xxxOO      valuta 1 mist 2021 2022 2023
 IVG.MI     ok  2 eps  5 ESEF           jaarverslag vanaf 2021 xxxNN      valuta 1 mist 2021 2022 2023
 LTMC.MI    ok  2 eps  5 ESEF           indicatief  vanaf 2021 xxxOO      valuta 1 mist 2021 2022 2023
+HYDRA.AS   ok  2 eps  2 ESEF           -           vanaf 2024 OO         valuta 1 mist 
+BRNL.AS    ok  1 eps 10 ESEF           jaarverslag vanaf 2016 xxxxxxxNxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2024 2025
 CS.PA      ok  1 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxN valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024
 BN.PA      ok  1 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxNx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2025
 CABK.MC    ok  1 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxN valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024
@@ -162,11 +175,13 @@ GSK.L      ok  1 eps  7 ESEF           jaarverslag vanaf 2019 Nxxxxxx    valuta 
 CNA.L      ok  1 eps  6 ESEF           jaarverslag vanaf 2020 xxxNxx     valuta 1 mist 2020 2021 2022 2024 2025
 SSE.L      ok  1 eps  6 ESEF           jaarverslag vanaf 2021 Nxxxxx     valuta 1 mist 2022 2023 2024 2025 2026
 UU.L       ok  1 eps  6 ESEF           jaarverslag vanaf 2021 Nxxxxx     valuta 1 mist 2022 2023 2024 2025 2026
+NSI.AS     ok  1 eps  4 ESEF           jaarverslag vanaf 2021 xxNx       valuta 1 mist 2021 2022 2024
 VOW3.DE    ok  0 eps 12 Yahoo Finance  indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 V          ok  0 eps 10 -              indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 AGN.AS     ok  0 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 PRX.AS     ok  0 eps 10 ESEF           indicatief  vanaf 2017 xxxxxxxxxx valuta 1 mist 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
-GLPG.AS    ok  0 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
+LKFT.AS    ok  0 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
+SIFG.AS    ok  0 eps 10 ESEF           jaarverslag vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 EN.PA      ok  0 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 FGR.PA     ok  0 eps 10 ESEF           indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
 G1A.DE     ok  0 eps 10 Yahoo Finance  indicatief  vanaf 2016 xxxxxxxxxx valuta 1 mist 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
@@ -214,7 +229,6 @@ REC.MI     ok  0 eps  9 ESEF           indicatief  vanaf 2017 xxxxxxxxx  valuta 
 UCG.MI     ok  0 eps  9 ESEF           indicatief  vanaf 2017 xxxxxxxxx  valuta 1 mist 2017 2018 2019 2020 2021 2022 2023 2024 2025
 ACX.MC     ok  0 eps  9 ESEF           indicatief  vanaf 2016 xxxxxxxxx  valuta 1 mist 2016 2017 2018 2019 2021 2022 2023 2024 2025
 CLNX.MC    ok  0 eps  9 ESEF           indicatief  vanaf 2016 xxxxxxxxx  valuta 1 mist 2016 2017 2018 2020 2021 2022 2023 2024 2025
-INPST.AS   ok  0 eps  8 Yahoo Finance  indicatief  vanaf 2017 xxxxxxxx   valuta 1 mist 2017 2019 2020 2021 2022 2023 2024 2025
 AF.PA      ok  0 eps  8 ESEF           indicatief  vanaf 2016 xxxxxxxx   valuta 1 mist 2016 2017 2018 2019 2021 2022 2023 2025
 GLE.PA     ok  0 eps  8 ESEF           indicatief  vanaf 2016 xxxxxxxx   valuta 1 mist 2016 2017 2018 2019 2022 2023 2024 2025
 ENR.DE     ok  0 eps  8 Yahoo Finance  indicatief  vanaf 2017 xxxxxxxx   valuta 1 mist 2017 2018 2019 2020 2022 2023 2024 2025
@@ -233,6 +247,11 @@ HSBA.L     ok  0 eps  7 ESEF           jaarverslag vanaf 2019 xxxxxxx    valuta 
 MRO.L      ok  0 eps  7 ESEF           indicatief  vanaf 2019 xxxxxxx    valuta 1 mist 2019 2020 2021 2022 2023 2024 2025
 UMG.AS     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
 FUR.AS     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
+FFARM.AS   ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
+WHA.AS     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
+EBUS.AS    ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
+HOLCO.AS   ok  0 eps  6 ESEF           jaarverslag vanaf 2021 xxxxxx     valuta 1 mist 2021 2022 2023 2024 2025 2026
+PORF.AS    ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
 AC.PA      ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
 AIR.PA     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
 BNP.PA     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
@@ -255,13 +274,25 @@ SBRY.L     ok  0 eps  6 ESEF           jaarverslag vanaf 2021 xxxxxx     valuta 
 STAN.L     ok  0 eps  6 ESEF           jaarverslag vanaf 2020 xxxxxx     valuta 1 mist 2020 2021 2022 2023 2024 2025
 HAVAS.AS   ok  0 eps  5 ESEF           indicatief  vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
 CSG.AS     ok  0 eps  5 Yahoo Finance  indicatief  vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
+AJAX.AS    ok  0 eps  5 ESEF           jaarverslag vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
+CABKA.AS   ok  0 eps  5 ESEF           jaarverslag vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
+NXFIL.AS   ok  0 eps  5 ESEF           jaarverslag vanaf 2020 xxxxx      valuta 1 mist 2020 2021 2022 2023 2024
 ACA.PA     ok  0 eps  5 ESEF           indicatief  vanaf 2018 xxxxx      valuta 1 mist 2018 2022 2023 2024 2025
 DBK.DE     ok  0 eps  5 -              indicatief  vanaf 2019 xxxxx      valuta 1 mist 2019 2022 2023 2024 2025
 BAMI.MI    ok  0 eps  5 ESEF           indicatief  vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
 SYENS.BR   ok  0 eps  5 ESEF           indicatief  vanaf 2021 xxxxx      valuta 1 mist 2021 2022 2023 2024 2025
 WTB.L      ok  0 eps  5 ESEF           indicatief  vanaf 2022 xxxxx      valuta 1 mist 2022 2023 2024 2025 2026
 THEON.AS   ok  0 eps  4 Yahoo Finance  indicatief  vanaf 2020 xxxx       valuta 1 mist 2020 2023 2024 2025
+AXS.AS     ok  0 eps  4 Yahoo Finance  indicatief  vanaf 2023 xxxx       valuta 1 mist 2023 2024 2025 2026
+FERGR.AS   ok  0 eps  4 Yahoo Finance  indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
+PNL.AS     ok  0 eps  4 ESEF           indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
+VASTB.BR   ok  0 eps  4 ESEF           jaarverslag vanaf 2020 xxxx       valuta 1 mist 2020 2021 2022 2023
+AZRN.AS    ok  0 eps  4 Yahoo Finance  indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
+VVY.AS     ok  0 eps  4 Yahoo Finance  indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
 AVIO.MI    ok  0 eps  4 ESEF           jaarverslag vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
 BMPS.MI    ok  0 eps  4 ESEF           indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
 TEN.MI     ok  0 eps  4 ESEF           indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
 BBVA.MC    ok  0 eps  4 -              indicatief  vanaf 2022 xxxx       valuta 1 mist 2022 2023 2024 2025
+VALUE.AS   ok  0 eps  3 Yahoo Finance  indicatief  vanaf 2022 xxx        valuta 1 mist 2022 2023 2024
+MORE.AS    ok  0 eps  2 Yahoo Finance  indicatief  vanaf 2023 xx         valuta 1 mist 2023 2025
+AVTX.AS    ok  0 eps  0 ESEF           -           vanaf -            valuta 1 mist 
