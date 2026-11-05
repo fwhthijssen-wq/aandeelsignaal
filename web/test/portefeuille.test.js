@@ -209,3 +209,17 @@ test('overzicht: zonder eurobedrag of met een andere notering telt een aankoop n
   assert.equal(o.regels[0].status, 'valuta'); assert.equal(o.regels[1].status, 'ok'); assert.match(o.regels[1].notities[0], /geschat/); assert.equal(o.totalen.buiten, 1);
   assert.equal(P.overzicht([{ id: 'b', ticker: 'SHEL', aantal: 1, koers: 70, valuta: 'USD' }], [rec], '2026-11-03', G, {}).regels[0].status, 'euro', 'zonder ECB-koers niet te schatten');
 });
+
+test('dividendkalender: ontvangen dit jaar en verwacht de komende 12 maanden', () => {
+  const rec = { ticker: 'ASML.AS', naam: 'ASML', valuta: 'EUR', koers: { slot: 700, datum: '2026-11-04', dividenden: [['2025-11-04', 1.6], ['2026-02-10', 1.6], ['2026-04-28', 1.84], ['2026-07-29', 1.6], ['2026-10-28', 1.6]] } };
+  const us = { ticker: 'AAPL', naam: 'Apple', valuta: 'USD', koers: { slot: 200, datum: '2026-11-04', dividenden: [['2026-02-09', 0.26], ['2026-05-11', 0.26], ['2026-08-10', 0.26]] } };
+  const pos = [{ id: 'a', ticker: 'ASML.AS', aantal: 10, koers: 600, valuta: 'EUR', datum: '2026-03-01' }, { id: 'b', ticker: 'AAPL', aantal: 100, koers: 150, valuta: 'USD', datum: '2025-01-01', eur: 14000 }];
+  const k = P.dividendKalender(pos, [rec, us], '2026-11-05', { fx: { USD: 0.9, GBP: 1.2 } });
+  // ontvangen 2026: ASML (gekocht 1 maart) 1,84 + 1,6 + 1,6 per stuk × 10; Apple 3 × 0,26 × 100 × 0,9
+  assert.equal(k.ontvangenEur, Math.round((50.4 + 70.2) * 100) / 100);
+  // verwacht: alle dividenden van de afgelopen 12 maanden een jaar later (ASML 2025-11-04 valt net buiten het venster)
+  assert.equal(k.verwacht.filter(x => x.ticker === 'ASML.AS').length, 4);
+  assert.equal(k.verwacht[0].datum, '2027-02-09');
+  assert.ok(k.perMaand.length >= 4);
+  assert.equal(k.verwachtEur, Math.round((16 + 18.4 + 16 + 16 + 3 * 23.4) * 100) / 100);
+});

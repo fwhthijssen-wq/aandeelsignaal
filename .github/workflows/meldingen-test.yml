@@ -1,0 +1,20 @@
+# Handmatig: stuur een testmelding naar elk toestel in het geheim MELDINGEN (om te zien of meldingen werken).
+name: Meldingen testen
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - env:
+          MELDINGEN: ${{ secrets.MELDINGEN }}
+        run: |
+          if [ -z "$MELDINGEN" ]; then echo "::warning title=Meldingen::het geheim MELDINGEN is nog niet ingesteld"; exit 0; fi
+          npm install --no-save --silent web-push@3.6.7
+          node meldingen.js x x --test

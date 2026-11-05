@@ -17,7 +17,7 @@ LIJST = [
     ('EXO.AS', 'Exor', 'AEX'), ('HEIA.AS', 'Heineken', 'AEX'), ('IMCD.AS', 'IMCD', 'AEX'), ('KPN.AS', 'KPN', 'AEX'),
     ('NN.AS', 'NN Group', 'AEX'), ('PRX.AS', 'Prosus', 'AEX'), ('RAND.AS', 'Randstad', 'AMX'), ('REN.AS', 'RELX', 'AEX,FTSE', 'Verenigd Koninkrijk'),
     ('UMG.AS', 'Universal Music Group', 'AEX'), ('WKL.AS', 'Wolters Kluwer', 'AEX'),
-    ('CVC.AS', 'CVC Capital Partners', 'AEX', 'Jersey'), ('INPST.AS', 'InPost', 'AEX', 'Luxemburg'), ('SBMO.AS', 'SBM Offshore', 'AEX'),
+    ('CVC.AS', 'CVC Capital Partners', 'AEX', 'Jersey'), ('SBMO.AS', 'SBM Offshore', 'AEX'),     # InPost: overgenomen (Advent/FedEx, 2026)
     ('AALB.AS', 'Aalberts', 'AEX'),
     # AMX (Euronext, na de herziening van juni 2026; ongewijzigd in september 2026)
     ('AF.PA', 'Air France-KLM', 'AMX'), ('ALLFG.AS', 'Allfunds', 'AMX', 'Verenigd Koninkrijk'), ('AMG.AS', 'AMG Critical Materials', 'AMX'),
@@ -117,6 +117,10 @@ BESTAANDE_INDEX = {'ASML.AS': 'AEX', 'INGA.AS': 'AEX', 'UNA.AS': 'AEX,FTSE', 'PH
 SEC_KOPPELING = {'DBK.DE': 'DB', 'BBVA.MC': 'BBVA', 'SAN.MC': 'SAN', 'TEF.MC': 'TEF', 'GRF.MC': 'GRFS'}
 
 
+# Fondsen die op hun beurs in een andere valuta noteren dan gebruikelijk (fondsencontrole november 2026).
+VALUTA_UITZONDERING = {'CPG.L': 'USD', 'IHG.L': 'USD', 'MTLN.L': 'EUR'}
+
+
 def catalogus():
     """[(ticker, naam, land, valuta, beurs)] voor de nieuwe aandelen."""
     uit, gezien = [], set()
@@ -124,6 +128,7 @@ def catalogus():
         ticker, naam = rij[0], rij[1]
         suffix = '.' + ticker.rsplit('.', 1)[1]
         beurs, valuta, land = BEURS[suffix]
+        valuta = VALUTA_UITZONDERING.get(ticker, valuta)
         if len(rij) > 3 and rij[3]:
             land = rij[3]
         if ticker in gezien:

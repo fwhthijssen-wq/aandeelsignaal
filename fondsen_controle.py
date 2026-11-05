@@ -17,7 +17,37 @@ def woorden(t):
     return {w for w in re.split(r'[^a-z0-9]+', t) if len(w) > 1 and w not in STOP}
 
 
+def alle_woorden(t):
+    t = unicodedata.normalize('NFKD', str(t or '')).encode('ascii', 'ignore').decode().lower()
+    return [w for w in re.split(r'[^a-z0-9]+', t) if w]
+
+
+def afkorting(kort, woordenlijst):
+    """Is 'kort' te maken uit beginletters (of begindelen) van opeenvolgende woorden, waarbij woorden overgeslagen mogen
+    worden? Bijv. BMW = Bayerische Motoren Werke, INWIT = INfrastrutture Wireless ITaliane, Inditex = INdustria DIseño TEXtil."""
+    from functools import lru_cache
+
+    @lru_cache(None)
+    def kan(i, j, gebruikt):
+        if i == len(kort):
+            return gebruikt >= 2
+        for k in range(j, len(woordenlijst)):
+            w = woordenlijst[k]
+            for n in range(min(len(w), len(kort) - i), 0, -1):
+                if kort[i:i + n] == w[:n] and kan(i + n, k + 1, gebruikt + 1):
+                    return True
+        return False
+    return len(kort) >= 2 and kan(0, 0, 0)
+
+
+BEKEND = {'MUV2.DE'}      # Munich Re = Münchener Rückversicherungs-Gesellschaft
+
+
 def naam_past(catalogus, yahoo):
+    kort = [w for w in alle_woorden(catalogus)]
+    lang = alle_woorden(yahoo)
+    if any(afkorting(w, tuple(lang)) for w in kort if len(w) <= 8):
+        return True
     a, b = woorden(catalogus), woorden(yahoo)
     if not a or not b:
         return True
@@ -45,7 +75,7 @@ def controle(aandelen, vandaag, info_ophalen):
             meldingen.append((t, naam, 'Yahoo kent deze code niet (meer)'))
         elif info.get('quoteType') and info['quoteType'] not in ('EQUITY', 'ETF'):
             meldingen.append((t, naam, f"Yahoo noemt dit {info['quoteType']}"))
-        elif yn and not naam_past(naam, yn):
+        elif yn and t not in BEKEND and not naam_past(naam, yn):
             meldingen.append((t, naam, f'naam bij Yahoo: {yn}'))
     return meldingen
 

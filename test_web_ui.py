@@ -216,7 +216,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.goto(INDEX + '#/')
         pg.evaluate("window.MODEL_DATA = { gemaakt: '2026-11-03', live: { start: '2026-11-03', bijgewerkt: '2026-11-03', bedrag: 1000, kosten: 3, fx: null, varianten: [{ id: 'naic', naam: 'Alle kansen', regel: 'NAIC Kopen', samenvatting: { inleg: 0, wacht: 0 }, wacht: [], posities: [], historie: [] }] }, terug: null }")
         gezien = 0
-        for hash_ in ('#/', '#/markt', '#/signalen', '#/kwaliteit', '#/model', '#/a/AAPL/oordeel', '#/a/AAPL/naic', '#/a/AAPL/gezond', '#/a/AAPL/koers', '#/a/AAPL/cijfers'):
+        for hash_ in ('#/', '#/markt', '#/signalen', '#/kwaliteit', '#/model', '#/instellingen', '#/a/AAPL/oordeel', '#/a/AAPL/naic', '#/a/AAPL/gezond', '#/a/AAPL/koers', '#/a/AAPL/cijfers'):
             pg.evaluate("h => { location.hash = h; }", hash_); pg.wait_for_timeout(150)
             pg.evaluate("document.querySelectorAll('details').forEach(function(d){d.open=true})")
             ids = pg.evaluate("[...new Set([...document.querySelectorAll('main [data-hoe]')].map(function(x){return x.getAttribute('data-hoe')}))]")
@@ -268,6 +268,25 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.goto(INDEX + '#/vergelijk')
         pg.fill('#vg-b-zoek', 'nvidia'); pg.click('[data-treffer="NVDA"]'); pg.wait_for_timeout(200)
         self.assertIn('/NVDA', pg.evaluate('location.hash'))
+        self.assertEqual(self.fouten, [])
+
+    def test_meldingen_kaart_en_dividendkalender(self):
+        import datetime
+        pg = self.pagina()
+        d = datetime.date.today()
+        pg.goto(INDEX + '#/instellingen')
+        self.assertIn('Meldingen', pg.inner_text('[data-meldingen]'))
+        self.assertIn('volglijst en de modelportefeuille tellen niet mee', pg.inner_text('[data-meldingen]'))
+        # dividendkalender: een aankoop met datum en dividend in het afgelopen jaar
+        vorig = (d - datetime.timedelta(days=200)).isoformat(); ex = (d - datetime.timedelta(days=100)).isoformat()
+        pg.evaluate("""a => { AANDEEL_DATA.fx = { datum: a.d, USD: 0.9, GBP: 1.2 }; const r = AANDEEL_DATA.aandelen.find(x => x.ticker === 'ASML.AS');
+            r.koers = { slot: 700, datum: a.d, dividenden: [[a.ex, 1.6]] }; location.hash = '#/portefeuille'; }""", {'d': d.isoformat(), 'ex': ex})
+        pg.wait_for_selector('#pf-t')
+        pg.fill('#pf-t-zoek', 'asml'); pg.press('#pf-t-zoek', 'Enter'); pg.fill('#pf-n', '10'); pg.fill('#pf-k', '600'); pg.fill('#pf-d', vorig)
+        pg.click('#pf button[type=submit]')
+        k = pg.inner_text('[data-dividendkalender]')
+        self.assertIn('Verwacht komende 12 maanden', k); self.assertIn('16 €', k)
+        self.assertEqual(pg.locator('[data-dividend-maand]').count(), 1)
         self.assertEqual(self.fouten, [])
 
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):

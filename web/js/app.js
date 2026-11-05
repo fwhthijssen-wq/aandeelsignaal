@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.11.3 (2026.11.05)';
+  var APP_VERSIE = '1.12 (2026.11.05)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1095,6 +1095,21 @@
     }
     return '<div class="regel pf-regel" data-pf-positie="' + h(p.id) + '"><div class="tekstkolom">' + regels.join('') + knoppen + form + '</div></div>';
   }
+  function dividendKaartHtml(pos) {
+    var k = Portefeuille.dividendKalender(pos, DATA.aandelen, vandaag(), { fx: DATA.fx || null });
+    if (!k.ontvangen.length && !k.verwacht.length) return '';
+    var mnd = function (m) { return new Date(m + '-15T12:00:00Z').toLocaleDateString('nl-NL', { month: 'long', year: 'numeric', timeZone: 'UTC' }); };
+    var max = Math.max.apply(null, k.perMaand.map(function (m) { return m.eur; }).concat([1]));
+    return '<div class="kaart-plat" data-dividendkalender><h2>Dividend</h2><div class="kpis">' +
+      '<div class="kpi"><b>' + eur(k.ontvangenEur) + '</b><span>Ontvangen in ' + h(k.jaar) + ' (bruto)</span></div>' +
+      '<div class="kpi"><b>' + eur(k.verwachtEur) + '</b><span>Verwacht komende 12 maanden</span></div></div>' +
+      (k.perMaand.length ? '<h3>Verwacht per maand</h3>' + k.perMaand.map(function (m) {
+        return '<div class="balk-rij" data-dividend-maand="' + h(m.maand) + '"><span>' + h(mnd(m.maand)) + '</span><span class="balk" aria-hidden="true"><i style="width:' + Math.max(3, m.eur / max * 100) + '%"></i></span><b>' + eur(m.eur) + '</b></div>' +
+          '<p class="zacht dividend-namen">' + m.items.map(function (x) { return h(x.naam) + ' ±' + h(datumNl(x.datum)); }).join(' · ') + '</p>';
+      }).join('') : '') +
+      (k.ontvangen.length ? '<details><summary>Ontvangen in ' + h(k.jaar) + ' (' + k.ontvangen.length + ')</summary><ul class="punten">' + k.ontvangen.map(function (x) { return '<li>' + h(datumNl(x.datum)) + ' · ' + h(x.naam) + ': ' + getal(x.ps, 4).replace(/,?0+$/, '') + ' ' + h(x.valuta) + ' per aandeel = ' + eur(x.eur, 2) + '</li>'; }).join('') + '</ul></details>' : '') +
+      '<p class="zacht">Verwacht = de dividenden van het afgelopen jaar opnieuw, over het aantal dat u nu heeft; de datum is de ex-dividenddatum van vorig jaar. ' + hoe('dividend', 'Hoe wordt dit geschat?') + '</p></div>';
+  }
   function schermPortefeuille() {
     var act = winkel.actief(), pfs = winkel.portefeuilles(), pos = winkel.portefeuille(act.id);
     var o = pfOverzicht(pos), t = o.totalen, s = '<section><h1>' + (pfs.length > 1 ? h(act.naam) : 'Mijn portefeuille') + '</h1>' + portefeuilleKeuzeHtml(act, pfs);
@@ -1109,6 +1124,7 @@
         if (t.idxPct != null && t.pctMetIdx != null) s += '<p class="zacht" data-pf-vergelijk>' + (t.pctMetIdx > t.idxPct ? 'Uw aankopen deden het beter dan de index: ' : t.pctMetIdx < t.idxPct ? 'Uw aankopen deden het slechter dan de index: ' : 'Gelijk met de index: ') + pct(t.pctMetIdx) + ' tegenover ' + pct(t.idxPct) + ' (alleen aankopen met een datum en een index).' + (t.dividend > 0 && t.pctZonderDiv != null ? ' De meeste indexen tellen geen dividend mee (alleen de DAX wel); zonder dividend: <b>' + pct(t.pctZonderDiv) + '</b>.' : '') + '</p>';
         s += rendementGrafiekHtml(o.reeks, pfs.length > 1 ? act.naam : 'Uw portefeuille', 'var(--acc)', 'pf-lijn', 'Laatste 2 jaar, per week; een benadering met de weekkoersen en de wisselkoers van vandaag.');
       }
+      s += dividendKaartHtml(pos);
       if (t.buiten) s += '<p class="melding" data-pf-buiten-telling>' + t.buiten + ' van ' + pos.length + ' aankopen tellen niet mee in de totalen; bij die aankopen staat waarom.</p>';
       var res = Portefeuille.waardeer(pos.filter(function (x) { return !(x.verkopen && x.verkopen.length); }), DATA.aandelen, vandaag(), Gate);
       var sp = Dashboard.spreiding(res.regels, DATA.aandelen);
@@ -1124,6 +1140,8 @@
       var open = o.regels.filter(function (r) { return !r.heelVerkocht; }), dicht = o.regels.filter(function (r) { return r.heelVerkocht; });
       s += '<h2>Open posities <span class="zacht">' + open.length + '</span></h2><div class="lijst">' + open.map(pfPositieHtml).join('') + '</div>';
       if (dicht.length) s += '<h2>Verkocht <span class="zacht">' + dicht.length + '</span></h2><div class="lijst">' + dicht.map(pfPositieHtml).join('') + '</div>';
+      var mm = meldingLees();
+      if (mm && mm.gekopieerd && mm.gekopieerd.join(',') !== eigenTickersMelding().join(',')) s += '<p class="melding" data-meld-gewijzigd>Uw portefeuille is gewijzigd: werk de meldingen bij in <a href="#/instellingen">Instellingen › Meldingen</a>.</p>';
       s += '<p class="hoe-rij">' + hoe('berekening', 'Hoe rekent de portefeuille?') + '</p>';
     }
     var opties = DATA.aandelen.slice().sort(function (x, y) { return x.naam.localeCompare(y.naam); }).map(function (a) { return '<option value="' + h(a.ticker) + '" data-valuta="' + h(a.valuta) + '">' + h(a.naam + ' (' + a.ticker + ')') + '</option>'; }).join('');
@@ -1850,6 +1868,13 @@
     kwaliteit: function () {
       return [{ id: 'termen', kop: 'Gecorrigeerd en tweede bron', html: lijst(['<b>Gecorrigeerd</b>: alleen als de eigen nettowinst en het aantal aandelen van de app aantonen dat de tweede bron gelijk heeft.', '<b>Tweede bron</b>: een afwijking betekent niet dat de app fout zit; vaak gaat het om een andere definitie of een herziening.']) }];
     },
+    instellingen: function () {
+      return [{ id: 'meldingen', kop: 'Meldingen', html: lijst(['Elke nacht vergelijkt de update de aandelen uit uw eigen portefeuilles met de dag ervoor. Komt een aandeel in de <b>koopzone</b> (NAIC Kopen) of de <b>verkoopzone</b>, of slaat de <b>middellange termijn</b> om naar positief of negatief, dan krijgt u één bericht met alle signalen van die nacht.',
+        'Uw portefeuille staat alleen op dit toestel. Daarom zet u eenmalig een tekst als geheim in GitHub: een sleutel die alleen berichten naar dit toestel kan sturen, het abonnement van dit toestel en de beurscodes (geen aantallen of bedragen).',
+        'Koopt of verkoopt u, dan meldt de app dat u de tekst opnieuw moet kopiëren en het geheim moet bijwerken.',
+        'De eerste nacht komt er een bevestiging; daarna alleen bij een signaal. Met Actions › Meldingen testen stuurt u meteen een testbericht.',
+        'Op een iPhone werkt dit alleen als de app op het beginscherm staat. Uitzetten: knop Meldingen uitzetten, en het geheim verwijderen.']) }];
+    },
     portefeuille: function () {
       return [{ id: 'berekening', kop: 'Hoe rekent de portefeuille?', html: lijst([
         '<b>Ingelegd</b>: het bedrag dat u in euro betaalde (zoals op het afschrift van uw bank) plus de aankoopkosten. Bij aandelen in euro volgt het bedrag uit aantal × koers.',
@@ -1860,7 +1885,11 @@
         '<b>Splitsingen</b> na de aankoop passen het aantal automatisch aan.',
         '<b>Index</b>: wat hetzelfde bedrag in de eigen index van het fonds had opgeleverd (met dezelfde kosten), verkocht in dezelfde delen. Indexen zonder dividend, behalve de DAX; daarom staat ook uw rendement zonder dividend erbij.',
         '<b>Grafiek</b>: de laatste 2 jaar per week, een benadering met de weekkoersen van de app en de wisselkoers van vandaag.',
-        'Telt een aankoop niet mee (geen eurobedrag, andere notering, geen verse koers), dan staat bij die aankoop waarom. Met Bewerken vult u aan of verbetert u.']) }];
+        'Telt een aankoop niet mee (geen eurobedrag, andere notering, geen verse koers), dan staat bij die aankoop waarom. Met Bewerken vult u aan of verbetert u.']) },
+        { id: 'dividend', kop: 'Dividendkalender', html: lijst(['<b>Ontvangen</b>: elk dividend met een ex-dividenddatum in dit kalenderjaar, ná uw aankoopdatum, × het aantal dat u toen had. Bruto, tegen de wisselkoers van vandaag.',
+          '<b>Verwacht</b>: elk dividend van de afgelopen 12 maanden een jaar later opnieuw, met hetzelfde bedrag per aandeel, over het aantal dat u nu heeft. De datum is die van vorig jaar (±).',
+          'Een schatting: bedrijven kunnen hun dividend verhogen, verlagen of schrappen, en de uitbetaling volgt meestal enkele weken na de ex-dividenddatum. Bronbelasting (in Nederland 15%) is niet afgetrokken.',
+          'Aankopen zonder datum tellen niet mee.']) }];
     },
     model: function () {
       var d = modelData(), B = d && (d.live || d.terug) || { bedrag: 1000, kosten: 3, fx: null };
@@ -1952,6 +1981,78 @@
     });
     document.getElementById('tz-stop').focus();
   }
+
+  /* ---- Pushmeldingen voor de eigen portefeuilles (1.12) ----
+     De app maakt op dit toestel een eigen sleutelpaar en een push-abonnement, en geeft één tekst om als geheim MELDINGEN in
+     GitHub te zetten (met de beurscodes uit de eigen portefeuilles, niet de volglijst of de modelportefeuille). De nachtelijke
+     update stuurt een bericht bij koopzone, verkoopzone of een omslag van de middellange termijn. */
+  var REPO = 'https://github.com/fwhthijssen-wq/aandeelsignaal';
+  function meldingKan() { return 'serviceWorker' in navigator && 'PushManager' in window && typeof Notification !== 'undefined' && !!(window.crypto && crypto.subtle); }
+  function meldingLees() { try { return JSON.parse(localStorage.getItem('as_meldingen') || 'null'); } catch (e) { return null; } }
+  function meldingBewaar(x) { try { if (x) localStorage.setItem('as_meldingen', JSON.stringify(x)); else localStorage.removeItem('as_meldingen'); } catch (e) { /* geen opslag */ } }
+  function eigenTickersMelding() {
+    var t = {}; winkel.portefeuille().forEach(function (p) { var open = p.aantal - (p.verkopen || []).reduce(function (a, v) { return a + v.aantal; }, 0); if (open > 1e-9) t[p.ticker] = 1; });
+    return Object.keys(t).sort();
+  }
+  function b64url(buf) { var b = new Uint8Array(buf), s = ''; for (var i = 0; i < b.length; i++) s += String.fromCharCode(b[i]); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+  function meldingTekst(m, extra) {
+    var eigen = { vapid: m.vapid, abonnement: m.abonnement, tickers: eigenTickersMelding() }, lijst = [eigen];
+    if (extra) { try { var d = JSON.parse(extra); (Array.isArray(d) ? d : d.toestellen || [d]).forEach(function (x) { if (x && x.abonnement && x.abonnement.endpoint !== m.abonnement.endpoint) lijst.push(x); }); } catch (e) { /* geen geldige tekst */ } }
+    return JSON.stringify({ toestellen: lijst });
+  }
+  function meldingAanzetten() {
+    return Notification.requestPermission().then(function (r) {
+      if (r !== 'granted') throw new Error('U gaf geen toestemming voor meldingen. Dat kunt u aanpassen in de instellingen van de browser.');
+      return crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign']);
+    }).then(function (paar) {
+      return Promise.all([crypto.subtle.exportKey('raw', paar.publicKey), crypto.subtle.exportKey('jwk', paar.privateKey), navigator.serviceWorker.ready]);
+    }).then(function (x) {
+      var publiek = new Uint8Array(x[0]);
+      return x[2].pushManager.getSubscription().then(function (oud) { return oud ? oud.unsubscribe() : true; }).then(function () {
+        return x[2].pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: publiek });
+      }).then(function (ab) {
+        var m = { vapid: { publiek: b64url(publiek), prive: x[1].d }, abonnement: ab.toJSON(), gekopieerd: null };
+        meldingBewaar(m); return m;
+      });
+    });
+  }
+  function meldingKaart() {
+    var m = meldingLees(), tickers = eigenTickersMelding();
+    var s = '<div class="kaart-plat" data-meldingen><h2>Meldingen</h2><p class="zacht">Een pushbericht op dit toestel als een aandeel uit uw eigen portefeuilles in de koopzone of de verkoopzone komt, of als de middellange termijn omslaat. De volglijst en de modelportefeuille tellen niet mee. ' + hoe('meldingen', 'Hoe werkt dit?') + '</p>';
+    if (!meldingKan()) return s + '<p>Dit toestel of deze browser ondersteunt geen pushmeldingen. Op een iPhone: zet de app eerst op het beginscherm (Delen › Zet op beginscherm) en open hem daar.</p></div>';
+    if (!m) return s + (tickers.length ? '<div class="knoppen"><button class="knop" id="meld-aan">Meldingen aanzetten op dit toestel</button></div>' : '<p>Voeg eerst aankopen toe aan een portefeuille.</p>') + '<p id="meld-fout" class="zacht" role="alert" style="color:var(--bad-ink)"></p></div>';
+    var gewijzigd = m.gekopieerd && m.gekopieerd.join(',') !== tickers.join(',');
+    return s + (gewijzigd ? '<div class="melding" data-meld-gewijzigd><b>Uw portefeuille is gewijzigd.</b><span>Kopieer de tekst opnieuw en werk het geheim MELDINGEN bij.</span></div>' : '') +
+      '<p><b>Meldingen staan klaar op dit toestel</b> voor ' + tickers.length + ' aandelen. Zet de tekst hieronder één keer als geheim in GitHub:</p>' +
+      '<ol class="punten"><li>Tik op <b>Kopieer de tekst</b>.</li><li>Open <a href="' + REPO + '/settings/secrets/actions" target="_blank" rel="noopener">GitHub › Settings › Secrets › Actions</a>. Kies <b>New repository secret</b>, naam <b>MELDINGEN</b>, plak de tekst en kies <b>Add secret</b>. (Bestaat MELDINGEN al: tik erop › <b>Update</b>.)</li>' +
+      '<li>Testen: <a href="' + REPO + '/actions/workflows/meldingen-test.yml" target="_blank" rel="noopener">Actions › Meldingen testen</a> › <b>Run workflow</b>. Binnen een minuut komt er een testbericht.</li></ol>' +
+      '<label for="meld-extra" class="zacht">Al meldingen op een ander toestel? Plak hier eerst de tekst van dat toestel; dan staan ze er samen in.</label><textarea id="meld-extra" rows="2"></textarea>' +
+      '<textarea id="meld-tekst" rows="4" readonly aria-label="Tekst voor het geheim MELDINGEN">' + h(meldingTekst(m)) + '</textarea>' +
+      '<div class="knoppen"><button class="knop" id="meld-kopieer">Kopieer de tekst</button><button class="knop rand" id="meld-uit">Meldingen uitzetten</button></div><p id="meld-uitslag" class="zacht" role="status"></p>' +
+      '<p class="zacht">De tekst bevat een sleutel die alleen berichten naar dit toestel kan sturen, en de beurscodes uit uw portefeuilles (geen aantallen of bedragen). Als geheim is hij voor niemand anders zichtbaar.</p></div>';
+  }
+  function meldingKoppel() {
+    var aan = document.getElementById('meld-aan');
+    if (aan) aan.addEventListener('click', function () {
+      aan.disabled = true;
+      meldingAanzetten().then(function () { route(); }, function (e) { aan.disabled = false; var f = document.getElementById('meld-fout'); if (f) f.textContent = (e && e.message) || 'Aanzetten mislukt.'; });
+    });
+    var ex = document.getElementById('meld-extra'), tk = document.getElementById('meld-tekst');
+    if (ex && tk) ex.addEventListener('input', function () { tk.value = meldingTekst(meldingLees(), ex.value); });
+    var kop = document.getElementById('meld-kopieer');
+    if (kop) kop.addEventListener('click', function () {
+      var tekst = tk.value, u = document.getElementById('meld-uitslag');
+      var klaar = function () { var m = meldingLees(); if (m) { m.gekopieerd = eigenTickersMelding(); meldingBewaar(m); } if (u) u.textContent = 'Gekopieerd. Plak de tekst nu als geheim MELDINGEN in GitHub.'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(tekst).then(klaar, function () { tk.select(); document.execCommand && document.execCommand('copy'); klaar(); });
+      else { tk.select(); try { document.execCommand('copy'); } catch (e) { /* zelf kopiëren */ } klaar(); }
+    });
+    var uit = document.getElementById('meld-uit');
+    if (uit) uit.addEventListener('click', function () {
+      navigator.serviceWorker.ready.then(function (r) { return r.pushManager.getSubscription(); }).then(function (ab) { return ab ? ab.unsubscribe() : true; }).catch(function () {}).then(function () {
+        meldingBewaar(null); toast('Meldingen uitgezet op dit toestel. Verwijder ook het geheim MELDINGEN in GitHub (of zet de tekst van uw andere toestellen erin).'); route();
+      });
+    });
+  }
   function schermInstellingen() {
     var st = winkel.staat(), th = st.instellingen.thema, lb = st.laatsteBackup;
     return '<section><h1>Instellingen</h1>' + (winkel.fout() ? '<div class="melding"><b>Let op</b><span>' + h(winkel.fout()) + '</span></div>' : '') +
@@ -1959,11 +2060,12 @@
       '<div class="kaart-plat" data-weergave-kaart><h2>Weergave</h2><div class="keuze" role="group" aria-label="Weergave">' + [['eenvoudig', 'Eenvoudig'], ['uitgebreid', 'Uitgebreid']].map(function (o) { return '<button data-weergave-knop="' + o[0] + '" aria-pressed="' + (weergave() === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div>' +
       '<p class="zacht">Eenvoudig: per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg. Uitgebreid: ook de onderbouwing, de zes aanvullende metingen en alle kentallen. Tip: met <code>?weergave=eenvoudig</code> achter de link opent iemand anders de app meteen eenvoudig.</p></div>' +
       '<div class="kaart-plat detail"><h2>Gezondheidscheck</h2><p class="zacht">De gezondheidscheck (Gezond, Gemengd of Zwak) verschijnt pas als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn. Het NAIC-oordeel heeft eigen eisen.</p><label for="mind">Minimum aantal metingen voor de gezondheidscheck</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
-      backupKaart() +
+      backupKaart() + meldingKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · ' + h(MAKER) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
   }
   function instKoppel() {
+    meldingKoppel();
     Array.prototype.forEach.call(document.querySelectorAll('[data-th]'), function (b) { b.addEventListener('click', function () { winkel.zetThema(b.getAttribute('data-th')); pasThema(); route(); }); });
     var bk = document.getElementById('bk');
     if (bk) bk.addEventListener('click', function () {

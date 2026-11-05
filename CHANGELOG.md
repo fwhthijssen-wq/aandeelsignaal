@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.12 (2026.11.05)
+- **Pushmeldingen voor uw eigen portefeuilles** (Instellingen › Meldingen): een bericht op uw telefoon als een aandeel uit uw portefeuilles in de koopzone of de verkoopzone komt, of als de middellange termijn omslaat. Niet voor de volglijst of de modelportefeuille. De app maakt op het toestel een eigen sleutel en abonnement; die zet u met de beurscodes één keer als geheim MELDINGEN in GitHub. De nachtelijke update stuurt de berichten; testen kan met Actions › Meldingen testen.
+- **Dividendkalender** in de portefeuille: ontvangen dit jaar en verwacht de komende 12 maanden, per maand en per fonds (schatting op basis van het afgelopen jaar, bruto).
+- **Maandelijkse fondsencontrole** (GitHub-melding bij aandachtspunten). Eerste ronde: InPost is overgenomen (Advent/FedEx) en uit de lijst; Compass Group en InterContinental Hotels noteren in Londen in dollars en Metlen in euro's; die koersen komen nu weer goed binnen.
+
 ## 1.11.3 (2026.11.05)
 - **Galapagos heet nu Lakefront Biotherapeutics** (beurscode LKFT, sinds mei 2026); de oude code gaf geen koersen meer. Jaarcijfers, bronnen en koppelingen gaan mee.
 

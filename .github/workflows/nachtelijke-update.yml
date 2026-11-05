@@ -96,6 +96,28 @@ jobs:
             git add staat.json && git commit -qm "Modelportefeuille $(date -u +%F)" || echo "niets nieuw"
             for i in 1 2 3; do git pull -q --rebase origin model && git push -q origin model && break; sleep 15; done
           fi
+      - name: Stand van de meldingen terughalen
+        if: github.event_name == 'schedule' && steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
+        uses: actions/cache/restore@v5
+        with:
+          path: meldingen
+          key: meldingen-${{ github.run_id }}
+          restore-keys: meldingen-
+      - name: Pushmeldingen voor de eigen portefeuilles (alleen 's nachts en met goede gegevens)
+        if: github.event_name == 'schedule' && steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
+        continue-on-error: true
+        env:
+          MELDINGEN: ${{ secrets.MELDINGEN }}
+        run: |
+          if [ -z "$MELDINGEN" ]; then echo "Geen meldingen ingesteld."; exit 0; fi
+          npm install --no-save --silent web-push@3.6.7
+          node meldingen.js web/data/aandelen.json meldingen/staat.json
+      - name: Stand van de meldingen bewaren
+        if: github.event_name == 'schedule' && steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
+        uses: actions/cache/save@v5
+        with:
+          path: meldingen
+          key: meldingen-${{ github.run_id }}
       - name: Gegevens bewaren voor de volgende run
         if: steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
         uses: actions/cache/save@v5

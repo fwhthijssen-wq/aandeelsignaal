@@ -12,7 +12,8 @@ class Amx(unittest.TestCase):
         self.assertEqual(len(amx), 25)
         self.assertIn('RAND.AS', amx)
         self.assertNotIn('AEX', ix['RAND.AS'])
-        for t in ('SBMO.AS', 'AALB.AS', 'CVC.AS', 'INPST.AS', 'WDP.BR'):
+        self.assertNotIn('INPST.AS', ix)          # overgenomen in 2026
+        for t in ('SBMO.AS', 'AALB.AS', 'CVC.AS', 'WDP.BR'):
             self.assertIn('AEX', ix[t])
 
     def test_esef_koppeling(self):

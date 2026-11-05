@@ -435,3 +435,4 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .zoek-treffers button:hover, .zoek-treffers button:focus { background: var(--line-soft); outline: none; }
 .zoek-treffers .zacht { padding: 8px 10px; }
 .velden .veld-breed { grid-column: 1 / -1; }
+.dividend-namen { margin: -2px 0 8px; font-size: .85rem; }

@@ -219,6 +219,44 @@
     return { regels: regels, totalen: t, reeks: reeksInTijd(regels, aandelen, opties.fx, opties.indexreeksen) };
   }
 
-  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn, penceVermoeden: penceVermoeden, overzicht: overzicht, positieInEuro: positieInEuro, indexVan: indexVan, fxNu: fxNu };
+  /* Dividendkalender: wat er dit kalenderjaar binnenkwam en wat er de komende 12 maanden te verwachten is. Verwachting: elk
+     dividend van de afgelopen 12 maanden een jaar later opnieuw, met hetzelfde bedrag per aandeel, over het aantal dat u nu
+     heeft (bruto, tegen de wisselkoers van vandaag). Een schatting: bedrijven kunnen hun dividend verhogen, verlagen of schrappen. */
+  function plusJaar(d) { var x = new Date(d + 'T12:00:00Z'); x.setUTCFullYear(x.getUTCFullYear() + 1); return x.toISOString().slice(0, 10); }
+  function dividendKalender(posities, aandelen, vandaag, opties) {
+    opties = opties || {};
+    var per = {}; (aandelen || []).forEach(function (a) { per[a.ticker] = a; });
+    var jaar = vandaag.slice(0, 4), jan1 = jaar + '-01-01', jaarTerug = (parseInt(jaar, 10) - 1) + vandaag.slice(4);
+    var ontvangen = [], verwacht = [];
+    (posities || []).forEach(function (p) {
+      var rec = per[p.ticker];
+      if (!rec || !rec.koers || !p.datum) return;
+      var f = fxNu(opties.fx, rec.valuta); if (!f) return;
+      var splits = rec.koers.splitsingen || [], verk = p.verkopen || [], effKoop = p.aantal * factor(splits, p.datum);
+      var heeft = function (d) { return effKoop - verk.filter(function (v) { return v.datum < d; }).reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0); };
+      var nu = heeft('9999-12-31');
+      (rec.koers.dividenden || []).forEach(function (x) {
+        if (!(x[1] > 0) || !(x[0] > p.datum)) return;
+        if (x[0] >= jan1 && x[0] <= vandaag) { var h = heeft(x[0]); if (h > 0) ontvangen.push({ ticker: p.ticker, naam: rec.naam, datum: x[0], ps: x[1], valuta: rec.valuta, eur: Math.round(x[1] * h * f * 100) / 100 }); }
+      });
+      if (nu > 1e-9) (rec.koers.dividenden || []).forEach(function (x) {
+        if (!(x[1] > 0) || !(x[0] > jaarTerug) || x[0] > vandaag) return;
+        var d = plusJaar(x[0]);
+        if (d > vandaag) verwacht.push({ ticker: p.ticker, naam: rec.naam, datum: d, ps: x[1], valuta: rec.valuta, eur: Math.round(x[1] * nu * f * 100) / 100 });
+      });
+    });
+    // dezelfde aandelen in meerdere aankopen: per fonds en datum samenvoegen
+    function samen(l) {
+      var m = {}; l.forEach(function (x) { var k = x.ticker + '|' + x.datum; if (m[k]) m[k].eur = Math.round((m[k].eur + x.eur) * 100) / 100; else m[k] = Object.assign({}, x); });
+      return Object.keys(m).map(function (k) { return m[k]; }).sort(function (a, b) { return a.datum < b.datum ? -1 : a.datum > b.datum ? 1 : a.naam.localeCompare(b.naam); });
+    }
+    ontvangen = samen(ontvangen); verwacht = samen(verwacht);
+    var maanden = {};
+    verwacht.forEach(function (x) { var k = x.datum.slice(0, 7); (maanden[k] = maanden[k] || { maand: k, eur: 0, items: [] }).items.push(x); maanden[k].eur = Math.round((maanden[k].eur + x.eur) * 100) / 100; });
+    var som = function (l) { return Math.round(l.reduce(function (a, x) { return a + x.eur; }, 0) * 100) / 100; };
+    return { jaar: jaar, ontvangen: ontvangen, ontvangenEur: som(ontvangen), verwacht: verwacht, verwachtEur: som(verwacht), perMaand: Object.keys(maanden).sort().map(function (k) { return maanden[k]; }) };
+  }
+
+  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn, penceVermoeden: penceVermoeden, overzicht: overzicht, dividendKalender: dividendKalender, positieInEuro: positieInEuro, indexVan: indexVan, fxNu: fxNu };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Portefeuille = api;
 })(typeof self !== 'undefined' ? self : this);
