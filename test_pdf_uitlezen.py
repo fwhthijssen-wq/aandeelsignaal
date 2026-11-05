@@ -27,6 +27,20 @@ Weighted average number of shares used in calculating diluted
   earnings per share                                                              3,201         3,197
 """
 
+# Nederlands verslag: toelichtingsnummer vóór de getallen, bedragen '(€ x 1.000)', aantal aandelen voluit,
+# winst onder een kopje 'Winst toe te rekenen aan:'
+NEDERLANDS = """
+Geconsolideerde winst-en-verliesrekening (€ x 1.000)
+                                                         Toelichting        2019          2018
+Winst over het boekjaar                                                    24.500        17.300
+Winst toe te rekenen aan:
+Aandeelhouders van de Vennootschap                                         24.127        17.072
+Minderheidsbelangen                                              35           373           228
+Gemiddeld aantal uitstaande aandelen                              8     6.444.622     6.407.929
+Gewone winst per aandeel (in €)                                  13          3,74          2,66
+Verwaterde winst per aandeel (in €)                              13          3,74          2,66
+"""
+
 
 class PdfUitlezen(unittest.TestCase):
     def test_nederlandse_tabel(self):
@@ -43,6 +57,11 @@ class PdfUitlezen(unittest.TestCase):
         # gebroken boekjaar: document gelabeld 2018 terwijl de kop 2019 | 2018 is; het andere jaar is dan 2019, niet 2017
         res, _ = pu.uitlezen(AALBERTS.replace('2019', 'XXXX').replace('2018', '2019').replace('XXXX', '2020').replace('2019 ', '2019 '), 2019, komma=False)
         self.assertEqual(sorted(r[0] for r in res), [2019, 2020])
+
+    def test_nederlands_met_toelichtingsnummers(self):
+        res, reden = pu.uitlezen(NEDERLANDS, 2019, komma=True)
+        self.assertIsNone(reden)
+        self.assertEqual([(r[0], r[1], r[2], r[3]) for r in res], [(2019, 3.74, 24_127_000, 6_444_622), (2018, 2.66, 17_072_000, 6_407_929)])
 
     def test_klopt_niet_dan_niets(self):
         res, reden = pu.uitlezen(AALBERTS.replace('2.03', '2.33'), 2019, komma=False)

@@ -67,6 +67,8 @@ AANDELEN = re.compile(r'(number|average|nombre|aantal|weighted|gewogen|anzahl|du
 WINST = re.compile(r'^\s*earnings\s{2,}|^\s*profit for the (year|period)\b|attributable|part du groupe|group share|toe te rekenen|toekomend|net (income|profit|result)|résultat net|'
                    r'profit (for the (year|period) )?attributable|earnings attributable|nettoresultaat|nettowinst|anteilseigner|aktionäre|konzernergebnis|jahresüberschuss', re.I)
 
+# regel onder een kopje 'Winst toe te rekenen aan:' ('Aandeelhouders van de Vennootschap   17.705   58.590')
+EIGENAREN = re.compile(r'^\s*(aandeelhouders|houders van (gewone )?aandelen|(equity )?holders|owners|shareholders|eigenaren)\b', re.I)
 
 AANGEPAST = re.compile(r'before|excluding|adjusted|underlying|continuing|discontinued|recurring|core|normali|pro forma|'
                        r'voor amortisatie|exclusief|voortgezet|hors |courant|ajust|avant |activités poursuivies|cash|bereinigt|fortgeführt|aufgegeben|vor sondereinfl', re.I)
@@ -138,6 +140,8 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
             a, b = g[1], g[3]                                      # kolommen gewoon/verwaterd per jaar
         elif len(g) == 3 and abs(g[0]) < 60 and (float(g[0]).is_integer() or round(g[0], 1) == g[0]) and not float(g[1]).is_integer():
             a, b = g[1], g[2]                                      # eerste getal is een toelichtingsnummer
+        elif len(g) == 3 and 0 < g[0] < 100 and float(g[0]).is_integer() and min(abs(g[1]), abs(g[2])) >= 1000:
+            a, b = g[1], g[2]                                      # toelichtingsnummer vóór grote bedragen of aantallen (bijv. '8  6.444.622  6.407.929')
         else:
             a, b = g[0], g[1]
         if (EPS_LABEL.search(ctx) or kolom4) and PER_AANDEEL.search(ctx) and all(abs(x) < 1000 for x in (a, b)) and \
@@ -146,7 +150,8 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
             eps_r.append((p, i, (a, b), bool(re.search(r'pence|cents|\(p\)|\d\s?p\b|\bp\b|\(c\)|\bcent', breed, re.I))))
         if AANDELEN.search(ctx) and all(x >= 1000 or (x > 1 and not float(x).is_integer()) for x in (a, b)):
             aand_r.append((p, i, (a, b), kolom4 or bool(re.search(r'dilut|dilu|verwater|including|inclusief|y compris', ctx, re.I))))
-        if WINST.search(r) and not PER_AANDEEL.search(r) and not AANGEPAST.search(r):
+        onder_kop = bool(EIGENAREN.search(r)) and bool(re.search(r'toe te rekenen|toekomend|attributable', ' '.join(x for _, x in regels[max(0, i - 3):i]), re.I))
+        if (WINST.search(r) or onder_kop) and not PER_AANDEEL.search(r) and not AANGEPAST.search(r):
             if len(g) == 6:                 # Britse tabel: winst, gewone en verwaterde winst per aandeel, per jaar op één regel
                 hoofd = ' '.join(x for _, x in regels[max(0, i - 5):i + 1])
                 winst_r.append((p, i, (g[0], g[3])))
@@ -161,7 +166,7 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
         nieuwste_links = kop[0] == jaar
         ander = kop[1] if nieuwste_links else kop[0]       # het andere jaar uit de kop (niet blind jaar - 1)
         for pa, ia, (a0, a1), verw in aand_r:
-            if abs(ia - ie) > 300:
+            if abs(ia - ie) > 1500:      # Nederlandse verslagen: toelichting aantal aandelen soms ver na de winst-en-verliesrekening
                 continue
             for pw, iw, (w0, w1) in winst_r:
                 if abs(iw - ie) > 3000:
@@ -180,7 +185,7 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
                                 t0, t1 = 0.55 * 10 ** -decimalen(x0), 0.55 * 10 ** -decimalen(x1)
                                 if past(win[0] * sw * te, vol[0] * sa, x0, tol * te, t0) and past(win[1] * sw * te, vol[1] * sa, x1, tol * te, t1):
                                     sleutel = (round(x0 / te, 6), round(x1 / te, 6), round(vol[0] * sa), round(vol[1] * sa))
-                                    oplossingen.setdefault(sleutel + (ander,), (win[0] * sw, win[1] * sw, pe, pa, pw, ie, ia, iw, verw))
+                                    oplossingen.setdefault(sleutel + (ander,), (win[0] * sw, win[1] * sw, pe, pa, pw, ie, ia, iw, verw, sa))
     # dezelfde aantallen en eps maar andere winstregel (bv. winst en winst voortgezette activiteiten gelijk) telt als één
     import os
     if os.environ.get('DEBUG'):
@@ -189,13 +194,17 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
         binnen = {k: v for k, v in oplossingen.items() if hint / 3 <= k[2] <= hint * 3}
         if binnen:
             oplossingen = binnen
+    if len(oplossingen) > 1:      # aantal aandelen staat er al voluit (bijv. '6.444.622' onder '(€ x 1.000)'): niet nog eens schalen
+        voluit = {k: v for k, v in oplossingen.items() if v[9] == 1}
+        if voluit and all(any(abs(k[0] - k2[0]) < 1e-9 and abs(k[1] - k2[1]) < 1e-9 for k2 in voluit) for k in oplossingen):
+            oplossingen = voluit
     if len(oplossingen) > 1:      # voorkeur: regel met verwaterd aantal aandelen
         verwaterd = {k: v for k, v in oplossingen.items() if v[8]}
         if len(verwaterd) == 1:
             oplossingen = verwaterd
     if len(oplossingen) != 1:
         return None, f'{len(oplossingen)} passende combinaties ({len(eps_r)} eps-, {len(aand_r)} aandelen-, {len(winst_r)} winstregels)'
-    (x0, x1, v0, v1, ander), (w0, w1, pe, pa, pw, ie, ia, iw, _) = next(iter(oplossingen.items()))
+    (x0, x1, v0, v1, ander), (w0, w1, pe, pa, pw, ie, ia, iw, _, _) = next(iter(oplossingen.items()))
     bewijs = lambda i: ' '.join(regels[i][1].split())[:160]
     return [(jaar, x0, w0, v0, pa, bewijs(ia), bewijs(ie), bewijs(iw)),
             (ander, x1, w1, v1, pa, bewijs(ia), bewijs(ie), bewijs(iw))], None
