@@ -33175,6 +33175,64 @@
        "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.131: \"Weighted average numbers of ordinary shares (diluted) 13,484 13,407\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.59 1.03\" / \"Profit for the period 7.9 13.8\""
       }
      ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Kendrion N.V. (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=65681&KeyWords=Kendrion+N.V.",
+     "ingediend": "2021-02-22",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2020-65681-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 0.29,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 4300000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 14765000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.61,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 8300000.000000001,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 13484000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Kendrion N.V.), officieel register AFM-register financiële verslaggeving, pdf p.143: \"Weighted average numbers of ordinary shares (diluted) 14,765 13,484\" / \"Basic earnings per share (EUR), based on weighted average (diluted) 0.29 0.61\" / \"Profit for the period 4.3 8.3\""
+      }
+     ]
     }
    ]
   },
