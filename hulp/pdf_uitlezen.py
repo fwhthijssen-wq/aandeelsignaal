@@ -166,7 +166,8 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
         nieuwste_links = kop[0] == jaar
         ander = kop[1] if nieuwste_links else kop[0]       # het andere jaar uit de kop (niet blind jaar - 1)
         for pa, ia, (a0, a1), verw in aand_r:
-            if abs(ia - ie) > 1500:      # Nederlandse verslagen: toelichting aantal aandelen soms ver na de winst-en-verliesrekening
+            ver = 1500 if re.search(r'aandelen', ' '.join(x for _, x in regels[max(0, ia - 1):ia + 1]), re.I) else 300
+            if abs(ia - ie) > ver:      # Nederlandse verslagen: toelichting aantal aandelen soms ver na de winst-en-verliesrekening
                 continue
             for pw, iw, (w0, w1) in winst_r:
                 if abs(iw - ie) > 3000:
