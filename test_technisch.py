@@ -174,3 +174,20 @@ class ModelGegevens(unittest.TestCase):
     def test_per_week(self):
         import bouw_webdata as bw
         self.assertEqual(bw.per_week([('2026-10-26', 1.0), ('2026-10-30', 2.0), ('2026-11-02', 3.0)]), [['2026-10-30', 2.0], ['2026-11-02', 3.0]])
+
+
+class KoersenOverdag(unittest.TestCase):
+    def test_alleen_koersblok_nieuwer_en_rest_blijft(self):
+        import koersen_bijwerken as kb
+        from datetime import date, timedelta, datetime, timezone
+        d0 = date(2025, 1, 1)
+        reeks = [((d0 + timedelta(days=i)).isoformat(), 100 + i * 0.1) for i in range(300)]
+        best = {'aandelen': [{'ticker': 'AAPL', 'koers': {'datum': reeks[-2][0], 'slot': 1, 'bereik': {'x': 1}, 'dividenden': [['2025-02-01', 0.2]]}},
+                             {'ticker': 'ASML.AS', 'koers': {'datum': '2030-01-01', 'slot': 5}}]}
+        n = kb.bijwerken(best, {'AAPL': reeks, 'ASML.AS': reeks}, nu=datetime(2025, 10, 28, 17, 5, tzinfo=timezone.utc))
+        self.assertEqual(n, 1)
+        k = best['aandelen'][0]['koers']
+        self.assertEqual(k['datum'], reeks[-1][0]); self.assertAlmostEqual(k['slot'], round(reeks[-1][1], 4))
+        self.assertEqual(k['bereik'], {'x': 1}); self.assertEqual(k['dividenden'], [['2025-02-01', 0.2]])
+        self.assertEqual(best['aandelen'][1]['koers']['slot'], 5, 'een oudere koers vervangt niets')
+        self.assertTrue(best['koersen_bijgewerkt'].startswith('2025-10-28T17:05'))

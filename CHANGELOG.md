@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.11.2 (2026.11.05)
+- **Koersen ook overdag:** op werkdagen rond 18:00 uur (na het sluiten van de Europese beurzen) een lichte update die alleen de koersen vernieuwt; de nachtelijke update blijft alles opnieuw maken. Onderaan Start staat wanneer de koersen voor het laatst vernieuwd zijn. Amerikaanse koersen zijn om 18:00 uur nog tussenkoersen. De modelportefeuille rekent alleen met de nachtelijke update.
+
 ## 1.11.1 (2026.11.04)
 - **Overige lokale fondsen op Euronext Amsterdam** (13, zonder index): AFC Ajax, Azerion, Cabka, Ctac, Ebusco, Heineken Holding, Holland Colours, Hydratec, Morefield, NX Filtration, Royal Delft (Porceleyne Fles), Value8 en Vivoryon. Bij Markt onder *Amsterdam overig (lokaal)*. Vergelijkingsindex: de AMX. Niet opgenomen (geen koersen meer): Beter Bed, Brill, DGB, KAS Bank, Rood Testhouse; Nedsense (lege beursschil).
 

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.11.1 (2026.11.04)';
+  var APP_VERSIE = '1.11.2 (2026.11.05)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -718,7 +718,9 @@
   }
   function statusRegel() {
     var R = rijen(), ok = R.filter(function (r) { return r.bevestigd; }).length;
-    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · <a href="#/achtergrond">Achtergrond en hulp</a></p><p class="status-regel maker" data-maker>' + h(MAKER) + '</p>';
+    var kb = DATA.koersen_bijgewerkt && DATA.koersen_bijgewerkt > String(DATA.gemaakt || '') ? new Date(DATA.koersen_bijgewerkt) : null;
+    var kTekst = kb && !isNaN(kb) ? ' · koersen van ' + h(kb.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' }) + ', ' + kb.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })) : '';
+    return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + kTekst + ' · <a href="#/achtergrond">Achtergrond en hulp</a></p><p class="status-regel maker" data-maker>' + h(MAKER) + '</p>';
   }
   /* Start is een dashboard: alleen tegels. Elke tegel opent één scherm; daar zoomt u verder in. */
   function schermStart() {

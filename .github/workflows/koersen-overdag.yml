@@ -1,0 +1,53 @@
+# Lichte koersupdate op werkdagen na het sluiten van de Europese beurzen (17:05 UTC = 18:05 in de winter, 19:05 in de zomer).
+# Alleen de koersen worden vernieuwd; de nachtelijke update maakt alles opnieuw. De modelportefeuille verandert hier niet.
+name: Koersen overdag
+on:
+  schedule:
+    - cron: '5 17 * * 1-5'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  bouw:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Gegevens van de nachtelijke update terughalen
+        id: cache
+        uses: actions/cache/restore@v5
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
+          restore-keys: gegevens-
+      - name: Koersen vernieuwen
+        id: koersen
+        run: python koersen_bijwerken.py web/data
+      - name: Modelportefeuille tonen (zonder verwerken)
+        run: |
+          git clone -q --depth 1 -b model "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" mt || exit 0
+          node modelportefeuille.js web/data/aandelen.json mt/staat.json web/data --terug mt/terug.json
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: web
+  publiceer:
+    needs: bouw
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v5
