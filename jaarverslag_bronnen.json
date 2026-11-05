@@ -33243,6 +33243,64 @@
    "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
    "documenten": [
     {
+     "document": "Jaarlijkse financiële verslaggeving Sif Holding N.V. (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24736&KeyWords=Sif+Holding+N.V.",
+     "ingediend": "2017-03-29",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2016-24736-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.47,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 37365000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 25501356.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1.4,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 35628000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 25501356.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.47: \"Number of ordinary shares outstanding 13 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 1.47 1.40\" / \"Net earnings 37,365 35,628 27,995 Profit attributable to the shareholder\""
+      }
+     ]
+    },
+    {
      "document": "Jaarlijkse financiële verslaggeving Sif Holding N.V. (boekjaar 2017)",
      "soort": "pdf",
      "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32357&KeyWords=Sif+Holding+N.V.",
@@ -33357,6 +33415,64 @@
        "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.58: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) (0.08) 1.21\" / \"Net earnings -2,051 30,760 37,365 35,628 27,995 Profit attributable to the shareholders\""
       }
      ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Sif Holding N.V. (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54923&KeyWords=Sif+Holding+N.V.",
+     "ingediend": "2020-03-13",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2019-54923-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.22,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 5488000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 25501356.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -0.08,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -2051000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 25501356.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Sif Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.65: \"Number of ordinary shares outstanding 25,501,356 25,501,356\" / \"Diluted earnings per share (EUR) 0.22 (0.08)\" / \"Equity holders of Sif Holding N.V. 5,488 (2,051)\""
+      }
+     ]
     }
    ]
   },
@@ -33366,6 +33482,64 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
    "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Sligro Food Group N.V. (boekjaar 2015)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=18837&KeyWords=Sligro+Food+Group+N.V.",
+     "ingediend": "2016-02-08",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2015-18837-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1.84,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 81000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 43800000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 1.58,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 69000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 43700000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Sligro Food Group N.V.), officieel register AFM-register financiële verslaggeving, pdf p.160: \"Aantal uitstaande aandelen (x miljoen) 43,8 43,7 43,7 43,8 44,0\" / \"Verwaterde winst per aandeel 1,84 1,58\" / \"Ter vergelijking: nettowinst 81 69 68 69 78\""
+      }
+     ]
+    },
     {
      "document": "Jaarlijkse financiële verslaggeving Sligro Food Group N.V. (boekjaar 2016)",
      "soort": "pdf",
@@ -33731,6 +33905,180 @@
    "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
    "documenten": [
     {
+     "document": "Jaarlijkse financiële verslaggeving Heineken Holding N.V. (boekjaar 2015)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=18913&KeyWords=Heineken+Holding+N.V.",
+     "ingediend": "2016-02-17",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2015-18913-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 3.32,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 957000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 2.64,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 760000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 3.32 2.64\" / \"Profit for the year 957 760\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Heineken Holding N.V. (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24019&KeyWords=Heineken+Holding+N.V.",
+     "ingediend": "2017-02-22",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2016-24019-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 2.7,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 779000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 3.32,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 957000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.27: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (EUR) 23 2.70 3.32\" / \"Profit for the year 779 957\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Heineken Holding N.V. (boekjaar 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=31360&KeyWords=Heineken+Holding+N.V.",
+     "ingediend": "2018-02-19",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2017-31360-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 3.39,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 977000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 2.7,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 779000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 288030168.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.29: \"shares – basic 23 288,030,168 288,030,168\" / \"Basic earnings per ordinary share (€) 23 3.39 2.70\" / \"Profit for the year 977 779\""
+      }
+     ]
+    },
+    {
      "document": "Jaarlijkse financiële verslaggeving Heineken Holding N.V. (boekjaar 2019)",
      "soort": "pdf",
      "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=53724&KeyWords=Heineken+Holding+N.V.",
@@ -33785,6 +34133,1214 @@
        "waarde": 288030482.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Heineken Holding N.V.), officieel register AFM-register financiële verslaggeving, pdf p.42: \"Total number of shares issued 288,030,168 288,030,482 completion and selling expenses.\" / \"HEINEKEN increases/decreases the total plan cost. The cumulative effect is recorded in the profit or loss, Basic earnings per share 3.77 3.35\" / \"Profit for the year 1,087 966\""
+      }
+     ]
+    }
+   ]
+  },
+  "ALFEN.AS": {
+   "naam": "Alfen N.V.",
+   "lei": "724500HDW6IWR9J5YT90",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Alfen N.V. (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=41207&KeyWords=Alfen+N.V.",
+     "ingediend": "2019-02-20",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2018-41207-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -0.01,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -263000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 20000000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.09,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1721000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 20000000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.64: \"ordinary shares\" / \"Diluted earnings per share (0.01) 0.09\" / \"Net profit / (loss) (263) 1,721\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Alfen N.V. (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=65664&KeyWords=Alfen+N.V.",
+     "ingediend": "2021-02-17",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2020-65664-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 0.57,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 11987000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 20891513.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.28,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 5625000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 20000000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Alfen N.V.), officieel register AFM-register financiële verslaggeving, pdf p.59: \"tax expense, showing how the tax expense is affected by Weighted average number of ordinary shares in issue (x1) 20,891,513 20,000,000\" / \"Diluted earnings per share (in EUR) 0.57 0.28\" / \"(attributable to the owners of the Company) 11,987 5,625\""
+      }
+     ]
+    }
+   ]
+  },
+  "FAST.AS": {
+   "naam": "Fastned B.V.",
+   "lei": "7245000V8JJ8CE1L8G60",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Fastned B.V. (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24297&KeyWords=Fastned+B.V.",
+     "ingediend": "2017-03-09",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2016-24297-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -0.4,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -5086733.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 12813406.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": -0.32,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": -3971486.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 12498146.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.62: \"Weighted average number of shares 12,813,406 12,498,146\" / \"Diluted earnings per share (0.40) (0.32)\" / \"Net profit (5,086,733) (3,971,486)\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Fastned B.V. (boekjaar 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=33370&KeyWords=Fastned+B.V.",
+     "ingediend": "2018-04-30",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2017-33370-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -0.37,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -5016804.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 13581593.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -0.4,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": -5086733.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 12813406.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.54: \"Weighted average number of shares 13,581,593 12,813,406\" / \"Diluted earnings per share (0.37) (0.40)\" / \"Net profit (5,016,804) (5,086,733)\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Fastned B.V. (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=43822&KeyWords=Fastned+B.V.",
+     "ingediend": "2019-04-16",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2018-43822-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -0.44,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -6269000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 14154492.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -0.37,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": -5017000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 13581593.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.51: \"Weighted average number of shares 14,154,492 13,581,593\" / \"Diluted earnings per share (0.44) (0.37)\" / \"Attributable to equity holders of the Group (6,269) (5,017)\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Fastned B.V. (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=55724&KeyWords=Fastned+B.V.",
+     "ingediend": "2020-03-31",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2019-55724-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -0.81,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -12034000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 14767629.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -0.46,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": -6499000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 14154492.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.78: \"Weighted average number of shares 14,767,629 14,154,492\" / \"Diluted earnings per share (0.81) (0.46)\" / \"Attributable to equity holders of the Group (12,034) (6,499)\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Fastned B.V. (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=66856&KeyWords=Fastned+B.V.",
+     "ingediend": "2021-03-31",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2020-66856-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -0.84,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -12401000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 14851359.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -0.81,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -12034000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 14767629.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Fastned B.V.), officieel register AFM-register financiële verslaggeving, pdf p.80: \"Weighted average number of shares 14,851,359 14,767,629\" / \"Diluted earnings per share (0.84) (0.81)\" / \"Attributable to equity holders of the Group (12,401) (12,034)\""
+      }
+     ]
+    }
+   ]
+  },
+  "FFARM.AS": {
+   "naam": "ForFarmers N.V.",
+   "lei": "724500YEIHQKMHTXW058",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving ForFarmers N.V. (boekjaar 2017)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=32287&KeyWords=ForFarmers+N.V.",
+     "ingediend": "2018-03-13",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2017-32287-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.56,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 58554000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 104077496.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.5,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 53260000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 106150160.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.127: \"financieringsverplichtingen. aandelen per 31 december 104.077.496 106.150.160\" / \"Verwaterde winst per aandeel 13 0,56 0,50\" / \"Winst toe te rekenen aan:\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving ForFarmers N.V. (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=41755&KeyWords=ForFarmers+N.V.",
+     "ingediend": "2019-03-13",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2018-41755-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.58,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 58590000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 100242704.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.56,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 58554000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 104077496.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.144: \"Netto financieringslasten aandelen 100.242.704 104.077.496\" / \"Verwaterde winst per aandeel 13 0,58 0,56\" / \"Winst toe te rekenen aan:\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving ForFarmers N.V. (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=54892&KeyWords=ForFarmers+N.V.",
+     "ingediend": "2020-03-12",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2019-54892-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.18,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 17705000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 99413657.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.58,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 58590000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 100242704.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving ForFarmers N.V.), officieel register AFM-register financiële verslaggeving, pdf p.149: \"miljoen positief (2018: €2,3 miljoen negatief). aantal aandelen 99.413.657 100.242.704\" / \"Verwaterde winst per aandeel 13 0,18 0,58\" / \"Winst toe te rekenen aan:\""
+      }
+     ]
+    }
+   ]
+  },
+  "NEDAP.AS": {
+   "naam": "Nedap N.V.",
+   "lei": "724500X4WAS3V33MVX37",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Nedap N.V. (boekjaar 2015)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=19070&KeyWords=Nedap+N.V.",
+     "ingediend": "2016-03-08",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2015-19070-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.7,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 4671000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 6692920.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 2.67,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 17877000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 6692920.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.33: \"Gemiddeld aantal uitstaande aandelen 8 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 0,70 2,67\" / \"Onverdeelde winst toekomend aan aandeelhouders 4.671 17.877\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Nedap N.V. (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24000&KeyWords=Nedap+N.V.",
+     "ingediend": "2017-02-22",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2016-24000-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.61,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 10779000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 6692920.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.7,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 4671000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 6692920.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.49: \"Gemiddeld aantal uitstaande aandelen 9 6.692.920 6.692.920\" / \"Verwaterde winst per gewoon aandeel (in €) 1,61 0,70\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 10.779 4.671\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Nedap N.V. (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=41205&KeyWords=Nedap+N.V.",
+     "ingediend": "2019-02-19",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2018-41205-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 2.66,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 17072000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 6407929.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 4.21,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 28035000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 6651543.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.101: \"Gemiddeld aantal uitstaande aandelen 8 6.407.929 6.651.543\" / \"Verwaterde winst per gewoon aandeel (in €) 2,66 4,21\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 17.072 28.035\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Nedap N.V. (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=53903&KeyWords=Nedap+N.V.",
+     "ingediend": "2020-02-25",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2019-53903-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 3.74,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 24127000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 6444622.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 2.66,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 17072000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 6407929.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.115: \"Gemiddeld aantal uitstaande aandelen 8 6.444.622 6.407.929\" / \"Verwaterde winst per gewoon aandeel (in €) 3,74 2,66\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 24.127 17.072\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Nedap N.V. (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=65690&KeyWords=Nedap+N.V.",
+     "ingediend": "2021-02-23",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2020-65690-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2.13,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 13751000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 6465033.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 3.74,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 24127000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 6444622.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Nedap N.V.), officieel register AFM-register financiële verslaggeving, pdf p.119: \"Gemiddeld aantal uitstaande aandelen 8 6.465.033 6.444.622\" / \"Verwaterde winst per gewoon aandeel (in €) 2,13 3,74\" / \"Resultaat toekomend aan aandeelhouders Nedap N.V. 13.751 24.127\""
+      }
+     ]
+    }
+   ]
+  },
+  "HYDRA.AS": {
+   "naam": "Hydratec Industries N.V.",
+   "lei": "724500V8D4IPLZ5TWT46",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Hydratec Industries N.V. (boekjaar 2015)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=19317&KeyWords=Hydratec+Industries+N.V.",
+     "ingediend": "2016-04-07",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2015-19317-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 5.21,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 6367000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1222143.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 3.61,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 4417000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 1222143.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.18: \"Aantal uitstaande aandelen 1.222.143 1.222.143\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 5,21 3,61 8,82 2,37 3,25 5,62\" / \"Nettoresultaat toe te rekenen 6.367 4.417 10.784 6.873 vermogen 1\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Hydratec Industries N.V. (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=43508&KeyWords=Hydratec+Industries+N.V.",
+     "ingediend": "2019-04-04",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2018-43508-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 6.62,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 8507000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 1284816.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 5.59,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 7129000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 1275293.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.20: \"Aantal uitstaande aandelen 1.284.816 1.275.293\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 6,62 5,59\" / \"Nettoresultaat 8.507 7.129 Rentabiliteit eigen vermogen 2 15,1% 14,0%\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Hydratec Industries N.V. (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=66838&KeyWords=Hydratec+Industries+N.V.",
+     "ingediend": "2021-03-26",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2020-66838-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1.01,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1301000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1290944.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 5.15,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 6635000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1288178.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Jaarlijkse financiële verslaggeving Hydratec Industries N.V.), officieel register AFM-register financiële verslaggeving, pdf p.11: \"Aantal uitstaande aandelen 1.290.944 1.288.178\" / \"Verwaterde winst per gewoon aandeel (in euro’s) 1,01 5,15\" / \"Nettoresultaat toe te rekenen aan:\""
+      }
+     ]
+    }
+   ]
+  },
+  "CTAC.AS": {
+   "naam": "Ctac N.V.",
+   "lei": "724500BGF3XIKX9EST18",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "Jaarlijkse financiële verslaggeving Ctac N.V. (boekjaar 2015)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=19237&KeyWords=Ctac+N.V.",
+     "ingediend": "2016-03-30",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2015-19237-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.19,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 2400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 12515497.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 0.13,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 1700000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2014-01-01",
+       "eind": "2014-12-31",
+       "waarde": 12373130.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2015 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.23: \"ten behoeve van de berekening van de verwaterde winst per aandeel 12.515.497 12.373.130\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,19 0,13\" / \"Nettoresultaat 2,4 1,7\""
+      }
+     ]
+    },
+    {
+     "document": "Jaarlijkse financiële verslaggeving Ctac N.V. (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://www.afm.nl/nl-nl/sector/registers/meldingenregisters/financiele-verslaggeving/details?id=24738&KeyWords=Ctac+N.V.",
+     "ingediend": "2017-03-29",
+     "ingediend_bron": "datum in het officiële register (AFM-register financiële verslaggeving)",
+     "kenmerk": "AFM:afm-2016-24738-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.21,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 2600000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 12515497.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.19,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 2400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 12515497.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
       }
      ]
     }
