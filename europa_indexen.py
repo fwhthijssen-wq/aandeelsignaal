@@ -23,7 +23,7 @@ LIJST = [
     ('AF.PA', 'Air France-KLM', 'AMX'), ('ALLFG.AS', 'Allfunds', 'AMX', 'Verenigd Koninkrijk'), ('AMG.AS', 'AMG Critical Materials', 'AMX'),
     ('ARCAD.AS', 'Arcadis', 'AMX'), ('BAMNB.AS', 'BAM Groep', 'AMX'), ('BFIT.AS', 'Basic-Fit', 'AMX'), ('CRBN.AS', 'Corbion', 'AMX'),
     ('CTPNV.AS', 'CTP', 'AMX'), ('ECMPA.AS', 'Eurocommercial Properties', 'AMX'), ('FAGR.BR', 'Fagron', 'AMX'),
-    ('FLOW.AS', 'Flow Traders', 'AMX', 'Bermuda'), ('FUR.AS', 'Fugro', 'AMX'), ('GLPG.AS', 'Galapagos', 'AMX', 'België'),
+    ('FLOW.AS', 'Flow Traders', 'AMX', 'Bermuda'), ('FUR.AS', 'Fugro', 'AMX'), ('LKFT.AS', 'Lakefront Biotherapeutics (voorheen Galapagos)', 'AMX', 'België'),
     ('HAL.AS', 'HAL Trust', 'AMX', 'Bermuda'), ('HAVAS.AS', 'Havas', 'AMX'), ('HEIJM.AS', 'Heijmans', 'AMX'), ('PHARM.AS', 'Pharming', 'AMX'),
     ('LIGHT.AS', 'Signify', 'AMX'), ('TWEKA.AS', 'TKH Group', 'AMX'), ('VLK.AS', 'Van Lanschot Kempen', 'AMX'), ('VPK.AS', 'Vopak', 'AMX'),
     ('THEON.AS', 'Theon International', 'AMX', 'Cyprus'), ('CSG.AS', 'CSG', 'AMX'),

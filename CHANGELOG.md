@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.11.3 (2026.11.05)
+- **Galapagos heet nu Lakefront Biotherapeutics** (beurscode LKFT, sinds mei 2026); de oude code gaf geen koersen meer. Jaarcijfers, bronnen en koppelingen gaan mee.
+
 ## 1.11.2 (2026.11.05)
 - **Koersen ook overdag:** op werkdagen rond 18:00 uur (na het sluiten van de Europese beurzen) een lichte update die alleen de koersen vernieuwt; de nachtelijke update blijft alles opnieuw maken. Onderaan Start staat wanneer de koersen voor het laatst vernieuwd zijn. Amerikaanse koersen zijn om 18:00 uur nog tussenkoersen. De modelportefeuille rekent alleen met de nachtelijke update.
 
