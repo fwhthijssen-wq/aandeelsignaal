@@ -192,6 +192,12 @@ class KoersenOverdag(unittest.TestCase):
         self.assertEqual(best['aandelen'][1]['koers']['slot'], 5, 'een oudere koers vervangt niets')
         self.assertTrue(best['koersen_bijgewerkt'].startswith('2025-10-28T17:05'))
 
+    def test_koersdata_per_beurs(self):
+        import koersen_bijwerken as kb
+        best = {'aandelen': [{'ticker': 'AAPL', 'koers': {'datum': '2026-11-05'}}, {'ticker': 'ASML.AS', 'koers': {'datum': '2026-11-04'}},
+                             {'ticker': 'INGA.AS', 'koers': {'datum': '2026-11-05'}}, {'ticker': 'X.PA'}]}
+        self.assertEqual(kb.koersdata(best), 'AS 2026-11-05/2026-11-04 VS 2026-11-05')
+
 
 class Fondsencontrole(unittest.TestCase):
     def test_naam_en_koers(self):

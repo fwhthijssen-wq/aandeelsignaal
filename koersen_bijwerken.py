@@ -48,16 +48,36 @@ def bijwerken(bestand, reeksen, nu=None):
     return n
 
 
+def koersdata(bestand):
+    """Per beurs (achtervoegsel van de beurscode, VS zonder) de nieuwste en de oudste koersdatum: 'AS 2026-11-05/2026-11-04'."""
+    per = {}
+    for a in bestand.get('aandelen') or []:
+        d = (a.get('koers') or {}).get('datum')
+        if d:
+            per.setdefault(a['ticker'].rsplit('.', 1)[1] if '.' in a['ticker'] else 'VS', []).append(d)
+    return ' '.join(f'{k} {max(v)}' + (f'/{min(v)}' if min(v) != max(v) else '') for k, v in sorted(per.items()))
+
+
 def main():
-    map_ = Path(sys.argv[1] if len(sys.argv) > 1 else 'web/data')
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    nacht = '--nacht' in sys.argv
+    titel = 'Koersen nalopen' if nacht else 'Koersen overdag'
+    map_ = Path(args[0] if args else 'web/data')
     bestand = json.loads((map_ / 'aandelen.json').read_text(encoding='utf-8'))
     tickers = [a['ticker'] for a in bestand.get('aandelen') or []]
+    voor = koersdata(bestand)
+    bijgewerkt = bestand.get('koersen_bijgewerkt')
     n = bijwerken(bestand, koersen_ophalen(tickers))
+    if nacht:                      # 's nachts hoort er geen tijdstip 'koersen bijgewerkt' bij: dat is de update zelf
+        if bijgewerkt is None:
+            bestand.pop('koersen_bijgewerkt', None)
+        else:
+            bestand['koersen_bijgewerkt'] = bijgewerkt
     if n < len(tickers) / 2:
-        print(f'::warning title=Koersen overdag::maar {n} van {len(tickers)} koersen vernieuwd; niets gewijzigd')
-        sys.exit(1)
+        print(f'::warning title={titel}::maar {n} van {len(tickers)} koersen vernieuwd; niets gewijzigd (koersdata {voor})')
+        sys.exit(0 if nacht else 1)
     bw.schrijf(bestand, map_)
-    print(f'::notice title=Koersen overdag::{n} van {len(tickers)} koersen vernieuwd ({bestand["koersen_bijgewerkt"]})')
+    print(f'::notice title={titel}::{n} van {len(tickers)} koersen vernieuwd; koersdata voor {voor} | na {koersdata(bestand)}')
 
 
 if __name__ == '__main__':

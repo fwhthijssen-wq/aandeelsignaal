@@ -46,6 +46,10 @@ jobs:
         if: steps.bouw.outcome == 'success'
         continue-on-error: true
         run: python bewaker.py vorige.json web/data/aandelen.json
+      - name: Koersen nalopen (per beurs de nieuwste slotkoers; een koers per fonds kan 's nachts een dag achterlopen)
+        if: steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
+        continue-on-error: true
+        run: python koersen_bijwerken.py web/data --nacht
       - name: Controle in het overzicht (zichtbaar als melding bij de run)
         if: always()
         run: |

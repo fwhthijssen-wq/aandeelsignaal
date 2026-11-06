@@ -92,6 +92,12 @@ async function main() {
     fs.writeFileSync(staatPad, JSON.stringify(staat));
     const s = staat.varianten.map((v) => { const x = M.samenvatting(v); return `${v.id}: ${x.open} open, ${x.gesloten} verkocht, ${x.wacht} orders, ${x.pct == null ? '-' : x.pct + '%'} (index ${x.idxPct == null ? '-' : x.idxPct + '%'})`; }).join(' | ');
     console.log(`::notice title=Modelportefeuille::${vandaag}: ${Object.keys(dag.fondsen).length} fondsen; gekocht ${uit.gekocht.map((p) => p.ticker).join(' ') || '-'}; verkocht ${uit.verkocht.map((p) => p.ticker).join(' ') || '-'} | ${s}`);
+  } else if (staat && fs.existsSync(dataPad)) {
+    // alleen tonen: de nieuwste koersen voor de open posities, de staat zelf blijft ongewijzigd
+    try {
+      const data = JSON.parse(fs.readFileSync(dataPad, 'utf8')), vandaag = new Date().toISOString().slice(0, 10);
+      staat = M.metKoersen(staat, dagVoorModel(data, vandaag, null));
+    } catch (e) { console.log('::warning title=Modelportefeuille::koersen niet bijgewerkt voor de weergave (' + e.message + ')'); }
   }
   schrijfApp(uitMap, staat, terug);
 }

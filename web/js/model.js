@@ -221,6 +221,21 @@
       }) };
   }
 
-  var api = { BEDRAG: BEDRAG, KOSTEN: KOSTEN, VARIANTEN: VARIANTEN, INDEX_NAAM: INDEX_NAAM, INDEX_VALUTA: INDEX_VALUTA, nieuw: nieuw, stap: stap, uitkomst: uitkomst, samenvatting: samenvatting, voorApp: voorApp, perWeek: perWeek, koopt: koopt, verkoopt: verkoopt };
+  /* Alleen om te tonen (koersen overdag, publicatie buiten de nachtelijke run): een kopie van de staat met de nieuwste
+     koersen en indexstanden voor de open posities. Geen orders, geen aankopen of verkopen, geen historie: de staat zelf
+     verandert alleen 's nachts. */
+  function metKoersen(staat, dag) {
+    var s = JSON.parse(JSON.stringify(staat));
+    s.varianten.forEach(function (v) {
+      open(v).forEach(function (p) {
+        var f = dag.fondsen[p.ticker];
+        if (f && pos(f.koers) && f.koersDatum >= p.laatst.datum) { var fx = fxVan(s, dag, p.valuta); p.laatst = { datum: f.koersDatum, koers: f.koers, fx: fx ? r4(fx) : p.laatst.fx }; }
+        if (p.idx) { var ix = indexStand(dag, p.idx.code), ivx = fxVan(s, dag, INDEX_VALUTA[p.idx.code] || 'EUR'); if (ix) p.idx.laatst = ix.stand; if (ivx) p.idx.lfx = r4(ivx); }
+      });
+    });
+    return s;
+  }
+
+  var api = { metKoersen: metKoersen, BEDRAG: BEDRAG, KOSTEN: KOSTEN, VARIANTEN: VARIANTEN, INDEX_NAAM: INDEX_NAAM, INDEX_VALUTA: INDEX_VALUTA, nieuw: nieuw, stap: stap, uitkomst: uitkomst, samenvatting: samenvatting, voorApp: voorApp, perWeek: perWeek, koopt: koopt, verkoopt: verkoopt };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Model = api;
 })(typeof self !== 'undefined' ? self : this);

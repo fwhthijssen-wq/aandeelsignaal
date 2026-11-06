@@ -119,3 +119,18 @@ test('kwaliteit volgens NAIC: zwak bij afgevallen toets, geen groeibedrijf of ve
   assert.equal(kwaliteitVan({ oordeel: 'vermijden', zones: { zone: 'verkoop' }, kwaliteit: [{ id: 'roe', ok: null }] }), 'goed');
   assert.equal(kwaliteitVan({ oordeel: null, reden: 'Minder dan 4 jaar vergelijkbare winst per aandeel.', kwaliteit: [] }), null);
 });
+
+test('alleen tonen: nieuwste koers voor open posities, de staat zelf blijft gelijk', () => {
+  const s = M.nieuw('2026-11-04');
+  M.stap(s, dag('2026-11-04', { A: fonds({ koers: 10, koersDatum: '2026-11-03', oordeel: 'kopen' }) }));
+  M.stap(s, dag('2026-11-05', { A: fonds({ koers: 10, koersDatum: '2026-11-04', oordeel: 'kopen' }) }));
+  const voor = JSON.stringify(s);
+  const t = M.metKoersen(s, dag('2026-11-06', { A: fonds({ koers: 12, koersDatum: '2026-11-06', oordeel: 'kopen' }), B: fonds({ koers: 5, koersDatum: '2026-11-06', oordeel: 'kopen' }) }));
+  assert.equal(JSON.stringify(s), voor, 'staat onveranderd');
+  const p = t.varianten[0].posities[0];
+  assert.equal(p.laatst.koers, 12); assert.equal(p.laatst.datum, '2026-11-06');
+  assert.equal(t.varianten[0].posities.length, 1, 'geen nieuwe aankopen'); assert.equal(t.varianten[0].wacht.length, 0);
+  assert.equal(M.uitkomst(p).waarde, 1200);
+  const t2 = M.metKoersen(s, dag('2026-11-06', { A: fonds({ koers: 9, koersDatum: '2026-11-01', oordeel: 'kopen' }) }));
+  assert.equal(t2.varianten[0].posities[0].laatst.koers, 10, 'een oudere koers vervangt niets');
+});
