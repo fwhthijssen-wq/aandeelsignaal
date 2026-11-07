@@ -34,6 +34,12 @@ jobs:
       - name: Koersen vernieuwen
         id: koersen
         run: python koersen_bijwerken.py web/data
+      - name: Gegevens met de koersen van vanmiddag bewaren (de nacht neemt een nieuwere Europese slotkoers hiervan over)
+        if: steps.koersen.outcome == 'success'
+        uses: actions/cache/save@v5
+        with:
+          path: web/data/aandelen.json
+          key: gegevens-${{ github.run_id }}
       - name: Modelportefeuille tonen (zonder verwerken)
         run: |
           git clone -q --depth 1 -b model "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" mt || exit 0

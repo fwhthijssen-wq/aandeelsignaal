@@ -48,6 +48,26 @@ def bijwerken(bestand, reeksen, nu=None):
     return n
 
 
+def koersvelden():
+    """De velden die koers_uit_reeks maakt (slot, datum, sma50, reeks, technische maatstaven, weekreeks)."""
+    from datetime import date, timedelta
+    d0 = date(2020, 1, 1)
+    return set(bw.koers_uit_reeks([((d0 + timedelta(days=i)).isoformat(), 100 + i % 7) for i in range(1500)]) or {})
+
+
+def nieuwere_uit(bestand, vorige):
+    """'s Nachts geeft Yahoo voor Europa soms nog de slotkoers van eergisteren, terwijl de koersupdate van de vorige
+    middag die van gisteren al had. Neem dan de koersvelden van de vorige middag over; de rest blijft van de nacht."""
+    oud = {a['ticker']: a.get('koers') or {} for a in vorige.get('aandelen') or []}
+    velden, n = koersvelden(), 0
+    for rec in bestand.get('aandelen') or []:
+        k, v = rec.get('koers'), oud.get(rec['ticker'])
+        if k and v and v.get('datum') and k.get('datum') and v['datum'] > k['datum'] and v.get('slot'):
+            rec['koers'] = {**k, **{x: v[x] for x in velden if x in v}}
+            n += 1
+    return n
+
+
 def koersdata(bestand):
     """Per beurs (achtervoegsel van de beurscode, VS zonder) de nieuwste en de oudste koersdatum: 'AS 2026-11-05/2026-11-04'."""
     per = {}
@@ -59,7 +79,7 @@ def koersdata(bestand):
 
 
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    args = [a for i, a in enumerate(sys.argv[1:], 1) if not a.startswith('--') and sys.argv[i - 1] != '--vorige']
     nacht = '--nacht' in sys.argv
     titel = 'Koersen nalopen' if nacht else 'Koersen overdag'
     map_ = Path(args[0] if args else 'web/data')
@@ -68,6 +88,14 @@ def main():
     voor = koersdata(bestand)
     bijgewerkt = bestand.get('koersen_bijgewerkt')
     n = bijwerken(bestand, koersen_ophalen(tickers))
+    van_middag = 0
+    if nacht and '--vorige' in sys.argv:
+        pad = Path(sys.argv[sys.argv.index('--vorige') + 1])
+        if pad.exists():
+            try:
+                van_middag = nieuwere_uit(bestand, json.loads(pad.read_text(encoding='utf-8')))
+            except (ValueError, OSError):
+                pass
     if nacht:                      # 's nachts hoort er geen tijdstip 'koersen bijgewerkt' bij: dat is de update zelf
         if bijgewerkt is None:
             bestand.pop('koersen_bijgewerkt', None)
@@ -77,7 +105,7 @@ def main():
         print(f'::warning title={titel}::maar {n} van {len(tickers)} koersen vernieuwd; niets gewijzigd (koersdata {voor})')
         sys.exit(0 if nacht else 1)
     bw.schrijf(bestand, map_)
-    print(f'::notice title={titel}::{n} van {len(tickers)} koersen vernieuwd; koersdata voor {voor} | na {koersdata(bestand)}')
+    print(f'::notice title={titel}::{n} van {len(tickers)} koersen vernieuwd{f', {van_middag} van de koersupdate van gisteren' if van_middag else ''}; koersdata voor {voor} | na {koersdata(bestand)}')
 
 
 if __name__ == '__main__':

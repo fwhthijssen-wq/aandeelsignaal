@@ -192,6 +192,18 @@ class KoersenOverdag(unittest.TestCase):
         self.assertEqual(best['aandelen'][1]['koers']['slot'], 5, 'een oudere koers vervangt niets')
         self.assertTrue(best['koersen_bijgewerkt'].startswith('2025-10-28T17:05'))
 
+    def test_nacht_neemt_nieuwere_koers_van_de_middag(self):
+        import koersen_bijwerken as kb
+        nacht = {'aandelen': [{'ticker': 'ASML.AS', 'koers': {'datum': '2026-11-05', 'slot': 600, 'reeks': [['2026-11-05', 600]], 'bereik': {'nacht': 1}}},
+                              {'ticker': 'AAPL', 'koers': {'datum': '2026-11-06', 'slot': 200}}]}
+        middag = {'aandelen': [{'ticker': 'ASML.AS', 'koers': {'datum': '2026-11-06', 'slot': 610, 'reeks': [['2026-11-06', 610]], 'bereik': {'middag': 1}}},
+                               {'ticker': 'AAPL', 'koers': {'datum': '2026-11-05', 'slot': 199}}]}
+        self.assertEqual(kb.nieuwere_uit(nacht, middag), 1)
+        a, b = nacht['aandelen'][0]['koers'], nacht['aandelen'][1]['koers']
+        self.assertEqual((a['datum'], a['slot'], a['reeks']), ('2026-11-06', 610, [['2026-11-06', 610]]))
+        self.assertEqual(a['bereik'], {'nacht': 1}, 'velden buiten de koers blijven van de nacht')
+        self.assertEqual(b['slot'], 200, 'een oudere koers van de middag vervangt niets')
+
     def test_koersdata_per_beurs(self):
         import koersen_bijwerken as kb
         best = {'aandelen': [{'ticker': 'AAPL', 'koers': {'datum': '2026-11-05'}}, {'ticker': 'ASML.AS', 'koers': {'datum': '2026-11-04'}},
