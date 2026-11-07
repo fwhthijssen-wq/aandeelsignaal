@@ -436,3 +436,33 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .zoek-treffers .zacht { padding: 8px 10px; }
 .velden .veld-breed { grid-column: 1 / -1; }
 .dividend-namen { margin: -2px 0 8px; font-size: .85rem; }
+
+/* Cockpit 1.13: drie groepen tegels; het getal op een tegel = het aantal regels op het scherm dat opent */
+.tegel-kop { margin: 14px 2px 6px; font: 700 .78rem/1.2 system-ui, sans-serif; color: var(--mut); letter-spacing: .06em; text-transform: uppercase; }
+[data-tegels] > .tegel-kop:first-child { margin-top: 2px; }
+.tegels > .tegel.breed { grid-column: span 2; }
+@media (max-width: 620px) { .tegels > .tegel.breed, .tegels > .tegel.breed-mobiel { grid-column: 1 / -1; } }
+.pf-regels { display: flex; flex-direction: column; margin-top: 4px; }
+.pf-regel { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 44px; padding: 6px 0; color: var(--hero-ink); text-decoration: none; border-top: 1px solid rgba(255,255,255,.18); }
+.pf-regel:first-child { border-top: 0; }
+.pf-regel .pf-naam { font-weight: 700; font-size: 1rem; min-width: 0; overflow-wrap: anywhere; }
+.pf-regel .pf-waarde { white-space: nowrap; font-size: .9rem; color: var(--hero-mut); }
+.pf-regel .pf-waarde b { font-size: 1.15rem; color: var(--hero-ink); }
+.tegel .pf-regel .rend { margin-left: 4px; }
+.pf-regel:focus-visible, .pf-meer:focus-visible { outline: 2px solid var(--seg-on); outline-offset: 2px; }
+.tegel .pf-meer { color: var(--hero-mut); font-size: .85rem; margin-top: 4px; }
+.pf-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pf-chips .chip { font-size: .78rem; }
+.chip[data-niveau="let-op"] { background: var(--bad-bg); color: var(--bad-ink); }
+.chip[data-niveau="kans"] { background: var(--ok-bg); color: var(--ok-ink); }
+.chip[data-niveau="rustig"] { background: var(--line-soft); color: var(--mut); }
+.tel-kop { color: var(--bad-ink); }
+.tel-kop.kans { color: var(--stip-g); }
+.tel-kop.nul { color: var(--mut); }
+.pf-signalen { margin-top: 14px; }
+.pf-signalen h2 { font-size: 1.1rem; }
+.chip.sig-lab[data-sig="verkoop"], .chip.sig-lab[data-sig="kwaliteit"], .chip.sig-lab[data-sig="groei"], .chip.sig-lab[data-sig="negatief"] { background: var(--bad-bg); color: var(--bad-ink); }
+.chip.sig-lab[data-sig="koop"], .chip.sig-lab[data-sig="positief"] { background: var(--ok-bg); color: var(--ok-ink); }
+.chip-select { font: inherit; font-size: .88rem; font-weight: 600; min-height: 36px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.chip-knop b { font-weight: 800; margin-left: 2px; }
+.chip-knop:disabled { opacity: .5; cursor: default; }

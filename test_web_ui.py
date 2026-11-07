@@ -44,15 +44,23 @@ class WebUi(unittest.TestCase):
         self.assertIn('overzicht', pg.inner_text('main').lower())
         self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 6)                    # dashboard: alleen tegels
         self.assertEqual([pg.locator('[data-tegels] .tegel').nth(i).get_attribute('data-tegel') for i in range(6)],
-                         ['portefeuille', 'volglijst', 'signalen', 'kansen', 'marktbeeld', 'zekerheid'])
-        self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansrijk]').count(), 0)  # geen lange pagina onder de tegels
+                         ['portefeuille', 'signalen', 'volglijst', 'kansen', 'marktbeeld', 'zekerheid'])
+        self.assertEqual([x.upper() for x in pg.locator('[data-tegels] .tegel-kop').all_inner_texts()], ['MIJN PORTEFEUILLES', 'VOLGEN', 'DE MARKT'])
+        self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansen-lijst]').count(), 0)  # geen lange pagina onder de tegels
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
         self.assertEqual(pg.inner_text('[data-maker]'), 'Made by Frans Thijssen')
         self.assertEqual(pg.locator('nav.menu a').all_inner_texts(), ['Start', 'Markt', 'Volglijst', 'Portefeuille', 'Achtergrond'])
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
-        pg.click('[data-tegel="kansen"]'); pg.wait_for_timeout(200)                        # tegel opent het scherm Markt
+        getal = pg.inner_text('[data-tegel="kansen"] b')
+        pg.click('[data-tegel="kansen"]'); pg.wait_for_timeout(200)                        # tegel opent het scherm Kansen ...
+        self.assertEqual(pg.evaluate('location.hash'), '#/kansen')
+        self.assertEqual(pg.inner_text('[data-kansen-totaal]'), getal)                      # ... met hetzelfde getal ...
+        self.assertEqual(pg.locator('[data-kansen-lijst] > a').count() if getal != '0' else 0, int(getal))   # ... en precies zoveel regels
+        self.assertIn('Start', pg.inner_text('[data-kruimel]'))
+        pg.click('nav.menu a:has-text("Markt")'); pg.wait_for_timeout(200)
         self.assertEqual(pg.evaluate('location.hash'), '#/markt')
+        self.assertEqual(pg.locator('[data-naar-kansen]').count(), 1)
         self.assertTrue(pg.locator('[data-marktbeeld] .markt-rij').count() > 1)
         self.assertEqual(pg.locator('nav.menu a[aria-current="page"]').inner_text(), 'Markt')
         pg.click('[data-fonds] >> nth=0'); pg.wait_for_timeout(200)                         # vanuit de markt naar een fonds ...
@@ -163,7 +171,9 @@ class WebUi(unittest.TestCase):
         self.assertIn('5 stuks', pg.inner_text('main'))
         pg.goto(INDEX + '#/')
         self.assertIn('BC DE GOUDEN GREEP', pg.inner_text('[data-tegel=portefeuille]').upper())
-        self.assertIn('2 andere portefeuilles', pg.inner_text('[data-tegel=portefeuille]'))
+        pg.click('[data-pf-open="gouden-greep"]'); pg.wait_for_timeout(200)                 # een regel opent die portefeuille
+        self.assertEqual(pg.evaluate('location.hash'), '#/portefeuille')
+        self.assertEqual(pg.inner_text('h1'), 'BC De Gouden Greep')
         # verwijderen vraagt eerst om bevestiging
         pg.goto(INDEX + '#/portefeuille')
         pg.evaluate("document.querySelector('[data-pf-beheer]').open = true")
@@ -216,7 +226,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.goto(INDEX + '#/')
         pg.evaluate("window.MODEL_DATA = { gemaakt: '2026-11-03', live: { start: '2026-11-03', bijgewerkt: '2026-11-03', bedrag: 1000, kosten: 3, fx: null, varianten: [{ id: 'naic', naam: 'Alle kansen', regel: 'NAIC Kopen', samenvatting: { inleg: 0, wacht: 0 }, wacht: [], posities: [], historie: [] }] }, terug: null }")
         gezien = 0
-        for hash_ in ('#/', '#/markt', '#/signalen', '#/kwaliteit', '#/model', '#/instellingen', '#/a/AAPL/oordeel', '#/a/AAPL/naic', '#/a/AAPL/gezond', '#/a/AAPL/koers', '#/a/AAPL/cijfers'):
+        for hash_ in ('#/', '#/markt', '#/kansen', '#/signalen', '#/kwaliteit', '#/model', '#/instellingen', '#/a/AAPL/oordeel', '#/a/AAPL/naic', '#/a/AAPL/gezond', '#/a/AAPL/koers', '#/a/AAPL/cijfers'):
             pg.evaluate("h => { location.hash = h; }", hash_); pg.wait_for_timeout(150)
             pg.evaluate("document.querySelectorAll('details').forEach(function(d){d.open=true})")
             ids = pg.evaluate("[...new Set([...document.querySelectorAll('main [data-hoe]')].map(function(x){return x.getAttribute('data-hoe')}))]")
@@ -513,7 +523,7 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.select_option('#f-sort', 'naam')
         namen = pg.eval_on_selector_all('#res [data-fonds] b', 'els => els.map(e => e.textContent.toLowerCase())')
         self.assertEqual(namen, sorted(namen))
-        self.assertEqual(pg.locator('[data-naar-fondsen]').count(), 1)
+        self.assertEqual(pg.locator('[data-naar-kansen]').count(), 1)
         pg.goto(INDEX + '#/achtergrond'); pg.wait_for_timeout(150)
         self.assertEqual(pg.locator('[data-uitleg-oordeel]').count(), 1)                   # de methode staat bij Achtergrond
         pg.goto(INDEX + '#/volglijst'); pg.wait_for_timeout(150)
@@ -1103,19 +1113,22 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.fill('#q', '<img src=x onerror=window.hack=1>')
         self.assertIsNone(pg.evaluate('window.hack'))
 
-    def test_signalen_op_start_met_vorige_update(self):
+    def test_signalen_en_kansen_met_vorige_update(self):
         pg = self.pagina()
         pg.click('[data-tegel="signalen"]'); pg.wait_for_timeout(200)
         self.assertEqual(pg.evaluate('location.hash'), '#/signalen')
         self.assertEqual(pg.locator('[data-signalen]').count(), 1)
-        self.assertIn('Nieuw sinds de vorige update', pg.locator('[data-signalen]').inner_text())
-        # vorige update met een ander NAIC-oordeel: de wijziging verschijnt (of de melding dat er niets veranderde)
+        self.assertIn('Signalen in mijn portefeuilles', pg.inner_text('h1'))
+        self.assertEqual(pg.locator('[data-geen-signaal]').count(), 1)                     # zonder aankopen: geen signalen (volglijst telt niet)
+        pg.goto(pg.url.split('#')[0] + '#/kansen'); pg.wait_for_timeout(300)
+        # vorige update met een ander NAIC-oordeel: wat niet meer Kopen is, verschijnt onderaan Kansen
         pg.evaluate("""() => { const v = JSON.parse(localStorage.getItem('as_naic_vorig'));
           v.laatst.datum = '2020-01-01'; v.laatst.oordelen = {ZZZ: 'kopen'}; localStorage.setItem('as_naic_vorig', JSON.stringify(v)); }""")
-        pg.goto(pg.url.split('#')[0] + '#/markt'); pg.goto(pg.url.split('#')[0] + '#/signalen'); pg.wait_for_timeout(300)
-        tekst = pg.locator('[data-signalen]').inner_text()
+        pg.goto(pg.url.split('#')[0] + '#/markt'); pg.goto(pg.url.split('#')[0] + '#/kansen'); pg.wait_for_timeout(300)
+        tekst = pg.locator('[data-kansen-scherm]').inner_text()
         self.assertIn('1 januari 2020', tekst)
-        self.assertEqual(pg.locator('[data-veranderingen], [data-geen-verandering]').count(), 1)
+        self.assertIn('ZZZ', pg.inner_text('[data-kansen-weg]'))
+        self.assertEqual(pg.locator('[data-kansf="nieuw"]:disabled').count(), 0)
         self.assertEqual(self.fouten, [])
 
     def test_naic_gids_ook_bij_cijfers_uit_jaarverslag(self):
@@ -1202,12 +1215,16 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('−31,5%', rk); self.assertIn('gemiddeld', rk); self.assertIn('beweegt sterker dan de markt', rk)
         self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
         pg.goto(INDEX + '#/'); pg.wait_for_timeout(300)
-        self.assertIn('omslag middellang', pg.inner_text('[data-tegel="signalen"]'))       # tegel telt de omslag mee
+        self.assertIn('middellang positief', pg.inner_text('[data-tegel="signalen"]'))     # tegel telt de omslag mee
+        getal = int(pg.inner_text('[data-tegel="signalen"] b'))
         pg.goto(INDEX + '#/signalen'); pg.wait_for_timeout(300)
-        self.assertIn('Negatief → Positief', pg.inner_text('[data-ml-omslagen]'))             # omslag bij een eigen aandeel
+        self.assertIn('Negatief → Positief', pg.inner_text('[data-ml-omslag]'))               # omslag bij een eigen aandeel
+        self.assertEqual(pg.locator('[data-eigen-signalen] > a').count(), getal)             # tegel = aantal regels
         if oordeel == 'Kopen':
-            pg.goto(INDEX + '#/markt'); pg.wait_for_timeout(300)
-            self.assertEqual(pg.locator('[data-kansrijk] [data-moment="gunstig"]').count(), 1)
+            pg.goto(INDEX + '#/kansen'); pg.wait_for_timeout(300)
+            self.assertEqual(pg.locator('[data-kansen-lijst] [data-moment="gunstig"]').count(), 1)
+            pg.click('[data-kansf="onder"]'); pg.wait_for_timeout(100)                       # filter werkt
+            self.assertEqual(pg.locator('[data-kansen-lijst] > a, [data-kansen-leeg]').count() >= 1, True)
         self.assertEqual(fouten, [])
 
     def test_eenvoudige_weergave_via_link_en_terug_via_knop(self):

@@ -3,8 +3,10 @@
   'use strict';
   var T = {
     start: ['Start', 'Het dashboard: in één oogopslag wat er speelt. Elke tegel opent één scherm; daar zoomt u verder in.', [
-      'Bovenste rij, uw eigen aandelen: Portefeuille (waarde en rendement), Volglijst (hoeveel aandelen, waarvan NAIC Kopen) en Signalen (hoeveel van uw aandelen in de koop- of verkoopzone staan of in kwaliteit teruglopen).',
-      'Onderste rij, de markt: Kansen (hoeveel fondsen nu NAIC Kopen zijn), Marktbeeld (de verdeling Kopen, Neutraal en Vermijden over alle fondsen) en Zekerheid (hoeveel fondsen bevestigde of officiële cijfers hebben).',
+      'Het getal op een tegel is het aantal regels op het scherm dat de tegel opent.',
+      'Mijn portefeuilles: elke portefeuille op een eigen regel met waarde en rendement; tik op een regel en die portefeuille opent. Signalen in mijn portefeuilles: hoeveel signalen er zijn bij aandelen die u nu bezit, in alle portefeuilles, met per portefeuille het aantal.',
+      'Volgen: de Volglijst (hoeveel aandelen, en hoeveel daarvan in de koopzone; die staan bovenaan als u de tegel opent) en de fictieve Modelportefeuille.',
+      'De markt: Kansen (alle fondsen met NAIC Kopen, op een eigen scherm met filters), Marktbeeld (de verdeling Kopen, Neutraal en Vermijden) en Zekerheid (hoeveel fondsen bevestigde of officiële cijfers hebben).',
       'Onderaan staat van welke dag de gegevens zijn.',
       'In het menu: Markt (kansen en alle fondsen), Volglijst, Portefeuille en Achtergrond (datakwaliteit, het oordeel in het verleden, uitleg en instellingen).'], 'Ziet u een aandeel zonder oordeel? Dan is er te weinig bekend. De app schat nooit.'],
     model: ['Modelportefeuille', 'Een fictieve portefeuille die de signalen van de app automatisch volgt, om te zien of ze over langere tijd werken.', [
@@ -13,12 +15,19 @@
       'De vergelijking met de index laat zien wat hetzelfde geld in de index had opgeleverd. Pas na een paar jaar zegt dat echt iets.',
       'Teruggerekend toont dezelfde regels vanaf 2018 op oude koersen: een indruk, geen bewijs (fondsen en cijfers van nu).',
       'De paarse kleur en het label fictief houden hem apart van uw eigen portefeuille.'], 'Fictief en geen beleggingsadvies.'],
-    signalen: ['Signalen', 'Wat er speelt bij uw eigen aandelen, en wat er sinds de vorige update veranderde.', [
-      'Uw aandelen: bij de aandelen in uw portefeuille en op uw volglijst ziet u wanneer ze in de koopzone of verkoopzone staan, of wanneer de kwaliteit terugloopt (NAIC).',
-      'Nieuw sinds de vorige update: welke fondsen naar NAIC Kopen of Vermijden gingen. Dat vergelijkt de app met wat u de vorige keer zag; het staat alleen op dit toestel.'], null],
+    signalen: ['Signalen in mijn portefeuilles', 'Wat er speelt bij de aandelen die u nu bezit, per portefeuille.', [
+      'Alle portefeuilles, niet alleen de gekozen. Verkochte aandelen en de volglijst tellen niet mee.',
+      'Dringend eerst: verkoopzone, kwaliteit loopt terug, NAIC Vermijden en een omslag van de middellange termijn naar negatief. Daarna: koopzone (bijkopen?) en een omslag naar positief.',
+      'Staat een aandeel in twee portefeuilles, dan ziet u het signaal in beide.',
+      '“Nieuw sinds” vergelijkt met de vorige gegevensupdate; dat staat alleen op dit toestel. De pushmeldingen gaan over dezelfde aandelen.'], null],
+    kansen: ['Kansen', 'Alle fondsen met NAIC Kopen op één scherm.', [
+      'NAIC Kopen: de koers staat in de koopzone, met minstens 3 : 1 opwaarts tegen neerwaarts en voldoende verwacht rendement per jaar.',
+      'Volgorde: eerst een gunstig koopmoment (kortetermijnsignaal), dan de meeste ruimte opwaarts tegen neerwaarts.',
+      'Filters: gunstig koopmoment, onder de koopprijs, nieuw sinds de vorige update, en per index. De getallen op de knoppen zijn dezelfde als op de tegel.',
+      'Onderaan: welke fondsen sinds de vorige update niet meer Kopen zijn.'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],
     markt: ['Markt', 'Van de hele markt naar het afzonderlijke fonds.', [
       'Marktbeeld: per index een balk met hoeveel fondsen Kopen, Neutraal of Vermijden zijn volgens NAIC. Tik op een index en de lijst eronder toont die fondsen.',
-      'Beste kansen: de fondsen met NAIC Kopen, met de meeste ruimte opwaarts tegen neerwaarts bovenaan.',
+      'Kansen: hoeveel fondsen NAIC Kopen zijn; tik voor het scherm Kansen met alle fondsen en filters.',
       'Alle fondsen: per index gegroepeerd, standaard met NAIC Kopen bovenaan. Zoek op naam of beurscode, filter op index of op zekerheid van de cijfers, of sorteer anders (afstand tot de koopprijs, gezondheidscheck, groei, marge).',
       'Per fonds staat eerst het NAIC-oordeel, daarna de gezondheidscheck van de zes metingen (Check: Gezond, Gemengd of Zwak).',
       'Onder de lijst: welke gegevens er zijn voor alle fondsen samen, per meting, en wat er het vaakst ontbreekt.'], 'Kopen betekent: het fonds voldoet aan alle NAIC-regels. Het is een selectiehulp, geen persoonlijk advies.'],

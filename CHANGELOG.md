@@ -2,6 +2,14 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.13 (2026.11.07)
+- **Nieuwe cockpit op Start**, in drie groepen: *Mijn portefeuilles*, *Volgen* en *De markt*. Het getal op een tegel is precies het aantal regels op het scherm dat de tegel opent.
+- **Mijn portefeuilles:** elke portefeuille op een eigen regel met waarde en rendement (geen totaal); een tik op een regel opent die portefeuille.
+- **Signalen in mijn portefeuilles:** alle portefeuilles samen, per portefeuille gegroepeerd, alleen aandelen die u nu bezit (niet meer de volglijst). Dringend eerst (verkoopzone, kwaliteit, Vermijden, middellang negatief), daarna bijkopen. Op de tegel het aantal per portefeuille. De pushmeldingen volgen dezelfde lijst.
+- **Kansen:** een eigen scherm met alle fondsen met NAIC Kopen in plaats van de vijf sterkste, met filters (gunstig koopmoment, onder koopprijs, nieuw sinds de vorige update, index). Onderaan wat niet meer Kopen is.
+- **Volglijst-tegel** telt de aandelen in de koopzone en opent met die bovenaan; de modelportefeuille staat ernaast.
+- Modelportefeuille: de koersen worden ook bij de koersupdate overdag bijgewerkt; de nachtelijke update neemt een nieuwere Europese slotkoers van de middag over (Yahoo loopt 's nachts voor Europa een dag achter).
+
 ## 1.12 (2026.11.05)
 - **Pushmeldingen voor uw eigen portefeuilles** (Instellingen › Meldingen): een bericht op uw telefoon als een aandeel uit uw portefeuilles in de koopzone of de verkoopzone komt, of als de middellange termijn omslaat. Niet voor de volglijst of de modelportefeuille. De app maakt op het toestel een eigen sleutel en abonnement; die zet u met de beurscodes één keer als geheim MELDINGEN in GitHub. De nachtelijke update stuurt de berichten; testen kan met Actions › Meldingen testen.
 - **Dividendkalender** in de portefeuille: ontvangen dit jaar en verwacht de komende 12 maanden, per maand en per fonds (schatting op basis van het afgelopen jaar, bruto).
