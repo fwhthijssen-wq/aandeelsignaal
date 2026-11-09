@@ -16,7 +16,7 @@
     var uit = [];
     (Array.isArray(lijst) ? lijst : []).forEach(function (x) {
       var id = x && typeof x.id === 'string' && PF_ID.test(x.id) ? x.id : null, naam = schoonNaam(x && x.naam);
-      if (id && naam && uit.length < MAX_PORTEFEUILLES && !uit.some(function (y) { return y.id === id; })) uit.push({ id: id, naam: naam });
+      if (id && naam && uit.length < MAX_PORTEFEUILLES && !uit.some(function (y) { return y.id === id; })) uit.push(x.dividend === 'aandelen' ? { id: id, naam: naam, dividend: 'aandelen' } : { id: id, naam: naam });
     });
     return uit;
   }
@@ -105,14 +105,23 @@
     if (kosten !== null && kosten > 0) uit.kosten = kosten;
     if (eur !== null) uit.eur = eur;
     else if (valuta === 'EUR') uit.eur = Math.round(aantal * koers * 100) / 100;
-    var verk = [], over = aantal;
+    // Verkopen: de app controleert het echte aantal (met splitsingen en dividend in aandelen); hier alleen een ruime grens.
+    var verk = [], over = aantal * MAX_GROEI;
     (Array.isArray(p.verkopen) ? p.verkopen : []).forEach(function (v) { var x = schoonVerkoop(v); if (x && x.aantal <= over + 1e-9 && verk.length < 50) { verk.push(x); over -= x.aantal; } });
+    // Vanaf 1.15: per dividenduitkering het aantal aandelen dat u werkelijk kreeg (0 = alles contant), als het afschrift afwijkt.
+    var dk = {}, ndk = 0;
+    if (p.divKeuze && typeof p.divKeuze === 'object' && !Array.isArray(p.divKeuze)) Object.keys(p.divKeuze).forEach(function (d) {
+      var n = getalOk(p.divKeuze[d], 0, 1e9, false);
+      if (/^\d{4}-\d{2}-\d{2}$/.test(d) && n !== null && ndk < 200) { dk[d] = n; ndk++; }
+    });
+    if (ndk) uit.divKeuze = dk;
     if (verk.length) uit.verkopen = verk;
     if (typeof p.pf === 'string' && PF_ID.test(p.pf)) uit.pf = p.pf;
     var nm = schoonNaam(p.naam); if (nm) uit.naam = nm;                       // naam van een fonds dat de app niet volgt
     if (signaal) { uit.signaal = signaal; uit.opSignaal = p.opSignaal === true; }
     return uit;
   }
+  var MAX_GROEI = 100;          // splitsingen en dividend in aandelen: hoogstens 100 keer het gekochte aantal
   var PUNTEN_AANTAL = 15, MAX_CHECKLIST = 200, MAX_NOTITIE = 500, ANTWOORDEN = ['ja', 'nee', 'onzeker'];
   /* Checklist per aandeel: alleen bekende punten (1 t/m 15), alleen ja/nee/onzeker, notitie als platte tekst met een maximum. */
   function schoonChecklist(data) {
@@ -227,8 +236,24 @@
       },
       /* Zonder argument: alle aankopen uit alle portefeuilles (voor signalen en het aandeelscherm); met een id alleen die portefeuille. */
       portefeuille: function (pf) { return pf ? staat.portefeuille.filter(function (x) { return x.pf === pf; }) : staat.portefeuille.slice(); },
-      portefeuilles: function () { return staat.portefeuilles.map(function (x) { return { id: x.id, naam: x.naam, aantal: staat.portefeuille.filter(function (p) { return p.pf === x.id; }).length }; }); },
-      actief: function () { var a = staat.portefeuilles.filter(function (x) { return x.id === staat.actief; })[0] || staat.portefeuilles[0]; return { id: a.id, naam: a.naam }; },
+      portefeuilles: function () { return staat.portefeuilles.map(function (x) { return { id: x.id, naam: x.naam, dividend: x.dividend === 'aandelen' ? 'aandelen' : 'contant', aantal: staat.portefeuille.filter(function (p) { return p.pf === x.id; }).length }; }); },
+      /* Dividend van een portefeuille: 'contant' (standaard) of 'aandelen' (herbeleggen waar het kan, restant contant). */
+      zetDividend: function (id, modus) {
+        var pf = staat.portefeuilles.filter(function (x) { return x.id === id; })[0];
+        if (!pf || (modus !== 'aandelen' && modus !== 'contant')) return false;
+        if (modus === 'aandelen') pf.dividend = 'aandelen'; else delete pf.dividend;
+        return bewaar(true);
+      },
+      /* Eén dividenduitkering van een aankoop: het aantal aandelen dat u kreeg (0 = contant), of null = zoals de app het rekent. */
+      zetDivKeuze: function (id, datum, aantal) {
+        var x = staat.portefeuille.filter(function (p) { return p.id === id; })[0];
+        if (!x || !/^\d{4}-\d{2}-\d{2}$/.test(String(datum))) return false;
+        if (aantal === null || aantal === undefined) { if (x.divKeuze) { delete x.divKeuze[datum]; if (!Object.keys(x.divKeuze).length) delete x.divKeuze; } return bewaar(true); }
+        var n = getalOk(aantal, 0, 1e9, false); if (n === null) return false;
+        (x.divKeuze = x.divKeuze || {})[datum] = n;
+        return bewaar(true);
+      },
+      actief: function () { var a = staat.portefeuilles.filter(function (x) { return x.id === staat.actief; })[0] || staat.portefeuilles[0]; return { id: a.id, naam: a.naam, dividend: a.dividend === 'aandelen' ? 'aandelen' : 'contant' }; },
       kiesPortefeuille: function (id) { if (!staat.portefeuilles.some(function (x) { return x.id === id; })) return false; staat.actief = id; bewaar(false); return true; },
       nieuwePortefeuille: function (naam) {
         var n = schoonNaam(naam);
@@ -286,17 +311,19 @@
         var x = schoonPositie(samen);
         if (!x) return { ok: false, reden: 'Controleer aantal, aankoopkoers en valuta: alleen getallen groter dan nul.' };
         var verkocht = (x.verkopen || []).reduce(function (a, v) { return a + v.aantal; }, 0);
-        if ((oud.verkopen || []).length !== (x.verkopen || []).length) return { ok: false, reden: 'Het aantal is kleiner dan wat er al verkocht is.' };
+        var verkochtOud = (oud.verkopen || []).reduce(function (a, v) { return a + v.aantal; }, 0);
+        if ((oud.verkopen || []).length !== (x.verkopen || []).length || (verkochtOud <= oud.aantal + 1e-9 && verkocht > x.aantal + 1e-9)) return { ok: false, reden: 'Het aantal is kleiner dan wat er al verkocht is.' };
         x.id = oud.id; x.pf = oud.pf;
         staat.portefeuille[i] = x;
         return { ok: bewaar(true), verkocht: verkocht };
       },
       /* (Een deel van) een aankoop verkopen. */
-      verkoopPositie: function (id, v) {
+      /* max: het aantal dat u nog heeft volgens de app (met splitsingen en dividend in aandelen); zonder max het gekochte aantal. */
+      verkoopPositie: function (id, v, max) {
         var x = staat.portefeuille.filter(function (p) { return p.id === id; })[0], vk = schoonVerkoop(v);
         if (!x) return { ok: false, reden: 'Onbekende aankoop.' };
         if (!vk) return { ok: false, reden: 'Vul de datum, het aantal en de verkoopkoers in (getallen groter dan nul).' };
-        var open = x.aantal - (x.verkopen || []).reduce(function (a, y) { return a + y.aantal; }, 0);
+        var open = typeof max === 'number' && isFinite(max) && max >= 0 ? max : x.aantal - (x.verkopen || []).reduce(function (a, y) { return a + y.aantal; }, 0);
         if (vk.aantal > open + 1e-9) return { ok: false, reden: 'U heeft nog ' + Math.round(open * 10000) / 10000 + ' stuks; meer verkopen kan niet.' };
         if (x.datum && vk.datum < x.datum) return { ok: false, reden: 'De verkoopdatum ligt vóór de aankoopdatum.' };
         if (x.valuta === 'EUR' && vk.eur == null) vk.eur = Math.round(vk.aantal * vk.koers * 100) / 100;

@@ -474,3 +474,10 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .koers-knop-rij .koers-status { flex-basis: 100%; text-align: right; font-size: .85rem; }
 .koers-knop-rij .koers-status:empty { display: none; }
 #koers-sleutel input { width: 100%; box-sizing: border-box; }
+
+/* 1.15: dividend in aandelen per uitkering */
+.div-lijst { margin: 6px 0; }
+.div-regel { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 10px 12px; }
+.div-regel label { grid-column: 2; grid-row: 1; align-self: start; font-size: .8rem; }
+.div-regel input { grid-column: 2; width: 6.5em; }
+@media (max-width: 420px) { .div-regel { grid-template-columns: 1fr; } .div-regel label, .div-regel input { grid-column: 1; grid-row: auto; } }

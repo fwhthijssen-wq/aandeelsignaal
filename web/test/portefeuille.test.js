@@ -223,3 +223,42 @@ test('dividendkalender: ontvangen dit jaar en verwacht de komende 12 maanden', (
   assert.ok(k.perMaand.length >= 4);
   assert.equal(k.verwachtEur, Math.round((16 + 18.4 + 16 + 16 + 3 * 23.4) * 100) / 100);
 });
+
+test('dividend in aandelen: hele aandelen tegen de koers van die dag, restant contant, te weinig = contant', () => {
+  const vandaag = '2026-11-03';
+  // 100 stuks; dividend 0,50 → 50 euro bij koers 20 → 2 aandelen, 10 euro rest; daarna 0,10 over 102 = 10,20 bij koers 25 → contant
+  const rec = { ticker: 'X.AS', naam: 'X', valuta: 'EUR', indices: [], koers: { slot: 30, datum: '2026-11-02', dividenden: [['2026-03-02', 0.5], ['2026-08-03', 0.1]],
+    week: [['2026-02-27', 20], ['2026-07-31', 25], ['2026-10-30', 30]] } };
+  const p = { id: 'a', pf: 'club', ticker: 'X.AS', aantal: 100, koers: 18, valuta: 'EUR', datum: '2026-01-05', eur: 1800 };
+  const fx = { USD: 0.9, GBP: 1.2 };
+  const contant = P.overzicht([p], [rec], vandaag, G, { fx }).regels[0];
+  assert.equal(contant.dividend, 50 + 10);                 // standaard: alles contant over 100 stuks
+  assert.equal(contant.open, 100);
+  const o = P.overzicht([p], [rec], vandaag, G, { fx, dividend: { club: 'aandelen' } }), r = o.regels[0];
+  assert.equal(r.open, 102, '2 aandelen uit het dividend van maart');
+  assert.equal(r.divVerloop[0].soort, 'aandelen'); assert.equal(r.divVerloop[0].aandelen, 2); assert.equal(r.divVerloop[0].contant, 10);
+  assert.equal(r.divVerloop[1].soort, 'contant', 'te weinig voor één aandeel'); assert.equal(r.divVerloop[1].had, 102); assert.equal(r.divVerloop[1].contant, 10.2);
+  assert.equal(r.dividend, 20.2, 'alleen het contante deel');
+  assert.equal(r.dividendAandelen, 40);
+  assert.equal(r.waardeOpen, 102 * 30);
+  assert.equal(r.resultaat, Math.round((3060 + 20.2 - 1800) * 100) / 100);
+  // afschrift wijkt af: in maart 1 aandeel gekregen, in augustus alles contant (0)
+  const q = Object.assign({}, p, { divKeuze: { '2026-03-02': 1 } });
+  const r2 = P.overzicht([q], [rec], vandaag, G, { fx, dividend: { club: 'aandelen' } }).regels[0];
+  assert.equal(r2.open, 101); assert.equal(r2.divVerloop[0].bron, 'afschrift'); assert.equal(r2.divVerloop[0].contant, 30);
+  const r3 = P.overzicht([Object.assign({}, p, { divKeuze: { '2026-03-02': 0 } })], [rec], vandaag, G, { fx, dividend: { club: 'aandelen' } }).regels[0];
+  assert.equal(r3.open, 100); assert.equal(r3.dividend, 60);
+  // kalender: ontvangen in aandelen apart
+  const k = P.dividendKalender([p], [rec], vandaag, { fx, dividend: { club: 'aandelen' } });
+  assert.equal(k.ontvangenEur, 20.2); assert.equal(k.ontvangenAandelenEur, 40); assert.equal(k.ontvangen[0].aandelen, 2);
+  // verkopen boven het gekochte aantal mag als de app het toestaat (dividend in aandelen)
+  const st = S.maak(geheugen(), klok()); st.voegPositieToe(p);
+  const id = st.portefeuille()[0].id;
+  assert.equal(st.verkoopPositie(id, { datum: '2026-11-01', aantal: 102, koers: 30 }).ok, false);
+  assert.equal(st.verkoopPositie(id, { datum: '2026-11-01', aantal: 102, koers: 30 }, 102).ok, true);
+  assert.equal(st.zetDivKeuze(id, '2026-03-02', 2), true); assert.deepEqual(st.portefeuille()[0].divKeuze, { '2026-03-02': 2 });
+  assert.equal(st.zetDivKeuze(id, '2026-03-02', null), true); assert.equal(st.portefeuille()[0].divKeuze, undefined);
+  const pfId = st.portefeuilles()[0].id;
+  assert.equal(st.zetDividend(pfId, 'aandelen'), true); assert.equal(st.portefeuilles()[0].dividend, 'aandelen');
+  assert.equal(st.zetDividend(pfId, 'iets'), false);
+});

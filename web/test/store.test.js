@@ -137,7 +137,7 @@ test('eigen NAIC-groeiverwachting: bewaren, grenzen, wissen, in de back-up', () 
 
 test('meerdere portefeuilles: aanmaken, kiezen, aankopen per portefeuille, verwijderen', () => {
   const w = S.maak(geheugen());
-  assert.deepEqual(w.actief(), { id: 'eigen', naam: 'Mijn portefeuille' });
+  assert.deepEqual(w.actief(), { id: 'eigen', naam: 'Mijn portefeuille', dividend: 'contant' });
   assert.equal(w.voegPositieToe({ ticker: 'ASML.AS', aantal: 1, koers: 600, valuta: 'EUR' }).ok, true);
   const n = w.nieuwePortefeuille('BC De Gouden Greep');
   assert.equal(n.ok, true); assert.equal(n.id, 'bc-de-gouden-greep'); assert.equal(w.actief().id, n.id);

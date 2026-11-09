@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.15 (2026.11.10)
+- **Dividend in aandelen** (keuzedividend): per portefeuille in te stellen bij *Portefeuilles beheren* › Dividend: *Contant* (standaard) of *In aandelen waar het kan, restant contant*. De app herbelegt elk dividend in hele aandelen tegen de koers van die dag; het restant is contant en een te klein dividend helemaal contant. Ontvangen aandelen tellen mee voor de waarde, latere dividenden en verkopen; de inleg verandert niet.
+- Per aankoop een knop **Dividend** met elke uitkering sinds de aankoop. Wijkt het afschrift af, dan vult u het aantal aandelen in dat u kreeg (0 = contant).
+- Dividendkalender en overzicht tonen contant en in aandelen apart. Verkopen mag tot het echte aantal (met splitsingen en dividend in aandelen).
+
 ## 1.14 (2026.11.09)
 - **Koersen vernieuwen** bovenaan Start: naast de tijd van de laatste koersen een knop *Vernieuwen*, voor als het een keer nodig is. Met een eigen GitHub-sleutel (Instellingen › Koersen vernieuwen; alleen deze repository, Actions lezen en schrijven; alleen op dit toestel, niet in de back-up) start de knop de koersupdate en laadt de app de nieuwe koersen zodra ze klaar zijn, meestal binnen 2 tot 5 minuten. Zonder sleutel legt de knop uit hoe het via GitHub kan.
 

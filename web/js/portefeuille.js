@@ -101,15 +101,56 @@
     return n && (Date.parse(n[0]) - Date.parse(d)) / 86400000 <= 6 ? n[1] : null;
   }
   function factor(splits, d) { var f = 1; (splits || []).forEach(function (s) { if (!d || s[0] > d) f *= s[1]; }); return d ? f : 1; }
+  /* Koers op of vlak vóór een datum: eerst de dagkoersen (reeks), anders de weekkoersen (week). In de eenheden van nu
+     (Yahoo past oude koersen aan voor latere splitsingen, net als de dividenden per aandeel). */
+  function koersOp(rec, d) {
+    var k = rec && rec.koers; if (!k) return null;
+    var dag = k.reeks && k.reeks.length && k.reeks[0][0] <= d ? standOp(k.reeks, d) : null;
+    return dag || (k.week ? standOp(k.week, d) : null);
+  }
+  /* Elke dividenduitkering sinds de aankoop, in volgorde. modus 'aandelen': herbeleggen in hele aandelen tegen de koers van
+     die dag, het restant contant; te weinig voor één aandeel = alles contant. p.divKeuze[datum] (van het afschrift) gaat voor:
+     het aantal aandelen dat u werkelijk kreeg, 0 = contant. Ontvangen aandelen tellen mee voor latere dividenden en de waarde.
+     Bedragen in de valuta van het fonds; aantallen in de eenheden van nu (na latere splitsingen). */
+  function dividendVerloop(p, rec, vandaag, modus) {
+    var uit = { regels: [], extra: 0, contant: 0, inAandelen: 0 };
+    if (!p || !p.datum || !rec || !rec.koers) return uit;
+    var splits = rec.koers.splitsingen || [], verk = p.verkopen || [], effKoop = p.aantal * factor(splits, p.datum), keuze = p.divKeuze || {};
+    (rec.koers.dividenden || []).slice().sort(function (a, b) { return a[0] < b[0] ? -1 : 1; }).forEach(function (x) {
+      if (!(x[0] > p.datum) || x[0] > vandaag || !(x[1] > 0)) return;
+      var had = effKoop + uit.extra - verk.filter(function (v) { return v.datum < x[0]; }).reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
+      if (!(had > 1e-9)) return;
+      var bedrag = x[1] * had, fd = factor(splits, x[0]), koers = koersOp(rec, x[0]);
+      var r = { datum: x[0], ps: x[1], had: Math.round(had * 10000) / 10000, bedrag: Math.round(bedrag * 100) / 100, koers: koers, soort: 'contant', aandelen: 0, contant: bedrag, bron: 'app' };
+      var gekregen = Object.prototype.hasOwnProperty.call(keuze, x[0]) ? keuze[x[0]] : null;
+      if (gekregen !== null) {                               // zoals op het afschrift
+        r.bron = 'afschrift';
+        if (gekregen > 0) { r.soort = 'aandelen'; r.aandelen = gekregen; r.contant = koers ? Math.max(0, bedrag - gekregen * fd * koers) : 0; }
+      } else if (modus === 'aandelen') {
+        if (koers) {
+          var n = Math.floor(bedrag / (koers * fd) + 1e-9);         // hele aandelen zoals ze toen waren
+          if (n >= 1) { r.soort = 'aandelen'; r.aandelen = n; r.contant = bedrag - n * fd * koers; }
+        } else r.geenKoers = true;
+      }
+      r.contant = Math.round(r.contant * 100) / 100;
+      r.waardeAandelen = r.aandelen && koers ? Math.round(r.aandelen * fd * koers * 100) / 100 : 0;
+      uit.extra += r.aandelen * fd; uit.contant += r.contant; uit.inAandelen += r.waardeAandelen;
+      uit.regels.push(r);
+    });
+    uit.extra = Math.round(uit.extra * 10000) / 10000;
+    return uit;
+  }
   function dagenTussen(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
 
-  function positieInEuro(p, rec, vandaag, gate, fx, reeksen) {
-    var r = { positie: p, naam: rec ? rec.naam : (p.naam || p.ticker), status: 'ok', reden: null, inleg: null, opbrengst: 0, waardeOpen: 0, dividend: 0, resultaat: null, pct: null,
-      open: 0, heelVerkocht: false, perJaar: null, looptijd: null, idx: null, koersNu: null, notities: [] };
+  function positieInEuro(p, rec, vandaag, gate, fx, reeksen, modus) {
+    var r = { positie: p, naam: rec ? rec.naam : (p.naam || p.ticker), status: 'ok', reden: null, inleg: null, opbrengst: 0, waardeOpen: 0, dividend: 0, dividendAandelen: 0, resultaat: null, pct: null,
+      open: 0, extraAandelen: 0, heelVerkocht: false, perJaar: null, looptijd: null, idx: null, koersNu: null, notities: [] };
     var verk = p.verkopen || [], splits = rec && rec.koers ? rec.koers.splitsingen || [] : [];
     var fKoop = factor(splits, p.datum);
+    var dv = dividendVerloop(p, rec, vandaag, modus);
+    r.divVerloop = dv.regels; r.extraAandelen = dv.extra;
     var effKoop = p.aantal * fKoop, effVerk = verk.reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
-    r.open = Math.max(0, Math.round((effKoop - effVerk) * 10000) / 10000);
+    r.open = Math.max(0, Math.round((effKoop + dv.extra - effVerk) * 10000) / 10000);
     r.heelVerkocht = verk.length > 0 && r.open <= 1e-6;
     // Geen eurobedrag (oudere aankoop): geschat met de ECB-koers van vandaag, met een opmerking.
     var fxP = fxNu(fx, p.valuta), deelP = String(p.valuta).toUpperCase() === 'GBX' ? 1 : 1;
@@ -135,12 +176,9 @@
     // dividend sinds de aankoop (alleen met een aankoopdatum)
     if (p.datum && rec && rec.koers) {
       var fd = fxNu(fx, rec.valuta) || 0;
-      (rec.koers.dividenden || []).forEach(function (x) {
-        if (!(x[0] > p.datum) || x[0] > vandaag || !(x[1] > 0)) return;
-        var had = effKoop - verk.filter(function (v) { return v.datum < x[0]; }).reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
-        if (had > 0) r.dividend += x[1] * had * fd;
-      });
-      r.dividend = Math.round(r.dividend * 100) / 100;
+      r.dividend = Math.round(dv.contant * fd * 100) / 100;                  // alleen wat u contant ontving
+      r.dividendAandelen = Math.round(dv.inAandelen * fd * 100) / 100;       // in aandelen: zit in de waarde (ter informatie)
+      if (dv.regels.some(function (x) { return x.geenKoers; })) r.notities.push('voor een oud dividend is de koers van toen niet bekend: dat telt als contant; vul bij Dividend het aantal aandelen van uw afschrift in');
     } else if (!p.datum) r.notities.push('zonder aankoopdatum geen dividend en geen vergelijking met de index');
     r.resultaat = Math.round((r.waardeOpen + r.opbrengst + r.dividend - r.inleg) * 100) / 100;
     r.pct = r.inleg > 0 ? Math.round(r.resultaat / r.inleg * 1000) / 10 : null;
@@ -184,11 +222,12 @@
         var p = r.positie, rec = per[p.ticker]; if (p.datum > d) return;
         var wk = rec && rec.koers && rec.koers.week ? standOp(rec.koers.week, d) : null;
         var splits = rec && rec.koers ? rec.koers.splitsingen || [] : [], verk = (p.verkopen || []).filter(function (v) { return v.datum <= d; });
-        var held = p.aantal * factor(splits, p.datum) - verk.reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
+        var dvl = (r.divVerloop || []).filter(function (x) { return x.datum <= d; });
+        var held = p.aantal * factor(splits, p.datum) + dvl.reduce(function (a, x) { return a + x.aandelen * factor(splits, x.datum); }, 0) - verk.reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
         if (held > 1e-9 && wk == null) return;
         var f = fxNu(fx, rec ? rec.valuta : p.valuta) || 0, waarde = held > 1e-9 ? held * wk * f : 0;
         var opbr = verk.reduce(function (a, v) { return a + (v.eur != null ? v.eur : v.aantal * v.koers * f) - (v.kosten || 0); }, 0), div = 0;
-        ((rec && rec.koers && rec.koers.dividenden) || []).forEach(function (x) { if (x[0] > p.datum && x[0] <= d) { var had = p.aantal * factor(splits, p.datum) - (p.verkopen || []).filter(function (v) { return v.datum < x[0]; }).reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0); if (had > 0) div += x[1] * had * f; } });
+        dvl.forEach(function (x) { div += x.contant * f; });
         var inl = r.eurKoop + (p.kosten || 0);
         inleg += inl; res += waarde + opbr + div - inl;
         if (r.idx && reeksen && reeksen[r.idx.code]) {
@@ -203,15 +242,16 @@
   function overzicht(posities, aandelen, vandaag, gate, opties) {
     opties = opties || {};
     var per = {}; (aandelen || []).forEach(function (a) { per[a.ticker] = a; });
-    var regels = (posities || []).map(function (p) { return positieInEuro(p, per[p.ticker], vandaag, gate, opties.fx, opties.indexreeksen); });
-    var t = { inleg: 0, waardeOpen: 0, opbrengst: 0, dividend: 0, resultaat: 0, idxInleg: 0, idxResultaat: 0, open: 0, gesloten: 0, gewonnen: 0, buiten: 0, metIdxRes: 0, metIdxDiv: 0 };
+    var modi = opties.dividend || {};       // { pf-id: 'aandelen' }
+    var regels = (posities || []).map(function (p) { return positieInEuro(p, per[p.ticker], vandaag, gate, opties.fx, opties.indexreeksen, modi[p.pf]); });
+    var t = { inleg: 0, waardeOpen: 0, opbrengst: 0, dividend: 0, dividendAandelen: 0, resultaat: 0, idxInleg: 0, idxResultaat: 0, open: 0, gesloten: 0, gewonnen: 0, buiten: 0, metIdxRes: 0, metIdxDiv: 0 };
     regels.forEach(function (r) {
       if (r.status !== 'ok') { t.buiten++; return; }
-      t.inleg += r.inleg; t.waardeOpen += r.waardeOpen; t.opbrengst += r.opbrengst; t.dividend += r.dividend; t.resultaat += r.resultaat;
+      t.inleg += r.inleg; t.waardeOpen += r.waardeOpen; t.opbrengst += r.opbrengst; t.dividend += r.dividend; t.dividendAandelen += r.dividendAandelen; t.resultaat += r.resultaat;
       if (r.heelVerkocht) { t.gesloten++; if (r.resultaat > 0) t.gewonnen++; } else t.open++;
-      if (r.idx) { t.idxInleg += r.inleg; t.idxResultaat += r.idx.resultaat; t.metIdxRes += r.resultaat; t.metIdxDiv += r.dividend; }
+      if (r.idx) { t.idxInleg += r.inleg; t.idxResultaat += r.idx.resultaat; t.metIdxRes += r.resultaat; t.metIdxDiv += r.dividend + r.dividendAandelen; }
     });
-    ['inleg', 'waardeOpen', 'opbrengst', 'dividend', 'resultaat', 'idxInleg', 'idxResultaat'].forEach(function (k) { t[k] = Math.round(t[k] * 100) / 100; });
+    ['inleg', 'waardeOpen', 'opbrengst', 'dividend', 'dividendAandelen', 'resultaat', 'idxInleg', 'idxResultaat'].forEach(function (k) { t[k] = Math.round(t[k] * 100) / 100; });
     t.pct = t.inleg > 0 ? Math.round(t.resultaat / t.inleg * 1000) / 10 : null;
     t.idxPct = t.idxInleg > 0 ? Math.round(t.idxResultaat / t.idxInleg * 1000) / 10 : null;
     t.pctMetIdx = t.idxInleg > 0 ? Math.round(t.metIdxRes / t.idxInleg * 1000) / 10 : null;
@@ -232,31 +272,32 @@
       var rec = per[p.ticker];
       if (!rec || !rec.koers || !p.datum) return;
       var f = fxNu(opties.fx, rec.valuta); if (!f) return;
-      var splits = rec.koers.splitsingen || [], verk = p.verkopen || [], effKoop = p.aantal * factor(splits, p.datum);
-      var heeft = function (d) { return effKoop - verk.filter(function (v) { return v.datum < d; }).reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0); };
-      var nu = heeft('9999-12-31');
-      (rec.koers.dividenden || []).forEach(function (x) {
-        if (!(x[1] > 0) || !(x[0] > p.datum)) return;
-        if (x[0] >= jan1 && x[0] <= vandaag) { var h = heeft(x[0]); if (h > 0) ontvangen.push({ ticker: p.ticker, naam: rec.naam, datum: x[0], ps: x[1], valuta: rec.valuta, eur: Math.round(x[1] * h * f * 100) / 100 }); }
+      var modus = (opties.dividend || {})[p.pf], dv = dividendVerloop(p, rec, vandaag, modus);
+      var splits = rec.koers.splitsingen || [], verk = p.verkopen || [];
+      var nu = p.aantal * factor(splits, p.datum) + dv.extra - verk.reduce(function (a, v) { return a + v.aantal * factor(splits, v.datum); }, 0);
+      dv.regels.forEach(function (x) {
+        if (x.datum >= jan1) ontvangen.push({ ticker: p.ticker, naam: rec.naam, datum: x.datum, ps: x.ps, valuta: rec.valuta, eur: Math.round(x.contant * f * 100) / 100,
+          aandelen: x.aandelen, eurAandelen: Math.round(x.waardeAandelen * f * 100) / 100 });
       });
       if (nu > 1e-9) (rec.koers.dividenden || []).forEach(function (x) {
         if (!(x[1] > 0) || !(x[0] > jaarTerug) || x[0] > vandaag) return;
         var d = plusJaar(x[0]);
-        if (d > vandaag) verwacht.push({ ticker: p.ticker, naam: rec.naam, datum: d, ps: x[1], valuta: rec.valuta, eur: Math.round(x[1] * nu * f * 100) / 100 });
+        if (d > vandaag) verwacht.push({ ticker: p.ticker, naam: rec.naam, datum: d, ps: x[1], valuta: rec.valuta, eur: Math.round(x[1] * nu * f * 100) / 100, inAandelen: modus === 'aandelen' });
       });
     });
     // dezelfde aandelen in meerdere aankopen: per fonds en datum samenvoegen
     function samen(l) {
-      var m = {}; l.forEach(function (x) { var k = x.ticker + '|' + x.datum; if (m[k]) m[k].eur = Math.round((m[k].eur + x.eur) * 100) / 100; else m[k] = Object.assign({}, x); });
+      var m = {}; l.forEach(function (x) { var k = x.ticker + '|' + x.datum; if (m[k]) { m[k].eur = Math.round((m[k].eur + x.eur) * 100) / 100; if (x.eurAandelen) { m[k].eurAandelen = Math.round(((m[k].eurAandelen || 0) + x.eurAandelen) * 100) / 100; m[k].aandelen = (m[k].aandelen || 0) + x.aandelen; } } else m[k] = Object.assign({}, x); });
       return Object.keys(m).map(function (k) { return m[k]; }).sort(function (a, b) { return a.datum < b.datum ? -1 : a.datum > b.datum ? 1 : a.naam.localeCompare(b.naam); });
     }
     ontvangen = samen(ontvangen); verwacht = samen(verwacht);
     var maanden = {};
     verwacht.forEach(function (x) { var k = x.datum.slice(0, 7); (maanden[k] = maanden[k] || { maand: k, eur: 0, items: [] }).items.push(x); maanden[k].eur = Math.round((maanden[k].eur + x.eur) * 100) / 100; });
     var som = function (l) { return Math.round(l.reduce(function (a, x) { return a + x.eur; }, 0) * 100) / 100; };
-    return { jaar: jaar, ontvangen: ontvangen, ontvangenEur: som(ontvangen), verwacht: verwacht, verwachtEur: som(verwacht), perMaand: Object.keys(maanden).sort().map(function (k) { return maanden[k]; }) };
+    var somA = Math.round(ontvangen.reduce(function (a, x) { return a + (x.eurAandelen || 0); }, 0) * 100) / 100;
+    return { jaar: jaar, ontvangen: ontvangen, ontvangenEur: som(ontvangen), ontvangenAandelenEur: somA, verwacht: verwacht, verwachtEur: som(verwacht), perMaand: Object.keys(maanden).sort().map(function (k) { return maanden[k]; }) };
   }
 
-  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn, penceVermoeden: penceVermoeden, overzicht: overzicht, dividendKalender: dividendKalender, positieInEuro: positieInEuro, indexVan: indexVan, fxNu: fxNu };
+  var api = { waardeer: waardeer, herkomst: herkomst, volg: volg, koersIn: koersIn, penceVermoeden: penceVermoeden, overzicht: overzicht, dividendKalender: dividendKalender, dividendVerloop: dividendVerloop, positieInEuro: positieInEuro, indexVan: indexVan, fxNu: fxNu };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Portefeuille = api;
 })(typeof self !== 'undefined' ? self : this);

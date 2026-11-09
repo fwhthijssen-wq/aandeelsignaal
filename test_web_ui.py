@@ -817,6 +817,31 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('Onbekend', pg2.locator('[data-bereik]').inner_text())
         self.assertTrue(pg2.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
 
+    def test_dividend_in_aandelen(self):
+        import datetime
+        vandaag = datetime.date.today().isoformat()
+        c = self.b.new_context(viewport={'width': 360, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""(function(){var v;Object.defineProperty(window,'AANDEEL_DATA',{configurable:true,get:function(){return v;},
+          set:function(d){d.fx={USD:0.9,GBP:1.2};d.aandelen.forEach(function(a){if(a.ticker==='AAPL'){
+            a.koers={slot:30,datum:'%s',sma50:30,reeks:[['%s',30]],dividenden:[['2026-03-02',0.5],['2026-08-03',0.1]],week:[['2026-02-27',20],['2026-07-31',25],['%s',30]]};}});v=d;}});
+          try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({introGezien:true,portefeuilles:[{id:'club',naam:'Club'}],actief:'club',
+            portefeuille:[{id:'a',pf:'club',ticker:'AAPL',aantal:100,koers:18,valuta:'USD',datum:'2026-01-05',eur:1620}]}));}catch(e){}})();""" % (vandaag, vandaag, vandaag))
+        pg = c.new_page(); fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX + '#/portefeuille'); pg.wait_for_timeout(250)
+        self.assertNotIn('uit dividend', pg.inner_text('[data-pf-positie="a"]'))       # standaard contant
+        pg.click('[data-pf-beheer] summary'); pg.select_option('#pf-div', 'aandelen'); pg.wait_for_timeout(250)
+        t = pg.inner_text('[data-pf-positie="a"]')
+        self.assertIn('102 stuks', t); self.assertIn('waarvan 2 uit dividend', t); self.assertIn('dividend in aandelen', t)
+        self.assertIn('In aandelen ontvangen', pg.inner_text('[data-dividendkalender]'))
+        pg.click('[data-pf-dividend="a"]'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.locator('[data-div-regel]').count(), 2)
+        pg.fill('[data-dk="2026-03-02"]', '1'); pg.click('[data-pf-dividendform] button[type=submit]'); pg.wait_for_timeout(250)
+        self.assertIn('101 stuks', pg.inner_text('[data-pf-positie="a"]'))
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        self.assertEqual(fouten, [])
+
     def test_naic_extra_kentallen_en_bank_krijgt_ze_niet(self):
         pg = self._naic_extra_pagina(False)
         t = pg.inner_text('main')
