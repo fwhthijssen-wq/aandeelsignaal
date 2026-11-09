@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.14 (2026.11.09)
+- **Koersen vernieuwen** bovenaan Start: naast de tijd van de laatste koersen een knop *Vernieuwen*, voor als het een keer nodig is. Met een eigen GitHub-sleutel (Instellingen › Koersen vernieuwen; alleen deze repository, Actions lezen en schrijven; alleen op dit toestel, niet in de back-up) start de knop de koersupdate en laadt de app de nieuwe koersen zodra ze klaar zijn, meestal binnen 2 tot 5 minuten. Zonder sleutel legt de knop uit hoe het via GitHub kan.
+
 ## 1.13 (2026.11.07)
 - **Nieuwe cockpit op Start**, in drie groepen: *Mijn portefeuilles*, *Volgen* en *De markt*. Het getal op een tegel is precies het aantal regels op het scherm dat de tegel opent.
 - **Mijn portefeuilles:** elke portefeuille op een eigen regel met waarde en rendement (geen totaal); een tik op een regel opent die portefeuille.

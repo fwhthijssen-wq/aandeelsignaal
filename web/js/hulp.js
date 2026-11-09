@@ -3,6 +3,7 @@
   'use strict';
   var T = {
     start: ['Start', 'Het dashboard: in één oogopslag wat er speelt. Elke tegel opent één scherm; daar zoomt u verder in.', [
+      'Bovenaan: van wanneer de koersen zijn, met de knop Vernieuwen om ze tussendoor op te halen (alleen voor de beheerder; zie Instellingen › Koersen vernieuwen).',
       'Het getal op een tegel is het aantal regels op het scherm dat de tegel opent.',
       'Mijn portefeuilles: elke portefeuille op een eigen regel met waarde en rendement; tik op een regel en die portefeuille opent. Signalen in mijn portefeuilles: hoeveel signalen er zijn bij aandelen die u nu bezit, in alle portefeuilles, met per portefeuille het aantal.',
       'Volgen: de Volglijst (hoeveel aandelen, en hoeveel daarvan in de koopzone; die staan bovenaan als u de tegel opent) en de fictieve Modelportefeuille.',

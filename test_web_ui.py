@@ -1113,6 +1113,36 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.fill('#q', '<img src=x onerror=window.hack=1>')
         self.assertIsNone(pg.evaluate('window.hack'))
 
+    def test_koersen_vernieuwen_knop(self):
+        pg = self.pagina(320)
+        self.assertIn('Koersen', pg.inner_text('[data-koers-vernieuwen]'))
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+        pg.click('#koers-vernieuwen'); pg.wait_for_timeout(100)                           # zonder sleutel: uitleg met GitHub
+        self.assertIn('actions/workflows/koersen-overdag.yml', pg.get_attribute('#kv-achter a.knop', 'href'))
+        pg.click('#kv-sluit')
+        # met sleutel: start de workflow, wacht tot die klaar is en laadt opnieuw
+        vragen = []
+        def api(route, req):
+            vragen.append((req.method, req.url))
+            if req.method == 'POST':
+                route.fulfill(status=204, body='')
+            elif '/runs' in req.url:
+                route.fulfill(status=200, content_type='application/json', body='{"workflow_runs":[{"status":"completed","conclusion":"success"}]}')
+            else:
+                route.fulfill(status=200, content_type='application/json', body='{}')
+        pg.route('https://api.github.com/**', api)
+        pg.goto(INDEX + '#/instellingen'); pg.wait_for_timeout(150)
+        pg.fill('#gh-sleutel', 'geen sleutel'); pg.click('#gh-sleutel-bewaar')
+        self.assertIn('geen GitHub-sleutel', pg.inner_text('#gh-sleutel-melding'))
+        pg.fill('#gh-sleutel', 'github_pat_' + 'A' * 40); pg.click('#gh-sleutel-bewaar'); pg.wait_for_timeout(300)
+        self.assertIn('Sleutel ingesteld', pg.inner_text('[data-koers-sleutel]'))
+        pg.goto(INDEX + '#/'); pg.wait_for_timeout(150)
+        pg.click('#koers-vernieuwen'); pg.wait_for_timeout(600)
+        self.assertIn('Klaar', pg.inner_text('#koers-status'))
+        self.assertTrue(any(m == 'POST' and u.endswith('/actions/workflows/koersen-overdag.yml/dispatches') for m, u in vragen))
+        self.assertTrue(all('Bearer' not in u for _, u in vragen))
+        self.assertEqual(self.fouten, [])
+
     def test_signalen_en_kansen_met_vorige_update(self):
         pg = self.pagina()
         pg.click('[data-tegel="signalen"]'); pg.wait_for_timeout(200)

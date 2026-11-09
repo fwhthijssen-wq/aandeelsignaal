@@ -466,3 +466,11 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .chip-select { font: inherit; font-size: .88rem; font-weight: 600; min-height: 36px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
 .chip-knop b { font-weight: 800; margin-left: 2px; }
 .chip-knop:disabled { opacity: .5; cursor: default; }
+
+/* 1.14: koersen vernieuwen bovenaan Start */
+.start-kop { flex-wrap: wrap; row-gap: 6px; }
+.koers-knop-rij { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
+.koers-knop-rij .knop { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; }
+.koers-knop-rij .koers-status { flex-basis: 100%; text-align: right; font-size: .85rem; }
+.koers-knop-rij .koers-status:empty { display: none; }
+#koers-sleutel input { width: 100%; box-sizing: border-box; }

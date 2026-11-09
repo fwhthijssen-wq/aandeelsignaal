@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.13 (2026.11.07)';
+  var APP_VERSIE = '1.14 (2026.11.09)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -781,7 +781,7 @@
   }
   /* Start is een dashboard: alleen tegels. Elke tegel opent één scherm; daar zoomt u verder in. */
   function schermStart() {
-    var s = '<section class="cockpit"><div class="rij-kop"><h1>Overzicht</h1><span class="zacht">' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + '</span></div>' + tegelsHtml() + '</section>';
+    var s = '<section class="cockpit"><div class="rij-kop start-kop"><h1>Overzicht</h1>' + koersKnopHtml() + '</div>' + tegelsHtml() + '</section>';
     return s + statusRegel() + backupBalk();
   }
   /* Signalen bij uw eigen aandelen en wat er sinds de vorige update veranderde (vanaf de tegel op Start). */
@@ -2074,6 +2074,98 @@
       });
     });
   }
+  /* ---- Koersen vernieuwen (alleen als het een keer nodig is) ----
+     De app heeft geen server: de koersen komen van de GitHub-workflow 'Koersen overdag'. Met een eigen GitHub-sleutel
+     (fine-grained token, alleen deze repository, Actions: lezen en schrijven) start de knop die workflow direct; de sleutel
+     staat alleen op dit toestel en gaat niet mee in de back-up. Zonder sleutel opent de knop de pagina op GitHub. */
+  var KOERS_WF = 'koersen-overdag.yml', API_REPO = 'https://api.github.com/repos/fwhthijssen-wq/aandeelsignaal';
+  function ghSleutel(v) {
+    try { if (v === undefined) return localStorage.getItem('as_gh_sleutel') || ''; if (v) localStorage.setItem('as_gh_sleutel', v); else localStorage.removeItem('as_gh_sleutel'); } catch (e) { return ''; }
+    return v;
+  }
+  function koersMoment() {
+    var kb = DATA.koersen_bijgewerkt && DATA.koersen_bijgewerkt > String(DATA.gemaakt || '') ? new Date(DATA.koersen_bijgewerkt) : null;
+    if (kb && !isNaN(kb)) return kb.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) + ' ' + kb.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    var g = new Date(DATA.gemaakt || ''); return isNaN(g) ? datumNl(String(DATA.gemaakt || '').slice(0, 10)) : g.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) + ' ' + g.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+  }
+  function koersKnopHtml() {
+    return '<div class="koers-knop-rij" data-koers-vernieuwen><span class="zacht" data-koers-moment>Koersen ' + h(koersMoment()) + '</span>' +
+      '<button type="button" class="knop rand klein" id="koers-vernieuwen" aria-describedby="koers-status"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Vernieuwen</button>' +
+      '<span class="koers-status zacht" id="koers-status" role="status" aria-live="polite"></span></div>';
+  }
+  function ghVraag(pad, opties) {
+    opties = opties || {};
+    return fetch(API_REPO + pad, { method: opties.method || 'GET', headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + ghSleutel(), 'X-GitHub-Api-Version': '2022-11-28' }, body: opties.body ? JSON.stringify(opties.body) : undefined });
+  }
+  function koersKnopKoppel() {
+    var knop = document.getElementById('koers-vernieuwen'), st = document.getElementById('koers-status');
+    if (!knop) return;
+    function zeg(t) { if (st) st.textContent = t; }
+    knop.addEventListener('click', function () {
+      if (!ghSleutel()) { koersUitleg(); return; }
+      var start = new Date(Date.now() - 60000).toISOString();
+      knop.disabled = true; zeg('Starten…');
+      ghVraag('/actions/workflows/' + KOERS_WF + '/dispatches', { method: 'POST', body: { ref: 'main' } }).then(function (r) {
+        if (r.status === 401 || r.status === 403 || r.status === 404) throw new Error('sleutel');
+        if (!r.ok) throw new Error('status ' + r.status);
+        zeg('Bezig: koersen ophalen (meestal 2 tot 5 minuten)…');
+        var pogingen = 0;
+        (function kijk() {
+          pogingen++;
+          ghVraag('/actions/workflows/' + KOERS_WF + '/runs?event=workflow_dispatch&per_page=1&created=%3E%3D' + encodeURIComponent(start)).then(function (r) { return r.json(); }).then(function (d) {
+            var run = d && d.workflow_runs && d.workflow_runs[0];
+            if (run && run.status === 'completed') {
+              if (run.conclusion === 'success') { zeg('Klaar. Nieuwe koersen laden…'); setTimeout(function () { location.reload(); }, 4000); }
+              else { knop.disabled = false; zeg('Niet gelukt (' + (run.conclusion || 'onbekend') + '). De koersen van ' + koersMoment() + ' blijven staan.'); }
+              return;
+            }
+            if (pogingen > 60) { knop.disabled = false; zeg('Duurt langer dan normaal; kijk later nog eens.'); return; }
+            setTimeout(kijk, 10000);
+          }).catch(function () { if (pogingen > 60) { knop.disabled = false; zeg('Geen verbinding met GitHub.'); } else setTimeout(kijk, 15000); });
+        })();
+      }).catch(function (e) {
+        knop.disabled = false;
+        zeg(e.message === 'sleutel' ? 'De GitHub-sleutel werkt niet (verlopen of zonder rechten). Pas hem aan bij Instellingen.' : 'Starten lukte niet (' + e.message + ').');
+      });
+    });
+  }
+  function koersUitleg() {
+    var vorige = document.activeElement;
+    $laag.innerHTML = '<div class="intro-achter" id="kv-achter"><div class="intro hulp-blad" role="dialog" aria-modal="true" aria-labelledby="kv-t"><h2 id="kv-t">Koersen vernieuwen</h2>' +
+      '<p>De koersen worden vanzelf vernieuwd: elke nacht en op werkdagen rond 18:00 uur. Nu staan er de koersen van <b>' + h(koersMoment()) + '</b>.</p>' +
+      '<p>Is het een keer nodig om tussendoor te vernieuwen? Dat kan alleen de beheerder van de app, want het gaat via GitHub.</p>' +
+      lijst(['<b>Met één tik:</b> zet eenmalig een GitHub-sleutel bij Instellingen › Koersen vernieuwen. Daarna start deze knop het ophalen zelf en laadt de app de nieuwe koersen als ze klaar zijn.',
+        '<b>Zonder sleutel:</b> open GitHub (ingelogd), kies <i>Run workflow</i> en daarna <i>Run workflow</i>. Na een paar minuten de app verversen.']) +
+      '<div class="knoppen"><a class="knop" href="' + REPO + '/actions/workflows/' + KOERS_WF + '" target="_blank" rel="noopener">Open GitHub</a><a class="knop rand" href="#/instellingen" id="kv-inst">Naar Instellingen</a><button class="knop rand" id="kv-sluit">Sluiten</button></div></div></div>';
+    function sluit() { $laag.innerHTML = ''; document.removeEventListener('keydown', toets); if (vorige && vorige.focus) { try { vorige.focus(); } catch (e) { /* geen focus */ } } }
+    function toets(e) { if (e.key === 'Escape') sluit(); }
+    document.addEventListener('keydown', toets);
+    document.getElementById('kv-sluit').addEventListener('click', sluit);
+    document.getElementById('kv-inst').addEventListener('click', function () { sluit(); });
+    document.getElementById('kv-achter').addEventListener('click', function (e) { if (e.target.id === 'kv-achter') sluit(); });
+    document.getElementById('kv-sluit').focus();
+  }
+  function koersSleutelKaart() {
+    var heeft = !!ghSleutel();
+    return '<section class="kaart-plat" id="koers-sleutel" data-koers-sleutel><h2>Koersen vernieuwen</h2>' +
+      '<p class="zacht">Voor de knop <b>Vernieuwen</b> op Start: alleen nodig als u tussendoor de koersen wilt ophalen. Maak op GitHub een <i>fine-grained token</i> voor alleen de repository aandeelsignaal, met recht <i>Actions: Read and write</i>, en plak hem hier. Hij staat alleen op dit toestel en gaat niet mee in de back-up.</p>' +
+      (heeft ? '<p data-sleutel-status>Sleutel ingesteld.</p><div class="knoppen"><button class="knop rand klein" id="gh-sleutel-weg">Sleutel verwijderen</button></div>'
+        : '<label for="gh-sleutel">GitHub-sleutel</label><input id="gh-sleutel" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"><div class="knoppen"><button class="knop klein" id="gh-sleutel-bewaar">Bewaren</button><a class="knop rand klein" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Sleutel maken op GitHub</a></div>') +
+      '<p class="zacht" id="gh-sleutel-melding" role="status" aria-live="polite"></p></section>';
+  }
+  function koersSleutelKoppel() {
+    var bw = document.getElementById('gh-sleutel-bewaar'), weg = document.getElementById('gh-sleutel-weg'), m = document.getElementById('gh-sleutel-melding');
+    if (bw) bw.addEventListener('click', function () {
+      var v = (document.getElementById('gh-sleutel').value || '').trim();
+      if (!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)) { m.textContent = 'Dit lijkt geen GitHub-sleutel (begint met github_pat_).'; return; }
+      ghSleutel(v); m.textContent = 'Controleren…';
+      ghVraag('/actions/workflows/' + KOERS_WF).then(function (r) {
+        if (r.ok) { route(); var n = document.getElementById('gh-sleutel-melding'); if (n) n.textContent = 'Bewaard en gecontroleerd. De knop Vernieuwen op Start werkt nu.'; }
+        else { ghSleutel(''); m.textContent = 'GitHub weigert deze sleutel (' + r.status + '). Kies alleen de repository aandeelsignaal en Actions: Read and write.'; }
+      }).catch(function () { m.textContent = 'Bewaard, maar GitHub was niet bereikbaar om te controleren.'; route(); });
+    });
+    if (weg) weg.addEventListener('click', function () { ghSleutel(''); route(); });
+  }
   function meldingKaart() {
     var m = meldingLees(), tickers = eigenTickersMelding();
     var s = '<div class="kaart-plat" data-meldingen><h2>Meldingen</h2><p class="zacht">Een pushbericht op dit toestel als een aandeel uit uw eigen portefeuilles in de koopzone of de verkoopzone komt, of als de middellange termijn omslaat. De volglijst en de modelportefeuille tellen niet mee. ' + hoe('meldingen', 'Hoe werkt dit?') + '</p>';
@@ -2118,12 +2210,12 @@
       '<div class="kaart-plat" data-weergave-kaart><h2>Weergave</h2><div class="keuze" role="group" aria-label="Weergave">' + [['eenvoudig', 'Eenvoudig'], ['uitgebreid', 'Uitgebreid']].map(function (o) { return '<button data-weergave-knop="' + o[0] + '" aria-pressed="' + (weergave() === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div>' +
       '<p class="zacht">Eenvoudig: per aandeel het NAIC-oordeel, de vijf stappen, de koopprijs en één zin uitleg. Uitgebreid: ook de onderbouwing, de zes aanvullende metingen en alle kentallen. Tip: met <code>?weergave=eenvoudig</code> achter de link opent iemand anders de app meteen eenvoudig.</p></div>' +
       '<div class="kaart-plat detail"><h2>Gezondheidscheck</h2><p class="zacht">De gezondheidscheck (Gezond, Gemengd of Zwak) verschijnt pas als genoeg van de zes metingen beschikbaar zijn. Kies hier hoeveel dat minimaal moet zijn. Het NAIC-oordeel heeft eigen eisen.</p><label for="mind">Minimum aantal metingen voor de gezondheidscheck</label><select id="mind">' + [3, 4, 5, 6].map(function (v) { return '<option value="' + v + '"' + (minMetingen() === v ? ' selected' : '') + '>' + v + ' van 6' + (v === Signaal.MIN_METINGEN ? ' (standaard)' : v === 6 ? ' (alleen als alles bekend is)' : '') + '</option>'; }).join('') + '</select></div>' +
-      backupKaart() + meldingKaart() +
+      backupKaart() + meldingKaart() + koersSleutelKaart() +
       '<div class="kaart-plat"><h2>Bewaren op dit toestel</h2><p id="pers" class="zacht">Even controleren…</p><div class="knoppen"><button class="knop rand" id="persknop">Vraag het toestel om gegevens te bewaren</button></div></div>' +
       '<p class="zacht">Versie ' + h(APP_VERSIE) + ' · ' + h(MAKER) + ' · gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + ' · ' + h(DATA.bron || '') + '</p></section>';
   }
   function instKoppel() {
-    meldingKoppel();
+    meldingKoppel(); koersSleutelKoppel();
     Array.prototype.forEach.call(document.querySelectorAll('[data-th]'), function (b) { b.addEventListener('click', function () { winkel.zetThema(b.getAttribute('data-th')); pasThema(); route(); }); });
     var bk = document.getElementById('bk');
     if (bk) bk.addEventListener('click', function () {
@@ -2213,7 +2305,7 @@
       $menu.innerHTML = menuHtml(HOOFD, actief);
       if (HOORT_BIJ[hash]) html = '<div class="stelregel"><a class="link" href="' + HOORT_BIJ[hash] + '" data-kruimel>' + I.terug + h(SCHERM_NAAM[HOORT_BIJ[hash]]) + '</a></div>' + html;
       titel = (hash === '#/' ? '' : SCHERM_NAAM[hash] + ' · ') + 'Aandeel Signaal';
-      var KOPPEL = { '#/model': modelKoppel, '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/kansen': kansenKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
+      var KOPPEL = { '#/': koersKnopKoppel, '#/model': modelKoppel, '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/kansen': kansenKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
         '#/hulp': function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); } };
       na = KOPPEL[hash] || null;
     }
