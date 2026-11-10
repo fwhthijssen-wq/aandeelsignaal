@@ -299,6 +299,19 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertEqual(pg.locator('[data-dividend-maand]').count(), 1)
         self.assertEqual(self.fouten, [])
 
+    def test_meldingen_controle_kenmerk(self):
+        import hashlib, json as _j
+        ep = 'https://fcm.googleapis.com/fcm/send/proef123'
+        m = {'vapid': {'publiek': 'x', 'prive': 'y'}, 'abonnement': {'endpoint': ep, 'keys': {'p256dh': 'a', 'auth': 'b'}}, 'gekopieerd': None}
+        c = self.b.new_context(viewport={'width': 360, 'height': 800}); self.addCleanup(c.close)
+        c.add_init_script("try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({introGezien:true,portefeuille:[{id:'a',ticker:'ASML.AS',aantal:1,koers:600,valuta:'EUR'}]}));localStorage.setItem('as_meldingen',%s);}catch(e){}" % _j.dumps(_j.dumps(m)))
+        pg = c.new_page(); pg.goto(INDEX + '#/instellingen'); pg.wait_for_timeout(400)
+        if pg.locator('[data-meld-controle]').count() == 0:
+            self.skipTest('geen pushondersteuning in deze testbrowser')
+        self.assertIn('geen e-mail', pg.inner_text('[data-meld-controle]'))
+        self.assertEqual(pg.inner_text('#meld-kenmerk'), hashlib.sha256(ep.encode()).hexdigest()[:8])   # zelfde kenmerk als meldingen.js
+        self.assertIn('GitHub toont een geheim na het opslaan niet meer', pg.inner_text('[data-meldingen]'))
+
     def test_portefeuille_zonder_scrollbalk_op_smal_scherm(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/portefeuille')

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.16 (2026.11.10)';
+  var APP_VERSIE = '1.17 (2026.11.10)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -2272,7 +2272,28 @@
       '<label for="meld-extra" class="zacht">Al meldingen op een ander toestel? Plak hier eerst de tekst van dat toestel; dan staan ze er samen in.</label><textarea id="meld-extra" rows="2"></textarea>' +
       '<textarea id="meld-tekst" rows="4" readonly aria-label="Tekst voor het geheim MELDINGEN">' + h(meldingTekst(m)) + '</textarea>' +
       '<div class="knoppen"><button class="knop" id="meld-kopieer">Kopieer de tekst</button><button class="knop rand" id="meld-uit">Meldingen uitzetten</button></div><p id="meld-uitslag" class="zacht" role="status"></p>' +
-      '<p class="zacht">De tekst bevat een sleutel die alleen berichten naar dit toestel kan sturen, en de beurscodes uit uw portefeuilles (geen aantallen of bedragen). Als geheim is hij voor niemand anders zichtbaar.</p></div>';
+      '<p class="zacht">De tekst bevat een sleutel die alleen berichten naar dit toestel kan sturen, en de beurscodes uit uw portefeuilles (geen aantallen of bedragen). Als geheim is hij voor niemand anders zichtbaar. GitHub toont een geheim na het opslaan niet meer, ook niet aan u: dat is normaal. U ziet alleen “Updated …”.</p>' +
+      '<div class="meld-controle" data-meld-controle><h3>Controleren</h3><p class="zacht">Meldingen zijn <b>pushberichten op dit toestel</b> (zoals van een app), geen e-mail.</p>' +
+      '<dl class="feiten"><dt>Toestemming</dt><dd data-meld-toestemming>' + h({ granted: 'gegeven', denied: 'geweigerd (aanpassen in de instellingen van de browser of het toestel)', 'default': 'nog niet gevraagd' }[Notification.permission] || Notification.permission) + '</dd>' +
+      '<dt>Kenmerk van dit toestel</dt><dd id="meld-kenmerk">…</dd><dt>Laatst ontvangen bericht</dt><dd id="meld-laatst">nog geen</dd></dl>' +
+      '<p class="zacht">In de testrun op GitHub staat “testmelding verstuurd naar toestel …”. Is dat kenmerk anders dan hierboven, dan staat in het geheim de tekst van een ander of ouder toestel: kopieer de tekst opnieuw en werk het geheim bij. Staat hier een ontvangen bericht maar zag u niets, dan houdt het systeem het tegen (meldingen voor de browser uit, niet storen, of op een iPhone niet geopend vanaf het beginscherm).</p>' +
+      '<div class="knoppen"><button class="knop rand klein" id="meld-proef">Proefbericht op dit toestel</button></div><p id="meld-proef-uit" class="zacht" role="status"></p></div></div>';
+  }
+  /* Controle: kenmerk (eerste 8 tekens van SHA-256 van het adres, net als meldingen.js), laatst ontvangen bericht, proefbericht. */
+  function meldingControleKoppel() {
+    var m = meldingLees(), km = document.getElementById('meld-kenmerk'), la = document.getElementById('meld-laatst'), pr = document.getElementById('meld-proef');
+    if (km && m && m.abonnement && crypto.subtle) crypto.subtle.digest('SHA-256', new TextEncoder().encode(m.abonnement.endpoint)).then(function (b) {
+      km.textContent = Array.prototype.map.call(new Uint8Array(b), function (x) { return ('0' + x.toString(16)).slice(-2); }).join('').slice(0, 8);
+    }).catch(function () { km.textContent = 'onbekend'; });
+    if (la && window.caches) caches.open('as-meta').then(function (c) { return c.match('laatste-push'); }).then(function (r) { return r ? r.json() : null; }).then(function (x) {
+      if (x && x.t) la.textContent = tijdNl(new Date(x.t)) + (x.tekst ? ': ' + x.tekst : '');
+    }).catch(function () {});
+    if (pr) pr.addEventListener('click', function () {
+      var uit = document.getElementById('meld-proef-uit');
+      navigator.serviceWorker.ready.then(function (r) { return r.showNotification('Aandeel Signaal', { body: 'Proefbericht: dit toestel kan meldingen tonen.', icon: 'icons/icon-192.png', data: { url: '#/instellingen' } }); })
+        .then(function () { uit.textContent = 'Verstuurd. Ziet u geen bericht, dan staan meldingen voor deze browser of app uit in de instellingen van het toestel.'; },
+          function (e) { uit.textContent = 'Lukt niet op dit toestel: ' + ((e && e.message) || 'onbekende fout') + '.'; });
+    });
   }
   function meldingKoppel() {
     var aan = document.getElementById('meld-aan');
@@ -2289,6 +2310,7 @@
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(tekst).then(klaar, function () { tk.select(); document.execCommand && document.execCommand('copy'); klaar(); });
       else { tk.select(); try { document.execCommand('copy'); } catch (e) { /* zelf kopiëren */ } klaar(); }
     });
+    meldingControleKoppel();
     var uit = document.getElementById('meld-uit');
     if (uit) uit.addEventListener('click', function () {
       navigator.serviceWorker.ready.then(function (r) { return r.pushManager.getSubscription(); }).then(function (ab) { return ab ? ab.unsubscribe() : true; }).catch(function () {}).then(function () {

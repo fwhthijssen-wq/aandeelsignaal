@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.17 (2026.11.10)
+- Instellingen › Meldingen › **Controleren**: toestemming, het kenmerk van dit toestel, het laatst ontvangen bericht (ook als het systeem het niet liet zien) en een knop **Proefbericht op dit toestel**. De testrun op GitHub noemt nu het kenmerk van het toestel waarnaar hij stuurt, zodat u ziet of het geheim bij dit toestel hoort.
+- Uitleg: meldingen zijn pushberichten, geen e-mail; GitHub toont een geheim na het opslaan niet meer.
+
 ## 1.16 (2026.11.10)
 - Bovenaan Start: **of de nachtelijke update gelukt is** (groen), mislukt of ontbreekt (rood, met de datum van de gegevens die u ziet), bezig, of dat er nieuwere gegevens klaarstaan (knop Verversen). De app kijkt daarvoor in de openbare gegevens van de GitHub-workflow, zonder sleutel.
 - Tijden altijd in Nederlandse tijd.

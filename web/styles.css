@@ -491,3 +491,10 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .nacht-status[data-nacht-status="oud"], .nacht-status[data-nacht-status="mislukt"] { color: var(--bad-ink); font-weight: 600; }
 .nacht-status[data-nacht-status="oud"] .stip-status, .nacht-status[data-nacht-status="mislukt"] .stip-status { background: var(--bad-ink); }
 .nacht-status .knop { min-height: 32px; }
+
+/* 1.17: meldingen controleren */
+.meld-controle { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); }
+.meld-controle h3 { margin: 0 0 4px; font-size: 1rem; }
+.meld-controle dl.feiten { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 8px 0; font-size: .9rem; }
+.meld-controle dt { color: var(--mut); }
+.meld-controle dd { margin: 0; overflow-wrap: anywhere; font-weight: 600; }

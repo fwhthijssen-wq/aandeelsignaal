@@ -55,8 +55,9 @@ async function main() {
   try { toestellen = leesInstelling(process.env.MELDINGEN); } catch (e) { console.log('::warning title=Meldingen::de tekst in het geheim MELDINGEN is geen geldige instelling'); return; }
   if (test) {
     for (const t of toestellen) {
-      try { await versturen(t, { titel: 'Aandeel Signaal', tekst: 'Testmelding: meldingen werken op dit toestel.', url: '#/portefeuille' }); console.log('testmelding verstuurd'); }
-      catch (e) { console.log('::warning title=Meldingen::testmelding mislukt (' + (e.statusCode || e.message) + ')'); }
+      const kenmerk = sleutel(t.abonnement).slice(0, 8);
+      try { await versturen(t, { titel: 'Aandeel Signaal', tekst: 'Testmelding: meldingen werken op dit toestel.', url: '#/portefeuille' }); console.log(`::notice title=Meldingen::testmelding verstuurd naar toestel ${kenmerk} (${t.tickers.length} aandelen); vergelijk met het kenmerk in de app bij Instellingen › Meldingen`); }
+      catch (e) { console.log(`::warning title=Meldingen::testmelding naar toestel ${kenmerk} mislukt (` + (e.statusCode || e.message) + ')' + (e.statusCode === 404 || e.statusCode === 410 ? ': dit toestel is niet meer aangemeld; zet meldingen in de app opnieuw aan en werk het geheim bij' : '')); }
     }
     return;
   }
