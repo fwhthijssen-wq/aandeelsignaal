@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.15 (2026.11.10)';
+  var APP_VERSIE = '1.16 (2026.11.10)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -776,7 +776,7 @@
   function statusRegel() {
     var R = rijen(), ok = R.filter(function (r) { return r.bevestigd; }).length;
     var kb = DATA.koersen_bijgewerkt && DATA.koersen_bijgewerkt > String(DATA.gemaakt || '') ? new Date(DATA.koersen_bijgewerkt) : null;
-    var kTekst = kb && !isNaN(kb) ? ' · koersen van ' + h(kb.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' }) + ', ' + kb.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })) : '';
+    var kTekst = kb && !isNaN(kb) ? ' · koersen van ' + h(tijdNl(kb)) : '';
     return '<p class="status-regel" data-status-regel>Gegevens van ' + h(datumNl(String(DATA.gemaakt || '').slice(0, 10))) + kTekst + ' · <a href="#/achtergrond">Achtergrond en hulp</a></p><p class="status-regel maker" data-maker>' + h(MAKER) + '</p>';
   }
   /* Start is een dashboard: alleen tegels. Elke tegel opent één scherm; daar zoomt u verder in. */
@@ -2120,15 +2120,71 @@
     try { if (v === undefined) return localStorage.getItem('as_gh_sleutel') || ''; if (v) localStorage.setItem('as_gh_sleutel', v); else localStorage.removeItem('as_gh_sleutel'); } catch (e) { return ''; }
     return v;
   }
+  /* Tijden altijd in Nederlandse tijd (de tijdstempels in de gegevens zijn UTC). */
+  function tijdNl(d) {
+    var t = d instanceof Date ? d : new Date(d || '');
+    if (isNaN(t)) return '';
+    return t.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', timeZone: 'Europe/Amsterdam' }) + ' ' + t.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+  }
   function koersMoment() {
-    var kb = DATA.koersen_bijgewerkt && DATA.koersen_bijgewerkt > String(DATA.gemaakt || '') ? new Date(DATA.koersen_bijgewerkt) : null;
-    if (kb && !isNaN(kb)) return kb.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) + ' ' + kb.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
-    var g = new Date(DATA.gemaakt || ''); return isNaN(g) ? datumNl(String(DATA.gemaakt || '').slice(0, 10)) : g.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) + ' ' + g.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    var kb = DATA.koersen_bijgewerkt && DATA.koersen_bijgewerkt > String(DATA.gemaakt || '') ? DATA.koersen_bijgewerkt : null;
+    return tijdNl(kb || DATA.gemaakt) || datumNl(String(DATA.gemaakt || '').slice(0, 10));
+  }
+  /* ---- Is de nachtelijke update gelukt? ----
+     Eerst uit de gegevens zelf (hoe oud zijn ze t.o.v. de laatste geplande run: ma-za 03:17 UTC), daarna precies via de
+     openbare GitHub-gegevens van de workflow (zonder sleutel; 5 minuten bewaard in deze sessie). */
+  var NACHT_WF = 'nachtelijke-update.yml';
+  function laatsteGeplandeNacht(nu) {
+    var d = new Date(nu.getTime());
+    for (var i = 0; i < 8; i++) {
+      var k = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - i, 3, 17));
+      if (k.getUTCDay() !== 0 && k.getTime() + 45 * 60000 <= nu.getTime()) return k;   // 45 minuten speling voor de run zelf
+    }
+    return null;
+  }
+  function nachtLokaal(nu) {
+    var g = new Date(DATA.gemaakt || ''), v = laatsteGeplandeNacht(nu || new Date());
+    if (isNaN(g) || !v) return { soort: 'onbekend', tekst: '' };
+    if (g.getTime() >= v.getTime() - 15 * 60000) return { soort: 'goed', tekst: 'Nachtelijke update gelukt (' + tijdNl(g) + ')' };
+    return { soort: 'oud', tekst: 'De nachtelijke update van ' + tijdNl(v) + ' ontbreekt: u ziet de gegevens van ' + tijdNl(g) };
+  }
+  function nachtStatusHtml() {
+    var l = nachtLokaal();
+    return '<p class="nacht-status" id="nacht-status" data-nacht-status="' + l.soort + '" role="status">' + (l.tekst ? '<span class="stip-status" aria-hidden="true"></span>' + h(l.tekst) : '') + '</p>';
+  }
+  function nachtStatusKoppel() {
+    var el = document.getElementById('nacht-status'); if (!el) return;
+    function toon(run) {
+      if (!run) return;
+      var g = new Date(DATA.gemaakt || ''), start = new Date(run.created_at), klaar = new Date(run.updated_at), soort, tekst, extra = '';
+      if (run.status !== 'completed') { soort = 'bezig'; tekst = 'Nachtelijke update bezig (gestart ' + tijdNl(start) + ')'; }
+      else if (run.conclusion === 'success') {
+        if (!isNaN(g) && start.getTime() > g.getTime() + 5 * 60000) { soort = 'nieuw'; tekst = 'Er zijn nieuwere gegevens (' + tijdNl(klaar) + ')'; extra = ' <button type="button" class="knop klein" id="nacht-ververs">Verversen</button>'; }
+        else { soort = 'goed'; tekst = 'Nachtelijke update gelukt (' + tijdNl(isNaN(g) ? klaar : g) + ')'; }
+      } else if (run.conclusion === 'cancelled' || run.conclusion === 'skipped') return;
+      else { soort = 'mislukt'; tekst = 'Nachtelijke update van ' + tijdNl(start) + ' mislukt' + (isNaN(g) ? '' : ': u ziet de gegevens van ' + tijdNl(g)); extra = ' <a href="' + h(run.html_url || (REPO + '/actions/workflows/' + NACHT_WF)) + '" target="_blank" rel="noopener">details</a>'; }
+      el.setAttribute('data-nacht-status', soort);
+      el.innerHTML = '<span class="stip-status" aria-hidden="true"></span>' + h(tekst) + extra;
+      var b = document.getElementById('nacht-ververs'); if (b) b.addEventListener('click', function () { location.reload(); });
+    }
+    var bewaard = null;
+    try { bewaard = JSON.parse(sessionStorage.getItem('as_nacht_run') || 'null'); } catch (e) { bewaard = null; }
+    if (bewaard && Date.now() - bewaard.t < 5 * 60000) { toon(bewaard.run); return; }
+    if (!window.fetch || (location.protocol === 'file:' && !window.AS_TEST_API)) return;     // lokaal (tests): niet naar GitHub
+    fetch('https://api.github.com/repos/fwhthijssen-wq/aandeelsignaal/actions/workflows/' + NACHT_WF + '/runs?event=schedule&per_page=1', { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        var run = d && d.workflow_runs && d.workflow_runs[0];
+        if (!run) return;
+        run = { status: run.status, conclusion: run.conclusion, created_at: run.created_at, updated_at: run.updated_at, html_url: run.html_url };
+        try { sessionStorage.setItem('as_nacht_run', JSON.stringify({ t: Date.now(), run: run })); } catch (e) { /* niet bewaren */ }
+        toon(run);
+      }).catch(function () { /* offline: de schatting uit de gegevens blijft staan */ });
   }
   function koersKnopHtml() {
     return '<div class="koers-knop-rij" data-koers-vernieuwen><span class="zacht" data-koers-moment>Koersen ' + h(koersMoment()) + '</span>' +
       '<button type="button" class="knop rand klein" id="koers-vernieuwen" aria-describedby="koers-status"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Vernieuwen</button>' +
-      '<span class="koers-status zacht" id="koers-status" role="status" aria-live="polite"></span></div>';
+      '<span class="koers-status zacht" id="koers-status" role="status" aria-live="polite"></span>' + nachtStatusHtml() + '</div>';
   }
   function ghVraag(pad, opties) {
     opties = opties || {};
@@ -2342,7 +2398,7 @@
       $menu.innerHTML = menuHtml(HOOFD, actief);
       if (HOORT_BIJ[hash]) html = '<div class="stelregel"><a class="link" href="' + HOORT_BIJ[hash] + '" data-kruimel>' + I.terug + h(SCHERM_NAAM[HOORT_BIJ[hash]]) + '</a></div>' + html;
       titel = (hash === '#/' ? '' : SCHERM_NAAM[hash] + ' · ') + 'Aandeel Signaal';
-      var KOPPEL = { '#/': koersKnopKoppel, '#/model': modelKoppel, '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/kansen': kansenKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
+      var KOPPEL = { '#/': function () { koersKnopKoppel(); nachtStatusKoppel(); }, '#/model': modelKoppel, '#/portefeuille': portefeuilleKoppel, '#/volglijst': volgKoppel, '#/markt': marktPaginaKoppel, '#/kansen': kansenKoppel, '#/instellingen': instKoppel, '#/kwaliteit': kwaliteitKoppel,
         '#/hulp': function () { var b = document.getElementById('intro-opnieuw'); if (b) b.addEventListener('click', function () { toonIntro(0); }); } };
       na = KOPPEL[hash] || null;
     }

@@ -1138,6 +1138,26 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.fill('#q', '<img src=x onerror=window.hack=1>')
         self.assertIsNone(pg.evaluate('window.hack'))
 
+    def test_nachtelijke_update_status(self):
+        import json as _j
+        def met(run):
+            c = self.b.new_context(viewport={'width': 360, 'height': 800}); self.addCleanup(c.close)
+            c.add_init_script("window.AS_TEST_API=true;try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({introGezien:true}));sessionStorage.clear();}catch(e){}")
+            pg = c.new_page()
+            pg.route('https://api.github.com/**', lambda r, q: r.fulfill(status=200, content_type='application/json', body=_j.dumps({'workflow_runs': [run]})))
+            pg.goto(INDEX + '#/'); pg.wait_for_timeout(400)
+            return pg
+        pg = met({'status': 'completed', 'conclusion': 'failure', 'created_at': '2099-01-01T03:17:00Z', 'updated_at': '2099-01-01T03:40:00Z', 'html_url': 'https://github.com/x'})
+        self.assertEqual(pg.get_attribute('#nacht-status', 'data-nacht-status'), 'mislukt')
+        self.assertIn('mislukt', pg.inner_text('#nacht-status')); self.assertIn('u ziet de gegevens van', pg.inner_text('#nacht-status'))
+        pg = met({'status': 'completed', 'conclusion': 'success', 'created_at': '2099-01-01T03:17:00Z', 'updated_at': '2099-01-01T03:40:00Z'})
+        self.assertEqual(pg.get_attribute('#nacht-status', 'data-nacht-status'), 'nieuw')
+        self.assertEqual(pg.locator('#nacht-ververs').count(), 1)
+        pg = met({'status': 'completed', 'conclusion': 'success', 'created_at': '2000-01-01T03:17:00Z', 'updated_at': '2000-01-01T03:40:00Z'})
+        self.assertEqual(pg.get_attribute('#nacht-status', 'data-nacht-status'), 'goed')
+        self.assertIn('Nachtelijke update gelukt', pg.inner_text('#nacht-status'))
+        self.assertTrue(pg.evaluate('document.documentElement.scrollWidth <= window.innerWidth'))
+
     def test_koersen_vernieuwen_knop(self):
         pg = self.pagina(320)
         self.assertIn('Koersen', pg.inner_text('[data-koers-vernieuwen]'))

@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.16 (2026.11.10)
+- Bovenaan Start: **of de nachtelijke update gelukt is** (groen), mislukt of ontbreekt (rood, met de datum van de gegevens die u ziet), bezig, of dat er nieuwere gegevens klaarstaan (knop Verversen). De app kijkt daarvoor in de openbare gegevens van de GitHub-workflow, zonder sleutel.
+- Tijden altijd in Nederlandse tijd.
+
 ## 1.15 (2026.11.10)
 - **Dividend in aandelen** (keuzedividend): per portefeuille in te stellen bij *Portefeuilles beheren* › Dividend: *Contant* (standaard) of *In aandelen waar het kan, restant contant*. De app herbelegt elk dividend in hele aandelen tegen de koers van die dag; het restant is contant en een te klein dividend helemaal contant. Ontvangen aandelen tellen mee voor de waarde, latere dividenden en verkopen; de inleg verandert niet.
 - Per aankoop een knop **Dividend** met elke uitkering sinds de aankoop. Wijkt het afschrift af, dan vult u het aantal aandelen in dat u kreeg (0 = contant).

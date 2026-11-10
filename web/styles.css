@@ -481,3 +481,13 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .div-regel label { grid-column: 2; grid-row: 1; align-self: start; font-size: .8rem; }
 .div-regel input { grid-column: 2; width: 6.5em; }
 @media (max-width: 420px) { .div-regel { grid-template-columns: 1fr; } .div-regel label, .div-regel input { grid-column: 1; grid-row: auto; } }
+
+/* 1.16: is de nachtelijke update gelukt? */
+.nacht-status { flex-basis: 100%; margin: 0; text-align: right; font-size: .85rem; color: var(--mut); display: flex; justify-content: flex-end; align-items: center; gap: 6px; flex-wrap: wrap; }
+.nacht-status:empty { display: none; }
+.nacht-status .stip-status { width: 8px; height: 8px; border-radius: 50%; background: var(--line); flex: none; }
+.nacht-status[data-nacht-status="goed"] .stip-status { background: var(--stip-g); }
+.nacht-status[data-nacht-status="bezig"] .stip-status, .nacht-status[data-nacht-status="nieuw"] .stip-status { background: var(--acc); }
+.nacht-status[data-nacht-status="oud"], .nacht-status[data-nacht-status="mislukt"] { color: var(--bad-ink); font-weight: 600; }
+.nacht-status[data-nacht-status="oud"] .stip-status, .nacht-status[data-nacht-status="mislukt"] .stip-status { background: var(--bad-ink); }
+.nacht-status .knop { min-height: 32px; }
