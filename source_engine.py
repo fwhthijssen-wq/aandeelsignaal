@@ -243,6 +243,10 @@ def sec_snapshot(ticker, asof, email, fetcher=fetch_json):
         return {'supported': False, 'reason': 'Beurscode niet gevonden in de SEC-registerlijst. '
                 'Dit kan een niet-Amerikaanse notering zijn.', 'ticker': ticker}
     payload = fetcher(FACTS_URL.format(cik=cik), email)
+    aanvulling = None
+    if getattr(fetcher, 'sec_echt', True):     # niet voor ESEF-bestanden in SEC-vorm
+        from sec_instance import aanvullen
+        payload, aanvulling = aanvullen(payload, cik, email)
     aligned = aligned_facts(payload, asof)
     raw_quarter = derived_periods(payload, asof, aligned['period'])
     aligned['derived_quarter'] = visible_quarters(aligned['facts'], raw_quarter, asof, aligned['period'])
@@ -274,4 +278,6 @@ def sec_snapshot(ticker, asof, email, fetcher=fetch_json):
     aligned['quality'] = report_quality(aligned['facts'], asof, aligned['period'])
     aligned['ttm_quality'] = {name: status(item, asof) for name, item in aligned['derived_ttm'].items()}
     aligned['quarter_quality'] = {name: status(item, asof, aligned['period']) for name, item in aligned['derived_quarter'].items()}
+    if aanvulling:
+        aligned['aanvulling_jaarverslag'] = aanvulling
     return {'supported': True, 'ticker': ticker, 'company': company, 'cik': cik, **aligned}

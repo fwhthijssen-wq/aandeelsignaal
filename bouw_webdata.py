@@ -985,7 +985,15 @@ def sec_payload(sec_ticker, email, fetcher=None):
         from source_engine import CIK_MAP_URL, FACTS_URL, cik_for_ticker, fetch_json
         fetcher = fetcher or fetch_json
         cik, _ = cik_for_ticker(sec_ticker, fetcher(CIK_MAP_URL, email))
-        return None if cik is None else fetcher(FACTS_URL.format(cik=cik), email)
+        if cik is None:
+            return None
+        payload = fetcher(FACTS_URL.format(cik=cik), email)
+        try:
+            from sec_instance import aanvullen
+            payload, _ = aanvullen(payload, cik, email)
+        except Exception:
+            pass
+        return payload
     except Exception:
         return None
 

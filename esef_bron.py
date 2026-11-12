@@ -102,6 +102,7 @@ def sec_vorm_fetcher(cf):
         if url == source_engine.FACTS_URL.format(cik=1):
             return cf
         raise ValueError('onverwachte url')
+    fetch.sec_echt = False
     return fetch
 
 
