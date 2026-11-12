@@ -75,6 +75,21 @@ def _number(value):
 SHARES_IN_MILLIONS_BELOW = 100_000
 
 
+def _per_valuta(income, shares):
+    """(sleutel, valuta, winst, ingediend) per indiening en valuta. Eén winstcijfer per valuta: TSMC en Koreaanse banken
+    melden het laatste jaar naast de eigen munt ook in dollars (gemaksomrekening); dat is geen tegenstrijdigheid. Twee
+    verschillende bedragen in dezelfde valuta blijven dubbelzinnig en worden overgeslagen."""
+    for key in sorted(set(income) & set(shares)):
+        if len(shares[key]) != 1:
+            continue
+        per = {}
+        for currency, value, filed in income[key]:
+            per.setdefault(currency, []).append((value, filed))
+        for currency, waarden in sorted(per.items()):
+            if len({v for v, _ in waarden}) == 1:
+                yield key, currency, waarden[0][0], max(f for _, f in waarden)
+
+
 def sec_eps_recompute_inputs(payload, asof):
     """Nettowinst en gewogen verwaterde aandelen per indiening (zelfde start, einde en accn).
 
@@ -190,10 +205,7 @@ def sec_eps_recompute_inputs(payload, asof):
             if key not in shares:
                 shares[key] = waarden
                 terugval.add(key)
-        for key in sorted(set(income) & set(shares)):
-            if len(income[key]) != 1 or len(shares[key]) != 1:
-                continue
-            (currency, net_income, filed), = income[key]
+        for key, currency, net_income, filed in _per_valuta(income, shares):
             (_, diluted_shares, _), = shares[key]
             geschaald = False
             if 0 < diluted_shares < SHARES_IN_MILLIONS_BELOW:
@@ -215,11 +227,12 @@ def sec_eps_recompute_inputs(payload, asof):
                       'diluted_shares': diluted_shares, 'andere_tellers': andere,
                       'source': f'SEC {namespace}:{ni_tag} / {basic_tag + " (gewoon aantal; verwaterd ontbreekt)" if key in terugval else sh_tag}'
                                 + (' (aandelen in miljoenen, x1.000.000)' if geschaald else '')}
-            previous = records.get(key)
+            rkey = key + (currency,)
+            previous = records.get(rkey)
             if previous is not None and (previous['net_income'], previous['diluted_shares']) != (net_income, diluted_shares):
-                records[key] = None            # tegenstrijdig tussen stelsels: nooit kiezen
-            elif previous is None and key not in records:
-                records[key] = record
+                records[rkey] = None           # tegenstrijdig tussen stelsels: nooit kiezen
+            elif previous is None and rkey not in records:
+                records[rkey] = record
     return [records[k] for k in sorted(records) if records[k] is not None]
 
 
@@ -241,6 +254,9 @@ def recompute_eps_check(end, eps_fact, inputs):
     if not matches:
         return {'status': 'geen_gegevens',
                 'reden': 'Nettowinst of gewogen aandelen ontbreekt in de indiening van deze EPS'}
+    unit = eps_fact.get('unit')
+    if isinstance(unit, str) and len({r.get('currency') for r in matches}) > 1:
+        matches = [r for r in matches if r.get('currency') == unit.split('/')[0]] or matches
     if len({(r.get('net_income'), r.get('diluted_shares'), r.get('currency')) for r in matches}) != 1:
         return {'status': 'tegenstrijdig', 'reden': 'Tegenstrijdige invoer voor herberekening'}
     row = matches[0]

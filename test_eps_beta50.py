@@ -200,6 +200,24 @@ class AndereTeller(unittest.TestCase):
         self.assertEqual(check['status'], 'afwijking')
 
 
+class Gemaksomrekening(unittest.TestCase):
+    def test_winst_ook_in_dollars_in_dezelfde_indiening(self):
+        # TSMC 2024: winst in TWD en dezelfde winst omgerekend in USD in hetzelfde 20-F; EPS in TWD
+        def f(v):
+            return [{'start': '2024-01-01', 'end': '2024-12-31', 'val': v, 'accn': 'x', 'filed': '2025-04-17', 'form': '20-F'}]
+        p = {'facts': {'ifrs-full': {
+            'ProfitLossAttributableToOwnersOfParent': {'units': {'TWD': f(1_173_268_000_000), 'USD': f(35_788_000_000)}},
+            'AdjustedWeightedAverageShares': {'units': {'shares': f(26_266_000_000)}}}}}
+        r = ev.sec_eps_recompute_inputs(p, '2026-01-01')
+        self.assertEqual(sorted(x['currency'] for x in r), ['TWD', 'USD'])
+        check = ev.recompute_eps_check('2024-12-31', {'val': 44.67, 'accn': 'x', 'unit': 'TWD/shares'}, r)
+        self.assertEqual(check['status'], 'consistent')
+        ok, _ = ev.share_count_continuity(
+            [{'end': '2023-12-31', 'facts': {ev.EPS_FACT: {'accn': 'y'}}}, {'end': '2024-12-31', 'facts': {ev.EPS_FACT: {'accn': 'x'}}}],
+            r + [dict(r[0], end='2023-12-31', accn='y')])
+        self.assertTrue(ok)
+
+
 class SchuldenAfgeleid(unittest.TestCase):
     def payload(self, totaal=1000, activa=1000, eigen=300, tijdelijk=None, accn_eigen='x'):
         def f(v, accn='x'):
