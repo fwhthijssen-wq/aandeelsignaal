@@ -1,0 +1,1399 @@
+{
+ "TTE.PA": {
+  "sec": "TTE",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": null,
+   "status": null,
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": "Geen volledige jaarcijfers beschikbaar (status van de bron: no_valid_annual_history)."
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "MT.AS": {
+  "sec": "MT",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2019,
+   "tot": 2024,
+   "nagerekend": 6,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  }
+ },
+ "HSBA.L": {
+  "sec": "HSBC",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "RIO.L": {
+  "sec": "RIO",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 8,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2016,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    },
+    {
+     "jaar": 2017,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 5,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "GSK.L": {
+  "sec": "GSK",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "VOD.L": {
+  "sec": "VOD",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 2,
+   "van": 2025,
+   "tot": 2026,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  }
+ },
+ "NWG.L": {
+  "sec": "NWG",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2018,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 5,
+   "van": 2021,
+   "tot": 2025,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "BATS.L": {
+  "sec": "BTI",
+  "via_sec": {
+   "jaren": 8,
+   "van": 2018,
+   "tot": 2025,
+   "nagerekend": 8,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 8,
+   "van": 2018,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2018,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "DGE.L": {
+  "sec": "DEO",
+  "via_sec": {
+   "jaren": 2,
+   "van": 2024,
+   "tot": 2025,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 3,
+   "van": 2024,
+   "tot": 2026,
+   "nagerekend": 3,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  }
+ },
+ "LLOY.L": {
+  "sec": "LYG",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 5,
+   "van": 2021,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "NG.L": {
+  "sec": "NGG",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "split_evidence_rejected",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2020,
+   "tot": 2026,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "AGN.AS": {
+  "sec": "AEG",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  }
+ },
+ "FME.DE": {
+  "sec": "FMS",
+  "via_sec": {
+   "jaren": 9,
+   "van": 2017,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": null,
+   "status": null,
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": "Geen volledige jaarcijfers beschikbaar (status van de bron: no_valid_annual_history)."
+  }
+ },
+ "WPP.L": {
+  "sec": "WPP",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "BARC.L": {
+  "sec": "BCS",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2016,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 5,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "STMPA.PA": {
+  "sec": "STM",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 5,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "PRU.L": {
+  "sec": "PUK",
+  "via_sec": {
+   "jaren": 9,
+   "van": 2017,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "REN.AS": {
+  "sec": "RELX",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "IHG.L": {
+  "sec": "IHG",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "HLN.L": {
+  "sec": "HLN",
+  "via_sec": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 6,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "GBP"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "GBP"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "RTO.L": {
+  "sec": "RTO",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  }
+ },
+ "ABI.BR": {
+  "sec": "BUD",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "ORA.PA": {
+  "sec": "ORANY",
+  "via_sec": {
+   "jaren": 8,
+   "van": 2016,
+   "tot": 2023,
+   "nagerekend": 8,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 8,
+   "van": 2017,
+   "tot": 2024,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "EUR"
+   ],
+   "open": [
+    {
+     "jaar": 2017,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "SN.L": {
+  "sec": "SNN",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 8,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2018,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    },
+    {
+     "jaar": 2019,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 6,
+   "van": 2020,
+   "tot": 2025,
+   "nagerekend": 2,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "BP.L": {
+  "sec": "BP",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 5,
+   "status": "independently_verified",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "USD"
+   ],
+   "open": [
+    {
+     "jaar": 2016,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2017,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2018,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "TEN.MI": {
+  "sec": "TS",
+  "via_sec": {
+   "jaren": 5,
+   "van": 2021,
+   "tot": 2025,
+   "nagerekend": 5,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  }
+ },
+ "SAN.MC": {
+  "sec": "SAN",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 8,
+   "van": 2018,
+   "tot": 2025,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": "jaarverslag",
+   "valuta": [
+    "EUR"
+   ],
+   "open": [
+    {
+     "jaar": 2018,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2019,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2020,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2021,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2022,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2023,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2024,
+     "check": null,
+     "reden": ""
+    },
+    {
+     "jaar": 2025,
+     "check": null,
+     "reden": ""
+    }
+   ],
+   "fout": null
+  }
+ },
+ "DBK.DE": {
+  "sec": "DB",
+  "via_sec": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": {
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": null,
+   "status": null,
+   "niveau": null,
+   "valuta": [],
+   "open": [],
+   "fout": "Geen volledige jaarcijfers beschikbaar (status van de bron: no_valid_annual_history)."
+  }
+ },
+ "UNA.AS": {
+  "sec": "UL",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ }
+}
