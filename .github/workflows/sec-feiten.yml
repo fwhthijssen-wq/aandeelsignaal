@@ -14,3 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: python3 hulp/sec_feiten.py "${{ vars.SEC_CONTACT_EMAIL }}" ${{ github.event.inputs.tickers }}
+      - run: pip install -q -r requirements.txt 2>/dev/null || true
+      - run: python3 hulp/sec_diagnose.py "${{ vars.SEC_CONTACT_EMAIL }}" ${{ github.event.inputs.tickers }}
