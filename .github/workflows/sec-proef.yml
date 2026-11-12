@@ -1,0 +1,29 @@
+# Proef (ontwikkeling, alleen handmatig): SEC-route (20-F) naast het ESEF-dossier voor Europese fondsen.
+# Uitkomst op de tak 'onderzoek' (map proef); raakt de app niet.
+name: SEC-proef Europese fondsen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      paren:
+        description: 'TICKER=SECCODE, gescheiden door spaties'
+        required: true
+permissions:
+  contents: write
+jobs:
+  proef:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python hulp/sec_proef.py "${{ vars.SEC_CONTACT_EMAIL }}" proef ${{ github.event.inputs.paren }}
+      - name: Op tak onderzoek zetten
+        run: |
+          git fetch -q origin onderzoek && git worktree add -q ../ond origin/onderzoek || { mkdir ../ond; cd ../ond; git init -q; cd -; }
+          mkdir -p ../ond/proef && cp proef/* ../ond/proef/
+          cd ../ond
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "SEC-proef $(date -u +%F)" && git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:onderzoek
