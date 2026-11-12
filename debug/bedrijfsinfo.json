@@ -32,13 +32,13 @@
   "wikidata": "Q312",
   "gevonden_op": "CIK",
   "sector": [
-   "information technology industry",
    "consumentenelektronica-industrie",
+   "information technology industry",
    "mobieletelefonie-industrie"
   ],
   "hoofdkantoor": "Cupertino",
   "opgericht": 1976,
-  "website": "https://apple.com/lae/",
+  "website": "https://apple.com.cn/",
   "kort": "Amerikaans technologiebedrijf bekend van de iMac, iPhone, Apple Watch en de iPad.",
   "beschrijving": "Apple Inc. is een Amerikaans technologiebedrijf dat op 1 april 1976 is opgericht door Steve Jobs, Steve Wozniak en Ronald Wayne. Het bedrijf is gevestigd in Cupertino, Californië.",
   "taal": "nl",
@@ -633,9 +633,9 @@
   "wikidata": "Q1418",
   "gevonden_op": "CIK",
   "sector": [
-   "telecommunicatie-apparaat",
-   "International Standard Industrial Classification of All Economic Activities",
-   "netwerkhardware"
+   "elektrisch apparaat",
+   "telecommunicatiesector",
+   "telecommunicatie-apparaat"
   ],
   "hoofdkantoor": "Espoo",
   "opgericht": 1865,
@@ -680,8 +680,8 @@
   "wikidata": "Q898208",
   "gevonden_op": "CIK",
   "sector": [
-   "industriële veiligheid",
    "gezondheidssector",
+   "industriële veiligheid",
    "manufacturing industry"
   ],
   "hoofdkantoor": "Charlotte",
@@ -893,8 +893,8 @@
   "wikidata": "Q338633",
   "gevonden_op": "LEI",
   "sector": [
-   "telecommunicatiesector",
-   "mobieletelefonie-industrie"
+   "mobieletelefonie-industrie",
+   "telecommunicatiesector"
   ],
   "hoofdkantoor": "Rotterdam",
   "opgericht": 1989,
@@ -1270,8 +1270,8 @@
   "gevonden_op": "LEI",
   "sector": [
    "vliegtuigbouw",
-   "luchtvaart",
-   "wapenindustrie"
+   "wapenindustrie",
+   "luchtvaart"
   ],
   "hoofdkantoor": "Leiden",
   "opgericht": 1998,
@@ -1496,8 +1496,8 @@
   "wikidata": "Q843887",
   "gevonden_op": "LEI",
   "sector": [
-   "cosmeticaindustrie",
-   "kledingindustrie"
+   "kledingindustrie",
+   "cosmeticaindustrie"
   ],
   "hoofdkantoor": "Parijs",
   "opgericht": 1837,
@@ -1567,8 +1567,8 @@
   "wikidata": "Q151107",
   "gevonden_op": "LEI",
   "sector": [
-   "organisatieadviesbureau",
    "plastics and rubber industry",
+   "organisatieadviesbureau",
    "Vervaardiging van binnen- en buitenbanden van rubber; loopvlakvernieuwing"
   ],
   "hoofdkantoor": "Clermont-Ferrand",
@@ -1595,9 +1595,9 @@
   "wikidata": "Q837049",
   "gevonden_op": "LEI",
   "sector": [
+   "activities of head offices",
    "voedsel- en tabaksindustrie",
-   "11.01  Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen",
-   "activities of head offices"
+   "11.01  Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"
   ],
   "hoofdkantoor": "Parijs",
   "opgericht": 1975,
@@ -1856,9 +1856,9 @@
   "wikidata": "Q201691",
   "gevonden_op": "LEI",
   "sector": [
+   "cosmeticaindustrie",
    "Vervaardiging van lijm",
-   "Vervaardiging van parfums en toiletartikelen",
-   "Vervaardiging van farmaceutische producten"
+   "Vervaardiging van parfums en toiletartikelen"
   ],
   "hoofdkantoor": "Hamburg",
   "opgericht": 1880,
@@ -1873,8 +1873,8 @@
   "gevonden_op": "naam",
   "sector": [
    "holdingactiviteiten",
-   "vervaardiging en assemblage van motorvoertuigen",
-   "luchtvaarttechniek"
+   "luchtvaarttechniek",
+   "vervaardiging en assemblage van motorvoertuigen"
   ],
   "hoofdkantoor": "München",
   "opgericht": 1916,
@@ -1994,8 +1994,8 @@
   "gevonden_op": "naam",
   "sector": [
    "energy and water industries",
-   "energiesector",
-   "energie-industrie"
+   "energie-industrie",
+   "energiesector"
   ],
   "hoofdkantoor": "Essen",
   "opgericht": 2000,
@@ -2099,8 +2099,8 @@
   "wikidata": "Q311394",
   "gevonden_op": "naam",
   "sector": [
-   "elektrotechnische industrie",
-   "semiconductorindustrie"
+   "semiconductorindustrie",
+   "elektrotechnische industrie"
   ],
   "hoofdkantoor": "Neubiberg",
   "opgericht": 1999,
@@ -3834,8 +3834,8 @@
   "wikidata": "Q872718",
   "gevonden_op": "LEI",
   "sector": [
-   "papier- en uitgeverijsector",
    "Vervaardiging van papierpulp, papier en karton",
+   "papier- en uitgeverijsector",
    "distributie van producten"
   ],
   "hoofdkantoor": "Londen",
@@ -4753,8 +4753,8 @@
   "wikidata": "Q3178400",
   "gevonden_op": "LEI",
   "sector": [
-   "mijnbouw",
-   "werktuigbouwkunde"
+   "werktuigbouwkunde",
+   "mijnbouw"
   ],
   "hoofdkantoor": "Glasgow",
   "opgericht": 1871,
@@ -4791,5 +4791,770 @@
   "beschrijving": "WPP Group is een Brits multinationaal advertentie- en pr-bedrijf met het hoofdkantoor in Londen.",
   "taal": "nl",
   "wikipedia": "https://nl.wikipedia.org/wiki/WPP_Group"
+ },
+ "INFY": {
+  "wikidata": "Q26989",
+  "gevonden_op": "naam",
+  "sector": [
+   "IT-dienstverlening"
+  ],
+  "hoofdkantoor": "Bangalore",
+  "opgericht": 1981,
+  "website": "http://www.infosys.com/jp",
+  "kort": "IT-bedrijf uit India",
+  "beschrijving": "Infosys Technologies Limited is een multinationaal IT-bedrijf, dat zijn hoofdzetel heeft in Bengaluru, India.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Infosys"
+ },
+ "BHP": {
+  "wikidata": "Q625713",
+  "gevonden_op": "naam",
+  "sector": [
+   "mijnindustrie",
+   "metaalindustrie",
+   "mijnbouw"
+  ],
+  "hoofdkantoor": "Melbourne",
+  "opgericht": 2001,
+  "website": "https://www.bhp.com/",
+  "kort": "bedrijf in Australië en het VK",
+  "beschrijving": "BHP is het mijnbouwbedrijf dat in 2001 ontstond door de fusie van het Australische Broken Hill Proprietary en het Britse Billiton. Daarbij werd het grootste mijnbouwbedrijf ter wereld gevormd.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/BHP"
+ },
+ "TEVA": {
+  "wikidata": "Q898750",
+  "gevonden_op": "naam",
+  "sector": [
+   "farmaceutische industrie"
+  ],
+  "hoofdkantoor": "Tel Aviv",
+  "opgericht": 1901,
+  "website": "http://www.tevapharm.com/",
+  "kort": "bedrijf uit Israël",
+  "beschrijving": "Teva Pharmaceutical Industries Ltd., ook wel afgekort als Teva, is een Israëlisch farmaceutisch bedrijf. Teva is Hebreeuws voor natuur.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Teva_Pharmaceutical_Industries"
+ },
+ "CHKP": {
+  "wikidata": "Q176587",
+  "gevonden_op": "naam",
+  "sector": [
+   "beveiligingssoftware"
+  ],
+  "hoofdkantoor": "Tel Aviv",
+  "opgericht": 1993,
+  "website": "https://www.checkpoint.com",
+  "kort": "Israeli security company",
+  "beschrijving": "Check Point Software Technologies Ltd. is an Israeli cybersecurity company, founded in 1993 by Gil Shwed, Marius Nacht and Shlomo Kramer, whose first product was the FireWall-1 firewall.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Check_Point"
+ },
+ "ESLT": {
+  "wikidata": "Q1325369",
+  "gevonden_op": "naam",
+  "sector": [
+   "wapenindustrie"
+  ],
+  "hoofdkantoor": "Haifa",
+  "opgericht": 1966,
+  "website": "https://www.elbitsystems.com/",
+  "kort": "bedrijf uit Israël",
+  "beschrijving": "Elbit Systems Ltd. is an Israel-based international military technology company and defense contractor. Founded in 1966 by Elron, Elbit Systems is the primary provider of the Israeli military's land-based equipment and unmanned aerial vehicles. It is an important company within the defense industry of Israel.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Elbit_Systems"
+ },
+ "ICL": {
+  "wikidata": "Q903957",
+  "gevonden_op": "naam",
+  "sector": [],
+  "hoofdkantoor": "Tel Aviv",
+  "opgericht": 1968,
+  "website": "https://www.icl-group.com",
+  "kort": "Global manufacturer of mineral based products",
+  "beschrijving": "ICL Group Ltd. is a multi-national manufacturing concern that develops, produces and markets fertilizers, metals and other special-purpose chemical products. ICL serves primarily three markets: agriculture, food and engineered materials. ICL produces approximately a third of the world's bromine, and is the world's sixth-largest potash producer. It is a manufacturer of specialty fertilizers and specialty phosphates, flame retardants and water treatment solutions.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/ICL_Group_Ltd."
+ },
+ "GFI": {
+  "wikidata": "Q1534597",
+  "gevonden_op": "naam",
+  "sector": [
+   "gold mining"
+  ],
+  "hoofdkantoor": "Johannesburg",
+  "opgericht": 1998,
+  "website": "http://www.goldfields.co.za/",
+  "kort": "South African mining company",
+  "beschrijving": "Gold Fields Limited is one of the world's largest gold mining firms. Headquartered in Johannesburg, South Africa, the company is listed on both the Johannesburg Stock Exchange (JSE) and the New York Stock Exchange (NYSE). The firm was formed in 1998 with the amalgamation of the gold assets of Gold Fields of South Africa Limited and Gencor Limited. The company traces its roots back to 1887, when Cecil Rhodes founded Gold Fields of South Africa Limited. As of 2019, Gold Fields was the world's eighth-largest producer of gold.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Gold_Fields"
+ },
+ "SE": {
+  "wikidata": "Q93520415",
+  "gevonden_op": "CIK",
+  "sector": [
+   "e-commerce"
+  ],
+  "hoofdkantoor": "Singapore",
+  "opgericht": null,
+  "website": "https://www.sea.com",
+  "kort": "Singaporean company",
+  "beschrijving": "Sea Limited is a tech conglomerate headquartered in Singapore. It is listed on the New York Stock Exchange, with revenue of US$16.8 billion (2024). Sea currently functions as a holding company for Garena, Monee and Shopee, the largest e-commerce platform in Southeast Asia.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sea_Ltd"
+ },
+ "ALFEN.AS": {
+  "wikidata": "Q56683055",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Almere",
+  "opgericht": 1937,
+  "website": "https://alfen.com",
+  "kort": "bedrijf uit Nederland",
+  "beschrijving": "Alfen N.V. is een Nederlandse beursgenoteerde onderneming. De onderneming is opgericht in 1937 als een fabriek van hoog- en laagspanningsapparaten.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Alfen_(bedrijf)"
+ },
+ "AVTX.AS": {
+  "wikidata": "Q30254917",
+  "gevonden_op": "naam",
+  "sector": [],
+  "hoofdkantoor": "Amsterdam",
+  "opgericht": 2000,
+  "website": "https://www.avantium.com",
+  "kort": "bedrijf uit Nederland",
+  "beschrijving": "Avantium N.V. is een Nederlands bedrijf dat de biobased kunststoffen en chemicaliën ontwikkelt en commercialiseert op basis van technologische mogelijkheden in katalyseonderzoek en ontwikkeling.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Avantium"
+ },
+ "BRNL.AS": {
+  "wikidata": "Q28039026",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "John M. Keynesplein",
+  "opgericht": 1975,
+  "website": "https://www.brunelinternational.net/",
+  "kort": "Dutch company",
+  "beschrijving": "Brunel International N.V. is een van oorsprong Nederlandse arbeidsbemiddelaar voor hoger opgeleid personeel. Brunel is opgericht in 1975 en werd van 29 september 2000 tot maart 2018 geleid door Jan Arie van Barneveld. Van Barneveld werd na 17 jaar opgevolgd door Jilko Andringa, afkomstig van Manpower en sinds 1 oktober 2024 door Peter de Laat. De aandelen van het bedrijf zijn sinds 1997 genoteerd aan de Amsterdamse effectenbeurs en vanaf 2015 is het onderdeel van de Amsterdam Small Cap Index.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Brunel_International"
+ },
+ "FAST.AS": {
+  "wikidata": "Q19935749",
+  "gevonden_op": "LEI",
+  "sector": [
+   "oplaadpunt"
+  ],
+  "hoofdkantoor": "Amsterdam",
+  "opgericht": 2012,
+  "website": "https://fastnedcharging.com/en/",
+  "kort": "Nederlandse exploitant van snelladers",
+  "beschrijving": "Fastned is een onderneming die een snellaadnetwerk langs het Europese hoofdwegennet bouwt en exploiteert. Deze laadinfrastructuur is bedoeld om elektrische auto's in korte tijd te laden.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Fastned"
+ },
+ "NEDAP.AS": {
+  "wikidata": "Q1479312",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Groenlo",
+  "opgericht": 1929,
+  "website": "http://www.nedap.com/",
+  "kort": "technologiebedrijf",
+  "beschrijving": "Nedap is een Nederlands technologiebedrijf met het hoofdkantoor in Groenlo. Het bedrijf werd in 1929 opgericht. Nedap is wereldwijd actief met ruim 1000 medewerkers en heeft vestigingen in elf landen. In 2024 realiseerde Nedap een totale omzet van ruim 250 miljoen euro.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Nedap"
+ },
+ "PNL.AS": {
+  "wikidata": "Q5921598",
+  "gevonden_op": "LEI",
+  "sector": [
+   "logistiek"
+  ],
+  "hoofdkantoor": "Den Haag",
+  "opgericht": 2011,
+  "website": "https://www.postnl.nl/",
+  "kort": "Nederlands postbedrijf",
+  "beschrijving": "PostNL is een Nederlands postbedrijf actief in de Benelux. De aandelen van PostNL N.V. zijn sinds mei 2011 beursgenoteerd, na opsplitsing van TNT N.V. in de aparte beursgenoteerde bedrijven PostNL N.V. en TNT Express N.V. Het bedrijf is sinds 2002 enkele malen van naam veranderd. Het is een erfgenaam van het Staatsbedrijf der PTT.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/PostNL"
+ },
+ "SIFG.AS": {
+  "wikidata": "Q65967217",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Roermond",
+  "opgericht": 1948,
+  "website": "https://sif-group.com/nl/",
+  "kort": "bedrijf uit Nederland",
+  "beschrijving": "Sif Group is een Nederlandse fabrikant van offshore funderingen voor windturbines.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Sif_Group"
+ },
+ "TOM2.AS": {
+  "wikidata": "Q682144",
+  "gevonden_op": "LEI",
+  "sector": [
+   "geospatial industry",
+   "consumentenelektronica-industrie"
+  ],
+  "hoofdkantoor": "Amsterdam",
+  "opgericht": 1991,
+  "website": "https://www.tomtom.com/",
+  "kort": "Nederlands bedrijf in autonavigatieproducten",
+  "beschrijving": "TomTom NV is een Nederlandse fabrikant van navigatiesystemen. Het is Europa's grootste en wereldwijd een van de marktleiders van navigatietoepassingen. Het bedrijf heeft zo'n 3700 werknemers en kantoren in, onder andere, Amsterdam, Eindhoven, Gent, Massachusetts, Edinburgh, Berlijn en Taiwan. TomTom is beursgenoteerd en maakt deel uit van de AScX index.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/TomTom"
+ },
+ "WHA.AS": {
+  "wikidata": "Q1892275",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Den Haag",
+  "opgericht": 1930,
+  "website": "http://www.wereldhave.com",
+  "kort": null,
+  "beschrijving": "Wereldhave NV is een Nederlandse beursgenoteerde onderneming die investeert in vastgoed.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Wereldhave"
+ },
+ "CTAC.AS": {
+  "wikidata": "Q115167359",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": null,
+  "opgericht": null,
+  "website": null,
+  "kort": null,
+  "beschrijving": null,
+  "taal": null,
+  "wikipedia": null
+ },
+ "HEIO.AS": {
+  "wikidata": "Q28861014",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Amsterdam",
+  "opgericht": 1952,
+  "website": "https://www.heinekenholding.com/",
+  "kort": "Holding company from Netherlands",
+  "beschrijving": null,
+  "taal": null,
+  "wikipedia": null
+ },
+ "HOLCO.AS": {
+  "wikidata": "Q115167285",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": null,
+  "opgericht": null,
+  "website": null,
+  "kort": null,
+  "beschrijving": null,
+  "taal": null,
+  "wikipedia": null
+ },
+ "HYDRA.AS": {
+  "wikidata": "Q115167484",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Amersfoort",
+  "opgericht": null,
+  "website": null,
+  "kort": "Dutch company",
+  "beschrijving": "Hydratec Industries is een fabrikant van industriële systemen en hightech componenten. Deze producten worden geleverd aan bedrijven actief in de voedselindustrie, de gezondheidszorg en makers van van transportmiddelen. Hydratec staat sinds 1997 genoteerd aan Euronext Amsterdam. In 2023 had het 1315 medewerkers, waarvan de helft actief in Nederland. De overige werken in vestigingen in België, Brazilië, India, Polen en de Verenigde Staten.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Hydratec"
+ },
+ "NXFIL.AS": {
+  "wikidata": "Q115167325",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Enschede",
+  "opgericht": null,
+  "website": "https://nxfiltration.com/",
+  "kort": null,
+  "beschrijving": "NX Filtration N.V. is een Nederlands bedrijf dat zich richt op het zuiveren van water. Het bedrijf werd in 2016 opgericht door Erik Roesink. NX Filtration is gevestigd in Enschede.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/NX_Filtration"
+ },
+ "PORF.AS": {
+  "wikidata": "Q38467310",
+  "gevonden_op": "LEI",
+  "sector": [],
+  "hoofdkantoor": "Delft",
+  "opgericht": 1653,
+  "website": "https://www.royaldelft.com/",
+  "kort": "keramiekfabriek en plateelbakkerij uit Delft",
+  "beschrijving": "De Porceleyne Fles is een aardewerkfabriek, opgericht in het jaar 1653 in Delft en tegenwoordig ook als museum te bezoeken. Er wordt Delfts Blauw aardewerk vervaardigd. Het is een van de kleinste aandelen genoteerd aan de effectenbeurs.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/De_Porceleyne_Fles"
+ },
+ "VALUE.AS": {
+  "wikidata": "Q34120381",
+  "gevonden_op": "LEI",
+  "sector": [
+   "private equity"
+  ],
+  "hoofdkantoor": "Bussum",
+  "opgericht": 2011,
+  "website": "http://www.value8.com",
+  "kort": null,
+  "beschrijving": "Value8 is een Nederlandse beursgenoteerde investeringsmaatschappij die investeert in groeiende MKB-bedrijven en beursgenoteerde smallcaps. De focussectoren zijn onder meer technologie, gezondheidszorg, duurzaamheid en voeding. Value8 heeft een notering aan de beurs van Euronext Amsterdam.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Value8"
+ },
+ "TD.TO": {
+  "wikidata": "Q1194832",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1955,
+  "website": "http://www.td.com/",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Toronto-Dominion Bank, doing business as TD Bank Group, and commonly known as just TD, is a Canadian multinational banking and financial services corporation headquartered in Toronto, Ontario. The bank was created on February 1, 1955, through the merger of the Bank of Toronto and the Dominion Bank, which were founded in 1855 and 1869, respectively. It is one of two Big Five banks of Canada founded in Toronto, the other being the Canadian Imperial Bank of Commerce.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Toronto-Dominion_Bank"
+ },
+ "RY.TO": {
+  "wikidata": "Q735261",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening",
+   "bankwezen"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1864,
+  "website": "https://rbc.com",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Royal Bank of Canada (RBC) is de grootste bank van Canada.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Royal_Bank_of_Canada"
+ },
+ "BNS.TO": {
+  "wikidata": "Q451476",
+  "gevonden_op": "naam",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening",
+   "bankwezen"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1832,
+  "website": "https://www.scotiabank.com/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "The Bank of Nova Scotia, operating as Scotiabank, is a Canadian multinational banking and financial services company headquartered in Toronto, Ontario. One of Canada's Big Five banks, it is the third-largest Canadian bank by assets and deposits. In 2023, the company's seat in Forbes Global 2000 was 88. Scotiabank serves over 25 million customers globally, offering personal and commercial banking, wealth management, corporate and investment services. With 88,000 employees and assets of approximately $1.5 trillion as of January 31, 2026, Scotiabank trades on the Toronto and New York stock exchanges under the symbol BNS. Scotiabank's institution number is 002, and the SWIFT code is NOSCCATT.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Scotiabank"
+ },
+ "BMO.TO": {
+  "wikidata": "Q806693",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening",
+   "bankwezen"
+  ],
+  "hoofdkantoor": "First Canadian Place",
+  "opgericht": 1817,
+  "website": "http://www.bmo.com/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "The Bank of Montreal, abbreviated as BMO, is a Canadian multinational investment bank and financial services company.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bank_of_Montreal"
+ },
+ "CM.TO": {
+  "wikidata": "Q666694",
+  "gevonden_op": "naam",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening",
+   "bankwezen"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1961,
+  "website": "https://www.cibc.com/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "The Canadian Imperial Bank of Commerce is a Canadian multinational banking and financial services corporation headquartered at CIBC Square in Toronto's Financial District. The Canadian Imperial Bank of Commerce was formed through the 1961 merger of the Canadian Bank of Commerce and the Imperial Bank of Canada, in the largest merger between chartered banks in Canadian history. It is one of two \"Big Five\" banks founded in Toronto, the other being the Toronto-Dominion Bank.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Canadian_Imperial_Bank_of_Commerce"
+ },
+ "CNQ.TO": {
+  "wikidata": "Q1032229",
+  "gevonden_op": "naam",
+  "sector": [],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 1973,
+  "website": "http://www.cnrl.com/",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Canadian Natural Resources Limited, or CNRL or Canadian Natural is a senior Canadian oil and natural gas company that operates primarily in the Western Canadian provinces of British Columbia, \nAlberta, Saskatchewan, and Manitoba, with offshore operations in the United Kingdom sector of the North Sea, and offshore Côte d'Ivoire and Gabon. The company, which is headquartered in Calgary, Alberta, has the largest undeveloped base in the Western Canadian Sedimentary Basin. It is the largest independent producer of natural gas in Western Canada and the largest producer of heavy crude oil in Canada.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Canadian_Natural_Resources"
+ },
+ "SU.TO": {
+  "wikidata": "Q1516410",
+  "gevonden_op": "CIK",
+  "sector": [
+   "olie-industrie"
+  ],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 1917,
+  "website": "http://www.suncor.com/",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Suncor Energy Inc. is a Canadian integrated energy company based in Calgary, Alberta. It specializes in production of synthetic crude from oil sands. In the 2026 Forbes Global 2000, Suncor Energy was ranked as the 256th-largest public company in the world.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Suncor_Energy"
+ },
+ "TRP.TO": {
+  "wikidata": "Q1516108",
+  "gevonden_op": "naam",
+  "sector": [
+   "energie-industrie",
+   "olie-industrie"
+  ],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 1951,
+  "website": "https://www.tcenergy.com",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "TC Energy Corporation is a Canadian energy company headquartered in Calgary, Alberta and serving North America. The company's focus is fossil fuel pipelines, and it builds and operates energy infrastructure across Canada, the United States, and Mexico, with core business segments in Natural Gas Pipelines, Power Generation and Energy Storage.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/TC_Energy"
+ },
+ "ENB.TO": {
+  "wikidata": "Q1339966",
+  "gevonden_op": "naam",
+  "sector": [
+   "olie-industrie"
+  ],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 1987,
+  "website": "https://www.enbridge.com/",
+  "kort": "Canadian energy transportation company",
+  "beschrijving": "Enbridge Inc. is a Canadian pipeline and energy company headquartered in Calgary, Alberta, Canada. Enbridge owns and operates pipelines throughout Canada and the United States, transporting crude oil, natural gas, and natural gas liquids, and also generates renewable energy. Enbridge's pipeline system is the longest in North America and the largest oil export pipeline network in the world. Its crude oil system consists of 28,661 kilometres of pipelines. Its 38,300 kilometre natural gas pipeline system connects multiple Canadian provinces, several US states, and the Gulf of Mexico. The company was formed by Imperial Oil in 1949 as the Interprovincial Pipe Line Company Limited to transport Alberta oil to refineries. Over time, it has grown through acquisition of other existing pipeline companies and the expansion of their projects.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Enbridge"
+ },
+ "CP.TO": {
+  "wikidata": "Q117706368",
+  "gevonden_op": "naam",
+  "sector": [
+   "transportindustrie",
+   "logistiek"
+  ],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 2023,
+  "website": "https://www.cpkcr.com/",
+  "kort": "class I North American railroad",
+  "beschrijving": "Canadian Pacific Kansas City Limited, doing business as CPKC, is a Canadian railway holding company headquartered in Calgary. Through its operating subsidiaries, including the Canadian Pacific Railway, Kansas City Southern Railway, and Kansas City Southern de Mexico, it operates about 32,000 kilometres (20,000 mi) of rail in Canada, Mexico, and the United States.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Canadian_Pacific_Kansas_City"
+ },
+ "IMO.TO": {
+  "wikidata": "Q40650",
+  "gevonden_op": "naam",
+  "sector": [
+   "olie-industrie"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1880,
+  "website": "https://www.imperialoil.ca/en-ca/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "Imperial Oil Limited is a Canadian petroleum company. It is Canada's second-largest integrated oil company and is also occasionally known as Imperial Esso. It is majority-owned by American oil company ExxonMobil, with a 69.6% ownership stake in the company. It is a producer of crude oil, diluted bitumen, and natural gas. Imperial Oil is one of Canada's major petroleum refiners and petrochemical producers. It supplies Esso-brand service stations.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Imperial_Oil"
+ },
+ "SLF.TO": {
+  "wikidata": "Q835456",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële dienstverlening"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1865,
+  "website": "http://www.sunlife.com",
+  "kort": "Canadian insurance company",
+  "beschrijving": "Sun Life Financial Inc. is a financial services company headquartered in Toronto, Canada. Founded in 1865, it operates internationally in life insurance, wealth management, and asset management. As of 2024, the company manages over CAD$1.3 trillion in assets and serves clients in Canada, the United States, Asia, and other markets.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sun_Life_Financial"
+ },
+ "TRI.TO": {
+  "wikidata": "Q1141267",
+  "gevonden_op": "CIK",
+  "sector": [
+   "media-industrie"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 2008,
+  "website": "https://thomsonreuters.com",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Thomson Reuters is een Canadees-Amerikaanse multinational met een omzet van $12,9 miljard Amerikaanse dollar en winst van $1,5 miljard dollar (2009). Het fusiebedrijf ontstond in 2008, toen het van oorsprong Canadese bedrijf Thomson de nieuwsdienst Reuters opkocht. Thomson Reuters staat genoteerd aan de Toronto Stock Exchange en de New York Stock Exchange, en maakt deel uit van de S&P/TSX 60-index van de Toronto Stock Exchange.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Thomson_Reuters"
+ },
+ "BCE.TO": {
+  "wikidata": "Q24525746",
+  "gevonden_op": "CIK",
+  "sector": [
+   "telecommunicatiesector"
+  ],
+  "hoofdkantoor": "Montréal",
+  "opgericht": 1983,
+  "website": "https://www.bce.ca/",
+  "kort": "Bell Canada Enterprises",
+  "beschrijving": "BCE Inc., an abbreviation of its former name Bell Canada Enterprises Inc., is a publicly traded Canadian holding company for Bell Canada, which includes telecommunications providers and various mass media assets under its subsidiary Bell Media Inc. Founded through a corporate reorganization in 1983, when Bell Canada, Northern Telecom, and other related companies all became subsidiaries of Bell Canada Enterprises Inc., it is one of Canada's largest corporations. The company is headquartered at 1 Carrefour Alexander-Graham-Bell in the Verdun borough of Montreal, Quebec, Canada.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/BCE_Inc."
+ },
+ "RCI-B.TO": {
+  "wikidata": "Q165684",
+  "gevonden_op": "CIK",
+  "sector": [
+   "mobieletelefonie-industrie",
+   "telecommunicatiesector"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1960,
+  "website": "https://www.rogers.com/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "Rogers Communications Inc. is a Canadian communications and media company operating primarily in the fields of wireless communications, cable television, telephony and Internet, with significant additional telecommunications, mass media, and professional sports assets. Rogers has its headquarters in Toronto, Ontario.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rogers_Communications"
+ },
+ "FTS.TO": {
+  "wikidata": "Q1438987",
+  "gevonden_op": "CIK",
+  "sector": [
+   "elektriciteitsopwekking"
+  ],
+  "hoofdkantoor": "St. John's",
+  "opgericht": 1987,
+  "website": "https://www.fortisinc.com/",
+  "kort": "company",
+  "beschrijving": "Fortis Inc. is a Canadian electric utility holding company, based in St. John's, Newfoundland and Labrador. It operates in Canada, the United States, Central America and the Caribbean. In 2015, revenue was CA$6.7 billion.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fortis_Inc."
+ },
+ "GIB-A.TO": {
+  "wikidata": "Q1798370",
+  "gevonden_op": "CIK",
+  "sector": [
+   "IT-consultering",
+   "IT-dienstverlening"
+  ],
+  "hoofdkantoor": "Montréal",
+  "opgericht": 1976,
+  "website": "https://www.cgi.com/",
+  "kort": "multinational information technology company",
+  "beschrijving": "CGI is a multinational information technology consulting and software development company headquartered in Montreal, Quebec, Canada. CGI went public in 1986 with a primary listing on the Toronto Stock Exchange. CGI is also a constituent of the S&P/TSX 60 and has a secondary listing on the New York Stock Exchange.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/CGI_Inc."
+ },
+ "TECK-B.TO": {
+  "wikidata": "Q688725",
+  "gevonden_op": "naam",
+  "sector": [
+   "zinkindustrie",
+   "copper industry",
+   "winning van steenkool en bruinkool"
+  ],
+  "hoofdkantoor": "Vancouver",
+  "opgericht": 1908,
+  "website": "http://www.teck.com/",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "Teck Resources Limited is a diversified natural resources company headquartered in Vancouver, British Columbia, that is engaged in mining and mineral development, including coal for the steelmaking industry, copper, zinc, and energy. Secondary products include lead, silver, gold, molybdenum, germanium, indium and cadmium. Teck Resources was formed from the amalgamation of Teck and Cominco in 2001.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Teck_Resources"
+ },
+ "ABX.TO": {
+  "wikidata": "Q808908",
+  "gevonden_op": "naam",
+  "sector": [
+   "mijnbouw"
+  ],
+  "hoofdkantoor": null,
+  "opgericht": 1983,
+  "website": "https://www.barrick.com",
+  "kort": "bedrijf in Canada",
+  "beschrijving": "Barrick Mining Corporation is a mining company that produces gold and copper. It has mining operations and projects in Argentina, Australia, Canada, Chile, Democratic Republic of the Congo, Dominican Republic, Ecuador, Egypt, Jamaica, Mali, Pakistan, Papua New Guinea, Peru, Saudi Arabia, Senegal, Tanzania, the United States and Zambia.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Barrick_Mining"
+ },
+ "K.TO": {
+  "wikidata": "Q546880",
+  "gevonden_op": "CIK",
+  "sector": [
+   "mijnbouw"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1993,
+  "website": "http://www.kinross.com",
+  "kort": "company",
+  "beschrijving": "Kinross Gold Corporation is a Canadian gold and silver mining company founded in 1993 and headquartered in Toronto, Ontario, Canada. Kinross currently operates six active gold mines, and was ranked fifth of the \"10 Top Gold-mining Companies\" of 2019 by InvestingNews. The company's mines are located in Brazil, Mauritania, and the United States. It trades under the KGC ticker in the New York Stock Exchange, and under K in the Toronto Stock Exchange.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kinross_Gold"
+ },
+ "PPL.TO": {
+  "wikidata": "Q7161915",
+  "gevonden_op": "CIK",
+  "sector": [
+   "olie-industrie"
+  ],
+  "hoofdkantoor": "Calgary",
+  "opgericht": 1954,
+  "website": "http://www.pembina.com/",
+  "kort": "transportation, midstream and gas service provider",
+  "beschrijving": "Pembina Pipeline is a Canadian corporation that operates transportation and storage infrastructure that delivers oil and natural gas to and from parts of Western Canada. Since 2003, this has included ethylene storage at one location. Western Canada is the source of all products transported by Pembina pipeline systems, which include the Syncrude pipeline, Horizon pipeline, and Cheecham oilsands pipelines.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pembina_Pipeline"
+ },
+ "EMA.TO": {
+  "wikidata": "Q5370387",
+  "gevonden_op": "CIK",
+  "sector": [],
+  "hoofdkantoor": "Halifax",
+  "opgericht": 1998,
+  "website": "http://www.emera.com/en/home/default.aspx",
+  "kort": "publicly traded Canadian multinational energy holding company based in Halifax, Nova Scotia",
+  "beschrijving": "Emera Incorporated is a publicly traded Canadian multinational energy holding company based in Halifax, Nova Scotia. Created in 1998 during the privatization of Nova Scotia Power, a provincial Crown corporation, Emera now invests in regulated electricity generation as well as transmission and distribution across North America and the Caribbean.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Emera"
+ },
+ "SHOP.TO": {
+  "wikidata": "Q7501150",
+  "gevonden_op": "CIK",
+  "sector": [
+   "online verkoopplatform",
+   "e-commerce"
+  ],
+  "hoofdkantoor": "Ottawa",
+  "opgericht": 2006,
+  "website": "https://www.shopify.com",
+  "kort": "Canadian e-commerce company",
+  "beschrijving": "Shopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario, that operates a cloud e-commerce management platform (CEMP) for retail point-of-sale systems. The company has over five million customers and processed US$292.3 billion in transactions in 2024, of which 57% was in the United States. Major customers include Tesla, LVMH, Nestlé, PepsiCo, AB InBev, Kraft Heinz, Lindt, Whole Foods Market, Red Bull, and Hyatt.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Shopify"
+ },
+ "BN.TO": {
+  "wikidata": "Q908324",
+  "gevonden_op": "CIK",
+  "sector": [
+   "investeringsbeheer",
+   "financiële dienstverlening"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1899,
+  "website": "https://www.brookfield.com/",
+  "kort": "bedrijf uit Canada",
+  "beschrijving": "Brookfield Corporation is a Canadian multinational company that is one of the world's largest alternative investment management companies. It has over US$1 trillion of assets under management, much of which is workers’ deferred income from global public pension funds. \nIt focuses on direct control investments in real estate, renewable power, infrastructure, credit and private equity. The company invests in distressed securities through Oaktree Capital, which it bought in 2019. Brookfield Corporation's headquarters are in Toronto, while its primary subsidiary, Brookfield Asset Management, relocated to New York City in 2024.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Brookfield_Corporation"
+ },
+ "CLS.TO": {
+  "wikidata": "Q225440",
+  "gevonden_op": "CIK",
+  "sector": [
+   "elektronica"
+  ],
+  "hoofdkantoor": "Toronto",
+  "opgericht": 1994,
+  "website": "https://www.celestica.com/",
+  "kort": "Canadian technology company",
+  "beschrijving": "Celestica Inc. is a Canadian multinational design, manufacturing, hardware platform, and supply chain electronics manufacturing services (EMS) company, which is headquartered in Toronto, Ontario. The company operates in 50 sites across 15 countries.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Celestica"
+ },
+ "TFII.TO": {
+  "wikidata": "Q7833614",
+  "gevonden_op": "naam",
+  "sector": [
+   "vrachtvervoer",
+   "logistiek"
+  ],
+  "hoofdkantoor": "Saint-Laurent",
+  "opgericht": 1957,
+  "website": "https://tfiintl.com",
+  "kort": "Canadian multi-national transport and logistics company",
+  "beschrijving": "TFI International Inc. is a Canadian transport and logistics company based in Saint-Laurent, Quebec, a borough of Montreal. It operates primarily in Canada, the United States, and Mexico through 4 business segments: less than truckload (LTL), package and courier, logistics, and truckload. It has Canada's largest LTL business, largest trucking fleet, and in 2021 was ranked 6th in terms of revenue among both LTL and truckload North American carriers. Its trucking fleet consists of over 14,000 company-owned power units, nearly 10,000 owner-operator tractors, nearly 50,000 trailers and over 200 straight trucks.",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/TFI_International"
+ },
+ "8306.T": {
+  "wikidata": "Q1542175",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening"
+  ],
+  "hoofdkantoor": null,
+  "opgericht": 2005,
+  "website": "http://www.mufg.jp/",
+  "kort": "bank in Japan",
+  "beschrijving": "Mitsubishi UFJ Financial Group, vaak afgekort tot MUFG, is de grootste Japanse bank.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Mitsubishi_UFJ_Financial_Group"
+ },
+ "8411.T": {
+  "wikidata": "Q166621",
+  "gevonden_op": "CIK",
+  "sector": [
+   "financiële sector",
+   "financiële dienstverlening"
+  ],
+  "hoofdkantoor": "Tokio",
+  "opgericht": 1999,
+  "website": "http://www.mizuho-fg.co.jp/",
+  "kort": "bedrijf in Japan",
+  "beschrijving": "Mizuho Financial Group is een Japans financieel conglomeraat. De onderneming wordt ook wel afgekort tot MHFG of simpelweg Mizuho.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Mizuho_Financial_Group"
+ },
+ "6758.T": {
+  "wikidata": "Q41187",
+  "gevonden_op": "CIK",
+  "sector": [
+   "elektronica-industrie",
+   "elektrotechnische industrie",
+   "computerspelindustrie"
+  ],
+  "hoofdkantoor": "Minato",
+  "opgericht": 1946,
+  "website": "https://www.sony.co.in/",
+  "kort": "Japans conglomeraat",
+  "beschrijving": "Sony Corporation is een Japans conglomeraat actief wereldwijd. Het concern is primair actief als fabrikant van consumentenelektronica en is verder zeer actief in de media met muziek en film. Hiernaast produceert Sony computerspellen en spelconsoles en verzorgt het financiële dienstverlening aan Japanse consumenten. Het hoofdkantoor staat in Tokio.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Sony"
+ },
+ "7203.T": {
+  "wikidata": "Q53268",
+  "gevonden_op": "CIK",
+  "sector": [
+   "auto-industrie"
+  ],
+  "hoofdkantoor": "Toyota",
+  "opgericht": 1937,
+  "website": "https://global.toyota",
+  "kort": "autobedrijf uit Japan",
+  "beschrijving": "Toyota Motor Corporation behoort tot de top drie van grootste autofabrikanten ter wereld. De drie bekendste merknamen zijn Toyota, Lexus en Daihatsu. Qua verkoopaantallen strijden Toyota en Volkswagen AG om de eerste plaats, beide produceren bijna 10 miljoen voertuigen op jaarbasis. De Japanse beursgenoteerde onderneming maakt deel uit van de Nikkei 225.",
+  "taal": "nl",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Toyota"
+ },
+ "4502.T": {
+  "wikidata": "Q899133",
+  "gevonden_op": "naam",
+  "sector": [
+   "farmaceutische industrie"
+  ],
+  "hoofdkantoor": "Osaka",
+  "opgericht": 1781,
+  "website": "http://www.takeda.co.jp/",
+  "kort": "Japanese pharmaceutical company",
+  "beschrijving": "The Takeda Pharmaceutical Company Limited  is a Japanese multinational pharmaceutical company. It is the third largest pharmaceutical company in Asia, behind Sinopharm and Shanghai Pharmaceuticals, and one of the top 20 largest pharmaceutical companies in the world by revenue. The company has over 49,578 employees worldwide and achieved US$19.299 billion in revenue during the 2018 fiscal year. The company is focused on oncology, rare diseases, neuroscience, gastroenterology, plasma-derived therapies and vaccines. Its headquarters is located in Chuo-ku, Osaka, and it has an office in Nihonbashi, Chuo, Tokyo. In January 2012, Fortune Magazine ranked the Takeda Oncology Company as one of the 100 best companies to work for in the United States. As of 2015, Christophe Weber was appointed as the CEO and president of Takeda. In 2026, Julie Kim was noted in a news item as \"CEO-elect\".",
+  "taal": "en",
+  "wikipedia": "https://en.wikipedia.org/wiki/Takeda_Pharmaceutical_Company"
  }
 }
