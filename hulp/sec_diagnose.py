@@ -29,6 +29,6 @@ for t in sys.argv[2:]:
         d = s.get('dossier') or {}
         print('   eps', d.get('eps_verification_status'), d.get('eps_independently_verified_years'), (d.get('eps_verification_note') or '')[:300])
         for y in d.get('year_table') or []:
-            print('   jaar', y.get('year'), y.get('currency'), y.get('reported_eps'), y.get('eps_check'), str(y.get('eps_reden') or '')[:200])
+            print('   jaar', y.get('year'), y.get('currency'), y.get('reported_eps'), y.get('eps_check'), str(y.get('eps_reden') or '')[-260:])
     except Exception as exc:
         import traceback; traceback.print_exc()
