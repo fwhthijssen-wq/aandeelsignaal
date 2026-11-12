@@ -19,7 +19,7 @@ for t in sys.argv[2:]:
         s = summarize_sec(t, email, fetcher=lambda a, b, c: sec_snapshot(a, b, c))
         print('  status', s.get('status'), s.get('reason'))
         for k in ('annual_history_count', 'accepted_year_rows', 'currencies', 'window_latest_source_year', 'missing_calendar_years',
-                  'quality_issues', 'rejections', 'year_details'):
+                  'quality_issues', 'rejections', 'split_event_audit', 'split_conflict_dates', 'year_details'):
             print('  ', k, json.dumps(s.get(k), ensure_ascii=False, default=str)[:1500])
         d = s.get('dossier') or {}
         print('   eps', d.get('eps_verification_status'), d.get('eps_independently_verified_years'), (d.get('eps_verification_note') or '')[:300])
