@@ -129,6 +129,24 @@ def bedrijf_voor(ticker):
     return uit or None
 
 
+YAHOO_SECTOR = {'Technology': 'technologie', 'Healthcare': 'gezondheidszorg', 'Financial Services': 'financiële dienstverlening',
+                'Consumer Cyclical': 'cyclische consumentengoederen', 'Consumer Defensive': 'basisconsumentengoederen',
+                'Industrials': 'industrie', 'Basic Materials': 'grondstoffen', 'Energy': 'energie', 'Utilities': 'nutsbedrijven',
+                'Real Estate': 'vastgoed', 'Communication Services': 'communicatiediensten'}
+
+
+def sector_aanvullen(rec, info):
+    """Geen sector in Wikidata (Besi, IMCD, veel kleinere fondsen): dan de sectorindeling van Yahoo, in het Nederlands."""
+    if not isinstance(rec, dict) or not isinstance(info, dict):
+        return
+    b = rec.get('bedrijf') or {}
+    if b.get('sector'):
+        return
+    s = YAHOO_SECTOR.get(info.get('sector'))
+    if s:
+        rec['bedrijf'] = {**b, 'sector': [s], 'sector_bron': 'Yahoo Finance'}
+
+
 def heeft_sec(ticker):
     """Alleen Amerikaanse noteringen (zonder punt) en expliciet gekoppelde Europese bedrijven hebben een SEC-jaarverslag."""
     from naic_fetch import SEC_LISTING_MAP
@@ -1662,6 +1680,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             pass
         pauze()
         rec = maak_record(meta, koers=koers, gegevens=gegevens)
+        sector_aanvullen(rec, info)
         if verw:
             rec['verwachting'] = verw
         if analisten:

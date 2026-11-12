@@ -428,11 +428,12 @@
   function bedrijfBlok(rec) {
     var x = rec.bedrijf;
     if (!x || !(x.beschrijving || x.sector)) return '';
-    var feiten = [['Sector', (x.sector || []).join(', ')], ['Hoofdkantoor', x.hoofdkantoor], ['Opgericht', x.opgericht], ['Beurs', (rec.indices || []).map(function (i) { return INDEX_NAAM[i] || i; }).join(', ')]].filter(function (f) { return f[1]; });
+    var feiten = [['Sector', (x.sector || []).join(', ') + (x.sector_bron && (x.sector || []).length ? ' (indeling ' + x.sector_bron + ')' : '')], ['Hoofdkantoor', x.hoofdkantoor], ['Opgericht', x.opgericht], ['Beurs', (rec.indices || []).map(function (i) { return INDEX_NAAM[i] || i; }).join(', ')]].filter(function (f) { return f[1]; });
     var web = x.website && /^https?:\/\//.test(x.website) ? '<a href="' + h(x.website) + '" target="_blank" rel="noopener">' + h(x.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) + '</a>' : '';
     return '<div class="kaart-plat" data-bedrijf><h2>Over het bedrijf</h2>' + (x.beschrijving ? '<p' + (x.taal && x.taal !== 'nl' ? ' lang="' + h(x.taal) + '"' : '') + '>' + h(x.beschrijving) + '</p>' : '') +
       (feiten.length ? '<dl class="feiten">' + feiten.map(function (f) { return '<dt>' + h(f[0]) + '</dt><dd>' + h(f[1]) + '</dd>'; }).join('') + '</dl>' : '') + (web ? '<p>' + web + '</p>' : '') +
-      '<p class="zacht">Bron: ' + (x.wikipedia ? '<a href="' + h(x.wikipedia) + '" target="_blank" rel="noopener">Wikipedia</a> (CC BY-SA)' : 'Wikipedia') + (x.taal === 'en' ? ', Engelstalig artikel' : '') + ' en Wikidata. Algemene informatie, niet gecontroleerd door de app.</p></div>';
+      (!x.beschrijving && !x.wikidata ? '<p class="zacht">Bron: sectorindeling van Yahoo Finance.</p></div>' :
+      '<p class="zacht">Bron: ' + (x.wikipedia ? '<a href="' + h(x.wikipedia) + '" target="_blank" rel="noopener">Wikipedia</a> (CC BY-SA)' : 'Wikipedia') + (x.taal === 'en' ? ', Engelstalig artikel' : '') + ' en Wikidata. Algemene informatie, niet gecontroleerd door de app.</p></div>');
   }
   function getal(n, dec) { return typeof n === 'number' && isFinite(n) ? n.toLocaleString('nl-NL', { minimumFractionDigits: dec || 0, maximumFractionDigits: dec == null ? 0 : dec }) : '–'; }
   function mld(n) { return typeof n === 'number' ? getal(n / 1e9, 1) + ' mld' : '–'; }

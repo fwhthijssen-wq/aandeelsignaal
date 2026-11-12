@@ -76,3 +76,18 @@ class AdrKwartaalwinst(unittest.TestCase):
         self.assertAlmostEqual(per_aandeel['eps'], 55.0 * 0.031 * 5, places=3)
         self.assertAlmostEqual(per_ads['eps'], 8.5, places=3)
         self.assertIsNone(bw.ttm_uit_info(dict(basis, trailingEps=500.0), g, '2026-11-10'))
+
+
+class SectorUitYahoo(unittest.TestCase):
+    def test_alleen_als_wikidata_niets_heeft(self):
+        rec = {'bedrijf': {'beschrijving': 'x', 'sector': []}}
+        bw.sector_aanvullen(rec, {'sector': 'Technology'})
+        self.assertEqual(rec['bedrijf']['sector'], ['technologie']); self.assertEqual(rec['bedrijf']['sector_bron'], 'Yahoo Finance')
+        rec = {'bedrijf': {'sector': ['semiconductorindustrie']}}
+        bw.sector_aanvullen(rec, {'sector': 'Technology'})
+        self.assertEqual(rec['bedrijf']['sector'], ['semiconductorindustrie'])
+        rec = {'bedrijf': None}
+        bw.sector_aanvullen(rec, {'sector': 'Onbekend'})
+        self.assertIsNone(rec['bedrijf'])
+        bw.sector_aanvullen(rec, {'sector': 'Real Estate'})
+        self.assertEqual(rec['bedrijf']['sector'], ['vastgoed'])
