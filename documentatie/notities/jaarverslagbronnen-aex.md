@@ -34,5 +34,12 @@
 - Gekoppeld in `europa_indexen.SEC_KOPPELING` (20 fondsen met meer nagerekende jaren dan ESEF): MT, STM, Aegon, RELX, Orange (ORANY), FMC, Tenaris, HSBC, GSK, Lloyds, WPP, IHG, Barclays, NatWest, Vodafone, Prudential, Rio Tinto, BAT, Smith & Nephew, Haleon. De nachtelijke update kiest per fonds het dossier met de meeste nagerekende jaren (SEC of ESEF), nooit gemengd.
 - Resultaat: **Bevestigd 82 → 90**. Bijna (9 van 10): Barclays, NatWest, Vodafone, Prudential, FMC; 8: Rio, Smith & Nephew, BAT, Orange.
 - Geen of te weinig SEC-gegevens: TotalEnergies, Diageo, National Grid, Rentokil, AB InBev, BP, Deutsche Bank.
-- Open: winst in USD bij een notering in GBP/EUR (HSBC, Rio, ArcelorMittal, STMicro, Prudential, IHG): Bevestigd, maar zonder koers in dezelfde valuta geen K/W en NAIC-zones. Omrekenen met ECB-koersen is een volgende stap.
+- Omrekening (1.18, `valuta_omrekenen.py`): jaarcijfers in een andere valuta dan de notering worden ná de controle per boekjaar omgerekend met het ECB-jaargemiddelde (`ecb_jaargemiddelden.json`, workflow *ECB-jaarkoersen*); terug te draaien bij hergebruik. Zo krijgen HSBC, Rio, ArcelorMittal, STMicro, Prudential en IHG een K/W en NAIC-zones.
 - Volgende stappen (afgesproken): Canada en Japan (eigen beurs, zelfde valuta), daarna landen alleen via ADR. Alleen fondsen die bij Saxo én DEGIRO te koop zijn; geen kleine fondsen. EODHD niet: persoonlijke licentie verbiedt tonen aan anderen.
+
+## Canada, Japan en ADR-landen (12 nov 2026, versies 1.18 en 1.19)
+- SEC-controle accepteert nu ook CAD, JPY, CHF, AUD (`concept_registry.MONETARY_UNITS`).
+- 1.18: 27 Canadese fondsen (Toronto, CAD, index S&P/TSX) en 5 Japanse (Tokio, JPY, Nikkei 225) met minstens 6 jaar nagerekend: TD, RY, BNS, BMO, CM, CNQ, SU, TRP, ENB, CP, IMO, NTR, SLF, TRI, BCE, RCI-B, FTS, GIB-A, TECK-B, ABX, K, PPL, EMA, SHOP, BN, CLS, TFII; MUFG, Mizuho, Sony, Toyota, Takeda. Niet: CN Rail, Magna, TELUS (geen SEC-cijfers), Manulife (4 nagerekend), Nomura, ORIX, Honda.
+- 1.19: 8 fondsen alleen via New York (20-F in USD): Infosys, BHP (1 ADS = 2 aandelen), Teva, Check Point, Elbit, ICL, Gold Fields, Sea. Groep 'ADR' ('Overige landen (New York)'), vergeleken met de S&P 500.
+- Stand: 418 fondsen, **Bevestigd 109**.
+- Open: Taiwan (TSMC, UMC, Chunghwa) en Korea/India/Brazilië/Mexico rapporteren in eigen munt (TWD, KRW, INR, BRL, MXN); de SEC-controle kent die nog niet, TWD staat niet bij de ECB (Yahoo-koers nodig), en de ADR-verhouding moet per fonds gecontroleerd worden. Cemex: verhouding ADS/CPO onzeker. Chinese fondsen bewust niet. Sectorinformatie (Wikidata) voor de nieuwe fondsen nog aanvullen.
