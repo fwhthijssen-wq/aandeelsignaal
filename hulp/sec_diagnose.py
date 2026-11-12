@@ -16,6 +16,11 @@ for t in sys.argv[2:]:
         print('  supported', res.get('supported'), res.get('reason'), 'aanvulling', res.get('aanvulling_jaarverslag'))
         for r in hist:
             print('  rij', r.get('end'), r.get('unit'), sorted((r.get('facts') or {}).keys()))
+        per = {}
+        for o in res.get('eps_filing_observations') or []:
+            per.setdefault(o['end'], []).append((o['filed'], o['val'], o['unit'], o['tag'][:18]))
+        for e in sorted(per):
+            print('  eps-waarneming', e, sorted(per[e]))
         s = summarize_sec(t, email, fetcher=lambda a, b, c: sec_snapshot(a, b, c))
         print('  status', s.get('status'), s.get('reason'))
         for k in ('annual_history_count', 'accepted_year_rows', 'currencies', 'window_latest_source_year', 'missing_calendar_years',
