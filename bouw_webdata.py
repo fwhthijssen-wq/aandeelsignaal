@@ -71,11 +71,23 @@ CATALOGUS = (
     ('HON', 'Honeywell', 'Verenigde Staten', 'USD', 'Nasdaq'),
     ('LIN', 'Linde', 'Ierland', 'USD', 'Nasdaq'),
     ('TMO', 'Thermo Fisher Scientific', 'Verenigde Staten', 'USD', 'NYSE'),
+    # Uitbreiding (november 2026): grote bedrijven buiten Europa, de VS, Canada en Japan die alleen via New York te koop zijn
+    # (Saxo en DEGIRO). Jaarverslag 20-F in dollars bij de SEC, minstens 7 jaar nagerekend (proef op de tak 'onderzoek').
+    ('INFY', 'Infosys', 'India', 'USD', 'New York (NYSE)'),
+    ('BHP', 'BHP Group', 'Australië', 'USD', 'New York (NYSE)'),
+    ('TEVA', 'Teva Pharmaceutical', 'Israël', 'USD', 'New York (NYSE)'),
+    ('CHKP', 'Check Point Software', 'Israël', 'USD', 'Nasdaq'),
+    ('ESLT', 'Elbit Systems', 'Israël', 'USD', 'Nasdaq'),
+    ('ICL', 'ICL Group', 'Israël', 'USD', 'New York (NYSE)'),
+    ('GFI', 'Gold Fields', 'Zuid-Afrika', 'USD', 'New York (NYSE)'),
+    ('SE', 'Sea Limited', 'Singapore', 'USD', 'New York (NYSE)'),
 )
+ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
 INDICES = _europa_indices()
+INDICES.update({t: ['ADR'] for t in ADR_GROEP})
 # Korte bedrijfsbeschrijving en vaste gegevens (Wikipedia CC BY-SA, Wikidata CC0), gemaakt met hulp/bedrijfsinfo.py.
 _BEDRIJF_PAD = Path(__file__).with_name('bedrijfsinfo.json')
 try:
@@ -615,7 +627,8 @@ def vergelijk_tweede_bron(g, ticker, register=None):
 # Amerikaanse noteringen van buitenlandse bedrijven (ADR's): hoeveel gewone aandelen één ADS vertegenwoordigt. De koers is per
 # ADS, de jaarcijfers (20-F) melden de winst per gewoon aandeel. Novartis is 1 : 1 en staat er daarom niet in.
 ADR_AANDELEN = {'SHEL': 2.0,      # Shell plc: 1 ADS = 2 gewone aandelen
-                'AZN': 0.5}       # AstraZeneca: 2 ADS = 1 gewoon aandeel
+                'AZN': 0.5,       # AstraZeneca: 2 ADS = 1 gewoon aandeel
+                'BHP': 2.0}       # BHP Group: 1 ADS = 2 gewone aandelen
 ADR_PER_AANDEEL = ('comparable_eps', 'reported_eps')
 
 

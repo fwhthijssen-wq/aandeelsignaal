@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.19 (2026.11.12)
+- **8 grote fondsen uit andere landen die alleen via New York te koop zijn** (Saxo en DEGIRO), met officiële cijfers uit hun SEC-jaarverslag in dollars: Infosys (India), BHP (Australië), Teva, Check Point, Elbit Systems en ICL (Israël), Gold Fields (Zuid-Afrika) en Sea Limited (Singapore). In de app de groep *Overige landen (New York)*, vergeleken met de S&P 500.
+
 ## 1.18 (2026.11.12)
 - **Officiële cijfers uit de SEC voor 20 Europese en Britse fondsen** (jaarverslag 20-F): o.a. ArcelorMittal, STMicroelectronics, Aegon, RELX, HSBC, GSK, Lloyds, WPP, IHG, Barclays, NatWest, Vodafone, Prudential, Rio Tinto. Bevestigd: 82 → 90. Per fonds telt het dossier (SEC of ESEF) met de meeste nagerekende jaren.
 - **Omrekenen naar de valuta van de notering**: rapporteert een bedrijf in dollars maar noteert het in euro of ponden, dan rekent de app de jaarcijfers per boekjaar om met het ECB-jaargemiddelde (na de controle). Zo krijgen ook HSBC, Rio Tinto, ArcelorMittal, STMicro, Prudential en IHG een K/W en NAIC-koerszones.
