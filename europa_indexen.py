@@ -6,7 +6,9 @@ Beurzen: .AS Amsterdam, .PA Parijs, .DE Xetra, .MI Milaan, .MC Madrid, .BR Bruss
 """
 BEURS = {'.AS': ('Amsterdam', 'EUR', 'Nederland'), '.PA': ('Parijs', 'EUR', 'Frankrijk'), '.DE': ('Xetra', 'EUR', 'Duitsland'),
          '.MI': ('Milaan', 'EUR', 'Italië'), '.MC': ('Madrid', 'EUR', 'Spanje'), '.BR': ('Brussel', 'EUR', 'België'),
-         '.L': ('Londen', 'GBX', 'Verenigd Koninkrijk')}
+         '.L': ('Londen', 'GBX', 'Verenigd Koninkrijk'),
+         # november 2026: grote Canadese en Japanse fondsen, op hun eigen beurs (bij Saxo en DEGIRO te koop); cijfers uit de SEC
+         '.TO': ('Toronto', 'CAD', 'Canada'), '.T': ('Tokio', 'JPY', 'Japan')}
 
 # (ticker, naam, indices, land of None = standaard van de beurs)
 LIJST = [
@@ -107,6 +109,17 @@ LIJST = [
     ('SMIN.L', 'Smiths Group', 'FTSE'), ('SN.L', 'Smith & Nephew', 'FTSE'), ('SPX.L', 'Spirax Group', 'FTSE'), ('SSE.L', 'SSE', 'FTSE'),
     ('STAN.L', 'Standard Chartered', 'FTSE'), ('STJ.L', "St. James's Place", 'FTSE'), ('TSCO.L', 'Tesco', 'FTSE'), ('BBOX.L', 'Tritax Big Box REIT', 'FTSE'),
     ('UU.L', 'United Utilities', 'FTSE'), ('VOD.L', 'Vodafone', 'FTSE'), ('WEIR.L', 'Weir Group', 'FTSE'), ('WTB.L', 'Whitbread', 'FTSE'), ('WPP.L', 'WPP', 'FTSE'),
+    # Canada (Toronto, CAD): jaarverslag 40-F of 10-K bij de SEC, minstens 6 jaar nagerekend (proef november 2026)
+    ('TD.TO', 'Toronto-Dominion Bank', 'TSX'), ('RY.TO', 'Royal Bank of Canada', 'TSX'), ('BNS.TO', 'Bank of Nova Scotia', 'TSX'),
+    ('BMO.TO', 'Bank of Montreal', 'TSX'), ('CM.TO', 'CIBC', 'TSX'), ('CNQ.TO', 'Canadian Natural Resources', 'TSX'), ('SU.TO', 'Suncor Energy', 'TSX'),
+    ('TRP.TO', 'TC Energy', 'TSX'), ('ENB.TO', 'Enbridge', 'TSX'), ('CP.TO', 'Canadian Pacific Kansas City', 'TSX'), ('IMO.TO', 'Imperial Oil', 'TSX'),
+    ('NTR.TO', 'Nutrien', 'TSX'), ('SLF.TO', 'Sun Life Financial', 'TSX'), ('TRI.TO', 'Thomson Reuters', 'TSX'), ('BCE.TO', 'BCE', 'TSX'),
+    ('RCI-B.TO', 'Rogers Communications', 'TSX'), ('FTS.TO', 'Fortis', 'TSX'), ('GIB-A.TO', 'CGI', 'TSX'), ('TECK-B.TO', 'Teck Resources', 'TSX'),
+    ('ABX.TO', 'Barrick Mining', 'TSX'), ('K.TO', 'Kinross Gold', 'TSX'), ('PPL.TO', 'Pembina Pipeline', 'TSX'), ('EMA.TO', 'Emera', 'TSX'),
+    ('SHOP.TO', 'Shopify', 'TSX'), ('BN.TO', 'Brookfield Corporation', 'TSX'), ('CLS.TO', 'Celestica', 'TSX'), ('TFII.TO', 'TFI International', 'TSX'),
+    # Japan (Tokio, JPY): jaarverslag 20-F bij de SEC
+    ('8306.T', 'Mitsubishi UFJ Financial Group', 'NIKKEI'), ('8411.T', 'Mizuho Financial Group', 'NIKKEI'), ('6758.T', 'Sony Group', 'NIKKEI'),
+    ('7203.T', 'Toyota Motor', 'NIKKEI'), ('4502.T', 'Takeda Pharmaceutical', 'NIKKEI'),
 ]
 
 # Bedrijven die al eerder in de lijst stonden: alleen de indexlabels erbij.
@@ -119,7 +132,13 @@ SEC_KOPPELING = {'DBK.DE': 'DB', 'BBVA.MC': 'BBVA', 'SAN.MC': 'SAN', 'TEF.MC': '
                  # 'onderzoek'). De nachtelijke update neemt per fonds het dossier met de meeste nagerekende jaren; nooit gemengd.
                  'MT.AS': 'MT', 'STMPA.PA': 'STM', 'AGN.AS': 'AEG', 'REN.AS': 'RELX', 'ORA.PA': 'ORANY', 'FME.DE': 'FMS', 'TEN.MI': 'TS',
                  'HSBA.L': 'HSBC', 'GSK.L': 'GSK', 'LLOY.L': 'LYG', 'WPP.L': 'WPP', 'IHG.L': 'IHG', 'BARC.L': 'BCS', 'NWG.L': 'NWG',
-                 'VOD.L': 'VOD', 'PRU.L': 'PUK', 'RIO.L': 'RIO', 'BATS.L': 'BTI', 'SN.L': 'SNN', 'HLN.L': 'HLN'}
+                 'VOD.L': 'VOD', 'PRU.L': 'PUK', 'RIO.L': 'RIO', 'BATS.L': 'BTI', 'SN.L': 'SNN', 'HLN.L': 'HLN',
+                 # Canada en Japan (november 2026)
+                 'TD.TO': 'TD', 'RY.TO': 'RY', 'BNS.TO': 'BNS', 'BMO.TO': 'BMO', 'CM.TO': 'CM', 'CNQ.TO': 'CNQ', 'SU.TO': 'SU', 'TRP.TO': 'TRP',
+                 'ENB.TO': 'ENB', 'CP.TO': 'CP', 'IMO.TO': 'IMO', 'NTR.TO': 'NTR', 'SLF.TO': 'SLF', 'TRI.TO': 'TRI', 'BCE.TO': 'BCE',
+                 'RCI-B.TO': 'RCI', 'FTS.TO': 'FTS', 'GIB-A.TO': 'GIB', 'TECK-B.TO': 'TECK', 'ABX.TO': 'B', 'K.TO': 'KGC', 'PPL.TO': 'PBA',
+                 'EMA.TO': 'EMA', 'SHOP.TO': 'SHOP', 'BN.TO': 'BN', 'CLS.TO': 'CLS', 'TFII.TO': 'TFII',
+                 '8306.T': 'MUFG', '8411.T': 'MFG', '6758.T': 'SONY', '7203.T': 'TM', '4502.T': 'TAK'}
 
 
 # Fondsen die op hun beurs in een andere valuta noteren dan gebruikelijk (fondsencontrole november 2026).

@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.18 (2026.11.12)
+- **Officiële cijfers uit de SEC voor 20 Europese en Britse fondsen** (jaarverslag 20-F): o.a. ArcelorMittal, STMicroelectronics, Aegon, RELX, HSBC, GSK, Lloyds, WPP, IHG, Barclays, NatWest, Vodafone, Prudential, Rio Tinto. Bevestigd: 82 → 90. Per fonds telt het dossier (SEC of ESEF) met de meeste nagerekende jaren.
+- **Omrekenen naar de valuta van de notering**: rapporteert een bedrijf in dollars maar noteert het in euro of ponden, dan rekent de app de jaarcijfers per boekjaar om met het ECB-jaargemiddelde (na de controle). Zo krijgen ook HSBC, Rio Tinto, ArcelorMittal, STMicro, Prudential en IHG een K/W en NAIC-koerszones.
+- **32 grote Canadese en Japanse fondsen** op hun eigen beurs (Toronto in CAD, Tokio in JPY; bij Saxo en DEGIRO te koop), met officiële cijfers uit hun SEC-jaarverslag: o.a. TD, Royal Bank, Bank of Nova Scotia, BMO, CIBC, Canadian Natural, Enbridge, Shopify, Brookfield, Mitsubishi UFJ, Mizuho, Sony, Toyota en Takeda. Indexen: S&P/TSX en Nikkei 225; koersen in euro met de ECB-koers.
+
 ## 1.17 (2026.11.10)
 - Instellingen › Meldingen › **Controleren**: toestemming, het kenmerk van dit toestel, het laatst ontvangen bericht (ook als het systeem het niet liet zien) en een knop **Proefbericht op dit toestel**. De testrun op GitHub noemt nu het kenmerk van het toestel waarnaar hij stuurt, zodat u ziet of het geheim bij dit toestel hoort.
 - Uitleg: meldingen zijn pushberichten, geen e-mail; GitHub toont een geheim na het opslaan niet meer.

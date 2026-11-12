@@ -89,7 +89,7 @@
      - Waarde nu = aantal dat u nog heeft × laatste koers × ECB-koers van vandaag (alleen met een verse koers).
      - Dividend: bruto per aandeel sinds de aankoopdatum × het aantal dat u toen had, omgerekend tegen de koers van vandaag.
      - Splitsingen na de aankoop passen het aantal aan. Index: hetzelfde bedrag in de eigen index, met dezelfde kosten. */
-  var INDEX_CODES = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS'], INDEX_VALUTA = { FTSE: 'GBP', VS: 'USD' };
+  var INDEX_CODES = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'TSX', 'NIKKEI'], INDEX_VALUTA = { FTSE: 'GBP', VS: 'USD', TSX: 'CAD', NIKKEI: 'JPY' };
   function indexVan(rec) { var ix = (rec.indices || []).filter(function (i) { return INDEX_CODES.indexOf(i) > -1; }); return ix.length ? ix[0] : ((rec.indices || []).indexOf('ASCX') > -1 || (rec.indices || []).indexOf('NLOVERIG') > -1) ? 'AMX' : (String(rec.ticker).indexOf('.') < 0 ? 'VS' : null); }
   function fxNu(fx, v) { v = String(v || '').toUpperCase(); if (v === 'EUR') return 1; if (!fx) return null; if (v === 'GBX') return fx.GBP > 0 ? fx.GBP / 100 : null; return fx[v] > 0 ? fx[v] : null; }
   function standOp(reeks, d) {          // laatste weekstand op of vóór d (hoogstens 10 dagen eerder)

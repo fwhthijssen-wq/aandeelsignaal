@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.17 (2026.11.10)';
+  var APP_VERSIE = '1.18 (2026.11.12)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -597,7 +597,7 @@
     naicVeranderingen(true);
     var k = kansItems(), tel = kansTel(k.items), ix = {};
     k.items.forEach(function (x) { x.indices.forEach(function (i) { ix[i] = (ix[i] || 0) + 1; }); });
-    var VOLG = ['AEX', 'AMX', 'ASCX', 'NLOVERIG', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
+    var VOLG = ['AEX', 'AMX', 'ASCX', 'NLOVERIG', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'TSX', 'NIKKEI', 'VS', 'OVERIG'];
     var namen = Object.keys(ix).sort(function (x, y) { var i = VOLG.indexOf(x), j = VOLG.indexOf(y); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
     if (kansKeuze.index && !ix[kansKeuze.index]) kansKeuze.index = '';
     var s = '<section data-kansen-scherm><div class="rij-kop"><h1>Kansen <span class="tel-kop kans' + (tel.alle ? '' : ' nul') + '" data-kansen-totaal>' + tel.alle + '</span></h1></div>' +
@@ -753,7 +753,7 @@
       Dashboard.indexGroepen(a).forEach(function (g) { var p = per[g] || (per[g] = { kopen: 0, neutraal: 0, vermijden: 0, geen: 0, n: 0 }); p[o]++; p.n++; });
       alles[o]++; alles.n++;
     });
-    var VOLG = ['AEX', 'AMX', 'ASCX', 'NLOVERIG', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'OVERIG'];
+    var VOLG = ['AEX', 'AMX', 'ASCX', 'NLOVERIG', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'TSX', 'NIKKEI', 'VS', 'OVERIG'];
     var namen = Object.keys(per).sort(function (x, y) { var i = VOLG.indexOf(x), j = VOLG.indexOf(y); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
     function balk(naam, p, ix) {
       var d = ['kopen', 'neutraal', 'vermijden', 'geen'].map(function (o) { return p[o] ? '<i data-o="' + o + '" style="flex:' + p[o] + '"></i>' : ''; }).join('');
@@ -961,7 +961,7 @@
     document.getElementById('f-zeker').addEventListener('change', function (e) { fondsKeuze.zekerheid = e.target.value; toon(); });
     toon();
   }
-  var INDEX_NAAM = { VS: 'Verenigde Staten', OVERIG: 'Overige', AEX: 'AEX (Amsterdam)', AMX: 'AMX (Amsterdam midcap)', ASCX: 'AScX (Amsterdam smallcap)', NLOVERIG: 'Amsterdam overig (lokaal)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)' };
+  var INDEX_NAAM = { VS: 'Verenigde Staten', OVERIG: 'Overige', AEX: 'AEX (Amsterdam)', AMX: 'AMX (Amsterdam midcap)', ASCX: 'AScX (Amsterdam smallcap)', NLOVERIG: 'Amsterdam overig (lokaal)', BEL20: 'BEL 20 (Brussel)', CAC40: 'CAC 40 (Parijs)', DAX: 'DAX (Frankfurt)', FTSE: 'FTSE 100 (Londen)', MIB: 'FTSE MIB (Milaan)', IBEX: 'IBEX 35 (Madrid)', TSX: 'Canada (Toronto)', NIKKEI: 'Japan (Tokio)' };
   function indexLijst() { var o = {}; DATA.aandelen.forEach(function (a) { (a.indices || []).forEach(function (i) { o[i] = true; }); }); return Object.keys(o).sort(); }
   /* ---- Modelportefeuille: fictief, volgt de signalen automatisch (web/js/model.js, elke nacht bijgewerkt) ---- */
   var modelKeuze = { variant: 'naic', bron: null, alles: {} };

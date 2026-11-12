@@ -1039,8 +1039,10 @@ def weekreeks(punten, weken=105):
 
 # Relatieve sterkte: het fonds tegen zijn index (koersen zonder dividend aan beide kanten). Index van het fonds: de eerste uit de
 # indexlijst; Amerikaanse fondsen tegen de S&P 500. Informatief, los van het oordeel.
-INDEX_YAHOO = {'AEX': '^AEX', 'AMX': '^AMX', 'BEL20': '^BFX', 'CAC40': '^FCHI', 'DAX': '^GDAXI', 'FTSE': '^FTSE', 'IBEX': '^IBEX', 'MIB': 'FTSEMIB.MI', 'VS': '^GSPC'}
-INDEX_KORT = {'AEX': 'AEX', 'AMX': 'AMX', 'BEL20': 'BEL 20', 'CAC40': 'CAC 40', 'DAX': 'DAX', 'FTSE': 'FTSE 100', 'IBEX': 'IBEX 35', 'MIB': 'FTSE MIB', 'VS': 'S&P 500'}
+INDEX_YAHOO = {'AEX': '^AEX', 'AMX': '^AMX', 'BEL20': '^BFX', 'CAC40': '^FCHI', 'DAX': '^GDAXI', 'FTSE': '^FTSE', 'IBEX': '^IBEX', 'MIB': 'FTSEMIB.MI', 'VS': '^GSPC',
+               'TSX': '^GSPTSE', 'NIKKEI': '^N225'}
+INDEX_KORT = {'AEX': 'AEX', 'AMX': 'AMX', 'BEL20': 'BEL 20', 'CAC40': 'CAC 40', 'DAX': 'DAX', 'FTSE': 'FTSE 100', 'IBEX': 'IBEX 35', 'MIB': 'FTSE MIB', 'VS': 'S&P 500',
+              'TSX': 'S&P/TSX', 'NIKKEI': 'Nikkei 225'}
 
 
 def index_voor(ticker):
@@ -1071,7 +1073,7 @@ def per_week(punten):
 def ecb_koersen(pogingen=3):
     """Laatste ECB-referentiekoersen als euro per eenheid: {'datum', 'USD', 'GBP'}."""
     import csv, io, time, urllib.request
-    url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata'
+    url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP+CAD+JPY.EUR.SP00.A?lastNObservations=5&format=csvdata'
     for i in range(pogingen):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={'Accept': 'text/csv'}), timeout=30) as r:
@@ -1079,10 +1081,12 @@ def ecb_koersen(pogingen=3):
             laatst = {}
             for x in rijen:
                 v, d, w = x.get('CURRENCY'), x.get('TIME_PERIOD'), x.get('OBS_VALUE')
-                if v in ('USD', 'GBP') and w and (v not in laatst or d > laatst[v][0]):
+                if v in ('USD', 'GBP', 'CAD', 'JPY') and w and (v not in laatst or d > laatst[v][0]):
                     laatst[v] = (d, float(w))
             if 'USD' in laatst and 'GBP' in laatst:
-                return {'datum': max(laatst['USD'][0], laatst['GBP'][0]), 'USD': round(1 / laatst['USD'][1], 6), 'GBP': round(1 / laatst['GBP'][1], 6)}
+                uit = {'datum': max(laatst['USD'][0], laatst['GBP'][0])}
+                uit.update({m: round(1 / laatst[m][1], 6) for m in ('USD', 'GBP', 'CAD', 'JPY') if m in laatst})
+                return uit
         except Exception:
             time.sleep(10 * (i + 1))
     return None

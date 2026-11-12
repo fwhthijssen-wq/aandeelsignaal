@@ -22,8 +22,8 @@
     { id: 'kwaliteit', naam: 'Ook verkopen bij zwakkere kwaliteit', regel: 'NAIC Kopen; verkopen in de verkoopzone én als de kwaliteit wegvalt' },
     { id: 'moment', naam: 'Kansen met gunstig koopmoment', regel: 'NAIC Kopen én een gunstig koopmoment' }
   ];
-  var INDEX_VALUTA = { FTSE: 'GBP', VS: 'USD' };
-  var INDEX_NAAM = { AEX: 'AEX', AMX: 'AMX', BEL20: 'BEL 20', CAC40: 'CAC 40', DAX: 'DAX', FTSE: 'FTSE 100', IBEX: 'IBEX 35', MIB: 'FTSE MIB', VS: 'S&P 500' };
+  var INDEX_VALUTA = { FTSE: 'GBP', VS: 'USD', TSX: 'CAD', NIKKEI: 'JPY' };
+  var INDEX_NAAM = { AEX: 'AEX', AMX: 'AMX', BEL20: 'BEL 20', CAC40: 'CAC 40', DAX: 'DAX', FTSE: 'FTSE 100', IBEX: 'IBEX 35', MIB: 'FTSE MIB', VS: 'S&P 500', TSX: 'S&P/TSX', NIKKEI: 'Nikkei 225' };
 
   function r2(x) { return Math.round(x * 100) / 100; }
   function r4(x) { return Math.round(x * 10000) / 10000; }

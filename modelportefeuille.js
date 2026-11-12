@@ -12,7 +12,7 @@ const W = path.join(__dirname, 'web', 'js');
 const S = require(path.join(W, 'signaal.js')), G = require(path.join(W, 'gate.js')), N = require(path.join(W, 'naic.js'));
 const K = require(path.join(W, 'kortetermijn.js')), V = require(path.join(W, 'vergelijk.js')), M = require(path.join(W, 'model.js'));
 
-const INDEX_CODES = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS'];
+const INDEX_CODES = ['AEX', 'AMX', 'BEL20', 'CAC40', 'DAX', 'FTSE', 'IBEX', 'MIB', 'VS', 'TSX', 'NIKKEI'];
 function indexVan(rec) {                     // zoals bouw_webdata.index_voor
   const ix = (rec.indices || []).filter((i) => INDEX_CODES.includes(i));
   return ix.length ? ix[0] : ((rec.indices || []).includes('ASCX') || (rec.indices || []).includes('NLOVERIG')) ? 'AMX' : (rec.ticker.includes('.') ? null : 'VS');     // geen AScX-index bij Yahoo
@@ -46,7 +46,7 @@ function fondsVoorModel(rec, vandaag) {
 
 /* ECB-referentiekoersen (valuta per euro) → euro per eenheid valuta. */
 async function ecb() {
-  const url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata';
+  const url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP+CAD+JPY.EUR.SP00.A?lastNObservations=5&format=csvdata';
   const r = await fetch(url, { headers: { Accept: 'text/csv' }, signal: AbortSignal.timeout(30000) });
   if (!r.ok) throw new Error('ECB ' + r.status);
   return ecbUitCsv(await r.text());
@@ -57,10 +57,12 @@ function ecbUitCsv(tekst) {
   const laatst = {};
   for (const r of regels) {
     const c = r.split(','), v = c[iV], d = c[iD], w = Number(c[iW]);
-    if ((v === 'USD' || v === 'GBP') && w > 0 && (!laatst[v] || d > laatst[v].d)) laatst[v] = { d, w };
+    if (['USD', 'GBP', 'CAD', 'JPY'].includes(v) && w > 0 && (!laatst[v] || d > laatst[v].d)) laatst[v] = { d, w };
   }
   if (!laatst.USD || !laatst.GBP) return null;
-  return { datum: laatst.USD.d > laatst.GBP.d ? laatst.USD.d : laatst.GBP.d, USD: Math.round(1e6 / laatst.USD.w) / 1e6, GBP: Math.round(1e6 / laatst.GBP.w) / 1e6 };
+  const uit = { datum: laatst.USD.d > laatst.GBP.d ? laatst.USD.d : laatst.GBP.d };
+  for (const m of ['USD', 'GBP', 'CAD', 'JPY']) if (laatst[m]) uit[m] = Math.round(1e6 / laatst[m].w) / 1e6;
+  return uit;
 }
 
 function dagVoorModel(data, vandaag, fx) {
