@@ -25,6 +25,13 @@ class SplitBevestiging(unittest.TestCase):
         uit = ev.verify_split_events([event('2020-08-10', 5)], o, HISTORIE)
         self.assertEqual(uit[0]['Datumtype'], 'effectieve_splitdatum')
 
+    def test_gemaksomrekening_in_dollars_stoort_niet(self):
+        # HDFC Bank, splitsing 2:1 in 2019: 68,29 INR (en 1,05 USD ter informatie) voor, 34,15 INR erna
+        o = [dict(obs('2018-03-31', '2019-07-31', 68.29), unit='INR/shares'), obs('2018-03-31', '2019-07-31', 1.05),
+             dict(obs('2018-03-31', '2020-07-31', 34.15), unit='INR/shares')]
+        uit = ev.verify_split_events([event('2019-08-01', 2)], o, [{'end': '2018-03-31'}, {'end': '2020-03-31'}])
+        self.assertEqual(uit[0]['Datumtype'], 'effectieve_splitdatum')
+
     def test_bewijs_dat_ook_bij_geen_verschil_past_telt_niet(self):
         # na de datum staan zowel de oude als de nieuwe waarde: dat bevestigt niets
         o = [obs('2019-12-31', '2020-02-13', 3.0), obs('2019-12-31', '2021-02-08', 3.0), obs('2019-12-31', '2022-02-08', 1.0)]

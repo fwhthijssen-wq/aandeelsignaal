@@ -469,7 +469,8 @@ def verify_split_events(split_events, observations, history):
         if (end is None or filed is None or value is None or not obs.get('accn')
                 or not isinstance(obs.get('unit'), str) or not obs['unit'].endswith('/shares')):
             continue
-        by_end.setdefault(end, []).append((filed, value))
+        # per valuta: een gemaksomrekening in dollars (HDFC Bank, Wipro) naast de eigen munt is geen EPS-reeks om te vergelijken
+        by_end.setdefault((end, obs['unit']), []).append((filed, value))
 
     verdicts = {}
     out = []
@@ -488,7 +489,7 @@ def verify_split_events(split_events, observations, history):
         key = (when, ratio)
         if key not in verdicts:
             supporting, contradicting = [], []
-            for end, rows in sorted(by_end.items()):
+            for (end, _unit), rows in sorted(by_end.items()):
                 if end >= when:
                     continue
                 before = [value for filed, value in rows if filed < when]
@@ -523,8 +524,8 @@ def verify_split_events(split_events, observations, history):
                         'geen EPS van dezelfde periode in indieningen van voor én na de splitsing; '
                         'splitverhouding niet bevestigd'})
         else:
-            first_after = min(f for end, rows in by_end.items() if end < when for f, _ in rows if f > when)
-            last_before = max(f for end, rows in by_end.items() if end < when for f, _ in rows if f < when)
+            first_after = min(f for (end, _u), rows in by_end.items() if end < when for f, _ in rows if f > when)
+            last_before = max(f for (end, _u), rows in by_end.items() if end < when for f, _ in rows if f < when)
             out.append({**event, 'Datumtype': 'effectieve_splitdatum',
                         'Verificatie': 'EPS-herberekening in indieningen voor en na de splitsing',
                         'Verificatie bewijs': [entry for _, entry in supporting],
