@@ -119,6 +119,15 @@ def annual_history(payload, asof, years=10):
     # bevatten (SAP: 2017 USD naast EUR). Dat is geen tweede boekjaar.
     # Kies alleen bij een overtuigende meerderheid de verslagvaluta;
     # bij een echte valuta-overgang blijft de reeks expliciet gescheiden.
+    # Gemakshalve omrekening (TSMC, Koreaanse banken: het laatste jaar ook in USD naast de eigen munt): staat een
+    # boekjaar in meer dan één valuta, dan telt de valuta die in de meeste boekjaren voorkomt (de verslagvaluta).
+    per_end = {}
+    for row in rows:
+        per_end.setdefault(row['end'], set()).add(row['unit'])
+    if any(len(u) > 1 for u in per_end.values()):
+        aanwezig = Counter(u for units in per_end.values() for u in units)
+        hoofd = max(aanwezig, key=lambda u: (aanwezig[u], u != 'USD'))
+        rows = [row for row in rows if len(per_end[row['end']]) == 1 or row['unit'] == hoofd]
     year_counts = Counter(row['unit'] for row in rows)
     if len(year_counts) > 1:
         primary, count = year_counts.most_common(1)[0]
