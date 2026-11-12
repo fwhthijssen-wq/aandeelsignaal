@@ -26,3 +26,13 @@ for t in sys.argv[2:]:
                 einden = sorted({e for e, _, _ in jaar})
                 print(f'  {ns}:{tag} [{unit}] jaren {einden[0][:4] if einden else "-"}–{einden[-1][:4] if einden else "-"} ({len(einden)}); vormen {sorted({v for _, v, _ in jaar})}; laatst ingediend {max((d for _, _, d in jaar), default="-")}')
     time.sleep(0.5)
+
+# Jaarverslagen volgens het indieningsregister (ook als de XBRL-feiten ontbreken)
+for t in sys.argv[2:]:
+    cik = next(int(v['cik_str']) for v in lijst.values() if v['ticker'] == t)
+    sub = haal(f'https://data.sec.gov/submissions/CIK{cik:010d}.json', email)
+    rec = sub.get('filings', {}).get('recent', {})
+    rijen = [(d, f, x, p) for d, f, x, p in zip(rec.get('filingDate', []), rec.get('form', []), rec.get('isXBRL', []), rec.get('reportDate', []))
+             if f in ('20-F', '20-F/A', '40-F', '10-K', '6-K')]
+    print('== indieningen', t, [r for r in rijen if r[1] != '6-K'][:4], 'laatste 6-K', next((r[0] for r in rijen if r[1] == '6-K'), None))
+    time.sleep(0.5)
