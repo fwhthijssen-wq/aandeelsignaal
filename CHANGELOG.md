@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.21.1 (2026.11.12)
+- **CGI ook in New York** (GIB, koers in dollars), naast de notering in Toronto: een aankoop in dollars krijgt zo een koers en waarde in de portefeuille. Jaarcijfers in Canadese dollars, omgerekend naar dollars.
+
 ## 1.21 (2026.11.12)
 - **9 grote fondsen uit Taiwan en Zuid-Korea** (via New York, bij Saxo en DEGIRO te koop): TSMC, United Microelectronics, ASE Technology, Chunghwa Telecom, KB Financial, Shinhan, Woori, KEPCO en KT. Officiële cijfers uit het SEC-jaarverslag in Taiwanese dollars of won, omgerekend naar dollars per ADS.
 - De controle van de winst per aandeel struikelde over de dollarbedragen die deze bedrijven ter informatie naast hun eigen munt zetten; dat is opgelost.
