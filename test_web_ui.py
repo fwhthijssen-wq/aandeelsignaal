@@ -134,9 +134,9 @@ class WebUi(unittest.TestCase):
         # bewerken: verkoop schrappen
         pg.click('[data-pf-bewerk]'); pg.locator('[data-vk-weg]').first.click()
         self.assertEqual(pg.locator('[data-pf-verkoop]').count(), 1)
-        # andere notering bij de aankoop: niet omrekenen
+        # andere notering bij de aankoop (zelfde aandeel, andere beurs): koers omgerekend met de ECB-koers
         pg.evaluate("AANDEEL_DATA.aandelen.find(x => x.ticker === 'AAPL').valuta = 'EUR'"); pg.evaluate("location.hash='#/'"); pg.evaluate("location.hash='#/portefeuille'")
-        self.assertIn('Koers staat in EUR', pg.inner_text('main'))
+        self.assertIn('koers van de notering in EUR, omgerekend naar USD', pg.inner_text('main'))
         # verwijderen en ongedaan maken
         pg.click('[data-weg]')
         self.assertIn('nog geen aankopen', pg.inner_text('main'))

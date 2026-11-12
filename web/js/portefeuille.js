@@ -1,21 +1,24 @@
-/* Portefeuille: wat uw aankopen nu waard zijn. Rekent alleen met een verse koers in dezelfde valuta als de aankoop.
-   Er wordt nooit omgerekend of geschat; ontbreekt iets, dan staat er waarom en telt de aankoop niet mee in het totaal.
+/* Portefeuille: wat uw aankopen nu waard zijn. Rekent alleen met een verse koers. Is het aandeel in een andere valuta gekocht
+   dan de notering die de app volgt (bijv. in New York), dan wordt de koers met de ECB-koers van vandaag omgerekend; ontbreekt
+   iets, dan staat er waarom en telt de aankoop niet mee in het totaal.
    Totalen worden per valuta gegeven en nooit bij elkaar opgeteld. */
 (function (root) {
   'use strict';
   function afrond(x) { return Math.round(x * 100) / 100; }
 
-  /* Koers van het aandeel in de valuta van de aankoop. Gelijke valuta: de koers zelf. Enige uitzondering: Londen. De app
-     rekent Londense koersen in ponden (GBP), maar een aankoop kan in pence (GBX) zijn ingevoerd: 1 pond = 100 pence is een
-     vaste eenheid, geen wisselkoers. Elk ander verschil: null (er wordt niet omgerekend). */
-  function koersIn(rec, valuta) {
-    var v = String(rec.valuta || '').toUpperCase();
+  /* Koers van het aandeel in de valuta van de aankoop. Gelijke valuta: de koers zelf. Londen: de app rekent in ponden (GBP),
+     een aankoop kan in pence (GBX) zijn ingevoerd (1 pond = 100 pence). Andere valuta (bijv. CGI gekocht in New York in
+     dollars, de app volgt Toronto in Canadese dollars): hetzelfde aandeel, omgerekend met de ECB-koers van vandaag (fx).
+     Zonder ECB-koers: null. */
+  function koersIn(rec, valuta, fx) {
+    var v = String(rec.valuta || '').toUpperCase(); valuta = String(valuta || '').toUpperCase();
     if (v === valuta) return rec.koers.slot;
     if (v === 'GBP' && valuta === 'GBX') return rec.koers.slot * 100;
-    return null;
+    var a = fxNu(fx, v), b = fxNu(fx, valuta);
+    return a && b ? Math.round(rec.koers.slot * a / b * 10000) / 10000 : null;
   }
 
-  function waardeer(posities, aandelen, vandaag, gate) {
+  function waardeer(posities, aandelen, vandaag, gate, fx) {
     var per = {}, regels = [];
     (aandelen || []).forEach(function (a) { per[a.ticker] = a; });
     (posities || []).forEach(function (p) {
@@ -25,9 +28,9 @@
       } else {
         var fr = gate.priceFreshness(rec.koers.datum, vandaag);
         if (!fr.fresh) { r.status = 'verouderd'; r.reden = fr.reason; }
-        else if (koersIn(rec, p.valuta) === null) { r.status = 'valuta'; r.reden = 'Koers staat in ' + (rec.valuta || 'onbekende valuta') + ', uw aankoop in ' + p.valuta + '. Er wordt niet omgerekend.'; }
+        else if (koersIn(rec, p.valuta, fx) === null) { r.status = 'valuta'; r.reden = 'Koers staat in ' + (rec.valuta || 'onbekende valuta') + ', uw aankoop in ' + p.valuta + ', en er is geen ECB-koers om om te rekenen.'; }
         else {
-          r.waarde = afrond(p.aantal * koersIn(rec, p.valuta)); r.winst = afrond(r.waarde - kosten); r.pct = kosten > 0 ? Math.round((r.waarde - kosten) / kosten * 1000) / 10 : null;
+          r.waarde = afrond(p.aantal * koersIn(rec, p.valuta, fx)); r.winst = afrond(r.waarde - kosten); r.pct = kosten > 0 ? Math.round((r.waarde - kosten) / kosten * 1000) / 10 : null;
         }
       }
       regels.push(r);
@@ -167,10 +170,15 @@
       var fr = gate.priceFreshness(rec.koers.datum, vandaag);
       if (!fr.fresh) { r.status = 'verouderd'; r.reden = fr.reason; return r; }
       var pv = String(p.valuta).toUpperCase(), rv = String(rec.valuta).toUpperCase();
-      if (pv !== rv && !(pv === 'GBX' && rv === 'GBP')) { r.status = 'valuta'; r.reden = 'Koers staat in ' + rv + ', uw aankoop in ' + pv + ' (bijv. een andere notering).'; return r; }
       var f = fxNu(fx, rv);
       if (!f) { r.status = 'fx'; r.reden = 'Geen wisselkoers van de ECB beschikbaar.'; return r; }
-      r.koersNu = rec.koers.slot;
+      // Gekocht in een andere valuta dan de notering die de app volgt (zelfde aandeel, andere beurs): de waarde in euro is
+      // dezelfde; de koers 'nu' staat in de valuta van uw aankoop, omgerekend met de ECB-koers van vandaag.
+      var andere = pv !== rv && !(pv === 'GBX' && rv === 'GBP');
+      if (andere && !fxNu(fx, pv)) { r.status = 'valuta'; r.reden = 'Koers staat in ' + rv + ', uw aankoop in ' + pv + ', en er is geen ECB-koers om om te rekenen.'; return r; }
+      r.koersNu = andere ? koersIn(rec, pv, fx) : rec.koers.slot;
+      r.koersValuta = andere ? pv : rv;
+      if (andere) r.notities.push('koers van de notering in ' + rv + ', omgerekend naar ' + pv + ' met de ECB-koers van vandaag');
       r.waardeOpen = Math.round(r.open * rec.koers.slot * f * 100) / 100;
     }
     // dividend sinds de aankoop (alleen met een aankoopdatum)

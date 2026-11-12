@@ -115,10 +115,30 @@ test('waardering: verouderde, ontbrekende of nulkoers geeft geen waarde', () => 
   assert.equal(waardeer([pos({ ticker: 'OLD' })]).regels[0].status, 'verouderd');
 });
 
-test('waardering: andere valuta dan de aankoop wordt niet omgerekend', () => {
+test('waardering: andere valuta dan de aankoop alleen met een ECB-koers (zelfde aandeel, andere beurs)', () => {
   const r = waardeer([pos({ ticker: 'SHEL', valuta: 'USD' })]).regels[0];
   assert.equal(r.status, 'valuta'); assert.equal(r.waarde, null);
   assert.equal(waardeer([pos({ ticker: 'SHEL', valuta: 'EUR', koers: 25 })]).regels[0].status, 'ok');
+  // 30 euro, 1 dollar = 0,8 euro: 37,5 dollar per aandeel
+  const m = P.waardeer([pos({ ticker: 'SHEL', valuta: 'USD', koers: 35, aantal: 2 })], aandelen, '2026-10-20', G, { USD: 0.8 }).regels[0];
+  assert.equal(m.status, 'ok'); assert.equal(m.waarde, 75); assert.equal(m.winst, 5);
+});
+
+test('waarde in euro: CGI gekocht in New York (USD), de app volgt Toronto (CAD)', () => {
+  const rec = { ticker: 'GIB-A.TO', naam: 'CGI', valuta: 'CAD', koers: { slot: 116.88, datum: '2026-11-12' } };
+  const fx = { USD: 0.86, CAD: 0.62 };
+  const r = P.positieInEuro({ id: 'c', ticker: 'GIB-A.TO', aantal: 10, koers: 80, valuta: 'USD', datum: '2026-11-01', eur: 690 }, rec, '2026-11-12', G, fx);
+  assert.equal(r.status, 'ok');
+  assert.equal(r.waardeOpen, Math.round(10 * 116.88 * 0.62 * 100) / 100);
+  assert.equal(r.koersValuta, 'USD'); assert.equal(r.koersNu, Math.round(116.88 * 0.62 / 0.86 * 10000) / 10000);
+  assert.ok(r.notities.some(n => /omgerekend naar USD/.test(n)));
+});
+
+test('opslag: een aankoop onder de vroegere ticker GIB komt bij CGI (GIB-A.TO)', () => {
+  const g = geheugen();
+  g.setItem(S.SLEUTEL, JSON.stringify({ volglijst: [{ ticker: 'GIB' }], portefeuille: [pos({ id: 'a', ticker: 'GIB' })] }));
+  const st = S.maak(g, klok());
+  assert.equal(st.portefeuille()[0].ticker, 'GIB-A.TO'); assert.equal(st.volglijst()[0].ticker, 'GIB-A.TO');
 });
 
 test('totalen: per valuta, nooit gemengd, en niet-waardeerbare aankopen tellen niet mee', () => {
@@ -203,10 +223,11 @@ test('overzicht in euro: kosten, dividend, splitsing, verkoop en index', () => {
   assert.equal(o.totalen.open, 1); assert.equal(o.totalen.inleg, 1805);
 });
 
-test('overzicht: zonder eurobedrag of met een andere notering telt een aankoop niet mee', () => {
+test('overzicht: andere notering wordt omgerekend; zonder eurobedrag geschat of (zonder ECB-koers) niet meegeteld', () => {
   const rec = { ticker: 'SHEL', naam: 'Shell', valuta: 'USD', koers: { slot: 70, datum: '2026-11-02' } };
   const o = P.overzicht([{ id: 'a', ticker: 'SHEL', aantal: 30, koers: 36.73, valuta: 'EUR', eur: 1101.9 }, { id: 'b', ticker: 'SHEL', aantal: 1, koers: 70, valuta: 'USD' }], [rec], '2026-11-03', G, { fx: { USD: 0.9, GBP: 1.2 } });
-  assert.equal(o.regels[0].status, 'valuta'); assert.equal(o.regels[1].status, 'ok'); assert.match(o.regels[1].notities[0], /geschat/); assert.equal(o.totalen.buiten, 1);
+  assert.equal(o.regels[0].status, 'ok'); assert.equal(o.regels[0].koersValuta, 'EUR'); assert.equal(o.regels[0].koersNu, 63);
+  assert.equal(o.regels[1].status, 'ok'); assert.match(o.regels[1].notities[0], /geschat/); assert.equal(o.totalen.buiten, 0);
   assert.equal(P.overzicht([{ id: 'b', ticker: 'SHEL', aantal: 1, koers: 70, valuta: 'USD' }], [rec], '2026-11-03', G, {}).regels[0].status, 'euro', 'zonder ECB-koers niet te schatten');
 });
 

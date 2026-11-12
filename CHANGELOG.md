@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.21.2 (2026.11.12)
+- **Gekocht op een andere beurs** (bijv. CGI in New York in dollars, terwijl de app Toronto volgt): kies gewoon het fonds en vul de valuta van uw aankoop in. De app rekent de koers om met de ECB-koers van vandaag; de waarde in euro is dezelfde. Geen dubbele fondsen meer: de aparte regel "CGI (New York)" uit 1.21.1 is weer weg, een aankoop daaronder staat automatisch bij CGI.
+
 ## 1.21.1 (2026.11.12)
 - **CGI ook in New York** (GIB, koers in dollars), naast de notering in Toronto: een aankoop in dollars krijgt zo een koers en waarde in de portefeuille. Jaarcijfers in Canadese dollars, omgerekend naar dollars.
 

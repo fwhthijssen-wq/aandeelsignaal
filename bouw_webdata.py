@@ -95,11 +95,9 @@ CATALOGUS = (
     ('WF', 'Woori Financial Group', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
     ('KEP', 'Korea Electric Power (KEPCO)', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
     ('KT', 'KT Corporation', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
-    # Canadese fondsen die ook in New York noteren (zelfde aandeel, koers in dollars; de jaarcijfers in CAD omgerekend).
-    ('GIB', 'CGI (New York)', 'Canada', 'USD', 'New York (NYSE)'),
 )
 ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL',
-             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT', 'GIB')      # in de app de groep 'Overige landen (New York)'
+             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())

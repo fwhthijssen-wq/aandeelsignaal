@@ -26,9 +26,13 @@
     return id;
   }
 
+  // Tickers die de app niet meer als apart fonds toont: een andere notering van hetzelfde aandeel (1.21.1 had CGI kort ook
+  // als 'GIB' uit New York; een aankoop in dollars staat nu gewoon bij CGI, de koers wordt omgerekend).
+  var ZELFDE_AANDEEL = { 'GIB': 'GIB-A.TO' };
   function normTicker(t) {
     if (typeof t !== 'string') return null;
     t = t.trim().toUpperCase();
+    if (ZELFDE_AANDEEL[t]) t = ZELFDE_AANDEEL[t];
     return TICKER.test(t) ? t : null;
   }
 

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.21.1 (2026.11.12)';
+  var APP_VERSIE = '1.21.2 (2026.11.12)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -825,7 +825,7 @@
   var tabelKeuze = { alleenBevestigd: false, trend200: '', index: '', sorteer: 'naam', richting: 'op' };
   var TABEL_KOP = { naam: 'Aandeel', afstandPct: 'Afstand tot gemiddelde', omzetgroei: 'Omzetgroei p.j.', epsgroei: 'Winstgroei p.j.', nettomarge: 'Nettomarge', positiePct: 'Plek in koersbereik (laag naar hoog)', verhouding: 'Opwaarts tegen neerwaarts' };
   function dashboardHtml(R) {
-    var pos = winkel.portefeuille(), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate);
+    var pos = winkel.portefeuille(), res = Portefeuille.waardeer(pos, DATA.aandelen, vandaag(), Gate, DATA.fx);
     var volT = winkel.volglijst().map(function (v) { return v.ticker; }), a = Dashboard.aandacht(R, volT, res.regels);
     var s = '<section id="dash">' + (volT.length ? '<h2>In cijfers</h2>' : '') + '<div class="kpis">';
     if (volT.length) s += '<div class="kpi"><b>' + a.verouderdVolglijst + ' / ' + a.volglijst + '</b><span>Volglijst zonder actuele koers</span></div>';
@@ -1125,7 +1125,7 @@
     var pc = Portefeuille.penceVermoeden(p, rec);
     if (pc) regels.push('<span class="pence-let-op" data-pence-let-op="' + h(p.id) + '">Let op: de aankoopkoers lijkt in pence ingevoerd. De koers is nu ' + getal(pc, 2) + ' pence (' + getal(pc / 100, 4) + ' GBP), uw aankoop ' + getal(p.koers, 2) + ' GBP. <button type="button" class="knop klein" data-pence="' + h(p.id) + '">Verbeteren: koers was in pence (GBX)</button></span>');
     if (r.status === 'ok') {
-      var extra = [!r.heelVerkocht && r.koersNu != null ? 'nu ' + getal(r.koersNu, 2) + ' ' + h(rec.valuta) + ' (' + eur(r.waardeOpen) + ')' : '', r.dividend ? 'dividend ' + eur(r.dividend, 2) + (r.dividendAandelen ? ' contant' : '') : '', r.dividendAandelen ? 'dividend in aandelen ' + eur(r.dividendAandelen, 2) : '', r.looptijd != null ? (r.looptijd >= 60 ? getal(r.looptijd / 30.44, 0) + ' maanden' : r.looptijd + ' dagen') : '', r.perJaar != null ? pct(r.perJaar) + ' per jaar' : ''].filter(Boolean).join(' · ');
+      var extra = [!r.heelVerkocht && r.koersNu != null ? 'nu ' + getal(r.koersNu, 2) + ' ' + h(r.koersValuta || rec.valuta) + ' (' + eur(r.waardeOpen) + ')' : '', r.dividend ? 'dividend ' + eur(r.dividend, 2) + (r.dividendAandelen ? ' contant' : '') : '', r.dividendAandelen ? 'dividend in aandelen ' + eur(r.dividendAandelen, 2) : '', r.looptijd != null ? (r.looptijd >= 60 ? getal(r.looptijd / 30.44, 0) + ' maanden' : r.looptijd + ' dagen') : '', r.perJaar != null ? pct(r.perJaar) + ' per jaar' : ''].filter(Boolean).join(' · ');
       if (extra) regels.push('<span class="zacht">' + extra + '</span>');
       regels.push('<span style="color:' + kleur(r.resultaat) + ';font-weight:700" data-pf-resultaat>' + eurTeken(r.resultaat) + (r.pct == null ? '' : ' (' + pct(r.pct) + ')') + '</span>');
       if (r.idx) regels.push('<span class="zacht">Index in dezelfde periode: ' + pct(r.idx.pct) + '</span>');
@@ -1318,6 +1318,7 @@
     function hintEnSchat() {
       var hint = document.getElementById('pf-hint');
       if (hint) hint.textContent = (/\.L$/.test(sel.value) ? 'Londen: de app rekent in ponden (GBP). Geeft uw bank de koers in pence (bijv. 4500), vul dan GBX in als valuta. ' : '') +
+        'Op een andere beurs gekocht (bijv. in New York in dollars)? Vul die valuta in; de app rekent de koers om met de ECB-koers. ' +
         (String(val.value).toUpperCase() !== 'EUR' ? 'Betaald in euro: het bedrag van uw afschrift (zonder kosten). De app vult een schatting in met de ECB-koers van vandaag.' : '');
       schatEur();
     }
