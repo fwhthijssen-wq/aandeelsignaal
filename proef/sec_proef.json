@@ -2,15 +2,13 @@
  "TSM": {
   "sec": "TSM",
   "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
    "niveau": null,
-   "valuta": [
-    "TWD"
-   ],
+   "valuta": [],
    "open": [],
    "fout": null
   },
@@ -19,15 +17,13 @@
  "UMC": {
   "sec": "UMC",
   "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
    "niveau": null,
-   "valuta": [
-    "TWD"
-   ],
+   "valuta": [],
    "open": [],
    "fout": null
   },
@@ -36,32 +32,13 @@
  "CHT": {
   "sec": "CHT",
   "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
    "niveau": null,
-   "valuta": [
-    "TWD"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "ASX": {
-  "sec": "ASX",
-  "via_sec": {
-   "jaren": 1,
-   "van": 2016,
-   "tot": 2016,
-   "nagerekend": 1,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "TWD"
-   ],
+   "valuta": [],
    "open": [],
    "fout": null
   },
@@ -70,15 +47,13 @@
  "KB": {
   "sec": "KB",
   "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
    "niveau": null,
-   "valuta": [
-    "KRW"
-   ],
+   "valuta": [],
    "open": [],
    "fout": null
   },
@@ -104,15 +79,13 @@
  "WF": {
   "sec": "WF",
   "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
+   "jaren": 0,
+   "van": null,
+   "tot": null,
+   "nagerekend": 0,
+   "status": "missing_split_evidence",
    "niveau": null,
-   "valuta": [
-    "KRW"
-   ],
+   "valuta": [],
    "open": [],
    "fout": null
   },
@@ -135,36 +108,6 @@
   },
   "via_esef": null
  },
- "SKM": {
-  "sec": "SKM",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "split_evidence_rejected",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "PKX": {
-  "sec": "PKX",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
  "KEP": {
   "sec": "KEP",
   "via_sec": {
@@ -182,16 +125,75 @@
   },
   "via_esef": null
  },
- "LPL": {
-  "sec": "LPL",
+ "AMX": {
+  "sec": "AMX",
   "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
+   "jaren": 3,
+   "van": 2022,
+   "tot": 2024,
+   "nagerekend": 2,
+   "status": "partially_independently_verified",
    "niveau": null,
-   "valuta": [],
+   "valuta": [
+    "MXN"
+   ],
+   "open": [
+    {
+     "jaar": 2022,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "BAP": {
+  "sec": "BAP",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2015,
+   "tot": 2024,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "PEN"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "UGP": {
+  "sec": "UGP",
+  "via_sec": {
+   "jaren": 9,
+   "van": 2016,
+   "tot": 2024,
+   "nagerekend": 9,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "BRL"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "SBSW": {
+  "sec": "SBSW",
+  "via_sec": {
+   "jaren": 8,
+   "van": 2017,
+   "tot": 2024,
+   "nagerekend": 8,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "ZAR"
+   ],
    "open": [],
    "fout": null
   },
@@ -199,28 +201,6 @@
  },
  "HDB": {
   "sec": "HDB",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": null,
-   "status": null,
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": "Geen volledige jaarcijfers beschikbaar (status van de bron: no_valid_annual_history)."
-  },
-  "via_esef": null
- },
- "IBN": {
-  "sec": "IBN",
-  "via_sec": {
-   "fout": "HTTPError: HTTP Error 404: Not Found"
-  },
-  "via_esef": null
- },
- "WIT": {
-  "sec": "WIT",
   "via_sec": {
    "jaren": 0,
    "van": null,
@@ -264,268 +244,17 @@
   },
   "via_esef": null
  },
- "ABEV": {
-  "sec": "ABEV",
+ "SHEL": {
+  "sec": "SHEL",
   "via_sec": {
    "jaren": 10,
    "van": 2016,
    "tot": 2025,
    "nagerekend": 10,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "BRL"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "SUZ": {
-  "sec": "SUZ",
-  "via_sec": {
-   "jaren": 5,
-   "van": 2021,
-   "tot": 2025,
-   "nagerekend": 5,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "BRL"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "GGB": {
-  "sec": "GGB",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "UGP": {
-  "sec": "UGP",
-  "via_sec": {
-   "jaren": 9,
-   "van": 2016,
-   "tot": 2024,
-   "nagerekend": 9,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "BRL"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "SID": {
-  "sec": "SID",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "KOF": {
-  "sec": "KOF",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "FMX": {
-  "sec": "FMX",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "AMX": {
-  "sec": "AMX",
-  "via_sec": {
-   "jaren": 2,
-   "van": 2015,
-   "tot": 2016,
-   "nagerekend": 2,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "MXN"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "BAP": {
-  "sec": "BAP",
-  "via_sec": {
-   "jaren": 10,
-   "van": 2015,
-   "tot": 2024,
-   "nagerekend": 10,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "PEN"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "EC": {
-  "sec": "EC",
-  "via_sec": {
-   "jaren": 0,
-   "van": null,
-   "tot": null,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": null,
-   "valuta": [],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "SQM": {
-  "sec": "SQM",
-  "via_sec": {
-   "jaren": 4,
-   "van": 2021,
-   "tot": 2024,
-   "nagerekend": 4,
    "status": "independently_verified",
    "niveau": null,
    "valuta": [
     "USD"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "SSL": {
-  "sec": "SSL",
-  "via_sec": {
-   "jaren": 10,
-   "van": 2016,
-   "tot": 2025,
-   "nagerekend": 9,
-   "status": "partially_independently_verified",
-   "niveau": null,
-   "valuta": [
-    "ZAR"
-   ],
-   "open": [
-    {
-     "jaar": 2020,
-     "check": "niet_bewezen",
-     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
-    }
-   ],
-   "fout": null
-  },
-  "via_esef": null
- },
- "SBSW": {
-  "sec": "SBSW",
-  "via_sec": {
-   "jaren": 8,
-   "van": 2017,
-   "tot": 2024,
-   "nagerekend": 8,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "ZAR"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "NVO": {
-  "sec": "NVO",
-  "via_sec": {
-   "jaren": 7,
-   "van": 2019,
-   "tot": 2025,
-   "nagerekend": 7,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "DKK"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "ASML.AS": {
-  "sec": "ASML",
-  "via_sec": {
-   "jaren": 10,
-   "van": 2016,
-   "tot": 2025,
-   "nagerekend": 10,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "EUR"
-   ],
-   "open": [],
-   "fout": null
-  },
-  "via_esef": null
- },
- "UNA.AS": {
-  "sec": "UL",
-  "via_sec": {
-   "jaren": 10,
-   "van": 2016,
-   "tot": 2025,
-   "nagerekend": 10,
-   "status": "independently_verified",
-   "niveau": null,
-   "valuta": [
-    "EUR"
    ],
    "open": [],
    "fout": null
@@ -597,6 +326,40 @@
    "fout": null
   }
  },
+ "SAP.DE": {
+  "sec": "SAP",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "ASML.AS": {
+  "sec": "ASML",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
  "MT.AS": {
   "sec": "MT",
   "via_sec": {
@@ -626,8 +389,8 @@
    "fout": null
   }
  },
- "TD.TO": {
-  "sec": "TD",
+ "UNA.AS": {
+  "sec": "UL",
   "via_sec": {
    "jaren": 10,
    "van": 2016,
@@ -636,7 +399,98 @@
    "status": "independently_verified",
    "niveau": null,
    "valuta": [
-    "CAD"
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "NVO": {
+  "sec": "NVO",
+  "via_sec": {
+   "jaren": 7,
+   "van": 2019,
+   "tot": 2025,
+   "nagerekend": 7,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "DKK"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "ABEV": {
+  "sec": "ABEV",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "BRL"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "SSL": {
+  "sec": "SSL",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 9,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "ZAR"
+   ],
+   "open": [
+    {
+     "jaar": 2020,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "INFY": {
+  "sec": "INFY",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "BHP": {
+  "sec": "BHP",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "USD"
    ],
    "open": [],
    "fout": null
@@ -660,8 +514,8 @@
   },
   "via_esef": null
  },
- "SAN.MC": {
-  "sec": "SAN",
+ "TD.TO": {
+  "sec": "TD",
   "via_sec": {
    "jaren": 10,
    "van": 2016,
@@ -670,64 +524,11 @@
    "status": "independently_verified",
    "niveau": null,
    "valuta": [
-    "EUR"
+    "CAD"
    ],
    "open": [],
    "fout": null
   },
-  "via_esef": {
-   "jaren": 8,
-   "van": 2018,
-   "tot": 2025,
-   "nagerekend": 0,
-   "status": "missing_split_evidence",
-   "niveau": "jaarverslag",
-   "valuta": [
-    "EUR"
-   ],
-   "open": [
-    {
-     "jaar": 2018,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2019,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2020,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2021,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2022,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2023,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2024,
-     "check": null,
-     "reden": ""
-    },
-    {
-     "jaar": 2025,
-     "check": null,
-     "reden": ""
-    }
-   ],
-   "fout": null
-  }
+  "via_esef": null
  }
 }
