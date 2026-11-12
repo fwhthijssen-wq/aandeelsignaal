@@ -38,7 +38,7 @@
   ],
   "hoofdkantoor": "Cupertino",
   "opgericht": 1976,
-  "website": "https://apple.com.cn/",
+  "website": "https://apple.com/lae/",
   "kort": "Amerikaans technologiebedrijf bekend van de iMac, iPhone, Apple Watch en de iPad.",
   "beschrijving": "Apple Inc. is een Amerikaans technologiebedrijf dat op 1 april 1976 is opgericht door Steve Jobs, Steve Wozniak en Ronald Wayne. Het bedrijf is gevestigd in Cupertino, Californië.",
   "taal": "nl",
@@ -100,7 +100,7 @@
   "opgericht": 1993,
   "website": "https://www.nvidia.com/",
   "kort": "computerhardwarebedrijf in Verenigde Staten van Amerika",
-  "beschrijving": "NVIDIA is een producent van computerhardware, voornamelijk op het gebied van kunstmatige intelligentie, videokaarten en chipsets voor moederborden voor AMD- en Intel-processors en voor mobiele apparaten. Ook leverde het bedrijf de grafische chips van Microsofts Xbox en is het toeleverancier aan veel grote computerfabrikanten. Behalve voor gaming worden de chips van NVIDIA gebruikt voor artificiële intelligentie.",
+  "beschrijving": "NVIDIA is een producent van computerhardware, voornamelijk op het gebied van kunstmatige intelligentie, videokaarten en chipsets voor moederborden voor AMD- en Intel-processors en voor mobiele apparaten. Ook leverde het bedrijf de grafische chips van Microsofts Xbox en is het toeleverancier aan veel grote computerfabrikanten. Behalve voor gaming worden de chips van NVIDIA vooral gebruikt voor artificiële intelligentie (AI).",
   "taal": "nl",
   "wikipedia": "https://nl.wikipedia.org/wiki/NVIDIA"
  },
@@ -146,7 +146,7 @@
   "hoofdkantoor": "Londen",
   "opgericht": 1929,
   "website": "https://unilever.com",
-  "kort": "Brits-Nederlands bedrijf dat consumptiegoederen produceert",
+  "kort": "Brits multinational met Nederlandse oorsprong dat consumptiegoederen produceert",
   "beschrijving": "Unilever PLC is een Britse multinationale onderneming die voorheen ook een duale bedrijfsstructuur met Nederland had. Het bedrijf is gespecialiseerd in voedingsmiddelen, persoonlijke verzorging en schoonmaakartikelen. In 2025 telde het 96.000 medewerkers wereldwijd. Het hoofdkantoor is gevestigd in Londen.",
   "taal": "nl",
   "wikipedia": "https://nl.wikipedia.org/wiki/Unilever"
@@ -485,8 +485,8 @@
   "wikidata": "Q38076",
   "gevonden_op": "CIK",
   "sector": [
-   "verschaffen van accommodatie en maaltijden",
    "voedsel- en tabaksindustrie",
+   "verschaffen van accommodatie en maaltijden",
    "klaar-terwijl-u-wachtrestaurant"
   ],
   "hoofdkantoor": "Chicago",
@@ -581,7 +581,7 @@
   "opgericht": 2004,
   "website": "https://www.sanofi.com/",
   "kort": "bedrijf in Frankrijk",
-  "beschrijving": "Sanofi is een internationale farmaceutische groep met hoofdzetel in Parijs (Frankrijk). Bij de groep werken zo'n 83.000 mensen.",
+  "beschrijving": "Sanofi is een internationale farmaceutische groep met hoofdzetel in Parijs (Frankrijk). Bij de groep werken zo'n 75.000 mensen.",
   "taal": "nl",
   "wikipedia": "https://nl.wikipedia.org/wiki/Sanofi"
  },
@@ -633,9 +633,9 @@
   "wikidata": "Q1418",
   "gevonden_op": "CIK",
   "sector": [
-   "elektrisch apparaat",
-   "telecommunicatiesector",
-   "telecommunicatie-apparaat"
+   "telecommunicatie-apparaat",
+   "International Standard Industrial Classification of All Economic Activities",
+   "netwerkhardware"
   ],
   "hoofdkantoor": "Espoo",
   "opgericht": 1865,
@@ -893,8 +893,8 @@
   "wikidata": "Q338633",
   "gevonden_op": "LEI",
   "sector": [
-   "mobieletelefonie-industrie",
-   "telecommunicatiesector"
+   "telecommunicatiesector",
+   "mobieletelefonie-industrie"
   ],
   "hoofdkantoor": "Rotterdam",
   "opgericht": 1989,
@@ -1102,10 +1102,12 @@
  "CTPNV.AS": {
   "wikidata": "Q102262732",
   "gevonden_op": "LEI",
-  "sector": [],
+  "sector": [
+   "projectontwikkeling"
+  ],
   "hoofdkantoor": "Buurmalsen",
-  "opgericht": null,
-  "website": null,
+  "opgericht": 2019,
+  "website": "https://ctp.eu/",
   "kort": "bedrijf uit Nederland",
   "beschrijving": null,
   "taal": null,
@@ -1137,7 +1139,7 @@
   "taal": "nl",
   "wikipedia": "https://nl.wikipedia.org/wiki/Fugro"
  },
- "GLPG.AS": {
+ "LKFT.AS": {
   "wikidata": "Q5517961",
   "gevonden_op": "LEI",
   "sector": [
@@ -1594,8 +1596,8 @@
   "gevonden_op": "LEI",
   "sector": [
    "voedsel- en tabaksindustrie",
-   "activities of head offices",
-   "11.01  Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen"
+   "11.01  Vervaardiging van gedistilleerde dranken door distilleren, rectificeren en mengen",
+   "activities of head offices"
   ],
   "hoofdkantoor": "Parijs",
   "opgericht": 1975,
@@ -1992,8 +1994,8 @@
   "gevonden_op": "naam",
   "sector": [
    "energy and water industries",
-   "energie-industrie",
-   "energiesector"
+   "energiesector",
+   "energie-industrie"
   ],
   "hoofdkantoor": "Essen",
   "opgericht": 2000,
@@ -2097,8 +2099,8 @@
   "wikidata": "Q311394",
   "gevonden_op": "naam",
   "sector": [
-   "semiconductorindustrie",
-   "elektrotechnische industrie"
+   "elektrotechnische industrie",
+   "semiconductorindustrie"
   ],
   "hoofdkantoor": "Neubiberg",
   "opgericht": 1999,
@@ -3170,7 +3172,7 @@
    "nutsbedrijf"
   ],
   "hoofdkantoor": "Madrid",
-  "opgericht": 1991,
+  "opgericht": null,
   "website": "https://www.naturgy.com/",
   "kort": "bedrijf uit Spanje",
   "beschrijving": "Naturgy is een internationaal energiebedrijf dat voorziet in de productie, distributie en commercialisering van aardgas en elektriciteit. Het bedrijf is voornamelijk actief als gasleverancier in Zuid-Europa en Latijns-Amerika en breidt sinds 2006 haar activiteiten uit naar West-Europa. Medio 2018 werd de naam gewijzigd van Gas Natural Fenosa in Naturgy. De volledige naam van de houdstermaatschappij is Naturgy Energy Group, S.A.",
@@ -3324,7 +3326,9 @@
  "ACKB.BR": {
   "wikidata": "Q341828",
   "gevonden_op": "LEI",
-  "sector": [],
+  "sector": [
+   "holdingactiviteiten"
+  ],
   "hoofdkantoor": "Antwerpen",
   "opgericht": 1876,
   "website": "https://www.avh.be/",
@@ -3463,11 +3467,11 @@
   "wikidata": "Q590113",
   "gevonden_op": "LEI",
   "sector": [
-   "bakkerij-industrie"
+   "Vervaardiging van beschuit en biscuit en van ander houdbaar banketbakkerswerk"
   ],
-  "hoofdkantoor": "Lembeke",
-  "opgericht": 1934,
-  "website": "http://www.lotusbakeries.com/",
+  "hoofdkantoor": "Kaprijke",
+  "opgericht": 1932,
+  "website": "https://www.lotusbakeries.com/",
   "kort": "Belgische koekjesproducent",
   "beschrijving": "Lotus Bakeries is een Belgisch bedrijf dat in 1932 werd opgericht door Jan Boone senior. Het is een familiebedrijf dat gegroeid is tot een internationale groep die actief is in zowel de categorie van koekjes en gebak als tussendoortjes. Het handelsmerk van Lotus is het speculoosje onder de merknaam Lotus Biscoff. De aandelen zijn genoteerd op Euronext Brussels sinds 1988, met de families Boone en Stevens als meerderheidsaandeelhouders. De hoofdzetel is gelegen te Lembeke in de gemeente Kaprijke.",
   "taal": "nl",
@@ -4232,7 +4236,7 @@
   "opgericht": 1885,
   "website": "https://www.intertek.com/",
   "kort": "bedrijf uit Verenigd Koninkrijk",
-  "beschrijving": "Intertek Group plc is a British multinational assurance, inspection, product testing and certification company headquartered in London, England. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.",
+  "beschrijving": "Intertek Group plc is a British multinational assurance, inspection, product testing, and certification company headquartered in London, England. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.",
   "taal": "en",
   "wikipedia": "https://en.wikipedia.org/wiki/Intertek"
  },
@@ -4414,7 +4418,7 @@
   "opgericht": 1990,
   "website": "https://www.metlengroup.com",
   "kort": "Industrial conglomerate located in Athens, Greece",
-  "beschrijving": "Metlen Energy & Metals is a global industrial and energy company operating two business Sectors: Energy and Metallurgy. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index",
+  "beschrijving": "Metlen Energy & Metals is a global industrial and energy company operating two business Sectors: Energy and Metallurgy. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.",
   "taal": "en",
   "wikipedia": "https://en.wikipedia.org/wiki/Metlen_Energy_%26_Metals"
  },
@@ -4471,7 +4475,7 @@
   "hoofdkantoor": "Londen",
   "opgericht": 1844,
   "website": "https://www.pearson.com/",
-  "kort": "UK publishing company",
+  "kort": "British publishing company",
   "beschrijving": "Pearson is a British multinational education and assessment company headquartered in London. It provides learning materials, assessments, qualifications, virtual learning, English-language learning, higher-education products and enterprise learning and skills services. The company is listed on the London Stock Exchange, is a constituent of the FTSE 100 Index, and has a secondary listing on the New York Stock Exchange through American depositary receipts. In 2025, Pearson reported revenue of £3.6 billion and had an average of about 17,000 employees.",
   "taal": "en",
   "wikipedia": "https://en.wikipedia.org/wiki/Pearson_plc"
@@ -4749,8 +4753,8 @@
   "wikidata": "Q3178400",
   "gevonden_op": "LEI",
   "sector": [
-   "werktuigbouwkunde",
-   "mijnbouw"
+   "mijnbouw",
+   "werktuigbouwkunde"
   ],
   "hoofdkantoor": "Glasgow",
   "opgericht": 1871,
