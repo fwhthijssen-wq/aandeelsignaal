@@ -1,0 +1,17 @@
+# Hulpmiddel (ontwikkeling, handmatig): de gepubliceerde gegevens van enkele fondsen bekijken (uitkomst in het logboek).
+name: Gegevens bekijken (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'beurscodes, gescheiden door spaties'
+        required: true
+permissions:
+  contents: read
+jobs:
+  bekijk:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - run: curl -sf https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json -o aandelen.json
+      - run: node hulp/data_proef.js aandelen.json ${{ github.event.inputs.tickers }}
