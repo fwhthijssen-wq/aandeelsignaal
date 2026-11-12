@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.21 (2026.11.12)
+- **9 grote fondsen uit Taiwan en Zuid-Korea** (via New York, bij Saxo en DEGIRO te koop): TSMC, United Microelectronics, ASE Technology, Chunghwa Telecom, KB Financial, Shinhan, Woori, KEPCO en KT. Officiële cijfers uit het SEC-jaarverslag in Taiwanese dollars of won, omgerekend naar dollars per ADS.
+- De controle van de winst per aandeel struikelde over de dollarbedragen die deze bedrijven ter informatie naast hun eigen munt zetten; dat is opgelost.
+- Kwartaalwinst van een ADR: de app herkent of Yahoo die per gewoon aandeel in de eigen munt of per ADS in dollars geeft.
+
 ## 1.20 (2026.11.12)
 - **Novo Nordisk, Ambev en Sasol** (via New York): jaarverslag in Deense kronen, Braziliaanse real en rand bij de SEC, omgerekend naar dollars met ECB-jaargemiddelden.
 - De controle van de winst per aandeel herkent nu ook bedragen in centen of pence (Rio Tinto, NatWest, Vodafone, Barclays) en controleert splitsingen beter (Toyota): Bevestigd 114.

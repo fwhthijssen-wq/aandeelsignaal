@@ -85,8 +85,19 @@ CATALOGUS = (
     ('NVO', 'Novo Nordisk', 'Denemarken', 'USD', 'New York (NYSE)'),
     ('ABEV', 'Ambev', 'Brazilië', 'USD', 'New York (NYSE)'),
     ('SSL', 'Sasol', 'Zuid-Afrika', 'USD', 'New York (NYSE)'),
+    # Taiwan en Korea: jaarverslag in TWD of KRW (de dollarbedragen in het 20-F zijn alleen een gemaksomrekening).
+    ('TSM', 'TSMC (Taiwan Semiconductor)', 'Taiwan', 'USD', 'New York (NYSE)'),
+    ('UMC', 'United Microelectronics', 'Taiwan', 'USD', 'New York (NYSE)'),
+    ('ASX', 'ASE Technology', 'Taiwan', 'USD', 'New York (NYSE)'),
+    ('CHT', 'Chunghwa Telecom', 'Taiwan', 'USD', 'New York (NYSE)'),
+    ('KB', 'KB Financial Group', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
+    ('SHG', 'Shinhan Financial Group', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
+    ('WF', 'Woori Financial Group', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
+    ('KEP', 'Korea Electric Power (KEPCO)', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
+    ('KT', 'KT Corporation', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
 )
-ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL')      # in de app de groep 'Overige landen (New York)'
+ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL',
+             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
@@ -632,7 +643,9 @@ def vergelijk_tweede_bron(g, ticker, register=None):
 # ADS, de jaarcijfers (20-F) melden de winst per gewoon aandeel. Novartis is 1 : 1 en staat er daarom niet in.
 ADR_AANDELEN = {'SHEL': 2.0,      # Shell plc: 1 ADS = 2 gewone aandelen
                 'AZN': 0.5,       # AstraZeneca: 2 ADS = 1 gewoon aandeel
-                'BHP': 2.0}       # BHP Group: 1 ADS = 2 gewone aandelen
+                'BHP': 2.0,       # BHP Group: 1 ADS = 2 gewone aandelen
+                # Taiwan en Korea (depositobewijzen; gecontroleerd met koers ADS / lokale koers, hulp/adr_verhouding.py)
+                'TSM': 5.0, 'UMC': 5.0, 'ASX': 2.0, 'CHT': 10.0, 'WF': 3.0, 'KEP': 0.5, 'KT': 0.5}
 ADR_PER_AANDEEL = ('comparable_eps', 'reported_eps')
 
 
@@ -668,7 +681,7 @@ def adr_toe(g, ticker):
         c = j.get('eps_correctie')
         if c and _getal(c.get('was')) is not None:
             c['was'] = round(c['was'] * r, 6)
-    g['adr'] = {'aandelen_per_ads': r, 'uitleg': f"De koers is per ADS (Amerikaans aandeelbewijs); één ADS staat voor {('twee' if r == 2 else 'een half') if r in (2, 0.5) else r} gewone aande{'len' if r != 0.5 else 'el'}. "
+    g['adr'] = {'aandelen_per_ads': r, 'uitleg': f"De koers is per ADS (Amerikaans aandeelbewijs); één ADS staat voor {('twee' if r == 2 else 'een half') if r in (2, 0.5) else f'{r:g}'} gewone aande{'len' if r != 0.5 else 'el'}. "
                 'De winst per aandeel is daarom omgerekend naar winst per ADS, zodat koers en winst over hetzelfde gaan.'}
 
 
@@ -1782,8 +1795,12 @@ def ttm_uit_info(info, g, vandaag):
     l = jaren[-1]
     munt, fc = l.get('currency'), info.get('financialCurrency')
     om = l.get('omgerekend') or {}
+    adr = (g.get('adr') or {}).get('aandelen_per_ads') or 1
+    kandidaten = None
     if fc and munt and fc != munt and om.get('van') == fc and om.get('koers'):
-        eps = eps * om['koers']                         # jaarcijfers omgerekend naar de notering: kwartaalwinst ook (koers van het laatste jaar)
+        # Jaarcijfers omgerekend naar de notering (koers van het laatste jaar). Yahoo geeft de kwartaalwinst van een ADR soms
+        # per gewoon aandeel in de eigen munt, soms al per ADS in dollars: de lezing die het dichtst bij de jaarwinst ligt telt.
+        kandidaten = {eps * om['koers'] * adr, eps * om['koers'], eps}
     elif fc and munt and fc != munt:
         return None
     mrq = info.get('mostRecentQuarter')
@@ -1796,6 +1813,12 @@ def ttm_uit_info(info, g, vandaag):
     if not kwartaal or kwartaal <= eind + timedelta(days=45) or (nu - kwartaal).days > 270:
         return None
     jaar_eps = l['comparable_eps']
+    if kandidaten and jaar_eps > 0:
+        import math
+        passend = [e for e in kandidaten if e > 0 and 0.5 <= e / jaar_eps <= 2]
+        if not passend:
+            return None
+        eps = min(passend, key=lambda e: abs(math.log(e / jaar_eps)))
     if jaar_eps > 0 and eps > 0 and 33 <= eps / jaar_eps <= 300:
         eps = eps / 100                                 # pence
     if not (eps > 0 and jaar_eps > 0 and 0.5 <= eps / jaar_eps <= 2):

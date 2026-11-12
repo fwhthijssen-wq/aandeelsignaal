@@ -59,3 +59,20 @@ class Centen(unittest.TestCase):
         self.assertEqual(rij['facts'][EPS_FACT]['schaal_correctie']['was'], 255.3)
         self.assertEqual(goed['facts'][EPS_FACT]['val'], 2.553); self.assertNotIn('schaal_correctie', goed['facts'][EPS_FACT])
         self.assertEqual(fout['facts'][EPS_FACT]['val'], 400.0)
+
+
+import bouw_webdata as bw
+
+
+class AdrKwartaalwinst(unittest.TestCase):
+    def test_tsmc_per_ads_of_per_aandeel(self):
+        # jaar: 44,67 TWD per aandeel x 0,031 x 5 = 6,92 USD per ADS
+        g = {'jaren': [{'end': '2025-12-31', 'currency': 'USD', 'comparable_eps': 6.92,
+                        'omgerekend': {'van': 'TWD', 'koers': 0.031, 'jaar': '2025'}}],
+             'adr': {'aandelen_per_ads': 5.0}}
+        basis = {'financialCurrency': 'TWD', 'mostRecentQuarter': 1790000000}
+        per_aandeel = bw.ttm_uit_info(dict(basis, trailingEps=55.0), g, '2026-11-10')    # TWD per gewoon aandeel
+        per_ads = bw.ttm_uit_info(dict(basis, trailingEps=8.5), g, '2026-11-10')         # al USD per ADS
+        self.assertAlmostEqual(per_aandeel['eps'], 55.0 * 0.031 * 5, places=3)
+        self.assertAlmostEqual(per_ads['eps'], 8.5, places=3)
+        self.assertIsNone(bw.ttm_uit_info(dict(basis, trailingEps=500.0), g, '2026-11-10'))
