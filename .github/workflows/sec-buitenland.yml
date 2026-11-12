@@ -1,0 +1,26 @@
+# Onderzoek (ontwikkeling, alleen handmatig): grote niet-Amerikaanse bedrijven met jaarcijfers bij de SEC (20-F / 40-F).
+# Uitkomst op de aparte tak 'onderzoek' (wordt elke keer overschreven); raakt de app niet.
+name: SEC buitenland onderzoeken (ontwikkeling)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  onderzoek:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python hulp/sec_buitenland.py "${{ vars.SEC_CONTACT_EMAIL }}" onderzoek
+      - name: Op tak onderzoek zetten
+        run: |
+          cd onderzoek
+          git init -q -b onderzoek
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "SEC buitenland $(date -u +%F)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" onderzoek
