@@ -81,8 +81,12 @@ CATALOGUS = (
     ('ICL', 'ICL Group', 'Israël', 'USD', 'New York (NYSE)'),
     ('GFI', 'Gold Fields', 'Zuid-Afrika', 'USD', 'New York (NYSE)'),
     ('SE', 'Sea Limited', 'Singapore', 'USD', 'New York (NYSE)'),
+    # Jaarverslag in de eigen munt (DKK, BRL, ZAR): omgerekend naar dollars met ECB-jaargemiddelden; 1 ADS = 1 aandeel.
+    ('NVO', 'Novo Nordisk', 'Denemarken', 'USD', 'New York (NYSE)'),
+    ('ABEV', 'Ambev', 'Brazilië', 'USD', 'New York (NYSE)'),
+    ('SSL', 'Sasol', 'Zuid-Afrika', 'USD', 'New York (NYSE)'),
 )
-ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE')      # in de app de groep 'Overige landen (New York)'
+ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
