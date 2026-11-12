@@ -579,7 +579,9 @@ def _route_oorspronkelijke_indiening(end, row, observations, confirmed, expected
         originals.append(value)
     if not originals:
         return None
-    verschil = max(abs(v / factor - expected) for v in originals)
+    # De waarnemingen kunnen ook de gewone (niet-verwaterde) winst per aandeel bevatten (Toyota 2020: 720,1 verwaterd en
+    # 729,5 gewoon). Eén oorspronkelijke waarde die na de splitverhouding de EPS van het dossier geeft, is het bewijs.
+    verschil = min(abs(v / factor - expected) for v in originals)
     # EPS is op centen afgerond: toegestaan is een halve cent per oorspronkelijke waarde, gedeeld door de factor,
     # plus een halve cent op de gebruikte waarde.
     marge = CENT_ROUNDING / factor + CENT_ROUNDING + 1e-9
@@ -593,11 +595,34 @@ def _route_oorspronkelijke_indiening(end, row, observations, confirmed, expected
 
 
 # ---------------------------------------------------------------- samenhangende controle
+def corrigeer_centen(safe_history, inputs):
+    """Sommige Britse en Australische bedrijven taggen de winst per aandeel in centen of pence onder de valuta-eenheid
+    (Rio Tinto 2016: 255,3 'USD' per aandeel = 255,3 dollarcent). Klopt de gemelde EPS gedeeld door 100 met nettowinst /
+    gewogen aandelen uit dezelfde indiening (en de EPS zelf niet), dan is het een eenheidsfout: de EPS wordt door 100
+    gedeeld en de correctie blijft zichtbaar (schaal_correctie). Alleen deze ene, controleerbare factor."""
+    inputs = inputs if isinstance(inputs, list) else []
+    for row in safe_history or []:
+        if not isinstance(row, dict) or not isinstance(row.get('facts'), dict):
+            continue
+        fact = row['facts'].get(EPS_FACT)
+        if not isinstance(fact, dict) or _number(fact.get('val')) is None or fact.get('schaal_correctie'):
+            continue
+        if recompute_eps_check(row.get('end'), fact, inputs)['status'] == 'consistent':
+            continue
+        klein = dict(fact, val=round(float(fact['val']) / 100, 6))
+        if recompute_eps_check(row.get('end'), klein, inputs)['status'] == 'consistent':
+            klein['schaal_correctie'] = {'was': fact['val'], 'factor': 0.01,
+                                         'reden': 'winst per aandeel in centen/pence gemeld onder de valuta-eenheid; '
+                                                  'door 100 gedeeld (bevestigd door nettowinst / aandelen van dezelfde indiening)'}
+            row['facts'][EPS_FACT] = klein
+
+
 def verify_eps(result, safe_history, audit_date):
     """Splitbevestiging, voorlopige normalisatie en onafhankelijke onderbouwing per boekjaar."""
     from history_checks import normalized_eps_history, SPLIT_TAGS
     from eps_reconciliation import reconcile_eps
 
+    corrigeer_centen(safe_history, result.get('eps_recompute_inputs'))
     split_source = result.get('split_events')
     checked_events = []
     if isinstance(split_source, list):

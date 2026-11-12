@@ -45,3 +45,17 @@ class Ttm(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Centen(unittest.TestCase):
+    def test_eps_in_centen_wordt_gecorrigeerd_alleen_als_het_klopt(self):
+        from eps_verification import corrigeer_centen, EPS_FACT
+        inputs = [{'end': '2016-12-31', 'accn': 'a1', 'net_income': 4617e6, 'diluted_shares': 1808.6e6, 'currency': 'USD', 'source': 'x'}]
+        rij = {'end': '2016-12-31', 'facts': {EPS_FACT: {'val': 255.3, 'accn': 'a1', 'unit': 'USD/shares'}}}
+        goed = {'end': '2016-12-31', 'facts': {EPS_FACT: {'val': 2.553, 'accn': 'a1', 'unit': 'USD/shares'}}}
+        fout = {'end': '2016-12-31', 'facts': {EPS_FACT: {'val': 400.0, 'accn': 'a1', 'unit': 'USD/shares'}}}
+        corrigeer_centen([rij, goed, fout], inputs)
+        self.assertEqual(rij['facts'][EPS_FACT]['val'], 2.553)
+        self.assertEqual(rij['facts'][EPS_FACT]['schaal_correctie']['was'], 255.3)
+        self.assertEqual(goed['facts'][EPS_FACT]['val'], 2.553); self.assertNotIn('schaal_correctie', goed['facts'][EPS_FACT])
+        self.assertEqual(fout['facts'][EPS_FACT]['val'], 400.0)
