@@ -43,7 +43,8 @@ def kenmerken(data):
             'bevestigd': bool(jr) and bevestigd(g),
             'eps6': eps >= 6,
             'koers': vers,
-            'officieel': bool(jr) and g.get('bron') not in ('Yahoo Finance', None) and not g.get('fout'),
+            # officieel: SEC (geen 'bron'-veld) of ESEF; niet Yahoo Finance
+            'officieel': bool(jr) and g.get('bron') != 'Yahoo Finance' and not g.get('fout'),
         }
     tel = {k: sum(1 for v in per.values() if v[k]) for k in ('jaarcijfers', 'bevestigd', 'eps6', 'koers', 'officieel')}
     tel['fondsen'] = len(per)
