@@ -6,7 +6,7 @@ Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … v
 - **Jaarcijfers over 2025 rechtstreeks uit het jaarverslag**: staat het nieuwste 20-F wel in het SEC-register maar nog niet in de SEC-database (companyfacts), dan leest de app het XBRL-bestand van het verslag zelf. TSMC, UMC, KB, Shinhan, Woori, KEPCO en KT lopen nu tot en met 2025 (alle 10 jaren nagerekend). Geldt voor elk SEC-fonds waar dit speelt.
 - **Splitsingen per valuta beoordeeld**: een gemaksomrekening in dollars naast de eigen munt verstoorde het bewijs voor een splitsing. Daardoor erbij: **Wipro** (India, 10 van 10).
 - **Cemex** (Mexico, via New York): 1 ADS = 10 CPO's = 30 gewone aandelen, 9 jaren nagerekend.
-- **Sector** voor 82 fondsen zonder sector in Wikidata (o.a. Besi, IMCD, Aalberts, Shell-dochters en veel kleinere fondsen): de sectorindeling van Yahoo Finance, in het Nederlands en met bronvermelding.
+- **Sector** voor 82 fondsen zonder sector in Wikidata (o.a. Besi, IMCD, Aalberts, Rio Tinto en veel kleinere fondsen): de sectorindeling van Yahoo Finance, in het Nederlands en met bronvermelding.
 
 ## 1.21.2 (2026.11.12)
 - **Gekocht op een andere beurs** (bijv. CGI in New York in dollars, terwijl de app Toronto volgt): kies gewoon het fonds en vul de valuta van uw aankoop in. De app rekent de koers om met de ECB-koers van vandaag; de waarde in euro is dezelfde. Geen dubbele fondsen meer: de aparte regel "CGI (New York)" uit 1.21.1 is weer weg, een aankoop daaronder staat automatisch bij CGI.
