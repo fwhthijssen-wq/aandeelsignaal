@@ -36,3 +36,25 @@ for t in sys.argv[2:]:
              if f in ('20-F', '20-F/A', '40-F', '10-K', '6-K')]
     print('== indieningen', t, [r for r in rijen if r[1] != '6-K'][:4], 'laatste 6-K', next((r[0] for r in rijen if r[1] == '6-K'), None))
     time.sleep(0.5)
+
+# Welke feiten staan er in companyfacts uit het nieuwste jaarverslag?
+for t in sys.argv[2:]:
+    cik = next(int(v['cik_str']) for v in lijst.values() if v['ticker'] == t)
+    sub = haal(f'https://data.sec.gov/submissions/CIK{cik:010d}.json', email)
+    rec = sub.get('filings', {}).get('recent', {})
+    accn = next((a for a, f in zip(rec.get('accessionNumber', []), rec.get('form', [])) if f in ('20-F', '40-F', '10-K')), None)
+    f = haal(f'https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json', email)
+    per_ns = {}
+    voorbeeld = []
+    for ns, tags in f.get('facts', {}).items():
+        for tag, spec in tags.items():
+            for unit, rijen in spec.get('units', {}).items():
+                for r in rijen:
+                    if r.get('accn') == accn:
+                        per_ns[ns] = per_ns.get(ns, 0) + 1
+                        if len(voorbeeld) < 25 and r.get('end', '').startswith('2025'):
+                            voorbeeld.append((ns, tag, unit, r.get('start'), r.get('end'), r.get('fp'), r.get('form')))
+    print('== nieuwste jaarverslag', t, accn, per_ns)
+    for v in voorbeeld:
+        print('   ', v)
+    time.sleep(0.5)
