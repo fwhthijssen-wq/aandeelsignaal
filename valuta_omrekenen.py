@@ -12,7 +12,8 @@ from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
 BESTAND = HIER / 'ecb_jaargemiddelden.json'
-MUNTEN = ('USD', 'GBP', 'CAD', 'JPY', 'CHF', 'DKK', 'SEK', 'NOK', 'AUD', 'HKD', 'SGD')
+MUNTEN = ('USD', 'GBP', 'CAD', 'JPY', 'CHF', 'DKK', 'SEK', 'NOK', 'AUD', 'HKD', 'SGD', 'KRW', 'INR', 'BRL', 'MXN', 'ZAR', 'ILS')
+YAHOO_MUNTEN = ('TWD', 'PEN', 'COP', 'CLP')      # niet bij de ECB: jaargemiddelde van de dagkoersen bij Yahoo (EURxxx=X)
 PER_AANDEEL = ('comparable_eps', 'reported_eps', 'eps_gewoon', 'dividend_ps')
 BEDRAGEN = ('sales', 'net_income', 'operating_cash_flow', 'capex', 'equity', 'pretax_income', 'depreciation', 'dividends_paid',
             'long_term_debt', 'total_assets', 'current_assets', 'current_liabilities', 'total_liabilities', 'retained_earnings',
@@ -39,18 +40,41 @@ def ophalen(pogingen=3):
                     m, p, w = x.get('CURRENCY'), x.get('TIME_PERIOD') or '', x.get('OBS_VALUE')
                     if m in MUNTEN and w:
                         if freq == 'A':
-                            uit.setdefault(m, {})[p[:4]] = round(1 / float(w), 6)
+                            uit.setdefault(m, {})[p[:4]] = round(1 / float(w), 8)
                         else:
                             som.setdefault(m, []).append(float(w))
                 for m, ws in som.items():
                     jaar = str(date.today().year)
                     if jaar not in uit.get(m, {}) and ws:
-                        uit.setdefault(m, {})[jaar] = round(1 / (sum(ws) / len(ws)), 6)
+                        uit.setdefault(m, {})[jaar] = round(1 / (sum(ws) / len(ws)), 8)
             if all(m in uit for m in ('USD', 'GBP')):
+                uit.update(yahoo_jaren())
                 return uit
         except Exception:
             time.sleep(10 * (i + 1))
     return None
+
+
+def yahoo_jaren():
+    """{munt: {jaar: euro per eenheid}} voor munten die de ECB niet publiceert; leeg als Yahoo niet bereikbaar is."""
+    uit = {}
+    try:
+        import yfinance as yf
+    except ImportError:
+        return uit
+    for m in YAHOO_MUNTEN:
+        try:
+            h = yf.Ticker(f'EUR{m}=X').history(start='2005-01-01', interval='1d', auto_adjust=False)
+            per = {}
+            for i, v in h['Close'].dropna().items():
+                if v > 0:
+                    per.setdefault(str(i.year), []).append(float(v))
+            jaren = {j: round(1 / (sum(w) / len(w)), 8) for j, w in per.items() if len(w) >= 20}
+            if jaren:
+                uit[m] = jaren
+        except Exception:
+            continue
+    return uit
 
 
 def laad():
@@ -119,7 +143,7 @@ def omrekenen(g, naar, koersen=None):
             if _getal(j.get(v)):
                 j[v] = round(j[v] * k, 6 if v in PER_AANDEEL else 0)
         j['currency'] = naar
-        j['omgerekend'] = {'van': van, 'koers': round(k, 6), 'jaar': jaar}
+        j['omgerekend'] = {'van': van, 'koers': round(k, 10), 'jaar': jaar}
     g['omrekening'] = {'van': van, 'naar': naar, 'currencies_was': g.get('currencies'),
                        'uitleg': f'Het bedrijf rapporteert in {van}; de aandelen noteren in {naar}. De jaarcijfers zijn per boekjaar '
                                  f'omgerekend met het ECB-jaargemiddelde. De controle van de cijfers gebeurde in {van}.'}
