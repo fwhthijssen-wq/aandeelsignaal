@@ -1,0 +1,47 @@
+import copy, unittest
+import valuta_omrekenen as V
+
+K = {'USD': {'2023': 0.925, '2024': 0.924, '2025': 0.88}, 'GBP': {'2023': 1.15, '2024': 1.18, '2025': 1.17}}
+
+
+def g_usd():
+    return {'currencies': ['USD'], 'jaren': [
+        {'year': 2024, 'end': '2024-12-31', 'currency': 'USD', 'comparable_eps': 1.0, 'reported_eps': 1.0, 'sales': 1000.0, 'net_income': 100.0, 'eps_narekening': {'aandelen': 100}},
+        {'year': 2025, 'end': '2025-12-31', 'currency': 'USD', 'comparable_eps': 2.0, 'sales': 2000.0, 'net_income': None}]}
+
+
+class Omrekenen(unittest.TestCase):
+    def test_naar_euro_per_jaar_en_terug(self):
+        g = g_usd(); oud = copy.deepcopy(g)
+        V.omrekenen(g, 'EUR', K)
+        self.assertEqual(g['currencies'], ['EUR'])
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 0.924); self.assertEqual(g['jaren'][1]['comparable_eps'], 1.76)
+        self.assertEqual(g['jaren'][0]['sales'], 924); self.assertIsNone(g['jaren'][1]['net_income'])
+        self.assertEqual(g['jaren'][0]['omgerekend'], {'van': 'USD', 'koers': 0.924, 'jaar': '2024'})
+        self.assertIn('ECB-jaargemiddelde', g['omrekening']['uitleg'])
+        V.omrekenen(g, 'EUR', K)                                   # tweede keer: niets
+        self.assertEqual(g['jaren'][1]['comparable_eps'], 1.76)
+        V.terug(g)
+        self.assertEqual(g, oud)
+
+    def test_usd_naar_pond_via_euro(self):
+        g = V.omrekenen(g_usd(), 'GBP', K)
+        self.assertAlmostEqual(g['jaren'][0]['comparable_eps'], round(0.924 / 1.18, 6))
+
+    def test_niets_bij_zelfde_valuta_gemengd_of_zonder_koers(self):
+        g = g_usd(); V.omrekenen(g, 'USD', K); self.assertNotIn('omrekening', g)
+        g = g_usd(); g['jaren'][1]['currency'] = 'EUR'; V.omrekenen(g, 'GBP', K); self.assertNotIn('omrekening', g)
+        g = g_usd(); V.omrekenen(g, 'EUR', {'USD': {'2010': 0.7}}); self.assertNotIn('omrekening', g)
+
+
+class Ttm(unittest.TestCase):
+    def test_kwartaalwinst_mee_omgerekend(self):
+        import bouw_webdata as bw
+        g = V.omrekenen(g_usd(), 'EUR', K)
+        info = {'trailingEps': 2.2, 'financialCurrency': 'USD', 'mostRecentQuarter': 1790000000}   # ±sep 2026
+        t = bw.ttm_uit_info(info, g, '2026-11-10')
+        self.assertIsNotNone(t)
+
+
+if __name__ == '__main__':
+    unittest.main()

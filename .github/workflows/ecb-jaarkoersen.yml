@@ -1,0 +1,23 @@
+# ECB-jaargemiddelden (euro per eenheid) in de repository zetten: reserve voor de nachtelijke update als de ECB niet
+# bereikbaar is, en voor de tests. Handmatig, en elk jaar in januari.
+name: ECB-jaarkoersen bijwerken
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '23 6 3 1 *'
+permissions:
+  contents: write
+jobs:
+  koersen:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python valuta_omrekenen.py
+      - run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add ecb_jaargemiddelden.json
+          git diff --cached --quiet || git commit -qm "ECB-jaargemiddelden bijgewerkt"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && break; sleep 15; done

@@ -1354,7 +1354,7 @@ def extra_namen(payload, max_per_veld=10):
 
 def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payload_ophalen=None, historie_ophalen=None,
          valuta_ophalen=None, pauze=None, esef_ophalen=None, vorige=None, yahoo_ophalen=None, archief=None, analisten_ophalen=None, aangeleverd=None, tweede_bron=None,
-         insiders_ophalen=None, verwachting_ophalen=None, fx_ophalen=None, indexhistorie_ophalen=None):
+         insiders_ophalen=None, verwachting_ophalen=None, fx_ophalen=None, indexhistorie_ophalen=None, jaarkoersen=None):
     from naic_fetch import sec_ticker_for_listing
     if sec_samenvatting is None:
         # Echte run: alle SEC-aanroepen lopen via het jaarverslagarchief (laag 1). Dat bewaart elk jaarverslag één keer,
@@ -1383,6 +1383,11 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         # Alleen in een echte run: ECB-koersen en 10 jaar indexstanden per week (eigen portefeuille in euro, vergelijking met de index).
         fx_ophalen = fx_ophalen or ecb_koersen
         indexhistorie_ophalen = indexhistorie_ophalen or _yahoo_index_historie
+    import valuta_omrekenen
+    if jaarkoersen is None:
+        # ECB-jaargemiddelden voor jaarcijfers in een andere valuta dan de notering: vers in een echte run, anders het
+        # bestand in de repository (tests: alleen het bestand).
+        jaarkoersen = (valuta_omrekenen.ophalen() if fetch_prijzen is None else None) or valuta_omrekenen.laad()
     if verwachting_ophalen is None:
         # Verwachtingen van analisten (bijstellingen, verrassingen, cijferdatum): alleen in een echte run.
         from verwachting import yahoo_verwachting
@@ -1521,6 +1526,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         try:
+            valuta_omrekenen.terug(gegevens)         # alle controles in de valuta van het jaarverslag
             adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
             vul_aangeleverd(gegevens, ticker, aangeleverd)
         except Exception as exc:
@@ -1534,6 +1540,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
         except Exception as exc:          # aanvulling is extra; de run gaat altijd door
             gegevens.setdefault('aangeleverd_fout', f'{type(exc).__name__}: {exc}'[:200])
         adr_toe(gegevens, ticker)                    # daarna pas per ADS, voor koers, K/W en kwartaalwinst
+        try:                                         # en in de valuta van de notering (USD-cijfers bij een notering in GBP/EUR)
+            valuta_omrekenen.omrekenen(gegevens, 'GBP' if meta[3] == 'GBX' else meta[3], jaarkoersen)
+        except Exception as exc:
+            gegevens.setdefault('omrekening_fout', f'{type(exc).__name__}: {exc}'[:200])
         koers, punten, dividenden, splitsingen = None, [], [], []
         pence = meta[3] == 'GBX'
         if pence:
@@ -1750,7 +1760,10 @@ def ttm_uit_info(info, g, vandaag):
         return None
     l = jaren[-1]
     munt, fc = l.get('currency'), info.get('financialCurrency')
-    if fc and munt and fc != munt:
+    om = l.get('omgerekend') or {}
+    if fc and munt and fc != munt and om.get('van') == fc and om.get('koers'):
+        eps = eps * om['koers']                         # jaarcijfers omgerekend naar de notering: kwartaalwinst ook (koers van het laatste jaar)
+    elif fc and munt and fc != munt:
         return None
     mrq = info.get('mostRecentQuarter')
     try:
