@@ -114,7 +114,12 @@ BESTAANDE_INDEX = {'ASML.AS': 'AEX', 'INGA.AS': 'AEX', 'UNA.AS': 'AEX,FTSE', 'PH
                    'RACE.MI': 'MIB', 'ENI.MI': 'MIB', 'STLAM.MI': 'MIB,CAC40', 'SHEL': 'AEX,FTSE', 'AZN': 'FTSE'}
 
 # Beursnotering -> SEC-ticker voor bedrijven met een 20-F in euro en een notering in euro (anders geen omrekening mogelijk).
-SEC_KOPPELING = {'DBK.DE': 'DB', 'BBVA.MC': 'BBVA', 'SAN.MC': 'SAN', 'TEF.MC': 'TEF', 'GRF.MC': 'GRFS'}
+SEC_KOPPELING = {'DBK.DE': 'DB', 'BBVA.MC': 'BBVA', 'SAN.MC': 'SAN', 'TEF.MC': 'TEF', 'GRF.MC': 'GRFS',
+                 # november 2026: jaarverslag (20-F) bij de SEC met meer nagerekende jaren dan het ESEF-dossier (proef op de tak
+                 # 'onderzoek'). De nachtelijke update neemt per fonds het dossier met de meeste nagerekende jaren; nooit gemengd.
+                 'MT.AS': 'MT', 'STMPA.PA': 'STM', 'AGN.AS': 'AEG', 'REN.AS': 'RELX', 'ORA.PA': 'ORANY', 'FME.DE': 'FMS', 'TEN.MI': 'TS',
+                 'HSBA.L': 'HSBC', 'GSK.L': 'GSK', 'LLOY.L': 'LYG', 'WPP.L': 'WPP', 'IHG.L': 'IHG', 'BARC.L': 'BCS', 'NWG.L': 'NWG',
+                 'VOD.L': 'VOD', 'PRU.L': 'PUK', 'RIO.L': 'RIO', 'BATS.L': 'BTI', 'SN.L': 'SNN', 'HLN.L': 'HLN'}
 
 
 # Fondsen die op hun beurs in een andere valuta noteren dan gebruikelijk (fondsencontrole november 2026).
