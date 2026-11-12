@@ -1,0 +1,16 @@
+# Hulpmiddel (ontwikkeling, handmatig): SEC-jaarfeiten per begrip en eenheid (uitkomst in het logboek).
+name: SEC-feiten bekijken (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'SEC-codes, gescheiden door spaties'
+        required: true
+permissions:
+  contents: read
+jobs:
+  bekijk:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - run: python3 hulp/sec_feiten.py "${{ vars.SEC_CONTACT_EMAIL }}" ${{ github.event.inputs.tickers }}
