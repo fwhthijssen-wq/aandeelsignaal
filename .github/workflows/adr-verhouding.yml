@@ -1,0 +1,20 @@
+# Hulpmiddel (ontwikkeling, handmatig): ADR-verhouding per fonds uit de koersen (uitkomst in het logboek).
+name: ADR-verhouding bepalen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      paren:
+        description: 'ADR=THUIS:MUNT, gescheiden door spaties'
+        required: true
+permissions:
+  contents: read
+jobs:
+  bepaal:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - run: python hulp/adr_verhouding.py ${{ github.event.inputs.paren }}
