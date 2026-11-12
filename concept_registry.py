@@ -4,7 +4,7 @@ Alleen semantisch overeenkomstige tags worden samengevoegd. Tags voor
 bredere investeringsdefinities blijven buiten de goedgekeurde capex-reeks.
 """
 
-MONETARY_UNITS = ('USD', 'EUR', 'GBP')
+MONETARY_UNITS = ('USD', 'EUR', 'GBP', 'CAD', 'JPY', 'CHF', 'AUD')   # CAD/JPY/CHF/AUD: Canadese en Japanse fondsen (november 2026)
 ANNUAL_FORMS = frozenset(('10-K', '20-F', '40-F'))
 
 CONCEPT_TAGS = {
