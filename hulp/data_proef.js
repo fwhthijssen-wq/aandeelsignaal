@@ -7,6 +7,13 @@ const fs = require('fs'), path = require('path');
 const { fondsVoorModel } = require(path.join(__dirname, '..', 'modelportefeuille.js'));
 const [pad, ...tickers] = process.argv.slice(2);
 const d = JSON.parse(fs.readFileSync(pad, 'utf8')), vandaag = new Date().toISOString().slice(0, 10);
+// Overzicht: welke fondsen hebben een splitsing na het laatste verslag, of een fout daarin
+for (const a of d.aandelen) {
+  const g = a.gegevens || {};
+  if (g.split_na_verslag || g.split_fout) console.log(`-- splitsing na verslag ${a.ticker}: ${g.split_fout || g.split_na_verslag.uitleg}`);
+}
+const zonderDatum = d.aandelen.filter((a) => (a.gegevens || {}).jaren && a.gegevens.bron !== 'Yahoo Finance' && !(a.gegevens.jaren || []).some((j) => j.ingediend));
+console.log(`-- officieel zonder indieningsdatum: ${zonderDatum.length} ${zonderDatum.slice(0, 40).map((a) => a.ticker).join(' ')}`);
 for (const t of tickers) {
   const a = d.aandelen.find((x) => x.ticker === t);
   if (!a) { console.log(t, 'ONTBREEKT'); continue; }
