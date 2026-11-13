@@ -1,17 +1,10 @@
 {
- "IBN": {
-  "sec": "IBN",
-  "via_sec": {
-   "fout": "HTTPError: HTTP Error 404: Not Found"
-  },
-  "via_esef": null
- },
  "CHT": {
   "sec": "CHT",
   "via_sec": {
    "jaren": 10,
-   "van": 2015,
-   "tot": 2024,
+   "van": 2016,
+   "tot": 2025,
    "nagerekend": 10,
    "status": "independently_verified",
    "niveau": null,
@@ -23,13 +16,47 @@
   },
   "via_esef": null
  },
- "HDB": {
-  "sec": "HDB",
+ "TSM": {
+  "sec": "TSM",
   "via_sec": {
    "jaren": 10,
    "van": 2016,
    "tot": 2025,
-   "nagerekend": 6,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "TWD"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "SAP": {
+  "sec": "SAP",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 10,
+   "status": "independently_verified",
+   "niveau": null,
+   "valuta": [
+    "EUR"
+   ],
+   "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "HDB": {
+  "sec": "HDB",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2017,
+   "tot": 2026,
+   "nagerekend": 3,
    "status": "partially_independently_verified",
    "niveau": null,
    "valuta": [
@@ -37,24 +64,39 @@
    ],
    "open": [
     {
-     "jaar": 2016,
-     "check": "niet_bewezen",
-     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
-    },
-    {
      "jaar": 2017,
      "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 4 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2018,
+     "check": "niet_bewezen",
      "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
     },
     {
-     "jaar": 2024,
+     "jaar": 2019,
      "check": "niet_bewezen",
-     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
     },
     {
-     "jaar": 2025,
+     "jaar": 2020,
      "check": "niet_bewezen",
-     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2021,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2022,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2023,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
     }
    ],
    "fout": null
