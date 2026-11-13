@@ -428,3 +428,6 @@ def afgeleide_splitsingen(payload, asof, bestaande=None):
                                     f'({v["accn"]}) verschoven met factor {g["factor"]} t.o.v. eerdere verslagen; '
                                     f'splitsing tussen {voor.isoformat()} en {na.isoformat()}'})
     return uit
+
+
+Archief.fetch_json.sec_echt = True      # voor sec_instance: dit is de echte SEC

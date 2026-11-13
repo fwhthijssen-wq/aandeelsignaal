@@ -10,6 +10,7 @@ controles daarna (narekening van de winst per aandeel, vergelijking met eerdere 
 oorspronkelijke companyfacts-bestand wordt niet gewijzigd: er komt een aangevulde kopie terug. Elke fout -> geen aanvulling.
 """
 import json
+from datetime import date
 import xml.etree.ElementTree as ET
 from urllib.request import Request, urlopen
 
@@ -141,10 +142,39 @@ def _haal(url, email, opener=urlopen):
         return r.read()
 
 
+def laatste_jaarverslag(payload):
+    """Indieningsdatum van het nieuwste jaarverslag met jaarrekeningcijfers in companyfacts ('' als er geen is)."""
+    laatst = ''
+    for ns in STELSELS:
+        for data in (((payload or {}).get('facts') or {}).get(ns) or {}).values():
+            for rijen in ((data or {}).get('units') or {}).values():
+                for r in rijen or []:
+                    if isinstance(r, dict) and r.get('form') in JAARVORMEN and (r.get('filed') or '') > laatst:
+                        laatst = r['filed']
+    return laatst
+
+
+def nieuwer_in_register(payload, cik, haal, vandaag):
+    """Chunghwa Telecom: het nieuwste 20-F ontbreekt in companyfacts helemaal (ook zonder dei-feiten). Is het laatste
+    verslag daar ouder dan 13 maanden, dan wordt het indieningsregister geraadpleegd: (accn, form, filed, fy) van een
+    nieuwer jaarverslag met XBRL, anders None."""
+    laatst = laatste_jaarverslag(payload)
+    if not laatst or (date.fromisoformat(vandaag) - date.fromisoformat(laatst[:10])).days < 395:
+        return None
+    sub = json.loads(haal(f'https://data.sec.gov/submissions/CIK{int(cik):010d}.json'))
+    rec = (sub.get('filings') or {}).get('recent') or {}
+    beste = None
+    for accn, form, filed, rapport, xbrl in zip(rec.get('accessionNumber', []), rec.get('form', []), rec.get('filingDate', []),
+                                                 rec.get('reportDate', []), rec.get('isXBRL', [])):
+        if form in JAARVORMEN and xbrl and filed > laatst and filed <= vandaag and (beste is None or filed > beste[2]):
+            beste = (accn, form, filed, int(rapport[:4]) if rapport else None)
+    return beste
+
+
 _GEHAALD = {}          # per run: elk XBRL-bestand maar één keer ophalen (snapshot en extra cijfers gebruiken hetzelfde)
 
 
-def aanvullen(payload, cik, email, haal=None):
+def aanvullen(payload, cik, email, haal=None, vandaag=None):
     """(payload, info). Vult het ontbrekende nieuwste jaarverslag aan uit het XBRL-bestand van de indiening.
     info is None als er niets aan te vullen was, anders {'accn', 'bestand', 'feiten'} of {'accn', 'fout'}."""
     if haal is None:
@@ -156,6 +186,11 @@ def aanvullen(payload, cik, email, haal=None):
         mist = ontbrekend_verslag(payload)
     except Exception:
         return payload, None
+    if not mist and cik:
+        try:
+            mist = nieuwer_in_register(payload, cik, haal, vandaag or date.today().isoformat())
+        except Exception:
+            mist = None
     if not mist or not cik:
         return payload, None
     accn, form, filed, fy = mist

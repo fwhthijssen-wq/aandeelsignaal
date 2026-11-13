@@ -1084,8 +1084,9 @@ def sec_payload(sec_ticker, email, fetcher=None):
             return None
         payload = fetcher(FACTS_URL.format(cik=cik), email)
         try:
-            from sec_instance import aanvullen
-            payload, _ = aanvullen(payload, cik, email)
+            if getattr(fetcher, 'sec_echt', False):
+                from sec_instance import aanvullen
+                payload, _ = aanvullen(payload, cik, email)
         except Exception:
             pass
         return payload

@@ -23,11 +23,13 @@ def fetch_json(url, email, opener=urlopen):
         return json.load(resp)
 
 
+fetch_json.sec_echt = True
+
+
 # Na een holdingreorganisatie wijst de SEC-tickerlijst naar de nieuwe holding (met alleen kwartaalcijfers), terwijl de
 # jaarverslagen bij de oorspronkelijke registrant blijven staan. XOM: ExxonMobil Holdings Corp (CIK 2115436) heeft sinds
 # 2026 alleen 10-Q's; de 10-K's tot en met boekjaar 2025 staan bij Exxon Mobil Corp (CIK 34088).
-CIK_VOORGANGER = {'XOM': (34088, 'Exxon Mobil Corp'),
-                  'IBN': (1103838, 'ICICI Bank Ltd')}      # ICICI staat niet in de tickerlijst van de SEC, wel als indiener
+CIK_VOORGANGER = {'XOM': (34088, 'Exxon Mobil Corp')}
 
 
 def cik_for_ticker(ticker, directory):
@@ -245,7 +247,7 @@ def sec_snapshot(ticker, asof, email, fetcher=fetch_json):
                 'Dit kan een niet-Amerikaanse notering zijn.', 'ticker': ticker}
     payload = fetcher(FACTS_URL.format(cik=cik), email)
     aanvulling = None
-    if getattr(fetcher, 'sec_echt', True):     # niet voor ESEF-bestanden in SEC-vorm
+    if getattr(fetcher, 'sec_echt', False):    # alleen bij de echte SEC (niet bij ESEF in SEC-vorm of testbestanden)
         from sec_instance import aanvullen
         payload, aanvulling = aanvullen(payload, cik, email)
     aligned = aligned_facts(payload, asof)

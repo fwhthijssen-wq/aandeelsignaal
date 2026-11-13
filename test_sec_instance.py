@@ -86,3 +86,14 @@ class Instance(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Register(unittest.TestCase):
+    def test_nieuwer_jaarverslag_uit_het_register(self):
+        p = payload(); p['facts'].pop('dei')                       # Chunghwa: niets van het nieuwe verslag in companyfacts
+        sub = {'filings': {'recent': {'accessionNumber': ['A-6K', 'A-25', 'A-24'], 'form': ['6-K', '20-F', '20-F'],
+                                      'filingDate': ['2026-11-10', '2026-04-15', '2025-04-17'],
+                                      'reportDate': ['', '2025-12-31', '2024-12-31'], 'isXBRL': [0, 1, 1]}}}
+        haal = lambda url: json.dumps(sub).encode()
+        self.assertEqual(si.nieuwer_in_register(p, 1132924, haal, '2026-11-13'), ('A-25', '20-F', '2026-04-15', 2025))
+        self.assertIsNone(si.nieuwer_in_register(p, 1132924, haal, '2026-01-13'))      # nog geen 13 maanden: niet kijken
