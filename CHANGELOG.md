@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.24 (2026.11.14)
+- **Meer oudere jaarcijfers uit officiële jaarverslagen**: Franse verslagen over 2020 opgehaald (de brug tussen de oude pdf's en ESEF), de pdf-lezer herkent nu ook Britse tabellen met 'Diluted EPS 10.30c', en Nederlandse AFM-verslagen opnieuw uitgelezen. Nieuw Bevestigd (10 jaren nagerekend): IMI, BP en IMCD. Langere nagerekende reeksen o.a. LVMH (5 → 8), Thales, EssilorLuxottica, Eurofins, Publicis.
+- Geen verandering in werking of scherm.
+
 ## 1.23 (2026.11.13)
 - **Splitsing na het laatste jaarverslag**: staat een splitsing of uitgifte van bonusaandelen al in de koers maar nog niet in een jaarverslag, dan rekent de app de winst per aandeel van alle jaren daarvoor om (zoals het volgende verslag zal doen), met uitleg bij het fonds. Zo kloppen K/W en NAIC-grafiek ook in die tussenperiode. Bij een ADR alleen als ook de lokale notering splitste.
 - **Chunghwa Telecom** loopt nu tot en met 2025: een nieuwer jaarverslag dat in de SEC-database ontbreekt, wordt ook via het indieningsregister gevonden.
