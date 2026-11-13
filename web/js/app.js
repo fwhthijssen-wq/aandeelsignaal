@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.22 (2026.11.13)';
+  var APP_VERSIE = '1.23 (2026.11.13)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {

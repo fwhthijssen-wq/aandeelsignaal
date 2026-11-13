@@ -97,10 +97,9 @@ CATALOGUS = (
     ('KT', 'KT Corporation', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
     ('WIT', 'Wipro', 'India', 'USD', 'New York (NYSE)'),
     ('CX', 'Cemex', 'Mexico', 'USD', 'New York (NYSE)'),
-    ('HDB', 'HDFC Bank', 'India', 'USD', 'New York (NYSE)'),
 )
 ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL',
-             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT', 'WIT', 'CX', 'HDB')      # in de app de groep 'Overige landen (New York)'
+             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT', 'WIT', 'CX')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
@@ -739,8 +738,7 @@ ADR_AANDELEN = {'SHEL': 2.0,      # Shell plc: 1 ADS = 2 gewone aandelen
                 'TSM': 5.0, 'UMC': 5.0, 'ASX': 2.0, 'CHT': 10.0, 'WF': 3.0, 'KEP': 0.5, 'KT': 0.5,
                 # Cemex: 1 ADS = 10 CPO's (koersvergelijking met CEMEXCPO.MX: 9,94) en 1 CPO = 2 A- + 1 B-aandeel; de winst
                 # per aandeel in het 20-F is per gewoon aandeel (nettowinst / ruim 43 miljard aandelen)
-                'CX': 30.0,
-                'HDB': 3.0}       # HDFC Bank: 1 ADS = 3 gewone aandelen (ook na de bonusaandelen van 2025)
+                'CX': 30.0}
 ADR_PER_AANDEEL = ('comparable_eps', 'reported_eps')
 
 

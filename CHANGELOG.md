@@ -2,6 +2,11 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.23 (2026.11.13)
+- **Splitsing na het laatste jaarverslag**: staat een splitsing of uitgifte van bonusaandelen al in de koers maar nog niet in een jaarverslag, dan rekent de app de winst per aandeel van alle jaren daarvoor om (zoals het volgende verslag zal doen), met uitleg bij het fonds. Zo kloppen K/W en NAIC-grafiek ook in die tussenperiode. Bij een ADR alleen als ook de lokale notering splitste.
+- **Chunghwa Telecom** loopt nu tot en met 2025: een nieuwer jaarverslag dat in de SEC-database ontbreekt, wordt ook via het indieningsregister gevonden.
+- HDFC Bank blijft buiten de app: door de fusie met HDFC Ltd. (2023) springt het aantal aandelen, en de splitsing van 2019 en de bonusaandelen van 2025 zijn niet in alle oude jaren verwerkt. ICICI Bank levert geen XBRL-cijfers bij de SEC.
+
 ## 1.22 (2026.11.13)
 - **Jaarcijfers over 2025 rechtstreeks uit het jaarverslag**: staat het nieuwste 20-F wel in het SEC-register maar nog niet in de SEC-database (companyfacts), dan leest de app het XBRL-bestand van het verslag zelf. TSMC, UMC, KB, Shinhan, Woori, KEPCO en KT lopen nu tot en met 2025 (alle 10 jaren nagerekend). Geldt voor elk SEC-fonds waar dit speelt.
 - **Splitsingen per valuta beoordeeld**: een gemaksomrekening in dollars naast de eigen munt verstoorde het bewijs voor een splitsing. Daardoor erbij: **Wipro** (India, 10 van 10).
