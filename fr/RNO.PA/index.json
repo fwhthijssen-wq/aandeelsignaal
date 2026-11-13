@@ -34,5 +34,29 @@
   "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/281/2018/02/FC281228168_20180223.pdf",
   "tekst": "fr-2017.txt",
   "grootte_pdf": 1559526
+ },
+ {
+  "boekjaar": 2018,
+  "registerdatum": "2019-02-21T16:29:45+00:00",
+  "soort": "001007",
+  "titel": "RENAULT 2018 CONSOLIDATED ACCOUNTS",
+  "bedrijf": "RENAULT",
+  "isin": "FR0000131906",
+  "bestand_bron": "281/2019/02/FC281270100_20190221.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/281/2019/02/FC281270100_20190221.pdf",
+  "tekst": "fr-2018.txt",
+  "grootte_pdf": 1271630
+ },
+ {
+  "boekjaar": 2020,
+  "registerdatum": "2021-02-19T13:11:03+00:00",
+  "soort": "003000",
+  "titel": "RENAULT EARNINGS REPORT 2020",
+  "bedrijf": "RENAULT",
+  "isin": "FR0000131906",
+  "bestand_bron": "281/2021/02/FC281374841_20210219.pdf",
+  "download": "https://echanges.dila.gouv.fr/OPENDATA/AMF/281/2021/02/FC281374841_20210219.pdf",
+  "tekst": "fr-2020.txt",
+  "grootte_pdf": 1325121
  }
 ]
