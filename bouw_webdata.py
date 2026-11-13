@@ -172,7 +172,12 @@ def split_na_verslag(g, ticker, splitsingen, lokaal=None):
     laatst = laatste_verslag(g)
     if not laatst:
         return g
-    na = sorted((d, float(r)) for d, r in splitsingen or [] if d > laatst and r and r > 0 and abs(float(r) - 1) > 1e-9)
+    def echte_verhouding(r):
+        # Een splitsing of bonus is een eenvoudige breuk (2, 1,1 = 11 voor 10, 0,1 = 1 voor 10). Yahoo boekt een afsplitsing
+        # (Honeywell 2026: 0,9535) soms ook als 'splitsing'; die verandert de winst per aandeel van vroeger niet.
+        return any(abs(r * q - round(r * q)) < 1e-3 * q and round(r * q) > 0 for q in range(1, 21))
+    na = sorted((d, float(r)) for d, r in splitsingen or []
+                if d > laatst and r and r > 0 and abs(float(r) - 1) > 1e-9 and echte_verhouding(float(r)))
     if not na:
         return g
     apart = []

@@ -108,6 +108,11 @@ class SplitsingNaVerslag(unittest.TestCase):
         bw.split_na_verslag_terug(g)
         self.assertEqual(g, self.g())
 
+    def test_afsplitsing_is_geen_splitsing(self):
+        g = self.g(); bw.split_na_verslag(g, 'HON', [('2026-06-29', 0.9535)]); self.assertEqual(g, self.g())
+        g = self.g(); bw.split_na_verslag(g, 'AI.PA', [('2026-06-08', 1.1)]); self.assertAlmostEqual(g['jaren'][1]['comparable_eps'], 2.4 / 1.1)
+        g = self.g(); bw.split_na_verslag(g, 'TIT.MI', [('2026-06-15', 0.1)]); self.assertAlmostEqual(g['jaren'][1]['comparable_eps'], 24.0)
+
     def test_splitsing_voor_het_verslag_of_zonder_datum_niets(self):
         g = self.g(); bw.split_na_verslag(g, 'XYZ', [('2025-07-01', 2.0)]); self.assertEqual(g, self.g())
         g = self.g(); [j.pop('ingediend') for j in g['jaren']]; bw.split_na_verslag(g, 'XYZ', [('2025-08-26', 2.0)])
