@@ -13,7 +13,7 @@ for t in sys.argv[2:]:
     try:
         _, res = fetch_naic_facts(t, email, fetcher=sec_snapshot)
         hist = res.get('annual_history') or []
-        print('  supported', res.get('supported'), res.get('reason'), 'aanvulling', res.get('aanvulling_jaarverslag'))
+        print('  supported', res.get('company'), res.get('cik'), res.get('supported'), res.get('reason'), 'aanvulling', res.get('aanvulling_jaarverslag'))
         for r in hist:
             print('  rij', r.get('end'), r.get('unit'), sorted((r.get('facts') or {}).keys()))
         per = {}
