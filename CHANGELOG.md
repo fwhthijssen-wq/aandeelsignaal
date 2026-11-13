@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.25 (2026.11.14)
+- **Tegel Alle fondsen** op Start (onder De markt): opent de volledige fondsenlijst met zoeken, sorteren en filteren, net als 'Alle fondsen' onder Marktbeeld.
+
 ## 1.24 (2026.11.14)
 - **Meer oudere jaarcijfers uit officiële jaarverslagen**: Franse verslagen over 2020 opgehaald (de brug tussen de oude pdf's en ESEF), de pdf-lezer herkent nu ook Britse tabellen met 'Diluted EPS 10.30c', en Nederlandse AFM-verslagen opnieuw uitgelezen. Nieuw Bevestigd (10 jaren nagerekend): IMI, BP en IMCD. Langere nagerekende reeksen o.a. LVMH (5 → 8), Thales, EssilorLuxottica, Eurofins, Publicis.
 - Geen verandering in werking of scherm.

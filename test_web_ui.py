@@ -42,9 +42,9 @@ class WebUi(unittest.TestCase):
     def test_start_geen_fouten_en_geen_valse_bevestiging(self):
         pg = self.pagina()
         self.assertIn('overzicht', pg.inner_text('main').lower())
-        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 6)                    # dashboard: alleen tegels
-        self.assertEqual([pg.locator('[data-tegels] .tegel').nth(i).get_attribute('data-tegel') for i in range(6)],
-                         ['portefeuille', 'signalen', 'volglijst', 'kansen', 'marktbeeld', 'zekerheid'])
+        self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 7)                    # dashboard: alleen tegels
+        self.assertEqual([pg.locator('[data-tegels] .tegel').nth(i).get_attribute('data-tegel') for i in range(7)],
+                         ['portefeuille', 'signalen', 'volglijst', 'kansen', 'marktbeeld', 'zekerheid', 'fondsen'])
         self.assertEqual([x.upper() for x in pg.locator('[data-tegels] .tegel-kop').all_inner_texts()], ['MIJN PORTEFEUILLES', 'VOLGEN', 'DE MARKT'])
         self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansen-lijst]').count(), 0)  # geen lange pagina onder de tegels
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
@@ -52,6 +52,11 @@ class WebUi(unittest.TestCase):
         self.assertEqual(pg.locator('nav.menu a').all_inner_texts(), ['Start', 'Markt', 'Volglijst', 'Portefeuille', 'Achtergrond'])
         # Demo-gegevens bevatten geen koersen: geen enkel aandeel mag 'Bevestigd' zijn.
         self.assertEqual(pg.locator('main .chip.ok').count(), 0)
+        alle = pg.inner_text('[data-tegel="fondsen"] b')                                   # tegel Alle fondsen ...
+        pg.click('[data-tegel="fondsen"]'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.evaluate('location.hash'), '#/markt')
+        self.assertEqual(pg.locator('#fondsen [data-fonds]').count(), int(alle))           # ... opent de hele lijst
+        pg.evaluate("location.hash='#/'"); pg.wait_for_timeout(200)
         getal = pg.inner_text('[data-tegel="kansen"] b')
         pg.click('[data-tegel="kansen"]'); pg.wait_for_timeout(200)                        # tegel opent het scherm Kansen ...
         self.assertEqual(pg.evaluate('location.hash'), '#/kansen')

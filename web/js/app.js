@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.24 (2026.11.14)';
+  var APP_VERSIE = '1.25 (2026.11.14)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -742,10 +742,13 @@
     var balk = ['bevestigd', 'jaarverslag', 'tweebronnen', 'indicatief', 'geen'].map(function (k) { return tz[k] ? '<i data-lab="' + k + '" style="flex:' + tz[k] + '"></i>' : ''; }).join('');
     var officieel = (tz.bevestigd || 0) + (tz.jaarverslag || 0);
     var t6 = '<a class="tegel" href="#/kwaliteit" data-tegel="zekerheid"><small>Zekerheid</small><b>' + (tz.bevestigd || 0) + '<span class="munt"> bevestigd</span></b><span>' + officieel + ' van ' + items.length + ' uit officiële jaarverslagen</span><span class="kw-balk klein" aria-hidden="true">' + balk + '</span>' + pijl + '</a>';
+    // 7. Alle fondsen: de volledige lijst (zoeken, sorteren, filteren), zoals 'Alle fondsen' onder Marktbeeld
+    var nIdx = {}; items.forEach(function (a) { Dashboard.indexGroepen(a).forEach(function (g) { nIdx[g] = 1; }); });
+    var t7 = '<a class="tegel breed-mobiel" href="#/markt" data-tegel="fondsen" data-spring-na="fondsen" data-fondsen-alle><small>Alle fondsen</small><b>' + items.length + '</b><span>Zoeken, sorteren en filteren op index, oordeel en zekerheid</span><span class="zacht">' + Object.keys(nIdx).length + ' indexen en beurzen</span>' + pijl + '</a>';
     return '<div data-tegels>' +
       '<h2 class="tegel-kop">Mijn portefeuilles</h2><div class="tegels">' + t1 + t3 + '</div>' +
       '<h2 class="tegel-kop">Volgen</h2><div class="tegels">' + t2 + modelTegelHtml(pijl) + '</div>' +
-      '<h2 class="tegel-kop">De markt</h2><div class="tegels">' + t4 + t5 + t6 + '</div></div>';
+      '<h2 class="tegel-kop">De markt</h2><div class="tegels">' + t4 + t5 + t6 + t7 + '</div></div>';
   }
   function marktbeeldHtml() {
     var per = {}, alles = { kopen: 0, neutraal: 0, vermijden: 0, geen: 0, n: 0 };
@@ -2435,6 +2438,7 @@
   document.addEventListener('click', function (e) {
     var a = e.target && e.target.closest ? e.target.closest('[data-spring-na]') : null;
     if (a) springNa = a.getAttribute('data-spring-na');
+    if (a && a.hasAttribute('data-fondsen-alle')) { fondsKeuze.index = ''; fondsKeuze.zoek = ''; }   // tegel Alle fondsen: de hele lijst
     var pf = e.target && e.target.closest ? e.target.closest('[data-pf-open]') : null;
     if (pf) winkel.kiesPortefeuille(pf.getAttribute('data-pf-open'));
     var vk = e.target && e.target.closest ? e.target.closest('[data-volg-koop]') : null;
