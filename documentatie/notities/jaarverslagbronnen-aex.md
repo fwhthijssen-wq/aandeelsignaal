@@ -62,3 +62,9 @@
 - Sector: 82 fondsen zonder Wikidata-sector krijgen de sector van Yahoo (11 sectoren, vertaald), met `sector_bron`.
 - Nog open: ICICI (niet in de SEC-tickerlijst). Chinese fondsen bewust niet.
 - Diagnose-hulpmiddel: workflow *SEC-feiten bekijken* (`hulp/sec_feiten.py` en `hulp/sec_diagnose.py`): feiten per begrip en eenheid, laatste jaarverslagen, en per stap waar de SEC-route jaren afwijst.
+
+## 13 november 2026 (1.23)
+- Splitsing na het laatste jaarverslag (`bouw_webdata.split_na_verslag`): de indieningsdatum van de EPS gaat per jaar mee (`ingediend`, uit het EPS-feit). Splitsingen van Yahoo met een datum na het nieuwste `ingediend` worden op `comparable_eps` van alle jaren toegepast, vóór de K/W-historie; terug te draaien (`split_na_verslag_terug`, als eerste stap bij hergebruik). Bij ADR's (`ADR_LOKAAL`) alleen als de lokale notering binnen 15 dagen dezelfde verhouding splitste; anders gewijzigde ADS-verhouding (waarschuwing, niet verrekend). Dividend per aandeel komt al gecorrigeerd van Yahoo. EXTRA_VERSIE 7.
+- `sec_instance.nieuwer_in_register`: is het laatste jaarverslag in companyfacts ouder dan 13 maanden, dan wordt het indieningsregister (submissions) geraadpleegd voor een nieuwer verslag met XBRL. Chunghwa: 20-F over 2025 stond helemaal niet in companyfacts → nu 2016–2025, 10 van 10. Aanvullen alleen bij de echte SEC-fetchers (`sec_echt`).
+- HDFC Bank: met het 20-F over FY2026 (via de aanvulling) 3 van 10; aantal aandelen springt door de fusie met HDFC Ltd. (juli 2023), en de oude jaren hebben de bonus van 2025 niet verwerkt (2017 nog 54,57). Niet in de app.
+- ICICI Bank (CIK 1103838): companyfacts 404, geen XBRL-cijfers bij de SEC.
