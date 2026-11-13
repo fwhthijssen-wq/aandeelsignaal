@@ -91,3 +91,31 @@ class SectorUitYahoo(unittest.TestCase):
         self.assertIsNone(rec['bedrijf'])
         bw.sector_aanvullen(rec, {'sector': 'Real Estate'})
         self.assertEqual(rec['bedrijf']['sector'], ['vastgoed'])
+
+
+class SplitsingNaVerslag(unittest.TestCase):
+    def g(self):
+        return {'bron': 'SEC', 'jaren': [{'end': '2024-03-31', 'comparable_eps': 2.0, 'ingediend': '2024-07-20'},
+                                          {'end': '2025-03-31', 'comparable_eps': 2.4, 'ingediend': '2025-07-14'}]}
+
+    def test_splitsing_na_laatste_verslag_wordt_verrekend_en_is_terug_te_draaien(self):
+        g = self.g()
+        bw.split_na_verslag(g, 'XYZ', [('2019-09-19', 2.0), ('2025-08-26', 2.0)])
+        self.assertEqual([j['comparable_eps'] for j in g['jaren']], [1.0, 1.2])
+        self.assertEqual(g['split_na_verslag']['factor'], 2.0); self.assertIn('2025-07-14', g['split_na_verslag']['uitleg'])
+        bw.split_na_verslag(g, 'XYZ', [('2025-08-26', 2.0)])                 # niet dubbel
+        self.assertEqual(g['jaren'][0]['comparable_eps'], 1.0)
+        bw.split_na_verslag_terug(g)
+        self.assertEqual(g, self.g())
+
+    def test_splitsing_voor_het_verslag_of_zonder_datum_niets(self):
+        g = self.g(); bw.split_na_verslag(g, 'XYZ', [('2025-07-01', 2.0)]); self.assertEqual(g, self.g())
+        g = self.g(); [j.pop('ingediend') for j in g['jaren']]; bw.split_na_verslag(g, 'XYZ', [('2025-08-26', 2.0)])
+        self.assertNotIn('split_na_verslag', g)
+
+    def test_adr_alleen_als_de_lokale_notering_ook_splitst(self):
+        g = self.g(); bw.split_na_verslag(g, 'HDB', [('2025-08-26', 2.0)], [('2025-08-26', 2.0)])
+        self.assertEqual(g['jaren'][1]['comparable_eps'], 1.2)
+        g = self.g(); bw.split_na_verslag(g, 'HDB', [('2025-08-26', 2.0)], [])
+        self.assertEqual(g['jaren'][1]['comparable_eps'], 2.4); self.assertIn('ADS-verhouding', g['waarschuwingen'][0])
+        bw.split_na_verslag_terug(g); self.assertEqual(g['waarschuwingen'], [])

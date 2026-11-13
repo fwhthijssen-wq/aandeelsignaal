@@ -79,6 +79,7 @@ def build_dossier(history, ticker, normalized=None, *, source="SEC", sector=None
                      'cash': cash, 'capex': capex, 'equity': equity,
                      'eps': eps if _number(eps) else None,
                      'eps_status': eps_info.get('Status', 'Niet beoordeeld'),
+                     'ingediend': ((h.get('facts') or {}).get('Winst per aandeel (verwaterd)') or {}).get('filed'),
                      'accounting_basis': h.get('accounting_basis')})
     rows.sort(key=lambda r: r['end'])
     if not rows:

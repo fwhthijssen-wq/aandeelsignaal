@@ -363,7 +363,7 @@ def summarize_sec(ticker, email, *, fetcher=None, asof=None, verified_observatio
              'eps_gewoon': eps_tag_per_einde.get(r['end'].isoformat()) in EPS_GEWOON_TAGS,
              'sales': r['sales'], 'net_income': r['profit'], 'reported_eps': r['reported_eps'],
              'comparable_eps': r['eps'], 'operating_cash_flow': r['cash'], 'capex': r['capex'],
-             'equity': r['equity'],
+             'equity': r['equity'], 'ingediend': r.get('ingediend'),
              'eps_check': eps_reconciliation.get(r['end'].isoformat(), {}).get('status'),
              'eps_reden': eps_reconciliation.get(r['end'].isoformat(), {}).get('reden')}
             for r in dossier['rows']],

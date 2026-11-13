@@ -97,9 +97,10 @@ CATALOGUS = (
     ('KT', 'KT Corporation', 'Zuid-Korea', 'USD', 'New York (NYSE)'),
     ('WIT', 'Wipro', 'India', 'USD', 'New York (NYSE)'),
     ('CX', 'Cemex', 'Mexico', 'USD', 'New York (NYSE)'),
+    ('HDB', 'HDFC Bank', 'India', 'USD', 'New York (NYSE)'),
 )
 ADR_GROEP = ('INFY', 'BHP', 'TEVA', 'CHKP', 'ESLT', 'ICL', 'GFI', 'SE', 'NVO', 'ABEV', 'SSL',
-             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT', 'WIT', 'CX')      # in de app de groep 'Overige landen (New York)'
+             'TSM', 'UMC', 'ASX', 'CHT', 'KB', 'SHG', 'WF', 'KEP', 'KT', 'WIT', 'CX', 'HDB')      # in de app de groep 'Overige landen (New York)'
 
 from europa_indexen import catalogus as _europa_catalogus, indices as _europa_indices
 CATALOGUS = CATALOGUS + tuple(_europa_catalogus())
@@ -146,6 +147,76 @@ def sector_aanvullen(rec, info):
     s = YAHOO_SECTOR.get(info.get('sector'))
     if s:
         rec['bedrijf'] = {**b, 'sector': [s], 'sector_bron': 'Yahoo Finance'}
+
+
+# Lokale notering van ADR's (voor het herkennen van een echte splitsing na het laatste jaarverslag; een splitsing die
+# alleen bij de ADS staat is meestal een gewijzigde ADS-verhouding, en die zit al in ADR_AANDELEN).
+ADR_LOKAAL = {'INFY': 'INFY.NS', 'WIT': 'WIPRO.NS', 'HDB': 'HDFCBANK.NS', 'BHP': 'BHP.AX', 'TEVA': 'TEVA.TA', 'GFI': 'GFI.JO',
+              'SSL': 'SOL.JO', 'NVO': 'NOVO-B.CO', 'ABEV': 'ABEV3.SA', 'TSM': '2330.TW', 'UMC': '2303.TW', 'ASX': '3711.TW',
+              'CHT': '2412.TW', 'KB': '105560.KS', 'SHG': '055550.KS', 'WF': '316140.KS', 'KEP': '015760.KS', 'KT': '030200.KS',
+              'CX': 'CEMEXCPO.MX'}
+
+
+def laatste_verslag(g):
+    """Indieningsdatum van het nieuwste jaarverslag waaruit de winst per aandeel komt (None als onbekend)."""
+    data = [j.get('ingediend') for j in (g or {}).get('jaren') or [] if isinstance(j.get('ingediend'), str) and j.get('ingediend')]
+    return max(data)[:10] if data else None
+
+
+def split_na_verslag(g, ticker, splitsingen, lokaal=None):
+    """Een splitsing (of uitgifte van bonusaandelen) ná het laatste jaarverslag staat al in de koers, maar nog niet in de
+    jaarwinst per aandeel: dat doet pas het volgende verslag. Tot dan rekent de app de winst per aandeel van alle jaren om
+    met de splitsingen van Yahoo Finance (zoals het volgende verslag zal doen). Bij een ADR telt een splitsing alleen als
+    die ook bij de lokale notering staat (`lokaal`); anders is het een gewijzigde ADS-verhouding. Terug te draaien."""
+    if not isinstance(g, dict) or not g.get('jaren') or g.get('bron') == 'Yahoo Finance' or g.get('split_na_verslag'):
+        return g
+    laatst = laatste_verslag(g)
+    if not laatst:
+        return g
+    na = sorted((d, float(r)) for d, r in splitsingen or [] if d > laatst and r and r > 0 and abs(float(r) - 1) > 1e-9)
+    if not na:
+        return g
+    apart = []
+    if ticker in ADR_LOKAAL:
+        def bij_lokaal(d, r):
+            for dl, rl in lokaal or []:
+                if rl and abs(float(rl) / r - 1) < 0.02 and abs((date.fromisoformat(dl) - date.fromisoformat(d)).days) <= 15:
+                    return True
+            return False
+        apart = [(d, r) for d, r in na if not bij_lokaal(d, r)]
+        na = [(d, r) for d, r in na if bij_lokaal(d, r)]
+        if apart:
+            g.setdefault('waarschuwingen', []).append(
+                f'Splitsing bij de ADS na het laatste jaarverslag ({", ".join(d for d, _ in apart)}) niet bij de lokale notering: '
+                f'opgevat als gewijzigde ADS-verhouding, niet verrekend.')
+        if not na:
+            return g
+    factor = 1.0
+    for _, r in na:
+        factor *= r
+    for j in g['jaren']:
+        if _getal(j.get('comparable_eps')) is not None:
+            j['comparable_eps'] = round(j['comparable_eps'] / factor, 10)
+            j['split_na_verslag'] = factor
+    tekst = ' en '.join(f'{r:g}-voor-1 op {d}' for d, r in na)
+    g['split_na_verslag'] = {'splitsingen': [[d, r] for d, r in na], 'factor': factor, 'laatste_verslag': laatst,
+                             'uitleg': f'Na het laatste jaarverslag (ingediend {laatst}) was er een splitsing ({tekst}). De winst per '
+                                       f'aandeel van alle jaren is daarvoor omgerekend (gedeeld door {factor:g}), zoals het volgende '
+                                       f'jaarverslag zal doen. Bron van de splitsing: Yahoo Finance.'}
+    return g
+
+
+def split_na_verslag_terug(g):
+    if not isinstance(g, dict):
+        return g
+    g.pop('split_na_verslag', None)
+    for j in g.get('jaren') or []:
+        f = j.pop('split_na_verslag', None)
+        if f and _getal(j.get('comparable_eps')) is not None:
+            j['comparable_eps'] = round(j['comparable_eps'] * f, 10)
+    if g.get('waarschuwingen'):
+        g['waarschuwingen'] = [w for w in g['waarschuwingen'] if not str(w).startswith('Splitsing bij de ADS na het laatste jaarverslag')]
+    return g
 
 
 def heeft_sec(ticker):
@@ -668,7 +739,8 @@ ADR_AANDELEN = {'SHEL': 2.0,      # Shell plc: 1 ADS = 2 gewone aandelen
                 'TSM': 5.0, 'UMC': 5.0, 'ASX': 2.0, 'CHT': 10.0, 'WF': 3.0, 'KEP': 0.5, 'KT': 0.5,
                 # Cemex: 1 ADS = 10 CPO's (koersvergelijking met CEMEXCPO.MX: 9,94) en 1 CPO = 2 A- + 1 B-aandeel; de winst
                 # per aandeel in het 20-F is per gewoon aandeel (nettowinst / ruim 43 miljard aandelen)
-                'CX': 30.0}
+                'CX': 30.0,
+                'HDB': 3.0}       # HDFC Bank: 1 ADS = 3 gewone aandelen (ook na de bonusaandelen van 2025)
 ADR_PER_AANDEEL = ('comparable_eps', 'reported_eps')
 
 
@@ -876,7 +948,7 @@ def vul_investeringen_aan(g, cf, register=None):
 
 
 JAAR_VELDEN = ('year', 'end', 'currency', 'eps_gewoon', 'sales', 'net_income', 'reported_eps', 'comparable_eps',
-               'operating_cash_flow', 'capex', 'capex_bron', 'equity', 'eps_check', 'eps_reden')
+               'operating_cash_flow', 'capex', 'capex_bron', 'equity', 'eps_check', 'eps_reden', 'ingediend')
 
 
 def _getal(x):
@@ -1591,6 +1663,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception as exc:    # het archief is aanvullende informatie; de run gaat altijd door
                 gegevens['archief'] = {'fout': f'{type(exc).__name__}: {exc}'[:200]}
         try:
+            split_na_verslag_terug(gegevens)         # eerst de laatst toegepaste stap terugdraaien
             valuta_omrekenen.terug(gegevens)         # alle controles in de valuta van het jaarverslag
             adr_terug(gegevens)                      # alle controles per gewoon aandeel, zoals de jaarverslagen
             vul_aangeleverd(gegevens, ticker, aangeleverd)
@@ -1629,6 +1702,14 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             except Exception:
                 punten, dividenden, splitsingen = [], [], []
             if gegevens.get('jaren'):
+                try:                                 # vóór de K/W-historie: koers en winst op dezelfde aandelenbasis
+                    lokaal = None
+                    if ticker in ADR_LOKAAL and any(d > (laatste_verslag(gegevens) or '9') for d, _ in splitsingen):
+                        lh = historie_ophalen(ADR_LOKAAL[ticker])
+                        lokaal = list(lh[2]) if len(lh) > 2 else []
+                    split_na_verslag(gegevens, ticker, splitsingen, lokaal)
+                except Exception as exc:
+                    gegevens.setdefault('split_fout', f'{type(exc).__name__}: {exc}'[:200])
                 try:
                     voeg_koershistorie_toe(gegevens, punten, dividenden, meta[3])
                 except Exception:
@@ -1711,9 +1792,10 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
-EXTRA_VERSIE = 6              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
+EXTRA_VERSIE = 7              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
                                # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52; 3 = investeringen uit eigen begrippen, beta.66; 4 = winst per aandeel over ESEF-rapporten, beta.67; 5 = brug over ontbrekend rapport, beta.70)
                                # 6 = nieuwste jaarverslag uit het XBRL-bestand als companyfacts het nog niet heeft (1.22)
+                               # 7 = indieningsdatum per jaar, voor splitsingen na het laatste verslag (1.23)
 HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
 NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
 ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is
