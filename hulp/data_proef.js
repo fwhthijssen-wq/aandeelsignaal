@@ -14,7 +14,16 @@ for (const a of d.aandelen) {
 }
 const zonderDatum = d.aandelen.filter((a) => (a.gegevens || {}).jaren && a.gegevens.bron !== 'Yahoo Finance' && !(a.gegevens.jaren || []).some((j) => j.ingediend));
 console.log(`-- officieel zonder indieningsdatum: ${zonderDatum.length} ${zonderDatum.slice(0, 40).map((a) => a.ticker).join(' ')}`);
-for (const t of tickers) {
+// Overzicht van alle fondsen die niet Bevestigd zijn (status, nagerekende jaren, bron, niveau, eerste open reden)
+if (tickers.includes('ALLE')) {
+  for (const a of d.aandelen) {
+    const g = a.gegevens || {}, jr = (g.jaren || []).filter((j) => j.comparable_eps != null);
+    if (g.eps_status === 'independently_verified' && (g.eps_verified_years || 0) >= 10) continue;
+    const open_ = jr.slice(-10).filter((j) => j.eps_check !== 'onderbouwd').map((j) => `${j.year}:${String(j.eps_reden || j.eps_check || '-').slice(0, 110)}`);
+    console.log(`## ${a.ticker} | ${(a.indices || []).join('/')} | ${g.bron || '-'} | ${g.niveau || '-'} | ${g.eps_status || '-'} | ${g.eps_verified_years || 0} | ${jr.length} | ${jr.length ? jr[0].year + '-' + jr[jr.length - 1].year : '-'} | ${String(g.eps_note || g.eps_verification_note || '').slice(0, 160)} | ${open_.slice(0, 2).join(' ;; ')}`);
+  }
+}
+for (const t of tickers.filter((x) => x !== 'ALLE')) {
   const a = d.aandelen.find((x) => x.ticker === t);
   if (!a) { console.log(t, 'ONTBREEKT'); continue; }
   const g = a.gegevens || {}, jr = (g.jaren || []).filter((j) => j.comparable_eps != null), l = jr[jr.length - 1] || {};
