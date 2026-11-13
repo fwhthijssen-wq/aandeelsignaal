@@ -9017,6 +9017,64 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "Annual financial report (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR099515_20170323.pdf",
+     "ingediend": "2017-03-23",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FCBWR099515_20170323",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 1.74,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 447192000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 257399302.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 1.57,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 402178000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 256592383.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Annual financial report), officieel register info-financiere.gouv.fr, pdf p.114: \"Diluted weighted average number of shares outstanding 257,399,302 256,592,383\" / \"Diluted net income per share €1.74 €1.57\" / \"Attributable to:\""
+      }
+     ]
+    },
+    {
      "document": "Annual financial report (boekjaar 2017)",
      "soort": "pdf",
      "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR108199_20180322.pdf",
@@ -9241,6 +9299,64 @@
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
     {
+     "document": "Document d'enregistrement universel 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/152/8888/01/FC152378653_20210326.pdf",
+     "ingediend": "2021-03-26",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC152378653_20210326",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 0.19,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 85000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 439003665.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2.44,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1077000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 441137525.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.208: \"Nombre moyen pondéré d’actions après dilution 439 003 665 441 137 525\" / \"RÉSULTAT NET PAR ACTION DILUÉ (en euros) 0,19 2,44\" / \"RÉSULTAT NET PART DU GROUPE 85 1 077 - 92,2 %\""
+      }
+     ]
+    },
+    {
      "document": "549300M3VH1A3ER1TB49-2021-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/549300M3VH1A3ER1TB49/2021-12-31/ESEF/FR/0/el-2021-12-31AR/reports/el-2021-12-31AR.xhtml",
@@ -9368,6 +9484,64 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "Annual financial and audit reports / Annual financial report (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/BWR/8888/01/FCBWR132065_20210301.pdf",
+     "ingediend": "2021-03-01",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FCBWR132065_20210301",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2.75,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 539400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 195900000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1.05,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 195200000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 186500000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Annual financial and audit reports / Annual financial report), officieel register info-financiere.gouv.fr, pdf p.16: \"Weighted average shares outstanding (diluted) - in millions 195.9 186.5\" / \"Earnings per share (diluted) in EUR\" / \"Equity holders of the Company and hybrid capital investors 539.4 195.2\""
+      }
+     ]
+    },
     {
      "document": "529900JEHFM47DYY3S57-2021-12-31-ESEF-LU-0.xhtml",
      "soort": "esef-tekst",
@@ -9829,6 +10003,64 @@
      ]
     },
     {
+     "document": "Document d'Enregistrement Universel (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/156/8888/01/FC156378517_20210325.pdf",
+     "ingediend": "2021-03-25",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC156378517_20210325",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 9.32,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 4702000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 504210133.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 14.23,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 7171000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 503839542.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'Enregistrement Universel), officieel register info-financiere.gouv.fr, pdf p.259: \"Nombre moyen d’actions pris en compte pour le calcul après effets dilutifs 504 210 133 503 839 542 503 918 140\" / \"Résultat par action après dilution (en euros) 9,32 14,23 12,61\" / \"Résultat net, part du Groupe 4 702 7 171 6 354\""
+      }
+     ]
+    },
+    {
      "document": "IOG4E947OATN0KJYSD45-2023-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/IOG4E947OATN0KJYSD45/2023-12-31/ESEF/FR/0/IOG4E947OATN0KJYSD45-2023-12-31AR/reports/IOG4E947OATN0KJYSD45-2023-12-31AR.xhtml",
@@ -10209,6 +10441,64 @@
      ]
     },
     {
+     "document": "Document d'enregistrement universel 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/118/8888/01/FC118379846_20210409.pdf",
+     "ingediend": "2021-04-09",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC118379846_20210409",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2.38,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 576000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 241926553.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 3.55,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 841000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 236608597.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.202: \"Nombre d’actions dilué 241 926 553 236 608 597\" / \"Bénéfice net par action – dilué 2,38 3,55\" / \" Résultat net attribuable aux propriétaires de la société mère du Groupe 576 841\""
+      }
+     ]
+    },
+    {
      "document": "2138004KW8BV57III342-2021-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/2138004KW8BV57III342/2021-12-31/ESEF/FR/0/publicis-2021-12-31-fr/reports/publicis-2021-12-31-fr.xhtml",
@@ -10306,6 +10596,64 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "RENAULT EARNINGS REPORT 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/281/2021/02/FC281374841_20210219.pdf",
+     "ingediend": "2021-02-19",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC281374841_20210219",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -29.51,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": -8008000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 271349000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -0.52,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": -141000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 271639000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (RENAULT EARNINGS REPORT 2020), officieel register info-financiere.gouv.fr, pdf p.17: \"Number of shares outstanding (in thousands)\" / \"Diluted earnings per share (¹) in € (29,51) (0,52)\" / \"Net income, Group share € million -8,008 - 141 - 7,867\""
+      }
+     ]
+    },
     {
      "document": "969500F7JLTX36OUI695-2022-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
@@ -10479,6 +10827,48 @@
        "waarde": 416413368.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2015 (Safran : document de référence 2015 intégrant le rapport financier annuel), officieel register info-financiere.gouv.fr, pdf p.104: \"Nombre moyen pondéré de titres après dilution (F)=(D'+E) 416413368 417569031\" / \"Résultat par action dilué : bénéfice / (perte) (H)=(A*1million)/(F) (0.30) (1.02)\" / \"RÉSULTAT NET PART DU GROUPE (126) (424)\""
+      }
+     ]
+    },
+    {
+     "document": "2020 Consolidated Balance Sheet and Income Statement (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2021/02/FCECO057913_20210225.pdf",
+     "ingediend": "2021-02-25",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "969500UIC89GT3UL7L24-2020-12-31-ESEF-FR-1",
+     "feiten": [
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 352000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (2020 Consolidated Balance Sheet and Income Statement), officieel register info-financiere.gouv.fr, pdf p.59: \"Weighted average number of shares after dilution (f)=(d’+e) 434,976,733 440,460,495\" / \"Diluted earnings per share (h)=(a*1million)/(f) 5.63 0.80\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 440460495.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (2020 Consolidated Balance Sheet and Income Statement), officieel register info-financiere.gouv.fr, pdf p.59: \"Weighted average number of shares after dilution (f)=(d’+e) 434,976,733 440,460,495\" / \"Diluted earnings per share (h)=(a*1million)/(f) 5.63 0.80\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2447000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (2020 Consolidated Balance Sheet and Income Statement), officieel register info-financiere.gouv.fr, pdf p.59: \"Weighted average number of shares after dilution (f)=(d’+e) 434,976,733 440,460,495\" / \"Diluted earnings per share (h)=(a*1million)/(f) 5.63 0.80\" / \"Attributable to:\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 434976733.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (2020 Consolidated Balance Sheet and Income Statement), officieel register info-financiere.gouv.fr, pdf p.59: \"Weighted average number of shares after dilution (f)=(d’+e) 434,976,733 440,460,495\" / \"Diluted earnings per share (h)=(a*1million)/(f) 5.63 0.80\" / \"Attributable to:\""
       }
      ]
     },
@@ -10793,6 +11183,48 @@
      ]
     },
     {
+     "document": "Consolidated Financial Statements 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2021/02/FCECO057792_20210211.pdf",
+     "ingediend": "2021-02-11",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "969500A1YF1XUYYXS284-2020-12-31-ESEF-FR-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2126000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Consolidated Financial Statements 2020), officieel register info-financiere.gouv.fr, pdf p.32: \"AVERAGE WEIGHTED NUMBER OF SHARES 553,767 557,586 551,067 557,516\" / \"EARNINGS PER SHARE 3.84 3.81 4.38 4.33\" / \"attributable to owners of the parent 2,126 2,413\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 557586000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Consolidated Financial Statements 2020), officieel register info-financiere.gouv.fr, pdf p.32: \"AVERAGE WEIGHTED NUMBER OF SHARES 553,767 557,586 551,067 557,516\" / \"EARNINGS PER SHARE 3.84 3.81 4.38 4.33\" / \"attributable to owners of the parent 2,126 2,413\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2413000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Consolidated Financial Statements 2020), officieel register info-financiere.gouv.fr, pdf p.32: \"AVERAGE WEIGHTED NUMBER OF SHARES 553,767 557,586 551,067 557,516\" / \"EARNINGS PER SHARE 3.84 3.81 4.38 4.33\" / \"attributable to owners of the parent 2,126 2,413\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 557516000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Consolidated Financial Statements 2020), officieel register info-financiere.gouv.fr, pdf p.32: \"AVERAGE WEIGHTED NUMBER OF SHARES 553,767 557,586 551,067 557,516\" / \"EARNINGS PER SHARE 3.84 3.81 4.38 4.33\" / \"attributable to owners of the parent 2,126 2,413\""
+      }
+     ]
+    },
+    {
      "document": "969500A1YF1XUYYXS284-2023-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/969500A1YF1XUYYXS284/2023-12-31/ESEF/FR/0/969500A1YF1XUYYXS284-2023-12-31-fr/reports/969500A1YF1XUYYXS284-2023-12-31-fr.xhtml",
@@ -11053,6 +11485,64 @@
        "waarde": 207321000.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2015 (Thales - Document de Référence 2015), officieel register info-financiere.gouv.fr, pdf p.63: \"Nombre moyen d’actions en circulation dilué (c) 210936 207321\" / \"Résultat net par action dilué (en euros) (a)/(c) 3.63 3.44\" / \"RÉSULTAT NET DE LA PÉRIODE 765.1 47.6 812.7 714.2 47.5 761.7\""
+      }
+     ]
+    },
+    {
+     "document": "THALES - Document d'Enregistrement Universel au 31 décembre 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/125/8888/01/FC125379856_20210409.pdf",
+     "ingediend": "2021-04-09",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC125379856_20210409",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2.27,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 483400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 212888000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 5.26,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1121900000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 213090000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (THALES - Document d'Enregistrement Universel au 31 décembre 2020), officieel register info-financiere.gouv.fr, pdf p.239: \"Nombre moyen d’actions en circulation dilué (C) 212 888 213 090\" / \"Résultat net par action dilué (en euros) (A)/(C) 2,27 5,26\" / \"RÉSULTAT NET DE LA PÉRIODE 483,4 8,5 491,9 1 121,9 24,5 1 146,4\""
       }
      ]
     },
@@ -21273,6 +21763,64 @@
      ]
     },
     {
+     "document": "ConvaTec Group Plc Annual Financial Report 2021-T01 (boekjaar 2021)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000046538/NI-000046538_213800LS272L4FIDOH92-2021-12-31.zip",
+     "ingediend": "2022-03-30",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:NI-000046538_213800LS272L4FIDOH92-2021-12-31",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 0.058,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 117600000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2021-01-01",
+       "eind": "2021-12-31",
+       "waarde": 2026340345.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 0.056,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 112500000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2006590463.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2021 (ConvaTec Group Plc Annual Financial Report 2021-T01), officieel register FCA National Storage Mechanism, pdf p.1: \"Diluted weighted average ordinary shares in issue (number) 2,026,340,345 2,006,590,463\" / \"Diluted earnings per share (cents per share) 5.8¢ per share 5.6¢ per share\" / \"Net profit attributable to the shareholders of the Group ($m) 117.6 112.5\""
+      }
+     ]
+    },
+    {
      "document": "213800LS272L4FIDOH92-2022-12-31-ESEF-GB-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/213800LS272L4FIDOH92/2022-12-31/ESEF/GB/0/213800LS272L4FIDOH92-2022-12-31/reports/213800LS272L4FIDOH92-2022-12-31-T01.html",
@@ -27697,6 +28245,40 @@
      ]
     },
     {
+     "document": "Smiths Group plc Annual Report FY2019 (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/246061343.pdf",
+     "ingediend": "2019-07-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:3727190",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 0.7,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 277000000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-08-01",
+       "eind": "2018-07-31",
+       "waarde": 395723069.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Smiths Group plc Annual Report FY2019), officieel register FCA National Storage Mechanism, pdf p.159: \"Average number of shares in issue during the year 395,936,520 395,723,069\" / \"Statutory earnings per share total – basic 56.8p 70.0p\" / \"Total profit attributable to equity shareholders of the Parent Company 225 56.8 56.5 277 70.0 69.1\""
+      }
+     ]
+    },
+    {
      "document": "Smiths Group plc FY2020 Annual Results  (boekjaar 2019)",
      "soort": "pdf",
      "url": "https://data.fca.org.uk/artefacts/NSM/RNS/3727190.html",
@@ -29821,6 +30403,48 @@
      ]
     },
     {
+     "document": "Etats financiers CASA (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/305/8888/01/FC305376510_20210308.pdf",
+     "ingediend": "2021-03-08",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "969500TJ5KRTCJQWXH05-2020-12-31-ESEF-FR-0",
+     "feiten": [
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2319000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Etats financiers CASA), officieel register info-financiere.gouv.fr, pdf p.194: \"Nombre moyen pondéré d'actions ordinaires en circulation au\" / \"résultat dilué par action\" / \"Résultat net attribuable aux porteurs d'actions ordinaires 2 319 4 257\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2885319047.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Etats financiers CASA), officieel register info-financiere.gouv.fr, pdf p.194: \"Nombre moyen pondéré d'actions ordinaires en circulation au\" / \"résultat dilué par action\" / \"Résultat net attribuable aux porteurs d'actions ordinaires 2 319 4 257\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 4257000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Etats financiers CASA), officieel register info-financiere.gouv.fr, pdf p.194: \"Nombre moyen pondéré d'actions ordinaires en circulation au\" / \"résultat dilué par action\" / \"Résultat net attribuable aux porteurs d'actions ordinaires 2 319 4 257\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2873414500.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Etats financiers CASA), officieel register info-financiere.gouv.fr, pdf p.194: \"Nombre moyen pondéré d'actions ordinaires en circulation au\" / \"résultat dilué par action\" / \"Résultat net attribuable aux porteurs d'actions ordinaires 2 319 4 257\""
+      }
+     ]
+    },
+    {
      "document": "969500TJ5KRTCJQWXH05-2022-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/969500TJ5KRTCJQWXH05/2022-12-31/ESEF/FR/0/969500TJ5KRTCJQWXH05-2022-12-31-fr/reports/969500TJ5KRTCJQWXH05-2022-12-31-fr.xhtml",
@@ -30134,6 +30758,64 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "L'Oréal: News release: \"2018 Annual Results\" (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/MKW/2019/02/FCMKW117254_20190207.pdf",
+     "ingediend": "2019-02-07",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FCMKW117254_20190207",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 6.92,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 3895400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 563098506.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 6.36,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 3581400000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 563528502.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (L'Oréal: News release: \"2018 Annual Results\"), officieel register info-financiere.gouv.fr, pdf p.9: \"Diluted average number of shares 563,528,502 563,098,506\" / \"Diluted EPS after non-controlling interests (€) 6.36 6.92\" / \"Net profit after non-controlling interests 3,581.4 3,895.4 +8.8%\""
+      }
+     ]
+    },
     {
      "document": "L'Oréal: News Release: \"2019 Annual Results\" (boekjaar 2019)",
      "soort": "pdf",
@@ -30895,6 +31577,64 @@
      ]
     },
     {
+     "document": "CAPGEMINI URD 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/183/8888/01/FC183378679_20210326.pdf",
+     "ingediend": "2021-03-26",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC183378679_20210326",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 5.55,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 957000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 172555946.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 5.0,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 856000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 171047762.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (CAPGEMINI URD 2020), officieel register info-financiere.gouv.fr, pdf p.241: \"Nombre moyen pondéré d’actions ordinaires (dilué) 171 047 762 172 555 946\" / \"RÉSULTAT NET DILUÉ PAR ACTION (en euros) 5,00 5,55\" / \"Résultat net 856 957\""
+      }
+     ]
+    },
+    {
      "document": "96950077L0TN7BAROX36-2021-12-31-ESEF-FR-0.xhtml",
      "soort": "esef-tekst",
      "url": "https://filings.xbrl.org/96950077L0TN7BAROX36/2021-12-31/ESEF/FR/0/capg-2021-12-31AR/reports/capg-2021-12-31AR.xhtml",
@@ -31400,6 +32140,238 @@
    "vastgelegd": "2026-10-22",
    "methode": "automatisch uitgelezen; per getal gecontroleerd: winst / aandelen = gemelde winst per aandeel (op de cent), hetzelfde jaar in twee rapporten gelijk",
    "documenten": [
+    {
+     "document": "Annual Report 2016 (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/130037080.pdf",
+     "ingediend": "2016-12-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:130037080",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.48,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 130800000.00000001,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 272600000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 0.468,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 127600000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 272500000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (Annual Report 2016), officieel register FCA National Storage Mechanism, pdf p.93: \"Weighted average number of shares for the purpose of diluted earnings per share B 272.6 272.5\" / \"Statutory diluted EPS C/B 48.0p 46.8p\" / \"Statutory profit for the year attributable to owners of the parent C 130.8 127.6\""
+      }
+     ]
+    },
+    {
+     "document": "Annual Report 2017 (boekjaar 2017)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/166308158.pdf",
+     "ingediend": "2017-12-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:166308158",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.597,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 162100000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 271600000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 0.48,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 130800000.00000001,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 272600000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2017 (Annual Report 2017), officieel register FCA National Storage Mechanism, pdf p.100: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.6 272.6\" / \"Statutory diluted EPS C/B 59.7p 48.0p\" / \"Statutory profit for the year attributable to owners of the parent C 162.1 130.8\""
+      }
+     ]
+    },
+    {
+     "document": "Annual Report 2018 (boekjaar 2018)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/216205092.pdf",
+     "ingediend": "2018-12-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:216205092",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.624,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 169400000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 271300000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 0.597,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 162200000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2017-01-01",
+       "eind": "2017-12-31",
+       "waarde": 271600000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2018 (Annual Report 2018), officieel register FCA National Storage Mechanism, pdf p.96: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.3 271.6\" / \"Statutory diluted EPS C/B 62.4p 59.7p\" / \"Profit for the year 169.4 162.2\""
+      }
+     ]
+    },
+    {
+     "document": "2019 Annual Report (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/data-migration/272205704.pdf",
+     "ingediend": "2019-12-31",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:272205704",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 0.576,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 156100000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 271200000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 0.624,
+       "eenheid": "GBP/shares",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 169400000.0,
+       "eenheid": "GBP",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-01-01",
+       "eind": "2018-12-31",
+       "waarde": 271300000.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (2019 Annual Report), officieel register FCA National Storage Mechanism, pdf p.132: \"Weighted average number of shares for the purpose of diluted earnings per share B 271.2 271.3\" / \"Statutory diluted EPS C/B 57.6p 62.4p\" / \"Profit for the year 156.1 169.4\""
+      }
+     ]
+    },
     {
      "document": "2138002W9Q21PF751R30-2021-12-31-ESEF-GB-0.xhtml",
      "soort": "esef-tekst",
@@ -32209,6 +33181,64 @@
    "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
    "documenten": [
     {
+     "document": "31.12.2016 Extraits des Etats Financiers Consolidés (boekjaar 2016)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/300/2017/02/FC300162953_20170213.pdf",
+     "ingediend": "2017-02-13",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC300162953_20170213",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 4.26,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 3402000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2016-01-01",
+       "eind": "2016-12-31",
+       "waarde": 798787023.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 4.49,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 3559000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2015-01-01",
+       "eind": "2015-12-31",
+       "waarde": 792603779.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2016 (31.12.2016 Extraits des Etats Financiers Consolidés), officieel register info-financiere.gouv.fr, pdf p.116: \"Nombre moyen pondéré d’actions ordinaires pour le calcul du\" / \"Résultat dilué par action ordinaire (en EUR) 4,26 4,49\" / \"Résultat net attribuable aux actionnaires porteurs d'actions\""
+      }
+     ]
+    },
+    {
      "document": "31.12.2017 Extraits des Etats Financiers Consolidés (boekjaar 2017)",
      "soort": "pdf",
      "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/300/2018/02/FC300226945_20180212.pdf",
@@ -32387,6 +33417,64 @@
        "waarde": 2658103271.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2019 (Consolidated financial statements 2019), officieel register info-financiere.gouv.fr, pdf p.107: \"Weighted average number of shares outstanding - diluted 2,687,975,211 2,658,103,271 2,711,936,267\" / \"Earning per share diluted 1.02 0.62 0.59\" / \"Net income attributable to the owners of the parent company - diluted 2,749 1,661 1,609\""
+      }
+     ]
+    },
+    {
+     "document": "Document d'enregistrement universel 2020 (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/177/8888/01/FC177377555_20210317.pdf",
+     "ingediend": "2021-03-17",
+     "ingediend_bron": "datum in het officiële register (info-financiere.gouv.fr)",
+     "kenmerk": "AMF-FR:FC177377555_20210317",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 1.71,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 4577000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-01-01",
+       "eind": "2020-12-31",
+       "waarde": 2683788856.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 1.02,
+       "eenheid": "EUR/shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2747000000.0,
+       "eenheid": "EUR",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-01-01",
+       "eind": "2019-12-31",
+       "waarde": 2687975211.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (Document d'enregistrement universel 2020), officieel register info-financiere.gouv.fr, pdf p.233: \"Nombre moyen pondéré d’actions en circulation et dilutives 2 683 788 856 2 687 975 211 2 658 103 271\" / \"Résultat net par action dilué 1,71 1,02 0,62\" / \"Résultat net part du groupe – dilué 4 577 2 747 1 661\""
       }
      ]
     }
@@ -35341,6 +36429,130 @@
        "waarde": 12515497.0,
        "eenheid": "shares",
        "bewijs": "Jaarverslag 2016 (Jaarlijkse financiële verslaggeving Ctac N.V.), officieel register AFM-register financiële verslaggeving, pdf p.4: \"Aantal uitstaande gewogen gemiddelde gewone aandelen 12.515.497 12.515.497\" / \"Nettoresultaat per aandeel na verwatering (in EUR) 0,21 0,19\" / \"Nettoresultaat 2,6 2,4\""
+      }
+     ]
+    }
+   ]
+  },
+  "AAF.L": {
+   "naam": "AIRTEL AFRICA PLC",
+   "lei": "254900ZNZDQL6OWQH623",
+   "vastgelegd": "2026-10-22",
+   "methode": "automatisch uitgelezen uit officieel gedeponeerde jaarverslagen; per jaar gecontroleerd: winst / verwaterd aantal aandelen = gemelde verwaterde winst per aandeel",
+   "documenten": [
+    {
+     "document": "2020 Annual Report and Accounts (boekjaar 2019)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000004914.pdf",
+     "ingediend": "2020-05-29",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:NI-000004914",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
+       "waarde": 0.1954,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
+       "waarde": 388000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2018-04-01",
+       "eind": "2019-03-31",
+       "waarde": 1986357935.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 0.103,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 370000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 3586678328.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2019 (2020 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.159: \"Weighted average ordinary shares outstanding for diluted EPS1, 2 3,586,678,328 1,986,357,935\" / \"Diluted EPS 10.30c 19.54c\" / \"Owners of the company 370 388\""
+      }
+     ]
+    },
+    {
+     "document": "2021 Annual Report and Accounts (boekjaar 2020)",
+     "soort": "pdf",
+     "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000027279/NI-000027279.pdf",
+     "ingediend": "2021-06-04",
+     "ingediend_bron": "datum in het officiële register (FCA National Storage Mechanism)",
+     "kenmerk": "NSM:NI-000027279",
+     "feiten": [
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 0.103,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 370000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2019-04-01",
+       "eind": "2020-03-31",
+       "waarde": 3586678328.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
+      },
+      {
+       "concept": "ifrs-full:DilutedEarningsLossPerShare",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
+       "waarde": 0.09,
+       "eenheid": "USD/shares",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
+      },
+      {
+       "concept": "ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntityIncludingDilutiveEffects",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
+       "waarde": 339000000.0,
+       "eenheid": "USD",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
+      },
+      {
+       "concept": "ifrs-full:AdjustedWeightedAverageShares",
+       "start": "2020-04-01",
+       "eind": "2021-03-31",
+       "waarde": 3759122452.0,
+       "eenheid": "shares",
+       "bewijs": "Jaarverslag 2020 (2021 Annual Report and Accounts), officieel register FCA National Storage Mechanism, pdf p.180: \"Weighted average ordinary shares outstanding for diluted EPS1,2,3 3,759,122,452 3,586,678,328\" / \"Diluted EPS 9.0c 10.3c\" / \"Owners of the company 339 370\""
       }
      ]
     }

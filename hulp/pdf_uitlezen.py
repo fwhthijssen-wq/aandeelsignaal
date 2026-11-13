@@ -63,6 +63,7 @@ def past(teller, aandelen, eps, teller_eenheid=None, eps_tol=0.0055):
 
 EPS_LABEL = re.compile(r'dilut|verwater|dilu[ée]|verwässert|verwaessert', re.I)
 PER_AANDEEL = re.compile(r'per (ordinary |common )?share|par action|per (gewoon )?aandeel|\(in (€|eur|euros?)\)|je (stamm)?aktie|pro aktie', re.I)
+PER_AANDEEL_RUIM = re.compile(PER_AANDEEL.pattern + r'|\bEPS\b', re.I)     # tweede poging: 'Diluted EPS   10.30c   19.54c'
 AANDELEN = re.compile(r'(number|average|nombre|aantal|weighted|gewogen|anzahl|durchschnitt|gewichtet).{0,80}(shares|actions|aandelen|aktien)|(shares|actions|aandelen|aktien).{0,40}(dilut|dilu|verwater|verwässert)', re.I)
 WINST = re.compile(r'^\s*earnings\s{2,}|^\s*profit for the (year|period)\b|attributable|part du groupe|group share|toe te rekenen|toekomend|net (income|profit|result)|résultat net|'
                    r'profit (for the (year|period) )?attributable|earnings attributable|nettoresultaat|nettowinst|anteilseigner|aktionäre|konzernergebnis|jahresüberschuss', re.I)
@@ -113,8 +114,19 @@ def regels_met(tekst):
         yield pagina, r.replace('\f', '')
 
 
-def uitlezen(tekst, jaar, komma=None, hint=None):
-    """[(jaar, eps, teller, aandelen, pagina, bewijs)] voor jaar en jaar-1, of (None, reden)."""
+def uitlezen(tekst, jaar, komma=None, hint=None, ruim=False):
+    """[(jaar, eps, teller, aandelen, pagina, bewijs)] voor jaar en jaar-1, of (None, reden). Lukt het niet, dan een tweede
+    poging waarin ook 'EPS' als label voor winst per aandeel telt (Britse verslagen); de eerste poging blijft voorgaan."""
+    if not ruim:
+        eerste = _uitlezen(tekst, jaar, komma, hint, PER_AANDEEL)
+        if eerste[0]:
+            return eerste
+        tweede = _uitlezen(tekst, jaar, komma, hint, PER_AANDEEL_RUIM)
+        return tweede if tweede[0] else eerste
+    return _uitlezen(tekst, jaar, komma, hint, PER_AANDEEL_RUIM)
+
+
+def _uitlezen(tekst, jaar, komma, hint, PER_AANDEEL):
     if komma is None:
         komma = len(re.findall(r'\d,\d{2}\b', tekst)) > len(re.findall(r'\d\.\d{2}\b', tekst)) * 1.5
     if len(re.findall(r'\n\s*[\d,.()]+p?\s*\n', tekst)) > 200:   # veel losse getalregels: tabel met één cel per regel
@@ -147,8 +159,9 @@ def uitlezen(tekst, jaar, komma=None, hint=None):
         if (EPS_LABEL.search(ctx) or kolom4) and PER_AANDEEL.search(ctx) and all(abs(x) < 1000 for x in (a, b)) and \
                 not AANDELEN.search(r) and not AANGEPAST.search(r):
             breed = ' '.join(x for _, x in regels[max(0, i - 3):i + 1])
-            eps_r.append((p, i, (a, b), bool(re.search(r'pence|cents|\(p\)|\d\s?p\b|\bp\b|\(c\)|\bcent', breed, re.I))))
-        if AANDELEN.search(ctx) and all(x >= 1000 or (x > 1 and not float(x).is_integer()) for x in (a, b)):
+            eps_r.append((p, i, (a, b), bool(re.search(r'pence|cents|\(p\)|\d\s?p\b|\bp\b|\(c\)|\bcent|\d\.\d+c\b', breed, re.I))))
+        jaartallen = all(float(x).is_integer() and 1990 <= x <= 2035 for x in (a, b))     # een jaartallenkop is geen aantal aandelen
+        if AANDELEN.search(ctx) and not jaartallen and all(x >= 1000 or (x > 1 and not float(x).is_integer()) for x in (a, b)):
             aand_r.append((p, i, (a, b), kolom4 or bool(re.search(r'dilut|dilu|verwater|including|inclusief|y compris', ctx, re.I))))
         onder_kop = bool(EIGENAREN.search(r)) and bool(re.search(r'toe te rekenen|toekomend|attributable', ' '.join(x for _, x in regels[max(0, i - 3):i]), re.I))
         if (WINST.search(r) or onder_kop) and not PER_AANDEEL.search(r) and not AANGEPAST.search(r):
