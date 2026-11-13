@@ -68,3 +68,12 @@
 - `sec_instance.nieuwer_in_register`: is het laatste jaarverslag in companyfacts ouder dan 13 maanden, dan wordt het indieningsregister (submissions) geraadpleegd voor een nieuwer verslag met XBRL. Chunghwa: 20-F over 2025 stond helemaal niet in companyfacts → nu 2016–2025, 10 van 10. Aanvullen alleen bij de echte SEC-fetchers (`sec_echt`).
 - HDFC Bank: met het 20-F over FY2026 (via de aanvulling) 3 van 10; aantal aandelen springt door de fusie met HDFC Ltd. (juli 2023), en de oude jaren hebben de bonus van 2025 niet verwerkt (2017 nog 54,57). Niet in de app.
 - ICICI Bank (CIK 1103838): companyfacts 404, geen XBRL-cijfers bij de SEC.
+
+## 14 november 2026 (1.24): overzicht en tranche oudere verslagen
+- Stand 13 nov: 309 van 432 fondsen niet Bevestigd. Oorzaken: ESEF zonder bewijs over splitsingen (vaak: aantal aandelen niet getagd) ~139; ESEF nagerekend maar korter dan 10 jaar (ESEF pas vanaf boekjaar 2020/2021) ~89; alleen Yahoo 32; SEC gedeeltelijk of < 10 jaar ~38. De grootste hefboom blijft: jaarverslagen van vóór ESEF (2016–2020) per land.
+- ESEF-bundel ververst voor 50 fondsen die op 2024 bleven staan: filings.xbrl.org heeft hun verslag over 2025 (nog) niet. Geen verandering; andere bron (nationale registers, ESEF-zip) zou nodig zijn.
+- Frankrijk: `fr_jaarverslagen.py` 2016–2020 opnieuw; verslagen ingediend in 2019 geven 404 bij de DILA (boekjaar 2018 ontbreekt), maar het verslag over 2019 bevat 2018 als vergelijkend cijfer. Nieuw: verslagen over 2020 (brug naar ESEF).
+- `hulp/tekst_uitlezen.py`: driver voor fr/ en uk/ (zoals afm_uitlezen). `pdf_uitlezen`: tweede poging met 'EPS' als label en cents-suffix ('10.30c'); jaartallen zijn geen aantal aandelen. Regressie fr/uk/afm: niets verloren of veranderd.
+- Register: Franse 2020-verslagen, IMI 2015–2019, Airtel Africa, Convatec, AFM opnieuw (o.a. IMCD 2015–2019). `eu_narekenen` aangevuld (alleen toevoegingen). Uitgesloten: BP (ADS-equivalent, NI in duizenden), Pharming (status zou dalen), Air Liquide 2020-verslag (keten korter).
+- Effect (lokaal gemeten): Bevestigd +3 (IMI, BP, IMCD); LVMH 5 → 8, Thales 6 → 7, EssilorLuxottica/Eurofins/Publicis 5 → 6.
+- Air Liquide: bonusaandelen 1 per 10 met loyaliteitspremie → werkelijke factor 1,1026 i.p.v. 1,1; de afgeleide splitsing (2017) wordt afgewezen, en voor 2022 en 2024 ontbreekt een overlappend aantal aandelen. Oplossing vergt aantallen aandelen voor de vergelijkende jaren uit de ESEF-tekst.
