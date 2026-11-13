@@ -1711,8 +1711,9 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
     return bestand
 
 
-EXTRA_VERSIE = 5              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
+EXTRA_VERSIE = 6              # verhogen als de rekenregels van de extra kentallen veranderen: dan wordt elk bedrijf
                                # één keer opnieuw opgehaald (2 = afgeleide totale schulden, beta.52; 3 = investeringen uit eigen begrippen, beta.66; 4 = winst per aandeel over ESEF-rapporten, beta.67; 5 = brug over ontbrekend rapport, beta.70)
+                               # 6 = nieuwste jaarverslag uit het XBRL-bestand als companyfacts het nog niet heeft (1.22)
 HERGEBRUIK_DAGEN = 90          # uiterlijk na zoveel dagen toch opnieuw (vangt correcties zoals een 10-K/A op)
 NIEUW_VERSLAG_NA = 365 + 25    # vanaf zoveel dagen na het laatste boekjaareinde kan een nieuw jaarverslag verschijnen
 ZOEK_NIEUW_ELKE = 7            # in die periode wordt elke week gekeken of het nieuwe verslag er is
