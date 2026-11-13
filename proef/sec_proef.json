@@ -1,17 +1,62 @@
 {
- "CX": {
-  "sec": "CX",
+ "IBN": {
+  "sec": "IBN",
   "via_sec": {
-   "jaren": 9,
-   "van": 2017,
-   "tot": 2025,
-   "nagerekend": 9,
+   "fout": "HTTPError: HTTP Error 404: Not Found"
+  },
+  "via_esef": null
+ },
+ "CHT": {
+  "sec": "CHT",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2015,
+   "tot": 2024,
+   "nagerekend": 10,
    "status": "independently_verified",
    "niveau": null,
    "valuta": [
-    "USD"
+    "TWD"
    ],
    "open": [],
+   "fout": null
+  },
+  "via_esef": null
+ },
+ "HDB": {
+  "sec": "HDB",
+  "via_sec": {
+   "jaren": 10,
+   "van": 2016,
+   "tot": 2025,
+   "nagerekend": 6,
+   "status": "partially_independently_verified",
+   "niveau": null,
+   "valuta": [
+    "INR"
+   ],
+   "open": [
+    {
+     "jaar": 2016,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2017,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; omrekening met factor 2 niet bevestigd door een stabiele reeks aandelen (omgerekend aantal aandelen springt tussen 20"
+    },
+    {
+     "jaar": 2024,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    },
+    {
+     "jaar": 2025,
+     "check": "niet_bewezen",
+     "reden": "Geen onafhankelijke herberekende EPS-bron; herberekening: Herberekende EPS wijkt af van de gerapporteerde EPS (mogelijk tweeklassenmethode of aangepaste teller)"
+    }
+   ],
    "fout": null
   },
   "via_esef": null
