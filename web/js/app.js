@@ -1467,7 +1467,7 @@
     return '<details class="kaart-plat ai-mening" data-ai><summary><span><b>AI-tweede mening</b><span class="zacht">Wat een taalmodel van dit NAIC-koopoordeel vindt, ook wat ertegen pleit</span></span></summary>' +
       lijst('Wat ervoor pleit', m.voor) + lijst('Wat ertegen pleit', m.tegen) + lijst('Zelf nog nagaan', m.nagaan) +
       (m.afweging ? '<p><b>Afweging:</b> ' + h(m.afweging) + '</p>' : '') +
-      '<p class="zacht">Gemaakt op ' + h(datumNl(m.datum)) + ' door ' + h(m.model || A.model || 'een taalmodel') + ' (GitHub Models), alleen op basis van de cijfers in deze app, zonder actueel nieuws. Een taalmodel kan zich vergissen. Geen beleggingsadvies.</p></details>';
+      '<p class="zacht">Gemaakt op ' + h(datumNl(m.datum)) + ' door ' + h(m.model || A.model || 'een taalmodel') + (m.dienst || A.bron ? ' (' + h(m.dienst || A.bron) + ')' : '') + ', alleen op basis van de cijfers in deze app, zonder actueel nieuws. Een taalmodel kan zich vergissen. Geen beleggingsadvies.</p></details>';
   }
   function schermAandeel(t, tab) {
     var rec = zoek(t); if (!rec) return '<section><h1>Niet gevonden</h1><p>Dit aandeel zit niet in de lijst.</p><a class="knop" href="#/markt">Naar de markt</a></section>';

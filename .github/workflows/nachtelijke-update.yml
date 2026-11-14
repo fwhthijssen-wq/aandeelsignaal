@@ -9,7 +9,6 @@ on:
     paths: ['web/**', 'VERSION']
 permissions:
   contents: write            # de modelportefeuille wordt bewaard op de tak 'model'
-  models: read               # AI-tweede mening via GitHub Models (gratis binnen een daglimiet)
   pages: write
   id-token: write
 concurrency:
@@ -110,7 +109,7 @@ jobs:
       - name: AI-tweede mening bij NAIC Kopen (alleen 's nachts of met de hand gestart, met goede gegevens; anders alleen tonen)
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          AI_SLEUTEL: ${{ secrets.AI_SLEUTEL }}     # gratis sleutel van Mistral (console.mistral.ai), als geheim in GitHub
         run: |
           if [ "${{ github.event_name }}" != "push" ] && [ "${{ steps.bouw.outcome }}" = "success" ] && [ "${{ steps.bewaker.outcome }}" = "success" ]; then
             node ai_mening.js web/data/aandelen.json ai/staat.json web/data

@@ -1,22 +1,24 @@
 /* Nachtelijke stap: een AI-tweede mening bij elk fonds met NAIC Kopen (na bouw_webdata.py en de kwaliteitsbewaker).
    Gebruik: node ai_mening.js web/data/aandelen.json ai/staat.json web/data [--alleen-schrijven]
    - rekent per fonds het NAIC-oordeel uit, precies zoals de app (web/js/signaal.js);
-   - vraagt voor een fonds met Kopen een korte, kritische tweede mening aan een taalmodel van GitHub Models (gratis
-     binnen een daglimiet; in GitHub Actions met de eigen GITHUB_TOKEN en het recht models: read);
+   - vraagt voor een fonds met Kopen een korte, kritische tweede mening aan een taalmodel. Standaard Mistral (gratis
+     'Experiment'-abonnement, met limieten); de sleutel staat als geheim AI_SLEUTEL in GitHub. Elke dienst met dezelfde
+     vraagvorm (OpenAI-compatibel) kan via AI_URL en AI_MODEL. (GitHub Models is op 30 juli 2026 gestopt.)
    - het model krijgt alleen de gecontroleerde cijfers uit de app, geen nieuws; het moet ook zeggen wat tegen kopen pleit;
    - een mening blijft staan zolang het oordeel, de koerszone en het laatste boekjaar gelijk zijn en ze jonger is dan
      14 dagen; zo blijft het ruim binnen de daglimiet (hoogstens MAX_PER_RUN nieuwe vragen per run);
    - schrijft web/data/ai.js (window.AANDEEL_AI) met de meningen van de fondsen die nu Kopen zijn.
-   Zonder GITHUB_TOKEN, of met --alleen-schrijven, worden alleen de bewaarde meningen opnieuw geschreven. */
+   Zonder AI_SLEUTEL, of met --alleen-schrijven, worden alleen de bewaarde meningen opnieuw geschreven. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const W = path.join(__dirname, 'web', 'js');
 const S = require(path.join(W, 'signaal.js')), G = require(path.join(W, 'gate.js')), N = require(path.join(W, 'naic.js'));
 const V = require(path.join(W, 'vergelijk.js')), F = require(path.join(W, 'fisher.js'));
 
-const MODEL = process.env.AI_MODEL || 'openai/gpt-4.1-mini';
-const URL_ = 'https://models.github.ai/inference/chat/completions';
-const MAX_PER_RUN = 40, GELDIG_DAGEN = 14, PAUZE_MS = 4500;     // daglimiet en ~15 vragen per minuut
+const MODEL = process.env.AI_MODEL || 'mistral-small-latest';
+const URL_ = process.env.AI_URL || 'https://api.mistral.ai/v1/chat/completions';
+const DIENST = process.env.AI_DIENST || 'Mistral';
+const MAX_PER_RUN = 40, GELDIG_DAGEN = 14, PAUZE_MS = 2500;     // ruim binnen de limieten van een gratis abonnement
 
 function r(x, d) { return typeof x === 'number' && isFinite(x) ? Math.round(x * Math.pow(10, d)) / Math.pow(10, d) : null; }
 function dagen(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
@@ -66,10 +68,14 @@ async function vraag(f, token) {
     messages: [{ role: 'system', content: SYSTEEM }, { role: 'user', content: 'Gegevens (JSON):\n' + JSON.stringify(f) }] };
   const res = await fetch(URL_, { method: 'POST', headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(body), signal: AbortSignal.timeout(60000) });
-  if (res.status === 429) { const e = new Error('daglimiet of te snel (429)'); e.limiet = true; throw e; }
-  if (!res.ok) throw new Error('GitHub Models ' + res.status + ': ' + (await res.text()).slice(0, 200));
-  const j = await res.json();
-  return schoon(JSON.parse(j.choices[0].message.content));
+  if (res.status === 429) { const e = new Error('limiet bereikt of te snel (429)'); e.limiet = true; throw e; }
+  const tekst = await res.text();
+  if (!res.ok) { const e = new Error(DIENST + ' ' + res.status + ': ' + tekst.slice(0, 200)); e.limiet = res.status === 401 || res.status === 403; throw e; }
+  let j;
+  try { j = JSON.parse(tekst); } catch (e) { const f = new Error('geen JSON van ' + DIENST + ': ' + tekst.slice(0, 120)); f.limiet = true; throw f; }
+  let inhoud = ((((j.choices || [])[0] || {}).message) || {}).content || '';
+  inhoud = inhoud.replace(/^```(json)?\s*|\s*```$/g, '');
+  return schoon(JSON.parse(inhoud));
 }
 
 /* Alleen de verwachte vorm, korte teksten. */
@@ -88,7 +94,7 @@ function sleutel(rec, b) {
 function schrijf(uitmap, staat, kopen, vandaag) {
   const fondsen = {};
   kopen.forEach((t) => { if (staat.fondsen[t]) fondsen[t] = staat.fondsen[t]; });
-  const data = { gemaakt: vandaag, model: MODEL, bron: 'GitHub Models', fondsen };
+  const data = { gemaakt: vandaag, model: MODEL, bron: DIENST, fondsen };
   fs.writeFileSync(path.join(uitmap, 'ai.js'), 'window.AANDEEL_AI = ' + JSON.stringify(data) + ';\n');
   return Object.keys(fondsen).length;
 }
@@ -105,7 +111,7 @@ async function main() {
     const b = S.beoordeel(rec, { vandaag, gate: G, naic: N });
     if ((b.naic || {}).oordeel === 'kopen') { kopen.push(rec.ticker); beoordeeld[rec.ticker] = { rec, b }; }
   }
-  const token = process.env.GITHUB_TOKEN;
+  const token = process.env.AI_SLEUTEL;
   let nieuw = 0, fout = 0;
   if (token && !alleenSchrijven) {
     const teDoen = kopen.filter((t) => { const o = staat.fondsen[t], s = sleutel(beoordeeld[t].rec, beoordeeld[t].b); return !o || o.sleutel !== s || dagen(o.datum, vandaag) >= GELDIG_DAGEN; })
@@ -114,12 +120,12 @@ async function main() {
       const { rec, b } = beoordeeld[t];
       try {
         const m = await vraag(feiten(rec, b, vandaag, d.aandelen), token);
-        staat.fondsen[t] = Object.assign(m, { datum: vandaag, sleutel: sleutel(rec, b), model: MODEL, oordeel: b.naic.oordeel, koers: rec.koers.slot });
+        staat.fondsen[t] = Object.assign(m, { datum: vandaag, sleutel: sleutel(rec, b), model: MODEL, dienst: DIENST, oordeel: b.naic.oordeel, koers: rec.koers.slot });
         nieuw++;
       } catch (e) {
         fout++;
         console.log(`::warning title=AI-mening::${t}: ${e.message}`);
-        if (e.limiet) break;
+        if (e.limiet) break;                         // limiet, verkeerde sleutel of dienst onbereikbaar: niet doorgaan
       }
       await new Promise((ok) => setTimeout(ok, PAUZE_MS));
     }
@@ -127,7 +133,7 @@ async function main() {
   fs.mkdirSync(path.dirname(staatPad), { recursive: true });
   fs.writeFileSync(staatPad, JSON.stringify(staat));
   const n = schrijf(uitmap, staat, kopen, vandaag);
-  console.log(`::notice title=AI-mening::${kopen.length} fondsen met NAIC Kopen; ${nieuw} nieuwe meningen, ${fout} mislukt; ${n} in de app (model ${MODEL})`);
+  console.log(`::notice title=AI-mening::${kopen.length} fondsen met NAIC Kopen; ${nieuw} nieuwe meningen, ${fout} mislukt; ${n} in de app (${DIENST}, ${MODEL})${token ? '' : '; geen AI_SLEUTEL ingesteld'}`);
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
