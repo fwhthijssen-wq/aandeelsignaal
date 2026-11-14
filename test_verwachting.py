@@ -24,6 +24,11 @@ class Verwachting(unittest.TestCase):
         self.assertIsNone(verwachting({}, {}, [], '2026-10-31'))
         self.assertNotIn('volgende_cijfers', verwachting(trend := {'0y': {'current': 2, '90daysAgo': 1}}, {}, [('2020-01-01', 1, None, None)], '2026-10-31'))
 
+    def test_verwachte_groei(self):
+        v = verwachting({}, {}, [], '2026-10-31', {'winst': {'0y': 0.123, '+1y': 0.08, '+5y': 0.1105}, 'omzet': {'0y': 0.051, '+1y': 'nan', '-5y': 0.2}})
+        self.assertEqual(v['groei'], {'winst': {'dit_jaar': 12.3, 'volgend_jaar': 8.0, 'vijf_jaar': 11.1}, 'omzet': {'dit_jaar': 5.1}})
+        self.assertNotIn('groei', verwachting({'0y': {'current': 2, '90daysAgo': 1}}, {}, [], '2026-10-31', {'winst': {'0y': 55}}) or {})
+
 
 if __name__ == '__main__':
     unittest.main()

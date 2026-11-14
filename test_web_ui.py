@@ -886,7 +886,10 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         pg.fill('#ck-n5', '<b>sterke</b> marge')
         pg.dispatch_event('#ck-n5', 'change')
         self.assertIn('3 van 15 beantwoord (1 ja, 1 nee, 1 weet ik niet)', pg.inner_text('#ck-voortgang'))
-        self.assertNotIn('%', pg.inner_text('#ck-voortgang') + ' '.join(pg.locator('.ck').all_inner_texts()))   # de check zelf geeft geen score; de dekking-meter staat apart
+        zonder_feiten = pg.evaluate("Array.from(document.querySelectorAll('.ck')).map(k => { const c = k.cloneNode(true); c.querySelectorAll('.ck-gegevens').forEach(x => x.remove()); return c.innerText; }).join(' ')")
+        self.assertNotIn('%', pg.inner_text('#ck-voortgang') + zonder_feiten)   # de check zelf geeft geen score; de dekking-meter staat apart
+        self.assertIn('(jaarcijfers)', pg.inner_text('[data-steun="1"]'))      # wel feiten met bron onder een vraag ...
+        self.assertEqual(pg.locator('[data-steun="7"], [data-steun="14"]').count(), 0)   # ... en niets waar geen betrouwbare gegevens zijn
         self.assertEqual(pg.locator('main h3').all_inner_texts()[-3:], ['Concurrentiepositie', 'Management', 'Financieel'])
         pg.click('[data-punt="7"] [data-ant="nee"]')       # nogmaals klikken haalt het antwoord weg
         self.assertIn('2 van 15 beantwoord', pg.inner_text('#ck-voortgang'))

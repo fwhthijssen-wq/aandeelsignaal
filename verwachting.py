@@ -24,7 +24,13 @@ def _pct(nu, toen):
     return round((nu / toen - 1) * 100 * (1 if toen > 0 else -1), 1) + 0.0
 
 
-def verwachting(trend, revisies, cijfers, vandaag):
+def _groei_pct(x):
+    """Yahoo geeft verwachte groei als fractie (0.12 = 12%). Onzin (meer dan 10x) telt niet."""
+    x = _getal(x)
+    return round(x * 100, 1) + 0.0 if x is not None and abs(x) <= 10 else None
+
+
+def verwachting(trend, revisies, cijfers, vandaag, groei=None):
     """trend: {periode: {'current', '30daysAgo', '90daysAgo'}}; revisies: {periode: {'upLast30days', 'downLast30days'}};
     cijfers: [(datum 'YYYY-MM-DD', verwacht, werkelijk, verrassing_pct)] in willekeurige volgorde (werkelijk None = nog niet bekend).
     Periodes: '0y' dit boekjaar, '+1y' volgend boekjaar."""
@@ -42,6 +48,15 @@ def verwachting(trend, revisies, cijfers, vandaag):
             jaren[naam] = x
     if jaren:
         uit['bijstelling'] = jaren
+    # Verwachte groei volgens analisten: winst per aandeel en omzet voor dit en volgend boekjaar, en winst per jaar over 5 jaar
+    g = {}
+    for soort in ('winst', 'omzet'):
+        for p, naam in (('0y', 'dit_jaar'), ('+1y', 'volgend_jaar'), ('+5y', 'vijf_jaar')):
+            v = _groei_pct(((groei or {}).get(soort) or {}).get(p))
+            if v is not None:
+                g.setdefault(soort, {})[naam] = v
+    if g:
+        uit['groei'] = g
     gemeld, komend = [], []
     for d, verw, werk, sp in cijfers or []:
         if not d:
@@ -93,6 +108,22 @@ def yahoo_verwachting(ticker, vandaag=None):
                 cijfers.append((idx.date().isoformat(), rij.get('EPS Estimate'), rij.get('Reported EPS'), rij.get('Surprise(%)')))
     except Exception:
         pass
+    groei = {'winst': {}, 'omzet': {}}
+    try:
+        groei['winst'].update({k: v.get('growth') for k, v in _uit_frame(t.earnings_estimate, ('growth',)).items()})
+    except Exception:
+        pass
+    try:
+        groei['omzet'].update({k: v.get('growth') for k, v in _uit_frame(t.revenue_estimate, ('growth',)).items()})
+    except Exception:
+        pass
+    try:
+        ge = t.growth_estimates
+        kol = next((k for k in ('stockTrend', 'stock') if ge is not None and k in ge.columns), None)
+        if kol and '+5y' in ge.index:
+            groei['winst']['+5y'] = ge.loc['+5y', kol]
+    except Exception:
+        pass
     if not any(d >= vandaag for d, _, w, _ in cijfers if _getal(w) is None):
         try:                                                    # terugval: de agenda
             cal = t.calendar or {}
@@ -100,4 +131,4 @@ def yahoo_verwachting(ticker, vandaag=None):
                 cijfers.append((d.isoformat(), None, None, None))
         except Exception:
             pass
-    return verwachting(trend, revisies, cijfers, vandaag)
+    return verwachting(trend, revisies, cijfers, vandaag, groei)

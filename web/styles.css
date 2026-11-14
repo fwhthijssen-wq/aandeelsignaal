@@ -500,3 +500,7 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .meld-controle dl.feiten { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 8px 0; font-size: .9rem; }
 .meld-controle dt { color: var(--mut); }
 .meld-controle dd { margin: 0; overflow-wrap: anywhere; font-weight: 600; }
+
+/* Kwaliteitscheck: ondersteunende gegevens onder een vraag */
+.ck-gegevens { list-style: none; margin: 6px 0 8px; padding: 8px 10px; border-radius: 8px; background: var(--bg); border: 1px solid var(--line-soft); font-size: 13.5px; line-height: 1.45; }
+.ck-gegevens li + li { margin-top: 3px; }

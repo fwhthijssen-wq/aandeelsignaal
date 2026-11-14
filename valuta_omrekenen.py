@@ -17,7 +17,7 @@ YAHOO_MUNTEN = ('TWD', 'PEN', 'COP', 'CLP')      # niet bij de ECB: jaargemiddel
 PER_AANDEEL = ('comparable_eps', 'reported_eps', 'eps_gewoon', 'dividend_ps')
 BEDRAGEN = ('sales', 'net_income', 'operating_cash_flow', 'capex', 'equity', 'pretax_income', 'depreciation', 'dividends_paid',
             'long_term_debt', 'total_assets', 'current_assets', 'current_liabilities', 'total_liabilities', 'retained_earnings',
-            'cash', 'gross_profit', 'operating_income', 'interest_expense')
+            'cash', 'gross_profit', 'operating_income', 'interest_expense', 'rd_expense', 'selling_expense', 'sga_expense')
 
 
 def _getal(x):

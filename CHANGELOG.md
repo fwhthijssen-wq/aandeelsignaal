@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.27 (2026.11.14)
+- **Kwaliteitscheck (15 punten van Fisher) met ondersteunende gegevens**: onder tien van de vijftien vragen staan feiten met hun bron, als hulp bij uw eigen antwoord. Omzetgroei en verwachte groei (punt 1), onderzoek en ontwikkeling en verkoopkosten als deel van de omzet (3, 4), marges tegenover het midden van de sector (5, 6), herziene oude cijfers en de risicoscore voor de controle (10), rendement op eigen vermogen en stabiliteit van de marge (11), verwachtingen en advies van analisten (12), verloop van het aantal aandelen en de schuld (13) en de risicoscores voor het bestuur (15). Bij de punten 2, 7, 8, 9 en 14 bestaan geen betrouwbare gratis gegevens. De app vult geen antwoord in en geeft geen score.
+- De nachtelijke run haalt daarvoor ook onderzoek en ontwikkeling, verkoopkosten, de sectorindeling en de verwachte groei op (eenmalig alle fondsen opnieuw).
+
 ## 1.26 (2026.11.14)
 - **Start in een logischer volgorde**: eerst Mijn portefeuilles met daaronder de signalen, dan De markt (Kansen, met Marktbeeld en Alle fondsen naast elkaar), en tot slot Volgen en zekerheid (Zekerheid, Volglijst, Modelportefeuille).
 

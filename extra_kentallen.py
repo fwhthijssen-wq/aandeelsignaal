@@ -24,6 +24,11 @@ STROOM.update({
     'gross_profit': ('GrossProfit',),
     'operating_income': ('OperatingIncomeLoss', 'ProfitLossFromOperatingActivities', 'OperatingIncomeLossIncludingEquityMethodInvestments'),
     'interest_expense': ('InterestExpense', 'InterestExpenseNonoperating', 'InterestExpenseDebt', 'FinanceCosts', 'InterestPaidClassifiedAsOperatingActivities'),
+    # Voor de kwaliteitscheck (Fisher, punten 3 en 4): uitgaven aan onderzoek en ontwikkeling en verkoopkosten. Alleen als
+    # het bedrijf ze apart meldt; verkoop- en algemene kosten samen staan apart (sga_expense), nooit als verkoopkosten.
+    'rd_expense': ('ResearchAndDevelopmentExpense', 'ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost'),
+    'selling_expense': ('SellingAndMarketingExpense', 'SellingExpense', 'DistributionCosts', 'MarketingAndAdvertisingExpense'),
+    'sga_expense': ('SellingGeneralAndAdministrativeExpense',),
 })
 AANTALLEN = {
     # Gewogen gemiddeld aantal verwaterde aandelen (eenheid 'shares'), om verwatering en beurswaarde te bepalen.
