@@ -504,3 +504,12 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 /* Kwaliteitscheck: ondersteunende gegevens onder een vraag */
 .ck-gegevens { list-style: none; margin: 6px 0 8px; padding: 8px 10px; border-radius: 8px; background: var(--bg); border: 1px solid var(--line-soft); font-size: 13.5px; line-height: 1.45; }
 .ck-gegevens li + li { margin-top: 3px; }
+
+/* AI-tweede mening op het tabblad Oordeel */
+.ai-mening summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; }
+.ai-mening summary::-webkit-details-marker { display: none; }
+.ai-mening summary > span { display: flex; flex-direction: column; gap: 2px; }
+.ai-mening summary::after { content: '›'; font-size: 1.4rem; color: var(--mut); transition: transform .15s; }
+.ai-mening[open] summary::after { transform: rotate(90deg); }
+.ai-mening h3 { font-size: 1rem; margin: 14px 0 4px; }
+.ai-mening ul { margin: 0; padding-left: 20px; }

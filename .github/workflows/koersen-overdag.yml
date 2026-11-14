@@ -44,6 +44,15 @@ jobs:
         run: |
           git clone -q --depth 1 -b model "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" mt || exit 0
           node modelportefeuille.js web/data/aandelen.json mt/staat.json web/data --terug mt/terug.json
+      - name: AI-meningen van de nacht terughalen en tonen
+        uses: actions/cache/restore@v5
+        with:
+          path: ai
+          key: ai-${{ github.run_id }}
+          restore-keys: ai-
+      - name: AI-meningen tonen (geen nieuwe vragen overdag)
+        continue-on-error: true
+        run: node ai_mening.js web/data/aandelen.json ai/staat.json web/data --alleen-schrijven
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

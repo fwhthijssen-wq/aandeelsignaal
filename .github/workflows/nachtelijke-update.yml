@@ -9,6 +9,7 @@ on:
     paths: ['web/**', 'VERSION']
 permissions:
   contents: write            # de modelportefeuille wordt bewaard op de tak 'model'
+  models: read               # AI-tweede mening via GitHub Models (gratis binnen een daglimiet)
   pages: write
   id-token: write
 concurrency:
@@ -100,6 +101,28 @@ jobs:
             git add staat.json && git commit -qm "Modelportefeuille $(date -u +%F)" || echo "niets nieuw"
             for i in 1 2 3; do git pull -q --rebase origin model && git push -q origin model && break; sleep 15; done
           fi
+      - name: AI-meningen van eerdere runs terughalen
+        uses: actions/cache/restore@v5
+        with:
+          path: ai
+          key: ai-${{ github.run_id }}
+          restore-keys: ai-
+      - name: AI-tweede mening bij NAIC Kopen (alleen 's nachts of met de hand gestart, met goede gegevens; anders alleen tonen)
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" != "push" ] && [ "${{ steps.bouw.outcome }}" = "success" ] && [ "${{ steps.bewaker.outcome }}" = "success" ]; then
+            node ai_mening.js web/data/aandelen.json ai/staat.json web/data
+          else
+            node ai_mening.js web/data/aandelen.json ai/staat.json web/data --alleen-schrijven
+          fi
+      - name: AI-meningen bewaren voor de volgende run
+        if: always() && hashFiles('ai/staat.json') != ''
+        uses: actions/cache/save@v5
+        with:
+          path: ai
+          key: ai-${{ github.run_id }}
       - name: Stand van de meldingen terughalen
         if: github.event_name == 'schedule' && steps.bouw.outcome == 'success' && steps.bewaker.outcome == 'success'
         uses: actions/cache/restore@v5

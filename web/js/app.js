@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.27 (2026.11.14)';
+  var APP_VERSIE = '1.28 (2026.11.15)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -1459,6 +1459,16 @@
   function jaarverslagUitleg(g) {
     return '<div class="melding" data-jaarverslag><b>Cijfers uit het officiële jaarverslag</b><span>De ' + (g.jaren ? g.jaren.length : '') + ' jaren hieronder komen uit de ESEF-jaarverslagen van het bedrijf zelf. De winst per aandeel is niet zelf nagerekend (dat lukt niet altijd, bijvoorbeeld als het aantal aandelen niet machineleesbaar in het verslag staat). Wel geven de opeenvolgende verslagen voor de overlappende jaren dezelfde winst per aandeel, dus de jaren zijn onderling vergelijkbaar. Het label is daarom “Uit jaarverslag” in plaats van “Bevestigd” (dat vraagt 10 nagerekende jaren); de NAIC-gids en het NAIC-oordeel rekenen er gewoon mee (vanaf 4 jaar winst per aandeel).</span></div>';
   }
+  /* AI-tweede mening (nachtelijk gemaakt met GitHub Models, alleen bij NAIC Kopen): dicht, op een tik open. */
+  function aiHtml(rec) {
+    var A = window.AANDEEL_AI, m = A && A.fondsen && A.fondsen[rec.ticker];
+    if (!m) return '';
+    var lijst = function (kop, xs) { return xs && xs.length ? '<h3>' + kop + '</h3><ul>' + xs.map(function (x) { return '<li>' + h(x) + '</li>'; }).join('') + '</ul>' : ''; };
+    return '<details class="kaart-plat ai-mening" data-ai><summary><span><b>AI-tweede mening</b><span class="zacht">Wat een taalmodel van dit NAIC-koopoordeel vindt, ook wat ertegen pleit</span></span></summary>' +
+      lijst('Wat ervoor pleit', m.voor) + lijst('Wat ertegen pleit', m.tegen) + lijst('Zelf nog nagaan', m.nagaan) +
+      (m.afweging ? '<p><b>Afweging:</b> ' + h(m.afweging) + '</p>' : '') +
+      '<p class="zacht">Gemaakt op ' + h(datumNl(m.datum)) + ' door ' + h(m.model || A.model || 'een taalmodel') + ' (GitHub Models), alleen op basis van de cijfers in deze app, zonder actueel nieuws. Een taalmodel kan zich vergissen. Geen beleggingsadvies.</p></details>';
+  }
   function schermAandeel(t, tab) {
     var rec = zoek(t); if (!rec) return '<section><h1>Niet gevonden</h1><p>Dit aandeel zit niet in de lijst.</p><a class="knop" href="#/markt">Naar de markt</a></section>';
     var g = rec.gegevens && !rec.gegevens.fout ? rec.gegevens : null, k = rec.koers;
@@ -1469,7 +1479,7 @@
       '<div><span class="zacht" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem">' + h([rec.ticker, rec.beurs, sectorVan(rec)].filter(Boolean).join(' · ')) + '</span><h1>' + h(rec.naam) + '</h1><div class="kop-chips" data-indices><a class="label-link" href="#/a/' + encodeURIComponent(rec.ticker) + '/cijfers" data-label-link title="Hoe zeker zijn deze cijfers? Naar Cijfers en bronnen">' + chip(r.bevestigd, r.niveau, r.tweeBronnen).replace('</span>', ' ›</span>') + '</a>' + (rec.indices && rec.indices.length ? rec.indices.map(function (i) { return '<span class="chip">' + h(INDEX_NAAM[i] || i) + '</span>'; }).join(' ') : '') + '</div></div>';
     var s = kop, jr = jaarLijst(g);
     if (tab === 'oordeel') {
-      s += oordeelTab(rec, r, fr);
+      s += oordeelTab(rec, r, fr) + aiHtml(rec);
     } else if (tab === 'koers') {
       s += fr.fresh ? koersGrafiekHtml(rec, signaalVoor(rec)) +
         '<div class="kpis"><div class="kpi"><b>' + getal(k.slot, 2) + '</b><span>Slotkoers (' + h(rec.valuta) + ')</span></div><div class="kpi"><b>' + getal(k.sma50, 2) + '</b><span>Gemiddelde 50 dagen</span></div><div class="kpi"><b>' + (r.afstandPct == null ? '–' : pct(r.afstandPct)) + '</b><span>Afstand tot gemiddelde</span></div></div>'

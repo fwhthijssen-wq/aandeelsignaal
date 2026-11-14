@@ -874,6 +874,19 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
             self.assertNotIn(kop, tb)
         self.assertEqual(self.fouten, [])
 
+    def test_ai_mening_dicht_tot_een_tik_en_html_veilig(self):
+        pg = self.pagina(390)
+        pg.goto(INDEX + '#/a/AAPL/oordeel')
+        self.assertEqual(pg.locator('[data-ai]').count(), 0)                                  # geen mening: geen kaart
+        pg.evaluate("""window.AANDEEL_AI = {model: 'openai/gpt-4.1-mini', fondsen: {AAPL: {datum: '2026-11-15', model: 'openai/gpt-4.1-mini',
+            voor: ['Sterke groei'], tegen: ['<b>Hoge</b> waardering'], nagaan: ['Marge na 2026'], afweging: 'Afwegen.'}}}; location.hash = '#/'; location.hash = '#/a/AAPL/oordeel'""")
+        pg.wait_for_selector('[data-ai]')
+        self.assertFalse(pg.locator('[data-ai] h3').first.is_visible())                       # dicht
+        pg.click('[data-ai] summary')
+        self.assertIn('Wat ertegen pleit', pg.inner_text('[data-ai]'))
+        self.assertIn('<b>Hoge</b> waardering', pg.inner_text('[data-ai]'))                   # tekst van het model als tekst
+        self.assertIn('Geen beleggingsadvies', pg.inner_text('[data-ai]'))
+
     def test_checklist_invullen_bewaren_tellen_zonder_score_en_html_veilig(self):
         pg = self.pagina(320)
         pg.goto(INDEX + '#/a/AAPL/check')
