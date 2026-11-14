@@ -14,6 +14,12 @@ for (const a of d.aandelen) {
 }
 const zonderDatum = d.aandelen.filter((a) => (a.gegevens || {}).jaren && a.gegevens.bron !== 'Yahoo Finance' && !(a.gegevens.jaren || []).some((j) => j.ingediend));
 console.log(`-- officieel zonder indieningsdatum: ${zonderDatum.length} ${zonderDatum.slice(0, 40).map((a) => a.ticker).join(' ')}`);
+// Dekking van de gegevens voor de kwaliteitscheck
+{
+  const n = d.aandelen.length, tel = (f) => d.aandelen.filter(f).length;
+  const heeft = (v) => (a) => ((a.gegevens || {}).jaren || []).some((j) => j[v] != null);
+  console.log(`-- kwaliteitscheck: ${n} fondsen; sector ${tel((a) => a.sector_yahoo)}, R&D ${tel(heeft('rd_expense'))}, verkoopkosten ${tel(heeft('selling_expense'))}, SG&A ${tel(heeft('sga_expense'))}, groei analisten ${tel((a) => (a.verwachting || {}).groei)}, governance ${tel((a) => (a.management || {}).governance)}`);
+}
 // Overzicht van alle fondsen die niet Bevestigd zijn (status, nagerekende jaren, bron, niveau, eerste open reden)
 if (tickers.includes('ALLE')) {
   for (const a of d.aandelen) {
