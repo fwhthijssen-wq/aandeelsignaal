@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.26 (2026.11.14)
+- **Start in een logischer volgorde**: eerst Mijn portefeuilles met daaronder de signalen, dan De markt (Kansen, met Marktbeeld en Alle fondsen naast elkaar), en tot slot Volgen en zekerheid (Zekerheid, Volglijst, Modelportefeuille).
+
 ## 1.25 (2026.11.14)
 - **Tegel Alle fondsen** op Start (onder De markt): opent de volledige fondsenlijst met zoeken, sorteren en filteren, net als 'Alle fondsen' onder Marktbeeld.
 

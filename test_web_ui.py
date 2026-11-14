@@ -44,8 +44,8 @@ class WebUi(unittest.TestCase):
         self.assertIn('overzicht', pg.inner_text('main').lower())
         self.assertEqual(pg.locator('[data-tegels] .tegel').count(), 7)                    # dashboard: alleen tegels
         self.assertEqual([pg.locator('[data-tegels] .tegel').nth(i).get_attribute('data-tegel') for i in range(7)],
-                         ['portefeuille', 'signalen', 'volglijst', 'kansen', 'marktbeeld', 'zekerheid', 'fondsen'])
-        self.assertEqual([x.upper() for x in pg.locator('[data-tegels] .tegel-kop').all_inner_texts()], ['MIJN PORTEFEUILLES', 'VOLGEN', 'DE MARKT'])
+                         ['portefeuille', 'signalen', 'kansen', 'marktbeeld', 'fondsen', 'zekerheid', 'volglijst'])
+        self.assertEqual([x.upper() for x in pg.locator('[data-tegels] .tegel-kop').all_inner_texts()], ['MIJN PORTEFEUILLES', 'DE MARKT', 'VOLGEN EN ZEKERHEID'])
         self.assertEqual(pg.locator('[data-signalen], #dash, [data-kansen-lijst]').count(), 0)  # geen lange pagina onder de tegels
         self.assertEqual(pg.locator('[data-status-regel]').count(), 1)
         self.assertEqual(pg.inner_text('[data-maker]'), 'Made by Frans Thijssen')

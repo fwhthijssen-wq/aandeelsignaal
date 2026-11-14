@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.25 (2026.11.14)';
+  var APP_VERSIE = '1.26 (2026.11.14)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -744,11 +744,13 @@
     var t6 = '<a class="tegel" href="#/kwaliteit" data-tegel="zekerheid"><small>Zekerheid</small><b>' + (tz.bevestigd || 0) + '<span class="munt"> bevestigd</span></b><span>' + officieel + ' van ' + items.length + ' uit officiële jaarverslagen</span><span class="kw-balk klein" aria-hidden="true">' + balk + '</span>' + pijl + '</a>';
     // 7. Alle fondsen: de volledige lijst (zoeken, sorteren, filteren), zoals 'Alle fondsen' onder Marktbeeld
     var nIdx = {}; items.forEach(function (a) { Dashboard.indexGroepen(a).forEach(function (g) { nIdx[g] = 1; }); });
-    var t7 = '<a class="tegel breed-mobiel" href="#/markt" data-tegel="fondsen" data-spring-na="fondsen" data-fondsen-alle><small>Alle fondsen</small><b>' + items.length + '</b><span>Zoeken, sorteren en filteren op index, oordeel en zekerheid</span><span class="zacht">' + Object.keys(nIdx).length + ' indexen en beurzen</span>' + pijl + '</a>';
+    var t7 = '<a class="tegel breed-mobiel" href="#/markt" data-tegel="fondsen" data-spring-na="fondsen" data-fondsen-alle><small>Alle fondsen</small><b>' + items.length + '</b><span>Zoeken, sorteren en filteren</span><span class="zacht">' + Object.keys(nIdx).length + ' indexen en beurzen</span>' + pijl + '</a>';
+    // Volgorde: eerst wat u bezit, dan de markt (kansen, het geheel, de lijst), tot slot volgen en de zekerheid van de cijfers
+    var ruim = function (t) { return t.replace(/class="tegel( breed-mobiel| breed)?/, 'class="tegel vol'); };
     return '<div data-tegels>' +
-      '<h2 class="tegel-kop">Mijn portefeuilles</h2><div class="tegels">' + t1 + t3 + '</div>' +
-      '<h2 class="tegel-kop">Volgen</h2><div class="tegels">' + t2 + modelTegelHtml(pijl) + '</div>' +
-      '<h2 class="tegel-kop">De markt</h2><div class="tegels">' + t4 + t5 + t6 + t7 + '</div></div>';
+      '<h2 class="tegel-kop">Mijn portefeuilles</h2><div class="tegels een">' + ruim(t1) + ruim(t3) + '</div>' +
+      '<h2 class="tegel-kop">De markt</h2><div class="tegels twee">' + ruim(t4) + t5 + t7.replace(' breed-mobiel', '') + '</div>' +
+      '<h2 class="tegel-kop">Volgen en zekerheid</h2><div class="tegels">' + t6 + t2 + modelTegelHtml(pijl) + '</div></div>';
   }
   function marktbeeldHtml() {
     var per = {}, alles = { kopen: 0, neutraal: 0, vermijden: 0, geen: 0, n: 0 };
