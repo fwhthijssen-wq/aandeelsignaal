@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.29 (2026.11.15)
+- **Knop AI-mening** naast NAIC Kopen en het moment (bijvoorbeeld Gunstig moment), in Kansen en in de fondsenlijst. Een tik opent het fonds op het tabblad Oordeel met de AI-tweede mening al open.
+
 ## 1.28.1 (2026.11.15)
 - Kwaliteitscheck, punt 13: het verloop van het aantal aandelen is nu gecorrigeerd voor splitsingen (bij Novo Nordisk leek de splitsing van 2023 op bijna een verdubbeling van het aantal aandelen).
 - AI-tweede mening via Groq (model gpt-oss-120b), met Nederlandse termen in plaats van Engelse afkortingen.

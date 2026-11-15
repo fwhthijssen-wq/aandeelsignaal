@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.28.1 (2026.11.15)';
+  var APP_VERSIE = '1.29 (2026.11.15)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -163,7 +163,13 @@
     var nu = b.naic.zones && b.naic.zones.koers != null ? getal(b.naic.zones.koers, 2) : null;
     return '<span class="koop-kort" data-koop="' + (a <= 0 ? 'onder' : 'boven') + '" title="Koopprijs ' + getal(kp.prijs, 2) + '">' + (nu ? 'Koers ' + nu + ' · ' : '') + (a <= 0 ? 'onder koopprijs ' + getal(kp.prijs, 2) : pct(a) + ' boven koopprijs ' + getal(kp.prijs, 2)) + '</span>';
   }
-  function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + (b.naic && b.naic.oordeel === 'kopen' ? momentChip(momentVan(zoek(b.ticker))) : '') + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
+  function oordeelRij(b) { return '<span class="oordeel-rij">' + naicChip(b) + (b.naic && b.naic.oordeel === 'kopen' ? momentChip(momentVan(zoek(b.ticker))) + aiChip(b.ticker) : '') + appChip(b) + koopKort(b) + stippen(b, true) + '</span>'; }
+  /* Knop AI-mening naast NAIC Kopen en het moment: opent het fonds met de AI-tweede mening open en in beeld. */
+  var aiOpen = null;
+  function aiChip(t) {
+    var A = window.AANDEEL_AI;
+    return A && A.fondsen && A.fondsen[t] ? '<span class="chip ai-chip" role="button" tabindex="0" data-ai-chip="' + h(t) + '" title="AI-tweede mening bekijken">AI-mening ›</span>' : '';
+  }
   /* De vijf NAIC-stappen als rij vinkjes, de koopprijs en hoe stevig het oordeel is. */
   /* Hoe vers zijn de cijfers? Laatste boekjaar en datum van de koers, met een waarschuwing als het laatste jaarverslag uitblijft. */
   function versHtml(rec, b) {
@@ -1464,7 +1470,9 @@
     var A = window.AANDEEL_AI, m = A && A.fondsen && A.fondsen[rec.ticker];
     if (!m) return '';
     var lijst = function (kop, xs) { return xs && xs.length ? '<h3>' + kop + '</h3><ul>' + xs.map(function (x) { return '<li>' + h(x) + '</li>'; }).join('') + '</ul>' : ''; };
-    return '<details class="kaart-plat ai-mening" data-ai><summary><span><b>AI-tweede mening</b><span class="zacht">Wat een taalmodel van dit NAIC-koopoordeel vindt, ook wat ertegen pleit</span></span></summary>' +
+    var open = aiOpen === rec.ticker;
+    if (open) { aiOpen = null; setTimeout(function () { var d = document.querySelector('[data-ai]'); if (d && d.scrollIntoView) d.scrollIntoView({ block: 'start', behavior: 'smooth' }); }, 60); }
+    return '<details class="kaart-plat ai-mening" data-ai' + (open ? ' open' : '') + '><summary><span><b>AI-tweede mening</b><span class="zacht">Wat een taalmodel van dit NAIC-koopoordeel vindt, ook wat ertegen pleit</span></span></summary>' +
       lijst('Wat ervoor pleit', m.voor) + lijst('Wat ertegen pleit', m.tegen) + lijst('Zelf nog nagaan', m.nagaan) +
       (m.afweging ? '<p><b>Afweging:</b> ' + h(m.afweging) + '</p>' : '') +
       '<p class="zacht">Gemaakt op ' + h(datumNl(m.datum)) + ' door ' + h(m.model || A.model || 'een taalmodel') + (m.dienst || A.bron ? ' (' + h(m.dienst || A.bron) + ')' : '') + ', alleen op basis van de cijfers in deze app, zonder actueel nieuws. Een taalmodel kan zich vergissen. Geen beleggingsadvies.</p></details>';
@@ -1940,6 +1948,16 @@
     document.getElementById('mt-sluit').focus();
   }
   document.addEventListener('click', function (e) { var k = e.target.closest ? e.target.closest('[data-methode]') : null; if (k) toonMethode(k.getAttribute('data-methode')); });
+  function aiChipKlik(e) {
+    var k = e.target.closest ? e.target.closest('[data-ai-chip]') : null;
+    if (!k || (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ')) return;
+    e.preventDefault(); e.stopPropagation();
+    aiOpen = k.getAttribute('data-ai-chip');
+    var doel = '#/a/' + encodeURIComponent(aiOpen) + '/oordeel';
+    if (location.hash === doel) route(); else location.hash = doel;
+  }
+  document.addEventListener('click', aiChipKlik, true);
+  document.addEventListener('keydown', aiChipKlik, true);
 
 
   /* ---- Hulp per pagina: hoe het werkt staat in de hulp (het vraagteken), niet tussen de gegevens. Een link opent de hulp

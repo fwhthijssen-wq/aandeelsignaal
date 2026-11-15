@@ -886,6 +886,14 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertIn('Wat ertegen pleit', pg.inner_text('[data-ai]'))
         self.assertIn('<b>Hoge</b> waardering', pg.inner_text('[data-ai]'))                   # tekst van het model als tekst
         self.assertIn('Geen beleggingsadvies', pg.inner_text('[data-ai]'))
+        # knop AI-mening naast NAIC Kopen in de lijsten (alleen bij Kopen met een mening) opent het fonds met de mening open
+        # (de demogegevens hebben geen NAIC Kopen; daarom de knop zoals oordeelRij hem maakt, in een lijstregel-link)
+        pg.evaluate("location.hash='#/markt'"); pg.wait_for_timeout(200)
+        pg.evaluate("""document.querySelector('main').insertAdjacentHTML('afterbegin', '<a href="#/a/MSFT" id="regel"><span class="chip ai-chip" role="button" tabindex="0" data-ai-chip="AAPL">AI-mening ›</span></a>')""")
+        pg.click('[data-ai-chip="AAPL"]'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.evaluate('location.hash'), '#/a/AAPL/oordeel')                    # niet naar de regel-link (MSFT)
+        self.assertEqual(pg.get_attribute('[data-ai]', 'open'), '')                          # mening meteen open
+        self.assertEqual(self.fouten, [])
 
     def test_checklist_invullen_bewaren_tellen_zonder_score_en_html_veilig(self):
         pg = self.pagina(320)
