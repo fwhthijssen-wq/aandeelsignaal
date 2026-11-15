@@ -8,6 +8,11 @@ const A = require(path.join(R, 'ai_mening.js'));
 const S = require(path.join(W, 'signaal.js')), G = require(path.join(W, 'gate.js')), N = require(path.join(W, 'naic.js'));
 (async () => {
   const [pad, modellen, ...tick] = process.argv.slice(2);
+  try {
+    const u = (process.env.AI_URL || 'https://api.groq.com/openai/v1/chat/completions').replace(/chat\/completions$/, 'models');
+    const lijst = await (await fetch(u, { headers: { Authorization: 'Bearer ' + process.env.AI_SLEUTEL } })).json();
+    console.log('Beschikbare modellen:', (lijst.data || []).map((m) => m.id).sort().join(', '));
+  } catch (e) { console.log('modellenlijst niet op te halen:', e.message); }
   const d = JSON.parse(fs.readFileSync(pad, 'utf8')), vandaag = new Date().toISOString().slice(0, 10);
   const kopen = d.aandelen.filter((r) => r.koers && r.koers.slot > 0).map((r) => ({ r, b: S.beoordeel(r, { vandaag, gate: G, naic: N }) }))
     .filter((x) => (x.b.naic || {}).oordeel === 'kopen');

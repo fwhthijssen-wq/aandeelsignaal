@@ -59,7 +59,11 @@ const SYSTEEM = [
   '- Benoem altijd wat tegen kopen pleit, ook als de cijfers sterk zijn (cycliciteit, eenmalige winst, schuld, waardering,',
   '  afhankelijkheid van één markt, onzekere cijfers).',
   '- Geef geen koop- of verkoopadvies; eindig met een korte afweging in je eigen woorden.',
-  '- Schrijf in eenvoudig Nederlands, korte zinnen, zonder jargon. Totaal hoogstens 180 woorden.',
+  '- Schrijf in eenvoudig Nederlands, korte zinnen, zonder jargon en zonder Engelse afkortingen: zeg K/W (niet P/E),',
+  '  rendement op eigen vermogen (niet ROE), vrije kasstroom (niet free cash flow), inkoop van eigen aandelen (niet',
+  '  buy-back), schuld ten opzichte van het eigen vermogen (niet D/E of EV). Bedragen met de valuta erbij.',
+  '- Noem een getal alleen als het in de gegevens staat; zeg bij groei altijd of het per jaar of in totaal is.',
+  '- Totaal hoogstens 180 woorden.',
   'Antwoord als JSON: {"voor": [2 of 3 korte punten], "tegen": [2 of 3 korte punten], "nagaan": [2 punten: wat de belegger',
   'zelf nog moet uitzoeken], "afweging": "één of twee zinnen"}.',
 ].join('\n');
