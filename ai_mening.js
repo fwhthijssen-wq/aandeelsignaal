@@ -1,9 +1,10 @@
 /* Nachtelijke stap: een AI-tweede mening bij elk fonds met NAIC Kopen (na bouw_webdata.py en de kwaliteitsbewaker).
    Gebruik: node ai_mening.js web/data/aandelen.json ai/staat.json web/data [--alleen-schrijven]
    - rekent per fonds het NAIC-oordeel uit, precies zoals de app (web/js/signaal.js);
-   - vraagt voor een fonds met Kopen een korte, kritische tweede mening aan een taalmodel. Standaard Mistral (gratis
-     'Experiment'-abonnement, met limieten); de sleutel staat als geheim AI_SLEUTEL in GitHub. Elke dienst met dezelfde
-     vraagvorm (OpenAI-compatibel) kan via AI_URL en AI_MODEL. (GitHub Models is op 30 juli 2026 gestopt.)
+   - vraagt voor een fonds met Kopen een korte, kritische tweede mening aan een taalmodel. Standaard Groq (gratis, zonder
+     creditcard, 1.000 vragen per dag per model, gegevens niet gebruikt voor training); de sleutel staat als geheim
+     AI_SLEUTEL in GitHub. Elke dienst met dezelfde vraagvorm (OpenAI-compatibel) kan via de variabelen AI_URL, AI_MODEL
+     en AI_DIENST, bijvoorbeeld Mistral. (GitHub Models is op 30 juli 2026 gestopt.)
    - het model krijgt alleen de gecontroleerde cijfers uit de app, geen nieuws; het moet ook zeggen wat tegen kopen pleit;
    - een mening blijft staan zolang het oordeel, de koerszone en het laatste boekjaar gelijk zijn en ze jonger is dan
      14 dagen; zo blijft het ruim binnen de daglimiet (hoogstens MAX_PER_RUN nieuwe vragen per run);
@@ -15,9 +16,9 @@ const W = path.join(__dirname, 'web', 'js');
 const S = require(path.join(W, 'signaal.js')), G = require(path.join(W, 'gate.js')), N = require(path.join(W, 'naic.js'));
 const V = require(path.join(W, 'vergelijk.js')), F = require(path.join(W, 'fisher.js'));
 
-const MODEL = process.env.AI_MODEL || 'mistral-small-latest';
-const URL_ = process.env.AI_URL || 'https://api.mistral.ai/v1/chat/completions';
-const DIENST = process.env.AI_DIENST || 'Mistral';
+const MODEL = process.env.AI_MODEL || 'openai/gpt-oss-120b';
+const URL_ = process.env.AI_URL || 'https://api.groq.com/openai/v1/chat/completions';
+const DIENST = process.env.AI_DIENST || 'Groq';
 const MAX_PER_RUN = 40, GELDIG_DAGEN = 14, PAUZE_MS = 2500;     // ruim binnen de limieten van een gratis abonnement
 
 function r(x, d) { return typeof x === 'number' && isFinite(x) ? Math.round(x * Math.pow(10, d)) / Math.pow(10, d) : null; }
@@ -63,11 +64,13 @@ const SYSTEEM = [
   'zelf nog moet uitzoeken], "afweging": "één of twee zinnen"}.',
 ].join('\n');
 
-async function vraag(f, token) {
-  const body = { model: MODEL, temperature: 0.3, max_tokens: 700, response_format: { type: 'json_object' },
+async function vraag(f, token, zonderJsonModus) {
+  const body = { model: MODEL, temperature: 0.3, max_tokens: 1500,
     messages: [{ role: 'system', content: SYSTEEM }, { role: 'user', content: 'Gegevens (JSON):\n' + JSON.stringify(f) }] };
+  if (!zonderJsonModus) body.response_format = { type: 'json_object' };
   const res = await fetch(URL_, { method: 'POST', headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: JSON.stringify(body), signal: AbortSignal.timeout(60000) });
+    body: JSON.stringify(body), signal: AbortSignal.timeout(90000) });
+  if (res.status === 400 && !zonderJsonModus) return vraag(f, token, true);       // model zonder JSON-modus: nog eens, gewoon
   if (res.status === 429) { const e = new Error('limiet bereikt of te snel (429)'); e.limiet = true; throw e; }
   const tekst = await res.text();
   if (!res.ok) { const e = new Error(DIENST + ' ' + res.status + ': ' + tekst.slice(0, 200)); e.limiet = res.status === 401 || res.status === 403; throw e; }

@@ -109,7 +109,10 @@ jobs:
       - name: AI-tweede mening bij NAIC Kopen (alleen 's nachts of met de hand gestart, met goede gegevens; anders alleen tonen)
         continue-on-error: true
         env:
-          AI_SLEUTEL: ${{ secrets.AI_SLEUTEL }}     # gratis sleutel van Mistral (console.mistral.ai), als geheim in GitHub
+          AI_SLEUTEL: ${{ secrets.AI_SLEUTEL }}     # gratis sleutel van Groq (console.groq.com), als geheim in GitHub
+          AI_URL: ${{ vars.AI_URL }}                # leeg = Groq; een andere dienst kan via deze variabelen
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_DIENST: ${{ vars.AI_DIENST }}
         run: |
           if [ "${{ github.event_name }}" != "push" ] && [ "${{ steps.bouw.outcome }}" = "success" ] && [ "${{ steps.bewaker.outcome }}" = "success" ]; then
             node ai_mening.js web/data/aandelen.json ai/staat.json web/data
