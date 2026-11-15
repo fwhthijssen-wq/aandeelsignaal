@@ -19,7 +19,7 @@ const V = require(path.join(W, 'vergelijk.js')), F = require(path.join(W, 'fishe
 const MODEL = process.env.AI_MODEL || 'openai/gpt-oss-120b';
 const URL_ = process.env.AI_URL || 'https://api.groq.com/openai/v1/chat/completions';
 const DIENST = process.env.AI_DIENST || 'Groq';
-const MAX_PER_RUN = 40, GELDIG_DAGEN = 14, PAUZE_MS = 2500;     // ruim binnen de limieten van een gratis abonnement
+const MAX_PER_RUN = 40, GELDIG_DAGEN = 14, PAUZE_MS = 20000;    // gratis Groq: beperkt aantal tokens per minuut
 
 function r(x, d) { return typeof x === 'number' && isFinite(x) ? Math.round(x * Math.pow(10, d)) / Math.pow(10, d) : null; }
 function dagen(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
@@ -68,15 +68,20 @@ const SYSTEEM = [
   'zelf nog moet uitzoeken], "afweging": "één of twee zinnen"}.',
 ].join('\n');
 
-async function vraag(f, token, zonderJsonModus, model) {
+async function vraag(f, token, zonderJsonModus, model, opnieuw) {
   model = model || MODEL;
   const body = { model: model, temperature: 0.3, max_tokens: 1500,
     messages: [{ role: 'system', content: SYSTEEM }, { role: 'user', content: 'Gegevens (JSON):\n' + JSON.stringify(f) }] };
   if (!zonderJsonModus) body.response_format = { type: 'json_object' };
   const res = await fetch(URL_, { method: 'POST', headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(body), signal: AbortSignal.timeout(90000) });
-  if (res.status === 400 && !zonderJsonModus) return vraag(f, token, true, model);       // model zonder JSON-modus: nog eens, gewoon
-  if (res.status === 429) { const e = new Error('limiet bereikt of te snel (429)'); e.limiet = true; throw e; }
+  if (res.status === 400 && !zonderJsonModus) return vraag(f, token, true, model, opnieuw);       // model zonder JSON-modus: nog eens, gewoon
+  if (res.status === 429) {
+    // Te veel tokens per minuut: wacht zo lang als de dienst vraagt (hoogstens 90 s) en probeer het één keer opnieuw.
+    const wacht = Math.min(90, Math.max(5, parseFloat(res.headers.get('retry-after')) || 30));
+    if (!opnieuw) { await new Promise((ok) => setTimeout(ok, wacht * 1000)); return vraag(f, token, zonderJsonModus, model, true); }
+    const e = new Error('limiet bereikt of te snel (429)'); e.limiet = true; throw e;
+  }
   const tekst = await res.text();
   if (!res.ok) { const e = new Error(DIENST + ' ' + res.status + ': ' + tekst.slice(0, 200)); e.limiet = res.status === 401 || res.status === 403; throw e; }
   let j;
