@@ -5,7 +5,7 @@ const F = require('../js/fisher.js');
 function jr() {
   return [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025].map((y, i) => ({
     year: y, sales: 1000 * Math.pow(1.1, i), pretax_income: 150 + 10 * i, net_income: 110 + 8 * i, equity: 800 + 20 * i,
-    rd_expense: 80 + 2 * i, sga_expense: 200, shares_diluted: 100 - i, long_term_debt: 300 }));
+    rd_expense: 80 + 2 * i, sga_expense: 200, comparable_eps: (110 + 8 * i) / (100 - i), shares_diluted: i > 6 ? 2 * (100 - i) : 100 - i, long_term_debt: 300 }));
 }
 
 test('ondersteunende gegevens per punt, alleen feiten met bron', () => {

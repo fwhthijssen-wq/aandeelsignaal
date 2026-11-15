@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.28.1 (2026.11.15)
+- Kwaliteitscheck, punt 13: het verloop van het aantal aandelen is nu gecorrigeerd voor splitsingen (bij Novo Nordisk leek de splitsing van 2023 op bijna een verdubbeling van het aantal aandelen).
+- AI-tweede mening via Groq (model gpt-oss-120b), met Nederlandse termen in plaats van Engelse afkortingen.
+
 ## 1.28 (2026.11.15)
 - **AI-tweede mening** op het tabblad Oordeel bij elk fonds met NAIC Kopen: een tik opent wat een taalmodel ervan vindt — wat ervoor pleit, wat ertegen pleit, wat u zelf nog moet nagaan, en een korte afweging. Elke nacht gemaakt met een taalmodel via Groq (gratis, zonder creditcard; de sleutel staat als geheim AI_SLEUTEL in GitHub), alleen op basis van de gecontroleerde cijfers in de app, zonder actueel nieuws. Een mening wordt pas vernieuwd als het oordeel, de koerszone of het laatste boekjaar verandert, of na 14 dagen. Geen beleggingsadvies.
 

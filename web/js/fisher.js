@@ -43,11 +43,14 @@
     return w.length >= 5 ? { sector: s, n: w.length, marge: mediaan(w) } : null;
   }
 
+  /* Aantal aandelen per jaar als nettowinst / vergelijkbare winst per aandeel: die winst per aandeel is al gecorrigeerd voor
+     splitsingen, het gemelde aantal aandelen niet (Novo Nordisk 2023: 2 voor 1 lijkt anders op 100% verwatering). */
   function aandelenVerloop(jr) {
-    var v = jaren(jr).filter(function (j) { return pos(j.shares_diluted); });
+    var v = jaren(jr).map(function (j) { return { year: j.year, n: pos(j.net_income) && pos(j.comparable_eps) ? j.net_income / j.comparable_eps : null }; })
+      .filter(function (x) { return pos(x.n); });
     if (v.length < 2) return null;
     var f = v[0], l = v[v.length - 1];
-    return l.year - f.year >= 3 ? { van: f.year, tot: l.year, pct: (l.shares_diluted / f.shares_diluted - 1) * 100, perJaar: cagr(f.shares_diluted, l.shares_diluted, l.year - f.year) } : null;
+    return l.year - f.year >= 3 ? { van: f.year, tot: l.year, pct: (l.n / f.n - 1) * 100, perJaar: cagr(f.n, l.n, l.year - f.year) } : null;
   }
 
   function gegevens(rec, alle) {
@@ -105,7 +108,7 @@
 
     // 13. Verwatering
     var av = aandelenVerloop(jr);
-    if (av) regel(13, 'Aantal aandelen', pctTeken(av.pct) + ' van ' + av.van + ' tot ' + av.tot + ' (' + pctTeken(av.perJaar) + ' per jaar)', JV);
+    if (av) regel(13, 'Aantal aandelen (gecorrigeerd voor splitsingen)', pctTeken(av.pct) + ' van ' + av.van + ' tot ' + av.tot + ' (' + pctTeken(av.perJaar) + ' per jaar)', JV);
     var sch = reeks(jr, function (j) { return num(j.long_term_debt) && j.long_term_debt >= 0 && pos(j.equity) ? j.long_term_debt / (j.long_term_debt + j.equity) * 100 : null; });
     if (sch.length) regel(13, 'Langlopende schuld', pct(sch[sch.length - 1].v) + ' van schuld plus eigen vermogen in ' + sch[sch.length - 1].year, JV);
 
