@@ -1,0 +1,22 @@
+# Hulpmiddel (ontwikkeling, handmatig): AI-tweede mening van twee modellen naast elkaar (uitkomst in het logboek).
+name: AI-mening vergelijken (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      modellen:
+        description: 'modellen, gescheiden door komma'
+        default: 'openai/gpt-oss-120b,llama-3.3-70b-versatile'
+      tickers:
+        description: 'beurscodes (leeg = de eerste drie met NAIC Kopen)'
+        required: false
+permissions:
+  contents: read
+jobs:
+  vergelijk:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - run: curl -sf https://fwhthijssen-wq.github.io/aandeelsignaal/data/aandelen.json -o aandelen.json
+      - env:
+          AI_SLEUTEL: ${{ secrets.AI_SLEUTEL }}
+        run: node hulp/ai_proef.js aandelen.json "${{ github.event.inputs.modellen }}" ${{ github.event.inputs.tickers }}

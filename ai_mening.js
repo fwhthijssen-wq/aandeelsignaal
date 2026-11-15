@@ -64,13 +64,14 @@ const SYSTEEM = [
   'zelf nog moet uitzoeken], "afweging": "één of twee zinnen"}.',
 ].join('\n');
 
-async function vraag(f, token, zonderJsonModus) {
-  const body = { model: MODEL, temperature: 0.3, max_tokens: 1500,
+async function vraag(f, token, zonderJsonModus, model) {
+  model = model || MODEL;
+  const body = { model: model, temperature: 0.3, max_tokens: 1500,
     messages: [{ role: 'system', content: SYSTEEM }, { role: 'user', content: 'Gegevens (JSON):\n' + JSON.stringify(f) }] };
   if (!zonderJsonModus) body.response_format = { type: 'json_object' };
   const res = await fetch(URL_, { method: 'POST', headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(body), signal: AbortSignal.timeout(90000) });
-  if (res.status === 400 && !zonderJsonModus) return vraag(f, token, true);       // model zonder JSON-modus: nog eens, gewoon
+  if (res.status === 400 && !zonderJsonModus) return vraag(f, token, true, model);       // model zonder JSON-modus: nog eens, gewoon
   if (res.status === 429) { const e = new Error('limiet bereikt of te snel (429)'); e.limiet = true; throw e; }
   const tekst = await res.text();
   if (!res.ok) { const e = new Error(DIENST + ' ' + res.status + ': ' + tekst.slice(0, 200)); e.limiet = res.status === 401 || res.status === 403; throw e; }
@@ -140,4 +141,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
-module.exports = { feiten, schoon, sleutel, SYSTEEM };
+module.exports = { feiten, schoon, sleutel, vraag, SYSTEEM };
