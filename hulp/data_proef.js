@@ -29,7 +29,17 @@ if (tickers.includes('ALLE')) {
     console.log(`## ${a.ticker} | ${(a.indices || []).join('/')} | ${g.bron || '-'} | ${g.niveau || '-'} | ${g.eps_status || '-'} | ${g.eps_verified_years || 0} | ${jr.length} | ${jr.length ? jr[0].year + '-' + jr[jr.length - 1].year : '-'} | ${String(g.eps_note || g.eps_verification_note || '').slice(0, 160)} | ${open_.slice(0, 2).join(' ;; ')}`);
   }
 }
-for (const t of tickers.filter((x) => x !== 'ALLE')) {
+// RUW:TICKER -> de gegevens zonder de jaren, plus de laatste drie jaren, als JSON
+for (const t of tickers.filter((x) => x.startsWith('RUW:')).map((x) => x.slice(4))) {
+  const a = d.aandelen.find((x) => x.ticker === t);
+  if (!a) { console.log(t, 'ONTBREEKT'); continue; }
+  const g = Object.assign({}, a.gegevens || {}), jr = g.jaren || [];
+  delete g.jaren;
+  console.log(`## RUW ${t} kop ` + JSON.stringify(Object.assign({}, a, { gegevens: undefined, koershistorie: undefined, reeks: undefined })).slice(0, 3000));
+  console.log(`## RUW ${t} gegevens ` + JSON.stringify(g).slice(0, 6000));
+  for (const j of jr.slice(-3)) console.log(`## RUW ${t} jaar ` + JSON.stringify(j).slice(0, 2000));
+}
+for (const t of tickers.filter((x) => x !== 'ALLE' && !x.startsWith('RUW:'))) {
   const a = d.aandelen.find((x) => x.ticker === t);
   if (!a) { console.log(t, 'ONTBREEKT'); continue; }
   const g = a.gegevens || {}, jr = (g.jaren || []).filter((j) => j.comparable_eps != null), l = jr[jr.length - 1] || {};
