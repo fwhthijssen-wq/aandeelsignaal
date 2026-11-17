@@ -1097,6 +1097,26 @@ def sec_payload(sec_ticker, email, fetcher=None):
         return None
 
 
+def yahoo_info_van_vorige(ruw, oud, reserve=None):
+    """MTU, november 2026: Yahoo weigerde een nacht lang de bedrijfsinformatie (401 'Invalid Crumb'). De jaarcijfers kwamen
+    wel, maar zonder de valuta van de cijfers; zonder valuta geen NAIC-oordeel en geen Bevestigd. De valuta van een
+    jaarrekening verandert vrijwel nooit: ontbreekt ze, dan geldt die van de vorige run (en zo ook het kenmerk bank), en
+    anders die van de aangeleverde cijfers (reserve: de valuta's daarvan). Alleen bij precies één valuta."""
+    if not isinstance(ruw, dict) or ruw.get('valuta'):
+        return ruw
+    oud = oud if isinstance(oud, dict) else {}
+    munten = [m for m in (oud.get('currencies') or []) if m]
+    if not munten:
+        munten = sorted({j.get('currency') for j in oud.get('jaren') or [] if j.get('currency')})
+    bron = 'vorige run'
+    if len(munten) != 1:
+        munten, bron = sorted({m for m in reserve or [] if m}), 'aangeleverde cijfers'
+    if len(munten) != 1:
+        return ruw
+    bank = ruw.get('bank') or any(str(w).startswith('Bank:') for w in oud.get('waarschuwingen') or [])
+    return {**ruw, 'valuta': munten[0], 'bank': bank, 'valuta_bron': bron}
+
+
 def gegevens_uit_sec(sec, gecontroleerd_op):
     """Zet de SEC-samenvatting (summarize_sec) om naar het gegevensblok voor de webapp.
 
@@ -1607,6 +1627,7 @@ def live(email, fetch_prijzen=None, sec_samenvatting=None, diagnose=None, payloa
             # Geen officiële bron: indicatieve jaarcijfers van Yahoo Finance (nooit het label, wel een voorlopig oordeel).
             try:
                 yahoo_ruw = yahoo_ophalen(ticker)
+                yahoo_ruw = yahoo_info_van_vorige(yahoo_ruw, oud, {r.get('currency') for r in (((aangeleverd or {}).get('fondsen') or {}).get(ticker) or {}).values() if isinstance(r, dict)})
                 yg = gegevens_uit_yahoo(yahoo_ruw, vandaag)
                 if yg.get('jaren'):
                     vul_eps_jaarverslag(yg, ticker)

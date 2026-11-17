@@ -2,6 +2,9 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.29.1 (2026.11.17)
+- Reparatie: in de nacht van 17 november gaf Yahoo Finance de bedrijfsinformatie niet door (fout 'Invalid Crumb'). De jaarcijfers van onder meer MTU, Allianz en BASF kwamen daardoor binnen zonder valuta, en zonder valuta berekent de app geen NAIC-oordeel en geen Bevestigd. Nu geldt dan de valuta van de vorige run of van de aangeleverde cijfers (met een opmerking bij het fonds), en de controle na de nachtelijke run waarschuwt als fondsen hun valuta kwijtraken.
+
 ## 1.29 (2026.11.15)
 - **Knop AI-mening** naast NAIC Kopen en het moment (bijvoorbeeld Gunstig moment), in Kansen en in de fondsenlijst. Een tik opent het fonds op het tabblad Oordeel met de AI-tweede mening al open.
 

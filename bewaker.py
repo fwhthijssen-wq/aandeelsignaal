@@ -45,14 +45,16 @@ def kenmerken(data):
             'koers': vers,
             # officieel: SEC (geen 'bron'-veld) of ESEF; niet Yahoo Finance
             'officieel': bool(jr) and g.get('bron') != 'Yahoo Finance' and not g.get('fout'),
+            # zonder valuta van de cijfers geen NAIC-oordeel (MTU, november 2026: Yahoo gaf ze een nacht niet door)
+            'valuta': bool(jr) and not g.get('fout') and bool(g.get('currencies') or any(j.get('currency') for j in jr)),
         }
-    tel = {k: sum(1 for v in per.values() if v[k]) for k in ('jaarcijfers', 'bevestigd', 'eps6', 'koers', 'officieel')}
+    tel = {k: sum(1 for v in per.values() if v[k]) for k in ('jaarcijfers', 'bevestigd', 'eps6', 'koers', 'officieel', 'valuta')}
     tel['fondsen'] = len(per)
     return per, tel
 
 
 NAMEN = {'fondsen': 'fondsen', 'jaarcijfers': 'met jaarcijfers', 'bevestigd': 'Bevestigd', 'eps6': 'met ≥ 6 jaar winst per aandeel',
-         'koers': 'met verse koers', 'officieel': 'met officiële cijfers'}
+         'koers': 'met verse koers', 'officieel': 'met officiële cijfers', 'valuta': 'met bekende valuta van de cijfers'}
 ERNSTIG = {'jaarcijfers': 0.25, 'bevestigd': 0.40, 'koers': 0.50, 'fondsen': 0.25}
 
 
@@ -60,7 +62,7 @@ def vergelijk(oud, nieuw):
     po, to = kenmerken(oud)
     pn, tn = kenmerken(nieuw)
     waarschuwingen, ernstig = [], []
-    for k in ('fondsen', 'jaarcijfers', 'bevestigd', 'eps6', 'koers', 'officieel'):
+    for k in ('fondsen', 'jaarcijfers', 'bevestigd', 'eps6', 'koers', 'officieel', 'valuta'):
         a, b = to.get(k, 0), tn.get(k, 0)
         if a and b < a:
             daling = (a - b) / a
@@ -69,6 +71,8 @@ def vergelijk(oud, nieuw):
                 waarschuwingen.append(f"{NAMEN[k]}: {a} → {b} (−{round(daling * 100)}%)" + (f"; o.a. {' '.join(kwijt[:15])}" if kwijt else ''))
             elif k == 'bevestigd' and kwijt:
                 waarschuwingen.append(f"niet meer Bevestigd: {' '.join(kwijt)}")
+            elif k == 'valuta' and kwijt:
+                waarschuwingen.append(f"valuta van de cijfers kwijt (geen NAIC-oordeel): {' '.join(kwijt)}")
             if k in ERNSTIG and daling > ERNSTIG[k] and a - b >= 5:
                 ernstig.append(f"{NAMEN[k]}: {a} → {b}")
     return to, tn, waarschuwingen, ernstig

@@ -99,3 +99,32 @@ class YahooJaren(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TestValutaZonderInfo(unittest.TestCase):
+    """MTU, november 2026: Yahoo weigerde get_info (401 'Invalid Crumb'); de cijfers kwamen zonder valuta en het NAIC-oordeel verdween."""
+
+    def test_valuta_uit_vorige_run_of_aangeleverd(self):
+        from bouw_webdata import yahoo_info_van_vorige
+        ruw = {'posten': {}, 'valuta': None, 'bank': False, 'splits': []}
+        oud = {'currencies': ['EUR'], 'waarschuwingen': ['Bank: kengetallen zoals schuld en kasstroom zeggen bij banken weinig.']}
+        uit = yahoo_info_van_vorige(ruw, oud)
+        self.assertEqual((uit['valuta'], uit['bank'], uit['valuta_bron']), ('EUR', True, 'vorige run'))
+        uit = yahoo_info_van_vorige(ruw, {'currencies': None, 'jaren': [{'currency': None}]}, {'EUR'})
+        self.assertEqual((uit['valuta'], uit['valuta_bron']), ('EUR', 'aangeleverde cijfers'))
+        self.assertIsNone(yahoo_info_van_vorige(ruw, None, {'EUR', 'USD'})['valuta'])     # twijfel: geen gok
+        self.assertEqual(yahoo_info_van_vorige(dict(ruw, valuta='USD'), oud)['valuta'], 'USD')   # Yahoo gaat voor
+
+    def test_waarschuwing_in_gegevens(self):
+        from yahoo_jaren import gegevens_uit_yahoo
+        import yahoo_jaren
+        ruw = {'posten': {}, 'valuta': 'EUR', 'valuta_bron': 'vorige run', 'bank': False, 'splits': []}
+        jaren = [{'year': 2016 + i, 'end': f'{2016 + i}-12-31', 'currency': 'EUR', 'comparable_eps': 1.0} for i in range(8)]
+        oud = yahoo_jaren.jaren_uit_yahoo
+        yahoo_jaren.jaren_uit_yahoo = lambda r: jaren
+        try:
+            g = gegevens_uit_yahoo(ruw, '2026-11-17')
+        finally:
+            yahoo_jaren.jaren_uit_yahoo = oud
+        self.assertEqual(g['currencies'], ['EUR'])
+        self.assertTrue(any('valuta van de cijfers niet door' in w for w in g['waarschuwingen']))

@@ -64,10 +64,15 @@ def haal_yahoo(ticker):
     if not posten:
         return None
     info = {}
-    try:
-        info = t.get_info() or {}
-    except Exception:
-        info = {}
+    for poging in (1, 2):           # get_info heeft een 'crumb' nodig; die weigert Yahoo soms een nacht lang (401)
+        try:
+            info = t.get_info() or {}
+        except Exception:
+            info = {}
+        if info.get('financialCurrency') or poging == 2:
+            break
+        import time
+        time.sleep(2)
     splits = []
     try:
         for idx, v in t.splits.items():
@@ -76,7 +81,8 @@ def haal_yahoo(ticker):
     except Exception:
         pass
     bank = 'bank' in str(info.get('industry') or '').lower()
-    return {'posten': posten, 'valuta': info.get('financialCurrency'), 'bank': bank, 'splits': splits}
+    return {'posten': posten, 'valuta': info.get('financialCurrency'), 'bank': bank, 'splits': splits,
+            'info_ontbreekt': not info.get('financialCurrency')}
 
 
 def jaren_uit_yahoo(ruw):
@@ -120,6 +126,8 @@ def gegevens_uit_yahoo(ruw, gecontroleerd_op):
     if len(jaren) < MIN_JAREN:
         return dict(leeg, fout=f'Yahoo Finance geeft maar {len(jaren)} bruikbare boekjaren (minimaal {MIN_JAREN}).')
     waarschuwingen = ['Jaarcijfers van Yahoo Finance: niet onafhankelijk nagerekend, daarom indicatief.']
+    if ruw.get('valuta_bron'):
+        waarschuwingen.append(f"Yahoo gaf de valuta van de cijfers niet door; {ruw['valuta']} uit de {ruw['valuta_bron']}.")
     if ruw.get('bank'):
         waarschuwingen.append('Bank: kengetallen zoals schuld en kasstroom zeggen bij banken weinig.')
     return {'gecontroleerd_op': gecontroleerd_op, 'fout': None, 'niveau': 'indicatief', 'bron': 'Yahoo Finance',

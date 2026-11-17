@@ -23,6 +23,15 @@ class Bewaker(unittest.TestCase):
         self.assertEqual((to['bevestigd'], tn['bevestigd']), (2, 1))
         self.assertTrue(any('niet meer Bevestigd: B' in x for x in w)); self.assertEqual(e, [])
 
+    def test_valuta_kwijt_wordt_gemeld(self):
+        def met(t, munt):
+            f = fonds(t); f['gegevens']['currencies'] = [munt] if munt else None; return f
+        oud = bestand([met('MTX.DE', 'EUR')] + [met(f'X{i}', 'EUR') for i in range(20)])
+        nieuw = bestand([met('MTX.DE', None)] + [met(f'X{i}', 'EUR') for i in range(20)])
+        to, tn, w, e = bewaker.vergelijk(oud, nieuw)
+        self.assertEqual((to['valuta'], tn['valuta']), (21, 20))
+        self.assertTrue(any('valuta van de cijfers kwijt (geen NAIC-oordeel): MTX.DE' in x for x in w)); self.assertEqual(e, [])
+
     def test_ernstige_daling_zet_vorige_terug(self):
         oud = bestand([fonds(f'X{i}') for i in range(40)])
         nieuw = bestand([fonds(f'X{i}', jaren=0 if i < 20 else 6) for i in range(40)])
