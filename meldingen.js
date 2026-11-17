@@ -32,6 +32,9 @@ function standVan(rec, vandaag) {
 function gebeurtenissen(naam, oud, nieuw) {
   if (!oud || !nieuw) return [];
   const uit = [];
+  // Zonder NAIC-oordeel (oud of nieuw) is er niets te vergelijken: een gegevensstoring is geen koop- of verkoopsignaal
+  // (MTU, november 2026). De stand van vóór de storing blijft bewaard, zie main.
+  if (!oud.oordeel || !nieuw.oordeel) return (nieuw.ml === 'positief' || nieuw.ml === 'negatief') && nieuw.ml !== oud.ml && oud.ml ? [naam + ': middellange termijn nu ' + nieuw.ml] : [];
   const verkoop = (z) => z === 'verkoop' || z === 'boven';
   if (nieuw.oordeel === 'kopen' && oud.oordeel !== 'kopen') uit.push(naam + ': in de koopzone (NAIC Kopen)');
   if (verkoop(nieuw.zone) && !verkoop(oud.zone)) uit.push(naam + ': in de verkoopzone');
@@ -65,7 +68,13 @@ async function main() {
   const per = {}; for (const r of data.aandelen || []) per[r.ticker] = r;
   const staat = fs.existsSync(staatPad) ? JSON.parse(fs.readFileSync(staatPad, 'utf8')) : { fondsen: {}, toestellen: {} };
   const nieuweStand = {}, alle = new Set(toestellen.flatMap((t) => t.tickers));
-  for (const t of alle) { const r = per[t]; const s = r ? standVan(r, vandaag) : null; if (s) nieuweStand[t] = s; }
+  for (const t of alle) {
+    const r = per[t]; const s = r ? standVan(r, vandaag) : null;
+    if (!s) continue;
+    const oud = staat.fondsen[t];
+    // nu geen NAIC-oordeel maar eerder wel: het oordeel en de zone van vóór de storing bewaren, alleen de termijn bijwerken
+    nieuweStand[t] = !s.oordeel && oud && oud.oordeel ? { ...oud, ml: s.ml } : s;
+  }
   let verstuurd = 0, mislukt = 0;
   for (const t of toestellen) {
     const k = sleutel(t.abonnement), regels = [];

@@ -1248,6 +1248,45 @@ process.stdout.write(JSON.stringify({ gemaakt: '2026-06-03', live: a, terug: Obj
         self.assertEqual(pg.locator('[data-kansf="nieuw"]:disabled').count(), 0)
         self.assertEqual(self.fouten, [])
 
+    def test_eigen_fonds_zonder_oordeel_toont_laatst_bekende(self):
+        # MTU, november 2026: een nacht zonder NAIC-oordeel door een gegevensstoring; niet stil weglaten maar het laatst bekende tonen
+        c = self.b.new_context(viewport={'width': 390, 'height': 800})
+        self.addCleanup(c.close)
+        c.add_init_script("""try{localStorage.setItem('aandeelsignaal.v1',JSON.stringify({introGezien:true,portefeuille:[{id:'1',ticker:'GOOGL',aantal:2,koers:90,valuta:'USD',datum:'2025-01-01'}]}));
+          localStorage.setItem('as_naic_vorig',JSON.stringify({bekend:{GOOGL:{oordeel:'kopen',datum:'2026-11-16',vorig:'kopen'}}}));}catch(e){}""")
+        pg = c.new_page()
+        fouten = []
+        pg.on('pageerror', lambda e: fouten.append(str(e)))
+        pg.goto(INDEX + '#/signalen'); pg.wait_for_timeout(300)
+        regel = pg.inner_text('[data-sig-soort="storing"]')
+        self.assertIn('NAIC tijdelijk onbekend', regel)
+        self.assertIn('Laatst bekend: Kopen', regel); self.assertIn('16 november 2026', regel)
+        self.assertIn('niet aan het bedrijf', regel)
+        pg.goto(INDEX + '#/'); pg.wait_for_timeout(200)
+        self.assertIn('NAIC tijdelijk onbekend', pg.inner_text('[data-tegel="signalen"]'))
+        self.assertEqual(fouten, [])
+
+    def test_signalen_en_meldingen_na_een_storing(self):
+        import subprocess
+        js = """
+const S = require('./web/js/signalen.js'), M = require('./meldingen.js');
+let r = S.bijwerken(null, '2026-11-15', {MTX: 'kopen'}); r = S.bijwerken(r.opslag, '2026-11-16', {MTX: 'kopen'});
+r = S.bijwerken(r.opslag, '2026-11-17', {});                         // storing: geen oordeel
+const weg = S.veranderingen(r.basis, r.opslag.laatst.oordelen, r.bekend);
+r = S.bijwerken(r.opslag, '2026-11-18', {MTX: 'kopen'});             // terug: geen 'nieuw'
+const terug = S.veranderingen(r.basis, r.opslag.laatst.oordelen, r.bekend);
+console.log(JSON.stringify({weg, terug, bekend: r.bekend.MTX,
+  m1: M.gebeurtenissen('MTU', {oordeel: null, zone: null, ml: 'neutraal'}, {oordeel: 'kopen', zone: 'koop', ml: 'neutraal'}),
+  m2: M.gebeurtenissen('MTU', {oordeel: 'kopen', zone: 'koop', ml: 'neutraal'}, {oordeel: null, zone: null, ml: 'neutraal'}),
+  m3: M.gebeurtenissen('MTU', {oordeel: 'neutraal', zone: 'houd', ml: 'neutraal'}, {oordeel: 'kopen', zone: 'koop', ml: 'neutraal'})}));
+"""
+        uit = json.loads(subprocess.run(['node', '-e', js], capture_output=True, text=True, check=True).stdout)
+        self.assertEqual(uit['weg'], [{'ticker': 'MTX', 'van': 'kopen', 'naar': None}])
+        self.assertEqual(uit['terug'], [])
+        self.assertEqual(uit['bekend']['oordeel'], 'kopen')
+        self.assertEqual((uit['m1'], uit['m2']), ([], []))                     # storing: geen koop- of verkoopmelding
+        self.assertEqual(uit['m3'], ['MTU: in de koopzone (NAIC Kopen)'])
+
     def test_naic_gids_ook_bij_cijfers_uit_jaarverslag(self):
         c = self.b.new_context(viewport={'width': 390, 'height': 800})
         self.addCleanup(c.close)

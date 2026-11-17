@@ -515,3 +515,4 @@ details.onderbouwing > summary { cursor: pointer; font-weight: 700; color: var(-
 .ai-mening[open] summary::after { transform: rotate(90deg); }
 .ai-mening h3 { font-size: 1rem; margin: 14px 0 4px; }
 .ai-mening ul { margin: 0; padding-left: 20px; }
+.chip.sig-lab[data-sig="storing"], .chip.sig-lab[data-sig="geen"] { background: transparent; box-shadow: inset 0 0 0 1px var(--mut); color: var(--mut); }

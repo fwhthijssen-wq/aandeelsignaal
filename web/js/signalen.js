@@ -32,27 +32,47 @@
     var o = opslag && typeof opslag === 'object' ? opslag : {};
     var laatst = o.laatst && o.laatst.datum && o.laatst.oordelen ? o.laatst : null;
     var basis = o.basis && o.basis.datum && o.basis.oordelen ? o.basis : null;
-    if (!datum) return { opslag: o, basis: basis };
+    // bekend: per fonds het laatst bekende oordeel met de datum, ook als het daarna (tijdelijk) wegvalt
+    var bekend = {};
+    if (o.bekend && typeof o.bekend === 'object') Object.keys(o.bekend).forEach(function (t) { bekend[t] = o.bekend[t]; });
+    else [basis, laatst].forEach(function (x) { if (x) Object.keys(x.oordelen).forEach(function (t) { bekend[t] = { oordeel: x.oordelen[t], datum: x.datum }; }); });
+    if (!datum) return { opslag: o, basis: basis, bekend: bekend };
+    Object.keys(nu || {}).forEach(function (t) {
+      var x = bekend[t];                              // vorig: het oordeel van vóór deze update (ook van vóór een storing)
+      bekend[t] = { oordeel: nu[t], datum: datum, vorig: x ? (x.datum < datum ? x.oordeel : x.vorig) : null };
+    });
     if (!laatst || laatst.datum !== datum) {
       if (laatst && laatst.datum < datum) basis = laatst;
       laatst = { datum: datum, oordelen: nu };
     } else {
       laatst = { datum: datum, oordelen: nu };        // zelfde update: alleen bijwerken (bijv. na een nieuwe instelling)
     }
-    return { opslag: { basis: basis, laatst: laatst }, basis: basis };
+    return { opslag: { basis: basis, laatst: laatst, bekend: bekend }, basis: basis, bekend: bekend };
+  }
+
+  /* Waarom een fonds geen NAIC-oordeel (meer) heeft: 'storing' als het aan ontbrekende gegevens ligt (valuta, koers,
+     koersjaren, jaren winst per aandeel; MTU, november 2026), anders 'inhoud' (bijv. de winst per aandeel is niet positief). */
+  function zonderOordeel(b) {
+    var reden = (b && b.naic && b.naic.reden) || '';
+    return /niet positief|groeide|groeiverwachting/i.test(reden) ? 'inhoud' : 'storing';
   }
 
   /* Wat er veranderde: [{ticker, van, naar}] voor tickers met een ander NAIC-oordeel dan in de basis (ook: nieuw een oordeel).
      Volgorde: naar Kopen eerst, dan naar Vermijden, dan de rest; daarbinnen op ticker. */
-  function veranderingen(basis, nu) {
+  function veranderingen(basis, nu, bekend) {
     if (!basis || !basis.oordelen) return [];
-    var v = basis.oordelen, uit = [];
-    Object.keys(nu || {}).forEach(function (t) { if (v[t] !== nu[t]) uit.push({ ticker: t, van: v[t] || null, naar: nu[t] }); });
+    var v = basis.oordelen, uit = [], b = bekend || {};
+    Object.keys(nu || {}).forEach(function (t) {
+      if (v[t] === nu[t]) return;
+      // terug na een gegevensstoring met hetzelfde oordeel als ervoor: geen verandering
+      if (!(t in v) && b[t] && b[t].vorig === nu[t]) return;
+      uit.push({ ticker: t, van: v[t] || null, naar: nu[t] });
+    });
     Object.keys(v).forEach(function (t) { if (!(t in (nu || {}))) uit.push({ ticker: t, van: v[t], naar: null }); });
     var rang = { kopen: 0, vermijden: 1, neutraal: 2 };
     return uit.sort(function (a, b) { return ((a.naar in rang ? rang[a.naar] : 3) - (b.naar in rang ? rang[b.naar] : 3)) || (a.ticker < b.ticker ? -1 : a.ticker > b.ticker ? 1 : 0); });
   }
 
-  var api = { naicSignaal: naicSignaal, oordelen: oordelen, bijwerken: bijwerken, veranderingen: veranderingen, OORDEEL: OORDEEL };
+  var api = { naicSignaal: naicSignaal, oordelen: oordelen, bijwerken: bijwerken, veranderingen: veranderingen, zonderOordeel: zonderOordeel, OORDEEL: OORDEEL };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.Signalen = api;
 })(typeof self !== 'undefined' ? self : this);

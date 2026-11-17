@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var MAKER = 'Made by Frans Thijssen';
-  var APP_VERSIE = '1.29.1 (2026.11.17)';
+  var APP_VERSIE = '1.30 (2026.11.17)';
 
   // Splitverhouding als '4-voor-1', of bij een samenvoeging (verhouding onder 1, zoals Unilever 8/9) '8-voor-9 (samenvoeging)'.
   function splitTekst(r) {
@@ -516,21 +516,32 @@
     var datum = String(DATA.gemaakt || '').slice(0, 10);
     var r = Signalen.bijwerken(naicVorig(), datum, Signalen.oordelen(fondsItems().map(function (a) { return a.b; })));
     if (bewaar) naicVorig(r.opslag);
-    return { basis: r.basis, ver: Signalen.veranderingen(r.basis, r.opslag.laatst ? r.opslag.laatst.oordelen : {}) };
+    return { basis: r.basis, bekend: r.bekend || {}, ver: Signalen.veranderingen(r.basis, r.opslag.laatst ? r.opslag.laatst.oordelen : {}, r.bekend) };
   }
-  var SIG_VOLG = { verkoop: 0, kwaliteit: 1, groei: 2, negatief: 3, koop: 4, positief: 5 };
-  var SIG_LAB = { verkoop: 'Verkoopzone', kwaliteit: 'Kwaliteit daalt', groei: 'NAIC Vermijden', koop: 'Koopzone: bijkopen?', negatief: 'Middellang → Negatief', positief: 'Middellang → Positief' };
+  var SIG_VOLG = { verkoop: 0, kwaliteit: 1, groei: 2, negatief: 3, geen: 4, storing: 5, koop: 6, positief: 7 };
+  var SIG_LAB = { verkoop: 'Verkoopzone', kwaliteit: 'Kwaliteit daalt', groei: 'NAIC Vermijden', koop: 'Koopzone: bijkopen?', negatief: 'Middellang → Negatief', positief: 'Middellang → Positief',
+    geen: 'Geen NAIC-oordeel meer', storing: 'NAIC tijdelijk onbekend' };
+  /* Een fonds dat u bezit had een NAIC-oordeel en heeft er nu geen: laat dat zien met het laatst bekende oordeel, in plaats
+     van het stil weg te laten (MTU, november 2026: een nacht zonder valuta door een storing bij Yahoo). */
+  function zonderOordeelRegel(r) {
+    var k = r.bekend, oud = '<b>' + h(Signalen.OORDEEL[k.oordeel] || k.oordeel) + '</b> (update van ' + h(datumNl(k.datum)) + ')';
+    return r.soort === 'storing' ? '<span class="signaal" data-zonder-oordeel="storing">De app kan het NAIC-oordeel nu niet berekenen: er ontbreken gegevens (' + h(String(r.a.b.naic && r.a.b.naic.reden || 'gegevensstoring').replace(/\.$/, '').toLowerCase()) + '). Dit ligt aan de gegevenslevering, niet aan het bedrijf. Laatst bekend: ' + oud + '.</span>'
+      : '<span class="signaal" data-zonder-oordeel="inhoud">' + h(String(r.a.b.naic && r.a.b.naic.reden || 'Geen NAIC-oordeel.')) + ' Laatst bekend: ' + oud + '.</span>';
+  }
   /* Signalen per portefeuille: elke regel is één aandeel met één signaal. Een omslag van de middellange termijn is een eigen regel. */
   function signaalGroepen(bewaarMl) {
     var per = {}; fondsItems().forEach(function (a) { per[a.ticker] = a; });
     var om = {}; mlOmslagen(!!bewaarMl).forEach(function (v) { om[v.ticker] = v; });
-    var nv = {}; naicVeranderingen(false).ver.forEach(function (v) { nv[v.ticker] = v; });
+    var nvAlles = naicVeranderingen(false), bekend = nvAlles.bekend;
+    var nv = {}; nvAlles.ver.forEach(function (v) { nv[v.ticker] = v; });
     return bezitPerPortefeuille().filter(function (g) { return g.tickers.length; }).map(function (g) {
       var regels = [];
       g.tickers.forEach(function (t) {
         var a = per[t]; if (!a) return;
         var sg = Signalen.naicSignaal(a.b);
         if (sg) regels.push({ a: a, soort: sg.soort, sg: sg, nieuw: nv[t] && nv[t].naar === (a.b.naic && a.b.naic.oordeel) ? nv[t] : null });
+        else if (!(a.b.naic && Signalen.OORDEEL[a.b.naic.oordeel]) && bekend[t] && Signalen.OORDEEL[bekend[t].oordeel])
+          regels.push({ a: a, soort: Signalen.zonderOordeel(a.b) === 'storing' ? 'storing' : 'geen', bekend: bekend[t] });
         var o = om[t];
         if (o && (o.naar === 'positief' || o.naar === 'negatief')) regels.push({ a: a, soort: o.naar, omslag: o });
       });
@@ -575,7 +586,7 @@
     groepen.forEach(function (g) {
       s += '<div class="pf-signalen" data-pf-signalen="' + h(g.id) + '"><div class="rij-kop"><h2>' + h(g.naam) + '</h2><span class="zacht">' + g.aantal + ' aande' + (g.aantal === 1 ? 'el' : 'len') + ' · ' + g.regels.length + ' signa' + (g.regels.length === 1 ? 'al' : 'len') + '</span></div>';
       if (g.regels.length) s += '<div class="lijst" data-eigen-signalen>' + g.regels.map(function (r) {
-        var tekst = r.omslag ? '<span class="signaal" data-ml-naar="' + r.omslag.naar + '">Middellange termijn ' + ML[r.omslag.van] + ' → <b>' + ML[r.omslag.naar] + '</b></span>' : signaalRegel(r.a.b);
+        var tekst = r.omslag ? '<span class="signaal" data-ml-naar="' + r.omslag.naar + '">Middellange termijn ' + ML[r.omslag.van] + ' → <b>' + ML[r.omslag.naar] + '</b></span>' : r.bekend ? zonderOordeelRegel(r) : signaalRegel(r.a.b);
         var nieuw = r.nieuw ? ' · nieuw sinds ' + datumNl(nv.basis ? nv.basis.datum : datum) : '';
         return '<a href="#/a/' + encodeURIComponent(r.a.ticker) + '"' + (r.omslag ? ' data-ml-omslag' : '') + ' data-sig-soort="' + r.soort + '"><div class="tekstkolom"><b>' + h(r.a.naam) + '</b><span class="zacht">' + h(r.a.ticker + nieuw) + '</span><span class="oordeel-rij"><span class="chip sig-lab" data-sig="' + r.soort + '">' + h(SIG_LAB[r.soort]) + '</span></span>' + tekst + '</div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
       }).join('') + '</div>';
@@ -617,7 +628,8 @@
       (k.basis ? '“Nieuw” is sinds de update van ' + h(datumNl(k.basis.datum)) + '.' : '“Nieuw” werkt vanaf de volgende gegevensupdate; dit wordt alleen op dit toestel bijgehouden.') + '</p>';
     if (k.weg.length) s += '<h2 class="tussenkop">Niet meer Kopen sinds ' + h(datumNl(k.basis.datum)) + '</h2><div class="lijst" data-kansen-weg>' + k.weg.map(function (v) {
       var rec = zoek(v.ticker) || { ticker: v.ticker, naam: v.ticker };
-      return '<a href="#/a/' + encodeURIComponent(v.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + h(v.ticker) + '</span><span class="signaal" data-naar="' + (v.naar || 'geen') + '">NAIC Kopen → <b>' + (v.naar ? h(Signalen.OORDEEL[v.naar]) : 'geen oordeel') + '</b></span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
+      var st = !v.naar && rec.ticker && zoek(v.ticker) && Signalen.zonderOordeel(signaalVoor(zoek(v.ticker))) === 'storing';
+      return '<a href="#/a/' + encodeURIComponent(v.ticker) + '"><div class="tekstkolom"><b>' + h(rec.naam) + '</b><span class="zacht">' + h(v.ticker) + '</span><span class="signaal" data-naar="' + (v.naar || 'geen') + '">NAIC Kopen → <b>' + (v.naar ? h(Signalen.OORDEEL[v.naar]) : st ? 'tijdelijk onbekend (gegevens ontbreken)' : 'geen oordeel') + '</b></span></div>' + I.pijl.replace('class="pijl"', 'width="18" height="18"') + '</a>';
     }).join('') + '</div>';
     return s + '<div class="knoppen"><a class="knop rand klein" href="#/markt">Alle fondsen per index</a></div><p class="hoe-rij">' + hoe('naic', 'Hoe werkt het NAIC-oordeel?') + '</p></section>';
   }
@@ -726,9 +738,9 @@
     var groepen = signaalGroepen(false), tel = {}, totaal = 0;
     groepen.forEach(function (g) { g.regels.forEach(function (r) { tel[r.soort] = (tel[r.soort] || 0) + 1; totaal++; }); });
     var letop = (tel.verkoop || 0) + (tel.kwaliteit || 0) + (tel.groei || 0) + (tel.negatief || 0);
-    var delen = [['verkoop', '× verkoopzone'], ['kwaliteit', '× kwaliteit daalt'], ['groei', '× Vermijden'], ['negatief', '× middellang negatief'], ['koop', '× koopzone'], ['positief', '× middellang positief']]
+    var delen = [['verkoop', '× verkoopzone'], ['kwaliteit', '× kwaliteit daalt'], ['groei', '× Vermijden'], ['negatief', '× middellang negatief'], ['geen', '× geen NAIC-oordeel meer'], ['storing', '× NAIC tijdelijk onbekend'], ['koop', '× koopzone'], ['positief', '× middellang positief']]
       .filter(function (x) { return tel[x[0]]; }).map(function (x) { return tel[x[0]] + x[1]; });
-    var chips = groepen.length > 1 ? '<span class="pf-chips">' + groepen.map(function (g) { return '<span class="chip" data-niveau="' + (g.regels.some(function (r) { return SIG_VOLG[r.soort] < 4; }) ? 'let-op' : g.regels.length ? 'kans' : 'rustig') + '">' + h(g.naam) + ' ' + g.regels.length + '</span>'; }).join('') + '</span>' : '';
+    var chips = groepen.length > 1 ? '<span class="pf-chips">' + groepen.map(function (g) { return '<span class="chip" data-niveau="' + (g.regels.some(function (r) { return SIG_VOLG[r.soort] < 5; }) ? 'let-op' : g.regels.length ? 'kans' : 'rustig') + '">' + h(g.naam) + ' ' + g.regels.length + '</span>'; }).join('') + '</span>' : '';
     var t3 = '<a class="tegel breed-mobiel" href="#/signalen" data-tegel="signalen" data-niveau="' + (letop ? 'let-op' : totaal ? 'kans' : 'rustig') + '"><small>Signalen in mijn portefeuilles</small><b>' + totaal + '</b><span>' +
       (groepen.length ? (delen.length ? delen.join(' · ') : 'Alles rustig') : 'Nog geen aankopen') + '</span>' + chips + pijl + '</a>';
     // 3. Volglijst: opent met de aandelen in de koopzone bovenaan

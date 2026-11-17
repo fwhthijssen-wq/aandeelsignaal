@@ -20,6 +20,7 @@
       'Alle portefeuilles, niet alleen de gekozen. Verkochte aandelen en de volglijst tellen niet mee.',
       'Dringend eerst: verkoopzone, kwaliteit loopt terug, NAIC Vermijden en een omslag van de middellange termijn naar negatief. Daarna: koopzone (bijkopen?) en een omslag naar positief.',
       'Staat een aandeel in twee portefeuilles, dan ziet u het signaal in beide.',
+      'Had een aandeel een NAIC-oordeel en nu niet meer, dan ziet u dat met het laatst bekende oordeel. “NAIC tijdelijk onbekend” betekent dat er gegevens ontbreken (bijvoorbeeld een storing bij de gegevensleverancier); dat zegt niets over het bedrijf en is geen verkoopsignaal. Een pushmelding komt er dan niet.',
       '“Nieuw sinds” vergelijkt met de vorige gegevensupdate; dat staat alleen op dit toestel. De pushmeldingen gaan over dezelfde aandelen.'], null],
     kansen: ['Kansen', 'Alle fondsen met NAIC Kopen op één scherm.', [
       'NAIC Kopen: de koers staat in de koopzone, met minstens 3 : 1 opwaarts tegen neerwaarts en voldoende verwacht rendement per jaar.',

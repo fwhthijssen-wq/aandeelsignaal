@@ -2,6 +2,10 @@
 
 Vanaf versie 1.0: 1.0.x voor kleine verbeteringen en reparaties, 1.1, 1.2, … voor nieuwe onderdelen.
 
+## 1.30 (2026.11.17)
+- **Geen stil verdwenen NAIC-oordeel meer.** Had een aandeel in uw portefeuille een NAIC-oordeel en nu niet, dan staat het bij Signalen (en op de tegel), met het laatst bekende oordeel en de datum. Ligt het aan ontbrekende gegevens, dan heet het “NAIC tijdelijk onbekend”: dat zegt niets over het bedrijf en is geen verkoopsignaal. Bij Kansen staat zo’n fonds onder “Niet meer Kopen” als “tijdelijk onbekend”.
+- Komt het oordeel na een storing ongewijzigd terug, dan telt het niet als “nieuw”, en de pushmeldingen sturen bij een storing geen koop- of verkoopmelding (ook niet als het oordeel terugkomt).
+
 ## 1.29.1 (2026.11.17)
 - Reparatie: in de nacht van 17 november gaf Yahoo Finance de bedrijfsinformatie niet door (fout 'Invalid Crumb'). De jaarcijfers van onder meer MTU, Allianz en BASF kwamen daardoor binnen zonder valuta, en zonder valuta berekent de app geen NAIC-oordeel en geen Bevestigd. Nu geldt dan de valuta van de vorige run of van de aangeleverde cijfers (met een opmerking bij het fonds), en de controle na de nachtelijke run waarschuwt als fondsen hun valuta kwijtraken.
 
